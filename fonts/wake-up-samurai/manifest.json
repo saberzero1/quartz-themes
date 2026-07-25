@@ -1,0 +1,76 @@
+{
+  "extractedAt": "2026-07-25T00:54:41.718Z",
+  "sourceTheme": "Wake Up Samurai",
+  "fonts": [
+    {
+      "family": "Teko",
+      "style": "normal",
+      "weight": "500",
+      "file": "teko.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Teko",
+      "style": "normal",
+      "weight": "600",
+      "file": "teko-1.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Teko",
+      "style": "normal",
+      "weight": "700",
+      "file": "teko-2.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Rajdhani",
+      "style": "normal",
+      "weight": "500",
+      "file": "rajdhani.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Rajdhani",
+      "style": "normal",
+      "weight": "600",
+      "file": "rajdhani-1.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Rajdhani",
+      "style": "normal",
+      "weight": "700",
+      "file": "rajdhani-2.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Electrolize",
+      "style": "normal",
+      "weight": "400",
+      "file": "electrolize.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    }
+  ]
+}

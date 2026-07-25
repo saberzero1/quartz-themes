@@ -2545,9 +2545,9 @@ body.theme-dark {
   --zoom-factor: 1 !important;
   --blockquote-color: var(--color-satu-icon) !important;
   --link-unresolved-color-hover: var(--color-main-alart) !important;
+  --blockquote-border-width: 3px !important;
   --BBB: true !important;
   --blockquote-border-color-deep: var(--color-satu-deepgrey) !important;
-  --blockquote-border-width: 3px !important;
   --brightness-heading-1: 1.2 !important;
   --brightness-heading-2: 1.2 !important;
   --brightness-heading-3: 1.2 !important;

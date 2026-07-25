@@ -1,7 +1,7 @@
 /* ============================================================
    Green Holiday — Obsidian Theme
    A lime green tinted theme for focused writing.
-   Version: 0.3.3
+   Version: 0.3.5
    ============================================================ */
 
 /* ── Dark Mode ─────────────────────────────────────────────── */
@@ -28,6 +28,8 @@
 
   --interactive-accent: #6bfa6e;
   --interactive-accent-hover: #8ffb91;
+  --text-on-accent: #031f04;
+  --text-on-accent-inverted: #e2f5e2;
 
   --background-modifier-border: #3e7840;
   --background-modifier-border-hover: #548e56;
@@ -189,6 +191,11 @@ body {
   --font-text-size: 16px;
   --line-height-normal: 1.7;
   --p-spacing: 1em;
+
+  /* Bold = --font-weight (400) + --bold-modifier, so 300 yields 700.
+     Note: Obsidian computes bold via calc(--font-weight + --bold-modifier)
+     directly in many rules, so overriding --bold-weight alone has no effect */
+  --bold-modifier: 300;
 
   --h2-weight: 700;
   --h3-weight: 600;

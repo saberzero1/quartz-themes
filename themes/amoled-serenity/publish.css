@@ -1109,13 +1109,13 @@ body.theme-dark {
   --h5-color: var(--frost0) !important;
   --h6-color: var(--frost2) !important;
   --inline-title-color: var(--h1-color) !important;
+  --inline-title-font: var(--h1-font) !important;
   --h1-font: var(--header-font) !important;
   --h2-font: var(--header-font) !important;
   --h3-font: var(--header-font) !important;
   --h4-font: var(--header-font) !important;
   --h5-font: var(--header-font) !important;
   --h6-font: var(--header-font) !important;
-  --inline-title-font: var(--h1-font) !important;
   --selection-background: rgba(var(--green_x), 0.35) !important;
   --body-font: "Inter" !important;
   --button-background: var(--background-primary) !important;

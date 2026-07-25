@@ -1439,9 +1439,9 @@ body.theme-dark {
   --background-modifier-form-field-highlighted: rgba(0, 0, 0, 0.22) !important;
   --text-highlight-bg-active: rgba(135, 255, 95, 1) !important;
   --text-error-hover: #db6088 !important;
+  --table-text-color: #e1d6f8 !important;
   --interactive-success: #8edf5f !important;
   --text-muted-rgb: 153, 153, 153 !important;
-  --table-text-color: #e1d6f8 !important;
   --scrollbar-active-th: rgba(255, 255, 255, 0.2) !important;
   --tab-gap: 5px !important;
 }

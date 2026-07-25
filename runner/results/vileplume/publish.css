@@ -1167,7 +1167,6 @@ body.theme-light {
   --purple: #b48ead !important;
   --red: hsl(352, 56%, 62%) !important;
   --yellow: hsl(27, 49%, 68%) !important;
-  --font-headings: "Source Sans Pro", "Segoe UI Emoji", sans-serif !important;
   --dark0: hsl(219, 38%, 21%) !important;
   --dark1: hsl(219, 37%, 36%) !important;
   --dark2: hsl(220, 22%, 51%) !important;
@@ -1178,6 +1177,7 @@ body.theme-light {
   --light1: #e5e9f0 !important;
   --light2: #eceff4 !important;
   --light3: #ffffff !important;
+  --font-headings: "Source Sans Pro", "Segoe UI Emoji", sans-serif !important;
   --bloddish48: hsl(203, 27%, 48%) !important;
   --bloddish64: hsl(204, 24%, 64%) !important;
   --groddish: hsl(107, 39%, 43%) !important;
@@ -2291,7 +2291,6 @@ body.theme-dark {
   --purple: #b48ead !important;
   --red: hsl(352, 56%, 62%) !important;
   --yellow: hsl(27, 49%, 68%) !important;
-  --font-headings: "Source Sans Pro", "Segoe UI Emoji", sans-serif !important;
   --dark0: hsl(219, 38%, 21%) !important;
   --dark1: hsl(219, 37%, 36%) !important;
   --dark2: hsl(220, 22%, 51%) !important;
@@ -2302,6 +2301,7 @@ body.theme-dark {
   --light1: #e5e9f0 !important;
   --light2: #eceff4 !important;
   --light3: #ffffff !important;
+  --font-headings: "Source Sans Pro", "Segoe UI Emoji", sans-serif !important;
   --bloddish48: hsl(203, 27%, 48%) !important;
   --bloddish64: hsl(204, 24%, 64%) !important;
   --groddish: hsl(107, 39%, 43%) !important;

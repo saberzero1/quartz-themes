@@ -1529,9 +1529,9 @@ body.theme-light {
   --inline-title-color: var(--text-normal) !important;
   --bold-color: var(--color-cyan) !important;
   --italic-color: var(--color-green) !important;
+  --tab-font-weight: 700 !important;
   --nav-item-weight: 500 !important;
   --nav-item-weight-hover: 500 !important;
-  --tab-font-weight: 700 !important;
   --dataview-table-even-bg-color: var(--color-base-10) !important;
   --dataview-table-odd-bg-color: var(--color-base-05) !important;
   --dataview-table-row-hover: var(--color-accent-hsl) !important;
@@ -2696,9 +2696,9 @@ body.theme-dark {
   --inline-title-color: var(--text-normal) !important;
   --bold-color: var(--color-cyan) !important;
   --italic-color: var(--color-green) !important;
+  --tab-font-weight: 700 !important;
   --nav-item-weight: 500 !important;
   --nav-item-weight-hover: 500 !important;
-  --tab-font-weight: 700 !important;
   --dataview-table-even-bg-color: var(--color-base-10) !important;
   --dataview-table-odd-bg-color: var(--color-base-05) !important;
   --dataview-table-row-hover: var(--color-accent-hsl) !important;

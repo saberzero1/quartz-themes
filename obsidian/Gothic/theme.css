@@ -1,0 +1,359 @@
+/*
+Gothic
+An Obsidian theme inspired by Typora's Gothic theme.
+
+This file intentionally uses Obsidian CSS variables first, with a small
+number of stable Markdown selectors for the centered Gothic headings.
+*/
+
+body {
+  --gothic-font-text: "TeX Gyre Adventor", "TeXGyreAdventor", "Century Gothic", "Didact Gothic", "Yu Gothic", "Avenir Next", "Segoe UI", sans-serif;
+  --gothic-font-mono: "SFMono-Regular", "Cascadia Code", "Roboto Mono", "Menlo", "Consolas", monospace;
+
+  --font-interface-theme: var(--gothic-font-text);
+  --font-text-theme: var(--gothic-font-text);
+  --font-monospace-theme: var(--gothic-font-mono);
+  --font-text-size: 16px;
+  --font-weight: 300;
+  --bold-modifier: 300;
+  --link-weight: 450;
+  --line-height-normal: 1.75;
+  --line-height-tight: 1.35;
+  --p-spacing: 1.25rem;
+  --heading-spacing: 2.75rem;
+
+  --file-line-width: 914px;
+  --file-margins: 32px;
+  --file-header-justify: center;
+
+  --inline-title-font: var(--gothic-font-text);
+  --inline-title-size: 2.25em;
+  --inline-title-line-height: 1.4;
+  --inline-title-weight: 400;
+
+  --h1-font: var(--gothic-font-text);
+  --h2-font: var(--gothic-font-text);
+  --h3-font: var(--gothic-font-text);
+  --h4-font: var(--gothic-font-text);
+  --h5-font: var(--gothic-font-text);
+  --h6-font: var(--gothic-font-text);
+  --h1-size: 2.827em;
+  --h2-size: 1.999em;
+  --h3-size: 1.413em;
+  --h4-size: 1.25em;
+  --h5-size: 1.125em;
+  --h6-size: 1em;
+  --h1-line-height: 1.42;
+  --h2-line-height: 1.5;
+  --h3-line-height: 1.55;
+  --h4-line-height: 1.55;
+  --h5-line-height: 1.6;
+  --h6-line-height: 1.6;
+  --h1-weight: 400;
+  --h2-weight: 400;
+  --h3-weight: 400;
+  --h4-weight: 400;
+  --h5-weight: 400;
+  --h6-weight: 700;
+
+  --blockquote-border-thickness: 1px;
+  --blockquote-font-style: normal;
+  --checkbox-radius: 0;
+  --checkbox-size: 1rem;
+  --code-size: 0.9em;
+  --input-radius: 2px;
+  --list-spacing: 0.15em;
+  --radius-s: 2px;
+  --radius-m: 3px;
+  --radius-l: 4px;
+  --tab-radius-active: 2px;
+  --table-border-width: 1px;
+  --table-cell-vertical-alignment: top;
+  --table-line-height: 1.25;
+  --table-text-size: 1em;
+}
+
+.theme-light {
+  --accent-h: 0;
+  --accent-s: 100%;
+  --accent-l: 30%;
+
+  --color-base-00: #fcfcfc;
+  --color-base-05: #f9f9f9;
+  --color-base-10: #f5f5f5;
+  --color-base-20: #eeeeee;
+  --color-base-25: #e5e5e5;
+  --color-base-30: #dddddd;
+  --color-base-35: #cccccc;
+  --color-base-40: #b8b8b8;
+  --color-base-50: #969696;
+  --color-base-60: #777777;
+  --color-base-70: #555555;
+  --color-base-100: #111111;
+
+  --background-primary: #fcfcfc;
+  --background-primary-alt: #f8f8f8;
+  --background-secondary: #f3f3f3;
+  --background-secondary-alt: #ededed;
+  --background-modifier-border: #dddddd;
+  --background-modifier-border-hover: #c8c8c8;
+  --background-modifier-border-focus: #990000;
+  --background-modifier-hover: #f1eeee;
+  --background-modifier-active-hover: #ece6e6;
+  --background-modifier-form-field: #ffffff;
+
+  --text-normal: #111111;
+  --text-muted: #6f6f6f;
+  --text-faint: #8a8a8a;
+  --text-accent: #990000;
+  --text-accent-hover: #6f0000;
+  --text-selection: rgba(153, 0, 0, 0.12);
+  --text-highlight-bg: rgba(224, 172, 0, 0.22);
+
+  --interactive-normal: #f4f4f4;
+  --interactive-hover: #e9e9e9;
+  --interactive-accent: #990000;
+  --interactive-accent-hover: #7d0000;
+  --interactive-accent-hsl: 0, 100%, 30%;
+
+  --link-color: #990000;
+  --link-color-hover: #6f0000;
+  --link-decoration: none;
+  --link-decoration-hover: underline;
+  --link-external-color: #990000;
+  --link-external-color-hover: #6f0000;
+  --link-external-decoration: none;
+  --link-external-decoration-hover: underline;
+  --link-unresolved-color: #990000;
+  --link-unresolved-opacity: 0.62;
+
+  --inline-title-color: #111111;
+  --h1-color: #111111;
+  --h2-color: #111111;
+  --h3-color: #111111;
+  --h4-color: #111111;
+  --h5-color: #111111;
+  --h6-color: #111111;
+
+  --blockquote-background-color: transparent;
+  --blockquote-border-color: #808080;
+  --blockquote-color: #6f6f6f;
+  --code-background: #f8f8f8;
+  --code-normal: #444444;
+  --code-comment: #777777;
+  --code-function: #7a1f1f;
+  --code-important: #990000;
+  --code-keyword: #990000;
+  --code-property: #4d4d4d;
+  --code-punctuation: #6b6b6b;
+  --code-string: #416b1f;
+  --code-tag: #7a1f1f;
+  --code-value: #4b5f8a;
+
+  --table-background: transparent;
+  --table-border-color: #dddddd;
+  --table-header-background: transparent;
+  --table-header-background-hover: #f5f5f5;
+  --table-header-border-color: #dddddd;
+  --table-header-color: #111111;
+  --table-row-alt-background: #fafafa;
+  --table-row-background-hover: #f6f6f6;
+  --table-row-alt-background-hover: #f2f2f2;
+}
+
+.theme-dark {
+  --accent-h: 0;
+  --accent-s: 58%;
+  --accent-l: 66%;
+
+  --color-base-00: #1d1d1d;
+  --color-base-05: #202020;
+  --color-base-10: #242424;
+  --color-base-20: #2b2b2b;
+  --color-base-25: #333333;
+  --color-base-30: #3d3d3d;
+  --color-base-35: #474747;
+  --color-base-40: #5b5b5b;
+  --color-base-50: #777777;
+  --color-base-60: #9a9a9a;
+  --color-base-70: #c4c4c4;
+  --color-base-100: #e5e0da;
+
+  --background-primary: #1d1d1d;
+  --background-primary-alt: #222222;
+  --background-secondary: #191919;
+  --background-secondary-alt: #242424;
+  --background-modifier-border: #3a3a3a;
+  --background-modifier-border-hover: #505050;
+  --background-modifier-border-focus: #d78787;
+  --background-modifier-hover: #262222;
+  --background-modifier-active-hover: #302727;
+  --background-modifier-form-field: #242424;
+
+  --text-normal: #e5e0da;
+  --text-muted: #aaa39b;
+  --text-faint: #7d7771;
+  --text-accent: #d78787;
+  --text-accent-hover: #f0a0a0;
+  --text-selection: rgba(215, 135, 135, 0.18);
+  --text-highlight-bg: rgba(224, 172, 0, 0.18);
+
+  --interactive-normal: #2b2b2b;
+  --interactive-hover: #363030;
+  --interactive-accent: #b95757;
+  --interactive-accent-hover: #cb6a6a;
+  --interactive-accent-hsl: 0, 43%, 53%;
+
+  --link-color: #d78787;
+  --link-color-hover: #f0a0a0;
+  --link-decoration: none;
+  --link-decoration-hover: underline;
+  --link-external-color: #d78787;
+  --link-external-color-hover: #f0a0a0;
+  --link-external-decoration: none;
+  --link-external-decoration-hover: underline;
+  --link-unresolved-color: #d78787;
+  --link-unresolved-opacity: 0.62;
+
+  --inline-title-color: #f0ece7;
+  --h1-color: #f0ece7;
+  --h2-color: #f0ece7;
+  --h3-color: #e5e0da;
+  --h4-color: #e5e0da;
+  --h5-color: #e5e0da;
+  --h6-color: #e5e0da;
+
+  --blockquote-background-color: transparent;
+  --blockquote-border-color: #74706c;
+  --blockquote-color: #aaa39b;
+  --code-background: #242424;
+  --code-normal: #ddd7d0;
+  --code-comment: #8b8580;
+  --code-function: #e0a3a3;
+  --code-important: #f0a0a0;
+  --code-keyword: #f0a0a0;
+  --code-property: #d6d0c9;
+  --code-punctuation: #aaa39b;
+  --code-string: #b9d18a;
+  --code-tag: #e0a3a3;
+  --code-value: #adc7e6;
+
+  --table-background: transparent;
+  --table-border-color: #3a3a3a;
+  --table-header-background: transparent;
+  --table-header-background-hover: #252525;
+  --table-header-border-color: #3a3a3a;
+  --table-header-color: #f0ece7;
+  --table-row-alt-background: #202020;
+  --table-row-background-hover: #252525;
+  --table-row-alt-background-hover: #282828;
+}
+
+.inline-title {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.markdown-preview-view h1,
+.markdown-preview-view h2,
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-header-1,
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-header-2 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.markdown-preview-view h1,
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-header-1 {
+  margin-top: 4rem;
+  margin-bottom: 1.75rem;
+  padding: 20px 30px;
+}
+
+.markdown-preview-view h2,
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-header-2 {
+  margin-top: 3rem;
+  margin-bottom: 1.9375rem;
+  padding-inline: 30px;
+}
+
+.markdown-preview-view h3,
+.markdown-preview-view h4,
+.markdown-preview-view h5,
+.markdown-preview-view h6 {
+  font-weight: 400;
+}
+
+.markdown-preview-view p {
+  text-align: justify;
+}
+
+.markdown-rendered a,
+.markdown-rendered .internal-link,
+.markdown-rendered .external-link,
+.markdown-source-view.mod-cm6 .cm-link,
+.markdown-source-view.mod-cm6 .cm-url,
+.markdown-source-view.mod-cm6 .cm-hmd-internal-link,
+.markdown-source-view.mod-cm6 .cm-hmd-external-link {
+  font-weight: var(--link-weight);
+}
+
+.markdown-source-view.mod-cm6 .cm-line:not(.HyperMD-header):not(.HyperMD-codeblock) {
+  text-align: justify;
+}
+
+.markdown-rendered blockquote {
+  padding: 0.5rem 1.111rem 0 1.055rem;
+}
+
+.markdown-rendered code,
+.markdown-source-view.mod-cm6 .cm-inline-code {
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 2px;
+  padding: 0.1em 0.25em;
+}
+
+.markdown-rendered pre {
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 2px;
+  padding: 0.4em 1em;
+}
+
+.markdown-rendered table {
+  margin-bottom: 20px;
+}
+
+.markdown-rendered table th,
+.markdown-rendered table td {
+  padding: 8px;
+}
+
+.markdown-rendered table thead tr:first-child th,
+.markdown-rendered table thead tr:first-child td {
+  border-top: 0;
+}
+
+@media screen and (min-width: 1400px) {
+  body {
+    --file-line-width: 1024px;
+  }
+}
+
+@media screen and (max-width: 48em) {
+  body {
+    --file-margins: 20px;
+    --h1-size: 2.35em;
+    --h2-size: 1.75em;
+  }
+
+  .markdown-preview-view h1,
+  .markdown-preview-view h2,
+  .markdown-source-view.mod-cm6 .cm-line.HyperMD-header-1,
+  .markdown-source-view.mod-cm6 .cm-line.HyperMD-header-2 {
+    padding-inline: 0;
+  }
+
+  .markdown-preview-view p,
+  .markdown-source-view.mod-cm6 .cm-line:not(.HyperMD-header):not(.HyperMD-codeblock) {
+    text-align: start;
+  }
+}

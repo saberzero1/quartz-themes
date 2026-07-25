@@ -1,0 +1,77 @@
+{
+  "conflicts": [],
+  "brokenBridges": [
+    {
+      "property": "--code-background",
+      "references": "--ec-frm-edBg",
+      "selector": "figure",
+      "aspect": "images"
+    },
+    {
+      "property": "--header-border-radius",
+      "references": "--ec-brdRad",
+      "selector": "figure",
+      "aspect": "images"
+    },
+    {
+      "property": "--embed-max-height",
+      "references": "--card-height",
+      "selector": ".transclude",
+      "aspect": "embeds"
+    },
+    {
+      "property": "--embed-max-height",
+      "references": "--card-height",
+      "selector": ".transclude-inner",
+      "aspect": "embeds"
+    },
+    {
+      "property": "--embed-max-height",
+      "references": "--card-height",
+      "selector": ".transclude ul",
+      "aspect": "embeds"
+    },
+    {
+      "property": "--nav-item-background-hover",
+      "references": "--folder-color",
+      "selector": ".nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title",
+      "aspect": "explorer"
+    },
+    {
+      "property": "--nav-item-color",
+      "references": "--folder-color",
+      "selector": ".nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title",
+      "aspect": "explorer"
+    },
+    {
+      "property": "--nav-item-background-hover",
+      "references": "--folder-color",
+      "selector": ".nav-files-container li:has(> .folder-outer.open) > .nav-folder-title",
+      "aspect": "explorer"
+    },
+    {
+      "property": "--nav-item-color",
+      "references": "--folder-color",
+      "selector": ".nav-files-container li:has(> .folder-outer.open) > .nav-folder-title",
+      "aspect": "explorer"
+    },
+    {
+      "property": "--nav-item-background-hover",
+      "references": "--folder-color",
+      "selector": ".nav-files-container .collapse-icon",
+      "aspect": "explorer"
+    },
+    {
+      "property": "--nav-item-color",
+      "references": "--folder-color",
+      "selector": ".nav-files-container .collapse-icon",
+      "aspect": "explorer"
+    },
+    {
+      "property": "--embed-max-height",
+      "references": "--card-height",
+      "selector": ".canvas-node-content",
+      "aspect": "canvas"
+    }
+  ]
+}

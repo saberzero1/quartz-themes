@@ -1477,11 +1477,12 @@ body.theme-light {
   --h5-color: inherit !important;
   --h6-color: inherit !important;
   --inline-title-color: var(--h1-color) !important;
-  --accent-color: #3da9fc !important;
-  --border-color: #26292b !important;
   --bold-color: inherit !important;
   --italic-color: inherit !important;
+  --accent-color: #3da9fc !important;
+  --border-color: #26292b !important;
   --blockquote-border: #3da9fc !important;
+  --code-bg: #1b1d1f !important;
   --table-row-even: transparent !important;
   --table-row-odd: rgba(61, 169, 252, 0.05) !important;
   --bold-h1: #00aefb !important;
@@ -1495,7 +1496,6 @@ body.theme-light {
   --callout-green: 46, 160, 67;
   --callout-red: 248, 81, 73;
   --callout-yellow: 210, 153, 34;
-  --code-bg: #1b1d1f !important;
   --list-1: #70c9fd !important;
   --list-2: #79ffbd !important;
   --list-3: #fd7afb !important;
@@ -2594,11 +2594,12 @@ body.theme-dark {
   --h5-color: inherit !important;
   --h6-color: inherit !important;
   --inline-title-color: var(--h1-color) !important;
-  --accent-color: #3da9fc !important;
-  --border-color: #26292b !important;
   --bold-color: inherit !important;
   --italic-color: inherit !important;
+  --accent-color: #3da9fc !important;
+  --border-color: #26292b !important;
   --blockquote-border: #3da9fc !important;
+  --code-bg: #1b1d1f !important;
   --table-row-even: transparent !important;
   --table-row-odd: rgba(61, 169, 252, 0.05) !important;
   --bold-h1: #00aefb !important;
@@ -2612,7 +2613,6 @@ body.theme-dark {
   --callout-green: 46, 160, 67;
   --callout-red: 248, 81, 73;
   --callout-yellow: 210, 153, 34;
-  --code-bg: #1b1d1f !important;
   --list-1: #70c9fd !important;
   --list-2: #79ffbd !important;
   --list-3: #fd7afb !important;

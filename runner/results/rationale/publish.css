@@ -1462,11 +1462,11 @@ body.theme-light {
   --table-row-even-background: #f5f5f5 !important;
   --table-row-odd-background: #ffffff !important;
   --bold-color: var(--text-normal) !important;
+  --embed-background: rgba(0, 0, 0, 0.02) !important;
   --italic-color: var(--text-normal) !important;
   --code-number: #2980b9 !important;
   --button-background: #f0efe8 !important;
   --embed-border-left: 3px solid #555555 !important;
-  --embed-background: rgba(0, 0, 0, 0.02) !important;
   --button-color: #131314 !important;
   --font-heading: var(
     --font-headings,
@@ -1475,6 +1475,7 @@ body.theme-light {
     sans-serif
   ) !important;
   --transition-duration: 200ms !important;
+  --sidebar-bg: #f5f5f5 !important;
   --search-match-color: #1a1a1a !important;
   --sidebar-background: #f5f5f5 !important;
   --button-warning-bg: #444444 !important;
@@ -1484,7 +1485,6 @@ body.theme-light {
   --search-match-background: rgba(0, 0, 0, 0.15) !important;
   --search-match-background-current: rgba(0, 0, 0, 0.25) !important;
   --search-match-color-current: #1a1a1a !important;
-  --sidebar-bg: #f5f5f5 !important;
   --theme-accent: var(--custom-accent, #555555) !important;
 }
 
@@ -2563,11 +2563,11 @@ body.theme-dark {
   --table-row-even-background: #242424 !important;
   --table-row-odd-background: #1a1a1a !important;
   --bold-color: var(--text-normal) !important;
+  --embed-background: rgba(255, 255, 255, 0.02) !important;
   --italic-color: var(--text-normal) !important;
   --code-number: #61afef !important;
   --button-background: #2a2a2a !important;
   --embed-border-left: 3px solid #aaaaaa !important;
-  --embed-background: rgba(255, 255, 255, 0.02) !important;
   --button-color: #e0e0e0 !important;
   --font-heading: var(
     --font-headings,
@@ -2576,6 +2576,7 @@ body.theme-dark {
     sans-serif
   ) !important;
   --transition-duration: 200ms !important;
+  --sidebar-bg: #141414 !important;
   --search-match-color: #e0e0e0 !important;
   --sidebar-background: #1a1a1a !important;
   --button-warning-bg: #aaaaaa !important;
@@ -2585,7 +2586,6 @@ body.theme-dark {
   --search-match-background: rgba(255, 255, 255, 0.15) !important;
   --search-match-background-current: rgba(255, 255, 255, 0.25) !important;
   --search-match-color-current: #e0e0e0 !important;
-  --sidebar-bg: #141414 !important;
   --theme-accent: var(--custom-accent, #aaaaaa) !important;
 }
 

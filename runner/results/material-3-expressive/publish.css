@@ -1466,6 +1466,8 @@ body.theme-light {
     var(--shadow-edges) !important;
   --default-font:
     "Inter", Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
+  --shadow-m:
+    0px 1px 2px rgba(0, 0, 0, 0.15), 0px 2px 6px rgba(0, 0, 0, 0.1) !important;
   --primary: hsl(var(--accent-h), var(--accent-s), 45%) !important;
   --background: hsl(var(--accent-h), min(var(--accent-s), 20%), 99%) !important;
   --on-background: #1c1b1e !important;
@@ -1478,8 +1480,6 @@ body.theme-light {
   ) !important;
   --outline: hsl(var(--accent-h), min(var(--accent-s), 10%), 50%) !important;
   --primary-container: hsl(var(--accent-h), var(--accent-s), 90%) !important;
-  --shadow-m:
-    0px 1px 2px rgba(0, 0, 0, 0.15), 0px 2px 6px rgba(0, 0, 0, 0.1) !important;
   --surface: hsl(var(--accent-h), min(var(--accent-s), 20%), 96%) !important;
   --surface-variant: hsl(
     var(--accent-h),
@@ -2605,6 +2605,8 @@ body.theme-dark {
   --zoom-factor: 1 !important;
   --default-font:
     "Inter", Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
+  --shadow-m:
+    0px 1px 2px rgba(0, 0, 0, 0.6), 0px 2px 6px rgba(0, 0, 0, 0.3) !important;
   --primary: hsl(var(--accent-h), var(--accent-s), 75%) !important;
   --background: hsl(var(--accent-h), min(var(--accent-s), 10%), 10%) !important;
   --on-background: #e5e1e5 !important;
@@ -2617,8 +2619,6 @@ body.theme-dark {
   ) !important;
   --outline: hsl(var(--accent-h), min(var(--accent-s), 10%), 60%) !important;
   --primary-container: hsl(var(--accent-h), var(--accent-s), 30%) !important;
-  --shadow-m:
-    0px 1px 2px rgba(0, 0, 0, 0.6), 0px 2px 6px rgba(0, 0, 0, 0.3) !important;
   --surface: hsl(var(--accent-h), min(var(--accent-s), 10%), 14%) !important;
   --surface-variant: hsl(
     var(--accent-h),

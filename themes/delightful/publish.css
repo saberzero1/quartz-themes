@@ -1499,8 +1499,8 @@ body.theme-light {
   --h5-color: var(--text-secondary) !important;
   --h6-color: var(--text-muted) !important;
   --inline-title-color: var(--text-primary) !important;
-  --font-sans: "Inter", system-ui, -apple-system, sans-serif !important;
   --bold-color: var(--text-primary) !important;
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif !important;
   --text-primary: oklch(0.2 0.015 60) !important;
   --text-secondary: oklch(0.42 0.015 60) !important;
   --embed-border-left: 4px solid var(--accent-primary) !important;
@@ -2767,8 +2767,8 @@ body.theme-dark {
   --h5-color: var(--text-secondary) !important;
   --h6-color: var(--text-muted) !important;
   --inline-title-color: var(--text-primary) !important;
-  --font-sans: "Inter", system-ui, -apple-system, sans-serif !important;
   --bold-color: var(--text-primary) !important;
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif !important;
   --text-primary: oklch(0.935 0.008 70) !important;
   --text-secondary: oklch(0.69 0.012 70) !important;
   --embed-border-left: 4px solid var(--accent-primary) !important;

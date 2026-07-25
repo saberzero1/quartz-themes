@@ -1,0 +1,1737 @@
+/* =====================================================================
+   CLAUDE CODE ORANGE  —  an Obsidian theme
+   ---------------------------------------------------------------------
+   A faithful recreation of the look & feel of Claude Code in the Claude
+   mobile app: warm cream / charcoal backgrounds, the coral accent,
+   Styrene-style grotesque type, and a calm reading rhythm.
+
+   Fonts are free lookalikes for Claude's proprietary typefaces, loaded
+   from Google Fonts over the web (intentionally not self-hosted):
+     • Hanken Grotesk  ≈ Styrene B      (interface + body)
+     • Source Serif 4  ≈ Tiempos Text   (optional serif reading mode)
+     • JetBrains Mono  ≈ code typeface  (code blocks / inline code)
+   If you own the real fonts (Styrene B / Tiempos Text), they sit at the
+   front of every stack and will be used automatically.
+
+   Works in both Light and Dark. Supports the Style Settings plugin.
+   ===================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,300..800;1,300..800&family=Source+Serif+4:ital,opsz,wght@0,8..60,300..700;1,8..60,300..700&family=JetBrains+Mono:ital,wght@0,400..700;1,400..700&display=swap');
+
+/* ---------------------------------------------------------------------
+   STYLE SETTINGS  (https://github.com/mgmeyers/obsidian-style-settings)
+   --------------------------------------------------------------------- */
+/* @settings
+
+name: Claude Code Orange
+id: claude-code-theme
+settings:
+    -
+        id: cc-typography
+        title: Typography
+        type: heading
+        level: 1
+        collapsed: false
+    -
+        id: claude-serif-body
+        title: Serif reading mode
+        description: Use a Tiempos-style serif for note body text, like Claude's serif reading mode. Headings and the interface stay sans.
+        type: class-toggle
+        default: false
+    -
+        id: claude-serif-headings
+        title: Serif headings
+        description: Render headings in the serif as well (pairs nicely with serif reading mode).
+        type: class-toggle
+        default: false
+    -
+        id: cc-body-font-size
+        title: Body font size (px)
+        description: Base font size for note text.
+        type: variable-number-slider
+        default: 18
+        min: 13
+        max: 22
+        step: 1
+        format: px
+    -
+        id: cc-line-height
+        title: Line height
+        description: Body line height.
+        type: variable-number-slider
+        default: 1.7
+        min: 1.2
+        max: 2
+        step: 0.05
+    -
+        id: cc-line-width
+        title: Readable line length (rem)
+        description: Maximum width of note text when a line-length limit is active (Obsidian's "Readable line length" or the toggle below).
+        type: variable-number-slider
+        default: 42
+        min: 30
+        max: 60
+        step: 1
+        format: rem
+    -
+        id: cc-force-line-width
+        title: Limit line length
+        description: Keep note text at a readable width even when Obsidian's "Readable line length" setting is off.
+        type: class-toggle
+        default: false
+    -
+        id: cc-nav-font-size
+        title: File & folder name size (px)
+        description: Font size for names in the file explorer.
+        type: variable-number-slider
+        default: 16
+        min: 11
+        max: 20
+        step: 1
+        format: px
+    -
+        id: cc-folder-weight
+        title: Folder name weight
+        description: Weight of folder names in the file explorer.
+        type: variable-select
+        default: '700'
+        options:
+            -
+                label: Medium
+                value: '500'
+            -
+                label: Semibold
+                value: '600'
+            -
+                label: Bold
+                value: '700'
+    -
+        id: cc-file-weight
+        title: File name weight
+        description: Weight of file names in the file explorer.
+        type: variable-select
+        default: '500'
+        options:
+            -
+                label: Regular
+                value: '400'
+            -
+                label: Medium
+                value: '500'
+            -
+                label: Semibold
+                value: '600'
+    -
+        id: cc-color
+        title: Color
+        type: heading
+        level: 1
+        collapsed: false
+    -
+        id: cc-accent-light
+        title: Accent color (light mode)
+        description: The Claude coral. Drives links, active elements and highlights.
+        type: variable-color
+        format: hex
+        default: '#c15f3c'
+    -
+        id: cc-accent-dark
+        title: Accent color (dark mode)
+        description: The Claude coral for dark mode.
+        type: variable-color
+        format: hex
+        default: '#d97757'
+    -
+        id: cc-loud-code
+        title: Loud code blocks
+        description: On — code blocks use a blue frame so they stand out. Off — code blocks stay warm, in line with the Claude coral theme.
+        type: class-toggle
+        default: true
+    -
+        id: claude-mono-headings
+        title: Monospace headings
+        description: Give headings a terminal / code feel by setting them in the monospace font.
+        type: class-toggle
+        default: false
+    -
+        id: cc-light-tuning
+        title: Light mode tuning
+        type: heading
+        level: 1
+        collapsed: false
+    -
+        id: cc-light-text-depth
+        title: Text darkness (%)
+        description: Black mixed into light-mode body text. 0 = original warm ink, higher = darker and stronger.
+        type: variable-number-slider
+        default: 0
+        min: 0
+        max: 30
+        step: 1
+        format: '%'
+    -
+        id: cc-light-font-weight
+        title: Text weight
+        description: Light-mode body font weight. Needs a variable font — the bundled Hanken Grotesk and Source Serif 4 both are; static fonts round to the nearest weight.
+        type: variable-number-slider
+        default: 400
+        min: 380
+        max: 500
+        step: 5
+    -
+        id: cc-light-bg-depth
+        title: Background depth (%)
+        description: Black mixed into the light-mode backgrounds. 0 = default warm cream, higher = deeper paper. All light surfaces deepen together so their hierarchy is preserved.
+        type: variable-number-slider
+        default: 0
+        min: 0
+        max: 15
+        step: 1
+        format: '%'
+    -
+        id: cc-dark-tuning
+        title: Dark mode tuning
+        type: heading
+        level: 1
+        collapsed: false
+    -
+        id: cc-dark-text-bright
+        title: Text brightness (%)
+        description: White mixed into dark-mode body text. 0 = original warm off-white, higher = brighter.
+        type: variable-number-slider
+        default: 15
+        min: 0
+        max: 40
+        step: 1
+        format: '%'
+    -
+        id: cc-dark-font-weight
+        title: Text weight
+        description: Dark-mode body font weight. Needs a variable font — the bundled Hanken Grotesk and Source Serif 4 both are; static fonts round to the nearest weight.
+        type: variable-number-slider
+        default: 430
+        min: 380
+        max: 500
+        step: 5
+    -
+        id: cc-dark-bg-depth
+        title: Background darkness (%)
+        description: Black mixed into the dark-mode backgrounds. 0 = default warm charcoal, higher = deeper. Raises contrast without making the text glow.
+        type: variable-number-slider
+        default: 0
+        min: 0
+        max: 30
+        step: 1
+        format: '%'
+    -
+        id: cc-editor
+        title: Editor
+        type: heading
+        level: 1
+        collapsed: false
+    -
+        id: cc-active-line
+        title: Highlight active line
+        description: Add a very light tint behind the line your cursor is currently on in the editor.
+        type: class-toggle
+        default: true
+    -
+        id: cc-scroll-progress
+        title: Scroll progress bar
+        description: A thin coral bar across the top of the note (bottom of the screen on mobile) showing how far you've scrolled. Pure CSS — pairs with the Claude Scroll Map companion plugin for clickable heading dots.
+        type: class-toggle
+        default: true
+    -
+        id: cc-plugins
+        title: Plugins
+        type: heading
+        level: 1
+        collapsed: false
+    -
+        id: cc-sticky-in-header
+        title: Sticky headings in the title bar
+        description: With the "Another Sticky Headings" plugin, show the heading trail as a clickable breadcrumb in the note title bar (replacing the note title while you're scrolled into a section) instead of a block above the note. Desktop only — on mobile the plugin keeps its regular stacked view. No effect if the plugin isn't installed.
+        type: class-toggle
+        default: true
+*/
+
+/* =====================================================================
+   1. GLOBAL  —  fonts, radii, shared tokens
+   ===================================================================== */
+body {
+    /* --- Font stacks: real Claude fonts first, free lookalikes next --- */
+    --cc-font-sans: "Styrene B", "Styrene A", "Hanken Grotesk", "Schibsted Grotesk",
+        -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    --cc-font-serif: "Tiempos Text", "Tiempos", "Source Serif 4", "Source Serif Pro",
+        Charter, Georgia, "Times New Roman", serif;
+    --cc-font-mono: "Söhne Mono", "Berkeley Mono", "JetBrains Mono", "Fira Code",
+        ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+
+    --font-interface-theme: var(--cc-font-sans);
+    --font-text-theme: var(--cc-font-sans);
+    --font-monospace-theme: var(--cc-font-mono);
+
+    /* --- Sizing (Style-Settings driven) --- */
+    --cc-body-font-size: 18px;
+    /* 1.7 rather than the classic 1.5–1.6: full-width panes mean long lines,
+       and long lines need extra leading to track back to the next line. */
+    --cc-line-height: 1.7;
+    --cc-line-width: 42rem;
+    --font-text-size: var(--cc-body-font-size);
+    --line-height-normal: var(--cc-line-height);
+    --file-line-width: var(--cc-line-width);
+
+    /* Dark-mode tuning dials (Style Settings → Dark mode tuning). Declared
+       here on body so the plugin's body-level overrides win; only consumed
+       inside .theme-dark. Defaults reproduce the current dark palette. */
+    --cc-dark-text-bright: 15%;
+    --cc-dark-font-weight: 430;
+    --cc-dark-bg-depth: 0%;
+
+    /* Light-mode tuning dials (Style Settings → Light mode tuning). Same
+       pattern; only consumed inside .theme-light. Defaults reproduce the
+       classic cream palette exactly. */
+    --cc-light-text-depth: 0%;
+    --cc-light-font-weight: 400;
+    --cc-light-bg-depth: 0%;
+
+    /* Spacing — Obsidian's defaults (--p-spacing 1rem, --heading-spacing
+       ~2.4rem) cut by 50% */
+    --p-spacing: 0.5rem;
+    --heading-spacing: 1.2rem;
+
+    /* --- Shape: Claude uses generous, soft corners --- */
+    --radius-s: 6px;
+    --radius-m: 10px;
+    --cc-radius: 12px;
+
+    --bold-weight: 700;
+    /* --font-weight is set per scheme: .theme-light and .theme-dark each
+       bind it to their tuning dial (defaults 400 / 430). */
+
+    /* File explorer name weights + size (Style-Settings driven) */
+    --cc-folder-weight: 700;
+    --cc-file-weight: 500;
+    --cc-nav-font-size: 16px;
+    --h1-weight: 700;
+    --h2-weight: 700;
+    --h3-weight: 600;
+    --h4-weight: 600;
+    --h5-weight: 600;
+    --h6-weight: 600;
+}
+
+/* =====================================================================
+   2. LIGHT MODE  —  warm paper palette
+   ===================================================================== */
+.theme-light {
+    --cc-accent-light: #c15f3c;            /* Crail — brand coral for UI elements */
+    --cc-accent-bright: #d97757;           /* Claude coral */
+    --cc-accent: var(--cc-accent-light);   /* picker-driven base for all tints */
+    --cc-link-light: #b0532f;              /* darker coral for link TEXT only — 4.6:1 on cream (AA) */
+
+    /* Backgrounds: warm paper cream, deepened by the "Background depth"
+       dial (0% = the classic cream palette). All four move together so the
+       surface hierarchy is preserved. Muted/faint text and fixed companions
+       (form fields, scrollbar thumbs, code parchment) don't move with the
+       dial, which is why it caps at 15% — beyond that they drift apart. */
+    --cc-bg:        color-mix(in srgb, black var(--cc-light-bg-depth), #f9f3e7);   /* main note surface (warm paper) */
+    --cc-bg-alt:    color-mix(in srgb, black var(--cc-light-bg-depth), #f0e9da);   /* sidebars / secondary */
+    --cc-bg-deep:   color-mix(in srgb, black var(--cc-light-bg-depth), #e8dfcc);   /* code / inset surfaces */
+    --cc-bg-hover:  color-mix(in srgb, black var(--cc-light-bg-depth), #e7decb);
+
+    /* Body text: warm dark ink, deepened toward black by the "Text
+       darkness" dial (default 0% = #34322c). */
+    --cc-text:       color-mix(in srgb, black var(--cc-light-text-depth), #34322c);
+    --cc-text-muted: #6e6a5c;
+    --cc-text-faint: #9a9684;
+    --cc-heading:    #1a1915;               /* near-black warm heading */
+
+    /* Dial: "Text weight" (default 400 = unchanged). */
+    --font-weight: var(--cc-light-font-weight);
+    --cc-border:     #e6e3d8;
+    --cc-border-soft:#efece3;
+    --cc-selection:  color-mix(in srgb, var(--cc-accent) 18%, transparent);
+    --cc-active-line-bg: color-mix(in srgb, var(--cc-accent) 5%, transparent);
+
+    /* Scroll-map markers. Unread dots fade by opacity over the note bg; on
+       cream that washes them toward beige, so light mode holds more of the
+       coral than dark does. The unread track also needs a darker line than
+       the general border to stay visible on paper. */
+    --cc-dot-fade:    0.6;
+    --cc-track-color: #d9d3c4;
+
+    color-scheme: light;
+
+    --accent-h: 16;
+    --accent-s: 56%;
+    --accent-l: 50%;
+
+    --background-primary:        var(--cc-bg);
+    --background-primary-alt:     var(--cc-bg-alt);
+    --background-secondary:       var(--cc-bg-alt);
+    --background-secondary-alt:   var(--cc-bg-deep);
+    --background-modifier-hover:  var(--cc-bg-hover);
+    --background-modifier-active-hover: var(--cc-selection);
+    --background-modifier-border: var(--cc-border);
+    --background-modifier-border-hover: #dcd8cc;
+    --background-modifier-border-focus: var(--cc-accent-light);
+    --background-modifier-form-field: #fffdf7;
+
+    --text-normal:   var(--cc-text);
+    --text-muted:    var(--cc-text-muted);
+    --text-faint:    var(--cc-text-faint);
+    --text-on-accent: #fffaf5;
+    --text-accent:   var(--cc-link-light);   /* AA-safe link text; brand coral stays on UI elements */
+    --text-accent-hover: var(--cc-accent-bright);
+    --text-selection: var(--cc-selection);
+    --text-highlight-bg: color-mix(in srgb, var(--cc-accent) 22%, transparent);
+
+    --interactive-accent:        var(--cc-accent-light);
+    --interactive-accent-hover:  var(--cc-accent-bright);
+    --interactive-normal:        var(--cc-bg-alt);
+    --interactive-hover:         var(--cc-bg-hover);
+
+    --titlebar-background:        var(--cc-bg-alt);
+    --titlebar-background-focused:var(--cc-bg-alt);
+    --tab-background-active:      color-mix(in srgb, var(--cc-accent) 16%, var(--cc-bg));
+
+    --quote-opacity: 1;
+    --hr-color: var(--cc-border);
+    --tag-color: var(--cc-accent-light);
+    --tag-background: color-mix(in srgb, var(--cc-accent) 12%, transparent);
+    --tag-background-hover: color-mix(in srgb, var(--cc-accent) 20%, transparent);
+    --blockquote-border-color: var(--cc-accent-bright);
+    --blockquote-background-color: transparent;
+    --scrollbar-thumb-bg: rgba(52, 50, 44, 0.16);
+    --scrollbar-active-thumb-bg: rgba(52, 50, 44, 0.32);
+
+    /* Code frame — warm by default; "Loud code blocks" switches it to blue */
+    --cc-code-bg:     #f0e8d6;              /* warm parchment inset */
+    --cc-code-border: #e1d5bd;
+    --cc-code-text:   #5c4f3b;              /* warm code text */
+    --code-background: var(--cc-code-bg);
+    --code-normal: var(--cc-code-text);
+
+    --list-marker-color: var(--cc-accent-light);  /* orange bullets */
+    --cc-table-bg:     #f7f1e5;             /* table body — quiet warm */
+    --cc-table-header: #f1dcc4;             /* header — keeps the orange */
+    --cc-table-border: #e6dcc9;             /* soft, muted grid lines */
+
+    /* Graph view — coral nodes, clearly visible warm links */
+    --graph-line:             #c0ad93;
+    --graph-node:             #c15f3c;
+    --graph-node-focused:     #d97757;
+    --graph-node-tag:         #9a8f78;
+    --graph-node-attachment:  #b3a78e;
+    --graph-node-unresolved:  #bcb4a2;
+    --graph-text:             #34322c;
+
+    --bold-color: var(--cc-heading);
+    --italic-color: inherit;
+    --metadata-label-text-color: var(--cc-text-muted);
+}
+
+/* =====================================================================
+   3. DARK MODE  —  warm charcoal palette
+   ===================================================================== */
+.theme-dark {
+    --cc-accent-dark:   #d97757;            /* Claude coral */
+    --cc-accent-bright: #e8916f;            /* lifted coral for links on dark */
+    --cc-accent: var(--cc-accent-dark);    /* picker-driven base for all tints */
+
+    /* Backgrounds: warm charcoal, deepened by the "Background darkness"
+       dial (0% = the classic Claude palette). All four move together so
+       the surface hierarchy is preserved. */
+    --cc-bg:        color-mix(in srgb, black var(--cc-dark-bg-depth), #262624);   /* main note surface */
+    --cc-bg-alt:    color-mix(in srgb, black var(--cc-dark-bg-depth), #1f1e1d);   /* sidebars / secondary */
+    --cc-bg-deep:   color-mix(in srgb, black var(--cc-dark-bg-depth), #1a1917);   /* code / inset surfaces */
+    --cc-bg-hover:  color-mix(in srgb, black var(--cc-dark-bg-depth), #302f2c);
+
+    /* Body text: warm off-white base, lifted toward white by the "Text
+       brightness" dial (default 15% ≈ #eae8e0). */
+    --cc-text: color-mix(in srgb, white var(--cc-dark-text-bright), #e6e4dc);
+    --cc-text-muted: #a8a496;
+    --cc-text-faint: #767264;
+    --cc-heading:    #f6f4ee;               /* bright warm heading */
+
+    /* Light-on-dark reads thinner than dark-on-light; a variable-font nudge
+       past 400 compensates. Dial: "Text weight". */
+    --font-weight: var(--cc-dark-font-weight);
+    --cc-border:     #393833;
+    --cc-border-soft:#322f2a;
+    --cc-selection:  color-mix(in srgb, var(--cc-accent) 26%, transparent);
+    --cc-active-line-bg: color-mix(in srgb, var(--cc-accent) 8%, transparent);
+
+    /* Scroll-map markers: on the dark charcoal a 0.45 coral already reads as
+       a clear dim dot, and the general border works as the unread track. */
+    --cc-dot-fade:    0.45;
+    --cc-track-color: var(--cc-border);
+
+    color-scheme: dark;
+
+    --accent-h: 16;
+    --accent-s: 62%;
+    --accent-l: 59%;
+
+    --background-primary:        var(--cc-bg);
+    --background-primary-alt:     var(--cc-bg-alt);
+    --background-secondary:       var(--cc-bg-alt);
+    --background-secondary-alt:   var(--cc-bg-deep);
+    --background-modifier-hover:  var(--cc-bg-hover);
+    --background-modifier-active-hover: var(--cc-selection);
+    --background-modifier-border: var(--cc-border);
+    --background-modifier-border-hover: #4a4942;
+    --background-modifier-border-focus: var(--cc-accent-dark);
+    --background-modifier-form-field: #1c1b19;
+
+    --text-normal:   var(--cc-text);
+    --text-muted:    var(--cc-text-muted);
+    --text-faint:    var(--cc-text-faint);
+    --text-on-accent: #1a1915;
+    --text-accent:   var(--cc-accent-bright);
+    --text-accent-hover: #f2a587;
+    --text-selection: var(--cc-selection);
+    --text-highlight-bg: color-mix(in srgb, var(--cc-accent) 28%, transparent);
+
+    --interactive-accent:        var(--cc-accent-dark);
+    --interactive-accent-hover:  var(--cc-accent-bright);
+    --interactive-normal:        var(--cc-bg-alt);
+    --interactive-hover:         var(--cc-bg-hover);
+
+    --titlebar-background:        var(--cc-bg-alt);
+    --titlebar-background-focused:var(--cc-bg-alt);
+    --tab-background-active:      color-mix(in srgb, var(--cc-accent) 16%, var(--cc-bg));
+
+    --quote-opacity: 1;
+    --hr-color: var(--cc-border);
+    --tag-color: var(--cc-accent-bright);
+    --tag-background: color-mix(in srgb, var(--cc-accent) 16%, transparent);
+    --tag-background-hover: color-mix(in srgb, var(--cc-accent) 26%, transparent);
+    --blockquote-border-color: var(--cc-accent-dark);
+    --blockquote-background-color: transparent;
+    --scrollbar-thumb-bg: rgba(230, 228, 220, 0.16);
+    --scrollbar-active-thumb-bg: rgba(230, 228, 220, 0.3);
+
+    /* Code frame — warm by default; "Loud code blocks" switches it to blue */
+    --cc-code-bg:     #1f1b15;              /* warm dark inset */
+    --cc-code-border: #382f23;
+    --cc-code-text:   #d8cbb3;              /* warm code text */
+    --code-background: var(--cc-code-bg);
+    --code-normal: var(--cc-code-text);
+
+    --list-marker-color: var(--cc-accent-dark);   /* orange bullets */
+    --cc-table-bg:     #2b2824;             /* table body — quiet warm lift */
+    --cc-table-header: #3a3128;             /* header — clean warm (not muddy) */
+    --cc-table-border: #423a2f;             /* soft, muted grid lines */
+
+    /* Graph view — salmon nodes, clearly visible links on charcoal */
+    --graph-line:             #5f594f;
+    --graph-node:             #e8916f;
+    --graph-node-focused:     #f0a487;
+    --graph-node-tag:         #8a8174;
+    --graph-node-attachment:  #6f685d;
+    --graph-node-unresolved:  #6e685d;
+    --graph-text:             #e6e4dc;
+
+    --bold-color: var(--cc-heading);
+    --italic-color: inherit;
+    --metadata-label-text-color: var(--cc-text-muted);
+}
+
+/* =====================================================================
+   4. TYPOGRAPHY  —  headings, body, bold, italics, links
+   ===================================================================== */
+
+/* Headings: tight, confident, like Claude's response titles */
+.markdown-rendered h1, .markdown-rendered h2, .markdown-rendered h3,
+.markdown-rendered h4, .markdown-rendered h5, .markdown-rendered h6,
+.cm-header, .inline-title,
+.HyperMD-header {
+    font-family: var(--cc-font-sans);
+    letter-spacing: -0.018em;
+    color: var(--cc-heading);
+}
+
+.inline-title { font-weight: 700; letter-spacing: -0.02em; }
+
+:is(.markdown-rendered, .markdown-source-view) h1,
+.HyperMD-header-1 { --h1-size: 1.9em;  line-height: 1.2; }
+:is(.markdown-rendered, .markdown-source-view) h2,
+.HyperMD-header-2 { --h2-size: 1.5em;  line-height: 1.25; }
+:is(.markdown-rendered, .markdown-source-view) h3,
+.HyperMD-header-3 { --h3-size: 1.25em; line-height: 1.3; }
+:is(.markdown-rendered, .markdown-source-view) h4,
+.HyperMD-header-4 { --h4-size: 1.08em; }
+:is(.markdown-rendered, .markdown-source-view) h5,
+.HyperMD-header-5 { --h5-size: 0.95em; text-transform: uppercase; letter-spacing: 0.06em; color: var(--cc-text-muted); }
+:is(.markdown-rendered, .markdown-source-view) h6,
+.HyperMD-header-6 { --h6-size: 0.88em; text-transform: uppercase; letter-spacing: 0.06em; color: var(--cc-text-faint); }
+
+/* The # markers stay quietly out of the way */
+.HyperMD-header .cm-formatting-header,
+.markdown-rendered .heading-collapse-indicator { color: var(--cc-text-faint); }
+
+/* Active line — a very light tint behind the row the cursor is on.
+   Toggle: Style Settings → Claude Code Orange → Editor → Highlight active line. */
+body.cc-active-line .markdown-source-view.mod-cm6 .cm-active.cm-line,
+body.cc-active-line .markdown-source-view.mod-cm6 .cm-active.cm-gutterElement {
+    background-color: var(--cc-active-line-bg);
+    border-radius: var(--radius-s);
+}
+
+/* Body rhythm */
+.markdown-preview-view, .markdown-source-view {
+    font-family: var(--cc-font-sans);
+    text-rendering: optimizeLegibility;
+}
+/* Grayscale antialiasing thins light-on-dark strokes on macOS, so it stays
+   light-mode only; dark mode keeps the heavier default rendering. */
+.theme-light .markdown-preview-view,
+.theme-light .markdown-source-view {
+    -webkit-font-smoothing: antialiased;
+}
+.markdown-rendered p { line-height: var(--cc-line-height); }
+
+/* Opt-in width cap independent of Obsidian's "Readable line length" setting.
+   Toggle: Style Settings → Typography → Limit line length. */
+body.cc-force-line-width .markdown-source-view.mod-cm6 .cm-sizer,
+body.cc-force-line-width .markdown-preview-view .markdown-preview-sizer {
+    max-width: var(--file-line-width);
+    margin-inline: auto;
+}
+
+/* Bold — Claude leans on weight + a touch more color contrast */
+.markdown-rendered strong, .cm-strong {
+    font-weight: var(--bold-weight);
+    color: var(--bold-color);
+}
+
+/* Italics keep the body color, just slanted */
+.markdown-rendered em, .cm-em { font-style: italic; color: var(--italic-color); }
+
+/* Strikethrough — de-emphasised: muted text with a soft line through */
+.markdown-rendered del, .markdown-rendered s,
+.cm-s-obsidian .cm-strikethrough {
+    color: var(--cc-text-muted);
+    text-decoration-line: line-through;
+    text-decoration-color: var(--cc-text-faint);
+    text-decoration-thickness: 1px;
+}
+
+/* Highlight (==text==) — coral-tinted mark, body text on top */
+.markdown-rendered mark {
+    background-color: var(--text-highlight-bg);
+    color: var(--cc-text);
+    border-radius: 3px;
+    padding: 0.05em 0.18em;
+}
+.cm-s-obsidian .cm-highlight {
+    background-color: var(--text-highlight-bg);
+    color: var(--cc-text);
+}
+
+/* Link decoration is driven through Obsidian's own variables so nothing can
+   silently re-underline: internal/page links never underline; external do. */
+body {
+    --link-decoration: none;
+    --link-decoration-hover: none;
+    --link-external-decoration: underline;
+    --link-external-decoration-hover: underline;
+}
+
+/* All links use the Claude coral */
+.markdown-rendered a,
+.cm-link, .cm-url {
+    color: var(--text-accent);
+    transition: color 120ms ease, text-decoration-color 120ms ease;
+}
+.markdown-rendered a:hover,
+.cm-link:hover, .cm-url:hover {
+    color: var(--text-accent-hover);
+    text-decoration-color: var(--text-accent-hover);
+}
+
+/* External links: underlined in coral with a soft offset */
+.markdown-rendered a.external-link,
+.cm-link, .cm-url {
+    text-decoration-line: underline;
+    text-decoration-color: color-mix(in srgb, var(--cc-accent) 45%, transparent);
+    text-underline-offset: 0.18em;
+    text-decoration-thickness: 1px;
+}
+a.external-link { background-image: none; padding-right: 0; }
+
+/* Internal / page links: bold + orange, never underlined (reading + edit) */
+a.internal-link,
+a.internal-link.is-unresolved,
+.markdown-rendered a.internal-link,
+.markdown-preview-view a.internal-link,
+.cm-hmd-internal-link,
+.cm-s-obsidian .cm-hmd-internal-link {
+    font-weight: 700 !important;
+    color: var(--text-accent) !important;
+    text-decoration: none !important;
+}
+/* The span Obsidian uses to draw the internal-link underline in live preview */
+.cm-s-obsidian .cm-underline,
+.markdown-rendered a.internal-link .cm-underline {
+    text-decoration: none !important;
+}
+a.internal-link:hover,
+.markdown-rendered a.internal-link:hover,
+.cm-hmd-internal-link:hover {
+    color: var(--text-accent-hover) !important;
+    text-decoration: none !important;
+}
+
+/* =====================================================================
+   5. SERIF READING MODE  (Style Settings toggles)
+   ===================================================================== */
+body.claude-serif-body {
+    --font-text-theme: var(--cc-font-serif);
+}
+body.claude-serif-body .markdown-preview-view,
+body.claude-serif-body .markdown-source-view {
+    font-family: var(--cc-font-serif);
+    --cc-line-height: 1.7;
+}
+body.claude-serif-headings :is(.markdown-rendered h1, .markdown-rendered h2,
+    .markdown-rendered h3, .markdown-rendered h4, .markdown-rendered h5,
+    .markdown-rendered h6, .cm-header, .inline-title) {
+    font-family: var(--cc-font-serif);
+    letter-spacing: -0.01em;
+}
+body.claude-mono-headings :is(.markdown-rendered h1, .markdown-rendered h2,
+    .markdown-rendered h3, .markdown-rendered h4, .markdown-rendered h5,
+    .markdown-rendered h6, .cm-header, .inline-title) {
+    font-family: var(--cc-font-mono);
+    letter-spacing: -0.02em;
+}
+
+/* =====================================================================
+   6. CODE  —  the heart of Claude Code
+   ===================================================================== */
+
+/* "Loud code blocks" (Style Settings, on by default): blue frame + text so
+   code stands out. Off → the warm defaults above, in line with the theme. */
+body.cc-loud-code.theme-light {
+    --cc-code-bg:     #eaf1fd;              /* light blue */
+    --cc-code-border: #cadcf3;
+    --cc-code-text:   #11589f;              /* deep azure */
+}
+body.cc-loud-code.theme-dark {
+    --cc-code-bg:     #182234;              /* deep blue */
+    --cc-code-border: #2b3c59;
+    --cc-code-text:   #7db7ff;              /* sky blue */
+}
+
+/* Inline code: pill in the same family as code blocks (consistent) */
+.markdown-rendered code,
+:not(pre) > code {
+    font-family: var(--cc-font-mono);
+    font-size: 0.86em;
+    background-color: var(--cc-code-bg);
+    color: var(--cc-code-text);
+    border: 1px solid var(--cc-code-border);
+    border-radius: var(--radius-s);
+    padding: 0.12em 0.38em;
+}
+/* Live Preview inline code is a `.cm-inline-code` span, not a <code> element —
+   give it the same face and colors. No border or horizontal padding: the text
+   can split across several spans (backticks, cursor edits), and per-span
+   borders/padding would draw seams mid-pill. */
+.cm-s-obsidian span.cm-inline-code {
+    font-family: var(--cc-font-mono);
+    font-size: 0.86em;
+    background-color: var(--cc-code-bg);
+    color: var(--cc-code-text);
+    border-radius: var(--radius-s);
+}
+
+/* Code blocks: framed card with soft corners */
+.markdown-rendered pre,
+.cm-s-obsidian .HyperMD-codeblock {
+    font-family: var(--cc-font-mono);
+}
+.markdown-rendered pre {
+    position: relative;
+    background-color: var(--cc-code-bg);
+    border: 1px solid var(--cc-code-border);
+    border-radius: var(--cc-radius);
+    padding: 2.5em 1.1em 1em;
+    font-size: 0.85em;
+    line-height: 1.55;
+}
+.markdown-rendered pre > code {
+    background: none;
+    border: none;
+    padding: 0;
+    color: var(--cc-code-text);
+}
+/* Plain (un-highlighted) code text in live preview also reads blue */
+.cm-s-obsidian .HyperMD-codeblock { color: var(--cc-code-text); }
+
+/* Live-preview code block frame */
+.markdown-source-view.mod-cm6 .HyperMD-codeblock-bg {
+    background-color: var(--cc-code-bg);
+}
+.markdown-source-view.mod-cm6 .HyperMD-codeblock {
+    border-left: 1px solid var(--cc-code-border);
+    border-right: 1px solid var(--cc-code-border);
+}
+.markdown-source-view.mod-cm6 .HyperMD-codeblock-begin-bg {
+    border-radius: var(--cc-radius) var(--cc-radius) 0 0;
+    border-top: 1px solid var(--cc-code-border);
+}
+.markdown-source-view.mod-cm6 .HyperMD-codeblock-end-bg {
+    border-radius: 0 0 var(--cc-radius) var(--cc-radius);
+    border-bottom: 1px solid var(--cc-code-border);
+}
+
+/* Code block header — language label (top-left) + copy button (top-right).
+   Applies to every code block so the copy button never overlaps the code. */
+.markdown-rendered pre::before {
+    content: "code";
+    position: absolute;
+    top: 0.7em;
+    left: 1.1em;
+    font-family: var(--cc-font-mono);
+    font-size: 0.72em;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--cc-text-faint);
+}
+.markdown-rendered pre::after {
+    content: "";
+    position: absolute;
+    top: 2.2em; left: 1.1em; right: 1.1em;
+    border-top: 1px solid var(--cc-code-border);
+}
+/* Common language labels */
+.markdown-rendered pre.language-javascript::before, .markdown-rendered pre.language-js::before { content: "javascript"; }
+.markdown-rendered pre.language-typescript::before, .markdown-rendered pre.language-ts::before { content: "typescript"; }
+.markdown-rendered pre.language-jsx::before { content: "jsx"; }
+.markdown-rendered pre.language-tsx::before { content: "tsx"; }
+.markdown-rendered pre.language-python::before, .markdown-rendered pre.language-py::before { content: "python"; }
+.markdown-rendered pre.language-bash::before, .markdown-rendered pre.language-sh::before, .markdown-rendered pre.language-shell::before, .markdown-rendered pre.language-zsh::before { content: "shell"; }
+.markdown-rendered pre.language-json::before { content: "json"; }
+.markdown-rendered pre.language-yaml::before, .markdown-rendered pre.language-yml::before { content: "yaml"; }
+.markdown-rendered pre.language-toml::before { content: "toml"; }
+.markdown-rendered pre.language-html::before, .markdown-rendered pre.language-xml::before { content: "html"; }
+.markdown-rendered pre.language-css::before, .markdown-rendered pre.language-scss::before { content: "css"; }
+.markdown-rendered pre.language-java::before { content: "java"; }
+.markdown-rendered pre.language-c::before { content: "c"; }
+.markdown-rendered pre.language-cpp::before { content: "c++"; }
+.markdown-rendered pre.language-csharp::before, .markdown-rendered pre.language-cs::before { content: "c#"; }
+.markdown-rendered pre.language-go::before { content: "go"; }
+.markdown-rendered pre.language-rust::before, .markdown-rendered pre.language-rs::before { content: "rust"; }
+.markdown-rendered pre.language-ruby::before, .markdown-rendered pre.language-rb::before { content: "ruby"; }
+.markdown-rendered pre.language-php::before { content: "php"; }
+.markdown-rendered pre.language-sql::before { content: "sql"; }
+.markdown-rendered pre.language-markdown::before, .markdown-rendered pre.language-md::before { content: "markdown"; }
+.markdown-rendered pre.language-dockerfile::before { content: "dockerfile"; }
+.markdown-rendered pre.language-kotlin::before { content: "kotlin"; }
+.markdown-rendered pre.language-swift::before { content: "swift"; }
+.markdown-rendered pre.language-diff::before { content: "diff"; }
+.markdown-rendered pre.language-ini::before { content: "ini"; }
+.markdown-rendered pre.language-lua::before { content: "lua"; }
+.markdown-rendered pre.language-powershell::before, .markdown-rendered pre.language-ps1::before { content: "powershell"; }
+.markdown-rendered pre.language-text::before, .markdown-rendered pre.language-plaintext::before, .markdown-rendered pre.language-txt::before { content: "text"; }
+
+.markdown-rendered button.copy-code-button {
+    top: 0.5em;
+    right: 0.6em;
+    color: var(--cc-text-muted);
+    background-color: var(--cc-bg-alt);
+    border: 1px solid var(--cc-code-border);
+    border-radius: var(--radius-s);
+    padding: 0.2em 0.55em;
+    font-size: 0.74em;
+    opacity: 0;
+    transition: opacity 120ms ease, color 120ms ease;
+}
+.markdown-rendered pre:hover button.copy-code-button,
+.markdown-rendered button.copy-code-button:focus-visible { opacity: 1; }
+.markdown-rendered button.copy-code-button:hover { color: var(--text-accent); border-color: var(--text-accent); }
+/* Touch screens have no hover — keep the copy button always visible there */
+@media (hover: none) {
+    .markdown-rendered button.copy-code-button { opacity: 1; }
+}
+
+/* Syntax highlighting — a restrained, Claude-warm palette */
+.theme-light {
+    --code-comment:  #9a9684;
+    --code-keyword:  #b0532f;
+    --code-function: #2f6f6a;
+    --code-string:   #5c7a3f;
+    --code-property: #8a5a2b;
+    --code-value:    #355f8a;
+    --code-operator: #6e6a5c;
+    --code-tag:      #b0532f;
+    --code-important: #c15f3c;
+}
+.theme-dark {
+    --code-comment:  #767264;
+    --code-keyword:  #e8916f;
+    --code-function: #7fc4bd;
+    --code-string:   #a7c98a;
+    --code-property: #e0b483;
+    --code-value:    #8fb6e0;
+    --code-operator: #a8a496;
+    --code-tag:      #e8916f;
+    --code-important: #e8a587;
+}
+.token.comment, .token.prolog, .token.doctype, .token.cdata { color: var(--code-comment); font-style: italic; }
+.token.keyword, .token.atrule, .token.rule { color: var(--code-keyword); }
+.token.function, .token.class-name { color: var(--code-function); }
+.token.string, .token.char, .token.attr-value { color: var(--code-string); }
+.token.property, .token.attr-name, .token.symbol { color: var(--code-property); }
+.token.number, .token.boolean, .token.constant, .token.builtin { color: var(--code-value); }
+.token.operator, .token.punctuation, .token.entity { color: var(--code-operator); }
+.token.tag, .token.selector { color: var(--code-tag); }
+.token.important, .token.bold { color: var(--code-important); font-weight: 700; }
+
+/* CodeMirror live-preview tokens follow suit */
+.cm-s-obsidian span.cm-comment { color: var(--code-comment); font-style: italic; }
+.cm-s-obsidian span.cm-keyword { color: var(--code-keyword); }
+.cm-s-obsidian span.cm-def, .cm-s-obsidian span.cm-property { color: var(--code-function); }
+.cm-s-obsidian span.cm-string, .cm-s-obsidian span.cm-string-2 { color: var(--code-string); }
+.cm-s-obsidian span.cm-number, .cm-s-obsidian span.cm-atom { color: var(--code-value); }
+.cm-s-obsidian span.cm-operator { color: var(--code-operator); }
+.cm-s-obsidian span.cm-tag { color: var(--code-tag); }
+
+/* =====================================================================
+   7. BLOCKQUOTES & CALLOUTS
+   ===================================================================== */
+.markdown-rendered blockquote {
+    border-left: 3px solid var(--blockquote-border-color);
+    border-radius: 0 var(--radius-s) var(--radius-s) 0;
+    background-color: color-mix(in srgb, var(--cc-accent) 6%, transparent);
+    padding: 0.5em 1em;
+    color: var(--cc-text-muted);
+    font-style: normal;
+}
+
+/* Callouts — soft warm cards, tinted and titled by their type color */
+.callout {
+    --callout-radius: var(--cc-radius);
+    border-radius: var(--cc-radius);
+    border: 1px solid rgba(var(--callout-color), 0.28);
+    background-color: rgba(var(--callout-color), 0.07);
+    mix-blend-mode: normal;
+    padding: 4px 10px;
+    margin: 1em 0;
+}
+.callout-title {
+    padding: 0.5em 0.4em;
+    font-weight: 700;
+    gap: 0.5em;
+    color: rgb(var(--callout-color));
+}
+.callout-icon .svg-icon { color: rgb(var(--callout-color)); }
+.callout-content { padding: 0 0.4em 0.3em; color: var(--text-normal); }
+/* Callout type colors. Two sets: titles sit directly on the note background,
+   so light mode wants deep shades (readable on cream) and dark mode wants
+   lifted ones (readable on charcoal) — one shared set fails contrast on one
+   side or the other. All pairs reach ~4:1+ on their surface. */
+.callout { --callout-color: 110, 106, 92; }       /* default (quote/abstract/etc.) */
+.callout[data-callout="note"], .callout[data-callout="info"] { --callout-color: 193, 95, 60; }
+.callout[data-callout="tip"],  .callout[data-callout="success"], .callout[data-callout="done"] { --callout-color: 92, 122, 63; }
+.callout[data-callout="warning"], .callout[data-callout="caution"], .callout[data-callout="attention"] { --callout-color: 166, 106, 20; }
+.callout[data-callout="danger"], .callout[data-callout="error"], .callout[data-callout="bug"], .callout[data-callout="failure"] { --callout-color: 178, 56, 44; }
+.callout[data-callout="question"], .callout[data-callout="help"], .callout[data-callout="faq"] { --callout-color: 154, 110, 60; }
+.callout[data-callout="example"] { --callout-color: 120, 100, 150; }
+
+.theme-dark .callout { --callout-color: 168, 164, 150; }
+.theme-dark .callout[data-callout="note"], .theme-dark .callout[data-callout="info"] { --callout-color: 232, 145, 111; }
+.theme-dark .callout[data-callout="tip"], .theme-dark .callout[data-callout="success"], .theme-dark .callout[data-callout="done"] { --callout-color: 143, 182, 107; }
+.theme-dark .callout[data-callout="warning"], .theme-dark .callout[data-callout="caution"], .theme-dark .callout[data-callout="attention"] { --callout-color: 224, 169, 90; }
+.theme-dark .callout[data-callout="danger"], .theme-dark .callout[data-callout="error"], .theme-dark .callout[data-callout="bug"], .theme-dark .callout[data-callout="failure"] { --callout-color: 230, 116, 94; }
+.theme-dark .callout[data-callout="question"], .theme-dark .callout[data-callout="help"], .theme-dark .callout[data-callout="faq"] { --callout-color: 212, 169, 122; }
+.theme-dark .callout[data-callout="example"] { --callout-color: 178, 158, 208; }
+
+/* =====================================================================
+   8. LISTS, TASKS, TABLES, HR, TAGS
+   ===================================================================== */
+
+/* Task checkboxes — coral box with a white tick when done.
+   Driven through Obsidian's own checkbox variables rather than a custom
+   appearance reset + ::after tick. Obsidian draws the check (colored by
+   --checkbox-marker-color) on the same code path it uses on mobile, so the
+   white tick actually shows there instead of the native dark glyph. These
+   variables also style completed-task text in both reading view and Live
+   Preview, so no separate strikethrough rules are needed. */
+body {
+    --checkbox-size: 1.5em;
+    --checkbox-radius: 0.4em;
+    --checkbox-marker-color: #ffffff;
+    --checkbox-color: var(--interactive-accent);
+    --checkbox-color-hover: var(--interactive-accent);
+    --checkbox-border-color: var(--cc-text-faint);
+    --checkbox-border-color-hover: var(--text-accent);
+    --checklist-done-color: var(--cc-text-faint);
+    --checklist-done-decoration: line-through;
+}
+
+/* In-progress task `- [/]` — a half-filled coral box, no tick.
+   The diagonal fill echoes the slash you type and reads instantly as
+   "started, not finished": clearly distinct from the empty box and from
+   the ticked done box, while staying in the coral family. Drawn with an
+   explicit appearance reset (prefixed + unprefixed) so the custom fill
+   shows on mobile too, where Obsidian otherwise falls back to a native
+   glyph. Custom data-task states aren't "done", so the text stays normal. */
+.markdown-rendered input.task-list-item-checkbox[data-task="/"],
+.markdown-source-view.mod-cm6 input.task-list-item-checkbox[data-task="/"] {
+    -webkit-appearance: none;
+    appearance: none;
+    border: 1.5px solid var(--interactive-accent);
+    background-color: var(--background-primary);
+    background-image: linear-gradient(135deg,
+        var(--interactive-accent) 0 50%,
+        transparent 50%);
+}
+/* Suppress Obsidian's native tick for the in-progress state */
+.markdown-rendered input.task-list-item-checkbox[data-task="/"]::after,
+.markdown-source-view.mod-cm6 input.task-list-item-checkbox[data-task="/"]::after {
+    display: none;
+}
+
+/* Cancelled task `- [-]` — muted box with a centered dash and struck-through,
+   faded text. Deliberately greyscale (no coral) so it reads as "dropped",
+   never as "done". Obsidian only strikes x/X items, so the text styling here
+   is applied by hand. */
+.markdown-rendered input.task-list-item-checkbox[data-task="-"],
+.markdown-source-view.mod-cm6 input.task-list-item-checkbox[data-task="-"] {
+    -webkit-appearance: none;
+    appearance: none;
+    border: 1.5px solid var(--cc-text-faint);
+    background-color: var(--background-primary);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 55% 100%;
+    background-image: linear-gradient(to bottom,
+        transparent 0 44%,
+        var(--cc-text-muted) 44% 56%,
+        transparent 56%);
+}
+.markdown-rendered input.task-list-item-checkbox[data-task="-"]::after,
+.markdown-source-view.mod-cm6 input.task-list-item-checkbox[data-task="-"]::after {
+    display: none;
+}
+.markdown-rendered .task-list-item[data-task="-"],
+.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="-"] {
+    color: var(--cc-text-faint);
+    text-decoration: line-through;
+}
+
+/* Forwarded / scheduled task `- [>]` — a coral right-chevron in a coral box.
+   Text stays normal: the task isn't finished, just deferred to another day.
+   The chevron is drawn as a masked ::after (same technique as the H1
+   starburst and Obsidian's own tick — which stock also masks on mobile,
+   so parity holds there) and colored by --interactive-accent, so the
+   Style Settings accent pickers recolor it. One glyph for both schemes;
+   the SVG's own color is irrelevant (masks read only alpha). The rule
+   declares the full geometry itself (including the positioning context)
+   so it renders even where the stock :checked::after rule doesn't apply,
+   while deliberately mirroring the stock tick's metrics — re-verify here
+   if a checkbox looks off after an Obsidian update. */
+.markdown-rendered input.task-list-item-checkbox[data-task=">"],
+.markdown-source-view.mod-cm6 input.task-list-item-checkbox[data-task=">"] {
+    -webkit-appearance: none;
+    appearance: none;
+    position: relative;   /* anchor for the ::after glyph; matches stock */
+    border: 1.5px solid var(--interactive-accent);
+    background-color: var(--background-primary);
+}
+.markdown-rendered input.task-list-item-checkbox[data-task=">"]::after,
+.markdown-source-view.mod-cm6 input.task-list-item-checkbox[data-task=">"]::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -1px;
+    inset-inline-start: -1px;
+    width: var(--checkbox-size);
+    height: var(--checkbox-size);
+    background-color: var(--interactive-accent);
+    /* Both prefixed + unprefixed shorthands: old engines only honor
+       -webkit-mask; where both parse, the later unprefixed one wins. */
+    -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='9 5 16 12 9 19'/%3E%3C/svg%3E") center / 60% no-repeat;
+    mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='9 5 16 12 9 19'/%3E%3C/svg%3E") center / 60% no-repeat;
+}
+
+/* List bullets: orange marker, normal-colored text */
+.markdown-rendered ul > li::marker { color: var(--interactive-accent); }
+.markdown-rendered ol > li::marker { color: var(--cc-text-muted); }
+/* Live-preview bullets */
+.markdown-source-view.mod-cm6 .cm-formatting-list-ul,
+.markdown-source-view.mod-cm6 .HyperMD-list-line .list-bullet::after {
+    color: var(--interactive-accent);
+}
+.markdown-source-view.mod-cm6 .list-bullet { color: var(--interactive-accent); }
+
+/* Tables — light-orange body, more-orange header, visible orange grid lines.
+   border-collapse stays `separate`: Chromium ignores border-radius on
+   collapsed tables, which squares off the card corners. Grid lines are drawn
+   as right/bottom borders per cell (dropped on the last column/row) so they
+   still read as single 1px lines against the table's own outer border. */
+
+/* Live Preview tables — color parity via Obsidian's own table variables;
+   no layout/selector overrides (stability). Verified against Obsidian
+   1.12.7: the LP table widget (.cm-embed-block.cm-table-widget) carries
+   .markdown-rendered, so every class rule below already applies to it.
+   The one gap is the stock `thead tr > th` rule, which outranks
+   `.markdown-rendered th` and paints header borders with
+   --table-header-border-color — in BOTH views. Mapping the stock
+   variables to the theme's table tokens closes it everywhere. */
+body {
+    --table-border-color: var(--cc-table-border);
+    --table-header-border-color: var(--cc-table-border);
+    --table-add-button-border-color: var(--cc-table-border);
+}
+
+.markdown-rendered table {
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 100%;
+    background-color: var(--cc-table-bg);
+    border: 1px solid var(--cc-table-border);
+    border-radius: var(--cc-radius);
+    overflow: hidden;
+}
+.markdown-rendered thead tr,
+.markdown-rendered th {
+    background-color: var(--cc-table-header);
+}
+.markdown-rendered th,
+.markdown-rendered td {
+    border: none;
+    border-right: 1px solid var(--cc-table-border);
+    border-bottom: 1px solid var(--cc-table-border);
+    padding: 0.55em 0.85em;
+}
+.markdown-rendered th:last-child,
+.markdown-rendered td:last-child { border-right: none; }
+.markdown-rendered tbody tr:last-child > td { border-bottom: none; }
+.markdown-rendered th {
+    color: var(--cc-heading);
+    font-weight: 700;
+    text-align: left;
+    border-bottom-width: 2px;
+}
+.markdown-rendered td {
+    background: transparent;
+    vertical-align: top;
+}
+.markdown-rendered tbody tr:hover td { background-color: color-mix(in srgb, var(--cc-accent) 5%, transparent); }
+
+/* Horizontal rule — slim and soft */
+.markdown-rendered hr {
+    border: none;
+    border-top: 1px solid var(--hr-color);
+    margin: 2em 0;
+}
+
+/* Tags — coral pills.
+   In Live Preview a tag is split into two spans (a `#` span + the text span),
+   so giving each a full rounded pill drew them as two capsules with a gap.
+   Keep the shared fill, but below we round only the OUTER corners and drop the
+   inner padding so `#tag` reads as one seamless pill. Reading view (`a.tag`)
+   is already a single element. */
+.markdown-rendered a.tag,
+.cm-s-obsidian .cm-hashtag {
+    color: var(--tag-color);
+    background-color: var(--tag-background);
+    border: none;
+    border-radius: 999px;
+    padding: 0.1em 0.6em;
+    font-size: 0.82em;
+    font-weight: 500;
+    text-decoration: none;
+}
+.markdown-rendered a.tag:hover { background-color: var(--tag-background-hover); }
+/* Live Preview: weld the split #/text spans into a single continuous pill */
+.cm-s-obsidian .cm-hashtag-begin {
+    border-radius: 999px 0 0 999px;
+    padding-right: 0;
+}
+.cm-s-obsidian .cm-hashtag-end {
+    border-radius: 0 999px 999px 0;
+    padding-left: 0;
+}
+
+/* =====================================================================
+   9. CHROME  —  sidebar, tabs, titlebar, inputs, scrollbars
+   ===================================================================== */
+/* Tabs — idle tabs sit muted; the active tab gets a soft coral-tinted fill,
+   set through Obsidian's own --tab-background-active variable (in the palette
+   blocks above). A background fills the whole tab regardless of its internal
+   structure, so it's robust where a wrapper underline kept missing the close-
+   button area. Plus bold, heading-colored text; inactive tabs brighten on
+   hover. */
+body { --tab-text-color: var(--cc-text-muted); }
+.workspace-tab-header:hover { --tab-text-color: var(--cc-text); }
+.workspace-tab-header.is-active {
+    --tab-text-color-focused-active: var(--cc-heading);
+}
+.workspace-tab-header.is-active .workspace-tab-header-inner-title { font-weight: 600; }
+
+/* File explorer hierarchy: bold folders, medium files (same font + size) */
+.workspace-leaf-content[data-type="file-explorer"] .nav-folder-title-content,
+.workspace-leaf-content[data-type="file-explorer"] .nav-file-title-content {
+    font-size: var(--cc-nav-font-size);
+}
+.workspace-leaf-content[data-type="file-explorer"] .nav-folder-title-content {
+    font-weight: var(--cc-folder-weight);
+    color: var(--cc-heading);
+}
+.workspace-leaf-content[data-type="file-explorer"] .nav-file-title-content {
+    font-weight: var(--cc-file-weight);
+}
+
+/* Active file/folder in the explorer: compact rounded rectangle with a
+   flush, full-height coral spine (matches the spine's height, not a tall pill) */
+.tree-item-self { position: relative; --nav-item-border-radius: 6px; }
+.nav-file-title.is-active,
+.nav-folder-title.is-active,
+.tree-item-self.is-active,
+.tree-item-self.is-active.has-focus,
+.tree-item-self.has-focus {
+    background-color: var(--cc-selection);
+    color: var(--cc-heading);
+    border-radius: 6px;
+}
+.tree-item-self.is-active::before {
+    content: "";
+    position: absolute;
+    left: 0; top: 0; bottom: 0;
+    width: 3px;
+    border-radius: 6px 0 0 6px;
+    background-color: var(--interactive-accent);
+}
+
+/* Inputs / search */
+input[type="text"], input[type="search"], textarea, .prompt-input {
+    border-radius: var(--radius-m) !important;
+    background-color: var(--background-modifier-form-field);
+    border: 1px solid var(--cc-border);
+}
+input[type="text"]:focus, input[type="search"]:focus, textarea:focus {
+    border-color: var(--interactive-accent);
+    box-shadow: 0 0 0 2px var(--cc-selection);
+}
+
+/* Properties / frontmatter — sit flat on the page, no out-of-place boxes.
+   (Overrides the global input styling above for metadata fields.) */
+.metadata-container {
+    background: transparent;
+    border: none;
+    padding: 0.4em 0;
+}
+.metadata-properties-heading { border: none; padding-left: 0; }
+.metadata-content { padding: 0; }
+.metadata-property {
+    background: transparent;
+    border-radius: var(--radius-s);
+}
+.metadata-property:hover { background: var(--background-modifier-hover); }
+.metadata-property-key-input,
+.metadata-property-key-input:hover,
+.metadata-property-key-input:focus,
+.metadata-property-value input[type="text"],
+.metadata-property-value input[type="text"]:hover,
+.metadata-property-value input[type="text"]:focus,
+.metadata-property-value .metadata-input-longtext {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    border-radius: var(--radius-s) !important;
+}
+.metadata-property-key { color: var(--cc-text-muted); }
+.metadata-property-icon { color: var(--cc-text-faint); }
+.metadata-add-button { color: var(--cc-text-muted); }
+
+/* Buttons */
+button:not(.clickable-icon),
+.mod-cta {
+    border-radius: var(--radius-m);
+}
+button.mod-cta { font-weight: 600; }
+
+/* Command palette & suggestion menus — soft cards */
+.suggestion-container, .prompt {
+    border-radius: var(--cc-radius);
+    border: 1px solid var(--cc-border);
+}
+.suggestion-item.is-selected { background-color: var(--cc-selection); }
+
+/* Graph view in theme colors */
+.graph-view.color-fill { color: var(--graph-node); }
+.graph-view.color-line { color: var(--graph-line); }
+.graph-view.color-text { color: var(--graph-text); }
+.graph-view.color-circle { color: var(--graph-node-focused); }
+.graph-view.color-fill-focused { color: var(--graph-node-focused); }
+.graph-view.color-fill-tag { color: var(--graph-node-tag); }
+.graph-view.color-fill-attachment { color: var(--graph-node-attachment); }
+.graph-view.color-fill-unresolved { color: var(--graph-node-unresolved); }
+.graph-view.color-arrow { color: var(--graph-line); }
+
+/* Scrollbars stay quiet */
+::-webkit-scrollbar-thumb { border-radius: 999px; }
+
+/* Status bar / breadcrumbs */
+.status-bar { background-color: var(--cc-bg-alt); border-top: 1px solid var(--cc-border); }
+
+/* Embedded images & embeds — soft rounded corners */
+.markdown-rendered img,
+.markdown-rendered .image-embed img,
+.markdown-rendered video {
+    border-radius: var(--radius-m);
+}
+.markdown-rendered .internal-embed.markdown-embed {
+    border-radius: var(--cc-radius);
+    border: 1px solid var(--cc-border);
+    background-color: var(--cc-bg-alt);
+    padding: 0.2em 0.8em;
+}
+
+/* Mobile toolbar & navbar — match the theme chrome */
+.is-mobile .mobile-toolbar,
+.is-mobile .mobile-navbar {
+    background-color: var(--cc-bg-alt);
+    border-top: 1px solid var(--cc-border);
+}
+.is-mobile .mobile-toolbar-option:active { color: var(--text-accent); }
+
+/* Selection */
+::selection { background-color: var(--text-selection); }
+
+/* Settings window — bump the UI text +2px for readability */
+.modal.mod-settings { font-size: calc(var(--font-ui-small) + 2px); }
+.modal.mod-settings .vertical-tab-nav-item,
+.modal.mod-settings .vertical-tab-header-group-title {
+    font-size: calc(var(--font-ui-small) + 2px);
+}
+.modal.mod-settings .setting-item-name { font-size: calc(var(--font-ui-medium) + 2px); }
+.modal.mod-settings .setting-item-description { font-size: calc(var(--font-ui-smaller) + 2px); }
+
+/* =====================================================================
+   10. PLUGIN INTEGRATIONS  —  Another Sticky Headings
+   ---------------------------------------------------------------------
+   Moves the plugin's heading trail out of the note body and into the
+   view header, rendered as a single-line clickable breadcrumb where the
+   note title normally sits. While scrolled into a section the title
+   fades out and the trail takes its place; back at the top of the note
+   the plain title returns. Toggle: Style Settings → Plugins.
+   Desktop only — on mobile (phone + tablet) the plugin's regular stacked
+   view is kept: the mobile header is too cramped for a breadcrumb.
+   Plugin DOM: .sticky-headings-root > .sticky-headings-container >
+   .sticky-headings-item[data-indent-level] (+ a .sticky-headings-shadow
+   copy used only for height measurement — left untouched).
+   ===================================================================== */
+
+/* Hide the note title while a heading trail is active (visibility too,
+   so the invisible title can't catch clicks meant for the breadcrumb).
+   Both the file-name title AND the parent-folder breadcrumb
+   (.view-header-title-parent, e.g. "Folder / Subfolder /") must go —
+   for a nested note the parent crumb is non-empty and would otherwise
+   collide with the trail. Asymmetric timing: hiding is immediate,
+   un-hiding waits 160ms — the plugin unmounts the trail for ~a frame
+   while re-rendering it, and without the delay every re-render flashes
+   the title over the trail. */
+body.cc-sticky-in-header:not(.is-mobile) .view-header-title,
+body.cc-sticky-in-header:not(.is-mobile) .view-header-title-parent {
+    transition: opacity 120ms ease 160ms, visibility 0s linear 160ms;
+}
+body.cc-sticky-in-header:not(.is-mobile)
+    .workspace-leaf:has(.sticky-headings-root:not(.sticky-headings-shadow)
+        .sticky-headings-item[data-indent-level])
+    .view-header-title,
+body.cc-sticky-in-header:not(.is-mobile)
+    .workspace-leaf:has(.sticky-headings-root:not(.sticky-headings-shadow)
+        .sticky-headings-item[data-indent-level])
+    .view-header-title-parent {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 120ms ease, visibility 0s linear;
+}
+
+/* Let the repositioned trail escape the note area and overlay the header.
+   min-height: 0 is required: overflow:visible switches the flex item's
+   automatic minimum size to content-size, which would otherwise squeeze
+   the sibling .view-header. */
+body.cc-sticky-in-header:not(.is-mobile) .workspace-leaf-content[data-type="markdown"] .view-content {
+    overflow: visible;
+    min-height: 0;
+}
+
+/* The trail block: lift it up onto the view header row */
+body.cc-sticky-in-header:not(.is-mobile) .sticky-headings-root:not(.sticky-headings-shadow) {
+    top: calc(-1 * var(--header-height)) !important;
+    height: var(--header-height);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* clear the nav arrows (left) and view actions (right) */
+    padding: 0 110px !important;
+    background: none !important;
+    z-index: 5;
+    /* transparent gutters must not block header buttons underneath */
+    pointer-events: none;
+}
+
+/* Container: stacked tree → single centered row, no plugin theming */
+body.cc-sticky-in-header:not(.is-mobile) .sticky-headings-root:not(.sticky-headings-shadow)
+    .sticky-headings-container {
+    display: flex !important;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    max-width: 100% !important;
+    min-width: 0;
+    margin: 0 !important;
+    padding: 0 !important;
+    background: none !important;
+    backdrop-filter: none !important;
+    border-radius: 0 !important;
+    color: var(--text-normal) !important;
+    font-size: var(--font-ui-small) !important;
+    overflow: hidden;
+}
+/* the blur theme paints gradients via pseudo-elements — remove them */
+body.cc-sticky-in-header:not(.is-mobile) .sticky-headings-root:not(.sticky-headings-shadow)
+    .sticky-headings-container::before,
+body.cc-sticky-in-header:not(.is-mobile) .sticky-headings-root:not(.sticky-headings-shadow)
+    .sticky-headings-container::after {
+    display: none !important;
+}
+
+/* Items: uniform title-style text, no indent, clickable, ellipsized */
+body.cc-sticky-in-header:not(.is-mobile) .sticky-headings-root:not(.sticky-headings-shadow)
+    .sticky-headings-item {
+    padding-left: 0 !important;
+    flex: 0 1 auto;
+    min-width: 0;
+    line-height: var(--header-height);
+    font-weight: var(--font-medium, 500);
+    color: var(--text-normal);
+    pointer-events: auto;
+}
+body.cc-sticky-in-header:not(.is-mobile) .sticky-headings-root:not(.sticky-headings-shadow)
+    .sticky-headings-item:hover {
+    color: var(--text-accent);
+}
+
+/* Page-name crumb — the plugin's file-name item (autoShowFileName) is the
+   only item without a data-indent-level. Coral + semibold so the trail
+   reads "where am I" at a glance: Page › section › subsection. */
+body.cc-sticky-in-header:not(.is-mobile) .sticky-headings-root:not(.sticky-headings-shadow)
+    .sticky-headings-item:not([data-indent-level]) {
+    color: var(--text-accent);
+    font-weight: var(--font-semibold, 600);
+}
+/* ...but never alone: with no heading crumbs next to it the native note
+   title stays visible instead (also masks the plugin's stale-file-name
+   bug when switching notes within a tab). */
+body.cc-sticky-in-header:not(.is-mobile) .sticky-headings-root:not(.sticky-headings-shadow)
+    .sticky-headings-item:not([data-indent-level]):only-child {
+    display: none !important;
+}
+
+/* › separators between crumbs */
+body.cc-sticky-in-header:not(.is-mobile) .sticky-headings-root:not(.sticky-headings-shadow)
+    .sticky-headings-item + .sticky-headings-item::before {
+    content: "›";
+    flex: none;
+    margin: 0 0.5em;
+    color: var(--text-faint);
+    font-weight: 400;
+}
+
+/* Uniform text: drop the per-level H badges */
+body.cc-sticky-in-header:not(.is-mobile) .sticky-headings-root:not(.sticky-headings-shadow)
+    .sticky-headings-icon {
+    display: none !important;
+}
+
+/* ---------------------------------------------------------------------
+   Scroll progress bar  (Style Settings → Editor → Scroll progress bar)
+   ---------------------------------------------------------------------
+   Pure CSS via scroll-driven animations (Chromium): the note's scroller
+   drives a named scroll timeline; a coral fill at the seam between the
+   title row and the note scales with scroll progress. Desktop: top of
+   the note, full editor width (resizes with the sidebars for free, since
+   it lives inside the leaf). Mobile: pinned to the bottom of the editor
+   area instead — there's no window chrome row to sit under.
+   The Claude Scroll Map companion plugin drops heading dots onto the
+   same strip (.cc-scroll-map, styled further below).
+   --------------------------------------------------------------------- */
+body.cc-scroll-progress .workspace-leaf-content[data-type="markdown"] {
+    timeline-scope: --cc-note-scroll;
+}
+/* Only the visible mode's scroller has a box, so exactly one element
+   provides the timeline at any moment (duplicates would void the name) */
+body.cc-scroll-progress .workspace-leaf-content[data-type="markdown"]
+    .markdown-source-view.mod-cm6 .cm-scroller,
+body.cc-scroll-progress .workspace-leaf-content[data-type="markdown"]
+    .markdown-preview-view {
+    scroll-timeline: --cc-note-scroll block;
+}
+body.cc-scroll-progress .workspace-leaf-content[data-type="markdown"] .view-content {
+    position: relative;
+    /* let centered markers straddle the line without clipping;
+       min-height keeps flex from squeezing the header (see breadcrumb) */
+    overflow: visible;
+    min-height: 0;
+}
+/* The line runs along y = 5.5px — track, fill and markers all center on
+   it, metro-map style. */
+/* Track — doubles as the instrument's backdrop: a band of note
+   background fading downward masks any scrolled text passing under the
+   markers, with the 3px track line painted on top of it. */
+body.cc-scroll-progress .workspace-leaf-content[data-type="markdown"] .view-content::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 15px;
+    background:
+        linear-gradient(var(--cc-track-color, var(--cc-border)), var(--cc-track-color, var(--cc-border)))
+            0 4px / 100% 3px no-repeat,
+        linear-gradient(to bottom, var(--cc-bg) 60%, transparent);
+    z-index: 8;
+    pointer-events: none;
+    transition: height 130ms ease;
+}
+/* Fill */
+body.cc-scroll-progress .workspace-leaf-content[data-type="markdown"] .view-content::after {
+    content: "";
+    position: absolute;
+    top: 4px; left: 0;
+    width: 100%; height: 3px;
+    border-radius: 2px;
+    background: var(--cc-accent);
+    transform: scaleX(0);           /* short notes with no scroll: empty */
+    transform-origin: 0 50%;
+    z-index: 9;
+    pointer-events: none;
+    animation: cc-scroll-progress-fill linear both;
+    animation-timeline: --cc-note-scroll;
+    transition: height 130ms ease, top 130ms ease;
+}
+/* Hovering the scroll-map strip thickens the line, still centered.
+   The .cc-map-hover class is toggled by the companion plugin on strip
+   enter/leave — cheaper than :has(:hover), which re-evaluates on every
+   pointer move. */
+body.cc-scroll-progress .workspace-leaf-content[data-type="markdown"]
+    .view-content.cc-map-hover::before {
+    height: 27px;
+    background:
+        linear-gradient(var(--cc-track-color, var(--cc-border)), var(--cc-track-color, var(--cc-border)))
+            0 3px / 100% 5px no-repeat,
+        linear-gradient(to bottom, var(--cc-bg) 60%, transparent);
+}
+body.cc-scroll-progress .workspace-leaf-content[data-type="markdown"]
+    .view-content.cc-map-hover::after {
+    top: 3px;
+    height: 5px;
+}
+/* The leading edge tracks DOCUMENT position, not raw scroll progress: it
+   scales to --cc-fill-max (= range/scrollHeight, set per-view by the
+   companion plugin) so progress×fillMax = scrollTop/scrollHeight. That keeps
+   the edge aligned with the heading dots (which sit in document space) — the
+   line reaches a dot exactly as the dot fills, neither racing ahead nor
+   trailing. The final 5% then snaps to a full bar so the very bottom of the
+   note still reads as 100% (the last screenful has no scroll range of its
+   own to map). Falls back to a plain 0→100% fill when --cc-fill-max is
+   unset (short/reading-mode notes, or any other theme's markup). */
+@keyframes cc-scroll-progress-fill {
+    from { transform: scaleX(0); }
+    95%  { transform: scaleX(calc(var(--cc-fill-max, 1) * 0.95)); }
+    to   { transform: scaleX(1); }
+}
+/* Mobile: bottom of the visible editor area, a touch thicker; no dots
+   means no backdrop band — plain track line */
+body.cc-scroll-progress.is-mobile .workspace-leaf-content[data-type="markdown"] .view-content::before,
+body.cc-scroll-progress.is-mobile .workspace-leaf-content[data-type="markdown"] .view-content::after {
+    top: auto; bottom: 0;
+    height: 4px;
+}
+body.cc-scroll-progress.is-mobile .workspace-leaf-content[data-type="markdown"] .view-content::before {
+    /* like desktop's band: bg fading upward masks text passing under the
+       markers, with the 4px track painted at the bottom of it */
+    height: 18px;
+    background:
+        linear-gradient(var(--cc-border), var(--cc-border))
+            0 100% / 100% 4px no-repeat,
+        linear-gradient(to top, var(--cc-bg) 40%, transparent);
+}
+
+/* --- Claude Scroll Map (companion plugin) — heading dots on the bar ---
+   The plugin renders .cc-scroll-map > .cc-scroll-dot[data-level] into
+   each note and handles positioning/clicks; all cosmetics live here. */
+body .cc-scroll-map {
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 12px;                    /* hover zone for the strip */
+    z-index: 10;
+    transition: height 130ms ease;
+}
+/* With the progress bar on, the theme's track pseudo paints the backdrop
+   band — a bg on the map would sit above the bar and hide it. With the
+   bar toggled off, the plugin's own gradient band stays so markers never
+   float naked over note text. */
+body.cc-scroll-progress .cc-scroll-map { background: none; }
+body .cc-scroll-map:hover { height: 24px; }   /* roomier target while aiming */
+/* Mobile: markers ride the theme's BOTTOM progress bar, cut at their
+   middle — the map bottom-docks over the bar and overflow-hidden slices
+   every marker at the screen edge. Purely visual: no tap-to-jump, no
+   hover (pointer-events off). Without the progress bar toggle there is
+   no bar to ride, so the map stays hidden. */
+body.is-mobile .cc-scroll-map { display: none; }
+body.cc-scroll-progress.is-mobile .cc-scroll-map {
+    display: block;
+    top: auto;
+    bottom: 0;
+    height: 14px;
+    overflow: hidden;      /* the cut: bottom half never renders */
+    background: none;
+    pointer-events: none;
+}
+body.cc-scroll-progress.is-mobile .cc-scroll-map .cc-scroll-dot {
+    top: 100%;                        /* equator on the clip edge: true half */
+    pointer-events: none;
+    cursor: default;
+}
+/* mobile sizes: a touch bigger than desktop — only the top half shows */
+body.cc-scroll-progress.is-mobile .cc-scroll-map .cc-scroll-dot                  { width: 9px;  height: 9px; }
+body.cc-scroll-progress.is-mobile .cc-scroll-map .cc-scroll-dot[data-level="1"]  { width: 20px; height: 20px; }
+body.cc-scroll-progress.is-mobile .cc-scroll-map .cc-scroll-dot[data-level="3"]  { width: 7px;  height: 7px; }
+/* Headings as brand marks: the Claude starburst for H1 landmarks,
+   soft coral circles for H2/H3. Every marker is full coral once read;
+   unread markers are the same coral mixed toward the note background —
+   OPAQUE on purpose, so the progress line never shows through. Each
+   marker punches a gap in the line (halo ring / backing disc): the line
+   never touches a marker in any state. */
+/* Markers start FADED and turn full coral the moment the progress line
+   reaches them — the same scroll timeline as the fill, with a per-marker
+   animation-range at the marker's own position (--cc-dot-frac, set by
+   the plugin). The element itself is an opaque note-bg disc (that disc
+   is the gap in the line); the coral lives on ::before. */
+body .cc-scroll-map .cc-scroll-dot {
+    position: absolute;
+    top: 5.5px;                       /* the line's center */
+    /* --cc-mag: dock-style fisheye magnification, set by the plugin on
+       strip mousemove; size changes stay centered */
+    transform: translate(-50%, -50%) scale(var(--cc-mag, 1));
+    width: 7px; height: 7px;          /* H2 default */
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    --cc-dot-color: var(--cc-accent);
+    background: var(--cc-bg);
+    box-shadow: 0 0 0 2px var(--cc-bg);  /* halo ring widens the gap */
+    cursor: pointer;
+    transition: height 130ms ease, width 130ms ease,
+        transform 60ms ease-out;
+}
+/* The fade is OPACITY, not a color-mix: Chromium's scroll-driven color
+   interpolation miscomputes between color-mix() and hex endpoints (the
+   fill came out neon yellow); opacity is numeric and safe. 45% coral
+   over the opaque bg disc looks identical to a 45% mix toward bg. */
+body .cc-scroll-map .cc-scroll-dot::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    background: var(--cc-dot-color);
+    opacity: var(--cc-dot-fade, 0.45);
+    animation: cc-scroll-dot-pass linear both;
+    animation-timeline: --cc-note-scroll;
+    animation-range:
+        calc(var(--cc-dot-frac, 0) * 100%)
+        calc(var(--cc-dot-frac, 0) * 100% + 0.5%);
+}
+@keyframes cc-scroll-dot-pass {
+    to { opacity: 1; }
+}
+/* H1: the Claude starburst — ::before trades its disc for an SVG mask.
+   Masks clip box-shadow, so the element disc alone provides the gap. */
+body .cc-scroll-map .cc-scroll-dot[data-level="1"] {
+    width: 16px; height: 16px;
+    border-radius: 50%;   /* explicit: outranks plugin baseline level rule */
+    background: var(--cc-bg);
+    box-shadow: none;
+}
+body .cc-scroll-map .cc-scroll-dot[data-level="1"]::before {
+    inset: 2px;
+    border-radius: 0;
+    -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-12 -12 24 24'%3E%3Cpath d='M0 0L10 0M0 0L6.7 4.4M0 0L3.9 8.7M0 0L-1.3 7.9M0 0L-6.7 7.4M0 0L-8.2 2.2M0 0L-9 -2.9M0 0L-5 -6.2M0 0L-1.1 -10M0 0L3.9 -7.6M0 0L7.8 -4.5' stroke='black' stroke-width='2.8' stroke-linecap='round' fill='none'/%3E%3C/svg%3E") center / contain no-repeat;
+    mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-12 -12 24 24'%3E%3Cpath d='M0 0L10 0M0 0L6.7 4.4M0 0L3.9 8.7M0 0L-1.3 7.9M0 0L-6.7 7.4M0 0L-8.2 2.2M0 0L-9 -2.9M0 0L-5 -6.2M0 0L-1.1 -10M0 0L3.9 -7.6M0 0L7.8 -4.5' stroke='black' stroke-width='2.8' stroke-linecap='round' fill='none'/%3E%3C/svg%3E") center / contain no-repeat;
+}
+body .cc-scroll-map .cc-scroll-dot[data-level="3"] {
+    width: 6px; height: 6px;
+    border-radius: 50%;   /* explicit: outranks plugin baseline level rule */
+    background: var(--cc-bg);
+}
+/* Hovering the strip: uniform growth — circles can't stretch tall like
+   the old blocks; the fisheye handles crowding where you're aiming */
+body .cc-scroll-map:hover .cc-scroll-dot                   { width: 9px;  height: 9px; }
+body .cc-scroll-map:hover .cc-scroll-dot[data-level="1"]  { width: 20px; height: 20px; }
+body .cc-scroll-map:hover .cc-scroll-dot[data-level="3"]  { width: 8px;  height: 8px; }
+/* !important: the pass animation's fill mode owns `opacity` in the
+   cascade, so the highlight has to outrank it */
+body .cc-scroll-map .cc-scroll-dot:hover::before,
+body .cc-scroll-map .cc-scroll-dot.cc-hovered::before {
+    background: var(--cc-accent-bright, var(--cc-accent)) !important;
+    opacity: 1 !important;
+}
+/* Heading-name tooltip — 60% of body text size, tracks the tick height */
+body .cc-scroll-map .cc-scroll-dot::after {
+    content: attr(data-label);
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 50%;
+    /* counter-scale so the fisheye doesn't zoom the tooltip text */
+    transform: translateX(-50%) scale(calc(1 / var(--cc-mag, 1)));
+    transform-origin: 50% 0;
+    display: none;
+    max-width: 32ch;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: calc(var(--font-text-size, 16px) * 0.6);
+    line-height: 1.4;
+    font-weight: 500;
+    color: var(--text-normal);
+    background: var(--cc-bg-alt);
+    border: 1px solid var(--cc-border);
+    border-radius: 6px;
+    padding: 2px 8px;
+    box-shadow: var(--shadow-s, 0 2px 8px rgb(0 0 0 / 0.15));
+}
+body .cc-scroll-map .cc-scroll-dot:hover::after, body .cc-scroll-map .cc-scroll-dot.cc-hovered::after { display: block; }
+
+/* =====================================================================
+   11. REDUCED MOTION  —  honour the OS "reduce motion" setting
+   ---------------------------------------------------------------------
+   When the user has asked their system to minimise motion, collapse all
+   transitions/animations to near-instant. Duration stays > 0 so any
+   transitionend / animationend listeners still fire.
+   ===================================================================== */
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+    }
+    /* The scroll progress fill and the marker fill-in are scroll-linked,
+       not autonomous motion — a forced time duration would pin them at
+       100%. Restore the timeline mapping. */
+    body.cc-scroll-progress .workspace-leaf-content[data-type="markdown"] .view-content::after,
+    body .cc-scroll-map .cc-scroll-dot,
+    body .cc-scroll-map .cc-scroll-dot::before {
+        animation-duration: auto !important;
+    }
+}

@@ -1853,11 +1853,11 @@ body.theme-light {
   --italic-color: var(--text-accent) !important;
   --setting-items-padding: 2px 0px !important;
   --callout-gap: 16px;
+  --callout-cite: var(--color-green);
   --settings-background: var(--color-base-05) !important;
   --bases-embed-padding: 4px !important;
   --bases-border-r: 16px !important;
   --bases-cards-group-padding: 16px !important;
-  --callout-cite: var(--color-green);
   --cm-font-size: calc(var(--font-ui-small) + 0.809px) !important;
   --cm-panel-bg: var(--color-base-00) !important;
   --color-accent-1-wrapper: oklch(
@@ -4111,11 +4111,11 @@ body.theme-dark {
   --italic-color: var(--text-accent) !important;
   --setting-items-padding: 2px 0px !important;
   --callout-gap: 16px;
+  --callout-cite: var(--color-green);
   --settings-background: var(--color-base-05) !important;
   --bases-embed-padding: 4px !important;
   --bases-border-r: 16px !important;
   --bases-cards-group-padding: 16px !important;
-  --callout-cite: var(--color-green);
   --cm-font-size: calc(var(--font-ui-small) + 0.809px) !important;
   --cm-panel-bg: var(--color-base-00) !important;
   --color-accent-1-wrapper: oklch(

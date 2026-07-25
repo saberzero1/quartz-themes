@@ -1467,9 +1467,9 @@ body.theme-light {
   --inline-title-color: var(--h1-color) !important;
   --table-header-background-hover: var(--color-accent-2) !important;
   --vault-name-color: var(--text-muted) !important;
+  --inline-title-font: var(--h1-font) !important;
   --h1-font: "Lato" !important;
   --h2-font: "Work Sans" !important;
-  --inline-title-font: var(--h1-font) !important;
   --vault-name-font-size: var(--font-ui-large) !important;
   --vault-name-font-weight: var(--font-bold) !important;
   --background-tertiary: hsl(1, 100%, 100%) !important;
@@ -2568,9 +2568,9 @@ body.theme-dark {
   --cards-padding: 1.2em !important;
   --table-header-background-hover: var(--color-accent-2) !important;
   --vault-name-color: var(--text-muted) !important;
+  --inline-title-font: var(--h1-font) !important;
   --h1-font: "Lato" !important;
   --h2-font: "Work Sans" !important;
-  --inline-title-font: var(--h1-font) !important;
   --vault-name-font-size: var(--font-ui-large) !important;
   --vault-name-font-weight: var(--font-bold) !important;
   --background-tertiary: hsl(calc(var(--accent-h)), 100%, 80%, 0.08) !important;

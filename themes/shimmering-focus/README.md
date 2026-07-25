@@ -2,7 +2,6 @@
 
 - Theme: Shimmering Focus
 - Author: <a href="https://chris-grieser.de/" target="_blank" rel="noopener noreferrer">pseudometa aka Chris Grieser</a>
-- Support the author: <a href="https://github.com/sponsors/chrisgrieser" target="_blank" rel="noopener noreferrer">PayPal</a>
 
 ## Preview
 

@@ -6,7 +6,7 @@ cssclasses:
 
 > This page is to quickly check how all features are rendered.
 
-- Theme author: bladeacer
+- Theme author: <a href="https://bladeacer.gitlab.io/portfolio" target="_blank" rel="noopener noreferrer">bladeacer</a>
 - Support the author: <a href="https://github.com/sponsors/bladeacer" target="_blank" rel="noopener noreferrer">Donate</a>
 - Install: `npm install @quartz-themes/core @quartz-themes/flexcyon`
 - <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/flexcyon.tui/README.md">Full install instructions</a>

@@ -1,0 +1,36 @@
+{
+  "extractedAt": "2026-07-24T23:00:43.882Z",
+  "sourceTheme": "Claude Cream",
+  "fonts": [
+    {
+      "family": "Anthropic Serif Web Text",
+      "style": "normal",
+      "weight": "400",
+      "file": "anthropic-serif-web-text.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Anthropic Sans Web Text",
+      "style": "normal",
+      "weight": "400",
+      "file": "anthropic-sans-web-text.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Anthropic Mono Variable",
+      "style": "normal",
+      "weight": "100 900",
+      "file": "anthropic-mono-variable.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    }
+  ]
+}

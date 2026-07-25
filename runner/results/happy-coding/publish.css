@@ -1468,12 +1468,12 @@ body.theme-light {
   --bold-color: var(--beer) !important;
   --italic-color: var(--beer) !important;
   --red_x: #ff0000 !important;
-  --cursor-line-background: var(--faded1-coral) !important;
   --embed-border-left: 6px double var(--interactive-accent) !important;
   --calendar-background-hover: var(--dark0) !important;
   --calendar-hover: var(--tangelo) !important;
   --calendar-today: var(--beer) !important;
   --calendar-week: var(--beer) !important;
+  --cursor-line-background: var(--faded1-coral) !important;
   --dark0: #2e3440 !important;
   --dark1: #3b4252 !important;
   --dark2: #434c5e !important;
@@ -2586,12 +2586,12 @@ body.theme-dark {
   --bold-color: var(--beer) !important;
   --italic-color: var(--beer) !important;
   --red_x: #ff0000 !important;
-  --cursor-line-background: var(--faded1-coral) !important;
   --embed-border-left: 6px double var(--interactive-accent) !important;
   --calendar-background-hover: var(--bg-dark1) !important;
   --calendar-hover: var(--tangelo) !important;
   --calendar-today: var(--beer) !important;
   --calendar-week: var(--beer) !important;
+  --cursor-line-background: var(--faded1-coral) !important;
   --dark0: #2e3440 !important;
   --dark1: #3b4252 !important;
   --dark2: #434c5e !important;

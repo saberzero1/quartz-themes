@@ -1452,9 +1452,9 @@ body.theme-dark {
   ) !important;
   --bold-color: var(--cornflower-blue) !important;
   --italic-color: var(--coral-pink) !important;
+  --tab-font-weight: bold !important;
   --nav-item-weight-active: bold !important;
   --nav-item-weight-hover: bold !important;
-  --tab-font-weight: bold !important;
   --violet: rgb(128, 0, 255) !important;
   --azure: rgb(0, 127, 255) !important;
   --canary: rgb(255, 239, 0) !important;

@@ -1470,12 +1470,12 @@ body.theme-dark {
   --red_x: 97, 96, 96 !important;
   --yellow: rgb(235, 203, 139) !important;
   --yellow_x: 235, 203, 139 !important;
-  --cursor-line-background: rgba(var(--dark0), 0.5) !important;
   --embed-border-left: 6px double var(--interactive-accent) !important;
   --calendar-background-hover: var(--dark3) !important;
   --calendar-hover: var(--red) !important;
   --calendar-today: var(--yellow) !important;
   --calendar-week: var(--yellow) !important;
+  --cursor-line-background: rgba(var(--dark0), 0.5) !important;
   --dark0: rgb(33, 34, 36) !important;
   --dark0_x: 33, 34, 36 !important;
   --dark1: rgb(33, 34, 36) !important;

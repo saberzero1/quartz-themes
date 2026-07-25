@@ -21,8 +21,7 @@
   --callout-fail: var(--color-red);
   --callout-important: var(--color-cyan);
   --callout-info: var(--color-blue);
-  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3)
-    var(--size-4-6);
+  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
   --callout-question: var(--color-orange);
   --callout-quote: 158, 158, 158;
   --callout-radius: var(--radius-m);
@@ -62,10 +61,7 @@
   --collapse-icon-color: var(--text-faint) !important;
   --collapse-icon-color-collapsed: var(--text-accent) !important;
   --graph-controls-width: 240px !important;
-  --graph-line: var(
-    --color-base-35,
-    var(--background-modifier-border-focus)
-  ) !important;
+  --graph-line: var(--color-base-35, var(--background-modifier-border-focus)) !important;
   --graph-node: var(--text-muted) !important;
   --graph-node-attachment: var(--color-yellow) !important;
   --graph-node-focused: var(--text-accent) !important;
@@ -121,26 +117,22 @@ html {
   font-weight: 400;
   src:
     local("Avenir"),
-    url("https://fonts.cdnfonts.com/s/71748/avenir_roman_12.woff")
-      format("woff");
+    url("https://fonts.cdnfonts.com/s/71748/avenir_roman_12.woff") format("woff");
 }
 
 @font-face {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZJhiJ-Ek-_EeAmM.woff2)
-    format("woff2");
-  unicode-range:
-    U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZJhiJ-Ek-_EeAmM.woff2) format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 }
 
 @font-face {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZthiJ-Ek-_EeAmM.woff2)
-    format("woff2");
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZthiJ-Ek-_EeAmM.woff2) format("woff2");
   unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 
@@ -148,8 +140,7 @@ html {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZNhiJ-Ek-_EeAmM.woff2)
-    format("woff2");
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZNhiJ-Ek-_EeAmM.woff2) format("woff2");
   unicode-range: U+1F00-1FFF;
 }
 
@@ -157,64 +148,47 @@ html {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZxhiJ-Ek-_EeAmM.woff2)
-    format("woff2");
-  unicode-range:
-    U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZxhiJ-Ek-_EeAmM.woff2) format("woff2");
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
 }
 
 @font-face {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZBhiJ-Ek-_EeAmM.woff2)
-    format("woff2");
-  unicode-range:
-    U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
-    U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
-    U+1EA0-1EF9, U+20AB;
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZBhiJ-Ek-_EeAmM.woff2) format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
 }
 
 @font-face {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZFhiJ-Ek-_EeAmM.woff2)
-    format("woff2");
-  unicode-range:
-    U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304,
-    U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB,
-    U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZFhiJ-Ek-_EeAmM.woff2) format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 
 @font-face {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZ9hiJ-Ek-_EeA.woff2)
-    format("woff2");
-  unicode-range:
-    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
-    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
-    U+2215, U+FEFF, U+FFFD;
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZ9hiJ-Ek-_EeA.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 @font-face {
   font-family: "Source Code Pro";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMRrTFcZZJmOpwVS.woff2)
-    format("woff2");
-  unicode-range:
-    U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMRrTFcZZJmOpwVS.woff2) format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 }
 
 @font-face {
   font-family: "Source Code Pro";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtM1rTFcZZJmOpwVS.woff2)
-    format("woff2");
+  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtM1rTFcZZJmOpwVS.woff2) format("woff2");
   unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 
@@ -222,8 +196,7 @@ html {
   font-family: "Source Code Pro";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMVrTFcZZJmOpwVS.woff2)
-    format("woff2");
+  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMVrTFcZZJmOpwVS.woff2) format("woff2");
   unicode-range: U+1F00-1FFF;
 }
 
@@ -231,64 +204,47 @@ html {
   font-family: "Source Code Pro";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMprTFcZZJmOpwVS.woff2)
-    format("woff2");
-  unicode-range:
-    U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMprTFcZZJmOpwVS.woff2) format("woff2");
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
 }
 
 @font-face {
   font-family: "Source Code Pro";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMZrTFcZZJmOpwVS.woff2)
-    format("woff2");
-  unicode-range:
-    U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
-    U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
-    U+1EA0-1EF9, U+20AB;
+  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMZrTFcZZJmOpwVS.woff2) format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
 }
 
 @font-face {
   font-family: "Source Code Pro";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMdrTFcZZJmOpwVS.woff2)
-    format("woff2");
-  unicode-range:
-    U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304,
-    U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB,
-    U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMdrTFcZZJmOpwVS.woff2) format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 
 @font-face {
   font-family: "Source Code Pro";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMlrTFcZZJmOpw.woff2)
-    format("woff2");
-  unicode-range:
-    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
-    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
-    U+2215, U+FEFF, U+FFFD;
+  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMlrTFcZZJmOpw.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 @font-face {
   font-family: "Roboto Mono";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_SeW4AJi8SJQtQ4Y.woff2)
-    format("woff2");
-  unicode-range:
-    U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_SeW4AJi8SJQtQ4Y.woff2) format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 }
 
 @font-face {
   font-family: "Roboto Mono";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_QOW4AJi8SJQtQ4Y.woff2)
-    format("woff2");
+  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_QOW4AJi8SJQtQ4Y.woff2) format("woff2");
   unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 
@@ -296,46 +252,32 @@ html {
   font-family: "Roboto Mono";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_R-W4AJi8SJQtQ4Y.woff2)
-    format("woff2");
-  unicode-range:
-    U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_R-W4AJi8SJQtQ4Y.woff2) format("woff2");
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
 }
 
 @font-face {
   font-family: "Roboto Mono";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_S-W4AJi8SJQtQ4Y.woff2)
-    format("woff2");
-  unicode-range:
-    U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
-    U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
-    U+1EA0-1EF9, U+20AB;
+  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_S-W4AJi8SJQtQ4Y.woff2) format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
 }
 
 @font-face {
   font-family: "Roboto Mono";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_SuW4AJi8SJQtQ4Y.woff2)
-    format("woff2");
-  unicode-range:
-    U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304,
-    U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB,
-    U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_SuW4AJi8SJQtQ4Y.woff2) format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 
 @font-face {
   font-family: "Roboto Mono";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_ROW4AJi8SJQt.woff2)
-    format("woff2");
-  unicode-range:
-    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
-    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
-    U+2215, U+FEFF, U+FFFD;
+  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_ROW4AJi8SJQt.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 body {
@@ -378,9 +320,7 @@ body {
   .note-properties.metadata-container {
     background-color: var(--metadata-background);
     color: var(--text-muted);
-    font-family:
-      Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro",
-      monospace;
+    font-family: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
     border: 0px solid rgb(64, 64, 64);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -401,9 +341,7 @@ body {
   .metadata-container {
     background-color: var(--metadata-background);
     color: var(--text-muted);
-    font-family:
-      Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro",
-      monospace;
+    font-family: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
     border: 0px solid rgb(64, 64, 64);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -424,9 +362,7 @@ body {
   .note-properties-table {
     background-color: rgba(0, 0, 0, 0);
     color: rgb(160, 160, 160);
-    font-family:
-      Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro",
-      monospace;
+    font-family: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
     border-color: rgb(160, 160, 160);
     border-width: 0px;
     border-top-left-radius: 0px;
@@ -448,9 +384,7 @@ body {
   .metadata-container .metadata-property {
     background-color: var(--metadata-property-background);
     color: rgb(160, 160, 160);
-    font-family:
-      Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro",
-      monospace;
+    font-family: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
     border-color: rgb(160, 160, 160);
     border-width: 0px;
     border-top-left-radius: 6px;
@@ -529,9 +463,7 @@ body {
     filter: var(--link-external-filter);
     backdrop-filter: none;
     box-shadow: none;
-    font-family:
-      Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro",
-      monospace;
+    font-family: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
     font-weight: var(--link-weight);
     outline: rgb(250, 206, 62) none 0px;
     text-decoration: underline;
@@ -560,9 +492,7 @@ body {
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
-    font-family:
-      Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro",
-      monospace;
+    font-family: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
     font-weight: var(--link-weight);
     outline: rgb(250, 206, 62) none 0px;
     text-decoration: underline;
@@ -590,9 +520,7 @@ body {
     filter: var(--link-unresolved-filter);
     backdrop-filter: none;
     box-shadow: none;
-    font-family:
-      Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro",
-      monospace;
+    font-family: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
     font-weight: var(--link-weight);
     outline: rgb(250, 206, 62) none 0px;
     text-decoration: underline oklch(0.877836 0.150483 91.8453 / 0.3);
@@ -676,9 +604,7 @@ body {
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
-    font-family:
-      Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro",
-      monospace;
+    font-family: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
     font-weight: 400;
     outline: rgb(160, 160, 160) none 0px;
     text-decoration: rgb(218, 218, 218);
@@ -706,9 +632,7 @@ body {
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
-    font-family:
-      Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro",
-      monospace;
+    font-family: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
     font-weight: calc(var(--font-weight) + var(--bold-modifier));
     outline: rgb(255, 255, 255) none 0px;
     text-decoration: rgb(218, 218, 218);
@@ -736,9 +660,7 @@ body {
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
-    font-family:
-      Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro",
-      monospace;
+    font-family: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
     font-weight: calc(var(--font-weight) + var(--bold-modifier));
     outline: rgb(255, 255, 255) none 0px;
     text-decoration: rgb(218, 218, 218);
@@ -766,9 +688,7 @@ body {
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
-    font-family:
-      Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro",
-      monospace;
+    font-family: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
     font-weight: 400;
     outline: rgb(255, 255, 255) none 0px;
     text-decoration: rgb(218, 218, 218);
@@ -796,9 +716,7 @@ body {
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
-    font-family:
-      Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro",
-      monospace;
+    font-family: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
     font-weight: 400;
     outline: rgb(255, 255, 255) none 0px;
     text-decoration: rgb(218, 218, 218);
@@ -901,9 +819,7 @@ body {
     background-color: rgba(0, 0, 0, 0);
     color: var(--italic-color);
     cursor: grab;
-    font-family:
-      Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro",
-      monospace;
+    font-family: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
     font-weight: 600;
     outline: rgb(255, 255, 255) none 0px;
     text-decoration-color: rgb(255, 255, 255);
@@ -924,9 +840,7 @@ body {
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
-    font-family:
-      Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro",
-      monospace;
+    font-family: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
     font-weight: 400;
     outline: rgb(255, 255, 255) none 0px;
     text-decoration: rgb(0, 0, 0);
@@ -953,9 +867,7 @@ body {
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
-    font-family:
-      Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro",
-      monospace;
+    font-family: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
     font-weight: 400;
     outline: rgb(255, 255, 255) none 0px;
     text-decoration: line-through;
@@ -990,24 +902,9 @@ body {
     border-radius: 0px;
   }
 
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    .result-card:hover,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    .result-card:focus,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+  .search > .search-container > .search-space > .search-layout > .results-container .result-card:hover,
+  .search > .search-container > .search-space > .search-layout > .results-container .result-card:focus,
+  .search > .search-container > .search-space > .search-layout > .results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
     background-color: rgba(0, 0, 0, 0);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -1016,18 +913,7 @@ body {
     color: var(--nav-item-color-active);
   }
 
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    .result-card:has(
-      ~ .result-card.focus:not(
-          :has(~ .result-card:hover, ~ .result-card:focus)
-        ),
-      ~ .result-card:focus,
-      ~ .result-card:hover
-    ) {
+  .search > .search-container > .search-space > .search-layout > .results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover) {
     background-color: rgba(0, 0, 0, 0);
     border-color: rgb(255, 255, 255);
     border-width: 0px;
@@ -1056,22 +942,12 @@ body {
   }
 
   a.internal-link.tag-link,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    .result-card
-    > ul
-    > li
-    > .match-tag {
+  .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
     align-items: normal;
     background-color: var(--pill-background);
     color: var(--pill-color);
     display: flex;
-    font-family:
-      Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro",
-      monospace;
+    font-family: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
     font-size: 14px;
     font-weight: var(--pill-weight);
     line-height: var(--line-height-tight);
@@ -1104,9 +980,7 @@ body {
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
     color: var(--text-normal);
-    font-family:
-      Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro",
-      monospace;
+    font-family: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
   }
 
   .search > .search-container > .search-space {
@@ -1126,16 +1000,13 @@ body {
     border-top-right-radius: 5px;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
-    box-shadow: 0 0 0 var(--input-border-width-focus)
-      var(--background-modifier-border-focus);
+    box-shadow: 0 0 0 var(--input-border-width-focus) var(--background-modifier-border-focus);
   }
 
   .search > .search-container > .search-space > * {
     background-color: rgba(0, 0, 0, 0);
     color: rgb(255, 255, 255);
-    font-family:
-      Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro",
-      monospace;
+    font-family: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
     font-weight: 400;
     outline: rgb(255, 255, 255) none 0px;
     text-decoration-color: rgb(255, 255, 255);
@@ -1157,20 +1028,11 @@ body {
     border-bottom-right-radius: 0px;
   }
 
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container {
+  .search > .search-container > .search-space > .search-layout > .results-container {
     color: rgb(255, 255, 255);
   }
 
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    .result-card {
+  .search > .search-container > .search-space > .search-layout > .results-container .result-card {
     border-color: rgb(255, 255, 255);
     border-width: 0px;
     border-top-left-radius: 0px;
@@ -1187,90 +1049,30 @@ body {
     border-radius: 0px;
   }
 
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card:hover,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card:focus,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover,
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus,
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
     color: var(--nav-item-color-active);
     font-weight: var(--nav-item-weight);
     background-color: rgba(0, 0, 0, 0);
   }
 
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card:hover
-    .card-title,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card:hover
-    .card-description,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card:focus
-    .card-title,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card:focus
-    .card-description,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))
-    .card-title,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))
-    .card-description {
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title,
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description,
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title,
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description,
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-title,
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-description {
     color: var(--nav-item-color-active);
   }
 
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .preview-container {
+  .search > .search-container > .search-space > .search-layout > .preview-container {
     color: rgb(160, 160, 160);
     background-color: rgba(0, 0, 0, 0);
     font-weight: 400;
   }
 
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card:hover {
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover {
     background-color: rgba(0, 0, 0, 0);
     color: rgb(255, 255, 255);
     border-color: rgb(255, 255, 255);
@@ -1292,8 +1094,7 @@ body {
     letter-spacing: var(--h1-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1327,8 +1128,7 @@ body {
     letter-spacing: var(--h2-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1362,8 +1162,7 @@ body {
     letter-spacing: var(--h3-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1397,8 +1196,7 @@ body {
     letter-spacing: var(--h4-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1432,8 +1230,7 @@ body {
     letter-spacing: var(--h5-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1467,8 +1264,7 @@ body {
     letter-spacing: var(--h6-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1503,8 +1299,7 @@ body {
     letter-spacing: -0.38832px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1714,8 +1509,7 @@ body {
     height: auto;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     content: "# ";
     display: inline;
     color: var(--text-faint);
@@ -1740,8 +1534,7 @@ body {
     height: auto;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     content: "# ";
     display: inline;
     color: var(--text-faint);
@@ -1766,8 +1559,7 @@ body {
     height: auto;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     content: "# ";
     display: inline;
     color: var(--text-faint);
@@ -1792,8 +1584,7 @@ body {
     height: auto;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     content: "# ";
     display: inline;
     color: var(--text-faint);
@@ -1818,8 +1609,7 @@ body {
     height: auto;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     content: "# ";
     display: inline;
     color: var(--text-faint);
@@ -1844,8 +1634,7 @@ body {
     height: auto;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     content: "# ";
     display: inline;
     color: var(--text-faint);
@@ -1889,8 +1678,7 @@ body {
 
   input:focus {
     border-color: rgb(255, 255, 255);
-    box-shadow: 0 0 0 var(--input-border-width-focus)
-      var(--background-modifier-border-focus);
+    box-shadow: 0 0 0 var(--input-border-width-focus) var(--background-modifier-border-focus);
   }
 
   h1.article-title {
@@ -1992,9 +1780,7 @@ body {
     margin-inline-end: 0px;
     margin-inline-start: 0px;
     font-size: 16px;
-    font-family:
-      Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro",
-      monospace;
+    font-family: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -2014,9 +1800,7 @@ body {
   dd {
     color: rgb(255, 255, 255);
     font-size: 16px;
-    font-family:
-      Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro",
-      monospace;
+    font-family: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
     margin: 0px 0px 0px 40px;
     margin-block-end: 0px;
     margin-block-start: 0px;
@@ -2296,9 +2080,7 @@ body {
     background-color: var(--blockquote-background-color);
     border-inline-start: 0px solid rgb(251, 211, 81);
     color: var(--blockquote-color);
-    font-family:
-      Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro",
-      monospace;
+    font-family: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
     font-weight: 400;
     font-style: var(--blockquote-font-style);
     line-height: 24px;
@@ -2348,9 +2130,7 @@ body {
   input[type="text"] {
     background-color: rgba(0, 0, 0, 0);
     color: var(--text-normal);
-    font-family:
-      Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro",
-      monospace;
+    font-family: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
     border: 0px solid rgb(160, 160, 160);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -2472,15 +2252,11 @@ body {
     text-align: center;
     white-space-collapse: collapse;
     text-wrap-mode: wrap;
-    font-family:
-      Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro",
-      monospace;
+    font-family: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
   }
 
   .katex-display > .katex > .katex-html {
-    font-family:
-      Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro",
-      monospace;
+    font-family: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
   }
 
   .katex > .katex-html {
@@ -2489,15 +2265,12 @@ body {
 
   h2.page-title {
     color: var(--text-normal);
-    font-family:
-      Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro",
-      monospace;
+    font-family: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
     font-size: 13px;
     font-weight: 400;
     line-height: 16.9px;
     background-color: rgba(0, 0, 0, 0);
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -2569,9 +2342,7 @@ body {
     opacity: 1;
     background-color: var(--status-bar-background);
     color: var(--status-bar-text-color);
-    font-family:
-      Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro",
-      monospace;
+    font-family: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
     font-size: var(--status-bar-font-size);
     text-align: start;
     padding-top: 4px;
@@ -2679,8 +2450,7 @@ body {
     padding-inline-start: 24px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout .callout-title > .callout-title-inner > p {
@@ -2691,8 +2461,7 @@ body {
   .callout > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(255, 255, 255);
     padding: 12px 12px 12px 24px;
     padding-block-end: 12px;
@@ -2703,14 +2472,9 @@ body {
 
   .callout[data-callout="note"] {
     --callout-color: var(--callout-default);
-    background-color: color-mix(
-      in oklch,
-      var(--callout-color) 10%,
-      transparent
-    );
+    background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(255, 255, 255);
     mix-blend-mode: normal;
     border: 0px solid oklch(0.538484 0.225963 275.968 / 0.25);
@@ -2744,8 +2508,7 @@ body {
     padding-inline-start: 24px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout[data-callout="note"] .callout-title > .callout-title-inner > p {
@@ -2756,8 +2519,7 @@ body {
   .callout[data-callout="note"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(255, 255, 255);
     padding: 12px 12px 12px 24px;
     padding-block-end: 12px;
@@ -2768,14 +2530,9 @@ body {
 
   .callout[data-callout="abstract"] {
     --callout-color: var(--callout-summary);
-    background-color: color-mix(
-      in oklch,
-      var(--callout-color) 10%,
-      transparent
-    );
+    background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(255, 255, 255);
     mix-blend-mode: normal;
     border: 0px solid oklch(0.715641 0.147625 262.422 / 0.25);
@@ -2809,8 +2566,7 @@ body {
     padding-inline-start: 24px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout[data-callout="abstract"] .callout-title > .callout-title-inner > p {
@@ -2821,8 +2577,7 @@ body {
   .callout[data-callout="abstract"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(255, 255, 255);
     padding: 12px 12px 12px 24px;
     padding-block-end: 12px;
@@ -2833,14 +2588,9 @@ body {
 
   .callout[data-callout="info"] {
     --callout-color: var(--callout-info);
-    background-color: color-mix(
-      in oklch,
-      var(--callout-color) 10%,
-      transparent
-    );
+    background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(255, 255, 255);
     mix-blend-mode: normal;
     border: 0px solid oklch(0.538484 0.225963 275.968 / 0.25);
@@ -2874,8 +2624,7 @@ body {
     padding-inline-start: 24px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout[data-callout="info"] .callout-title > .callout-title-inner > p {
@@ -2886,8 +2635,7 @@ body {
   .callout[data-callout="info"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(255, 255, 255);
     padding: 12px 12px 12px 24px;
     padding-block-end: 12px;
@@ -2898,14 +2646,9 @@ body {
 
   .callout[data-callout="todo"] {
     --callout-color: var(--callout-todo);
-    background-color: color-mix(
-      in oklch,
-      var(--callout-color) 10%,
-      transparent
-    );
+    background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(255, 255, 255);
     mix-blend-mode: normal;
     border: 0px solid oklch(0.538484 0.225963 275.968 / 0.25);
@@ -2939,8 +2682,7 @@ body {
     padding-inline-start: 24px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout[data-callout="todo"] .callout-title > .callout-title-inner > p {
@@ -2951,8 +2693,7 @@ body {
   .callout[data-callout="todo"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(255, 255, 255);
     padding: 12px 12px 12px 24px;
     padding-block-end: 12px;
@@ -2963,14 +2704,9 @@ body {
 
   .callout[data-callout="tip"] {
     --callout-color: var(--callout-tip);
-    background-color: color-mix(
-      in oklch,
-      var(--callout-color) 10%,
-      transparent
-    );
+    background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(255, 255, 255);
     mix-blend-mode: normal;
     border: 0px solid oklch(0.715641 0.147625 262.422 / 0.25);
@@ -3004,8 +2740,7 @@ body {
     padding-inline-start: 24px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout[data-callout="tip"] .callout-title > .callout-title-inner > p {
@@ -3016,8 +2751,7 @@ body {
   .callout[data-callout="tip"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(255, 255, 255);
     padding: 12px 12px 12px 24px;
     padding-block-end: 12px;
@@ -3028,14 +2762,9 @@ body {
 
   .callout[data-callout="success"] {
     --callout-color: var(--callout-success);
-    background-color: color-mix(
-      in oklch,
-      var(--callout-color) 10%,
-      transparent
-    );
+    background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(255, 255, 255);
     mix-blend-mode: normal;
     border: 0px solid oklch(0.859089 0.151559 152.245 / 0.25);
@@ -3069,8 +2798,7 @@ body {
     padding-inline-start: 24px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout[data-callout="success"] .callout-title > .callout-title-inner > p {
@@ -3081,8 +2809,7 @@ body {
   .callout[data-callout="success"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(255, 255, 255);
     padding: 12px 12px 12px 24px;
     padding-block-end: 12px;
@@ -3093,14 +2820,9 @@ body {
 
   .callout[data-callout="question"] {
     --callout-color: var(--callout-question);
-    background-color: color-mix(
-      in oklch,
-      var(--callout-color) 10%,
-      transparent
-    );
+    background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(255, 255, 255);
     mix-blend-mode: normal;
     border: 0px solid oklch(0.735118 0.168025 40.2438 / 0.25);
@@ -3134,8 +2856,7 @@ body {
     padding-inline-start: 24px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout[data-callout="question"] .callout-title > .callout-title-inner > p {
@@ -3146,8 +2867,7 @@ body {
   .callout[data-callout="question"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(255, 255, 255);
     padding: 12px 12px 12px 24px;
     padding-block-end: 12px;
@@ -3158,14 +2878,9 @@ body {
 
   .callout[data-callout="warning"] {
     --callout-color: var(--callout-warning);
-    background-color: color-mix(
-      in oklch,
-      var(--callout-color) 10%,
-      transparent
-    );
+    background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(255, 255, 255);
     mix-blend-mode: normal;
     border: 0px solid oklch(0.735118 0.168025 40.2438 / 0.25);
@@ -3199,8 +2914,7 @@ body {
     padding-inline-start: 24px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout[data-callout="warning"] .callout-title > .callout-title-inner > p {
@@ -3211,8 +2925,7 @@ body {
   .callout[data-callout="warning"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(255, 255, 255);
     padding: 12px 12px 12px 24px;
     padding-block-end: 12px;
@@ -3223,14 +2936,9 @@ body {
 
   .callout[data-callout="danger"] {
     --callout-color: var(--callout-error);
-    background-color: color-mix(
-      in oklch,
-      var(--callout-color) 10%,
-      transparent
-    );
+    background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(255, 255, 255);
     mix-blend-mode: normal;
     border: 0px solid oklch(0.716167 0.180562 13.8325 / 0.25);
@@ -3264,8 +2972,7 @@ body {
     padding-inline-start: 24px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout[data-callout="danger"] .callout-title > .callout-title-inner > p {
@@ -3276,8 +2983,7 @@ body {
   .callout[data-callout="danger"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(255, 255, 255);
     padding: 12px 12px 12px 24px;
     padding-block-end: 12px;
@@ -3288,14 +2994,9 @@ body {
 
   .callout[data-callout="failure"] {
     --callout-color: var(--callout-fail);
-    background-color: color-mix(
-      in oklch,
-      var(--callout-color) 10%,
-      transparent
-    );
+    background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(255, 255, 255);
     mix-blend-mode: normal;
     border: 0px solid oklch(0.716167 0.180562 13.8325 / 0.25);
@@ -3329,8 +3030,7 @@ body {
     padding-inline-start: 24px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout[data-callout="failure"] .callout-title > .callout-title-inner > p {
@@ -3341,8 +3041,7 @@ body {
   .callout[data-callout="failure"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(255, 255, 255);
     padding: 12px 12px 12px 24px;
     padding-block-end: 12px;
@@ -3353,14 +3052,9 @@ body {
 
   .callout[data-callout="bug"] {
     --callout-color: var(--callout-bug);
-    background-color: color-mix(
-      in oklch,
-      var(--callout-color) 10%,
-      transparent
-    );
+    background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(255, 255, 255);
     mix-blend-mode: normal;
     border: 0px solid oklch(0.716167 0.180562 13.8325 / 0.25);
@@ -3394,8 +3088,7 @@ body {
     padding-inline-start: 24px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout[data-callout="bug"] .callout-title > .callout-title-inner > p {
@@ -3406,8 +3099,7 @@ body {
   .callout[data-callout="bug"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(255, 255, 255);
     padding: 12px 12px 12px 24px;
     padding-block-end: 12px;
@@ -3418,14 +3110,9 @@ body {
 
   .callout[data-callout="example"] {
     --callout-color: var(--callout-example);
-    background-color: color-mix(
-      in oklch,
-      var(--callout-color) 10%,
-      transparent
-    );
+    background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(255, 255, 255);
     mix-blend-mode: normal;
     border: 0px solid oklch(0.697305 0.17906 295.405 / 0.25);
@@ -3459,8 +3146,7 @@ body {
     padding-inline-start: 24px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout[data-callout="example"] .callout-title > .callout-title-inner > p {
@@ -3471,8 +3157,7 @@ body {
   .callout[data-callout="example"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(255, 255, 255);
     padding: 12px 12px 12px 24px;
     padding-block-end: 12px;
@@ -3483,14 +3168,9 @@ body {
 
   .callout[data-callout="quote"] {
     --callout-color: var(--callout-quote);
-    background-color: color-mix(
-      in oklch,
-      var(--callout-color) 10%,
-      transparent
-    );
+    background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(255, 255, 255);
     mix-blend-mode: normal;
     border: 0px solid oklch(0.699256 0.0000347234 none / 0.25);
@@ -3524,8 +3204,7 @@ body {
     padding-inline-start: 24px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout[data-callout="quote"] .callout-title > .callout-title-inner > p {
@@ -3536,8 +3215,7 @@ body {
   .callout[data-callout="quote"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(255, 255, 255);
     padding: 12px 12px 12px 24px;
     padding-block-end: 12px;
@@ -3550,9 +3228,7 @@ body {
     background-color: rgba(0, 0, 0, 0);
     border-collapse: separate;
     color: rgb(255, 255, 255);
-    font-family:
-      Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro",
-      monospace;
+    font-family: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
     table-layout: auto;
     text-align: start;
     border: 0px rgb(128, 128, 128);
@@ -3579,9 +3255,7 @@ body {
   thead {
     background-color: rgba(0, 0, 0, 0);
     color: rgb(255, 255, 255);
-    font-family:
-      Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro",
-      monospace;
+    font-family: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
     border: 0px rgb(128, 128, 128);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -3596,9 +3270,7 @@ body {
   tbody {
     background-color: rgba(0, 0, 0, 0);
     color: rgb(255, 255, 255);
-    font-family:
-      Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro",
-      monospace;
+    font-family: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
   }
 
   th {
@@ -3657,9 +3329,7 @@ body {
   tr {
     background-color: var(--table-header-background);
     color: rgb(255, 255, 255);
-    font-family:
-      Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro",
-      monospace;
+    font-family: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
     border: 0px rgb(128, 128, 128);
     border-bottom: 1px solid rgb(112, 112, 112);
     border-top-left-radius: 0px;
@@ -3738,9 +3408,7 @@ body {
 
   figcaption {
     color: rgb(255, 255, 255);
-    font-family:
-      Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro",
-      monospace;
+    font-family: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
     font-size: 16px;
     font-style: normal;
     text-align: start;
@@ -3851,17 +3519,13 @@ body {
 
   .nav-files-container .nav-file-title {
     color: var(--nav-item-color);
-    font-family:
-      Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro",
-      monospace;
+    font-family: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
     font-weight: 400;
   }
 
   .nav-files-container .nav-file-title.is-active {
     color: var(--nav-item-color);
-    font-family:
-      Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro",
-      monospace;
+    font-family: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
     border-color: rgb(160, 160, 160);
     border-width: 0px;
     border-top-left-radius: 4px;
@@ -3872,17 +3536,13 @@ body {
 
   .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
     color: var(--nav-item-color);
-    font-family:
-      Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro",
-      monospace;
+    font-family: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
     font-weight: var(--nav-item-weight);
   }
 
   .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
     color: var(--nav-item-color);
-    font-family:
-      Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro",
-      monospace;
+    font-family: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
     font-weight: var(--nav-item-weight);
   }
 
@@ -3898,18 +3558,14 @@ body {
 
   .explorer .folder-container > div {
     color: var(--nav-item-color);
-    font-family:
-      Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro",
-      monospace;
+    font-family: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
     font-weight: 400;
   }
 
   .nav-files-container {
     background-color: rgba(0, 0, 0, 0);
     color: rgb(255, 255, 255);
-    font-family:
-      Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro",
-      monospace;
+    font-family: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
   }
 
   .bases-table {
@@ -4016,9 +3672,7 @@ body {
 
   .recent-notes > h3 {
     color: rgb(255, 255, 255);
-    font-family:
-      Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro",
-      monospace;
+    font-family: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
     font-weight: 400;
   }
 
@@ -4039,9 +3693,7 @@ body {
 
   .recent-notes > ul.recent-ul > li .section > .meta {
     color: var(--nav-item-color);
-    font-family:
-      Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro",
-      monospace;
+    font-family: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
   }
 
   ul.section-ul {
@@ -4070,9 +3722,7 @@ body {
 
   li.section-li > .section .meta {
     color: var(--nav-item-color);
-    font-family:
-      Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro",
-      monospace;
+    font-family: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
   }
 
   .darkmode {
@@ -4105,9 +3755,7 @@ body {
 
   .breadcrumb-element p {
     color: var(--text-faint);
-    font-family:
-      Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro",
-      monospace;
+    font-family: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
   }
 
   #stacked-pages-container.binder-active {
@@ -6212,10 +5860,7 @@ li.task-list-item[data-task="Z"] input[type="checkbox"]::after {
       }
     }
     li:has(> .folder-outer:not(.open)) > .folder-container:before {
-      background: var(
-        --collapse-icon-color-collapsed,
-        var(--quartz-icon-color)
-      );
+      background: var(--collapse-icon-color-collapsed, var(--quartz-icon-color));
       mask-image: var(--folder-closed-icon);
       -webkit-mask-image: var(--folder-closed-icon);
     }

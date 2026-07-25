@@ -1510,9 +1510,9 @@ body.theme-light {
   --font-size-large: 18px !important;
   --font-size-normal: 14px !important;
   --font-size-small: 12px !important;
+  --background-tertiary: var(--light-gray) !important;
   --radius-xs: 2px !important;
   --white: #ffffff !important;
-  --background-tertiary: var(--light-gray) !important;
   --font-ui-theme: "VT323", "Courier New", monospace !important;
   --dark-gray: #1a1a1a !important;
   --light-gray: #4d4d4d !important;
@@ -2621,9 +2621,9 @@ body.theme-dark {
   --font-size-large: 18px !important;
   --font-size-normal: 14px !important;
   --font-size-small: 12px !important;
+  --background-tertiary: var(--dark-gray) !important;
   --radius-xs: 2px !important;
   --white: #ffffff !important;
-  --background-tertiary: var(--dark-gray) !important;
   --font-ui-theme: "VT323", "Courier New", monospace !important;
   --dark-gray: #1a1a1a !important;
   --light-gray: #4d4d4d !important;

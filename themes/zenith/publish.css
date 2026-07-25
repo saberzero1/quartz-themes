@@ -1126,8 +1126,8 @@ body.theme-light {
   --font-mono: JetBrains Mono, Fira Code, monospace !important;
   --highlight-text: #ffffff !important;
   --glow-color: rgba(216, 27, 96, 0.4) !important;
-  --h6-bg: rgba(82, 92, 104, 0.07) !important;
   --code-bg: #fafafa !important;
+  --h6-bg: rgba(82, 92, 104, 0.07) !important;
   --highlight-bg: #37538c !important;
   --border-radius-button: 6px !important;
   --border-radius-card: 8px !important;
@@ -2241,8 +2241,8 @@ body.theme-dark {
   --font-mono: JetBrains Mono, Fira Code, monospace !important;
   --highlight-text: #ffffff !important;
   --glow-color: rgba(240, 98, 146, 0.5) !important;
-  --h6-bg: rgba(165, 181, 194, 0.12) !important;
   --code-bg: #0f1419 !important;
+  --h6-bg: rgba(165, 181, 194, 0.12) !important;
   --highlight-bg: #7e57c2 !important;
   --border-radius-button: 6px !important;
   --border-radius-card: 8px !important;

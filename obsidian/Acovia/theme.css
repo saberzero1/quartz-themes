@@ -1,0 +1,56 @@
+body {
+  letter-spacing: 0.3px;
+}
+
+.theme-dark {
+  --accent-h: 41;
+  --accent-s: 100%;
+  --accent-l: 30%;
+  --background-primary: #181715;
+  --background-secondary: #1f1e1c;
+  --background-secondary-alt: #383735;
+  --background-modifier-form-field: #1f1f1f;
+  --code-background: #252829;
+
+  --text-normal: #efeae0;
+  --text-muted: #efeae0;
+  --text-accent: #ffaf00;
+
+  --code-color: #dfdfdf;
+}
+
+.theme-light {
+  --accent-h: 41;
+  --accent-s: 100%;
+  --accent-l: 30%;
+  --background-primary: #f8f5f0;
+  --background-secondary: #e8e5e0;
+  --background-secondary-alt: #f8f5f0;
+  --background-modifier-form-field: #d8d5d0;
+  --code-background: #f8f5f0;
+
+  --text-normal: #181510;
+  --text-muted: #282520;
+  --text-accent: #7f3f00;
+
+  --code-color: #1f001f;
+}
+
+/* 不稳定的类 */
+
+pre code,         /* 阅读状态下的代码块 */
+.cm-hmd-codeblock /* 编辑状态下的代码块 */
+{
+  color: var(--code-color) !important;
+}
+
+.cm-inline-code,  /* 编辑状态下的行内代码块 */
+p code            /* 阅读状态下行内代码块 */
+{
+  background-color: #ffaf001f !important;
+  color: var(--text-accent) !important;
+}
+
+p {
+  padding-bottom: 12px !important;
+}

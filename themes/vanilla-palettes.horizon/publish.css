@@ -1433,9 +1433,9 @@ body.theme-light {
   --h6-color: var(--color-red) !important;
   --inline-title-color: var(--text-color) !important;
   --text-color: var(--black) !important;
-  --border-color: var(--border-color-primary) !important;
   --bold-color: var(--accent-color-light) !important;
   --italic-color: var(--accent-color-light) !important;
+  --border-color: var(--border-color-primary) !important;
   --code-variable: var(--thunderbird) !important;
   --green: #29d398 !important;
   --red: #e95678 !important;
@@ -1450,10 +1450,10 @@ body.theme-light {
   --border: #1a1c23 !important;
   --black: #333333 !important;
   --magenta: #ee64ac !important;
+  --accent-color-light: var(--elm) !important;
   --selection-background-color: var(--accent) !important;
   --accent-color-hover: var(--yellow) !important;
   --accent-color-dark: var(--red) !important;
-  --accent-color-light: var(--elm) !important;
   --border-color-primary: var(--accent) !important;
   --border-color-secondary: var(--accent) !important;
   --code-boolean: var(--crimson) !important;
@@ -2521,9 +2521,9 @@ body.theme-dark {
   --h6-color: var(--color-red) !important;
   --inline-title-color: var(--text-color) !important;
   --text-color: var(--lightText) !important;
-  --border-color: var(--border-color-primary) !important;
   --bold-color: var(--accent-color-light) !important;
   --italic-color: var(--accent-color-light) !important;
+  --border-color: var(--border-color-primary) !important;
   --code-variable: var(--cranberry) !important;
   --green: #29d398 !important;
   --red: #e95678 !important;
@@ -2540,10 +2540,10 @@ body.theme-dark {
   --magenta: #ee64ac !important;
   --lavender: #b877db !important;
   --turquoise: #25b0bc !important;
+  --accent-color-light: var(--turquoise) !important;
   --selection-background-color: var(--accent) !important;
   --accent-color-hover: var(--rosebud) !important;
   --accent-color-dark: var(--cranberry) !important;
-  --accent-color-light: var(--turquoise) !important;
   --border-color-primary: var(--accent) !important;
   --border-color-secondary: var(--accent) !important;
   --code-boolean: var(--apricot) !important;

@@ -1,0 +1,1559 @@
+/* =====================================================================
+   Opal Theme  ·  v2.0（满配：约 90 个可调控件 + 界面线条/边框全覆盖）
+   Opal 配色（浅深双 flavour）+ 559 主题精华。
+   轴一：审美路线（class-select）。轴二：自定义输入与数值微调（本版补齐）。
+   健壮性：每个变量项都带默认兜底；@supports / reduced-motion / reduced-transparency / 打印复位。
+   ===================================================================== */
+
+/* @settings
+name: Opal
+id: opal-theme
+settings:
+  -
+    id: opal-h-color
+    title: 配色
+    type: heading
+    level: 1
+  -
+    id: opal-accent
+    title: 主强调色
+    description: 链接、选中、焦点等核心交互色。
+    type: variable-themed-color
+    format: hex
+    opacity: false
+    default-light: '#4C50C8'
+    default-dark: '#8098FF'
+  -
+    id: opal-accent-2
+    title: 副强调色
+    description: 第二强调色，用于次级高亮、渐变的另一端。默认青。
+    type: variable-themed-color
+    format: hex
+    opacity: false
+    default-light: '#127367'
+    default-dark: '#82D9C8'
+  -
+    id: opal-accent-saturation
+    title: 强调色鲜艳度
+    description: 1=原样，小于 1 更灰更沉，大于 1 更艳。老引擎不支持时自动忽略。
+    type: variable-number-slider
+    default: 1
+    min: 0.4
+    max: 1.6
+    step: 0.05
+  -
+    id: opal-tone-light
+    title: 浅色底色温
+    description: 给浅色背景掺入的色调（暖灰选桃、冷灰选蓝、紫灰选紫）。要配合下面的强度才生效。
+    type: variable-themed-color
+    format: hex
+    opacity: false
+    default-light: '#EDEFF4'
+    default-dark: '#EDEFF4'
+  -
+    id: opal-tone-dark
+    title: 深色底色温
+    description: 给深色背景掺入的色调。要配合下面的强度才生效。
+    type: variable-themed-color
+    format: hex
+    opacity: false
+    default-light: '#20232E'
+    default-dark: '#20232E'
+  -
+    id: opal-tone-strength
+    title: 底色温强度
+    description: 上面色温掺进背景的比例。0=纯中性灰（默认），越大染色越明显。
+    type: variable-number-slider
+    default: 0
+    min: 0
+    max: 18
+    step: 1
+    format: '%'
+  -
+    id: opal-surface-contrast
+    title: 面板分层强度
+    description: 侧栏/卡片这些「面」相对正文背景的明暗差。100=正常分层（默认），越小越扁平、越贴近背景。
+    type: variable-number-slider
+    default: 100
+    min: 40
+    max: 100
+    step: 5
+    format: '%'
+  -
+    id: opal-code-bg
+    title: 代码块底色
+    type: variable-themed-color
+    format: hex
+    opacity: false
+    default-light: '#E2E5EE'
+    default-dark: '#2B2F3C'
+  -
+    id: opal-mark-bg
+    title: 高亮主色
+    description: 荧光笔高亮的基准色（波浪线/辉光都取自它）。
+    type: variable-themed-color
+    format: hex
+    opacity: false
+    default-light: '#F6E1A2'
+    default-dark: '#EBD08A'
+  -
+    id: opal-mark-style
+    title: 高亮风格
+    description: 霓虹波浪=波浪下划线+辉光（默认）。纯色底=传统荧光块。柔和底=淡色块。裁字=只给字上色。
+    type: class-select
+    allowEmpty: false
+    default: opal-mark-wave
+    options:
+      - label: 霓虹波浪
+        value: opal-mark-wave
+      - label: 纯色底块
+        value: opal-mark-fill
+      - label: 柔和底块
+        value: opal-mark-soft
+      - label: 霓虹裁字
+        value: opal-mark-text
+  -
+    id: opal-heading-scheme
+    title: 标题配色
+    description: 彩虹多色=每级一色（默认）。同色渐变=一色族由亮到暗。单色=都用主色。逐级自定=用下面 6 个色钮。关闭=退回正文色。
+    type: class-select
+    allowEmpty: false
+    default: opal-h-rainbow
+    options:
+      - label: 彩虹多色
+        value: opal-h-rainbow
+      - label: 同色渐变
+        value: opal-h-mono
+      - label: 单色
+        value: opal-h-single
+      - label: 逐级自定
+        value: opal-h-custom
+      - label: 关闭分级上色
+        value: opal-h-plain
+  -
+    id: opal-tag-scheme
+    title: 标签配色
+    description: 首字母伪哈希=按标签首字母散成 26 色（默认）。语义=只给紧急/完成等词库上色，其余统一。单色=统一。
+    type: class-select
+    allowEmpty: false
+    default: opal-tag-hash
+    options:
+      - label: 首字母伪哈希
+        value: opal-tag-hash
+      - label: 语义词库
+        value: opal-tag-semantic
+      - label: 单色统一
+        value: opal-tag-mono
+  -
+    id: opal-unresolved-link
+    title: 未创建笔记的链接样式
+    description: 指向还不存在笔记的链接怎么显示。虚线（默认）/ 变灰 / 模糊 / 加问号角标。
+    type: class-select
+    allowEmpty: false
+    default: opal-unres-dash
+    options:
+      - label: 虚线下划
+        value: opal-unres-dash
+      - label: 变灰
+        value: opal-unres-dim
+      - label: 模糊
+        value: opal-unres-blur
+      - label: 问号角标
+        value: opal-unres-badge
+  -
+    id: opal-h-font
+    title: 字体
+    type: heading
+    level: 1
+  -
+    id: opal-font-text
+    title: 正文字体
+    description: 填字体名即可（多个用英文逗号隔开）。把 Inter 换成你要的，如 Beiruti。后面自动接系统中文兜底。
+    type: variable-text
+    default: Inter
+  -
+    id: opal-font-heading
+    title: 标题字体
+    description: 标题专用字体。留 Inter 或换成你的展示字体。
+    type: variable-text
+    default: Inter
+  -
+    id: opal-font-code
+    title: 代码/等宽字体
+    type: variable-text
+    default: JetBrains Mono
+  -
+    id: opal-font-ui
+    title: 界面字体
+    description: 侧栏、菜单、标签页等界面文字的字体。
+    type: variable-text
+    default: Inter
+  -
+    id: opal-font-size
+    title: 正文字号
+    type: variable-number-slider
+    default: 16
+    min: 12
+    max: 22
+    step: 1
+    format: px
+  -
+    id: opal-line-height
+    title: 正文行高
+    type: variable-number-slider
+    default: 1.5
+    min: 1.2
+    max: 2.2
+    step: 0.05
+  -
+    id: opal-letter-spacing
+    title: 正文字间距
+    type: variable-number-slider
+    default: 0
+    min: -0.5
+    max: 2
+    step: 0.1
+    format: px
+  -
+    id: opal-uncolored-bold
+    title: 粗体不上色
+    description: 默认粗体是桃色。打开后粗体回退成正文色，只加粗不变色。
+    type: class-toggle
+    default: false
+  -
+    id: opal-font-features
+    title: 代码字体特性
+    description: 高级项。填 OpenType 特性，如 "liga" 1, "calt" 1 开连字，"zero" 1 斜杠零。留 normal 则默认。
+    type: variable-text
+    default: normal
+  -
+    id: opal-h-heading
+    title: 标题分级
+    type: heading
+    level: 1
+  -
+    id: opal-h1-size
+    title: H1 字号
+    type: variable-number-slider
+    default: 2
+    min: 0.9
+    max: 3.2
+    step: 0.05
+    format: em
+  -
+    id: opal-h2-size
+    title: H2 字号
+    type: variable-number-slider
+    default: 1.65
+    min: 0.9
+    max: 3
+    step: 0.05
+    format: em
+  -
+    id: opal-h3-size
+    title: H3 字号
+    type: variable-number-slider
+    default: 1.4
+    min: 0.9
+    max: 2.6
+    step: 0.05
+    format: em
+  -
+    id: opal-h4-size
+    title: H4 字号
+    type: variable-number-slider
+    default: 1.2
+    min: 0.9
+    max: 2.2
+    step: 0.05
+    format: em
+  -
+    id: opal-h5-size
+    title: H5 字号
+    type: variable-number-slider
+    default: 1.1
+    min: 0.9
+    max: 2
+    step: 0.05
+    format: em
+  -
+    id: opal-h6-size
+    title: H6 字号
+    type: variable-number-slider
+    default: 1
+    min: 0.8
+    max: 1.8
+    step: 0.05
+    format: em
+  -
+    id: opal-h1-weight
+    title: H1 字重
+    type: variable-number-slider
+    default: 700
+    min: 100
+    max: 900
+    step: 50
+  -
+    id: opal-h2-weight
+    title: H2 字重
+    type: variable-number-slider
+    default: 700
+    min: 100
+    max: 900
+    step: 50
+  -
+    id: opal-h3-weight
+    title: H3 字重
+    type: variable-number-slider
+    default: 650
+    min: 100
+    max: 900
+    step: 50
+  -
+    id: opal-h4-weight
+    title: H4 字重
+    type: variable-number-slider
+    default: 600
+    min: 100
+    max: 900
+    step: 50
+  -
+    id: opal-h5-weight
+    title: H5 字重
+    type: variable-number-slider
+    default: 600
+    min: 100
+    max: 900
+    step: 50
+  -
+    id: opal-h6-weight
+    title: H6 字重
+    type: variable-number-slider
+    default: 600
+    min: 100
+    max: 900
+    step: 50
+  -
+    id: opal-hd-line
+    title: 标题下划线
+    description: 标题的下边线，可与下面的「标题前缀」叠加。渐变下划线（默认，各级自身色淡出）/ 单线底边 / 无。
+    type: class-select
+    allowEmpty: false
+    default: opal-hdl-gradient
+    options:
+      - label: 渐变下划线
+        value: opal-hdl-gradient
+      - label: 单线底边
+        value: opal-hdl-underline
+      - label: 无
+        value: opal-hdl-none
+  -
+    id: opal-hd-prefix
+    title: 标题前缀
+    description: 标题前的标记，可与上面的「标题下划线」叠加。无（默认）/ 悬挂井号（左侧露出 #）/ 自动序号（1.2.3）。
+    type: class-select
+    allowEmpty: false
+    default: opal-hdp-none
+    options:
+      - label: 无
+        value: opal-hdp-none
+      - label: 悬挂井号
+        value: opal-hdp-hash
+      - label: 自动序号
+        value: opal-hdp-counter
+  -
+    id: opal-h1-color
+    title: H1 颜色（逐级自定时用）
+    type: variable-themed-color
+    format: hex
+    opacity: false
+    default-light: '#4C50C8'
+    default-dark: '#A6A8F2'
+  -
+    id: opal-h2-color
+    title: H2 颜色（逐级自定时用）
+    type: variable-themed-color
+    format: hex
+    opacity: false
+    default-light: '#1E69A1'
+    default-dark: '#86BFF0'
+  -
+    id: opal-h3-color
+    title: H3 颜色（逐级自定时用）
+    type: variable-themed-color
+    format: hex
+    opacity: false
+    default-light: '#0E6E82'
+    default-dark: '#82CFE6'
+  -
+    id: opal-h4-color
+    title: H4 颜色（逐级自定时用）
+    type: variable-themed-color
+    format: hex
+    opacity: false
+    default-light: '#127266'
+    default-dark: '#82D9C8'
+  -
+    id: opal-h5-color
+    title: H5 颜色（逐级自定时用）
+    type: variable-themed-color
+    format: hex
+    opacity: false
+    default-light: '#5C6B1B'
+    default-dark: '#C6D98A'
+  -
+    id: opal-h6-color
+    title: H6 颜色（逐级自定时用）
+    type: variable-themed-color
+    format: hex
+    opacity: false
+    default-light: '#B13A56'
+    default-dark: '#F08AA0'
+  -
+    id: opal-h-layout
+    title: 布局尺寸
+    type: heading
+    level: 1
+  -
+    id: opal-line-width
+    title: 正文行宽
+    description: 一行最多多宽（可读宽度）。最常调的一项。
+    type: variable-number-slider
+    default: 700
+    min: 400
+    max: 1400
+    step: 20
+    format: px
+  -
+    id: opal-table-widen
+    title: 表格铺满行宽
+    description: 打开后表格占满可用宽度，不再被行宽夹窄。
+    type: class-toggle
+    default: false
+  -
+    id: opal-mermaid-scroll
+    title: 图表超宽改横向滚动
+    description: 默认超出行宽的 Mermaid 图会等比缩放适应行宽。打开此项改为保持原大小、超宽部分横向滚动查看。
+    type: class-toggle
+    default: false
+  -
+    id: opal-para-spacing
+    title: 段落间距
+    type: variable-number-slider
+    default: 16
+    min: 0
+    max: 40
+    step: 2
+    format: px
+  -
+    id: opal-first-indent
+    title: 首行缩进排版
+    description: 打开后段落首行缩进两字、段间不留空（书本式）。关闭则段间留空、不缩进（网页式，默认）。
+    type: class-toggle
+    default: false
+  -
+    id: opal-list-indent
+    title: 列表缩进
+    type: variable-number-slider
+    default: 2
+    min: 0.8
+    max: 4
+    step: 0.1
+    format: em
+  -
+    id: opal-file-margin
+    title: 编辑区上下边距
+    type: variable-number-slider
+    default: 40
+    min: 0
+    max: 120
+    step: 5
+    format: px
+  -
+    id: opal-img-radius
+    title: 图片圆角
+    type: variable-number-slider
+    default: 10
+    min: 0
+    max: 30
+    step: 1
+    format: px
+  -
+    id: opal-img-width
+    title: 图片最大宽度
+    type: variable-number-slider
+    default: 100
+    min: 30
+    max: 100
+    step: 5
+    format: '%'
+  -
+    id: opal-img-shadow
+    title: 图片投影
+    description: 打开后图片带柔和投影，像浮起的照片。
+    type: class-toggle
+    default: false
+  -
+    id: opal-bg-texture
+    title: 背景纹理
+    description: 编辑区背景纹理。无（默认）/ 点阵 / 方格纸 / 横线纸。
+    type: class-select
+    allowEmpty: false
+    default: opal-tex-none
+    options:
+      - label: 无
+        value: opal-tex-none
+      - label: 点阵
+        value: opal-tex-dot
+      - label: 方格纸
+        value: opal-tex-grid
+      - label: 横线纸
+        value: opal-tex-line
+  -
+    id: opal-radius
+    title: 圆角大小
+    type: variable-number-slider
+    default: 10
+    min: 0
+    max: 20
+    step: 1
+    format: px
+  -
+    id: opal-corner
+    title: 圆角形状
+    description: 超椭圆=iOS 式更柔的角（默认；老引擎自动退标准圆角）。标准圆角 / 凹角 scoop / 斜角 bevel。
+    type: class-select
+    allowEmpty: false
+    default: opal-corner-squircle
+    options:
+      - label: 超椭圆 squircle
+        value: opal-corner-squircle
+      - label: 标准圆角
+        value: opal-corner-round
+      - label: 凹角 scoop
+        value: opal-corner-scoop
+      - label: 斜角 bevel
+        value: opal-corner-bevel
+  -
+    id: opal-h-border
+    title: 界面线条与边框
+    type: heading
+    level: 1
+  -
+    id: opal-border-width
+    title: 全局边框粗细
+    description: 卡片、输入框、表格、菜单等所有描边的统一粗细。
+    type: variable-number-slider
+    default: 1
+    min: 0
+    max: 3
+    step: 0.5
+    format: px
+  -
+    id: opal-border-color
+    title: 全局边框颜色
+    type: variable-themed-color
+    format: hex
+    opacity: false
+    default-light: '#D3D8E3'
+    default-dark: '#3A3F4E'
+  -
+    id: opal-divider-style
+    title: 分隔线风格
+    description: 正文分隔线（---）的样式。渐隐（默认）/ 实线 / 虚线 / 圆点 / 双线。
+    type: class-select
+    allowEmpty: false
+    default: opal-div-fade
+    options:
+      - label: 渐隐
+        value: opal-div-fade
+      - label: 实线
+        value: opal-div-solid
+      - label: 虚线
+        value: opal-div-dash
+      - label: 圆点
+        value: opal-div-dot
+      - label: 双线
+        value: opal-div-double
+  -
+    id: opal-pane-borders
+    title: 显示面板分隔边框
+    description: 打开后相邻面板之间画出分隔线，边界更清楚。默认关（靠留白区分）。
+    type: class-toggle
+    default: false
+  -
+    id: opal-nav-indent-line
+    title: 文件树缩进参考线
+    description: 侧栏文件树每层缩进画一条竖参考线（默认开）。关闭则只靠缩进。
+    type: class-toggle
+    default: true
+  -
+    id: opal-indent-guide
+    title: 正文列表缩进线
+    description: 正文里多级列表每层画竖参考线，看清层级。默认关。
+    type: class-toggle
+    default: false
+  -
+    id: opal-focus-ring
+    title: 焦点环风格
+    description: 输入框/按钮获得焦点时的提示。描边（默认）/ 发光 / 无。
+    type: class-select
+    allowEmpty: false
+    default: opal-ring-outline
+    options:
+      - label: 描边
+        value: opal-ring-outline
+      - label: 发光
+        value: opal-ring-glow
+      - label: 无
+        value: opal-ring-none
+  -
+    id: opal-scrollbar-width
+    title: 滚动条粗细
+    type: variable-number-slider
+    default: 12
+    min: 0
+    max: 18
+    step: 1
+    format: px
+  -
+    id: opal-table-border
+    title: 表格边框
+    description: 仅横线（默认）/ 全框（每格描边）/ 无框。
+    type: class-select
+    allowEmpty: false
+    default: opal-tb-row
+    options:
+      - label: 仅横线
+        value: opal-tb-row
+      - label: 全框
+        value: opal-tb-full
+      - label: 无框
+        value: opal-tb-none
+  -
+    id: opal-h-toggle
+    title: 元素开关
+    type: heading
+    level: 1
+  -
+    id: opal-link-plain
+    title: 去掉链接下划线
+    description: 打开后所有链接不带下划线，只用颜色区分。
+    type: class-toggle
+    default: false
+  -
+    id: opal-code-wrap
+    title: 代码块自动换行
+    description: 打开后长代码行自动折行，不再横向滚动。
+    type: class-toggle
+    default: false
+  -
+    id: opal-code-ligatures
+    title: 代码连字
+    description: 打开后代码里连字合成合字（需字体支持）。
+    type: class-toggle
+    default: false
+  -
+    id: opal-table-plain
+    title: 关闭表格斑马纹
+    description: 默认偶数行有淡色底。打开此项取消斑马纹。
+    type: class-toggle
+    default: false
+  -
+    id: opal-active-line
+    title: 高亮当前行
+    description: 打开后光标所在行有淡强调色底，便于定位。
+    type: class-toggle
+    default: false
+  -
+    id: opal-focus-mode
+    title: 聚焦暗化
+    description: 打开后非当前段落变淡，只有正在写的那段清晰。
+    type: class-toggle
+    default: false
+  -
+    id: opal-tasks-native
+    title: 复选框回退原生
+    description: 打开后不用自定义状态样式，退回系统原生复选框。
+    type: class-toggle
+    default: false
+  -
+    id: opal-list-scheme
+    title: 列表符号
+    description: 分层形状=按深度 ●○▪– 变形+单色（默认）。彩虹循环=形状不变、按深度换色。单色圆点=各级都用同色实心圆点。
+    type: class-select
+    allowEmpty: false
+    default: opal-list-shape
+    options:
+      - label: 分层形状
+        value: opal-list-shape
+      - label: 彩虹循环
+        value: opal-list-rainbow
+      - label: 单色圆点
+        value: opal-list-dot
+  -
+    id: opal-no-bg-orb
+    title: 关闭氛围背景光晕
+    description: 编辑区背后默认有极淡角落光晕。打开此项关掉它。
+    type: class-toggle
+    default: false
+  -
+    id: opal-h-skin
+    title: 皮肤与动效
+    type: heading
+    level: 1
+  -
+    id: opal-surface
+    title: 表面质感
+    description: 实底=性能/可读最佳（默认）。毛玻璃=通透。液态玻璃=最有质感最吃性能。系统开「减少透明度」自动退实底。
+    type: class-select
+    allowEmpty: false
+    default: opal-surface-solid
+    options:
+      - label: 实底不透明
+        value: opal-surface-solid
+      - label: 毛玻璃
+        value: opal-surface-glass
+      - label: 液态玻璃
+        value: opal-surface-liquid
+  -
+    id: opal-ui-language
+    title: 界面设计语言
+    description: 整体控件观感。中性（默认）/ Cupertino（圆润+轻投影）/ Fluent（微亮描边）/ Material（实底+明确阴影）。
+    type: class-select
+    allowEmpty: false
+    default: opal-ui-neutral
+    options:
+      - label: 中性
+        value: opal-ui-neutral
+      - label: Cupertino
+        value: opal-ui-cupertino
+      - label: Fluent
+        value: opal-ui-fluent
+      - label: Material
+        value: opal-ui-material
+  -
+    id: opal-callout-skin
+    title: Callout 皮肤
+    description: 融合款=软底+左条+轻抬升（默认）。硬阴影 / 描边 / HUD发光 / 反色标题条 / 折角纸片。
+    type: class-select
+    allowEmpty: false
+    default: opal-co-fused
+    options:
+      - label: 融合款（软底+左条）
+        value: opal-co-fused
+      - label: 硬阴影（新粗野）
+        value: opal-co-brutal
+      - label: 描边极简
+        value: opal-co-outline
+      - label: HUD 发光
+        value: opal-co-glow
+      - label: 反色标题条
+        value: opal-co-bar
+      - label: 折角纸片
+        value: opal-co-paper
+  -
+    id: opal-folder-scheme
+    title: 文件夹着色
+    description: 彩虹脊柱=顶层循环色+子树继承（默认）。编号分区=按 00/10/20 前缀分色。单色 / 关闭。
+    type: class-select
+    allowEmpty: false
+    default: opal-folder-rainbow
+    options:
+      - label: 彩虹脊柱
+        value: opal-folder-rainbow
+      - label: 编号分区
+        value: opal-folder-numbered
+      - label: 单色
+        value: opal-folder-mono
+      - label: 关闭
+        value: opal-folder-plain
+  -
+    id: opal-motion
+    title: 动效总取向
+    description: 一个旋钮统管全站微动效。关=全静态。微=更轻更慢。标准=克制快顺（默认）。活泼=幅度大带回弹。系统开「减少动态」自动全关。
+    type: class-select
+    allowEmpty: false
+    default: opal-motion-standard
+    options:
+      - label: 关
+        value: opal-motion-off
+      - label: 微
+        value: opal-motion-mini
+      - label: 标准
+        value: opal-motion-standard
+      - label: 活泼
+        value: opal-motion-lively
+  -
+    id: opal-entrance
+    title: 入场动效
+    description: 开笔记时整篇淡入一次。去模糊合焦（默认）/ 平滑平移 / 弹性过冲。
+    type: class-select
+    allowEmpty: false
+    default: opal-ent-blur
+    options:
+      - label: 去模糊合焦
+        value: opal-ent-blur
+      - label: 平滑无过冲
+        value: opal-ent-smooth
+      - label: 弹性过冲
+        value: opal-ent-bounce
+  -
+    id: opal-retro
+    title: 复古皮肤
+    description: 整套复古外壳。无（默认）/ 合成波 / 绿磷终端 / 琥珀CRT / 数字雨。
+    type: class-select
+    allowEmpty: false
+    default: opal-retro-none
+    options:
+      - label: 无
+        value: opal-retro-none
+      - label: 合成波 Synthwave
+        value: opal-retro-synth
+      - label: 绿磷终端
+        value: opal-retro-green
+      - label: 琥珀 CRT
+        value: opal-retro-amber
+      - label: 数字雨
+        value: opal-retro-matrix
+  -
+    id: opal-h-print
+    title: 打印导出
+    type: heading
+    level: 1
+  -
+    id: opal-print-dark
+    title: 导出保留暗色
+    description: 默认导出转纸面浅色（省墨可读）。打开后保留暗底（需在导出设置里开 printBackground）。
+    type: class-toggle
+    default: false
+  -
+    id: opal-print-font
+    title: 打印正文字体
+    description: 导出时正文换成。衬线（默认，纸面易读）/ 不置换 / 打字机。
+    type: class-select
+    allowEmpty: false
+    default: opal-pf-serif
+    options:
+      - label: 衬线
+        value: opal-pf-serif
+      - label: 不置换
+        value: opal-pf-keep
+      - label: 打字机
+        value: opal-pf-mono
+  -
+    id: opal-print-align
+    title: 打印段落对齐
+    description: 两端对齐+首行缩进（默认，书本式）/ 齐左。
+    type: class-select
+    allowEmpty: false
+    default: opal-pa-justify
+    options:
+      - label: 两端对齐
+        value: opal-pa-justify
+      - label: 齐左
+        value: opal-pa-left
+*/
+
+/* =====================================================================
+   1. Opal 原色令牌（浅深两套，中性色可掺色温） + 全局旋钮
+   ===================================================================== */
+.theme-dark {
+  --o-crust-n:#14161F; --o-mantle-n:#191C26; --o-base-n:#20232E;
+  --o-s0-n:#2B2F3C; --o-s1-n:#3A3F4E; --o-s2-n:#4C5262;
+  --o-tone: var(--opal-tone-dark, #20232E);
+  --o-overlay0:#646B7E; --o-overlay1:#7B8294; --o-overlay2:#969DAF;
+  --o-subtext0:#ACB3C6; --o-subtext1:#C2C8D8; --o-text:#D8DDEC;
+  --o-rose:#F08AA0; --o-coral:#F0998C; --o-peach:#F2AE7B; --o-amber:#EBD08A;
+  --o-lime:#C6D98A; --o-green:#92DBA8; --o-teal:#82D9C8; --o-cyan:#82CFE6;
+  --o-sky:#86BFF0; --o-blue:#8FAEF5; --o-indigo:#A6A8F2; --o-violet:#C0A2F0;
+  --o-orchid:#D29AEE; --o-pink:#EE9AD6;
+  --o-on-accent:#0B1120;
+  --o-hl-default:#EBD08A; --o-hl-line-default:#EBD08A; --o-accent-default:#8098FF;
+  --o-cc-blue:143 174 245; --o-cc-cyan:130 207 230; --o-cc-green:146 219 168;
+  --o-cc-amber:235 208 138; --o-cc-rose:240 138 160; --o-cc-teal:130 217 200;
+  --o-cc-orchid:210 154 238; --o-cc-indigo:166 168 242;
+}
+.theme-light {
+  --o-crust-n:#DADEE8; --o-mantle-n:#E4E7EF; --o-base-n:#EDEFF4;
+  --o-s0-n:#E2E5EE; --o-s1-n:#D3D8E3; --o-s2-n:#C3C9D8;
+  --o-tone: var(--opal-tone-light, #EDEFF4);
+  --o-overlay0:#A6ABB8; --o-overlay1:#8E94A2; --o-overlay2:#767B88;
+  --o-subtext0:#565A66; --o-subtext1:#474B57; --o-text:#33363F;
+  --o-rose:#B13A56; --o-coral:#AA4430; --o-peach:#94561D; --o-amber:#7B6214;
+  --o-lime:#5C6B1B; --o-green:#287244; --o-teal:#127266; --o-cyan:#0E6E82;
+  --o-sky:#1E69A1; --o-blue:#3A5FC4; --o-indigo:#4C50C8; --o-violet:#7B47C0;
+  --o-orchid:#9040B3; --o-pink:#A73A8A;
+  --o-on-accent:#FFFFFF;
+  --o-hl-default:#F6E1A2; --o-hl-line-default:#946F0E; --o-accent-default:#4C50C8;
+  --o-cc-blue:58 95 196; --o-cc-cyan:14 110 130; --o-cc-green:40 114 68;
+  --o-cc-amber:123 98 20; --o-cc-rose:177 58 86; --o-cc-teal:18 114 102;
+  --o-cc-orchid:146 65 180; --o-cc-indigo:76 80 200;
+}
+body {
+  /* 中性层：默认直接取原色（无 color-mix 也安全） */
+  --o-crust:var(--o-crust-n); --o-mantle:var(--o-mantle-n); --o-base:var(--o-base-n);
+  --o-surface0:var(--o-s0-n); --o-surface1:var(--o-s1-n); --o-surface2:var(--o-s2-n);
+  --o-tone-k: var(--opal-tone-strength, 0%);
+  --o-sc: var(--opal-surface-contrast, 100%);
+  --o-accent-raw: var(--opal-accent, var(--o-accent-default));
+  --o-accent: var(--o-accent-raw);
+  --o-accent2: var(--opal-accent-2, var(--o-teal));
+  --o-hl-bg: var(--opal-mark-bg, var(--o-hl-default));
+  --o-hl-line: var(--o-hl-line-default);  /* 线色独立于填充色，保证默认下划线在浅底也够深可见 */
+  --o-r: var(--opal-radius, 10px);
+  --o-bw: var(--opal-border-width, 1px);
+  --o-m-fast: .12s; --o-m-base: .22s; --o-m-slow: .34s;
+  --o-ease: cubic-bezier(.2,.7,.3,1);
+  --o-m-scale: 1;
+  --o-cshape: superellipse(1.2);
+  --o-fallback-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", "Noto Sans SC", sans-serif;
+  --o-fallback-mono: ui-monospace, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+  --o-fallback-serif: "Source Han Serif SC", "Songti SC", Georgia, "Times New Roman", serif;
+  --o-soft-accent: var(--o-surface1);
+  --o-soft-err: var(--o-surface0);
+  --o-soft-ok: var(--o-surface0);
+}
+@supports (background: color-mix(in oklab, red, blue)) {
+  body {
+    --o-crust:  color-mix(in oklab, var(--o-tone) var(--o-tone-k), var(--o-crust-n));
+    --o-mantle: color-mix(in oklab, var(--o-tone) var(--o-tone-k), var(--o-mantle-n));
+    --o-base:   color-mix(in oklab, var(--o-tone) var(--o-tone-k), var(--o-base-n));
+    /* 面板明暗对比：先按 --o-sc 缩放 surface 与 base 的差，再掺色温 */
+    --o-surface0: color-mix(in oklab, color-mix(in oklab, var(--o-s0-n), var(--o-base-n) calc(100% - var(--o-sc))), var(--o-tone) var(--o-tone-k));
+    --o-surface1: color-mix(in oklab, color-mix(in oklab, var(--o-s1-n), var(--o-base-n) calc(100% - var(--o-sc))), var(--o-tone) var(--o-tone-k));
+    --o-surface2: color-mix(in oklab, color-mix(in oklab, var(--o-s2-n), var(--o-base-n) calc(100% - var(--o-sc))), var(--o-tone) var(--o-tone-k));
+    --o-soft-accent: color-mix(in oklab, var(--o-accent) 16%, var(--o-base));
+    --o-soft-err:    color-mix(in oklab, var(--o-rose)   14%, var(--o-base));
+    --o-soft-ok:     color-mix(in oklab, var(--o-green)  14%, var(--o-base));
+  }
+}
+@supports (color: oklch(from red l c h)) {
+  body { --o-accent: oklch(from var(--o-accent-raw) l calc(c * var(--opal-accent-saturation, 1)) h); }
+}
+
+/* =====================================================================
+   2. 绑定 Obsidian 原生变量（全部带默认兜底）
+   ===================================================================== */
+body {
+  --background-primary: var(--o-base); --background-primary-alt: var(--o-mantle);
+  --background-secondary: var(--o-mantle); --background-secondary-alt: var(--o-crust);
+  --background-modifier-border: var(--opal-border-color, var(--o-surface1));
+  --background-modifier-border-hover: var(--o-surface2);
+  --background-modifier-border-focus: var(--o-accent);
+  --background-modifier-hover: var(--o-surface0);
+  --background-modifier-active-hover: var(--o-soft-accent);
+  --background-modifier-form-field: var(--o-surface0);
+  --background-modifier-error: var(--o-soft-err);
+  --background-modifier-success: var(--o-soft-ok);
+  --background-modifier-message: var(--o-surface0);
+
+  --text-normal: var(--o-text); --text-muted: var(--o-subtext0); --text-faint: var(--o-overlay2);
+  --text-on-accent: var(--o-on-accent); --text-on-accent-inverted: var(--o-text);
+  --text-accent: var(--o-blue); --text-accent-hover: var(--o-sky);
+  --text-selection: var(--o-surface2); --text-highlight-bg: transparent;
+  --text-error: var(--o-rose); --text-success: var(--o-green); --text-warning: var(--o-amber);
+  --caret-color: var(--o-cyan);
+
+  --interactive-normal: var(--o-surface0); --interactive-hover: var(--o-surface1);
+  --interactive-accent: var(--o-accent); --interactive-accent-hover: var(--o-violet);
+
+  --link-color: var(--o-blue); --link-color-hover: var(--o-sky);
+  --link-external-color: var(--o-blue); --link-external-color-hover: var(--o-sky);
+  --link-unresolved-color: var(--o-overlay1); --link-unresolved-opacity: 1;
+
+  --h1-color: var(--o-indigo); --h2-color: var(--o-sky); --h3-color: var(--o-cyan);
+  --h4-color: var(--o-teal); --h5-color: var(--o-lime); --h6-color: var(--o-rose);
+  --h1-size: var(--opal-h1-size, 2em); --h2-size: var(--opal-h2-size, 1.65em);
+  --h3-size: var(--opal-h3-size, 1.4em); --h4-size: var(--opal-h4-size, 1.2em);
+  --h5-size: var(--opal-h5-size, 1.1em); --h6-size: var(--opal-h6-size, 1em);
+  --h1-weight: var(--opal-h1-weight, 700); --h2-weight: var(--opal-h2-weight, 700);
+  --h3-weight: var(--opal-h3-weight, 650); --h4-weight: var(--opal-h4-weight, 600);
+  --h5-weight: var(--opal-h5-weight, 600); --h6-weight: var(--opal-h6-weight, 600);
+  --bold-color: var(--o-peach); --bold-weight: 700; --italic-color: var(--o-green);
+  --code-background: var(--opal-code-bg, var(--o-surface0)); --code-normal: var(--o-pink); --code-size: .9em;
+  --blockquote-border-color: var(--o-surface2); --blockquote-color: var(--o-subtext0); --blockquote-background-color: var(--o-surface0);
+  --hr-color: var(--o-surface1);
+  --tag-color: var(--o-orchid); --tag-background: var(--o-surface0); --tag-background-hover: var(--o-surface1);
+  --checkbox-color: var(--o-green); --checkbox-marker-color: var(--o-base); --checkbox-border-color: var(--o-overlay0);
+  --list-marker-color: var(--o-overlay2);
+  --nav-item-color: var(--o-subtext0); --nav-item-color-hover: var(--o-text); --nav-item-color-active: var(--o-text);
+  --nav-item-background-hover: var(--o-surface0); --nav-item-background-active: var(--o-soft-accent);
+  --titlebar-background: var(--o-mantle); --titlebar-background-focused: var(--o-mantle);
+  --titlebar-text-color: var(--o-subtext0); --status-bar-background: var(--o-mantle);
+  --scrollbar-thumb-bg: var(--o-surface1); --scrollbar-active-thumb-bg: var(--o-overlay0);
+  --scrollbar-bg: transparent; --divider-color: var(--o-surface1); --collapse-icon-color: var(--o-overlay1);
+  --radius-s: calc(var(--o-r) * .5); --radius-m: var(--o-r); --radius-l: calc(var(--o-r) * 1.5);
+  --input-radius: var(--o-r); --tab-radius: calc(var(--o-r) * .75);
+  --border-width: var(--o-bw);
+
+  /* 字体（自定义在前，安全字栈兜底在后） */
+  --font-text: var(--opal-font-text, Inter), var(--o-fallback-sans);
+  --font-interface: var(--opal-font-ui, Inter), var(--o-fallback-sans);
+  --font-monospace: var(--opal-font-code, "JetBrains Mono"), var(--o-fallback-mono);
+  --font-text-size: var(--opal-font-size, 16px);
+  --line-height-normal: var(--opal-line-height, 1.5);
+  --o-font-heading: var(--opal-font-heading, Inter), var(--o-fallback-sans);
+  --file-line-width: var(--opal-line-width, 700px);
+  --p-spacing: var(--opal-para-spacing, 16px);
+  --list-indent: var(--opal-list-indent, 2em);
+  --file-margins: var(--opal-file-margin, 40px) var(--size-4-8);
+}
+
+/* =====================================================================
+   3. 形状（squircle / round / scoop / bevel）
+   ===================================================================== */
+.opal-corner-round :is(.callout,.markdown-rendered code,button,.nav-file-title,.nav-folder-title){ corner-shape: round; }
+@supports (corner-shape: superellipse(1.2)) {
+  .opal-corner-squircle :is(.callout,.markdown-rendered code,button,.nav-file-title,.nav-folder-title){ corner-shape: var(--o-cshape); }
+  .opal-corner-scoop :is(.callout,button,.nav-file-title,.nav-folder-title){ corner-shape: scoop; }
+}
+.opal-corner-bevel .callout{ clip-path: polygon(var(--o-r) 0,100% 0,100% calc(100% - var(--o-r)),calc(100% - var(--o-r)) 100%,0 100%,0 var(--o-r)); box-shadow: none; }
+
+/* =====================================================================
+   4. 基础排版 + 字体
+   ===================================================================== */
+.markdown-rendered :is(h1,h2,h3,h4,h5,h6){ font-family: var(--o-font-heading); }
+.markdown-rendered,.cm-content{ letter-spacing: var(--opal-letter-spacing, 0px); }
+.opal-hdl-gradient .markdown-rendered :is(h1,h2,h3,h4,h5,h6){
+  padding-bottom:2px; background-image:linear-gradient(90deg,currentColor,transparent 65%);
+  background-size:100% 2px; background-position:0 100%; background-repeat:no-repeat;
+}
+.opal-hdl-underline .markdown-rendered :is(h1,h2,h3,h4,h5,h6){ border-bottom:var(--o-bw) solid color-mix(in oklab,currentColor 45%,transparent); padding-bottom:3px; }
+.opal-hdp-hash .markdown-rendered :is(h1,h2,h3,h4,h5,h6){ position:relative; }
+.opal-hdp-hash .markdown-rendered h1::before{content:"#";} .opal-hdp-hash .markdown-rendered h2::before{content:"##";}
+.opal-hdp-hash .markdown-rendered h3::before{content:"###";} .opal-hdp-hash .markdown-rendered h4::before{content:"####";}
+.opal-hdp-hash .markdown-rendered h5::before{content:"#####";} .opal-hdp-hash .markdown-rendered h6::before{content:"######";}
+.opal-hdp-hash .markdown-rendered :is(h1,h2,h3,h4,h5,h6)::before{position:absolute;right:calc(100% + 8px);color:var(--o-overlay1);font-weight:400;opacity:.6;font-size:.8em}
+.opal-hdp-counter .markdown-preview-view{counter-reset:oh2 oh3;}
+.opal-hdp-counter .markdown-rendered h2{counter-increment:oh2;counter-reset:oh3;}
+.opal-hdp-counter .markdown-rendered h2::before{content:counter(oh2) ".  ";color:var(--o-overlay1);font-weight:600}
+.opal-hdp-counter .markdown-rendered h3{counter-increment:oh3;}
+.opal-hdp-counter .markdown-rendered h3::before{content:counter(oh2) "." counter(oh3) "  ";color:var(--o-overlay1);font-weight:600}
+
+/* 标题配色方案 */
+.opal-h-mono{
+  --h2-color:color-mix(in oklab,var(--o-indigo) 82%,var(--o-overlay1));
+  --h3-color:color-mix(in oklab,var(--o-indigo) 64%,var(--o-overlay1));
+  --h4-color:color-mix(in oklab,var(--o-indigo) 50%,var(--o-overlay1));
+  --h5-color:color-mix(in oklab,var(--o-indigo) 40%,var(--o-overlay1));
+  --h6-color:color-mix(in oklab,var(--o-indigo) 32%,var(--o-overlay1));
+  --h1-color:var(--o-indigo);
+}
+.opal-h-single{--h1-color:var(--o-indigo);--h2-color:var(--o-indigo);--h3-color:var(--o-indigo);--h4-color:var(--o-indigo);--h5-color:var(--o-indigo);--h6-color:var(--o-indigo)}
+.opal-h-custom{--h1-color:var(--opal-h1-color,var(--o-indigo));--h2-color:var(--opal-h2-color,var(--o-sky));--h3-color:var(--opal-h3-color,var(--o-cyan));--h4-color:var(--opal-h4-color,var(--o-teal));--h5-color:var(--opal-h5-color,var(--o-lime));--h6-color:var(--opal-h6-color,var(--o-rose))}
+.opal-h-plain{--h1-color:var(--o-text);--h2-color:var(--o-text);--h3-color:var(--o-text);--h4-color:var(--o-text);--h5-color:var(--o-text);--h6-color:var(--o-text)}
+.opal-h-plain .markdown-rendered :is(h1,h2,h3,h4,h5,h6){background-image:none}
+.cm-header-1{color:var(--h1-color)}.cm-header-2{color:var(--h2-color)}.cm-header-3{color:var(--h3-color)}
+.cm-header-4{color:var(--h4-color)}.cm-header-5{color:var(--h5-color)}.cm-header-6{color:var(--h6-color)}
+
+.cm-strong{color:var(--o-peach)}.cm-em{color:var(--o-green)}
+.opal-uncolored-bold{--bold-color:var(--o-text)} .opal-uncolored-bold .cm-strong{color:var(--o-text)}
+.markdown-rendered strong em,.markdown-rendered em strong{color:var(--o-coral)}
+.markdown-rendered del,.cm-strikethrough{color:var(--o-overlay1)}
+
+/* 链接 */
+.markdown-rendered a.internal-link{color:var(--link-color);text-decoration-color:color-mix(in oklab,currentColor 40%,transparent)}
+.opal-link-plain .markdown-rendered a{text-decoration:none}
+.markdown-rendered a.internal-link.is-unresolved{color:var(--link-unresolved-color)}
+.opal-unres-dash .markdown-rendered a.is-unresolved{text-decoration:underline dashed;text-underline-offset:2px}
+.opal-unres-dim .markdown-rendered a.is-unresolved{opacity:.5;text-decoration:none}
+.opal-unres-blur .markdown-rendered a.is-unresolved{filter:blur(.4px);opacity:.7}
+.opal-unres-badge .markdown-rendered a.is-unresolved::after{content:"?";font-size:.7em;vertical-align:super;color:var(--o-amber);margin-left:1px}
+
+/* 代码 */
+.markdown-rendered code:not([class*="language-"]),.cm-inline-code{color:var(--o-pink);background:var(--code-background);border-radius:var(--radius-s)}
+.opal-code-wrap .markdown-rendered pre>code,.opal-code-wrap .cm-line{white-space:pre-wrap;word-break:break-word}
+:is(.markdown-rendered code,.cm-line){font-variant-ligatures:none}
+.opal-code-ligatures :is(.markdown-rendered code,.cm-line){font-variant-ligatures:contextual common-ligatures}
+.markdown-rendered pre>code{font-feature-settings:var(--opal-font-features, normal)}
+
+/* 高亮：波浪下划线=默认（无辉光）。同时覆盖阅读态 mark / 实时预览 .cm-highlight / 编辑态内联 <mark> */
+.markdown-rendered mark,.cm-content mark,.markdown-source-view .cm-highlight,.cm-editor .cm-highlight,span.cm-highlight{background:transparent;color:inherit;text-decoration:underline wavy var(--o-hl-line);text-underline-offset:2px;text-decoration-thickness:2px}
+.opal-mark-fill :is(mark,.cm-highlight){background:var(--o-hl-bg);color:#20232E;border-radius:3px;padding:0 2px;text-decoration:none;text-shadow:none}
+.opal-mark-soft :is(mark,.cm-highlight){background:color-mix(in srgb,var(--o-hl-bg) 32%,transparent);border-radius:3px;padding:0 2px;text-decoration:none;text-shadow:none}
+.opal-mark-text :is(mark,.cm-highlight){background:transparent;color:var(--o-hl-bg);font-weight:600;text-decoration:none;text-shadow:0 0 8px color-mix(in srgb,var(--o-hl-bg) 45%,transparent)}
+.opal-hl-amber{--o-hl-bg:var(--o-amber);--o-hl-line:var(--o-amber)}.opal-hl-green{--o-hl-bg:var(--o-green);--o-hl-line:var(--o-green)}
+.opal-hl-sky{--o-hl-bg:var(--o-sky);--o-hl-line:var(--o-sky)}.opal-hl-rose{--o-hl-bg:var(--o-rose);--o-hl-line:var(--o-rose)}.opal-hl-orchid{--o-hl-bg:var(--o-orchid);--o-hl-line:var(--o-orchid)}
+/* --text-highlight-bg 被清零(供 ==高亮== 走波浪线)，会连带抹掉搜索命中/建议命中的底色，这里单独补回实底，保证命中可见 */
+.search-result-file-matched-text,.suggestion-highlight{background-color:var(--o-hl-bg);color:#20232E;border-radius:3px}
+
+/* 标签：三种方案 */
+.markdown-rendered a.tag{color:var(--o-orchid);background:var(--o-surface0);border-radius:20px}
+.opal-tag-mono .markdown-rendered a.tag{color:var(--o-orchid)}
+.opal-tag-hash a.tag[href^="#a"],.opal-tag-hash a.tag[href^="#A"]{color:var(--o-rose)}
+.opal-tag-hash a.tag[href^="#b"],.opal-tag-hash a.tag[href^="#B"]{color:var(--o-coral)}
+.opal-tag-hash a.tag[href^="#c"],.opal-tag-hash a.tag[href^="#C"]{color:var(--o-peach)}
+.opal-tag-hash a.tag[href^="#d"],.opal-tag-hash a.tag[href^="#D"]{color:var(--o-amber)}
+.opal-tag-hash a.tag[href^="#e"],.opal-tag-hash a.tag[href^="#E"]{color:var(--o-lime)}
+.opal-tag-hash a.tag[href^="#f"],.opal-tag-hash a.tag[href^="#F"]{color:var(--o-green)}
+.opal-tag-hash a.tag[href^="#g"],.opal-tag-hash a.tag[href^="#G"]{color:var(--o-teal)}
+.opal-tag-hash a.tag[href^="#h"],.opal-tag-hash a.tag[href^="#H"]{color:var(--o-cyan)}
+.opal-tag-hash a.tag[href^="#i"],.opal-tag-hash a.tag[href^="#I"]{color:var(--o-sky)}
+.opal-tag-hash a.tag[href^="#j"],.opal-tag-hash a.tag[href^="#J"]{color:var(--o-blue)}
+.opal-tag-hash a.tag[href^="#k"],.opal-tag-hash a.tag[href^="#K"]{color:var(--o-indigo)}
+.opal-tag-hash a.tag[href^="#l"],.opal-tag-hash a.tag[href^="#L"]{color:var(--o-violet)}
+.opal-tag-hash a.tag[href^="#m"],.opal-tag-hash a.tag[href^="#M"]{color:var(--o-orchid)}
+.opal-tag-hash a.tag[href^="#n"],.opal-tag-hash a.tag[href^="#N"]{color:var(--o-pink)}
+.opal-tag-hash a.tag[href^="#o"],.opal-tag-hash a.tag[href^="#O"]{color:var(--o-rose)}
+.opal-tag-hash a.tag[href^="#p"],.opal-tag-hash a.tag[href^="#P"]{color:var(--o-peach)}
+.opal-tag-hash a.tag[href^="#q"],.opal-tag-hash a.tag[href^="#Q"]{color:var(--o-amber)}
+.opal-tag-hash a.tag[href^="#r"],.opal-tag-hash a.tag[href^="#R"]{color:var(--o-green)}
+.opal-tag-hash a.tag[href^="#s"],.opal-tag-hash a.tag[href^="#S"]{color:var(--o-teal)}
+.opal-tag-hash a.tag[href^="#t"],.opal-tag-hash a.tag[href^="#T"]{color:var(--o-sky)}
+.opal-tag-hash a.tag[href^="#u"],.opal-tag-hash a.tag[href^="#U"]{color:var(--o-blue)}
+.opal-tag-hash a.tag[href^="#v"],.opal-tag-hash a.tag[href^="#V"]{color:var(--o-violet)}
+.opal-tag-hash a.tag[href^="#w"],.opal-tag-hash a.tag[href^="#W"]{color:var(--o-orchid)}
+.opal-tag-hash a.tag[href^="#x"],.opal-tag-hash a.tag[href^="#X"]{color:var(--o-pink)}
+.opal-tag-hash a.tag[href^="#y"],.opal-tag-hash a.tag[href^="#Y"]{color:var(--o-coral)}
+.opal-tag-hash a.tag[href^="#z"],.opal-tag-hash a.tag[href^="#Z"]{color:var(--o-cyan)}
+.opal-tag-semantic a.tag[href="#紧急"],.opal-tag-semantic a.tag[href="#urgent"],.opal-tag-semantic a.tag[href="#阻塞"],.opal-tag-semantic a.tag[href="#blocked"],.opal-tag-semantic a.tag[href="#bug"]{color:var(--o-rose)}
+.opal-tag-semantic a.tag[href="#重要"],.opal-tag-semantic a.tag[href="#important"],.opal-tag-semantic a.tag[href="#star"]{color:var(--o-peach)}
+.opal-tag-semantic a.tag[href="#待办"],.opal-tag-semantic a.tag[href="#todo"],.opal-tag-semantic a.tag[href="#wip"],.opal-tag-semantic a.tag[href="#进行中"],.opal-tag-semantic a.tag[href="#doing"],.opal-tag-semantic a.tag[href="#问题"],.opal-tag-semantic a.tag[href="#question"],.opal-tag-semantic a.tag[href="#review"],.opal-tag-semantic a.tag[href="#待审"]{color:var(--o-amber)}
+.opal-tag-semantic a.tag[href="#完成"],.opal-tag-semantic a.tag[href="#done"],.opal-tag-semantic a.tag[href="#已完成"],.opal-tag-semantic a.tag[href="#通过"],.opal-tag-semantic a.tag[href="#resolved"]{color:var(--o-green)}
+.opal-tag-semantic a.tag[href="#想法"],.opal-tag-semantic a.tag[href="#idea"],.opal-tag-semantic a.tag[href="#灵感"]{color:var(--o-sky)}
+.opal-tag-semantic a.tag[href="#项目"],.opal-tag-semantic a.tag[href="#project"]{color:var(--o-blue)}
+.opal-tag-semantic a.tag[href="#moc"],.opal-tag-semantic a.tag[href="#index"]{color:var(--o-indigo)}
+.opal-tag-semantic a.tag[href="#参考"],.opal-tag-semantic a.tag[href="#reference"],.opal-tag-semantic a.tag[href="#ref"]{color:var(--o-violet)}
+.opal-tag-semantic a.tag[href="#归档"],.opal-tag-semantic a.tag[href="#archive"],.opal-tag-semantic a.tag[href="#archived"],.opal-tag-semantic a.tag[href="#废弃"],.opal-tag-semantic a.tag[href="#deprecated"]{color:var(--o-overlay1)}
+
+/* 列表符号：改 Obsidian 自绘的 .list-bullet::after（决不设 list-style-type，否则被藏起的原生 marker 会与自绘点重影）。
+   默认=按深度 ●(实心圆) ○(空心圆) ▪(方块) –(短横) + 单色（--list-marker-color=overlay2）。
+   阅读态靠 .has-list-bullet 祖先层数递增特异度，深层覆盖浅层；实时预览靠 .HyperMD-list-line-N。每条自足指定形状。 */
+.markdown-rendered .has-list-bullet .has-list-bullet .list-bullet::after,
+.HyperMD-list-line-2 .list-bullet::after{
+  background-color:transparent;border:1.5px solid var(--list-marker-color);border-radius:50%;
+  width:var(--list-bullet-size,.32em);height:var(--list-bullet-size,.32em)
+}
+.markdown-rendered .has-list-bullet .has-list-bullet .has-list-bullet .list-bullet::after,
+.HyperMD-list-line-3 .list-bullet::after{
+  background-color:var(--list-marker-color);border:none;border-radius:0;
+  width:var(--list-bullet-size,.3em);height:var(--list-bullet-size,.3em)
+}
+.markdown-rendered .has-list-bullet .has-list-bullet .has-list-bullet .has-list-bullet .list-bullet::after,
+.HyperMD-list-line-4 .list-bullet::after{
+  background-color:var(--list-marker-color);border:none;border-radius:0;width:.5em;height:2px
+}
+/* 彩虹循环：只覆盖 --list-marker-color（背景与描边都取自它），形状沿用上面 */
+.opal-list-rainbow{--list-marker-color:var(--o-rose)}
+.opal-list-rainbow :is(.has-list-bullet .has-list-bullet,.HyperMD-list-line-2){--list-marker-color:var(--o-amber)}
+.opal-list-rainbow :is(.has-list-bullet .has-list-bullet .has-list-bullet,.HyperMD-list-line-3){--list-marker-color:var(--o-green)}
+.opal-list-rainbow :is(.has-list-bullet .has-list-bullet .has-list-bullet .has-list-bullet,.HyperMD-list-line-4){--list-marker-color:var(--o-sky)}
+/* 单色圆点：强制各级回到实心圆点 */
+.opal-list-dot .list-bullet::after{
+  background-color:var(--list-marker-color)!important;border:none!important;border-radius:50%!important;
+  width:var(--list-bullet-size,.3em)!important;height:var(--list-bullet-size,.3em)!important
+}
+/* 缩进统一：Obsidian 一级 li 硬编码 3ch、二级+才走 --list-indent，导致首层步距偏窄。让一级也走 --list-indent，各层齐平 */
+.markdown-rendered ul>li,.markdown-rendered ol>li{margin-inline-start:var(--list-indent)}
+.opal-indent-guide .markdown-rendered :is(ul,ol) :is(ul,ol){border-left:1px solid color-mix(in oklab,var(--o-surface2) 60%,transparent);margin-left:.2em}
+
+/* 段落排版（间距走原生 --p-spacing，此处只做首行缩进覆盖） */
+.opal-first-indent .markdown-rendered p{text-indent:2em;margin-block:0}
+.markdown-rendered blockquote{border-left:3px solid var(--o-surface2);background:var(--o-surface0);border-radius:0 var(--radius-m) var(--radius-m) 0}
+
+/* 分隔线风格 */
+.markdown-rendered hr{border:none;height:2px;background:linear-gradient(90deg,transparent,var(--o-surface2),transparent)}
+.opal-div-solid .markdown-rendered hr{height:0;border-top:var(--o-bw) solid var(--o-surface2);background:none}
+.opal-div-dash .markdown-rendered hr{height:0;border-top:var(--o-bw) dashed var(--o-surface2);background:none}
+.opal-div-double .markdown-rendered hr{height:0;border-top:3px double var(--o-surface2);background:none}
+.opal-div-dot .markdown-rendered hr{height:4px;background:radial-gradient(circle,var(--o-surface2) 1.4px,transparent 1.4px);background-size:12px 4px}
+
+/* =====================================================================
+   5. Callout：融合默认 + 26 类型语义色 + 皮肤
+   ===================================================================== */
+.callout{
+  background:var(--o-base);border:0;border-left:3px solid rgb(var(--callout-color));
+  border-radius:var(--radius-s) var(--radius-m) var(--radius-m) var(--radius-s);
+  box-shadow:0 1px 2px rgba(0,0,0,.18),0 6px 16px -8px rgba(0,0,0,.28);
+}
+@supports (background: color-mix(in oklab, red, blue)){.callout{background:color-mix(in oklab,rgb(var(--callout-color)) 6%,var(--o-base))}}
+.callout-title,.callout-icon{color:rgb(var(--callout-color))}
+.callout[data-callout="info"],.callout[data-callout="todo"]{--callout-color:var(--o-cc-blue)}
+.callout[data-callout="tip"],.callout[data-callout="hint"],.callout[data-callout="important"]{--callout-color:var(--o-cc-teal)}
+.callout[data-callout="success"],.callout[data-callout="check"],.callout[data-callout="done"]{--callout-color:var(--o-cc-green)}
+.callout[data-callout="question"],.callout[data-callout="help"],.callout[data-callout="faq"],.callout[data-callout="warning"],.callout[data-callout="caution"],.callout[data-callout="attention"]{--callout-color:var(--o-cc-amber)}
+.callout[data-callout="danger"],.callout[data-callout="error"],.callout[data-callout="failure"],.callout[data-callout="fail"],.callout[data-callout="missing"],.callout[data-callout="bug"]{--callout-color:var(--o-cc-rose)}
+.callout[data-callout="note"],.callout[data-callout="abstract"],.callout[data-callout="summary"],.callout[data-callout="tldr"]{--callout-color:var(--o-cc-indigo)}
+.callout[data-callout="example"]{--callout-color:var(--o-cc-orchid)}
+.callout[data-callout="quote"],.callout[data-callout="cite"]{--callout-color:var(--o-cc-cyan)}
+/* Callout 中文别名：[!笔记][!警告] 等直接映射到语义色（对 Cyrius 重要 + 共享友好；图标 Obsidian 无内置则退默认） */
+.callout[data-callout="笔记"],.callout[data-callout="摘要"],.callout[data-callout="总结"]{--callout-color:var(--o-cc-indigo)}
+.callout[data-callout="信息"],.callout[data-callout="待办"]{--callout-color:var(--o-cc-blue)}
+.callout[data-callout="提示"],.callout[data-callout="技巧"],.callout[data-callout="重要"]{--callout-color:var(--o-cc-teal)}
+.callout[data-callout="成功"],.callout[data-callout="完成"],.callout[data-callout="通过"]{--callout-color:var(--o-cc-green)}
+.callout[data-callout="问题"],.callout[data-callout="疑问"],.callout[data-callout="警告"],.callout[data-callout="注意"],.callout[data-callout="小心"]{--callout-color:var(--o-cc-amber)}
+.callout[data-callout="危险"],.callout[data-callout="错误"],.callout[data-callout="失败"],.callout[data-callout="缺陷"],.callout[data-callout="故障"]{--callout-color:var(--o-cc-rose)}
+.callout[data-callout="示例"],.callout[data-callout="例子"]{--callout-color:var(--o-cc-orchid)}
+.callout[data-callout="引用"],.callout[data-callout="引文"]{--callout-color:var(--o-cc-cyan)}
+.opal-co-brutal .callout{border:2px solid rgb(var(--callout-color));border-radius:4px;box-shadow:4px 4px 0 rgb(var(--callout-color));background:var(--o-base)}
+.opal-co-outline .callout{background:transparent;border:var(--o-bw) solid color-mix(in oklab,rgb(var(--callout-color)) 55%,var(--o-surface1));box-shadow:none}
+.opal-co-glow .callout{box-shadow:0 0 12px -2px rgb(var(--callout-color)),inset 0 0 10px -6px rgb(var(--callout-color))}
+.opal-co-bar .callout{padding-left:0;border-left:0;overflow:hidden}
+.opal-co-bar .callout-title{background:rgb(var(--callout-color));color:var(--o-base);padding:5px 12px}
+.opal-co-paper .callout{border:0;box-shadow:0 2px 6px -2px rgba(0,0,0,.3);clip-path:polygon(0 0,calc(100% - 14px) 0,100% 14px,100% 100%,0 100%);background:color-mix(in oklab,rgb(var(--callout-color)) 7%,var(--o-mantle))}
+
+/* =====================================================================
+   6. 复选框 / 任务（收进 :not(.opal-tasks-native) 便于回退）
+   ===================================================================== */
+.task-list-item-checkbox{border-radius:var(--radius-s)}
+body:not(.opal-tasks-native) .task-list-item-checkbox:checked{background-color:var(--o-green);border-color:var(--o-green)}
+body:not(.opal-tasks-native) .task-list-item[data-task="/"] .task-list-item-checkbox{background:conic-gradient(var(--o-green) 0 42%,transparent 42%);border-color:var(--o-green)}
+body:not(.opal-tasks-native) .task-list-item[data-task="-"]{text-decoration:line-through;color:var(--o-overlay1)}
+body:not(.opal-tasks-native) .task-list-item[data-task="-"] .task-list-item-checkbox{border-color:var(--o-rose)}
+body:not(.opal-tasks-native) .task-list-item[data-task=">"] .task-list-item-checkbox{border-color:var(--o-sky)}
+body:not(.opal-tasks-native) .task-list-item[data-task="<"] .task-list-item-checkbox{border-color:var(--o-sky)}
+body:not(.opal-tasks-native) .task-list-item[data-task="?"] .task-list-item-checkbox{border-color:var(--o-amber)}
+body:not(.opal-tasks-native) .task-list-item[data-task="!"] .task-list-item-checkbox{border-color:var(--o-rose)}
+body:not(.opal-tasks-native) .task-list-item[data-task="*"] .task-list-item-checkbox{border-color:var(--o-amber)}
+body:not(.opal-tasks-native) ul ul .task-list-item-checkbox:checked{background-color:var(--o-amber);border-color:var(--o-amber)}
+body:not(.opal-tasks-native) ul ul ul .task-list-item-checkbox:checked{background-color:var(--o-sky);border-color:var(--o-sky)}
+/* 扩展/数字任务态字形图标：mask 把语义色裁成字形，脚本生成编码零错；阅读态+编辑态 */
+body:not(.opal-tasks-native) .task-list-item[data-task=">"] > input.task-list-item-checkbox,body:not(.opal-tasks-native) .HyperMD-task-line[data-task=">"] .task-list-item-checkbox{border:none;background-color:var(--o-sky);-webkit-mask:url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2016%2016%27%3E%3Ctext%20x%3D%278%27%20y%3D%2712.2%27%20font-size%3D%2713%27%20font-family%3D%27-apple-system%2CBlinkMacSystemFont%2Csans-serif%27%20font-weight%3D%27700%27%20text-anchor%3D%27middle%27%3E%E2%80%BA%3C%2Ftext%3E%3C%2Fsvg%3E") center/80% no-repeat;mask:url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2016%2016%27%3E%3Ctext%20x%3D%278%27%20y%3D%2712.2%27%20font-size%3D%2713%27%20font-family%3D%27-apple-system%2CBlinkMacSystemFont%2Csans-serif%27%20font-weight%3D%27700%27%20text-anchor%3D%27middle%27%3E%E2%80%BA%3C%2Ftext%3E%3C%2Fsvg%3E") center/80% no-repeat}
+body:not(.opal-tasks-native) .task-list-item[data-task="<"] > input.task-list-item-checkbox,body:not(.opal-tasks-native) .HyperMD-task-line[data-task="<"] .task-list-item-checkbox{border:none;background-color:var(--o-sky);-webkit-mask:url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2016%2016%27%3E%3Ctext%20x%3D%278%27%20y%3D%2712.2%27%20font-size%3D%2713%27%20font-family%3D%27-apple-system%2CBlinkMacSystemFont%2Csans-serif%27%20font-weight%3D%27700%27%20text-anchor%3D%27middle%27%3E%E2%80%B9%3C%2Ftext%3E%3C%2Fsvg%3E") center/80% no-repeat;mask:url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2016%2016%27%3E%3Ctext%20x%3D%278%27%20y%3D%2712.2%27%20font-size%3D%2713%27%20font-family%3D%27-apple-system%2CBlinkMacSystemFont%2Csans-serif%27%20font-weight%3D%27700%27%20text-anchor%3D%27middle%27%3E%E2%80%B9%3C%2Ftext%3E%3C%2Fsvg%3E") center/80% no-repeat}
+body:not(.opal-tasks-native) .task-list-item[data-task="?"] > input.task-list-item-checkbox,body:not(.opal-tasks-native) .HyperMD-task-line[data-task="?"] .task-list-item-checkbox{border:none;background-color:var(--o-amber);-webkit-mask:url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2016%2016%27%3E%3Ctext%20x%3D%278%27%20y%3D%2712.2%27%20font-size%3D%2713%27%20font-family%3D%27-apple-system%2CBlinkMacSystemFont%2Csans-serif%27%20font-weight%3D%27700%27%20text-anchor%3D%27middle%27%3E%3F%3C%2Ftext%3E%3C%2Fsvg%3E") center/80% no-repeat;mask:url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2016%2016%27%3E%3Ctext%20x%3D%278%27%20y%3D%2712.2%27%20font-size%3D%2713%27%20font-family%3D%27-apple-system%2CBlinkMacSystemFont%2Csans-serif%27%20font-weight%3D%27700%27%20text-anchor%3D%27middle%27%3E%3F%3C%2Ftext%3E%3C%2Fsvg%3E") center/80% no-repeat}
+body:not(.opal-tasks-native) .task-list-item[data-task="!"] > input.task-list-item-checkbox,body:not(.opal-tasks-native) .HyperMD-task-line[data-task="!"] .task-list-item-checkbox{border:none;background-color:var(--o-rose);-webkit-mask:url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2016%2016%27%3E%3Ctext%20x%3D%278%27%20y%3D%2712.2%27%20font-size%3D%2713%27%20font-family%3D%27-apple-system%2CBlinkMacSystemFont%2Csans-serif%27%20font-weight%3D%27700%27%20text-anchor%3D%27middle%27%3E%21%3C%2Ftext%3E%3C%2Fsvg%3E") center/80% no-repeat;mask:url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2016%2016%27%3E%3Ctext%20x%3D%278%27%20y%3D%2712.2%27%20font-size%3D%2713%27%20font-family%3D%27-apple-system%2CBlinkMacSystemFont%2Csans-serif%27%20font-weight%3D%27700%27%20text-anchor%3D%27middle%27%3E%21%3C%2Ftext%3E%3C%2Fsvg%3E") center/80% no-repeat}
+body:not(.opal-tasks-native) .task-list-item[data-task="*"] > input.task-list-item-checkbox,body:not(.opal-tasks-native) .HyperMD-task-line[data-task="*"] .task-list-item-checkbox{border:none;background-color:var(--o-amber);-webkit-mask:url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2016%2016%27%3E%3Ctext%20x%3D%278%27%20y%3D%2712.2%27%20font-size%3D%2713%27%20font-family%3D%27-apple-system%2CBlinkMacSystemFont%2Csans-serif%27%20font-weight%3D%27700%27%20text-anchor%3D%27middle%27%3E%E2%98%85%3C%2Ftext%3E%3C%2Fsvg%3E") center/80% no-repeat;mask:url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2016%2016%27%3E%3Ctext%20x%3D%278%27%20y%3D%2712.2%27%20font-size%3D%2713%27%20font-family%3D%27-apple-system%2CBlinkMacSystemFont%2Csans-serif%27%20font-weight%3D%27700%27%20text-anchor%3D%27middle%27%3E%E2%98%85%3C%2Ftext%3E%3C%2Fsvg%3E") center/80% no-repeat}
+body:not(.opal-tasks-native) .task-list-item[data-task="\""] > input.task-list-item-checkbox,body:not(.opal-tasks-native) .HyperMD-task-line[data-task="\""] .task-list-item-checkbox{border:none;background-color:var(--o-teal);-webkit-mask:url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2016%2016%27%3E%3Ctext%20x%3D%278%27%20y%3D%2712.2%27%20font-size%3D%2713%27%20font-family%3D%27-apple-system%2CBlinkMacSystemFont%2Csans-serif%27%20font-weight%3D%27700%27%20text-anchor%3D%27middle%27%3E%E2%80%9C%3C%2Ftext%3E%3C%2Fsvg%3E") center/80% no-repeat;mask:url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2016%2016%27%3E%3Ctext%20x%3D%278%27%20y%3D%2712.2%27%20font-size%3D%2713%27%20font-family%3D%27-apple-system%2CBlinkMacSystemFont%2Csans-serif%27%20font-weight%3D%27700%27%20text-anchor%3D%27middle%27%3E%E2%80%9C%3C%2Ftext%3E%3C%2Fsvg%3E") center/80% no-repeat}
+body:not(.opal-tasks-native) .task-list-item[data-task="0"] > input.task-list-item-checkbox,body:not(.opal-tasks-native) .HyperMD-task-line[data-task="0"] .task-list-item-checkbox{border:none;background-color:var(--o-rose);-webkit-mask:url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2016%2016%27%3E%3Ctext%20x%3D%278%27%20y%3D%2712.2%27%20font-size%3D%2711%27%20font-family%3D%27-apple-system%2CBlinkMacSystemFont%2Csans-serif%27%20font-weight%3D%27700%27%20text-anchor%3D%27middle%27%3E0%3C%2Ftext%3E%3C%2Fsvg%3E") center/90% no-repeat;mask:url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2016%2016%27%3E%3Ctext%20x%3D%278%27%20y%3D%2712.2%27%20font-size%3D%2711%27%20font-family%3D%27-apple-system%2CBlinkMacSystemFont%2Csans-serif%27%20font-weight%3D%27700%27%20text-anchor%3D%27middle%27%3E0%3C%2Ftext%3E%3C%2Fsvg%3E") center/90% no-repeat}
+body:not(.opal-tasks-native) .task-list-item[data-task="1"] > input.task-list-item-checkbox,body:not(.opal-tasks-native) .HyperMD-task-line[data-task="1"] .task-list-item-checkbox{border:none;background-color:var(--o-coral);-webkit-mask:url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2016%2016%27%3E%3Ctext%20x%3D%278%27%20y%3D%2712.2%27%20font-size%3D%2711%27%20font-family%3D%27-apple-system%2CBlinkMacSystemFont%2Csans-serif%27%20font-weight%3D%27700%27%20text-anchor%3D%27middle%27%3E1%3C%2Ftext%3E%3C%2Fsvg%3E") center/90% no-repeat;mask:url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2016%2016%27%3E%3Ctext%20x%3D%278%27%20y%3D%2712.2%27%20font-size%3D%2711%27%20font-family%3D%27-apple-system%2CBlinkMacSystemFont%2Csans-serif%27%20font-weight%3D%27700%27%20text-anchor%3D%27middle%27%3E1%3C%2Ftext%3E%3C%2Fsvg%3E") center/90% no-repeat}
+body:not(.opal-tasks-native) .task-list-item[data-task="2"] > input.task-list-item-checkbox,body:not(.opal-tasks-native) .HyperMD-task-line[data-task="2"] .task-list-item-checkbox{border:none;background-color:var(--o-peach);-webkit-mask:url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2016%2016%27%3E%3Ctext%20x%3D%278%27%20y%3D%2712.2%27%20font-size%3D%2711%27%20font-family%3D%27-apple-system%2CBlinkMacSystemFont%2Csans-serif%27%20font-weight%3D%27700%27%20text-anchor%3D%27middle%27%3E2%3C%2Ftext%3E%3C%2Fsvg%3E") center/90% no-repeat;mask:url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2016%2016%27%3E%3Ctext%20x%3D%278%27%20y%3D%2712.2%27%20font-size%3D%2711%27%20font-family%3D%27-apple-system%2CBlinkMacSystemFont%2Csans-serif%27%20font-weight%3D%27700%27%20text-anchor%3D%27middle%27%3E2%3C%2Ftext%3E%3C%2Fsvg%3E") center/90% no-repeat}
+body:not(.opal-tasks-native) .task-list-item[data-task="3"] > input.task-list-item-checkbox,body:not(.opal-tasks-native) .HyperMD-task-line[data-task="3"] .task-list-item-checkbox{border:none;background-color:var(--o-amber);-webkit-mask:url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2016%2016%27%3E%3Ctext%20x%3D%278%27%20y%3D%2712.2%27%20font-size%3D%2711%27%20font-family%3D%27-apple-system%2CBlinkMacSystemFont%2Csans-serif%27%20font-weight%3D%27700%27%20text-anchor%3D%27middle%27%3E3%3C%2Ftext%3E%3C%2Fsvg%3E") center/90% no-repeat;mask:url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2016%2016%27%3E%3Ctext%20x%3D%278%27%20y%3D%2712.2%27%20font-size%3D%2711%27%20font-family%3D%27-apple-system%2CBlinkMacSystemFont%2Csans-serif%27%20font-weight%3D%27700%27%20text-anchor%3D%27middle%27%3E3%3C%2Ftext%3E%3C%2Fsvg%3E") center/90% no-repeat}
+body:not(.opal-tasks-native) .task-list-item[data-task="4"] > input.task-list-item-checkbox,body:not(.opal-tasks-native) .HyperMD-task-line[data-task="4"] .task-list-item-checkbox{border:none;background-color:var(--o-lime);-webkit-mask:url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2016%2016%27%3E%3Ctext%20x%3D%278%27%20y%3D%2712.2%27%20font-size%3D%2711%27%20font-family%3D%27-apple-system%2CBlinkMacSystemFont%2Csans-serif%27%20font-weight%3D%27700%27%20text-anchor%3D%27middle%27%3E4%3C%2Ftext%3E%3C%2Fsvg%3E") center/90% no-repeat;mask:url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2016%2016%27%3E%3Ctext%20x%3D%278%27%20y%3D%2712.2%27%20font-size%3D%2711%27%20font-family%3D%27-apple-system%2CBlinkMacSystemFont%2Csans-serif%27%20font-weight%3D%27700%27%20text-anchor%3D%27middle%27%3E4%3C%2Ftext%3E%3C%2Fsvg%3E") center/90% no-repeat}
+body:not(.opal-tasks-native) .task-list-item[data-task="5"] > input.task-list-item-checkbox,body:not(.opal-tasks-native) .HyperMD-task-line[data-task="5"] .task-list-item-checkbox{border:none;background-color:var(--o-green);-webkit-mask:url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2016%2016%27%3E%3Ctext%20x%3D%278%27%20y%3D%2712.2%27%20font-size%3D%2711%27%20font-family%3D%27-apple-system%2CBlinkMacSystemFont%2Csans-serif%27%20font-weight%3D%27700%27%20text-anchor%3D%27middle%27%3E5%3C%2Ftext%3E%3C%2Fsvg%3E") center/90% no-repeat;mask:url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2016%2016%27%3E%3Ctext%20x%3D%278%27%20y%3D%2712.2%27%20font-size%3D%2711%27%20font-family%3D%27-apple-system%2CBlinkMacSystemFont%2Csans-serif%27%20font-weight%3D%27700%27%20text-anchor%3D%27middle%27%3E5%3C%2Ftext%3E%3C%2Fsvg%3E") center/90% no-repeat}
+body:not(.opal-tasks-native) .task-list-item[data-task="6"] > input.task-list-item-checkbox,body:not(.opal-tasks-native) .HyperMD-task-line[data-task="6"] .task-list-item-checkbox{border:none;background-color:var(--o-teal);-webkit-mask:url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2016%2016%27%3E%3Ctext%20x%3D%278%27%20y%3D%2712.2%27%20font-size%3D%2711%27%20font-family%3D%27-apple-system%2CBlinkMacSystemFont%2Csans-serif%27%20font-weight%3D%27700%27%20text-anchor%3D%27middle%27%3E6%3C%2Ftext%3E%3C%2Fsvg%3E") center/90% no-repeat;mask:url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2016%2016%27%3E%3Ctext%20x%3D%278%27%20y%3D%2712.2%27%20font-size%3D%2711%27%20font-family%3D%27-apple-system%2CBlinkMacSystemFont%2Csans-serif%27%20font-weight%3D%27700%27%20text-anchor%3D%27middle%27%3E6%3C%2Ftext%3E%3C%2Fsvg%3E") center/90% no-repeat}
+body:not(.opal-tasks-native) .task-list-item[data-task="7"] > input.task-list-item-checkbox,body:not(.opal-tasks-native) .HyperMD-task-line[data-task="7"] .task-list-item-checkbox{border:none;background-color:var(--o-cyan);-webkit-mask:url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2016%2016%27%3E%3Ctext%20x%3D%278%27%20y%3D%2712.2%27%20font-size%3D%2711%27%20font-family%3D%27-apple-system%2CBlinkMacSystemFont%2Csans-serif%27%20font-weight%3D%27700%27%20text-anchor%3D%27middle%27%3E7%3C%2Ftext%3E%3C%2Fsvg%3E") center/90% no-repeat;mask:url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2016%2016%27%3E%3Ctext%20x%3D%278%27%20y%3D%2712.2%27%20font-size%3D%2711%27%20font-family%3D%27-apple-system%2CBlinkMacSystemFont%2Csans-serif%27%20font-weight%3D%27700%27%20text-anchor%3D%27middle%27%3E7%3C%2Ftext%3E%3C%2Fsvg%3E") center/90% no-repeat}
+body:not(.opal-tasks-native) .task-list-item[data-task="8"] > input.task-list-item-checkbox,body:not(.opal-tasks-native) .HyperMD-task-line[data-task="8"] .task-list-item-checkbox{border:none;background-color:var(--o-sky);-webkit-mask:url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2016%2016%27%3E%3Ctext%20x%3D%278%27%20y%3D%2712.2%27%20font-size%3D%2711%27%20font-family%3D%27-apple-system%2CBlinkMacSystemFont%2Csans-serif%27%20font-weight%3D%27700%27%20text-anchor%3D%27middle%27%3E8%3C%2Ftext%3E%3C%2Fsvg%3E") center/90% no-repeat;mask:url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2016%2016%27%3E%3Ctext%20x%3D%278%27%20y%3D%2712.2%27%20font-size%3D%2711%27%20font-family%3D%27-apple-system%2CBlinkMacSystemFont%2Csans-serif%27%20font-weight%3D%27700%27%20text-anchor%3D%27middle%27%3E8%3C%2Ftext%3E%3C%2Fsvg%3E") center/90% no-repeat}
+body:not(.opal-tasks-native) .task-list-item[data-task="9"] > input.task-list-item-checkbox,body:not(.opal-tasks-native) .HyperMD-task-line[data-task="9"] .task-list-item-checkbox{border:none;background-color:var(--o-blue);-webkit-mask:url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2016%2016%27%3E%3Ctext%20x%3D%278%27%20y%3D%2712.2%27%20font-size%3D%2711%27%20font-family%3D%27-apple-system%2CBlinkMacSystemFont%2Csans-serif%27%20font-weight%3D%27700%27%20text-anchor%3D%27middle%27%3E9%3C%2Ftext%3E%3C%2Fsvg%3E") center/90% no-repeat;mask:url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2016%2016%27%3E%3Ctext%20x%3D%278%27%20y%3D%2712.2%27%20font-size%3D%2711%27%20font-family%3D%27-apple-system%2CBlinkMacSystemFont%2Csans-serif%27%20font-weight%3D%27700%27%20text-anchor%3D%27middle%27%3E9%3C%2Ftext%3E%3C%2Fsvg%3E") center/90% no-repeat}
+
+/* =====================================================================
+   7. 表格 / Bases / Dataview
+   ===================================================================== */
+.markdown-rendered th{background:var(--o-surface0);color:var(--o-subtext0);border-bottom:var(--o-bw) solid var(--o-surface1)}
+.markdown-rendered td{border-bottom:var(--o-bw) solid color-mix(in oklab,var(--o-surface1) 55%,transparent)}
+.markdown-rendered tbody tr:nth-child(even),.dataview.table-view-table tbody tr:nth-child(even){background:color-mix(in oklab,var(--o-surface0) 45%,transparent)}
+.opal-table-plain .markdown-rendered tbody tr:nth-child(even){background:none}
+.markdown-rendered tbody tr:hover,.dataview.table-view-table tbody tr:hover{background:color-mix(in oklab,var(--o-accent) 8%,transparent)}
+.opal-tb-full .markdown-rendered :is(th,td){border:var(--o-bw) solid var(--o-surface1)}
+.opal-tb-none .markdown-rendered :is(th,td){border:none}
+.opal-table-widen .markdown-rendered table{width:100%;display:table}
+
+/* =====================================================================
+   8. Canvas / 背景纹理
+   ===================================================================== */
+/* Canvas：底色/点阵走原生变量（不自绘，避免和 Obsidian 点阵重影）；卡片 squircle + 语义左条；
+   6 号预设色映射 Opal（注意 --canvas-color 用逗号三元组，供 rgb()/rgba() legacy 语法）；编组框靛蓝虚线 */
+.canvas-wrapper{--canvas-background:var(--o-mantle);--canvas-dot-pattern:var(--o-surface1)}
+.theme-dark .canvas-wrapper{--canvas-color-1:240,138,160;--canvas-color-2:242,174,123;--canvas-color-3:235,208,138;--canvas-color-4:146,219,168;--canvas-color-5:130,207,230;--canvas-color-6:192,162,240}
+.theme-light .canvas-wrapper{--canvas-color-1:177,58,86;--canvas-color-2:148,86,29;--canvas-color-3:123,98,20;--canvas-color-4:40,114,68;--canvas-color-5:14,110,130;--canvas-color-6:123,71,192}
+.canvas-node-container{border-radius:var(--radius-m);border-left:3px solid rgb(var(--canvas-color,126,126,126))}
+@supports (corner-shape: superellipse(1.2)){.opal-corner-squircle .canvas-node-container{corner-shape:var(--o-cshape)}}
+.canvas-node-label{color:var(--o-subtext0)}
+.canvas-node-group{border:2px dashed var(--o-indigo);border-radius:var(--radius-m)}
+/* Mermaid 图表：默认超宽等比缩放到行宽内（小图保持原样，只缩超宽的，压过 Mermaid 内联的 max-width）；
+   .opal-mermaid-scroll 档改为保持原大小、横向滚动。覆盖阅读态与实时预览。 */
+.mermaid{max-width:100%;text-align:center}
+.mermaid svg{max-width:100%!important;height:auto!important}
+.opal-mermaid-scroll .mermaid{overflow-x:auto;text-align:left}
+.opal-mermaid-scroll .mermaid svg{max-width:none!important}
+.opal-tex-dot .markdown-source-view .cm-sizer,.opal-tex-dot .markdown-preview-sizer{background-image:radial-gradient(color-mix(in oklab,var(--o-text) 7%,transparent) 1px,transparent 1px);background-size:22px 22px}
+.opal-tex-grid .markdown-source-view .cm-sizer,.opal-tex-grid .markdown-preview-sizer{background-image:linear-gradient(color-mix(in oklab,var(--o-text) 6%,transparent) 1px,transparent 1px),linear-gradient(90deg,color-mix(in oklab,var(--o-text) 6%,transparent) 1px,transparent 1px);background-size:24px 24px}
+.opal-tex-line .markdown-source-view .cm-sizer,.opal-tex-line .markdown-preview-sizer{background-image:linear-gradient(color-mix(in oklab,var(--o-text) 7%,transparent) 1px,transparent 1px);background-size:100% 1.7em}
+
+/* =====================================================================
+   9. Properties
+   ===================================================================== */
+.metadata-container{background:var(--o-surface0);border:var(--o-bw) solid var(--o-surface1);border-radius:var(--radius-m)}
+.metadata-property-key{color:var(--o-subtext0)}
+
+/* =====================================================================
+   10. 文件树 / 文件夹（四种着色方案）
+   ===================================================================== */
+.nav-folder-title{border-radius:var(--radius-s);position:relative}
+.opal-nav-indent-line .nav-folder-children{border-left:var(--o-bw) solid color-mix(in oklab,var(--o-surface1) 60%,transparent);margin-left:12px}
+/* 彩虹脊柱：顶层夹设色调变量 --o-folder-hue，子树所有标题继承（决策「子树继承」） */
+.opal-folder-rainbow .nav-folder.mod-root>.nav-folder-children>.nav-folder:nth-child(7n+1){--o-folder-hue:var(--o-rose)}
+.opal-folder-rainbow .nav-folder.mod-root>.nav-folder-children>.nav-folder:nth-child(7n+2){--o-folder-hue:var(--o-peach)}
+.opal-folder-rainbow .nav-folder.mod-root>.nav-folder-children>.nav-folder:nth-child(7n+3){--o-folder-hue:var(--o-green)}
+.opal-folder-rainbow .nav-folder.mod-root>.nav-folder-children>.nav-folder:nth-child(7n+4){--o-folder-hue:var(--o-teal)}
+.opal-folder-rainbow .nav-folder.mod-root>.nav-folder-children>.nav-folder:nth-child(7n+5){--o-folder-hue:var(--o-sky)}
+.opal-folder-rainbow .nav-folder.mod-root>.nav-folder-children>.nav-folder:nth-child(7n+6){--o-folder-hue:var(--o-violet)}
+.opal-folder-rainbow .nav-folder.mod-root>.nav-folder-children>.nav-folder:nth-child(7n+7){--o-folder-hue:var(--o-orchid)}
+.opal-folder-rainbow .nav-folder-title{color:var(--o-folder-hue,var(--o-subtext0))}
+.opal-folder-numbered .nav-folder-title[data-path^="00"]{color:var(--o-rose)}
+.opal-folder-numbered .nav-folder-title[data-path^="10"]{color:var(--o-blue)}
+.opal-folder-numbered .nav-folder-title[data-path^="20"]{color:var(--o-green)}
+.opal-folder-numbered .nav-folder-title[data-path^="90"]{color:var(--o-overlay1)}
+.opal-folder-mono .nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-title{color:var(--o-subtext1)}
+.nav-file-title{position:relative}
+.nav-file-title.is-active::before{content:"";position:absolute;left:0;top:4px;bottom:4px;width:3px;border-radius:2px;background:var(--o-accent)}
+
+/* =====================================================================
+   11. 整页语义态（cssclasses）
+   ===================================================================== */
+.important.markdown-preview-view,.important.markdown-source-view{border-left:3px solid var(--o-amber);background:color-mix(in oklab,var(--o-amber) 5%,var(--o-base))}
+.alert.markdown-preview-view,.alert.markdown-source-view{box-shadow:inset 0 0 0 1.5px var(--o-rose),0 0 0 3px color-mix(in srgb,var(--o-rose) 16%,transparent)}
+.archived{filter:grayscale(.6) brightness(.85)}
+.pinned.markdown-preview-view,.pinned.markdown-source-view{border-top:3px solid var(--o-teal)}
+.draft .markdown-preview-sizer,.draft .cm-sizer{position:relative}
+.draft .markdown-preview-sizer::before{content:"草稿";position:absolute;top:38%;left:50%;transform:translate(-50%,-50%) rotate(-18deg);font-size:70px;font-weight:900;color:color-mix(in oklab,var(--o-overlay2) 18%,transparent);pointer-events:none;z-index:0}
+.wide{--file-line-width:55rem}
+.narrow{--file-line-width:30rem}
+.full-width{--file-line-width:100%}
+.meeting.markdown-preview-view{border-top:2px solid var(--o-sky)}
+.daily{--o-base:var(--o-base-n)}
+@supports (background: color-mix(in oklab, red, blue)){.daily{--o-base:color-mix(in oklab,var(--o-amber) 4%,var(--o-base-n))}}
+[class*="accent-"].markdown-preview-view,[class*="accent-"].markdown-source-view{--interactive-accent:var(--o-note-accent);--link-color:var(--o-note-accent);--text-accent:var(--o-note-accent);--h1-color:var(--o-note-accent)}
+.accent-rose{--o-note-accent:var(--o-rose)}.accent-peach{--o-note-accent:var(--o-peach)}.accent-amber{--o-note-accent:var(--o-amber)}
+.accent-green{--o-note-accent:var(--o-green)}.accent-teal{--o-note-accent:var(--o-teal)}.accent-sky{--o-note-accent:var(--o-sky)}
+.accent-blue{--o-note-accent:var(--o-blue)}.accent-indigo{--o-note-accent:var(--o-indigo)}.accent-violet{--o-note-accent:var(--o-violet)}
+.accent-orchid{--o-note-accent:var(--o-orchid)}.accent-pink{--o-note-accent:var(--o-pink)}
+
+/* =====================================================================
+   12. 图片
+   ===================================================================== */
+.markdown-rendered img{border-radius:var(--opal-img-radius, 10px);max-width:var(--opal-img-width, 100%)}
+.opal-img-shadow .markdown-rendered img{box-shadow:0 6px 20px -8px rgba(0,0,0,.5)}
+.theme-dark img[alt*="img-invert"]{filter:invert(1) hue-rotate(180deg)}
+img[alt*="img-banner"]{width:100%;object-fit:cover}
+img[alt*="img-left"]{float:left;margin:0 1em .5em 0;max-width:45%}
+img[alt*="img-right"]{float:right;margin:0 0 .5em 1em;max-width:45%}
+@supports selector(:has(*)){
+  .markdown-rendered p:has(> img[alt*="img-grid"]){display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:8px}
+}
+.internal-embed.image-embed.mod-error{border:var(--o-bw) dashed var(--o-surface2);border-radius:var(--radius-m);min-height:40px}
+
+/* =====================================================================
+   13. 界面 chrome：边框 / 焦点环 / 滚动条 / 面板 / 输入 / 标签页
+   ===================================================================== */
+:is(input[type="text"],input[type="search"],textarea,.dropdown,button.mod-cta,button:not(.clickable-icon)){border:var(--o-bw) solid var(--background-modifier-border)}
+.opal-pane-borders .workspace-leaf{border:var(--o-bw) solid var(--o-surface1)}
+.opal-ring-outline :is(input,textarea,button,.dropdown):focus-visible{outline:2px solid var(--o-accent);outline-offset:1px}
+.opal-ring-glow :is(input,textarea,button,.dropdown):focus-visible{outline:none;box-shadow:0 0 0 3px color-mix(in srgb,var(--o-accent) 30%,transparent)}
+.opal-ring-none :is(input,textarea,button,.dropdown):focus-visible{outline:none}
+::-webkit-scrollbar{width:var(--opal-scrollbar-width, 12px);height:var(--opal-scrollbar-width, 12px)}
+::-webkit-scrollbar-thumb{background:var(--scrollbar-thumb-bg);border-radius:8px}
+.workspace-tab-header{border-radius:var(--tab-radius) var(--tab-radius) 0 0}
+.opal-active-line .cm-active.cm-line{background:color-mix(in oklab,var(--o-accent) 6%,transparent)}
+.opal-focus-mode .cm-content .cm-line:not(.cm-active){opacity:.42;transition:opacity .2s var(--o-ease)}
+
+/* 界面设计语言 */
+.opal-ui-cupertino :is(.menu,.suggestion-container,.popover,.modal){border-radius:14px;box-shadow:0 10px 34px -10px rgba(0,0,0,.5)}
+.opal-ui-cupertino button{border-radius:999px}
+.opal-ui-fluent :is(.menu,.suggestion-container,.popover){border:1px solid color-mix(in srgb,#fff 16%,transparent);box-shadow:0 8px 24px -10px rgba(0,0,0,.5)}
+.opal-ui-material :is(.menu,.suggestion-container,.popover,.modal){border-radius:4px;box-shadow:0 8px 10px 1px rgba(0,0,0,.28),0 3px 14px 2px rgba(0,0,0,.22)}
+.opal-ui-material button{text-transform:uppercase;letter-spacing:.04em;font-size:.85em}
+
+/* =====================================================================
+   14. 表面质感（毛玻璃 / 液态玻璃）
+   ===================================================================== */
+.opal-surface-glass :is(.menu,.suggestion-container,.popover){background:color-mix(in srgb,var(--o-mantle) 72%,transparent);backdrop-filter:blur(12px) saturate(1.2)}
+.opal-surface-liquid :is(.menu,.suggestion-container,.popover){background:color-mix(in srgb,var(--o-surface0) 60%,transparent);backdrop-filter:blur(14px) saturate(1.4) brightness(1.05);border:1px solid color-mix(in srgb,#fff 20%,transparent);box-shadow:0 8px 22px -8px rgba(0,0,0,.55),inset 0 1px 0 color-mix(in srgb,#fff 28%,transparent)}
+@media (prefers-reduced-transparency: reduce){
+  .opal-surface-glass :is(.menu,.suggestion-container,.popover),
+  .opal-surface-liquid :is(.menu,.suggestion-container,.popover){backdrop-filter:none;background:var(--o-mantle);border:var(--o-bw) solid var(--o-surface1);box-shadow:none}
+}
+
+/* =====================================================================
+   15. 氛围背景光晕（默认开；.opal-no-bg-orb 关）
+   ===================================================================== */
+@supports (background: color-mix(in srgb, red, blue)){
+  body:not(.opal-no-bg-orb) .cm-editor,
+  body:not(.opal-no-bg-orb) .markdown-preview-view{
+    background-image:
+      radial-gradient(circle at 12% 10%, color-mix(in srgb,var(--o-accent) 13%,transparent), transparent 30%),
+      radial-gradient(circle at 88% 90%, color-mix(in srgb,var(--o-accent2) 13%,transparent), transparent 30%);
+    /* 用默认 background-attachment:scroll，光晕钉在编辑区角落且不随内容滚动 -> 不触发滚动逐帧重绘 */
+  }
+}
+
+/* =====================================================================
+   16. 动效系统
+   ===================================================================== */
+.opal-motion-off{--o-m-scale:0}
+.opal-motion-mini{--o-m-scale:1.4}
+.opal-motion-standard{--o-m-scale:1}
+.opal-motion-lively{--o-m-scale:.85;--o-ease:cubic-bezier(.34,1.3,.4,1)}
+.callout,button,.nav-file-title,.nav-folder-title{transition:transform calc(var(--o-m-base) * var(--o-m-scale)) var(--o-ease),box-shadow calc(var(--o-m-base) * var(--o-m-scale)) var(--o-ease),background calc(var(--o-m-fast) * var(--o-m-scale)) var(--o-ease)}
+.markdown-rendered .callout:hover{transform:translateY(-2px)}
+button:active{transform:scale(.96) translateY(1px);filter:brightness(.9)}
+@keyframes opalBlurIn{from{opacity:0;filter:blur(6px)}to{opacity:1;filter:blur(0)}}
+@keyframes opalSmoothIn{from{opacity:0;transform:translateY(7px)}to{opacity:1;transform:translateY(0)}}
+@keyframes opalBounceIn{0%{opacity:0;transform:translateY(12px)}60%{opacity:1;transform:translateY(-4px)}100%{transform:translateY(0)}}
+.opal-ent-blur:not(.opal-motion-off) :is(.markdown-preview-sizer,.cm-sizer){animation:opalBlurIn calc(var(--o-m-slow) * var(--o-m-scale)) var(--o-ease) both}
+.opal-ent-smooth:not(.opal-motion-off) :is(.markdown-preview-sizer,.cm-sizer){animation:opalSmoothIn calc(var(--o-m-base) * var(--o-m-scale)) var(--o-ease) both}
+.opal-ent-bounce:not(.opal-motion-off) :is(.markdown-preview-sizer,.cm-sizer){animation:opalBounceIn calc(var(--o-m-slow) * var(--o-m-scale)) cubic-bezier(.34,1.4,.4,1) both}
+@media (prefers-reduced-motion: reduce){*{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important}}
+.opal-motion-off *{animation:none!important;transition:none!important}
+
+/* =====================================================================
+   17. 复古皮肤
+   ===================================================================== */
+.opal-retro-synth{--o-base-n:#1a0f2e;--o-mantle-n:#140a24;--o-text:#e6d8ff}
+.opal-retro-synth .cm-header-1{color:#ff5fd0;text-shadow:0 0 8px #ff5fd0}
+.opal-retro-green{--o-base-n:#001100;--o-text:#33ff66;--o-mantle-n:#000a00}
+.opal-retro-green .markdown-rendered{text-shadow:0 0 6px rgba(51,255,102,.5)}
+.opal-retro-amber{--o-base-n:#1a1000;--o-text:#ffb642;--o-mantle-n:#120b00}
+.opal-retro-amber .markdown-rendered{text-shadow:0 0 6px rgba(255,182,66,.45)}
+.opal-retro-matrix{--o-base-n:#000806;--o-text:#4dffa6;--o-mantle-n:#00110b}
+.opal-retro-matrix .markdown-preview-sizer{background-image:linear-gradient(rgba(77,255,166,.05) 1px,transparent 1px);background-size:100% 3px}
+
+/* =====================================================================
+   19. 界面区域适配（标签页/命令面板/ribbon/内联标题/设置/图谱/脚注/状态栏/提示）
+   多数靠设 Obsidian 原生变量，稳且不与未来类名改动冲突
+   ===================================================================== */
+body{
+  --tab-background-active: var(--o-base);
+  --tab-text-color-active: var(--o-text);
+  --tab-text-color-focused-active-current: var(--o-text);
+  --prompt-border-color: var(--o-surface1);
+  --ribbon-background: var(--o-mantle);
+  --inline-title-color: var(--h1-color);
+  --inline-title-weight: var(--h1-weight);
+  --modal-background: var(--o-base);
+  --modal-border-color: var(--o-surface1);
+  --modal-radius: var(--radius-l);
+  --graph-node: var(--o-subtext1);
+  --graph-node-focused: var(--o-accent);
+  --graph-node-tag: var(--o-orchid);
+  --graph-node-attachment: var(--o-teal);
+  --graph-node-unresolved: var(--o-overlay1);
+  --graph-line: var(--o-surface2);
+  --graph-text: var(--o-subtext0);
+  --footnote-id-color: var(--o-accent);
+  --footnote-divider-color: var(--o-surface1);
+  --status-bar-text-color: var(--o-subtext0);
+  --status-bar-border-color: var(--o-surface1);
+}
+body{--inline-title-font: var(--o-font-heading)}
+.workspace-tab-header.is-active{box-shadow:inset 0 2px 0 var(--o-accent)}
+.prompt{border:var(--o-bw) solid var(--o-surface1);border-radius:var(--o-r)}
+.suggestion-item.is-selected{background:var(--o-soft-accent)}
+.side-dock-ribbon-action:hover{color:var(--o-accent)}
+.vertical-tab-nav-item.is-active{background:var(--o-soft-accent);color:var(--o-text)}
+.graph-controls{background:var(--o-mantle);border:var(--o-bw) solid var(--o-surface1);border-radius:var(--radius-m)}
+.status-bar-item.mod-clickable:hover{color:var(--o-text)}
+.tooltip{color:var(--o-text)}  /* 原生硬编码 #FAFAFA，浅色下会看不见，这里跟随主题文字色 */
+.footnote-ref a,sup.footnote-ref{color:var(--o-accent)}
+
+/* =====================================================================
+   20. Bases（native 数据库视图）：接进 Opal 调色板
+   ===================================================================== */
+.bases-view{
+  --bases-table-header-background: var(--o-surface0);
+  --bases-table-header-color: var(--o-subtext0);
+  --bases-table-border-color: var(--o-surface1);
+  --bases-table-row-background-hover: color-mix(in oklab,var(--o-accent) 8%,transparent);
+  --bases-table-group-background: var(--o-mantle);
+  --bases-cards-background: var(--o-mantle);
+  --bases-cards-cover-background: var(--o-surface0);
+}
+.bases-table-container{border-radius:var(--radius-m)}
+.bases-cards-item{border-radius:var(--radius-m)}
+@supports (corner-shape: superellipse(1.2)){.opal-corner-squircle .bases-cards-item{corner-shape:var(--o-cshape)}}
+
+/* =====================================================================
+   21. 插件适配（用户已装、有明显 UI 的）
+   ===================================================================== */
+/* editing-toolbar：容器 id 选择器 + 官方变量 */
+#editingToolbarModalBar,.editingToolbarPopoverBar{
+  --editing-toolbar-background-color: var(--o-mantle);
+  --editing-toolbar-icon-color: var(--o-subtext0);
+  background:var(--o-mantle);border:var(--o-bw) solid var(--o-surface1);
+  border-radius:var(--o-r);box-shadow:0 6px 22px -6px rgba(0,0,0,.45)
+}
+#editingToolbarModalBar .editingToolbarCommandItem:hover{background:var(--o-surface0);color:var(--o-text)}
+.editingToolbar-Divider-Line{background:var(--o-surface1)}
+.editingToolbarGlassAesthetic{backdrop-filter:blur(12px) saturate(1.2)}
+/* calendar：只吃它文档化的 12 个稳定变量，作用域锁 #calendar-container */
+#calendar-container{
+  --color-background-heading: transparent;
+  --color-background-weekend: color-mix(in oklab,var(--o-surface0) 40%,transparent);
+  --color-dot: var(--o-accent);
+  --color-arrow: var(--o-subtext0);
+  --color-button: var(--o-subtext0);
+  --color-text-title: var(--o-text);
+  --color-text-heading: var(--o-subtext0);
+  --color-text-day: var(--o-text);
+  --color-text-today: var(--o-accent);
+  --color-text-weeknum: var(--o-overlay1);
+}
+/* admonition：主体渲染成原生 callout，皮肤已自动套；这里补私有类兜底 */
+.admonition-title-content{font-weight:600}
+/* timeline-view */
+.timeline-view--timeline{--timeline-view--item-color:var(--o-accent);--timeline-view--selected-item-color:var(--o-accent2);--canvas-background:var(--o-mantle)}
+/* excel：吃它的外壳变量 */
+.workspace-leaf-content[data-type="excel-view"]{--sheet-toolbar-background-color:var(--o-mantle);--sheet-header-background-color:var(--o-surface0);--sheet-toolbar-divider-color:var(--o-surface1);--sheet-iframe-background-color:var(--o-base)}
+/* d2：暗色下覆盖重编译按钮的硬白底 */
+.theme-dark .Preview__Recompile{background-color:var(--o-surface1)!important;color:var(--o-text)}
+
+/* =====================================================================
+   22. 编辑态（实时预览 CM6）补齐：把只在阅读态生效的装饰补到编辑器
+   作用域 .markdown-source-view.mod-cm6。表格挂件自带 .markdown-rendered，斑马/表头/hover/边框已自动生效；
+   列表 bullet 走 .list-bullet::after 已两态通吃。此处补其余。
+   ===================================================================== */
+/* 标题：字体到行级 + 每级色调变量 --o-hcol（不给 # 标记重上色）；渐变下划/单线底边跟随档位 */
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-header{font-family:var(--o-font-heading)}
+.markdown-source-view.mod-cm6 .HyperMD-header-1{--o-hcol:var(--h1-color)}
+.markdown-source-view.mod-cm6 .HyperMD-header-2{--o-hcol:var(--h2-color)}
+.markdown-source-view.mod-cm6 .HyperMD-header-3{--o-hcol:var(--h3-color)}
+.markdown-source-view.mod-cm6 .HyperMD-header-4{--o-hcol:var(--h4-color)}
+.markdown-source-view.mod-cm6 .HyperMD-header-5{--o-hcol:var(--h5-color)}
+.markdown-source-view.mod-cm6 .HyperMD-header-6{--o-hcol:var(--h6-color)}
+.opal-hdl-gradient .markdown-source-view.mod-cm6 .cm-line.HyperMD-header{background-image:linear-gradient(90deg,var(--o-hcol),transparent 65%);background-size:100% 2px;background-position:0 100%;background-repeat:no-repeat}
+.opal-hdl-underline .markdown-source-view.mod-cm6 .cm-line.HyperMD-header{border-bottom:var(--o-bw) solid color-mix(in oklab,var(--o-hcol) 45%,transparent)}
+
+/* 分隔线：编辑态真实线是 widget 里的 <hr>，镜像阅读态五档 */
+.markdown-source-view.mod-cm6 hr{border:none;height:2px;background:linear-gradient(90deg,transparent,var(--o-surface2),transparent)}
+.opal-div-solid .markdown-source-view.mod-cm6 hr{height:0;border-top:var(--o-bw) solid var(--o-surface2);background:none}
+.opal-div-dash .markdown-source-view.mod-cm6 hr{height:0;border-top:var(--o-bw) dashed var(--o-surface2);background:none}
+.opal-div-double .markdown-source-view.mod-cm6 hr{height:0;border-top:3px double var(--o-surface2);background:none}
+.opal-div-dot .markdown-source-view.mod-cm6 hr{height:4px;background:radial-gradient(circle,var(--o-surface2) 1.4px,transparent 1.4px);background-size:12px 4px}
+
+/* 标签药丸：底色/上下 border 走基类，圆角只给首末段（哈希/语义色因 token 无 href 无法移植，编辑态统一 orchid） */
+.markdown-source-view.mod-cm6 .cm-hashtag{background:var(--o-surface0);color:var(--o-orchid)}
+.markdown-source-view.mod-cm6 .cm-hashtag-begin{border-top-left-radius:20px;border-bottom-left-radius:20px}
+.markdown-source-view.mod-cm6 .cm-hashtag-end{border-top-right-radius:20px;border-bottom-right-radius:20px}
+
+/* 引用块：底色统一走原生 --blockquote-background-color（在绑定层已设 surface0），两态通吃，
+   不用直设 .HyperMD-quote 背景（会被原生带 .is-live-preview 的更高特异度规则盖掉）；竖条走 --blockquote-border-color */
+
+/* 未创建链接：编辑态 is-unresolved 是独立 mark，官方保证的写法（不赌复合选择器） */
+.opal-unres-dash .markdown-source-view.mod-cm6 .is-unresolved .cm-underline{text-decoration:underline dashed;text-underline-offset:2px}
+.opal-unres-dim .markdown-source-view.mod-cm6 .is-unresolved{opacity:.5}
+.opal-unres-blur .markdown-source-view.mod-cm6 .is-unresolved{filter:blur(.4px);opacity:.7}
+.opal-unres-badge .markdown-source-view.mod-cm6 .is-unresolved::after{content:"?";font-size:.7em;vertical-align:super;color:var(--o-amber);margin-left:1px}
+
+/* 任务扩展态：编辑态 data-task 挂在 .HyperMD-task-line 行上 */
+body:not(.opal-tasks-native) .HyperMD-task-line[data-task="/"] .task-list-item-checkbox{background:conic-gradient(var(--o-green) 0 42%,transparent 42%);border-color:var(--o-green)}
+body:not(.opal-tasks-native) .HyperMD-task-line[data-task="-"]{text-decoration:line-through;color:var(--o-overlay1)}
+body:not(.opal-tasks-native) .HyperMD-task-line[data-task="-"] .task-list-item-checkbox{border-color:var(--o-rose)}
+body:not(.opal-tasks-native) .HyperMD-task-line[data-task=">"] .task-list-item-checkbox{border-color:var(--o-sky)}
+body:not(.opal-tasks-native) .HyperMD-task-line[data-task="<"] .task-list-item-checkbox{border-color:var(--o-sky)}
+body:not(.opal-tasks-native) .HyperMD-task-line[data-task="?"] .task-list-item-checkbox{border-color:var(--o-amber)}
+body:not(.opal-tasks-native) .HyperMD-task-line[data-task="!"] .task-list-item-checkbox{border-color:var(--o-rose)}
+body:not(.opal-tasks-native) .HyperMD-task-line[data-task="*"] .task-list-item-checkbox{border-color:var(--o-amber)}
+
+/* 内嵌图片：圆角/投影挂 img（两态通用类名） */
+.markdown-source-view.mod-cm6 .internal-embed.image-embed img{border-radius:var(--opal-img-radius,10px)}
+.opal-img-shadow .markdown-source-view.mod-cm6 .internal-embed.image-embed img{box-shadow:0 6px 20px -8px rgba(0,0,0,.5)}
+
+/* 代码块 OpenType 特性 */
+.markdown-source-view.mod-cm6 .HyperMD-codeblock{font-feature-settings:var(--opal-font-features, normal)}
+
+/* =====================================================================
+   23. 打印 / 导出
+   ===================================================================== */
+@media print {
+  body:not(.opal-print-dark){--background-primary:#fff!important;--background-primary-alt:#fff!important;--background-secondary:#fff!important;--text-normal:#222!important;--text-muted:#555!important}
+  .opal-pf-serif .markdown-rendered{font-family:var(--o-fallback-serif)}
+  .opal-pf-mono .markdown-rendered{font-family:var(--o-fallback-mono)}
+  .opal-pa-justify .markdown-rendered p{text-align:justify;text-indent:2em;hyphens:auto}
+  .opal-pa-left .markdown-rendered p{text-align:left;text-indent:0}
+  body:not(.opal-print-dark) .callout{box-shadow:none!important;background:#fff!important;border:1px solid #bbb!important;border-left:3px solid rgb(var(--callout-color))!important}
+  .markdown-rendered :is(h1,h2,h3,h4,h5,h6){break-after:avoid;background-image:none!important}
+  body:not(.opal-print-dark) .markdown-rendered :is(h1,h2,h3,h4,h5,h6){filter:saturate(.7) brightness(.55)}
+  .markdown-rendered p,.markdown-rendered li{orphans:2;widows:2}
+  .markdown-rendered *,.markdown-rendered{animation:none!important;transition:none!important;filter:none;text-shadow:none!important}
+  .hr-for-pagination hr{break-after:page;visibility:hidden}
+}

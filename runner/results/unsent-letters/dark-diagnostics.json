@@ -1,0 +1,161 @@
+{
+  "conflicts": [],
+  "brokenBridges": [
+    {
+      "property": "--code-background",
+      "references": "--ec-frm-edBg",
+      "selector": "figure",
+      "aspect": "images"
+    },
+    {
+      "property": "--header-border-radius",
+      "references": "--ec-brdRad",
+      "selector": "figure",
+      "aspect": "images"
+    },
+    {
+      "property": "--_bar-dim",
+      "references": "--ce-color",
+      "selector": ".nav-files-container .nav-file-title.is-active",
+      "aspect": "explorer"
+    },
+    {
+      "property": "--_fill",
+      "references": "--ce-color",
+      "selector": ".nav-files-container .nav-file-title.is-active",
+      "aspect": "explorer"
+    },
+    {
+      "property": "--_fill-active",
+      "references": "--ce-color",
+      "selector": ".nav-files-container .nav-file-title.is-active",
+      "aspect": "explorer"
+    },
+    {
+      "property": "--_fill-hover",
+      "references": "--ce-color",
+      "selector": ".nav-files-container .nav-file-title.is-active",
+      "aspect": "explorer"
+    },
+    {
+      "property": "--_bar-dim",
+      "references": "--ce-color",
+      "selector": ".nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title",
+      "aspect": "explorer"
+    },
+    {
+      "property": "--_fill",
+      "references": "--ce-color",
+      "selector": ".nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title",
+      "aspect": "explorer"
+    },
+    {
+      "property": "--_fill-active",
+      "references": "--ce-color",
+      "selector": ".nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title",
+      "aspect": "explorer"
+    },
+    {
+      "property": "--_fill-hover",
+      "references": "--ce-color",
+      "selector": ".nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title",
+      "aspect": "explorer"
+    },
+    {
+      "property": "--_bar-dim",
+      "references": "--ce-color",
+      "selector": ".nav-files-container li:has(> .folder-outer.open) > .nav-folder-title",
+      "aspect": "explorer"
+    },
+    {
+      "property": "--_fill",
+      "references": "--ce-color",
+      "selector": ".nav-files-container li:has(> .folder-outer.open) > .nav-folder-title",
+      "aspect": "explorer"
+    },
+    {
+      "property": "--_fill-active",
+      "references": "--ce-color",
+      "selector": ".nav-files-container li:has(> .folder-outer.open) > .nav-folder-title",
+      "aspect": "explorer"
+    },
+    {
+      "property": "--_fill-hover",
+      "references": "--ce-color",
+      "selector": ".nav-files-container li:has(> .folder-outer.open) > .nav-folder-title",
+      "aspect": "explorer"
+    },
+    {
+      "property": "--_bar-dim",
+      "references": "--ce-color",
+      "selector": ".nav-files-container .collapse-icon",
+      "aspect": "explorer"
+    },
+    {
+      "property": "--_fill",
+      "references": "--ce-color",
+      "selector": ".nav-files-container .collapse-icon",
+      "aspect": "explorer"
+    },
+    {
+      "property": "--_fill-active",
+      "references": "--ce-color",
+      "selector": ".nav-files-container .collapse-icon",
+      "aspect": "explorer"
+    },
+    {
+      "property": "--_fill-hover",
+      "references": "--ce-color",
+      "selector": ".nav-files-container .collapse-icon",
+      "aspect": "explorer"
+    },
+    {
+      "property": "--_bar-dim",
+      "references": "--ce-color",
+      "selector": ".recent-notes > ul.recent-ul > li .section > .desc > h3 > a",
+      "aspect": "recentNotes"
+    },
+    {
+      "property": "--_fill",
+      "references": "--ce-color",
+      "selector": ".recent-notes > ul.recent-ul > li .section > .desc > h3 > a",
+      "aspect": "recentNotes"
+    },
+    {
+      "property": "--_fill-active",
+      "references": "--ce-color",
+      "selector": ".recent-notes > ul.recent-ul > li .section > .desc > h3 > a",
+      "aspect": "recentNotes"
+    },
+    {
+      "property": "--_fill-hover",
+      "references": "--ce-color",
+      "selector": ".recent-notes > ul.recent-ul > li .section > .desc > h3 > a",
+      "aspect": "recentNotes"
+    },
+    {
+      "property": "--_bar-dim",
+      "references": "--ce-color",
+      "selector": "li.section-li > .section > .desc > h3 > a",
+      "aspect": "listPage"
+    },
+    {
+      "property": "--_fill",
+      "references": "--ce-color",
+      "selector": "li.section-li > .section > .desc > h3 > a",
+      "aspect": "listPage"
+    },
+    {
+      "property": "--_fill-active",
+      "references": "--ce-color",
+      "selector": "li.section-li > .section > .desc > h3 > a",
+      "aspect": "listPage"
+    },
+    {
+      "property": "--_fill-hover",
+      "references": "--ce-color",
+      "selector": "li.section-li > .section > .desc > h3 > a",
+      "aspect": "listPage"
+    }
+  ]
+}

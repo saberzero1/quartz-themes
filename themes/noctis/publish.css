@@ -1448,6 +1448,7 @@ body.theme-dark {
   --interactive-before: var(--noctis-fg-muted) !important;
   --interactive-success: var(--noctis-green) !important;
   --blockquote-border: #16a3b6 !important;
+  --table-header-border: var(--noctis-border) !important;
   --noctis-accent: #40d4e7 !important;
   --noctis-accent-hover: #169fb1 !important;
   --noctis-bg: #052529 !important;
@@ -1483,7 +1484,6 @@ body.theme-dark {
   --noctis-warning: #e69533 !important;
   --noctis-yellow: #e4b781 !important;
   --noctis-yellow-bright: #e69533 !important;
-  --table-header-border: var(--noctis-border) !important;
 }
 
 body .site-body-left-column-site-theme-toggle {

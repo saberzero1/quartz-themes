@@ -1,0 +1,640 @@
+/* ============================================================
+   VSCode Light Modern for Obsidian
+   Based on leozague/obsidian-vscode-dark-plus
+   ============================================================ */
+
+.theme-light {
+  /* Backgrounds */
+  --background-primary:               #ffffff;
+  --background-primary-alt:           #f8f8f8;
+  --background-secondary:             #f3f3f3;
+  --background-secondary-alt:         #ececec;
+
+  /* Base color layers */
+  --color-base-00:                    #ffffff;
+  --color-base-05:                    #fbfbfb;
+  --color-base-10:                    #f3f3f3;
+  --color-base-20:                    #ececec;
+  --color-base-25:                    #e5e5e5;
+  --color-base-30:                    #d6d6d6;
+  --color-base-35:                    #c8c8c8;
+  --color-base-40:                    #b8b8b8;
+  --color-base-50:                    #8a8a8a;
+  --color-base-60:                    #6f6f6f;
+  --color-base-70:                    #4f4f4f;
+  --color-base-100:                   #1f1f1f;
+
+  /* Text */
+  --text-normal:                      #1f1f1f;
+  --text-muted:                       #626262;
+  --text-faint:                       #8f8f8f;
+  --text-on-accent:                   #ffffff;
+  --text-error:                       #b3261e;
+  --text-warning:                     #7a4f00;
+  --text-success:                     #2f6f3e;
+
+  /* Links */
+  --link-color:                       #006ab1;
+  --link-color-hover:                 #5d3f91;
+  --link-external-color:              #006ab1;
+  --link-external-color-hover:        #5d3f91;
+  --link-unresolved-color:            #7a7a7a;
+
+  /* Headings, adapted from VS Code Light syntax colors */
+  --h1-color:                         #a31515;
+  --h2-color:                         #008000;
+  --h3-color:                         #795e26;
+  --h4-color:                         #0451a5;
+  --h5-color:                         #811f3f;
+  --h6-color:                         #267f99;
+  --h1-size:                          1.5em;
+  --h2-size:                          1.3em;
+  --h3-size:                          1.15em;
+  --h4-size:                          1.05em;
+  --h5-size:                          1.0em;
+  --h6-size:                          0.95em;
+  --h1-weight:                        500;
+  --h2-weight:                        500;
+  --h3-weight:                        500;
+  --h4-weight:                        500;
+  --h5-weight:                        500;
+  --h6-weight:                        500;
+
+  /* Accent */
+  --color-accent:                     #006ab1;
+  --interactive-accent:               #006ab1;
+  --interactive-accent-hover:         #005a9e;
+  --interactive-accent-rgb:           0, 106, 177;
+  --interactive-normal:               #f3f3f3;
+  --interactive-hover:                #e8f2fc;
+
+  /* Borders */
+  --background-modifier-hover:        #e8f2fc;
+  --background-modifier-active-hover: #dbeafe;
+  --background-modifier-border:       #d6d6d6;
+  --background-modifier-border-hover: #c8c8c8;
+  --background-modifier-border-focus: #66a7d8;
+
+  /* Scrollbar */
+  --scrollbar-bg:                     transparent;
+  --scrollbar-thumb-bg:               #c8c8c8;
+  --scrollbar-active-thumb-bg:        #a6a6a6;
+
+  /* Code, adapted from VS Code Light+ */
+  --code-background:                  #f6f8fa;
+  --code-normal:                      #1f1f1f;
+  --code-comment:                     #008000;
+  --code-function:                    #795e26;
+  --code-important:                   #811f3f;
+  --code-keyword:                     #0000ff;
+  --code-operator:                    #1f1f1f;
+  --code-property:                    #001080;
+  --code-punctuation:                 #1f1f1f;
+  --code-string:                      #a31515;
+  --code-tag:                         #800000;
+  --code-value:                       #098658;
+  --code-size:                        13px;
+
+  /* Tags */
+  --tag-color:                        #006ab1;
+  --tag-background:                   rgba(0, 106, 177, 0.09);
+  --tag-border-color:                 transparent;
+  --tag-border-width:                 0;
+  --tag-padding-x:                    7px;
+  --tag-padding-y:                    2px;
+  --tag-radius:                       4px;
+
+  /* Tables */
+  --table-border-color:               #d6d6d6;
+  --table-header-background:          #f3f3f3;
+  --table-header-background-hover:    #e8f2fc;
+
+  /* Inline title */
+  --inline-title-color:               #1f1f1f;
+  --inline-title-size:                1.5em;
+  --inline-title-weight:              500;
+
+  /* Bold / Italic */
+  --bold-color:                       #006ab1;
+  --italic-color:                     #a31515;
+
+  /* Blockquote */
+  --blockquote-border-color:          #c8c8c8;
+  --blockquote-border-thickness:      2px;
+  --blockquote-color:                 #626262;
+
+  /* Checkbox */
+  --checkbox-color:                   #006ab1;
+  --checkbox-border-color:            #8f8f8f;
+  --checkbox-border-color-hover:      #006ab1;
+
+  /* File explorer */
+  --nav-item-color:                   #333333;
+  --nav-item-color-hover:             #111111;
+  --nav-item-color-active:            #111111;
+  --nav-item-background-hover:        #e8f2fc;
+  --nav-item-background-active:       #dbeafe;
+  --nav-folder-color:                 #333333;
+  --nav-item-weight-hover:            inherit;
+  --nav-item-weight-active:           inherit;
+
+  /* Tabs */
+  --tab-background-active:            var(--background-primary);
+  --tab-text-color:                   var(--text-muted);
+  --tab-text-color-active:            var(--text-normal);
+  --tab-text-color-focused:           var(--text-normal);
+  --tab-text-color-focused-active:    var(--text-normal);
+  --tab-container-background:         var(--background-secondary);
+  --tab-outline-color:                var(--background-modifier-border);
+  --tab-curve:                        6px;
+  --tab-radius:                       6px;
+  --tab-divider-color:                transparent;
+  --tab-font-size:                    12px;
+
+  /* Title bar */
+  --titlebar-background:              var(--background-secondary);
+  --titlebar-background-focused:      var(--background-secondary);
+  --titlebar-text-color:              var(--text-muted);
+  --titlebar-text-color-focused:      var(--text-normal);
+
+  /* Status bar */
+  --status-bar-background:            #f3f3f3;
+  --status-bar-text-color:            #626262;
+  --status-bar-border-color:          #d6d6d6;
+
+  /* Prompt / Modal */
+  --prompt-background:                #ffffff;
+  --prompt-border-color:              #d6d6d6;
+
+  /* Ribbon */
+  --ribbon-background:                #f3f3f3;
+  --ribbon-background-collapsed:      #f3f3f3;
+
+  /* Indentation guides */
+  --indentation-guide-color:          rgba(31, 31, 31, 0.08);
+  --indentation-guide-color-active:   rgba(0, 106, 177, 0.28);
+
+  /* Dividers */
+  --divider-color:                    #d6d6d6;
+  --divider-color-hover:              #c8c8c8;
+}
+
+body {
+  --font-interface: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+  --font-text: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+  --font-text-size: 13px;
+  --font-monospace: "SF Mono", Menlo, Monaco, Consolas, monospace;
+}
+
+.theme-light .markdown-source-view,
+.theme-light .cm-editor {
+  font-family: var(--font-monospace);
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.theme-light .markdown-reading-view {
+  font-family: var(--font-monospace);
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.theme-light pre,
+.theme-light code,
+.theme-light .cm-line {
+  font-family: var(--font-monospace);
+}
+
+/* Inline code */
+.theme-light code:not(pre code) {
+  color: #a31515;
+  background-color: #f1f3f5;
+  border: 1px solid #e1e4e8;
+  padding: 1px 4px;
+  border-radius: 3px;
+}
+
+/* Cursor */
+.theme-light .cm-cursor {
+  border-left-color: #24292f;
+  border-left-width: 2px;
+}
+
+/* Selection */
+.theme-light .cm-selectionBackground {
+  background-color: #add6ff;
+}
+
+.theme-light ::selection {
+  background-color: #add6ff;
+}
+
+/* Active line */
+.theme-light .cm-active-line {
+  background-color: rgba(0, 106, 177, 0.06);
+}
+
+/* File explorer: active item */
+.theme-light .nav-file-title.is-active {
+  background-color: #dbeafe;
+}
+
+/* Scrollbar */
+.theme-light ::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.theme-light ::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.theme-light ::-webkit-scrollbar-thumb {
+  background: #c8c8c8;
+  border-radius: 0;
+}
+
+.theme-light ::-webkit-scrollbar-thumb:hover {
+  background: #a6a6a6;
+}
+
+/* HR */
+.theme-light hr {
+  border-color: #d6d6d6;
+}
+
+/* Table */
+.theme-light th {
+  background-color: #f3f3f3;
+  border-color: #d6d6d6;
+  font-weight: 500;
+}
+
+.theme-light td {
+  border-color: #d6d6d6;
+}
+
+/* Highlight */
+.theme-light mark {
+  background-color: #fff2a8;
+  color: #1f1f1f;
+}
+
+/* Dataview blocks */
+.theme-light .block-language-dataview,
+.theme-light .block-language-dataviewjs {
+  background-color: #f8f8f8;
+  border: 1px solid #d6d6d6;
+  border-radius: 0;
+  padding: 8px;
+}
+
+/* Properties panel */
+.theme-light .metadata-container {
+  background-color: #f8f8f8;
+  border-bottom: 1px solid #d6d6d6;
+}
+
+/* Breadcrumb */
+.theme-light .view-header-breadcrumb {
+  color: #626262;
+  font-size: 12px;
+}
+
+/* Heading markers */
+.theme-light .cm-formatting-header {
+  color: #006ab1;
+}
+
+/* Search */
+.theme-light .search-result-file-matched-text {
+  background-color: #fff0b3;
+  color: #1f1f1f;
+}
+
+/* Empty state */
+.theme-light .empty-state-title {
+  color: #626262;
+}
+
+/* ============================================================
+   Callouts / Admonitions
+   ============================================================ */
+
+.theme-light .callout {
+  background-color: #f8f8f8;
+  border-width: 0 0 0 3px;
+  border-radius: 0;
+  padding: 8px 12px;
+}
+
+.theme-light .callout-title {
+  font-weight: 500;
+  font-size: 13px;
+}
+
+.theme-light .callout[data-callout="note"] {
+  border-left-color: #006ab1;
+}
+
+.theme-light .callout[data-callout="note"] .callout-title {
+  color: #006ab1;
+}
+
+.theme-light .callout[data-callout="tip"],
+.theme-light .callout[data-callout="hint"] {
+  border-left-color: #267f99;
+}
+
+.theme-light .callout[data-callout="tip"] .callout-title,
+.theme-light .callout[data-callout="hint"] .callout-title {
+  color: #267f99;
+}
+
+.theme-light .callout[data-callout="warning"],
+.theme-light .callout[data-callout="caution"],
+.theme-light .callout[data-callout="attention"] {
+  border-left-color: #795e26;
+}
+
+.theme-light .callout[data-callout="warning"] .callout-title,
+.theme-light .callout[data-callout="caution"] .callout-title,
+.theme-light .callout[data-callout="attention"] .callout-title {
+  color: #795e26;
+}
+
+.theme-light .callout[data-callout="error"],
+.theme-light .callout[data-callout="danger"],
+.theme-light .callout[data-callout="bug"] {
+  border-left-color: #b3261e;
+}
+
+.theme-light .callout[data-callout="error"] .callout-title,
+.theme-light .callout[data-callout="danger"] .callout-title,
+.theme-light .callout[data-callout="bug"] .callout-title {
+  color: #b3261e;
+}
+
+.theme-light .callout[data-callout="info"] {
+  border-left-color: #0451a5;
+}
+
+.theme-light .callout[data-callout="info"] .callout-title {
+  color: #0451a5;
+}
+
+.theme-light .callout[data-callout="success"],
+.theme-light .callout[data-callout="check"],
+.theme-light .callout[data-callout="done"] {
+  border-left-color: #008000;
+}
+
+.theme-light .callout[data-callout="success"] .callout-title,
+.theme-light .callout[data-callout="check"] .callout-title,
+.theme-light .callout[data-callout="done"] .callout-title {
+  color: #008000;
+}
+
+.theme-light .callout[data-callout="question"],
+.theme-light .callout[data-callout="help"],
+.theme-light .callout[data-callout="faq"] {
+  border-left-color: #811f3f;
+}
+
+.theme-light .callout[data-callout="question"] .callout-title,
+.theme-light .callout[data-callout="help"] .callout-title,
+.theme-light .callout[data-callout="faq"] .callout-title {
+  color: #811f3f;
+}
+
+.theme-light .callout[data-callout="quote"],
+.theme-light .callout[data-callout="cite"] {
+  border-left-color: #8f8f8f;
+}
+
+.theme-light .callout[data-callout="quote"] .callout-title,
+.theme-light .callout[data-callout="cite"] .callout-title {
+  color: #626262;
+}
+
+.theme-light .callout[data-callout="example"] {
+  border-left-color: #795e26;
+}
+
+.theme-light .callout[data-callout="example"] .callout-title {
+  color: #795e26;
+}
+
+.theme-light .callout[data-callout="abstract"],
+.theme-light .callout[data-callout="summary"],
+.theme-light .callout[data-callout="tldr"] {
+  border-left-color: #a31515;
+}
+
+.theme-light .callout[data-callout="abstract"] .callout-title,
+.theme-light .callout[data-callout="summary"] .callout-title,
+.theme-light .callout[data-callout="tldr"] .callout-title {
+  color: #a31515;
+}
+
+.theme-light .callout .callout-content {
+  color: #333333;
+}
+
+/* ============================================================
+   Checkboxes
+   ============================================================ */
+
+.theme-light input[type="checkbox"] {
+  border: 1.5px solid #8f8f8f;
+  background-color: transparent;
+  border-radius: 2px;
+}
+
+.theme-light input[type="checkbox"]:hover {
+  border-color: #006ab1;
+}
+
+.theme-light input[type="checkbox"]:checked {
+  background-color: #006ab1;
+  border-color: #006ab1;
+}
+
+.theme-light .task-list-item[data-task="x"] .task-list-item-checkbox ~ *,
+.theme-light li.is-checked {
+  text-decoration: line-through;
+  color: #8f8f8f;
+}
+
+.theme-light .dataview .task-list-item input[type="checkbox"]:checked ~ * {
+  text-decoration: line-through;
+  color: #8f8f8f;
+}
+
+/* ============================================================
+   Graph View
+   ============================================================ */
+
+.theme-light .graph-view.color-fill {
+  color: #006ab1;
+}
+
+.theme-light .graph-view.color-fill-highlight {
+  color: #0451a5;
+}
+
+.theme-light .graph-view.color-fill-tag {
+  color: #a31515;
+}
+
+.theme-light .graph-view.color-fill-attachment {
+  color: #008000;
+}
+
+.theme-light .graph-view.color-fill-unresolved {
+  color: #8f8f8f;
+}
+
+.theme-light .graph-view.color-arrow {
+  color: #b8b8b8;
+}
+
+.theme-light .graph-view.color-line {
+  color: #d6d6d6;
+}
+
+.theme-light .graph-view.color-line-highlight {
+  color: #006ab1;
+}
+
+.theme-light .graph-view.color-text {
+  color: #333333;
+}
+
+.theme-light .graph-view canvas {
+  background-color: #ffffff;
+}
+
+/* ============================================================
+   Canvas
+   ============================================================ */
+
+.theme-light .canvas {
+  --canvas-background: #f8f8f8;
+}
+
+.theme-light .canvas-node {
+  background-color: #ffffff;
+  border: 1px solid #d6d6d6;
+  border-radius: 4px;
+}
+
+.theme-light .canvas-node:hover {
+  border-color: #b8b8b8;
+}
+
+.theme-light .canvas-node.is-focused {
+  border-color: #006ab1;
+  box-shadow: 0 0 0 1px #006ab1;
+}
+
+.theme-light .canvas-node-label {
+  color: #1f1f1f;
+}
+
+.theme-light .canvas-edge {
+  stroke: #b8b8b8;
+}
+
+.theme-light .canvas-edge.is-focused {
+  stroke: #006ab1;
+}
+
+.theme-light .canvas-color-1 { --canvas-color: #006ab1; }
+.theme-light .canvas-color-2 { --canvas-color: #008000; }
+.theme-light .canvas-color-3 { --canvas-color: #a31515; }
+.theme-light .canvas-color-4 { --canvas-color: #811f3f; }
+.theme-light .canvas-color-5 { --canvas-color: #795e26; }
+.theme-light .canvas-color-6 { --canvas-color: #267f99; }
+
+/* ============================================================
+   Calendar Plugin
+   ============================================================ */
+
+.theme-light #calendar-container .today {
+  color: #a31515;
+  font-weight: 600;
+}
+
+.theme-light #calendar-container .today .dot {
+  background-color: #a31515;
+}
+
+.theme-light #calendar-container h3,
+.theme-light #calendar-container .title {
+  color: #0451a5;
+}
+
+.theme-light #calendar-container .year {
+  color: #a31515;
+}
+
+.theme-light #calendar-container .active {
+  background-color: rgba(0, 128, 0, 0.12);
+  color: #008000;
+}
+
+.theme-light #calendar-container td:hover {
+  background-color: rgba(0, 106, 177, 0.08);
+}
+
+.theme-light #calendar-container .dot {
+  background-color: #008000;
+}
+
+.theme-light #calendar-container th {
+  color: #008000;
+  background-color: transparent;
+  border: none;
+}
+
+.theme-light #calendar-container .reset-button,
+.theme-light #calendar-container button {
+  color: #811f3f;
+}
+
+.theme-light #calendar-container .adjacent-month {
+  color: #b8b8b8;
+}
+
+.theme-light #calendar-container .arrow {
+  color: #626262;
+}
+
+.theme-light #calendar-container .arrow:hover {
+  color: #0451a5;
+}
+
+/* ============================================================
+   Secondary accents
+   ============================================================ */
+
+.theme-light .view-header-breadcrumb-separator {
+  color: #8f8f8f;
+}
+
+.theme-light .search-result-file-title {
+  color: #0451a5;
+}
+
+.theme-light .search-result-container .tree-item-self .tree-item-inner {
+  color: #0451a5;
+}
+
+.theme-light .metadata-property-key {
+  color: #0451a5;
+}
+
+.theme-light .outline .tree-item-self.is-active {
+  color: #0451a5;
+}

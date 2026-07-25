@@ -1111,13 +1111,13 @@ body.theme-dark {
   --text-title-h4: #a79645 !important;
   --text-title-h5: #859676 !important;
   --text-title-h6: #799097 !important;
+  --text-highlight: #db711a !important;
   --code-number: #b5cea8 !important;
   --code-variable: #8cdcfe !important;
   --em-color: var(--text-highlight) !important;
   --quote-color: var(--text-highlight) !important;
   --strong-color: var(--text-highlight) !important;
   --code-bracket: #ffd700 !important;
-  --text-highlight: #db711a !important;
   --code-class: #4ec9b0 !important;
   --code-define: #569cd6 !important;
   --code-oper: #d4d4d4 !important;

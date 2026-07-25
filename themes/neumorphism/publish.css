@@ -1475,9 +1475,9 @@ body.theme-light {
     var(--dark-background)
   ) !important;
   --box-shadow:
-    calc(var(--gap) / 2) calc(var(--gap) / 2) calc(var(--gap) * 2)
+    calc(var(--gap)/2) calc(var(--gap)/2) calc(var(--gap) * 2)
       light-dark(var(--light-shadow-first), var(--dark-shadow-first)),
-    calc(var(--gap) / 2 * -1) calc(var(--gap) / 2 * -1) calc(var(--gap) * 2)
+    calc(var(--gap)/2 * -1) calc(var(--gap)/2 * -1) calc(var(--gap) * 2)
       light-dark(var(--light-shadow-second), var(--dark-shadow-second)) !important;
   --header-padding: 5px !important;
   --border-radius: 10px !important;
@@ -2580,9 +2580,9 @@ body.theme-dark {
     var(--dark-background)
   ) !important;
   --box-shadow:
-    calc(var(--gap) / 2) calc(var(--gap) / 2) calc(var(--gap) * 2)
+    calc(var(--gap)/2) calc(var(--gap)/2) calc(var(--gap) * 2)
       light-dark(var(--light-shadow-first), var(--dark-shadow-first)),
-    calc(var(--gap) / 2 * -1) calc(var(--gap) / 2 * -1) calc(var(--gap) * 2)
+    calc(var(--gap)/2 * -1) calc(var(--gap)/2 * -1) calc(var(--gap) * 2)
       light-dark(var(--light-shadow-second), var(--dark-shadow-second)) !important;
   --header-padding: 5px !important;
   --border-radius: 10px !important;

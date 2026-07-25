@@ -1486,8 +1486,8 @@ body.theme-light {
   --content-line-width: min(var(--line-width), var(--max-width)) !important;
   --content-margin: auto !important;
   --content-margin-start: max(
-    calc(50% - var(--line-width) / 2),
-    calc(50% - var(--max-width) / 2)
+    calc(50% - var(--line-width)/2),
+    calc(50% - var(--max-width)/2)
   ) !important;
   --embed-decoration-color: var(--background-modifier-border-hover) !important;
   --embed-decoration-style: solid !important;
@@ -1613,6 +1613,7 @@ body.theme-light {
   --h5-color: var(--praxis-heading-5-color) !important;
   --h6-color: var(--praxis-heading-6-color) !important;
   --inline-title-color: var(--h1-color) !important;
+  --metadata-label-font-weight: 500 !important;
   --border-color: var(--background-modifier-border) !important;
   --blockquote-size: 1em !important;
   --radius-xs: 5px !important;
@@ -1631,7 +1632,6 @@ body.theme-light {
   --callout-brown: 128, 107, 77;
   --callout-orange: 196, 122, 64;
   --callout-purple: 122, 96, 200;
-  --metadata-label-font-weight: 500 !important;
   --bases-toolbar-opacity: 0 !important;
   --callout-teal: 58, 143, 132;
   --gutter-background: transparent !important;
@@ -2824,8 +2824,8 @@ body.theme-dark {
   --content-line-width: min(var(--line-width), var(--max-width)) !important;
   --content-margin: auto !important;
   --content-margin-start: max(
-    calc(50% - var(--line-width) / 2),
-    calc(50% - var(--max-width) / 2)
+    calc(50% - var(--line-width)/2),
+    calc(50% - var(--max-width)/2)
   ) !important;
   --embed-decoration-color: var(--background-modifier-border-hover) !important;
   --embed-decoration-style: solid !important;
@@ -2947,6 +2947,7 @@ body.theme-dark {
   --h5-color: var(--praxis-heading-5-color) !important;
   --h6-color: var(--praxis-heading-6-color) !important;
   --inline-title-color: var(--h1-color) !important;
+  --metadata-label-font-weight: 500 !important;
   --border-color: var(--background-modifier-border) !important;
   --blockquote-size: 1em !important;
   --radius-xs: 5px !important;
@@ -2965,7 +2966,6 @@ body.theme-dark {
   --callout-brown: 139, 114, 85;
   --callout-orange: 217, 122, 64;
   --callout-purple: 152, 120, 224;
-  --metadata-label-font-weight: 500 !important;
   --bases-toolbar-opacity: 0 !important;
   --callout-teal: 91, 191, 178;
   --gutter-background: transparent !important;

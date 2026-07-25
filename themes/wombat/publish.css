@@ -1455,8 +1455,8 @@ body.theme-dark {
   --bold-color: var(--peach-pale) !important;
   --italic-color: var(--peach-pale) !important;
   --cursor-line-background: var(--charcoal-grey) !important;
-  --clay: #d08770 !important;
   --text-highlight-fg: var(--eggshell) !important;
+  --clay: #d08770 !important;
   --table-row-background: var(--dark-grey) !important;
   --almost-black: #1c1c1c !important;
   --carolina-blue: #87afff !important;

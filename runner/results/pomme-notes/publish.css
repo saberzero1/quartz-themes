@@ -1541,8 +1541,9 @@ body.theme-light {
     0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065),
     var(--shadow-edges) !important;
   --bold-color: var(--text-extreme) !important;
-  --side-padding: 20px !important;
   --active-tab-background: rgba(255, 255, 255, 0.4) !important;
+  --side-padding: 20px !important;
+  --text-extreme: #000000 !important;
   --div-color: rgba(170, 170, 170, 0.6) !important;
   --dnc-stroke: 1.95px !important;
   --element-shadow: 0 0px 15px rgba(0, 0, 0, 0.1) !important;
@@ -1570,7 +1571,6 @@ body.theme-light {
     transparent
   ) !important;
   --statusbar-glass-shadow: 0 0 10px rgba(0, 0, 0, 0.1) !important;
-  --text-extreme: #000000 !important;
   --transparent-bar: rgba(250, 250, 250, 0.8) !important;
   --transparent-border: rgba(255, 255, 255, 0.8) !important;
 }
@@ -2730,10 +2730,11 @@ body.theme-dark {
   --zoom-factor: 1 !important;
   --mobile-sidebar-background: var(--background-secondary) !important;
   --bold-color: var(--text-extreme) !important;
+  --active-tab-background: rgba(100, 100, 100, 0.3) !important;
   --corner-smoothing: system-ui !important;
   --side-padding: 20px !important;
+  --text-extreme: #ffffff !important;
   --selected-item: #191919 !important;
-  --active-tab-background: rgba(100, 100, 100, 0.3) !important;
   --div-color: rgba(170, 170, 170, 0.2) !important;
   --dnc-stroke: 1.95px !important;
   --element-shadow: 0 0px 15px rgba(0, 0, 0, 0.8) !important;
@@ -2764,7 +2765,6 @@ body.theme-dark {
     transparent
   ) !important;
   --statusbar-glass-shadow: 0 0 10px rgba(0, 0, 0, 0.1) !important;
-  --text-extreme: #ffffff !important;
   --transparent-bar: rgba(25, 25, 25, 0.8) !important;
   --transparent-border: rgba(150, 150, 150, 0.2) !important;
 }

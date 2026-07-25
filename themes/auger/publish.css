@@ -1666,9 +1666,9 @@ body.theme-light {
   --shadow-xs:
     0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065),
     var(--shadow-edges) !important;
-  --font-sans: var(--font-interface-override), var(--font-default) !important;
   --bold-color: #ff3b30 !important;
   --italic-color: #ff9500 !important;
+  --font-sans: var(--font-interface-override), var(--font-default) !important;
   --color-base-80: --color-base-85: --color-base-90: --color-base-95:
     --color-base-100: oklch(16.96% 0.0017 16.8596) !important;
   --tw-border-style: solid !important;
@@ -2807,9 +2807,9 @@ body.theme-dark {
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13);'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
-  --font-sans: var(--font-interface-override), var(--font-default) !important;
   --bold-color: var(--color-red) !important;
   --italic-color: var(--color-yellow) !important;
+  --font-sans: var(--font-interface-override), var(--font-default) !important;
   --tw-border-style: solid !important;
   --auger-light-background-primary: #fbfbfa !important;
   --auger-light-text-normal: #3a3633 !important;

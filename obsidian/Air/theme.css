@@ -1,0 +1,1505 @@
+/* Air — ultra-dark, accent-driven, flat with subtle rounding
+ *
+ * Apply a flat, ultra-dark interface with minimal chrome, padded headings,
+ * and zero border-radius. Extend your chosen accent color to headings,
+ * bold and italic text, highlights, tags, etc. The ribbon hides until hover.
+ *
+ * Dark mode:  #0A0A0A primary  ·  #111111 secondary
+ * Light mode: #F5F5F5 primary  ·  #EAEAEA secondary
+ */
+
+/* ============================================================
+   FONTS
+   ============================================================ */
+@font-face {
+	font-family: 'HeadingFont';
+	src: url('headings-font.woff2') format('woff2');
+	font-weight: 100 900;
+	font-style: normal;
+}
+
+
+/* ============================================================
+   GLOBAL — both dark and light modes
+   ============================================================ */
+
+body {
+	/* Border radius — subtle 4px rounding */
+	--radius-s: 4px;
+	--radius-m: 4px;
+	--radius-l: 4px;
+	--input-radius: 4px;
+	--tab-radius-active: 4px;
+	--checkbox-radius: 4px;
+	--toggle-radius: 4px;
+	--toggle-thumb-radius: 4px;
+
+	/* Tag styling — bare accent-colored text, no pill */
+	--tag-padding-x: 0;
+	--tag-padding-y: 0;
+	--tag-background: transparent;
+	--tag-background-hover: transparent;
+	--tag-border-width: 0;
+	--tag-border-color: transparent;
+	--tag-border-color-hover: transparent;
+	--tag-radius: 4px;
+	--tag-color: var(--text-accent);
+	--tag-color-hover: var(--text-accent);
+
+	/* List markers */
+	--list-marker-color: var(--text-normal);
+	--list-marker-color-hover: var(--text-muted);
+	--list-marker-color-collapsed: var(--text-accent);
+
+	/* Active tab title */
+	--tab-text-color-active: var(--text-accent);
+	--tab-text-color-focused-active: var(--text-accent);
+
+	/* Default radius — used by explicit border-radius overrides */
+	--radius: 4px;
+}
+
+/* ============================================================
+   DARK MODE
+   ============================================================ */
+
+.theme-dark {
+	--background-primary: #0A0A0A;
+	--background-secondary: #111111;
+	--background-secondary-alt: #111111;
+	--background-primary-alt: #0A0A0A;
+
+	/* Text */
+	--text-normal: #CCCCCC;
+	--text-muted: #999999;
+	--text-faint: #666666;
+
+	/* Dividers */
+	--divider-color: transparent;
+	/* NOT zeroing --background-modifier-border globally — would break plugins */
+
+	/* Bold, italic, highlight */
+	--text-strong: var(--text-accent);
+	--text-emphasis: var(--text-accent);
+	--text-highlight: var(--text-accent);
+
+	/* Headings — H4 = accent, H1 brightest, H6 darkest */
+	--h1-color: color-mix(in oklch, var(--color-accent), white 45%);
+	--h2-color: color-mix(in oklch, var(--color-accent), white 28%);
+	--h3-color: color-mix(in oklch, var(--color-accent), white 12%);
+	--h4-color: var(--color-accent);
+	--h5-color: color-mix(in oklch, var(--color-accent), black 12%);
+	--h6-color: color-mix(in oklch, var(--color-accent), black 25%);
+	--h1-font: 'HeadingFont', sans-serif;
+	--h2-font: 'HeadingFont', sans-serif;
+	--h3-font: 'HeadingFont', sans-serif;
+	--h4-font: 'HeadingFont', sans-serif;
+	--h5-font: 'HeadingFont', sans-serif;
+	--h6-font: 'HeadingFont', sans-serif;
+
+	/* Shadows */
+	--shadow-s: none;
+	--shadow-m: none;
+	--shadow-l: none;
+
+	/* Graph view */
+	--graph-text: #CCCCCC;
+	--graph-line: rgba(255, 255, 255, 0.06);
+	--graph-node: #999999;
+	--graph-node-focused: var(--text-accent);
+	--graph-node-unresolved: #666666;
+	--graph-node-tag: var(--text-accent);
+	--graph-node-attachment: #999999;
+}
+
+/* Flat dark background — all UI elements uniform */
+body.theme-dark,
+body.theme-dark .workspace,
+body.theme-dark .workspace-split,
+body.theme-dark .workspace-leaf,
+body.theme-dark .workspace-tabs,
+body.theme-dark .workspace-tab-header,
+body.theme-dark .workspace-tab-header-container,
+body.theme-dark .sidebar,
+body.theme-dark .side-dock,
+body.theme-dark .side-dock-left,
+body.theme-dark .side-dock-right,
+body.theme-dark .side-dock-top,
+body.theme-dark .side-dock-bottom,
+body.theme-dark .nav-files-container,
+body.theme-dark .file-tree-container,
+body.theme-dark .outline-container,
+body.theme-dark .titlebar,
+body.theme-dark .status-bar,
+body.theme-dark .menu,
+body.theme-dark .menu-content,
+body.theme-dark .context-menu,
+body.theme-dark .modal,
+body.theme-dark .modal-content,
+body.theme-dark .popover,
+body.theme-dark .popover-content,
+body.theme-dark .suggestion-container,
+body.theme-dark .suggestion-item,
+body.theme-dark .prompt,
+body.theme-dark .prompt-input,
+body.theme-dark .prompt-results,
+body.theme-dark .workspace-mobile-sidebar,
+body.theme-dark .sidebar-toggle-button,
+body.theme-dark .side-dock-settings,
+body.theme-dark .side-dock-help,
+body.theme-dark .side-dock-action,
+body.theme-dark .nav-folder,
+body.theme-dark .nav-file,
+body.theme-dark .nav-file-title,
+body.theme-dark .nav-folder-title,
+body.theme-dark .workspace-left-sidebar,
+body.theme-dark .workspace-right-sidebar,
+body.theme-dark .view-header,
+body.theme-dark .view-content,
+body.theme-dark .pane,
+body.theme-dark .pane-empty,
+body.theme-dark .empty-state,
+body.theme-dark .titlebar-button,
+body.theme-dark .workspace-tab-header-inner,
+body.theme-dark .side-dock-action-item,
+body.theme-dark .nav-action-button,
+body.theme-dark .side-dock-title,
+body.theme-dark .status-bar-item,
+body.theme-dark .nav-file-button,
+body.theme-dark .nav-action,
+body.theme-dark .workspace-leaf-content,
+body.theme-dark .mod-root .workspace-tabs,
+body.theme-dark .mod-root .workspace-tab-container,
+body.theme-dark .clickable-icon,
+body.theme-dark .action-icon,
+body.theme-dark .workspace-ribbon,
+body.theme-dark .workspace-ribbon-side,
+body.theme-dark .side-bar,
+body.theme-dark .vault-switcher,
+body.theme-dark .vault-switcher-item,
+body.theme-dark .search-result-file-title,
+body.theme-dark .tree-item-self,
+body.theme-dark .tree-item-children,
+body.theme-dark .nav-folder-children,
+body.theme-dark .file-explorer,
+body.theme-dark .file-explorer-collapse-indicator,
+body.theme-dark .list-item,
+body.theme-dark .tree-sorting-button {
+	background-color: var(--background-primary);
+}
+
+/* Remove structural pane/tab borders */
+body.theme-dark .workspace-leaf-resize-handle,
+body.theme-dark .view-header {
+	border: none !important;
+	box-shadow: none !important;
+}
+
+/* Bold, italic, highlight — direct element overrides */
+.theme-dark .cm-strong,
+.theme-dark strong { color: var(--text-accent); font-weight: 700; }
+
+.theme-dark .cm-em,
+.theme-dark em { color: var(--text-accent); font-style: italic; }
+
+.theme-dark .cm-s-obsidian span.cm-highlight,
+.theme-dark .markdown-rendered mark,
+.theme-dark .markdown-preview-view mark {
+	background-color: var(--text-accent);
+	color: var(--background-primary);
+	padding-inline: 0.15em;
+}
+
+/* HR — visible accent tint + space below */
+.theme-dark .markdown-preview-view hr,
+.theme-dark .markdown-rendered hr,
+.theme-dark .markdown-source-view hr {
+	border-top: 1px solid color-mix(in srgb, var(--text-accent) 25%, transparent);
+	border-bottom: none;
+	border-left: none;
+	border-right: none;
+	background: none;
+	margin-top: 1.5em;
+	margin-bottom: 1.5em;
+}
+
+
+/* ============================================================
+   LIGHT MODE
+   ============================================================ */
+
+.theme-light {
+	--background-primary: #F5F5F5;
+	--background-secondary: #EAEAEA;
+	--background-secondary-alt: #EAEAEA;
+	--background-primary-alt: #F5F5F5;
+	--text-normal: #333333;
+	--text-muted: #666666;
+	--text-faint: #999999;
+
+	/* Shadows */
+	--shadow-s: none;
+	--shadow-m: none;
+	--shadow-l: none;
+
+	/* Graph view */
+	--graph-text: #333333;
+	--graph-line: rgba(0, 0, 0, 0.08);
+	--graph-node: #666666;
+	--graph-node-focused: var(--text-accent);
+	--graph-node-unresolved: #999999;
+	--graph-node-tag: var(--text-accent);
+	--graph-node-attachment: #666666;
+
+	/* Dividers */
+	--divider-color: transparent;
+
+	/* Bold, italic, highlight */
+	--text-strong: var(--text-accent);
+	--text-emphasis: var(--text-accent);
+	--text-highlight: var(--text-accent);
+
+	/* Headings — H4 = accent, H1 darkest (most contrast on light bg), H6 lightest */
+	--h1-color: color-mix(in oklch, var(--color-accent), black 45%);
+	--h2-color: color-mix(in oklch, var(--color-accent), black 28%);
+	--h3-color: color-mix(in oklch, var(--color-accent), black 12%);
+	--h4-color: var(--color-accent);
+	--h5-color: color-mix(in oklch, var(--color-accent), white 12%);
+	--h6-color: color-mix(in oklch, var(--color-accent), white 25%);
+	--h1-font: 'HeadingFont', sans-serif;
+	--h2-font: 'HeadingFont', sans-serif;
+	--h3-font: 'HeadingFont', sans-serif;
+	--h4-font: 'HeadingFont', sans-serif;
+	--h5-font: 'HeadingFont', sans-serif;
+	--h6-font: 'HeadingFont', sans-serif;
+}
+
+/* Bold, italic, highlight — direct element overrides */
+.theme-light .cm-strong,
+.theme-light strong { color: var(--text-accent); font-weight: 700; }
+
+.theme-light .cm-em,
+.theme-light em { color: var(--text-accent); font-style: italic; }
+
+.theme-light .cm-s-obsidian span.cm-highlight,
+.theme-light .markdown-rendered mark,
+.theme-light .markdown-preview-view mark {
+	background-color: var(--text-accent);
+	color: var(--background-primary);
+	padding-inline: 0.15em;
+}
+
+/* ============================================================
+   GLOBAL UI — applies to both modes
+   ============================================================ */
+
+/* Tab corner chrome — remove */
+.workspace-tab-header.is-active::before,
+.workspace-tab-header.is-active::after {
+	display: none;
+}
+
+/* SVG icons — square strokes */
+svg * {
+	stroke-linecap: square;
+	stroke-linejoin: miter;
+}
+
+/* Menu sizing */
+.menu {
+	padding: var(--size-2-1);
+}
+
+.menu-item {
+	padding: var(--size-4-1) var(--size-4-2);
+}
+
+.menu-separator {
+	margin: var(--size-2-1) calc(var(--size-2-1) * -1);
+}
+
+/* Flat side panes */
+.side-dock,
+.side-dock-vertical,
+.side-dock-left,
+.side-dock-right,
+.nav-files-container,
+.file-tree-container,
+.outline-container {
+	border-right: none !important;
+	border-left: none !important;
+}
+
+/* Flat titlebar */
+.titlebar,
+.titlebar-container {
+	border-bottom: none !important;
+}
+
+/* Flat status bar */
+.status-bar {
+	border-top: none !important;
+}
+
+/* Flat menus */
+.menu,
+.menu-content,
+.context-menu,
+.prompt,
+.suggestion-container {
+	border: none !important;
+	box-shadow: none !important;
+}
+
+/* Flat workspace splits */
+.workspace-split,
+.workspace-split > *,
+.workspace-leaf,
+.workspace-tabs,
+.workspace-tab-header-container,
+.workspace-side-prefer-input,
+.workspace-side-prefer-output,
+.workspace-leaf-resize-area {
+	border: none !important;
+	box-shadow: none !important;
+}
+
+/* Flat tab bar */
+.workspace-tab-header-inner,
+.workspace-tab-header {
+	border-right: none !important;
+	border-left: none !important;
+	border-bottom: none !important;
+}
+
+/* Flat modals */
+.modal,
+.modal-content,
+.modal-bg {
+	border: none !important;
+	box-shadow: none !important;
+}
+
+/* Modal backdrop — subtle fade only */
+.theme-dark .modal-bg {
+	background: rgba(0, 0, 0, 0.1);
+}
+.theme-light .modal-bg {
+	background: rgba(0, 0, 0, 0.05);
+}
+
+/* Flat popovers */
+.popover,
+.popover-content {
+	border: none !important;
+	box-shadow: none !important;
+}
+
+/* Flat canvas */
+.workspace-canvas,
+.workspace-leaf-content {
+	border: none !important;
+}
+
+/* Formatting markers (**, *, #, [], etc.) — dimmed in source / live preview */
+body .cm-s-obsidian .cm-formatting,
+body .cm-editor .cm-formatting {
+	color: var(--text-faint);
+	opacity: 0.7;
+}
+
+/* Scrollbars — thin, themed */
+::-webkit-scrollbar {
+	width: 4px;
+	height: 4px;
+}
+::-webkit-scrollbar-track {
+	background: transparent;
+}
+::-webkit-scrollbar-corner {
+	background: transparent;
+}
+.theme-dark ::-webkit-scrollbar-thumb {
+	background: rgba(255, 255, 255, 0.1);
+}
+.theme-dark ::-webkit-scrollbar-thumb:hover {
+	background: rgba(255, 255, 255, 0.2);
+}
+.theme-light ::-webkit-scrollbar-thumb {
+	background: rgba(0, 0, 0, 0.15);
+}
+.theme-light ::-webkit-scrollbar-thumb:hover {
+	background: rgba(0, 0, 0, 0.28);
+}
+
+/* Notices — left accent border, flat */
+.notice {
+	border-left: 2px solid var(--color-accent);
+	border-radius: var(--radius);
+	background-color: var(--background-secondary);
+	box-shadow: none;
+	color: var(--text-normal);
+}
+
+/* ============================================================
+   ACTIVE STATES
+   ============================================================ */
+
+/* Active tab title */
+body .workspace-tab-header.is-active .workspace-tab-header-inner-title {
+	color: var(--text-accent);
+}
+
+/* Active file in explorer */
+body .nav-file-title.is-active,
+body:not(.is-grabbing) .nav-file-title.is-active,
+body:not(.is-grabbing) .nav-file-title.is-active:hover {
+	color: var(--text-accent);
+}
+
+/* Active section in Outline panel */
+body [data-type="outline"] .tree-item-self.is-active,
+body [data-type="outline"] .tree-item-self.is-active .tree-item-inner {
+	color: var(--text-accent);
+}
+
+/* ============================================================
+   EXPLORER FOLDER DEPTH COLORS
+   ============================================================ */
+
+/* Root level (no / in data-path = top-level) — H1 */
+body .nav-files-container .nav-folder-title:not([data-path*="/"]) { color: var(--h1-color); }
+/* Level 1 — H2 */
+body .nav-files-container .nav-folder-children .nav-folder-title { color: var(--h2-color); }
+/* Level 2 — H3 */
+body .nav-files-container .nav-folder-children .nav-folder-children .nav-folder-title { color: var(--h3-color); }
+/* Level 3 — H4 */
+body .nav-files-container .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-title { color: var(--h4-color); }
+/* Level 4 — H5 */
+body .nav-files-container .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-title { color: var(--h5-color); }
+/* Level 5+ — cap at H6 */
+body .nav-files-container .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-title { color: var(--h6-color); }
+
+/* ============================================================
+   HEADING AND PARAGRAPH SPACING
+   ============================================================ */
+
+/* Heading font — explicit rules (vars alone don't apply in Obsidian) */
+.markdown-rendered h1, .HyperMD-header-1 { font-family: 'HeadingFont', sans-serif !important; }
+.markdown-rendered h2, .HyperMD-header-2 { font-family: 'HeadingFont', sans-serif !important; }
+.markdown-rendered h3, .HyperMD-header-3 { font-family: 'HeadingFont', sans-serif !important; }
+.markdown-rendered h4, .HyperMD-header-4 { font-family: 'HeadingFont', sans-serif !important; }
+.markdown-rendered h5, .HyperMD-header-5 { font-family: 'HeadingFont', sans-serif !important; }
+.markdown-rendered h6, .HyperMD-header-6 { font-family: 'HeadingFont', sans-serif !important; }
+
+/* Heading space ABOVE — reading mode (hierarchical: H1 most, H4-H6 equal) */
+.markdown-rendered h1 { margin-top: 2.5em; }
+.markdown-rendered h2 { margin-top: 2em; }
+.markdown-rendered h3 { margin-top: 1.5em; }
+.markdown-rendered h4,
+.markdown-rendered h5,
+.markdown-rendered h6 { margin-top: 1em; }
+
+/* Heading space ABOVE — live preview
+   padding-top on rendered text lines IS measured by CM6 on layout */
+.mod-cm6 .cm-editor .HyperMD-header-1 { padding-top: 2.5em; }
+.mod-cm6 .cm-editor .HyperMD-header-2 { padding-top: 2em; }
+.mod-cm6 .cm-editor .HyperMD-header-3 { padding-top: 1.5em; }
+.mod-cm6 .cm-editor .HyperMD-header-4,
+.mod-cm6 .cm-editor .HyperMD-header-5,
+.mod-cm6 .cm-editor .HyperMD-header-6 { padding-top: 1em; }
+
+/* Heading space BELOW */
+.markdown-rendered h1,
+.markdown-rendered h2,
+.markdown-rendered h3,
+.markdown-rendered h4,
+.markdown-rendered h5,
+.markdown-rendered h6 { margin-bottom: 0.5em; }
+
+.mod-cm6 .cm-editor .HyperMD-header { padding-bottom: 0.5em; }
+
+/* Reset — no extra space after headings inside callouts */
+.markdown-rendered .callout h1,
+.markdown-rendered .callout h2,
+.markdown-rendered .callout h3,
+.markdown-rendered .callout h4,
+.markdown-rendered .callout h5,
+.markdown-rendered .callout h6 { margin-bottom: 0; }
+
+.mod-cm6 .cm-editor .callout .HyperMD-header { padding-bottom: 0; }
+
+/* Paragraph after heading — reading mode */
+.markdown-rendered div.el-h1 + div.el-p,
+.markdown-rendered div.el-h2 + div.el-p,
+.markdown-rendered div.el-h3 + div.el-p,
+.markdown-rendered div.el-h4 + div.el-p,
+.markdown-rendered div.el-h5 + div.el-p,
+.markdown-rendered div.el-h6 + div.el-p {
+	padding-top: 0.8em;
+}
+
+/* Paragraph after heading — live preview */
+.markdown-source-view.mod-cm6.is-live-preview .cm-content .HyperMD-header + .cm-line:not(.HyperMD-header):not(.HyperMD-list-line):not(.HyperMD-codeblock) {
+	padding-top: 0.8em;
+}
+
+/* Space before first list item when preceded by a text paragraph */
+.markdown-source-view.mod-cm6.is-live-preview .cm-content .cm-line:not(.HyperMD-header):not(.HyperMD-list-line):not(.HyperMD-codeblock) + .cm-line.HyperMD-list-line {
+	padding-top: 0.8em;
+}
+
+/* Space before first list item when preceded by a heading */
+.markdown-source-view.mod-cm6.is-live-preview .cm-content .HyperMD-header + .cm-line.HyperMD-list-line {
+	padding-top: 0.8em;
+}
+
+/* Space after last list item when followed by a text paragraph */
+.markdown-source-view.mod-cm6.is-live-preview .cm-content .HyperMD-list-line + .cm-line:not(.HyperMD-list-line):not(.HyperMD-header):not(.HyperMD-codeblock) {
+	padding-top: 0.8em;
+}
+
+/* List after paragraph — reading mode */
+.markdown-rendered div.el-p + div.el-ul,
+.markdown-rendered div.el-p + div.el-ol {
+	padding-top: 0.8em;
+}
+
+/* List after heading — reading mode */
+.markdown-rendered div.el-h1 + div.el-ul,
+.markdown-rendered div.el-h2 + div.el-ul,
+.markdown-rendered div.el-h3 + div.el-ul,
+.markdown-rendered div.el-h4 + div.el-ul,
+.markdown-rendered div.el-h5 + div.el-ul,
+.markdown-rendered div.el-h6 + div.el-ul,
+.markdown-rendered div.el-h1 + div.el-ol,
+.markdown-rendered div.el-h2 + div.el-ol,
+.markdown-rendered div.el-h3 + div.el-ol,
+.markdown-rendered div.el-h4 + div.el-ol,
+.markdown-rendered div.el-h5 + div.el-ol,
+.markdown-rendered div.el-h6 + div.el-ol {
+	padding-top: 0.8em;
+}
+
+/* ============================================================
+   CODE
+   ============================================================ */
+
+/* Shared vars */
+body {
+	--code-radius: 0;
+	--code-background: var(--background-secondary);
+	/* Inline code text: accent lightened enough to always read on dark bg */
+	--inline-code-color: color-mix(in oklch, var(--color-accent), white 55%);
+}
+
+.theme-light {
+	--inline-code-color: color-mix(in oklch, var(--color-accent), black 55%);
+}
+
+/* Inline code — reading mode — dark */
+.theme-dark :not(pre) > code {
+	color: var(--inline-code-color);
+	background: #1e1e1e;
+	border-radius: var(--radius);
+	padding: 0.15em 0.4em;
+}
+
+/* Inline code — reading mode — light */
+.theme-light :not(pre) > code {
+	color: var(--inline-code-color);
+	background: #d0d0d0;
+	border-radius: var(--radius);
+	padding: 0.15em 0.4em;
+}
+
+/* Inline code — live preview — dark */
+.theme-dark .cm-inline-code:not(.cm-formatting):not(.cm-hmd-indented-code) {
+	color: var(--inline-code-color);
+	background: #1e1e1e;
+	border-radius: var(--radius);
+	padding: 0.15em 0.4em;
+}
+
+/* Inline code — live preview — light */
+.theme-light .cm-inline-code:not(.cm-formatting):not(.cm-hmd-indented-code) {
+	color: var(--inline-code-color);
+	background: #d0d0d0;
+	border-radius: var(--radius);
+	padding: 0.15em 0.4em;
+}
+
+/* Code block — reading mode — dark */
+.theme-dark .markdown-rendered pre {
+	background: #1e1e1e;
+	border-radius: var(--radius);
+}
+.theme-dark .markdown-rendered pre code {
+	background: #1e1e1e;
+	border-radius: var(--radius);
+	color: var(--inline-code-color);
+}
+
+/* Code block — reading mode — light */
+.theme-light .markdown-rendered pre {
+	background: #d0d0d0;
+	border-radius: var(--radius);
+}
+.theme-light .markdown-rendered pre code {
+	background: #d0d0d0;
+	border-radius: var(--radius);
+	color: var(--inline-code-color);
+}
+
+/* ============================================================
+   CODE BLOCKS — LIVE PREVIEW / SOURCE
+   CSS-only nested-list support
+   ============================================================ */
+
+/* Ordinary fenced code blocks */
+.theme-dark .markdown-source-view.mod-cm6
+.cm-line.HyperMD-codeblock:not(.HyperMD-list-line) {
+	background: #1e1e1e;
+	color: var(--inline-code-color);
+}
+
+.theme-light .markdown-source-view.mod-cm6
+.cm-line.HyperMD-codeblock:not(.HyperMD-list-line) {
+	background: #d0d0d0;
+	color: var(--inline-code-color);
+}
+
+.markdown-source-view.mod-cm6
+.cm-line.HyperMD-codeblock-begin:not(.HyperMD-list-line) {
+	border-start-start-radius: var(--radius);
+	border-start-end-radius: var(--radius);
+}
+
+.markdown-source-view.mod-cm6
+.cm-line.HyperMD-codeblock-end:not(.HyperMD-list-line) {
+	border-end-start-radius: var(--radius);
+	border-end-end-radius: var(--radius);
+}
+
+/* Nested-list geometry */
+.markdown-source-view.mod-cm6 {
+	--air-list-code-marker-width: 23.424px;
+	--air-list-code-indent-width: 36px;
+	--air-list-code-gap: 8px;
+	--air-list-code-padding: 16px;
+	--air-list-code-l1: calc(
+		var(--air-list-code-marker-width) +
+		var(--air-list-code-gap)
+	);
+	--air-list-code-l2: calc(
+		var(--air-list-code-indent-width) +
+		var(--air-list-code-marker-width) +
+		var(--air-list-code-gap)
+	);
+	--air-list-code-l3: calc(
+		(var(--air-list-code-indent-width) * 2) +
+		var(--air-list-code-marker-width) +
+		var(--air-list-code-gap)
+	);
+}
+
+.theme-dark .markdown-source-view.mod-cm6 {
+	--air-list-code-background: #1e1e1e;
+}
+
+.theme-light .markdown-source-view.mod-cm6 {
+	--air-list-code-background: #d0d0d0;
+}
+
+/* Never apply the ordinary full-width block background to list code. */
+body .markdown-source-view.mod-cm6
+.cm-line.HyperMD-codeblock.HyperMD-list-line {
+	--air-list-code-offset: var(--air-list-code-l1);
+	box-sizing: border-box;
+	background-color: transparent;
+	color: var(--inline-code-color);
+}
+
+/* Opening fence depth is exposed directly by CodeMirror. */
+body .markdown-source-view.mod-cm6
+.cm-line.HyperMD-codeblock-begin.HyperMD-list-line-1 {
+	--air-list-code-offset: var(--air-list-code-l1);
+}
+
+body .markdown-source-view.mod-cm6
+.cm-line.HyperMD-codeblock-begin.HyperMD-list-line-2 {
+	--air-list-code-offset: var(--air-list-code-l2);
+}
+
+body .markdown-source-view.mod-cm6
+.cm-line.HyperMD-codeblock-begin.HyperMD-list-line-3 {
+	--air-list-code-offset: var(--air-list-code-l3);
+}
+
+/* Match Obsidian's normal nested-list indentation. */
+body .markdown-source-view.mod-cm6
+.cm-line.HyperMD-codeblock-begin.HyperMD-list-line-2
+> .cm-hmd-list-indent-2,
+body .markdown-source-view.mod-cm6
+.cm-line.HyperMD-codeblock-begin.HyperMD-list-line-2
+> .cm-hmd-list-indent-2
+> .cm-indent {
+	display: inline-block;
+	box-sizing: border-box;
+	inline-size: var(--air-list-code-indent-width);
+}
+
+body .markdown-source-view.mod-cm6
+.cm-line.HyperMD-codeblock-begin.HyperMD-list-line-3
+> .cm-hmd-list-indent-3,
+body .markdown-source-view.mod-cm6
+.cm-line.HyperMD-codeblock-begin.HyperMD-list-line-3
+> .cm-hmd-list-indent-3
+> .cm-indent {
+	display: inline-block;
+	box-sizing: border-box;
+	inline-size: calc(var(--air-list-code-indent-width) * 2);
+}
+
+/* Opening row: paint only the lower part of the hidden fence line. */
+body .markdown-source-view.mod-cm6
+.cm-line.HyperMD-codeblock-begin.HyperMD-list-line {
+	background-image: linear-gradient(
+		to right,
+		transparent 0 var(--air-list-code-offset),
+		var(--air-list-code-background) var(--air-list-code-offset)
+	);
+	background-repeat: no-repeat;
+	background-position: left bottom;
+	background-size: 100% calc(100% - 0.4lh);
+	border-start-start-radius: var(--radius);
+	border-start-end-radius: var(--radius);
+}
+
+/* Content defaults to level 1. One/two source-indent spans mean levels 2/3. */
+body .markdown-source-view.mod-cm6
+.cm-line.HyperMD-codeblock.HyperMD-list-line:not(.HyperMD-codeblock-begin):not(.HyperMD-codeblock-end) {
+	--air-list-code-offset: var(--air-list-code-l1);
+}
+
+body .markdown-source-view.mod-cm6
+.cm-line.HyperMD-codeblock.HyperMD-list-line:not(.HyperMD-codeblock-begin):not(.HyperMD-codeblock-end):has(
+	> .cm-hmd-codeblock > .cm-indent:first-child
+) {
+	--air-list-code-offset: var(--air-list-code-l2);
+}
+
+body .markdown-source-view.mod-cm6
+.cm-line.HyperMD-codeblock.HyperMD-list-line:not(.HyperMD-codeblock-begin):not(.HyperMD-codeblock-end):has(
+	> .cm-hmd-codeblock > .cm-indent:first-child + .cm-indent
+) {
+	--air-list-code-offset: var(--air-list-code-l3);
+}
+
+body .markdown-source-view.mod-cm6
+.cm-line.HyperMD-codeblock.HyperMD-list-line:not(.HyperMD-codeblock-begin):not(.HyperMD-codeblock-end) {
+	background-image: linear-gradient(
+		to right,
+		transparent 0 var(--air-list-code-offset),
+		var(--air-list-code-background) var(--air-list-code-offset)
+	);
+	padding-inline-start: calc(
+		var(--air-list-code-offset) +
+		var(--air-list-code-padding)
+	);
+}
+
+/*
+ * The line already owns the list offset and code padding.
+ * Remove the additional inset from the inner code token.
+ */
+body .markdown-source-view.mod-cm6
+.cm-line.HyperMD-codeblock.HyperMD-list-line:not(.HyperMD-codeblock-begin):not(.HyperMD-codeblock-end)
+> .cm-hmd-codeblock {
+	display: inline;
+	margin: 0;
+	padding: 0;
+}
+
+/* Remove the source indentation after replacing it with line padding. */
+body .markdown-source-view.mod-cm6
+.cm-line.HyperMD-codeblock.HyperMD-list-line:not(.HyperMD-codeblock-begin):not(.HyperMD-codeblock-end)
+> .cm-hmd-codeblock
+> :is(.cm-indent, .cm-indent-spacing) {
+	display: none;
+}
+
+/* Closing fence inherits depth from the immediately preceding content row. */
+body .markdown-source-view.mod-cm6
+.cm-line.HyperMD-codeblock.HyperMD-list-line:not(.HyperMD-codeblock-begin):not(.HyperMD-codeblock-end):has(
+	> .cm-hmd-codeblock > .cm-indent:first-child
+)
++ .cm-line.HyperMD-codeblock-end.HyperMD-list-line {
+	--air-list-code-offset: var(--air-list-code-l2);
+}
+
+body .markdown-source-view.mod-cm6
+.cm-line.HyperMD-codeblock.HyperMD-list-line:not(.HyperMD-codeblock-begin):not(.HyperMD-codeblock-end):has(
+	> .cm-hmd-codeblock > .cm-indent:first-child + .cm-indent
+)
++ .cm-line.HyperMD-codeblock-end.HyperMD-list-line {
+	--air-list-code-offset: var(--air-list-code-l3);
+}
+
+/* Empty level-2/3 blocks. */
+body .markdown-source-view.mod-cm6
+.cm-line.HyperMD-codeblock-begin.HyperMD-list-line-2
++ .cm-line.HyperMD-codeblock-end.HyperMD-list-line {
+	--air-list-code-offset: var(--air-list-code-l2);
+}
+
+body .markdown-source-view.mod-cm6
+.cm-line.HyperMD-codeblock-begin.HyperMD-list-line-3
++ .cm-line.HyperMD-codeblock-end.HyperMD-list-line {
+	--air-list-code-offset: var(--air-list-code-l3);
+}
+
+body .markdown-source-view.mod-cm6
+.cm-line.HyperMD-codeblock-end.HyperMD-list-line {
+	background-image: linear-gradient(
+		to right,
+		transparent 0 var(--air-list-code-offset),
+		var(--air-list-code-background) var(--air-list-code-offset)
+	);
+	border-end-start-radius: var(--radius);
+	border-end-end-radius: var(--radius);
+}
+
+/* Compact the hidden closing fence without changing its active editing row. */
+body .markdown-source-view.mod-cm6
+.cm-line.HyperMD-codeblock-end.HyperMD-list-line:not(.cm-active) {
+	min-height: 0.45em;
+	line-height: 0.45;
+}
+
+/* Hide guide decoration while preserving indentation width. */
+body .markdown-source-view.mod-cm6 .cm-indent-guide,
+body .markdown-source-view.mod-cm6 .cm-indent::before,
+body .markdown-source-view.mod-cm6 .cm-hmd-list-indent::before {
+	display: none;
+}
+
+body .markdown-source-view.mod-cm6 .cm-indent,
+body .markdown-source-view.mod-cm6 .cm-hmd-list-indent {
+	border-inline-start: 0;
+	box-shadow: none;
+	background-image: none;
+}
+
+/* ============================================================
+   TABLES
+   ============================================================ */
+
+/* Entire table — discrete background */
+.markdown-rendered table,
+.markdown-source-view.mod-cm6 table {
+	background-color: rgba(255, 255, 255, 0.03);
+}
+
+/* Header row — grey background, accent text, no alternation */
+body .markdown-rendered th,
+body .markdown-source-view.mod-cm6 th {
+	background-color: rgba(255, 255, 255, 0.1);
+	color: var(--text-accent);
+}
+
+/* Kill any alternating row colors */
+body .markdown-rendered tr,
+body .markdown-source-view.mod-cm6 tr {
+	background-color: transparent;
+}
+
+/* Alternating body rows */
+body .markdown-rendered tbody tr:nth-child(even),
+body .markdown-source-view.mod-cm6 tbody tr:nth-child(even) {
+	background-color: rgba(255, 255, 255, 0.04);
+}
+
+/* ============================================================
+   BLOCKQUOTES
+   ============================================================ */
+
+/* Shared vars */
+.markdown-rendered blockquote,
+.markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote {
+	--blockquote-background-color: color-mix(in oklch, var(--color-accent), transparent 92%);
+}
+
+/* Reading mode — proper box */
+.markdown-rendered blockquote {
+	background-color: var(--blockquote-background-color);
+	padding: 0.6em 1em;
+	margin-inline-start: 1.5em;
+	margin-bottom: 0.6em;
+	color: var(--text-normal);
+	font-size: 1.05em;
+	letter-spacing: 0.02em;
+	border-radius: var(--radius);
+}
+/* Paragraph after blockquote — reading mode */
+.markdown-rendered blockquote + div.el-p {
+	padding-top: 0.6em;
+}
+
+/* Live preview — background + indent + left accent on all lines */
+.markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote {
+	background-color: var(--blockquote-background-color);
+	background-clip: padding-box;
+	margin-inline-start: calc(1.5em + 2px);
+	padding-inline: 1em;
+	border-left: none;
+	box-shadow: -2px 0 0 0 var(--color-accent);
+	color: var(--text-normal);
+	font-size: 1.05em;
+	letter-spacing: 0.02em;
+	position: relative;
+}
+/* Hide Obsidian default ::before accent line */
+.markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote::before {
+	display: none;
+}
+
+/* Live preview — top padding + top rounding on first quote line only */
+.markdown-source-view.mod-cm6.is-live-preview .cm-content > :not(.HyperMD-quote) + .HyperMD-quote {
+	padding-top: 0.6em;
+	border-top-left-radius: var(--radius);
+	border-top-right-radius: var(--radius);
+}
+
+/* Live preview — bottom gap + bottom rounding on last quote line only */
+.markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote:has(+ *:not(.HyperMD-quote)) {
+	border-left: none;
+	box-shadow: -2px 0 0 0 var(--color-accent);
+	border-bottom: 0.6em solid var(--blockquote-background-color);
+	border-bottom-left-radius: var(--radius);
+	border-bottom-right-radius: var(--radius);
+	margin-inline-start: calc(1.5em + 2px);
+}
+
+/* ============================================================
+   LISTS
+   ============================================================ */
+
+/* Reading mode: bullet-to-text gap */
+.markdown-rendered .list-bullet {
+	padding-inline-end: 0.5em;
+}
+
+/* Reading mode: bottom spacing after list */
+.markdown-rendered div.el-ul,
+.markdown-rendered div.el-ol {
+	margin-bottom: 0.8em;
+}
+
+/* ============================================================
+   TAGS
+   ============================================================ */
+
+/* Reading view */
+body a.tag {
+	padding: 0;
+	margin: 0;
+	background: none;
+	border: none;
+	border-radius: var(--radius);
+	color: var(--text-accent);
+	line-height: inherit;
+}
+
+/* Live preview / source mode */
+body .cm-hashtag,
+body .cm-hashtag-begin,
+body .cm-hashtag-end {
+	padding: 0;
+	margin: 0;
+	background: none;
+	border: none;
+	border-radius: var(--radius);
+	color: var(--text-accent);
+}
+
+/* ============================================================
+   CHECKBOXES — done [x] / selected [v] / cancelled [-]
+   ============================================================ */
+
+/* Base — reading mode only (class selector avoids breaking settings toggles) */
+.markdown-preview-view .task-list-item-checkbox {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	background-image: none;
+	background: var(--background-primary);
+	border: 1px solid var(--text-accent);
+	width: 14px;
+	height: 14px;
+	box-shadow: none;
+	position: relative;
+}
+
+/* All checkboxes in live preview — kill native appearance */
+.HyperMD-list-line input[type="checkbox"] {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	background-image: none;
+	background: var(--background-primary);
+	border: 1px solid var(--text-accent);
+	width: 14px;
+	height: 14px;
+	box-shadow: none;
+	position: relative;
+}
+
+/* Kill Obsidian's default ::after SVG checkmark — conflicts with our theme marks */
+.HyperMD-list-line input[type="checkbox"]:checked::after,
+.markdown-preview-view .task-list-item-checkbox:checked::after {
+	-webkit-mask-image: none !important;
+	mask-image: none !important;
+	background: transparent;
+	background-color: transparent;
+}
+
+/* [x] / [X] = done — accent border + check */
+input[data-task="x"]:checked,
+input[data-task="X"]:checked,
+.markdown-preview-view li[data-task="x"] > .task-list-item-checkbox:checked,
+.markdown-preview-view li[data-task="X"] > .task-list-item-checkbox:checked,
+.HyperMD-list-line input[data-task="x"]:checked,
+.HyperMD-list-line input[data-task="X"]:checked {
+	background-color: var(--background-primary);
+}
+
+input[data-task="x"]:checked::after,
+input[data-task="X"]:checked::after,
+.markdown-preview-view li[data-task="x"] > .task-list-item-checkbox:checked::after,
+.markdown-preview-view li[data-task="X"] > .task-list-item-checkbox:checked::after,
+.HyperMD-list-line input[data-task="x"]:checked::after,
+.HyperMD-list-line input[data-task="X"]:checked::after {
+	content: '✔';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 14px;
+	height: 14px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: var(--text-accent);
+	font-size: 11px;
+	line-height: 1;
+}
+
+/* [v] / [V] = selected — accent border + check */
+input[data-task="v"]:checked,
+input[data-task="V"]:checked,
+.markdown-preview-view li[data-task="v"] > .task-list-item-checkbox:checked,
+.markdown-preview-view li[data-task="V"] > .task-list-item-checkbox:checked,
+.HyperMD-list-line input[data-task="v"]:checked,
+.HyperMD-list-line input[data-task="V"]:checked {
+	background-color: var(--background-primary);
+}
+
+input[data-task="v"]:checked::after,
+input[data-task="V"]:checked::after,
+.markdown-preview-view li[data-task="v"] > .task-list-item-checkbox:checked::after,
+.markdown-preview-view li[data-task="V"] > .task-list-item-checkbox:checked::after,
+.HyperMD-list-line input[data-task="v"]:checked::after,
+.HyperMD-list-line input[data-task="V"]:checked::after {
+	content: '✔';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 14px;
+	height: 14px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: var(--text-accent);
+	font-size: 11px;
+	line-height: 1;
+}
+
+/* [-] / [–] = cancelled/rejected — muted border, accent X */
+input[data-task="-"]:checked,
+input[data-task="–"]:checked,
+.markdown-preview-view li[data-task="-"] > .task-list-item-checkbox:checked,
+.markdown-preview-view li[data-task="–"] > .task-list-item-checkbox:checked,
+.HyperMD-list-line input[data-task="-"]:checked,
+.HyperMD-list-line input[data-task="–"]:checked {
+	background-color: var(--background-primary);
+	border-color: var(--text-muted);
+}
+
+input[data-task="-"]:checked::after,
+input[data-task="–"]:checked::after,
+.markdown-preview-view li[data-task="-"] > .task-list-item-checkbox:checked::after,
+.markdown-preview-view li[data-task="–"] > .task-list-item-checkbox:checked::after,
+.HyperMD-list-line input[data-task="-"]:checked::after,
+.HyperMD-list-line input[data-task="–"]:checked::after {
+	content: '✕';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 14px;
+	height: 14px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: var(--text-muted);
+	font-size: 11px;
+	line-height: 1;
+}
+
+/* [-] / [–] item text — dimmed + strikethrough */
+.markdown-preview-view li[data-task="-"],
+.markdown-preview-view li[data-task="–"],
+.HyperMD-list-line[data-task="-"],
+.HyperMD-list-line[data-task="–"] {
+	color: var(--text-faint);
+	text-decoration: line-through;
+}
+
+/* [v] / [V] item text — accent color */
+.markdown-preview-view li[data-task="v"],
+.markdown-preview-view li[data-task="V"],
+.HyperMD-list-line[data-task="v"],
+.HyperMD-list-line[data-task="V"] {
+	color: var(--text-accent);
+}
+
+/* ============================================================
+   EDITOR — line numbers
+   ============================================================ */
+
+.cm-lineNumbers .cm-gutterElement {
+	opacity: 0.5;
+}
+
+.cm-lineNumbers .cm-gutterElement.cm-active {
+	opacity: 1;
+	color: var(--color-accent);
+}
+
+/* ============================================================
+   LINKED MENTIONS — backlinks panel
+   ============================================================ */
+
+/* Section headers: "Linked mentions" / "Unlinked mentions" */
+.embedded-backlinks .backlink-pane > .tree-item-self .tree-item-inner {
+	color: var(--color-accent);
+	font-weight: 600;
+}
+
+/* Count badge */
+.embedded-backlinks .backlink-pane > .tree-item-self .tree-item-flair {
+	color: var(--color-accent);
+	opacity: 0.6;
+}
+
+/* File name */
+.embedded-backlinks .search-result-file-title .tree-item-inner {
+	color: var(--color-accent);
+}
+
+/* Matched text highlight */
+.embedded-backlinks .search-result-file-matched-text {
+	color: var(--color-accent);
+	background: transparent;
+	font-weight: 600;
+}
+
+/* Context text */
+.embedded-backlinks .search-result-file-match {
+	color: var(--text-muted);
+}
+
+/* ============================================================
+   RIBBON — hide icons, reveal on hover
+   ============================================================ */
+
+.side-dock-ribbon .side-dock-ribbon-action,
+.side-dock-ribbon .side-dock-ribbon-tab {
+	opacity: 0;
+	transition: opacity 0.15s ease;
+}
+
+.side-dock-ribbon:hover .side-dock-ribbon-action,
+.side-dock-ribbon:hover .side-dock-ribbon-tab {
+	opacity: 1;
+}
+
+/* ============================================================
+   CALLOUTS
+   ============================================================ */
+
+/* Base reset: no radius, left border only */
+.callout {
+	--callout-radius: var(--radius);
+	border-radius: var(--radius);
+	border-left: 2px solid;
+	border-top: none;
+	border-right: none;
+	border-bottom: none;
+	margin-top: 2em;
+}
+
+/* In live preview: zero internal top padding so line number aligns with callout title */
+body .markdown-source-view.mod-cm6 .callout {
+	padding-top: 0;
+	margin-top: 2em;
+}
+
+/* Restore visual top padding inside the title in live preview */
+body .markdown-source-view.mod-cm6 .callout .callout-title {
+	padding-top: 12px;
+}
+
+/* ── Informational: hue shifts from accent, 8 groups × 45° ── */
+
+.callout[data-callout="note"]                                    { --co: oklch(from var(--color-accent) l c calc(h +   0)); }
+.callout[data-callout="abstract"],
+.callout[data-callout="summary"],
+.callout[data-callout="tldr"]                                    { --co: oklch(from var(--color-accent) 0.85 0.07 calc(h +  45)); }
+.callout[data-callout="info"]                                    { --co: oklch(from var(--color-accent) l c calc(h +  90)); }
+.callout[data-callout="todo"]                                    { --co: oklch(from var(--color-accent) l c calc(h + 135)); }
+.callout[data-callout="tip"],
+.callout[data-callout="hint"]                                    { --co: oklch(from var(--color-accent) l c calc(h + 180)); }
+.callout[data-callout="question"],
+.callout[data-callout="help"],
+.callout[data-callout="faq"]                                     { --co: oklch(from var(--color-accent) l c calc(h + 225)); }
+.callout[data-callout="example"]                                 { --co: oklch(from var(--color-accent) 0.85 0.07 calc(h + 270)); }
+.callout[data-callout="quote"],
+.callout[data-callout="cite"]                                    { --co: oklch(from var(--color-accent) 0.85 0.07 calc(h + 315)); }
+
+/* abstract / example / quote: lighter background */
+.callout[data-callout="abstract"],
+.callout[data-callout="summary"],
+.callout[data-callout="tldr"],
+.callout[data-callout="example"],
+.callout[data-callout="quote"],
+.callout[data-callout="cite"] {
+	background-color: color-mix(in oklch, var(--co) 15%, var(--background-primary));
+}
+
+/* ── Semantic: fixed hue, l+c from accent ── */
+
+.callout[data-callout="success"],
+.callout[data-callout="check"],
+.callout[data-callout="done"]                                    { --co: oklch(from var(--color-accent) l c 145); }
+.callout[data-callout="warning"],
+.callout[data-callout="caution"],
+.callout[data-callout="attention"]                               { --co: oklch(from var(--color-accent) l c 60);  }
+.callout[data-callout="failure"],
+.callout[data-callout="fail"],
+.callout[data-callout="missing"]                                 { --co: oklch(from var(--color-accent) l c 30);  }
+.callout[data-callout="danger"],
+.callout[data-callout="error"]                                   { --co: oklch(from var(--color-accent) l c 20);  }
+.callout[data-callout="bug"]                                     { --co: oklch(from var(--color-accent) l c 10);  }
+
+/* Apply --co to all callouts */
+.callout {
+	background-color: color-mix(in oklch, var(--co, var(--color-accent)) 8%, var(--background-primary));
+	border-left-color: var(--co, var(--color-accent));
+}
+.callout .callout-title,
+.callout .callout-icon .svg-icon {
+	color: var(--co, var(--color-accent));
+}
+
+/* ============================================================
+   PLUGIN OVERRIDES — linDar
+   ============================================================ */
+
+/* Restore variables flat theme removes — linDar needs grid borders + weekend bg */
+.theme-dark [data-type="lindar-year-view"],
+.theme-dark .lindar-view {
+	--background-modifier-border: rgba(255, 255, 255, 0.07);
+	--background-secondary: #141414;
+}
+
+
+
+/* ============================================================
+   SEARCH
+   ============================================================ */
+
+.search-result-file-title {
+	color: var(--text-accent);
+	font-weight: 600;
+}
+.search-result-file-matched-text {
+	background: transparent;
+	color: var(--text-accent);
+	font-weight: 600;
+}
+.search-result-file-match {
+	color: var(--text-muted);
+}
+.search-result:hover {
+	background: var(--background-secondary);
+}
+
+/* ============================================================
+   PROPERTIES (O 1.4+)
+   ============================================================ */
+
+.metadata-container {
+	background: transparent;
+	border: none;
+	border-radius: var(--radius);
+	padding: var(--size-4-2);
+	margin-bottom: var(--size-4-4);
+	transition: background 0.15s ease;
+}
+.metadata-container:hover {
+	background: var(--background-secondary);
+}
+.metadata-properties-heading {
+	opacity: 0;
+	color: var(--text-accent);
+	transition: opacity 0.15s ease;
+}
+.metadata-container:hover .metadata-properties-heading {
+	opacity: 1;
+}
+.metadata-properties-heading .collapse-indicator {
+	color: var(--text-muted);
+}
+.metadata-property {
+	border-bottom: none;
+	border-top: none;
+	outline: none;
+	box-shadow: none;
+}
+.metadata-property .metadata-property-key,
+.metadata-property .metadata-property-value {
+	border: none;
+}
+.metadata-property:focus-within {
+	background: transparent;
+}
+.metadata-property-key {
+	color: var(--text-muted);
+}
+.metadata-property-value {
+	color: var(--text-normal);
+}
+.metadata-property-value input,
+.metadata-property-value .multi-select-container {
+	background: transparent;
+	border: none;
+	transition: background 0.15s ease;
+}
+.metadata-container:hover .metadata-property-value input {
+	background: var(--background-primary);
+}
+.metadata-container:hover .metadata-property-value .multi-select-container {
+	background: transparent;
+}
+.metadata-property-value .multi-select-pill {
+	background: transparent;
+	color: var(--text-accent);
+	border: none;
+	--pill-color-remove: var(--text-faint);
+	--pill-color-remove-hover: var(--text-faint);
+}
+.metadata-properties .multi-select-pill svg.svg-icon {
+	--icon-color: var(--text-faint);
+	--icon-size: 11px;
+	color: var(--text-faint);
+}
+
+.metadata-add-button {
+	opacity: 0;
+	border-top: none;
+	transition: opacity 0.15s ease;
+}
+.metadata-container:hover .metadata-add-button,
+.metadata-add-button:focus-visible {
+	opacity: 1;
+}
+
+/* ============================================================
+   MOBILE
+   ============================================================ */
+
+.is-mobile .workspace-drawer {
+	background: var(--background-primary);
+}
+.is-mobile .workspace-drawer-header {
+	background: var(--background-secondary);
+}
+.is-mobile .workspace-drawer-header-name {
+	color: var(--text-accent);
+}
+.is-mobile .workspace-drawer-actions,
+.is-mobile .workspace-drawer-action-icon {
+	color: var(--text-accent);
+}
+.is-mobile .workspace-drawer-tab-option-item {
+	color: var(--text-normal);
+}
+.is-mobile .workspace-drawer-tab-option-item.is-active {
+	color: var(--text-accent);
+}
+.is-mobile .nav-files-container {
+	background: var(--background-primary);
+}
+
+/* ============================================================
+   PLUGIN OVERRIDES
+   ============================================================ */
+
+/* Kanban */
+.kanban-plugin__board {
+	background: var(--background-primary);
+}
+.kanban-plugin__lane {
+	background: var(--background-secondary);
+	border: none;
+}
+.kanban-plugin__lane-title {
+	color: var(--text-accent);
+}
+.kanban-plugin__item {
+	background: var(--background-primary);
+	border: none;
+}
+
+/* Excalidraw */
+.excalidraw .App-menu_top,
+.excalidraw .App-menu_bottom {
+	background: var(--background-secondary);
+	--button-border: none;
+}
+
+/* ============================================================
+   GRAPH VIEW
+   ============================================================ */
+
+.theme-dark .graph-view canvas {
+	background: #0A0A0A;
+}
+.theme-light .graph-view canvas {
+	background: #D8D8D8;
+}
+.graph-view.color-fill              { color: var(--graph-node); }
+.graph-view.color-fill-focused      { color: var(--text-accent); }
+.graph-view.color-fill-tag          { color: var(--text-accent); }
+.graph-view.color-fill-attachment   { color: var(--graph-node-attachment); }
+.graph-view.color-fill-unresolved   { color: var(--graph-node-unresolved); }
+.graph-view.color-circle            { color: var(--text-accent); }
+.graph-view.color-line              { color: var(--graph-line); }
+.graph-view.color-line-connection   { color: var(--graph-line); }
+.graph-view.color-text              { color: var(--graph-text); }
+.graph-view.color-fill-highlight    { color: var(--text-accent); }
+.graph-view.color-line-highlight    { color: var(--text-accent); }
+.graph-view.color-arrow             { color: var(--graph-node); }

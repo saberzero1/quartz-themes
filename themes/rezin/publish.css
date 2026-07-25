@@ -1468,8 +1468,8 @@ body.theme-dark {
   --text-title-h5: #b42478 !important;
   --text-title-h6: #6171ff !important;
   --vim-cursor: #fcf601 !important;
-  --font-family-editor: Avenir, Avenir Next, sans-serif !important;
   --text-strong: #af3943 !important;
+  --font-family-editor: Avenir, Avenir Next, sans-serif !important;
 }
 
 body .site-body-left-column-site-theme-toggle {

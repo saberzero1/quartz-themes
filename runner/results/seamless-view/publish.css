@@ -892,9 +892,9 @@ body.theme-dark {
     transparent
   ) !important;
   --indentation-guide-editing-indent: calc(
-    var(--list-indent) / 2 - 1px
+    var(--list-indent)/2 - 1px
   ) !important;
-  --indentation-guide-reading-indent: calc(var(--list-indent) / -2) !important;
+  --indentation-guide-reading-indent: calc(var(--list-indent)/-2) !important;
   --indentation-guide-source-indent: 0.25em !important;
   --indentation-guide-width: var(--border-width) !important;
   --indentation-guide-width-active: var(--border-width) !important;

@@ -6,7 +6,7 @@ cssclasses:
 
 > This page is to quickly check how all features are rendered.
 
-- Theme author: <a href="https://github.com/whyt-byte" target="_blank" rel="noopener noreferrer">WhyI & Pkmer</a>
+- Theme author: <a href="https://github.com/PKM-er" target="_blank" rel="noopener noreferrer">WhyI & Pkmer</a>
 - Support the author: Author did not provide funding links in `manifest.json`
 - Install: `npm install @quartz-themes/core @quartz-themes/blue-topaz`
 - <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/blue-topaz/README.md">Full install instructions</a>

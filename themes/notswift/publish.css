@@ -1621,6 +1621,7 @@ body.theme-light {
     0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065),
     var(--shadow-edges) !important;
   --vault-name-color: var(--color-base-70) !important;
+  --inline-title-font: var(--h1-font) !important;
   --h1-font:
     SFProText-Ultralight, -apple-system, BlinkMacSystemFont, sans-serif !important;
   --h2-font:
@@ -1633,14 +1634,13 @@ body.theme-light {
     SFPro-Regular, -apple-system, BlinkMacSystemFont, sans-serif !important;
   --h6-font:
     SFPro-Regular, -apple-system, BlinkMacSystemFont, sans-serif !important;
-  --inline-title-font: var(--h1-font) !important;
   --link-decoration-color: var(--color-base-highlight) !important;
   --color-base-80: #464545ff !important;
   --color-base-90: #d5d5d5 !important;
   --link-external-decoration-color: #35b649 !important;
   --vault-name-font-size: var(--font-ui-smaller) !important;
-  --radius-xs: 1px !important;
   --color-base-15: #f8f2f1 !important;
+  --radius-xs: 1px !important;
   --codeblock-radius: var(--radius-m) !important;
   --color-base-100-ref: 76, 73, 73 !important;
   --color-base-101: rgb(var(--color-base-101-ref)) !important;
@@ -2770,6 +2770,7 @@ body.theme-dark {
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13);'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
   --vault-name-color: var(--color-base-70) !important;
+  --inline-title-font: var(--h1-font) !important;
   --h1-font:
     SFProText-Ultralight, -apple-system, BlinkMacSystemFont, sans-serif !important;
   --h2-font:
@@ -2782,14 +2783,13 @@ body.theme-dark {
     SFPro-Regular, -apple-system, BlinkMacSystemFont, sans-serif !important;
   --h6-font:
     SFPro-Regular, -apple-system, BlinkMacSystemFont, sans-serif !important;
-  --inline-title-font: var(--h1-font) !important;
   --link-decoration-color: var(--color-base-lowlight) !important;
   --color-base-80: #464545ff !important;
   --color-base-90: #414141 !important;
   --link-external-decoration-color: #288133 !important;
   --vault-name-font-size: var(--font-ui-smaller) !important;
-  --radius-xs: 1px !important;
   --color-base-15: #363636 !important;
+  --radius-xs: 1px !important;
   --codeblock-radius: var(--radius-m) !important;
   --color-base-100-ref: 228, 228, 228 !important;
   --color-base-101: rgb(var(--color-base-101-ref)) !important;

@@ -1445,17 +1445,17 @@ body.theme-light {
   --h5-color: var(--res-tx1) !important;
   --h6-color: var(--res-tx-accent) !important;
   --inline-title-color: var(--h1-color) !important;
+  --inline-title-font: var(--h1-font) !important;
   --h1-font: var(--mkk-font-stack-headings) !important;
   --h2-font: var(--mkk-font-stack-headings) !important;
   --h3-font: var(--mkk-font-stack-headings) !important;
   --h4-font: var(--mkk-font-stack-headings) !important;
   --h5-font: var(--mkk-font-stack-headings) !important;
   --h6-font: var(--mkk-font-stack-headings) !important;
-  --inline-title-font: var(--h1-font) !important;
-  --button-shadow: none !important;
   --text-highlight: var(--res-bg0) !important;
+  --button-shadow: none !important;
   --prompt-shadow: none !important;
-  --gap-unit: calc(var(--font-text-size) / 8) !important;
+  --gap-unit: calc(var(--font-text-size)/8) !important;
   --mkk-font-stack-em:
     var(--res-font-em-west), var(--res-font-em-zh) !important;
   --mkk-font-stack-headings:
@@ -2900,17 +2900,17 @@ body.theme-dark {
   --h5-color: var(--res-tx1) !important;
   --h6-color: var(--res-tx-accent) !important;
   --inline-title-color: var(--h1-color) !important;
+  --inline-title-font: var(--h1-font) !important;
   --h1-font: var(--mkk-font-stack-headings) !important;
   --h2-font: var(--mkk-font-stack-headings) !important;
   --h3-font: var(--mkk-font-stack-headings) !important;
   --h4-font: var(--mkk-font-stack-headings) !important;
   --h5-font: var(--mkk-font-stack-headings) !important;
   --h6-font: var(--mkk-font-stack-headings) !important;
-  --inline-title-font: var(--h1-font) !important;
-  --button-shadow: none !important;
   --text-highlight: var(--res-bg0) !important;
+  --button-shadow: none !important;
   --prompt-shadow: none !important;
-  --gap-unit: calc(var(--font-text-size) / 8) !important;
+  --gap-unit: calc(var(--font-text-size)/8) !important;
   --mkk-font-stack-em:
     var(--res-font-em-west), var(--res-font-em-zh) !important;
   --mkk-font-stack-headings:

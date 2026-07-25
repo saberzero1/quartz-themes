@@ -1539,7 +1539,7 @@ body.theme-light {
   --bg-s-modifier: calc(var(--bg-l-modifier) * 0.5) !important;
   --nav-item-border-color: var(--divider-color) !important;
   --sidebar-left-border-color: var(--divider-color) !important;
-  --size-1-1: calc(var(--size-1-2) / 2) !important;
+  --size-1-1: calc(var(--size-1-2)/2) !important;
   --size-1-2: var(--size-2-1) !important;
   --size-1-3: calc(var(--size-1-1) * 3) !important;
   --size-16-16: calc(var(--size-4-4) * 16) !important;
@@ -2698,7 +2698,7 @@ body.theme-dark {
   --bg-s-modifier: calc(var(--bg-l-modifier) * 0.5) !important;
   --nav-item-border-color: var(--divider-color) !important;
   --sidebar-left-border-color: var(--divider-color) !important;
-  --size-1-1: calc(var(--size-1-2) / 2) !important;
+  --size-1-1: calc(var(--size-1-2)/2) !important;
   --size-1-2: var(--size-2-1) !important;
   --size-1-3: calc(var(--size-1-1) * 3) !important;
   --size-16-16: calc(var(--size-4-4) * 16) !important;

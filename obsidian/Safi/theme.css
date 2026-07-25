@@ -1,0 +1,148 @@
+/* Safi — warm editorial workbench theme for Obsidian.
+   Brand: warm near-black (or warm paper) canvas, Space Grotesk headlines,
+   Inter body, JetBrains Mono for the small bits, one clay accent.
+   Depth from hairline borders, never drop shadows. */
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap');
+
+body {
+  --font-text-theme: 'Inter', system-ui, sans-serif;
+  --font-interface-theme: 'Inter', system-ui, sans-serif;
+  --font-monospace-theme: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  /* Commit to one quiet radius, not the default soft 16px everywhere. */
+  --radius-s: 3px;
+  --radius-m: 4px;
+  --radius-l: 6px;
+  --input-radius: 4px;
+
+  --font-text-size: 17px;
+  --line-height-normal: 1.6;
+  --bold-weight: 600;
+}
+
+/* Loud type in Space Grotesk: headings, inline title, bold callout titles.
+   Never set paragraphs in it. */
+.markdown-rendered h1, .markdown-rendered h2, .markdown-rendered h3,
+.markdown-rendered h4, .markdown-rendered h5, .markdown-rendered h6,
+.cm-header, .inline-title, .view-header-title,
+.callout-title-inner, .titlebar-text {
+  font-family: 'Space Grotesk', system-ui, sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.015em;
+}
+
+.markdown-rendered h1, .HyperMD-header-1, .inline-title {
+  line-height: 0.98;
+  letter-spacing: -0.025em;
+}
+
+/* H2 in the clay accent. */
+.markdown-rendered h2, .HyperMD-header-2, .cm-header-2 {
+  color: var(--text-accent);
+}
+
+/* Section labels / kickers feel: small mono meta in the UI. */
+.nav-folder-title, .nav-file-title,
+.metadata-property-key, .tree-item-self.is-clickable {
+  font-feature-settings: 'cv05';
+}
+
+/* ===================== DARK (default) ===================== */
+.theme-dark {
+  --accent-h: 19;
+  --accent-s: 64%;
+  --accent-l: 58%;
+
+  --background-primary: #0c0b0a;
+  --background-primary-alt: #100e0c;
+  --background-secondary: #110f0d;
+  --background-secondary-alt: #16140f;
+
+  --background-modifier-border: rgba(245, 242, 234, 0.12);
+  --background-modifier-border-hover: rgba(245, 242, 234, 0.22);
+  --background-modifier-border-focus: rgba(217, 122, 79, 0.55);
+  --background-modifier-form-field: #16140f;
+  --background-modifier-hover: rgba(245, 242, 234, 0.05);
+  --background-modifier-active-hover: rgba(217, 122, 79, 0.12);
+
+  --text-normal: #f5f2ea;
+  --text-muted: #8d887e;
+  --text-faint: #6a665d;
+  --text-on-accent: #0c0b0a;
+
+  --text-accent: #d97a4f;
+  --text-accent-hover: #e58a60;
+  --interactive-accent: #d97a4f;
+  --interactive-accent-hover: #e58a60;
+  --interactive-normal: #16140f;
+  --interactive-hover: #1d1a14;
+
+  --text-selection: rgba(217, 122, 79, 0.22);
+  --hr-color: rgba(245, 242, 234, 0.12);
+  --blockquote-border-color: #d97a4f;
+  --code-background: #16140f;
+  --code-normal: #e9c9b4;
+
+  --titlebar-background: #0c0b0a;
+  --titlebar-background-focused: #0c0b0a;
+  --tab-text-color-focused-active: #f5f2ea;
+}
+
+/* ===================== LIGHT (warm paper) ===================== */
+.theme-light {
+  --accent-h: 16;
+  --accent-s: 59%;
+  --accent-l: 49%;
+
+  --background-primary: #f4f1ea;
+  --background-primary-alt: #efebe2;
+  --background-secondary: #efebe2;
+  --background-secondary-alt: #fbf9f3;
+
+  --background-modifier-border: rgba(26, 22, 17, 0.14);
+  --background-modifier-border-hover: rgba(26, 22, 17, 0.26);
+  --background-modifier-border-focus: rgba(199, 92, 51, 0.55);
+  --background-modifier-form-field: #fbf9f3;
+  --background-modifier-hover: rgba(26, 22, 17, 0.05);
+  --background-modifier-active-hover: rgba(199, 92, 51, 0.12);
+
+  --text-normal: #1a1611;
+  --text-muted: #6b6358;
+  --text-faint: #938b7e;
+  --text-on-accent: #fbf9f3;
+
+  --text-accent: #c75c33;
+  --text-accent-hover: #b04e29;
+  --interactive-accent: #c75c33;
+  --interactive-accent-hover: #b04e29;
+  --interactive-normal: #fbf9f3;
+  --interactive-hover: #f1ece2;
+
+  --text-selection: rgba(199, 92, 51, 0.18);
+  --hr-color: rgba(26, 22, 17, 0.14);
+  --blockquote-border-color: #c75c33;
+  --code-background: #fbf9f3;
+  --code-normal: #8a4022;
+
+  --titlebar-background: #f4f1ea;
+  --titlebar-background-focused: #f4f1ea;
+}
+
+/* Active state with real weight, not a border-only tell. */
+.workspace-tab-header.is-active {
+  font-weight: 600;
+}
+.workspace-tab-header.is-active::before,
+.workspace-tab-header.is-active::after {
+  display: none;
+}
+
+/* Editorial blockquote: clay hairline, generous left room. */
+.markdown-rendered blockquote {
+  border-left-width: 2px;
+  padding-left: 1.1em;
+  font-style: normal;
+}
+
+/* Checkboxes and accents pick up clay from the accent vars above. */

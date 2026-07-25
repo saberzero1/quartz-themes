@@ -1222,6 +1222,10 @@ body.theme-light {
     --ulu-inline-title-color,
     var(--color-base-100)
   ) !important;
+  --inline-title-font: var(
+    --ulu-inline-title-font,
+    var(--font-title)
+  ) !important;
   --h1-font: var(--ulu-header1-type, var(--font-title)) !important;
   --h2-font: var(
     --ulu-header2-type,
@@ -1243,15 +1247,10 @@ body.theme-light {
     --ulu-header6-type,
     var(--font-text, var(--font-text-theme))
   ) !important;
-  --inline-title-font: var(
-    --ulu-inline-title-font,
-    var(--font-title)
-  ) !important;
   --font-serif: "Fraunces", serif !important;
   --font-title: var(--ulu-font-title) !important;
   --color-accent-rgb: var(--color-blue-rgb) !important;
   --color-accent-hover: var(--color-accent-2) !important;
-  --ancestor-editor-color: var(--text-normal) !important;
   --color-blue-hsl: 210, 92%, 71% !important;
   --color-cyan-hsl: 186, 45%, 47% !important;
   --color-green-hsl: 88, 57%, 39% !important;
@@ -1260,6 +1259,7 @@ body.theme-light {
   --color-purple-hsl: 263, 41%, 50% !important;
   --color-red-hsl: 16, 100%, 57% !important;
   --color-yellow-hsl: 50, 97%, 60% !important;
+  --ancestor-editor-color: var(--text-normal) !important;
   --shadow-lm-only:
     0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
   --text-on-button: var(--text-normal) !important;
@@ -2443,6 +2443,10 @@ body.theme-dark {
     --ulu-inline-title-color,
     var(--color-base-100)
   ) !important;
+  --inline-title-font: var(
+    --ulu-inline-title-font,
+    var(--font-title)
+  ) !important;
   --h1-font: var(--ulu-header1-type, var(--font-title)) !important;
   --h2-font: var(
     --ulu-header2-type,
@@ -2464,15 +2468,10 @@ body.theme-dark {
     --ulu-header6-type,
     var(--font-text, var(--font-text-theme))
   ) !important;
-  --inline-title-font: var(
-    --ulu-inline-title-font,
-    var(--font-title)
-  ) !important;
   --font-serif: "Fraunces", serif !important;
   --font-title: var(--ulu-font-title) !important;
   --color-accent-rgb: var(--color-blue-rgb) !important;
   --color-accent-hover: var(--color-accent-2) !important;
-  --ancestor-editor-color: var(--text-normal) !important;
   --color-blue-hsl: 197, 95%, 67% !important;
   --color-cyan-hsl: 194, 92%, 62% !important;
   --color-green-hsl: 138, 92%, 62% !important;
@@ -2481,6 +2480,7 @@ body.theme-dark {
   --color-purple-hsl: 274, 92%, 62% !important;
   --color-red-hsl: 0, 92%, 62% !important;
   --color-yellow-hsl: 46, 92%, 62% !important;
+  --ancestor-editor-color: var(--text-normal) !important;
   --shadow-lm-only: none !important;
   --text-on-button: var(--text-on-accent) !important;
   --background-modifier-border-alt: #9c7b9c !important;

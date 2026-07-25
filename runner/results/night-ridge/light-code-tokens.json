@@ -1,0 +1,16 @@
+{
+  "_codeBlock": {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "color(srgb 0.187922 0.255216 0.299294)"
+  },
+  "_preBlock": {
+    "backgroundColor": "color(srgb 0.82902 0.867059 0.881961)",
+    "borderColor": "color(srgb 0.388463 0.447287 0.483279 / 0.5708) color(srgb 0.388463 0.447287 0.483279 / 0.5708) color(srgb 0.388463 0.447287 0.483279 / 0.5708) color(srgb 0.266039 0.498039 0.509176)"
+  },
+  "header": {
+    "color": "color(srgb 0.0417255 0.064549 0.0876078)",
+    "fontStyle": "normal",
+    "fontWeight": "700",
+    "textDecoration": "none"
+  }
+}

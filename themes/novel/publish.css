@@ -1363,8 +1363,8 @@ body.theme-light {
   --border: #e8e4db !important;
   --bg-primary: #faf8f3 !important;
   --bg-secondary: #f5f2eb !important;
-  --text-heading: #3a3a3a !important;
   --code-bg: #f8f5ef !important;
+  --text-heading: #3a3a3a !important;
 }
 
 body.theme-dark {
@@ -2452,8 +2452,8 @@ body.theme-dark {
   --border: #3a3a3a !important;
   --bg-primary: #1a1a1a !important;
   --bg-secondary: #252525 !important;
-  --text-heading: #e0dcd3 !important;
   --code-bg: #2a2a2a !important;
+  --text-heading: #e0dcd3 !important;
 }
 
 body {

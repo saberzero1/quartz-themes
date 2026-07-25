@@ -1,7 +1,7 @@
 # Gruber Darker
 
 - Theme: Gruber Darker
-- Author: <a href="https://github.com/Aduneer/gruber-darker-obsidian" target="_blank" rel="noopener noreferrer">Aduneer</a>
+- Author: <a href="https://github.com/Aduneer" target="_blank" rel="noopener noreferrer">Aduneer</a>
 
 ## Preview
 

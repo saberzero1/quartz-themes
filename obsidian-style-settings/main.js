@@ -1348,7 +1348,6 @@ var Jn = Zr((Jr, en) => {
             A = 0.4,
             k;
           d - y > A;
-
         ) {
           k = (d + y) * 0.5;
           var N = $n(k);
@@ -1890,7 +1889,6 @@ var Jn = Zr((Jr, en) => {
                         pe = 1,
                         it = 20;
                       Math.abs(ue) > 0.01 && it-- > 0;
-
                     ) {
                       (function () {
                         return (
@@ -2333,7 +2331,6 @@ var Jn = Zr((Jr, en) => {
               ee = (0.0638 * j) / (1 + 0.0131 * j) + 0.638,
               Z = j < 1e-6 ? 0 : (Zo(A, d) * 180) / Ur;
             Z < 0;
-
           ) {
             Z += 360;
           }
@@ -3115,7 +3112,6 @@ var Ai = Zr((_i, er) => {
             T = 0,
             I = 0;
           ;
-
         ) {
           var D = m === C[T];
           if (D) {
@@ -6459,7 +6455,6 @@ function Il(e, n) {
   for (
     var t = /\r?\n|\r|\0/g, a = [0], i = [], l, c = -1;
     (l = t.exec(e.buffer));
-
   ) {
     (i.push(l.index),
       a.push(l.index + l[0].length),
@@ -7427,7 +7422,6 @@ function Ee(e, n, t) {
       for (
         xn(e), i = e.input.charCodeAt(e.position), a++, e.lineIndent = 0;
         i === 32;
-
       ) {
         (e.lineIndent++, (i = e.input.charCodeAt(++e.position)));
       }
@@ -7496,7 +7490,6 @@ function Lc(e, n, t) {
   for (
     e.kind = "scalar", e.result = "", l = c = e.position, f = !1;
     Y !== 0;
-
   ) {
     if (Y === 58) {
       if (((i = e.input.charCodeAt(e.position + 1)), Ge(i) || (t && _t(i)))) {
@@ -7537,7 +7530,6 @@ function Mc(e, n) {
   for (
     e.kind = "scalar", e.result = "", e.position++, a = i = e.position;
     (t = e.input.charCodeAt(e.position)) !== 0;
-
   ) {
     if (t === 39) {
       if (
@@ -7563,7 +7555,6 @@ function Ic(e, n) {
   for (
     e.kind = "scalar", e.result = "", e.position++, t = a = e.position;
     (f = e.input.charCodeAt(e.position)) !== 0;
-
   ) {
     if (f === 34) return (st(e, t, e.position, !0), e.position++, !0);
     if (f === 92) {
@@ -7620,7 +7611,6 @@ function Fc(e, n) {
     e.anchor !== null && (e.anchorMap[e.anchor] = f),
       F = e.input.charCodeAt(++e.position);
     F !== 0;
-
   ) {
     if ((Ee(e, !0, n), (F = e.input.charCodeAt(e.position)), F === S)) {
       return (
@@ -7708,7 +7698,6 @@ function Nc(e, n) {
     for (
       xn(e), e.lineIndent = 0, E = e.input.charCodeAt(e.position);
       (!c || e.lineIndent < f) && E === 32;
-
     ) {
       (e.lineIndent++, (E = e.input.charCodeAt(++e.position)));
     }
@@ -7762,7 +7751,6 @@ function Nc(e, n) {
         p = 0,
         t = e.position;
       !Xe(E) && E !== 0;
-
     ) {
       E = e.input.charCodeAt(++e.position);
     }
@@ -7787,7 +7775,6 @@ function Yi(e, n) {
       ((e.position = e.firstTabInLine),
       W(e, "tab characters must not be used in indentation")),
     !(p !== 45 || ((c = e.input.charCodeAt(e.position + 1)), !Ge(c))));
-
   ) {
     if (((f = !0), e.position++, Ee(e, !0, -1) && e.lineIndent <= n)) {
       (l.push(null), (p = e.input.charCodeAt(e.position)));
@@ -7830,7 +7817,6 @@ function Oc(e, n, t) {
     e.anchor !== null && (e.anchorMap[e.anchor] = E),
       F = e.input.charCodeAt(e.position);
     F !== 0;
-
   ) {
     if (
       (!L &&
@@ -7976,7 +7962,6 @@ function Rc(e) {
       t = e.input.charCodeAt(++e.position),
       n = e.position;
     t !== 0 && !Ge(t) && !_t(t);
-
   ) {
     t = e.input.charCodeAt(++e.position);
   }
@@ -7993,7 +7978,6 @@ function $c(e) {
   for (
     a = e.input.charCodeAt(++e.position), n = e.position;
     a !== 0 && !Ge(a) && !_t(a);
-
   ) {
     a = e.input.charCodeAt(++e.position);
   }
@@ -8149,12 +8133,10 @@ function Pc(e) {
     (Ee(e, !0, -1),
     (c = e.input.charCodeAt(e.position)),
     !(e.lineIndent > 0 || c !== 37));
-
   ) {
     for (
       l = !0, c = e.input.charCodeAt(++e.position), t = e.position;
       c !== 0 && !Ge(c);
-
     ) {
       c = e.input.charCodeAt(++e.position);
     }
@@ -8164,7 +8146,6 @@ function Pc(e) {
         a.length < 1 &&
           W(e, "directive name must not be less than one character in length");
       c !== 0;
-
     ) {
       for (; ft(c); ) c = e.input.charCodeAt(++e.position);
       if (c === 35) {
@@ -8221,7 +8202,6 @@ function ka(e, n) {
     a !== -1 && ((t.position = a), W(t, "null byte is not allowed in input")),
       t.input += "\0";
     t.input.charCodeAt(t.position) === 32;
-
   ) {
     ((t.lineIndent += 1), (t.position += 1));
   }
@@ -8362,7 +8342,6 @@ function Ui(e, n) {
   for (
     var t = Ae.repeat(" ", n), a = 0, i = -1, l = "", c, f = e.length;
     a < f;
-
   ) {
     ((i = e.indexOf(
       `
@@ -8587,7 +8566,6 @@ function vu(e, n) {
       l,
       c;
     (c = t.exec(e));
-
   ) {
     var f = c[1],
       p = c[2];

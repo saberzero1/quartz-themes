@@ -1,0 +1,547 @@
+:root {
+	--dark0_x: 45, 62, 80;
+	/* #2d3e50 */
+	--dark0: rgb(var(--dark0_x));
+	--dark1_x: 37, 51, 66;
+	/* #253342 */
+	--dark1: rgb(var(--dark1_x));
+	--dark2_x: 51, 71, 91;
+	/* #33475b */
+	--dark2: rgb(var(--dark2_x));
+	--dark3_x: 66, 91, 118;
+	/* #425b76 */
+	--dark3: rgb(var(--dark3_x));
+
+	--light0_x: 203, 214, 226;
+	/* #cbd6e2 */
+	--light0: rgb(var(--light0_x));
+	--light1_x: 153, 172, 194;
+	/* #99acc2 */
+	--light1: rgb(var(--light1_x));
+	--light2_x: 252, 252, 252;
+	/* #fcfcfc */
+	--light2: rgb(var(--light2_x));
+	--light3_x: 255, 253, 253;
+	/* #fffdfd */
+	--light3: rgb(var(--light3_x));
+
+	--frost0_x: 127, 222, 210;
+	/* #7fded2 */
+	--frost0: rgb(var(--frost0_x));
+	--frost1_x: 127, 209, 222;
+	/* #7fd1de */
+	--frost1: rgb(var(--frost1_x));
+	--frost2_x: 0, 145, 174;
+	/* #0091ae */
+	--frost2: rgb(var(--frost2_x));
+	--frost3_x: 55, 148, 255;
+	/* #3794ff */
+	--frost3: rgb(var(--frost3_x));
+
+	--red_x: 242, 84, 125;
+	/* #f2547d */
+	--red: rgb(var(--red_x));
+	--orange_x: 255, 122, 89;
+	/* #ff7a59 */
+	--orange: rgb(var(--orange_x));
+	--yellow_x: 245, 194, 107;
+	/* #f5c26b */
+	--peach_x: 255, 199, 172;
+	/* #ffc7ac */
+	--peach: rgb(var(--peach_x));
+	--yellow: rgb(var(--yellow_x));
+	--green_x: 0, 189, 165;
+	/* #00bda5 */
+	--green: rgb(var(--green_x));
+	--purple_x: 106, 120, 209;
+	/* #6a78d1 */
+	--purple: rgb(var(--purple_x));
+}
+
+body {
+	--accent-h: 344;
+	/* --red #f2547d */
+	--accent-s: 86%;
+	--accent-l: 64%;
+
+	--link-decoration: none;
+	--link-decoration-hover: none;
+	--link-external-decoration: none;
+	--link-external-decoration-hover: none;
+
+	--tag-decoration: none;
+	--tag-decoration-hover: underline;
+	--tag-padding-x: .5em;
+	--tag-padding-y: .2em;
+	--tag-radius: .5em;
+
+	--tab-font-weight: 600;
+	--bold-weight: 600;
+
+	--checkbox-radius: 0;
+
+	/* --list-indent:                    2em; */
+
+	--embed-border-left: 6px double var(--interactive-accent);
+}
+
+.theme-dark {
+	--color-red-rgb: var(--red_x);
+	--color-red: var(--red);
+	--color-purple-rgb: var(--purple_x);
+	--color-purple: var(--purple);
+	--color-green-rgb: var(--green_x);
+	--color-green: var(--green);
+	--color-cyan-rgb: var(--frost1_x);
+	--color-cyan: var(--frost1);
+	--color-blue-rgb: var(--frost3_x);
+	--color-blue: var(--frost3);
+	--color-yellow-rgb: var(--yellow_x);
+	--color-yellow: var(--yellow);
+	--color-orange-rgb: var(--orange_x);
+	--color-orange: var(--orange);
+	/* --color-pink:                    var(--purple); */
+
+	--background-primary: var(--dark0);
+	--background-primary-alt: var(--dark0);
+	--background-secondary: var(--dark1);
+	--background-secondary-alt: var(--dark2);
+	--background-modifier-border: var(--dark2);
+
+	--cursor-line-background: var(--dark3);
+
+	--text-normal: var(--light2);
+	--text-faint: var(--light0);
+	--text-muted: var(--light1);
+
+	--link-url: var(--purple);
+
+	--h1-color: var(--orange);
+	--h2-color: var(--yellow);
+	--h3-color: var(--green);
+	--h4-color: var(--peach);
+	--h5-color: var(--frost0);
+	--h6-color: var(--frost3);
+
+	--text-highlight-bg: rgba(var(--red_x), 0.6);
+	--text-highlight-fg: #ffffff;
+
+	--text-accent: var(--red);
+	--text-accent-hover: var(--orange);
+
+	--tag-color: var(--red);
+	--tag-background: var(--dark2);
+	--tag-background-hover: var(--dark1);
+
+	--titlebar-text-color-focused: var(--red);
+
+	--inline-title-color: var(--red);
+
+	--bold-color: var(--orange);
+	--italic-color: var(--yellow);
+
+	--checkbox-color: var(--frost0);
+	--checkbox-color-hover: var(--frost0);
+	--checkbox-border-color: var(--frost0);
+	--checkbox-border-color-hover: var(--frost0);
+	--checklist-done-color: rgba(var(--light2_x), 0.5);
+
+	--table-header-background: var(--dark1);
+	--table-header-background-hover: var(--dark3);
+	--table-row-even-background: var(--dark2);
+	--table-row-odd-background: var(--dark3);
+	--table-row-background-hover: var(--dark3);
+
+	--text-selection: #7fd1de4d;
+	--flashing-background: rgba(var(--red_x), 0.3);
+
+	--code-normal: var(--frost1);
+	--code-background: var(--dark1);
+
+	--mermaid-note: var(--frost3);
+	--mermaid-loopline: var(--frost1);
+	--mermaid-exclude: var(--dark3);
+	--mermaid-seqnum: var(--dark0);
+
+	--icon-color-hover: var(--red);
+	--icon-color-focused: var(--frost2);
+
+	--nav-item-color-hover: var(--red);
+	--nav-item-color-active: var(--red);
+	--nav-file-tag: rgba(var(--yellow_x), 0.9);
+
+	--graph-line: var(--dark3);
+	--graph-node: var(--light3);
+	--graph-node-tag: var(--red);
+	--graph-node-attachment: var(--green);
+
+	--calendar-hover: var(--red);
+	--calendar-background-hover: var(--dark3);
+	--calendar-week: var(--yellow);
+	--calendar-today: var(--red);
+
+	--dataview-key: var(--text-faint);
+	--dataview-key-background: rgba(var(--frost2_x), 0.3);
+	--dataview-value: var(--text-faint);
+	--dataview-value-background: rgba(var(--red_x), 0.3);
+
+	--tab-text-color-focused-active: var(--frost2);
+	--tab-text-color-focused-active-current: var(--red);
+}
+
+.theme-light {
+	--color-red-rgb: var(--red_x);
+	--color-red: var(--red);
+	--color-purple-rgb: var(--purple_x);
+	--color-purple: var(--purple);
+	--color-green-rgb: var(--green_x);
+	--color-green: var(--green);
+	--color-cyan-rgb: var(--frost1_x);
+	--color-cyan: var(--frost1);
+	--color-blue-rgb: var(--frost3_x);
+	--color-blue: var(--frost3);
+	--color-yellow-rgb: var(--yellow_x);
+	--color-yellow: var(--yellow);
+	--color-orange-rgb: var(--orange_x);
+	--color-orange: var(--orange);
+	/* --color-pink:                    var(--purple); */
+
+	--background-primary: var(--light3);
+	--background-primary-alt: var(--light3);
+	--background-secondary: var(--light2);
+	--background-secondary-alt: var(--light1);
+	--background-modifier-border: var(--light1);
+
+	--cursor-line-background: var(--dark3);
+
+	--text-normal: var(--dark2);
+	--text-faint: var(--dark0);
+	--text-muted: var(--dark1);
+
+	--link-url: var(--purple);
+
+	--h1-color: var(--orange);
+	--h2-color: var(--yellow);
+	--h3-color: var(--green);
+	--h4-color: var(--peach);
+	--h5-color: var(--frost0);
+	--h6-color: var(--frost3);
+
+	--text-highlight-bg: rgba(var(--red_x), 0.6);
+	--text-highlight-fg: #ffffff;
+
+	--text-accent: var(--red);
+	--text-accent-hover: var(--orange);
+
+	--tag-color: var(--dark3);
+	--tag-background: var(--light1);
+	--tag-background-hover: var(--light0);
+
+	--titlebar-text-color-focused: var(--red);
+
+	--inline-title-color: var(--red);
+
+	--bold-color: var(--orange);
+	--italic-color: var(--orange);
+
+	--checkbox-color: var(--frost2);
+	--checkbox-color-hover: var(--frost2);
+	--checkbox-border-color: var(--frost2);
+	--checkbox-border-color-hover: var(--frost2);
+	--checklist-done-color: rgba(var(--dark2_x), 0.4);
+
+	--table-header-background: rgba(var(--light2_x), 0.2);
+	--table-header-background-hover: var(--frost2);
+	--table-row-even-background: rgba(var(--light2_x), 0.4);
+	--table-row-odd-background: rgba(var(--light2_x), 0.8);
+	--table-row-background-hover: var(--frost2);
+
+	--text-selection: #7fd1de4d;
+	--flashing-background: rgba(var(--red_x), 0.3);
+
+	--code-normal: var(--frost1);
+	--code-background: var(--light2);
+
+	--mermaid-note: var(--frost0);
+	--mermaid-loopline: var(--frost1);
+	--mermaid-exclude: var(--light0);
+	--mermaid-seqnum: var(--light0);
+
+	--icon-color-hover: var(--red);
+	--icon-color-focused: var(--frost3);
+
+	--nav-item-color-hover: var(--red);
+	--nav-item-color-active: var(--red);
+	--nav-file-tag: rgba(var(--orange_x), 0.9);
+
+	--graph-line: var(--light0);
+	--graph-node: var(--dark3);
+	--graph-node-tag: var(--red);
+	--graph-node-attachment: var(--green);
+
+	--calendar-hover: var(--red);
+	--calendar-background-hover: var(--light0);
+	--calendar-week: var(--orange);
+	--calendar-today: var(--red);
+
+	--dataview-key: var(--text-faint);
+	--dataview-key-background: rgba(var(--frost2_x), 0.3);
+	--dataview-value: var(--text-faint);
+	--dataview-value-background: rgba(var(--red_x), 0.3);
+
+	--tab-text-color-focused-active: var(--frost2);
+	--tab-text-color-focused-active-current: var(--red);
+}
+
+table {
+	border: 1px solid var(--background-secondary) !important;
+	border-collapse: collapse;
+}
+
+thead {
+	border-bottom: 2px solid var(--background-modifier-border) !important;
+}
+
+th {
+	font-weight: 600 !important;
+	border: 1px solid var(--background-secondary) !important;
+}
+
+td {
+	border-left: 1px solid var(--background-secondary) !important;
+	border-right: 1px solid var(--background-secondary) !important;
+	border-bottom: 1px solid var(--background-secondary) !important;
+}
+
+.markdown-rendered tbody tr:nth-child(even) {
+	background-color: var(--table-row-even-background) !important;
+}
+
+.markdown-rendered tbody tr:nth-child(odd) {
+	background-color: var(--table-row-odd-background) !important;
+}
+
+.markdown-rendered tbody tr:nth-child(even):hover,
+.markdown-rendered tbody tr:nth-child(odd):hover {
+	background-color: var(--table-row-background-hover) !important;
+}
+
+.markdown-rendered mark {
+	background-color: var(--text-highlight-bg);
+	color: var(--text-highlight-fg) !important;
+}
+
+.markdown-rendered mark *,
+.markdown-rendered mark strong,
+.markdown-rendered mark em {
+	color: var(--text-highlight-fg) !important;
+}
+
+.markdown-rendered mark a {
+	color: var(--text-highlight-fg) !important;
+	font-weight: 600;
+}
+
+.search-result-file-matched-text {
+	color: var(--text-highlight-fg) !important;
+}
+
+.cm-hashtag-begin:hover,
+.cm-hashtag-end:hover {
+	color: var(--text-accent);
+	/* background-color: var(--tag-background-hover); */
+	text-decoration: underline;
+}
+
+input[type=checkbox] {
+	border: 1px solid var(--checkbox-color);
+}
+
+input[type=checkbox]:checked {
+	background-color: var(--checkbox-color);
+	box-shadow: inset 0 0 0 2px var(--background-primary);
+}
+
+input[type=checkbox]:checked:after {
+	display: none;
+}
+
+code[class*="language-"],
+pre[class*="language-"] {
+	line-height: var(--line-height-tight) !important;
+}
+
+.cm-url {
+	color: var(--link-url) !important;
+}
+
+.cm-url:hover {
+	color: var(--text-accent-hover) !important;
+}
+
+/* Keep highlight/marks the same between viewer and editor. */
+.cm-highlight {
+	color: var(--text-highlight-fg) !important;
+	background-color: var(--text-highlight-bg) !important;
+}
+
+/* Keep inline code the same between viewer and editor. */
+.cm-inline-code {
+	border-radius: var(--radius-s);
+	font-size: var(--code-size);
+	padding: 0.1em 0.25em;
+}
+
+.cm-formatting-code+.cm-inline-code {
+	border-radius: 0;
+	padding: 0.1em 0;
+}
+
+.cm-formatting-code {
+	border-radius: var(--radius-s) 0 0 var(--radius-s);
+	padding: 0.1em 0 0.1em 0.25em;
+}
+
+.cm-inline-code+.cm-formatting-code {
+	border-radius: 0 var(--radius-s) var(--radius-s) 0;
+	padding: 0.1em 0.25em 0.1em 0;
+}
+
+.cm-line .cm-strong {
+	color: var(--bold-color) !important;
+}
+
+.cm-line .cm-em {
+	color: var(--italic-color) !important;
+}
+
+/* Keep highlighted text white even when link, bold, or italic token styles apply. */
+.cm-line .cm-highlight,
+.cm-line .cm-highlight * {
+	color: var(--text-highlight-fg) !important;
+}
+
+/*
+ * Keep list bullet padding the same between viewer and editor.
+ * This is annoying with the cursor in the editor as there is a gap.
+ */
+/*
+.cm-formatting-list
+{
+     padding-right: 4px !important;
+}
+*/
+
+/*
+ * Keep sub-list indenting the same between viewer and editor.
+ * This assumes --list-indent is default at 2em.
+ */
+/*
+.cm-indent 
+{
+    text-indent: 1em !important;
+}
+*/
+
+.mermaid .note {
+	fill: var(--mermaid-note) !important;
+}
+
+.mermaid .loopLine,
+{
+stroke: var(--mermaid-loopline) !important;
+}
+
+.mermaid .loopText>tspan,
+.mermaid .entityLabel {
+	fill: var(--red) !important;
+}
+
+.mermaid .exclude-range {
+	fill: var(--mermaid-exclude) !important;
+}
+
+.mermaid .sequenceNumber {
+	fill: var(--mermaid-seqnum) !important;
+}
+
+.calendar .week-num {
+	color: var(--calendar-week) !important;
+}
+
+.calendar .today {
+	color: var(--calendar-today) !important;
+}
+
+.calendar .week-num:hover,
+.calendar .day:hover {
+	color: var(--calendar-hover) !important;
+	background-color: var(--calendar-background-hover) !important;
+}
+
+.markdown-embed-title {
+	color: var(--yellow);
+	font-weight: 600 !important;
+}
+
+.cm-active {
+	background-color: var(--cursor-line-background) !important;
+}
+
+.nav-file-tag {
+	color: var(--nav-file-tag) !important;
+}
+
+.is-flashing {
+	background-color: var(--flashing-background) !important;
+}
+
+.dataview.inline-field-key {
+	border-top-left-radius: var(--radius-s);
+	border-bottom-left-radius: var(--radius-s);
+	padding-left: 4px;
+	font-family: var(--font-monospace);
+	font-size: var(--font-smaller);
+	color: var(--dataview-key) !important;
+	background-color: var(--dataview-key-background) !important;
+}
+
+.dataview.inline-field-value {
+	border-top-right-radius: var(--radius-s);
+	border-bottom-right-radius: var(--radius-s);
+	padding-right: 4px;
+	font-family: var(--font-monospace);
+	font-size: var(--font-smaller);
+	color: var(--dataview-value) !important;
+	background-color: var(--dataview-value-background) !important;
+}
+
+.suggestion-highlight {
+	color: var(--red);
+}
+
+/* Compatibility hooks for recent Obsidian selectors so the original Nord color roles still show up. */
+.view-header-title,
+.inline-title {
+	color: var(--inline-title-color) !important;
+}
+
+.markdown-rendered strong {
+	color: var(--bold-color);
+}
+
+.markdown-rendered em {
+	color: var(--italic-color);
+}
+
+.tree-item-self.is-active .tree-item-inner,
+.tree-item-self.is-active .tree-item-icon,
+.nav-file-title.is-active,
+.nav-folder-title.is-active {
+	color: var(--nav-item-color-active) !important;
+}
+
+.workspace-tab-header.is-active .workspace-tab-header-inner-title,
+.workspace-tab-header.is-active .workspace-tab-header-inner-icon {
+	color: var(--tab-text-color-focused-active-current) !important;
+}

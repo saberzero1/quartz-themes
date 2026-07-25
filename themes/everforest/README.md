@@ -1,7 +1,7 @@
 # Everforest
 
 - Theme: Everforest
-- Author: MrGlitchByte
+- Author: 0xglitchbyte
 
 ## Preview
 

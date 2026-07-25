@@ -1,0 +1,280 @@
+/* =============================================================
+   AwareAI — an Obsidian theme
+   Built from the AwareAI Design System (Colors & Type).
+
+   Dark theme is the canonical brand surface: deep navy with a
+   red accent and the "Signal" accent palette. A light variant
+   is provided that keeps the red accent over warm off-white.
+   ============================================================= */
+
+/* ─── Brand fonts ───────────────────────────────────────────
+   Plus Jakarta Sans (interface + text) and JetBrains Mono (code)
+   are used if installed on the system. Drop the .ttf files into a
+   `fonts/` folder beside this file and uncomment the @font-face
+   blocks below to bundle them with the theme. */
+
+/*
+@font-face { font-family: 'Plus Jakarta Sans'; src: url('fonts/PlusJakartaSans-Regular.ttf') format('truetype'); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Plus Jakarta Sans'; src: url('fonts/PlusJakartaSans-Medium.ttf') format('truetype'); font-weight: 500; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Plus Jakarta Sans'; src: url('fonts/PlusJakartaSans-SemiBold.ttf') format('truetype'); font-weight: 600; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Plus Jakarta Sans'; src: url('fonts/PlusJakartaSans-Bold.ttf') format('truetype'); font-weight: 700; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Plus Jakarta Sans'; src: url('fonts/PlusJakartaSans-ExtraBold.ttf') format('truetype'); font-weight: 800; font-style: normal; font-display: swap; }
+*/
+
+/* =============================================================
+   GLOBAL TOKENS (apply to both color schemes)
+   ============================================================= */
+body {
+  /* Type families */
+  --font-text-theme:      'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-interface-theme: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-monospace-theme: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+
+  /* Headings use the display family, tight tracking, heavy weight */
+  --h1-weight: 800;
+  --h2-weight: 800;
+  --h3-weight: 700;
+  --h4-weight: 700;
+  --h5-weight: 600;
+  --h6-weight: 600;
+  --heading-spacing: -0.02em;
+  --bold-weight: 700;
+
+  /* Radii (from the design system scale) */
+  --radius-s: 6px;
+  --radius-m: 8px;
+  --radius-l: 12px;
+  --radius-xl: 16px;
+
+  /* Body rhythm */
+  --line-height-normal: 1.625;
+  --line-height-tight: 1.1;
+  --font-text-size: 16px;
+
+  /* Code */
+  --code-size: 0.8125em;
+  --code-radius: var(--radius-m);
+}
+
+/* =============================================================
+   DARK — the canonical AwareAI surface
+   ============================================================= */
+.theme-dark {
+  /* Accent = AwareAI red (#C4261F) expressed as HSL components */
+  --accent-h: 3;
+  --accent-s: 73%;
+  --accent-l: 44%;
+
+  /* Navy scale → Obsidian base ramp (00 = deepest bg, 100 = brightest text) */
+  --color-base-00: #020C1B;   /* --bg            page background */
+  --color-base-05: #06101F;
+  --color-base-10: #0A1628;   /* --surface       cards, panels */
+  --color-base-15: #101D33;
+  --color-base-20: #162342;   /* --border        dividers */
+  --color-base-25: #1D2C51;
+  --color-base-30: #243860;   /* --border-hover  */
+  --color-base-35: #2E4670;
+  --color-base-40: #3D5070;   /* --muted         placeholders */
+  --color-base-50: #566B8C;
+  --color-base-60: #7085A3;
+  --color-base-70: #94AABF;   /* --fg-secondary  body copy */
+  --color-base-100: #EEF2FF;  /* --fg-primary    headings */
+
+  /* Signal accent palette → semantic colors (callouts, tags, syntax) */
+  --color-red:    #F87171;
+  --color-orange: #FF5A3C;
+  --color-yellow: #FBBF24;
+  --color-green:  #4ADE80;
+  --color-cyan:   #5EEAD4;
+  --color-blue:   #60A5FA;
+  --color-purple: #A78BFA;
+  --color-pink:   #F472B6;
+
+  /* Surfaces */
+  --background-primary:        var(--color-base-00);
+  --background-primary-alt:    var(--color-base-05);
+  --background-secondary:      var(--color-base-10);
+  --background-secondary-alt:  var(--color-base-15);
+
+  --background-modifier-border:        var(--color-base-20);
+  --background-modifier-border-hover:  var(--color-base-30);
+  --background-modifier-border-focus:  hsl(var(--accent-h), var(--accent-s), 48%);
+  --background-modifier-hover:         var(--color-base-15);
+  --background-modifier-active-hover:  var(--color-base-20);
+
+  /* Text */
+  --text-normal:   var(--color-base-100);
+  --text-muted:    var(--color-base-70);
+  --text-faint:    var(--color-base-50);
+  --text-on-accent: #FFFFFF;
+  --text-selection: rgba(196, 38, 31, 0.28);
+  --text-highlight-bg: rgba(251, 191, 36, 0.30);
+
+  --text-accent:        var(--aw-red);
+  --text-accent-hover:  var(--aw-red-hover);
+
+  /* Interactive / accent */
+  --aw-red:        #C4261F;
+  --aw-red-hover:  #E53535;
+  --interactive-accent:        var(--aw-red);
+  --interactive-accent-hover:  var(--aw-red-hover);
+  --interactive-normal:        var(--color-base-10);
+  --interactive-hover:         var(--color-base-20);
+
+  /* Headings stay crisp white */
+  --h1-color: var(--color-base-100);
+  --h2-color: var(--color-base-100);
+  --h3-color: var(--color-base-100);
+  --h4-color: var(--color-base-100);
+
+  /* Structural details */
+  --hr-color:                  var(--color-base-25);
+  --blockquote-border-color:   var(--aw-red);
+  --blockquote-background-color: var(--color-base-05);
+  --code-background:           var(--color-base-15);
+  --code-normal:               var(--color-base-70);
+
+  --scrollbar-thumb-bg:        var(--color-base-30);
+  --scrollbar-active-thumb-bg: var(--color-base-40);
+  --scrollbar-bg:              transparent;
+
+  /* Shadows (from the design system elevation tokens) */
+  --shadow-s: 0 4px 12px -4px rgba(0, 0, 0, 0.5);
+  --shadow-l: 0 24px 48px -12px rgba(0, 0, 0, 0.6);
+
+  --titlebar-background:        var(--color-base-00);
+  --titlebar-background-focused: var(--color-base-05);
+
+  /* Textures / orbs (from the design system, alpha baked in) */
+  --dot-grid:  radial-gradient(circle, rgba(238, 242, 255, 0.035) 1px, transparent 1px);
+  --dot-size:  40px 40px;
+  --orb-red:   radial-gradient(60% 55% at 100% 0%, rgba(196, 38, 31, 0.12) 0%, transparent 70%);
+  --orb-navy:  radial-gradient(55% 50% at 0% 100%, rgba(36, 56, 96, 0.45) 0%, transparent 70%);
+}
+
+/* Glow on dark CTAs, matching --shadow-cta */
+.theme-dark .mod-cta {
+  box-shadow: 0 10px 24px -8px rgba(120, 15, 10, 0.5);
+}
+
+/* =============================================================
+   AMBIENT TEXTURE (dark only) — dot grid + red/navy orbs
+   Layered behind the note surface. The orbs are anchored to the
+   viewport so they stay put while content scrolls; the dot grid
+   sits on the static editor surface.
+   ============================================================= */
+.theme-dark .markdown-source-view,
+.theme-dark .markdown-reading-view,
+.theme-dark .view-content > .empty-state,
+.theme-dark .workspace-leaf-content[data-type="empty"] {
+  background-color: var(--background-primary);
+  background-image: var(--orb-red), var(--orb-navy), var(--dot-grid);
+  background-size: 100% 100%, 100% 100%, var(--dot-size);
+  background-position: top right, bottom left, 0 0;
+  background-repeat: no-repeat, no-repeat, repeat;
+  background-attachment: fixed, fixed, local;
+}
+
+/* =============================================================
+   LIGHT — keeps the red accent over warm off-white
+   ============================================================= */
+.theme-light {
+  --accent-h: 3;
+  --accent-s: 73%;
+  --accent-l: 42%;
+
+  --color-base-00: #FFFFFF;
+  --color-base-05: #F7F9FF;
+  --color-base-10: #EEF2FF;
+  --color-base-15: #E3E9F7;
+  --color-base-20: #D3DCEC;
+  --color-base-25: #C4CFE3;
+  --color-base-30: #B0BDD6;
+  --color-base-35: #93A3C0;
+  --color-base-40: #7085A3;
+  --color-base-50: #566B8C;
+  --color-base-60: #3D5070;
+  --color-base-70: #243860;
+  --color-base-100: #020C1B;
+
+  --color-red:    #C4261F;
+  --color-orange: #E0481F;
+  --color-yellow: #B45309;
+  --color-green:  #15803D;
+  --color-cyan:   #0E7490;
+  --color-blue:   #2563EB;
+  --color-purple: #7C3AED;
+  --color-pink:   #DB2777;
+
+  --background-primary:        var(--color-base-00);
+  --background-primary-alt:    var(--color-base-05);
+  --background-secondary:      var(--color-base-05);
+  --background-secondary-alt:  var(--color-base-10);
+
+  --background-modifier-border:        var(--color-base-20);
+  --background-modifier-border-hover:  var(--color-base-30);
+  --background-modifier-hover:         var(--color-base-10);
+
+  --text-normal:   var(--color-base-100);
+  --text-muted:    var(--color-base-60);
+  --text-faint:    var(--color-base-40);
+  --text-on-accent: #FFFFFF;
+  --text-selection: rgba(196, 38, 31, 0.18);
+
+  --aw-red:        #C4261F;
+  --aw-red-hover:  #A81E18;
+  --text-accent:        var(--aw-red);
+  --text-accent-hover:  var(--aw-red-hover);
+  --interactive-accent:        var(--aw-red);
+  --interactive-accent-hover:  var(--aw-red-hover);
+
+  --blockquote-border-color:   var(--aw-red);
+  --hr-color:                  var(--color-base-20);
+}
+
+/* =============================================================
+   SHARED POLISH
+   ============================================================= */
+
+/* Overline-style accent on the active file in the explorer */
+.nav-file-title.is-active,
+.nav-folder-title.is-active {
+  border-left: 2px solid var(--interactive-accent);
+}
+
+/* Tags echo the red overline treatment */
+.tag {
+  color: var(--interactive-accent);
+  background-color: transparent;
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 999px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+.tag:hover {
+  border-color: var(--interactive-accent);
+  background-color: rgba(196, 38, 31, 0.08);
+}
+
+/* Headings in the display family with brand tracking */
+.markdown-rendered h1,
+.markdown-rendered h2,
+.markdown-rendered h3,
+.cm-header {
+  font-family: var(--font-interface-theme);
+  letter-spacing: var(--heading-spacing);
+}
+
+/* Inline code + code blocks pick up the radius scale */
+.markdown-rendered code,
+.markdown-source-view.mod-cmirror .cm-inline-code {
+  border-radius: var(--radius-s);
+}
+
+/* Soften card-like surfaces */
+.workspace-leaf-content,
+.modal,
+.suggestion-container,
+.menu {
+  border-radius: var(--radius-l);
+}

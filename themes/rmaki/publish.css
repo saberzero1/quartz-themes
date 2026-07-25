@@ -1098,6 +1098,7 @@ body.theme-dark {
   --border: 0.5px solid hsl(246, 28%, 48%) !important;
   --black: hsl(240, 7%, 12%) !important;
   --tab-background: hsl(240, 7%, 7%) !important;
+  --text-mute: hsl(211, 19%, 60%) !important;
   --font: "Fira Code", monospace !important;
   --sidebar-background: hsl(240, 7%, 12%) !important;
   --black-dark-1: hsl(240, 7%, 7%) !important;
@@ -1139,7 +1140,6 @@ body.theme-dark {
   --s-white: 61% !important;
   --search-bar: hsl(240, 7%, 17%) !important;
   --search-hover: hsl(246, 28%, 48%) !important;
-  --text-mute: hsl(211, 19%, 60%) !important;
   --white-dark-1: hsl(212, 61%, 86%) !important;
   --white-dark-2: hsl(212, 61%, 81%) !important;
   --white-dark-3: hsl(211, 19%, 60%) !important;

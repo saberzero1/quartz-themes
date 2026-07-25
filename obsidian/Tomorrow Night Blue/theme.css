@@ -1,0 +1,258 @@
+/*
+Tomorrow Night Blue for Obsidian
+Matched to VS Code's bundled Tomorrow Night Blue theme.
+*/
+
+:root {
+  --tnb-bg: #002451;
+  --tnb-bg-alt: #001c40;
+  --tnb-bg-deep: #001126;
+  --tnb-bg-input: #001733;
+  --tnb-bg-soft: #00346e;
+  --tnb-bg-selection: #003f8e;
+  --tnb-border: #404f7d;
+  --tnb-border-muted: #404f7d;
+  --tnb-widget-border: #ffffff44;
+
+  --tnb-text: #ffffff;
+  --tnb-text-soft: #ffffff;
+  --tnb-text-muted: #bbdaff;
+  --tnb-text-faint: #7285B7;
+  --tnb-line-number: #949494;
+
+  --tnb-blue: #bbdaff;
+  --tnb-cyan: #99ffff;
+  --tnb-green: #d1f1a9;
+  --tnb-yellow: #ffeead;
+  --tnb-orange: #ffc58f;
+  --tnb-red: #ff9da4;
+  --tnb-purple: #ebbbff;
+  --tnb-error: #a92049;
+
+  --tnb-hover: #ffffff30;
+  --tnb-selection-active: #ffffff60;
+  --tnb-selection-inactive: #ffffff40;
+}
+
+body {
+  --accent-h: 210;
+  --accent-s: 100%;
+  --accent-l: 73%;
+  --font-text-theme: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-monospace-theme: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+  --radius-s: 3px;
+  --radius-m: 4px;
+  --radius-l: 6px;
+  --tab-radius-active: 4px 4px 0 0;
+  --checkbox-radius: 3px;
+  --link-decoration: none;
+  --link-decoration-hover: underline;
+  --link-external-decoration: none;
+  --link-external-decoration-hover: underline;
+}
+
+.theme-dark {
+  color-scheme: dark;
+
+  --color-base-00: var(--tnb-bg-deep);
+  --color-base-05: var(--tnb-bg-deep);
+  --color-base-10: var(--tnb-bg-input);
+  --color-base-20: var(--tnb-bg-alt);
+  --color-base-25: var(--tnb-bg);
+  --color-base-30: var(--tnb-border-muted);
+  --color-base-35: var(--tnb-border);
+  --color-base-40: var(--tnb-border);
+  --color-base-50: var(--tnb-text-faint);
+  --color-base-60: var(--tnb-line-number);
+  --color-base-70: var(--tnb-text-muted);
+  --color-base-100: var(--tnb-text);
+
+  --background-primary: var(--tnb-bg);
+  --background-primary-alt: var(--tnb-bg-soft);
+  --background-secondary: var(--tnb-bg-alt);
+  --background-secondary-alt: var(--tnb-bg-input);
+  --background-modifier-hover: var(--tnb-hover);
+  --background-modifier-active-hover: var(--tnb-selection-active);
+  --background-modifier-border: var(--tnb-border-muted);
+  --background-modifier-border-hover: var(--tnb-border);
+  --background-modifier-border-focus: var(--tnb-blue);
+  --background-modifier-form-field: var(--tnb-bg-input);
+  --background-modifier-form-field-highlighted: var(--tnb-bg-input);
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.35);
+  --background-modifier-cover: rgba(0, 17, 38, 0.82);
+
+  --text-normal: var(--tnb-text);
+  --text-muted: var(--tnb-line-number);
+  --text-faint: var(--tnb-text-faint);
+  --text-accent: var(--tnb-blue);
+  --text-accent-hover: var(--tnb-cyan);
+  --text-selection: var(--tnb-bg-selection);
+  --text-highlight-bg: var(--tnb-selection-inactive);
+  --text-highlight-fg: var(--tnb-text);
+  --text-error: var(--tnb-error);
+  --text-warning: var(--tnb-orange);
+  --text-success: var(--tnb-green);
+
+  --interactive-normal: var(--tnb-bg-input);
+  --interactive-hover: var(--tnb-hover);
+  --interactive-accent: var(--tnb-blue);
+  --interactive-accent-hover: rgba(187, 218, 255, 0.8);
+  --interactive-accent-rgb: 187, 218, 255;
+  --interactive-success: var(--tnb-green);
+
+  --icon-color: var(--tnb-line-number);
+  --icon-color-hover: var(--tnb-text);
+  --icon-color-active: var(--tnb-blue);
+  --icon-color-focused: var(--tnb-cyan);
+
+  --titlebar-background: var(--tnb-bg-deep);
+  --titlebar-background-focused: var(--tnb-bg-deep);
+  --titlebar-text-color: var(--tnb-text-muted);
+  --titlebar-text-color-focused: var(--tnb-text);
+
+  --tab-background-active: var(--tnb-bg);
+  --tab-background: var(--tnb-bg-alt);
+  --tab-background-inactive: var(--tnb-bg-alt);
+  --tab-text-color: var(--tnb-line-number);
+  --tab-text-color-active: var(--tnb-text);
+  --tab-text-color-focused-active: var(--tnb-text);
+  --tab-outline-color: var(--tnb-border-muted);
+  --tab-container-background: var(--tnb-bg-input);
+
+  --nav-item-color: var(--tnb-line-number);
+  --nav-item-color-hover: var(--tnb-text);
+  --nav-item-color-active: var(--tnb-text);
+  --nav-item-background-hover: var(--tnb-hover);
+  --nav-item-background-active: var(--tnb-selection-active);
+  --nav-indentation-guide-color: var(--tnb-border);
+
+  --link-color: var(--tnb-blue);
+  --link-color-hover: var(--tnb-cyan);
+  --link-unresolved-color: var(--tnb-purple);
+  --link-unresolved-opacity: 0.8;
+  --link-external-color: var(--tnb-cyan);
+  --link-external-color-hover: var(--tnb-blue);
+
+  --h1-color: var(--tnb-blue);
+  --h2-color: var(--tnb-cyan);
+  --h3-color: var(--tnb-green);
+  --h4-color: var(--tnb-yellow);
+  --h5-color: var(--tnb-orange);
+  --h6-color: var(--tnb-purple);
+  --inline-title-color: var(--tnb-text);
+  --hr-color: var(--tnb-border-muted);
+
+  --blockquote-border-color: var(--tnb-blue);
+  --blockquote-color: var(--tnb-text-soft);
+  --embed-border-left: 3px solid var(--tnb-border);
+
+  --tag-color: var(--tnb-cyan);
+  --tag-color-hover: var(--tnb-text);
+  --tag-background: rgba(153, 255, 255, 0.1);
+  --tag-background-hover: rgba(153, 255, 255, 0.18);
+  --tag-border-color: rgba(153, 255, 255, 0.18);
+  --tag-border-color-hover: rgba(153, 255, 255, 0.35);
+
+  --code-normal: var(--tnb-text-soft);
+  --code-background: var(--tnb-bg-alt);
+  --code-comment: var(--tnb-text-faint);
+  --code-function: var(--tnb-blue);
+  --code-important: var(--tnb-orange);
+  --code-keyword: var(--tnb-purple);
+  --code-operator: var(--tnb-cyan);
+  --code-property: var(--tnb-blue);
+  --code-punctuation: var(--tnb-text-muted);
+  --code-string: var(--tnb-green);
+  --code-tag: var(--tnb-red);
+  --code-value: var(--tnb-orange);
+
+  --table-header-background: var(--tnb-bg-input);
+  --table-header-background-hover: var(--tnb-bg-soft);
+  --table-row-background-hover: var(--tnb-hover);
+  --table-border-color: var(--tnb-border-muted);
+  --table-text-color: var(--tnb-text-soft);
+
+  --checkbox-color: var(--tnb-blue);
+  --checkbox-color-hover: var(--tnb-cyan);
+  --checkbox-border-color: var(--tnb-text-faint);
+  --checkbox-border-color-hover: var(--tnb-blue);
+  --checklist-done-color: var(--tnb-text-faint);
+  --checklist-done-decoration: line-through;
+
+  --callout-default: 187, 218, 255;
+  --callout-info: 153, 255, 255;
+  --callout-tip: 209, 241, 169;
+  --callout-success: 209, 241, 169;
+  --callout-question: 255, 238, 173;
+  --callout-warning: 255, 197, 143;
+  --callout-fail: 169, 32, 73;
+  --callout-error: 169, 32, 73;
+  --callout-bug: 169, 32, 73;
+  --callout-example: 235, 187, 255;
+  --callout-quote: 157, 180, 216;
+
+  --graph-node: var(--tnb-blue);
+  --graph-node-focused: var(--tnb-cyan);
+  --graph-node-tag: var(--tnb-purple);
+  --graph-node-attachment: var(--tnb-green);
+  --graph-line: rgba(187, 218, 255, 0.35);
+}
+
+.theme-dark .workspace-ribbon,
+.theme-dark .workspace-sidedock-vault-profile,
+.theme-dark .status-bar {
+  background-color: var(--tnb-bg-deep);
+  border-color: var(--tnb-border-muted);
+}
+
+.theme-dark .workspace-tab-header-container,
+.theme-dark .mod-top .workspace-tab-header-container {
+  background-color: var(--tnb-bg-input);
+}
+
+.theme-dark .workspace-split.mod-root {
+  background-color: var(--tnb-bg);
+}
+
+.theme-dark .workspace-split.mod-sidedock {
+  background-color: var(--tnb-bg-alt);
+}
+
+.theme-dark .workspace-leaf.mod-active .view-header {
+  border-bottom-color: var(--tnb-blue);
+}
+
+.theme-dark .nav-file-title.is-active,
+.theme-dark .nav-folder-title.is-active,
+.theme-dark .tree-item-self.is-active {
+  box-shadow: inset 2px 0 0 var(--tnb-blue);
+}
+
+.theme-dark .markdown-source-view.mod-cm6 .cm-active.cm-line,
+.theme-dark .markdown-source-view.mod-cm6 .cm-active.HyperMD-codeblock,
+.theme-dark .markdown-source-view.mod-cm6 .cm-active.HyperMD-quote {
+  background-color: var(--tnb-bg-soft);
+}
+
+.theme-dark .markdown-rendered code,
+.theme-dark .cm-inline-code {
+  border: 1px solid var(--tnb-border);
+}
+
+.theme-dark .markdown-rendered pre,
+.theme-dark .HyperMD-codeblock-bg {
+  border: 1px solid var(--tnb-border);
+}
+
+.theme-dark .suggestion-container,
+.theme-dark .modal,
+.theme-dark .menu {
+  background-color: var(--tnb-bg-alt);
+  border: 1px solid var(--tnb-widget-border);
+}
+
+.theme-dark .suggestion-item.is-selected,
+.theme-dark .menu-item:hover {
+  background-color: var(--tnb-selection-active);
+  color: var(--tnb-text);
+}

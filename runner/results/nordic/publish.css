@@ -1160,17 +1160,16 @@ body.theme-light {
   --h6-color: var(--header-color) !important;
   --inline-title-color: var(--accent-color) !important;
   --table-header-background-hover: rgba(var(--mono-rgb-0), 10%) !important;
+  --inline-title-font: var(--header-font) !important;
   --accent-color: hsl(
     var(--accent-h),
     var(--accent-s),
     var(--accent-l)
   ) !important;
-  --inline-title-font: var(--header-font) !important;
   --table-header-font: var(--header-font) !important;
   --frost0: #8fbcbb !important;
   --frost2: #81a1c1 !important;
   --header-font: "Norwester" !important;
-  --header-color: var(--accent-color) !important;
   --dark0: #2e3440 !important;
   --dark1: #3b4252 !important;
   --dark2: #434c5e !important;
@@ -1181,6 +1180,7 @@ body.theme-light {
   --light1: #e5e9f0 !important;
   --light2: #eceff4 !important;
   --light3: #ffffff !important;
+  --header-color: var(--accent-color) !important;
   --statblock-background-color: rgba(var(--mono-rgb-100), 0.05) !important;
   --statblock-bar-color: var(--frost3) !important;
   --statblock-border-color: var(--light2) !important;

@@ -1,0 +1,340 @@
+/*
+ * Obsidian Theme: LatteLogic
+ *
+ * Design Philosophy:
+ * 1. Structure-first Markdown hierarchy.
+ * 2. Warm light mode and calm dark mode for long writing sessions.
+ * 3. Consistent Reading, Live Preview, and Source mode behavior.
+ * 4. User accent and font settings stay under Obsidian's Appearance panel.
+ */
+
+/* ==========================================================================
+   1. Theme Variables (Backgrounds & Basics)
+   ========================================================================== */
+.theme-dark {
+	--background-primary: #24273a;
+	--background-primary-alt: #1e2030;
+	--background-secondary: #181926;
+	--background-secondary-alt: #181926;
+	--background-modifier-border: #363a4f;
+	--background-modifier-hover: rgba(202, 211, 245, 0.1);
+	--background-modifier-active-hover: rgba(202, 211, 245, 0.15);
+
+	--text-normal: #cad3f5;
+	--text-muted: #939ab7;
+	--text-faint: #5b6078;
+
+	--code-background: #1e2030;
+	--code-normal: #cad3f5;
+
+	/* Custom features colors */
+	--table-header-bg: #363a4f;
+	--table-row-alt-bg: #2a2d3e;
+	--tag-bg: #363a4f;
+	--active-line-bg: rgba(138, 173, 244, 0.08); /* Faint accent tint */
+}
+
+.theme-light {
+	--background-primary: #f5f0e8;
+	--background-primary-alt: #eee5d8;
+	--background-secondary: #eadfce;
+	--background-secondary-alt: #e3d5c0;
+	--background-modifier-border: #c9bba7;
+	--background-modifier-hover: rgba(95, 74, 55, 0.1);
+	--background-modifier-active-hover: rgba(95, 74, 55, 0.15);
+
+	--text-normal: #4d4036;
+	--text-muted: #7a6958;
+	--text-faint: #a99680;
+
+	--code-background: #eadfce;
+	--code-normal: #4d4036;
+
+	/* Custom features colors */
+	--table-header-bg: #e3d5c0;
+	--table-row-alt-bg: #fbf7f1;
+	--tag-bg: #eadfce;
+	--active-line-bg: rgba(140, 103, 72, 0.08); /* Faint accent tint */
+}
+
+/* ==========================================================================
+   2. Base Settings
+   ========================================================================== */
+body {
+	--font-text-size: 16px;
+	--line-height-normal: 1.6;
+	--latte-heading-radius: 0;
+	--latte-tag-radius: 0;
+	--latte-heading-padding-top: 0.2em;
+	--latte-heading-padding-bottom: 0.4em;
+
+	--radius-s: 4px;
+	--radius-m: 8px;
+}
+
+/* Cleaner Tabs */
+.workspace-tab-header.is-active::before,
+.workspace-tab-header.is-active::after {
+	display: none;
+}
+
+.workspace-tab-header.is-active {
+	background-color: var(--background-primary);
+	border-top: 3px solid var(--interactive-accent);
+	font-weight: 600;
+}
+
+/* ==========================================================================
+   3. Header Styles (Reading Mode & Live Preview)
+   ========================================================================== */
+
+:is(
+	.markdown-preview-view h1,
+	.markdown-preview-view h2,
+	.markdown-preview-view h3,
+	.markdown-preview-view h4,
+	.markdown-preview-view h5,
+	.markdown-preview-view h6,
+	.markdown-source-view.mod-cm6.is-live-preview .cm-line.HyperMD-header
+) {
+	border-left-style: solid;
+	border-top: none;
+	box-sizing: border-box;
+	margin-left: 0;
+	padding-top: var(--latte-heading-padding-top);
+	padding-bottom: var(--latte-heading-padding-bottom);
+	margin-top: 1.5em;
+	line-height: 1.3;
+	transition:
+		background-color 0.2s ease,
+		border-color 0.2s ease;
+	border-radius: var(--latte-heading-radius);
+}
+
+/* H1 (Title) */
+:is(
+	.markdown-preview-view h1,
+	.markdown-source-view.mod-cm6.is-live-preview .cm-line.HyperMD-header-1
+) {
+	font-size: 1.8em;
+	font-weight: 700;
+	color: var(--text-normal);
+	border-left-width: 8px;
+	border-left-color: var(--interactive-accent);
+	padding-left: 0.5em;
+	border-bottom: 2px solid var(--background-modifier-border);
+}
+
+/* H2 (Chapter) */
+:is(
+	.markdown-preview-view h2,
+	.markdown-source-view.mod-cm6.is-live-preview .cm-line.HyperMD-header-2
+) {
+	font-size: 1.6em;
+	font-weight: 600;
+	color: var(--text-normal);
+	border-left-width: 6px;
+	border-left-color: var(--interactive-accent);
+	margin-top: 2em;
+	padding-left: 0.8em;
+	border-bottom: 1px solid var(--background-modifier-border);
+}
+
+/* H3 (Section) */
+:is(
+	.markdown-preview-view h3,
+	.markdown-source-view.mod-cm6.is-live-preview .cm-line.HyperMD-header-3
+) {
+	font-size: 1.4em;
+	font-weight: 600;
+	color: var(--text-normal);
+	border-left-width: 4px;
+	border-left-color: var(--interactive-accent);
+	padding-left: 1.1em;
+	border-bottom: 1px dotted var(--text-faint);
+}
+
+/* H4 - H6 (Subsections) */
+:is(
+	.markdown-preview-view h4,
+	.markdown-source-view.mod-cm6.is-live-preview .cm-line.HyperMD-header-4
+) {
+	font-size: 1.2em;
+	font-weight: 600;
+	color: var(--text-normal);
+	border-left-width: 3px;
+	border-left-color: var(--text-faint);
+	padding-left: 1.4em;
+	border-bottom: 1px dotted var(--text-faint);
+}
+:is(
+	.markdown-preview-view h5,
+	.markdown-source-view.mod-cm6.is-live-preview .cm-line.HyperMD-header-5
+) {
+	font-size: 1.1em;
+	color: var(--text-muted);
+	border-left-width: 2px;
+	border-left-color: var(--text-muted);
+	padding-left: 1.7em;
+}
+:is(
+	.markdown-preview-view h6,
+	.markdown-source-view.mod-cm6.is-live-preview .cm-line.HyperMD-header-6
+) {
+	font-size: 1em;
+	color: var(--text-muted);
+	border-left-width: 2px;
+	border-left-color: var(--text-muted);
+	padding-left: 2em;
+}
+
+/* Hover Gradient Effect */
+:is(
+	.markdown-preview-view h1,
+	.markdown-source-view.mod-cm6.is-live-preview .cm-line.HyperMD-header-1,
+	.markdown-preview-view h2,
+	.markdown-source-view.mod-cm6.is-live-preview .cm-line.HyperMD-header-2
+):hover {
+	background: linear-gradient(
+		to right,
+		var(--background-modifier-hover),
+		transparent
+	);
+}
+
+/* Mobile Responsiveness (Indents) */
+@media screen and (max-width: 768px) {
+	body {
+		--font-text-size: 15px;
+		--line-height-normal: 1.55;
+		--latte-heading-padding-top: 0.16em;
+		--latte-heading-padding-bottom: 0.32em;
+	}
+
+	:is(
+		.markdown-preview-view h1,
+		.markdown-source-view.mod-cm6.is-live-preview .cm-line.HyperMD-header-1
+	) {
+		font-size: 1.55em;
+		padding-left: 0.3em;
+		border-left-width: 6px;
+	}
+	:is(
+		.markdown-preview-view h2,
+		.markdown-source-view.mod-cm6.is-live-preview .cm-line.HyperMD-header-2
+	) {
+		font-size: 1.35em;
+		padding-left: 0.4em;
+		border-left-width: 5px;
+	}
+	:is(
+		.markdown-preview-view h3,
+		.markdown-source-view.mod-cm6.is-live-preview .cm-line.HyperMD-header-3
+	) {
+		font-size: 1.2em;
+		padding-left: 0.5em;
+		border-left-width: 4px;
+	}
+	:is(
+		.markdown-preview-view h4,
+		.markdown-source-view.mod-cm6.is-live-preview .cm-line.HyperMD-header-4
+	) {
+		font-size: 1.1em;
+		padding-left: 0.6em;
+		border-left-width: 3px;
+	}
+}
+
+/* ==========================================================================
+   4. Source Mode Improvements (可読性向上)
+   ========================================================================== */
+
+/* Source mode keeps hierarchy visible without preview-only decoration. */
+.markdown-source-view.mod-cm6:not(.is-live-preview) .cm-line.HyperMD-header {
+	background-color: var(
+		--background-secondary-alt
+	);
+	color: var(--interactive-accent);
+	font-weight: 600;
+	border-left: none;
+	padding-left: 0.5em;
+	margin-left: 0;
+	border-bottom: none;
+	border-radius: var(--latte-heading-radius);
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+}
+
+/* ==========================================================================
+   5. Common Theme Features (工夫機能)
+   ========================================================================== */
+
+/* List bullets stay quiet so headings remain the primary visual signal. */
+.markdown-source-view.mod-cm6 .cm-line .list-bullet::after,
+.markdown-preview-view .list-bullet::after {
+	background-color: var(--text-muted);
+}
+
+/* Active Line Highlight */
+.cm-active {
+	background-color: var(--active-line-bg);
+}
+
+/* Styled Tables */
+.markdown-preview-view table,
+.markdown-source-view table {
+	border-collapse: collapse;
+	margin-bottom: 1em;
+}
+.markdown-preview-view th,
+.markdown-source-view th {
+	background-color: var(--table-header-bg);
+	font-weight: 600;
+	border: 1px solid var(--background-modifier-border);
+}
+.markdown-preview-view td,
+.markdown-source-view td {
+	border: 1px solid var(--background-modifier-border);
+}
+.markdown-preview-view tr:nth-child(even),
+.markdown-source-view tr:nth-child(even) {
+	background-color: var(--table-row-alt-bg);
+}
+
+/* Styled Tags */
+a.tag {
+	background-color: var(--tag-bg);
+	border: 1px solid var(--background-modifier-border);
+	color: var(--text-normal);
+	padding: 0px 6px;
+	border-radius: var(--latte-tag-radius); /* Sharp corners for tags too */
+	font-size: 0.9em;
+	text-decoration: none;
+}
+a.tag:hover {
+	background-color: var(--interactive-accent);
+	color: #fff;
+	border-color: var(--interactive-accent);
+}
+
+/* Blockquotes and callouts keep the same structural accent language. */
+.markdown-source-view.mod-cm6 .HyperMD-quote,
+.markdown-preview-view blockquote,
+.callout {
+	border-left: 3px solid var(--interactive-accent);
+	background-color: var(--background-secondary-alt);
+	border-radius: var(--latte-heading-radius);
+	padding: 0.5em 1em;
+}
+
+.callout-title {
+	color: var(--text-normal);
+}
+
+/* Completed Checkboxes (Dimmed) */
+.markdown-preview-view .task-list-item.is-checked,
+.markdown-source-view .HyperMD-task-line[data-task="x"] {
+	color: var(--text-muted);
+	text-decoration: line-through;
+	opacity: 0.8;
+}

@@ -1462,11 +1462,11 @@ body.theme-light {
   --text-title-h4: #ffffff !important;
   --text-title-h5: #ffffff !important;
   --text-title-h6: #ffffff !important;
+  --font-text-weight: 500 !important;
   --button-text-color: var(--umi-sand-bright) !important;
   --button-bg-color: rgba(122, 47, 24, 0.28) !important;
   --button-hover-bg-color: var(--umi-sand-bright) !important;
   --button-hover-text-color: var(--umi-ember) !important;
-  --font-text-weight: 500 !important;
   --umi-orange: #e05000 !important;
   --umi-orange-bright: #f15f0d !important;
   --umi-orange-deep: #c24400 !important;
@@ -2551,11 +2551,11 @@ body.theme-dark {
   --text-title-h4: #ebdbb2 !important;
   --text-title-h5: #d5c4a1 !important;
   --text-title-h6: #d5c4a1 !important;
+  --font-text-weight: 500 !important;
   --button-text-color: #fbf1c7 !important;
   --button-bg-color: var(--umi-charcoal-4) !important;
   --button-hover-bg-color: var(--umi-orange) !important;
   --button-hover-text-color: #1b1b1b !important;
-  --font-text-weight: 500 !important;
   --umi-ash: #d5c4a1 !important;
   --umi-charcoal-1: #2b2b2b !important;
   --umi-charcoal-2: #232323 !important;

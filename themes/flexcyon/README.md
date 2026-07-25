@@ -1,7 +1,7 @@
 # flexcyon
 
 - Theme: flexcyon
-- Author: bladeacer
+- Author: <a href="https://bladeacer.gitlab.io/portfolio" target="_blank" rel="noopener noreferrer">bladeacer</a>
 - Support the author: <a href="https://github.com/sponsors/bladeacer" target="_blank" rel="noopener noreferrer">Donate</a>
 
 ## Preview

@@ -1112,10 +1112,10 @@ body.theme-light {
   --text-title-h6: #640a0d !important;
   --vim-cursor: #ff3e3e !important;
   --inline-title-font: var(--font-text-headers) !important;
+  --tab-font-weight: bold !important;
   --nav-item-weight-active: bold !important;
   --nav-item-weight: bold !important;
   --nav-item-weight-hover: bold !important;
-  --tab-font-weight: bold !important;
   --text-white: #ffffff !important;
   --font-headers: var(--font-text-headers) !important;
   --font-code-blocks: "Anonymous-Pro-Regular", monospace !important;
@@ -2218,10 +2218,10 @@ body.theme-dark {
   --text-title-h6: #c7e7c7 !important;
   --vim-cursor: #c76cff !important;
   --inline-title-font: var(--font-text-headers) !important;
+  --tab-font-weight: bold !important;
   --nav-item-weight-active: bold !important;
   --nav-item-weight: normal !important;
   --nav-item-weight-hover: bold !important;
-  --tab-font-weight: bold !important;
   --font-headers: var(--font-text-headers) !important;
   --button-text-color: #d8d8d8 !important;
   --button-bg-color: #915cb2 !important;

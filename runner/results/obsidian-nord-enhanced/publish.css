@@ -1478,8 +1478,6 @@ body.theme-dark {
   --purple: #b48ead !important;
   --red: #bf616a !important;
   --yellow: #ebcb8b !important;
-  --selection-color: #e5e9f0 !important;
-  --main-color: #eceff4 !important;
   --dark0: #2e3440 !important;
   --dark1: #3b4252 !important;
   --dark2: #434c5e !important;
@@ -1490,6 +1488,8 @@ body.theme-dark {
   --light1: #e5e9f0 !important;
   --light2: #eceff4 !important;
   --light3: #ffffff !important;
+  --selection-color: #e5e9f0 !important;
+  --main-color: #eceff4 !important;
   --background-color: #2e3440 !important;
   --selection-background-color: #4c566a !important;
 }

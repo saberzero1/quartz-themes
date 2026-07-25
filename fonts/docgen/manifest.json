@@ -1,0 +1,76 @@
+{
+  "extractedAt": "2026-07-24T23:16:13.893Z",
+  "sourceTheme": "Docgen",
+  "fonts": [
+    {
+      "family": "Geist",
+      "style": "normal",
+      "weight": "400",
+      "file": "geist.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Geist",
+      "style": "normal",
+      "weight": "500",
+      "file": "geist-1.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Geist",
+      "style": "normal",
+      "weight": "600",
+      "file": "geist-2.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Geist",
+      "style": "normal",
+      "weight": "700",
+      "file": "geist-3.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Geist Mono",
+      "style": "normal",
+      "weight": "400",
+      "file": "geist-mono.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Geist Mono",
+      "style": "normal",
+      "weight": "500",
+      "file": "geist-mono-1.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Geist Mono",
+      "style": "normal",
+      "weight": "600",
+      "file": "geist-mono-2.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    }
+  ]
+}

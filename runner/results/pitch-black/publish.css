@@ -1431,12 +1431,14 @@ body.theme-dark {
   --text-highlight-bg-active: rgba(255, 238, 0, 0.4) !important;
   --text-error-hover: #ff8585 !important;
   --table-header-background-hover: #151515 !important;
-  --inline-code-background: rgba(255, 255, 255, 0.08) !important;
+  --embed-background: #0a0a0a !important;
   --inline-code-color: #d7ba7d !important;
+  --inline-code-background: rgba(255, 255, 255, 0.08) !important;
   --interactive-success: #197f2c !important;
   --text-primary: #d4d4d4 !important;
   --text-secondary: #cccccc !important;
   --embed-border-left: var(--accent-blue) !important;
+  --flashing-background: rgba(0, 122, 204, 0.3) !important;
   --syntax-comment: #6a9955 !important;
   --syntax-constant: #4fc1ff !important;
   --syntax-keyword: #569cd6 !important;
@@ -1444,9 +1446,7 @@ body.theme-dark {
   --syntax-regexp: #d16969 !important;
   --syntax-string: #ce9178 !important;
   --syntax-tag: #569cd6 !important;
-  --embed-background: #0a0a0a !important;
   --accent-blue: #007acc !important;
-  --flashing-background: rgba(0, 122, 204, 0.3) !important;
   --border-subtle: #222222 !important;
   --search-match-highlight-bg: var(--find-match-bg) !important;
   --search-match-highlight-color: var(--text-active) !important;
@@ -1454,6 +1454,7 @@ body.theme-dark {
   --syntax-property: #9cdcfe !important;
   --syntax-punctuation: #d4d4d4 !important;
   --syntax-variable: #9cdcfe !important;
+  --syntax-number: #b5cea8 !important;
   --indentation-guide-active-color: var(--border-normal) !important;
   --cursor-color: var(--text-active) !important;
   --accent-blue-active: #0062a3 !important;
@@ -1467,7 +1468,6 @@ body.theme-dark {
   --scrollbar-hover: rgba(255, 255, 255, 0.2) !important;
   --syntax-attribute: #9cdcfe !important;
   --syntax-class: #4ec9b0 !important;
-  --syntax-number: #b5cea8 !important;
   --syntax-parameter: #9cdcfe !important;
   --syntax-type: #4ec9b0 !important;
   --tab-text-color-focused-highlight: var(--text-active) !important;

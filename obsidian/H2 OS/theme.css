@@ -1,0 +1,3896 @@
+/* ============================================================
+   H2 OS — Obsidian Theme  v0.1.0-dev (Phase 0: token foundation)
+   字体: Poppins · Montserrat · Source Han Sans · JetBrains Mono
+   色彩: White #FFFFFF · Gray #18181B / #52525B · Red #D14A4A
+   几何: 圆(交互) · 方(内容) · 三角(签名)
+   ============================================================
+   Phase 0 只定义 token，不写组件。切到 Obsidian 验证裸色板对了再往上盖。
+   设计文档: Uranus/1 Projects/H2 OS/H2 OS 主题介绍.md
+   ============================================================*/
+
+
+/* ════════════════════════════════════════════════════════════
+   TOKENS · 模式无关（字体 / 圆角 / 排版 / 阴影 / 动效）
+   这些与明暗无关，放 body 层级，亮色唯一模式也继承得到。
+   ════════════════════════════════════════════════════════════ */
+
+body {
+  /* ── 字体栈 ────────────────────────────────────────────────
+     拉丁文走 Geometric Sans（Poppins/Montserrat），从字体层面呼应
+     几何语法。system-ui 前垫 Avenir Next / Segoe UI Variable 作平台
+     降级，无 Poppins 的用户也能更接近设计意图。不内置字体（市场禁止）。
+     ──────────────────────────────────────────────────────────── */
+  --font-text-theme:
+    'Poppins', 'Montserrat', 'Jost',
+    'Avenir Next', 'Segoe UI Variable', 'Segoe UI',
+    system-ui, -apple-system, BlinkMacSystemFont, Roboto,
+    Helvetica, Arial,
+    'Source Han Sans SC', 'Source Han Sans CN', 'Noto Sans CJK SC',
+    '思源黑体', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+
+  --font-interface-theme:
+    'Poppins', 'Montserrat',
+    'Avenir Next', 'Segoe UI Variable', 'Segoe UI',
+    system-ui, -apple-system, BlinkMacSystemFont, Roboto,
+    Helvetica, Arial,
+    'PingFang SC', 'Microsoft YaHei', sans-serif;
+
+  /* 标题共享正文栈（H2 OS 不为标题单设字族，层级靠字号字重，不靠字族切换） */
+  --font-heading-theme: var(--font-text-theme);
+
+  --font-monospace-theme:
+    'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco,
+    Consolas, 'Liberation Mono', 'Courier New', monospace;
+
+  --font-mermaid: var(--font-interface-theme);
+
+  /* 中英混排：Geometric Sans 数字字宽偏宽，收紧字距 + 等宽数字 */
+  font-variant-numeric: lining-nums tabular-nums;
+  letter-spacing: -0.011em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* ── 排版节奏（2026 现代感的信号，不是洁癖） ───────────────
+     所有间距必须落在 --h2-space-unit (4px) 的倍数上。
+     禁止 13px / 11px / 7px 这类孤儿值。
+     ──────────────────────────────────────────────────────────── */
+  --h2-space-unit: 4px;
+  --h2-font-size-base: 16px;
+  --h2-line-height-body: 1.7;
+  --h2-line-height-heading: 1.3;
+
+  /* Obsidian 读取这些渲染标题；1.25 模数，实测后回填主文档表格 */
+  /* 排面级标题（v0.3 首屏视窗化，源自氢OS官方页逐帧研究：
+     app 首屏 = 超大左对齐标题 + faint 副标 + 大留白（35/65 结构）。
+     40px 是排面级刻意跳出 1.25 模数，不是笔误。 */
+  --inline-title-size: 2.5rem;   /* 40px，排面级 */
+  --h1-size: 2.5rem;             /* 与 inline title 对齐（本主题约定 H1 = 文档主标题，每篇一次） */
+  --h2-size: 1.6rem;             /* 1.25^2 ≈ 1.56 → 取 1.6 */
+  --h3-size: 1.25rem;
+  --h4-size: 1.125rem;
+  --h5-size: 1rem;
+  --h6-size: 0.875rem;
+
+  /* 段落与列表间距：落在 4px 网格（1rem=16px, 0.5rem=8px, 0.75rem=12px） */
+  --p-spacing: 1rem;
+  --list-spacing: 0.5rem;
+
+  /* ── 圆角（对应几何语法） ─────────────────────────────────
+     方元素直角（content=0），圆元素柔角。
+     使用 Obsidian 官方变量，不自造一套。
+     ──────────────────────────────────────────────────────────── */
+  --radius-s:  4px;   /* tag、menu item、status chip */
+  --radius-m:  6px;   /* button、input、dropdown */
+  --radius-l:  8px;   /* popover、command palette */
+  --radius-xl: 12px;  /* modal、dialog */
+  /* content 圆角 = 0，直接在组件上写 border-radius: 0，不造变量 */
+  /* round 圆角 = 50%/100vw，直接在组件上写 */
+
+  /* ── Elevation 阴影（可逆：显脏就清空这三个 token，全局退回） ──
+     所有阴影走 token 出口，组件只 box-shadow: var(--h2-shadow-N)，
+     不内联散值。
+     ──────────────────────────────────────────────────────────── */
+  --h2-shadow-1: 0 1px 2px rgba(0, 0, 0, 0.04);   /* 卡片、浮层 */
+  --h2-shadow-2: 0 4px 12px rgba(0, 0, 0, 0.06);  /* popover、菜单、notice */
+  --h2-shadow-3: 0 8px 24px rgba(0, 0, 0, 0.08);  /* modal */
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.06);
+
+  /* ── 动效（与色板同级，Phase 0 定稿，不是收尾补丁） ──────────
+     只 transition 具体属性，不动 layout 属性。
+     reduced-motion 时 duration 归零（见文件尾兜底）。
+     ──────────────────────────────────────────────────────────── */
+  --h2-duration-fast: 120ms;   /* hover tint、颜色变化 */
+  --h2-duration-base: 180ms;   /* 展开/收起、位移 */
+  --h2-duration-slow: 240ms;   /* modal、popover 出现 */
+  --h2-ease: cubic-bezier(0.4, 0, 0.2, 1);  /* MD standard，颜色过渡专用 */
+
+  /* 签名动效曲线（S3a，v0.6.3）：出场快、落位柔，比 MD 标准更"轻盈落纸"。
+     位移类动效（入场、冒尖脉冲）一律走签名曲线；颜色过渡保留 MD standard。
+     MD 曲线对称（先加速后减速），签名曲线前快后柔——浮出物"砰地一下到位
+     再轻轻落定"，更符合氢徽"冒尖"的语义。 */
+  --h2-ease-signature: cubic-bezier(0.32, 0.72, 0.22, 1);
+
+  /* 组件过渡默认值：写组件时优先用这个组合，不自造 */
+  --h2-transition-color: color var(--h2-duration-fast) var(--h2-ease),
+                         background-color var(--h2-duration-fast) var(--h2-ease),
+                         border-color var(--h2-duration-fast) var(--h2-ease);
+}
+
+
+/* ════════════════════════════════════════════════════════════
+   TOKENS · 亮色模式（唯一支持的模式）
+   primitive 色阶 → semantic 语义别名 → 映射给 Obsidian 原生变量。
+   改色只动 --h2-*，Obsidian 那一层自动跟。
+   ════════════════════════════════════════════════════════════ */
+
+body.theme-light {
+  background-color: #FFFFFF;  /* 窗口 resize 时最先涂的颜色，消除白闪 */
+
+  /* ── primitive：原始色阶 ─────────────────────────────────── */
+
+  /* 中性灰阶（白底克制路线的主干） */
+  --h2-white:    #FFFFFF;
+  --h2-gray-50:  #FAFAFA;
+  --h2-gray-100: #F4F4F5;
+  --h2-gray-200: #E4E4E7;
+  --h2-gray-300: #D4D4D8;
+  --h2-gray-400: #A1A1AA;  /* 图标、禁用态（2.6:1，不可做正文） */
+  --h2-gray-500: #71717A;  /* 次要文字（4.6:1，达 AA） */
+  --h2-gray-600: #52525B;  /* 正文 */
+  --h2-gray-700: #3F3F46;
+  --h2-gray-900: #18181B;  /* 标题、主文字 */
+
+  /* 降饱和一加红（点缀用，不做大面积填充） */
+  --h2-red-300: #E88080;   /* hover 背景 tint、轻撞色 */
+  --h2-red-400: #DB6060;
+  --h2-red-500: #D14A4A;   /* 强调统帅色（4.4:1，限 hover 瞬态） */
+  --h2-red-600: #B83A3A;   /* hover 状态 */
+
+  /* Callout 语义色（低饱和撞色，每种语义一个色相） */
+  --h2-sky:     #5B8FB9;   /* info */
+  --h2-amber:   #C99A4A;   /* warning */
+  --h2-crimson: #B85555;   /* error / danger */
+  --h2-sage:    #6B9B6B;   /* success / tip */
+
+  /* ── semantic：语义别名（组件只引用这些，不引用 primitive） ── */
+
+  /* 强调色：降饱和一加红，只做点缀 */
+  --h2-accent:         var(--h2-red-500);
+  --h2-accent-hover:   var(--h2-red-600);
+  --h2-accent-tint:    var(--h2-red-300);
+
+  /* 背景：白底克制，逐级微差 */
+  --h2-bg:             var(--h2-white);       /* 主背景 */
+  --h2-bg-subtle:      var(--h2-gray-50);     /* 编辑区微差 */
+  --h2-bg-surface:     var(--h2-gray-100);    /* 侧边栏、二级表面 */
+  --h2-bg-elevated:    var(--h2-white);       /* 弹窗、浮层（靠阴影抬升） */
+
+  /* 文字：标题用 Gray 900，正文 Gray 600，次要 Gray 500 */
+  --h2-text:           var(--h2-gray-900);    /* 标题、主文字 */
+  --h2-text-body:      var(--h2-gray-600);    /* 正文 */
+  --h2-text-muted:     var(--h2-gray-500);    /* 次要文字（达 AA） */
+  --h2-text-faint:     var(--h2-gray-400);    /* 图标、placeholder、禁用 */
+
+  /* 边线：hairline 一致性是直角路线的生命线 */
+  --h2-border:         var(--h2-gray-200);    /* 分隔线 */
+  --h2-border-strong:  var(--h2-gray-300);    /* 强调边框 */
+  /* 签名构造线（v0.8.6，Elijah 立项）：全主题仅两条——导航栏下沿
+     （横）+ 设置页左栏右沿（竖）。红 500 半透明压暗，细而不响。
+     ⚠️ 红色纪律第 5 例外：构造线级红持续态，限定一横一竖各一条，
+     禁止扩散到其他分隔线。 */
+  --h2-line-signature: rgba(209, 74, 74, 0.7);
+
+  /* ── 映射给 Obsidian 原生变量（Obsidian 内部 CSS 读这些渲染） ── */
+
+  /* 背景层级 */
+  --background-primary:             var(--h2-bg);
+  --background-primary-alt:         var(--h2-bg-subtle);
+  --background-secondary:           var(--h2-bg-surface);
+  --background-secondary-alt:       var(--h2-gray-200);
+  --background-modifier-border:     var(--h2-border);
+  --background-modifier-border-hover: var(--h2-border-strong);
+  /* focus 圈：鼠标点击后 focus 态在 nav item / 表单上常驻，
+     红圈违反"红不做大面积持续态"纪律，退灰阶（Gray 400，可见但不响） */
+  --background-modifier-border-focus: var(--h2-gray-400);
+  --background-modifier-form-field: var(--h2-white);
+  --background-modifier-form-field-highlighted: var(--h2-gray-50);
+  --background-modifier-success:    rgba(107, 155, 107, 0.12);   /* sage tint */
+  --background-modifier-error:      rgba(184, 85, 85, 0.12);     /* crimson tint */
+  --background-modifier-cover:      rgba(255, 255, 255, 0.92);
+
+  /* 文字层级 */
+  --text-normal:        var(--h2-text-body);
+  --text-muted:         var(--h2-text-muted);
+  --text-faint:         var(--h2-text-faint);
+  --text-on-accent:     var(--h2-white);
+  --text-on-accent-inverted: var(--h2-white);
+  --text-error:         var(--h2-crimson);
+  --text-success:       var(--h2-sage);
+  --text-highlight-bg:  rgba(209, 74, 74, 0.14);   /* ==mark== 红染 + 搜索匹配，红色 tint 克制 */
+  --text-highlight-bg-rgb: 209, 74, 74;            /* A1：补 rgb 变量，搜索匹配高亮也跟红（Obsidian 默认 255,213,79 刺黄） */
+  --text-accent:        var(--h2-accent);
+  --text-accent-hover:  var(--h2-accent-hover);
+  --text-selection:     rgba(209, 74, 74, 0.18);
+
+  /* 光标色（v0.6.2 红色光标）：书写落点 = 那个"冒尖"的红点，
+     氢徽叙事长进打字的每一秒。asar 实测 --caret-color 默认走 --text-normal，
+     改成 accent 全局生效（编辑器、输入框、CodeMirror 都跟）。
+     ⚠️ 红色纪律：caret 是句读级（1px 宽）持续态，和句读级红点导航同例外类，
+     是红色持续态的第三个正式例外（前两个：句读级红点导航、空状态封面构图）。 */
+  --caret-color:        var(--h2-accent);
+
+  /* 强调色 */
+  --interactive-accent:        var(--h2-accent);
+  --interactive-accent-hover:  var(--h2-accent-hover);
+  --interactive-accent-rgb:    209, 74, 74;
+  --interactive-normal:        var(--h2-bg-surface);
+  --interactive-hover:         var(--h2-gray-200);
+
+  /* Obsidian 内部 focus / 选中用 --color-accent，不设则默认蓝 */
+  --color-accent:    var(--h2-accent);
+  --color-accent-1:  rgba(209, 74, 74, 0.14);
+  --color-accent-2:  rgba(209, 74, 74, 0.08);
+
+  /* 标题颜色：全部 Gray 900，层级靠字号字重，不靠颜色（heading 不参与撞色） */
+  --h1-color: var(--h2-text);
+  --h2-color: var(--h2-text);
+  --h3-color: var(--h2-text);
+  --h4-color: var(--h2-text);
+  --h5-color: var(--h2-text-body);
+  --h6-color: var(--h2-text-muted);
+
+  /* 链接：正文默认继承文字色 + 下划线，hover 切红 */
+  --link-color:          var(--h2-text);
+  --link-color-hover:    var(--h2-accent);
+  --link-decoration:     underline;
+  --link-decoration-hover: underline;
+  --link-decoration-color:      rgba(82, 82, 91, 0.3);
+  --link-decoration-color-hover: var(--h2-accent);
+  --link-external-color:        var(--h2-text);
+  --link-external-color-hover:  var(--h2-accent);
+  --link-external-decoration:   underline;
+  --link-external-decoration-hover: underline;
+  --link-unresolved-color:      var(--h2-text-faint);
+  --link-unresolved-decoration: underline;
+  --link-unresolved-decoration-color: rgba(161, 161, 170, 0.4);
+
+  /* 导航：hover/active 用灰阶 tint（不是红——红色纪律：持续态/大面积不用红）。
+     用相对透明度 rgba(0,0,0,N)，白底灰底都成立（避免 Gray 100 同色叠同色隐形）。
+     灰阶 tint 对比天然弱于红 tint，active 靠 500 字重补辨识度。 */
+  --nav-item-background-hover:    rgba(0, 0, 0, 0.04);
+  --nav-item-background-active:   rgba(0, 0, 0, 0.07);
+  --nav-item-background-selected: rgba(0, 0, 0, 0.07);
+  --nav-item-color:               var(--h2-text-muted);
+  --nav-item-color-hover:         var(--h2-text);
+  --nav-item-color-active:        var(--h2-accent);
+  --nav-item-color-selected:      var(--h2-text);
+
+  /* 图标 */
+  --icon-color:        var(--h2-text-faint);
+  --icon-color-hover:  var(--h2-text-muted);
+  --icon-color-active: var(--h2-accent);
+  --icon-color-focused: var(--h2-accent);
+
+  /* 标签页（Obsidian 官方变量） */
+  --tab-text-color-focused:             var(--h2-text-muted);
+  --tab-text-color-focused-active:      var(--h2-text);
+  /* v0.8.10：active 页签恒红。原值 h2-text（深灰）导致"焦点进正文
+     红就消失"——与 1382 行的红字规则打架，active 指示忽红忽灰
+     （Elijah 实测困惑，与侧栏图标 v0.8.9 同病）。"你在这里"指示
+     不随键盘焦点闪烁，与侧栏 active 图标同纪律。 */
+  --tab-text-color-focused-active-current: var(--h2-accent);
+  --tab-background-active:              transparent;
+  --tab-outline-color:                  var(--h2-border);
+  --tab-outline-width:                  1px;
+  --tab-divider-color:                  transparent;     /* tab 短竖线退役，顶部读成连续导航带 */
+
+  /* 层级线比 OS 构造线再弱一级，只表达树状父子关系。 */
+  --nav-indentation-guide-color:        rgba(82, 82, 91, 0.10);
+
+  /* 标签：圆角胶囊，轻 tint 背景 */
+  /* v1.2 方形结构片：去胶囊——0 圆角 + hairline 描边 + 透明底。
+     tag 是元数据结构件，归"方"；从"彩色胶囊"退成"小号的方"，
+     与表格/嵌入框同语言。属性区 --pill-* token 全部回落到
+     --tag-*（asar 实锤），此处一改两得。 */
+  --tag-background:        transparent;
+  --tag-background-hover:  transparent;
+  --tag-color:             var(--h2-text-body);
+  --tag-color-hover:       var(--h2-text);
+  --tag-radius:            0;
+  --tag-border-width:      1px;
+  --tag-border-color:      var(--h2-border);
+  --tag-border-color-hover: var(--h2-gray-400);
+
+  /* 滑块 */
+  --slider-track-background:   var(--h2-gray-200);
+  --slider-track-height:       4px;
+  --slider-thumb-border-color: var(--h2-bg);
+  --slider-thumb-color:        var(--h2-accent);
+
+  /* Scrollbar（轻量，不抢戏） */
+  --scrollbar-bg:        transparent;
+  --scrollbar-thumb-bg:  var(--h2-gray-300);
+
+  /* Checkbox：圆形（几何语法），选中后红填充 */
+  --checkbox-radius:         50%;
+  --checkbox-size:           16px;
+  --checkbox-border-width:   1.5px;
+  --checkbox-border-color:       var(--h2-gray-300);
+  --checkbox-border-color-hover: var(--h2-accent);
+  --checkbox-color:              var(--h2-accent);
+  --checkbox-color-hover:        var(--h2-accent-hover);
+  --checkbox-marker-color:       var(--h2-white);
+
+  /* Toggle：圆角矩形开关，跟随官方变量 */
+  --toggle-radius:           18px;
+  --toggle-thumb-radius:     14px;
+  --toggle-width:            36px;
+  --toggle-thumb-width:      14px;
+  --toggle-thumb-height:     14px;
+  --toggle-border-color:     var(--h2-gray-300);
+  --toggle-background-color: var(--h2-gray-200);
+  --toggle-thumb-color:      var(--h2-white);
+  --toggle-color:            var(--h2-accent);
+  --toggle-color-hover:      var(--h2-accent-hover);
+
+  /* Callout 语义色映射（Obsidian 读这些） */
+  --callout-color-info:        var(--h2-sky);
+  --callout-color-warning:     var(--h2-amber);
+  --callout-color-error:       var(--h2-crimson);
+  --callout-color-danger:      var(--h2-crimson);
+  --callout-color-success:     var(--h2-sage);
+  --callout-color-tip:         var(--h2-sage);
+  --callout-color-question:    var(--h2-amber);
+  --callout-color-abstract:    var(--h2-sky);
+  --callout-color-summary:     var(--h2-sky);
+  --callout-color-quote:       var(--h2-gray-500);
+  --callout-color-example:     var(--h2-accent);
+
+  /* 代码块语法高亮（v0.6.4 D4 重定全套色）。
+     底色用 Gray 100（方形语义靠底色成立）。
+     ⚠️ 红色纪律：v0.4 曾用 Crimson keyword + Red 500 tag，两者都撞主题红，
+        稀释"红只给交互"。v0.6.4 重定：代码区不用红，用四语义色相 + 灰阶。
+     分工：
+       Sky   = 控制流/结构（keyword、type、property、function、tag）
+       Sage  = 字面量（string、value、attr-value）
+       Amber = 数值/标识（number、attr-name）
+       Gray  = 连接器（operator、punctuation、comment、variable、normal）
+     Crimson 留给真正的错误语义，代码语法里不用。 */
+  --code-background:         var(--h2-gray-100);
+  --code-normal:             var(--h2-text);          /* 默认文字 */
+  --code-comment:            var(--h2-text-faint);    /* 注释：最弱 */
+  --code-keyword:            var(--h2-sky);           /* 控制流：if/for/return/SELECT */
+  --code-function:           var(--h2-sky);           /* 函数名 */
+  --code-string:             var(--h2-sage);          /* 字符串 */
+  --code-number:             var(--h2-amber);         /* 数字 */
+  --code-tag:                var(--h2-sky);           /* HTML/XML 标签名 */
+  --code-operator:           var(--h2-text-body);     /* 运算符：灰 */
+  --code-attr:               var(--h2-amber);         /* 属性名 */
+  --code-property:           var(--h2-sky);           /* 对象属性 */
+  --code-value:              var(--h2-sage);          /* 属性值 */
+  --code-punctuation:        var(--h2-text-muted);    /* 标点：次弱 */
+
+  /* 表格 hairline（直角路线生命线，1px 一致） */
+  --table-header-border:    1px solid var(--h2-border);
+  --table-border-width:     0px;     /* 关掉单元格内框，hairline 由主题显式画 */
+  --table-header-background: transparent;   /* v1.2 表头标签式：去灰底 */
+  /* v1.2 官方 token 层同步接管：LP 表格编辑器（.cm-table-widget）的
+     字号/行高/表头字形走这些 token，光写 td/th 规则编辑态接不住 */
+  --table-text-size:        0.875rem;             /* 14px 密度档 */
+  --table-line-height:      1.45;
+  --table-header-size:      0.75rem;              /* 12px 标签档 */
+  --table-header-weight:    500;
+  --table-header-color:     var(--h2-text-muted);
+  --table-row-background-hover: var(--h2-gray-50);
+
+  /* Blockquote：中性 rail，去掉默认蓝 */
+  --blockquote-border-thickness: 3px;
+  --blockquote-border-color:     var(--h2-gray-300);
+
+  /* ── A2 嵌入块窗口化（v0.6.5）：氢视窗家族小窗 ──────────────
+     asar 实测默认是左边 2px accent 实线 rail（--embed-border-start），
+     和氢视窗家族冲突。改成 hairline 方框（四边 hairline）+
+     组件层加三段线窗楣 + faint 来源标题。
+     hover 预览（.hover-popover > .markdown-embed）同款处理。 */
+  --embed-background:      var(--h2-bg);                          /* 纯白底 */
+  --embed-border-start:    1px solid var(--h2-border);            /* 左 hairline */
+  --embed-border-end:      1px solid var(--h2-border);            /* 右 hairline */
+  --embed-border-top:      1px solid var(--h2-border);            /* 上 hairline */
+  --embed-border-bottom:   1px solid var(--h2-border);            /* 下 hairline */
+  --embed-font-style:      normal;
+
+  /* ── v0.4 设置页（W1）：去卡片化 + 标签式分区 ───────────────
+     asar 实测：Obsidian 设置项默认走 --setting-items-* token 化卡片，
+     透明化背景 + 0 边框 + 0 圆角即退回开放列表。v0.9 起组内
+     setting item 不再逐行画线，只有新的 heading 分组承担结构分隔。
+     ──────────────────────────────────────────────────────────── */
+  --setting-items-background:    transparent;   /* 去卡片感：背景透明 */
+  --setting-items-border-width:  0px;           /* 去卡片感：关掉外圈边框 */
+  --setting-items-border-color:  transparent;
+  --setting-items-radius:        0;             /* 方形语义（直角路线） */
+  --setting-items-padding:       0.75rem 0;     /* 12px 0，4px 网格 —— 上下呼吸，左右贴边 */
+
+  /* 分区标题（.setting-item-heading，右侧"账户""高级"小节标题） */
+  --setting-group-heading-color:   var(--h2-text);
+  --setting-group-heading-size:    var(--h2-font-size-base);
+  --setting-group-heading-weight:  600;
+
+  /* ── v0.4 控件家族（W2）：去重阴影 + hairline + 几何语法 ────
+     asar 实测：Obsidian 控件默认走 --input-shadow（inset + 多层散阴影）
+     和 --input-radius=5px，这是 2015 MD 的重阴影遗风。W2 统一退到
+     hairline border + 几何语法圆角（控制类 --radius-m=6px）。
+     ──────────────────────────────────────────────────────────── */
+
+  /* input / dropdown / button 共享的 input-shadow 退成单层 hairline。
+     asar 默认值是 inset 0 0 0 1px rgba(0,0,0,0.12) + 4 层散阴影，
+     显得敦实；改成纯 inset hairline（无散阴影），现代克制。 */
+  --input-shadow:          inset 0 0 0 1px var(--h2-border);
+  --input-shadow-hover:    inset 0 0 0 1px var(--h2-border-strong);
+  /* focus 态：Gray 400（已在 Phase 0 接管 --background-modifier-border-focus），
+     不用红——红不做持续态（focus 圈是持续态）。 */
+  --input-focus-border-color: var(--h2-gray-400);
+  --input-radius:           var(--radius-m);   /* 6px，控制类几何语法 */
+  --input-height:           32px;              /* 4px 网格（默认 30px 是非网格值） */
+
+  /* dropdown 底色：走 Gray 50 微差表面（不是纯白），让 dropdown 在白底
+     有一点抬升感（H2OS 控件不是纯平的，有极轻的层级）。 */
+  --dropdown-background:        var(--h2-gray-50);
+  --dropdown-background-hover:  var(--h2-gray-100);
+
+  /* button：primary（accent 实心）+ secondary（hairline 幽灵）。
+     asar 默认 secondary 走 Gray 100/200 实心填充，改成 hairline 幽灵
+     更克制，和 H2OS 控件的轻量感一致。 */
+  --button-radius:                       var(--radius-m);
+  --button-secondary-bg-color:           transparent;       /* 幽灵化：透明底 */
+  --button-secondary-hover-bg-color:     var(--h2-gray-50); /* hover 微抬升 */
+  --button-secondary-active-bg-color:    var(--h2-gray-100);
+  --button-secondary-border-color:       var(--h2-border);  /* hairline 边框 */
+  --button-secondary-hover-border-color: var(--h2-border-strong);
+
+  /* slider 招牌：thumb 改红点（AOD 红秒针语汇）。
+     asar 默认 thumb 是 18px 白圆 + 灰边框 + 阴影；
+     改成 14px 红圆（Red 500）+ 无边框 + 无阴影，缩小到句读级红点尺度，
+     和 active tab/文件的 6px 红点同族（放大版）。track 保持 Gray 200。 */
+  --slider-track-background:    var(--h2-gray-200);
+  --slider-track-height:        4px;       /* 4px 网格（默认 3px 是非网格值） */
+  --slider-thumb-width:         14px;      /* 4px 网格 */
+  --slider-thumb-height:        14px;
+  --slider-thumb-radius:        50%;       /* 圆 = 状态点（几何语法） */
+  --slider-thumb-border-width:  0px;       /* 去掉灰边框，让红点纯净 */
+  --slider-thumb-border-color:  transparent;
+  --slider-thumb-y:             -5px;      /* 14px thumb 在 4px track 上垂直居中：(14-4)/2 = 5 */
+
+  /* scrollbar：Phase 0 已接管底色（Gray 300 thumb + transparent bg），
+     W2 细化尺寸到方形细线（asar 默认 12px 太粗，改 8px + 0 圆角）。 */
+  --scrollbar-width:            8px;       /* 4px 网格 */
+  --scrollbar-height:           8px;
+  --scrollbar-radius:           0;         /* 方形语义（直角路线） */
+  --scrollbar-thumb-bg:         var(--h2-gray-300);
+  --scrollbar-active-thumb-bg:  var(--h2-gray-400);
+
+  /* ── v0.4 图标层换声（W3）：全局 stroke-width 降档 ──────────
+     asar 实测：svg.svg-icon 统一走 stroke-width: var(--icon-stroke)
+     （app.css 7339），--icon-stroke 默认 = --icon-m-stroke-width。
+     全局降一档，整个 app 几百个 Lucide 图标从"敦实工具风"变
+     "细线精密风"。这是"换声"——用户说不出哪里变了但全身图标性格变了。
+     ⚠️ 边界（Marcus 顾问红线）：禁止 mask-image 全量换图。
+        Lucide 是 JS 注入的内联 SVG，CSS 改不了 path 数据，
+        mask-image 换图是几百个图标 × 各种状态的维护地狱，是插件领地。
+     ──────────────────────────────────────────────────────────── */
+  --icon-xs-stroke-width: 1.5px;   /* asar 默认 2px → 降一档 */
+  --icon-s-stroke-width:  1.5px;   /* asar 默认 2px */
+  --icon-m-stroke-width:  1.25px;  /* asar 默认 1.75px */
+  --icon-l-stroke-width:  1.25px;  /* asar 默认 1.75px */
+  --icon-xl-stroke-width: 1px;     /* asar 默认 1.25px —— 大图标更细，精密感 */
+
+  /* list-bullet：v0.7.4 方块化（记号重绘纲领落地，文档与实现此前对不上）。
+     形态从圆点改方块（--list-bullet-radius: 0），多级区分在组件层用 border。
+     颜色 token 不变（Gray 400）。 */
+  --list-marker-color:         var(--h2-text-faint);   /* Gray 400 */
+  --list-marker-color-collapsed: var(--h2-text-muted);  /* 折叠态加深 */
+  --list-bullet-radius:        0;    /* 方块语义（几何语法：方=结构），原 50% 圆退役 */
+  --list-bullet-size:          4px;  /* 4px 网格，实心小方（一级默认） */
+  --list-bullet-border:        none; /* 一级实心无 border；二三级在组件层覆盖 */
+}
+
+
+/* ════════════════════════════════════════════════════════════
+   兜底：reduced-motion 时动效归零（动效纪律的兜底机制）
+   ════════════════════════════════════════════════════════════ */
+
+@media (prefers-reduced-motion: reduce) {
+  body {
+    --h2-duration-fast: 0ms;
+    --h2-duration-base: 0ms;
+    --h2-duration-slow: 0ms;
+    --h2-duration-grand: 0ms;   /* v0.8.2 仪式级时长同步归零 */
+    --h2-duration-line: 0ms;    /* v0.8.7 签名线刷入同步归零 */
+  }
+  /* W4/S3 入场动画 + 冒尖脉冲兜底：reduced-motion 时全归零 */
+  body .modal,
+  body .prompt,
+  body .menu,
+  body .suggestion-container,
+  body .popover {
+    animation: none !important;
+  }
+  /* S3a 冒尖脉冲：checkbox 勾选瞬间也归零 */
+  body input[type=checkbox]:checked {
+    animation: none !important;
+  }
+  /* v0.8.1 愉悦时刻兜底：三处新动画含固定 delay（60/160ms），
+     光靠 duration token 归零不够，显式关闭。 */
+  body input[type=checkbox]:checked::after,
+  body .inline-title::after,
+  body .workspace-leaf-content[data-type="empty"] .empty-state::before,
+  body .workspace-leaf-content[data-type="empty"] .empty-state::after {
+    animation: none !important;
+  }
+  /* v0.8.3 第二批兜底 */
+  body .search-result-file-matched-text,
+  body .cm-searchMatch-selected,
+  body .sync-status-icon.mod-success svg,
+  body .workspace-tab-header-status-icon.mod-pinned,
+  body .markdown-preview-view button.copy-code-button:active,
+  body .markdown-preview-view .footnote:target,
+  body .markdown-preview-view .footnotes li:target,
+  body .markdown-preview-view blockquote:target,
+  body .markdown-preview-view [id^='^']:target,
+  body .tree-item-children,
+  body .app-container {
+    animation: none !important;
+  }
+  body input[type='range']::-webkit-slider-thumb:active {
+    transform: none !important;
+  }
+}
+
+
+/* ════════════════════════════════════════════════════════════
+   TYPOGRAPHY · Phase 1 基础编辑区
+   正文 → 标题 → 行内代码 → 链接 → 标签
+   纪律：标题层级靠字号字重不靠颜色；间距落在 4px 网格；
+        heading 不参与撞色（红色只留给交互元素）。
+   ════════════════════════════════════════════════════════════ */
+
+/* ── 正文 ────────────────────────────────────────────────────
+   行高用 token --h2-line-height-body (1.7)，中英混排取宽。
+   段落间距用 token --p-spacing (1rem = 16px，落在 4px 网格)。
+   ──────────────────────────────────────────────────────────── */
+.markdown-preview-view,
+.markdown-source-view.mod-cm6 .cm-content,
+.markdown-source-view.mod-cm6 .cm-line {
+  font-size: var(--h2-font-size-base);
+  line-height: var(--h2-line-height-body);
+  color: var(--text-normal);
+}
+
+/* ── D2 当前行极轻灰高亮（active-line）────────────────────────
+   asar/JS 实测：CodeMirror 6 当前行类是 .cm-activeLine（camelCase），
+   Obsidian light 默认色 #cceeff44（浅蓝+alpha）——这是"出戏回官方"
+   的根源。改成极轻灰 rgba(0,0,0,0.025)，几乎看不见，只在写作时
+   给一点点定位感。重了会变"被聚焦审讯"，宁可弱到几乎无。
+   ⚠️ 这个规则由 Obsidian 编辑器设置里的"高亮当前行"开关控制，
+      用户关了开关就不渲染 .cm-activeLine，本规则自动失效（无害）。 */
+.markdown-source-view.mod-cm6 .cm-activeLine {
+  background-color: rgba(0, 0, 0, 0.025);
+}
+
+/* 段落间距：阅读模式和 Live Preview 统一 */
+.markdown-preview-view p,
+.markdown-source-view.mod-cm6 .cm-content > p {
+  margin-block-start: var(--p-spacing);
+  margin-block-end: var(--p-spacing);
+}
+
+/* ── 标题 ────────────────────────────────────────────────────
+   字号由 Obsidian --h*-size token 驱动（Phase 0 已定）。
+   字重：H1–H4 用 600（Poppins SemiBold），H5–H6 用 500（Medium）。
+   ⚠️ 已知取舍：思源黑体无 600，CSS 字重匹配会向上落到 Bold 700，
+   中英混排标题中文会略重于英文。Phase 1 验收时实测，不齐再调。
+   字号只写在行级容器，不写在内部 span，避免双层 em 叠乘。
+   ──────────────────────────────────────────────────────────── */
+h1, h2, h3, h4 {
+  font-weight: 600;
+  line-height: var(--h2-line-height-heading);
+}
+h5, h6 {
+  font-weight: 500;
+  line-height: var(--h2-line-height-heading);
+}
+
+/* 阅读模式标题 */
+.markdown-preview-view h1,
+.markdown-preview-view h2,
+.markdown-preview-view h3,
+.markdown-preview-view h4,
+.markdown-preview-view h5,
+.markdown-preview-view h6 {
+  margin-block-start: 1.5rem;   /* 24px，4px 网格 */
+  margin-block-end: 0.5rem;     /* 8px，4px 网格 */
+}
+
+/* Live Preview：字号只写在 .HyperMD-header-N 行级容器，
+   不写在内部 .cm-header-N span，避免双层 em 叠乘。 */
+.markdown-source-view.mod-cm6 .HyperMD-header-1 { font-size: var(--h1-size); font-weight: 600; }
+.markdown-source-view.mod-cm6 .HyperMD-header-2 { font-size: var(--h2-size); font-weight: 600; }
+.markdown-source-view.mod-cm6 .HyperMD-header-3 { font-size: var(--h3-size); font-weight: 600; }
+.markdown-source-view.mod-cm6 .HyperMD-header-4 { font-size: var(--h4-size); font-weight: 600; }
+.markdown-source-view.mod-cm6 .HyperMD-header-5 { font-size: var(--h5-size); font-weight: 500; }
+.markdown-source-view.mod-cm6 .HyperMD-header-6 { font-size: var(--h6-size); font-weight: 500; }
+
+/* H6 标签式：全大写 + 宽字距 + muted，形态与 H5 拉开，遮色仍可分辨。
+   uppercase 只影响拉丁字符，中文不受干扰；中文 H6 靠宽字距 + 小字号区分。
+   muted 降级为辅助手段，主要层级靠形态成立。宽字距数值实测后定稿。 */
+.markdown-preview-view h6,
+.markdown-source-view.mod-cm6 .HyperMD-header-6 {
+  color: var(--h2-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+/* inline title：与 H1 对齐，承担文档标题角色（即便用户关掉也保留样式） */
+.inline-title {
+  font-size: var(--inline-title-size);
+  font-weight: 600;
+  line-height: var(--h2-line-height-heading);
+  letter-spacing: -0.02em;       /* 排面级大字收紧字距 */
+  color: var(--h2-text);
+  margin-top: 1.5rem;            /* 24px，排面上方留白 */
+  margin-bottom: 2rem;           /* 32px，排面下方留白 */
+}
+
+/* 三段线 motif（氢OS 状态栏下三段细分隔线的翻译）：
+   inline title 下方的签名分隔。gap 用透明段实现，百分比随宽度缩放。 */
+.inline-title::after {
+  content: '';
+  display: block;
+  height: 1px;
+  margin-top: 1rem;
+  background: linear-gradient(
+    to right,
+    var(--h2-border) 0 31%, transparent 31% 34.5%,
+    var(--h2-border) 34.5% 65.5%, transparent 65.5% 69%,
+    var(--h2-border) 69% 100%
+  );
+}
+
+/* 排面同款：阅读模式 H1（本主题约定 H1 = 文档主标题每篇一次，
+   多 H1 文档会出现多条三段线——试验期先接受，验收后再裁）。 */
+.markdown-preview-view h1::after {
+  content: '';
+  display: block;
+  height: 1px;
+  margin-top: 0.75rem;   /* 12px，4px 网格 */
+  background: linear-gradient(
+    to right,
+    var(--h2-border) 0 31%, transparent 31% 34.5%,
+    var(--h2-border) 34.5% 65.5%, transparent 65.5% 69%,
+    var(--h2-border) 69% 100%
+  );
+}
+
+/* ── 列表 ────────────────────────────────────────────────────
+   列表项间距用 token --list-spacing (0.5rem = 8px，4px 网格)。
+   单项内换行行距沿用正文行高，不单独设。
+   ────────────────────────────────────────────────────────────
+   ⚠️ 悬挂缩进归 Obsidian 原生，主题不碰容器/行级 padding：
+   · 阅读模式：ul/ol 的 padding-inline-start:0（容器不缩进），
+     缩进由 li 的 margin-inline-start:3ch 承担——换行第二行是
+     li 的内容，自然对齐到文字左缘。
+   · Live Preview：.cm-line 默认 padding:0，列表缩进由首行的
+     .cm-formatting-list-ul formatting span（--list-padding-inline-start）
+     承担——只缩进首行，换行第二行回到内容左缘。
+   早期版本曾在 ul/ol 容器 + .HyperMD-list-line 整行块上挂
+   padding-inline-start:1.5rem，作用在整行/整个容器会让换行第二行
+   继承这层 padding 多缩进一截（长列表项换行错位 bug）。
+   Folio/Opendian 都不碰这层，靠原生机制工作。H2 OS 同路线。
+   ──────────────────────────────────────────────────────────── */
+
+/* 有序/无序列表项之间的间距（阅读模式） */
+.markdown-preview-view li {
+  margin-block-start: var(--list-spacing);
+  margin-block-end: var(--list-spacing);
+}
+.markdown-preview-view li:first-child { margin-block-start: 0; }
+.markdown-preview-view li:last-child  { margin-block-end: 0; }
+
+/* Live Preview 列表行间距：补齐阅读模式 li 的 --list-spacing 节奏。
+   Obsidian 原生 .cm-line padding:0，LP 列表行若不加间距会与正文段落
+   同密（列表分组节奏消失）。只动 padding-bottom（垂直），不碰
+   padding-inline（水平缩进归原生 formatting span）。Folio 同款手法。 */
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-list-line {
+  padding-bottom: var(--list-spacing) !important;
+}
+
+/* ── 行内代码 ────────────────────────────────────────────────
+   方形语义（圆角小，--radius-s = 4px）。轻 tint 背景，不抢正文。
+   ──────────────────────────────────────────────────────────── */
+.markdown-preview-view code,
+.markdown-source-view.mod-cm6 span.cm-inline-code {
+  background: var(--code-background);
+  color: var(--h2-text);
+  border-radius: var(--radius-s);
+  padding: 0.125rem 0.25rem;   /* 2px 4px —— 4px 网格上取最近邻 */
+  font-size: 0.875em;          /* 相对正文缩小一档 */
+  font-family: var(--font-monospace-theme);
+}
+
+/* Live Preview inline code：Obsidian 用 .cm-inline-code 包裹 */
+.markdown-source-view.mod-cm6 .cm-inline-code {
+  background: var(--code-background);
+  border-radius: var(--radius-s);
+}
+
+/* ── 代码块（code block）──────────────────────────────────────
+   方形语义：border-radius: 0（几何语法纪律）。
+   纯灰底 + language label，不加语义色 rail——rail 是 callout 家族
+   的识别部件，code block 无语义可标，加了是纯装饰，违反纪律。
+   ──────────────────────────────────────────────────────────── */
+/* 阅读模式：pre 是整体容器，整圈 hairline 没问题 */
+.markdown-preview-view pre {
+  background: var(--code-background);
+  border-radius: 0;   /* 方形语义 */
+  border: 1px solid var(--h2-border);
+}
+
+/* Live Preview：每行是独立 div（CodeMirror 行结构），边框必须拆边——
+   给每行套整圈 border 会让相邻行上下边框叠加，变成"每行一条横线"的表格化效果。
+   解法：所有行只给左右边，上边只给首行，下边只给末行。 */
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-codeblock {
+  background: var(--code-background);
+  border-radius: 0;
+  border-left: 1px solid var(--h2-border);
+  border-right: 1px solid var(--h2-border);
+}
+.markdown-source-view.mod-cm6 .HyperMD-codeblock-begin {
+  border-top: 1px solid var(--h2-border);
+}
+.markdown-source-view.mod-cm6 .HyperMD-codeblock-end {
+  border-bottom: 1px solid var(--h2-border);
+}
+
+.markdown-preview-view pre {
+  padding: 1rem;   /* 16px，4px 网格 */
+  margin-block-start: 1rem;
+  margin-block-end: 1rem;
+}
+
+/* 代码块复制按钮：asar 实测类名 .copy-code-button。Obsidian 点击后
+   不挂 copied 状态类，CSS 无法判断剪贴板结果；这里只做按下瞬间确认。 */
+.markdown-preview-view button.copy-code-button {
+  transition: color var(--h2-duration-fast) var(--h2-ease),
+              background-color var(--h2-duration-fast) var(--h2-ease);
+}
+.markdown-preview-view button.copy-code-button:active {
+  color: var(--h2-accent);
+  animation: h2-emerge 150ms var(--h2-ease-signature);
+}
+
+.markdown-preview-view pre code,
+.markdown-source-view.mod-cm6 .HyperMD-codeblock {
+  font-family: var(--font-monospace-theme);
+  font-size: 0.875rem;   /* 14px，4px 网格 */
+  line-height: 1.6;
+  color: var(--code-normal);
+}
+
+/* code block language label：保留 Obsidian 原生，只调色到 muted */
+.markdown-preview-view .code-block-flair,
+.markdown-source-view.mod-cm6 .code-block-flair {
+  color: var(--h2-text-faint);
+  font-size: 0.75rem;   /* 12px，4px 网格 */
+  font-family: var(--font-interface-theme);
+}
+
+/* ── D4 Prism 语法高亮（阅读模式）─────────────────────────────
+   阅读模式代码高亮走 Prism，类名是 .token.xxx（不是 CM 的 .cm-xxx），
+   不吃 --code-* token，必须单独覆盖。色相分工与 CM 同：
+   Sky=控制流/结构，Sage=字面量，Amber=数值，Gray=连接器。
+   ⚠️ 红色纪律：Prism 默认 keyword 红、function 蓝——是"出戏回官方"
+      的高发点。本规则把红色彻底清出代码区。 */
+.markdown-preview-view .token.keyword,
+.markdown-preview-view .token.selector,
+.markdown-preview-view .token.tag,
+.markdown-preview-view .token.class-name,
+.markdown-preview-view .token.builtin,
+.markdown-preview-view .token.boolean { color: var(--h2-sky); }
+.markdown-preview-view .token.string,
+.markdown-preview-view .token.attr-value,
+.markdown-preview-view .token.char { color: var(--h2-sage); }
+.markdown-preview-view .token.number,
+.markdown-preview-view .token.attr-name,
+.markdown-preview-view .token.constant,
+.markdown-preview-view .token.symbol { color: var(--h2-amber); }
+.markdown-preview-view .token.function,
+.markdown-preview-view .token.property { color: var(--h2-sky); }
+.markdown-preview-view .token.comment,
+.markdown-preview-view .token.prolog,
+.markdown-preview-view .token.doctype,
+.markdown-preview-view .token.cdata { color: var(--h2-text-faint); font-style: normal; }
+.markdown-preview-view .token.punctuation,
+.markdown-preview-view .token.operator { color: var(--h2-text-muted); }
+.markdown-preview-view .token.url,
+.markdown-preview-view .token.entity,
+.markdown-preview-view .token.variable { color: var(--h2-text); }
+
+/* ── 链接 ────────────────────────────────────────────────────
+   正文链接默认继承文字色 + 下划线，hover 切到降饱和红。
+   红色只在 hover 瞬态出现，不泛滥（红色纪律）。
+   未解析链接用 faint，视觉上提示"还没建"。
+   ──────────────────────────────────────────────────────────── */
+.markdown-preview-view a,
+.markdown-source-view.mod-cm6 .cm-link,
+.markdown-source-view.mod-cm6 .cm-url {
+  color: var(--link-color);
+  text-decoration: var(--link-decoration);
+  text-decoration-color: var(--link-decoration-color);
+  transition: var(--h2-transition-color), text-decoration-color var(--h2-duration-fast) var(--h2-ease);
+}
+
+.markdown-preview-view a:hover,
+.markdown-source-view.mod-cm6 .cm-link:hover,
+.markdown-source-view.mod-cm6 .cm-url:hover {
+  color: var(--link-color-hover);
+  text-decoration-color: var(--link-decoration-color-hover);
+}
+
+/* 外部链接：同内部链接处理，hover 切红 */
+.markdown-preview-view .external-link,
+.markdown-source-view.mod-cm6 .cm-url {
+  color: var(--link-external-color);
+  text-decoration: var(--link-external-decoration);
+}
+
+/* 未解析链接：faint 色 + 虚线下划线，提示"还没建" */
+.markdown-preview-view a.is-unresolved,
+.markdown-source-view.mod-cm6 span.cm-hmd-internal-link.is-unresolved {
+  color: var(--link-unresolved-color);
+  text-decoration: var(--link-unresolved-decoration);
+  text-decoration-color: var(--link-unresolved-decoration-color);
+}
+
+/* ── 标签（tag）· v1.2 方形结构片 ─────────────────────────────
+   0 圆角 + 1px hairline 描边 + 透明底。tag 从"彩色胶囊"变成
+   "小号的方"，与表格外框/嵌入框同语言。hover 描边加深、文字回深。
+   ──────────────────────────────────────────────────────────── */
+.markdown-preview-view a.tag {
+  background: var(--tag-background);
+  color: var(--tag-color);
+  border-radius: var(--tag-radius);
+  padding: 0.125rem 0.5rem;   /* 2px 8px —— 4px 网格 */
+  font-size: 0.875em;
+  font-weight: 500;
+  text-decoration: none;
+  border: var(--tag-border-width) solid var(--tag-border-color);
+  transition: var(--h2-transition-color);
+}
+.markdown-preview-view a.tag:hover {
+  color: var(--tag-color-hover);
+  border-color: var(--tag-border-color-hover);
+}
+
+/* Live Preview 分段缝合：Obsidian 把一枚 tag 拆成相邻兄弟 span——
+   .cm-hashtag-begin（#）+ 0..n 个中段 + .cm-hashtag-end（正文）。
+   要读成"一枚方"：横边（上下 hairline）人人有，竖边只给两端
+   （begin 左边、end 右边），中段与内侧接缝 0 padding 0 边，
+   否则每段各画一圈就是截图里"#╱正文"两枚断片。
+   # 号退 faint——记号是句读，正文才是内容。 */
+.markdown-source-view.mod-cm6 .cm-hashtag {
+  background: var(--tag-background);
+  color: var(--tag-color);
+  border-radius: 0;
+  border-top: var(--tag-border-width) solid var(--tag-border-color);
+  border-bottom: var(--tag-border-width) solid var(--tag-border-color);
+  padding-top: 0.125rem;
+  padding-bottom: 0.125rem;
+  padding-left: 0;
+  padding-right: 0;
+  font-size: 0.875em;
+  font-weight: 500;
+  transition: var(--h2-transition-color);
+}
+.markdown-source-view.mod-cm6 .cm-hashtag.cm-hashtag-begin {
+  border-left: var(--tag-border-width) solid var(--tag-border-color);
+  padding-left: 0.5rem;
+  color: var(--h2-text-faint);   /* # 是句读，退 faint */
+}
+.markdown-source-view.mod-cm6 .cm-hashtag.cm-hashtag-end {
+  border-right: var(--tag-border-width) solid var(--tag-border-color);
+  padding-right: 0.5rem;
+}
+
+/* 原子 hover：一枚 tag 是一个交互单元，悬停任一段整枚同亮。
+   分段是相邻兄弟：向后用 + 链、向前用 :has()；
+   :not(.cm-hashtag-begin) 挡住链条串进同一行的下一枚 tag
+   （下一枚永远以 begin 开头）。覆盖到 4 段（begin+2 中段+end）。 */
+.markdown-source-view.mod-cm6 :is(
+  .cm-hashtag:hover,
+  .cm-hashtag:hover + .cm-hashtag:not(.cm-hashtag-begin),
+  .cm-hashtag:hover + .cm-hashtag:not(.cm-hashtag-begin) + .cm-hashtag:not(.cm-hashtag-begin),
+  .cm-hashtag:hover + .cm-hashtag:not(.cm-hashtag-begin) + .cm-hashtag:not(.cm-hashtag-begin) + .cm-hashtag:not(.cm-hashtag-begin),
+  .cm-hashtag:has(+ .cm-hashtag:not(.cm-hashtag-begin):hover),
+  .cm-hashtag:has(+ .cm-hashtag:not(.cm-hashtag-begin) + .cm-hashtag:not(.cm-hashtag-begin):hover),
+  .cm-hashtag:has(+ .cm-hashtag:not(.cm-hashtag-begin) + .cm-hashtag:not(.cm-hashtag-begin) + .cm-hashtag:not(.cm-hashtag-begin):hover)
+) {
+  color: var(--tag-color-hover);
+  border-color: var(--tag-border-color-hover);
+}
+
+
+/* ════════════════════════════════════════════════════════════
+   SEMANTIC BLOCKS · Phase 2 语义块
+   table → checkbox → blockquote → callout
+   纪律：方形元素靠闭合矩形轮廓成立；圆元素柔角；
+        红色只给交互/语义强调；hairline 均 1px 同色。
+   Phase 2 验收（主文档）：辨识度测试——遮氢视窗、和 Minimal
+   并排、3 秒认不出即返工高频元素。
+   ════════════════════════════════════════════════════════════ */
+
+/* ── Table（方形：横线 + 外圈 hairline + 无竖线 + 0 圆角）─────────
+   不做纯三线表——三线表是 Folio v1.3.0 招牌，三作各占一个形态；
+   更根本是几何语义："方"要成立得有闭合矩形轮廓，只剩横线读不出"方"。
+   表头分隔线 + 外圈 hairline + 无竖线 + 0 圆角。
+   v1.2 密度改版：字号 15→14px、行高 1.5→1.45、padding 8/12→6/10，
+   一屏约多容 20–25% 行数；密度的配套安全网是行 hover。
+   宽度纪律（Folio 同源）：fit-content 贴内容宽 + max-width 兜底，
+   长内容 break-word 断行、链接 anywhere 防长 URL 撑爆列宽。
+   ──────────────────────────────────────────────────────────── */
+.markdown-preview-view table,
+.markdown-source-view.mod-cm6 .cm-table-widget table {
+  border-collapse: collapse;
+  border-radius: 0;            /* 方形语义 */
+  border: 1px solid var(--h2-border);   /* 外圈闭合轮廓 = "方" */
+  background: var(--h2-bg);
+  font-size: 0.875rem;         /* 14px —— 信息密度档 */
+  line-height: 1.45;
+  font-variant-numeric: tabular-nums;   /* 等宽数字，同列竖向对齐 */
+  width: fit-content;          /* 贴内容宽，不平铺整行 */
+  max-width: 100%;             /* 永不溢出正文列 */
+}
+
+/* LP 表格容器：同款宽度约束 + 取消官方负边距，对齐段落左缘 */
+.markdown-source-view.mod-cm6 .cm-table-widget {
+  width: fit-content;
+  max-width: 100%;
+  margin-inline-start: 0;
+}
+
+/* 单元格：无内框（关掉 Obsidian 默认竖线/横线），padding 落 4px 网格半格 */
+.markdown-preview-view table td,
+.markdown-preview-view table th,
+.markdown-source-view.mod-cm6 .cm-table-widget table td,
+.markdown-source-view.mod-cm6 .cm-table-widget table th {
+  border: 0;                   /* 关掉所有内框，由主题显式画 hairline */
+  padding: 0.375rem 0.625rem;  /* 6px 10px，半格规则内 */
+  text-align: left;
+  word-break: break-word;      /* 超长内容在词边界断行，不撑爆列宽 */
+}
+
+/* 单元格内链接：长 URL 允许任意处断行 */
+.markdown-preview-view table td a,
+.markdown-source-view.mod-cm6 .cm-table-widget table td a {
+  overflow-wrap: anywhere;
+}
+
+/* LP 编辑态：padding 不在 td 上，在内层 .table-cell-wrapper（asar：
+   官方 padding: var(--size-2-2) var(--size-4-2)）。td 归零防双份，
+   数值搬到 wrapper——两个视图态一个尺寸。 */
+.markdown-source-view.mod-cm6 .cm-table-widget table td,
+.markdown-source-view.mod-cm6 .cm-table-widget table th {
+  padding: 0;
+}
+.markdown-source-view.mod-cm6 .cm-table-widget td .table-cell-wrapper {
+  padding: 0.375rem 0.625rem;   /* 6px 10px，与阅读模式一致 */
+}
+.markdown-source-view.mod-cm6 .cm-table-widget th .table-cell-wrapper {
+  padding: 0.25rem 0.625rem;    /* 表头矮一档，与阅读模式一致 */
+}
+
+/* 表头标签式：复用 H6 形态语言（小字号 + 全大写 + 宽字距 + muted），
+   去灰底——表头从"一行加粗内容"退成"一排安静的标签"，
+   内容行成为主角，顺带比灰底表头矮一档 */
+.markdown-preview-view table th,
+.markdown-source-view.mod-cm6 .cm-table-widget table th {
+  font-weight: 500;
+  font-size: 0.75rem;          /* 12px 标签档 */
+  text-transform: uppercase;
+  letter-spacing: 0.06em;      /* 与 H6 同款宽字距 */
+  color: var(--h2-text-muted);
+  background: transparent;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;     /* 4px——表头是标签不是内容，更矮 */
+  border-bottom: 1px solid var(--h2-border);   /* 表头分隔 hairline */
+}
+
+/* 行间横线：极轻，避免斑马感 */
+.markdown-preview-view table tbody tr,
+.markdown-source-view.mod-cm6 .cm-table-widget table tbody tr {
+  border-top: 1px solid var(--h2-border);
+}
+
+/* 行 hover：极轻灰 tint——密度提高后横向追行的安全网。
+   持续态用灰阶不用红（红色纪律） */
+.markdown-preview-view table tbody tr,
+.markdown-source-view.mod-cm6 .cm-table-widget table tbody tr {
+  transition: background-color var(--h2-duration-fast) var(--h2-ease);
+}
+.markdown-preview-view table tbody tr:hover,
+.markdown-source-view.mod-cm6 .cm-table-widget table tbody tr:hover {
+  background-color: var(--h2-gray-50);
+}
+
+/* ── Checkbox（圆形：未完成/完成两态，选中红填充）──────────────
+   Phase 2 只做 [ ] / [x]。扩展状态色彩纪律已在 Decisions 锁死：
+   无论何时做，只允许灰阶 + 已有的红，不引入新色相。
+   ──────────────────────────────────────────────────────────── */
+.markdown-preview-view input[type=checkbox] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: var(--checkbox-size);
+  height: var(--checkbox-size);
+  border-radius: var(--checkbox-radius);   /* 圆形语义 */
+  border: var(--checkbox-border-width) solid var(--checkbox-border-color);
+  background: var(--h2-bg);
+  cursor: pointer;
+  transition: var(--h2-transition-color);
+  position: relative;
+  vertical-align: middle;
+  margin-right: 0.5rem;   /* 8px，4px 网格 —— 与文字间距 */
+}
+
+.markdown-preview-view input[type=checkbox]:hover {
+  border-color: var(--checkbox-border-color-hover);
+}
+
+/* 选中态：红填充 + 白色勾选 */
+.markdown-preview-view input[type=checkbox]:checked {
+  background: var(--checkbox-color);
+  border-color: var(--checkbox-color);
+}
+
+.markdown-preview-view input[type=checkbox]:checked::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 4px;     /* 半格允许 */
+  height: 8px;
+  border: solid var(--checkbox-marker-color);
+  border-width: 0 2px 2px 0;   /* 半格允许 */
+  transform: translate(-50%, -60%) rotate(45deg);
+}
+
+/* 完成态任务文字：faint（不删除线，保留可读性）。
+   覆盖阅读模式（.task-list-item.is-checked）+ Live Preview
+   （Obsidian 在 LP 用 .cm-formatting-task + 父级行处理，但完成态文字
+   降级走 .task-list-item 即可——LP 的 is-checked 也加在 li 上）。
+   用 !important 确保压过 Obsidian 默认的 line-through 灰色规则。 */
+.markdown-preview-view ul > li.task-list-item.is-checked,
+.markdown-preview-view ol > li.task-list-item.is-checked,
+.markdown-source-view.mod-cm6 .HyperMD-task-line:has(.task-list-item-checkbox:checked) {
+  color: var(--h2-text-faint) !important;
+}
+
+/* ── Blockquote（v0.5 pull-quote 范式：去 rail，红短杠开场记号）──
+   v0.4 灰 rail 是所有主题的默认动作 = 没设计，且"侧边竖线=引用"
+   范式本身老了。v0.5 换成编辑部拉引式：去 rail，文字升半号（17px）、
+   Gray 800、行高放宽，引用块顶部一根 24px×2px 红色短杠作开场记号。
+   短杠是"这里有一段话值得停"的现代记号（编辑杂志 pull-quote 语言），
+   红色面积句读级、合规。
+
+   ⚠️ 选择器沿用 v0.4 验证过的（曾导致 rail 渲染成深灰的坑已修复）：
+   阅读模式 .markdown-rendered blockquote；Live Preview 文字行 .HyperMD-quote
+   + 独立 rail 元素 .cm-blockquote-border。
+   Live Preview 的红短杠：.cm-blockquote-border 是通栏竖线，改不成短杠，
+   隐藏它；红短杠在 Live Preview 由首行的 .cm-blockquote-border 或
+   引用块开始处的伪元素承担——实测发现 .cm-blockquote-border 是每行
+   都有的竖线元素，不适合画顶部短杠，所以 Live Preview 保留极轻 rail
+   提示（Gray 200，不抢戏），红短杠只在阅读模式出现。
+   ──────────────────────────────────────────────────────────── */
+
+/* 阅读模式：几何双块引号（v0.5.1「记号重绘」首件）
+   ──────────────────────────────────────────────────────────────
+   红短杠版被 Elijah 否掉（仍是"线的家族"，平凡）。换范式：
+   引用的记号本来是引号——把引号本身重绘成几何。
+   两个 8px 实心方块对角错位（模拟 „ 的双点结构），一灰一红
+   （"一屏一红"落点）。半悬挂：不伸出页边距（窄栏会裁切），
+   引用块自留 32px 左列安置双块，文字从旁缩进通过——
+   "缩进 + 记号"双重识别，零裁切风险。 */
+.markdown-rendered blockquote {
+  border-left: none;                        /* rail 范式退役 */
+  background: transparent;
+  color: var(--h2-gray-700);
+  font-style: normal;
+  font-size: 1.0625rem;                     /* 17px，升半号 */
+  line-height: 1.75;                        /* pull-quote 呼吸感 */
+  padding: 0.5rem 0 0.5rem 2rem;            /* 左 32px = 双块的悬挂列 */
+  margin-block-start: 1.5rem;
+  margin-block-end: 1.5rem;
+  position: relative;
+}
+
+/* 双块引号：多重背景画两个 8px 方块，红块前景压灰块（2px 叠角，
+   呼应氢视窗构图的咬合关系）。背景层序：先声明的在上层。 */
+.markdown-rendered blockquote::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.75rem;         /* 与首行文字肩部对齐 */
+  width: 14px;          /* 8 + 6 偏移 = 14 */
+  height: 14px;
+  background:
+    linear-gradient(var(--h2-accent), var(--h2-accent))
+      no-repeat 6px 6px / 8px 8px,
+    linear-gradient(var(--h2-gray-300), var(--h2-gray-300))
+      no-repeat 0 0 / 8px 8px;
+}
+
+/* Live Preview：与阅读模式同范式。
+   v0.5.2 修复叠字 bug：弃用"行 padding + 绝对定位伪元素"双机制
+   （任一被 CM 内部样式压掉就叠字，实测叠了）。改为零依赖做法：
+   LP 引用行自带 .cm-blockquote-border 占位元素（原竖线），双块
+   直接画在它身上——它在文档流里、在文字之前，文字天然让位，
+   不需要 padding、不需要 position。 */
+.markdown-source-view.mod-cm6 .HyperMD-quote {
+  background: transparent !important;
+  font-style: normal !important;
+  color: var(--h2-gray-700);
+  font-size: 1.0625rem;
+  line-height: 1.75;
+  border-left: none !important;
+}
+
+/* Obsidian 1.12.7 实际把 LP rail 画在以下两个 ::before 上。
+   显式清掉官方 rail，记号改挂到源码中的 > 格式 span。 */
+.markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote::before,
+.markdown-source-view.mod-cm6 .cm-blockquote-border::before {
+  content: none !important;
+  border: 0 !important;
+}
+
+/* 行级 padding 会让 CodeMirror 换行后的第二条视觉行重复缩进，退役。 */
+.markdown-source-view.mod-cm6.is-live-preview .cm-line.HyperMD-quote {
+  position: relative;
+  padding-inline-start: 0;
+}
+
+.markdown-source-view.mod-cm6 .cm-blockquote-border {
+  border: 0 !important;
+  background: none !important;
+  width: 0;
+}
+
+/* 用真实 > 字符的 span 建立 32px 流内悬挂列：换行文字与首行正文
+   共用同一文本起点，同时彻底隐藏截图里的细小 > 划痕。 */
+.markdown-source-view.mod-cm6.is-live-preview .cm-formatting-quote {
+  color: transparent !important;
+  position: relative;
+  display: inline-block;
+  width: 2rem;
+}
+
+.markdown-source-view.mod-cm6.is-live-preview
+  .cm-line.HyperMD-quote:not(.HyperMD-callout):not(:has(.cm-callout))
+  .cm-formatting-quote:first-of-type::before {
+  content: '' !important;
+  display: block;
+  position: absolute;
+  inset-inline-start: 0;
+  top: 0.125rem;
+  width: 14px;
+  height: 14px;
+  border: 0 !important;
+  background:
+    linear-gradient(var(--h2-accent), var(--h2-accent))
+      no-repeat 6px 6px / 8px 8px,
+    linear-gradient(var(--h2-gray-300), var(--h2-gray-300))
+      no-repeat 0 0 / 8px 8px;
+  pointer-events: none;
+}
+
+.markdown-source-view.mod-cm6.is-live-preview
+  .cm-line.HyperMD-quote + .cm-line.HyperMD-quote
+  .cm-formatting-quote::before {
+  display: none !important;
+}
+
+.markdown-source-view.mod-cm6.is-live-preview .HyperMD-callout .cm-formatting-quote {
+  color: var(--h2-text-faint) !important;
+  width: auto;
+}
+
+/* 引用块内段落间距收紧 */
+.markdown-rendered blockquote p {
+  margin: 0.5rem 0;   /* 8px，4px 网格 —— 配合放宽的行高 */
+}
+.markdown-rendered blockquote p:first-child { margin-top: 0; }
+.markdown-rendered blockquote p:last-child  { margin-bottom: 0; }
+
+/* ── Callout（v0.5 装置减法：轻 tint 圆背景 + 语义色图标）──────
+   v0.4 装置堆叠退役（边框+rail+底色+折角+彩图标五装置同时喊话）。
+   v0.5-A 色块砖试过太重（实心方块视觉重量压过标题文字，图标抢戏），
+   v0.5-A' 极简 tint 试过太弱（丢语义色后无存在感）。
+   v0.5 最终 = 中间值：图标本身吃语义色（保留识别），外圈极轻语义色
+   tint 圆背景（~10%，给"被标识"的暗示但不喊话）。视觉重量图标 ≈ 文字。
+   三角折角退役，几何语法表回滚（三角出场点收回氢视窗 + 折叠标记两处）。
+
+   语义色机制（v0.4 修通的关键，保留）：按 [data-callout] 选择器显式
+   注入语义色到 --callout-accent。
+   ──────────────────────────────────────────────────────────── */
+.callout {
+  --callout-accent: var(--h2-gray-500);
+  background: color-mix(in srgb, var(--callout-accent) 10%, var(--h2-bg));
+  border: none;                           /* v0.4 边框退役 */
+  border-left: none;                      /* v0.4 左 rail 退役 */
+  border-radius: 0;                       /* 方形语义 */
+  padding: 0.75rem 1rem;                  /* 12px 16px，4px 网格 */
+  margin-block-start: 1rem;
+  margin-block-end: 1rem;
+  overflow: visible;
+}
+
+/* 主装置：轻 tint 圆背景 + 语义色图标。
+   实心色块砖太重（A 版）；纯灰图标太弱（A' 版）。
+   中间值 = 语义色图标 + 极轻 tint 圆背景（10%）。
+   图标和文字视觉重量平衡，识别度靠图标本身的语义色承担。
+   尺寸 20px（v0.5.1 收一档，"又想存在又不太重"——和设置页图标
+   弱化同思路，精致感来自克制）。
+   ⚠️ svg 自身尺寸要同步收，否则 Obsidian 默认 --icon-size=18px
+   撑满容器，图标视觉上没变小，只是背景圆小了一圈。 */
+.callout .callout-icon {
+  background: color-mix(in srgb, var(--callout-accent) 10%, transparent);
+  border-radius: 50%;        /* 圆 = 中性/可交互，几何语法归属 */
+  width: 20px;               /* 4px 网格（v0.5.1 从 24px 收到 20px） */
+  height: 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+}
+.callout .callout-icon svg {
+  color: var(--callout-accent);   /* 图标本身吃语义色，保留识别 */
+  stroke-width: 1.5px;            /* 配合 W3 细线精密风 */
+  --icon-size: 14px;              /* svg 实际尺寸，4px 网格（容器 20px 留 3px 边距给 tint） */
+  width: 14px;
+  height: 14px;
+}
+
+/* v0.5：title 回到 Gray 900（不再吃语义色，让图标独自承担识别）。
+   align-items: center 覆盖 Obsidian 默认的 flex-start（顶对齐），
+   让图标圆背景和标题文字垂直居中对齐。 */
+.callout .callout-title {
+  color: var(--h2-text);
+  align-items: center;
+}
+
+/* 折叠箭头吃语义色（交互元素）。
+   v0.8.1 清理：删除死选择器 .callout-fold.is-collapsed .callout-fold
+   （fold 套 fold，永远匹配不到）。 */
+.callout .callout-fold {
+  color: var(--callout-accent);
+}
+
+/* 按 type 显式注入语义色到 --callout-accent（Obsidian 惯例机制）。
+   这是"语义色集中在 title/icon/rail/折角"能落地的前提——
+   光在 token 层定义 --callout-color-* 不接 [data-callout] 选择器，
+   语义色就永远接不上，所有 callout 都会是默认灰。
+
+   ⚠️ 按组写（一组一条选择器，所有别名列全），不按类型零敲碎打。
+   H2 OS 只有 4 个语义色相 + 中性灰，21 种 callout type 到色相的
+   完整映射表见主文档《H2 OS 主题介绍.md》callout 条目。
+   example 归 Amber（不是 Sky）——示例带"请看这里"的引导性，
+   和 warning/caution 共享注意语义，且避免和 abstract 混色。 */
+
+/* Sky（信息）—— note、info、todo、abstract、summary、tldr */
+.callout[data-callout='note'],
+.callout[data-callout='info'],
+.callout[data-callout='todo'],
+.callout[data-callout='abstract'],
+.callout[data-callout='summary'],
+.callout[data-callout='tldr']      { --callout-accent: var(--h2-sky); }
+
+/* Sage（正面）—— tip、hint、success、check、done */
+.callout[data-callout='tip'],
+.callout[data-callout='hint'],
+.callout[data-callout='success'],
+.callout[data-callout='check'],
+.callout[data-callout='done']      { --callout-accent: var(--h2-sage); }
+
+/* Amber（注意）—— warning、caution、attention、question、help、faq、example */
+.callout[data-callout='warning'],
+.callout[data-callout='caution'],
+.callout[data-callout='attention'],
+.callout[data-callout='question'],
+.callout[data-callout='help'],
+.callout[data-callout='faq'],
+.callout[data-callout='example']   { --callout-accent: var(--h2-amber); }
+
+/* Crimson（负面）—— danger、error、bug、failure、fail、missing */
+.callout[data-callout='danger'],
+.callout[data-callout='error'],
+.callout[data-callout='bug'],
+.callout[data-callout='failure'],
+.callout[data-callout='fail'],
+.callout[data-callout='missing']   { --callout-accent: var(--h2-crimson); }
+
+/* 灰（中性）—— quote、cite */
+.callout[data-callout='quote'],
+.callout[data-callout='cite']      { --callout-accent: var(--h2-gray-500); }
+
+/* 左上角三角折角签名：v0.5 退役（装置减法）。
+   v0.4 曾用 ::before clip-path 画三角，v0.5 改色块砖后拆除。
+   几何语法表回滚：三角出场点收回氢视窗 + 折叠标记两处。 */
+
+/* Callout title 补充：字号字重（color 在前面已设 Gray 900） */
+.callout .callout-title {
+  font-weight: 600;
+  font-size: 0.9375rem;   /* 15px，4px 网格 */
+  padding: 0;
+  gap: 0.5rem;            /* 8px，4px 网格 —— icon 与标题间距 */
+}
+
+/* 折叠箭头过渡（color 在前面已设语义色）。
+   v0.6.2：统一全局折叠旋转过渡到主题 token——Obsidian 默认是 100ms ease-in-out，
+   改成 180ms (--h2-duration-base) + MD standard 曲线 (--h2-ease)，
+   和其他动效节奏一致。落点 .collapse-icon svg（asar 实测，文件树/大纲/标题折叠都走这个）。 */
+.collapse-icon svg.svg-icon {
+  transition: transform var(--h2-duration-base) var(--h2-ease);
+}
+.callout .callout-fold {
+  transition: transform var(--h2-duration-base) var(--h2-ease);
+}
+
+/* Callout 内容：继承正文色，不跟随 callout 语义色（保持正文可读） */
+.callout .callout-content {
+  color: var(--text-normal);
+  margin-top: 0.5rem;     /* 8px，4px 网格 —— title 与内容间距 */
+}
+
+.callout .callout-content > :first-child { margin-top: 0; }
+.callout .callout-content > :last-child  { margin-bottom: 0; }
+
+
+/* ════════════════════════════════════════════════════════════
+   v0.5 · A Callout 重绘终止线
+   ════════════════════════════════════════════════════════════
+   方案演进：A 色块砖（太重，图标抢戏）→ A' 极简 tint（太弱，无存在感）
+   → 最终 = 轻 tint 圆背景 + 语义色图标（中间值，已在上方 .callout 段落定稿）。
+   v0.4 装置堆叠（边框/rail/折角/彩图标）全部退役。
+   三角折角退役 → 几何语法表回滚（三角出场点收回两处）+ Decisions 记档。
+   ════════════════════════════════════════════════════════════ */
+
+
+/* ════════════════════════════════════════════════════════════
+   UI CHROME · Phase 3 界面 chrome
+   settings → status/notice → file tree → tabs
+   纪律：chrome 的目标是"没存在感"——克制到不抢内容视线。
+        红色只给 active tab（状态）和 hover 瞬态；rail 不进文件树
+        （保留给语义块，避免通货膨胀）。间距落 4px 网格。
+   Phase 3 验收（顾问心法）：内容区截图里 chrome 越"没存在感"越好。
+        chrome 抢了内容的视线就是做过了。
+   ════════════════════════════════════════════════════════════ */
+
+/* ── Settings（设置页：回退系统字体，沿用前两作教训）──────────
+   Geometric Sans 的 metrics 会破坏 Obsidian 原生设置项布局
+   （checkbox 对不齐、input 高度错位）。整页强制回退系统字体。
+   ──────────────────────────────────────────────────────────── */
+.app-settings,
+.workspace-leaf-content[data-type="settings"] {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif !important;
+}
+
+/* 设置页的 A11y 侧边导航也用系统字体 */
+.vertical-tab-header,
+.vertical-tab-content {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+}
+
+/* 设置项 active 状态：用沉浸底色，不强行加灰底卡片（第三方插件兼容） */
+.vertical-tab-nav-item.is-active {
+  background: var(--h2-gray-100);
+  color: var(--h2-accent);
+  font-weight: 500;
+}
+
+
+/* ── Status bar + Notice ─────────────────────────────────────
+   notice 用 shadow-2（面积越小阴影越轻，MD 物理隐喻）。
+   status bar 底色用 surface 层（Gray 100），hairline 分隔。
+   ──────────────────────────────────────────────────────────── */
+.status-bar {
+  background: var(--h2-bg-surface);
+  color: var(--h2-text-muted);
+  font-size: 0.75rem;     /* 12px，4px 网格 */
+  font-family: var(--font-interface-theme);
+  border-top: 1px solid var(--h2-border);
+  padding: 0.25rem 1rem;  /* 4px 16px，4px 网格 */
+}
+
+/* Notice：右下角弹出提示。shadow-2 不浮太重 */
+.notice {
+  background: var(--h2-gray-900);
+  color: var(--h2-white);
+  border-radius: var(--radius-l);
+  box-shadow: var(--h2-shadow-2);
+  padding: 0.75rem 1rem;   /* 12px 16px，4px 网格 */
+  font-size: 0.875rem;     /* 14px，4px 网格 */
+}
+
+
+/* ── File tree / Outline（文件树：active 整行灰阶 tint，无 rail）──
+   active 状态整行灰阶 tint + 文字加深（Gray 900）+ 500 字重，无 rail——
+   rail 是 blockquote/callout 的语义块部件，文件树高频区挂红 rail 会让签名部件通货膨胀。
+   且红色纪律：active file 是持续态/大面积，用红会变成常驻粉块；红只给瞬态/小面积
+   （active tab 顶线、hover、checkbox）。灰阶 tint 靠 500 字重补辨识度。
+   ──────────────────────────────────────────────────────────── */
+
+/* 文件树项 active 状态：整行灰阶 tint + 文字 Gray 900 + 500 字重 */
+.tree-item-self.is-active,
+.nav-file-title.is-active,
+.nav-folder-title.is-active,
+.outline-item.is-active {
+  background: var(--nav-item-background-active);   /* rgba(0,0,0,0.07) 灰阶 */
+  color: var(--h2-accent);
+  font-weight: 500;
+  border-radius: var(--radius-s);
+}
+
+/* 红点导航语（v0.3.1）：active 文件同款句读级红点，与 active tab 呼应 */
+.nav-file-title.is-active .nav-file-title-content::before {
+  display: none;
+}
+
+/* 大纲（outline）同处理 */
+.workspace-leaf-content[data-type="outline"] .outline-item.is-active {
+  background: var(--nav-item-background-active);
+  color: var(--h2-accent);
+  font-weight: 500;
+}
+
+/* 文件树 hover：轻量 tint */
+.nav-file-title:hover,
+.nav-folder-title:hover,
+.tree-item-self:hover,
+.outline-item:hover {
+  background: var(--nav-item-background-hover);   /* rgba(0,0,0,0.04) 灰阶（v0.7.3 修正过时注释） */
+  border-radius: var(--radius-s);
+  transition: var(--h2-transition-color);
+}
+
+/* 文件夹字重加档（v1.2.4）：folder 比 file 重一档建立层级——
+   H2 OS 用字重而非颜色做层级（视觉品味纪律）。
+   - 旧 file tree：.nav-folder-title 是 folder 容器（.nav-file-title 是 file）
+   - 新 mod-tree：.tree-item-self 共用，folder 靠 .mod-collapsible 区分
+     （file 不可折叠、不带此类）
+   asar 实测：app.css 9465 .tree-item-self.mod-collapsible 是 folder 标记。 */
+.nav-folder-title,
+.tree-item-self.mod-collapsible {
+  font-weight: 500;
+}
+
+
+/* ── Tabs（标签栏：active 顶部 2px 红线 + 白底）────────────────
+   active tab 顶部 2px 红线（Red 500）+ 白底。每个 pane 只有一个
+   active tab，画面上红线永远只有一两条——红色出现即亮点，不泛滥。
+   pinned tab 用灰阶小圆点替代关闭按钮（圆 = 状态点，几何语法归属）。
+   ──────────────────────────────────────────────────────────── */
+
+/* tab 容器：去掉默认的下方分隔线，让 active 红线更突出 */
+.workspace-tabs .workspace-tab-header-container {
+  border-bottom: 1px solid var(--h2-border);
+}
+
+/* 单个 tab：active 状态加顶部红线，非 active 无线 */
+.workspace-tab-header {
+  background: transparent;
+  color: var(--h2-text-muted);
+  transition: var(--h2-transition-color);
+}
+
+.workspace-tab-header:hover {
+  color: var(--h2-text);
+}
+
+/* active tab：顶部 2px 红线 + 白底。
+   ⚠️ 不用 ::before/::after 画线——Obsidian 默认主题自己占用了
+   .workspace-tab-header 的伪元素画 active tab 圆角曲线，抢伪元素
+   必被 app 层规则覆盖（Phase 3 踩坑实录）。
+   改画在 .workspace-tab-header-inner 的 inset box-shadow 上：
+   不碰伪元素、不受容器 overflow 裁切、无 z-index 问题。 */
+.workspace-tab-header.is-active {
+  color: var(--h2-text);
+  background: transparent;
+}
+
+/* 顶部 OS 导航带：tab 是清晰的导航单元，不复刻原生曲面标签。
+   active 用轻底 + hairline 容器，红点继续承担“你在这里”。 */
+.workspace .mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header {
+  height: 32px;
+  padding: 0 2px;
+}
+
+.workspace .mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header-inner {
+  height: 32px;
+  border-radius: var(--radius-m);
+  padding-inline: 12px;
+}
+
+.workspace .mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header.is-active .workspace-tab-header-inner {
+  background-color: var(--nav-item-background-active);
+  box-shadow: none;
+}
+
+.workspace .mod-root .workspace-tab-header.is-active .workspace-tab-header-inner-title {
+  color: var(--h2-accent);
+}
+
+/* 原生 container-inner 有 6px 上边距，会让自定义 32px tab 视觉下沉。 */
+.workspace .mod-root .workspace-tab-header-container {
+  align-items: center;
+}
+
+.workspace .mod-root .workspace-tab-header-container .workspace-tab-header-container-inner {
+  height: 100%;
+  margin: 0 !important;
+  padding-block: 0;
+  align-items: center;
+}
+
+/* 关闭 Obsidian 官方 active tab 的外层曲线与 outline；否则会和上面的
+   H2 OS 内框叠成双层弧线。选择器来自 asar app.css 6178-6198。 */
+.workspace .mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header.is-active {
+  box-shadow: none !important;
+}
+
+.workspace .mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header.is-active::before,
+.workspace .mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header.is-active::after {
+  display: none !important;
+}
+
+/* 红点导航语（v0.3.1）：句读级红点 = "你在这里"。
+   弃顶部红线——inset shadow 跟随容器圆角在两端下弯，是 2014-16
+   Android tab indicator 的旧范式（Elijah 实看否掉）。
+   红点：圆 = 状态点（几何语法归属），与 checkbox 红圆同家族，
+   句读级面积，是"红不做大面积持续态"纪律的唯一持续态例外。 */
+.workspace-tab-header.is-active .workspace-tab-header-inner-title::before {
+  content: '';
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--h2-accent);
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+/* 主导航 active 改用品牌 tint，不再占用标题宽度；红点仍留给文件树等
+   句读级位置导航。 */
+.workspace .mod-root .workspace-tab-header.is-active .workspace-tab-header-inner-title::before {
+  display: none;
+}
+
+/* Pin 图标 → 红点 + 灰空心方（v0.8.1 二版，倒三角实测太小否掉）。
+   语义："钉在结构上"——6px 红点（既有"你在这里"语汇）咬合在灰色
+   空心方（方=结构）的左上角。不引入新形状，是红点与方两个既有记号
+   的第一次组合（词汇不变，出现第一个"词组"），叠压构图与氢徽同语法。
+   红色纪律备案：pinned 持续态但红点面积句读级，归入句读级红例外类。
+   ⚠️ 一屏红元素计数会因多个 pinned tab 上升，验收时实测多 pin 场景。
+   ⚠️ 选择器实测：pinned 真实结构是 .workspace-tab-header-status-icon
+   .mod-pinned（不存在 .is-pinned / .pin-icon，Phase 3 踩坑实录）。
+   svg 是 setIcon 注入的 lucide pin，CSS 改不了 path——隐藏 svg，
+   记号用 data URI background 画（与氢徽署名同工法，市场合规）。
+   几何：方 9×9 描边 1.5（Gray 400）@(5.5,5.5)；红点 r3 @(5,5)，
+   圆心压在方的左上角点上，形成对角咬合。 */
+.workspace-tab-header .workspace-tab-header-status-icon.mod-pinned svg {
+  display: none;   /* 隐藏原生 lucide pin */
+}
+.workspace-tab-header .workspace-tab-header-status-icon.mod-pinned {
+  /* v0.8.1 二修：status icon 容器原生尺寸太小，14px 背景被压缩成
+     红色小月牙（Elijah 实测截图）。显式撑容器 16px + 背景 contain；
+     灰方描边 1.5→1.75、Gray 400→500（灰 tab 底上 1.5px Gray 400 隐形）。 */
+  width: 16px;
+  height: 16px;
+  flex: 0 0 auto;
+  /* v0.8.4：方 → 空心倒三角（Elijah 拍板）。红点（你在这里）+
+     倒三角（钉入）="钉在此处"。空心描边形态小尺寸立得住
+     （初版实心倒三角失败是因为无内部细节，非形状本身问题）。 */
+  background: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path d='M3.5 5.5 13.5 5.5 8.5 13Z' fill='none' stroke='%2371717A' stroke-width='1.75' stroke-linejoin='round'/><circle cx='4.5' cy='4.5' r='3.25' fill='%23D14A4A'/></svg>") no-repeat center / contain;
+  opacity: 0.85;
+  animation: h2-emerge 150ms var(--h2-ease-signature);
+  transition: opacity var(--h2-duration-fast) var(--h2-ease);
+}
+/* hover 提亮（点击此处 = 取消固定，功能保留） */
+.workspace-tab-header:hover .workspace-tab-header-status-icon.mod-pinned {
+  opacity: 1;
+}
+/* 其他 status icon（非 pinned）保持灰阶 */
+.workspace-tab-header-status-container .workspace-tab-header-status-icon:not(.mod-pinned) {
+  color: var(--h2-text-faint);
+}
+
+
+/* ════════════════════════════════════════════════════════════
+   Phase 3 终止线。chrome 不抢内容视线验收通过后进 Phase 4。
+   ════════════════════════════════════════════════════════════ */
+
+
+/* ════════════════════════════════════════════════════════════
+   HYDROGEN WINDOW · Phase 4 氢视窗（签名时刻，三角形主场）
+   ════════════════════════════════════════════════════════════
+   定位：彩蛋不是门面（主文档 Phase 4 定位说明）。
+   构图：圆/三角/方三件套（几何语法全家福），互相轻微叠压，大留白。
+   颜色：纯灰阶三层（100/200/300 排景深）。红色纪律：视窗是
+        持续态大面积，不用红；语义色四相会稀释 callout 稀缺性，不用。
+   选择器：⚠️ 从 obsidian.asar 实测——空标签页是 data-type="empty"
+        （主文档曾猜 "empty-state"，是错的）。内部结构：
+        .empty-state-container > .empty-state
+          > .empty-state-title + .empty-state-action-list
+   功能保留：不隐藏 action 链接（主题不砍功能），只调 faint 降噪。
+   ──────────────────────────────────────────────────────────── */
+
+.workspace-leaf-content[data-type="empty"] .empty-state {
+  position: relative;
+}
+
+/* 构图：两个伪元素画三件套。
+   ::before 承担 方 + 圆（多重背景），::after 承担 三角（clip-path，
+   签名元素单独一层放最前）。固定尺寸容器居中，不随 pane 缩放变形。 */
+/* v0.3.1 红色胆量校准（Elijah 拍板）：构图去居中改非对称
+   （H2OS 教义"打破对称"，官方页第 3 帧），三角换红——
+   学官方页首图的大面积红色几何胆量。空状态是用户主动停留的
+   封面，不是被迫常驻的 chrome，红色纪律的第二个例外场景。 */
+.workspace-leaf-content[data-type="empty"] .empty-state::before {
+  content: '';
+  position: absolute;
+  left: 38%;
+  top: 32%;
+  translate: -50% -50%;
+  width: 240px;
+  height: 180px;
+  pointer-events: none;
+  /* ── 氢徽·完整版（v0.6 关系锁定）─────────────────────────
+     故事：方是结构（最大最静，垫底）、圆是日常（居其上，仍灰）、
+     三角是灵感（最小、唯一红，尖端从方与圆的交叠处冒出来）。
+     关系规则（任何尺寸重绘必守）：
+       ① 面积序 方>圆>三角；② 三角尖端处于方圆交叠区（画眼）；
+       ③ 唯一红：只有三角红，方圆永远灰阶。
+     本版几何：方 132² @(0,48)；圆 88 @(112,0)（左移形成真实
+     交叠区 x[112,132] y[48,88]——旧版方圆间有 16px 空隙，
+     "交叠处冒尖"在几何上不成立，故事的画眼是这次锁上的）。 */
+  background:
+    /* 圆：Gray 200，中景，与方交叠 */
+    radial-gradient(circle closest-side, var(--h2-gray-200) 99%, transparent 100%)
+      no-repeat 112px 0 / 88px 88px,
+    /* 方：Gray 100，背景层，左下，最大 */
+    linear-gradient(var(--h2-gray-100), var(--h2-gray-100))
+      no-repeat 0 48px / 132px 132px;
+}
+
+.workspace-leaf-content[data-type="empty"] .empty-state::after {
+  content: '';
+  position: absolute;
+  left: 38%;
+  top: 32%;
+  /* 尖端精确落点：构图坐标 (126,58)，在方圆交叠区 x[112,132] y[48,88] 内。
+     换算：top-left = 锚点 + (6-48, 10-42) → translate 偏移 (6,10)。 */
+  translate: calc(-50% + 6px) calc(-50% + 10px);
+  width: 96px;
+  height: 84px;
+  pointer-events: none;
+  background: var(--h2-accent);   /* 三角：前景，唯一红——"冒尖"本体 */
+  clip-path: polygon(50% 0, 0 100%, 100% 100%);
+}
+
+/* 默认 "New tab" 标题：视窗不放文字（设计定义），隐藏纯装饰性标题。
+   action 链接是功能，保留但降噪到 faint。 */
+.workspace-leaf-content[data-type="empty"] .empty-state-title {
+  display: none;
+}
+
+.workspace-leaf-content[data-type="empty"] .empty-state-action-list {
+  margin-top: 220px;   /* 给上方构图让位 */
+}
+
+.workspace-leaf-content[data-type="empty"] .empty-state-action {
+  color: var(--h2-text-faint);
+  font-size: 0.875rem;   /* 14px，4px 网格 */
+  transition: var(--h2-transition-color);
+}
+
+.workspace-leaf-content[data-type="empty"] .empty-state-action:hover {
+  color: var(--h2-accent);   /* hover 瞬态红，合法 */
+}
+
+
+/* ════════════════════════════════════════════════════════════
+   Phase 4 终止线（氢视窗）。区域撞色单独评估，未定案不动工。
+   ════════════════════════════════════════════════════════════ */
+
+
+/* ════════════════════════════════════════════════════════════
+   v0.3 首屏视窗化试验（源自氢OS官方页 oneplus.com/cn/hydrogenos
+   逐帧研究，2026-07-05）
+   ════════════════════════════════════════════════════════════
+   提炼：H2OS 的排面 = 超大左对齐标题 + 35/65 留白结构 + 显性构造线
+   （三段细分隔线）+ faint 副标。氢视窗从空标签页彩蛋升格为
+   每篇笔记的日常门面。红色胆量校准（非对称红构图/单字符红）
+   未定案，不在本段——等拍板。
+   ──────────────────────────────────────────────────────────── */
+
+/* hr 分隔线 → 三段线 motif（全市场无人用的签名分隔，每篇长文出场） */
+.markdown-preview-view hr,
+.markdown-source-view.mod-cm6 hr {
+  border: none;
+  height: 1px;
+  margin-block-start: 2rem;    /* 32px，分隔线上下留呼吸 */
+  margin-block-end: 2rem;
+  background: linear-gradient(
+    to right,
+    var(--h2-border) 0 31%, transparent 31% 34.5%,
+    var(--h2-border) 34.5% 65.5%, transparent 65.5% 69%,
+    var(--h2-border) 69% 100%
+  );
+}
+
+/* 属性区（frontmatter/metadata）→ faint 副标角色。
+   氢OS 排面结构里大标题下是一行 faint 副标（"2046张照片, 42个视频"），
+   Obsidian 里对应物就是属性区：降噪到副标视觉层级，不抢排面。 */
+.metadata-container {
+  --metadata-label-text-color: var(--h2-text-faint);
+  --metadata-input-text-color: var(--h2-text-muted);
+  font-size: 0.875rem;   /* 14px，4px 网格 */
+}
+
+
+/* ════════════════════════════════════════════════════════════
+   v0.3 试验段终止线。验收标准：与官方页第 3/9 帧并排比对
+   "像不像那个骨架"；缩略图尺寸下能与 Minimal 区分。
+   ════════════════════════════════════════════════════════════ */
+
+
+/* ════════════════════════════════════════════════════════════
+   v0.4 · W1 设置页重设计（主战场，第一分钟旅程的起点）
+   ════════════════════════════════════════════════════════════
+   定位：用户装主题的第一分钟有一半时间在设置页——这是第一印象
+        主战场，却是 Phase 0-3 唯一只做了"字体回退"的地方。W1 把
+        H2OS 排面语言搬进来：左侧 nav 红点导航语 + 分组标题标签式；
+        右侧去卡片感 + 分区标题标签式 + 设置项之间 hairline 化。
+   红线（Marcus 顾问）：所有选择器 asar 实测，第三方插件设置 tab
+        抽查兼容（改的是 .vertical-tab-* 公共结构，Dataview/Git 共用）。
+   ⚠️ 已知约束（asar 实测）：右侧内容区无专属"tab 顶部标题"DOM，
+        分区感靠 .setting-item-heading（右侧"账户""高级"小节标题）
+        承担；左侧 .vertical-tab-nav-item 的伪元素没被 Obsidian 占用
+        （和 .workspace-tab-header 不同），红点用 ::before 安全。
+   ──────────────────────────────────────────────────────────── */
+
+/* ── 设置页全局：整页系统字体已在 Phase 3 声明（避免 Geometric Sans
+   metrics 破坏原生布局）。W1 只调形态不调字体。 ─────────────────── */
+
+
+/* ── 左侧 nav：红点导航语 + 分组标题标签式 ────────────────────
+
+   ⚠️ 红点位置实测决策（asar + DOM 结构判断）：
+   .vertical-tab-nav-item 是 flex 容器，内部结构（asar 验证）：
+     .vertical-tab-nav-item > .vertical-tab-nav-item-icon
+                            + .vertical-tab-nav-item-title
+                            + .vertical-tab-nav-item-chevron
+   红点画在 .vertical-tab-nav-item::before，flex 会把它当第一个
+   子元素排进 icon 前面——不需要绝对定位。这和 tab 红点画在
+   -title::before 的位置不同（tab 那边是因为 title 是文本节点
+   想让红点贴着文字），这里 nav item 有独立 icon，红点放整行最前
+   更合适（"这一行被选中"而不是"这个文字被选中"）。
+   ──────────────────────────────────────────────────────────── */
+
+/* 左侧 nav active 项：红点导航语（与 active tab / active 文件同语汇） */
+.vertical-tab-nav-item.is-active::before {
+  content: '';
+  display: inline-block;
+  width: 6px;     /* 句读级，与 tab/文件树红点同尺寸 */
+  height: 6px;
+  border-radius: 50%;   /* 圆 = 状态点（几何语法归属） */
+  background: var(--h2-accent);
+  margin-right: 8px;    /* 4px 网格，与 icon 留呼吸 */
+  flex-shrink: 0;
+  align-self: center;
+}
+
+/* 非 active 项：占位等宽，避免 active 切换时文字左右跳 */
+.vertical-tab-nav-item:not(.is-active)::before {
+  content: '';
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin-right: 8px;
+  flex-shrink: 0;
+  align-self: center;
+}
+
+/* 左侧分组标题（"通用""账户"等大组标题）：H6 标签式处理。
+   asar 实测默认是 font-ui-smaller + semibold + faint；
+   改全大写 + 宽字距 + Gray 500，和 H6 标签式同语汇。 */
+.vertical-tab-header-group-title {
+  text-transform: uppercase;
+  letter-spacing: 0.06em;   /* 与 H6 同款宽字距 */
+  font-size: 0.75rem;       /* 12px，4px 网格 —— 比 Obsidian 默认更小一档，强化标签感 */
+  color: var(--h2-text-muted);   /* Gray 500，达 AA */
+  font-weight: 600;
+}
+
+
+/* ── 右侧内容区：去卡片感 + 分区标题标签式 + 设置项 hairline ─── */
+
+/* 组内设置项靠留白，不逐行画线。线只标记新的设置分组。 */
+.modal.mod-settings .setting-item + .setting-item {
+  border-top: 0;
+}
+
+.modal.mod-settings .setting-item-heading:not(:first-child) {
+  border-top: 1px solid var(--h2-border);
+  margin-top: 16px;
+  padding-top: 24px;
+}
+
+/* 分区标题（.setting-item-heading，"账户""高级"小节标题）：
+   标签式处理——全大写 + 宽字距 + Gray 900 + 600。
+   asar 默认走 --setting-group-heading-* token（已在 Phase 0 接管），
+   这里补形态（uppercase + letter-spacing），和左侧 group-title、
+   H6 三处标签式语汇统一。 */
+.modal.mod-settings .setting-item-heading .setting-item-name {
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 0.75rem;        /* 12px，4px 网格 —— 标签级，比正文小一档 */
+  color: var(--h2-text);     /* Gray 900，分区标题要可读 */
+  font-weight: 600;
+}
+
+/* 分区标题的 description 也标签化（弱化处理）：跟随 name 的字距节奏，
+   但保持 muted 角色。 */
+.modal.mod-settings .setting-item-heading .setting-item-description {
+  text-transform: none;      /* 描述不全大写，保持可读 */
+  letter-spacing: 0;
+}
+
+/* 设置导航去图标、去红点占位：nav item 与 group title 都从官方 8px
+   padding 起步，核心/第三方插件文字严格共用同一左轴。 */
+.modal.mod-settings .vertical-tab-nav-item-icon,
+.modal.mod-settings .vertical-tab-nav-item::before {
+  display: none !important;
+}
+
+.modal.mod-settings .vertical-tab-nav-item.is-active {
+  color: var(--h2-accent);
+}
+
+
+/* ── 命令面板（Cmd+P）：一分钟旅程的高光时刻 ──────────────────
+   asar 实测结构：.prompt > .prompt-input-container > input.prompt-input
+                          + .prompt-results (列表)
+                + .prompt-instructions
+   选中项的类名 asar 查不到（运行时 JS 注入）——⚠️ 待实测（路 B）：
+   Elijah 实机 Cmd+P，选中一项，告诉我 .prompt-results 下子元素的
+   class（猜测是 .suggestion-item.is-selected 或 .prompt-result.is-selected，
+   但禁止凭猜落码）。
+   ──────────────────────────────────────────────────────────── */
+
+/* 命令面板输入框：排面化处理。
+   asar 默认 .prompt-input 是 transparent 背景 + 底部 hairline；
+   这里加底部内边距让输入区有"排面"的呼吸感。 */
+.prompt-input-container {
+  padding-bottom: 0.5rem;   /* 8px，4px 网格 */
+}
+
+/* 命令面板整体：方形语义（圆角小，--radius-l=8px 是 Obsidian 默认，
+   降到 --radius-m=6px 让它和 popover 同档，更克制）。
+   ⚠️ 暂不动——W4 动效会处理入场，这里先不破坏 Obsidian 原生阴影层级。 */
+
+
+/* ════════════════════════════════════════════════════════════
+   W1 终止线。验收：Elijah 实机走一遍设置页 + Cmd+P，截图发 Marcus。
+   实测待办（路 B）：Cmd+P 选中项的真实类名。
+   ════════════════════════════════════════════════════════════ */
+
+
+/* ════════════════════════════════════════════════════════════
+   v0.4 · W2 控件家族统一（渗透感来源）
+   ════════════════════════════════════════════════════════════
+   定位：toggle/slider/dropdown/input/button/scrollbar 散在全 app 每个
+        角落，现在全是 Obsidian 原生形态。W2 按几何语法统一重做，
+        让"处处被重新设计过"的体感渗到每个界面。
+   招牌动作：slider thumb 改红点（AOD 红秒针语汇，和红点导航语同族）。
+   红线（Marcus 顾问）：所有选择器 asar 实测；控件家族改动是全局的，
+        第三方插件的自定义控件可能受影响——验收时抽查。
+   ⚠️ asar 关键发现：Obsidian 控件默认 --input-shadow 是 inset 1px +
+      4 层散阴影（2015 MD 重阴影遗风），这是"敦实工具风"的根源。
+      W2 统一退到 hairline border，去掉所有散阴影。
+   ──────────────────────────────────────────────────────────── */
+
+
+/* ── Slider（招牌：thumb 改红点）──────────────────────────────
+   asar 实测：input[type='range'] + ::-webkit-slider-thumb。
+   thumb 默认是 18px 白圆 + 灰边框 + 阴影（见 app.css 7762-7790）。
+   改成红点：Red 500 + 14px + 50% + 无边框无阴影。
+   尺寸/圆角 token 已在 Phase 0 接管，这里只补 background（token 接管不了）。
+   ──────────────────────────────────────────────────────────── */
+input[type='range']::-webkit-slider-thumb {
+  background: var(--h2-accent);          /* Red 500 —— AOD 红秒针语汇 */
+  border: none;                          /* 去掉灰边框，红点纯净 */
+  box-shadow: none;                      /* 去掉默认散阴影 */
+  transition: background var(--h2-duration-fast) var(--h2-ease),
+              transform var(--h2-duration-fast) var(--h2-ease);
+}
+
+/* slider thumb hover：加深到 Red 600（瞬态，合法红） */
+input[type='range']::-webkit-slider-thumb:hover,
+input[type='range']::-webkit-slider-thumb:active {
+  background: var(--h2-accent-hover);    /* Red 600 */
+  border-color: transparent;
+  box-shadow: none;
+}
+input[type='range']::-webkit-slider-thumb:active {
+  transform: scale(1.15);
+}
+
+/* slider focus：Gray 400 圈（红不做持续态，与 input focus 同纪律） */
+body:not(.is-mobile) input[type=range]:focus-visible::-webkit-slider-thumb {
+  border: 2px solid var(--h2-gray-400);
+  box-shadow: none;
+}
+
+
+/* ── Dropdown / Select（去重阴影 + hairline + 几何圆角）─────────
+   asar 实测：.dropdown / select / .combobox-button 共享同一组样式
+   （app.css 7049-7087），走 --input-shadow（W2 已退 hairline）+
+   --input-radius（W2 已改 6px）+ --dropdown-background（W2 已改 Gray 50）。
+   token 接管后 dropdown 自动跟，这里只补：去掉默认 SVG 箭头的 opacity
+   感（asar 默认 arrow 是 opacity 0.9 黑色，太重），调到 muted。
+   ──────────────────────────────────────────────────────────── */
+/* dropdown 自带的 SVG 箭头（asar 第 7085 行）opacity 0.9 太重，
+   用 filter 调淡到 muted 级。⚠️ asar 实测 SVG 是内联在 background-image
+   里的（data:image/svg+xml），改不了 stroke 颜色，只能 filter。 */
+.dropdown {
+  filter: none;   /* 占位，确保不被父级 filter 干扰 */
+}
+
+/* dropdown hover 态已经走 --input-shadow-hover（token 接管），无额外规则 */
+
+
+/* ── Input（去重阴影 + hairline + focus 灰阶）─────────────────
+   asar 实测：所有 input 走 --input-shadow（W2 已退 hairline）。
+   Phase 0 已把 --background-modifier-border-focus 改 Gray 400（红不做持续态）。
+   token 接管后 input 自动跟，这里不写额外规则——避免和 Obsidian 原生
+   input 状态机打架（原生有 :focus / :focus-visible / :hover 三态）。 */
+
+
+/* ── Button（primary accent + secondary hairline 幽灵）─────────
+   asar 实测：button 走 --button-primary-* / --button-secondary-* token。
+   primary 默认是 accent 实心填充，secondary 默认是 Gray 100/200 实心。
+   W2 调整：secondary 改 hairline 幽灵（透明底 + border），更克制。
+   ⚠️ button 的 token 体系庞大（20+ 个），W2 只调 secondary 的 bg/border，
+   primary 保持 Obsidian 默认（accent 实心是合法红——按钮是瞬态交互，
+   非持续态）。完整重做留到验收后看是否需要。
+   token 定义在 Phase 0 token 层（body.theme-light 内）。 */
+button.mod-cta {
+  box-shadow: none;   /* 去掉继承自普通 button 的灰色 inset，避免红按钮四角露灰弧 */
+}
+button.mod-cta:hover,
+button.mod-cta.mobile-tap {
+  box-shadow: none;
+}
+
+
+/* ── Toggle（圆角矩形开关，跟随几何语法）──────────────────────
+   asar 实测：toggle 走 --toggle-* token，Phase 0 已接管颜色
+   （border Gray 300 / thumb 白 / accent Red 500）。
+   W2 微调 thumb 尺寸跟 slider 红点同语汇——slider thumb 14px，
+   toggle thumb 也取偶数尺寸保持视觉协调（Obsidian 默认 14px 已合适）。
+   不改——Obsidian 默认 toggle 尺寸已经在几何语法里，token 接管颜色即可。 */
+
+
+/* ── Scrollbar（方形细化，去默认粗条）─────────────────────────
+   asar 实测：body.styled-scrollbars ::-webkit-scrollbar（app.css 8796）。
+   token 接管：width/height 8px（4px 网格，默认 12px 太粗）+ radius 0
+   （方形语义）+ thumb Gray 300。自动跟，无额外规则。 */
+
+
+/* ════════════════════════════════════════════════════════════
+   W2 终止线。验收：Elijah 实机走设置页 + 命令面板 + 笔记内任意 slider/
+   dropdown/input/button，抽查第三方插件控件兼容。
+   ════════════════════════════════════════════════════════════ */
+
+
+/* ════════════════════════════════════════════════════════════
+   v0.4 · W4 动效手感（被低估的"重设计感"来源）
+   ════════════════════════════════════════════════════════════
+   定位："感觉被重新设计过"有一半来自手感不是视觉。官方主题几乎
+        没有入场动效——modal/prompt/menu 全靠 JS mount/unmount 瞬时
+        出现，CSS 层无 transition 无 animation。W4 加一层轻缓入场，
+        操作的"质感"立刻和官方分家。
+   红线（Marcus 顾问）：只动 transform 和 opacity（重排掉帧），
+        走已有 token（--h2-duration-* / --h2-ease），reduced-motion 兜底
+        已在文件头 reduced-motion 段加好。
+   ⚠️ asar 关键发现：Obsidian 自己有 slideIn keyframes
+      （translateY(-8px) scale(0.97)，app.css 19226），证明 fade+位移
+      是 Obsidian 认可的入场模式，沿用安全。不用 scale——scale 入场
+      是 Material 风格，H2 OS 走克制路线，纯 fade + 位移更协调。
+   ──────────────────────────────────────────────────────────── */
+
+/* ── @keyframes：两个入场曲线 + 冒尖脉冲 ─────────────────────
+   h2-enter-up / -sm：浮出物入场（fade + translateY），不用 scale 保持
+     几何精确感。S3a 升级：曲线从 MD standard 换签名曲线（出场快落位柔）。
+   h2-emerge：冒尖脉冲（scale 1→1.12→1），150ms 签名曲线，氢徽"冒尖"
+     的动效化——checkbox 勾选瞬间、红点出现瞬间。 */
+@keyframes h2-enter-up {
+  from { opacity: 0; transform: translateY(4px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes h2-enter-up-sm {
+  from { opacity: 0; transform: translateY(2px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes h2-emerge {
+  0%   { transform: scale(1); }
+  55%  { transform: scale(1.12); }
+  100% { transform: scale(1); }
+}
+
+
+/* ── S3b 氢视窗家族统一：窗框规范 + 窗楣三段线 + 入场编舞 ────
+   覆盖：modal / prompt / menu / suggestion / popover / notice。
+   asar 调研（S3b 防叠加）：六类浮出物全部无原生 animation/transition
+   （JS mount/unmount 瞬时），W4 入场动画无叠加风险，可直接升级到签名曲线。
+
+   窗框三件事：
+   ① 圆角按现有表（popover 8 / modal 12），清剿不合规——但 Obsidian 默认
+     已走 --radius-* token，Phase 0 接管后自动跟，无需额外规则。
+   ② 阴影按现有档（modal shadow-3 / notice shadow-2），同上自动跟。
+   ③ 边一律 hairline——Obsidian 默认 modal/popover 有 border，走 token 已 hairline。
+
+   窗楣三段线（迷你版，间隙收窄）：hover 预览窗 + modal 顶部 + menu 分组分隔。
+   入场编舞：opacity 0→1 + translateY 4px→0，签名曲线。
+   ──────────────────────────────────────────────────────────── */
+
+/* ── 入场编舞（S3a 升级：MD 曲线 → 签名曲线）────────────────── */
+.modal,
+.prompt {
+  animation: h2-enter-up var(--h2-duration-slow) var(--h2-ease-signature);
+}
+
+.menu,
+.suggestion-container {
+  animation: h2-enter-up-sm var(--h2-duration-base) var(--h2-ease-signature);
+}
+
+/* popover 入场（S3b 开放）：W4 保守没动，S3b 确认无长驻误伤风险后开放。
+   hover preview 是瞬态浮出，走和 menu 同档 180ms。 */
+.popover {
+  animation: h2-enter-up-sm var(--h2-duration-base) var(--h2-ease-signature);
+}
+
+/* ── 窗楣三段线（迷你版）· v1.2 退役 ──────────────────────────
+   曾画在 modal / popover 顶部 + menu 分组分隔（30/40/30 迷你版）。
+   Elijah 裁决：界面 chrome 里的三段线是噪音——哲学元素只在正文
+   排面出场（inline title / hr / 脚注区 / 空状态），chrome 保持安静。
+   menu 分组分隔退回官方 hairline。 */
+.menu .menu-separator {
+  height: 1px;
+  background: var(--h2-border);
+  margin: 0.25rem 0.5rem;        /* 4px 8px，4px 网格 */
+  border: none;
+}
+
+/* ── 冒尖脉冲（S3a）：checkbox 勾选瞬间 ───────────────────────
+   氢徽"冒尖"的动效化——完成任务那一下有确认感。
+   150ms 签名曲线，scale 1→1.12→1。reduced-motion 兜底（归零）。
+   ⚠️ 只在 :checked 状态变化瞬间触发，不是持续态。 */
+.markdown-preview-view input[type=checkbox]:checked {
+  animation: h2-emerge 150ms var(--h2-ease-signature);
+}
+
+
+/* ════════════════════════════════════════════════════════════
+   W4 终止线。验收：Elijah 实机触发 modal（Cmd+, 设置页）/ Cmd+P /
+   右键菜单 / @ 提及自动补全，感受入场手感。reduced-motion 下动画归零。
+   ════════════════════════════════════════════════════════════ */
+
+
+/* ════════════════════════════════════════════════════════════
+   v0.4 · W3 图标层换声（最后一个工作流）
+   ════════════════════════════════════════════════════════════
+   定位：图标层换声 = 全局 stroke-width 降档 + bullet 颜色接管。
+        这是"说不出哪里变了但全身图标性格变了"的换声。
+   红线（Marcus 顾问，不可省略）：禁止 mask-image 全量换图——
+        Lucide 是 JS 注入的内联 SVG，CSS 改不了 path 数据，
+        mask-image 是几百个图标 × 各种状态的维护地狱，是插件领地。
+   ⚠️ asar 关键发现（验证后才敢动手）：
+      1. svg.svg-icon 统一走 stroke-width: var(--icon-stroke)（7339），
+         --icon-stroke 默认 = --icon-m-stroke-width。改 token 全局跟，
+         这就是"一条规则撬动全局"的精确机制。
+      2. .collapse-icon svg.svg-icon 单独硬写 stroke-width:4px（7270），
+         不受 token 影响——这是 Obsidian 故意让折叠箭头加粗（ChevronRight
+         的三角感），符合我们"折叠标记的三角不滥用"纪律，不动它。
+      3. list-bullet 已经是圆点（--list-bullet-radius:50%，asar 12175），
+         不需要重画，只接 --list-marker-color token 改色。
+      4. checkbox 勾 Phase 2 已用 ::after border trick 重画，不动。
+   结论：W3 不需要"五到十个高频位置伪元素重画"——asar 验证后发现
+        bullet/checkbox/折叠箭头都已是几何形态或被硬编码保护，
+        全局 stroke-width token + bullet 颜色 token 就够了。
+        Marcus 的提案是对的，但落地比他预估的更轻。
+   ──────────────────────────────────────────────────────────── */
+
+/* ── 全局 stroke-width：纯 token 接管，无组件层规则 ──────────
+   --icon-xs/s/m/l/xl-stroke-width 已在 Phase 0 token 层降档。
+   svg.svg-icon 自动消费 --icon-stroke（= --icon-m-stroke-width），
+   全 app 几百个 Lucide 图标瞬时换声，无需写组件选择器。 */
+
+
+/* ── list-bullet：v0.7.4 方块化（记号重绘纲领落地）────────────
+   ⚠️ 事故修正：主文档「记号重绘」纲领写"列表方块序列已落地"，
+      但 v0.4 W3 段落明确写"bullet 形态保持 Obsidian 默认"——
+      文档与实现矛盾，实际从未做。Journal 记事故原因。
+   方块序列（几何语法：方=结构，延伸到每一行列表）：
+     一级：实心小方（4px，--list-bullet-size，token 默认）
+     二级：空心方（4px + 1px Gray 400 border + 透明底）
+     三级：短横（8px×2px，width 加倍 height 减半）
+   有序列表：tabular + Gray 500（在 Phase 0 已通过 font-variant-numeric 接管）。
+   ⚠️ 只动阅读模式（.list-bullet:after）；Live Preview 的列表符号是
+      CodeMirror 文字字符（•），CSS 改不了字符，不动——LP 保持圆点，
+      阅读模式方块，两模式形态差异是 CodeMirror 限制，记进 Journal。 */
+/* 一级实心小方（默认，token 已设 radius:0 / size:4px / border:none） */
+
+/* 二级空心方：ul 嵌套一层 = .has-list-bullet ul 的 li */
+.markdown-rendered ul ul .list-bullet:after,
+.markdown-rendered ul ol .list-bullet:after,
+.markdown-rendered ol ul .list-bullet:after {
+  background-color: transparent;       /* 空心 */
+  border: 1px solid var(--list-marker-color);   /* Gray 400 描边 */
+}
+
+/* 三级短横：嵌套两层 + */
+.markdown-rendered ul ul ul .list-bullet:after,
+.markdown-rendered ul ul ol .list-bullet:after,
+.markdown-rendered ul ol ul .list-bullet:after,
+.markdown-rendered ol ul ul .list-bullet:after {
+  width: 8px;                          /* 4px 网格，短横加宽 */
+  height: 2px;                         /* hairline 级，压扁成横线 */
+  background-color: var(--list-marker-color);
+  border: none;
+  border-radius: 0;
+}
+
+
+/* ════════════════════════════════════════════════════════════
+   W3 终止线。验收：Elijah 实机看图标整体气质（侧边栏图标、设置页图标、
+   顶栏按钮图标）是否变精密；list bullet 是否变 Gray 400。
+   v0.4 全部四个工作流（W1→W2→W4→W3）完工，进入整体一分钟旅程验收。
+   ════════════════════════════════════════════════════════════ */
+
+
+/* ════════════════════════════════════════════════════════════
+   v0.6 · 氢徽署名（顾问 Marcus 主视觉，agent 落码）
+   ════════════════════════════════════════════════════════════
+   完整版氢徽在 Phase 4 空状态（上方），徽记渗到日常 chrome：
+     · 设置弹窗标题旁徽记版 ~24px（任务三，已落）
+     · vault 栏设置按钮空心方氢徽 16px（T2b，签名与功能合一）
+   关系规则（任何尺寸重绘必守，Marcus 锁定）：① 面积序 方>圆>三角；
+     ② 三角尖端处于方圆交叠区（画眼）；③ 唯一红：只有三角红。
+   ⚠️ 红线：data URI 是内联资源、市场合规；禁止任何网络 URL。
+        SVG 形状比例和颜色由徽记规范管，落码只调 background-size 和间距。
+   asar 实测选择器：
+     · vault 栏容器 = .workspace-sidedock-vault-profile
+     · vault 切换器 = .workspace-drawer-vault-switcher（整行点击）
+     · vault chevron = .workspace-drawer-vault-switcher-icon（asar 确认）
+     · vault 名 = .workspace-drawer-vault-name
+     · vault 操作按钮组 = .workspace-drawer-vault-actions
+     · 设置弹窗标题 = .modal.mod-settings .modal-title
+   ⚠️ 待路 B 实测（asar 查不准）：.workspace-drawer-vault-actions 内的
+     help 按钮和 settings 按钮的真实类名（JS 运行时注入，asar 看不到）。
+   ──────────────────────────────────────────────────────────── */
+
+/* ── T1：隐藏 vault 切换 chevron（视觉冗余）────────────────────
+   asar 实测：Obsidian 默认规则用 body:not(.is-mobile) .workspace-split
+   .mod-left-split .workspace-sidedock-vault-profile .workspace-drawer-
+   vault-switcher-icon（特异性 0,5,1）。我之前写裸 .workspace-drawer-
+   vault-switcher-icon（0,1,0）被压过去——这就是"还在"的原因。
+   修复：加完整祖先前缀提特异性，同特异性后写者赢。 */
+body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-profile .workspace-drawer-vault-switcher-icon {
+  display: none;
+}
+
+/* ── T1：隐藏 help 按钮（aria-label 选中，不靠专属类名）────────
+   asar app.js 实测（路 C grep）：.workspace-drawer-vault-actions 内有两个
+   <span class="clickable-icon">：第 1 个 setIcon("help") 是 help 按钮，
+   第 2 个 setIcon("lucide-settings") 是设置按钮。它们没有专属类名，
+   只能用位置区分。help 按钮 = 第 1 个子元素。
+   ⚠️ 用 :first-child 而非 :nth-child(1)，更稳。
+   顾问备注：隐藏 help 属于"砍入口"——帮助仍可从菜单进，vault 栏是
+   署名区，工具按钮堆积破坏仪式感。Decisions 记例外。 */
+.workspace-drawer-vault-actions > .clickable-icon:first-child {
+  display: none;
+}
+
+
+/* ── T2a：vault 名旁微缩氢徽移除（职责移交设置按钮）────────────
+   v0.6 初版曾把微缩氢徽放在 vault 名前，顾问 v0.6.1 改为"合一"：
+   氢徽移驻设置按钮，徽记本身成为进入设置的门。vault 名只留字体。
+   v0.6.4：vault 名染红试过又退回——红色给一行持续态文字太重，
+   退到 Gray 900（默认），让设置按钮的氢徽独自承担红色识别。 */
+.workspace-drawer-vault-name {
+  font-family: var(--font-interface-theme);
+  font-weight: 600;   /* v0.8.9：550→600（Elijah："再加一点点"） */
+  background-image: none;
+  padding-left: 0;
+}
+
+
+/* ── T2b：设置按钮复刻核心氢徽（三件俱全徽记版）──────────────
+   v0.6.3：空心方版 Elijah 觉得不好看，直接复刻最核心的氢徽——
+   三件俱全的徽记版（方 Gray 200 / 圆 Gray 300 / 红三角），与空状态
+   完整版、设置弹窗标题徽记版同源。设置入口挂主题徽记，签名与功能合一。
+
+   asar app.js 实测（路 C grep）：设置按钮 = .workspace-drawer-vault-actions
+   内第 2 个 <span class="clickable-icon">（setIcon("lucide-settings")）。
+   ⚠️ tv()/setIcon 注入的 svg 没有 .svg-icon 类，用 svg 标签选择器。
+   ⚠️ 必须用 background-image 而非 mask——徽记三色，mask 只能单色。
+   hover 走 opacity，不改 SVG 内颜色。
+   v0.6.4：三角尖端方向修正——源头氢徽三角是 clip-path: polygon(50% 0,
+   0 100%, 100% 100%)（尖端朝上、底在下，"灵感冒尖"）。之前写成了尖端
+   朝下的倒三角，与源头不一致，修正为尖端朝上（M4 8 L11 8 L7.5 13.5Z
+   → 改为 M7.5 2 L13 13 L2 13Z，尖端 (7.5,2) 在上）。 */
+.workspace-drawer-vault-actions > .clickable-icon:last-child {
+  position: relative;
+  width: 24px;              /* v0.7.3：容器扩到 24，给 hover 底留空间 */
+  height: 24px;
+  border-radius: var(--radius-s);
+}
+.workspace-drawer-vault-actions > .clickable-icon:last-child svg {
+  display: none;   /* 隐藏原生 lucide-settings 图标 */
+}
+.workspace-drawer-vault-actions > .clickable-icon:last-child {
+  /* v0.7.2（Marcus 重画）：旧版违反氢徽关系规则——三角面积压过圆
+     （面积序破）、尖端 (7.5,2) 远在交叠区 y[6.5,8.5] 之外（"冒尖"丢失），
+     视觉退化成一个大红三角。新版：方 9.5² > 圆 r3.5 > 三角(底8×高6.5)，
+     尖端 (8.2,7) 精确落在方圆交叠区内。 */
+  /* v0.8.8 二版：A+红点结合案（Elijah 定稿方向）——三段线做滑轨，
+     红点做滑块。三条水平灰线竖排（三段线 motif 转图标），红点骑在
+     中线偏右 = 正在被调节的值。语义具象（设置=调节），红点首次
+     获得功能叙事（当前值落点），仍是句读级一红。
+     "红点系"构词法升级：灰几何体（名词）+ 红点（动作/落点）。
+     几何：三轨 x[3,13] y=4.5/8/11.5，描边 1.75 圆帽；滑块 r2.25 @(10.5,8)。 */
+  background: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><g stroke='%2371717A' stroke-width='1.75' stroke-linecap='round'><line x1='3' y1='4.5' x2='13' y2='4.5'/><line x1='3' y1='8' x2='13' y2='8'/><line x1='3' y1='11.5' x2='13' y2='11.5'/></g><circle cx='10.5' cy='8' r='2.25' fill='%23D14A4A' stroke='%23FAFAFA' stroke-width='1'/></svg>") no-repeat center / 18px 18px;   /* v0.8.8 三版：16→18px（Elijah："小气了点"） */
+  opacity: 0.85;
+  transition: opacity var(--h2-duration-fast) var(--h2-ease);
+}
+.workspace-drawer-vault-actions > .clickable-icon:last-child:hover {
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.05);   /* v0.7.3：hover 灰 tint 交互 */
+}
+
+
+/* ── T3：vault 栏 A 版（v0.6.3-0.6.4）——v0.7.2 整体退役 ─────────
+   A 版是"台面不存在时代"的方案。纸面工作台落地后 vault 栏由 S2
+   纸片规则接管，A 版的 padding-block 20px 和 border-top 灭除
+   （特异性高于 S2 规则）恰是"灰条丑"的病根，故整块删除。
+   若回退纸面体系需连同 S2 vault 纸片规则一起评估，不单独复活 A 版。 */
+
+
+/* ── 任务三：设置弹窗标题旁徽记版（保留，已验收）────────────── */
+.modal.mod-settings .modal-title {
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><rect y='11' width='13' height='13' fill='%23E4E4E7'/><circle cx='14' cy='8' r='5' fill='%23D4D4D8'/><path d='M11 11.5 16 20.5 6 20.5Z' fill='%23D14A4A'/></svg>");
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 24px;
+  padding-left: 36px;
+}
+
+
+/* ════════════════════════════════════════════════════════════
+   v0.6 氢徽署名终止线。
+   待 Elijah：① 路 B 实测 help/settings 按钮类名；② T3 A/B 选版。
+   ════════════════════════════════════════════════════════════ */
+
+
+/* ════════════════════════════════════════════════════════════
+   S1 · 连续画布与工具带（v0.9 空间结构实验）
+   ════════════════════════════════════════════════════════════
+   隐喻：生活家的工作台——编辑区是承载内容的主纸，左右侧栏是
+   连续工具带。方通过内容秩序成立，不再给每个面板重复套完整卡片。
+   内容区回到连续白色画布；工具带只用 Gray 50 产生轻微色温差。
+   选择器 asar 实锤：.workspace-split.mod-root / .workspace-tabs /
+   .workspace-leaf-resize-handle。
+   守卫：结构层仅桌面（body:not(.is-mobile)），移动端布局另议。
+   风险实测点（验收清单）：多分屏、拖拽重排、stacked tabs、
+   插件自定义面板、窗口极窄。
+   ──────────────────────────────────────────────────────────── */
+
+body:not(.is-mobile) {
+  --h2-bench:     var(--h2-gray-50);   /* 工具区与画布的轻微色温差 */
+  --h2-paper-gap: 0px;                 /* 连续画布不制造外圈缝 */
+}
+
+/* 连续画布：workspace 不再露出一圈台面，区域关系交给色温与对齐。 */
+body:not(.is-mobile) .workspace {
+  background-color: var(--h2-bg);
+  padding: 0;
+}
+
+/* 主内容成为连续画布，不再模拟悬浮纸张。 */
+body:not(.is-mobile) .workspace-split.mod-root .workspace-tabs {
+  margin: 0;
+  background-color: var(--h2-bg);
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+/* 纸内的 tab 头部区融入纸面（去独立底色，保留下缘 hairline） */
+body:not(.is-mobile) .workspace-split.mod-root .workspace-tabs .workspace-tab-header-container {
+  background-color: transparent;
+}
+
+/* v0.8.10 ribbon 功能区去框线：最左功能区展开时右缘有明显边框
+   （Elijah 截图），违反灰线大收敛。底色融入工作台 bench
+   （半透明模式下随 token 自动变玻璃）。 */
+body:not(.is-mobile) .workspace-ribbon.mod-left {
+  border: none;
+  border-inline-end: none;
+  background-color: var(--h2-bench);
+}
+/* ribbon ::before 是标题栏段的窗口拖拽热区（-webkit-app-region:
+   drag，asar 实锤），自带 tab-outline 灰下边线——与签名红线交叠
+   （Elijah 截图）。只删线，绝不动元素本体（拖拽热区是功能）。 */
+body:not(.is-mobile) .workspace-ribbon.mod-left::before {
+  border-bottom: none;
+}
+
+/* 分屏拖拽手柄：透明化，融进呼吸缝；hover 时轻提示仍可抓 */
+body:not(.is-mobile) .workspace-leaf-resize-handle {
+  background-color: transparent;
+  border-color: transparent;
+}
+body:not(.is-mobile) .workspace-leaf-resize-handle:hover {
+  background-color: var(--h2-gray-300);
+  transition: background-color var(--h2-duration-fast) var(--h2-ease);
+}
+
+/* v0.8.10 手柄线续段：右栏拖宽手柄 hover 时，高亮线被状态栏
+   （z 15 悬浮层）挡住最后 60px——手柄困在侧栏层叠上下文（z 10）里
+   抬不过去，降状态栏又会沉到侧栏内容后。解法：:has() 联动，
+   手柄 hover 的同时状态栏在自己左缘补画同宽（3px，asar 实锤
+   --divider-width-hover）同色续段，视觉无缝接到底。
+   ⚠️ :has() 用在 .app-container 级 + 只画 box-shadow（非隐藏类
+   属性），同 S1 收起规则的 Folio 白屏规避条件。 */
+body:not(.is-mobile) .app-container:has(.workspace-split.mod-right-split > .workspace-leaf-resize-handle:hover) .status-bar {
+  box-shadow: inset 3px 0 0 var(--h2-gray-300);
+  transition: box-shadow var(--h2-duration-fast) var(--h2-ease);
+}
+
+/* 状态栏并入右侧工具带底部，不再作为独立悬浮卡片。
+   当右侧栏收起时，状态栏跟随隐藏。
+   ⚠️ 宽度限制：右侧栏宽度由 JS inline style 设定，CSS 无法直接读取。
+      用 --h2-status-bar-width 提供 440px 基准值，用户可在
+      Style Settings 或自定义 CSS snippet 里覆盖。
+   ⚠️ :has() 用在 .app-container 级别（不是 body / .workspace），
+      且只做 opacity + pointer-events（不做 display:none / visibility:hidden），
+      规避 Folio v1.1.8 Canvas 白屏的触发条件（:has() + 隐藏规则）。 */
+body:not(.is-mobile) {
+  --h2-status-bar-width: 440px;  /* 当前右工具带基准宽；允许用户覆写 */
+}
+body:not(.is-mobile) .status-bar {
+  background-color: var(--h2-bench);
+  /* v0.8.6 灰线大收敛：上沿横线也退役（v0.8.5 曾恢复），状态栏
+     只靠 bench 底色成立。全界面结构线收敛到两条签名红线。 */
+  border: 0;
+  border-radius: 0;
+  bottom: 0;
+  right: 0;
+  width: var(--h2-status-bar-width);
+  height: 60px;       /* v0.8.7：留冗余防三行裁切，与 vault 栏齐高 */
+  min-height: 60px;
+  max-height: 60px;
+  overflow: hidden;
+  padding: 4px 8px;
+  font-size: 10px;
+  line-height: 1;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: flex-end;
+  column-gap: 2px;
+  row-gap: 0;
+  transition: opacity var(--h2-duration-base) var(--h2-ease),
+              transform var(--h2-duration-base) var(--h2-ease);
+}
+
+body:not(.is-mobile) .status-bar-item {
+  white-space: nowrap;
+  min-height: 20px;
+  padding: 0 2px;
+}
+
+/* 状态栏不是右栏子元素，固定 px 永远无法跟随用户 resize。
+   支持 Anchor Positioning 时直接锚定真实右栏的左右/底部边界。 */
+@supports (position-anchor: --h2-right-dock) {
+  body:not(.is-mobile) .status-bar {
+    position-anchor: --h2-right-dock;
+    left: anchor(left);
+    right: anchor(right);
+    bottom: anchor(bottom);
+    width: auto;
+  }
+}
+
+/* 右侧栏收起时，状态栏跟随隐藏（淡出 + 下滑） */
+body:not(.is-mobile) .app-container:has(.workspace:not(.is-right-sidedock-open)) > .status-bar {
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(8px);
+}
+
+/* ════════════════════════════════════════════════════════════
+   S1 终止线（v0.7.1 几何统一：外圈留白已上移 .workspace）。
+   ════════════════════════════════════════════════════════════ */
+
+/* ════════════════════════════════════════════════════════════
+   S2 · 侧栏工具带（v0.9 空间结构实验）
+   ════════════════════════════════════════════════════════════
+   左右侧栏属于工具层，不与编辑区争夺“纸”的身份。工具带使用
+   Gray 50 轻微色温，分区只靠内部 hairline 与空间；vault 署名栏
+   回到底部结构行，不再作为另一张悬浮卡片重复表达边界。
+   选择器 asar 实锤：.workspace-split.mod-sidedock（左右通用）、
+   .mod-left-split / .mod-right-split / .is-sidedock-collapsed。
+   验收实测点：侧栏收起/展开动画、极窄宽度、右栏多 tab、
+   vault 栏与上方纸的 8px 缝。
+   ──────────────────────────────────────────────────────────── */
+
+/* 侧栏容器直接成为连续工具带。 */
+body:not(.is-mobile) .workspace-split.mod-sidedock {
+  background-color: var(--h2-bench);
+  padding: 0;
+}
+
+/* OS 主构造线：只保留左右工具带与内容画布的两条主边界。 */
+body:not(.is-mobile) .workspace-split.mod-left-split {
+  border-right: 0;
+  box-shadow: inset -1px 0 0 var(--h2-border);
+}
+
+body:not(.is-mobile) .workspace-split.mod-right-split {
+  border-left: 0;
+  box-shadow: inset 1px 0 0 var(--h2-border);
+  anchor-name: --h2-right-dock;
+}
+
+/* 工具带 tab 组不再重复套卡片。 */
+body:not(.is-mobile) .workspace-split.mod-sidedock .workspace-tabs {
+  margin: 0;
+  background-color: var(--h2-bench);
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+/* 同一侧栏内多组工具以一条 hairline 分段，不制造第二张卡片。 */
+body:not(.is-mobile) .workspace-split.mod-sidedock .workspace-tabs ~ .workspace-tabs {
+  margin-top: 0;
+  border-top: 1px solid var(--h2-border);
+}
+
+/* 侧栏纸内 tab 头部区融入纸面。
+   v0.8.7：下边框也关掉——签名红线已全宽贯穿，侧栏自己的灰线
+   悬在红线上方成了双线（Elijah 截图）。 */
+body:not(.is-mobile) .workspace-split.mod-sidedock .workspace-tabs .workspace-tab-header-container {
+  background-color: transparent;
+  border-bottom: none;
+}
+
+/* 工具内容与侧栏底色连续；hover/active 的 rgba 灰阶仍可见。 */
+body:not(.is-mobile) .workspace-split.mod-sidedock .workspace-leaf-content {
+  background-color: var(--h2-bench);
+}
+
+/* 侧栏、设置页与正文区隐藏滚动槽/滑块；滚轮、触控板与键盘滚动仍保留。
+   v0.8.5：正文区（mod-root）加入——极简到极致（Elijah 拍板）。
+   ⚠️ 取舍备案：丢失滚动位置视觉指示，长文档定位靠大纲/搜索/Cmd+F。 */
+body:not(.is-mobile) .workspace-split.mod-sidedock *,
+body:not(.is-mobile) .workspace-split.mod-root *,
+.modal.mod-settings * {
+  scrollbar-width: none;
+}
+
+body:not(.is-mobile) .workspace-split.mod-sidedock *::-webkit-scrollbar,
+body:not(.is-mobile) .workspace-split.mod-root *::-webkit-scrollbar,
+.modal.mod-settings *::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+/* 侧栏顶部功能区：默认收纳为三个方点，hover/focus 时变红并展开。
+   左右共用完全相同的高度与动画，延续前两作的自动隐藏交互，
+   但将胶囊提示条翻译成 H2 OS 的“方 = 结构”记号。 */
+body:not(.is-mobile) .workspace-split.mod-left-split .nav-header,
+body:not(.is-mobile) .workspace-split.mod-right-split .nav-header {
+  height: auto !important;
+  min-height: 20px !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  border: 0 !important;
+  background-color: transparent !important;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 10;
+  flex-shrink: 0 !important;
+}
+
+body:not(.is-mobile) .workspace-split.mod-left-split .nav-header::before,
+body:not(.is-mobile) .workspace-split.mod-right-split .nav-header::before {
+  content: '';
+  display: block;
+  width: 28px;
+  height: 4px;
+  margin: 8px auto;
+  background:
+    linear-gradient(var(--h2-gray-300), var(--h2-gray-300)) 0 0 / 4px 4px no-repeat,
+    linear-gradient(var(--h2-gray-300), var(--h2-gray-300)) 12px 0 / 4px 4px no-repeat,
+    linear-gradient(var(--h2-gray-300), var(--h2-gray-300)) 24px 0 / 4px 4px no-repeat;
+  flex-shrink: 0;
+  transition: background var(--h2-duration-fast) var(--h2-ease);
+}
+
+body:not(.is-mobile) .workspace-split.mod-left-split .nav-header:hover::before,
+body:not(.is-mobile) .workspace-split.mod-right-split .nav-header:hover::before,
+body:not(.is-mobile) .workspace-split.mod-left-split .nav-header:focus-within::before,
+body:not(.is-mobile) .workspace-split.mod-right-split .nav-header:focus-within::before {
+  background:
+    linear-gradient(var(--h2-accent), var(--h2-accent)) 0 0 / 4px 4px no-repeat,
+    linear-gradient(var(--h2-accent), var(--h2-accent)) 12px 0 / 4px 4px no-repeat,
+    linear-gradient(var(--h2-accent), var(--h2-accent)) 24px 0 / 4px 4px no-repeat;
+}
+
+body:not(.is-mobile) .workspace-split.mod-left-split .nav-header-title,
+body:not(.is-mobile) .workspace-split.mod-right-split .nav-header-title {
+  display: none !important;
+}
+
+body:not(.is-mobile) .workspace-split.mod-left-split .nav-buttons-container,
+body:not(.is-mobile) .workspace-split.mod-right-split .nav-buttons-container {
+  display: flex !important;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  margin: 0 !important;
+  padding: 0 12px;
+  pointer-events: none;
+  background-color: transparent !important;
+  box-shadow: none !important;
+  transition: max-height var(--h2-duration-slow) var(--h2-ease-signature),
+              opacity var(--h2-duration-base) var(--h2-ease),
+              margin var(--h2-duration-slow) var(--h2-ease-signature);
+}
+
+body:not(.is-mobile) .workspace-split.mod-left-split .nav-header:hover .nav-buttons-container,
+body:not(.is-mobile) .workspace-split.mod-right-split .nav-header:hover .nav-buttons-container,
+body:not(.is-mobile) .workspace-split.mod-left-split .nav-header:focus-within .nav-buttons-container,
+body:not(.is-mobile) .workspace-split.mod-right-split .nav-header:focus-within .nav-buttons-container {
+  max-height: 88px;
+  opacity: 1;
+  margin: 0 0 8px !important;
+  pointer-events: auto;
+}
+
+/* vault 署名栏回到工具带底部。v0.8.6 灰线大收敛：上沿横线退役，
+   与状态栏对称，靠 bench 底色成立。 */
+body:not(.is-mobile) .workspace-sidedock-vault-profile {
+  margin: 0;
+  padding: 8px 12px;
+  background-color: var(--h2-bench);
+  border: 0 !important;
+  border-radius: 0;
+  box-shadow: none;
+  min-height: 60px;   /* v0.8.7：与状态栏同步增高 */
+  display: flex;
+  align-items: center;
+}
+
+/* 收起态：宽度归零时纸的 margin 不留鬼影 */
+body:not(.is-mobile) .workspace-split.mod-sidedock.is-sidedock-collapsed {
+  padding: 0;   /* v0.7.3：收起态容器 padding 同步归零 */
+}
+body:not(.is-mobile) .workspace-split.mod-sidedock.is-sidedock-collapsed .workspace-tabs,
+body:not(.is-mobile) .workspace-split.mod-sidedock.is-sidedock-collapsed .workspace-sidedock-vault-profile {
+  margin: 0;
+  border: none !important;
+  box-shadow: none;
+}
+
+/* ════════════════════════════════════════════════════════════
+   S2 终止线。S3（氢视窗家族）/ S4a（覆盖率审计）由执行 agent
+   并行推进中；S4 全局清剿待审计表产出。
+   ════════════════════════════════════════════════════════════ */
+
+
+
+/* ════════════════════════════════════════════════════════════
+   S2.1 · 纸面工作台瑕疵清剿（v0.7.2，Marcus，Elijah 实机反馈）
+   ════════════════════════════════════════════════════════════ */
+
+/* ① mod-root 自带白底盖住台面（"中央底色和左右不一样"的病根），
+   透明化让台面统一透出 */
+body:not(.is-mobile) .workspace-split.mod-root {
+  background-color: transparent;
+}
+
+/* ② 侧栏收合按钮（左右两个）：在纸面体系里是悬在台面上的裸按钮，
+   突兀。压透明 + faint 图标，hover 才现身。
+   ⚠️ 右侧按钮在 macOS hidden-frameless 下官方用 position: fixed; top:0; right:0
+      （app.css 6621），贴死窗口角。纸面体系有 4px 半缝，fixed 定位让按钮
+      脱离纸面、偏到纸的右上方。覆盖为 position: relative，让按钮留在
+      tab header 文档流里，位置自动对齐纸面。
+      收起态：right-split 宽度归零时按钮可能不可见，需实测。 */
+body:not(.is-mobile) .sidebar-toggle-button.mod-left,
+body:not(.is-mobile) .sidebar-toggle-button .sidebar-toggle-icon-inner,
+body:not(.is-mobile) .sidebar-toggle-button .clickable-icon {
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none;
+}
+/* 右侧收合按钮：恢复官方右上角锚定。旧版强制 relative 会使它随
+   tab header 内容向左漂移，是多轮“始终不靠右”的确定性根因。 */
+body:not(.is-mobile).mod-macos.is-hidden-frameless:not(.is-popout-window) .sidebar-toggle-button.mod-right {
+  position: fixed !important;
+  top: 0 !important;
+  right: 0 !important;
+  background-color: transparent !important;
+  padding-right: 8px !important;
+  z-index: var(--layer-cover);
+}
+body:not(.is-mobile) .sidebar-toggle-button svg {
+  color: var(--h2-text-faint);
+  transition: color var(--h2-duration-fast) var(--h2-ease);
+}
+body:not(.is-mobile) .sidebar-toggle-button:hover svg {
+  color: var(--h2-text-muted);
+}
+body:not(.is-mobile) .sidebar-toggle-button.mod-left .clickable-icon {
+  color: var(--h2-text-faint);
+  background-color: transparent;
+  transition: color var(--h2-duration-fast) var(--h2-ease);
+}
+body:not(.is-mobile) .sidebar-toggle-button.mod-left .clickable-icon:hover {
+  color: var(--h2-text-muted);
+}
+body:not(.is-mobile) .sidebar-toggle-button.mod-right .clickable-icon {
+  color: var(--h2-text-faint);
+  background-color: transparent;
+  transition: color var(--h2-duration-fast) var(--h2-ease);
+}
+body:not(.is-mobile) .sidebar-toggle-button.mod-right .clickable-icon:hover {
+  color: var(--h2-text-muted);
+}
+
+/* T2+T3（v0.7.4）：顶带归还台面——纸面体系最后一块含糊地带。
+   红绿灯贴边难受的根因不是红绿灯本身（位置是 Electron 参数，CSS 动不了），
+   而是红绿灯坐在"纸"的白底上、紧挨纸的直角边线。解法：顶带（mod-top
+   的 tab-container）背景透明化，让台面 Gray 100 透出——tab 标题浮在
+   台面上，红绿灯自然坐在台面（灰底）上，贴边感消解，顶带与台面的
+   生硬接缝同时解决。
+   asar 实测：.workspace-tabs.mod-top 的 tab-container 走 --tab-container-background
+   （继承 --titlebar-background）。token 层接管即可。
+   ⚠️ 红线（Marcus）：-webkit-app-region: drag 是窗口拖拽区，绝不能动——
+      只改背景色，不改这个属性。改完必须实测"按住顶带能拖动窗口"。
+   落码：token 层把 --titlebar-background 改台面色。 */
+body:not(.is-mobile) {
+  --titlebar-background: var(--h2-bench);          /* 工具带 Gray 50 */
+  --titlebar-background-focused: var(--h2-bench);  /* focused 态同色，避免闪烁 */
+}
+
+/* ③ vault 工具带规则加压（保持足够特异性，防第三方压回卡片）。
+   v0.8.7：border-top 灭除（v0.8.6 灰线大收敛漏掉了这份加压副本）；
+   高度 52→60 给状态区留冗余；flex 垂直居中锁定水平中轴线。 */
+body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-profile {
+  margin: 0;
+  padding: 8px 12px;
+  background-color: var(--h2-bench);
+  border: 0 !important;
+  border-radius: 0;
+  box-shadow: none;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+}
+
+
+/* ════════════════════════════════════════════════════════════
+   v0.8 · A 组 记号重绘 roadmap 清偿（睡前派发）
+   ════════════════════════════════════════════════════════════
+   主文档「记号重绘」roadmap 四件：引号已落地（v0.5.1），
+   本组补齐其余三件 + 高亮红染。每件独立、可一版存档等审美定方向。
+   ──────────────────────────────────────────────────────────── */
+
+/* ── A1 高亮 ==mark== 红染（已在 Phase 0 token 层接管）─────────
+   --text-highlight-bg + --text-highlight-bg-rgb 都改成 Red 500 rgb，
+   mark 元素 + .cm-highlight + 搜索匹配高亮自动跟。
+   Obsidian 默认刺黄（255,213,79）已清出。无组件层规则。 */
+
+
+/* ── A2 嵌入块 ![][] 窗口化（氢视窗家族小窗）──────────────────
+   核心用户天天撞的操作，收益最高。
+   token 层（Phase 0 段）已把 --embed-* 改成 hairline 四边方框。
+   组件层：加三段线窗楣 + faint 来源标题 + shadow-1 抬升。
+   hover 预览（.popover.hover-popover > .markdown-embed）同款。 */
+.markdown-embed {
+  border-radius: 0;            /* 方形语义 */
+  box-shadow: var(--h2-shadow-1);
+  padding: 0.75rem 1rem;       /* 12px 16px，4px 网格 */
+  margin-block-start: 1rem;
+  margin-block-end: 1rem;
+  position: relative;
+}
+
+/* 嵌入块来源标题（.markdown-embed-title）：faint 副标角色 */
+.markdown-embed-title {
+  color: var(--h2-text-faint);
+  font-weight: 500;
+  font-size: 0.875rem;         /* 14px，4px 网格 */
+}
+
+/* 嵌入块右上角链接图标：faint，hover 加深 */
+.markdown-embed-link {
+  color: var(--h2-text-faint);
+  transition: var(--h2-transition-color);
+}
+.markdown-embed-link:hover {
+  color: var(--h2-accent);     /* hover 瞬态红，合法 */
+}
+
+/* hover 预览窗里的 embed 同款（和 A2 同体工程） */
+.popover.hover-popover > .markdown-embed {
+  border-radius: 0;
+  box-shadow: var(--h2-shadow-1);
+  padding: 0.75rem 1rem;
+}
+
+
+/* ── A3 脚注标记（上标数字 tabular + 单字符红）──────────────── */
+/* asar 实测：脚注引用走 .footnote-link / sup，脚注区走 .footnotes。
+   Live Preview 走 .cm-footnote-ref。
+   设计：上标数字用 tabular-nums（等宽数字）+ 单字符红（AOD 红秒针语汇）。
+   脚注区顶部三段线分隔。 */
+.markdown-preview-view .footnote-link,
+.markdown-preview-view sup.footnote-ref {
+  color: var(--h2-accent);     /* 单字符红，AOD 语汇。⚠️ 只染脚注 sup
+                                  （sup.footnote-ref），裸 sup 如数学上标
+                                  保持正文色——红色纪律 */
+  font-variant-numeric: tabular-nums lining-nums;
+  font-size: 0.75em;
+  vertical-align: super;
+  transition: var(--h2-transition-color);
+}
+.markdown-preview-view .footnote-link:hover {
+  color: var(--h2-accent-hover);
+}
+
+/* Live Preview 脚注引用 */
+.markdown-source-view.mod-cm6 .cm-footnote-ref {
+  color: var(--h2-accent);
+  font-variant-numeric: tabular-nums lining-nums;
+}
+
+/* 脚注区顶部三段线分隔（氢视窗家族语汇） */
+.markdown-preview-view .footnotes,
+.markdown-preview-view .footnote {
+  border-top: none;
+  position: relative;
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+}
+.markdown-preview-view .footnotes::before {
+  content: '';
+  display: block;
+  height: 1px;
+  margin-bottom: 1rem;
+  background: linear-gradient(
+    to right,
+    var(--h2-border) 0 30%, transparent 30% 33%,
+    var(--h2-border) 33% 67%, transparent 67% 70%,
+    var(--h2-border) 70% 100%
+  );
+}
+
+/* 跳转落点：脚注 / 引用块 / block reference 命中时轻闪一下。
+   复用搜索命中 h2-match-flash，不新增 keyframe；:target 来自浏览器
+   hash 跳转，属于明确事件层反馈。 */
+.markdown-preview-view .footnote:target,
+.markdown-preview-view .footnotes li:target,
+.markdown-preview-view blockquote:target,
+.markdown-preview-view [id^='^']:target {
+  animation: h2-match-flash var(--h2-duration-slow) var(--h2-ease);
+}
+
+
+/* ── A4 checkbox 勾号重绘（细描边勾）──────────────────────────
+   v0.4 的勾号是 border-width: 0 2px 2px 0（2px 描边），配合 W3 的
+   全局 stroke-width 1.5 细线风，收一档到 0 1.5px 1.5px 0。
+   勾选瞬间套 h2-emerge 脉冲（S3a 已落 keyframes）。 */
+.markdown-preview-view input[type=checkbox]:checked::after {
+  border-width: 0 1.5px 1.5px 0;   /* 半格允许，配合 W3 细线风 */
+  width: 4px;
+  height: 8px;
+}
+
+
+/* ════════════════════════════════════════════════════════════
+   A 组终止线。验收点：==mark== 红染、![][] 小窗、脚注红、勾号细描边。
+   ════════════════════════════════════════════════════════════ */
+
+
+/* ════════════════════════════════════════════════════════════
+   v0.8 · B 组 氢视窗家族收口（剩余项）
+   ════════════════════════════════════════════════════════════
+   B1/B5 已在 S3b 完成（右键菜单三段线、modal 窗楣）。
+   本组补：B2 命令面板选中项、B3 建议弹窗选中态、B6 notice。
+   ──────────────────────────────────────────────────────────── */
+
+/* ── B2/B3 命令面板 + 建议弹窗选中项 ──────────────────────────
+   asar 实测：.suggestion-item.is-selected 默认走 --background-modifier-hover
+   （灰 tint）。键盘上下移动时用户盯着选中项，需要明显。
+   v0.8 方案：红 tint 背景（rgba(209,74,74,0.08)，比文件树 active 红一点
+   但仍克制）+ 文字 Gray 900。
+   ⚠️ 选中态是瞬态（键盘移动），合法红。等 C 组红杠语言定方向后统一。 */
+.suggestion-item.is-selected {
+  background-color: rgba(209, 74, 74, 0.08) !important;
+  color: var(--h2-text);
+}
+
+
+/* ── B6 notice 检查 ───────────────────────────────────────────
+   Phase 3 已落（shadow-2 + Gray 900 底 + 白字）。S3b 入场动画走
+   .modal/.prompt 同族但 notice 不在这两个选择器里——补 notice 入场。
+   notice 是瞬态浮出（保存提示、同步状态），180ms 签名曲线。 */
+.notice {
+  animation: h2-enter-up-sm var(--h2-duration-base) var(--h2-ease-signature);
+}
+
+
+/* ════════════════════════════════════════════════════════════
+   B 组终止线。验收点：Cmd+P 上下移动选中项红 tint、notice 出现动画。
+   ════════════════════════════════════════════════════════════ */
+
+
+/* ════════════════════════════════════════════════════════════
+   v0.8 · C 组 点睛清单（低频高情绪）
+   ════════════════════════════════════════════════════════════
+   撞见即"咦"的点睛位。每条独立，撞见概率低但情绪价值高。
+   ──────────────────────────────────────────────────────────── */
+
+/* ── C3 拖拽指示线红化 ────────────────────────────────────────
+   asar 实测 .drop-indicator 默认 border 2px solid var(--interactive-accent)，
+   已自动跟主题红（interactive-accent = Red 500）。无额外规则——
+   tab/文件拖拽时的插入线已是红的，撞见即"主题在这里"。 */
+
+
+/* ── C4 graph view 配色 ───────────────────────────────────────
+   asar 实测 graph token（2278-2284）。
+   默认 --graph-node-focused 已走 --text-accent（自动跟红），
+   --graph-node-tag/attachment 用 Obsidian 通用绿/黄，改成主题语义色。
+   节点灰阶（默认 muted）+ 当前节点红（自动跟）+ tag Sage + attachment Amber。 */
+body.theme-light {
+  --graph-text:             var(--h2-text);
+  --graph-line:             var(--h2-gray-300);       /* 连线：Gray 300 */
+  --graph-node:             var(--h2-gray-500);       /* 普通节点：Gray 500 */
+  --graph-node-unresolved:  var(--h2-text-faint);     /* 未解析：Gray 400 */
+  --graph-node-focused:     var(--h2-accent);         /* 当前节点：红（晒图广告位） */
+  --graph-node-tag:         var(--h2-sage);           /* 标签节点：Sage */
+  --graph-node-attachment:  var(--h2-amber);          /* 附件节点：Amber */
+}
+
+
+/* ── C5 选中态统一说明（不落码，方向记录）─────────────────────
+   目前选中态分三档：
+   · 文件树/大纲 active：灰 tint + Gray 900 + 500 字重（Phase 3，持续态）
+   · tab active：6px 红点导航语（v0.3.1，持续态）
+   · 命令面板/建议弹窗 selected：红 tint（B2/B3，瞬态）
+   红杠语言（C 提案）待和顾问定方向后统一，本版不强行合并。 */
+
+
+/* ════════════════════════════════════════════════════════════
+   C 组终止线。验收点：graph view 配色（开 graph view 看节点灰阶 + 当前红）。
+   C1 同步状态点 / C2 面板空态 待 asar 深挖运行时类名（JS 注入）。
+   ════════════════════════════════════════════════════════════ */
+
+
+/* ════════════════════════════════════════════════════════════
+   v0.8.1 · 愉悦时刻（Delight Moments，Marcus 直做）
+   ════════════════════════════════════════════════════════════
+   方针：纪律管常态，愉悦住事件。三个用户情绪峰值时刻各慷慨一次，
+   全部瞬态（红色纪律无恙）、全部 transform/opacity/background-size
+   （合成器友好，不触发重排）、reduced-motion 全兜底（见文件头）。
+   ──────────────────────────────────────────────────────────── */
+
+/* ── 新增 keyframes ─────────────────────────────────────────── */
+/* 墨滴落纸：红填充从圆心向外扩散（checkbox 勾选瞬间） */
+@keyframes h2-ink-spread {
+  from { background-size: 0% 0%; }
+  to   { background-size: 150% 150%; }
+}
+/* 勾号入场：墨扩散后浮现 */
+@keyframes h2-check-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+/* 开幕：三段线从中间向两侧展开（打开笔记的排面时刻） */
+@keyframes h2-unfold-x {
+  from { transform: scaleX(0); }
+  to   { transform: scaleX(1); }
+}
+/* 仪式级时长（v0.8.2）：240ms 在"一次性开幕"场景实测太快，肉眼
+   容易错过（Elijah 反馈）。常规交互仍走 fast/base/slow 三档，
+   grand 只给一次性仪式动效（开幕、氢徽入场），不给高频交互。 */
+body {
+  --h2-duration-grand: 450ms;
+  /* 签名构造线专用刷入时长与曲线（v0.8.7，Elijah 定稿方向）：
+     行程感 = 慢进（前半段缓慢蓄力）→ 过中点后鞭梢式快速收掉。
+     曲线 P1(0.75,0) 起步近水平=慢进，P2(1,0.45) 收尾近垂直=急收。
+     这是与签名曲线（快出柔落）相反的性格，专属构造线，不外借。 */
+  --h2-duration-line: 900ms;
+  --h2-ease-line: cubic-bezier(0.75, 0, 1, 0.45);
+}
+/* 落纸：氢徽元素淡入 + 轻微上浮落定 */
+@keyframes h2-badge-in {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ── ① 完成的瞬间：checkbox 墨滴扩散 ─────────────────────────
+   red 填充从圆心向外扩散（radial-gradient + background-size 动画），
+   同时保留 h2-emerge 冒尖脉冲（两个 animation 并行）。
+   本规则在 W4 的 h2-emerge 规则之后，animation 声明合并两者
+   （后写覆盖，必须列全）。
+   ⚠️ 已知副作用（与 h2-emerge 同前例）：打开含已勾选任务的笔记时
+   动画会重放一次——挂载即播放是 CSS animation 语义，接受。 */
+/* ⚠️ 二修：初版只挂 .markdown-preview-view（阅读模式），Live Preview
+   的 checkbox 在 .markdown-source-view 里，实测没命中——补 LP 选择器。
+   LP 的 checkbox 基础样式走 Obsidian 默认（token 已接管圆形/红色），
+   这里只覆盖 background 长属性 + animation，末态与默认一致。 */
+.markdown-preview-view input[type=checkbox]:checked,
+.markdown-source-view.mod-cm6 input[type=checkbox]:checked {
+  background-color: transparent;
+  background-image: radial-gradient(circle closest-side,
+    var(--checkbox-color) 98.5%, transparent 100%);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 150% 150%;
+  animation: h2-ink-spread var(--h2-duration-base) var(--h2-ease-signature),
+             h2-emerge 150ms var(--h2-ease-signature);
+}
+/* 勾号在墨扩散后浮现（60ms 延迟，backwards 让延迟期不可见） */
+.markdown-preview-view input[type=checkbox]:checked::after,
+.markdown-source-view.mod-cm6 input[type=checkbox]:checked::after {
+  animation: h2-check-in var(--h2-duration-fast) var(--h2-ease) 60ms backwards;
+}
+
+/* ── ② 抵达的瞬间：inline title 三段线开幕 ────────────────────
+   打开笔记时排面三段线从中间向两侧展开（scaleX 0→1，签名曲线）。
+   只做 inline-title（"抵达"专属），正文 H1 三段线不动——滚动途中
+   突然展开是噪音不是开幕。切回已打开的 tab 不重放（DOM 未重挂）。 */
+.inline-title::after {
+  /* v0.8.2：升 grand 时长 + 120ms 延迟（标题先立、线再展开，
+     视线有时间落到位）。backwards 让延迟期不可见。 */
+  animation: h2-unfold-x var(--h2-duration-grand) var(--h2-ease-signature) 120ms backwards;
+  transform-origin: 50% 50%;
+}
+
+/* ── ③ 空白的瞬间：氢徽入场编舞 ──────────────────────────────
+   两拍叙事（双伪元素限制，方圆共层）：
+   第一拍 结构与日常落定（方+圆，0ms 起）；
+   第二拍 灵感冒尖（红三角，160ms 后浮出）。
+   backwards 填充让三角在延迟期完全不可见——"先有台，再冒尖"。 */
+/* v0.8.2：升 grand 时长 + 三角延迟 160→280ms（Elijah 反馈原版偏快，
+   两拍之间要有可感知的呼吸）。 */
+.workspace-leaf-content[data-type="empty"] .empty-state::before {
+  animation: h2-badge-in var(--h2-duration-grand) var(--h2-ease-signature) backwards;
+}
+.workspace-leaf-content[data-type="empty"] .empty-state::after {
+  animation: h2-badge-in var(--h2-duration-grand) var(--h2-ease-signature) 280ms backwards;
+}
+
+/* ════════════════════════════════════════════════════════════
+   v0.8.1 愉悦时刻终止线。验收：勾一个任务（墨滴+勾号浮现）、
+   打开一篇带 inline title 的笔记（三段线展开）、Cmd+N 新标签页
+   （氢徽两拍入场）。reduced-motion 下三者全部静止。
+   ════════════════════════════════════════════════════════════ */
+
+
+/* ════════════════════════════════════════════════════════════
+   v0.8.3 · 愉悦时刻第二批（Marcus 直做，选择器全部 asar 实锤）
+   ════════════════════════════════════════════════════════════
+   asar 验证记录（strings obsidian.asar，2026-07-11）：
+   .search-result-file-matched-text / .cm-searchMatch /
+   .cm-searchMatch-selected / .is-being-dragged-over /
+   .sync-status-icon.mod-success|.mod-working|.mod-error /
+   .tree-item-children —— 全部实锤，无一凭猜。
+   ──────────────────────────────────────────────────────────── */
+
+/* ── 新增 keyframes ─────────────────────────────────────────── */
+/* 扫入：高亮底从左向右扫过（"找到了"的确认感） */
+@keyframes h2-sweep-in {
+  from { background-size: 0% 100%; }
+  to   { background-size: 100% 100%; }
+}
+/* 命中闪烁：当前搜索匹配项红 tint 深一档进场再落回（无 transform，
+   inline 元素 transform 不生效，用颜色表达脉冲） */
+@keyframes h2-match-flash {
+  from { background-color: rgba(209, 74, 74, 0.35); }
+  to   { background-color: rgba(209, 74, 74, 0.18); }
+}
+/* 整屏淡入（启动签到专用） */
+@keyframes h2-fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* ── ① 搜索命中的瞬间 ────────────────────────────────────────
+   全局搜索结果里的匹配词：红 tint 底从左向右扫入（120ms）。
+   结果列表渲染即播——用户敲字每一击都伴随一排"找到了"的轻扫。 */
+.search-result-file-matched-text {
+  background-color: transparent;
+  background-image: linear-gradient(
+    rgba(209, 74, 74, 0.14), rgba(209, 74, 74, 0.14));
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 100% 100%;
+  animation: h2-sweep-in var(--h2-duration-fast) var(--h2-ease);
+}
+
+/* 文档内搜索（Cmd+F）：当前匹配项进场时红 tint 闪一下再落定。
+   跳转到下一个匹配时 -selected 类移动到新元素，动画重放。 */
+.markdown-source-view.mod-cm6 .cm-searchMatch {
+  background-color: rgba(209, 74, 74, 0.10);
+}
+.markdown-source-view.mod-cm6 .cm-searchMatch-selected {
+  background-color: rgba(209, 74, 74, 0.18);
+  animation: h2-match-flash var(--h2-duration-slow) var(--h2-ease);
+}
+
+/* ── ② 拖入目标的瞬间（原"落下反馈"改版）─────────────────────
+   落下瞬间无状态类可挂（drop 后类即移除），改做拖入过程反馈：
+   拖文件悬停在目标文件夹上时，目标染极轻红 tint + 红 hairline
+   内描边——"这里会接住它"。红是瞬态（仅拖拽悬停期间），合法。 */
+.is-being-dragged-over {
+  background-color: rgba(209, 74, 74, 0.06) !important;
+  box-shadow: inset 0 0 0 1px var(--h2-accent);
+  border-radius: var(--radius-s);
+}
+
+/* ── ③ 同步完成的心跳 ────────────────────────────────────────
+   官方 Sync 状态图标（asar：.sync-status-icon.mod-*）。
+   working 灰、success sage + 冒尖脉冲一次、error crimson。
+   脉冲挂 svg（replaced element，transform 安全），不动容器布局。
+   圆点语义：同步状态是"圆=状态"几何语法的正统落点。 */
+.sync-status-icon.mod-working { color: var(--h2-text-faint); }
+.sync-status-icon.mod-error   { color: var(--h2-crimson); }
+.sync-status-icon.mod-success { color: var(--h2-sage); }
+.sync-status-icon.mod-success svg {
+  animation: h2-emerge 150ms var(--h2-ease-signature);
+}
+
+/* ── ④ 悬停链接的重描 ────────────────────────────────────────
+   hover 从"换色"升级成"动作"：红下划线从左向右重描一次（150ms），
+   像用红笔在链接下划了一道。工法：原生 text-decoration 退役，
+   双层 background 下划线——灰线常驻垫底，红线 hover 扫入。
+   ⚠️ 已知边界：跨行长链接的背景按整体绘制再切片，扫入在折行处
+   不完全连续——正文链接绝大多数单行，接受。tag 不参与（无下划线）。 */
+.markdown-preview-view a:not(.tag),
+.markdown-source-view.mod-cm6 .cm-link,
+.markdown-source-view.mod-cm6 .cm-url {
+  text-decoration: none;
+  background-image:
+    linear-gradient(var(--h2-accent), var(--h2-accent)),
+    linear-gradient(var(--link-decoration-color), var(--link-decoration-color));
+  background-repeat: no-repeat;
+  background-position: 0 100%, 0 100%;
+  background-size: 0% 1px, 100% 1px;
+  transition: var(--h2-transition-color),
+              background-size var(--h2-duration-fast) var(--h2-ease);
+}
+.markdown-preview-view a:not(.tag):hover,
+.markdown-source-view.mod-cm6 .cm-link:hover,
+.markdown-source-view.mod-cm6 .cm-url:hover {
+  background-size: 100% 1px, 100% 1px;
+}
+
+/* 原生下划线彻底退役（asar 实锤两处漏网）：
+   ① LP 链接文字的内层 span .cm-underline 自带
+      text-decoration-line: var(--link-decoration)，外层渐变线
+      +内层原生线 = 双下划线；
+   ② 阅读模式外链走独立 token --link-external-decoration。 */
+.markdown-source-view.mod-cm6 .cm-link .cm-underline,
+.markdown-source-view.mod-cm6 .cm-url .cm-underline {
+  text-decoration: none;
+}
+body {
+  --link-external-decoration: none;
+  --link-external-decoration-hover: none;
+}
+
+/* 外链箭头位收回：官方箭头画在 background-image 上，已被双渐变
+   覆盖（去箭头符合减法路线），但 padding-inline-end: 0.9em 的
+   图标位还在——渐变背景铺满 padding，灰线比文字长一截、hover
+   红线也铺过去。位随箭头一起退役，线与文字齐宽。
+   ⚠️ .external-link 的 padding 规则是模式无关的：LP 渲染出的
+   链接 span 同样挂 .external-link 类，两个视图态都要收。 */
+.markdown-preview-view a.external-link,
+.markdown-source-view.mod-cm6 .external-link {
+  padding-inline-end: 0;
+}
+
+/* ── ⑤ 折叠展开的呼吸 ────────────────────────────────────────
+   文件树/大纲展开时子层整体 2px 上浮淡入（120ms，动画挂容器
+   .tree-item-children 一层，不逐项动画——几百项的文件夹零性能税）。
+   ⚠️ 实测点：滚动虚拟化若导致子层重挂会重放，显吵则收窄或撤。 */
+.tree-item-children {
+  animation: h2-enter-up-sm var(--h2-duration-fast) var(--h2-ease);
+}
+
+/* ── ⑥ 启动签到 ──────────────────────────────────────────────
+   Obsidian 启动第一屏整体淡入 300ms——每天一次，主题的早安。
+   挂 .app-container（启动时挂载一次，此后不重挂）。
+   ⚠️ 实测点：启动感知变慢或掉帧即删，彩蛋不值性能税。 */
+body:not(.is-mobile) .app-container {
+  animation: h2-fade-in 300ms var(--h2-ease);
+}
+
+/* ════════════════════════════════════════════════════════════
+   v0.8.3 终止线。验收：全局搜索敲字（扫入）、Cmd+F 跳匹配（闪烁）、
+   拖文件到文件夹上悬停（红 tint 接住）、Sync 完成（sage 心跳）、
+   hover 链接（红线重描）、展开文件夹（子层上浮）、重启 app（淡入）。
+   ════════════════════════════════════════════════════════════ */
+
+
+/* ════════════════════════════════════════════════════════════
+   v0.8.6 · 签名构造线（Elijah 立项）+ 灰线大收敛
+   ════════════════════════════════════════════════════════════
+   灰结构线收敛（vault 栏/状态栏上沿已退役），全界面只留两条
+   签名红线：导航栏下沿（横，开 app 左→右刷入）+ 设置页左栏右沿
+   （竖，开设置上→下刷入）。"一换主题就知道不一样"的记号。
+   工法：线画在 background-image 上（border 无法做扫入动画），
+   background-size 单轴 0→100%。选择器 asar 实锤：
+   .workspace-tab-header-container / .vertical-tab-header。
+   ──────────────────────────────────────────────────────────── */
+
+/* 横线刷入（左→右） */
+@keyframes h2-line-sweep-x {
+  from { background-size: 0% 1.5px; }
+  to   { background-size: 100% 1.5px; }
+}
+/* 竖线刷入（上→下） */
+@keyframes h2-line-sweep-y {
+  from { background-size: 1.5px 0%; }
+  to   { background-size: 1.5px 100%; }
+}
+
+/* ── 导航栏下沿签名横线 ──────────────────────────────────────
+   v0.8.7 全宽版：初版画在 tab 容器上只有正文区宽（Elijah 截图定改），
+   改画在 .workspace::after——横跨整窗（左栏→正文→右栏）。
+   垂直落点 = workspace 上 padding + 头部行高（--header-height: 40px，
+   asar 实锤），与 tab 栏下沿对齐。原 tab 容器灰线保持关闭。
+   刷入换 scaleX + transform-origin left（自有元素比 background-size 稳），
+   复用 h2-unfold-x keyframe。挂 .workspace 挂载即播 = 每次启动一次。 */
+body:not(.is-mobile) .workspace-split.mod-root .workspace-tabs .workspace-tab-header-container {
+  border-bottom: none;
+}
+body:not(.is-mobile) .workspace {
+  position: relative;
+}
+body:not(.is-mobile) .workspace::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: calc(var(--h2-paper-gap) + var(--header-height));
+  height: 1.5px;
+  background: var(--h2-line-signature);
+  pointer-events: none;
+  z-index: 10;
+  transform-origin: left center;
+  animation: h2-unfold-x var(--h2-duration-line) var(--h2-ease-line);
+}
+
+/* ── 设置页左栏右沿签名竖线 ──────────────────────────────────
+   替换设置 modal 侧栏与内容区之间的灰竖线。打开设置瞬间从上刷下。 */
+.modal.mod-settings .vertical-tab-header {
+  border-right: none;
+  background-image: linear-gradient(var(--h2-line-signature), var(--h2-line-signature));
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: 1.5px 100%;
+  animation: h2-line-sweep-y var(--h2-duration-line) var(--h2-ease-line);
+}
+
+/* ── v0.8.9 半透明模式适配 ───────────────────────────────────
+   asar 实锤：.is-translucent:not(.is-fullscreen) 把 --divider-color
+   加深到 rgba(0,0,0,0.15)，并以 !important 强制 bench 底透明——
+   原被不透明底色盖住的分隔线（左右栏与正文相接处、左下角）全部
+   显形（Elijah 截图）。主题的线纪律在半透明下重申：divider 与
+   tab-outline 双双透明，结构线只留两条签名红线。 */
+body.is-translucent:not(.is-fullscreen) {
+  --divider-color: transparent;
+  --tab-outline-color: transparent;
+  /* v0.8.10 根修：官方半透明是"打孔式"——只强制 tab 头条/vault 栏/
+     ribbon 透明，我们的 bench 灰底仍盖着侧栏内容和状态栏，玻璃与
+     不透明灰底的每条拼缝都读成"线"（v0.8.9 找线删线方向错了）。
+     根修 = 消灭拼接：bench token 整体让位成玻璃，工作台隐喻升级——
+     白纸浮在毛玻璃上，只有纸是不透明的。 */
+  --h2-bench: transparent;
+}
+
+/* ── v0.8.9 侧栏工具 active 图标红固化 ───────────────────────
+   原生逻辑：active 图标的红跟随 focus，点击别处/再点一次焦点转移
+   红就消失——"我在看文件树"的状态指示忽隐忽现（Elijah 实测困惑）。
+   固化：active tab 图标常红，不随焦点闪烁。
+   红色纪律备案：归入"你在这里"导航例外类（与红点导航同类），
+   每侧栏同时只有一个 active，句读级。选择器 asar 实锤
+   （.workspace-tab-header.is-active / -inner-icon）。 */
+body:not(.is-mobile) .workspace-split.mod-sidedock .workspace-tab-header.is-active .workspace-tab-header-inner-icon svg {
+  color: var(--h2-accent);
+}
+
+/* ════════════════════════════════════════════════════════════
+   v0.8.6 终止线。验收：重启 app（导航横线左→右刷入）、打开设置
+   （左栏竖线上→下刷入）、vault 栏/状态栏无上沿灰线。
+   reduced-motion：时长走 grand token，自动归零。
+   ════════════════════════════════════════════════════════════ */
+
+/* ════════════════════════════════════════════════════════════
+   v1.2 覆盖缺口清偿：Tooltip + View Header
+   两处发版前挂起的"出戏回官方"面。选择器与默认值均 asar 实锤。
+   ════════════════════════════════════════════════════════════ */
+
+/* ── Tooltip（asar：.tooltip / .tooltip-arrow，bg 走
+   --background-modifier-message: rgba(0,0,0,0.9)，radius-s 圆角）──
+   改造：底色收编到 Gray 900（灰阶体系内，不再是通用纯黑半透明）、
+   0 圆角（方形语义——tooltip 是结构说明，归"方"）、阴影减淡一档。
+   箭头颜色走同一个 token，改 token 一处两得。
+   入场动画保留官方 pop-down（transient、200ms，符合动效分寸）。 */
+body {
+  --background-modifier-message: var(--h2-gray-900);
+}
+.tooltip {
+  border-radius: 0;
+  box-shadow: 0 2px 8px rgba(24, 24, 27, 0.15);
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  padding: 0.25rem 0.5rem;      /* 4px 8px，4px 网格 */
+}
+
+/* ── View Header（asar：.view-header 高度 --header-height，
+   bg/border 走 --file-header-* token，默认 border transparent）──
+   默认关闭（show-view-header off）时不渲染；开启后要求：
+   ① 底色随纸面（--h2-bg），不引入新层；② 无下沿线——水平结构线
+   只允许签名红线一条（灰线大收敛纪律）；③ 标题走 muted 小字 +
+   面包屑分隔符退 faint，作为"呼吸位"不与正文标题争重量。 */
+body {
+  --file-header-background: var(--h2-bg);
+  --file-header-background-focused: var(--h2-bg);
+  --file-header-border: 1px solid transparent;
+  --file-header-font-size: 0.8125rem;
+  --file-header-font-weight: 500;
+}
+.view-header-title {
+  color: var(--h2-text-muted);
+}
+.view-header-breadcrumb,
+.view-header-breadcrumb-separator {
+  color: var(--h2-text-faint);
+}
+.view-header-breadcrumb:hover {
+  color: var(--h2-text);
+}
+
+
+/* ════════════════════════════════════════════════════════════
+   FINISH · PRINT / PDF（Phase 5 打印样式）
+   ════════════════════════════════════════════════════════════
+   Obsidian 打印机制（asar 实测 app.css 3058-3122）：
+   打印时不在原 DOM 上打印——克隆一个 .print 容器（内含
+   .markdown-preview-view），body > :not(.print) 全部 display:none。
+   官方已处理：隐藏 titlebar/app-container/sidebar/iframe/popover/
+   suggestion；.metadata-container 隐藏；.callout-content 展开；
+   外部链接去箭头；全局 text-shadow 清零；--font-text 换打印字体。
+   主题的打印规则叠在官方之上，前缀沿用 .print .markdown-preview-view。
+
+   设计原则（向纸质书靠拢）：
+   · 白底深色正文（Gray 900），防浅灰打印不可读
+   · 阴影全清零（打印不渲染阴影，box-shadow 会栅格化成脏灰块），
+     用 hairline border 表达边界——与屏幕端直角路线同语言
+   · 屏幕专属装饰清零：氢徽三段线简化为实线、callout 红折角不印
+   · page-break：语义块尽量不切断、标题不孤立
+   · 长代码/URL 防撑破页面
+   · 链接保留下划线（黑白打印可辨认），不印大面积红底
+   · -webkit-print-color-adjust 只给需要底色的组件（callout tint、
+     table header），不全局开（避免大面积彩色底打印费墨）
+   ──────────────────────────────────────────────────────────── */
+
+@media print {
+  /* ── 1. 基础：白底深字、阴影清零 ────────────────────────────
+     官方把 --font-text 换成 --font-print（已在 app.css 3118 处理），
+     但底色和正文色仍走主题 token。打印时强制压实：
+     背景纯白、正文 Gray 900（防 Gray 600 打成不可读浅灰）。 */
+  & .print .markdown-preview-view {
+    background: #FFFFFF !important;
+    color: var(--h2-gray-900) !important;
+    font-size: 12pt;              /* 打印标准基准字号 */
+    line-height: 1.6;
+    padding: 0 !important;        /* 去屏幕端 padding，用 @page margin 留白 */
+  }
+
+  /* 全局阴影清零：embed / callout / table 的 box-shadow 在打印里
+     变成脏灰块。组件用 hairline border 表达边界（同屏幕端直角路线）。 */
+  & .print .markdown-preview-view * {
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  /* ── 2. 标题：防孤立 + 排面装饰简化 ─────────────────────────
+     H1-H6 不出现在页面底部（page-break-after: avoid）。
+     inline-title 和 H1 的三段线签名在打印里简化为实线 hairline
+     （三段线是屏幕签名，打印里断成碎片难辨认）。 */
+  & .print .markdown-preview-view h1,
+  & .print .markdown-preview-view h2,
+  & .print .markdown-preview-view h3,
+  & .print .markdown-preview-view h4,
+  & .print .markdown-preview-view h5,
+  & .print .markdown-preview-view h6 {
+    page-break-after: avoid;
+    break-after: avoid;
+    color: var(--h2-gray-900) !important;
+  }
+
+  & .print .markdown-preview-view .inline-title::after,
+  & .print .markdown-preview-view h1::after {
+    background: var(--h2-border) !important;   /* 三段线 → 实线 */
+  }
+
+  /* inline-title 排面级 40px 在打印里保留（文档主标题，每篇一次，
+     A4 纸面足够承载），但收紧上下留白省纸。 */
+  & .print .markdown-preview-view .inline-title {
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+
+  /* ── 3. 链接：可辨认但不抢戏 ───────────────────────────────
+     官方已去外部链接箭头（app.css 3104）。主题补：
+     内部链接保留下划线（黑白打印可辨认），颜色压到 Gray 900
+     （屏幕端红链接在打印里太抢戏，且彩色打印费墨）。
+     未解析链接虚线保留（语义信息值得打印保留）。 */
+  & .print .markdown-preview-view a {
+    color: var(--h2-gray-900) !important;
+    text-decoration: underline !important;
+    text-decoration-color: var(--h2-gray-400) !important;
+  }
+
+  & .print .markdown-preview-view a.is-unresolved {
+    text-decoration-style: dashed;
+    text-decoration-color: var(--h2-gray-400) !important;
+  }
+
+  /* 脚注引用红（A3 屏幕端单字符红）：打印压回 Gray 900 + 下划线，
+     语义靠上标位置表达，不靠颜色。 */
+  & .print .markdown-preview-view .footnote-link,
+  & .print .markdown-preview-view sup {
+    color: var(--h2-gray-900) !important;
+    text-decoration: underline;
+    text-decoration-color: var(--h2-gray-400);
+  }
+
+  /* ── 4. 代码块：防切断 + 防撑破页面 ─────────────────────────
+     代码块整块尽量不跨页（短块）；长块允许跨页但行内不断。
+     white-space: pre-wrap 让长行折行，防横向撑破页面。
+     ⚠️ 折行会破坏代码缩进对齐——但撑破页面更糟，两害取其轻。
+        语法高亮色保留（Sky/Sage/Amber 在打印里可辨认且不费墨）。 */
+  & .print .markdown-preview-view pre {
+    page-break-inside: avoid;
+    break-inside: avoid;
+    border: 1px solid var(--h2-border) !important;
+    background: var(--h2-gray-50) !important;   /* 极浅底，打印友好 */
+    -webkit-print-color-adjust: exact;          /* 保留极浅底色 */
+    print-color-adjust: exact;
+  }
+
+  & .print .markdown-preview-view pre code {
+    white-space: pre-wrap;
+    word-break: break-word;
+    color: var(--h2-gray-900) !important;
+  }
+
+  /* ── 5. 表格：防切断 + 表头底色保留 ─────────────────────────
+     表格整块尽量不跨页；大表允许跨页但行内不断。
+     表头底色（Gray 50）极浅，打印友好，保留以维持表头识别。 */
+  & .print .markdown-preview-view table {
+    page-break-inside: avoid;
+    break-inside: avoid;
+    border: 1px solid var(--h2-border) !important;
+  }
+
+  & .print .markdown-preview-view table th {
+    background: var(--h2-gray-50) !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+    color: var(--h2-gray-900) !important;
+  }
+
+  & .print .markdown-preview-view table td,
+  & .print .markdown-preview-view table th {
+    border: 0 !important;
+  }
+
+  & .print .markdown-preview-view table tbody tr {
+    border-top: 1px solid var(--h2-border) !important;
+  }
+
+  /* ── 6. Callout：展开 + tint 保留 + 折叠箭头隐藏 ────────────
+     官方已展开 .callout-content（app.css 3098）。主题补：
+     折叠箭头不印（打印是静态的，折叠语义无意义）。
+     tint 底色（color-mix 10%）极浅，打印友好，保留以维持语义识别。
+     icon 保留（语义色图标在打印里可辨认）。 */
+  & .print .markdown-preview-view .callout {
+    page-break-inside: avoid;
+    break-inside: avoid;
+    border: 1px solid var(--h2-border) !important;   /* 打印补回边框（屏幕端无边框） */
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  & .print .markdown-preview-view .callout-fold {
+    display: none !important;
+  }
+
+  /* ── 7. Blockquote：双块引号保留 + 防切断 ───────────────────
+     双块引号是 v0.5.1 记号重绘成果，打印保留（几何记号在黑白
+     打印里清晰可辨，红块前景会印成深灰，仍保持"一深一浅"对比）。
+     page-break-inside: avoid 防止引号块被切断丢失记号。 */
+  & .print .markdown-preview-view blockquote {
+    page-break-inside: avoid;
+    break-inside: avoid;
+    color: var(--h2-gray-700) !important;
+  }
+
+  /* 双块引号的红色块：打印里让它仍比灰块深一档
+    （彩色打印印红，黑白打印印中灰，对比保留）。 */
+  & .print .markdown-preview-view blockquote::before {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  /* ── 8. 嵌入块：防切断 + 窗楣清零 ──────────────────────────
+     官方已展开 embed 内容（app.css 3094-3097，去 max-height 限制）。
+     主题补：shadow 已全局清零，补 hairline border 定形。
+     来源标题保留（faint 副标语义值得打印保留）。 */
+  & .print .markdown-preview-view .markdown-embed {
+    page-break-inside: avoid;
+    break-inside: avoid;
+    border: 1px solid var(--h2-border) !important;
+  }
+
+  /* ── 9. 分隔线 hr：三段线简化为实线 ─────────────────────────
+     三段线是屏幕签名，打印里断成碎片难辨认（gap 段透明在打印里
+     变成白缝隙，视觉上像三条断线）。简化为实线 hairline。 */
+  & .print .markdown-preview-view hr {
+    background: var(--h2-border) !important;
+    margin-block-start: 1rem;
+    margin-block-end: 1rem;
+  }
+
+  /* ── 10. 脚注区：三段线简化 + 防切断 ──────────────────────── */
+  & .print .markdown-preview-view .footnotes,
+  & .print .markdown-preview-view .footnote {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  & .print .markdown-preview-view .footnotes::before {
+    background: var(--h2-border) !important;   /* 三段线 → 实线 */
+  }
+
+  /* ── 11. 图片：防切断 + 限制尺寸 ────────────────────────────
+     大图限制不超过页面宽度，防撑破。page-break-inside: avoid
+     防图片被切断。 */
+  & .print .markdown-preview-view img {
+    max-width: 100% !important;
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  /* ── 12. 标签 tag：描边清零 ─────────────────────────────────
+     屏幕端 tag 是方形结构片（hairline 描边），打印里退成
+     纯文本 + faint 色，不画小方框。 */
+  & .print .markdown-preview-view a.tag {
+    background: transparent !important;
+    border: none !important;
+    color: var(--h2-gray-500) !important;
+    padding: 0 !important;
+    text-decoration: none !important;
+  }
+
+  /* ── 13. 列表：连续列表项防过度跨页 ─────────────────────────
+     列表项尽量不孤立在页底（li 内部不切断）。 */
+  & .print .markdown-preview-view li {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  /* ── 14. 长文本兜底：防横向溢出 ─────────────────────────────
+     任何长 URL / 长无空格串（如代码标识符）防撑破页面宽度。 */
+  & .print .markdown-preview-view p,
+  & .print .markdown-preview-view li {
+    overflow-wrap: break-word;
+    word-break: break-word;
+  }
+}
+
+/* ════════════════════════════════════════════════════════════
+   PRINT 终止线。验收：用含全部语义组件的测试文档导出 PDF，
+   逐页检查（白底深字 / 无脏阴影 / 块不切断 / 标题不孤立 /
+   代码不撑破 / 链接可辨认）。
+   ════════════════════════════════════════════════════════════ */
+
+
+/* ════════════════════════════════════════════════════════════
+   FINISH · MOBILE（Phase 5 移动端适配）
+   ════════════════════════════════════════════════════════════
+   移动端（body.is-mobile，asar 实测挂在 body 上）不移植桌面
+   "框架式 OS"空间骨架。使用 Obsidian 原生全屏编辑区 + 左右抽屉，
+   只继承色彩、排版、控件和几何记号。
+
+   泄漏审计结论：桌面 S1/S2/S2.1 空间结构层全部带
+   body:not(.is-mobile) 守卫，不泄漏。会泄漏到移动端且需要
+   override 的项：40px 标题（token 无 guard）、入场位移动画
+   （W4 无 guard）、状态栏（Phase 3 无 guard，但 display:none 即
+   全规则失效，无害）。桌面 tab-header 规则选择器用
+   .workspace-tab-header，移动端底部导航用 .mobile-navbar-action
+   （asar 实测），类名不同，不命中。
+   ──────────────────────────────────────────────────────────── */
+
+/* ════════════════════════════════════════════════════════════
+   E1.1 · 标题降档
+   ════════════════════════════════════════════════════════════
+   inline-title 和 H1 从 40px（2.5rem）降到 32px（2rem）。
+   只降这两项——40px 在 375px 窄屏上中英混排长标题会换 3-4 行
+   甚至压迫感过重。H2-H6 保持现有值（它们本来就小，窄屏无压力）。
+   桌面 40px 排面标题不动（本规则只在 body.is-mobile 下生效）。 */
+body.is-mobile {
+  --inline-title-size: 2rem;   /* 32px，移动端排面降档 */
+  --h1-size: 2rem;             /* 与 inline-title 对齐 */
+}
+
+/* inline-title 上下留白同步收紧（桌面 24px/32px 在窄屏省空间）。
+   只改 inline-title，不改 H1（H1 自带 margin 由 Obsidian token 控制）。 */
+body.is-mobile .inline-title {
+  margin-top: 1rem;            /* 16px，比桌面 24px 收紧 */
+  margin-bottom: 1.5rem;       /* 24px，比桌面 32px 收紧 */
+}
+
+
+/* ════════════════════════════════════════════════════════════
+   E1.2 · 移动端空间结构
+   ════════════════════════════════════════════════════════════
+   移动端不移植桌面框架式空间骨架。Obsidian 移动端原生提供
+   全屏编辑区 + 左右抽屉，主题不干预。
+
+   泄漏审计结论：桌面 S1/S2 的 workspace margin / paper-gap /
+   tabs border-shadow / sidedock padding / vault-profile 卡片化
+   全部带 body:not(.is-mobile) 守卫，不泄漏。S2.1 的 titlebar
+   token / sidebar-toggle 透明化也带守卫。无需 override。
+
+   唯一需确认的：Phase 3 .workspace-tabs .workspace-tab-header-container
+   的 border-bottom（L1288）无 guard。移动端底部导航用
+   .mobile-navbar（asar 实测），不命中 .workspace-tab-header-container。
+   平板横屏若显示顶部 tab，这条 hairline 无害（提供边界）。
+   保留不动。 */
+
+
+/* ════════════════════════════════════════════════════════════
+   E1.3 · 状态栏隐藏
+   ════════════════════════════════════════════════════════════
+   移动端隐藏状态栏——屏幕寸土寸金，状态栏的字数/同步状态在
+   移动端非高频信息。
+   asar 实测确认：.status-bar 是 .app-container 的直接子级，
+   不包含底部导航组件（.mobile-navbar 是独立元素）。选择器只
+   命中 .status-bar，不误伤 .mobile-navbar / .mobile-navbar-actions。 */
+body.is-mobile .status-bar {
+  display: none;
+}
+
+
+/* ════════════════════════════════════════════════════════════
+   E1.4 · 触控目标
+   ════════════════════════════════════════════════════════════
+   红点、氢徽、图标本体尺寸不放大。对实际可点击的父级容器，
+   在移动端高频位确保约 44px 触控区域（Apple HIG 最小触控目标）。
+   只处理实测不足的高频位，不全局强制 .clickable-icon 44px
+   （会破坏密集工具栏如设置页设置项操作按钮）。
+
+   ⚠️ 以下尺寸基于 asar 官方默认值推断，实际移动端渲染需
+      Elijah 实测确认哪些位置不足 44px，再逐个加。下面先处理
+      几个确定不足的高频位：modal close、empty-state action。 */
+body.is-mobile .modal-close-button {
+  min-width: 44px;
+  min-height: 44px;
+}
+
+body.is-mobile .empty-state-action {
+  min-height: 44px;
+}
+
+
+/* ════════════════════════════════════════════════════════════
+   E1.5 · 动画
+   ════════════════════════════════════════════════════════════
+   移动端关闭装饰性入场位移动画（modal / prompt / menu /
+   popover / suggestion-container）。这些动画在 W4 用
+   h2-enter-up / h2-enter-up-sm，含 translateY——iOS WKWebView
+   上可能掉帧且移动端对位移动画更敏感（电量、卡顿）。
+   保留：颜色 transition、checkbox 勾选反馈（h2-emerge）、
+   notice 短入场（h2-enter-up-sm）。
+   prefers-reduced-motion 继续拥有最高优先级（L475 全局兜底
+   animation: none !important），不重复建冲突规则。 */
+body.is-mobile .modal,
+body.is-mobile .prompt,
+body.is-mobile .menu,
+body.is-mobile .popover,
+body.is-mobile .suggestion-container {
+  animation: none;
+}
+
+
+/* ════════════════════════════════════════════════════════════
+   E1.6 · 内容安全
+   ════════════════════════════════════════════════════════════
+   防移动端窄屏内容撑破视口。
+
+   表格横向滚动：Obsidian 默认表格容器会横向滚动，主题的表格
+   规则（L837）设了 border 但没设 overflow，走官方默认滚动。
+   确保表格容器不撑破父级：
+   body.is-mobile .markdown-preview-view table → max-width:100%。
+   代码块横向滚动：官方默认 pre 可横向滚动，主题 codeblock
+   规则（L667/L676）没设 overflow，走官方默认。确保不撑破。
+   Embed / 图片：max-width:100% 防撑破。
+   Modal：确保不超出安全视口（官方默认有 max-width，但移动端
+   极窄时需确认）。
+   长 URL 换行：overflow-wrap:break-word。 */
+
+/* 表格：不撑破父级，允许容器内横向滚动 */
+body.is-mobile .markdown-preview-view .table-wrap,
+body.is-mobile .markdown-preview-view table {
+  max-width: 100%;
+}
+
+/* 代码块：不撑破，允许横向滚动 */
+body.is-mobile .markdown-preview-view pre {
+  max-width: 100%;
+}
+
+/* Embed：不撑破视口 */
+body.is-mobile .markdown-preview-view .markdown-embed {
+  max-width: 100%;
+}
+
+/* 图片：不撑破视口（官方默认通常已有，这里兜底） */
+body.is-mobile .markdown-preview-view img {
+  max-width: 100%;
+}
+
+/* Modal：不超出安全视口。
+   官方默认 modal 有 max-width/max-height + 居中，移动端
+   加 safe-area 兜底，确保不贴边。 */
+body.is-mobile .modal {
+  max-width: calc(100vw - 2 * var(--safe-area-inset-left, 0px));
+  max-height: calc(100vh - 2 * var(--safe-area-inset-top, 0px));
+}
+
+/* 长 URL / 长无空格串换行，防横向溢出 */
+body.is-mobile .markdown-preview-view p,
+body.is-mobile .markdown-preview-view li,
+body.is-mobile .markdown-preview-view a {
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+/* iOS safe area：编辑区底部留出 home indicator 空间。
+   asar 确认 --safe-area-inset-* 变量存在。 */
+body.is-mobile .markdown-preview-view {
+  padding-bottom: var(--safe-area-inset-bottom, 0px);
+}
+
+/* Callout / blockquote 不出现负宽度：
+   官方默认 padding 为正，主题规则（L1037/L955）padding 也是正，
+   无负宽度风险。移动端不额外干预。 */
+
+/* 氢徽不遮挡空状态操作：
+   氢徽画在 .empty-state::before/::after（L1400/L1427），
+   是绝对定位的装饰元素，z-index 默认。空状态操作按钮在
+   .empty-state-action-list（L1448）。移动端需确认氢徽在小屏
+   不遮按钮——实测项。 */
+
+/* ════════════════════════════════════════════════════════════
+   MOBILE 终止线。验收：iPhone/iPad 实测——
+   375px 窄屏标题换行 / 表格代码横滚 / modal 不超出 /
+   触控目标够大 / 入场动画已关 / 状态栏已隐藏 /
+   safe area 底部留白 / 氢徽不遮操作。
+   ════════════════════════════════════════════════════════════ */
+
+
+/* ════════════════════════════════════════════════════════════
+   扩展任务态 · 复选框图标（移植自 Opendian，H2 OS 灰阶适配）
+   ════════════════════════════════════════════════════════════
+   Obsidian 支持 [data-task="X"] 自定义任务标记（asar app.css 实测：
+   ul > li.task-list-item[data-task] 是官方选择器）。默认主题只渲染
+   [ ] / [x]，其他标记退回普通 checkbox。本段为 20 种扩展态渲染
+   对应 SVG 图标。
+
+   机制（与 Opendian 同源）：每条 [data-task] 规则只定义两个自定义属性
+   —— --h2-task-icon（mask URL）+ 可选 --h2-task-color。自定义属性会
+   继承到 input，两条 :checked 消费规则是唯一消费点。
+
+   H2 OS 适配三处（与 Opendian 不同）：
+   1. 灰阶纪律：Opendian 走 --text-* 三档；H2 OS 走 --h2-text/muted/faint
+      三档（Gray 900 / 500 / 400），不引入新色相。默认 [x] 仍走红填充
+      （复选框红色例外），扩展态走灰阶——20 个图标若全红会淹没界面，
+      违反"红只做点缀"纪律。
+   2. 墨滴冲突：H2 OS 的勾选墨滴动画（v0.8.1）在 input 上挂了
+      background-image: radial-gradient + animation: h2-ink-spread。mask
+      渲染需要纯 currentColor 底 + 无动画，否则渐变被 mask 裁成碎片。
+      消费规则强制 background-image: none + animation: none（!important）。
+   3. 命名：--oc-task-* → --h2-task-*（--h2-* 命名空间纪律）。
+
+   几何语法：默认 [ ] / [x] 是圆（交互语义，Phase 2 已锁）。扩展态是
+   图标符号（mask 渲染，无圆/方容器），属另一语法层——符号标记，不与
+   圆=交互 / 方=结构 冲突。
+   ──────────────────────────────────────────────────────────── */
+
+/* ── 消费规则：mask 渲染 + 关闭墨滴动画 ───────────────────────
+   三个选择器覆盖 asar 实测的全部 DOM 路径：
+   ① input 自身带 data-task（Live Preview 任务行）
+   ② li 带data-task > input（阅读模式，input 是 li 直接子元素）
+   ③ li 带data-task > p > input（阅读模式，input 嵌套在 <p> 里） */
+input:is([data-task="/"],[data-task="-"],[data-task="!"],[data-task="?"],[data-task='"'],[data-task="“"],[data-task="*"],[data-task="<"],[data-task=">"],[data-task="b"],[data-task="c"],[data-task="d"],[data-task="f"],[data-task="i"],[data-task="I"],[data-task="k"],[data-task="l"],[data-task="p"],[data-task="S"],[data-task="u"],[data-task="w"]):checked,
+li:is([data-task="/"],[data-task="-"],[data-task="!"],[data-task="?"],[data-task='"'],[data-task="“"],[data-task="*"],[data-task="<"],[data-task=">"],[data-task="b"],[data-task="c"],[data-task="d"],[data-task="f"],[data-task="i"],[data-task="I"],[data-task="k"],[data-task="l"],[data-task="p"],[data-task="S"],[data-task="u"],[data-task="w"]) > input:checked,
+li:is([data-task="/"],[data-task="-"],[data-task="!"],[data-task="?"],[data-task='"'],[data-task="“"],[data-task="*"],[data-task="<"],[data-task=">"],[data-task="b"],[data-task="c"],[data-task="d"],[data-task="f"],[data-task="i"],[data-task="I"],[data-task="k"],[data-task="l"],[data-task="p"],[data-task="S"],[data-task="u"],[data-task="w"]) > p > input:checked {
+  --checkbox-marker-color: transparent;
+  color: var(--h2-task-color, var(--h2-text-muted));
+  background-color: currentColor !important;
+  background-image: none !important;        /* 关掉墨滴 radial-gradient */
+  border-color: transparent !important;
+  border-radius: 0;
+  animation: none !important;                /* 关掉墨滴扩散 + 冒尖脉冲 */
+  -webkit-mask-image: var(--h2-task-icon);
+  mask-image: var(--h2-task-icon);
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+}
+
+/* 隐藏勾号 ::after（mask 已渲染图标，原生勾号多余） */
+input:is([data-task="/"],[data-task="-"],[data-task="!"],[data-task="?"],[data-task='"'],[data-task="“"],[data-task="*"],[data-task="<"],[data-task=">"],[data-task="b"],[data-task="c"],[data-task="d"],[data-task="f"],[data-task="i"],[data-task="I"],[data-task="k"],[data-task="l"],[data-task="p"],[data-task="S"],[data-task="u"],[data-task="w"]):checked::after,
+li:is([data-task="/"],[data-task="-"],[data-task="!"],[data-task="?"],[data-task='"'],[data-task="“"],[data-task="*"],[data-task="<"],[data-task=">"],[data-task="b"],[data-task="c"],[data-task="d"],[data-task="f"],[data-task="i"],[data-task="I"],[data-task="k"],[data-task="l"],[data-task="p"],[data-task="S"],[data-task="u"],[data-task="w"]) > input:checked::after,
+li:is([data-task="/"],[data-task="-"],[data-task="!"],[data-task="?"],[data-task='"'],[data-task="“"],[data-task="*"],[data-task="<"],[data-task=">"],[data-task="b"],[data-task="c"],[data-task="d"],[data-task="f"],[data-task="i"],[data-task="I"],[data-task="k"],[data-task="l"],[data-task="p"],[data-task="S"],[data-task="u"],[data-task="w"]) > p > input:checked::after {
+  display: none;
+}
+
+/* ── 各状态图标 + 灰阶 ───────────────────────────────────────
+   灰阶三档（红色纪律：扩展态不走红，避免 20 个红图标淹没界面）：
+   - 不设 --h2-task-color → Gray 500（muted，低调标记：默认）
+   - var(--h2-text) → Gray 900（强标记：重要/星标/书签/灵感/火焰/上升/胜利/新增）
+   - var(--h2-text-faint) → Gray 400（取消态，配删除线） */
+
+[data-task="/"] {  /* 部分完成：方框 + 斜线 */
+  --h2-task-icon: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2016%2016%22%3E%3Crect%20x%3D%221.1%22%20y%3D%221.1%22%20width%3D%2213.8%22%20height%3D%2213.8%22%20rx%3D%222.4%22%20fill%3D%22none%22%20stroke%3D%22black%22%20stroke-width%3D%221.7%22%2F%3E%3Cpath%20d%3D%22M12.6%203.3%203.4%2012.7%22%20fill%3D%22none%22%20stroke%3D%22black%22%20stroke-width%3D%221.9%22%20stroke-linecap%3D%22square%22%2F%3E%3C%2Fsvg%3E");
+}
+
+[data-task="-"] {  /* 已取消：方框 + 横线 */
+  --h2-task-icon: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2016%2016%22%3E%3Crect%20x%3D%221.1%22%20y%3D%221.1%22%20width%3D%2213.8%22%20height%3D%2213.8%22%20rx%3D%222.4%22%20fill%3D%22none%22%20stroke%3D%22black%22%20stroke-width%3D%221.7%22%2F%3E%3Cpath%20d%3D%22M3.8%208h8.4%22%20fill%3D%22none%22%20stroke%3D%22black%22%20stroke-width%3D%221.9%22%20stroke-linecap%3D%22square%22%2F%3E%3C%2Fsvg%3E");
+  --h2-task-color: var(--h2-text-faint);
+}
+
+/* 取消态文字：faint + 删除线（比完成态更弱，完成态只 faint 不删除线） */
+.markdown-rendered li[data-task="-"].task-list-item,
+.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="-"] {
+  color: var(--h2-text-faint);
+  text-decoration: line-through solid var(--h2-text-faint) 1px;
+}
+
+[data-task=">"] {  /* 改期 / 推迟：右箭头 */
+  --h2-task-icon: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20d%3D%22M3.5%208h8%22%20fill%3D%22none%22%20stroke%3D%22black%22%20stroke-width%3D%221.8%22%20stroke-linecap%3D%22square%22%2F%3E%3Cpath%20d%3D%22m8.5%204.5%203.5%203.5-3.5%203.5%22%20fill%3D%22none%22%20stroke%3D%22black%22%20stroke-width%3D%221.8%22%20stroke-linecap%3D%22square%22%20stroke-linejoin%3D%22miter%22%2F%3E%3C%2Fsvg%3E");
+}
+
+[data-task="<"] {  /* 排期：日历角标 */
+  --h2-task-icon: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2016%2016%22%3E%3Crect%20x%3D%223%22%20y%3D%224%22%20width%3D%2210%22%20height%3D%229%22%20rx%3D%221.5%22%20fill%3D%22none%22%20stroke%3D%22black%22%20stroke-width%3D%221.4%22%2F%3E%3Cpath%20d%3D%22M5%202.8v3M11%202.8v3M3.5%207h9%22%20fill%3D%22none%22%20stroke%3D%22black%22%20stroke-width%3D%221.2%22%20stroke-linecap%3D%22square%22%2F%3E%3C%2Fsvg%3E");
+}
+
+[data-task="?"] {  /* 待确认：问号 */
+  --h2-task-icon: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20d%3D%22M5.1%205.5c.15-2%201.55-3.3%203.45-3.3%202.05%200%203.45%201.25%203.45%203.05%200%201.55-.95%202.35-2.2%203.05-1%20.56-1.35%201-1.35%202.2%22%20fill%3D%22none%22%20stroke%3D%22black%22%20stroke-width%3D%221.8%22%20stroke-linecap%3D%22square%22%20stroke-linejoin%3D%22miter%22%2F%3E%3Ccircle%20cx%3D%228.45%22%20cy%3D%2213.1%22%20r%3D%221.15%22%20fill%3D%22black%22%2F%3E%3C%2Fsvg%3E");
+  --h2-task-color: var(--h2-text);
+}
+
+[data-task="!"] {  /* 重要：叹号 */
+  --h2-task-icon: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20d%3D%22M7.05%202.1h1.9l-.28%208.1H7.33L7.05%202.1Z%22%20fill%3D%22black%22%2F%3E%3Ccircle%20cx%3D%228%22%20cy%3D%2213%22%20r%3D%221.2%22%20fill%3D%22black%22%2F%3E%3C%2Fsvg%3E");
+  --h2-task-color: var(--h2-text);
+}
+
+[data-task="*"] {  /* 收藏：五角星 */
+  --h2-task-icon: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20d%3D%22m8%201.8%201.7%204.1%204.4.3-3.3%202.9%201%204.3L8%2011.1l-3.8%202.3%201-4.3-3.3-2.9%204.4-.3L8%201.8Z%22%20fill%3D%22black%22%2F%3E%3C%2Fsvg%3E");
+  --h2-task-color: var(--h2-text);
+}
+
+[data-task='"'],  /* 引用：书名号（直引号 + 弯引号同规则） */
+[data-task="“"] {
+  --h2-task-icon: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20d%3D%22M4.5%205.1h3v3.1c0%202.2-1%203.5-3%204.2v-1.6c.9-.4%201.3-1%201.4-1.9H4.5V5.1Zm5.1%200h3v3.1c0%202.2-1%203.5-3%204.2v-1.6c.9-.4%201.3-1%201.4-1.9H9.6V5.1Z%22%20fill%3D%22black%22%2F%3E%3C%2Fsvg%3E");
+}
+
+[data-task="l"] {  /* 位置：图钉 */
+  --h2-task-icon: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20d%3D%22M8%2014s4-4.4%204-7.3a4%204%200%200%200-8%200C4%209.6%208%2014%208%2014Z%22%20fill%3D%22none%22%20stroke%3D%22black%22%20stroke-width%3D%221.5%22%2F%3E%3Ccircle%20cx%3D%228%22%20cy%3D%226.7%22%20r%3D%221.45%22%20fill%3D%22black%22%2F%3E%3C%2Fsvg%3E");
+}
+
+[data-task="b"] {  /* 书签 */
+  --h2-task-icon: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20d%3D%22M4.5%202.5h7v11L8%2011.4l-3.5%202.1v-11Z%22%20fill%3D%22black%22%2F%3E%3C%2Fsvg%3E");
+  --h2-task-color: var(--h2-text);
+}
+
+[data-task="i"] {  /* 信息提示 */
+  --h2-task-icon: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2016%2016%22%3E%3Ccircle%20cx%3D%228%22%20cy%3D%228%22%20r%3D%225.5%22%20fill%3D%22none%22%20stroke%3D%22black%22%20stroke-width%3D%221.4%22%2F%3E%3Ccircle%20cx%3D%228%22%20cy%3D%225.3%22%20r%3D%220.9%22%20fill%3D%22black%22%2F%3E%3Cpath%20d%3D%22M8%207.2v4%22%20fill%3D%22none%22%20stroke%3D%22black%22%20stroke-width%3D%221.6%22%20stroke-linecap%3D%22square%22%2F%3E%3C%2Fsvg%3E");
+}
+
+[data-task="S"] {  /* 金钱 / 预算：$ */
+  --h2-task-icon: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2016%2016%22%3E%3Ccircle%20cx%3D%228%22%20cy%3D%228%22%20r%3D%225.4%22%20fill%3D%22none%22%20stroke%3D%22black%22%20stroke-width%3D%221.3%22%2F%3E%3Cpath%20d%3D%22M8%203.9v8.2M10.4%205.3C9.8%204.8%209%204.5%208.1%204.5c-1.3%200-2.3.6-2.3%201.7%200%201.2%201.2%201.5%202.4%201.8%201.2.3%202.3.6%202.3%201.8s-1.1%201.8-2.5%201.8c-1%200-1.9-.3-2.6-1%22%20fill%3D%22none%22%20stroke%3D%22black%22%20stroke-width%3D%221.25%22%20stroke-linecap%3D%22square%22%20stroke-linejoin%3D%22miter%22%2F%3E%3C%2Fsvg%3E");
+}
+
+[data-task="I"] {  /* 灵感：灯泡 */
+  --h2-task-icon: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20d%3D%22M5.2%207a2.8%202.8%200%201%201%205.6%200c0%201-.45%201.45-1.05%202.05-.4.4-.65.78-.65%201.35H6.9c0-.57-.25-.95-.65-1.35C5.65%208.45%205.2%208%205.2%207Z%22%20fill%3D%22none%22%20stroke%3D%22black%22%20stroke-width%3D%221.5%22%20stroke-linejoin%3D%22round%22%2F%3E%3Cpath%20d%3D%22M6.65%2012h2.7M7.2%2014h1.6%22%20fill%3D%22none%22%20stroke%3D%22black%22%20stroke-width%3D%221.5%22%20stroke-linecap%3D%22square%22%2F%3E%3C%2Fsvg%3E");
+  --h2-task-color: var(--h2-text);
+}
+
+[data-task="f"] {  /* 紧急：火焰 */
+  --h2-task-icon: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20d%3D%22M8.4%201.8c.3%202.3%202.8%203.2%202.8%206.2a3.9%203.9%200%200%201-7.8%200c0-2%201.2-3.4%202.4-4.4-.1%201.8.8%202.7%201.5%203.2.4-1.3.2-3.3%201.1-5Z%22%20fill%3D%22black%22%2F%3E%3C%2Fsvg%3E");
+  --h2-task-color: var(--h2-text);
+}
+
+[data-task="k"] {  /* 关键 / 凭据：钥匙 */
+  --h2-task-icon: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2016%2016%22%3E%3Ccircle%20cx%3D%225.8%22%20cy%3D%226.3%22%20r%3D%222.6%22%20fill%3D%22none%22%20stroke%3D%22black%22%20stroke-width%3D%221.5%22%2F%3E%3Cpath%20d%3D%22m7.7%208.2%205%205M10.2%2010.7l1.5-1.5M11.7%2012.2l1.3-1.3%22%20fill%3D%22none%22%20stroke%3D%22black%22%20stroke-width%3D%221.5%22%20stroke-linecap%3D%22square%22%2F%3E%3C%2Fsvg%3E");
+}
+
+[data-task="u"] {  /* 上升：趋势图 */
+  --h2-task-icon: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20d%3D%22M3%2011.5%206.5%208l2.2%202.2L13%205.9%22%20fill%3D%22none%22%20stroke%3D%22black%22%20stroke-width%3D%221.65%22%20stroke-linecap%3D%22square%22%20stroke-linejoin%3D%22miter%22%2F%3E%3Cpath%20d%3D%22M9.3%205.7H13v3.7%22%20fill%3D%22none%22%20stroke%3D%22black%22%20stroke-width%3D%221.65%22%20stroke-linecap%3D%22square%22%2F%3E%3C%2Fsvg%3E");
+  --h2-task-color: var(--h2-text);
+}
+
+[data-task="d"] {  /* 下降：趋势图 */
+  --h2-task-icon: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20d%3D%22M3%204.5%206.5%208l2.2-2.2L13%2010.1%22%20fill%3D%22none%22%20stroke%3D%22black%22%20stroke-width%3D%221.65%22%20stroke-linecap%3D%22square%22%20stroke-linejoin%3D%22miter%22%2F%3E%3Cpath%20d%3D%22M9.3%2010.3H13V6.6%22%20fill%3D%22none%22%20stroke%3D%22black%22%20stroke-width%3D%221.65%22%20stroke-linecap%3D%22square%22%2F%3E%3C%2Fsvg%3E");
+}
+
+[data-task="w"] {  /* 胜利：奖杯 */
+  --h2-task-icon: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20fill%3D%22black%22%20fill-rule%3D%22evenodd%22%20d%3D%22M2.3%2013.2h11.4l.55-8.2-3.75%203.15L8%202.6%205.5%208.15%201.75%205l.55%208.2Zm2.15-2h7.1l.22-2.9-1.95%201.65L8%205.9%206.18%209.95%204.23%208.3l.22%202.9Z%22%20clip-rule%3D%22evenodd%22%2F%3E%3C%2Fsvg%3E");
+  --h2-task-color: var(--h2-text);
+}
+
+[data-task="p"] {  /* 新增：加号 */
+  --h2-task-icon: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2016%2016%22%3E%3Crect%20x%3D%223%22%20y%3D%223%22%20width%3D%2210%22%20height%3D%2210%22%20rx%3D%222%22%20fill%3D%22none%22%20stroke%3D%22black%22%20stroke-width%3D%221.4%22%2F%3E%3Cpath%20d%3D%22M8%205v6M5%208h6%22%20fill%3D%22none%22%20stroke%3D%22black%22%20stroke-width%3D%221.7%22%20stroke-linecap%3D%22square%22%2F%3E%3C%2Fsvg%3E");
+  --h2-task-color: var(--h2-text);
+}
+
+[data-task="c"] {  /* 折叠：减号 */
+  --h2-task-icon: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2016%2016%22%3E%3Crect%20x%3D%223%22%20y%3D%223%22%20width%3D%2210%22%20height%3D%2210%22%20rx%3D%222%22%20fill%3D%22none%22%20stroke%3D%22black%22%20stroke-width%3D%221.4%22%2F%3E%3Cpath%20d%3D%22M5%208h6%22%20fill%3D%22none%22%20stroke%3D%22black%22%20stroke-width%3D%221.7%22%20stroke-linecap%3D%22square%22%2F%3E%3C%2Fsvg%3E");
+}
+
+/* ════════════════════════════════════════════════════════════
+   扩展任务态终止线。验收：01-02 列表与任务.md 的 22 种任务态全部
+   渲染对应图标（阅读模式 + Live Preview），灰阶三档清晰，
+   取消态文字删除线，默认 [x] 仍是红圆 + 墨滴动画（不受影响）。
+   ════════════════════════════════════════════════════════════ */

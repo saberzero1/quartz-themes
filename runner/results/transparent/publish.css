@@ -421,11 +421,11 @@ body.theme-light {
   --accent-h: 258 !important;
   --accent-l: 66% !important;
   --accent-s: 88% !important;
-  --anim-duration-fast: calc(var(--animationspeed) / 2) !important;
+  --anim-duration-fast: calc(var(--animationspeed)/2) !important;
   --anim-duration-moderate: var(--animationspeed) !important;
   --anim-duration-none: 0 !important;
   --anim-duration-slow: calc(var(--animationspeed) * 2) !important;
-  --anim-duration-superfast: calc(var(--animationspeed) / 4) !important;
+  --anim-duration-superfast: calc(var(--animationspeed)/4) !important;
   --anim-motion-delay: cubic-bezier(0.65, 0.05, 0.36, 1) !important;
   --anim-motion-jumpy: cubic-bezier(0.68, -0.55, 0.27, 1.55) !important;
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;
@@ -1538,11 +1538,11 @@ body.theme-dark {
   --accent-h: 258 !important;
   --accent-l: 66% !important;
   --accent-s: 88% !important;
-  --anim-duration-fast: calc(var(--animationspeed) / 2) !important;
+  --anim-duration-fast: calc(var(--animationspeed)/2) !important;
   --anim-duration-moderate: var(--animationspeed) !important;
   --anim-duration-none: 0 !important;
   --anim-duration-slow: calc(var(--animationspeed) * 2) !important;
-  --anim-duration-superfast: calc(var(--animationspeed) / 4) !important;
+  --anim-duration-superfast: calc(var(--animationspeed)/4) !important;
   --anim-motion-delay: cubic-bezier(0.65, 0.05, 0.36, 1) !important;
   --anim-motion-jumpy: cubic-bezier(0.68, -0.55, 0.27, 1.55) !important;
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;

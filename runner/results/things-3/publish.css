@@ -1079,6 +1079,9 @@ body.theme-light {
   --nn-selected-file-bg-color: var(--background-primary) !important;
   --color-grey: #818893 !important;
   --metadata-property-box-shadow: none !important;
+  --nn-computed-file-selected-inactive-bg: var(--background-primary) !important;
+  --nn-file-item-border-radius: var(--radius-s) !important;
+  --text-extreme: #000000 !important;
   --selected-item: #c3d8ff !important;
   --div-color: rgba(210, 210, 210, 0.5) !important;
   --dnc-stroke: 1.95px !important;
@@ -1094,7 +1097,6 @@ body.theme-light {
     0 3px 14px rgba(0, 0, 0, 0.09) !important;
   --prompt-input-background: #dee0e5 !important;
   --properties-background: var(--background-secondary) !important;
-  --text-extreme: #000000 !important;
   --anim-duration-medium: 300ms !important;
   --color-red-trans: rgba(255, 83, 131, 0.3) !important;
   --mobile-glass-border: color-mix(
@@ -1102,8 +1104,6 @@ body.theme-light {
     rgb(255, 255, 255) 80%,
     transparent
   ) !important;
-  --nn-computed-file-selected-inactive-bg: var(--background-primary) !important;
-  --nn-file-item-border-radius: var(--radius-s) !important;
   --tab-shadow: 0 0px 6px rgba(0, 0, 0, 0.2) !important;
 }
 
@@ -2168,6 +2168,9 @@ body.theme-dark {
   --nn-selected-file-bg-color: var(--background-primary) !important;
   --color-grey: #818893 !important;
   --metadata-property-box-shadow: none !important;
+  --nn-computed-file-selected-inactive-bg: var(--background-primary) !important;
+  --nn-file-item-border-radius: var(--radius-s) !important;
+  --text-extreme: #ffffff !important;
   --selected-item: #286bbd !important;
   --div-color: rgba(70, 70, 70, 0.9) !important;
   --dnc-stroke: 1.95px !important;
@@ -2183,7 +2186,6 @@ body.theme-dark {
     0 3px 14px rgba(0, 0, 0, 0.09) !important;
   --prompt-input-background: #474747 !important;
   --properties-background: rgb(33, 33, 33) !important;
-  --text-extreme: #ffffff !important;
   --anim-duration-medium: 300ms !important;
   --color-red-trans: rgba(255, 83, 131, 0.3) !important;
   --mobile-glass-border: color-mix(
@@ -2191,8 +2193,6 @@ body.theme-dark {
     rgb(255, 255, 255) 15%,
     transparent
   ) !important;
-  --nn-computed-file-selected-inactive-bg: var(--background-primary) !important;
-  --nn-file-item-border-radius: var(--radius-s) !important;
   --tab-shadow: 0 0px 6px rgba(0, 0, 0, 0.2) !important;
 }
 

@@ -1411,10 +1411,10 @@ body.theme-dark {
   --table-row-odd-background: #11192100 !important;
   --vault-name-color: #b06ae8 !important;
   --bold-color: #dde5ee !important;
+  --embed-background: #18213020 !important;
   --italic-color: #b06ae8 !important;
   --embed-border-left: 2px solid #9040d0 !important;
   --vault-name-font-size: var(--font-ui-small) !important;
-  --embed-background: #18213020 !important;
   --dialog-background: #111921 !important;
   --dialog-border-color: #253545 !important;
   --status-bar-scroll-text-color: #b06ae8 !important;

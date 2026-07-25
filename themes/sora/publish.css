@@ -1418,10 +1418,10 @@ body.theme-dark {
   --vault-name-color: #80c8e0 !important;
   --bold-color: #dce4f0 !important;
   --italic-color: #b0a0d8 !important;
-  --inline-code-background: rgba(20, 22, 30, 0.8) !important;
   --inline-code-color: #d0a888 !important;
-  --vault-name-font-size: 14px !important;
+  --inline-code-background: rgba(20, 22, 30, 0.8) !important;
   --flashing-background: rgba(212, 184, 120, 0.25) !important;
+  --vault-name-font-size: 14px !important;
 }
 
 body .site-body-left-column-site-theme-toggle {

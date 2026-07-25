@@ -1,0 +1,525 @@
+/* @settings
+
+name: Steam
+id: steam
+settings:
+    -
+        id: disable-crt-effect
+        title: Disable CRT Effect
+        description: Completely shuts off text glow, and scanline overlay.
+        type: class-toggle
+        default: false
+
+*/
+
+/*
+ * Theme Name: Steam (Dark)
+ * Author: Artin\Ōr
+ * Description: A flat, dark theme mimicking the retro, olive-green Steam interface.
+ */
+
+.theme-dark {
+    --steam-darkest: #161a14;       /* Deep background gradient */
+    --steam-olive-dark: #3e4637;    /* Primary backgrounds */
+    --steam-olive-mid: #4c5844;     /* Secondary elements & panels */
+    --steam-olive-light: #58664f;   /* Headers and active states */
+    --steam-olive-border: #6e8062;  /* Sharp border elements */
+    --steam-yellow-accent: #B7A84A; /* Active text, selections, and highlights */
+    --steam-white: #ffffff;
+
+
+
+    /* Steam Display Colors */
+    --steam-dsp-slime-matrix: 183, 255, 74;
+    --steam-dsp-lime-matrix: 177, 255, 158;
+    --steam-dsp-ambient-matrix: 132, 153, 118;
+
+    /* CRT Engine */
+    --steam-crt-glow: rgba(var(--steam-dsp-lime-matrix), 0.30);
+    --steam-crt-text-offset-r: -0.55px 0 0 rgba(var(--steam-dsp-slime-matrix), 0.14);
+    --steam-crt-text-offset-c: 0.55px 0 0 rgba(var(--steam-dsp-lime-matrix), 0.12);
+    --steam-crt-header-glow: rgba(var(--steam-dsp-slime-matrix), 0.15);
+    --steam-crt-vignette: radial-gradient(circle at 50% 50%, transparent 58%, rgba(0, 0, 0, 0.24) 100%);
+    --steam-flicker-a: 0.992;
+    --steam-flicker-b: 1;
+    --steam-scanline-opacity: 0.4;
+
+    /*  Flat is justice */
+    --button-radius: 0px;
+    --checkbox-radius: 0px;
+    --modal-radius: 0px;
+    --swatch-radius: 0px;
+    --tab-radius: 0px;
+    --tag-radius: 0px;
+    --metadata-border-radius: 0px;
+    --status-bar-radius: 0px;
+    --input-radius: 0px;
+    --toggle-radius: 0px;
+    --toggle-thumb-radius: 0px;
+    --slider-thumb-radius: 0px;
+    --callout-radius: 0px;
+    --tab-curve: 0;
+    --tab-outline-width: 0px;
+    --modal-border-width: 1px;
+    --hr-thickness: 4px;
+
+    /*  Main Workspace Backgrounds  */
+    --background-primary: var(--steam-darkest);
+    --background-primary-alt: var(--steam-olive-dark);
+    --background-secondary: var(--steam-olive-dark);
+    --background-secondary-alt: var(--steam-olive-dark);
+
+    /*  Accents & Selections  */
+    --color-accent: var(--steam-yellow-accent);
+    --accent-h: 53;
+    --accent-s: 100%;
+    --accent-l: 71%;
+
+    /*  Text & UI Colors  */
+    --text-normal: var(--steam-white);
+    --text-muted: #b1cc9e;
+    --text-faint: #849976;
+    --text-on-accent: var(--steam-darkest);
+    --text-selection: rgba(255, 235, 104, 0.25); /* Transparent yellow */
+    --input-background: var(--steam-olive-dark);
+    --input-border: var(--steam-olive-border);
+    --input-border-hover: var(--steam-yellow-accent);
+
+    /*  UI Modifiers  */
+    --background-modifier-hover: var(--steam-olive-mid);
+    --background-modifier-active-hover: var(--steam-olive-light);
+    --background-modifier-border: var(--steam-olive-border);
+    --background-modifier-border-hover: var(--steam-olive-border);
+    --background-modifier-border-focus: var(--steam-yellow-accent);
+    --background-modifier-form-field: var(--steam-olive-dark);
+    --background-modifier-form-field-highlighted: var(--steam-olive-mid);
+
+    /*  Dividers  */
+    --divider-color: var(--steam-olive-border);
+
+    /*  Scrollbars  */
+    --scrollbar-active-bg: var(--steam-yellow-accent);
+    --scrollbar-bg: var(--steam-olive-dark);
+    --scrollbar-thumb-bg: var(--steam-olive-mid);
+
+    /*  Tab Container  */
+    --tab-container-background: var(--steam-darkest);
+    --tab-background-active: var(--steam-olive-mid);
+    --tab-font-weight: 600;
+
+    /*  Navigation Elements  */
+    --nav-item-color: var(--steam-white);
+    --nav-item-color-hover: var(--steam-yellow-accent);
+    --nav-item-color-active: var(--steam-yellow-accent);
+    --nav-indentation-guide-color: var(--steam-olive-mid);
+    --nav-item-weight-hover: 600;
+
+    /*  Ribbon  */
+    --ribbon-background: var(--steam-darkest);
+    --ribbon-background-collapsed: var(--steam-darkest);
+
+    /*  Status Bar  */
+    --status-bar-background: var(--steam-olive-dark);
+
+    /*  Titlebar / Window Frame  */
+    --titlebar-background: var(--steam-olive-dark);
+    --titlebar-background-focused: var(--steam-olive-dark);
+
+
+
+    /*  Checkboxes  */
+    --checkbox-marker-color: var(--steam-darkest);
+    --checkbox-color: var(--steam-yellow-accent);
+    --checkbox-color-hover: var(--steam-white);
+    --checklist-done-decoration: line-through;
+    --checklist-done-color: #849976;
+
+
+    /*  Buttons  */
+    --button-secondary-background: var(--steam-olive-mid);
+    --button-secondary-border: var(--steam-olive-border);
+    --button-secondary-text: var(--steam-white);
+
+    /*  Code Blocks  */
+    --code-background: var(--steam-olive-dark);
+    --font-monospace: 'Hack', Courier, monospace;
+
+    /*  Tags  */
+    --tag-color: var(--steam-yellow-accent);
+    --tag-background: var(--steam-olive-mid);
+    --tag-weight: 600;
+
+    /*  Links  */
+    --link-color: var(--steam-yellow-accent);
+    --link-external-color: var(--steam-yellow-accent);
+
+    /*  Code Syntax */
+    --code-normal: var(--steam-white);
+    --code-comment: #939393;
+    --code-keyword: #c4753b;
+    --code-string: var(--steam-yellow-accent);
+    --code-number: #3d516b;
+}
+
+/* css magic to force flat without !important */
+.theme-dark.theme-dark.theme-dark * {
+    border-radius: 0px;
+}
+
+/* standard/secondary btns*/
+.theme-dark button:not(.mod-cta) {
+    background-color: var(--steam-olive-mid);
+    border: 1px solid var(--steam-olive-border);
+    color: var(--steam-white);
+}
+
+/* Hover */
+.theme-dark button:not(.mod-cta):hover {
+    background-color: var(--steam-olive-light);
+    border-color: var(--steam-yellow-accent);
+    color: var(--steam-yellow-accent);
+}
+
+
+
+body, input, button, .cm-content, .markdown-preview-view, .workspace-tab-header, .nav-file-title, .view-header {
+    font-family: 'Liberation Mono', Courier, monospace;
+    font-weight: 700;
+}
+
+body.disable-crt-effect {
+    --steam-crt-glow: none;
+    --steam-crt-text-offset-r: none;
+    --steam-crt-text-offset-c: none;
+    --steam-crt-header-glow: none;
+    --steam-crt-vignette: none;
+    --steam-scanline-opacity: 0;
+}
+
+/* Remove all shadows for a flat design */
+* {
+    box-shadow: none;
+}
+
+/* Sharp Borders on Windows */
+.theme-dark .workspace-split,
+.theme-dark .workspace-tabs,
+.theme-dark .workspace-leaf {
+    border: 1px solid var(--steam-olive-border);
+}
+
+/* Ribbon */
+.theme-dark .workspace-ribbon {
+    border-right: 1px solid var(--steam-olive-border);
+}
+
+/* Tab Headers */
+.theme-dark .workspace-tab-header {
+    background-color: var(--steam-olive-dark);
+    border: 1px solid var(--steam-olive-border);
+    border-bottom: none;
+    margin-right: 2px;
+}
+
+.theme-dark .workspace-tab-header.is-active {
+    background-color: var(--steam-olive-mid);
+    border-color: var(--steam-yellow-accent);
+    color: var(--steam-yellow-accent);
+}
+
+/* Active file */
+.theme-dark .nav-file-title.is-active {
+    background-color: var(--steam-olive-mid);
+    color: var(--steam-yellow-accent);
+    font-weight: 600;
+}
+
+/* Status Bar */
+.theme-dark .status-bar {
+    border-top: 1px solid var(--steam-olive-border);
+    background-color: var(--steam-olive-dark);
+}
+
+/* Tables */
+.theme-dark .markdown-rendered table {
+    border-collapse: collapse;
+}
+
+.theme-dark .markdown-rendered th {
+    background-color: var(--steam-olive-light);
+    border: 1px solid var(--steam-olive-border);
+    color: var(--steam-white);
+    font-weight: 600;
+}
+
+.theme-dark .markdown-rendered td {
+    border: 1px solid var(--steam-olive-border);
+    background-color: var(--steam-olive-dark);
+}
+
+.theme-dark .markdown-rendered tr:nth-child(even) td {
+    background-color: var(--steam-darkest);
+}
+
+/* Canvas */
+.theme-dark .canvas-node-container {
+    border: 2px solid var(--steam-olive-border);
+}
+
+.theme-dark .canvas-node-container:focus-within {
+    border-color: var(--steam-yellow-accent);
+}
+
+/* Artin\Ōr's Advanced Kanban - PATCH */
+
+.theme-dark .advanced-kanban-view,
+.theme-dark .advanced-kanban-embed {
+    --ak-radius: 0px;
+    --radius: 0px;
+}
+
+/* Board Name */
+.theme-dark .ak-board-header {
+    background-color: var(--steam-darkest);
+}
+
+.theme-dark .ak-board-name {
+    border-radius: 0px;
+    background-color: transparent;
+    font-family: inherit;
+}
+
+.theme-dark .ak-board-name:hover {
+    background: var(--steam-olive-mid);
+    color: var(--steam-yellow-accent);
+}
+
+.theme-dark .ak-board-name-input {
+    border-radius: 0px;
+    border: 1px solid var(--steam-olive-border);
+    background: var(--steam-darkest);
+    color: var(--steam-white);
+}
+
+.theme-dark .ak-board-name-input:focus {
+    border-color: var(--steam-yellow-accent);
+}
+
+/* Header Buttons */
+.theme-dark .ak-btn {
+    border-radius: 0px;
+    border: 1px solid var(--steam-olive-border);
+    background: var(--steam-olive-mid);
+    color: var(--steam-white);
+    font-weight: 600;
+}
+
+.theme-dark .ak-btn:hover {
+    background: var(--steam-olive-light);
+    color: var(--steam-yellow-accent);
+    border-color: var(--steam-yellow-accent);
+}
+
+/* Action Buttons */
+.theme-dark .ak-btn-primary {
+    background: var(--steam-olive-light);
+    border-color: var(--steam-yellow-accent);
+    color: var(--steam-yellow-accent);
+}
+
+.theme-dark .ak-btn-primary:hover {
+    background: var(--steam-yellow-accent);
+    color: var(--steam-darkest);
+}
+
+/* Danger Buttons */
+.theme-dark .ak-btn-danger {
+    color: #ff8888;
+    border-color: #8c3e3e;
+}
+
+.theme-dark .ak-btn-danger:hover {
+    background: #5c2020;
+    color: #ffffff;
+}
+
+
+/* Column Settings */
+.theme-dark .ak-column-controls .ak-icon-btn,
+.theme-dark .ak-column-header .ak-icon-btn {
+    background-color: transparent;
+    background: transparent;
+    border-radius: 0px;
+    color: var(--text-muted);
+}
+
+.theme-dark .ak-column-controls .ak-icon-btn:hover,
+.theme-dark .ak-column-header .ak-icon-btn:hover {
+    background: var(--steam-olive-light);
+    color: var(--steam-yellow-accent);
+}
+
+
+/* Dropdown */
+.dropdown {
+    background-color: var(--steam-olive-border);
+}
+.theme-dark .ak-menu,
+.theme-dark .ak-column-settings,
+.theme-dark .ak-dropdown-menu,
+.theme-dark .popover {
+    background-color: var(--steam-olive-dark);
+    border: 1px solid var(--steam-olive-border);
+    border-radius: 0px;
+}
+
+/* Hover effects */
+.theme-dark .ak-menu-item:hover,
+.theme-dark .ak-column-settings-item:hover {
+    background-color: var(--steam-olive-mid);
+    color: var(--steam-yellow-accent);
+}
+
+/* Tag Filter  */
+.theme-dark .ak-tag-chip {
+    border-radius: 0px;
+    border: 1px solid var(--steam-olive-border);
+    background: var(--steam-olive-dark);
+    color: #b1cc9e; /* Steam wire green */
+}
+
+.theme-dark .ak-tag-chip:hover {
+    background: var(--steam-olive-mid);
+    color: var(--steam-white);
+}
+
+.theme-dark .ak-tag-chip.is-active {
+    background: var(--steam-yellow-accent);
+    color: var(--steam-darkest);
+    border-color: var(--steam-yellow-accent);
+}
+
+/* inline card tags */
+.theme-dark .ak-tag {
+    border-radius: 0px;
+    border: 1px solid var(--steam-olive-border);
+    background: var(--steam-olive-mid);
+    color: var(--steam-yellow-accent);
+}
+
+.theme-dark .ak-tag:hover {
+    background: var(--steam-olive-light);
+    color: var(--steam-white);
+}
+
+.theme-dark .ak-tag.is-active {
+    background: var(--steam-yellow-accent);
+    color: var(--steam-darkest);
+    border-color: var(--steam-yellow-accent);
+}
+
+.theme-dark .ak-tag-more {
+    border-radius: 0px;
+    border: 1px dashed var(--steam-olive-border);
+}
+
+/* Card Insertion */
+.theme-dark .ak-add-card {
+    border-radius: 0px;
+    border: 1px dashed var(--steam-olive-border);
+    background: transparent;
+    color: #b1cc9e;
+}
+
+.theme-dark .ak-add-card:hover {
+    background: var(--steam-olive-mid);
+    color: var(--steam-yellow-accent);
+    border-style: solid;
+    border-color: var(--steam-yellow-accent);
+}
+
+/* Retro CRT Effect */
+
+body {
+    text-shadow: 0 0 5px var(--steam-crt-glow);
+}
+
+/* Scanlines and Vignettes */
+body::before,
+body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 9999;
+}
+
+body::before {
+    background:
+    repeating-linear-gradient(
+        to bottom,
+        transparent 0,
+        transparent 1px,
+        rgba(var(--steam-dsp-lime-matrix), 0.018) 1px,
+        rgba(var(--steam-dsp-lime-matrix), 0.018) 2px,
+        rgba(0, 0, 0, 0.16) 2px,
+        rgba(0, 0, 0, 0.16) 4px
+    ),
+    repeating-linear-gradient(
+        to bottom,
+        transparent 0,
+        transparent 3px,
+        rgba(255, 255, 255, 0.008) 3px,
+        rgba(255, 255, 255, 0.008) 4px
+    ),
+    linear-gradient(90deg, rgba(var(--steam-dsp-slime-matrix), 0.075), transparent 18%, transparent 82%, rgba(var(--steam-dsp-lime-matrix), 0.065));
+    opacity: var(--steam-scanline-opacity);
+}
+
+body::after {
+    background:
+    var(--steam-crt-vignette),
+    linear-gradient(180deg, transparent 0%, rgba(var(--steam-dsp-ambient-matrix), 0.034) 48%, transparent 100%);
+    mix-blend-mode: screen;
+}
+
+/* Panel Backdrop */
+.workspace {
+    position: relative;
+    background:
+    radial-gradient(circle at top center, rgba(var(--steam-dsp-slime-matrix), 0.08), transparent 38%),
+    radial-gradient(circle at bottom center, rgba(var(--steam-dsp-lime-matrix), 0.036), transparent 44%),
+    linear-gradient(180deg, #121510 0%, #161a14 100%);
+    box-shadow: inset 0 0 90px rgba(0, 0, 0, 0.32);
+}
+
+.workspace::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: linear-gradient(90deg, transparent 0%, rgba(var(--steam-dsp-ambient-matrix), 0.034) 50%, transparent 100%);
+    opacity: 0.82;
+}
+
+/* UI Chromatic Text Aberration */
+.markdown-source-view.mod-cm6 .cm-content,
+.markdown-preview-view {
+    text-shadow:
+    var(--steam-crt-text-offset-r),
+    var(--steam-crt-text-offset-c),
+    0 0 7px var(--steam-crt-glow);
+}
+
+/* Glowing Headers */
+.markdown-rendered h1,
+.markdown-rendered h2,
+.markdown-rendered h3,
+.cm-header-1,
+.cm-header-2,
+.cm-header-3 {
+    text-shadow:
+    -0.85px 0 0 rgba(var(--steam-dsp-slime-matrix), 0.14),
+    0.85px 0 0 rgba(var(--steam-dsp-lime-matrix), 0.12),
+    0 0 9px var(--steam-crt-header-glow);
+}

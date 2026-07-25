@@ -1201,11 +1201,12 @@ body.theme-light {
     from var(--base-accent) calc(var(--lightness) - 15%) var(--chroma)
       calc(h + 200)
   ) !important;
+  --metadata-label-font-weight: var(--font-bold) !important;
   --button-text: var(--text-normal) !important;
-  --radius-xs: var(--button-border-radius) !important;
   --background-tertiary: oklch(
     from var(--accent-2) 60% calc(c * var(--chroma-accent)) h
   ) !important;
+  --radius-xs: var(--button-border-radius) !important;
   --interactive-active: oklch(from var(--base-accent) 50% c h / 50%) !important;
   --color-magenta: oklch(
     from var(--hue-magenta) var(--lightness) var(--chroma) h
@@ -1220,7 +1221,6 @@ body.theme-light {
     inset 2px 2px oklch(from var(--background-secondary) 100% c h) !important;
   --img-border-radius: 0px !important;
   --window-border-radius: 12px !important;
-  --metadata-label-font-weight: var(--font-bold) !important;
   --folder-color-1: oklch(
     from var(--hue-red) var(--lightness) var(--chroma-folder) h
   ) !important;
@@ -2505,12 +2505,13 @@ body.theme-dark {
     from var(--base-accent) calc(var(--lightness) + 10%) var(--chroma)
       calc(h + 200)
   ) !important;
+  --metadata-label-font-weight: var(--font-bold) !important;
   --button-text: var(--text-normal) !important;
-  --radius-xs: var(--button-border-radius) !important;
   --background-tertiary: oklch(
     from var(--accent-2) calc(var(--lightness-accent) - 0.1)
       calc(c * var(--chroma-accent)) h
   ) !important;
+  --radius-xs: var(--button-border-radius) !important;
   --interactive-active: oklch(from var(--base-accent) 50% c h / 50%) !important;
   --color-magenta: oklch(
     from var(--hue-magenta) var(--lightness) var(--chroma) h
@@ -2525,7 +2526,6 @@ body.theme-dark {
     inset 2px 2px oklch(from var(--background-secondary) 50% c h) !important;
   --img-border-radius: 0px !important;
   --window-border-radius: 12px !important;
-  --metadata-label-font-weight: var(--font-bold) !important;
   --folder-color-1: oklch(
     from var(--hue-red) var(--lightness) var(--chroma-folder) h
   ) !important;

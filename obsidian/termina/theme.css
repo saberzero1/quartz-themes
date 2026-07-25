@@ -1,0 +1,559 @@
+/*
+ * termina
+ * a tui-style obsidian theme.
+ * sharp corners, bordered panels with labels, monospace everything.
+ */
+
+/* ============================================================
+   options — tweak these
+   ============================================================ */
+body {
+    /* font */
+    --termina-font: 'DM Mono', 'JetBrains Mono', 'Fira Code', monospace;
+    letter-spacing: -0.03ch; /* slight tightening, nice on mono fonts */
+
+    /* sizes */
+    --gap: 10px; /* spacing between panels */
+    --border-thickness: 2px; /* thickness of panel borders */
+    --border-hover-transition: 0.2s ease; /* border color transition on hover */
+
+    /* panel labels */
+    --label-color: var(--tx-4); /* color of panel labels */
+    --label-font-size: 11px; /* size of panel labels */
+
+    /* map fonts into obsidian */
+    --font-interface-theme: var(--termina-font);
+    --font-text-theme: var(--termina-font);
+    --font-monospace-theme: var(--termina-font);
+
+    /* kill every rounded corner */
+    --radius-s: 0px;
+    --radius-m: 0px;
+    --radius-l: 0px;
+    --radius-xl: 0px;
+    --input-radius: 0px;
+    --clickable-icon-radius: 0px;
+    --checkbox-radius: 0px;
+    --toggle-radius: 2px;
+    --toggle-thumb-radius: 0px;
+    --slider-thumb-radius: 0px;
+    --tag-radius: 0px;
+    --callout-radius: 0px;
+    --pill-radius: 0px;
+    --button-radius: 0px;
+
+    /* misc */
+    --bold-weight: 600;
+    --tab-outline-width: 0;
+}
+
+/* ============================================================
+   palette mapping (shared between dark/light)
+   ============================================================ */
+.theme-dark,
+.theme-light {
+    /* obsidian core vars mapped to termina palette */
+    --background-primary: var(--bg-4);
+    --background-primary-alt: var(--bg-3);
+    --background-secondary: var(--bg-4);
+    --background-secondary-alt: var(--bg-3);
+
+    --background-modifier-hover: var(--hover);
+    --background-modifier-active-hover: var(--active);
+    --background-modifier-border: var(--border-c);
+    --background-modifier-border-hover: var(--accent-2);
+    --background-modifier-border-focus: var(--accent-2);
+    --background-modifier-form-field: var(--bg-3);
+
+    --text-normal: var(--tx-3);
+    --text-muted: var(--tx-4);
+    --text-faint: var(--tx-5);
+    --text-on-accent: var(--tx-0);
+    --text-accent: var(--accent-1);
+    --text-accent-hover: var(--accent-2);
+    --text-selection: var(--active-2);
+
+    --interactive-normal: var(--bg-2);
+    --interactive-hover: var(--bg-1);
+    --interactive-accent: var(--accent-3);
+    --interactive-accent-hover: var(--accent-4);
+
+    --titlebar-background: var(--bg-3);
+    --titlebar-background-focused: var(--bg-3);
+    --tab-container-background: var(--bg-4);
+    --tab-divider-color: transparent;
+    --divider-color: var(--border-c);
+
+    --scrollbar-bg: transparent;
+    --scrollbar-thumb-bg: var(--bg-1);
+    --scrollbar-active-thumb-bg: var(--active-2);
+
+    /* headings — monochrome hierarchy */
+    --h1-color: var(--tx-1);
+    --h2-color: var(--tx-1);
+    --h3-color: var(--tx-2);
+    --h4-color: var(--tx-2);
+    --h5-color: var(--tx-2);
+    --h6-color: var(--tx-4);
+    --h1-weight: 600;
+    --h2-weight: 600;
+    --h3-weight: 500;
+    --h4-weight: 500;
+    --h5-weight: 500;
+    --h6-weight: 500;
+    --inline-title-color: var(--tx-1);
+
+    /* markdown elements */
+    --code-background: var(--bg-3);
+    --code-normal: var(--tx-2);
+    --code-comment: var(--tx-5);
+    --blockquote-border-color: var(--accent-2);
+    --blockquote-border-thickness: 2px;
+    --hr-color: var(--border-c);
+    --table-border-color: var(--border-c);
+    --table-header-weight: 500;
+    --embed-border-left: 2px solid var(--accent-2);
+
+    --tag-background: transparent;
+    --tag-color: var(--accent-1);
+    --tag-border-color: var(--border-c);
+    --tag-border-width: 1px;
+
+    --checkbox-color: var(--accent-3);
+    --checkbox-color-hover: var(--accent-4);
+    --checkbox-border-color: var(--tx-4);
+    --checkbox-marker-color: var(--tx-0);
+
+    --link-color: var(--accent-1);
+    --link-color-hover: var(--accent-2);
+    --link-unresolved-color: var(--red-2);
+    --link-external-color: var(--accent-1);
+    --link-external-color-hover: var(--accent-2);
+
+    --list-marker-color: var(--tx-5);
+    --collapse-icon-color: var(--tx-5);
+    --collapse-icon-color-collapsed: var(--accent-2);
+
+    --graph-line: var(--bg-1);
+    --graph-node: var(--tx-4);
+    --graph-node-tag: var(--green-2);
+    --graph-node-attachment: var(--yellow-2);
+}
+
+/* ============================================================
+   dark palette
+   ============================================================ */
+.theme-dark {
+    color-scheme: dark;
+
+    /* text */
+    --tx-0: var(--bg-4); /* text on colored elements */
+    --tx-1: oklch(95% 0 0); /* brightest text */
+    --tx-2: oklch(85% 0 0); /* headings, important text */
+    --tx-3: oklch(75% 0 0); /* normal text */
+    --tx-4: oklch(60% 0 0); /* icons, secondary text */
+    --tx-5: oklch(40% 0 0); /* muted text, timestamps */
+
+    /* backgrounds */
+    --bg-1: oklch(31% 0 0); /* buttons when clicked */
+    --bg-2: oklch(27% 0 0); /* buttons */
+    --bg-3: oklch(23% 0 0); /* spacing between panels, secondary elements */
+    --bg-4: oklch(19% 0 0); /* main panel background */
+    --hover: oklch(54% 0 0 / 0.1);
+    --active: oklch(54% 0 0 / 0.2);
+    --active-2: oklch(54% 0 0 / 0.3);
+
+    /* accent */
+    --accent-1: var(--purple-1);
+    --accent-2: var(--purple-2);
+    --accent-3: var(--purple-3);
+    --accent-4: var(--purple-4);
+    --accent-5: var(--purple-5);
+
+    /* borders */
+    --border-light: var(--hover);
+    --border-c: var(--active);
+    --border-hover: var(--accent-2);
+
+    /* base colors */
+    --red-1: oklch(75% 0.13 0);
+    --red-2: oklch(70% 0.13 0);
+    --green-1: oklch(75% 0.12 170);
+    --green-2: oklch(70% 0.12 170);
+    --blue-1: oklch(75% 0.11 215);
+    --blue-2: oklch(70% 0.11 215);
+    --yellow-1: oklch(80% 0.12 90);
+    --yellow-2: oklch(75% 0.12 90);
+    --purple-1: oklch(75% 0.12 310);
+    --purple-2: oklch(70% 0.12 310);
+    --purple-3: oklch(65% 0.12 310);
+    --purple-4: oklch(60% 0.12 310);
+    --purple-5: oklch(55% 0.12 310);
+}
+
+/* ============================================================
+   light palette
+   ============================================================ */
+.theme-light {
+    color-scheme: light;
+
+    /* text */
+    --tx-0: oklch(98% 0 0);
+    --tx-1: oklch(15% 0 0);
+    --tx-2: oklch(25% 0 0);
+    --tx-3: oklch(35% 0 0);
+    --tx-4: oklch(50% 0 0);
+    --tx-5: oklch(65% 0 0);
+
+    /* backgrounds */
+    --bg-1: oklch(85% 0 0);
+    --bg-2: oklch(89% 0 0);
+    --bg-3: oklch(93% 0 0);
+    --bg-4: oklch(97% 0 0);
+    --hover: oklch(40% 0 0 / 0.08);
+    --active: oklch(40% 0 0 / 0.16);
+    --active-2: oklch(40% 0 0 / 0.24);
+
+    /* accent */
+    --accent-1: var(--purple-2);
+    --accent-2: var(--purple-3);
+    --accent-3: var(--purple-3);
+    --accent-4: var(--purple-4);
+    --accent-5: var(--purple-5);
+
+    /* borders */
+    --border-light: var(--hover);
+    --border-c: var(--active);
+    --border-hover: var(--accent-3);
+
+    /* base colors */
+    --red-1: oklch(55% 0.15 0);
+    --red-2: oklch(50% 0.15 0);
+    --green-1: oklch(55% 0.13 170);
+    --green-2: oklch(50% 0.13 170);
+    --blue-1: oklch(55% 0.12 215);
+    --blue-2: oklch(50% 0.12 215);
+    --yellow-1: oklch(60% 0.13 90);
+    --yellow-2: oklch(55% 0.13 90);
+    --purple-1: oklch(55% 0.14 310);
+    --purple-2: oklch(50% 0.14 310);
+    --purple-3: oklch(45% 0.14 310);
+    --purple-4: oklch(40% 0.14 310);
+    --purple-5: oklch(35% 0.14 310);
+}
+
+/* ============================================================
+   workspace layout — gaps between bordered panels
+   ============================================================ */
+body {
+    font-family: var(--termina-font);
+}
+
+.app-container,
+.horizontal-main-container,
+.workspace {
+    background-color: var(--bg-3);
+}
+
+.workspace {
+    padding: var(--gap);
+    gap: var(--gap);
+}
+
+.workspace-split {
+    gap: var(--gap);
+    background-color: transparent;
+}
+
+/* panels: every tab group becomes a bordered tui box */
+.workspace-tabs {
+    position: relative;
+    overflow: visible;
+    background-color: var(--bg-4);
+    border: var(--border-thickness) solid var(--border-c);
+    transition: border-color var(--border-hover-transition);
+}
+
+.workspace-tabs:hover {
+    border-color: var(--border-hover);
+}
+
+.workspace-tabs .workspace-tab-container {
+    background-color: var(--bg-4);
+}
+
+/* resize handles: invisible, the gap is the divider */
+.workspace .workspace-leaf-resize-handle {
+    background-color: transparent;
+    border: none;
+}
+
+/* left ribbon: thin bordered strip */
+.workspace-ribbon.mod-left {
+    background-color: var(--bg-4);
+    border: var(--border-thickness) solid var(--border-c);
+    padding-top: 4px;
+    transition: border-color var(--border-hover-transition);
+}
+
+.workspace-ribbon.mod-left:hover {
+    border-color: var(--border-hover);
+}
+
+.workspace-ribbon.mod-left.is-collapsed {
+    background-color: var(--bg-4);
+}
+
+/* vault switcher block at bottom of left sidebar */
+.workspace-sidedock-vault-profile {
+    background-color: var(--bg-4);
+    border: var(--border-thickness) solid var(--border-c);
+}
+
+/* ============================================================
+   panel labels — lowercase tags sitting on the border line
+   ============================================================ */
+.workspace-tabs::before,
+.status-bar::before {
+    content: 'panel';
+    position: absolute;
+    top: calc(-1 * var(--label-font-size) / 2 - 2px);
+    left: 8px;
+    z-index: 30;
+    padding: 0 5px;
+    background-color: var(--bg-3);
+    color: var(--label-color);
+    font-family: var(--termina-font);
+    font-size: var(--label-font-size);
+    font-weight: 500;
+    line-height: calc(var(--label-font-size) + 4px);
+    pointer-events: none;
+}
+
+/* label text per panel type (based on the active tab in each group) */
+.workspace-tabs:has(.workspace-tab-header.is-active[data-type='markdown'])::before { content: 'note'; }
+.workspace-tabs:has(.workspace-tab-header.is-active[data-type='canvas'])::before { content: 'canvas'; }
+.workspace-tabs:has(.workspace-tab-header.is-active[data-type='graph'])::before { content: 'graph'; }
+.workspace-tabs:has(.workspace-tab-header.is-active[data-type='localgraph'])::before { content: 'graph'; }
+.workspace-tabs:has(.workspace-tab-header.is-active[data-type='empty'])::before { content: 'empty'; }
+.workspace-tabs:has(.workspace-tab-header.is-active[data-type='file-explorer'])::before { content: 'files'; }
+.workspace-tabs:has(.workspace-tab-header.is-active[data-type='search'])::before { content: 'search'; }
+.workspace-tabs:has(.workspace-tab-header.is-active[data-type='bookmarks'])::before { content: 'marks'; }
+.workspace-tabs:has(.workspace-tab-header.is-active[data-type='tag'])::before { content: 'tags'; }
+.workspace-tabs:has(.workspace-tab-header.is-active[data-type='outline'])::before { content: 'outline'; }
+.workspace-tabs:has(.workspace-tab-header.is-active[data-type='backlink'])::before { content: 'links'; }
+.workspace-tabs:has(.workspace-tab-header.is-active[data-type='outgoing-link'])::before { content: 'links'; }
+.workspace-tabs:has(.workspace-tab-header.is-active[data-type='pdf'])::before { content: 'pdf'; }
+.workspace-tabs:has(.workspace-tab-header.is-active[data-type='image'])::before { content: 'image'; }
+.workspace-tabs:has(.workspace-tab-header.is-active[data-type='release-notes'])::before { content: 'notes'; }
+
+/* ============================================================
+   tab headers
+   ============================================================ */
+.workspace-tab-header-container {
+    background-color: transparent;
+    border-bottom: 1px solid var(--border-light);
+}
+
+.workspace-tab-header {
+    border-radius: 0;
+}
+
+.workspace-tab-header.is-active {
+    background-color: var(--hover);
+}
+
+.workspace-tab-header.is-active .workspace-tab-header-inner-title {
+    color: var(--tx-1);
+}
+
+.workspace-tab-header-inner-title {
+    font-size: var(--font-ui-small);
+}
+
+/* new tab button etc. */
+.workspace-tab-header-new-tab .clickable-icon,
+.workspace-tab-header-tab-list .clickable-icon {
+    border-radius: 0;
+}
+
+/* view header (note title bar) */
+.view-header {
+    background-color: var(--bg-4);
+    border-bottom: 1px solid var(--border-light);
+}
+
+.view-header-title {
+    font-weight: 500;
+}
+
+/* ============================================================
+   status bar — floating bordered box with label
+   ============================================================ */
+.status-bar {
+    position: fixed;
+    background-color: var(--bg-4);
+    border: var(--border-thickness) solid var(--border-c);
+    border-radius: 0;
+    margin: 0 var(--gap) var(--gap) 0;
+    transition: border-color var(--border-hover-transition);
+    overflow: visible;
+}
+
+.status-bar:hover {
+    border-color: var(--border-hover);
+}
+
+.status-bar::before {
+    content: 'status';
+}
+
+.status-bar-item {
+    color: var(--tx-4);
+    font-size: var(--label-font-size);
+}
+
+/* ============================================================
+   modals, prompts, menus, popovers
+   ============================================================ */
+.modal,
+.prompt {
+    position: relative;
+    border: var(--border-thickness) solid var(--border-c);
+    border-radius: 0;
+    background-color: var(--bg-4);
+}
+
+.prompt::before,
+.modal::before {
+    content: 'dialog';
+    position: absolute;
+    top: calc(-1 * var(--label-font-size) / 2 - 2px);
+    left: 8px;
+    z-index: 30;
+    padding: 0 5px;
+    background-color: var(--bg-4);
+    color: var(--label-color);
+    font-size: var(--label-font-size);
+    font-weight: 500;
+    line-height: calc(var(--label-font-size) + 4px);
+    pointer-events: none;
+}
+
+.prompt::before {
+    content: 'cmd';
+}
+
+.modal.mod-settings::before {
+    content: 'settings';
+}
+
+.menu {
+    border: 1px solid var(--border-c);
+    border-radius: 0;
+    background-color: var(--bg-4);
+    box-shadow: none;
+}
+
+.menu-item {
+    border-radius: 0;
+}
+
+.popover,
+.suggestion-container {
+    border: 1px solid var(--border-c);
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.suggestion-item.is-selected {
+    border-radius: 0;
+}
+
+/* ============================================================
+   editor & markdown
+   ============================================================ */
+.markdown-source-view,
+.markdown-preview-view {
+    font-weight: 350;
+}
+
+.inline-title {
+    font-family: var(--termina-font);
+}
+
+/* code blocks: bordered boxes */
+.markdown-rendered pre,
+.markdown-source-view.mod-cm6 .HyperMD-codeblock {
+    border-radius: 0;
+}
+
+.markdown-rendered pre {
+    border: 1px solid var(--border-light);
+}
+
+/* tags: square bordered pills */
+.tag,
+.cm-hashtag {
+    font-family: var(--termina-font);
+    font-size: 0.85em;
+}
+
+/* checkboxes: sharp squares */
+input[type='checkbox'] {
+    border-radius: 0;
+}
+
+/* callouts */
+.callout {
+    border: 1px solid rgba(var(--callout-color), 0.4);
+    background-color: rgba(var(--callout-color), 0.06);
+}
+
+/* tables */
+.markdown-rendered table {
+    border-collapse: collapse;
+}
+
+.markdown-rendered th,
+.markdown-rendered td {
+    border: 1px solid var(--border-light);
+}
+
+/* ============================================================
+   inputs & controls
+   ============================================================ */
+button,
+.dropdown,
+input[type='text'],
+input[type='search'],
+input[type='number'],
+textarea {
+    border-radius: var(--radius-s);
+    font-family: var(--termina-font);
+}
+
+.checkbox-container {
+    border-radius: 2px;
+}
+
+.checkbox-container::after {
+    border-radius: 0;
+}
+
+/* ============================================================
+   scrollbars
+   ============================================================ */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 0;
+    background-color: var(--scrollbar-thumb-bg);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--scrollbar-active-thumb-bg);
+}

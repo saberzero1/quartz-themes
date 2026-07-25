@@ -1211,6 +1211,10 @@ body.theme-dark {
     --ulu-inline-title-color,
     var(--color-base-100)
   ) !important;
+  --inline-title-font: var(
+    --ulu-inline-title-font,
+    var(--font-title)
+  ) !important;
   --h1-font: var(--ulu-header1-type, var(--font-title)) !important;
   --h2-font: var(
     --ulu-header2-type,
@@ -1232,15 +1236,10 @@ body.theme-dark {
     --ulu-header6-type,
     var(--font-text, var(--font-text-theme))
   ) !important;
-  --inline-title-font: var(
-    --ulu-inline-title-font,
-    var(--font-title)
-  ) !important;
   --font-serif: "Fraunces", serif !important;
   --font-title: var(--ulu-font-title) !important;
   --color-accent-rgb: var(--color-blue-rgb) !important;
   --color-accent-hover: var(--color-accent-2) !important;
-  --ancestor-editor-color: var(--text-normal) !important;
   --color-blue-hsl: 193.9, 56.6%, 56.7% !important;
   --color-cyan-hsl: 215.5, 68.9%, 67.3% !important;
   --color-green-hsl: 97.6, 42.3%, 42.2% !important;
@@ -1249,6 +1248,7 @@ body.theme-dark {
   --color-purple-hsl: 231.3, 27.6%, 65.9% !important;
   --color-red-hsl: 355.5, 77.6%, 56.3% !important;
   --color-yellow-hsl: 37, 79.2%, 75.5% !important;
+  --ancestor-editor-color: var(--text-normal) !important;
   --shadow-lm-only: none !important;
   --text-on-button: var(--text-on-accent) !important;
   --background-modifier-border-alt: #6c7184 !important;

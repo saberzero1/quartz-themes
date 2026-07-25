@@ -1474,9 +1474,9 @@ body.theme-light {
   --text-title-h5: var(--h5-color) !important;
   --text-title-h6: var(--h6-color) !important;
   --vim-cursor: #9b3a1a !important;
+  --tab-font-weight: 500 !important;
   --text-sub-accent: var(--text-accent) !important;
   --callout-title-color: var(--text-normal);
-  --tab-font-weight: 500 !important;
   --text-white: #fffcf7 !important;
   --tab-font-weight-active: 600 !important;
   --button-text-color: #1f1a14 !important;

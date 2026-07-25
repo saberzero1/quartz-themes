@@ -1147,6 +1147,10 @@ body.theme-light {
   --blue: hsl(var(--blue-tuple)) !important;
   --pink: hsl(var(--pink-tuple)) !important;
   --blockquote-border: var(--red) !important;
+  --layer-0: hsl(var(--layer-hue-sat), 89%) !important;
+  --layer-1: hsl(var(--layer-hue-sat), 99%) !important;
+  --layer-2: hsl(var(--layer-hue-sat), 96%) !important;
+  --layer-3: hsl(var(--layer-hue-sat), 83%) !important;
   --green-200: hsla(var(--green-tuple), 0.2) !important;
   --orange-100: hsla(var(--orange-tuple), 0.1) !important;
   --pink-100: hsla(var(--pink-tuple), 0.1) !important;
@@ -1170,10 +1174,6 @@ body.theme-light {
     var(--green-hue), var(--primary-sat), var(--primary-lit) !important;
   --greenSecondary: hsl(var(--green-secondary-tuple)) !important;
   --indentation-guide-opacity: 10% !important;
-  --layer-0: hsl(var(--layer-hue-sat), 89%) !important;
-  --layer-1: hsl(var(--layer-hue-sat), 99%) !important;
-  --layer-2: hsl(var(--layer-hue-sat), 96%) !important;
-  --layer-3: hsl(var(--layer-hue-sat), 83%) !important;
   --layer-4: hsl(var(--layer-hue-sat), 80%) !important;
   --layer-hue-sat: 235, 15% !important;
   --link-unresolved-hover: var(--yellow) !important;
@@ -2294,6 +2294,10 @@ body.theme-dark {
   --blue: hsl(var(--blue-tuple)) !important;
   --pink: hsl(var(--pink-tuple)) !important;
   --blockquote-border: var(--red) !important;
+  --layer-0: hsl(var(--layer-hue-sat), 9%) !important;
+  --layer-1: hsl(var(--layer-hue-sat), 13%) !important;
+  --layer-2: hsl(var(--layer-hue-sat), 15%) !important;
+  --layer-3: hsl(var(--layer-hue-sat), 19%) !important;
   --green-200: hsla(var(--green-tuple), 0.2) !important;
   --orange-100: hsla(var(--orange-tuple), 0.1) !important;
   --pink-100: hsla(var(--pink-tuple), 0.1) !important;
@@ -2317,10 +2321,6 @@ body.theme-dark {
     var(--green-hue), var(--primary-sat), var(--primary-lit) !important;
   --greenSecondary: hsl(var(--green-secondary-tuple)) !important;
   --indentation-guide-opacity: 10% !important;
-  --layer-0: hsl(var(--layer-hue-sat), 9%) !important;
-  --layer-1: hsl(var(--layer-hue-sat), 13%) !important;
-  --layer-2: hsl(var(--layer-hue-sat), 15%) !important;
-  --layer-3: hsl(var(--layer-hue-sat), 19%) !important;
   --layer-4: hsl(var(--layer-hue-sat), 30%) !important;
   --layer-hue-sat: 235, 15% !important;
   --link-unresolved-hover: var(--yellow) !important;

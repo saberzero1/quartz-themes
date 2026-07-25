@@ -1475,17 +1475,19 @@ body.theme-light {
     var(--background-secondary-rgb),
     var(--tf-glass-tint, 65%)
   ) !important;
-  --background-primary-rgb: 238, 236, 226 !important;
   --callout-danger: 192, 57, 43;
+  --background-primary-rgb: 238, 236, 226 !important;
   --tracking-tight: -0.02em !important;
   --callout-cite: 87, 61, 132;
   --radius-pill: 100px !important;
   --background-secondary-rgb: 230, 228, 218 !important;
   --text-normal-rgb: 61, 46, 26 !important;
   --primary-color: #d97756 !important;
+  --scrollbar-thumb: rgba(217, 119, 86, 0.35) !important;
   --fast: 0.15s cubic-bezier(0.32, 0.72, 0, 1) !important;
   --slow: 0.32s cubic-bezier(0.32, 0.72, 0, 1) !important;
-  --scrollbar-thumb: rgba(217, 119, 86, 0.35) !important;
+  --opacity-active: 0.12 !important;
+  --opacity-hover: 0.08 !important;
   --highlight-bg: #d6b07b !important;
   --callout-danger-rgb: 192, 57, 43;
   --callout-info-rgb: 212, 175, 55;
@@ -1805,10 +1807,8 @@ body.theme-light {
   --link-opacity-unresolved: 0.05 !important;
   --link-opacity-unresolved-hover: 0.12 !important;
   --normal: 0.25s cubic-bezier(0.32, 0.72, 0, 1) !important;
-  --opacity-active: 0.12 !important;
   --opacity-border: 0.45 !important;
   --opacity-divider: 0.15 !important;
-  --opacity-hover: 0.08 !important;
   --opacity-light-overlay: 0.3 !important;
   --opacity-overlay: 0.2 !important;
   --outline-item-spacing: 0.5em !important;
@@ -3119,17 +3119,19 @@ body.theme-dark {
     var(--background-secondary-rgb),
     var(--tf-glass-tint, 65%)
   ) !important;
-  --background-primary-rgb: 40, 37, 32 !important;
   --callout-danger: 231, 76, 60;
+  --background-primary-rgb: 40, 37, 32 !important;
   --tracking-tight: -0.02em !important;
   --callout-cite: 162, 155, 254;
   --radius-pill: 100px !important;
   --background-secondary-rgb: 50, 48, 42 !important;
   --text-normal-rgb: 232, 220, 198 !important;
   --primary-color: #f0916f !important;
+  --scrollbar-thumb: rgba(240, 145, 111, 0.35) !important;
   --fast: 0.15s cubic-bezier(0.32, 0.72, 0, 1) !important;
   --slow: 0.32s cubic-bezier(0.32, 0.72, 0, 1) !important;
-  --scrollbar-thumb: rgba(240, 145, 111, 0.35) !important;
+  --opacity-active: 0.12 !important;
+  --opacity-hover: 0.08 !important;
   --highlight-bg: #3a2f20 !important;
   --callout-danger-rgb: 231, 76, 60;
   --callout-info-rgb: 233, 213, 163;
@@ -3450,10 +3452,8 @@ body.theme-dark {
   --link-opacity-unresolved: 0.05 !important;
   --link-opacity-unresolved-hover: 0.12 !important;
   --normal: 0.25s cubic-bezier(0.32, 0.72, 0, 1) !important;
-  --opacity-active: 0.12 !important;
   --opacity-border: 0.45 !important;
   --opacity-divider: 0.15 !important;
-  --opacity-hover: 0.08 !important;
   --opacity-light-overlay: 0.3 !important;
   --opacity-overlay: 0.2 !important;
   --outline-item-spacing: 0.5em !important;

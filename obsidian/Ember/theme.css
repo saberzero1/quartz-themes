@@ -1,0 +1,1886 @@
+@charset "UTF-8";
+/* ==========================================================================
+   Ember — an Obsidian theme
+   Palette inspired by https://gethaunts.app
+   Body: Hanken Grotesk · Headings: Bricolage Grotesque · Code: JetBrains Mono
+   ========================================================================== */
+/* @settings
+
+name: Ember
+id: ember
+settings:
+    -
+        id: ember-accent-heading
+        title: Accent
+        type: heading
+        level: 2
+        collapsed: true
+    -
+        id: accent
+        title: Accent colour
+        description: 'Drives links and interactive elements, and sets the HSL hue/saturation/lightness the rest of the theme derives from. Defaults differ per mode — amber in dark, deep ember in light.'
+        type: variable-themed-color
+        format: hsl-split
+        opacity: false
+        default-light: '#b8410f'
+        default-dark: '#ffc26a'
+    -
+        id: base-h
+        title: UI tint (hue)
+        description: 'Warm neutral hue for backgrounds, text and surfaces. Rotate to retint the whole interface.'
+        type: variable-number-slider
+        default: 30
+        min: 0
+        max: 360
+        step: 1
+        format: ''
+    -
+        id: ember-scheme-heading
+        title: Colour scheme
+        type: heading
+        level: 2
+        collapsed: true
+    -
+        id: ember-scheme
+        title: Palette
+        description: 'Swap the whole palette. Ember is the default warm scheme.'
+        type: class-select
+        allowEmpty: false
+        default: ember-scheme-ember
+        options:
+            -
+                label: Ember
+                value: ember-scheme-ember
+            -
+                label: Catppuccin
+                value: ember-scheme-catppuccin
+            -
+                label: Nord
+                value: ember-scheme-nord
+    -
+        id: ember-oled
+        title: True black background (OLED)
+        description: 'Pure-black backgrounds in dark mode for OLED screens.'
+        type: class-toggle
+        default: false
+    -
+        id: ember-type-heading
+        title: Typography
+        type: heading
+        level: 2
+        collapsed: true
+    -
+        id: ember-type-info
+        title: Recommended fonts
+        description: 'Ember uses your system fonts by default. For the designed look, install Hanken Grotesk (body), Bricolage Grotesque (headings) and JetBrains Mono (code) — see the README — then enter their names below.'
+        type: info-text
+    -
+        id: ember-font-body
+        title: Text / UI font
+        type: variable-text
+        default: "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif"
+    -
+        id: ember-font-head
+        title: Heading font
+        type: variable-text
+        default: "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif"
+    -
+        id: ember-font-mono
+        title: Monospace font
+        type: variable-text
+        default: "ui-monospace, 'SFMono-Regular', Menlo, Consolas, 'Liberation Mono', monospace"
+    -
+        id: ember-ligatures
+        title: Code ligatures
+        description: 'Enable programming ligatures in code (needs a ligature font such as JetBrains Mono or Fira Code).'
+        type: class-toggle
+        default: false
+    -
+        id: ember-oldstyle
+        title: Old-style figures
+        description: 'Use old-style (text) numerals in body copy where the font supports them.'
+        type: class-toggle
+        default: false
+    -
+        id: ember-dyslexia
+        title: Dyslexia-friendly font
+        description: 'Switch body and headings to OpenDyslexic (must be installed locally).'
+        type: class-toggle
+        default: false
+    -
+        id: ember-reading-heading
+        title: Reading
+        type: heading
+        level: 2
+        collapsed: true
+    -
+        id: file-line-width
+        title: Reading measure (max line width)
+        description: 'Maximum width of the text column (applies with Readable line length enabled).'
+        type: variable-number-slider
+        default: 700
+        min: 500
+        max: 1100
+        step: 10
+        format: px
+    -
+        id: ember-density
+        title: Density
+        description: 'Comfortable spacing, or a tighter compact layout.'
+        type: class-select
+        allowEmpty: false
+        default: ember-density-comfortable
+        options:
+            -
+                label: Comfortable
+                value: ember-density-comfortable
+            -
+                label: Compact
+                value: ember-density-compact
+    -
+        id: ember-elements-heading
+        title: Elements
+        description: 'Toggle individual styled components. Some are scaffolded and take effect as their styling lands.'
+        type: heading
+        level: 2
+        collapsed: true
+    -
+        id: ember-callouts
+        title: Tinted callouts
+        type: class-toggle
+        default: true
+    -
+        id: ember-tasks
+        title: Custom task states
+        type: class-toggle
+        default: true
+    -
+        id: ember-tables
+        title: Styled tables
+        type: class-toggle
+        default: true
+    -
+        id: ember-tags-pills
+        title: Tags as pills
+        type: class-toggle
+        default: true
+    -
+        id: ember-codeblocks
+        title: Styled code blocks
+        type: class-toggle
+        default: true
+    -
+        id: ember-embeds
+        title: Styled embeds
+        type: class-toggle
+        default: true
+    -
+        id: ember-list-lines
+        title: List relationship lines
+        type: class-toggle
+        default: false
+    -
+        id: ember-dashboard
+        title: Dashboard tiles
+        description: 'Card/pill styling for notes with the `dashboard` cssclass. Layout applies regardless; this toggles the decorative look. Adapted from TfT Hacker.'
+        type: class-toggle
+        default: true
+    -
+        id: ember-properties-heading
+        title: Properties
+        description: 'Styling for the frontmatter / properties block at the top of notes.'
+        type: heading
+        level: 2
+        collapsed: true
+    -
+        id: ember-properties
+        title: Style properties
+        description: 'Master toggle for all properties-block styling.'
+        type: class-toggle
+        default: true
+    -
+        id: ember-prop-key
+        title: Property key colour
+        description: 'Colour of the property name labels.'
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#6b5d50'
+        default-dark: '#9c9085'
+    -
+        id: ember-prop-accent
+        title: Property field accent
+        description: 'Base accent for property icons and value highlights. Per-type field colours derive from the palette.'
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#b8410f'
+        default-dark: '#e8732c'
+    -
+        id: ember-banner
+        title: Banner image
+        description: 'Show a banner above the properties block, driven by --ember-banner-image (see README; depends on your banner convention). Off by default.'
+        type: class-toggle
+        default: false
+    -
+        id: ember-a11y-heading
+        title: Accessibility
+        type: heading
+        level: 2
+        collapsed: true
+    -
+        id: ember-reduce-motion
+        title: Reduce motion
+        description: 'Disable theme transitions and animations.'
+        type: class-toggle
+        default: false
+*/
+/* ---- Fonts (both schemes) ---------------------------------------------- */
+body {
+  /* System-font defaults — no remote loading. Set your installed fonts via
+     Style Settings → Ember → Typography (see README for the recommended set). */
+  --ember-font-head: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --ember-font-body: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --ember-font-mono: ui-monospace, 'SFMono-Regular', Menlo, Consolas, 'Liberation Mono', monospace;
+  --font-text-theme: var(--ember-font-body);
+  --font-interface-theme: var(--ember-font-body);
+  --font-monospace-theme: var(--ember-font-mono);
+  --radius-s: 8px;
+  --radius-m: 12px;
+  --radius-l: 14px;
+  /* ---- HSL foundation (drives the whole palette) ----------------------
+     Two knobs power everything below:
+       --base-h   warm neutral hue — rotate to retint the entire UI
+       --accent-* the ember accent (links / interactive); set per scheme
+     Per scheme, --base-s scales the neutral warmth and --accent-l the
+     accent brightness. The ember "core" is held constant across schemes. */
+  --base-h: 30;
+  --ember-core-h: 23;
+  --ember-core-s: 80%;
+  --ember-core-l: 54%;
+  --ember-core: hsl(var(--ember-core-h), var(--ember-core-s), var(--ember-core-l));
+}
+
+/* ---- DARK: charred ember ----------------------------------------------- */
+.theme-dark {
+  /* accent (links / interactive) — amber glow */
+  --accent-h: 35;
+  --accent-s: 100%;
+  --accent-l: 70%;
+  /* neutral saturation for this scheme */
+  --base-s: 34%;
+  /* neutral ramp — all derived from --base-h / --base-s
+     (resolved values shown for the defaults above) */
+  --ember-bg: hsl(var(--base-h), calc(var(--base-s) - 22%), 5%); /* ~#0e0c0b */
+  --ember-bg-alt: hsl(var(--base-h), var(--base-s), 6%); /* ~#161109 */
+  --ember-surface: hsl(var(--base-h), var(--base-s), 6%); /* ~#161109 */
+  --ember-surface-2: hsl(var(--base-h), calc(var(--base-s) - 4%), 8%); /* ~#1c160e */
+  --ember-line: rgba(255,255,255,0.09);
+  --ember-line-soft: rgba(255,255,255,0.045);
+  --ember-text: hsl(var(--base-h), calc(var(--base-s) + 8%), 92%); /* ~#f4ece2 */
+  --ember-dim: hsl(var(--base-h), calc(var(--base-s) - 24%), 57%); /* ~#9c9085 */
+  --ember-faint: hsl(var(--base-h), calc(var(--base-s) - 25%), 38%); /* ~#6a6058 */
+  /* accent family — derived from --accent-* */
+  --ember-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l)); /* ~#ffc26a */
+  --ember-accent-hi: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 11%)); /* ~#ffd9a0 */
+  --ember-warn: var(--ember-accent);
+  --ember-fail: #f06a5d;
+  --ember-on-accent: #1a0e05;
+  --ember-sel: color-mix(in srgb, var(--ember-core) 22%, transparent);
+  /* heading ramp — warm tones */
+  --ember-h1: #ffc98a; /* glow   */
+  --ember-h2: #ffc26a; /* amber  */
+  --ember-h3: #e8732c; /* ember  */
+  --ember-h4: #d0571a; /* deep ember */
+  --ember-h5: #c0a98f; /* warm muted */
+  --ember-h6: #9c9085; /* dim    */
+  /* task-status accents */
+  --task-amber: #ffc26a;
+  --task-ember: #e8732c;
+  --task-teal: #5fd6c2;
+  --task-red: #f06a5d;
+  --task-green: #8bd17a;
+  --task-muted: #9c9085;
+  --task-purple: #b388ff;
+}
+
+/* ---- LIGHT: warm parchment --------------------------------------------- */
+.theme-light {
+  /* accent (links / interactive) — deep ember */
+  --accent-h: 18;
+  --accent-s: 85%;
+  --accent-l: 39%;
+  --base-s: 57%;
+  --ember-bg: hsl(var(--base-h), calc(var(--base-s) + 3%), 95%); /* ~#fbf4ea */
+  --ember-bg-alt: hsl(var(--base-h), calc(var(--base-s) - 3%), 90%); /* ~#f4e8d8 */
+  --ember-surface: hsl(var(--base-h), var(--base-s), 96%); /* ~#fffaf2 */
+  --ember-surface-2: hsl(var(--base-h), calc(var(--base-s) - 3%), 90%); /* ~#f4e8d8 */
+  --ember-line: rgba(40,24,12,0.12);
+  --ember-line-soft: rgba(40,24,12,0.07);
+  --ember-text: hsl(var(--base-h), calc(var(--base-s) - 30%), 10%); /* ~#211913 */
+  --ember-dim: hsl(var(--base-h), calc(var(--base-s) - 43%), 37%); /* ~#6b5d50 */
+  --ember-faint: hsl(var(--base-h), calc(var(--base-s) - 44%), 48%); /* ~#8b7b6b — a11y ≥3:1 */
+  --ember-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l)); /* ~#b8410f */
+  --ember-accent-hi: var(--ember-core); /*  #e8732c */
+  --ember-warn: #c8821a;
+  --ember-fail: #d24b3f;
+  --ember-on-accent: #ffffff;
+  --ember-sel: color-mix(in srgb, var(--ember-core) 18%, transparent);
+  /* heading ramp — darker for contrast on parchment */
+  --ember-h1: #b8410f; /* deep ember */
+  --ember-h2: #c8551a;
+  --ember-h3: #bf4e15; /* deep ember — a11y ≥4:1 on parchment */
+  --ember-h4: #a8460e; /* deep ember */
+  --ember-h5: #8a6f53;
+  --ember-h6: #6b5d50; /* dim    */
+  /* task-status accents — deepened for parchment contrast */
+  --task-amber: #b8410f;
+  --task-ember: #e8732c;
+  --task-teal: #2a8d7d;
+  --task-red: #d24b3f;
+  --task-green: #3f9a4e;
+  --task-muted: #6b5d50;
+  --task-purple: #7a4fd0;
+}
+
+/* ---- Map onto Obsidian core variables (both schemes) ------------------- */
+.theme-dark, .theme-light {
+  /* backgrounds */
+  --background-primary: var(--ember-bg);
+  --background-primary-alt: var(--ember-bg-alt);
+  --background-secondary: var(--ember-surface);
+  --background-secondary-alt: var(--ember-surface-2);
+  --background-modifier-hover: var(--ember-bg-alt);
+  --background-modifier-active-hover: var(--ember-surface-2);
+  --background-modifier-form-field: var(--ember-bg-alt);
+  /* borders / dividers */
+  --background-modifier-border: var(--ember-line);
+  --background-modifier-border-hover: var(--ember-line);
+  --background-modifier-border-focus: var(--ember-accent);
+  --divider-color: var(--ember-line-soft);
+  --hr-color: var(--ember-line);
+  /* text */
+  --text-normal: var(--ember-text);
+  --text-muted: var(--ember-dim);
+  --text-faint: var(--ember-faint);
+  --text-on-accent: var(--ember-on-accent);
+  --text-error: var(--ember-fail);
+  /* accent / links */
+  --interactive-accent: var(--ember-accent);
+  --interactive-accent-hover: var(--ember-accent-hi);
+  --text-accent: var(--ember-accent);
+  --text-accent-hover: var(--ember-accent-hi);
+  --link-color: var(--ember-accent);
+  --link-color-hover: var(--ember-accent-hi);
+  --link-unresolved-color: var(--ember-dim);
+  /* list bullets / numbers glow ember */
+  --list-marker-color: var(--ember-core);
+  /* selection / highlight */
+  --text-selection: var(--ember-sel);
+  --text-highlight-bg: color-mix(in srgb, var(--ember-warn) 30%, transparent);
+  /* code */
+  --code-background: var(--ember-bg-alt);
+  --code-normal: var(--ember-text);
+  /* chrome */
+  --titlebar-background: var(--ember-bg);
+  --titlebar-background-focused: var(--ember-bg);
+  --tab-background-active: var(--ember-surface);
+  --ribbon-background: var(--ember-bg);
+  --scrollbar-thumb-bg: var(--ember-line);
+  --scrollbar-active-thumb-bg: var(--ember-core);
+  /* sidebar / nav selected + active rows glow ember */
+  --nav-item-background-active: color-mix(in srgb, var(--ember-core) 20%, transparent);
+  --nav-item-background-selected: color-mix(in srgb, var(--ember-core) 14%, transparent);
+  --nav-item-color-active: var(--ember-accent);
+  --nav-item-color-selected: var(--ember-accent);
+  --nav-indentation-guide-color: var(--ember-line);
+}
+
+/* extra reach for selected rows across sidebars (files, search, outline, bookmarks) */
+.theme-dark .tree-item-self.is-active,
+.theme-light .tree-item-self.is-active,
+.theme-dark .tree-item-self.is-selected,
+.theme-light .tree-item-self.is-selected,
+.theme-dark .nav-file-title.is-active,
+.theme-light .nav-file-title.is-active {
+  background-color: color-mix(in srgb, var(--ember-core) 20%, transparent) !important;
+  color: var(--ember-accent) !important;
+  box-shadow: inset 2px 0 0 0 var(--ember-core);
+}
+
+/* ---- Typography -------------------------------------------------------- */
+body,
+.markdown-source-view,
+.markdown-preview-view,
+.cm-editor {
+  font-family: var(--ember-font-body);
+}
+
+.markdown-preview-view h1,
+.markdown-preview-view h2,
+.markdown-preview-view h3,
+.markdown-preview-view h4,
+.markdown-preview-view h5,
+.markdown-preview-view h6,
+.HyperMD-header,
+.cm-header {
+  font-family: var(--ember-font-head) !important;
+  letter-spacing: -0.01em;
+}
+
+.markdown-preview-view h1,
+.cm-header-1 {
+  font-weight: 800;
+}
+
+.markdown-preview-view h2,
+.cm-header-2 {
+  font-weight: 600;
+}
+
+/* heading colour ramp — reading view + live preview */
+.markdown-preview-view h1,
+.HyperMD-header-1 .cm-header-1,
+.cm-line .cm-header-1 {
+  color: var(--ember-h1);
+}
+
+.markdown-preview-view h2,
+.HyperMD-header-2 .cm-header-2,
+.cm-line .cm-header-2 {
+  color: var(--ember-h2);
+}
+
+.markdown-preview-view h3,
+.HyperMD-header-3 .cm-header-3,
+.cm-line .cm-header-3 {
+  color: var(--ember-h3);
+}
+
+.markdown-preview-view h4,
+.HyperMD-header-4 .cm-header-4,
+.cm-line .cm-header-4 {
+  color: var(--ember-h4);
+}
+
+.markdown-preview-view h5,
+.HyperMD-header-5 .cm-header-5,
+.cm-line .cm-header-5 {
+  color: var(--ember-h5);
+}
+
+.markdown-preview-view h6,
+.HyperMD-header-6 .cm-header-6,
+.cm-line .cm-header-6 {
+  color: var(--ember-h6);
+}
+
+/* h1 gets an ember underline */
+.markdown-preview-view h1,
+.HyperMD-header-1 {
+  border-bottom: 1px solid color-mix(in srgb, var(--ember-core) 45%, transparent);
+  padding-bottom: 0.15em;
+}
+
+code, pre,
+.cm-inline-code,
+.HyperMD-codeblock {
+  font-family: var(--ember-font-mono) !important;
+}
+
+/* ---- Tables: clear grid, scroll wide ones (gated by Styled tables) ----- */
+body.ember-tables .markdown-rendered table,
+body:not(.css-settings-manager) .markdown-rendered table {
+  border-collapse: collapse;
+  width: max-content;
+  max-width: 100%;
+}
+body.ember-tables .markdown-rendered th,
+body.ember-tables .markdown-rendered td,
+body:not(.css-settings-manager) .markdown-rendered th,
+body:not(.css-settings-manager) .markdown-rendered td {
+  border: 1px solid var(--ember-line);
+  padding: 0.4em 0.7em;
+  vertical-align: top;
+}
+body.ember-tables .markdown-rendered thead th,
+body:not(.css-settings-manager) .markdown-rendered thead th {
+  background: var(--ember-bg-alt);
+  font-weight: 600;
+}
+body.ember-tables .markdown-rendered tbody tr:nth-child(even) td,
+body:not(.css-settings-manager) .markdown-rendered tbody tr:nth-child(even) td {
+  background: color-mix(in srgb, var(--ember-bg-alt) 45%, transparent);
+}
+body.ember-tables .markdown-preview-view .table-wrapper,
+body.ember-tables .markdown-rendered .table-wrapper,
+body:not(.css-settings-manager) .markdown-preview-view .table-wrapper,
+body:not(.css-settings-manager) .markdown-rendered .table-wrapper {
+  overflow-x: auto;
+}
+
+/* ---- Ember flourishes -------------------------------------------------- */
+:not(pre) > code {
+  background: var(--ember-bg-alt);
+  border: 1px solid var(--ember-line);
+  border-radius: 8px;
+  padding: 0.1em 0.4em;
+  color: var(--ember-accent);
+}
+
+/* tags as pills (gated by Tags as pills) */
+body.ember-tags-pills .tag,
+body:not(.css-settings-manager) .tag {
+  background: color-mix(in srgb, var(--ember-core) 12%, transparent);
+  border: 1px solid color-mix(in srgb, var(--ember-core) 32%, transparent);
+  color: var(--ember-accent);
+  border-radius: 999px;
+}
+
+.markdown-rendered blockquote {
+  border-left: 3px solid var(--ember-core);
+  background: color-mix(in srgb, var(--ember-core) 7%, transparent);
+}
+
+/* active line + cursor get a faint ember warmth */
+.cm-active.cm-line {
+  background: color-mix(in srgb, var(--ember-core) 5%, transparent);
+}
+
+/* ---- Bundled colour schemes -------------------------------------------- */
+/* Catppuccin — Mocha (dark) / Latte (light) */
+body.ember-scheme-catppuccin.theme-dark {
+  --ember-bg: #1e1e2e;
+  --ember-bg-alt: #181825;
+  --ember-surface: #181825;
+  --ember-surface-2: #313244;
+  --ember-line: rgba(255,255,255,0.08);
+  --ember-line-soft: rgba(255,255,255,0.04);
+  --ember-text: #cdd6f4;
+  --ember-dim: #a6adc8;
+  --ember-faint: #7f849c;
+  --ember-core: #fab387;
+  --accent-h: 23;
+  --accent-s: 92%;
+  --accent-l: 75%;
+  --ember-accent: #fab387;
+  --ember-accent-hi: #fac6a3;
+  --ember-warn: #f9e2af;
+  --ember-fail: #f38ba8;
+  --ember-on-accent: #1e1e2e;
+  --ember-sel: color-mix(in srgb, #fab387 22%, transparent);
+  --ember-h1:#f5c2e7;
+  --ember-h2:#cba6f7;
+  --ember-h3:#fab387;
+  --ember-h4:#f9e2af;
+  --ember-h5:#a6e3a1;
+  --ember-h6:#a6adc8;
+  --task-amber:#f9e2af;
+  --task-ember:#fab387;
+  --task-teal:#94e2d5;
+  --task-red:#f38ba8;
+  --task-green:#a6e3a1;
+  --task-muted:#a6adc8;
+  --task-purple:#cba6f7;
+}
+
+body.ember-scheme-catppuccin.theme-light {
+  --ember-bg: #eff1f5;
+  --ember-bg-alt: #e6e9ef;
+  --ember-surface: #ffffff;
+  --ember-surface-2: #e6e9ef;
+  --ember-line: rgba(0,0,0,0.10);
+  --ember-line-soft: rgba(0,0,0,0.05);
+  --ember-text: #4c4f69;
+  --ember-dim: #6c6f85;
+  --ember-faint: #8c8fa1;
+  --ember-core: #d4540a;
+  --accent-h: 22;
+  --accent-s: 99%;
+  --accent-l: 52%;
+  --ember-accent: #d4540a;
+  --ember-accent-hi: #e64553;
+  --ember-warn: #df8e1d;
+  --ember-fail: #d20f39;
+  --ember-on-accent: #ffffff;
+  --ember-sel: color-mix(in srgb, #d4540a 16%, transparent);
+  --ember-h1:#ea76cb;
+  --ember-h2:#8839ef;
+  --ember-h3:#d4540a;
+  --ember-h4:#df8e1d;
+  --ember-h5:#40a02b;
+  --ember-h6:#6c6f85;
+  --task-amber:#df8e1d;
+  --task-ember:#d4540a;
+  --task-teal:#179299;
+  --task-red:#d20f39;
+  --task-green:#40a02b;
+  --task-muted:#6c6f85;
+  --task-purple:#8839ef;
+}
+
+/* Nord — Polar Night (dark) / Snow Storm (light) */
+body.ember-scheme-nord.theme-dark {
+  --ember-bg: #2e3440;
+  --ember-bg-alt: #3b4252;
+  --ember-surface: #3b4252;
+  --ember-surface-2: #434c5e;
+  --ember-line: rgba(255,255,255,0.09);
+  --ember-line-soft: rgba(255,255,255,0.045);
+  --ember-text: #eceff4;
+  --ember-dim: #d8dee9;
+  --ember-faint: #7b8394;
+  --ember-core: #88c0d0;
+  --accent-h: 193;
+  --accent-s: 43%;
+  --accent-l: 67%;
+  --ember-accent: #88c0d0;
+  --ember-accent-hi: #8fbcbb;
+  --ember-warn: #ebcb8b;
+  --ember-fail: #bf616a;
+  --ember-on-accent: #2e3440;
+  --ember-sel: color-mix(in srgb, #88c0d0 22%, transparent);
+  --ember-h1:#8fbcbb;
+  --ember-h2:#88c0d0;
+  --ember-h3:#81a1c1;
+  --ember-h4:#4f719b;
+  --ember-h5:#b48ead;
+  --ember-h6:#d8dee9;
+  --task-amber:#ebcb8b;
+  --task-ember:#d08770;
+  --task-teal:#88c0d0;
+  --task-red:#bf616a;
+  --task-green:#a3be8c;
+  --task-muted:#d8dee9;
+  --task-purple:#b48ead;
+}
+
+body.ember-scheme-nord.theme-light {
+  --ember-bg: #eceff4;
+  --ember-bg-alt: #e5e9f0;
+  --ember-surface: #ffffff;
+  --ember-surface-2: #e5e9f0;
+  --ember-line: rgba(46,52,64,0.12);
+  --ember-line-soft: rgba(46,52,64,0.06);
+  --ember-text: #2e3440;
+  --ember-dim: #4c566a;
+  --ember-faint: #7b8394;
+  --ember-core: #4f719b;
+  --accent-h: 213;
+  --accent-s: 32%;
+  --accent-l: 52%;
+  --ember-accent: #4f719b;
+  --ember-accent-hi: #81a1c1;
+  --ember-warn: #b48a00;
+  --ember-fail: #bf616a;
+  --ember-on-accent: #ffffff;
+  --ember-sel: color-mix(in srgb, #4f719b 16%, transparent);
+  --ember-h1:#4f719b;
+  --ember-h2:#81a1c1;
+  --ember-h3:#4f719b;
+  --ember-h4:#b48ead;
+  --ember-h5:#a3be8c;
+  --ember-h6:#4c566a;
+  --task-amber:#d08770;
+  --task-ember:#d08770;
+  --task-teal:#88c0d0;
+  --task-red:#bf616a;
+  --task-green:#a3be8c;
+  --task-muted:#4c566a;
+  --task-purple:#b48ead;
+}
+
+/* True black (OLED) — layered after schemes so it wins in dark mode */
+body.ember-oled.theme-dark {
+  --ember-bg: #000000;
+  --ember-bg-alt: #0a0807;
+  --ember-surface: #0a0807;
+  --ember-surface-2: #141110;
+}
+
+/* ---- Density ----------------------------------------------------------- */
+body.ember-density-compact {
+  --line-height-normal: 1.4;
+  --line-height-tight: 1.2;
+  --p-spacing: 0.55rem;
+}
+
+body.ember-density-compact .markdown-preview-view p,
+body.ember-density-compact .markdown-source-view .cm-line {
+  margin-block: 0.2em;
+}
+
+/* ---- Typography options ------------------------------------------------ */
+/* Ligatures off by default; toggle turns them on for code */
+code, pre, .cm-inline-code, .HyperMD-codeblock {
+  font-variant-ligatures: none;
+}
+
+body.ember-ligatures code,
+body.ember-ligatures pre,
+body.ember-ligatures .cm-inline-code,
+body.ember-ligatures .HyperMD-codeblock {
+  font-variant-ligatures: contextual;
+  font-feature-settings: "calt" 1, "liga" 1;
+}
+
+/* Old-style figures in body copy */
+body.ember-oldstyle .markdown-preview-view,
+body.ember-oldstyle .markdown-source-view {
+  font-feature-settings: "onum" 1;
+}
+
+/* Dyslexia-friendly font (needs OpenDyslexic installed locally) */
+body.ember-dyslexia {
+  --font-text-theme: 'OpenDyslexic', sans-serif !important;
+  --font-interface-theme: 'OpenDyslexic', sans-serif !important;
+  --ember-font-head: 'OpenDyslexic', sans-serif !important;
+  --ember-font-body: 'OpenDyslexic', sans-serif !important;
+}
+
+/* ---- Reduce motion ----------------------------------------------------- */
+body.ember-reduce-motion *,
+body.ember-reduce-motion *::before,
+body.ember-reduce-motion *::after {
+  transition: none !important;
+  animation: none !important;
+  scroll-behavior: auto !important;
+}
+
+body.ember-tasks, body:not(.css-settings-manager) {
+  /* rounded checkboxes */
+}
+body.ember-tasks .task-list-item-checkbox, body:not(.css-settings-manager) .task-list-item-checkbox {
+  border-radius: 5px;
+  -webkit-appearance: none;
+  appearance: none;
+}
+body.ember-tasks, body:not(.css-settings-manager) {
+  /* shared mask setup for every custom marker */
+}
+body.ember-tasks [data-task="/"] .task-list-item-checkbox,
+body.ember-tasks [data-task=x] .task-list-item-checkbox,
+body.ember-tasks [data-task=X] .task-list-item-checkbox,
+body.ember-tasks [data-task="-"] .task-list-item-checkbox,
+body.ember-tasks [data-task=">"] .task-list-item-checkbox,
+body.ember-tasks [data-task="<"] .task-list-item-checkbox,
+body.ember-tasks [data-task="?"] .task-list-item-checkbox,
+body.ember-tasks [data-task="!"] .task-list-item-checkbox,
+body.ember-tasks [data-task="*"] .task-list-item-checkbox,
+body.ember-tasks [data-task='"'] .task-list-item-checkbox,
+body.ember-tasks [data-task=l] .task-list-item-checkbox,
+body.ember-tasks [data-task=b] .task-list-item-checkbox,
+body.ember-tasks [data-task=i] .task-list-item-checkbox,
+body.ember-tasks [data-task=S] .task-list-item-checkbox,
+body.ember-tasks [data-task=I] .task-list-item-checkbox,
+body.ember-tasks [data-task=p] .task-list-item-checkbox,
+body.ember-tasks [data-task=c] .task-list-item-checkbox,
+body.ember-tasks [data-task=f] .task-list-item-checkbox,
+body.ember-tasks [data-task=k] .task-list-item-checkbox,
+body.ember-tasks [data-task=w] .task-list-item-checkbox,
+body.ember-tasks [data-task=u] .task-list-item-checkbox,
+body.ember-tasks [data-task=d] .task-list-item-checkbox,
+body.ember-tasks [data-task=D] .task-list-item-checkbox,
+body.ember-tasks [data-task=P] .task-list-item-checkbox,
+body.ember-tasks [data-task=M] .task-list-item-checkbox, body:not(.css-settings-manager) [data-task="/"] .task-list-item-checkbox,
+body:not(.css-settings-manager) [data-task=x] .task-list-item-checkbox,
+body:not(.css-settings-manager) [data-task=X] .task-list-item-checkbox,
+body:not(.css-settings-manager) [data-task="-"] .task-list-item-checkbox,
+body:not(.css-settings-manager) [data-task=">"] .task-list-item-checkbox,
+body:not(.css-settings-manager) [data-task="<"] .task-list-item-checkbox,
+body:not(.css-settings-manager) [data-task="?"] .task-list-item-checkbox,
+body:not(.css-settings-manager) [data-task="!"] .task-list-item-checkbox,
+body:not(.css-settings-manager) [data-task="*"] .task-list-item-checkbox,
+body:not(.css-settings-manager) [data-task='"'] .task-list-item-checkbox,
+body:not(.css-settings-manager) [data-task=l] .task-list-item-checkbox,
+body:not(.css-settings-manager) [data-task=b] .task-list-item-checkbox,
+body:not(.css-settings-manager) [data-task=i] .task-list-item-checkbox,
+body:not(.css-settings-manager) [data-task=S] .task-list-item-checkbox,
+body:not(.css-settings-manager) [data-task=I] .task-list-item-checkbox,
+body:not(.css-settings-manager) [data-task=p] .task-list-item-checkbox,
+body:not(.css-settings-manager) [data-task=c] .task-list-item-checkbox,
+body:not(.css-settings-manager) [data-task=f] .task-list-item-checkbox,
+body:not(.css-settings-manager) [data-task=k] .task-list-item-checkbox,
+body:not(.css-settings-manager) [data-task=w] .task-list-item-checkbox,
+body:not(.css-settings-manager) [data-task=u] .task-list-item-checkbox,
+body:not(.css-settings-manager) [data-task=d] .task-list-item-checkbox,
+body:not(.css-settings-manager) [data-task=D] .task-list-item-checkbox,
+body:not(.css-settings-manager) [data-task=P] .task-list-item-checkbox,
+body:not(.css-settings-manager) [data-task=M] .task-list-item-checkbox {
+  border: none;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  -webkit-mask-size: 92%;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: 92%;
+}
+body.ember-tasks, body:not(.css-settings-manager) {
+  /* suppress Obsidian's native checkmark ::after — we paint our own glyph */
+}
+body.ember-tasks [data-task="/"] .task-list-item-checkbox::after,
+body.ember-tasks [data-task=x] .task-list-item-checkbox::after,
+body.ember-tasks [data-task=X] .task-list-item-checkbox::after,
+body.ember-tasks [data-task="-"] .task-list-item-checkbox::after,
+body.ember-tasks [data-task=">"] .task-list-item-checkbox::after,
+body.ember-tasks [data-task="<"] .task-list-item-checkbox::after,
+body.ember-tasks [data-task="?"] .task-list-item-checkbox::after,
+body.ember-tasks [data-task="!"] .task-list-item-checkbox::after,
+body.ember-tasks [data-task="*"] .task-list-item-checkbox::after,
+body.ember-tasks [data-task='"'] .task-list-item-checkbox::after,
+body.ember-tasks [data-task=l] .task-list-item-checkbox::after,
+body.ember-tasks [data-task=b] .task-list-item-checkbox::after,
+body.ember-tasks [data-task=i] .task-list-item-checkbox::after,
+body.ember-tasks [data-task=S] .task-list-item-checkbox::after,
+body.ember-tasks [data-task=I] .task-list-item-checkbox::after,
+body.ember-tasks [data-task=p] .task-list-item-checkbox::after,
+body.ember-tasks [data-task=c] .task-list-item-checkbox::after,
+body.ember-tasks [data-task=f] .task-list-item-checkbox::after,
+body.ember-tasks [data-task=k] .task-list-item-checkbox::after,
+body.ember-tasks [data-task=w] .task-list-item-checkbox::after,
+body.ember-tasks [data-task=u] .task-list-item-checkbox::after,
+body.ember-tasks [data-task=d] .task-list-item-checkbox::after,
+body.ember-tasks [data-task=D] .task-list-item-checkbox::after,
+body.ember-tasks [data-task=P] .task-list-item-checkbox::after,
+body.ember-tasks [data-task=M] .task-list-item-checkbox::after, body:not(.css-settings-manager) [data-task="/"] .task-list-item-checkbox::after,
+body:not(.css-settings-manager) [data-task=x] .task-list-item-checkbox::after,
+body:not(.css-settings-manager) [data-task=X] .task-list-item-checkbox::after,
+body:not(.css-settings-manager) [data-task="-"] .task-list-item-checkbox::after,
+body:not(.css-settings-manager) [data-task=">"] .task-list-item-checkbox::after,
+body:not(.css-settings-manager) [data-task="<"] .task-list-item-checkbox::after,
+body:not(.css-settings-manager) [data-task="?"] .task-list-item-checkbox::after,
+body:not(.css-settings-manager) [data-task="!"] .task-list-item-checkbox::after,
+body:not(.css-settings-manager) [data-task="*"] .task-list-item-checkbox::after,
+body:not(.css-settings-manager) [data-task='"'] .task-list-item-checkbox::after,
+body:not(.css-settings-manager) [data-task=l] .task-list-item-checkbox::after,
+body:not(.css-settings-manager) [data-task=b] .task-list-item-checkbox::after,
+body:not(.css-settings-manager) [data-task=i] .task-list-item-checkbox::after,
+body:not(.css-settings-manager) [data-task=S] .task-list-item-checkbox::after,
+body:not(.css-settings-manager) [data-task=I] .task-list-item-checkbox::after,
+body:not(.css-settings-manager) [data-task=p] .task-list-item-checkbox::after,
+body:not(.css-settings-manager) [data-task=c] .task-list-item-checkbox::after,
+body:not(.css-settings-manager) [data-task=f] .task-list-item-checkbox::after,
+body:not(.css-settings-manager) [data-task=k] .task-list-item-checkbox::after,
+body:not(.css-settings-manager) [data-task=w] .task-list-item-checkbox::after,
+body:not(.css-settings-manager) [data-task=u] .task-list-item-checkbox::after,
+body:not(.css-settings-manager) [data-task=d] .task-list-item-checkbox::after,
+body:not(.css-settings-manager) [data-task=D] .task-list-item-checkbox::after,
+body:not(.css-settings-manager) [data-task=P] .task-list-item-checkbox::after,
+body:not(.css-settings-manager) [data-task=M] .task-list-item-checkbox::after {
+  content: none;
+  display: none;
+}
+body.ember-tasks, body:not(.css-settings-manager) {
+  /* per-marker Lucide glyph + colour */
+}
+body.ember-tasks [data-task="/"] .task-list-item-checkbox, body:not(.css-settings-manager) [data-task="/"] .task-list-item-checkbox {
+  --g: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'><path d='M10.1 2.18a9.93 9.93 0 0 1 3.8 0' /> <path d='M17.6 3.71a9.95 9.95 0 0 1 2.69 2.7' /> <path d='M21.82 10.1a9.93 9.93 0 0 1 0 3.8' /> <path d='M20.29 17.6a9.95 9.95 0 0 1-2.7 2.69' /> <path d='M13.9 21.82a9.94 9.94 0 0 1-3.8 0' /> <path d='M6.4 20.29a9.95 9.95 0 0 1-2.69-2.7' /> <path d='M2.18 13.9a9.93 9.93 0 0 1 0-3.8' /> <path d='M3.71 6.4a9.95 9.95 0 0 1 2.7-2.69' /> <circle cx='12' cy='12' r='1' /></svg>");
+  background-color: var(--task-amber);
+  -webkit-mask-image: var(--g);
+  mask-image: var(--g);
+}
+body.ember-tasks [data-task=x] .task-list-item-checkbox, body:not(.css-settings-manager) [data-task=x] .task-list-item-checkbox {
+  --g: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'><path d='M20 6 9 17l-5-5' /></svg>");
+  background-color: var(--task-ember);
+  -webkit-mask-image: var(--g);
+  mask-image: var(--g);
+}
+body.ember-tasks [data-task=X] .task-list-item-checkbox, body:not(.css-settings-manager) [data-task=X] .task-list-item-checkbox {
+  --g: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'><path d='M20 6 9 17l-5-5' /></svg>");
+  background-color: var(--task-ember);
+  -webkit-mask-image: var(--g);
+  mask-image: var(--g);
+}
+body.ember-tasks [data-task="-"] .task-list-item-checkbox, body:not(.css-settings-manager) [data-task="-"] .task-list-item-checkbox {
+  --g: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'><path d='M18 6 6 18' /> <path d='m6 6 12 12' /></svg>");
+  background-color: var(--task-muted);
+  -webkit-mask-image: var(--g);
+  mask-image: var(--g);
+}
+body.ember-tasks [data-task=">"] .task-list-item-checkbox, body:not(.css-settings-manager) [data-task=">"] .task-list-item-checkbox {
+  --g: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'><path d='M5 12h14' /> <path d='m12 5 7 7-7 7' /></svg>");
+  background-color: var(--task-teal);
+  -webkit-mask-image: var(--g);
+  mask-image: var(--g);
+}
+body.ember-tasks [data-task="<"] .task-list-item-checkbox, body:not(.css-settings-manager) [data-task="<"] .task-list-item-checkbox {
+  --g: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'><path d='m12 19-7-7 7-7' /> <path d='M19 12H5' /></svg>");
+  background-color: var(--task-teal);
+  -webkit-mask-image: var(--g);
+  mask-image: var(--g);
+}
+body.ember-tasks [data-task="?"] .task-list-item-checkbox, body:not(.css-settings-manager) [data-task="?"] .task-list-item-checkbox {
+  --g: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'><circle cx='12' cy='12' r='10' /> <path d='M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3' /> <path d='M12 17h.01' /></svg>");
+  background-color: var(--task-teal);
+  -webkit-mask-image: var(--g);
+  mask-image: var(--g);
+}
+body.ember-tasks [data-task="!"] .task-list-item-checkbox, body:not(.css-settings-manager) [data-task="!"] .task-list-item-checkbox {
+  --g: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'><path d='m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3' /> <path d='M12 9v4' /> <path d='M12 17h.01' /></svg>");
+  background-color: var(--task-red);
+  -webkit-mask-image: var(--g);
+  mask-image: var(--g);
+}
+body.ember-tasks [data-task="*"] .task-list-item-checkbox, body:not(.css-settings-manager) [data-task="*"] .task-list-item-checkbox {
+  --g: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'><path d='M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z' /></svg>");
+  background-color: var(--task-amber);
+  -webkit-mask-image: var(--g);
+  mask-image: var(--g);
+}
+body.ember-tasks [data-task='"'] .task-list-item-checkbox, body:not(.css-settings-manager) [data-task='"'] .task-list-item-checkbox {
+  --g: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'><path d='M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z' /> <path d='M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z' /></svg>");
+  background-color: var(--task-muted);
+  -webkit-mask-image: var(--g);
+  mask-image: var(--g);
+}
+body.ember-tasks [data-task=l] .task-list-item-checkbox, body:not(.css-settings-manager) [data-task=l] .task-list-item-checkbox {
+  --g: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'><path d='M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0' /> <circle cx='12' cy='10' r='3' /></svg>");
+  background-color: var(--task-teal);
+  -webkit-mask-image: var(--g);
+  mask-image: var(--g);
+}
+body.ember-tasks [data-task=b] .task-list-item-checkbox, body:not(.css-settings-manager) [data-task=b] .task-list-item-checkbox {
+  --g: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'><path d='M17 3a2 2 0 0 1 2 2v15a1 1 0 0 1-1.496.868l-4.512-2.578a2 2 0 0 0-1.984 0l-4.512 2.578A1 1 0 0 1 5 20V5a2 2 0 0 1 2-2z' /></svg>");
+  background-color: var(--task-teal);
+  -webkit-mask-image: var(--g);
+  mask-image: var(--g);
+}
+body.ember-tasks [data-task=i] .task-list-item-checkbox, body:not(.css-settings-manager) [data-task=i] .task-list-item-checkbox {
+  --g: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'><circle cx='12' cy='12' r='10' /> <path d='M12 16v-4' /> <path d='M12 8h.01' /></svg>");
+  background-color: var(--task-teal);
+  -webkit-mask-image: var(--g);
+  mask-image: var(--g);
+}
+body.ember-tasks [data-task=S] .task-list-item-checkbox, body:not(.css-settings-manager) [data-task=S] .task-list-item-checkbox {
+  --g: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'><path d='M11 17h3v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-3a3.16 3.16 0 0 0 2-2h1a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1h-1a5 5 0 0 0-2-4V3a4 4 0 0 0-3.2 1.6l-.3.4H11a6 6 0 0 0-6 6v1a5 5 0 0 0 2 4v3a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1z' /> <path d='M16 10h.01' /> <path d='M2 8v1a2 2 0 0 0 2 2h1' /></svg>");
+  background-color: var(--task-green);
+  -webkit-mask-image: var(--g);
+  mask-image: var(--g);
+}
+body.ember-tasks [data-task=I] .task-list-item-checkbox, body:not(.css-settings-manager) [data-task=I] .task-list-item-checkbox {
+  --g: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'><path d='M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5' /> <path d='M9 18h6' /> <path d='M10 22h4' /></svg>");
+  background-color: var(--task-amber);
+  -webkit-mask-image: var(--g);
+  mask-image: var(--g);
+}
+body.ember-tasks [data-task=p] .task-list-item-checkbox, body:not(.css-settings-manager) [data-task=p] .task-list-item-checkbox {
+  --g: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'><path d='M15 5.88 14 10h5.83a2 2 0 0 1 1.92 2.56l-2.33 8A2 2 0 0 1 17.5 22H4a2 2 0 0 1-2-2v-8a2 2 0 0 1 2-2h2.76a2 2 0 0 0 1.79-1.11L12 2a3.13 3.13 0 0 1 3 3.88Z' /> <path d='M7 10v12' /></svg>");
+  background-color: var(--task-green);
+  -webkit-mask-image: var(--g);
+  mask-image: var(--g);
+}
+body.ember-tasks [data-task=c] .task-list-item-checkbox, body:not(.css-settings-manager) [data-task=c] .task-list-item-checkbox {
+  --g: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'><path d='M9 18.12 10 14H4.17a2 2 0 0 1-1.92-2.56l2.33-8A2 2 0 0 1 6.5 2H20a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-2.76a2 2 0 0 0-1.79 1.11L12 22a3.13 3.13 0 0 1-3-3.88Z' /> <path d='M17 14V2' /></svg>");
+  background-color: var(--task-red);
+  -webkit-mask-image: var(--g);
+  mask-image: var(--g);
+}
+body.ember-tasks [data-task=f] .task-list-item-checkbox, body:not(.css-settings-manager) [data-task=f] .task-list-item-checkbox {
+  --g: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'><path d='M12 3q1 4 4 6.5t3 5.5a1 1 0 0 1-14 0 5 5 0 0 1 1-3 1 1 0 0 0 5 0c0-2-1.5-3-1.5-5q0-2 2.5-4' /></svg>");
+  background-color: var(--task-red);
+  -webkit-mask-image: var(--g);
+  mask-image: var(--g);
+}
+body.ember-tasks [data-task=k] .task-list-item-checkbox, body:not(.css-settings-manager) [data-task=k] .task-list-item-checkbox {
+  --g: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'><path d='m15.5 7.5 2.3 2.3a1 1 0 0 0 1.4 0l2.1-2.1a1 1 0 0 0 0-1.4L19 4' /> <path d='m21 2-9.6 9.6' /> <circle cx='7.5' cy='15.5' r='5.5' /></svg>");
+  background-color: var(--task-amber);
+  -webkit-mask-image: var(--g);
+  mask-image: var(--g);
+}
+body.ember-tasks [data-task=w] .task-list-item-checkbox, body:not(.css-settings-manager) [data-task=w] .task-list-item-checkbox {
+  --g: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'><path d='M10 14.66v1.626a2 2 0 0 1-.976 1.696A5 5 0 0 0 7 21.978' /> <path d='M14 14.66v1.626a2 2 0 0 0 .976 1.696A5 5 0 0 1 17 21.978' /> <path d='M18 9h1.5a1 1 0 0 0 0-5H18' /> <path d='M4 22h16' /> <path d='M6 9a6 6 0 0 0 12 0V3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1z' /> <path d='M6 9H4.5a1 1 0 0 1 0-5H6' /></svg>");
+  background-color: var(--task-green);
+  -webkit-mask-image: var(--g);
+  mask-image: var(--g);
+}
+body.ember-tasks [data-task=u] .task-list-item-checkbox, body:not(.css-settings-manager) [data-task=u] .task-list-item-checkbox {
+  --g: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'><path d='M16 7h6v6' /> <path d='m22 7-8.5 8.5-5-5L2 17' /></svg>");
+  background-color: var(--task-green);
+  -webkit-mask-image: var(--g);
+  mask-image: var(--g);
+}
+body.ember-tasks [data-task=d] .task-list-item-checkbox, body:not(.css-settings-manager) [data-task=d] .task-list-item-checkbox {
+  --g: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'><path d='M16 17h6v-6' /> <path d='m22 17-8.5-8.5-5 5L2 7' /></svg>");
+  background-color: var(--task-red);
+  -webkit-mask-image: var(--g);
+  mask-image: var(--g);
+}
+body.ember-tasks [data-task=D] .task-list-item-checkbox, body:not(.css-settings-manager) [data-task=D] .task-list-item-checkbox {
+  --g: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'><circle cx='18' cy='18' r='3' /> <circle cx='6' cy='6' r='3' /> <path d='M18 6V5' /> <path d='M18 11v-1' /> <line x1='6' x2='6' y1='9' y2='21' /></svg>");
+  background-color: var(--task-muted);
+  -webkit-mask-image: var(--g);
+  mask-image: var(--g);
+}
+body.ember-tasks [data-task=P] .task-list-item-checkbox, body:not(.css-settings-manager) [data-task=P] .task-list-item-checkbox {
+  --g: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'><circle cx='18' cy='18' r='3' /> <circle cx='6' cy='6' r='3' /> <path d='M13 6h3a2 2 0 0 1 2 2v7' /> <line x1='6' x2='6' y1='9' y2='21' /></svg>");
+  background-color: var(--task-green);
+  -webkit-mask-image: var(--g);
+  mask-image: var(--g);
+}
+body.ember-tasks [data-task=M] .task-list-item-checkbox, body:not(.css-settings-manager) [data-task=M] .task-list-item-checkbox {
+  --g: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'><circle cx='18' cy='18' r='3' /> <circle cx='6' cy='6' r='3' /> <path d='M6 21V9a9 9 0 0 0 9 9' /></svg>");
+  background-color: var(--task-purple);
+  -webkit-mask-image: var(--g);
+  mask-image: var(--g);
+}
+body.ember-tasks, body:not(.css-settings-manager) {
+  /* reset inherited strike, then apply only to done + canceled */
+}
+body.ember-tasks .task-list-item,
+body.ember-tasks .HyperMD-task-line, body:not(.css-settings-manager) .task-list-item,
+body:not(.css-settings-manager) .HyperMD-task-line {
+  text-decoration: none;
+}
+body.ember-tasks [data-task=x].task-list-item, body.ember-tasks [data-task=X].task-list-item,
+body.ember-tasks .HyperMD-task-line[data-task=x], body.ember-tasks .HyperMD-task-line[data-task=X], body:not(.css-settings-manager) [data-task=x].task-list-item, body:not(.css-settings-manager) [data-task=X].task-list-item,
+body:not(.css-settings-manager) .HyperMD-task-line[data-task=x], body:not(.css-settings-manager) .HyperMD-task-line[data-task=X] {
+  color: var(--text-muted);
+  text-decoration: line-through;
+}
+body.ember-tasks [data-task="-"].task-list-item,
+body.ember-tasks .HyperMD-task-line[data-task="-"], body:not(.css-settings-manager) [data-task="-"].task-list-item,
+body:not(.css-settings-manager) .HyperMD-task-line[data-task="-"] {
+  color: var(--text-faint);
+  text-decoration: line-through;
+}
+
+body {
+  --ember-prop-key: var(--text-muted);
+  --ember-prop-accent: var(--ember-core);
+  --ember-banner-image: none;
+  --ember-banner-height: 180px;
+}
+
+body.ember-properties, body:not(.css-settings-manager) {
+  /* ---- Container: a calm card, clearly separated from the body ---- */
+}
+body.ember-properties .metadata-container, body:not(.css-settings-manager) .metadata-container {
+  --metadata-background: var(--ember-surface-2);
+  --metadata-padding: var(--size-4-3) var(--size-4-4);
+  --metadata-divider-color: var(--ember-line-soft);
+  --metadata-divider-color-hover: var(--ember-line);
+  --metadata-label-text-color: var(--ember-prop-key);
+  --metadata-label-text-color-hover: var(--ember-accent);
+  --metadata-label-font-weight: 600;
+  --metadata-property-radius: var(--radius-s);
+  margin-block-end: var(--size-4-5);
+  padding: var(--metadata-padding);
+  background: var(--metadata-background);
+  border: 1px solid var(--ember-line);
+  border-radius: var(--radius-m);
+  /* faint top highlight + soft drop = readable separation in both schemes */
+  box-shadow: inset 0 1px 0 color-mix(in srgb, var(--ember-text) 5%, transparent), 0 1px 3px rgba(0, 0, 0, 0.18);
+}
+body.ember-properties, body:not(.css-settings-manager) {
+  /* "Properties" heading — quiet, uppercase */
+}
+body.ember-properties .metadata-properties-heading, body:not(.css-settings-manager) .metadata-properties-heading {
+  color: var(--text-faint);
+  font-size: var(--font-smaller);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+body.ember-properties .metadata-properties-heading:hover, body:not(.css-settings-manager) .metadata-properties-heading:hover {
+  color: var(--text-muted);
+}
+body.ember-properties, body:not(.css-settings-manager) {
+  /* Key label */
+}
+body.ember-properties .metadata-property-key-input, body:not(.css-settings-manager) .metadata-property-key-input {
+  font-weight: 600;
+}
+body.ember-properties, body:not(.css-settings-manager) {
+  /* ---- Per-type icon colour ----
+     Keyed directly off the native lucide icon class (no :has — avoids the
+     broad selector-invalidation the Obsidian linter warns about). */
+}
+body.ember-properties .metadata-property-icon .svg-icon, body:not(.css-settings-manager) .metadata-property-icon .svg-icon {
+  color: var(--ember-prop-accent);
+}
+body.ember-properties, body:not(.css-settings-manager) { /* default / unknown */ }
+body.ember-properties .metadata-property-icon .svg-icon.lucide-text, body:not(.css-settings-manager) .metadata-property-icon .svg-icon.lucide-text {
+  color: var(--ember-dim);
+}
+body.ember-properties .metadata-property-icon .svg-icon.lucide-forward, body:not(.css-settings-manager) .metadata-property-icon .svg-icon.lucide-forward {
+  color: var(--task-teal);
+}
+body.ember-properties .metadata-property-icon .svg-icon.lucide-tags, body:not(.css-settings-manager) .metadata-property-icon .svg-icon.lucide-tags {
+  color: var(--ember-core);
+}
+body.ember-properties .metadata-property-icon .svg-icon.lucide-list, body:not(.css-settings-manager) .metadata-property-icon .svg-icon.lucide-list {
+  color: var(--task-teal);
+}
+body.ember-properties .metadata-property-icon .svg-icon.lucide-binary, body:not(.css-settings-manager) .metadata-property-icon .svg-icon.lucide-binary {
+  color: var(--task-purple);
+}
+body.ember-properties .metadata-property-icon .svg-icon.lucide-check-square, body:not(.css-settings-manager) .metadata-property-icon .svg-icon.lucide-check-square {
+  color: var(--task-green);
+}
+body.ember-properties .metadata-property-icon .svg-icon.lucide-calendar, body:not(.css-settings-manager) .metadata-property-icon .svg-icon.lucide-calendar {
+  color: var(--task-amber);
+}
+body.ember-properties .metadata-property-icon .svg-icon.lucide-clock, body:not(.css-settings-manager) .metadata-property-icon .svg-icon.lucide-clock {
+  color: var(--task-amber);
+}
+body.ember-properties .metadata-property, body:not(.css-settings-manager) .metadata-property {
+  border-radius: var(--radius-s);
+  transition: background-color 120ms ease;
+}
+body.ember-properties .metadata-property:hover, body:not(.css-settings-manager) .metadata-property:hover {
+  background: color-mix(in srgb, var(--ember-prop-accent) 6%, transparent);
+}
+body.ember-properties, body:not(.css-settings-manager) {
+  /* ---- Key-specific icons ----
+     Obsidian picks the property icon by TYPE, so common text keys all show the
+     generic icon. Override per KEY: hide the native svg and overlay a chosen
+     Lucide glyph as a mask. Add keys to the map. */
+}
+body.ember-properties .metadata-property[data-property-key=title] .metadata-property-icon > .svg-icon, body:not(.css-settings-manager) .metadata-property[data-property-key=title] .metadata-property-icon > .svg-icon {
+  display: none;
+}
+body.ember-properties .metadata-property[data-property-key=title] .metadata-property-icon::after, body:not(.css-settings-manager) .metadata-property[data-property-key=title] .metadata-property-icon::after {
+  content: "";
+  display: inline-block;
+  width: var(--icon-size, 18px);
+  height: var(--icon-size, 18px);
+  background-color: var(--ember-dim);
+  -webkit-mask: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.75' stroke-linecap='round' stroke-linejoin='round'><path d='M6 12h12'/><path d='M6 20V4'/><path d='M18 20V4'/></svg>") center/contain no-repeat;
+  mask: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.75' stroke-linecap='round' stroke-linejoin='round'><path d='M6 12h12'/><path d='M6 20V4'/><path d='M18 20V4'/></svg>") center/contain no-repeat;
+}
+body.ember-properties .metadata-property[data-property-key=status] .metadata-property-icon > .svg-icon, body:not(.css-settings-manager) .metadata-property[data-property-key=status] .metadata-property-icon > .svg-icon {
+  display: none;
+}
+body.ember-properties .metadata-property[data-property-key=status] .metadata-property-icon::after, body:not(.css-settings-manager) .metadata-property[data-property-key=status] .metadata-property-icon::after {
+  content: "";
+  display: inline-block;
+  width: var(--icon-size, 18px);
+  height: var(--icon-size, 18px);
+  background-color: var(--ember-dim);
+  -webkit-mask: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.75' stroke-linecap='round' stroke-linejoin='round'><circle cx='12' cy='12' r='10'/><circle cx='12' cy='12' r='1'/></svg>") center/contain no-repeat;
+  mask: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.75' stroke-linecap='round' stroke-linejoin='round'><circle cx='12' cy='12' r='10'/><circle cx='12' cy='12' r='1'/></svg>") center/contain no-repeat;
+}
+body.ember-properties, body:not(.css-settings-manager) {
+  /* ---- Value treatments (robust, class-based — no attribute needed) ----
+     We only style the rendered value; no attempt to reformat dates via CSS. */
+}
+body.ember-properties .metadata-input-number, body:not(.css-settings-manager) .metadata-input-number {
+  font-variant-numeric: tabular-nums;
+}
+body.ember-properties .metadata-input.mod-date,
+body.ember-properties .metadata-input.mod-datetime, body:not(.css-settings-manager) .metadata-input.mod-date,
+body:not(.css-settings-manager) .metadata-input.mod-datetime {
+  font-variant-numeric: tabular-nums;
+  color: var(--task-amber);
+}
+body.ember-properties .metadata-input-checkbox, body:not(.css-settings-manager) .metadata-input-checkbox {
+  accent-color: var(--task-green);
+}
+body.ember-properties, body:not(.css-settings-manager) {
+  /* Multi-select pills (tags / list / aliases) tint to the row colour.
+     Obsidian renders property-value pills "flat": padding/border zeroed, the
+     left gap supplied by the content's margin. That leaves the remove (×)
+     button cramped against the right edge, so we set symmetric padding +
+     border directly and neutralise the doubled content margin. */
+}
+body.ember-properties .multi-select-pill, body:not(.css-settings-manager) .multi-select-pill {
+  padding-block: 0.16em;
+  padding-inline: 0.55em;
+  border-radius: 999px;
+  border: 1px solid color-mix(in srgb, var(--ember-prop-accent) 32%, transparent);
+  background-color: color-mix(in srgb, var(--ember-prop-accent) 13%, transparent);
+}
+body.ember-properties .multi-select-pill .multi-select-pill-content, body:not(.css-settings-manager) .multi-select-pill .multi-select-pill-content {
+  margin-left: 0;
+}
+body.ember-properties .multi-select-pill:hover, body:not(.css-settings-manager) .multi-select-pill:hover {
+  background-color: color-mix(in srgb, var(--ember-prop-accent) 20%, transparent);
+  border-color: color-mix(in srgb, var(--ember-prop-accent) 46%, transparent);
+}
+body.ember-properties, body:not(.css-settings-manager) {
+  /* list / aliases pills read teal (data-property-type sits on the value) */
+}
+body.ember-properties .metadata-property-value[data-property-type=multitext] .multi-select-pill,
+body.ember-properties .metadata-property-value[data-property-type=aliases] .multi-select-pill, body:not(.css-settings-manager) .metadata-property-value[data-property-type=multitext] .multi-select-pill,
+body:not(.css-settings-manager) .metadata-property-value[data-property-type=aliases] .multi-select-pill {
+  border-color: color-mix(in srgb, var(--task-teal) 32%, transparent);
+  background-color: color-mix(in srgb, var(--task-teal) 13%, transparent);
+}
+body.ember-properties, body:not(.css-settings-manager) {
+  /* Internal-link values keep the accent link colour */
+}
+body.ember-properties .metadata-link-inner, body:not(.css-settings-manager) .metadata-link-inner {
+  color: var(--ember-accent);
+}
+
+/* ==========================================================================
+   Optional banner  (off by default — body.ember-banner)
+   CSS cannot read a frontmatter value as an image URL, so the banner is driven
+   by the --ember-banner-image custom property. Supply it per note (e.g. via the
+   Banners plugin, or a CSS snippet keyed off a cssclass). When no image is set,
+   a subtle ember gradient header shows instead, so it never looks broken.
+   ========================================================================== */
+body.ember-banner .metadata-container {
+  position: relative;
+  margin-block-start: var(--size-4-3);
+}
+
+body.ember-banner .metadata-container::before {
+  content: "";
+  display: block;
+  height: var(--ember-banner-height);
+  margin: calc(-1 * var(--size-4-3)) calc(-1 * var(--size-4-4)) var(--size-4-3);
+  border-radius: var(--radius-m) var(--radius-m) 0 0;
+  background-image: var(--ember-banner-image), linear-gradient(135deg, color-mix(in srgb, var(--ember-core) 38%, transparent), color-mix(in srgb, var(--ember-accent) 22%, transparent));
+  background-size: cover;
+  background-position: center;
+}
+
+/* ---- Per-type colour triples (match the --task-* palette) ---- */
+body.ember-callouts.theme-dark,
+body:not(.css-settings-manager).theme-dark {
+  --callout-default: 232, 115, 44; /* note      → ember     */
+  --callout-info: 95, 214, 194; /* info      → teal      */
+  --callout-todo: 255, 194, 106; /* todo      → amber     */
+  --callout-tip: 139, 209, 122; /* tip       → green     */
+  --callout-success: 139, 209, 122; /* success/done          */
+  --callout-question: 255, 194, 106; /* question  → amber     */
+  --callout-warning: 255, 194, 106; /* warning   → amber     */
+  --callout-important: 232, 115, 44; /* important → ember core */
+  --callout-fail: 240, 106, 93; /* fail      → red       */
+  --callout-error: 240, 106, 93; /* error/danger          */
+  --callout-bug: 240, 106, 93; /* bug                   */
+  --callout-example: 179, 136, 255; /* example   → purple    */
+  --callout-quote: 156, 144, 133; /* quote     → muted     */
+  --callout-summary: 95, 214, 194; /* summary   → teal      */
+}
+
+body.ember-callouts.theme-light,
+body:not(.css-settings-manager).theme-light {
+  --callout-default: 184, 65, 15;
+  --callout-info: 42, 141, 125;
+  --callout-todo: 200, 130, 26;
+  --callout-tip: 63, 154, 78;
+  --callout-success: 63, 154, 78;
+  --callout-question: 200, 130, 26;
+  --callout-warning: 200, 130, 26;
+  --callout-important: 232, 115, 44;
+  --callout-fail: 210, 75, 63;
+  --callout-error: 210, 75, 63;
+  --callout-bug: 210, 75, 63;
+  --callout-example: 122, 79, 208;
+  --callout-quote: 107, 93, 80;
+  --callout-summary: 42, 141, 125;
+}
+
+/* ---- Box styling ---- */
+body.ember-callouts .callout, body:not(.css-settings-manager) .callout {
+  --callout-radius: var(--radius-m);
+  --callout-border-width: 0px;
+  --callout-blend-mode: normal;
+  margin-block: var(--size-4-3);
+  border-radius: var(--radius-m);
+  border-inline-start: 3px solid rgb(var(--callout-color));
+  background-color: rgba(var(--callout-color), 0.07);
+  mix-blend-mode: normal;
+}
+body.ember-callouts, body:not(.css-settings-manager) {
+  /* Title bar: a touch stronger tint, coloured text + icon (native already
+     uses --callout-color; we reinforce weight/spacing). */
+}
+body.ember-callouts .callout-title, body:not(.css-settings-manager) .callout-title {
+  padding: var(--size-4-2) var(--size-4-3);
+  background-color: rgba(var(--callout-color), 0.1);
+  font-weight: 600;
+}
+body.ember-callouts .callout-title-inner, body:not(.css-settings-manager) .callout-title-inner {
+  color: rgb(var(--callout-color));
+}
+body.ember-callouts .callout-icon,
+body.ember-callouts .callout-icon .svg-icon, body:not(.css-settings-manager) .callout-icon,
+body:not(.css-settings-manager) .callout-icon .svg-icon {
+  color: rgb(var(--callout-color));
+}
+body.ember-callouts .callout-fold, body:not(.css-settings-manager) .callout-fold {
+  color: rgb(var(--callout-color));
+}
+body.ember-callouts .callout-content, body:not(.css-settings-manager) .callout-content {
+  padding: var(--size-4-2) var(--size-4-3);
+}
+
+/* ---- Ember syntax palette (--code-* token vars) ---- */
+body.ember-codeblocks.theme-dark,
+body:not(.css-settings-manager).theme-dark {
+  --code-comment: var(--ember-faint);
+  --code-keyword: #e8732c; /* ember  */
+  --code-function: #ffc26a; /* amber  */
+  --code-string: #8bd17a; /* green  */
+  --code-property: #5fd6c2; /* teal   */
+  --code-operator: #c0a98f; /* warm muted */
+  --code-punctuation: var(--ember-dim);
+  --code-tag: #f06a5d; /* red    */
+  --code-important: #f06a5d;
+  --code-value: #b388ff; /* purple (numbers/constants) */
+  --code-normal: var(--ember-text);
+}
+
+body.ember-codeblocks.theme-light,
+body:not(.css-settings-manager).theme-light {
+  --code-comment: #9a8b7d;
+  --code-keyword: #b8410f;
+  --code-function: #c8821a;
+  --code-string: #3f9a4e;
+  --code-property: #2a8d7d;
+  --code-operator: #8a6f53;
+  --code-punctuation: #6b5d50;
+  --code-tag: #d24b3f;
+  --code-important: #d24b3f;
+  --code-value: #7a4fd0;
+  --code-normal: #211913;
+}
+
+body.ember-codeblocks, body:not(.css-settings-manager) {
+  /* ---- Reading view (Prism) — route the tokens that don't already use --code-* ---- */
+}
+body.ember-codeblocks .markdown-rendered pre code .token.comment, body.ember-codeblocks .markdown-rendered pre code .token.prolog, body.ember-codeblocks .markdown-rendered pre code .token.cdata, body.ember-codeblocks .markdown-rendered pre code .token.doctype, body:not(.css-settings-manager) .markdown-rendered pre code .token.comment, body:not(.css-settings-manager) .markdown-rendered pre code .token.prolog, body:not(.css-settings-manager) .markdown-rendered pre code .token.cdata, body:not(.css-settings-manager) .markdown-rendered pre code .token.doctype {
+  color: var(--code-comment);
+  font-style: italic;
+}
+body.ember-codeblocks .markdown-rendered pre code .token.keyword, body.ember-codeblocks .markdown-rendered pre code .token.selector, body.ember-codeblocks .markdown-rendered pre code .token.atrule, body.ember-codeblocks .markdown-rendered pre code .token.important, body.ember-codeblocks .markdown-rendered pre code .token.namespace, body:not(.css-settings-manager) .markdown-rendered pre code .token.keyword, body:not(.css-settings-manager) .markdown-rendered pre code .token.selector, body:not(.css-settings-manager) .markdown-rendered pre code .token.atrule, body:not(.css-settings-manager) .markdown-rendered pre code .token.important, body:not(.css-settings-manager) .markdown-rendered pre code .token.namespace {
+  color: var(--code-keyword);
+}
+body.ember-codeblocks .markdown-rendered pre code .token.string, body.ember-codeblocks .markdown-rendered pre code .token.char, body.ember-codeblocks .markdown-rendered pre code .token.attr-value, body.ember-codeblocks .markdown-rendered pre code .token.regex, body.ember-codeblocks .markdown-rendered pre code .token.url, body.ember-codeblocks .markdown-rendered pre code .token.inserted, body:not(.css-settings-manager) .markdown-rendered pre code .token.string, body:not(.css-settings-manager) .markdown-rendered pre code .token.char, body:not(.css-settings-manager) .markdown-rendered pre code .token.attr-value, body:not(.css-settings-manager) .markdown-rendered pre code .token.regex, body:not(.css-settings-manager) .markdown-rendered pre code .token.url, body:not(.css-settings-manager) .markdown-rendered pre code .token.inserted {
+  color: var(--code-string);
+}
+body.ember-codeblocks .markdown-rendered pre code .token.function, body.ember-codeblocks .markdown-rendered pre code .token.class-name, body.ember-codeblocks .markdown-rendered pre code .token.builtin, body:not(.css-settings-manager) .markdown-rendered pre code .token.function, body:not(.css-settings-manager) .markdown-rendered pre code .token.class-name, body:not(.css-settings-manager) .markdown-rendered pre code .token.builtin {
+  color: var(--code-function);
+}
+body.ember-codeblocks .markdown-rendered pre code .token.number, body.ember-codeblocks .markdown-rendered pre code .token.boolean, body.ember-codeblocks .markdown-rendered pre code .token.constant, body.ember-codeblocks .markdown-rendered pre code .token.symbol, body:not(.css-settings-manager) .markdown-rendered pre code .token.number, body:not(.css-settings-manager) .markdown-rendered pre code .token.boolean, body:not(.css-settings-manager) .markdown-rendered pre code .token.constant, body:not(.css-settings-manager) .markdown-rendered pre code .token.symbol {
+  color: var(--code-value);
+}
+body.ember-codeblocks .markdown-rendered pre code .token.property, body.ember-codeblocks .markdown-rendered pre code .token.attr-name, body.ember-codeblocks .markdown-rendered pre code .token.variable, body.ember-codeblocks .markdown-rendered pre code .token.tag, body:not(.css-settings-manager) .markdown-rendered pre code .token.property, body:not(.css-settings-manager) .markdown-rendered pre code .token.attr-name, body:not(.css-settings-manager) .markdown-rendered pre code .token.variable, body:not(.css-settings-manager) .markdown-rendered pre code .token.tag {
+  color: var(--code-property);
+}
+body.ember-codeblocks .markdown-rendered pre code .token.operator, body.ember-codeblocks .markdown-rendered pre code .token.entity, body:not(.css-settings-manager) .markdown-rendered pre code .token.operator, body:not(.css-settings-manager) .markdown-rendered pre code .token.entity {
+  color: var(--code-operator);
+}
+body.ember-codeblocks .markdown-rendered pre code .token.punctuation, body:not(.css-settings-manager) .markdown-rendered pre code .token.punctuation {
+  color: var(--code-punctuation);
+}
+body.ember-codeblocks .markdown-rendered pre code .token.deleted, body:not(.css-settings-manager) .markdown-rendered pre code .token.deleted {
+  color: var(--code-important);
+}
+body.ember-codeblocks .markdown-rendered pre code .token.bold, body:not(.css-settings-manager) .markdown-rendered pre code .token.bold {
+  font-weight: 700;
+}
+body.ember-codeblocks .markdown-rendered pre code .token.italic, body:not(.css-settings-manager) .markdown-rendered pre code .token.italic {
+  font-style: italic;
+}
+body.ember-codeblocks, body:not(.css-settings-manager) {
+  /* ---- Live preview (CodeMirror) — scoped to code blocks ---- */
+}
+body.ember-codeblocks .HyperMD-codeblock .cm-comment, body.ember-codeblocks .HyperMD-codeblock .cm-comment.cm-meta, body:not(.css-settings-manager) .HyperMD-codeblock .cm-comment, body:not(.css-settings-manager) .HyperMD-codeblock .cm-comment.cm-meta {
+  color: var(--code-comment);
+  font-style: italic;
+}
+body.ember-codeblocks .HyperMD-codeblock .cm-keyword, body.ember-codeblocks .HyperMD-codeblock .cm-atom, body:not(.css-settings-manager) .HyperMD-codeblock .cm-keyword, body:not(.css-settings-manager) .HyperMD-codeblock .cm-atom {
+  color: var(--code-keyword);
+}
+body.ember-codeblocks .HyperMD-codeblock .cm-string, body.ember-codeblocks .HyperMD-codeblock .cm-string-2, body:not(.css-settings-manager) .HyperMD-codeblock .cm-string, body:not(.css-settings-manager) .HyperMD-codeblock .cm-string-2 {
+  color: var(--code-string);
+}
+body.ember-codeblocks .HyperMD-codeblock .cm-def, body.ember-codeblocks .HyperMD-codeblock .cm-type, body.ember-codeblocks .HyperMD-codeblock .cm-builtin, body.ember-codeblocks .HyperMD-codeblock .cm-qualifier, body:not(.css-settings-manager) .HyperMD-codeblock .cm-def, body:not(.css-settings-manager) .HyperMD-codeblock .cm-type, body:not(.css-settings-manager) .HyperMD-codeblock .cm-builtin, body:not(.css-settings-manager) .HyperMD-codeblock .cm-qualifier {
+  color: var(--code-function);
+}
+body.ember-codeblocks .HyperMD-codeblock .cm-number, body:not(.css-settings-manager) .HyperMD-codeblock .cm-number {
+  color: var(--code-value);
+}
+body.ember-codeblocks .HyperMD-codeblock .cm-variable, body.ember-codeblocks .HyperMD-codeblock .cm-variable-2, body.ember-codeblocks .HyperMD-codeblock .cm-variable-3, body:not(.css-settings-manager) .HyperMD-codeblock .cm-variable, body:not(.css-settings-manager) .HyperMD-codeblock .cm-variable-2, body:not(.css-settings-manager) .HyperMD-codeblock .cm-variable-3 {
+  color: var(--code-normal);
+}
+body.ember-codeblocks .HyperMD-codeblock .cm-property, body:not(.css-settings-manager) .HyperMD-codeblock .cm-property {
+  color: var(--code-property);
+}
+body.ember-codeblocks .HyperMD-codeblock .cm-operator, body:not(.css-settings-manager) .HyperMD-codeblock .cm-operator {
+  color: var(--code-operator);
+}
+body.ember-codeblocks .HyperMD-codeblock .cm-tag, body:not(.css-settings-manager) .HyperMD-codeblock .cm-tag {
+  color: var(--code-tag);
+}
+body.ember-codeblocks .HyperMD-codeblock .cm-attribute, body:not(.css-settings-manager) .HyperMD-codeblock .cm-attribute {
+  color: var(--code-property);
+}
+body.ember-codeblocks .HyperMD-codeblock .cm-meta, body:not(.css-settings-manager) .HyperMD-codeblock .cm-meta {
+  color: var(--code-keyword);
+}
+body.ember-codeblocks, body:not(.css-settings-manager) {
+  /* ---- Code block container ---- */
+}
+body.ember-codeblocks .markdown-rendered pre, body:not(.css-settings-manager) .markdown-rendered pre {
+  border: 1px solid var(--ember-line);
+  border-radius: var(--radius-m);
+}
+body.ember-codeblocks, body:not(.css-settings-manager) {
+  /* Language flair (top-right pill) */
+}
+body.ember-codeblocks .code-block-flair, body:not(.css-settings-manager) .code-block-flair {
+  color: var(--ember-dim);
+  background: color-mix(in srgb, var(--ember-core) 10%, transparent);
+  border-radius: 0 var(--radius-m) 0 var(--radius-s);
+  font-family: var(--ember-font-mono);
+  font-size: var(--font-smallest);
+  letter-spacing: 0.03em;
+}
+body.ember-codeblocks, body:not(.css-settings-manager) {
+  /* Copy button */
+}
+body.ember-codeblocks .copy-code-button, body:not(.css-settings-manager) .copy-code-button {
+  color: var(--ember-dim);
+}
+body.ember-codeblocks .copy-code-button:hover, body:not(.css-settings-manager) .copy-code-button:hover {
+  color: var(--ember-accent);
+}
+
+.theme-dark,
+.theme-light {
+  /* Icons — slightly lighter, consistent stroke for a refined feel
+     (xs kept heavier so tiny icons stay legible) */
+  --icon-xs-stroke-width: 2px;
+  --icon-s-stroke-width: 1.75px;
+  --icon-m-stroke-width: 1.75px;
+  --icon-l-stroke-width: 1.75px;
+  --icon-xl-stroke-width: 1.75px;
+  /* Modals */
+  --modal-radius: var(--radius-l);
+  --modal-border-width: 1px;
+  --modal-border-color: var(--ember-line);
+  /* Command palette / quick switcher */
+  --prompt-border-width: 1px;
+  --prompt-border-color: var(--ember-line);
+  /* Status bar */
+  --status-bar-background: var(--ember-bg);
+  --status-bar-border-color: var(--ember-line);
+  --status-bar-text-color: var(--ember-dim);
+}
+
+/* ---- Modals ---- */
+.modal-title,
+.modal-setting-title {
+  color: var(--ember-text);
+}
+
+.modal-close-button:hover {
+  color: var(--ember-accent);
+}
+
+/* ---- Suggestion lists (command palette, quick switcher, autocomplete) ---- */
+.suggestion-item.is-selected {
+  background-color: color-mix(in srgb, var(--ember-core) 16%, transparent);
+  color: var(--ember-accent);
+}
+
+.prompt-input:focus {
+  box-shadow: none;
+}
+
+/* ---- Context menus ---- */
+.menu {
+  border: 1px solid var(--ember-line);
+  border-radius: var(--radius-m);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.28);
+}
+
+.menu-item:hover:not(.is-disabled):not(.is-label),
+.menu-item.selected {
+  background-color: color-mix(in srgb, var(--ember-core) 14%, transparent);
+  color: var(--ember-accent);
+}
+
+.menu-item.selected .menu-item-icon,
+.menu-item:hover .menu-item-icon {
+  color: var(--ember-accent);
+}
+
+/* ---- Settings ---- */
+.vertical-tab-nav-item.is-active {
+  background-color: color-mix(in srgb, var(--ember-core) 16%, transparent);
+  color: var(--ember-accent);
+  box-shadow: inset 2px 0 0 0 var(--ember-core);
+}
+
+.setting-item-name {
+  color: var(--ember-text);
+}
+
+/* ---- Hover popover ---- */
+.popover.hover-popover {
+  border: 1px solid var(--ember-line);
+  border-radius: var(--radius-m);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+/* ---- Status bar ---- */
+.status-bar {
+  border-top: 1px solid var(--ember-line);
+}
+
+.status-bar-item {
+  color: var(--ember-dim);
+}
+
+/* ---- Tooltips ---- */
+.tooltip {
+  background-color: var(--ember-surface-2);
+  color: var(--ember-text);
+  border: 1px solid var(--ember-line);
+  border-radius: var(--radius-s);
+}
+
+.tooltip .tooltip-arrow {
+  border-bottom-color: var(--ember-surface-2);
+}
+
+body.ember-embeds, body:not(.css-settings-manager) {
+  /* Embedded note: a calm card with an ember left-accent */
+}
+body.ember-embeds .markdown-embed,
+body.ember-embeds .internal-embed.markdown-embed, body:not(.css-settings-manager) .markdown-embed,
+body:not(.css-settings-manager) .internal-embed.markdown-embed {
+  --embed-background: var(--ember-bg-alt);
+  --embed-padding: var(--size-4-2) var(--size-4-3);
+  --embed-border-start: 3px solid var(--ember-core);
+  background: var(--embed-background);
+  border-radius: var(--radius-m);
+}
+body.ember-embeds .markdown-embed-title, body:not(.css-settings-manager) .markdown-embed-title {
+  color: var(--ember-accent);
+  font-weight: 600;
+}
+body.ember-embeds, body:not(.css-settings-manager) {
+  /* The hover "open link" affordance */
+}
+body.ember-embeds .markdown-embed-link, body:not(.css-settings-manager) .markdown-embed-link {
+  color: var(--ember-dim);
+}
+body.ember-embeds .markdown-embed-link:hover, body:not(.css-settings-manager) .markdown-embed-link:hover {
+  color: var(--ember-accent);
+}
+body.ember-embeds, body:not(.css-settings-manager) {
+  /* Non-markdown file embeds (pdf, audio, unsupported) */
+}
+body.ember-embeds .file-embed, body:not(.css-settings-manager) .file-embed {
+  background: var(--ember-bg-alt);
+  border: 1px solid var(--ember-line);
+  border-radius: var(--radius-m);
+}
+body.ember-embeds .file-embed-title, body:not(.css-settings-manager) .file-embed-title {
+  color: var(--ember-text);
+}
+body.ember-embeds .file-embed-icon, body:not(.css-settings-manager) .file-embed-icon {
+  color: var(--ember-dim);
+}
+body.ember-embeds, body:not(.css-settings-manager) {
+  /* Image embeds: gentle rounding */
+}
+body.ember-embeds .internal-embed img,
+body.ember-embeds .markdown-rendered img, body:not(.css-settings-manager) .internal-embed img,
+body:not(.css-settings-manager) .markdown-rendered img {
+  border-radius: var(--radius-s);
+}
+
+body.ember-list-lines {
+  /* ---- Reading view ---- */
+}
+body.ember-list-lines .markdown-rendered :is(ul, ol) :is(ul, ol) {
+  position: relative;
+  border-inline-start: 1px solid var(--ember-line);
+  margin-inline-start: 0.35em;
+  padding-inline-start: 0.95em;
+}
+body.ember-list-lines .markdown-rendered :is(ul, ol) :is(ul, ol):hover {
+  border-inline-start-color: color-mix(in srgb, var(--ember-core) 45%, var(--ember-line));
+}
+body.ember-list-lines {
+  /* ---- Live preview ---- */
+  /* each indentation step renders a .cm-hmd-list-indent span; a left border
+     per line stacks into a continuous vertical guide. */
+}
+body.ember-list-lines .HyperMD-list-line .cm-hmd-list-indent {
+  box-shadow: inset 1px 0 0 0 var(--ember-line);
+}
+
+.dashboard {
+  font-family: inherit;
+  padding-left: 25px !important;
+  padding-right: 25px !important;
+  padding-top: 20px !important;
+}
+
+.dashboard .markdown-preview-section {
+  max-width: 100%;
+}
+
+/* Hide the properties box on the dashboard only */
+.dashboard .metadata-container {
+  display: none !important;
+}
+
+/* Title pinned to the top of the document */
+.dashboard .markdown-preview-section .title {
+  top: 60px;
+  position: absolute;
+  font-size: 26pt !important;
+  font-weight: bolder;
+  letter-spacing: 8px;
+}
+
+/* Drop the parent bullet and indentation guides */
+.dashboard div.markdown-preview-section > div > ul > li > .list-bullet {
+  display: none !important;
+}
+
+.dashboard.markdown-rendered.show-indentation-guide li > ul::before,
+.dashboard.markdown-rendered.show-indentation-guide li > ol::before {
+  display: none;
+}
+
+.dashboard div.markdown-preview-section > div > ul.has-list-bullet > li {
+  padding-left: 24px !important;
+}
+
+/* Top-level list → row of cards */
+.dashboard div > ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  flex-flow: row wrap;
+}
+
+.dashboard div > ul > li {
+  min-width: 250px;
+  /* 3 tiles + 2 gaps span 90% of the row width */
+  width: calc((90% - 40px) / 3);
+}
+
+/* Second-level list → row of pills */
+.dashboard div > ul > li > ul {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 8px;
+  margin-top: 14px;
+  padding-left: 0 !important;
+}
+
+.dashboard div > ul > li > ul > li {
+  list-style: none;
+  width: auto;
+  min-width: 0;
+}
+
+.dashboard div > ul > li > ul > li a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Hide the bullet on second-level entries */
+.dashboard div > ul > li > ul > li > .list-bullet {
+  display: none !important;
+}
+
+/* Dataview support */
+.dashboard ul.dataview {
+  row-gap: 0px !important;
+  list-style-type: disc !important;
+}
+
+body.ember-dashboard .dashboard h1, body:not(.css-settings-manager) .dashboard h1 {
+  border-bottom-style: dotted !important;
+  border-width: 1px !important;
+  padding-bottom: 3px !important;
+}
+body.ember-dashboard .dashboard div > ul > li, body:not(.css-settings-manager) .dashboard div > ul > li {
+  padding: 22px 24px !important;
+  font-weight: 600;
+  color: var(--ember-core);
+  background-color: var(--ember-bg-alt);
+  border: 1px solid var(--ember-line);
+  border-left: 4px solid var(--ember-core);
+  border-radius: var(--radius-l);
+  box-shadow: var(--shadow-s);
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+body.ember-dashboard .dashboard div > ul > li:hover, body:not(.css-settings-manager) .dashboard div > ul > li:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-l);
+}
+body.ember-dashboard .dashboard div > ul > li > ul > li, body:not(.css-settings-manager) .dashboard div > ul > li > ul > li {
+  padding: 4px 12px !important;
+  font-weight: 400;
+  font-size: 0.85em;
+  color: var(--text-normal);
+  background-color: var(--ember-bg);
+  border: 1px solid var(--ember-line);
+  border-radius: 999px;
+}
+
+/* ---- Dataview ----------------------------------------------------------
+   Query tables render as .table-view-table inside .markdown-rendered, so they
+   already inherit Ember's base table styling. Here we cover inline fields. */
+.dataview.inline-field-key,
+.inline-field-key {
+  background: color-mix(in srgb, var(--ember-core) 12%, transparent);
+  color: var(--ember-accent);
+  border: 1px solid color-mix(in srgb, var(--ember-core) 28%, transparent);
+  border-inline-end: none;
+  border-radius: var(--radius-s) 0 0 var(--radius-s);
+  padding: 0 0.4em;
+}
+
+.dataview.inline-field-value,
+.inline-field-value {
+  background: var(--ember-bg-alt);
+  border: 1px solid var(--ember-line);
+  border-radius: 0 var(--radius-s) var(--radius-s) 0;
+  padding: 0 0.4em;
+}
+
+.block-language-dataview .dataview.small-text {
+  color: var(--ember-dim);
+}
+
+/* ---- Kanban ------------------------------------------------------------ */
+.kanban-plugin__lane {
+  background: var(--ember-surface);
+  border: 1px solid var(--ember-line);
+  border-radius: var(--radius-m);
+}
+
+.kanban-plugin__lane-title-text {
+  color: var(--ember-accent);
+  font-weight: 600;
+  font-family: var(--ember-font-head);
+}
+
+.kanban-plugin__lane-title-count {
+  background: color-mix(in srgb, var(--ember-core) 14%, transparent);
+  color: var(--ember-accent);
+  border-radius: 999px;
+  padding: 0 0.5em;
+}
+
+.kanban-plugin__item {
+  background: var(--ember-bg-alt);
+  border: 1px solid var(--ember-line);
+  border-radius: var(--radius-s);
+  transition: border-color 120ms ease, box-shadow 120ms ease;
+}
+
+.kanban-plugin__item:hover {
+  border-color: color-mix(in srgb, var(--ember-core) 40%, var(--ember-line));
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.18);
+}
+
+.kanban-plugin__item.is-complete .kanban-plugin__item-title {
+  color: var(--text-muted);
+  text-decoration: line-through;
+}
+
+.kanban-plugin__new-item-button,
+.kanban-plugin__add-item-button {
+  color: var(--ember-dim);
+}
+
+.kanban-plugin__new-item-button:hover,
+.kanban-plugin__add-item-button:hover {
+  color: var(--ember-accent);
+}
+
+.is-mobile {
+  --mobile-sidebar-background: var(--ember-surface);
+  --mobile-sidebar-radius: var(--radius-l);
+}
+
+/* Bottom navbar + editing toolbar surfaces */
+.is-mobile .mobile-navbar,
+.is-mobile .mobile-toolbar,
+.is-mobile .mobile-toolbar-options-container {
+  background-color: var(--ember-bg);
+  border-color: var(--ember-line);
+}
+
+/* Navbar actions: muted, accent when active */
+.is-mobile .mobile-navbar-action {
+  color: var(--ember-dim);
+}
+
+.is-mobile .mobile-navbar-action.is-active {
+  color: var(--ember-accent);
+}
+
+.is-mobile .mobile-navbar-tabs-number {
+  color: var(--ember-accent);
+}
+
+/* Editing toolbar buttons */
+.is-mobile .mobile-toolbar-option {
+  color: var(--ember-dim);
+}
+
+.is-mobile .mobile-toolbar-option:active,
+.is-mobile .mobile-toolbar-option.is-active {
+  color: var(--ember-accent);
+}
+
+/* Sidebar drawer */
+.is-mobile .workspace-drawer {
+  background-color: var(--mobile-sidebar-background);
+  border-radius: 0 var(--mobile-sidebar-radius) var(--mobile-sidebar-radius) 0;
+}
+
+.is-mobile .workspace-drawer.mod-right {
+  border-radius: var(--mobile-sidebar-radius) 0 0 var(--mobile-sidebar-radius);
+}
+
+@media print {
+  body.theme-dark {
+    color-scheme: light;
+    --ember-bg: #fbf4ea;
+    --ember-bg-alt: #f4e8d8;
+    --ember-surface: #fffaf2;
+    --ember-surface-2: #f4e8d8;
+    --ember-line: rgba(40, 24, 12, 0.12);
+    --ember-line-soft: rgba(40, 24, 12, 0.07);
+    --ember-text: #211913;
+    --ember-dim: #6b5d50;
+    --ember-faint: #8b7b6b;
+    --ember-accent: #b8420f;
+    --ember-accent-hi: #e8732c;
+    --ember-h1: #b8410f;
+    --ember-h2: #c8551a;
+    --ember-h3: #bf4e15;
+    --ember-h4: #a8460e;
+    --ember-h5: #8a6f53;
+    --ember-h6: #6b5d50;
+    /* code + task palettes to the light, print-legible variants */
+    --code-comment: #9a8b7d;
+    --code-keyword: #b8410f;
+    --code-function: #c8821a;
+    --code-string: #3f9a4e;
+    --code-property: #2a8d7d;
+    --code-operator: #8a6f53;
+    --code-punctuation: #6b5d50;
+    --code-value: #7a4fd0;
+    --code-normal: #211913;
+    --task-amber: #b8410f;
+    --task-ember: #e8732c;
+    --task-teal: #2a8d7d;
+    --task-red: #d24b3f;
+    --task-green: #3f9a4e;
+    --task-muted: #6b5d50;
+    --task-purple: #7a4fd0;
+  }
+  /* keep tinted callouts/pills visible on paper */
+  * {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+}

@@ -1405,10 +1405,10 @@ body.theme-dark {
   --inline-title-color: var(--h1-color) !important;
   --bold-color: var(--fp-coral) !important;
   --italic-color: var(--fp-amber) !important;
+  --table-text-color: var(--fp-fg-primary) !important;
   --interactive-success: var(--fp-success) !important;
   --embed-border-left: 2px solid var(--fp-phosphor) !important;
   --external-link-color: var(--fp-yellow-fn) !important;
-  --table-text-color: var(--fp-fg-primary) !important;
   --link-unresolved-color-hover: var(--fp-coral) !important;
   --code-imports: var(--fp-amber) !important;
   --color-base-bg1: #0f180c !important;

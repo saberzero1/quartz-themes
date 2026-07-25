@@ -1883,6 +1883,7 @@ body.theme-light {
   --red: rgba(var(--color-error-rgb), var(--opacity-subtle)) !important;
   --text-primary: rgb(var(--text-primary-rgb)) !important;
   --text-secondary: rgb(var(--text-secondary-rgb)) !important;
+  --scrollbar-thumb-color: rgba(109, 102, 93, 0.25) !important;
   --background-modifier-success-hover: rgba(
     var(--color-success-rgb),
     var(--opacity-moderate)
@@ -1922,6 +1923,8 @@ body.theme-light {
   --size-6: 24px !important;
   --size-7: 32px !important;
   --size-8: 40px !important;
+  --layer-1: rgb(var(--layer-1-rgb)) !important;
+  --layer-2: rgb(var(--layer-2-rgb)) !important;
   --table-hover: var(--table-hover-light) !important;
   --gray-100: 32, 28, 19 !important;
   --gray-50: 157, 149, 137 !important;
@@ -1936,8 +1939,6 @@ body.theme-light {
     rgb(var(--background-base-rgb)) 45%,
     rgba(0, 0, 0, 0.55)
   ) !important;
-  --layer-1: rgb(var(--layer-1-rgb)) !important;
-  --layer-2: rgb(var(--layer-2-rgb)) !important;
   --background-inverse: rgb(var(--gray-80)) !important;
   --background-selected: rgba(
     var(--gray-50),
@@ -2183,7 +2184,6 @@ body.theme-light {
   --scrip-vault-mask-mid-stop: 50% !important;
   --scrip-vault-mask-top-alpha: 1 !important;
   --scrollbar-size: 8px !important;
-  --scrollbar-thumb-color: rgba(109, 102, 93, 0.25) !important;
   --scrollbar-track-color: transparent !important;
   --size-max-width-mobile: 90vw !important;
   --size-max-width-reading: 65ch !important;
@@ -3342,6 +3342,7 @@ body.theme-dark {
   --red: rgba(var(--color-error-rgb), var(--opacity-subtle)) !important;
   --text-primary: rgb(var(--text-primary-rgb)) !important;
   --text-secondary: rgb(var(--text-secondary-rgb)) !important;
+  --scrollbar-thumb-color: rgba(109, 102, 93, 0.25) !important;
   --background-modifier-success-hover: rgba(
     var(--color-success-rgb),
     var(--opacity-moderate)
@@ -3381,6 +3382,8 @@ body.theme-dark {
   --size-6: 24px !important;
   --size-7: 32px !important;
   --size-8: 40px !important;
+  --layer-1: rgb(var(--layer-1-rgb)) !important;
+  --layer-2: rgb(var(--layer-2-rgb)) !important;
   --table-hover: var(--table-hover-dark) !important;
   --gray-100: 32, 28, 19 !important;
   --gray-50: 157, 149, 137 !important;
@@ -3395,8 +3398,6 @@ body.theme-dark {
     rgb(var(--background-base-rgb)) 60%,
     rgba(0, 0, 0, 0.6)
   ) !important;
-  --layer-1: rgb(var(--layer-1-rgb)) !important;
-  --layer-2: rgb(var(--layer-2-rgb)) !important;
   --background-selected: rgba(
     var(--gray-50),
     var(--opacity-moderate)
@@ -3628,7 +3629,6 @@ body.theme-dark {
   --scrip-vault-mask-mid-stop: 50% !important;
   --scrip-vault-mask-top-alpha: 1 !important;
   --scrollbar-size: 8px !important;
-  --scrollbar-thumb-color: rgba(109, 102, 93, 0.25) !important;
   --scrollbar-track-color: transparent !important;
   --size-max-width-mobile: 90vw !important;
   --size-max-width-reading: 65ch !important;

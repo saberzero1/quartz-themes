@@ -1456,21 +1456,21 @@ body.theme-light {
   --h5-color: var(--color-pink) !important;
   --h6-color: var(--color-cyan) !important;
   --inline-title-color: var(--color-purple) !important;
-  --inline-title-font: var(--font-text-theme) !important;
   --bold-color: var(--color-blue) !important;
   --callout-title-size: 1.2em;
+  --inline-title-font: var(--font-text-theme) !important;
   --italic-color: var(--color-purple) !important;
-  --status-bar-scroll-padding: var(--size-4-2) !important;
-  --tag-weight: 500 !important;
   --table-text-color: var(--text-normal) !important;
+  --tag-weight: 500 !important;
+  --status-bar-scroll-padding: var(--size-4-2) !important;
   --callout-background: linear-gradient(
     to bottom,
     var(--color-base-05),
     var(--color-base-00)
   );
+  --callout-title-color: var(--text-accent);
   --nav-item-weight: 500 !important;
   --nav-item-weight-hover: 600 !important;
-  --callout-title-color: var(--text-accent);
 }
 
 body.theme-dark {
@@ -2537,8 +2537,8 @@ body.theme-dark {
   --h6-color: #b0a38c !important;
   --inline-title-color: var(--h1-color) !important;
   --callout-background: 42, 42, 42;
-  --callout-title-color: 255, 69, 0;
   --callout-border-color: 74, 44, 42;
+  --callout-title-color: 255, 69, 0;
 }
 
 body {

@@ -1,0 +1,839 @@
+/* ============================================================
+   Hyo — Obsidian Theme
+   A warm, earthy theme built on the Hyo design system.
+   Accent: Peach (#D97757) | Editor: white | Sidebar: parchment
+   ============================================================ */
+
+/* ── Light mode ─────────────────────────────────────────── */
+
+.theme-light {
+  /* Accent */
+  --color-accent-hsl: 15, 63%, 60%;
+  --color-accent: #D97757;
+  --color-accent-1: #C15F3C;
+  --color-accent-2: #E49E86;
+  --interactive-accent: #D97757;
+  --interactive-accent-hover: #C15F3C;
+  --interactive-accent-rgb: 217, 119, 87;
+
+  /* Backgrounds — white editor, parchment sidebar */
+  --background-primary: #FFFFFF;
+  --background-primary-alt: #FAF7F2;
+  --background-secondary: #F3EFE8;
+  --background-secondary-alt: #EDE8E0;
+  --background-modifier-hover: rgba(217, 119, 87, 0.08);
+  --background-modifier-active-hover: rgba(217, 119, 87, 0.14);
+  --background-modifier-border: #E5DED5;
+  --background-modifier-border-hover: #D4C8BC;
+  --background-modifier-border-focus: #D97757;
+  --background-modifier-error: rgba(199, 107, 107, 0.12);
+  --background-modifier-error-hover: rgba(199, 107, 107, 0.18);
+  --background-modifier-success: rgba(107, 158, 122, 0.12);
+  --background-modifier-form-field: #FFFFFF;
+
+  /* Text */
+  --text-normal: #2D2A26;
+  --text-muted: #7A7268;
+  --text-faint: #A69E94;
+  --text-on-accent: #FFFFFF;
+  --text-on-accent-muted: rgba(255, 255, 255, 0.8);
+  --text-accent: #D97757;
+  --text-accent-hover: #C15F3C;
+  --text-error: #C76B6B;
+  --text-warning: #D4A053;
+  --text-success: #6B9E7A;
+  --text-selection: rgba(217, 119, 87, 0.22);
+  --text-highlight-bg: rgba(217, 119, 87, 0.18);
+  --text-highlight-bg-active: rgba(217, 119, 87, 0.32);
+
+  /* Interactive */
+  --interactive-normal: #F5F1EB;
+  --interactive-hover: #EDE8E0;
+
+  /* Colour scale */
+  --color-base-00: #FFFFFF;
+  --color-base-05: #FAF7F2;
+  --color-base-10: #F5F1EB;
+  --color-base-20: #EDE8E0;
+  --color-base-25: #E8E2D8;
+  --color-base-30: #E5DED5;
+  --color-base-35: #D9D2C8;
+  --color-base-40: #C8BFB4;
+  --color-base-50: #A69E94;
+  --color-base-60: #7A7268;
+  --color-base-70: #5C554C;
+  --color-base-100: #2D2A26;
+
+  /* Tags */
+  --tag-color: #C15F3C;
+  --tag-background: rgba(217, 119, 87, 0.1);
+  --tag-background-hover: rgba(217, 119, 87, 0.18);
+  --tag-border-color: rgba(217, 119, 87, 0.3);
+
+  /* Code */
+  --code-background: #FAF7F2;
+  --code-normal: #2D2A26;
+  --code-comment: #A69E94;
+  --code-keyword: #C15F3C;
+  --code-string: #6B9E7A;
+  --code-function: #D97757;
+  --code-operator: #7A7268;
+
+  /* Callouts */
+  --callout-default: 217, 119, 87;
+  --callout-info: 107, 158, 255;
+  --callout-tip: 107, 158, 122;
+  --callout-warning: 212, 160, 83;
+  --callout-error: 199, 107, 107;
+
+  /* Tabs */
+  --tab-background-active: rgba(217, 119, 87, 0.1);
+  --tab-text-color: #A69E94;
+  --tab-text-color-active: #7A7268;
+  --tab-text-color-focused: #A69E94;
+  --tab-text-color-focused-active: #D97757;
+  --tab-text-color-focused-highlighted: #D97757;
+  --tab-outline-color: #E5DED5;
+}
+
+/* ── Dark mode ──────────────────────────────────────────── */
+
+.theme-dark {
+  /* Accent */
+  --color-accent-hsl: 15, 63%, 60%;
+  --color-accent: #D97757;
+  --color-accent-1: #DF8D72;
+  --color-accent-2: #C15F3C;
+  --interactive-accent: #D97757;
+  --interactive-accent-hover: #DF8D72;
+  --interactive-accent-rgb: 217, 119, 87;
+
+  /* Backgrounds */
+  --background-primary: #222220;
+  --background-primary-alt: #191917;
+  --background-secondary: #1E1E1C;
+  --background-secondary-alt: #191917;
+  --background-modifier-hover: rgba(217, 119, 87, 0.08);
+  --background-modifier-active-hover: rgba(217, 119, 87, 0.14);
+  --background-modifier-border: #353532;
+  --background-modifier-border-hover: #4A4A46;
+  --background-modifier-border-focus: #D97757;
+  --background-modifier-error: rgba(212, 122, 122, 0.12);
+  --background-modifier-error-hover: rgba(212, 122, 122, 0.18);
+  --background-modifier-success: rgba(125, 182, 140, 0.12);
+  --background-modifier-form-field: #2C2C29;
+
+  /* Text */
+  --text-normal: #E8E4DE;
+  --text-muted: #A8A29A;
+  --text-faint: #706C66;
+  --text-on-accent: #191917;
+  --text-on-accent-muted: rgba(25, 25, 23, 0.8);
+  --text-accent: #D97757;
+  --text-accent-hover: #DF8D72;
+  --text-error: #D47A7A;
+  --text-warning: #D4A053;
+  --text-success: #7DB68C;
+  --text-selection: rgba(217, 119, 87, 0.22);
+  --text-highlight-bg: rgba(217, 119, 87, 0.18);
+  --text-highlight-bg-active: rgba(217, 119, 87, 0.32);
+
+  /* Interactive */
+  --interactive-normal: #2C2C29;
+  --interactive-hover: #353532;
+
+  /* Colour scale */
+  --color-base-00: #191917;
+  --color-base-05: #1C1C1A;
+  --color-base-10: #222220;
+  --color-base-20: #2C2C29;
+  --color-base-25: #323230;
+  --color-base-30: #353532;
+  --color-base-35: #3E3E3B;
+  --color-base-40: #4A4A46;
+  --color-base-50: #706C66;
+  --color-base-60: #A8A29A;
+  --color-base-70: #C8C2BA;
+  --color-base-100: #E8E4DE;
+
+  /* Tags */
+  --tag-color: #D97757;
+  --tag-background: rgba(217, 119, 87, 0.1);
+  --tag-background-hover: rgba(217, 119, 87, 0.18);
+  --tag-border-color: rgba(217, 119, 87, 0.25);
+
+  /* Code */
+  --code-background: #1C1C1A;
+  --code-normal: #E8E4DE;
+  --code-comment: #706C66;
+  --code-keyword: #DF8D72;
+  --code-string: #7DB68C;
+  --code-function: #D97757;
+  --code-operator: #A8A29A;
+
+  /* Callouts */
+  --callout-default: 217, 119, 87;
+  --callout-info: 107, 158, 255;
+  --callout-tip: 125, 182, 140;
+  --callout-warning: 212, 160, 83;
+  --callout-error: 212, 122, 122;
+
+  /* Tabs */
+  --tab-background-active: rgba(217, 119, 87, 0.12);
+  --tab-text-color: #706C66;
+  --tab-text-color-active: #A8A29A;
+  --tab-text-color-focused: #706C66;
+  --tab-text-color-focused-active: #D97757;
+  --tab-text-color-focused-highlighted: #D97757;
+  --tab-outline-color: #353532;
+}
+
+/* ── Shared / structural ────────────────────────────────── */
+
+body {
+  --radius-s: 6px;
+  --radius-m: 10px;
+  --radius-l: 14px;
+  --radius-xl: 18px;
+  --input-radius: 8px;
+  --tab-radius: 6px;
+  --button-radius: 8px;
+  --toggle-radius: 99px;
+  --checkbox-radius: 4px;
+
+  --font-interface: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Inter', system-ui, sans-serif;
+  --font-text: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Inter', system-ui, sans-serif;
+  --font-monospace: 'SF Mono', 'Fira Code', 'JetBrains Mono', 'Menlo', monospace;
+
+  --font-text-size: 16px;
+  --line-height-normal: 1.65;
+  --line-height-tight: 1.3;
+
+  --font-ui-small: 12px;
+  --font-ui-smaller: 11px;
+  --font-ui-medium: 13px;
+  --font-ui-large: 15px;
+
+  /* Nav — matching Hyo's 15px / weight 450 tree items */
+  --nav-item-size: 15px;
+  --nav-item-weight: 450;
+  --nav-item-weight-active: 450; /* keep same as normal — weight change on hover/active causes visual jump */
+  --nav-item-color: var(--text-muted);
+  --nav-item-color-hover: var(--text-normal);
+  --nav-item-color-active: var(--text-accent);
+  --nav-item-background-hover: var(--background-modifier-hover);
+  --nav-item-background-active: rgba(217, 119, 87, 0.1);
+  --nav-indentation-guide-color: var(--background-modifier-border);
+  --nav-item-padding: 3px 8px; /* matches Hyo tree-row padding: 3px 12px */
+}
+
+/* ── Scrollbars ─────────────────────────────────────────── */
+
+.theme-light ::-webkit-scrollbar-thumb { background: #D9D2C8; }
+.theme-light ::-webkit-scrollbar-thumb:hover { background: #C8BFB4; }
+.theme-dark ::-webkit-scrollbar-thumb { background: #353532; }
+.theme-dark ::-webkit-scrollbar-thumb:hover { background: #4A4A46; }
+
+::-webkit-scrollbar { width: 5px; height: 5px; }
+::-webkit-scrollbar-track { background: transparent; }
+
+/* ── Selection ──────────────────────────────────────────── */
+
+.theme-light ::selection { background: rgba(217, 119, 87, 0.22); }
+.theme-dark ::selection { background: rgba(217, 119, 87, 0.28); }
+
+/* ── Tabs ───────────────────────────────────────────────── */
+
+/* Active tab — warm background, terracotta title via CSS var + direct selector */
+.workspace-tab-header.is-active,
+.workspace-tab-header.is-active.mod-active {
+  background-color: var(--tab-background-active) !important;
+}
+
+.workspace-tab-header.is-active .workspace-tab-header-inner-title,
+.workspace-tab-header.is-active.mod-active .workspace-tab-header-inner-title {
+  color: var(--interactive-accent) !important;
+  font-weight: 500;
+}
+
+/* Modified/unsaved dot — accent colour */
+.workspace-tab-header-status-icon {
+  color: var(--interactive-accent) !important;
+}
+
+/* ── File explorer ──────────────────────────────────────── */
+
+/* Row height — matches Hyo's tree-row padding: 3px 12px */
+.nav-folder-title,
+.nav-file-title {
+  font-size: 15px;
+  color: var(--text-muted);
+  padding: 3px 8px;
+  border-radius: var(--radius-s);
+  gap: 4px;
+  line-height: 1.4;
+  /* Prevent antialiasing shift on hover (makes text appear to change weight) */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Folders */
+.nav-folder-title {
+  font-weight: 500;
+  color: var(--text-normal);
+}
+
+.nav-folder-title:hover {
+  color: var(--text-normal);
+  background: var(--background-modifier-hover);
+  font-weight: 500 !important;
+}
+
+/* Folder collapse arrow — warm brown */
+.nav-folder-collapse-indicator {
+  color: #C15F3C !important;
+}
+
+/* Folder icon — exact Hyo path, fill #D97757 stroke #C15F3C, 20×20 */
+.nav-folder-title-content::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 4px;
+  vertical-align: middle;
+  flex-shrink: 0;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M10 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-8l-2-2z' fill='%23D97757' stroke='%23C15F3C' stroke-width='1'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* Files */
+.nav-file-title {
+  font-weight: 450;
+}
+
+.nav-file-title:hover {
+  color: var(--text-normal);
+  background: var(--background-modifier-hover);
+  font-weight: 450 !important;
+}
+
+/* File icon — document shape SVG matching Hyo's getFileIcon exactly.
+   data-path is on .nav-file-title, NOT .nav-file — selectors corrected. */
+
+.nav-file-title-content::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 4px;
+  vertical-align: middle;
+  flex-shrink: 0;
+  /* Default: warm grey document, no badge — matches Hyo's fallback #B0A898 */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z' fill='%23B0A898' stroke='%239A9080' stroke-width='1'/%3E%3Cpath d='M14 2v6h6' fill='%239A9080' opacity='0.3'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* .md — blue #7BA4C7, badge M */
+.nav-file-title[data-path$=".md"] .nav-file-title-content::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z' fill='%237BA4C7' stroke='%236890B0' stroke-width='1'/%3E%3Cpath d='M14 2v6h6' fill='%236890B0' opacity='0.3'/%3E%3Ctext x='12' y='17.5' text-anchor='middle' fill='white' font-size='7' font-weight='600' font-family='system-ui'%3EM%3C/text%3E%3C/svg%3E");
+}
+
+/* .json — amber #C7A44E, badge {} */
+.nav-file-title[data-path$=".json"] .nav-file-title-content::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z' fill='%23C7A44E' stroke='%23B09040' stroke-width='1'/%3E%3Cpath d='M14 2v6h6' fill='%23B09040' opacity='0.3'/%3E%3Ctext x='12' y='17.5' text-anchor='middle' fill='white' font-size='6' font-weight='600' font-family='system-ui'%3E%7B%7D%3C/text%3E%3C/svg%3E");
+}
+
+/* .js/.jsx — yellow #C9B458, badge JS */
+.nav-file-title[data-path$=".js"] .nav-file-title-content::before,
+.nav-file-title[data-path$=".jsx"] .nav-file-title-content::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z' fill='%23C9B458' stroke='%23B0A040' stroke-width='1'/%3E%3Cpath d='M14 2v6h6' fill='%23B0A040' opacity='0.3'/%3E%3Ctext x='12' y='17.5' text-anchor='middle' fill='white' font-size='6' font-weight='600' font-family='system-ui'%3EJS%3C/text%3E%3C/svg%3E");
+}
+
+/* .ts/.tsx — blue-purple, badge TS */
+.nav-file-title[data-path$=".ts"] .nav-file-title-content::before,
+.nav-file-title[data-path$=".tsx"] .nav-file-title-content::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z' fill='%237B8DC7' stroke='%236A7CB0' stroke-width='1'/%3E%3Cpath d='M14 2v6h6' fill='%236A7CB0' opacity='0.3'/%3E%3Ctext x='12' y='17.5' text-anchor='middle' fill='white' font-size='6' font-weight='600' font-family='system-ui'%3ETS%3C/text%3E%3C/svg%3E");
+}
+
+/* .sh — green #8BB070, badge > */
+.nav-file-title[data-path$=".sh"] .nav-file-title-content::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z' fill='%238BB070' stroke='%2378A05E' stroke-width='1'/%3E%3Cpath d='M14 2v6h6' fill='%2378A05E' opacity='0.3'/%3E%3Ctext x='12' y='17.5' text-anchor='middle' fill='white' font-size='9' font-weight='600' font-family='system-ui'%3E%3E%3C/text%3E%3C/svg%3E");
+}
+
+/* .css — purple-blue #7B8DC7, badge # */
+.nav-file-title[data-path$=".css"] .nav-file-title-content::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z' fill='%237B8DC7' stroke='%236A7CB0' stroke-width='1'/%3E%3Cpath d='M14 2v6h6' fill='%236A7CB0' opacity='0.3'/%3E%3Ctext x='12' y='17.5' text-anchor='middle' fill='white' font-size='8' font-weight='700' font-family='system-ui'%3E%23%3C/text%3E%3C/svg%3E");
+}
+
+/* .html/.htm — red #C77B6B, badge <> */
+.nav-file-title[data-path$=".html"] .nav-file-title-content::before,
+.nav-file-title[data-path$=".htm"] .nav-file-title-content::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z' fill='%23C77B6B' stroke='%23B06A5A' stroke-width='1'/%3E%3Cpath d='M14 2v6h6' fill='%23B06A5A' opacity='0.3'/%3E%3Ctext x='12' y='17.5' text-anchor='middle' fill='white' font-size='6' font-weight='600' font-family='system-ui'%3E%3C%3E%3C/text%3E%3C/svg%3E");
+}
+
+/* .txt — grey #A69E94, no badge */
+.nav-file-title[data-path$=".txt"] .nav-file-title-content::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z' fill='%23A69E94' stroke='%238A8279' stroke-width='1'/%3E%3Cpath d='M14 2v6h6' fill='%238A8279' opacity='0.3'/%3E%3C/svg%3E");
+}
+
+/* Active file — accent treatment */
+.nav-file-title.is-active {
+  color: var(--text-accent) !important;
+  background: rgba(217, 119, 87, 0.1) !important;
+  font-weight: 500;
+}
+
+.nav-file-title.is-active .nav-file-title-content::before {
+  opacity: 0.75;
+}
+
+/* File extension tag */
+.nav-file-tag {
+  color: var(--text-faint);
+  font-size: 10px;
+}
+
+/* ── Editor / document typography — matching Hyo desktop ── */
+
+/* Max width + padding matching Hyo's doc-preview */
+.markdown-source-view.mod-cm6 .cm-scroller,
+.markdown-reading-view .markdown-rendered {
+  padding: 32px 40px;
+}
+
+.markdown-rendered {
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.65;
+}
+
+/* Paragraphs */
+.markdown-rendered p {
+  margin: 0 0 0.75em;
+}
+
+/* Headings — coloured text + accent borders */
+.markdown-rendered h1,
+.markdown-source-view.mod-cm6 .HyperMD-header-1 {
+  font-size: 1.8em;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.3;
+  margin: 1.2em 0 0.8em;
+  color: #D97757 !important;
+  padding-bottom: 0.3em;
+  border-bottom: 2px solid #D97757;
+}
+
+/* Space below H1 border — push the next line down */
+.markdown-source-view.mod-cm6 .HyperMD-header-1 + .cm-line {
+  padding-top: 12px !important;
+}
+
+.markdown-rendered h2,
+.markdown-source-view.mod-cm6 .HyperMD-header-2 {
+  font-size: 1.4em;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  line-height: 1.3;
+  margin: 1.2em 0 0.4em;
+  color: #D97757 !important;
+}
+
+.markdown-rendered h3,
+.markdown-source-view.mod-cm6 .HyperMD-header-3 {
+  font-size: 1.2em;
+  font-weight: 600;
+  line-height: 1.3;
+  margin: 1.2em 0 0.4em;
+  color: #D97757 !important;
+}
+
+/* Dark mode heading colours */
+.theme-dark .markdown-rendered h1,
+.theme-dark .markdown-source-view.mod-cm6 .HyperMD-header-1 {
+  color: #D97757 !important;
+  border-bottom-color: #D97757;
+}
+
+.theme-dark .markdown-rendered h2,
+.theme-dark .markdown-source-view.mod-cm6 .HyperMD-header-2 {
+  color: #D97757 !important;
+}
+
+.theme-dark .markdown-rendered h3,
+.theme-dark .markdown-source-view.mod-cm6 .HyperMD-header-3 {
+  color: #D97757 !important;
+}
+
+/* Lists — outline-grade visual hierarchy */
+.markdown-rendered ul,
+.markdown-rendered ol {
+  padding-left: 1.8em;
+  margin: 0 0 0.75em;
+}
+
+/* Top-level bullets: full weight, generous spacing */
+.markdown-rendered li {
+  margin: 0.4em 0;
+  line-height: 1.65;
+}
+
+/* Nested lists: tighter spacing, don't need as much air */
+.markdown-rendered li li {
+  margin: 0.2em 0;
+}
+
+/* Deep nesting: even tighter */
+.markdown-rendered li li li {
+  margin: 0.1em 0;
+}
+
+/* Bullet markers — distinct shapes per level (reading view) */
+.markdown-rendered ul { list-style: none !important; }
+
+.markdown-rendered ul > li { position: relative; padding-left: 0.4em; }
+
+/* Level 1: filled circle */
+.markdown-rendered ul > li::before {
+  content: "" !important;
+  position: absolute;
+  left: -1.2em;
+  top: 0.55em;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: #D97757;
+}
+
+/* Level 2: open circle */
+.markdown-rendered ul ul > li::before {
+  width: 6px;
+  height: 6px;
+  background-color: transparent;
+  border: 1.5px solid #D97757;
+}
+
+/* Level 3: filled square */
+.markdown-rendered ul ul ul > li::before {
+  width: 5px;
+  height: 5px;
+  border-radius: 1px;
+  background-color: #7A7268;
+  border: none;
+}
+
+/* Level 4: open circle — faint */
+.markdown-rendered ul ul ul ul > li::before {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1.5px solid #A69E94;
+}
+
+/* Ordered list markers */
+.markdown-rendered ol > li::marker {
+  color: #D97757 !important;
+  font-weight: 600;
+}
+
+.markdown-rendered ol > li li::marker {
+  color: #7A7268 !important;
+  font-weight: 500;
+}
+
+/* Bold text in lists — slightly warmer for emphasis */
+.markdown-rendered li strong {
+  color: var(--text-normal);
+  font-weight: 650;
+}
+
+/* ── Lists — Live Preview / Editor ─────────────────────── */
+/* Distinct shapes per level, generous spacing, prominent markers */
+
+/* Spacing — tighter */
+.markdown-source-view.mod-cm6 .HyperMD-list-line-1 {
+  padding-top: 2px !important;
+  padding-bottom: 2px !important;
+}
+
+.markdown-source-view.mod-cm6 .HyperMD-list-line-2 {
+  padding-top: 1px !important;
+  padding-bottom: 1px !important;
+}
+
+.markdown-source-view.mod-cm6 .HyperMD-list-line-3,
+.markdown-source-view.mod-cm6 .HyperMD-list-line-4 {
+  padding-top: 1px !important;
+  padding-bottom: 1px !important;
+}
+
+/* Hide indent guide lines in editor */
+.markdown-source-view.mod-cm6 .cm-indent::before {
+  border-color: transparent !important;
+}
+
+/* ── Bullet colours + shapes per nesting level ── */
+
+/* All levels: set marker colour variable */
+.markdown-source-view.mod-cm6 .HyperMD-list-line-1 {
+  --list-marker-color: #D97757 !important;
+}
+.markdown-source-view.mod-cm6 .HyperMD-list-line-2 {
+  --list-marker-color: #C15F3C !important;
+}
+.markdown-source-view.mod-cm6 .HyperMD-list-line-3 {
+  --list-marker-color: #7A7268 !important;
+}
+.markdown-source-view.mod-cm6 .HyperMD-list-line-4 {
+  --list-marker-color: #A69E94 !important;
+}
+
+/* Gap between dot and text */
+.markdown-source-view.mod-cm6 .list-bullet {
+  margin-right: 6px !important;
+}
+
+/* Level 1: filled circle */
+.markdown-source-view.mod-cm6 .HyperMD-list-line-1 .list-bullet::after {
+  width: 6px !important;
+  height: 6px !important;
+  border-radius: 50% !important;
+  background-color: #D97757 !important;
+}
+
+/* Level 2: open circle */
+.markdown-source-view.mod-cm6 .HyperMD-list-line-2 .list-bullet::after {
+  width: 6px !important;
+  height: 6px !important;
+  border-radius: 50% !important;
+  background-color: transparent !important;
+  border: 1.5px solid #C15F3C !important;
+}
+
+/* Level 3: filled square */
+.markdown-source-view.mod-cm6 .HyperMD-list-line-3 .list-bullet::after {
+  width: 5px !important;
+  height: 5px !important;
+  border-radius: 1px !important;
+  background-color: #7A7268 !important;
+}
+
+/* Level 4: open circle — faint */
+.markdown-source-view.mod-cm6 .HyperMD-list-line-4 .list-bullet::after {
+  width: 5px !important;
+  height: 5px !important;
+  border-radius: 50% !important;
+  background-color: transparent !important;
+  border: 1.5px solid #A69E94 !important;
+}
+
+/* ── Links ──────────────────────────────────────────────── */
+
+a,
+.cm-s-obsidian span.cm-link,
+.cm-s-obsidian span.cm-url {
+  color: var(--text-accent);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--text-accent-hover);
+  text-decoration: underline;
+}
+
+/* ── Buttons ────────────────────────────────────────────── */
+
+button.mod-cta {
+  background: var(--interactive-accent);
+  color: var(--text-on-accent);
+  border-radius: var(--button-radius);
+}
+
+button.mod-cta:hover {
+  background: var(--interactive-accent-hover);
+}
+
+/* ── Inline code ────────────────────────────────────────── */
+
+.markdown-rendered code,
+.cm-s-obsidian span.cm-inline-code {
+  background: var(--code-background);
+  border-radius: 4px;
+  padding: 1px 5px;
+  font-size: 0.88em;
+}
+
+/* ── Horizontal Rule / Divider — Hyo circles centred ───── */
+/* .cm-line.hr hr = the rendered <hr> in Live Preview (folded state).
+   Learned from Encore theme: this is the correct selector, not .HyperMD-hr. */
+
+.markdown-rendered hr,
+.cm-line.hr hr {
+  border: none !important;
+  height: 40px;
+  position: relative;
+  overflow: visible;
+  margin: 0.25em 0;
+}
+
+/* Line across */
+.markdown-rendered hr::before,
+.cm-line.hr hr::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: var(--background-modifier-border);
+}
+
+/* Hyo circles centred */
+.markdown-rendered hr::after,
+.cm-line.hr hr::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 24px;
+  height: 24px;
+  background-color: var(--background-primary);
+  padding: 0 12px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='16 25 84 70'%3E%3Cdefs%3E%3CclipPath id='lc'%3E%3Ccircle cx='44' cy='53' r='28'/%3E%3C/clipPath%3E%3C/defs%3E%3Ccircle cx='44' cy='53' r='28' fill='%23BF8A55'/%3E%3Ccircle cx='72' cy='67' r='28' fill='%23B5616C'/%3E%3Cg clip-path='url(%23lc)'%3E%3Ccircle cx='72' cy='67' r='28' fill='%238E4A3D'/%3E%3C/g%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 24px 24px;
+}
+
+/* Dark mode — lighter Hyo circles */
+.theme-dark .markdown-rendered hr::after,
+.theme-dark .cm-line.hr hr::after {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='16 25 84 70'%3E%3Cdefs%3E%3CclipPath id='lc'%3E%3Ccircle cx='44' cy='53' r='28'/%3E%3C/clipPath%3E%3C/defs%3E%3Ccircle cx='44' cy='53' r='28' fill='%23D4A574'/%3E%3Ccircle cx='72' cy='67' r='28' fill='%23C97B84'/%3E%3Cg clip-path='url(%23lc)'%3E%3Ccircle cx='72' cy='67' r='28' fill='%23A8604E'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* ── Blockquotes ────────────────────────────────────────── */
+
+.markdown-rendered blockquote {
+  border-left-color: var(--interactive-accent);
+  background: rgba(217, 119, 87, 0.06);
+  border-radius: 0 var(--radius-s) var(--radius-s) 0;
+  font-style: italic;
+}
+
+/* Editor / Live Preview blockquote styling */
+.markdown-source-view.mod-cm6 .HyperMD-quote {
+  background-color: rgba(217, 119, 87, 0.10) !important;
+  font-style: italic;
+}
+
+/* First line of a quote group — top padding + top-right corner */
+.markdown-source-view.mod-cm6 :not(.HyperMD-quote) + .HyperMD-quote {
+  padding-top: 6px !important;
+  border-top-right-radius: var(--radius-s);
+}
+
+/* Last line of a quote group — bottom padding + bottom-right corner */
+.markdown-source-view.mod-cm6 .HyperMD-quote:has(+ :not(.HyperMD-quote)),
+.markdown-source-view.mod-cm6 .HyperMD-quote:last-child {
+  padding-bottom: 6px !important;
+  border-bottom-right-radius: var(--radius-s);
+}
+
+/* ── Custom callout: [!comment] — margin notes to self ──── */
+
+.callout[data-callout="comment"] {
+  --callout-color: 217, 119, 87;
+  --callout-icon: message-circle;
+  background: rgba(217, 119, 87, 0.10) !important;
+  border-width: 0 0 0 3px !important;
+  border-style: solid !important;
+  border-color: rgba(217, 119, 87, 0.6) !important;
+  border-radius: 0 var(--radius-s) var(--radius-s) 0 !important;
+  box-shadow: none !important;
+}
+
+.callout[data-callout="comment"] .callout-content {
+  font-style: italic;
+  padding-top: 6px;
+}
+
+/* ── Checkboxes ─────────────────────────────────────────── */
+
+.task-list-item-checkbox:checked {
+  background: var(--interactive-accent);
+  border-color: var(--interactive-accent);
+}
+
+/* ── Inputs / Search ────────────────────────────────────── */
+
+input[type="text"],
+input[type="search"],
+input[type="email"],
+input[type="password"],
+textarea {
+  border-radius: var(--input-radius);
+}
+
+.search-input-container input:focus {
+  border-color: var(--background-modifier-border-focus);
+}
+
+/* ── Status bar ─────────────────────────────────────────── */
+
+.status-bar {
+  font-size: var(--font-ui-smaller);
+}
+
+/* ── Graph view ─────────────────────────────────────────── */
+
+.graph-view.color-fill { color: var(--interactive-accent); }
+.graph-view.color-line { color: var(--background-modifier-border); }
+.graph-view.color-text { color: var(--text-muted); }
+.graph-view.color-fill-tag { color: #D4A053; }
+.graph-view.color-fill-attachment { color: #6B9E7A; }
+.graph-view.color-fill-unresolved { color: var(--text-faint); }
+
+/* ── Bases — full width ─────────────────────────────────── */
+
+.bases-embed,
+.bases-view,
+.bases-container,
+.ob-base,
+.base-view,
+.cm-embed-block:has(.bases-embed),
+.cm-embed-block:has(.base-view) {
+  max-width: 100% !important;
+  width: 100% !important;
+}
+
+.is-readable-line-width .bases-embed,
+.is-readable-line-width .bases-view,
+.is-readable-line-width .bases-container,
+.is-readable-line-width .ob-base,
+.is-readable-line-width .base-view {
+  max-width: 100% !important;
+  width: 100% !important;
+}
+
+/* ── Bases — table stretch + left-align ─────────────────── */
+
+.ob-base table,
+.base-view table,
+.bases-view table {
+  width: 100% !important;
+  text-align: left !important;
+}
+
+.ob-base td,
+.ob-base th,
+.base-view td,
+.base-view th,
+.bases-view td,
+.bases-view th {
+  text-align: left !important;
+}

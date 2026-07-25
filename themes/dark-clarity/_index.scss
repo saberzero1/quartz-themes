@@ -21,8 +21,7 @@
   --callout-fail: var(--color-red);
   --callout-important: var(--color-cyan);
   --callout-info: var(--color-blue);
-  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3)
-    var(--size-4-6);
+  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
   --callout-question: var(--color-orange);
   --callout-quote: 158, 158, 158;
   --callout-radius: var(--radius-s);
@@ -62,10 +61,7 @@
   --collapse-icon-color: var(--text-faint) !important;
   --collapse-icon-color-collapsed: var(--text-accent) !important;
   --graph-controls-width: 240px !important;
-  --graph-line: var(
-    --color-base-35,
-    var(--background-modifier-border-focus)
-  ) !important;
+  --graph-line: var(--color-base-35, var(--background-modifier-border-focus)) !important;
   --graph-node: var(--text-muted) !important;
   --graph-node-attachment: var(--color-yellow) !important;
   --graph-node-focused: var(--text-accent) !important;
@@ -113,8 +109,7 @@
   --callout-fail: var(--color-red);
   --callout-important: var(--color-cyan);
   --callout-info: var(--color-blue);
-  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3)
-    var(--size-4-6);
+  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
   --callout-question: var(--color-orange);
   --callout-quote: 158, 158, 158;
   --callout-radius: var(--radius-s);
@@ -154,10 +149,7 @@
   --collapse-icon-color: var(--text-faint) !important;
   --collapse-icon-color-collapsed: var(--text-accent) !important;
   --graph-controls-width: 240px !important;
-  --graph-line: var(
-    --color-base-35,
-    var(--background-modifier-border-focus)
-  ) !important;
+  --graph-line: var(--color-base-35, var(--background-modifier-border-focus)) !important;
   --graph-node: var(--text-muted) !important;
   --graph-node-attachment: var(--color-yellow) !important;
   --graph-node-focused: var(--text-accent) !important;
@@ -223,8 +215,7 @@ html {
   font-family: "Zhudou Sans Normal SS02";
   font-style: normal;
   font-weight: 400;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.12/fonts/dark-clarity/zhudou-sans-normal-ss02.woff2")
-    format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.12/fonts/dark-clarity/zhudou-sans-normal-ss02.woff2") format("woff2");
 }
 
 body {
@@ -267,9 +258,7 @@ body {
   .note-properties.metadata-container {
     background-color: var(--metadata-background);
     color: var(--text-muted);
-    font-family:
-      "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium,
-      sans-serif;
+    font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
     border: 0px solid rgb(228, 228, 228);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -290,9 +279,7 @@ body {
   .metadata-container {
     background-color: var(--metadata-background);
     color: var(--text-muted);
-    font-family:
-      "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium,
-      sans-serif;
+    font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
     border: 0px solid rgb(228, 228, 228);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -313,9 +300,7 @@ body {
   .note-properties-table {
     background-color: rgba(0, 0, 0, 0);
     color: rgb(92, 92, 92);
-    font-family:
-      "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium,
-      sans-serif;
+    font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
     border-color: rgb(92, 92, 92);
     border-width: 0px;
     border-top-left-radius: 0px;
@@ -337,9 +322,7 @@ body {
   .metadata-container .metadata-property {
     background-color: var(--metadata-property-background);
     color: rgb(92, 92, 92);
-    font-family:
-      "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium,
-      sans-serif;
+    font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
     border-color: rgb(92, 92, 92);
     border-width: 0px;
     border-top-left-radius: 6px;
@@ -418,9 +401,7 @@ body {
     filter: var(--link-external-filter);
     backdrop-filter: none;
     box-shadow: none;
-    font-family:
-      "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium,
-      sans-serif;
+    font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
     font-weight: var(--link-weight);
     outline: rgb(81, 179, 133) none 0px;
     text-decoration: underline;
@@ -449,9 +430,7 @@ body {
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
-    font-family:
-      "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium,
-      sans-serif;
+    font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
     font-weight: var(--link-weight);
     outline: rgb(81, 179, 133) none 0px;
     text-decoration: underline;
@@ -479,9 +458,7 @@ body {
     filter: var(--link-unresolved-filter);
     backdrop-filter: none;
     box-shadow: none;
-    font-family:
-      "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium,
-      sans-serif;
+    font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
     font-weight: var(--link-weight);
     outline: rgb(81, 179, 133) none 0px;
     text-decoration: oklch(0.653792 0.189218 293.559 / 0.3);
@@ -565,9 +542,7 @@ body {
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
-    font-family:
-      "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium,
-      sans-serif;
+    font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
     font-weight: 400;
     outline: rgb(92, 92, 92) none 0px;
     text-decoration: rgb(34, 34, 34);
@@ -595,9 +570,7 @@ body {
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
-    font-family:
-      "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium,
-      sans-serif;
+    font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
     font-weight: calc(var(--font-weight) + var(--bold-modifier));
     outline: rgb(0, 0, 0) none 0px;
     text-decoration: rgb(34, 34, 34);
@@ -625,9 +598,7 @@ body {
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
-    font-family:
-      "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium,
-      sans-serif;
+    font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
     font-weight: calc(var(--font-weight) + var(--bold-modifier));
     outline: rgb(0, 0, 0) none 0px;
     text-decoration: rgb(34, 34, 34);
@@ -655,9 +626,7 @@ body {
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
-    font-family:
-      "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium,
-      sans-serif;
+    font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
     font-weight: 400;
     outline: rgb(34, 34, 34) none 0px;
     text-decoration: rgb(34, 34, 34);
@@ -685,9 +654,7 @@ body {
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
-    font-family:
-      "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium,
-      sans-serif;
+    font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
     font-weight: 400;
     outline: rgb(34, 34, 34) none 0px;
     text-decoration: rgb(34, 34, 34);
@@ -790,9 +757,7 @@ body {
     background-color: rgba(0, 0, 0, 0);
     color: var(--italic-color);
     cursor: grab;
-    font-family:
-      "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium,
-      sans-serif;
+    font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
     font-weight: 600;
     outline: rgb(0, 0, 0) none 0px;
     text-decoration-color: rgb(0, 0, 0);
@@ -813,9 +778,7 @@ body {
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
-    font-family:
-      "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium,
-      sans-serif;
+    font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
     font-weight: 400;
     outline: rgb(34, 34, 34) none 0px;
     text-decoration: rgb(0, 0, 0);
@@ -842,9 +805,7 @@ body {
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
-    font-family:
-      "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium,
-      sans-serif;
+    font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
     font-weight: 400;
     outline: rgb(34, 34, 34) none 0px;
     text-decoration: line-through;
@@ -879,24 +840,9 @@ body {
     border-radius: 0px;
   }
 
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    .result-card:hover,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    .result-card:focus,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+  .search > .search-container > .search-space > .search-layout > .results-container .result-card:hover,
+  .search > .search-container > .search-space > .search-layout > .results-container .result-card:focus,
+  .search > .search-container > .search-space > .search-layout > .results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
     background-color: rgba(0, 0, 0, 0);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -905,18 +851,7 @@ body {
     color: var(--nav-item-color-active);
   }
 
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    .result-card:has(
-      ~ .result-card.focus:not(
-          :has(~ .result-card:hover, ~ .result-card:focus)
-        ),
-      ~ .result-card:focus,
-      ~ .result-card:hover
-    ) {
+  .search > .search-container > .search-space > .search-layout > .results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover) {
     background-color: rgba(0, 0, 0, 0);
     border-color: rgb(34, 34, 34);
     border-width: 0px;
@@ -945,22 +880,12 @@ body {
   }
 
   a.internal-link.tag-link,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    .result-card
-    > ul
-    > li
-    > .match-tag {
+  .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
     align-items: normal;
     background-color: var(--pill-background);
     color: var(--pill-color);
     display: flex;
-    font-family:
-      "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium,
-      sans-serif;
+    font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
     font-size: 14px;
     font-weight: var(--pill-weight);
     line-height: var(--line-height-tight);
@@ -993,9 +918,7 @@ body {
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
     color: var(--text-normal);
-    font-family:
-      "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium,
-      sans-serif;
+    font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
   }
 
   .search > .search-container > .search-space {
@@ -1015,16 +938,13 @@ body {
     border-top-right-radius: 5px;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
-    box-shadow: 0 0 0 var(--input-border-width-focus)
-      var(--background-modifier-border-focus);
+    box-shadow: 0 0 0 var(--input-border-width-focus) var(--background-modifier-border-focus);
   }
 
   .search > .search-container > .search-space > * {
     background-color: rgba(0, 0, 0, 0);
     color: rgb(34, 34, 34);
-    font-family:
-      "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium,
-      sans-serif;
+    font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
     font-weight: 400;
     outline: rgb(34, 34, 34) none 0px;
     text-decoration-color: rgb(34, 34, 34);
@@ -1046,20 +966,11 @@ body {
     border-bottom-right-radius: 0px;
   }
 
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container {
+  .search > .search-container > .search-space > .search-layout > .results-container {
     color: rgb(34, 34, 34);
   }
 
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    .result-card {
+  .search > .search-container > .search-space > .search-layout > .results-container .result-card {
     border-color: rgb(34, 34, 34);
     border-width: 0px;
     border-top-left-radius: 0px;
@@ -1076,90 +987,30 @@ body {
     border-radius: 0px;
   }
 
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card:hover,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card:focus,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover,
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus,
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
     color: var(--nav-item-color-active);
     font-weight: var(--nav-item-weight);
     background-color: rgba(0, 0, 0, 0);
   }
 
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card:hover
-    .card-title,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card:hover
-    .card-description,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card:focus
-    .card-title,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card:focus
-    .card-description,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))
-    .card-title,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))
-    .card-description {
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title,
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description,
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title,
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description,
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-title,
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-description {
     color: var(--nav-item-color-active);
   }
 
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .preview-container {
+  .search > .search-container > .search-space > .search-layout > .preview-container {
     color: rgb(92, 92, 92);
     background-color: rgba(0, 0, 0, 0);
     font-weight: 400;
   }
 
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card:hover {
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover {
     background-color: rgba(0, 0, 0, 0);
     color: rgb(34, 34, 34);
     border-color: rgb(34, 34, 34);
@@ -1181,8 +1032,7 @@ body {
     letter-spacing: var(--h1-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1216,8 +1066,7 @@ body {
     letter-spacing: var(--h2-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1251,8 +1100,7 @@ body {
     letter-spacing: var(--h3-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1286,8 +1134,7 @@ body {
     letter-spacing: var(--h4-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1321,8 +1168,7 @@ body {
     letter-spacing: var(--h5-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1356,8 +1202,7 @@ body {
     letter-spacing: var(--h6-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1392,8 +1237,7 @@ body {
     letter-spacing: -0.38832px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1766,8 +1610,7 @@ body {
 
   input:focus {
     border-color: rgb(228, 228, 228);
-    box-shadow: 0 0 0 var(--input-border-width-focus)
-      var(--background-modifier-border-focus);
+    box-shadow: 0 0 0 var(--input-border-width-focus) var(--background-modifier-border-focus);
   }
 
   h1.article-title {
@@ -1869,9 +1712,7 @@ body {
     margin-inline-end: 0px;
     margin-inline-start: 0px;
     font-size: 16px;
-    font-family:
-      "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium,
-      sans-serif;
+    font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1891,9 +1732,7 @@ body {
   dd {
     color: rgb(34, 34, 34);
     font-size: 16px;
-    font-family:
-      "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium,
-      sans-serif;
+    font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
     margin: 0px 0px 0px 40px;
     margin-block-end: 0px;
     margin-block-start: 0px;
@@ -1983,9 +1822,7 @@ body {
   figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
     background-color: var(--code-background);
     color: rgb(34, 34, 34);
-    font-family:
-      "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium,
-      sans-serif;
+    font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
     border: 0px solid rgb(228, 228, 228);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -2175,9 +2012,7 @@ body {
     background-color: var(--blockquote-background-color);
     border-inline-start: 3px solid rgb(61, 154, 216);
     color: var(--quote-color);
-    font-family:
-      "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium,
-      sans-serif;
+    font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
     font-weight: 400;
     font-style: var(--blockquote-font-style);
     line-height: 24px;
@@ -2362,15 +2197,11 @@ body {
     text-align: center;
     white-space-collapse: collapse;
     text-wrap-mode: wrap;
-    font-family:
-      "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium,
-      sans-serif;
+    font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
   }
 
   .katex-display > .katex > .katex-html {
-    font-family:
-      "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium,
-      sans-serif;
+    font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
   }
 
   .katex > .katex-html {
@@ -2379,15 +2210,12 @@ body {
 
   h2.page-title {
     color: var(--text-normal);
-    font-family:
-      "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium,
-      sans-serif;
+    font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
     font-size: 13px;
     font-weight: 400;
     line-height: 16.9px;
     background-color: rgba(0, 0, 0, 0);
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -2459,9 +2287,7 @@ body {
     opacity: 1;
     background-color: var(--status-bar-background);
     color: var(--status-bar-text-color);
-    font-family:
-      "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium,
-      sans-serif;
+    font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
     font-size: var(--status-bar-font-size);
     text-align: start;
     padding-top: 0px;
@@ -2569,8 +2395,7 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout .callout-title > .callout-title-inner > p {
@@ -2581,8 +2406,7 @@ body {
   .callout > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(34, 34, 34);
     padding: 0px;
     padding-block-end: 0px;
@@ -2593,14 +2417,9 @@ body {
 
   .callout[data-callout="note"] {
     --callout-color: var(--callout-default);
-    background-color: color-mix(
-      in oklch,
-      var(--callout-color) 10%,
-      transparent
-    );
+    background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
     background-image: none;
-    background: oklch(0.550587 0.189745 256.787 / 0.1) none repeat scroll 0%
-      0% / auto padding-box border-box;
+    background: oklch(0.550587 0.189745 256.787 / 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(34, 34, 34);
     mix-blend-mode: normal;
     border: 0px solid oklch(0.550587 0.189745 256.787 / 0.25);
@@ -2634,8 +2453,7 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout[data-callout="note"] .callout-title > .callout-title-inner > p {
@@ -2646,8 +2464,7 @@ body {
   .callout[data-callout="note"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(34, 34, 34);
     padding: 0px;
     padding-block-end: 0px;
@@ -2658,14 +2475,9 @@ body {
 
   .callout[data-callout="abstract"] {
     --callout-color: var(--callout-summary);
-    background-color: color-mix(
-      in oklch,
-      var(--callout-color) 10%,
-      transparent
-    );
+    background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
     background-image: none;
-    background: oklch(0.727476 0.124634 192.763 / 0.1) none repeat scroll 0%
-      0% / auto padding-box border-box;
+    background: oklch(0.727476 0.124634 192.763 / 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(34, 34, 34);
     mix-blend-mode: normal;
     border: 0px solid oklch(0.727476 0.124634 192.763 / 0.25);
@@ -2699,8 +2511,7 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout[data-callout="abstract"] .callout-title > .callout-title-inner > p {
@@ -2711,8 +2522,7 @@ body {
   .callout[data-callout="abstract"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(34, 34, 34);
     padding: 0px;
     padding-block-end: 0px;
@@ -2723,14 +2533,9 @@ body {
 
   .callout[data-callout="info"] {
     --callout-color: var(--callout-info);
-    background-color: color-mix(
-      in oklch,
-      var(--callout-color) 10%,
-      transparent
-    );
+    background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
     background-image: none;
-    background: oklch(0.550587 0.189745 256.787 / 0.1) none repeat scroll 0%
-      0% / auto padding-box border-box;
+    background: oklch(0.550587 0.189745 256.787 / 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(34, 34, 34);
     mix-blend-mode: normal;
     border: 0px solid oklch(0.550587 0.189745 256.787 / 0.25);
@@ -2764,8 +2569,7 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout[data-callout="info"] .callout-title > .callout-title-inner > p {
@@ -2776,8 +2580,7 @@ body {
   .callout[data-callout="info"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(34, 34, 34);
     padding: 0px;
     padding-block-end: 0px;
@@ -2788,14 +2591,9 @@ body {
 
   .callout[data-callout="todo"] {
     --callout-color: var(--callout-todo);
-    background-color: color-mix(
-      in oklch,
-      var(--callout-color) 10%,
-      transparent
-    );
+    background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
     background-image: none;
-    background: oklch(0.550587 0.189745 256.787 / 0.1) none repeat scroll 0%
-      0% / auto padding-box border-box;
+    background: oklch(0.550587 0.189745 256.787 / 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(34, 34, 34);
     mix-blend-mode: normal;
     border: 0px solid oklch(0.550587 0.189745 256.787 / 0.25);
@@ -2829,8 +2627,7 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout[data-callout="todo"] .callout-title > .callout-title-inner > p {
@@ -2841,8 +2638,7 @@ body {
   .callout[data-callout="todo"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(34, 34, 34);
     padding: 0px;
     padding-block-end: 0px;
@@ -2853,14 +2649,9 @@ body {
 
   .callout[data-callout="tip"] {
     --callout-color: var(--callout-tip);
-    background-color: color-mix(
-      in oklch,
-      var(--callout-color) 10%,
-      transparent
-    );
+    background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
     background-image: none;
-    background: oklch(0.727476 0.124634 192.763 / 0.1) none repeat scroll 0%
-      0% / auto padding-box border-box;
+    background: oklch(0.727476 0.124634 192.763 / 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(34, 34, 34);
     mix-blend-mode: normal;
     border: 0px solid oklch(0.727476 0.124634 192.763 / 0.25);
@@ -2894,8 +2685,7 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout[data-callout="tip"] .callout-title > .callout-title-inner > p {
@@ -2906,8 +2696,7 @@ body {
   .callout[data-callout="tip"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(34, 34, 34);
     padding: 0px;
     padding-block-end: 0px;
@@ -2918,14 +2707,9 @@ body {
 
   .callout[data-callout="success"] {
     --callout-color: var(--callout-success);
-    background-color: color-mix(
-      in oklch,
-      var(--callout-color) 10%,
-      transparent
-    );
+    background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
     background-image: none;
-    background: oklch(0.686205 0.194562 148.477 / 0.1) none repeat scroll 0%
-      0% / auto padding-box border-box;
+    background: oklch(0.686205 0.194562 148.477 / 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(34, 34, 34);
     mix-blend-mode: normal;
     border: 0px solid oklch(0.686205 0.194562 148.477 / 0.25);
@@ -2959,8 +2743,7 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout[data-callout="success"] .callout-title > .callout-title-inner > p {
@@ -2971,8 +2754,7 @@ body {
   .callout[data-callout="success"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(34, 34, 34);
     padding: 0px;
     padding-block-end: 0px;
@@ -2983,14 +2765,9 @@ body {
 
   .callout[data-callout="question"] {
     --callout-color: var(--callout-question);
-    background-color: color-mix(
-      in oklch,
-      var(--callout-color) 10%,
-      transparent
-    );
+    background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
     background-image: none;
-    background: oklch(0.688771 0.175867 52.5446 / 0.1) none repeat scroll 0%
-      0% / auto padding-box border-box;
+    background: oklch(0.688771 0.175867 52.5446 / 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(34, 34, 34);
     mix-blend-mode: normal;
     border: 0px solid oklch(0.688771 0.175867 52.5446 / 0.25);
@@ -3024,8 +2801,7 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout[data-callout="question"] .callout-title > .callout-title-inner > p {
@@ -3036,8 +2812,7 @@ body {
   .callout[data-callout="question"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(34, 34, 34);
     padding: 0px;
     padding-block-end: 0px;
@@ -3048,14 +2823,9 @@ body {
 
   .callout[data-callout="warning"] {
     --callout-color: var(--callout-warning);
-    background-color: color-mix(
-      in oklch,
-      var(--callout-color) 10%,
-      transparent
-    );
+    background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
     background-image: none;
-    background: oklch(0.688771 0.175867 52.5446 / 0.1) none repeat scroll 0%
-      0% / auto padding-box border-box;
+    background: oklch(0.688771 0.175867 52.5446 / 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(34, 34, 34);
     mix-blend-mode: normal;
     border: 0px solid oklch(0.688771 0.175867 52.5446 / 0.25);
@@ -3089,8 +2859,7 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout[data-callout="warning"] .callout-title > .callout-title-inner > p {
@@ -3101,8 +2870,7 @@ body {
   .callout[data-callout="warning"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(34, 34, 34);
     padding: 0px;
     padding-block-end: 0px;
@@ -3113,14 +2881,9 @@ body {
 
   .callout[data-callout="danger"] {
     --callout-color: var(--callout-error);
-    background-color: color-mix(
-      in oklch,
-      var(--callout-color) 10%,
-      transparent
-    );
+    background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
     background-image: none;
-    background: oklch(0.611475 0.216957 20.8417 / 0.1) none repeat scroll 0%
-      0% / auto padding-box border-box;
+    background: oklch(0.611475 0.216957 20.8417 / 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(34, 34, 34);
     mix-blend-mode: normal;
     border: 0px solid oklch(0.611475 0.216957 20.8417 / 0.25);
@@ -3154,8 +2917,7 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout[data-callout="danger"] .callout-title > .callout-title-inner > p {
@@ -3166,8 +2928,7 @@ body {
   .callout[data-callout="danger"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(34, 34, 34);
     padding: 0px;
     padding-block-end: 0px;
@@ -3178,14 +2939,9 @@ body {
 
   .callout[data-callout="failure"] {
     --callout-color: var(--callout-fail);
-    background-color: color-mix(
-      in oklch,
-      var(--callout-color) 10%,
-      transparent
-    );
+    background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
     background-image: none;
-    background: oklch(0.611475 0.216957 20.8417 / 0.1) none repeat scroll 0%
-      0% / auto padding-box border-box;
+    background: oklch(0.611475 0.216957 20.8417 / 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(34, 34, 34);
     mix-blend-mode: normal;
     border: 0px solid oklch(0.611475 0.216957 20.8417 / 0.25);
@@ -3219,8 +2975,7 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout[data-callout="failure"] .callout-title > .callout-title-inner > p {
@@ -3231,8 +2986,7 @@ body {
   .callout[data-callout="failure"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(34, 34, 34);
     padding: 0px;
     padding-block-end: 0px;
@@ -3243,14 +2997,9 @@ body {
 
   .callout[data-callout="bug"] {
     --callout-color: var(--callout-bug);
-    background-color: color-mix(
-      in oklch,
-      var(--callout-color) 10%,
-      transparent
-    );
+    background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
     background-image: none;
-    background: oklch(0.611475 0.216957 20.8417 / 0.1) none repeat scroll 0%
-      0% / auto padding-box border-box;
+    background: oklch(0.611475 0.216957 20.8417 / 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(34, 34, 34);
     mix-blend-mode: normal;
     border: 0px solid oklch(0.611475 0.216957 20.8417 / 0.25);
@@ -3284,8 +3033,7 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout[data-callout="bug"] .callout-title > .callout-title-inner > p {
@@ -3296,8 +3044,7 @@ body {
   .callout[data-callout="bug"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(34, 34, 34);
     padding: 0px;
     padding-block-end: 0px;
@@ -3308,14 +3055,9 @@ body {
 
   .callout[data-callout="example"] {
     --callout-color: var(--callout-example);
-    background-color: color-mix(
-      in oklch,
-      var(--callout-color) 10%,
-      transparent
-    );
+    background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
     background-image: none;
-    background: oklch(0.567895 0.221884 288.456 / 0.1) none repeat scroll 0%
-      0% / auto padding-box border-box;
+    background: oklch(0.567895 0.221884 288.456 / 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(34, 34, 34);
     mix-blend-mode: normal;
     border: 0px solid oklch(0.567895 0.221884 288.456 / 0.25);
@@ -3349,8 +3091,7 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout[data-callout="example"] .callout-title > .callout-title-inner > p {
@@ -3361,8 +3102,7 @@ body {
   .callout[data-callout="example"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(34, 34, 34);
     padding: 0px;
     padding-block-end: 0px;
@@ -3373,14 +3113,9 @@ body {
 
   .callout[data-callout="quote"] {
     --callout-color: var(--callout-quote);
-    background-color: color-mix(
-      in oklch,
-      var(--callout-color) 10%,
-      transparent
-    );
+    background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
     background-image: none;
-    background: oklch(0.699256 0.0000347234 none / 0.1) none repeat scroll 0%
-      0% / auto padding-box border-box;
+    background: oklch(0.699256 0.0000347234 none / 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(34, 34, 34);
     mix-blend-mode: normal;
     border: 0px solid oklch(0.699256 0.0000347234 none / 0.25);
@@ -3414,8 +3149,7 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout[data-callout="quote"] .callout-title > .callout-title-inner > p {
@@ -3426,8 +3160,7 @@ body {
   .callout[data-callout="quote"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(34, 34, 34);
     padding: 0px;
     padding-block-end: 0px;
@@ -3440,9 +3173,7 @@ body {
     background-color: rgba(0, 0, 0, 0);
     border-collapse: separate;
     color: rgb(34, 34, 34);
-    font-family:
-      "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium,
-      sans-serif;
+    font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
     table-layout: auto;
     text-align: start;
     border: 0px rgb(128, 128, 128);
@@ -3469,9 +3200,7 @@ body {
   thead {
     background-color: rgba(0, 0, 0, 0);
     color: rgb(34, 34, 34);
-    font-family:
-      "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium,
-      sans-serif;
+    font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
     border: 0px rgb(128, 128, 128);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -3486,9 +3215,7 @@ body {
   tbody {
     background-color: rgba(0, 0, 0, 0);
     color: rgb(34, 34, 34);
-    font-family:
-      "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium,
-      sans-serif;
+    font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
   }
 
   th {
@@ -3547,9 +3274,7 @@ body {
   tr {
     background-color: var(--table-header-background);
     color: rgb(34, 34, 34);
-    font-family:
-      "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium,
-      sans-serif;
+    font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
     border: 0px rgb(128, 128, 128);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -3751,17 +3476,13 @@ body {
 
   .nav-files-container .nav-file-title {
     color: rgb(117, 126, 138);
-    font-family:
-      "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium,
-      sans-serif;
+    font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
     font-weight: 400;
   }
 
   .nav-files-container .nav-file-title.is-active {
     color: var(--nav-item-color);
-    font-family:
-      "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium,
-      sans-serif;
+    font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
     border-color: rgb(117, 126, 138);
     border-width: 0px;
     border-top-left-radius: 4px;
@@ -3772,17 +3493,13 @@ body {
 
   .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
     color: var(--nav-item-color);
-    font-family:
-      "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium,
-      sans-serif;
+    font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
     font-weight: var(--nav-item-weight);
   }
 
   .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
     color: var(--nav-item-color);
-    font-family:
-      "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium,
-      sans-serif;
+    font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
     font-weight: var(--nav-item-weight);
   }
 
@@ -3798,18 +3515,14 @@ body {
 
   .explorer .folder-container > div {
     color: rgb(117, 126, 138);
-    font-family:
-      "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium,
-      sans-serif;
+    font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
     font-weight: 400;
   }
 
   .nav-files-container {
     background-color: rgba(0, 0, 0, 0);
     color: rgb(34, 34, 34);
-    font-family:
-      "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium,
-      sans-serif;
+    font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
   }
 
   .bases-table {
@@ -3916,9 +3629,7 @@ body {
 
   .recent-notes > h3 {
     color: rgb(34, 34, 34);
-    font-family:
-      "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium,
-      sans-serif;
+    font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
     font-weight: 400;
   }
 
@@ -3939,9 +3650,7 @@ body {
 
   .recent-notes > ul.recent-ul > li .section > .meta {
     color: rgb(117, 126, 138);
-    font-family:
-      "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium,
-      sans-serif;
+    font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
   }
 
   ul.section-ul {
@@ -3970,9 +3679,7 @@ body {
 
   li.section-li > .section .meta {
     color: rgb(117, 126, 138);
-    font-family:
-      "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium,
-      sans-serif;
+    font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
   }
 
   .darkmode {
@@ -4005,9 +3712,7 @@ body {
 
   .breadcrumb-element p {
     color: var(--text-faint);
-    font-family:
-      "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium,
-      sans-serif;
+    font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
   }
 
   #stacked-pages-container.binder-active {
@@ -4025,23 +3730,13 @@ body {
 
   .callout[data-callout="folder"] {
     color: rgb(34, 34, 34);
-    --font-monospace:
-      "JetBrains Mono NL", "JetBrains Mono", Consolas, Monaco,
-      "等距更纱黑体 SC", monospace;
+    --font-monospace: "JetBrains Mono NL", "JetBrains Mono", Consolas, Monaco, "等距更纱黑体 SC", monospace;
     --callout-color: var(--callout-default);
     --list-indent: 0em;
-    --table-border-color: color-mix(
-      in oklch,
-      var(--callout-color) 25%,
-      var(--background-primary) 50%
-    );
+    --table-border-color: color-mix(in oklch, var(--callout-color) 25%, var(--background-primary) 50%);
     -webkit-background-clip: border-box;
     -webkit-box-decoration-break: slice;
-    background-color: color-mix(
-      in oklch,
-      var(--callout-color) 10%,
-      transparent
-    );
+    background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
     background-position: 0% 0%;
     background-repeat: repeat;
     border-bottom-left-radius: 4px;
@@ -4053,9 +3748,7 @@ body {
     border-top-right-radius: 4px;
     border: 0px solid oklch(0.550587 0.189745 256.787 / 0.25);
     box-decoration-break: slice;
-    font-family:
-      "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium,
-      sans-serif;
+    font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
     line-height: 24px;
     margin-block: 0px;
     margin-block-end: 0px;
@@ -4078,670 +3771,469 @@ body {
     color: rgb(34, 34, 34);
     margin-inline-start: 0px;
     margin-left: 0px;
-    --font-monospace:
-      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-      "Source Code Pro", monospace;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
   }
 
   li.task-list-item[data-task=","] {
     color: rgb(34, 34, 34);
     margin-inline-start: 0px;
     margin-left: 0px;
-    --font-monospace:
-      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-      "Source Code Pro", monospace;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
   }
 
   li.task-list-item[data-task=";"] {
     color: rgb(34, 34, 34);
     margin-inline-start: 0px;
     margin-left: 0px;
-    --font-monospace:
-      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-      "Source Code Pro", monospace;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
   }
 
   li.task-list-item[data-task=":"] {
     color: rgb(34, 34, 34);
     margin-inline-start: 0px;
     margin-left: 0px;
-    --font-monospace:
-      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-      "Source Code Pro", monospace;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
   }
 
   li.task-list-item[data-task="."] {
     color: rgb(34, 34, 34);
     margin-inline-start: 0px;
     margin-left: 0px;
-    --font-monospace:
-      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-      "Source Code Pro", monospace;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
   }
 
   li.task-list-item[data-task="'"] {
     color: rgb(34, 34, 34);
     margin-inline-start: 0px;
     margin-left: 0px;
-    --font-monospace:
-      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-      "Source Code Pro", monospace;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
   }
 
   li.task-list-item[data-task="@"] {
     color: rgb(34, 34, 34);
     margin-inline-start: 0px;
     margin-left: 0px;
-    --font-monospace:
-      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-      "Source Code Pro", monospace;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
   }
 
   li.task-list-item[data-task="&"] {
     color: rgb(34, 34, 34);
     margin-inline-start: 0px;
     margin-left: 0px;
-    --font-monospace:
-      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-      "Source Code Pro", monospace;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
   }
 
   li.task-list-item[data-task="#"] {
     color: rgb(34, 34, 34);
     margin-inline-start: 0px;
     margin-left: 0px;
-    --font-monospace:
-      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-      "Source Code Pro", monospace;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
   }
 
   li.task-list-item[data-task="%"] {
     color: rgb(34, 34, 34);
     margin-inline-start: 0px;
     margin-left: 0px;
-    --font-monospace:
-      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-      "Source Code Pro", monospace;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
   }
 
   li.task-list-item[data-task="`"] {
     color: rgb(34, 34, 34);
     margin-inline-start: 0px;
     margin-left: 0px;
-    --font-monospace:
-      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-      "Source Code Pro", monospace;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
   }
 
   li.task-list-item[data-task="+"] {
     color: rgb(34, 34, 34);
     margin-inline-start: 0px;
     margin-left: 0px;
-    --font-monospace:
-      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-      "Source Code Pro", monospace;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
   }
 
   li.task-list-item[data-task="<"] {
     color: rgb(34, 34, 34);
     margin-inline-start: 0px;
     margin-left: 0px;
-    --font-monospace:
-      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-      "Source Code Pro", monospace;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
   }
 
   li.task-list-item[data-task="="] {
     color: rgb(34, 34, 34);
     margin-inline-start: 0px;
     margin-left: 0px;
-    --font-monospace:
-      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-      "Source Code Pro", monospace;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
   }
 
   li.task-list-item[data-task="|"] {
     color: rgb(34, 34, 34);
     margin-inline-start: 0px;
     margin-left: 0px;
-    --font-monospace:
-      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-      "Source Code Pro", monospace;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
   }
 
   li.task-list-item[data-task="~"] {
     color: rgb(34, 34, 34);
     margin-inline-start: 0px;
     margin-left: 0px;
-    --font-monospace:
-      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-      "Source Code Pro", monospace;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
   }
 
   li.task-list-item[data-task="$"] {
     color: rgb(34, 34, 34);
     margin-inline-start: 0px;
     margin-left: 0px;
-    --font-monospace:
-      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-      "Source Code Pro", monospace;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
   }
 
   li.task-list-item[data-task="0"] {
     color: rgb(34, 34, 34);
     margin-inline-start: 0px;
     margin-left: 0px;
-    --font-monospace:
-      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-      "Source Code Pro", monospace;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
   }
 
   li.task-list-item[data-task="1"] {
     color: rgb(34, 34, 34);
     margin-inline-start: 0px;
     margin-left: 0px;
-    --font-monospace:
-      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-      "Source Code Pro", monospace;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
   }
 
   li.task-list-item[data-task="2"] {
     color: rgb(34, 34, 34);
     margin-inline-start: 0px;
     margin-left: 0px;
-    --font-monospace:
-      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-      "Source Code Pro", monospace;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
   }
 
   li.task-list-item[data-task="3"] {
     color: rgb(34, 34, 34);
     margin-inline-start: 0px;
     margin-left: 0px;
-    --font-monospace:
-      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-      "Source Code Pro", monospace;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
   }
 
   li.task-list-item[data-task="4"] {
     color: rgb(34, 34, 34);
     margin-inline-start: 0px;
     margin-left: 0px;
-    --font-monospace:
-      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-      "Source Code Pro", monospace;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
   }
 
   li.task-list-item[data-task="5"] {
     color: rgb(34, 34, 34);
     margin-inline-start: 0px;
     margin-left: 0px;
-    --font-monospace:
-      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-      "Source Code Pro", monospace;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
   }
 
   li.task-list-item[data-task="6"] {
     color: rgb(34, 34, 34);
     margin-inline-start: 0px;
     margin-left: 0px;
-    --font-monospace:
-      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-      "Source Code Pro", monospace;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
   }
 
   li.task-list-item[data-task="7"] {
     color: rgb(34, 34, 34);
     margin-inline-start: 0px;
     margin-left: 0px;
-    --font-monospace:
-      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-      "Source Code Pro", monospace;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
   }
 
   li.task-list-item[data-task="8"] {
     color: rgb(34, 34, 34);
     margin-inline-start: 0px;
     margin-left: 0px;
-    --font-monospace:
-      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-      "Source Code Pro", monospace;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
   }
 
   li.task-list-item[data-task="9"] {
     color: rgb(34, 34, 34);
     margin-inline-start: 0px;
     margin-left: 0px;
-    --font-monospace:
-      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-      "Source Code Pro", monospace;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
   }
 
   li.task-list-item[data-task="a"] {
     color: rgb(34, 34, 34);
     margin-inline-start: 0px;
     margin-left: 0px;
-    --font-monospace:
-      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-      "Source Code Pro", monospace;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
   }
 
   li.task-list-item[data-task="A"] {
     color: rgb(34, 34, 34);
     margin-inline-start: 0px;
     margin-left: 0px;
-    --font-monospace:
-      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-      "Source Code Pro", monospace;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
   }
 
   li.task-list-item[data-task="B"] {
     color: rgb(34, 34, 34);
     margin-inline-start: 0px;
     margin-left: 0px;
-    --font-monospace:
-      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-      "Source Code Pro", monospace;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
   }
 
   li.task-list-item[data-task="C"] {
     color: rgb(34, 34, 34);
     margin-inline-start: 0px;
     margin-left: 0px;
-    --font-monospace:
-      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-      "Source Code Pro", monospace;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
   }
 
   li.task-list-item[data-task="D"] {
     color: rgb(34, 34, 34);
     margin-inline-start: 0px;
     margin-left: 0px;
-    --font-monospace:
-      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-      "Source Code Pro", monospace;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
   }
 
   li.task-list-item[data-task="e"] {
     color: rgb(34, 34, 34);
     margin-inline-start: 0px;
     margin-left: 0px;
-    --font-monospace:
-      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-      "Source Code Pro", monospace;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
   }
 
   li.task-list-item[data-task="E"] {
     color: rgb(34, 34, 34);
     margin-inline-start: 0px;
     margin-left: 0px;
-    --font-monospace:
-      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-      "Source Code Pro", monospace;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
   }
 
   li.task-list-item[data-task="F"] {
     color: rgb(34, 34, 34);
     margin-inline-start: 0px;
     margin-left: 0px;
-    --font-monospace:
-      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-      "Source Code Pro", monospace;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
   }
 
   li.task-list-item[data-task="g"] {
     color: rgb(34, 34, 34);
     margin-inline-start: 0px;
     margin-left: 0px;
-    --font-monospace:
-      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-      "Source Code Pro", monospace;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
   }
 
   li.task-list-item[data-task="G"] {
     color: rgb(34, 34, 34);
     margin-inline-start: 0px;
     margin-left: 0px;
-    --font-monospace:
-      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-      "Source Code Pro", monospace;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
   }
 
   li.task-list-item[data-task="h"] {
     color: rgb(34, 34, 34);
     margin-inline-start: 0px;
     margin-left: 0px;
-    --font-monospace:
-      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-      "Source Code Pro", monospace;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
   }
 
   li.task-list-item[data-task="H"] {
     color: rgb(34, 34, 34);
     margin-inline-start: 0px;
     margin-left: 0px;
-    --font-monospace:
-      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-      "Source Code Pro", monospace;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
   }
 
   li.task-list-item[data-task="j"] {
     color: rgb(34, 34, 34);
     margin-inline-start: 0px;
     margin-left: 0px;
-    --font-monospace:
-      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-      "Source Code Pro", monospace;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
   }
 
   li.task-list-item[data-task="J"] {
     color: rgb(34, 34, 34);
     margin-inline-start: 0px;
     margin-left: 0px;
-    --font-monospace:
-      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-      "Source Code Pro", monospace;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
   }
 
   li.task-list-item[data-task="K"] {
     color: rgb(34, 34, 34);
     margin-inline-start: 0px;
     margin-left: 0px;
-    --font-monospace:
-      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-      "Source Code Pro", monospace;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
   }
 
   li.task-list-item[data-task="L"] {
     color: rgb(34, 34, 34);
     margin-inline-start: 0px;
     margin-left: 0px;
-    --font-monospace:
-      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-      "Source Code Pro", monospace;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
   }
 
   li.task-list-item[data-task="m"] {
     color: rgb(34, 34, 34);
     margin-inline-start: 0px;
     margin-left: 0px;
-    --font-monospace:
-      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-      "Source Code Pro", monospace;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
   }
 
   li.task-list-item[data-task="M"] {
     color: rgb(34, 34, 34);
     margin-inline-start: 0px;
     margin-left: 0px;
-    --font-monospace:
-      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-      "Source Code Pro", monospace;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
   }
 
   li.task-list-item[data-task="n"] {
     color: rgb(34, 34, 34);
     margin-inline-start: 0px;
     margin-left: 0px;
-    --font-monospace:
-      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-      "Source Code Pro", monospace;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
   }
 
   li.task-list-item[data-task="N"] {
     color: rgb(34, 34, 34);
     margin-inline-start: 0px;
     margin-left: 0px;
-    --font-monospace:
-      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-      "Source Code Pro", monospace;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
   }
 
   li.task-list-item[data-task="o"] {
     color: rgb(34, 34, 34);
     margin-inline-start: 0px;
     margin-left: 0px;
-    --font-monospace:
-      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-      "Source Code Pro", monospace;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
   }
 
   li.task-list-item[data-task="O"] {
     color: rgb(34, 34, 34);
     margin-inline-start: 0px;
     margin-left: 0px;
-    --font-monospace:
-      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-      "Source Code Pro", monospace;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
   }
 
   li.task-list-item[data-task="P"] {
     color: rgb(34, 34, 34);
     margin-inline-start: 0px;
     margin-left: 0px;
-    --font-monospace:
-      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-      "Source Code Pro", monospace;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
   }
 
   li.task-list-item[data-task="q"] {
     color: rgb(34, 34, 34);
     margin-inline-start: 0px;
     margin-left: 0px;
-    --font-monospace:
-      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-      "Source Code Pro", monospace;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
   }
 
   li.task-list-item[data-task="Q"] {
     color: rgb(34, 34, 34);
     margin-inline-start: 0px;
     margin-left: 0px;
-    --font-monospace:
-      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-      "Source Code Pro", monospace;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
   }
 
   li.task-list-item[data-task="r"] {
     color: rgb(34, 34, 34);
     margin-inline-start: 0px;
     margin-left: 0px;
-    --font-monospace:
-      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-      "Source Code Pro", monospace;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
   }
 
   li.task-list-item[data-task="R"] {
     color: rgb(34, 34, 34);
     margin-inline-start: 0px;
     margin-left: 0px;
-    --font-monospace:
-      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-      "Source Code Pro", monospace;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
   }
 
   li.task-list-item[data-task="s"] {
     color: rgb(34, 34, 34);
     margin-inline-start: 0px;
     margin-left: 0px;
-    --font-monospace:
-      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-      "Source Code Pro", monospace;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
   }
 
   li.task-list-item[data-task="t"] {
     color: rgb(34, 34, 34);
     margin-inline-start: 0px;
     margin-left: 0px;
-    --font-monospace:
-      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-      "Source Code Pro", monospace;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
   }
 
   li.task-list-item[data-task="T"] {
     color: rgb(34, 34, 34);
     margin-inline-start: 0px;
     margin-left: 0px;
-    --font-monospace:
-      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-      "Source Code Pro", monospace;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
   }
 
   li.task-list-item[data-task="U"] {
     color: rgb(34, 34, 34);
     margin-inline-start: 0px;
     margin-left: 0px;
-    --font-monospace:
-      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-      "Source Code Pro", monospace;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
   }
 
   li.task-list-item[data-task="v"] {
     color: rgb(34, 34, 34);
     margin-inline-start: 0px;
     margin-left: 0px;
-    --font-monospace:
-      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-      "Source Code Pro", monospace;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
   }
 
   li.task-list-item[data-task="V"] {
     color: rgb(34, 34, 34);
     margin-inline-start: 0px;
     margin-left: 0px;
-    --font-monospace:
-      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-      "Source Code Pro", monospace;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
   }
 
   li.task-list-item[data-task="W"] {
     color: rgb(34, 34, 34);
     margin-inline-start: 0px;
     margin-left: 0px;
-    --font-monospace:
-      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-      "Source Code Pro", monospace;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
   }
 
   li.task-list-item[data-task="x"] {
     color: rgb(92, 92, 92);
     margin-inline-start: 0px;
     margin-left: 0px;
-    --font-monospace:
-      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-      "Source Code Pro", monospace;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
   }
 
   li.task-list-item[data-task="X"] {
     color: rgb(92, 92, 92);
     margin-inline-start: 0px;
     margin-left: 0px;
-    --font-monospace:
-      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-      "Source Code Pro", monospace;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
   }
 
   li.task-list-item[data-task="y"] {
     color: rgb(34, 34, 34);
     margin-inline-start: 0px;
     margin-left: 0px;
-    --font-monospace:
-      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-      "Source Code Pro", monospace;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
   }
 
   li.task-list-item[data-task="Y"] {
     color: rgb(34, 34, 34);
     margin-inline-start: 0px;
     margin-left: 0px;
-    --font-monospace:
-      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-      "Source Code Pro", monospace;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
   }
 
   li.task-list-item[data-task="z"] {
     color: rgb(34, 34, 34);
     margin-inline-start: 0px;
     margin-left: 0px;
-    --font-monospace:
-      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-      "Source Code Pro", monospace;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
   }
 
   li.task-list-item[data-task="Z"] {
     color: rgb(34, 34, 34);
     margin-inline-start: 0px;
     margin-left: 0px;
-    --font-monospace:
-      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-      "Source Code Pro", monospace;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
   }
 
   html {
@@ -4753,9 +4245,7 @@ body {
     --file-line-width: 1000px;
     --folder-alpha: 0.2;
     --folder-color0: hsl(214 21% 31% / var(--folder-alpha));
-    --font-monospace:
-      "JetBrains Mono NL", "JetBrains Mono", Consolas, Monaco,
-      "等距更纱黑体 SC", monospace;
+    --font-monospace: "JetBrains Mono NL", "JetBrains Mono", Consolas, Monaco, "等距更纱黑体 SC", monospace;
     --font-weight-title: 600;
     --gray-1: #5c6370;
     --gray-2: #abb2bf;
@@ -5464,9 +4954,7 @@ html[saved-theme="dark"] {
     .note-properties.metadata-container {
       background-color: var(--metadata-background);
       color: var(--text-muted);
-      font-family:
-        "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium,
-        sans-serif;
+      font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
       border: 0px solid rgb(66, 73, 88);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
@@ -5487,9 +4975,7 @@ html[saved-theme="dark"] {
     .metadata-container {
       background-color: var(--metadata-background);
       color: var(--text-muted);
-      font-family:
-        "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium,
-        sans-serif;
+      font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
       border: 0px solid rgb(66, 73, 88);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
@@ -5510,9 +4996,7 @@ html[saved-theme="dark"] {
     .note-properties-table {
       background-color: rgba(0, 0, 0, 0);
       color: rgb(187, 187, 187);
-      font-family:
-        "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium,
-        sans-serif;
+      font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
       border-color: rgb(187, 187, 187);
       border-width: 0px;
       border-top-left-radius: 0px;
@@ -5534,9 +5018,7 @@ html[saved-theme="dark"] {
     .metadata-container .metadata-property {
       background-color: var(--metadata-property-background);
       color: rgb(187, 187, 187);
-      font-family:
-        "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium,
-        sans-serif;
+      font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
       border-color: rgb(187, 187, 187);
       border-width: 0px;
       border-top-left-radius: 6px;
@@ -5615,9 +5097,7 @@ html[saved-theme="dark"] {
       filter: var(--link-external-filter);
       backdrop-filter: none;
       box-shadow: none;
-      font-family:
-        "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium,
-        sans-serif;
+      font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
       font-weight: var(--link-weight);
       outline: rgb(81, 179, 133) none 0px;
       text-decoration: underline;
@@ -5646,9 +5126,7 @@ html[saved-theme="dark"] {
       filter: none;
       backdrop-filter: none;
       box-shadow: none;
-      font-family:
-        "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium,
-        sans-serif;
+      font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
       font-weight: var(--link-weight);
       outline: rgb(81, 179, 133) none 0px;
       text-decoration: underline;
@@ -5676,9 +5154,7 @@ html[saved-theme="dark"] {
       filter: var(--link-unresolved-filter);
       backdrop-filter: none;
       box-shadow: none;
-      font-family:
-        "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium,
-        sans-serif;
+      font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
       font-weight: var(--link-weight);
       outline: rgb(81, 179, 133) none 0px;
       text-decoration: oklch(0.581748 0.138306 262.13 / 0.3);
@@ -5762,9 +5238,7 @@ html[saved-theme="dark"] {
       filter: none;
       backdrop-filter: none;
       box-shadow: none;
-      font-family:
-        "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium,
-        sans-serif;
+      font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
       font-weight: 400;
       outline: rgb(187, 187, 187) none 0px;
       text-decoration: rgb(218, 218, 218);
@@ -5792,9 +5266,7 @@ html[saved-theme="dark"] {
       filter: none;
       backdrop-filter: none;
       box-shadow: none;
-      font-family:
-        "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium,
-        sans-serif;
+      font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
       font-weight: calc(var(--font-weight) + var(--bold-modifier));
       outline: rgb(255, 255, 255) none 0px;
       text-decoration: rgb(218, 218, 218);
@@ -5822,9 +5294,7 @@ html[saved-theme="dark"] {
       filter: none;
       backdrop-filter: none;
       box-shadow: none;
-      font-family:
-        "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium,
-        sans-serif;
+      font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
       font-weight: calc(var(--font-weight) + var(--bold-modifier));
       outline: rgb(255, 255, 255) none 0px;
       text-decoration: rgb(218, 218, 218);
@@ -5852,9 +5322,7 @@ html[saved-theme="dark"] {
       filter: none;
       backdrop-filter: none;
       box-shadow: none;
-      font-family:
-        "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium,
-        sans-serif;
+      font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
       font-weight: 400;
       outline: rgb(222, 222, 222) none 0px;
       text-decoration: rgb(218, 218, 218);
@@ -5882,9 +5350,7 @@ html[saved-theme="dark"] {
       filter: none;
       backdrop-filter: none;
       box-shadow: none;
-      font-family:
-        "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium,
-        sans-serif;
+      font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
       font-weight: 400;
       outline: rgb(222, 222, 222) none 0px;
       text-decoration: rgb(218, 218, 218);
@@ -5987,9 +5453,7 @@ html[saved-theme="dark"] {
       background-color: rgba(0, 0, 0, 0);
       color: var(--italic-color);
       cursor: grab;
-      font-family:
-        "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium,
-        sans-serif;
+      font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
       font-weight: 800;
       outline: rgb(255, 255, 255) none 0px;
       text-decoration-color: rgb(255, 255, 255);
@@ -6010,9 +5474,7 @@ html[saved-theme="dark"] {
       filter: none;
       backdrop-filter: none;
       box-shadow: none;
-      font-family:
-        "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium,
-        sans-serif;
+      font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
       font-weight: 400;
       outline: rgb(222, 222, 222) none 0px;
       text-decoration: rgb(0, 0, 0);
@@ -6039,9 +5501,7 @@ html[saved-theme="dark"] {
       filter: none;
       backdrop-filter: none;
       box-shadow: none;
-      font-family:
-        "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium,
-        sans-serif;
+      font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
       font-weight: 400;
       outline: rgb(222, 222, 222) none 0px;
       text-decoration: line-through;
@@ -6076,24 +5536,9 @@ html[saved-theme="dark"] {
       border-radius: 0px;
     }
 
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      .result-card:hover,
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      .result-card:focus,
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+    .search > .search-container > .search-space > .search-layout > .results-container .result-card:hover,
+    .search > .search-container > .search-space > .search-layout > .results-container .result-card:focus,
+    .search > .search-container > .search-space > .search-layout > .results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
       background-color: rgba(0, 0, 0, 0);
       border-top-left-radius: 4px;
       border-top-right-radius: 4px;
@@ -6102,18 +5547,7 @@ html[saved-theme="dark"] {
       color: var(--nav-item-color-active);
     }
 
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      .result-card:has(
-        ~ .result-card.focus:not(
-            :has(~ .result-card:hover, ~ .result-card:focus)
-          ),
-        ~ .result-card:focus,
-        ~ .result-card:hover
-      ) {
+    .search > .search-container > .search-space > .search-layout > .results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover) {
       background-color: rgba(0, 0, 0, 0);
       border-color: rgb(222, 222, 222);
       border-width: 0px;
@@ -6142,22 +5576,12 @@ html[saved-theme="dark"] {
     }
 
     a.internal-link.tag-link,
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      .result-card
-      > ul
-      > li
-      > .match-tag {
+    .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
       align-items: normal;
       background-color: var(--pill-background);
       color: var(--pill-color);
       display: flex;
-      font-family:
-        "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium,
-        sans-serif;
+      font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
       font-size: 14px;
       font-weight: var(--pill-weight);
       line-height: var(--line-height-tight);
@@ -6190,9 +5614,7 @@ html[saved-theme="dark"] {
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
       color: var(--text-normal);
-      font-family:
-        "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium,
-        sans-serif;
+      font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
     }
 
     .search > .search-container > .search-space {
@@ -6212,16 +5634,13 @@ html[saved-theme="dark"] {
       border-top-right-radius: 5px;
       border-bottom-left-radius: 5px;
       border-bottom-right-radius: 5px;
-      box-shadow: 0 0 0 var(--input-border-width-focus)
-        var(--background-modifier-border-focus);
+      box-shadow: 0 0 0 var(--input-border-width-focus) var(--background-modifier-border-focus);
     }
 
     .search > .search-container > .search-space > * {
       background-color: rgba(0, 0, 0, 0);
       color: rgb(222, 222, 222);
-      font-family:
-        "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium,
-        sans-serif;
+      font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
       font-weight: 400;
       outline: rgb(222, 222, 222) none 0px;
       text-decoration-color: rgb(222, 222, 222);
@@ -6243,20 +5662,11 @@ html[saved-theme="dark"] {
       border-bottom-right-radius: 0px;
     }
 
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container {
+    .search > .search-container > .search-space > .search-layout > .results-container {
       color: rgb(222, 222, 222);
     }
 
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      .result-card {
+    .search > .search-container > .search-space > .search-layout > .results-container .result-card {
       border-color: rgb(222, 222, 222);
       border-width: 0px;
       border-top-left-radius: 0px;
@@ -6273,92 +5683,30 @@ html[saved-theme="dark"] {
       border-radius: 0px;
     }
 
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      > .result-card:hover,
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      > .result-card:focus,
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      > .result-card.focus:not(
-        :has(~ .result-card:hover, ~ .result-card:focus)
-      ) {
+    .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover,
+    .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus,
+    .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
       color: var(--nav-item-color-active);
       font-weight: var(--nav-item-weight);
       background-color: rgba(0, 0, 0, 0);
     }
 
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      > .result-card:hover
-      .card-title,
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      > .result-card:hover
-      .card-description,
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      > .result-card:focus
-      .card-title,
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      > .result-card:focus
-      .card-description,
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))
-      .card-title,
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))
-      .card-description {
+    .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title,
+    .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description,
+    .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title,
+    .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description,
+    .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-title,
+    .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-description {
       color: var(--nav-item-color-active);
     }
 
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .preview-container {
+    .search > .search-container > .search-space > .search-layout > .preview-container {
       color: rgb(187, 187, 187);
       background-color: rgba(0, 0, 0, 0);
       font-weight: 400;
     }
 
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      > .result-card:hover {
+    .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover {
       background-color: rgba(0, 0, 0, 0);
       color: rgb(222, 222, 222);
       border-color: rgb(222, 222, 222);
@@ -6380,8 +5728,7 @@ html[saved-theme="dark"] {
       letter-spacing: var(--h1-letter-spacing);
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       padding: 0px;
       padding-block-end: 0px;
       padding-block-start: 0px;
@@ -6415,8 +5762,7 @@ html[saved-theme="dark"] {
       letter-spacing: var(--h2-letter-spacing);
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       padding: 0px;
       padding-block-end: 0px;
       padding-block-start: 0px;
@@ -6450,8 +5796,7 @@ html[saved-theme="dark"] {
       letter-spacing: var(--h3-letter-spacing);
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       padding: 0px;
       padding-block-end: 0px;
       padding-block-start: 0px;
@@ -6485,8 +5830,7 @@ html[saved-theme="dark"] {
       letter-spacing: var(--h4-letter-spacing);
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       padding: 0px;
       padding-block-end: 0px;
       padding-block-start: 0px;
@@ -6520,8 +5864,7 @@ html[saved-theme="dark"] {
       letter-spacing: var(--h5-letter-spacing);
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       padding: 0px;
       padding-block-end: 0px;
       padding-block-start: 0px;
@@ -6555,8 +5898,7 @@ html[saved-theme="dark"] {
       letter-spacing: var(--h6-letter-spacing);
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       padding: 0px;
       padding-block-end: 0px;
       padding-block-start: 0px;
@@ -6591,8 +5933,7 @@ html[saved-theme="dark"] {
       letter-spacing: -0.38832px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       padding: 0px;
       padding-block-end: 0px;
       padding-block-start: 0px;
@@ -6965,8 +6306,7 @@ html[saved-theme="dark"] {
 
     input:focus {
       border-color: rgb(66, 73, 88);
-      box-shadow: 0 0 0 var(--input-border-width-focus)
-        var(--background-modifier-border-focus);
+      box-shadow: 0 0 0 var(--input-border-width-focus) var(--background-modifier-border-focus);
     }
 
     h1.article-title {
@@ -7068,9 +6408,7 @@ html[saved-theme="dark"] {
       margin-inline-end: 0px;
       margin-inline-start: 0px;
       font-size: 16px;
-      font-family:
-        "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium,
-        sans-serif;
+      font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
       padding: 0px;
       padding-block-end: 0px;
       padding-block-start: 0px;
@@ -7090,9 +6428,7 @@ html[saved-theme="dark"] {
     dd {
       color: rgb(222, 222, 222);
       font-size: 16px;
-      font-family:
-        "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium,
-        sans-serif;
+      font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
       margin: 0px 0px 0px 40px;
       margin-block-end: 0px;
       margin-block-start: 0px;
@@ -7182,9 +6518,7 @@ html[saved-theme="dark"] {
     figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
       background-color: var(--code-background);
       color: rgb(222, 222, 222);
-      font-family:
-        "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium,
-        sans-serif;
+      font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
       border: 0px solid rgb(66, 73, 88);
       border-top-left-radius: 4px;
       border-top-right-radius: 4px;
@@ -7374,9 +6708,7 @@ html[saved-theme="dark"] {
       background-color: var(--blockquote-background-color);
       border-inline-start: 3px solid rgb(61, 154, 216);
       color: var(--quote-color);
-      font-family:
-        "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium,
-        sans-serif;
+      font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
       font-weight: 400;
       font-style: var(--blockquote-font-style);
       line-height: 24px;
@@ -7561,15 +6893,11 @@ html[saved-theme="dark"] {
       text-align: center;
       white-space-collapse: collapse;
       text-wrap-mode: wrap;
-      font-family:
-        "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium,
-        sans-serif;
+      font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
     }
 
     .katex-display > .katex > .katex-html {
-      font-family:
-        "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium,
-        sans-serif;
+      font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
     }
 
     .katex > .katex-html {
@@ -7578,15 +6906,12 @@ html[saved-theme="dark"] {
 
     h2.page-title {
       color: var(--text-normal);
-      font-family:
-        "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium,
-        sans-serif;
+      font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
       font-size: 13px;
       font-weight: 400;
       line-height: 16.9px;
       background-color: rgba(0, 0, 0, 0);
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       padding: 0px;
       padding-block-end: 0px;
       padding-block-start: 0px;
@@ -7658,9 +6983,7 @@ html[saved-theme="dark"] {
       opacity: 1;
       background-color: var(--status-bar-background);
       color: var(--status-bar-text-color);
-      font-family:
-        "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium,
-        sans-serif;
+      font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
       font-size: var(--status-bar-font-size);
       text-align: start;
       padding-top: 0px;
@@ -7768,8 +7091,7 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     }
 
     .callout .callout-title > .callout-title-inner > p {
@@ -7780,8 +7102,7 @@ html[saved-theme="dark"] {
     .callout > .callout-content {
       background-color: var(--callout-content-background);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(222, 222, 222);
       padding: 0px;
       padding-block-end: 0px;
@@ -7792,14 +7113,9 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="note"] {
       --callout-color: var(--callout-default);
-      background-color: color-mix(
-        in oklch,
-        var(--callout-color) 10%,
-        transparent
-      );
+      background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
       background-image: none;
-      background: oklch(0.602893 0.217554 257.503 / 0.1) none repeat scroll 0%
-        0% / auto padding-box border-box;
+      background: oklch(0.602893 0.217554 257.503 / 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(222, 222, 222);
       mix-blend-mode: normal;
       border: 0px solid oklch(0.602893 0.217554 257.503 / 0.25);
@@ -7833,8 +7149,7 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     }
 
     .callout[data-callout="note"] .callout-title > .callout-title-inner > p {
@@ -7845,8 +7160,7 @@ html[saved-theme="dark"] {
     .callout[data-callout="note"] > .callout-content {
       background-color: var(--callout-content-background);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(222, 222, 222);
       padding: 0px;
       padding-block-end: 0px;
@@ -7857,14 +7171,9 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="abstract"] {
       --callout-color: var(--callout-summary);
-      background-color: color-mix(
-        in oklch,
-        var(--callout-color) 10%,
-        transparent
-      );
+      background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
       background-image: none;
-      background: oklch(0.828615 0.118893 193.752 / 0.1) none repeat scroll 0%
-        0% / auto padding-box border-box;
+      background: oklch(0.828615 0.118893 193.752 / 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(222, 222, 222);
       mix-blend-mode: normal;
       border: 0px solid oklch(0.828615 0.118893 193.752 / 0.25);
@@ -7898,14 +7207,10 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     }
 
-    .callout[data-callout="abstract"]
-      .callout-title
-      > .callout-title-inner
-      > p {
+    .callout[data-callout="abstract"] .callout-title > .callout-title-inner > p {
       color: var(--callout-title-color);
       font-weight: var(--font-weight);
     }
@@ -7913,8 +7218,7 @@ html[saved-theme="dark"] {
     .callout[data-callout="abstract"] > .callout-content {
       background-color: var(--callout-content-background);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(222, 222, 222);
       padding: 0px;
       padding-block-end: 0px;
@@ -7925,14 +7229,9 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="info"] {
       --callout-color: var(--callout-info);
-      background-color: color-mix(
-        in oklch,
-        var(--callout-color) 10%,
-        transparent
-      );
+      background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
       background-image: none;
-      background: oklch(0.602893 0.217554 257.503 / 0.1) none repeat scroll 0%
-        0% / auto padding-box border-box;
+      background: oklch(0.602893 0.217554 257.503 / 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(222, 222, 222);
       mix-blend-mode: normal;
       border: 0px solid oklch(0.602893 0.217554 257.503 / 0.25);
@@ -7966,8 +7265,7 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     }
 
     .callout[data-callout="info"] .callout-title > .callout-title-inner > p {
@@ -7978,8 +7276,7 @@ html[saved-theme="dark"] {
     .callout[data-callout="info"] > .callout-content {
       background-color: var(--callout-content-background);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(222, 222, 222);
       padding: 0px;
       padding-block-end: 0px;
@@ -7990,14 +7287,9 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="todo"] {
       --callout-color: var(--callout-todo);
-      background-color: color-mix(
-        in oklch,
-        var(--callout-color) 10%,
-        transparent
-      );
+      background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
       background-image: none;
-      background: oklch(0.602893 0.217554 257.503 / 0.1) none repeat scroll 0%
-        0% / auto padding-box border-box;
+      background: oklch(0.602893 0.217554 257.503 / 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(222, 222, 222);
       mix-blend-mode: normal;
       border: 0px solid oklch(0.602893 0.217554 257.503 / 0.25);
@@ -8031,8 +7323,7 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     }
 
     .callout[data-callout="todo"] .callout-title > .callout-title-inner > p {
@@ -8043,8 +7334,7 @@ html[saved-theme="dark"] {
     .callout[data-callout="todo"] > .callout-content {
       background-color: var(--callout-content-background);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(222, 222, 222);
       padding: 0px;
       padding-block-end: 0px;
@@ -8055,14 +7345,9 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="tip"] {
       --callout-color: var(--callout-tip);
-      background-color: color-mix(
-        in oklch,
-        var(--callout-color) 10%,
-        transparent
-      );
+      background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
       background-image: none;
-      background: oklch(0.828615 0.118893 193.752 / 0.1) none repeat scroll 0%
-        0% / auto padding-box border-box;
+      background: oklch(0.828615 0.118893 193.752 / 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(222, 222, 222);
       mix-blend-mode: normal;
       border: 0px solid oklch(0.828615 0.118893 193.752 / 0.25);
@@ -8096,8 +7381,7 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     }
 
     .callout[data-callout="tip"] .callout-title > .callout-title-inner > p {
@@ -8108,8 +7392,7 @@ html[saved-theme="dark"] {
     .callout[data-callout="tip"] > .callout-content {
       background-color: var(--callout-content-background);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(222, 222, 222);
       padding: 0px;
       padding-block-end: 0px;
@@ -8120,14 +7403,9 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="success"] {
       --callout-color: var(--callout-success);
-      background-color: color-mix(
-        in oklch,
-        var(--callout-color) 10%,
-        transparent
-      );
+      background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
       background-image: none;
-      background: oklch(0.757772 0.180999 149.614 / 0.1) none repeat scroll 0%
-        0% / auto padding-box border-box;
+      background: oklch(0.757772 0.180999 149.614 / 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(222, 222, 222);
       mix-blend-mode: normal;
       border: 0px solid oklch(0.757772 0.180999 149.614 / 0.25);
@@ -8161,8 +7439,7 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     }
 
     .callout[data-callout="success"] .callout-title > .callout-title-inner > p {
@@ -8173,8 +7450,7 @@ html[saved-theme="dark"] {
     .callout[data-callout="success"] > .callout-content {
       background-color: var(--callout-content-background);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(222, 222, 222);
       padding: 0px;
       padding-block-end: 0px;
@@ -8185,14 +7461,9 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="question"] {
       --callout-color: var(--callout-question);
-      background-color: color-mix(
-        in oklch,
-        var(--callout-color) 10%,
-        transparent
-      );
+      background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
       background-image: none;
-      background: oklch(0.744355 0.140765 64.0894 / 0.1) none repeat scroll 0%
-        0% / auto padding-box border-box;
+      background: oklch(0.744355 0.140765 64.0894 / 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(222, 222, 222);
       mix-blend-mode: normal;
       border: 0px solid oklch(0.744355 0.140765 64.0894 / 0.25);
@@ -8226,14 +7497,10 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     }
 
-    .callout[data-callout="question"]
-      .callout-title
-      > .callout-title-inner
-      > p {
+    .callout[data-callout="question"] .callout-title > .callout-title-inner > p {
       color: var(--callout-title-color);
       font-weight: var(--font-weight);
     }
@@ -8241,8 +7508,7 @@ html[saved-theme="dark"] {
     .callout[data-callout="question"] > .callout-content {
       background-color: var(--callout-content-background);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(222, 222, 222);
       padding: 0px;
       padding-block-end: 0px;
@@ -8253,14 +7519,9 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="warning"] {
       --callout-color: var(--callout-warning);
-      background-color: color-mix(
-        in oklch,
-        var(--callout-color) 10%,
-        transparent
-      );
+      background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
       background-image: none;
-      background: oklch(0.744355 0.140765 64.0894 / 0.1) none repeat scroll 0%
-        0% / auto padding-box border-box;
+      background: oklch(0.744355 0.140765 64.0894 / 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(222, 222, 222);
       mix-blend-mode: normal;
       border: 0px solid oklch(0.744355 0.140765 64.0894 / 0.25);
@@ -8294,8 +7555,7 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     }
 
     .callout[data-callout="warning"] .callout-title > .callout-title-inner > p {
@@ -8306,8 +7566,7 @@ html[saved-theme="dark"] {
     .callout[data-callout="warning"] > .callout-content {
       background-color: var(--callout-content-background);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(222, 222, 222);
       padding: 0px;
       padding-block-end: 0px;
@@ -8318,14 +7577,9 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="danger"] {
       --callout-color: var(--callout-error);
-      background-color: color-mix(
-        in oklch,
-        var(--callout-color) 10%,
-        transparent
-      );
+      background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
       background-image: none;
-      background: oklch(0.659737 0.216875 23.8105 / 0.1) none repeat scroll 0%
-        0% / auto padding-box border-box;
+      background: oklch(0.659737 0.216875 23.8105 / 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(222, 222, 222);
       mix-blend-mode: normal;
       border: 0px solid oklch(0.659737 0.216875 23.8105 / 0.25);
@@ -8359,8 +7613,7 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     }
 
     .callout[data-callout="danger"] .callout-title > .callout-title-inner > p {
@@ -8371,8 +7624,7 @@ html[saved-theme="dark"] {
     .callout[data-callout="danger"] > .callout-content {
       background-color: var(--callout-content-background);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(222, 222, 222);
       padding: 0px;
       padding-block-end: 0px;
@@ -8383,14 +7635,9 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="failure"] {
       --callout-color: var(--callout-fail);
-      background-color: color-mix(
-        in oklch,
-        var(--callout-color) 10%,
-        transparent
-      );
+      background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
       background-image: none;
-      background: oklch(0.659737 0.216875 23.8105 / 0.1) none repeat scroll 0%
-        0% / auto padding-box border-box;
+      background: oklch(0.659737 0.216875 23.8105 / 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(222, 222, 222);
       mix-blend-mode: normal;
       border: 0px solid oklch(0.659737 0.216875 23.8105 / 0.25);
@@ -8424,8 +7671,7 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     }
 
     .callout[data-callout="failure"] .callout-title > .callout-title-inner > p {
@@ -8436,8 +7682,7 @@ html[saved-theme="dark"] {
     .callout[data-callout="failure"] > .callout-content {
       background-color: var(--callout-content-background);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(222, 222, 222);
       padding: 0px;
       padding-block-end: 0px;
@@ -8448,14 +7693,9 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="bug"] {
       --callout-color: var(--callout-bug);
-      background-color: color-mix(
-        in oklch,
-        var(--callout-color) 10%,
-        transparent
-      );
+      background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
       background-image: none;
-      background: oklch(0.659737 0.216875 23.8105 / 0.1) none repeat scroll 0%
-        0% / auto padding-box border-box;
+      background: oklch(0.659737 0.216875 23.8105 / 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(222, 222, 222);
       mix-blend-mode: normal;
       border: 0px solid oklch(0.659737 0.216875 23.8105 / 0.25);
@@ -8489,8 +7729,7 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     }
 
     .callout[data-callout="bug"] .callout-title > .callout-title-inner > p {
@@ -8501,8 +7740,7 @@ html[saved-theme="dark"] {
     .callout[data-callout="bug"] > .callout-content {
       background-color: var(--callout-content-background);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(222, 222, 222);
       padding: 0px;
       padding-block-end: 0px;
@@ -8513,14 +7751,9 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="example"] {
       --callout-color: var(--callout-example);
-      background-color: color-mix(
-        in oklch,
-        var(--callout-color) 10%,
-        transparent
-      );
+      background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
       background-image: none;
-      background: oklch(0.697304 0.17906 295.405 / 0.1) none repeat scroll 0%
-        0% / auto padding-box border-box;
+      background: oklch(0.697304 0.17906 295.405 / 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(222, 222, 222);
       mix-blend-mode: normal;
       border: 0px solid oklch(0.697305 0.17906 295.405 / 0.25);
@@ -8554,8 +7787,7 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     }
 
     .callout[data-callout="example"] .callout-title > .callout-title-inner > p {
@@ -8566,8 +7798,7 @@ html[saved-theme="dark"] {
     .callout[data-callout="example"] > .callout-content {
       background-color: var(--callout-content-background);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(222, 222, 222);
       padding: 0px;
       padding-block-end: 0px;
@@ -8578,14 +7809,9 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="quote"] {
       --callout-color: var(--callout-quote);
-      background-color: color-mix(
-        in oklch,
-        var(--callout-color) 10%,
-        transparent
-      );
+      background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
       background-image: none;
-      background: oklch(0.699256 0.0000347234 none / 0.1) none repeat scroll 0%
-        0% / auto padding-box border-box;
+      background: oklch(0.699256 0.0000347234 none / 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(222, 222, 222);
       mix-blend-mode: normal;
       border: 0px solid oklch(0.699256 0.0000347234 none / 0.25);
@@ -8619,8 +7845,7 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     }
 
     .callout[data-callout="quote"] .callout-title > .callout-title-inner > p {
@@ -8631,8 +7856,7 @@ html[saved-theme="dark"] {
     .callout[data-callout="quote"] > .callout-content {
       background-color: var(--callout-content-background);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(222, 222, 222);
       padding: 0px;
       padding-block-end: 0px;
@@ -8645,9 +7869,7 @@ html[saved-theme="dark"] {
       background-color: rgba(0, 0, 0, 0);
       border-collapse: separate;
       color: rgb(222, 222, 222);
-      font-family:
-        "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium,
-        sans-serif;
+      font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
       table-layout: auto;
       text-align: start;
       border: 0px rgb(128, 128, 128);
@@ -8674,9 +7896,7 @@ html[saved-theme="dark"] {
     thead {
       background-color: rgba(0, 0, 0, 0);
       color: rgb(222, 222, 222);
-      font-family:
-        "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium,
-        sans-serif;
+      font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
       border: 0px rgb(128, 128, 128);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
@@ -8691,9 +7911,7 @@ html[saved-theme="dark"] {
     tbody {
       background-color: rgba(0, 0, 0, 0);
       color: rgb(222, 222, 222);
-      font-family:
-        "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium,
-        sans-serif;
+      font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
     }
 
     th {
@@ -8752,9 +7970,7 @@ html[saved-theme="dark"] {
     tr {
       background-color: var(--table-header-background);
       color: rgb(222, 222, 222);
-      font-family:
-        "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium,
-        sans-serif;
+      font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
       border: 0px rgb(128, 128, 128);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
@@ -8956,17 +8172,13 @@ html[saved-theme="dark"] {
 
     .nav-files-container .nav-file-title {
       color: rgb(117, 126, 138);
-      font-family:
-        "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium,
-        sans-serif;
+      font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
       font-weight: 400;
     }
 
     .nav-files-container .nav-file-title.is-active {
       color: var(--nav-item-color);
-      font-family:
-        "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium,
-        sans-serif;
+      font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
       border-color: rgb(117, 126, 138);
       border-width: 0px;
       border-top-left-radius: 4px;
@@ -8975,21 +8187,15 @@ html[saved-theme="dark"] {
       border-bottom-right-radius: 4px;
     }
 
-    .nav-files-container
-      li:has(> .folder-outer:not(.open))
-      > .nav-folder-title {
+    .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
       color: var(--nav-item-color);
-      font-family:
-        "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium,
-        sans-serif;
+      font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
       font-weight: var(--nav-item-weight);
     }
 
     .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
       color: var(--nav-item-color);
-      font-family:
-        "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium,
-        sans-serif;
+      font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
       font-weight: var(--nav-item-weight);
     }
 
@@ -9005,18 +8211,14 @@ html[saved-theme="dark"] {
 
     .explorer .folder-container > div {
       color: rgb(117, 126, 138);
-      font-family:
-        "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium,
-        sans-serif;
+      font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
       font-weight: 400;
     }
 
     .nav-files-container {
       background-color: rgba(0, 0, 0, 0);
       color: rgb(222, 222, 222);
-      font-family:
-        "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium,
-        sans-serif;
+      font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
     }
 
     .bases-table {
@@ -9123,9 +8325,7 @@ html[saved-theme="dark"] {
 
     .recent-notes > h3 {
       color: rgb(222, 222, 222);
-      font-family:
-        "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium,
-        sans-serif;
+      font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
       font-weight: 400;
     }
 
@@ -9146,9 +8346,7 @@ html[saved-theme="dark"] {
 
     .recent-notes > ul.recent-ul > li .section > .meta {
       color: rgb(117, 126, 138);
-      font-family:
-        "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium,
-        sans-serif;
+      font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
     }
 
     ul.section-ul {
@@ -9177,9 +8375,7 @@ html[saved-theme="dark"] {
 
     li.section-li > .section .meta {
       color: rgb(117, 126, 138);
-      font-family:
-        "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium,
-        sans-serif;
+      font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
     }
 
     .darkmode {
@@ -9212,9 +8408,7 @@ html[saved-theme="dark"] {
 
     .breadcrumb-element p {
       color: var(--text-faint);
-      font-family:
-        "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium,
-        sans-serif;
+      font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
     }
 
     #stacked-pages-container.binder-active {
@@ -9232,23 +8426,13 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="folder"] {
       color: rgb(222, 222, 222);
-      --font-monospace:
-        "JetBrains Mono NL", "JetBrains Mono", Consolas, Monaco,
-        "等距更纱黑体 SC", monospace;
+      --font-monospace: "JetBrains Mono NL", "JetBrains Mono", Consolas, Monaco, "等距更纱黑体 SC", monospace;
       --callout-color: var(--callout-default);
       --list-indent: 0em;
-      --table-border-color: color-mix(
-        in oklch,
-        var(--callout-color) 25%,
-        var(--background-primary) 50%
-      );
+      --table-border-color: color-mix(in oklch, var(--callout-color) 25%, var(--background-primary) 50%);
       -webkit-background-clip: border-box;
       -webkit-box-decoration-break: slice;
-      background-color: color-mix(
-        in oklch,
-        var(--callout-color) 10%,
-        transparent
-      );
+      background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
       background-position: 0% 0%;
       background-repeat: repeat;
       border-bottom-left-radius: 4px;
@@ -9260,9 +8444,7 @@ html[saved-theme="dark"] {
       border-top-right-radius: 4px;
       border: 0px solid oklch(0.602893 0.217554 257.503 / 0.25);
       box-decoration-break: slice;
-      font-family:
-        "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium,
-        sans-serif;
+      font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
       line-height: 24px;
       margin-block: 0px;
       margin-block-end: 0px;
@@ -9285,670 +8467,469 @@ html[saved-theme="dark"] {
       color: rgb(222, 222, 222);
       margin-inline-start: 0px;
       margin-left: 0px;
-      --font-monospace:
-        ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-        "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-        "Source Code Pro", monospace;
+      --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
     }
 
     li.task-list-item[data-task=","] {
       color: rgb(222, 222, 222);
       margin-inline-start: 0px;
       margin-left: 0px;
-      --font-monospace:
-        ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-        "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-        "Source Code Pro", monospace;
+      --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
     }
 
     li.task-list-item[data-task=";"] {
       color: rgb(222, 222, 222);
       margin-inline-start: 0px;
       margin-left: 0px;
-      --font-monospace:
-        ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-        "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-        "Source Code Pro", monospace;
+      --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
     }
 
     li.task-list-item[data-task=":"] {
       color: rgb(222, 222, 222);
       margin-inline-start: 0px;
       margin-left: 0px;
-      --font-monospace:
-        ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-        "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-        "Source Code Pro", monospace;
+      --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
     }
 
     li.task-list-item[data-task="."] {
       color: rgb(222, 222, 222);
       margin-inline-start: 0px;
       margin-left: 0px;
-      --font-monospace:
-        ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-        "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-        "Source Code Pro", monospace;
+      --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
     }
 
     li.task-list-item[data-task="'"] {
       color: rgb(222, 222, 222);
       margin-inline-start: 0px;
       margin-left: 0px;
-      --font-monospace:
-        ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-        "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-        "Source Code Pro", monospace;
+      --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
     }
 
     li.task-list-item[data-task="@"] {
       color: rgb(222, 222, 222);
       margin-inline-start: 0px;
       margin-left: 0px;
-      --font-monospace:
-        ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-        "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-        "Source Code Pro", monospace;
+      --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
     }
 
     li.task-list-item[data-task="&"] {
       color: rgb(222, 222, 222);
       margin-inline-start: 0px;
       margin-left: 0px;
-      --font-monospace:
-        ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-        "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-        "Source Code Pro", monospace;
+      --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
     }
 
     li.task-list-item[data-task="#"] {
       color: rgb(222, 222, 222);
       margin-inline-start: 0px;
       margin-left: 0px;
-      --font-monospace:
-        ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-        "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-        "Source Code Pro", monospace;
+      --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
     }
 
     li.task-list-item[data-task="%"] {
       color: rgb(222, 222, 222);
       margin-inline-start: 0px;
       margin-left: 0px;
-      --font-monospace:
-        ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-        "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-        "Source Code Pro", monospace;
+      --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
     }
 
     li.task-list-item[data-task="`"] {
       color: rgb(222, 222, 222);
       margin-inline-start: 0px;
       margin-left: 0px;
-      --font-monospace:
-        ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-        "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-        "Source Code Pro", monospace;
+      --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
     }
 
     li.task-list-item[data-task="+"] {
       color: rgb(222, 222, 222);
       margin-inline-start: 0px;
       margin-left: 0px;
-      --font-monospace:
-        ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-        "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-        "Source Code Pro", monospace;
+      --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
     }
 
     li.task-list-item[data-task="<"] {
       color: rgb(222, 222, 222);
       margin-inline-start: 0px;
       margin-left: 0px;
-      --font-monospace:
-        ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-        "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-        "Source Code Pro", monospace;
+      --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
     }
 
     li.task-list-item[data-task="="] {
       color: rgb(222, 222, 222);
       margin-inline-start: 0px;
       margin-left: 0px;
-      --font-monospace:
-        ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-        "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-        "Source Code Pro", monospace;
+      --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
     }
 
     li.task-list-item[data-task="|"] {
       color: rgb(222, 222, 222);
       margin-inline-start: 0px;
       margin-left: 0px;
-      --font-monospace:
-        ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-        "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-        "Source Code Pro", monospace;
+      --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
     }
 
     li.task-list-item[data-task="~"] {
       color: rgb(222, 222, 222);
       margin-inline-start: 0px;
       margin-left: 0px;
-      --font-monospace:
-        ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-        "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-        "Source Code Pro", monospace;
+      --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
     }
 
     li.task-list-item[data-task="$"] {
       color: rgb(222, 222, 222);
       margin-inline-start: 0px;
       margin-left: 0px;
-      --font-monospace:
-        ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-        "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-        "Source Code Pro", monospace;
+      --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
     }
 
     li.task-list-item[data-task="0"] {
       color: rgb(222, 222, 222);
       margin-inline-start: 0px;
       margin-left: 0px;
-      --font-monospace:
-        ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-        "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-        "Source Code Pro", monospace;
+      --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
     }
 
     li.task-list-item[data-task="1"] {
       color: rgb(222, 222, 222);
       margin-inline-start: 0px;
       margin-left: 0px;
-      --font-monospace:
-        ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-        "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-        "Source Code Pro", monospace;
+      --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
     }
 
     li.task-list-item[data-task="2"] {
       color: rgb(222, 222, 222);
       margin-inline-start: 0px;
       margin-left: 0px;
-      --font-monospace:
-        ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-        "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-        "Source Code Pro", monospace;
+      --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
     }
 
     li.task-list-item[data-task="3"] {
       color: rgb(222, 222, 222);
       margin-inline-start: 0px;
       margin-left: 0px;
-      --font-monospace:
-        ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-        "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-        "Source Code Pro", monospace;
+      --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
     }
 
     li.task-list-item[data-task="4"] {
       color: rgb(222, 222, 222);
       margin-inline-start: 0px;
       margin-left: 0px;
-      --font-monospace:
-        ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-        "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-        "Source Code Pro", monospace;
+      --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
     }
 
     li.task-list-item[data-task="5"] {
       color: rgb(222, 222, 222);
       margin-inline-start: 0px;
       margin-left: 0px;
-      --font-monospace:
-        ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-        "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-        "Source Code Pro", monospace;
+      --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
     }
 
     li.task-list-item[data-task="6"] {
       color: rgb(222, 222, 222);
       margin-inline-start: 0px;
       margin-left: 0px;
-      --font-monospace:
-        ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-        "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-        "Source Code Pro", monospace;
+      --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
     }
 
     li.task-list-item[data-task="7"] {
       color: rgb(222, 222, 222);
       margin-inline-start: 0px;
       margin-left: 0px;
-      --font-monospace:
-        ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-        "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-        "Source Code Pro", monospace;
+      --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
     }
 
     li.task-list-item[data-task="8"] {
       color: rgb(222, 222, 222);
       margin-inline-start: 0px;
       margin-left: 0px;
-      --font-monospace:
-        ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-        "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-        "Source Code Pro", monospace;
+      --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
     }
 
     li.task-list-item[data-task="9"] {
       color: rgb(222, 222, 222);
       margin-inline-start: 0px;
       margin-left: 0px;
-      --font-monospace:
-        ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-        "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-        "Source Code Pro", monospace;
+      --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
     }
 
     li.task-list-item[data-task="a"] {
       color: rgb(222, 222, 222);
       margin-inline-start: 0px;
       margin-left: 0px;
-      --font-monospace:
-        ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-        "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-        "Source Code Pro", monospace;
+      --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
     }
 
     li.task-list-item[data-task="A"] {
       color: rgb(222, 222, 222);
       margin-inline-start: 0px;
       margin-left: 0px;
-      --font-monospace:
-        ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-        "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-        "Source Code Pro", monospace;
+      --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
     }
 
     li.task-list-item[data-task="B"] {
       color: rgb(222, 222, 222);
       margin-inline-start: 0px;
       margin-left: 0px;
-      --font-monospace:
-        ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-        "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-        "Source Code Pro", monospace;
+      --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
     }
 
     li.task-list-item[data-task="C"] {
       color: rgb(222, 222, 222);
       margin-inline-start: 0px;
       margin-left: 0px;
-      --font-monospace:
-        ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-        "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-        "Source Code Pro", monospace;
+      --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
     }
 
     li.task-list-item[data-task="D"] {
       color: rgb(222, 222, 222);
       margin-inline-start: 0px;
       margin-left: 0px;
-      --font-monospace:
-        ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-        "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-        "Source Code Pro", monospace;
+      --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
     }
 
     li.task-list-item[data-task="e"] {
       color: rgb(222, 222, 222);
       margin-inline-start: 0px;
       margin-left: 0px;
-      --font-monospace:
-        ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-        "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-        "Source Code Pro", monospace;
+      --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
     }
 
     li.task-list-item[data-task="E"] {
       color: rgb(222, 222, 222);
       margin-inline-start: 0px;
       margin-left: 0px;
-      --font-monospace:
-        ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-        "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-        "Source Code Pro", monospace;
+      --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
     }
 
     li.task-list-item[data-task="F"] {
       color: rgb(222, 222, 222);
       margin-inline-start: 0px;
       margin-left: 0px;
-      --font-monospace:
-        ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-        "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-        "Source Code Pro", monospace;
+      --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
     }
 
     li.task-list-item[data-task="g"] {
       color: rgb(222, 222, 222);
       margin-inline-start: 0px;
       margin-left: 0px;
-      --font-monospace:
-        ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-        "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-        "Source Code Pro", monospace;
+      --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
     }
 
     li.task-list-item[data-task="G"] {
       color: rgb(222, 222, 222);
       margin-inline-start: 0px;
       margin-left: 0px;
-      --font-monospace:
-        ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-        "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-        "Source Code Pro", monospace;
+      --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
     }
 
     li.task-list-item[data-task="h"] {
       color: rgb(222, 222, 222);
       margin-inline-start: 0px;
       margin-left: 0px;
-      --font-monospace:
-        ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-        "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-        "Source Code Pro", monospace;
+      --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
     }
 
     li.task-list-item[data-task="H"] {
       color: rgb(222, 222, 222);
       margin-inline-start: 0px;
       margin-left: 0px;
-      --font-monospace:
-        ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-        "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-        "Source Code Pro", monospace;
+      --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
     }
 
     li.task-list-item[data-task="j"] {
       color: rgb(222, 222, 222);
       margin-inline-start: 0px;
       margin-left: 0px;
-      --font-monospace:
-        ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-        "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-        "Source Code Pro", monospace;
+      --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
     }
 
     li.task-list-item[data-task="J"] {
       color: rgb(222, 222, 222);
       margin-inline-start: 0px;
       margin-left: 0px;
-      --font-monospace:
-        ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-        "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-        "Source Code Pro", monospace;
+      --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
     }
 
     li.task-list-item[data-task="K"] {
       color: rgb(222, 222, 222);
       margin-inline-start: 0px;
       margin-left: 0px;
-      --font-monospace:
-        ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-        "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-        "Source Code Pro", monospace;
+      --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
     }
 
     li.task-list-item[data-task="L"] {
       color: rgb(222, 222, 222);
       margin-inline-start: 0px;
       margin-left: 0px;
-      --font-monospace:
-        ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-        "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-        "Source Code Pro", monospace;
+      --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
     }
 
     li.task-list-item[data-task="m"] {
       color: rgb(222, 222, 222);
       margin-inline-start: 0px;
       margin-left: 0px;
-      --font-monospace:
-        ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-        "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-        "Source Code Pro", monospace;
+      --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
     }
 
     li.task-list-item[data-task="M"] {
       color: rgb(222, 222, 222);
       margin-inline-start: 0px;
       margin-left: 0px;
-      --font-monospace:
-        ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-        "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-        "Source Code Pro", monospace;
+      --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
     }
 
     li.task-list-item[data-task="n"] {
       color: rgb(222, 222, 222);
       margin-inline-start: 0px;
       margin-left: 0px;
-      --font-monospace:
-        ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-        "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-        "Source Code Pro", monospace;
+      --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
     }
 
     li.task-list-item[data-task="N"] {
       color: rgb(222, 222, 222);
       margin-inline-start: 0px;
       margin-left: 0px;
-      --font-monospace:
-        ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-        "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-        "Source Code Pro", monospace;
+      --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
     }
 
     li.task-list-item[data-task="o"] {
       color: rgb(222, 222, 222);
       margin-inline-start: 0px;
       margin-left: 0px;
-      --font-monospace:
-        ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-        "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-        "Source Code Pro", monospace;
+      --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
     }
 
     li.task-list-item[data-task="O"] {
       color: rgb(222, 222, 222);
       margin-inline-start: 0px;
       margin-left: 0px;
-      --font-monospace:
-        ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-        "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-        "Source Code Pro", monospace;
+      --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
     }
 
     li.task-list-item[data-task="P"] {
       color: rgb(222, 222, 222);
       margin-inline-start: 0px;
       margin-left: 0px;
-      --font-monospace:
-        ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-        "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-        "Source Code Pro", monospace;
+      --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
     }
 
     li.task-list-item[data-task="q"] {
       color: rgb(222, 222, 222);
       margin-inline-start: 0px;
       margin-left: 0px;
-      --font-monospace:
-        ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-        "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-        "Source Code Pro", monospace;
+      --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
     }
 
     li.task-list-item[data-task="Q"] {
       color: rgb(222, 222, 222);
       margin-inline-start: 0px;
       margin-left: 0px;
-      --font-monospace:
-        ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-        "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-        "Source Code Pro", monospace;
+      --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
     }
 
     li.task-list-item[data-task="r"] {
       color: rgb(222, 222, 222);
       margin-inline-start: 0px;
       margin-left: 0px;
-      --font-monospace:
-        ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-        "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-        "Source Code Pro", monospace;
+      --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
     }
 
     li.task-list-item[data-task="R"] {
       color: rgb(222, 222, 222);
       margin-inline-start: 0px;
       margin-left: 0px;
-      --font-monospace:
-        ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-        "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-        "Source Code Pro", monospace;
+      --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
     }
 
     li.task-list-item[data-task="s"] {
       color: rgb(222, 222, 222);
       margin-inline-start: 0px;
       margin-left: 0px;
-      --font-monospace:
-        ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-        "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-        "Source Code Pro", monospace;
+      --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
     }
 
     li.task-list-item[data-task="t"] {
       color: rgb(222, 222, 222);
       margin-inline-start: 0px;
       margin-left: 0px;
-      --font-monospace:
-        ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-        "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-        "Source Code Pro", monospace;
+      --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
     }
 
     li.task-list-item[data-task="T"] {
       color: rgb(222, 222, 222);
       margin-inline-start: 0px;
       margin-left: 0px;
-      --font-monospace:
-        ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-        "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-        "Source Code Pro", monospace;
+      --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
     }
 
     li.task-list-item[data-task="U"] {
       color: rgb(222, 222, 222);
       margin-inline-start: 0px;
       margin-left: 0px;
-      --font-monospace:
-        ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-        "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-        "Source Code Pro", monospace;
+      --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
     }
 
     li.task-list-item[data-task="v"] {
       color: rgb(222, 222, 222);
       margin-inline-start: 0px;
       margin-left: 0px;
-      --font-monospace:
-        ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-        "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-        "Source Code Pro", monospace;
+      --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
     }
 
     li.task-list-item[data-task="V"] {
       color: rgb(222, 222, 222);
       margin-inline-start: 0px;
       margin-left: 0px;
-      --font-monospace:
-        ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-        "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-        "Source Code Pro", monospace;
+      --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
     }
 
     li.task-list-item[data-task="W"] {
       color: rgb(222, 222, 222);
       margin-inline-start: 0px;
       margin-left: 0px;
-      --font-monospace:
-        ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-        "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-        "Source Code Pro", monospace;
+      --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
     }
 
     li.task-list-item[data-task="x"] {
       color: rgb(187, 187, 187);
       margin-inline-start: 0px;
       margin-left: 0px;
-      --font-monospace:
-        ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-        "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-        "Source Code Pro", monospace;
+      --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
     }
 
     li.task-list-item[data-task="X"] {
       color: rgb(187, 187, 187);
       margin-inline-start: 0px;
       margin-left: 0px;
-      --font-monospace:
-        ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-        "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-        "Source Code Pro", monospace;
+      --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
     }
 
     li.task-list-item[data-task="y"] {
       color: rgb(222, 222, 222);
       margin-inline-start: 0px;
       margin-left: 0px;
-      --font-monospace:
-        ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-        "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-        "Source Code Pro", monospace;
+      --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
     }
 
     li.task-list-item[data-task="Y"] {
       color: rgb(222, 222, 222);
       margin-inline-start: 0px;
       margin-left: 0px;
-      --font-monospace:
-        ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-        "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-        "Source Code Pro", monospace;
+      --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
     }
 
     li.task-list-item[data-task="z"] {
       color: rgb(222, 222, 222);
       margin-inline-start: 0px;
       margin-left: 0px;
-      --font-monospace:
-        ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-        "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-        "Source Code Pro", monospace;
+      --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
     }
 
     li.task-list-item[data-task="Z"] {
       color: rgb(222, 222, 222);
       margin-inline-start: 0px;
       margin-left: 0px;
-      --font-monospace:
-        ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-        "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-        "Source Code Pro", monospace;
+      --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
     }
 
     html {
@@ -9960,9 +8941,7 @@ html[saved-theme="dark"] {
       --file-line-width: 1000px;
       --folder-alpha: 0.2;
       --folder-color0: hsl(214 21% 31% / var(--folder-alpha));
-      --font-monospace:
-        "JetBrains Mono NL", "JetBrains Mono", Consolas, Monaco,
-        "等距更纱黑体 SC", monospace;
+      --font-monospace: "JetBrains Mono NL", "JetBrains Mono", Consolas, Monaco, "等距更纱黑体 SC", monospace;
       --font-weight-title: 600;
       --gray-1: #5c6370;
       --gray-2: #abb2bf;
@@ -10737,10 +9716,7 @@ html[saved-theme="dark"] {
       }
     }
     li:has(> .folder-outer:not(.open)) > .folder-container:before {
-      background: var(
-        --collapse-icon-color-collapsed,
-        var(--quartz-icon-color)
-      );
+      background: var(--collapse-icon-color-collapsed, var(--quartz-icon-color));
       mask-image: var(--folder-closed-icon);
       -webkit-mask-image: var(--folder-closed-icon);
     }
@@ -11159,17 +10135,9 @@ blockquote.callout {
   }
 
   &[data-callout="folder"] {
-    --color: rgb(
-      var(--callout-folder, var(--callout-default, 2, 122, 255))
-    ) !important;
-    --border: rgba(
-      var(--callout-folder, var(--callout-default, 2, 122, 255)),
-      0.267
-    ) !important;
-    --bg: rgba(
-      var(--callout-folder, var(--callout-default, 2, 122, 255)),
-      0.063
-    ) !important;
+    --color: rgb(var(--callout-folder, var(--callout-default, 2, 122, 255))) !important;
+    --border: rgba(var(--callout-folder, var(--callout-default, 2, 122, 255)), 0.267) !important;
+    --bg: rgba(var(--callout-folder, var(--callout-default, 2, 122, 255)), 0.063) !important;
   }
 }
 

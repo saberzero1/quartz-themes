@@ -1406,6 +1406,7 @@ body.theme-dark {
   --zoom-factor: 1 !important;
   --vault-name-color: var(--text-normal) !important;
   --bold-color: var(--color-thistle) !important;
+  --embed-background: var(--color-secondary-dark) !important;
   --italic-color: var(--color-thistle) !important;
   --input-focus-border-color: Highlight !important;
   --input-focus-outline: 1px solid Canvas !important;
@@ -1418,7 +1419,6 @@ body.theme-dark {
   ) !important;
   --vault-name-font-size: var(--font-ui-small) !important;
   --vault-name-font-weight: var(--font-medium) !important;
-  --embed-background: var(--color-secondary-dark) !important;
   --input-disabled-border-color: transparent !important;
   --input-hover-border-color: black !important;
   --input-unfocused-border-color: transparent !important;

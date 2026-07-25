@@ -1587,10 +1587,10 @@ body.theme-dark {
   --h6-color: var(--htb-heading) !important;
   --inline-title-color: var(--htb-heading) !important;
   --vault-name-color: var(--htb-lime) !important;
-  --code-attribute: #ff3e3e !important;
   --embed-background: var(--background-secondary) !important;
-  --blockquote-padding: 10px !important;
   --table-text-color: var(--htb-text-color) !important;
+  --code-attribute: #ff3e3e !important;
+  --blockquote-padding: 10px !important;
   --blockquote-border-radius: 5px !important;
   --accent-a: 1 !important;
   --code-func-name: #2e6cff !important;

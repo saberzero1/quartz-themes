@@ -1,10 +1,16 @@
 /*Fonts*/
+/* prism-q3 body pass: Pretendard (Korean-optimized sans) */
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css");
+
 :root {
   /*Note and Settings Text*/
   /*kr : 노트 기본 폰트와 코드 폰트, 변경하지 않는게 좋습니다.*/
 
-  --default-font: "Inter", sans-serif; /*Note*/
-  --font-monospace: "Source Code Pro", monospace; /*Code*/
+  --default-font:
+    "Pretendard Variable", "Pretendard", "Inter", sans-serif; /*Note*/
+  /* JetBrains Mono for latin/digits/symbols; Korean has no glyphs there
+     and falls through to Orbit. matches the terminal (Ghostty) setup. */
+  --font-monospace: "JetBrains Mono", "Orbit", monospace; /*Code*/
 
   /* Size Related Values */
   /* kr: 노트 내 사이즈 값들로 사용될 변수들 입니다. */
@@ -99,17 +105,23 @@ body {
   /* Bold */
   --bold-weight: var(--font-semibold);
   --bold-color: inherit;
-  --bold-background: var(--static-alpha-balck-150);
+  --bold-background: var(--static-alpha-black-150);
 
   /* Borders */
-  --border-width: 0.75x;
+  --border-width: 1px;
 
   /* Buttons */
   --button-radius: var(--input-radius);
 
   /* Callouts */
-  --callout-border-width: 0px;
-  --callout-border-opacity: 0.2;
+  /* prism-q3 style: thin border + subtle tint + left accent bar */
+  /* NOTE: Dawn's bg is warm paper (not white) with darken/lighten blend,
+     so opacities are tuned higher than prism-q3's white-bg originals. */
+  --callout-border-width: 1px;
+  --callout-border-opacity: 0.3;
+  --callout-tint-opacity: 0.09;
+  --callout-bar-width: 3px;
+  --callout-bar-opacity: 0.7;
   --callout-padding: var(--size-4-2) var(--size-4-5) var(--size-4-2)
     var(--size-4-5);
   --callout-radius: var(--radius-m);
@@ -207,11 +219,12 @@ body {
   --embed-font-style: inherit;
 
   /* Blocks */
-  --embed-block-shadow-hover: 0 0 0 1px var(--background-modifier-border),
+  --embed-block-shadow-hover:
+    0 0 0 1px var(--background-modifier-border),
     inset 0 0 0 1px var(--background-modifier-border);
 
   /* File layout */
-  --file-line-width: 640px;
+  --file-line-width: 760px;
   --file-folding-offset: 24px;
   --file-margins: var(--size-4-8);
   --file-header-font-size: var(--font-ui-small);
@@ -286,12 +299,12 @@ body {
   --h4-variant: normal;
   --h5-variant: normal;
   --h6-variant: normal;
-  --h1-weight: 600;
-  --h2-weight: 600;
-  --h3-weight: 600;
-  --h4-weight: 600;
-  --h5-weight: 600;
-  --h6-weight: 600;
+  --h1-weight: var(--font-semibold);
+  --h2-weight: var(--font-semibold);
+  --h3-weight: var(--font-semibold);
+  --h4-weight: var(--font-semibold);
+  --h5-weight: var(--font-semibold);
+  --h6-weight: var(--font-semibold);
 
   /* View header */
   --header-height: 42px;
@@ -322,10 +335,8 @@ body {
   --icon-opacity-active: 1;
   --clickable-icon-radius: var(--radius-m);
 
-  /* Indentation guide */
+  /* Indentation guide (colors need --mono-rgb-100 → set on theme class) */
   --indentation-guide-width: 1px;
-  --indentation-guide-color: rgba(var(--mono-rgb-100), 0.1);
-  --indentation-guide-color-active: rgba(var(--mono-rgb-100), 0.3);
 
   /* Inline title */
   --inline-title-color: var(--h1-color);
@@ -358,8 +369,8 @@ body {
   --layer-dragged-item: 80;
 
   /* Line heights */
-  --line-height-large: 1.6;
-  --line-height-normal: 1.5;
+  --line-height-large: 1.7;
+  --line-height-normal: 1.6;
   --line-height-tight: 1.3;
 
   /* Links */
@@ -460,10 +471,10 @@ body {
   --ribbon-width: var(--scale-dimension-size-600);
   --ribbon-padding: var(--size-4-2) var(--size-4-1) var(--size-4-3);
 
-  /* Scrollbars */
-  --scrollbar-active-thumb-bg: rgba(var(--mono-rgb-100), 0.2);
-  --scrollbar-bg: rgba(var(--mono-rgb-100), 0.05);
-  --scrollbar-thumb-bg: rgba(var(--mono-rgb-100), 0.1);
+  /* Scrollbars — track transparent (blends with any bg instead of the
+     white fallback). thumb colors need --mono-rgb-100, which only exists
+     on the theme class, so they're set there (see .theme-light/.dark). */
+  --scrollbar-bg: transparent;
 
   /* Search */
   --search-clear-button-color: var(--text-muted);
@@ -517,7 +528,7 @@ body {
   --swatch-radius: 14px;
   --swatch-height: 24px;
   --swatch-width: 24px;
-  --swatch-shadow: inset 0 0 0 1px rgba(var(--mono-rgb-100), 0.15);
+  /* --swatch-shadow needs --mono-rgb-100 → set on theme class */
 
   /* Tabs */
   --tab-background-active: var(--background-primary);
@@ -632,7 +643,6 @@ body {
   --text-on-accent-inverted: black;
   --text-error: var(--color-red);
   --text-success: var(--color-green);
-  --text-selection: hsla(var(--color-accent-hsl), 0.2);
   --text-accent: var(--color-accent);
   --text-accent-hover: var(--color-accent-2);
   --interactive-accent-hsl: var(--color-accent-hsl);
@@ -643,11 +653,11 @@ body {
   --static-black: #000000;
   --static-white: #ffffff;
   --static-blue: #3d73ff;
-  --static-alpha-balck-700: rgba(0, 0, 0, 0.7);
-  --static-alpha-balck-500: rgba(0, 0, 0, 0.5);
-  --static-alpha-balck-200: rgba(0, 0, 0, 0.2);
-  --static-alpha-balck-150: rgba(0, 0, 0, 0.1);
-  --static-alpha-balck-100: rgba(0, 0, 0, 0.06);
+  --static-alpha-black-700: rgba(0, 0, 0, 0.7);
+  --static-alpha-black-500: rgba(0, 0, 0, 0.5);
+  --static-alpha-black-200: rgba(0, 0, 0, 0.2);
+  --static-alpha-black-150: rgba(0, 0, 0, 0.1);
+  --static-alpha-black-100: rgba(0, 0, 0, 0.06);
   --static-alpha-white-200: rgba(255, 255, 255, 0.2);
   --static-alpha-white-500: rgba(255, 255, 255, 0.5);
 }
@@ -784,7 +794,6 @@ body {
   --background-secondary: var(--color-ash-400);
   --background-secondary-alt: var(--color-ash-600);
 
-  --background-modifier-hover: rgba(var(--mono-rgb-100), 0.075);
   --background-modifier-hover: var(--color-gray-alpha-100);
   --background-modifier-active-hover: hsla(var(--interactive-accent-hsl), 0.15);
   --background-modifier-border: var(--color-ash-400);
@@ -798,7 +807,7 @@ body {
   --background-modifier-success: var(--color-green);
   --background-modifier-message: rgba(0, 0, 0, 0.9);
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
-  --background-modifier-cover: var(--static-alpha-balck-700);
+  --background-modifier-cover: var(--static-alpha-black-700);
 
   /* Input */
   --background-modifier-form-field: var(--color-ash-400);
@@ -811,10 +820,12 @@ body {
 
   --input-shadow: transparent;
   --input-shadow-hover: transparent;
-  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.028),
-    0px 3.4px 6.7px rgba(0, 0, 0, 0.042), 0px 15px 30px rgba(0, 0, 0, 0.07);
-  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071),
-    0px 6.3px 24.7px rgba(0, 0, 0, 0.112), 0px 30px 90px rgba(0, 0, 0, 0.2);
+  --shadow-s:
+    0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
+    0px 15px 30px rgba(0, 0, 0, 0.07);
+  --shadow-l:
+    0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+    0px 30px 90px rgba(0, 0, 0, 0.2);
 }
 
 .theme-dark {
@@ -959,7 +970,7 @@ body {
   --background-modifier-success: var(--color-green);
   --background-modifier-message: rgba(0, 0, 0, 0.9);
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
-  --background-modifier-cover: var(--static-alpha-balck-700);
+  --background-modifier-cover: var(--static-alpha-black-700);
 
   /* Input */
   --background-modifier-form-field: var(--color-base-20);
@@ -972,10 +983,12 @@ body {
 
   --input-shadow: transparent;
   --input-shadow-hover: transparent;
-  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.121),
-    0px 3.4px 6.7px rgba(0, 0, 0, 0.179), 0px 15px 30px rgba(0, 0, 0, 0.3);
-  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071),
-    0px 6.3px 24.7px rgba(0, 0, 0, 0.112), 0px 30px 90px rgba(0, 0, 0, 0.2);
+  --shadow-s:
+    0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
+    0px 15px 30px rgba(0, 0, 0, 0.3);
+  --shadow-l:
+    0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+    0px 30px 90px rgba(0, 0, 0, 0.2);
 }
 
 /* -----------------------------------------------------
@@ -1173,19 +1186,6 @@ body {
   border-radius: var(--radius-m);
 }
 
-/*----Notes----*/
-.cm-s-obsidian:not(.is-live-preview) {
-} /*Source Mode*/
-
-.markdown-source-view {
-} /*Source Mode*/
-
-.cm-s-obsidian.is-live-preview {
-} /*Live Preview Mode*/
-
-.markdown-preview-view {
-} /*Reading Mode*/
-
 /*--Emphasis--*/
 
 /*Italic/Emphasis*/
@@ -1216,6 +1216,32 @@ del {
   border-radius: var(--radius-m);
 } /*Reading Mode*/
 
+/* Templater command block — the opener line (.templater-inline, e.g. <%*)
+   plus the body lines (.templater-command-bg) together form ONE code block.
+   Unify them: same code fill, no ruled underline, code line-height, mono.
+   Round only the block's outer corners — top on the opener, bottom on the
+   last body line (the one NOT followed by another body line, via :has). */
+.markdown-source-view.mod-cm6 .cm-line.templater-inline,
+.markdown-source-view.mod-cm6 .cm-line.templater-command-bg {
+  font-family: var(--font-monospace);
+  font-size: var(--code-size);
+  background-color: var(--code-background);
+  background-image: none;
+  line-height: var(--line-height-normal);
+  padding-inline: var(--size-4-3);
+}
+.markdown-source-view.mod-cm6 .cm-line.templater-inline {
+  border-top-left-radius: var(--radius-m);
+  border-top-right-radius: var(--radius-m);
+  padding-top: var(--size-2-3);
+}
+.markdown-source-view.mod-cm6
+  .cm-line.templater-command-bg:not(:has(+ .cm-line.templater-command-bg)) {
+  border-bottom-left-radius: var(--radius-m);
+  border-bottom-right-radius: var(--radius-m);
+  padding-bottom: var(--size-2-3);
+}
+
 /*Codeblock (no language specified) */
 .markdown-preview-view pre {
   border-radius: var(--radius-m);
@@ -1225,11 +1251,6 @@ del {
 .markdown-preview-view img,
 .markdown-rendered img {
   border-radius: var(--scale-radius-2);
-}
-
-.markdown-rendered table {
-  border-radius: var(--radius-m);
-  overflow-wrap: initial;
 }
 
 .markdown-rendered tbody > tr > td {
@@ -1259,182 +1280,52 @@ blockquote {
   margin-block-end: 0rem;
 }
 
+/* --- prism-q3 refined callout look (color unchanged, uses --callout-color) --- */
+.callout {
+  /* render true color instead of blending into Dawn's paper bg */
+  mix-blend-mode: normal;
+  background-color: rgba(var(--callout-color), var(--callout-tint-opacity));
+  border: var(--callout-border-width) solid
+    rgba(var(--callout-color), var(--callout-border-opacity));
+  border-left-width: var(--callout-bar-width);
+  border-left-color: rgba(var(--callout-color), var(--callout-bar-opacity));
+}
+
+/* prism-q3 [!principle] — mapped onto Dawn purple token */
+.callout[data-callout="principle"] {
+  --callout-color: var(--color-purple-rgb);
+  --callout-icon: lucide-scale;
+}
+
+/* Callout title + icon — unified for every type (incl. custom) */
 .callout-title {
-  gap: 0px;
-  padding: var(--size-4-3) 0 var(--size-4-3) 0;
-}
-
-.callout[data-callout="bug"] .callout-title {
   margin-top: var(--size-4-3);
   margin-bottom: var(--size-4-3);
-  gap: var(--size-4-2);
+  /* icon↔text gap is controlled by .callout-title-inner's left padding below,
+     so zero the flex gap (else the two spacings stack) */
+  gap: 0;
   padding: var(--callout-title-padding);
 }
-
-.callout[data-callout="bug"] .callout-title .callout-icon {
+.callout-title .callout-icon {
   align-self: center;
   padding-top: 0px;
 }
-
-.callout[data-callout="default"] .callout-title {
-  margin-top: var(--size-4-3);
-  margin-bottom: var(--size-4-3);
-  gap: var(--size-4-2);
-  padding: var(--callout-title-padding);
-}
-
-.callout[data-callout="default"] .callout-title .callout-icon {
-  align-self: center;
-  padding-top: 0px;
-}
-
-.callout[data-callout="error"] .callout-title .callout-icon {
-  align-self: center;
-  padding-top: 0px;
-}
-
-.callout[data-callout="error"] .callout-title {
-  margin-top: var(--size-4-3);
-  margin-bottom: var(--size-4-3);
-  gap: var(--size-4-2);
-  padding: var(--callout-title-padding);
-}
-
-.callout[data-callout="example"] .callout-title {
-  margin-top: var(--size-4-3);
-  margin-bottom: var(--size-4-3);
-  gap: var(--size-4-2);
-  padding: var(--callout-title-padding);
-}
-
-.callout[data-callout="example"] .callout-title .callout-icon {
-  align-self: center;
-  padding-top: 0px;
-}
-
-.callout[data-callout="fail"] .callout-title {
-  margin-top: var(--size-4-3);
-  margin-bottom: var(--size-4-3);
-  gap: var(--size-4-2);
-  padding: var(--callout-title-padding);
-}
-
-.callout[data-callout="fail"] .callout-title .callout-icon {
-  align-self: center;
-  padding-top: 0px;
-}
-
-.callout[data-callout="important"] .callout-title {
-  margin-top: var(--size-4-3);
-  margin-bottom: var(--size-4-3);
-  gap: var(--size-4-2);
-  padding: var(--callout-title-padding);
-}
-
-.callout[data-callout="important"] .callout-title .callout-icon {
-  align-self: center;
-  padding-top: 0px;
-}
-
-.callout[data-callout="info"] .callout-title {
-  margin-top: var(--size-4-3);
-  margin-bottom: var(--size-4-3);
-  gap: var(--size-4-2);
-  padding: var(--callout-title-padding);
-}
-
-.callout[data-callout="info"] .callout-title .callout-icon {
-  align-self: center;
-  padding-top: 0px;
-}
-
-.callout[data-callout="question"] .callout-title {
-  margin-top: var(--size-4-3);
-  margin-bottom: var(--size-4-3);
-  gap: var(--size-4-2);
-  padding: var(--callout-title-padding);
-}
-
-.callout[data-callout="question"] .callout-title .callout-icon {
-  align-self: center;
-  padding-top: 0px;
-}
-
-.callout[data-callout="success"] .callout-title {
-  margin-top: var(--size-4-3);
-  margin-bottom: var(--size-4-3);
-  gap: var(--size-4-2);
-  padding: var(--callout-title-padding);
-}
-
-.callout[data-callout="success"] .callout-title .callout-icon {
-  align-self: center;
-  padding-top: 0px;
-}
-
-.callout[data-callout="summary"] .callout-title {
-  margin-top: var(--size-4-3);
-  margin-bottom: var(--size-4-3);
-  gap: var(--size-4-2);
-  padding: var(--callout-title-padding);
-}
-
-.callout[data-callout="summary"] .callout-title .callout-icon {
-  align-self: center;
-  padding-top: 0px;
-}
-
-.callout[data-callout="tip"] .callout-title {
-  margin-top: var(--size-4-3);
-  margin-bottom: var(--size-4-3);
-  gap: var(--size-4-2);
-  padding: var(--callout-title-padding);
-}
-
-.callout[data-callout="tip"] .callout-title .callout-icon {
-  align-self: center;
-  padding-top: 0px;
-}
-
-.callout[data-callout="todo"] .callout-title {
-  margin-top: var(--size-4-3);
-  margin-bottom: var(--size-4-3);
-  gap: var(--size-4-2);
-  padding: var(--callout-title-padding);
-}
-
-.callout[data-callout="todo"] .callout-title .callout-icon {
-  align-self: center;
-  padding-top: 0px;
-}
-
-.callout[data-callout="warning"] .callout-title {
-  margin-top: var(--size-4-3);
-  margin-bottom: var(--size-4-3);
-  gap: var(--size-4-2);
-  padding: var(--callout-title-padding);
-}
-
-.callout[data-callout="warning"] .callout-title .callout-icon {
-  align-self: center;
-  padding-top: 0px;
-}
-
-.callout[data-callout="quote"] .callout-title {
-  margin-top: var(--size-4-3);
-  margin-bottom: var(--size-4-3);
-  gap: var(--size-4-2);
-  padding: var(--callout-title-padding);
-}
-
-.callout[data-callout="quote"] .callout-title .callout-icon {
-  align-self: center;
-  padding-top: 0px;
+/* callout icon → 16×16 */
+.callout-icon svg {
+  width: 16px;
+  height: 16px;
 }
 
 .callout-title-inner {
   font-weight: var(--font-normal);
   border-left: none;
+  /* spacing between the icon and the title text */
+  padding: 0 0 0 var(--size-2-3);
+}
+
+/* callout body text size */
+.callout-content {
+  font-size: var(--scale-dimension-font-size-100);
 }
 
 .markdown-rendered blockquote {
@@ -1449,7 +1340,7 @@ blockquote {
 
 .callout-icon {
   align-self: baseline;
-  margin-top : var(--scale-dimension-size-0);
+  margin-top: var(--scale-dimension-size-0);
 }
 
 .callout-content > p {
@@ -1458,30 +1349,59 @@ blockquote {
 
 .markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote {
   background-color: var(--blockquote-background-color);
-  padding: var(--size-4-2);
+  /* horizontal indent only — vertical padding would offset each line from
+     the 1.9em ruled-gradient phase and double the underlines */
+  padding-inline: var(--size-4-2);
+  padding-block: 0;
 }
 
 /*--Tables--*/
 
 .block-language-dataview,
 .markdown-source-view.mod-cm6 .cm-content > [contenteditable="false"] {
-  border-radius: var(--radius-s);
+  /* Live Preview embed widgets (table, mermaid, callout, dataview) —
+     match reading-mode block radius instead of the tiny 2px default */
+  border-radius: var(--radius-m);
+}
+
+/* NB: don't style the code-fence source lines (.HyperMD-codeblock-begin
+   /-end) with a bg + radius here. When a block is rendered (mermaid, or
+   code with cursor outside) the opening fence line still exists in the
+   DOM and would paint as a stray rounded box floating above the embed.
+   Rendered blocks already get their radius from the embed rule above. */
+
+/* Live Preview: match the reading-mode table radius + subtle fill.
+   min = content width (max-content); NO max-width cap so a wide table grows
+   past the note width and the ancestor .cm-embed-block (overflow-x:auto)
+   scrolls it instead of compressing/wrapping the cells. */
+.markdown-source-view.mod-cm6 table {
+  width: max-content;
+  border-radius: var(--radius-m);
+  overflow: hidden;
+  background-color: var(--color-gray-alpha-25);
+}
+/* editing table cells → roomier padding */
+.markdown-source-view.mod-cm6 table.table-editor td,
+.markdown-source-view.mod-cm6 table.table-editor th {
+  padding: var(--size-4-2) var(--size-4-1);
 }
 
 .markdown-rendered table {
-  width: 100%;
-  overflow-wrap: anywhere;
+  /* size to content, but never past the note width (then it wraps) */
+  width: max-content;
+  max-width: 100%;
   border-radius: var(--radius-m);
+  overflow: hidden; /* clip cell corners to the radius (like the code box) */
   margin-bottom: var(--scale-dimension-size-25);
-  border-radius: var(--radius-m);
   background-color: var(--color-gray-alpha-25);
 } /*Reading Mode*/
 
 /*Table Headers & Body*/
 .markdown-rendered td,
 .markdown-rendered th {
-  padding-top: var(--size-4-3);
-  padding-bottom: var(--size-4-3);
+  /* full inner padding — the old rule set only top/bottom, so cells lost
+     their horizontal breathing room */
+  padding: var(--size-4-3) var(--size-4-4);
 } /*Reading Mode*/
 
 .markdown-rendered tbody tr:nth-child(2n) {
@@ -1518,12 +1438,26 @@ blockquote {
 }
 
 /*--Frontmatter/Metadata/Yaml--*/
+/* Frontmatter card — reading (.frontmatter-container) + editing properties
+   panel (.metadata-container) share one look: paper-toned bg (theme-split:
+   light ash, dark base-20), 16px pad, large radius. bg MUST be theme-split
+   because light/dark want DIFFERENT tokens, not one token's two values. */
+.frontmatter-container,
+.metadata-container {
+  border-radius: var(--radius-l);
+  padding: var(--scale-dimension-size-200);
+}
 .frontmatter-container {
-  border-radius: var(--radius-m);
-  background-color: var(--color-gray-alpha-25);
-  padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-3);
   margin-bottom: var(--size-4-1);
 } /*Reading Mode*/
+.theme-light .frontmatter-container,
+.theme-light .metadata-container {
+  background-color: var(--color-ash-300);
+}
+.theme-dark .frontmatter-container,
+.theme-dark .metadata-container {
+  background-color: var(--color-base-20);
+}
 
 .frontmatter-container .frontmatter-container-header {
   color: var(--text-normal);
@@ -1553,6 +1487,28 @@ blockquote {
   color: var(--text-accent);
 }
 
+/* property value fields fill the row so every well reaches the same right
+   edge — incl. date/number/datetime inputs that otherwise shrink to their
+   content width and float short. */
+.metadata-property-value,
+.metadata-property-value .metadata-input-longtext,
+.metadata-property-value .metadata-input-wrapper,
+.metadata-property-value input:not([type="checkbox"]) {
+  width: 100%;
+}
+/* value wells → page bg so they read as fields inset in the card
+   (card is ash-300/base-20; page bg is lighter → the input reads as a well) */
+.metadata-property-value .metadata-input-longtext,
+.metadata-property-value .metadata-input-wrapper,
+.metadata-property-value input {
+  background-color: var(--background-primary);
+}
+
+/* sidebar vault-profile → page bg to match the note surface */
+.workspace-sidedock-vault-profile {
+  background-color: var(--background-primary);
+}
+
 /*Frontmatter Tag*/
 .frontmatter-container .frontmatter-alias {
   background-color: var(--color-gray-alpha-100);
@@ -1574,9 +1530,6 @@ iframe,
 .markdown-source-view.mod-cm6 .cm-embed-block {
   overflow-wrap: anywhere;
 } /*Live Preview Mode*/
-.markdown-source-view .markdown-embed:not(.mod-empty) {
-} /*Live Preview Mode*/
-
 
 .markdown-embed-link {
   border-radius: var(--radius-m);
@@ -1676,7 +1629,7 @@ div.mermaid {
   position: relative;
   max-height: 600px;
   max-width: 100%;
-  background-color: var(--static-alpha-balck-100);
+  background-color: var(--static-alpha-black-100);
   padding: var(--size-4-4);
   border-radius: var(--radius-m);
 }
@@ -1698,4 +1651,307 @@ div.mermaid::after {
 
 .menu {
   border: 1px solid var(--background-modifier-border-focus);
+}
+
+/* -----------------------------------------------------
+
+ ✼ prism-q3 Body Pass — editorial typography ✼
+ (colors unchanged; font + spacing + heading treatment)
+
+	----------------------------------------------------- */
+
+/* Route Pretendard through Obsidian's modern font vars too */
+body {
+  --font-text-theme: "Pretendard Variable", "Pretendard", "Inter", sans-serif;
+  --font-interface-theme:
+    "Pretendard Variable", "Pretendard", "Inter", sans-serif;
+}
+
+/* Headings: tighter tracking + heavier contrast (reading + editing views) */
+.markdown-rendered h1,
+.markdown-rendered h2,
+.markdown-rendered h3,
+.markdown-rendered h4,
+.cm-header-1,
+.cm-header-2,
+.cm-header-3,
+.cm-header-4 {
+  letter-spacing: -0.014em;
+  font-weight: 600;
+}
+.markdown-rendered h1,
+.cm-header-1 {
+  letter-spacing: -0.02em;
+}
+
+/* h6 → prism-q3 "section-label" / eyebrow */
+.markdown-rendered h6,
+.HyperMD-header-6 .cm-header-6 {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-faint);
+  font-weight: var(--font-semibold);
+}
+.markdown-rendered h6 {
+  border-bottom: 1px solid var(--background-modifier-border);
+  padding-bottom: var(--size-2-2);
+}
+
+/* Unified heading rhythm — reading + editing share the SAME 16px above /
+   16px below every heading, so switching modes never shifts the layout.
+   Reading uses margin (blocks collapse cleanly); editing uses padding on
+   the cm-line (CM6 lines don't margin-collapse, and header lines are
+   already excluded from ruled lines, so padding just adds breathing room). */
+.markdown-rendered h1,
+.markdown-rendered h2,
+.markdown-rendered h3,
+.markdown-rendered h4,
+.markdown-rendered h5,
+.markdown-rendered h6 {
+  margin-top: var(--size-4-4);
+  margin-bottom: var(--size-4-4);
+}
+.markdown-source-view.mod-cm6 .HyperMD-header-1,
+.markdown-source-view.mod-cm6 .HyperMD-header-2,
+.markdown-source-view.mod-cm6 .HyperMD-header-3,
+.markdown-source-view.mod-cm6 .HyperMD-header-4,
+.markdown-source-view.mod-cm6 .HyperMD-header-5,
+.markdown-source-view.mod-cm6 .HyperMD-header-6 {
+  /* top spacing only — a padding-bottom here does NOT collapse with the blank
+     line the user typed after a heading (unlike reading-mode margin), so it
+     read as an always-present phantom "empty line". drop it; the following
+     line supplies the gap. */
+  padding-top: var(--size-4-4);
+}
+/* the blank source line markdown requires between a heading and the next
+   block (table/callout) is invisible in reading mode but shows as a full
+   32px ruled line in editing → reads as a phantom "extra enter". collapse
+   just that line (blank line directly after a heading) to a thin spacer so
+   editing tracks reading, and drop its ruled underline. */
+.markdown-source-view.mod-cm6
+  .cm-line[class*="HyperMD-header"] + .cm-line:has(br) {
+  line-height: var(--size-4-3);
+  background-image: none;
+}
+
+/* Divider (hr) — reading + editing share it and land ON the notebook grid:
+   exactly one line pitch (--rule-height == a blank Enter line) with the line
+   at the BOTTOM of the slot, right where every ruled line sits, so a divider
+   reads as one darker notebook line. Color = --hr-color (border + 8% ink), a
+   step darker than the rule (border + 3%). */
+.markdown-rendered hr {
+  height: var(--rule-height);
+  margin: 0;
+  border: none;
+  border-bottom: var(--hr-thickness) solid var(--hr-color);
+  box-sizing: border-box;
+}
+/* editing: the divider line <div class="hr cm-line"><br><hr> is already one
+   pitch on the grid, but the real <hr> floats mid-slot (off-grid). hide it
+   and let the line paint its OWN ruled underline, recolored to the divider
+   tone → the line lands exactly where a ruled line would, no double line. */
+.markdown-source-view.mod-cm6 .cm-line.hr {
+  --rule-color: var(--hr-color);
+}
+.markdown-source-view.mod-cm6 .cm-line.hr hr {
+  display: none;
+}
+
+/* -----------------------------------------------------
+
+ ✼ Ruled-notebook lines ✼
+
+ Each rule is drawn on the BOTTOM of every text line-box, so it is
+ tied to the line itself and can never drift out of alignment.
+ Because line-height (unitless) and the tile size (in em) both scale
+ with the element's own font size, it stays aligned at any zoom.
+
+ Painted on body text only — p, leaf list items, editor lines — and
+ explicitly NOT on frontmatter, tables, callouts, quotes, code or
+ embeds, so nothing overlaps. One knob: --rule-line-height.
+
+	----------------------------------------------------- */
+:root {
+  --rule-height: 2em; /* single knob: line pitch (== line-height) */
+}
+/* --rule-color MUST be declared where --mono-rgb-100 exists (the theme
+   class lives on <body>, not <html>). Declaring it on :root resolves
+   var(--mono-rgb-100) against <html> where it is undefined, yielding an
+   empty (guaranteed-invalid) value that silently kills background-image.
+   Each theme class resolves its own mono value → adaptive light/dark. */
+.theme-light,
+.theme-dark {
+  /* divider (hr) color, nudged 3% toward ink so ruled lines read a touch
+     stronger than a lone divider. 1px thickness. adaptive per theme. */
+  --rule-color: color-mix(
+    in srgb,
+    var(--background-modifier-border),
+    rgb(var(--mono-rgb-100)) 3%
+  );
+
+  /* divider (hr) — one step DARKER than the ruled underline so a real
+     divider reads stronger than a lone line. rule = border+3% ink,
+     hr = border+16%. declared here (not :root) so --mono-rgb-100 resolves. */
+  --hr-color: color-mix(
+    in srgb,
+    var(--background-modifier-border),
+    rgb(var(--mono-rgb-100)) 16%
+  );
+
+  /* scrollbar thumb — resolved here where --mono-rgb-100 exists. the
+     track (--scrollbar-bg) is transparent, set at :root. */
+  --scrollbar-thumb-bg: rgba(var(--mono-rgb-100), 0.1);
+  --scrollbar-active-thumb-bg: rgba(var(--mono-rgb-100), 0.2);
+
+  /* these also depend on --mono-rgb-100; relocated here so they resolve
+     (at :root the mono value is undefined → empty → theme intent lost). */
+  --indentation-guide-color: rgba(var(--mono-rgb-100), 0.1);
+  --indentation-guide-color-active: rgba(var(--mono-rgb-100), 0.3);
+  --swatch-shadow: inset 0 0 0 1px rgba(var(--mono-rgb-100), 0.15);
+
+  /* settings-card border — needs --background-modifier-border (theme only) */
+  --setting-items-border-color: var(--background-modifier-border);
+}
+
+/* Obsidian styles only the scrollbar THUMB and leaves the classic 15px
+   track at Chromium's default white, which shows as a white strip on the
+   beige page. force the track (and corner) transparent so the page bg
+   shows through; keep the thumb from the theme var. */
+::-webkit-scrollbar {
+  background: transparent;
+}
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-track-piece,
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb-bg);
+  /* fully rounded pill, inset from the 15px track via a transparent
+     border + padding-box clip so it floats as a slim capsule */
+  border-radius: var(--radius-full);
+  border: 3px solid transparent;
+  background-clip: padding-box;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--scrollbar-active-thumb-bg);
+  background-clip: padding-box;
+}
+
+/* nav folder tree: the guide line is border-left on .nav-folder-children.
+   nested folders' collapse chevrons sit on top of that line and read as a
+   collision. mask just behind the chevron with the sidebar bg so the line
+   cleanly breaks at each arrow. sidebar bg = --background-primary (measured;
+   the nav containers themselves are transparent). the chevron box is shorter
+   than the row, so extend the mask ±6px with box-shadow (same color, no
+   layout shift) → the line breaks over the full row, not a stub. */
+.nav-folder-children .tree-item-icon.collapse-icon {
+  background-color: var(--background-primary);
+  box-shadow:
+    0 -10px 0 var(--background-primary),
+    0 10px 0 var(--background-primary);
+}
+/* on hover / active / selected rows the row highlight already covers the
+   guide line, so the primary-colored mask would punch a lighter box into
+   the highlight. drop it there and let the highlight read cleanly. */
+.nav-folder-children .tree-item-self:hover .tree-item-icon.collapse-icon,
+.nav-folder-children .tree-item-self.is-active .tree-item-icon.collapse-icon,
+.nav-folder-children .tree-item-self.has-focus .tree-item-icon.collapse-icon,
+.nav-folder-children .tree-item-self.is-selected .tree-item-icon.collapse-icon {
+  background-color: transparent;
+  box-shadow: none;
+}
+
+/* Settings modal — group settings rendered as theme cards. tokens below
+   (padding/radius/border-width/corner-shape are theme-independent → :root;
+   border-color needs --background-modifier-border → theme block above). */
+:root {
+  --setting-items-padding: var(--size-4-4);
+  --setting-items-radius: var(--radius-l);
+  --corner-shape: round;
+  --setting-items-border-width: 1px;
+}
+.setting-group .setting-items {
+  background-color: var(--background-primary-low);
+  padding: var(--setting-items-padding);
+  border-radius: var(--setting-items-radius);
+  corner-shape: var(--corner-shape);
+  border: var(--setting-items-border-width) solid
+    var(--setting-items-border-color);
+}
+.setting-group .setting-group-search {
+  background-color: var(--background-primary-low);
+  border-radius: var(--setting-items-radius);
+}
+
+/* A 1px rule at the bottom of every text line-box, repeated per line.
+   line-height and the gradient period are the SAME em value, so the
+   rule always sits under each line and never drifts. Every text box
+   shares the same phase, so a parent list item, its nested items and
+   its inner <p> overlap onto the same lines and read as one clean
+   rule. No :has(), no background-size, no number×length calc — a
+   parser that chokes on any of those would drop the whole rule. */
+.markdown-rendered p,
+.markdown-rendered li,
+.markdown-source-view.mod-cm6 .cm-line {
+  line-height: var(--rule-height);
+  background-image: repeating-linear-gradient(
+    to bottom,
+    transparent 0,
+    transparent calc(var(--rule-height) - 1px),
+    var(--rule-color) calc(var(--rule-height) - 1px),
+    var(--rule-color) var(--rule-height)
+  );
+}
+
+/* One rule per visual line, no matter how lists nest. The <li> box spans
+   its own text AND its nested children, so painting the <li> repaints over
+   any descendant's rows → double lines (parent-li over child-li, or li over
+   its own <p>). Fix: let the innermost text holder paint — the <p> for its
+   text, each nested <li> for its own row — and silence every <li> that has
+   such a child. A tight leaf <li> (plain text, no child block) still paints
+   itself. <p> keeps its rule and 1.9em line-height. */
+.markdown-rendered li:has(> p),
+.markdown-rendered li:has(> ul),
+.markdown-rendered li:has(> ol) {
+  background-image: none;
+}
+
+/* zero body-text margins so a run of lines reads as continuous paper
+   (headings keep their own spacing → natural section breaks) */
+.markdown-rendered p,
+.markdown-rendered li,
+.markdown-rendered ul,
+.markdown-rendered ol {
+  margin-block: 0;
+}
+
+/* never rule these — reading + editing. table-row/footnote/embed added
+   so ruled lines don't bleed through those blocks and stack (overlap).
+   NOTE: blockquotes are intentionally NOT excluded — they get ruled like
+   body text (callouts stay excluded as distinct component boxes). */
+.markdown-rendered .callout p,
+.markdown-rendered .callout li,
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-callout,
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-codeblock,
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-table-row,
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-footnote,
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-header,
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-frontmatter,
+.markdown-source-view.mod-cm6 .cm-embed-block {
+  background-image: none;
+  line-height: var(--line-height-normal);
+}
+
+/* blank lines (pressing Enter) render as <div class="cm-line"><br></div>.
+   KEEP them ruled so empty gaps read as continuous notebook paper — but
+   NOT the blank line directly hugging a code / mermaid block, which would
+   frame the block with a stray rule above or below it. adjacency-scoped
+   so only those touching a block are dropped. standalone rule: :has()
+   kept out of the earlier comma group to avoid dropping it wholesale. */
+.markdown-source-view.mod-cm6 .cm-line:has(br):has(+ .HyperMD-codeblock-begin),
+.markdown-source-view.mod-cm6 .cm-line:has(br):has(+ .cm-embed-block),
+.markdown-source-view.mod-cm6 .HyperMD-codeblock-end + .cm-line:has(br),
+.markdown-source-view.mod-cm6 .cm-embed-block + .cm-line:has(br) {
+  background-image: none;
 }

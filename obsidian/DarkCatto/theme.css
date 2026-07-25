@@ -1,0 +1,412 @@
+.theme-dark {
+    --ctp-base: #1e1e2e;
+    --ctp-mantle: #181825;
+    --ctp-crust: #11111b;
+    --ctp-surface0: #313244;
+    --ctp-surface1: #45475a;
+    --ctp-surface2: #585b70;
+
+    --ctp-text: #cdd6f4;
+    --ctp-subtext: #a6adc8;
+    --ctp-overlay: #6c7086;
+
+    --ctp-lavender: #b4befe;
+    --ctp-blue: #89b4fa;
+    --ctp-sapphire: #74c7ec;
+    --ctp-mauve: #cba6f7;
+    --ctp-pink: #f5c2e7;
+    --ctp-red: #f38ba8;
+    --ctp-peach: #fab387;
+    --ctp-yellow: #f9e2af;
+    --ctp-green: #a6e3a1;
+    --ctp-teal: #94e2d5;
+
+    --background-primary: rgba(30, 30, 46, 0.78);
+    --background-primary-alt: rgba(24, 24, 37, 0.78);
+    --background-secondary: rgba(17, 17, 27, 0.72);
+    --background-secondary-alt: rgba(17, 17, 27, 0.72);
+    --background-modifier-border: rgba(88, 91, 112, 0.35);
+    --background-modifier-hover: rgba(69, 71, 90, 0.45);
+
+    backdrop-filter: blur(22px) saturate(140%);
+    -webkit-backdrop-filter: blur(22px) saturate(140%);
+
+    --text-normal: var(--ctp-text);
+    --text-muted: var(--ctp-subtext);
+    --text-faint: var(--ctp-overlay);
+    --text-accent: var(--ctp-lavender);
+    --text-accent-hover: var(--ctp-blue);
+    --text-selection: rgba(180, 190, 254, 0.25);
+    --text-highlight-bg: rgba(249, 226, 175, 0.25);
+
+    --font-text-theme:
+        -apple-system, "SF Pro Text", "SF Pro Display", "Segoe UI", system-ui,
+        sans-serif;
+    --font-interface-theme:
+        -apple-system, "SF Pro Text", "SF Pro Display", "Segoe UI", system-ui,
+        sans-serif;
+    --font-monospace-theme:
+        "JetBrains Mono", "SF Mono", Menlo, Consolas, monospace;
+
+    --font-text-size: 16px;
+    --line-height-normal: 1.65;
+
+    --link-color: var(--ctp-blue);
+    --link-color-hover: var(--ctp-sapphire);
+    --link-unresolved-color: var(--ctp-red);
+
+    --interactive-accent: var(--ctp-mauve);
+    --interactive-accent-hover: var(--ctp-pink);
+    --interactive-success: var(--ctp-green);
+    --interactive-error: var(--ctp-red);
+
+    --code-background: rgba(17, 17, 27, 0.55);
+    --code-normal: var(--ctp-peach);
+    --code-comment: var(--ctp-overlay);
+    --code-function: var(--ctp-blue);
+    --code-keyword: var(--ctp-mauve);
+    --code-string: var(--ctp-green);
+    --code-property: var(--ctp-lavender);
+    --code-tag: var(--ctp-red);
+    --code-value: var(--ctp-peach);
+}
+
+.theme-light {
+    --ctp-base: #f6f5fa;
+    --ctp-mantle: #ececf5;
+    --ctp-crust: #e2e1ee;
+    --ctp-surface0: #d8d7e6;
+    --ctp-surface1: #c4c3d8;
+    --ctp-surface2: #b0afc9;
+
+    --ctp-text: #1e1e2e;
+    --ctp-subtext: #4c4f69;
+    --ctp-overlay: #6c6f85;
+
+    --ctp-lavender: #7287fd;
+    --ctp-blue: #1e66f5;
+    --ctp-sapphire: #209fb5;
+    --ctp-mauve: #8839ef;
+    --ctp-pink: #ea76cb;
+    --ctp-red: #d20f39;
+    --ctp-peach: #fe640b;
+    --ctp-yellow: #df8e1d;
+    --ctp-green: #40a02b;
+    --ctp-teal: #179299;
+
+    --background-primary: rgba(246, 245, 250, 0.9);
+    --background-primary-alt: rgba(236, 236, 245, 0.9);
+    --background-secondary: rgba(226, 225, 238, 0.85);
+    --background-secondary-alt: rgba(226, 225, 238, 0.85);
+    --background-modifier-border: rgba(176, 175, 201, 0.4);
+    --background-modifier-hover: rgba(196, 195, 216, 0.5);
+
+    backdrop-filter: blur(22px) saturate(140%);
+    -webkit-backdrop-filter: blur(22px) saturate(140%);
+
+    --text-normal: var(--ctp-text);
+    --text-muted: var(--ctp-subtext);
+    --text-faint: var(--ctp-overlay);
+    --text-accent: var(--ctp-lavender);
+    --text-accent-hover: var(--ctp-blue);
+    --text-selection: rgba(114, 135, 253, 0.18);
+    --text-highlight-bg: rgba(223, 142, 29, 0.2);
+
+    --font-text-theme:
+        -apple-system, "SF Pro Text", "SF Pro Display", "Segoe UI", system-ui,
+        sans-serif;
+    --font-interface-theme:
+        -apple-system, "SF Pro Text", "SF Pro Display", "Segoe UI", system-ui,
+        sans-serif;
+    --font-monospace-theme:
+        "JetBrains Mono", "SF Mono", Menlo, Consolas, monospace;
+
+    --font-text-size: 16px;
+    --line-height-normal: 1.65;
+
+    --link-color: var(--ctp-blue);
+    --link-color-hover: var(--ctp-sapphire);
+    --link-unresolved-color: var(--ctp-red);
+
+    --interactive-accent: var(--ctp-mauve);
+    --interactive-accent-hover: var(--ctp-pink);
+    --interactive-success: var(--ctp-green);
+    --interactive-error: var(--ctp-red);
+
+    --code-background: rgba(226, 225, 238, 0.6);
+    --code-normal: var(--ctp-peach);
+    --code-comment: var(--ctp-overlay);
+    --code-function: var(--ctp-blue);
+    --code-keyword: var(--ctp-mauve);
+    --code-string: var(--ctp-green);
+    --code-property: var(--ctp-lavender);
+    --code-tag: var(--ctp-red);
+    --code-value: var(--ctp-peach);
+}
+
+.markdown-rendered h2,
+.markdown-rendered h3,
+.markdown-rendered h4,
+.markdown-rendered h5,
+.markdown-rendered h6 {
+    font-family: var(--font-text-theme);
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    color: var(--ctp-text);
+    margin-top: 2.6em;
+    margin-bottom: 0.35em;
+    line-height: 1.25;
+}
+
+.markdown-rendered h1 {
+    font-size: 2.1em;
+    color: var(--ctp-lavender);
+    margin-top: 1.2em;
+}
+
+.markdown-rendered h2 {
+    font-size: 1.65em;
+    color: var(--ctp-mauve);
+}
+
+.markdown-rendered h3 {
+    font-size: 1.35em;
+    color: var(--ctp-blue);
+}
+
+.markdown-rendered h4 {
+    font-size: 1.15em;
+    color: var(--ctp-sapphire);
+}
+
+.markdown-rendered h5,
+.markdown-rendered h6 {
+    font-size: 1.05em;
+    color: var(--ctp-subtext);
+}
+
+.cm-header-1,
+.HyperMD-header-1 {
+    color: var(--ctp-lavender) !important;
+}
+
+.cm-header-2,
+.HyperMD-header-2 {
+    color: var(--ctp-mauve) !important;
+}
+
+.cm-header-3,
+.HyperMD-header-3 {
+    color: var(--ctp-blue) !important;
+}
+
+.cm-header-4,
+.HyperMD-header-4 {
+    color: var(--ctp-sapphire) !important;
+}
+
+.cm-header-5,
+.HyperMD-header-5,
+.cm-header-6,
+.HyperMD-header-6 {
+    color: var(--ctp-subtext) !important;
+}
+
+.markdown-rendered h1 + p,
+.markdown-rendered h2 + p,
+.markdown-rendered h3 + p,
+.markdown-rendered h4 + p,
+.markdown-rendered h1 + ul,
+.markdown-rendered h2 + ul,
+.markdown-rendered h3 + ul,
+.markdown-rendered h1 + ol,
+.markdown-rendered h2 + ol,
+.markdown-rendered h3 + ol {
+    margin-top: 0.2em;
+}
+
+.markdown-rendered p {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    color: var(--ctp-text);
+}
+
+.markdown-rendered ul,
+.markdown-rendered ol {
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
+}
+
+.markdown-rendered li {
+    margin-top: 0.15em;
+    margin-bottom: 0.15em;
+}
+
+.markdown-rendered a,
+.cm-link,
+.cm-hmd-internal-link {
+    color: var(--link-color) !important;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(137, 180, 250, 0.35);
+}
+
+.markdown-rendered a:hover {
+    color: var(--link-color-hover) !important;
+    border-bottom-color: var(--ctp-sapphire);
+}
+
+.internal-link {
+    color: var(--ctp-blue) !important;
+}
+
+.tag {
+    color: var(--ctp-teal) !important;
+    background-color: rgba(148, 226, 213, 0.12);
+}
+
+code,
+.cm-inline-code {
+    font-family: var(--font-monospace-theme) !important;
+    font-size: 0.88em;
+    background-color: var(--code-background);
+    color: var(--ctp-peach);
+    border-radius: 4px;
+    padding: 0.1em 0.35em;
+}
+
+pre,
+.markdown-rendered pre {
+    font-family: var(--font-monospace-theme) !important;
+    background-color: var(--code-background) !important;
+    border: 1px solid var(--background-modifier-border);
+    border-radius: 8px;
+    padding: 1em 1.2em;
+    backdrop-filter: blur(10px);
+}
+
+pre code {
+    background-color: transparent;
+    padding: 0;
+}
+
+.cm-s-obsidian .cm-keyword {
+    color: var(--ctp-mauve) !important;
+}
+
+.cm-s-obsidian .cm-string {
+    color: var(--ctp-green) !important;
+}
+
+.cm-s-obsidian .cm-comment {
+    color: var(--ctp-overlay) !important;
+    font-style: italic;
+}
+
+.cm-s-obsidian .cm-property,
+.cm-s-obsidian .cm-attribute {
+    color: var(--ctp-lavender) !important;
+}
+
+.cm-s-obsidian .cm-number {
+    color: var(--ctp-peach) !important;
+}
+
+.cm-s-obsidian .cm-variable,
+.cm-s-obsidian .cm-def {
+    color: var(--ctp-blue) !important;
+}
+
+.markdown-rendered blockquote {
+    border-left: 3px solid var(--ctp-mauve);
+    background-color: rgba(203, 166, 247, 0.06);
+    color: var(--ctp-subtext);
+    padding: 0.5em 1em;
+    margin: 0.6em 0;
+    border-radius: 0 6px 6px 0;
+}
+
+.callout {
+    background-color: rgba(137, 180, 250, 0.08);
+    border: 1px solid rgba(137, 180, 250, 0.25);
+    backdrop-filter: blur(8px);
+}
+
+.workspace-split.mod-left-split .workspace-tab-header-container,
+.workspace-split.mod-right-split .workspace-tab-header-container {
+    background-color: transparent;
+    border: none;
+}
+
+.nav-file-title,
+.nav-folder-title {
+    border-radius: 6px;
+    color: var(--ctp-subtext);
+}
+
+.nav-file-title:hover,
+.nav-folder-title:hover {
+    background-color: var(--background-modifier-hover);
+    color: var(--ctp-text);
+}
+
+.nav-file-title.is-active {
+    background-color: rgba(180, 190, 254, 0.15);
+    color: var(--ctp-lavender);
+}
+
+.workspace-tab-header {
+    background-color: transparent;
+    border: none;
+}
+
+.workspace-tab-header.is-active {
+    background-color: var(--background-modifier-hover);
+}
+
+.status-bar {
+    background-color: transparent;
+    color: var(--ctp-overlay);
+    font-size: 0.78em;
+    border-top: 1px solid var(--background-modifier-border);
+}
+
+.markdown-rendered table {
+    border-collapse: collapse;
+    margin: 1em 0;
+}
+
+.markdown-rendered th {
+    background-color: rgba(137, 180, 250, 0.12) !important;
+    color: var(--ctp-lavender);
+    font-weight: 600;
+    border: 1px solid var(--background-modifier-border);
+}
+
+.markdown-rendered td {
+    background-color: var(--ctp-mantle) !important;
+    border: 1px solid var(--background-modifier-border);
+    color: var(--ctp-text);
+}
+
+.markdown-rendered tr:nth-child(even) td,
+.markdown-rendered tr:nth-child(odd) td {
+    background-color: var(--ctp-mantle) !important;
+}
+
+.markdown-rendered tr:nth-child(even) th,
+.markdown-rendered tr:nth-child(odd) th {
+    background-color: rgba(137, 180, 250, 0.12) !important;
+}
+
+.app-container {
+    background-color: transparent;
+}
+
+.cm-strong {
+    color: var(--ctp-pink) !important;
+}
+
+em,
+.cm-em {
+    color: var(--ctp-green) !important;
+}

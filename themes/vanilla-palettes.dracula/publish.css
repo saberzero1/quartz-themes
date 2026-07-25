@@ -1435,9 +1435,9 @@ body.theme-light {
   --h6-color: var(--color-red) !important;
   --inline-title-color: var(--text-color) !important;
   --text-color: var(--text) !important;
-  --border-color: var(--border-color-primary) !important;
   --bold-color: var(--accent-color-light) !important;
   --italic-color: var(--accent-color-light) !important;
+  --border-color: var(--border-color-primary) !important;
   --code-variable: var(--text) !important;
   --accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l)) !important;
   --text: #575279 !important;
@@ -1446,6 +1446,7 @@ body.theme-light {
   --surface: #fffaf3 !important;
   --base: #faf4ed !important;
   --gold: #ea9d34 !important;
+  --accent-color-light: var(--rose) !important;
   --foam: #56949f !important;
   --highlight-high: #cecacd !important;
   --highlight-low: #f4ede8 !important;
@@ -1460,7 +1461,6 @@ body.theme-light {
   --selection-background-color: var(--overlay) !important;
   --accent-color-hover: var(--iris) !important;
   --accent-color-dark: var(--pine) !important;
-  --accent-color-light: var(--rose) !important;
   --border-color-primary: var(--highlight-med) !important;
   --border-color-secondary: var(--highlight-high) !important;
   --code-boolean: var(--rose) !important;
@@ -2518,9 +2518,9 @@ body.theme-dark {
   --h6-color: var(--color-red) !important;
   --inline-title-color: var(--text-color) !important;
   --text-color: var(--fg) !important;
-  --border-color: var(--border-color-primary) !important;
   --bold-color: var(--accent-color-light) !important;
   --italic-color: var(--accent-color-light) !important;
+  --border-color: var(--border-color-primary) !important;
   --code-variable: var(--purple) !important;
   --green: #50fa7b !important;
   --orange: #ffb86c !important;
@@ -2537,16 +2537,16 @@ body.theme-dark {
   --link-unresolved-color-hover: var(--red) !important;
   --selection: #44475a !important;
   --black: #191a21 !important;
-  --fg: #f8f8f2 !important;
   --bg: #282a36 !important;
+  --fg: #f8f8f2 !important;
   --bright-blue: #d6acff !important;
   --bright-green: #69ff94 !important;
   --bright-red: #ff6e6e !important;
   --bright-yellow: #ffffa5 !important;
+  --accent-color-light: var(--pink) !important;
   --selection-background-color: var(--selection) !important;
   --accent-color-hover: var(--green) !important;
   --accent-color-dark: var(--purple) !important;
-  --accent-color-light: var(--pink) !important;
   --border-color-primary: var(--gutter-fg) !important;
   --border-color-secondary: var(--visual) !important;
   --code-boolean: var(--purple) !important;

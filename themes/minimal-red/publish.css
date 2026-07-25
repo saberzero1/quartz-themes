@@ -1079,6 +1079,7 @@ body.theme-dark {
   --bold-color: var(--bold) !important;
   --italic-color: inherit !important;
   --red: #f03d2f !important;
+  --flashing-background: rgba(235, 111, 146, 0.3) !important;
   --text: #d7d8d7 !important;
   --gray: #242a36 !important;
   --white: #fff !important;
@@ -1086,7 +1087,6 @@ body.theme-dark {
   --light-text: #575279 !important;
   --base: #171a23 !important;
   --gold: #f6c177 !important;
-  --flashing-background: rgba(235, 111, 146, 0.3) !important;
   --link-url-hover: var(--red2) !important;
   --black: #24252a !important;
   --code-bg: #242a36 !important;

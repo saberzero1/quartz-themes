@@ -1,0 +1,1354 @@
+/* =====================================================================
+   璃墨 Glass Scholar — Obsidian Theme  (v1.0.2)
+   苹果磨砂玻璃质感 · 极简 · 论文级排版
+   ---------------------------------------------------------------------
+   全界面透明底：纯 CSS 径向渐变光晕（8 种配色）。
+   光晕色彩透过所有面板直达眼底，无遮挡、无边界、无隔离。
+   ===================================================================== */
+
+/* 等宽字体：系统本地字体链，无远程加载依赖 */
+/* JetBrains Mono 在 --font-monospace-theme 中作为首选，用户如已安装则生效 */
+
+
+/* =====================================================================
+   STYLE SETTINGS
+   ===================================================================== */
+/* @settings
+
+name: 璃墨 Glass Scholar
+id: glass-scholar
+settings:
+
+  - id: gs-group-background
+    title: 背景光晕
+    type: heading
+    level: 2
+    collapsed: false
+
+  - id: gs-wp
+    title: 光晕配色
+    description: 选择背景光晕的色彩主题。
+    type: class-select
+    default: gs-wp-dayblue
+    options:
+      - label: 幻夜蓝（深）
+        value: gs-wp-blue
+      - label: 紫罗兰（深）
+        value: gs-wp-violet
+      - label: 暮霞（深）
+        value: gs-wp-rose
+      - label: 森林（深）
+        value: gs-wp-forest
+      - label: 晨曦蓝（浅）
+        value: gs-wp-dayblue
+      - label: 薰衣草（浅）
+        value: gs-wp-lavender
+      - label: 樱粉（浅）
+        value: gs-wp-sakura
+      - label: 薄荷（浅）
+        value: gs-wp-mint
+
+  - id: gs-glow-blur
+    title: 光晕模糊 (px)
+    description: 越大越柔和晕染
+    type: variable-number-slider
+    default: 40
+    min: 0
+    max: 120
+    step: 2
+
+  - id: gs-glow-opacity
+    title: 光晕强度
+    type: variable-number-slider
+    default: 1
+    min: 0.2
+    max: 1.6
+    step: 0.05
+
+  - id: gs-group-ui
+    title: 界面行为
+    type: heading
+    level: 2
+    collapsed: false
+
+  - id: gs-autohide-ui
+    title: 自动隐藏侧边工具栏
+    description: 完全收起左侧工具栏（不留位），鼠标移到左边缘时丝滑滑出并推开内容。
+    type: class-toggle
+    default: false
+
+  - id: gs-group-typography
+    title: 论文排版
+    type: heading
+    level: 2
+    collapsed: false
+
+  - id: gs-use-serif
+    title: 正文使用衬线字体
+    description: 关闭时使用系统自定义字体。开启才使用衬线。
+    type: class-toggle
+    default: false
+
+  - id: gs-justify
+    title: 两端对齐
+    type: class-toggle
+    default: true
+
+  - id: gs-indent
+    title: 段首 2em 缩进
+    type: class-toggle
+    default: true
+
+  - id: gs-dropcap
+    title: 首段首字母下沉
+    type: class-toggle
+    default: false
+
+  - id: gs-line-height
+    title: 行距
+    type: variable-number-slider
+    default: 1.85
+    min: 1.4
+    max: 2.2
+    step: 0.05
+
+  - id: gs-measure
+    title: 正文最大宽度 (ch)
+    type: variable-number-slider
+    default: 72
+    min: 56
+    max: 100
+    step: 2
+*/
+
+
+body {
+  --gs-line-height: 1.85;
+  --gs-measure: 72;
+  --gs-blur: 12;
+  --gs-glass-opacity: 0;
+  --gs-glow-blur: 40;
+  --gs-glow-opacity: 1;
+  /* 默认晨曦蓝（蓝白渐变）配色 */
+  --gs-glow-1: #5b8dff;
+  --gs-glow-2: #9bbcff;
+  --gs-glow-3: #c8dcff;
+  --gs-glow-4: #e8f0ff;
+  --gs-glow-base: #eaf1ff;
+  --radius-s: 6px;
+  --radius-m: 10px;
+  --radius-l: 14px;
+  --raised-background: color-mix(in srgb, var(--background-secondary) 70%, transparent);
+  --raised-blur: blur(16px) saturate(180%);
+  --raised-shadow: 0 6px 18px rgba(0,0,0,0.12), inset 0 1px 1px var(--gs-lg-rim);
+  --raised-mask-border-width: 0px;
+}
+
+
+/* =====================================================================
+   颜色变量 — 浅色（光晕关闭时为正常白底）
+   ===================================================================== */
+body.theme-light {
+  --color-base-10: #ffffff;
+  --gs-text:           #1c2230;
+  --gs-text-muted:     #565f70;
+  --gs-text-faint:     #8a93a0;
+
+  --gs-glass-bg:       color-mix(in srgb, #ffffff calc(var(--gs-glass-opacity, 0.42) * 100%), transparent);
+  --gs-glass-bg-alt:   color-mix(in srgb, #ffffff calc(var(--gs-glass-opacity, 0.42) * 80%), transparent);
+  --gs-glass-border:   rgba(255, 255, 255, 0.5);
+  --gs-glass-border-2: rgba(20, 30, 50, 0.06);
+  --gs-glass-shadow:   inset 0 1px 1px rgba(255,255,255,0.5), 0 6px 18px rgba(31, 48, 90, 0.05);
+  --gs-lg-tint: #ffffff;
+  --gs-lg-rim: rgba(255,255,255,0.7);
+  --gs-lg-edge: rgba(255,255,255,0.45);
+
+  --gs-code-bg: rgba(20, 30, 50, 0.055);
+  --gs-code-border: rgba(20, 30, 50, 0.08);
+  --gs-quote-bg: rgba(74, 111, 165, 0.07);
+  --gs-table-head: rgba(74, 111, 165, 0.10);
+  --gs-table-stripe: rgba(74, 111, 165, 0.035);
+
+  --background-primary:        transparent;
+  --background-primary-alt:    transparent;
+  --background-secondary:      transparent;
+  --background-secondary-alt:  transparent;
+  --background-modifier-border:        rgba(20, 30, 50, 0.08);
+  --background-modifier-border-hover:  rgba(20, 30, 50, 0.16);
+  --background-modifier-border-focus:  var(--gs-accent, #4a6fa5);
+  --background-modifier-form-field:    #ffffff;
+  --background-modifier-cover:         rgba(244, 246, 250, 0.85);
+  --background-modifier-hover:         rgba(74, 111, 165, 0.08);
+
+  --text-normal:  var(--gs-text);
+  --text-muted:   var(--gs-text-muted);
+  --text-faint:   var(--gs-text-faint);
+  --text-accent:  var(--gs-accent, #4a6fa5);
+  --text-on-accent: #ffffff;
+  --text-error:   #c0392b;
+  --text-success: #2e7d57;
+
+  --interactive-normal:       #ffffff;
+  --interactive-hover:        #f0f3f8;
+  --interactive-accent:       var(--gs-accent, #4a6fa5);
+  --interactive-accent-hover: var(--gs-accent-hover, #3c5a87);
+	--nav-item-color:          var(--gs-text);
+	--nav-item-color-hover:    var(--gs-text);
+	--nav-item-color-active:   var(--gs-accent);
+	--nav-item-background-hover:   rgba(74, 111, 165, 0.08);
+	--nav-item-background-active:  rgba(74, 111, 165, 0.12);
+
+  --scrollbar-bg: transparent;
+  --background-secondary-rgb: 255, 255, 255;
+  --scrollbar-thumb-bg: rgba(20, 30, 50, 0.16);
+  --scrollbar-active-thumb-bg: rgba(20, 30, 50, 0.28);
+}
+
+/* =====================================================================
+   颜色变量 — 深色（光晕关闭时为正常深底）
+   ===================================================================== */
+body.theme-dark {
+  --color-base-10: #1e1e1e;
+  --gs-text:           #e6eaf2;
+  --gs-text-muted:     #9ba6b6;
+  --gs-text-faint:     #69738455;
+
+  --gs-glass-bg:       color-mix(in srgb, #1a202e calc(var(--gs-glass-opacity, 0.42) * 100%), transparent);
+  --gs-glass-bg-alt:   color-mix(in srgb, #1a202e calc(var(--gs-glass-opacity, 0.42) * 65%), transparent);
+  --gs-glass-border:   rgba(255, 255, 255, 0.08);
+  --gs-glass-border-2: rgba(255, 255, 255, 0.05);
+  --gs-glass-shadow:   inset 0 1px 1px rgba(255,255,255,0.10), 0 6px 18px rgba(0, 0, 0, 0.10);
+  --gs-lg-tint: #232a35;
+  --gs-lg-rim: rgba(255,255,255,0.16);
+  --gs-lg-edge: rgba(255,255,255,0.10);
+
+  --gs-code-bg: rgba(255, 255, 255, 0.06);
+  --gs-code-border: rgba(255, 255, 255, 0.09);
+  --gs-quote-bg: rgba(122, 162, 214, 0.12);
+  --gs-table-head: rgba(122, 162, 214, 0.16);
+  --gs-table-stripe: rgba(122, 162, 214, 0.05);
+
+  --background-primary:        transparent;
+  --background-primary-alt:    transparent;
+  --background-secondary:      transparent;
+  --background-secondary-alt:  transparent;
+  --background-modifier-border:        rgba(255, 255, 255, 0.08);
+  --background-modifier-border-hover:  rgba(255, 255, 255, 0.18);
+  --background-modifier-border-focus:  var(--gs-accent, #7aa2d6);
+  --background-modifier-form-field:    #20242c;
+  --background-modifier-cover:         rgba(18, 20, 25, 0.85);
+  --background-modifier-hover:         rgba(122, 162, 214, 0.12);
+
+  --text-normal:  var(--gs-text);
+  --text-muted:   var(--gs-text-muted);
+  --text-faint:   var(--gs-text-faint);
+  --text-accent:  var(--gs-accent, #7aa2d6);
+  --text-on-accent: #0c0f17;
+  --text-error:   #e57373;
+  --text-success: #6fcf97;
+
+  --interactive-normal:       rgba(255, 255, 255, 0.05);
+  --background-secondary-rgb: 35, 42, 53;
+  --interactive-hover:        rgba(255, 255, 255, 0.10);
+  --interactive-accent:       var(--gs-accent, #7aa2d6);
+  --interactive-accent-hover: var(--gs-accent-hover, #8fb4e4);
+	--nav-item-color:          var(--gs-text);
+	--nav-item-color-hover:    var(--gs-text);
+	--nav-item-color-active:   var(--gs-accent);
+	--nav-item-background-hover:   rgba(122, 162, 214, 0.12);
+	--nav-item-background-active:  rgba(122, 162, 214, 0.18);
+
+  --scrollbar-bg: transparent;
+  --scrollbar-thumb-bg: rgba(255, 255, 255, 0.14);
+  --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.26);
+}
+
+/* 强调色（固定，与蓝调匹配） */
+body.theme-light { --gs-accent: #4a6fa5; --gs-accent-hover: #3c5a87; }
+body.theme-dark  { --gs-accent: #7aa2d6; --gs-accent-hover: #8fb4e4; }
+
+
+/* =====================================================================
+   光晕配色预设 —— 4 深色 + 4 浅色，每套独立 4 色 + 底色
+   深色底配深色外观；浅色底配浅色外观（白玻璃一压即柔和粉彩）
+   ===================================================================== */
+/* —— 深色（深底 + 鲜艳光晕，配深色外观）—— */
+body.gs-wp-blue     { --gs-glow-1: #4d7bff; --gs-glow-2: #a06bff; --gs-glow-3: #2bb8c4; --gs-glow-4: #ff7aa8; --gs-glow-base: #141a28; }
+body.gs-wp-violet   { --gs-glow-1: #7b4dff; --gs-glow-2: #c44bff; --gs-glow-3: #4b6bff; --gs-glow-4: #b06bff; --gs-glow-base: #1a1230; }
+body.gs-wp-rose     { --gs-glow-1: #ff6b8a; --gs-glow-2: #ff9a5a; --gs-glow-3: #c44bff; --gs-glow-4: #ff5a7a; --gs-glow-base: #241420; }
+body.gs-wp-forest   { --gs-glow-1: #2bb870; --gs-glow-2: #2bb8c4; --gs-glow-3: #6bd968; --gs-glow-4: #1f8f6f; --gs-glow-base: #0d2018; }
+
+/* —— 浅色（浅底 + 彩色光晕，配浅色外观，白玻璃压制后呈粉彩）—— */
+body.gs-wp-dayblue  { --gs-glow-1: #5b8dff; --gs-glow-2: #9bbcff; --gs-glow-3: #c8dcff; --gs-glow-4: #e8f0ff; --gs-glow-base: #eaf1ff; }
+body.gs-wp-lavender { --gs-glow-1: #8b5bff; --gs-glow-2: #b86bff; --gs-glow-3: #6b8bff; --gs-glow-4: #a87bff; --gs-glow-base: #ece6f8; }
+body.gs-wp-sakura   { --gs-glow-1: #ff6b8a; --gs-glow-2: #ff9a6b; --gs-glow-3: #c46bff; --gs-glow-4: #ff5a8a; --gs-glow-base: #fbeaef; }
+body.gs-wp-mint     { --gs-glow-1: #2bb870; --gs-glow-2: #2bc4c0; --gs-glow-3: #6bd968; --gs-glow-4: #1f9f80; --gs-glow-base: #e3f5ee; }
+
+
+/* =====================================================================
+   字体
+   ===================================================================== */
+body {
+  --font-interface-theme: -apple-system, BlinkMacSystemFont, "SF Pro Text",
+      "PingFang SC", "Microsoft YaHei", "Segoe UI", system-ui, sans-serif;
+  --font-text-theme: -apple-system, BlinkMacSystemFont, "SF Pro Text",
+      "PingFang SC", "Microsoft YaHei", "Segoe UI", system-ui, sans-serif;
+  --font-monospace-theme: "JetBrains Mono", "SF Mono", "Menlo", "Consolas",
+      "Source Code Pro", monospace;
+}
+body.gs-use-serif {
+  --font-text-theme: "Source Serif 4", "Source Serif Pro", "Noto Serif SC",
+      "Songti SC", "STSong", "SimSun", Georgia, "Times New Roman", serif;
+}
+
+
+/* =====================================================================
+   背景光晕层 —— 蓝色渐变光晕的关键
+   ===================================================================== */
+body { position: relative; min-height: 100vh; }
+
+/* 顶层容器透明，露出光晕背景
+   .workspace-leaf / .workspace-leaf-content 不在此列，
+   由下方"磨砂玻璃"规则提供极透的半透明层 */
+body .app-container,
+body .workspace,
+body .workspace-split,
+body .view-content,
+body .workspace-tabs {
+  background: transparent !important;
+}
+
+/* .workspace-leaf：也透明，不堆叠背景层 */
+body .workspace-leaf {
+  background: transparent !important;
+}
+
+/* 侧栏分割容器透明 */
+body .mod-left-split,
+body .mod-right-split {
+  background: transparent !important;
+}
+
+/* 左侧栏内全部子容器：递归透明，光晕底色完全穿透 */
+body .mod-left-split .workspace-tabs,
+body .mod-left-split .workspace-tab-container,
+body .mod-left-split .workspace-leaf,
+body .mod-left-split .workspace-leaf-content,
+body .mod-left-split .view-content,
+body .mod-left-split .view-header,
+body .mod-left-split .tree-item-self,
+body .mod-left-split .tree-item,
+body .mod-left-split .nav-header {
+  background: transparent !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+
+/* 第三方插件弹窗：强制不透明 */
+body .subitem,
+body .x-color-picker-wrapper,
+body .editing-toolbar-dropdown-menu,
+body .editing-toolbar-text-input-mention-dropdown {
+  background-color: var(--gs-lg-tint) !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  box-shadow: none !important;
+  border-color: transparent !important;
+}
+
+/* 径向渐变光晕：4 色彩斑 + 底色，模糊晕染 */
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: -12%;
+  z-index: -2;
+  background-color: var(--gs-glow-base);
+  background-image:
+    radial-gradient(ellipse 62% 55% at 14% 16%, var(--gs-glow-1) 0%, transparent 60%),
+    radial-gradient(ellipse 58% 52% at 86% 14%, var(--gs-glow-2) 0%, transparent 60%),
+    radial-gradient(ellipse 64% 58% at 82% 86%, var(--gs-glow-3) 0%, transparent 60%),
+    radial-gradient(ellipse 56% 52% at 16% 84%, var(--gs-glow-4) 0%, transparent 60%);
+  background-attachment: fixed;
+  filter: blur(var(--gs-glow-blur)) saturate(1.5);
+  opacity: var(--gs-glow-opacity);
+}
+
+/* 晨曦蓝（主推）：蓝白渐变 —— 顶部蓝色光晕（左+右）向下渐隐为白 */
+body.gs-wp-dayblue::before {
+  background-color: #ffffff;
+  background-image:
+    radial-gradient(ellipse 85% 60% at 25% 8%, #8fb4ff 0%, transparent 64%),
+    radial-gradient(ellipse 80% 58% at 78% 6%, #a6c4ff 0%, transparent 64%),
+    linear-gradient(180deg, #cddcff 0%, #e4edff 42%, #f4f8ff 72%, #ffffff 100%);
+}
+
+/* 极淡纸纹噪点 */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  opacity: 0.025;
+  background-image: radial-gradient(rgba(0,0,0,0.6) 0.5px, transparent 0.5px);
+  background-size: 3px 3px;
+}
+
+
+/* =====================================================================
+   磨砂玻璃 —— 无硬边框，仅柔和阴影，通透
+   ===================================================================== */
+body .workspace-leaf-content:not(.x-color-picker-wrapper *),
+body .workspace-split.mod-root .workspace-leaf:not(.x-color-picker-wrapper *),
+body .modal-container .modal:not(.x-color-picker-wrapper *),
+body .notice:not(.x-color-picker-wrapper *) {
+  background-color: var(--gs-glass-bg);
+  backdrop-filter: blur(var(--gs-blur)) saturate(180%);
+  -webkit-backdrop-filter: blur(var(--gs-blur)) saturate(180%);
+  box-shadow: var(--gs-glass-shadow);
+  border: none;
+}
+
+body .workspace-tab-header-container:not(.x-color-picker-wrapper *),
+body .view-header:not(.x-color-picker-wrapper *),
+body .status-bar:not(.x-color-picker-wrapper *) {
+  background-color: var(--gs-glass-bg-alt);
+  backdrop-filter: blur(var(--gs-blur)) saturate(180%);
+  -webkit-backdrop-filter: blur(var(--gs-blur)) saturate(180%);
+  border: none;
+}
+
+/* 左侧工具栏图标条：完全透明，光晕穿透 */
+body .workspace-ribbon.mod-left:not(.x-color-picker-wrapper *) {
+  background: transparent !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  border: none;
+}
+
+/* 侧栏内容区：完全透明，光晕背景直接穿透，不留玻璃遮挡层 */
+body .workspace-leaf.mod-side-dock .workspace-leaf-content:not(.x-color-picker-wrapper *) {
+  background: transparent !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  border: none;
+  box-shadow: none;
+}
+
+/* 去掉板块之间的硬分隔线 */
+.workspace-leaf,
+.workspace-split.mod-root > .workspace-leaf,
+.workspace-split.mod-vertical > * + .workspace-leaf {
+  border: none !important;
+}
+
+/* 桌面端：面板间距极小，弱化卡片边界感，界面融为一体 */
+@media (min-width: 900px) {
+  body .workspace-split.mod-root {
+    padding: 6px;
+    gap: 2px;
+  }
+  body .workspace-split.mod-root .workspace-tabs {
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.03);
+  }
+  body .workspace-split.mod-horizontal > .workspace-leaf.mod-side-dock {
+    margin: 6px 2px 6px 6px;
+    border-radius: 6px;
+    overflow: hidden;
+  }
+  body .workspace-split.mod-horizontal > .workspace-leaf.mod-side-dock + .workspace-leaf {
+    margin: 6px 6px 6px 2px;
+  }
+}
+
+.titlebar, .titlebar-button-container { background: transparent !important; border: none; }
+
+/* 标签栏：与内容页共用同一块玻璃，融合无白边 */
+.workspace-tab-header-container {
+  margin: 0;
+  padding: 0 8px;
+  border-radius: 0;
+  border: none !important;
+  gap: 1px;
+  background: var(--gs-glass-bg) !important;
+  backdrop-filter: blur(var(--gs-blur)) saturate(180%);
+  -webkit-backdrop-filter: blur(var(--gs-blur)) saturate(180%);
+  box-shadow: none !important;
+}
+.workspace-tab-header { border-radius: 8px; margin: 0; padding: 4px 10px; transition: background .2s ease, box-shadow .2s ease; }
+.workspace-tab-header:hover {
+  background: color-mix(in srgb, var(--gs-lg-tint) calc(var(--gs-glass-opacity, 0.42) * 32%), transparent);
+}
+.workspace-tab-header.is-active {
+  background: color-mix(in srgb, var(--gs-lg-tint) calc(var(--gs-glass-opacity, 0.42) * 72%), transparent);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  box-shadow: inset 0 1px 1px var(--gs-lg-rim);
+}
+.workspace-tab-header.is-active .workspace-tab-header-inner { background: transparent; }
+.workspace-tab-header-inner { border-radius: 8px; gap: 6px; }
+.workspace-tab-header-inner-title { font-weight: 500; }
+.workspace-tab-header-inner-icon { color: var(--gs-text-muted); transition: color .15s ease; }
+.workspace-tab-header.is-active .workspace-tab-header-inner-icon { color: var(--gs-text); }
+.workspace-tab-header .workspace-tab-header-inner-close {
+  border-radius: 6px;
+  transition: background .15s ease, color .15s ease;
+}
+.workspace-tab-header .workspace-tab-header-inner-close:hover {
+  background: var(--background-modifier-hover);
+  color: var(--gs-accent);
+}
+
+/* 视图标题栏：透明、无阴影、无边框，与上方标签页直接融合 */
+.view-header {
+  border: none !important;
+  background: transparent !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  box-shadow: none !important;
+}
+.view-header-title { font-weight: 600; letter-spacing: 0.01em; padding: 0 4px; }
+.view-header-title-container { padding-inline: 8px; }
+
+/* 内容页顶部去掉白色高光，与标签页/标题通透融合 */
+.workspace-split.mod-root .workspace-leaf-content {
+  box-shadow: 0 6px 18px rgba(31, 48, 90, 0.04);
+}
+body.theme-dark .workspace-split.mod-root .workspace-leaf-content {
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.10);
+}
+
+/* 堆叠标签页：正文内容页实心、无 backdrop-filter，杜绝背面内容透出重叠（含新加页面） */
+.mod-stacked .workspace-leaf,
+.mod-stacked .workspace-leaf-content,
+.mod-stacked .view-content,
+.mod-stacked .markdown-reading-view,
+.mod-stacked .markdown-source-view,
+.mod-stacked .markdown-preview-view,
+.mod-stacked .cm-editor,
+.mod-stacked .cm-scroller,
+.mod-stacked .cm-content {
+  background-color: var(--gs-lg-tint) !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+
+/* 状态栏：融合底条，弱存在感 */
+.status-bar { margin: 0; border-radius: 0; border: none !important; padding: 0 12px; font-size: var(--font-ui-smaller); box-shadow: none; background: transparent; }
+
+.tree-item-self.is-clickable:hover,
+.nav-file-title:hover, .nav-folder-title:hover, .nav-file-title.is-active {
+  background: color-mix(in srgb, var(--gs-lg-tint) calc(var(--gs-glass-opacity, 0.42) * 42%), transparent);
+  backdrop-filter: blur(8px) saturate(160%);
+  -webkit-backdrop-filter: blur(8px) saturate(160%);
+  box-shadow: inset 0 1px 1px var(--gs-lg-rim);
+  border-radius: 9px;
+}
+
+::-webkit-scrollbar { width: 5px; height: 5px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--scrollbar-thumb-bg); border-radius: 4px; border: 1px solid transparent; background-clip: content-box; }
+::-webkit-scrollbar-thumb:hover { background: var(--scrollbar-active-thumb-bg); background-clip: content-box; }
+
+
+/* =====================================================================
+   液态玻璃 —— 按钮 / 标签 / 交互元素
+   边缘高光 + 内透 + 柔影，不影响背景光晕主题
+   ===================================================================== */
+
+/* 输入框/下拉：保持柔和 */
+body input[type="text"], body input[type="search"], body input[type="number"], body textarea, body select {
+  border-radius: 10px !important;
+  border: none !important;
+  background: color-mix(in srgb, var(--gs-lg-tint) calc(var(--gs-glass-opacity, 0.42) * 40%), transparent) !important;
+  backdrop-filter: blur(10px) saturate(160%);
+  -webkit-backdrop-filter: blur(10px) saturate(160%);
+  transition: background .15s ease;
+}
+
+/* 按钮：只影响 Obsidian 原生按钮，不碰第三方插件 */
+.modal button:not(.mod-cta):not(.mod-warning),
+.modal-container button:not(.mod-cta):not(.mod-warning),
+.setting-item button:not(.mod-cta):not(.mod-warning),
+.mod-settings button:not(.mod-cta):not(.mod-warning),
+.community-modal button:not(.mod-cta):not(.mod-warning),
+.prompt button:not(.mod-cta):not(.mod-warning),
+.notice button {
+  border-radius: 12px !important;
+  border: none !important;
+  padding: 0.45em 1.1em !important;
+  background: color-mix(in srgb, var(--gs-lg-tint) calc(var(--gs-glass-opacity, 0.42) * 50%), transparent) !important;
+  backdrop-filter: blur(14px) saturate(180%);
+  -webkit-backdrop-filter: blur(14px) saturate(180%);
+  box-shadow: inset 0 1px 0.5px var(--gs-lg-rim) !important;
+  transition: background .22s ease, box-shadow .22s ease, transform .1s ease;
+}
+.modal button:not(.mod-cta):not(.mod-warning):hover,
+.modal-container button:not(.mod-cta):not(.mod-warning):hover,
+.setting-item button:not(.mod-cta):not(.mod-warning):hover,
+.mod-settings button:not(.mod-cta):not(.mod-warning):hover,
+.community-modal button:not(.mod-cta):not(.mod-warning):hover,
+.prompt button:not(.mod-cta):not(.mod-warning):hover,
+.notice button:hover {
+  background: color-mix(in srgb, var(--gs-lg-tint) calc(var(--gs-glass-opacity, 0.42) * 72%), transparent) !important;
+  box-shadow: inset 0 1px 0.5px var(--gs-lg-rim) !important;
+}
+.modal button:not(.mod-cta):not(.mod-warning):active,
+.modal-container button:not(.mod-cta):not(.mod-warning):active,
+.setting-item button:not(.mod-cta):not(.mod-warning):active,
+.mod-settings button:not(.mod-cta):not(.mod-warning):active,
+.community-modal button:not(.mod-cta):not(.mod-warning):active,
+.prompt button:not(.mod-cta):not(.mod-warning):active,
+.notice button:active {
+  transform: scale(0.985);
+  box-shadow: inset 0 1px 2px rgba(0,0,0,0.10) !important;
+}
+
+/* 主操作按钮：强调色（扁平，仅淡彩晕） */
+body button.mod-cta, body .mod-cta {
+  border-radius: 12px !important;
+  padding: 0.45em 1.2em !important;
+  background: color-mix(in srgb, var(--gs-accent) 85%, transparent) !important;
+  color: #ffffff !important;
+  border: none !important;
+  backdrop-filter: blur(10px) saturate(160%);
+  -webkit-backdrop-filter: blur(10px) saturate(160%);
+  box-shadow: inset 0 1px 0.5px rgba(255,255,255,0.3) !important;
+}
+body button.mod-cta:hover { background: var(--gs-accent-hover) !important; }
+
+/* 图标按钮：只影响 Obsidian 原生图标，不碰第三方插件 */
+.workspace-tab-header .clickable-icon,
+.view-header .clickable-icon,
+.nav-action-button,
+.view-action,
+.sidebar-toggle-button .clickable-icon,
+.workspace-ribbon .clickable-icon {
+  transition: background .2s ease, box-shadow .2s ease;
+}
+.workspace-tab-header .clickable-icon:hover,
+.view-header .clickable-icon:hover,
+.nav-action-button:hover,
+.view-action:hover,
+.sidebar-toggle-button .clickable-icon:hover,
+.workspace-ribbon .clickable-icon:hover {
+  background: color-mix(in srgb, var(--gs-lg-tint) calc(var(--gs-glass-opacity, 0.42) * 45%), transparent) !important;
+  backdrop-filter: blur(12px) saturate(180%);
+  -webkit-backdrop-filter: blur(12px) saturate(180%);
+  box-shadow: inset 0 1px 0.5px var(--gs-lg-rim) !important;
+}
+
+
+/* =====================================================================
+   Notebook Navigator 日历：扁平、无圆角、去果冻玻璃
+   ===================================================================== */
+.nn-navigation-calendar-day-cell,
+.nn-navigation-calendar-day-number,
+.nn-navigation-calendar-today,
+.nn-navigation-calendar-day-cell.is-today,
+.nn-navigation-calendar-period-button,
+.nn-navigation-calendar-nav-button,
+.nn-navigation-calendar-quarter-button {
+  background: transparent !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  box-shadow: none !important;
+  border: none !important;
+  border-radius: 0 !important;
+}
+.nn-navigation-calendar-day-cell:hover {
+  background: var(--background-modifier-hover) !important;
+}
+.nn-navigation-calendar-today,
+.nn-navigation-calendar-day-cell.is-today {
+  background: var(--gs-accent) !important;
+  color: var(--text-on-accent) !important;
+  font-weight: 700;
+}
+.nn-navigation-calendar-day-cell.is-outside-month,
+.nn-navigation-calendar-day-cell .is-outside-month {
+  opacity: 0.4;
+}
+
+
+/* =====================================================================
+   论文排版
+   ===================================================================== */
+.markdown-rendered, .markdown-source-view.is-live-preview .cm-scroller, .markdown-preview-view {
+  --file-line-width: var(--gs-measure, 72ch);
+  font-size: var(--font-text-size);
+  line-height: var(--gs-line-height, 1.85);
+  letter-spacing: 0.005em;
+  color: var(--gs-text);
+}
+.markdown-reading-view .markdown-preview-sizer, .markdown-rendered { max-width: var(--gs-measure, 72ch); margin-inline: auto; padding-block: 2rem; }
+
+.markdown-rendered p, .markdown-preview-view p, .is-live-preview p { margin-block: 0 1em; orphans: 3; widows: 3; }
+body.gs-justify .markdown-rendered p, body.gs-justify .markdown-preview-view p { text-align: justify; text-justify: inter-character; hyphens: auto; -webkit-hyphens: auto; }
+body.gs-indent .markdown-rendered > p, body.gs-indent .markdown-preview-section > p { text-indent: 2em; }
+body.gs-indent .markdown-rendered li > p, body.gs-indent .markdown-rendered blockquote p, body.gs-indent .markdown-rendered :not(p) + p { text-indent: 0; }
+body.gs-dropcap .markdown-rendered > p:first-of-type::first-letter, body.gs-dropcap .markdown-preview-section > p:first-of-type::first-letter { float: left; font-family: var(--font-text-theme); font-size: 3.3em; line-height: 0.78; font-weight: 600; margin: 0.08em 0.12em 0 0; color: var(--gs-accent); }
+
+/* 标题 */
+.markdown-rendered h1, .markdown-preview-view h1, .is-live-preview .cm-header-1 { font-size: 1.85em; font-weight: 700; letter-spacing: -0.01em; margin: 1.6em 0 0.6em; padding-bottom: 0.32em; border-bottom: 1px solid var(--gs-glass-border-2); color: var(--gs-text); }
+.markdown-rendered h2, .is-live-preview .cm-header-2 { font-size: 1.46em; font-weight: 600; margin: 1.4em 0 0.5em; }
+.markdown-rendered h3, .is-live-preview .cm-header-3 { font-size: 1.2em; font-weight: 600; margin: 1.2em 0 0.45em; }
+.markdown-rendered h4, .is-live-preview .cm-header-4 { font-size: 1.04em; font-weight: 600; margin: 1.1em 0 0.4em; }
+.markdown-rendered h5, .markdown-rendered h6 { font-size: 0.92em; font-weight: 600; color: var(--gs-text-muted); margin: 1em 0 0.35em; }
+h1, h2, h3, h4, h5, h6 { font-family: var(--font-text-theme); scroll-margin-top: 4rem; }
+
+/* 代码注释（深色模式）：提高可读性 */
+body.theme-dark .cm-comment,
+body.theme-dark .token.comment,
+body.theme-dark .HyperMD-codeblock .cm-comment,
+body.theme-dark .markdown-rendered code .token.comment,
+body.theme-dark pre code .token.comment {
+  color: #8ba0b8 !important;
+  font-style: normal !important;
+  opacity: 1 !important;
+}
+body.theme-light .cm-comment,
+body.theme-light .token.comment,
+body.theme-light .HyperMD-codeblock .cm-comment {
+  color: #6a7a8e !important;
+  font-style: normal !important;
+}
+
+/* 代码块 */
+.markdown-rendered pre, .is-live-preview .cm-line.HyperMD-codeblock { background: var(--gs-code-bg) !important; border: none; border-radius: 10px; }
+.markdown-rendered pre { padding: 1em 1.2em; font-size: 0.85em; line-height: 1.6; overflow-x: auto; backdrop-filter: blur(8px) saturate(160%); -webkit-backdrop-filter: blur(8px) saturate(160%); }
+.is-live-preview .cm-line.HyperMD-codeblock { padding-left: 1.2em !important; padding-right: 1.2em !important; font-size: 0.85em; line-height: 1.6; }
+.is-live-preview .HyperMD-codeblock:first-of-type { border-radius: 12px 12px 0 0; }
+.is-live-preview .HyperMD-codeblock:last-of-type { border-radius: 0 0 12px 12px; }
+.is-live-preview .HyperMD-codeblock:only-of-type { border-radius: 12px; }
+.markdown-rendered pre code, .is-live-preview .HyperMD-codeblock code { background: transparent; border: none; padding: 0; font-size: 1em; }
+.markdown-rendered button.copy-code-button { background: var(--gs-glass-bg); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); border: none; border-radius: 8px; color: var(--gs-text-muted); font-size: 0.78em; padding: 0.2em 0.6em; }
+.markdown-rendered button.copy-code-button:hover { color: var(--gs-accent); }
+
+/* 引用 */
+.markdown-rendered blockquote, .is-live-preview blockquote { margin: 1.2em 0; padding: 0.6em 1.2em; background: var(--gs-quote-bg); border-left: 3px solid var(--gs-accent); border-radius: 0 10px 10px 0; color: var(--gs-text-muted); font-style: normal; backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); }
+.markdown-rendered blockquote p { margin: 0.3em 0; }
+
+/* 分隔线 */
+.markdown-rendered hr, .is-live-preview hr, .is-live-preview .HyperMD-hr { border: none; height: 1px; margin: 2.4em auto; width: 40%; background: linear-gradient(90deg, transparent, var(--gs-glass-border-2), transparent); }
+
+/* 列表 */
+.markdown-rendered ul, .markdown-rendered ol { padding-left: 1.6em; margin: 0.4em 0 1em; }
+.markdown-rendered li { margin: 0.2em 0; }
+.markdown-rendered li::marker { color: var(--gs-accent); }
+
+/* 链接 */
+.markdown-rendered a, .is-live-preview a { color: var(--gs-accent); text-decoration: none; border-bottom: 1px solid color-mix(in srgb, var(--gs-accent) 35%, transparent); transition: border-color .15s ease; }
+.markdown-rendered a:hover { border-bottom-color: var(--gs-accent); }
+.internal-link.is-unresolved { color: var(--gs-text-faint); border-bottom-style: dashed; }
+
+/* 表格 */
+.markdown-rendered .table-wrapper, .markdown-rendered table, .is-live-preview table { width: 100%; border-collapse: collapse; margin: 1.5em 0; font-size: 0.92em; border-top: 2px solid var(--gs-text); border-bottom: 2px solid var(--gs-text); border-radius: 10px; overflow: hidden; box-shadow: 0 2px 12px rgba(0,0,0,0.06), 0 1px 3px rgba(0,0,0,0.04); }
+.markdown-rendered th, .is-live-preview th { padding: 0.65em 0.95em; text-align: left; font-weight: 600; letter-spacing: 0.01em; border-bottom: 1px solid var(--gs-glass-border-2); background: var(--gs-table-head); color: var(--gs-text); }
+.markdown-rendered td, .is-live-preview td { padding: 0.58em 0.95em; border-bottom: 1px solid var(--gs-glass-border-2); }
+.markdown-rendered tbody tr:nth-child(even), .is-live-preview tbody tr:nth-child(even) { background: var(--gs-table-stripe); }
+.markdown-rendered tr:last-child td, .is-live-preview tr:last-child td { border-bottom: none; }
+.markdown-rendered tbody tr:hover, .is-live-preview tbody tr:hover { background: var(--gs-table-head); }
+
+/* 标签 */
+a.tag, .tag { font-size: 0.82em; font-family: var(--font-interface-theme); background: var(--gs-table-head); color: var(--gs-accent); border-radius: 10px; padding: 0.08em 0.6em; border: none; }
+
+/* 图片 */
+.markdown-rendered img, .is-live-preview img { border-radius: 12px; max-width: 100%; box-shadow: 0 2px 14px rgba(0,0,0,0.08), 0 1px 4px rgba(0,0,0,0.04); }
+
+/* 任务框 */
+.task-list-item-checkbox { border-radius: 6px !important; border: 1.5px solid var(--gs-text-faint) !important; }
+.task-list-item.is-checked .task-list-item-checkbox { background: var(--gs-accent) !important; border-color: var(--gs-accent) !important; }
+
+
+/* =====================================================================
+   弹窗 / 菜单 / 悬浮
+   ===================================================================== */
+.modal-container .modal:not(.x-color-picker-wrapper):not(.x-color-picker-wrapper *) { border-radius: 20px; overflow: hidden; border: none; }
+.menu:not(.x-color-picker-wrapper *),
+.suggestion-container:not(.x-color-picker-wrapper *),
+.popover:not(.x-color-picker-wrapper *) { border-radius: 16px; padding: 6px; border: none; }
+
+/* Obsidian 原生弹窗：玻璃效果（不碰颜色选择器） */
+.popover:not(.x-color-picker-wrapper *) {
+  background-color: var(--gs-glass-bg);
+  backdrop-filter: blur(var(--gs-blur)) saturate(180%);
+  -webkit-backdrop-filter: blur(var(--gs-blur)) saturate(180%);
+  box-shadow: var(--gs-glass-shadow);
+}
+.menu, .suggestion-container, .dropdown-menu {
+  background-color: var(--background-primary);
+}
+
+/* 设置面板/弹窗中的菜单：不透明背景，确保可读 */
+.modal-container .menu,
+.modal-container .dropdown-menu,
+.mod-settings .menu,
+.mod-settings .dropdown-menu,
+.popover .menu,
+.popover .dropdown-menu {
+  background-color: var(--background-primary);
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+}
+
+/* 交互弹层：足够不透明 + 强模糊，避免与底部内容重叠
+   同时锁死文字/背景色变量，防止弹层内表单控件出现"白底白字"
+   排除颜色选择器及其内部所有元素 */
+body .modal-container .modal:not(.x-color-picker-wrapper):not(.x-color-picker-wrapper *),
+body .hover-popover:not(.x-color-picker-wrapper):not(.x-color-picker-wrapper *),
+body .suggestion-container:not(.x-color-picker-wrapper):not(.x-color-picker-wrapper *),
+body .prompt:not(.x-color-picker-wrapper):not(.x-color-picker-wrapper *),
+body .multi-select-menu:not(.x-color-picker-wrapper):not(.x-color-picker-wrapper *),
+body .claudian-mention-dropdown:not(.x-color-picker-wrapper):not(.x-color-picker-wrapper *),
+body .claudian-mention-dropdown-fixed:not(.x-color-picker-wrapper):not(.x-color-picker-wrapper *),
+body .claudian-slash-dropdown:not(.x-color-picker-wrapper):not(.x-color-picker-wrapper *),
+body .claudian-slash-dropdown-fixed:not(.x-color-picker-wrapper):not(.x-color-picker-wrapper *),
+body .claudian-model-dropdown:not(.x-color-picker-wrapper):not(.x-color-picker-wrapper *),
+body .claudian-mcp-selector-dropdown:not(.x-color-picker-wrapper):not(.x-color-picker-wrapper *),
+body .claudian-mcp-add-dropdown:not(.x-color-picker-wrapper):not(.x-color-picker-wrapper *),
+body .claudian-resume-dropdown:not(.x-color-picker-wrapper):not(.x-color-picker-wrapper *),
+body .claudian-history-menu:not(.x-color-picker-wrapper):not(.x-color-picker-wrapper *),
+body .claudian-external-context-dropdown:not(.x-color-picker-wrapper):not(.x-color-picker-wrapper *),
+body [class*="claudian-"][class*="dropdown"]:not(.x-color-picker-wrapper):not(.x-color-picker-wrapper *),
+body [class*="claudian-"][class*="menu"]:not(.x-color-picker-wrapper):not(.x-color-picker-wrapper *),
+body [class*="claudian-"][class*="modal"]:not(.x-color-picker-wrapper):not(.x-color-picker-wrapper *),
+body [class*="claudian-"][class*="popover"]:not(.x-color-picker-wrapper):not(.x-color-picker-wrapper *),
+body .claudian-thinking-options:not(.x-color-picker-wrapper):not(.x-color-picker-wrapper *) {
+  background-color: color-mix(in srgb, var(--gs-lg-tint) 94%, transparent) !important;
+  backdrop-filter: blur(36px) saturate(180%) !important;
+  -webkit-backdrop-filter: blur(36px) saturate(180%) !important;
+  box-shadow: 0 18px 52px rgba(0,0,0,0.24), inset 0 1px 1px var(--gs-lg-rim) !important;
+}
+
+/* 弹层与设置页内表单控件：文字用主题前景、背景用表单字段色，避免变量泄漏导致白底白字 */
+/* 主题颜色方案：让原生表单控件（select/option/scrollbar）跟随主题，避免系统白底白字 */
+body.theme-light .modal-container .modal select,
+body.theme-light .mod-settings select,
+body.theme-light .style-settings-container select { color-scheme: light; }
+body.theme-dark .modal-container .modal select,
+body.theme-dark .mod-settings select,
+body.theme-dark .style-settings-container select { color-scheme: dark; }
+.modal-container .modal,
+.popover, .hover-popover, .menu, .suggestion-container, .dropdown-menu,
+.mod-settings {
+  color: var(--text-normal);
+}
+.modal-container .modal input,
+.modal-container .modal select,
+.modal-container .modal textarea,
+.modal-container .modal button:not(.mod-cta):not(.mod-warning),
+.mod-settings input,
+.mod-settings select,
+.mod-settings textarea,
+.mod-settings button:not(.mod-cta):not(.mod-warning),
+.setting-item button:not(.mod-cta):not(.mod-warning),
+.style-settings-container button:not(.mod-cta):not(.mod-warning) {
+  color: var(--text-normal);
+  background-color: var(--background-modifier-form-field);
+}
+/* 下拉打开后的 option 列表：用主题前景/背景，防止白底白字 */
+.modal-container .modal select option,
+.popover select option,
+.menu select option,
+.mod-settings select option,
+.style-settings-container select option {
+  background-color: var(--background-primary);
+  color: var(--text-normal);
+}
+.modal-container .modal input::placeholder,
+.modal-container .modal textarea::placeholder,
+.mod-settings input::placeholder,
+.mod-settings textarea::placeholder { color: var(--text-faint); }
+.modal-container .modal .setting-item-name,
+.modal-container .modal .setting-item-description,
+.mod-settings .setting-item-name,
+.mod-settings .setting-item-description { color: var(--text-normal); }
+body.theme-dark .modal-container .modal .setting-item:not(.mod-toggle):hover,
+body.theme-dark .mod-settings .setting-item:not(.mod-toggle):hover,
+body.theme-dark .popover:not(.x-color-picker-wrapper):not(.x-color-picker-wrapper *),
+body.theme-dark .menu:not(.x-color-picker-wrapper):not(.x-color-picker-wrapper *),
+body.theme-dark .suggestion-container:not(.x-color-picker-wrapper):not(.x-color-picker-wrapper *) {
+  background-color: var(--background-secondary);
+}
+
+/* Editing Toolbar 颜色选择器：全局重置，阻止任何上游规则污染
+   用更高优先级 + !important 清零 backdrop-filter / box-shadow / transform /
+   background-color，让颜色选择器呈现原生气泡外观而不被悬浮阴影包裹 */
+.x-color-picker-wrapper,
+.x-color-picker-wrapper *,
+.x-color-picker-wrapper *::before,
+.x-color-picker-wrapper *::after {
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  box-shadow: none !important;
+  filter: none !important;
+  transform: none !important;
+  border: none !important;
+  border-radius: 0 !important;
+  overflow: visible !important;
+}
+.x-color-picker-wrapper {
+  background-color: var(--background-primary) !important;
+}
+
+/* 深色模式兜底：Obsidian 原生弹窗深底白字 */
+body.theme-dark .menu,
+body.theme-dark .popover,
+body.theme-dark .suggestion-container,
+body.theme-dark .modal-container .modal,
+body.theme-dark .mod-settings,
+body.theme-dark .dropdown-menu,
+body.theme-dark .multi-select-menu { color: #e6eaf2 !important; background-color: #16191e !important; }
+
+body.theme-dark .suggestion-item,
+body.theme-dark .suggestion-item .suggestion-title,
+body.theme-dark .suggestion-item .suggestion-content { color: #e6eaf2 !important; background: transparent !important; }
+
+body.theme-dark .menu select,
+body.theme-dark .menu select option,
+body.theme-dark .modal select,
+body.theme-dark .modal select option,
+body.theme-dark .mod-settings select,
+body.theme-dark .mod-settings select option,
+body.theme-dark select option {
+  background-color: #1a1d23 !important;
+  color: #e6eaf2 !important;
+}
+
+body.theme-dark .menu input,
+body.theme-dark .popover input,
+body.theme-dark .modal input,
+body.theme-dark .modal select,
+body.theme-dark .modal textarea,
+body.theme-dark .modal button,
+body.theme-dark .mod-settings input,
+body.theme-dark .mod-settings select,
+body.theme-dark .mod-settings textarea,
+body.theme-dark .mod-settings button:not(.mod-cta):not(.mod-warning) {
+  color: #e6eaf2 !important;
+  background-color: #20242c !important;
+}
+
+/* 浅色模式兜底：菜单/弹窗白底黑字 */
+body.theme-light .menu,
+body.theme-light .popover,
+body.theme-light .suggestion-container,
+body.theme-light .modal-container .modal,
+body.theme-light .mod-settings,
+body.theme-light .dropdown-menu,
+body.theme-light .multi-select-menu { color: #1c2230 !important; background-color: #ffffff !important; }
+body.theme-light .suggestion-item,
+body.theme-light .suggestion-item .suggestion-title,
+body.theme-light .suggestion-item .suggestion-content { color: #1c2230 !important; background: transparent !important; }
+body.theme-light .menu select,
+body.theme-light .menu select option,
+body.theme-light .modal select,
+body.theme-light .modal select option,
+body.theme-light .mod-settings select,
+body.theme-light .mod-settings select option,
+body.theme-light select option {
+  background-color: #ffffff !important;
+  color: #1c2230 !important;
+}
+
+/* =====================================================================
+   细节兜底：tooltip、checkbox、slider、search、placeholder、selection
+   防止浏览器原生样式在主题切换时残留"白底"或变量泄漏
+   ===================================================================== */
+input::placeholder, textarea::placeholder { color: var(--text-faint); opacity: 1; }
+::-webkit-input-placeholder { color: var(--text-faint); }
+
+/* 选中文本 */
+::selection { background: color-mix(in srgb, var(--gs-accent) 28%, transparent); }
+
+/* tooltip 提示框 */
+body.theme-light .tooltip, body.theme-light [class*="tooltip"] {
+  background-color: #1c2230 !important; color: #ffffff !important; border: none !important;
+}
+body.theme-dark .tooltip, body.theme-dark [class*="tooltip"] {
+  background-color: #e6eaf2 !important; color: #1a1d23 !important; border: none !important;
+}
+
+/* checkbox / radio / slider 等原生控件跟随主题 */
+body.theme-light input[type="checkbox"], body.theme-light input[type="radio"] {
+  background-color: #ffffff !important; border-color: var(--background-modifier-border) !important;
+}
+body.theme-dark input[type="checkbox"], body.theme-dark input[type="radio"] {
+  background-color: #20242c !important; border-color: rgba(255,255,255,0.2) !important; }
+body.theme-light input[type="range"] { background: transparent; }
+body.theme-dark input[type="range"] { background: transparent; }
+
+/* 滑块控件：核心思路 = 容器高度等于 track 高度，thumb 绝对定位居中
+   关键：把 input 容器高度设成 track 高度（去掉 webkit 默认的额外 padding），
+   再让 thumb 用 margin auto + transform 居中。这样不管浏览器版本怎么解释 thumb 位置，
+   thumb 中线一定对齐 track 中线 */
+input[type="range"] {
+  -webkit-appearance: none !important;
+  appearance: none !important;
+  cursor: pointer;
+  background: transparent;
+  /* 容器高度 = track 高度（默认 6px），不带任何多余空间 */
+  height: 6px !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  /* 让 thumb 在容器内绝对居中：用 flex + 容器高度=track 高度，thumb 居中靠 box */
+}
+input[type="range"]::-webkit-slider-runnable-track {
+  height: 6px !important;
+  border-radius: 3px !important;
+  border: none !important;
+}
+body.theme-light input[type="range"]::-webkit-slider-runnable-track {
+  background: rgba(0, 0, 0, 0.28) !important;
+}
+body.theme-dark input[type="range"]::-webkit-slider-runnable-track {
+  background: rgba(255, 255, 255, 0.18) !important;
+}
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none !important;
+  appearance: none !important;
+  /* 关键：thumb 高度 > 容器高度，这样 thumb 上下各超出，物理上轨道穿过 thumb 中部 */
+  height: 16px !important;
+  width: 16px !important;
+  border-radius: 50% !important;
+  background: var(--gs-accent) !important;
+  border: none !important;
+  /* 拖把下移：margin-top 0（累计下移 5px） */
+  margin-top: 0 !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25) !important;
+  cursor: pointer;
+  transition: transform .15s ease;
+}
+input[type="range"]:hover::-webkit-slider-thumb { transform: scale(1.1); }
+input[type="range"]:active::-webkit-slider-thumb { transform: scale(1.2); }
+
+/* Firefox */
+input[type="range"]::-moz-range-track {
+  height: 6px !important;
+  border-radius: 3px !important;
+  border: none !important;
+}
+body.theme-light input[type="range"]::-moz-range-track {
+  background: rgba(0, 0, 0, 0.28);
+}
+body.theme-dark input[type="range"]::-moz-range-track {
+  background: rgba(255, 255, 255, 0.18);
+}
+input[type="range"]::-moz-range-thumb {
+  height: 16px !important;
+  width: 16px !important;
+  border-radius: 50% !important;
+  background: var(--gs-accent) !important;
+  border: none !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25) !important;
+  cursor: pointer;
+  transform: translateY(5px);  /* Firefox 拖把也下移，与 webkit 对齐 */
+}
+
+/* 搜索框（Obsidian 顶栏搜索） */
+body .search-input,
+body.theme-light .search-input input,
+body.theme-dark .search-input input {
+  background-color: var(--background-modifier-form-field);
+  color: var(--text-normal);
+}
+
+/* 通知（右下角 toast） */
+body.theme-light .notice, body.theme-light .notification { background-color: #ffffff !important; color: #1c2230 !important; }
+body.theme-dark .notice, body.theme-dark .notification { background-color: #20242c !important; color: #e6eaf2 !important; }
+
+/* 嵌入 iframe（PDF 等） */
+iframe { background-color: var(--background-primary); }
+
+/* 内部链接在浅色/深色下的 hover 下划线已经通过 --gs-accent 着色，确保颜色足够对比 */
+.internal-link { color: var(--gs-accent); }
+.internal-link.is-unresolved { color: var(--text-faint); }
+
+.menu-item:not(.subitem *):not([class*="-dropdown-menu"] *) { border-radius: 0; }
+.menu-item:not(.subitem *):not([class*="-dropdown-menu"] *):hover,
+.suggestion-item.is-selected {
+  background-color: var(--background-modifier-hover);
+}
+.popover .markdown-reading-view .markdown-preview-sizer { padding-block: 1rem; }
+.notice { border-radius: 12px; border: none; }
+
+
+/* =====================================================================
+   实时预览编辑器微调
+   ===================================================================== */
+.is-live-preview .cm-scroller { font-family: var(--font-text-theme); padding: 0 1rem; }
+.is-live-preview .cm-line { padding: 0 0.2em; }
+.is-live-preview .cm-formatting { color: var(--gs-text-faint); }
+.cm-active, .cm-active.cm-line { background: rgba(74, 111, 165, 0.05); border-radius: 4px; }
+body.theme-dark .cm-active { background: rgba(255,255,255,0.04); }
+
+
+/* =====================================================================
+   自动隐藏：侧边工具栏 + 编辑工具栏（鼠标移到边缘呼出）
+   侧边栏采用"留位 + 推开"，呼出时挤压内容而非重叠（参考 Cupertino）
+   ===================================================================== */
+/* 左侧工具栏：留在文档流内、宽度收为 0（不留位），左边缘 absolute 触区 hover 后丝滑滑出并推开内容。
+   参考 Cupertino：不用 fixed 触区（会被 backdrop-filter 包含块坑掉），触区改 absolute 相对 .workspace。 */
+body.gs-autohide-ui .workspace { position: relative; }
+body.gs-autohide-ui .workspace-ribbon {
+  flex: 0 0 auto !important;
+  width: 0 !important;
+  min-width: 0 !important;
+  opacity: 0;
+  overflow: hidden;
+  /* 去掉 backdrop-filter，避免它成为触区的包含块 */
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  transition: width .34s cubic-bezier(.4, 0, .2, 1), opacity .28s ease;
+}
+body.gs-autohide-ui .workspace-ribbon::before {
+  content: "";
+  position: absolute;          /* 相对 .workspace（position:relative），稳定锚在左边缘 */
+  left: 0; top: 0; bottom: 0;
+  width: 14px;
+  z-index: 40;
+}
+body.gs-autohide-ui .workspace-ribbon:hover {
+  width: var(--ribbon-width, 48px) !important;
+  opacity: 1;
+  backdrop-filter: blur(var(--gs-blur)) saturate(180%);
+  -webkit-backdrop-filter: blur(var(--gs-blur)) saturate(180%);
+}
+
+@media (max-width: 768px) {
+  /* 移动端关闭自动隐藏，避免触控难以呼出 */
+  body.gs-autohide-ui .workspace-ribbon {
+    flex: revert !important; width: revert !important; min-width: revert !important;
+    opacity: 1; overflow: visible; backdrop-filter: revert !important;
+  }
+  body.gs-autohide-ui .workspace-ribbon::before { display: none; }
+}
+/* =====================================================================
+   移动端
+   ===================================================================== */
+@media (max-width: 768px) {
+  .markdown-rendered, .markdown-preview-view { font-size: calc(var(--font-text-size) * 0.92); }
+  .markdown-reading-view .markdown-preview-sizer { padding-block: 1rem; padding-inline: 0.5rem; }
+  body .workspace-split.mod-root { padding: 0; gap: 0; }
+  .workspace-tab-header-container, .status-bar { margin: 0; border-radius: 0; }
+}
+
+/* =====================================================================
+   界面融合：消除所有硬边界、分隔线、拖拽手柄的视觉存在感
+   整体目标 = 一整块连续玻璃，无边框无阴影，仅靠透明度/模糊分层
+   ===================================================================== */
+
+/* 面板分界线：从实线改为渐变淡入淡出，视觉上看不到一刀切的切割线 */
+.workspace-split.mod-vertical > * + .workspace-leaf::before,
+.workspace-split.mod-horizontal > * + .workspace-leaf::before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  pointer-events: none;
+  background: transparent;
+}
+.workspace-split.mod-vertical > * + .workspace-leaf { border-left: none !important; }
+.workspace-split.mod-horizontal > * + .workspace-leaf { border-top: none !important; }
+
+/* 垂直分隔线（侧栏 ↔ 主内容）：渐变微光，两端完全透明 */
+.workspace-split.mod-vertical > .workspace-split-resize-handle::before,
+.workspace .mod-vertical .workspace-split-resize-handle::before {
+  background: transparent;
+}
+
+/* 调整手柄：极致纤细，默认透明，hover 轻微可见 */
+.workspace-split-resize-handle {
+  background: transparent !important;
+  transition: background .3s ease;
+}
+.workspace-split-resize-handle:hover {
+  background: color-mix(in srgb, var(--gs-lg-rim) 20%, transparent) !important;
+}
+
+/* 设置面板：去掉 setting-item 之间的硬底边框，改为更疏的间距 */
+.setting-item {
+  border-top: none !important;
+  border-bottom: 1px solid var(--gs-glass-border-2) !important;
+  padding-top: 0.75em;
+  padding-bottom: 0.75em;
+}
+.setting-item:last-child { border-bottom: none !important; }
+
+/* 菜单/右键菜单：无边框，阴影柔和，融为一体 */
+.menu, .dropdown-menu {
+  border: none !important;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.06) !important;
+}
+.menu-separator, .menu .separator {
+  border-bottom: 1px solid var(--gs-glass-border-2) !important;
+  margin: 2px 8px !important;
+}
+
+/* 建议容器/自动补全：无硬边框，柔影融合 */
+.suggestion-container {
+  border: none !important;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.06) !important;
+  border-radius: 12px !important;
+}
+
+/* 文件导航缩进引导线：极度淡化，几乎不可见但保留结构感 */
+.nav-folder-children .nav-folder-title-content::before,
+.nav-files-container .tree-item .tree-item-self::before {
+  border-left-color: var(--gs-glass-border-2) !important;
+}
+
+/* 属性面板 (Properties)：去掉条目间的硬分隔线 */
+.metadata-property { border-bottom: none !important; }
+.metadata-property:not(:last-child) {
+  border-bottom: 1px solid var(--gs-glass-border-2) !important;
+}
+
+/* 命令面板/快速切换：去除边框，圆角更柔和 */
+.prompt, .modal-container .modal {
+  border: none !important;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.08) !important;
+  border-radius: 12px !important;
+}
+
+/* 标签面板内：激活态标签不过分突出 */
+.workspace-tab-header.is-active {
+  box-shadow: none !important;
+}
+
+/* 搜索结果高亮：柔和过渡 */
+.search-result-file-match {
+  border-radius: 4px;
+  border: none !important;
+}
+
+/* 文件浏览器：hover/active 状态无 box-shadow，纯背景过渡 */
+.tree-item-self.is-clickable:hover,
+.nav-file-title:hover, .nav-folder-title:hover, .nav-file-title.is-active {
+  box-shadow: none !important;
+}
+
+/* 石墨编辑器：去掉行号区与内容区的竖线分隔 */
+.markdown-source-view .cm-gutters {
+  border-right: none !important;
+}
+
+/* 侧栏内部容器：全透明，不叠加额外背景层，与主内容区统一底色 */
+body .nav-files-container,
+body .nav-buttons-container {
+  background: transparent !important;
+}
+
+/* Notebook Navigator 面板：全透明，跟随侧栏玻璃统一底色 */
+.nn-navigation-container,
+.nn-navigation-header,
+.nn-navigation-panel,
+.nn-navigation-footer,
+.nn-navigation-calendar,
+.nn-navigation-calendar-header,
+.nn-navigation-calendar-body {
+  background: transparent !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  box-shadow: none !important;
+}
+
+/* 深色模式：调整手柄微光 */
+body.theme-dark .workspace-split-resize-handle:hover {
+  background: color-mix(in srgb, var(--gs-lg-rim) 26%, transparent) !important;
+}
+body.theme-dark .menu, body.theme-dark .dropdown-menu {
+  box-shadow: 0 4px 20px rgba(0,0,0,0.25) !important;
+}
+body.theme-dark .prompt, body.theme-dark .modal-container .modal {
+  box-shadow: 0 8px 36px rgba(0,0,0,0.30) !important;
+}
+
+
+/* =====================================================================
+   打印 / PDF 导出
+   ===================================================================== */
+@media print {
+  /* —— 1. 体位复位：body 不设高，不相对定位 —— */
+  body { position: static !important; min-height: auto !important; height: auto !important; }
+
+  /* —— 2. 光晕/噪点：关闭 fixed 伪元素 —— */
+  body::before, body::after,
+  body.gs-wp-blue::before, body.gs-wp-violet::before,
+  body.gs-wp-rose::before, body.gs-wp-forest::before,
+  body.gs-wp-dayblue::before, body.gs-wp-lavender::before,
+  body.gs-wp-sakura::before, body.gs-wp-mint::before {
+    display: none !important; content: none !important;
+  }
+
+  /* —— 3. Flexbox→block：避免打印 flex 宽度塌缩（竖排文字的根因） —— */
+  body .app-container,
+  body .horizontal-main-container,
+  body .workspace,
+  body .workspace-split,
+  body .workspace-tabs,
+  body .workspace-leaf,
+  body .workspace-leaf-content,
+  body .view-content {
+    display: block !important;
+    width: auto !important;
+    max-width: 100% !important;
+    height: auto !important;
+    flex: none !important;
+    background: #ffffff !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+  }
+
+  /* —— 4. 隐藏所有 UI：仅打印正文 —— */
+  .workspace-ribbon,
+  .workspace-split.mod-horizontal > .workspace-leaf.mod-side-dock,
+  .mod-left-split, .mod-right-split,
+  .status-bar, .titlebar,
+  .view-header, .workspace-tab-header-container {
+    display: none !important;
+  }
+
+  /* —— 5. 正文：正常流、完整宽度 —— */
+  .markdown-reading-view,
+  .markdown-preview-view,
+  .markdown-preview-sizer,
+  .markdown-rendered {
+    display: block !important;
+    width: auto !important;
+    max-width: 100% !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+    background: #ffffff !important;
+  }
+
+  /* —— 6. 浅/深色背景变量复位 —— */
+  body.theme-light {
+    --background-primary:        #ffffff !important;
+    --background-primary-alt:    #f4f6fa !important;
+    --background-secondary:      #f6f8fb !important;
+    --background-secondary-alt:  #eef1f6 !important;
+  }
+  body.theme-dark {
+    --background-primary:        #1a1d23 !important;
+    --background-primary-alt:    #20242c !important;
+    --background-secondary:      #16191e !important;
+    --background-secondary-alt:  #121419 !important;
+  }
+
+  /* —— 7. 去阴影/模糊（精准选择器，不用 * 通配符）—— */
+  .workspace-leaf-content, .workspace-split, .workspace-tabs, .workspace-tab-header-container,
+  .view-header, .workspace-ribbon, .mod-left-split, .mod-right-split, .view-content,
+  .markdown-reading-view, .markdown-preview-view, .markdown-preview-sizer, .markdown-rendered,
+  .status-bar, .modal, .popover, .menu, .suggestion-container, .prompt, .dropdown-menu,
+  .notice, .hover-popover, .setting-item, .nav-files-container, .nav-folder,
+  .modal-container .modal, .modal-container .modal-content, .modal-container .modal-bg,
+  .x-color-picker-wrapper {
+    box-shadow: none !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+  }
+}

@@ -1515,6 +1515,7 @@ body.theme-light {
   --text-title-h6: #377362 !important;
   --vim-cursor: var(--forest-green-dark) !important;
   --border-color: var(--forest-green-dark) !important;
+  --text-highlight: #ad3266 !important;
   --background-nav: var(--background-primary) !important;
   --font-family-editor:
     Inconsolata, Monaco, Consolas, "Courier New", Courier !important;
@@ -1522,7 +1523,6 @@ body.theme-light {
   --blockquote-border: var(--forest-green-dark) !important;
   --font-family-preview: Avenir, Avenir Next, sans-serif !important;
   --background-code: var(--off-white-alt) !important;
-  --text-highlight: #ad3266 !important;
   --forest-green-light: #759e93 !important;
   --graph-background: var(--background-primary) !important;
   --orange-yellow: #f2bd77 !important;
@@ -2654,6 +2654,7 @@ body.theme-dark {
   --text-title-h6: #377362 !important;
   --vim-cursor: #ff5555 !important;
   --border-color: #2b2727 !important;
+  --text-highlight: #ad3266 !important;
   --background-nav: var(--background-primary) !important;
   --font-family-editor:
     Inconsolata, Monaco, Consolas, "Courier New", Courier !important;
@@ -2661,7 +2662,6 @@ body.theme-dark {
   --blockquote-border: #ffb86c !important;
   --font-family-preview: Avenir, Avenir Next, sans-serif !important;
   --background-code: var(--background-secondary-alt) !important;
-  --text-highlight: #ad3266 !important;
   --forest-green-light: #759e93 !important;
   --graph-background: var(--background-primary-alt) !important;
   --orange-yellow: #f2bd77 !important;

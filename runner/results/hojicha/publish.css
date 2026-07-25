@@ -1480,8 +1480,8 @@ body.theme-dark {
   --h4: var(--red) !important;
   --h5: var(--blue) !important;
   --h6: var(--violet) !important;
-  --dark-red: #9c797d !important;
   --bg: #161616 !important;
+  --dark-red: #9c797d !important;
   --bg-black: #111111 !important;
   --bg-hard-accent: #333333 !important;
   --bg-light-accent: #1b1c1d !important;

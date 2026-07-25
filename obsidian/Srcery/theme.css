@@ -1,0 +1,1255 @@
+/***** SRCERY THEME FOR OBSIDIAN *****/
+/* https://srcery.sh */
+/* https://github.com/srcery-colors/srcery-obsidian */
+/* By https://github.com/soykindabored */
+/* Dark-only theme: Srcery has no official light mode in any editor */
+/*
+ * Section Index
+ * 1. Palette Variables (body)
+ * 2. Theme Overrides (.theme-dark)
+ * 3. Headings
+ * 4. Links
+ * 5. Tags
+ * 6. Code
+ * 7. Tables
+ * 8. Lists & Tasks
+ * 9. Embeds & Callouts
+ * 10. Navigation & Sidebar
+ * 11. Graph View
+ * 12. Misc UI
+ */
+
+/* ================================================================
+   1. PALETTE VARIABLES
+   ================================================================ */
+body {
+    /* Primary */
+    --srcery-black:          #121110;
+    --srcery-red:            #EF2F27;
+    --srcery-green:          #519F50;
+    --srcery-yellow:         #FBB829;
+    --srcery-blue:           #2C78BF;
+    --srcery-magenta:        #E02C6D;
+    --srcery-cyan:           #0AAEB3;
+    --srcery-white:          #C5B088;
+
+    --srcery-bright-black:   #917E6B;
+    --srcery-bright-red:     #F75341;
+    --srcery-bright-green:   #98BC37;
+    --srcery-bright-yellow:  #FED06E;
+    --srcery-bright-blue:    #68A8E4;
+    --srcery-bright-magenta: #FF5C8F;
+    --srcery-bright-cyan:    #2BE4D0;
+    --srcery-bright-white:   #FCE8C3;
+
+    /* Secondary */
+    --srcery-orange:         #FF5F00;
+    --srcery-bright-orange:  #FF8700;
+    --srcery-teal:           #008080;
+    --srcery-dark-red:       #4F2321;
+    --srcery-dark-green:     #294229;
+    --srcery-dark-blue:      #1E5181;
+    --srcery-dim-green:      #2E5C2E;
+    --srcery-gray1:          #1C1B19;
+    --srcery-gray2:          #262522;
+    --srcery-gray3:          #312F2C;
+    --srcery-gray4:          #3B3935;
+    --srcery-gray5:          #45433E;
+    --srcery-gray6:          #504D47;
+
+    /* Typography */
+    --font-monospace: "Hack Nerd Font", "Source Code Pro", monospace;
+    -webkit-font-smoothing: auto;
+
+    /* Default accent — Srcery dim-green (#2E5C2E); user-overridable in Settings → Appearance */
+    --accent-h: 119;
+    --accent-s: 33%;
+    --accent-l: 27%;
+}
+
+/* ================================================================
+   2. THEME OVERRIDES — dark only
+   ================================================================ */
+.theme-dark {
+    /* Backgrounds */
+    --background-primary:           var(--srcery-black);
+    --background-primary-alt:       var(--srcery-gray2);
+    --background-secondary:         var(--srcery-black);
+    --background-secondary-alt:     var(--srcery-gray2);
+    --background-modifier-border:   var(--srcery-gray4);
+    --background-modifier-form-field: var(--srcery-gray3);
+    --background-modifier-hover:    var(--srcery-gray3);
+    --background-modifier-active-hover: var(--srcery-gray4);
+
+    /* Text */
+    --text-normal:        var(--srcery-bright-white);
+    --text-muted:         var(--srcery-white);
+    --text-faint:         var(--srcery-bright-black);
+    --text-on-accent:     var(--srcery-black);
+    --text-on-accent-inverted: var(--srcery-bright-white);
+    --text-error:         var(--srcery-red);
+    --text-warning:       var(--srcery-orange);
+    --text-success:       var(--srcery-green);
+
+    /* Interactive accent */
+    --interactive-accent:     var(--srcery-yellow);
+    --interactive-accent-hsl: 41, 96%, 57%;
+    --interactive-accent-hover: var(--srcery-bright-yellow);
+
+    /* Links */
+    --link-color:                 var(--srcery-bright-cyan);
+    --link-color-hover:           var(--srcery-cyan);
+    --link-decoration:            none;
+    --link-decoration-hover:      underline;
+    --link-external-color:        var(--srcery-bright-blue);
+    --link-external-color-hover:  var(--srcery-blue);
+    --link-external-decoration:   none;
+    --link-unresolved-color:      var(--srcery-bright-magenta);
+    --link-unresolved-opacity:    0.8;
+    --link-unresolved-decoration-style: dashed;
+
+    /* Headings */
+    --h1-color: var(--srcery-yellow);
+    --h2-color: var(--srcery-bright-green);
+    --h3-color: var(--srcery-bright-blue);
+    --h4-color: var(--srcery-bright-magenta);
+    --h5-color: var(--srcery-bright-cyan);
+    --h6-color: var(--srcery-bright-orange);
+
+    /* Tags */
+    --tag-color:            var(--srcery-cyan);
+    --tag-color-hover:      var(--srcery-bright-cyan);
+    --tag-background:       rgba(10, 174, 179, 0.12);
+    --tag-background-hover: rgba(10, 174, 179, 0.22);
+    --tag-border-color:     rgba(10, 174, 179, 0.35);
+    --tag-border-color-hover: rgba(43, 228, 208, 0.55);
+    --tag-decoration:       none;
+    --tag-padding-x:        6px;
+    --tag-padding-y:        1px;
+    --tag-radius:           2px;
+
+    /* Code */
+    --code-normal:     var(--srcery-bright-orange);
+    --code-background: var(--srcery-gray1);
+    --code-comment:    var(--srcery-bright-black);
+    --code-function:   var(--srcery-bright-green);
+    --code-keyword:    var(--srcery-red);
+    --code-operator:   var(--srcery-cyan);
+    --code-property:   var(--srcery-bright-yellow);
+    --code-punctuation: var(--srcery-white);
+    --code-string:     var(--srcery-green);
+    --code-tag:        var(--srcery-blue);
+    --code-value:      var(--srcery-bright-magenta);
+    --code-important:  var(--srcery-orange);
+
+    /* Inline title */
+    --inline-title-color: var(--srcery-yellow);
+
+    /* Highlights & Selections */
+    --text-highlight-bg:         rgba(251, 184, 41, 0.25);
+    --text-selection:            rgba(43, 228, 208, 0.18);
+    --flashing-background:       rgba(251, 184, 41, 0.35);
+
+    /* Navigation */
+    --nav-item-color:            var(--srcery-white);
+    --nav-item-color-hover:      var(--srcery-bright-white);
+    --nav-item-color-active:     var(--srcery-bright-cyan);
+    --nav-item-background-hover: var(--srcery-gray3);
+    --nav-item-background-active: var(--srcery-gray3);
+    --nav-indentation-guide-color: var(--srcery-gray5);
+
+    /* Toggle / checkbox */
+    --toggle-thumb-color:      var(--srcery-gray6);
+    --toggle-border-width:     1px;
+    --checkbox-color:          var(--srcery-yellow);
+    --checkbox-color-hover:    var(--srcery-bright-yellow);
+    --checkbox-border-color:   var(--srcery-yellow);
+    --checkbox-border-color-hover: var(--srcery-bright-yellow);
+    --checklist-done-color:    var(--srcery-bright-black);
+    --checklist-done-decoration: line-through;
+
+    /* Graph */
+    --graph-line:    var(--srcery-bright-black);
+    --graph-node:    var(--srcery-bright-cyan);
+    --graph-node-focused: var(--srcery-yellow);
+    --graph-node-tag: var(--srcery-magenta);
+    --graph-node-attachment: var(--srcery-bright-green);
+    --graph-node-unresolved: var(--srcery-bright-black);
+
+    /* Divider / hr */
+    --hr-color: var(--srcery-bright-black);
+
+    /* Blockquote */
+    --blockquote-border-color: var(--srcery-bright-black);
+
+    /* Bold & Italic */
+    --bold-color:   var(--srcery-bright-yellow);
+    --italic-color: var(--srcery-bright-magenta);
+
+    /* Scrollbar */
+    --scrollbar-bg:            var(--srcery-black);
+    --scrollbar-thumb-bg:      var(--srcery-gray5);
+    --scrollbar-active-thumb-bg: var(--srcery-gray6);
+
+    /* Tab */
+    --tab-text-color:           var(--srcery-white);
+    --tab-text-color-active:    var(--srcery-bright-white);
+    --tab-text-color-focused:   var(--srcery-bright-white);
+    --tab-text-color-focused-active: var(--srcery-bright-white);
+    --tab-background-active:    var(--srcery-black);
+
+    /* Titlebar */
+    --titlebar-background:       var(--srcery-gray1);
+    --titlebar-background-focused: var(--srcery-gray1);
+
+    /* Indentation guide */
+    --indentation-guide-color:        var(--srcery-gray4);
+    --indentation-guide-color-active: var(--srcery-cyan);
+
+    /* Cursor (vim mode) */
+    --cursor:  var(--srcery-yellow);
+
+    /* Callout colors */
+    --callout-info:    var(--srcery-bright-blue);
+    --callout-todo:    var(--srcery-bright-blue);
+    --callout-tip:     var(--srcery-bright-cyan);
+    --callout-success: var(--srcery-bright-green);
+    --callout-warning: var(--srcery-bright-orange);
+    --callout-error:   var(--srcery-bright-red);
+    --callout-bug:     var(--srcery-red);
+    --callout-example: var(--srcery-bright-magenta);
+    --callout-quote:   var(--srcery-white);
+
+    /* Canvas preset colors */
+    --canvas-color-1: 239, 47, 39;
+    --canvas-color-2: 255, 95, 0;
+    --canvas-color-3: 251, 184, 41;
+    --canvas-color-4: 81, 159, 80;
+    --canvas-color-5: 44, 120, 191;
+    --canvas-color-6: 224, 44, 109;
+}
+
+/* ================================================================
+   3. HEADINGS
+   ================================================================ */
+.cm-header-1, .markdown-rendered h1 { font-weight: 600; }
+.cm-header-2, .markdown-rendered h2 { font-weight: 600; }
+.cm-header-3, .markdown-rendered h3 { font-weight: 500; }
+.cm-header-4, .markdown-rendered h4 { font-weight: 500; }
+.cm-header-5, .markdown-rendered h5 { font-weight: 500; }
+.cm-header-6, .markdown-rendered h6 { font-weight: 500; }
+
+/* ================================================================
+   4. LINKS
+   internal=bright-cyan, external=bright-blue, unresolved=bright-magenta
+   ================================================================ */
+.cm-hmd-internal-link,
+.internal-link {
+    color: var(--srcery-bright-cyan);
+    text-decoration: none;
+}
+.cm-hmd-internal-link:hover,
+.internal-link:hover {
+    color: var(--srcery-cyan);
+    text-decoration: underline;
+}
+
+a.external-link,
+.cm-url,
+.cm-link {
+    color: var(--srcery-bright-blue);
+}
+a.external-link:hover {
+    color: var(--srcery-blue);
+}
+
+.is-unresolved,
+.internal-link.is-unresolved {
+    color: var(--srcery-bright-magenta);
+    opacity: 0.8;
+}
+
+/* ================================================================
+   5. TAGS
+   ================================================================ */
+.tag {
+    font-weight: 500;
+    color: var(--tag-color);
+    background-color: var(--tag-background);
+    border: 1px solid var(--tag-border-color);
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+}
+
+.tag:hover,
+.tag:focus-visible {
+    color: var(--tag-color-hover);
+    background-color: var(--tag-background-hover);
+    border-color: var(--tag-border-color-hover);
+    text-decoration: none;
+    opacity: 1;
+}
+
+.tag.is-unresolved,
+a.tag.is-unresolved,
+.internal-link.tag.is-unresolved {
+    color: var(--tag-color);
+    opacity: 1;
+}
+
+.tag.is-unresolved:hover,
+a.tag.is-unresolved:hover,
+.internal-link.tag.is-unresolved:hover {
+    color: var(--tag-color-hover);
+    background-color: var(--tag-background-hover);
+    border-color: var(--tag-border-color-hover);
+    opacity: 1;
+}
+
+/* ================================================================
+   6. CODE
+   ================================================================ */
+code[class*="language-"],
+pre[class*="language-"] {
+    text-shadow: none;
+}
+
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-codeblock {
+    line-height: 1.4em;
+}
+
+/* ================================================================
+   7. TABLES
+   ================================================================ */
+th {
+    font-weight: 600;
+}
+
+thead {
+    border-bottom: 2px solid var(--background-modifier-border);
+}
+
+/* ================================================================
+   8. LISTS & TASKS
+   ================================================================ */
+input.task-list-item-checkbox {
+    border: 1px solid var(--checkbox-border-color);
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+input.task-list-item-checkbox:checked {
+    background-color: var(--checkbox-color);
+    box-shadow: inset 0 0 0 2px var(--background-primary);
+}
+
+/* Indent guides */
+.markdown-source-view.mod-cm6 .cm-indent::before,
+.markdown-rendered.show-indentation-guide li > ul::before,
+.markdown-rendered.show-indentation-guide li > ol::before {
+    border-right-color: var(--indentation-guide-color);
+}
+
+/* ================================================================
+   9. EMBEDS & CALLOUTS
+   ================================================================ */
+.markdown-embed-title {
+    font-weight: 600;
+}
+
+.markdown-embed {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.markdown-rendered .callout,
+.markdown-source-view.mod-cm6 .callout {
+    --callout-color: 81, 159, 80;
+    --callout-border-width: 1px;
+    --callout-border-opacity: 1;
+    background-color: var(--srcery-black);
+}
+
+/* ================================================================
+   10. NAVIGATION & SIDEBAR
+   ================================================================ */
+
+/* Sidebar panel tabs — infinite cycling color on hover and active */
+.workspace-tab-header-container-inner .workspace-tab-header:nth-child(14n+1):hover svg,
+.workspace-tab-header-container-inner .workspace-tab-header.is-active:nth-child(14n+1) svg  { color: var(--srcery-yellow); }
+.workspace-tab-header-container-inner .workspace-tab-header:nth-child(14n+2):hover svg,
+.workspace-tab-header-container-inner .workspace-tab-header.is-active:nth-child(14n+2) svg  { color: var(--srcery-red); }
+.workspace-tab-header-container-inner .workspace-tab-header:nth-child(14n+3):hover svg,
+.workspace-tab-header-container-inner .workspace-tab-header.is-active:nth-child(14n+3) svg  { color: var(--srcery-green); }
+.workspace-tab-header-container-inner .workspace-tab-header:nth-child(14n+4):hover svg,
+.workspace-tab-header-container-inner .workspace-tab-header.is-active:nth-child(14n+4) svg  { color: var(--srcery-blue); }
+.workspace-tab-header-container-inner .workspace-tab-header:nth-child(14n+5):hover svg,
+.workspace-tab-header-container-inner .workspace-tab-header.is-active:nth-child(14n+5) svg  { color: var(--srcery-magenta); }
+.workspace-tab-header-container-inner .workspace-tab-header:nth-child(14n+6):hover svg,
+.workspace-tab-header-container-inner .workspace-tab-header.is-active:nth-child(14n+6) svg  { color: var(--srcery-cyan); }
+.workspace-tab-header-container-inner .workspace-tab-header:nth-child(14n+7):hover svg,
+.workspace-tab-header-container-inner .workspace-tab-header.is-active:nth-child(14n+7) svg  { color: var(--srcery-orange); }
+.workspace-tab-header-container-inner .workspace-tab-header:nth-child(14n+8):hover svg,
+.workspace-tab-header-container-inner .workspace-tab-header.is-active:nth-child(14n+8) svg  { color: var(--srcery-bright-yellow); }
+.workspace-tab-header-container-inner .workspace-tab-header:nth-child(14n+9):hover svg,
+.workspace-tab-header-container-inner .workspace-tab-header.is-active:nth-child(14n+9) svg  { color: var(--srcery-bright-red); }
+.workspace-tab-header-container-inner .workspace-tab-header:nth-child(14n+10):hover svg,
+.workspace-tab-header-container-inner .workspace-tab-header.is-active:nth-child(14n+10) svg { color: var(--srcery-bright-green); }
+.workspace-tab-header-container-inner .workspace-tab-header:nth-child(14n+11):hover svg,
+.workspace-tab-header-container-inner .workspace-tab-header.is-active:nth-child(14n+11) svg { color: var(--srcery-bright-blue); }
+.workspace-tab-header-container-inner .workspace-tab-header:nth-child(14n+12):hover svg,
+.workspace-tab-header-container-inner .workspace-tab-header.is-active:nth-child(14n+12) svg { color: var(--srcery-bright-magenta); }
+.workspace-tab-header-container-inner .workspace-tab-header:nth-child(14n+13):hover svg,
+.workspace-tab-header-container-inner .workspace-tab-header.is-active:nth-child(14n+13) svg { color: var(--srcery-bright-cyan); }
+.workspace-tab-header-container-inner .workspace-tab-header:nth-child(14n+14):hover svg,
+.workspace-tab-header-container-inner .workspace-tab-header.is-active:nth-child(14n+14) svg { color: var(--srcery-bright-orange); }
+
+/* Document/file tabs — infinite cycling color on hover and active */
+.workspace-tab-header:nth-child(14n+1):hover,
+.workspace-tab-header.is-active:nth-child(14n+1)  { color: var(--srcery-yellow); }
+.workspace-tab-header:nth-child(14n+2):hover,
+.workspace-tab-header.is-active:nth-child(14n+2)  { color: var(--srcery-red); }
+.workspace-tab-header:nth-child(14n+3):hover,
+.workspace-tab-header.is-active:nth-child(14n+3)  { color: var(--srcery-green); }
+.workspace-tab-header:nth-child(14n+4):hover,
+.workspace-tab-header.is-active:nth-child(14n+4)  { color: var(--srcery-blue); }
+.workspace-tab-header:nth-child(14n+5):hover,
+.workspace-tab-header.is-active:nth-child(14n+5)  { color: var(--srcery-magenta); }
+.workspace-tab-header:nth-child(14n+6):hover,
+.workspace-tab-header.is-active:nth-child(14n+6)  { color: var(--srcery-cyan); }
+.workspace-tab-header:nth-child(14n+7):hover,
+.workspace-tab-header.is-active:nth-child(14n+7)  { color: var(--srcery-orange); }
+.workspace-tab-header:nth-child(14n+8):hover,
+.workspace-tab-header.is-active:nth-child(14n+8)  { color: var(--srcery-bright-yellow); }
+.workspace-tab-header:nth-child(14n+9):hover,
+.workspace-tab-header.is-active:nth-child(14n+9)  { color: var(--srcery-bright-red); }
+.workspace-tab-header:nth-child(14n+10):hover,
+.workspace-tab-header.is-active:nth-child(14n+10) { color: var(--srcery-bright-green); }
+.workspace-tab-header:nth-child(14n+11):hover,
+.workspace-tab-header.is-active:nth-child(14n+11) { color: var(--srcery-bright-blue); }
+.workspace-tab-header:nth-child(14n+12):hover,
+.workspace-tab-header.is-active:nth-child(14n+12) { color: var(--srcery-bright-magenta); }
+.workspace-tab-header:nth-child(14n+13):hover,
+.workspace-tab-header.is-active:nth-child(14n+13) { color: var(--srcery-bright-cyan); }
+.workspace-tab-header:nth-child(14n+14):hover,
+.workspace-tab-header.is-active:nth-child(14n+14) { color: var(--srcery-bright-orange); }
+
+/* Sidebar ribbon icons — infinite cycling color on hover */
+.side-dock-ribbon-action:nth-child(14n+1):hover svg  { color: var(--srcery-yellow); }
+.side-dock-ribbon-action:nth-child(14n+2):hover svg  { color: var(--srcery-red); }
+.side-dock-ribbon-action:nth-child(14n+3):hover svg  { color: var(--srcery-green); }
+.side-dock-ribbon-action:nth-child(14n+4):hover svg  { color: var(--srcery-blue); }
+.side-dock-ribbon-action:nth-child(14n+5):hover svg  { color: var(--srcery-magenta); }
+.side-dock-ribbon-action:nth-child(14n+6):hover svg  { color: var(--srcery-cyan); }
+.side-dock-ribbon-action:nth-child(14n+7):hover svg  { color: var(--srcery-orange); }
+.side-dock-ribbon-action:nth-child(14n+8):hover svg  { color: var(--srcery-bright-yellow); }
+.side-dock-ribbon-action:nth-child(14n+9):hover svg  { color: var(--srcery-bright-red); }
+.side-dock-ribbon-action:nth-child(14n+10):hover svg { color: var(--srcery-bright-green); }
+.side-dock-ribbon-action:nth-child(14n+11):hover svg { color: var(--srcery-bright-blue); }
+.side-dock-ribbon-action:nth-child(14n+12):hover svg { color: var(--srcery-bright-magenta); }
+.side-dock-ribbon-action:nth-child(14n+13):hover svg { color: var(--srcery-bright-cyan); }
+.side-dock-ribbon-action:nth-child(14n+14):hover svg { color: var(--srcery-bright-orange); }
+
+/* File explorer action buttons cycle hover, stick active */
+.workspace-leaf-content[data-type='file-explorer'] .nav-buttons-container > .nav-action-button:nth-child(5n+1):is(:hover, .is-active),
+.workspace-leaf-content[data-type='file-explorer'] .nav-buttons-container > .nav-action-button:nth-child(5n+1):is(:hover, .is-active) svg { color: var(--srcery-yellow); }
+.workspace-leaf-content[data-type='file-explorer'] .nav-buttons-container > .nav-action-button:nth-child(5n+2):is(:hover, .is-active),
+.workspace-leaf-content[data-type='file-explorer'] .nav-buttons-container > .nav-action-button:nth-child(5n+2):is(:hover, .is-active) svg { color: var(--srcery-red); }
+.workspace-leaf-content[data-type='file-explorer'] .nav-buttons-container > .nav-action-button:nth-child(5n+3):is(:hover, .is-active),
+.workspace-leaf-content[data-type='file-explorer'] .nav-buttons-container > .nav-action-button:nth-child(5n+3):is(:hover, .is-active) svg { color: var(--srcery-green); }
+.workspace-leaf-content[data-type='file-explorer'] .nav-buttons-container > .nav-action-button:nth-child(5n+4):is(:hover, .is-active),
+.workspace-leaf-content[data-type='file-explorer'] .nav-buttons-container > .nav-action-button:nth-child(5n+4):is(:hover, .is-active) svg { color: var(--srcery-blue); }
+.workspace-leaf-content[data-type='file-explorer'] .nav-buttons-container > .nav-action-button:nth-child(5n+5):is(:hover, .is-active),
+.workspace-leaf-content[data-type='file-explorer'] .nav-buttons-container > .nav-action-button:nth-child(5n+5):is(:hover, .is-active) svg { color: var(--srcery-magenta); }
+
+/* Bottom-left vault switcher, help, and settings use fixed cycle slots */
+body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-profile .workspace-drawer-vault-switcher:is(:hover, .has-active-menu),
+body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-profile .workspace-drawer-vault-switcher:is(:hover, .has-active-menu) .workspace-drawer-vault-name,
+body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-profile .workspace-drawer-vault-switcher:is(:hover, .has-active-menu) .workspace-drawer-vault-switcher-icon { color: var(--srcery-yellow); }
+body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-profile .workspace-drawer-vault-actions > .clickable-icon:nth-child(2n+1):is(:hover, .is-active),
+body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-profile .workspace-drawer-vault-actions > .clickable-icon:nth-child(2n+1):is(:hover, .is-active) svg { color: var(--srcery-red); }
+body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-profile .workspace-drawer-vault-actions > .clickable-icon:nth-child(2n+2):is(:hover, .is-active),
+body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-profile .workspace-drawer-vault-actions > .clickable-icon:nth-child(2n+2):is(:hover, .is-active) svg { color: var(--srcery-green); }
+
+/* Right sidebar pane action buttons (Tags pane) */
+.workspace-leaf-content[data-type='tag'] .nav-buttons-container > .nav-action-button:nth-child(4n+1):is(:hover, .is-active),
+.workspace-leaf-content[data-type='tag'] .nav-buttons-container > .nav-action-button:nth-child(4n+1):is(:hover, .is-active) svg { color: var(--srcery-yellow); }
+.workspace-leaf-content[data-type='tag'] .nav-buttons-container > .nav-action-button:nth-child(4n+2):is(:hover, .is-active),
+.workspace-leaf-content[data-type='tag'] .nav-buttons-container > .nav-action-button:nth-child(4n+2):is(:hover, .is-active) svg { color: var(--srcery-red); }
+.workspace-leaf-content[data-type='tag'] .nav-buttons-container > .nav-action-button:nth-child(4n+3):is(:hover, .is-active),
+.workspace-leaf-content[data-type='tag'] .nav-buttons-container > .nav-action-button:nth-child(4n+3):is(:hover, .is-active) svg { color: var(--srcery-green); }
+.workspace-leaf-content[data-type='tag'] .nav-buttons-container > .nav-action-button:nth-child(4n+4):is(:hover, .is-active),
+.workspace-leaf-content[data-type='tag'] .nav-buttons-container > .nav-action-button:nth-child(4n+4):is(:hover, .is-active) svg { color: var(--srcery-blue); }
+
+/* Right sidebar pane action buttons (Outline pane) */
+.workspace-leaf-content[data-type='outline'] .nav-buttons-container > .nav-action-button:nth-child(3n+1):is(:hover, .is-active, .has-active-menu),
+.workspace-leaf-content[data-type='outline'] .nav-buttons-container > .nav-action-button:nth-child(3n+1):is(:hover, .is-active, .has-active-menu) svg { color: var(--srcery-yellow); }
+.workspace-leaf-content[data-type='outline'] .nav-buttons-container > .nav-action-button:nth-child(3n+2):is(:hover, .is-active, .has-active-menu),
+.workspace-leaf-content[data-type='outline'] .nav-buttons-container > .nav-action-button:nth-child(3n+2):is(:hover, .is-active, .has-active-menu) svg { color: var(--srcery-red); }
+.workspace-leaf-content[data-type='outline'] .nav-buttons-container > .nav-action-button:nth-child(3n+3):is(:hover, .is-active, .has-active-menu),
+.workspace-leaf-content[data-type='outline'] .nav-buttons-container > .nav-action-button:nth-child(3n+3):is(:hover, .is-active, .has-active-menu) svg { color: var(--srcery-green); }
+
+/* Right sidebar pane action buttons (All Properties pane) */
+.workspace-leaf-content:is([data-type='all-properties'], [data-type='properties']) .nav-buttons-container > .nav-action-button:nth-child(2n+1):is(:hover, .is-active, .has-active-menu),
+.workspace-leaf-content:is([data-type='all-properties'], [data-type='properties']) .nav-buttons-container > .nav-action-button:nth-child(2n+1):is(:hover, .is-active, .has-active-menu) svg { color: var(--srcery-yellow); }
+.workspace-leaf-content:is([data-type='all-properties'], [data-type='properties']) .nav-buttons-container > .nav-action-button:nth-child(2n+2):is(:hover, .is-active, .has-active-menu),
+.workspace-leaf-content:is([data-type='all-properties'], [data-type='properties']) .nav-buttons-container > .nav-action-button:nth-child(2n+2):is(:hover, .is-active, .has-active-menu) svg { color: var(--srcery-red); }
+
+/* All Properties pane tree visuals */
+.workspace-leaf-content:is([data-type='all-properties'], [data-type='properties']) .tree-item-self .tree-item-flair,
+.workspace-leaf-content:is([data-type='all-properties'], [data-type='properties']) .tree-item-self .tree-item-flair-outer {
+    color: var(--srcery-orange);
+}
+
+/* All Properties icons use the standard 14-color cycle by row */
+.workspace-leaf-content:is([data-type='all-properties'], [data-type='properties']) .tree-item {
+    --srcery-properties-icon-color: var(--srcery-yellow);
+}
+.workspace-leaf-content:is([data-type='all-properties'], [data-type='properties']) .tree-item:nth-child(14n+1) { --srcery-properties-icon-color: var(--srcery-yellow); }
+.workspace-leaf-content:is([data-type='all-properties'], [data-type='properties']) .tree-item:nth-child(14n+2) { --srcery-properties-icon-color: var(--srcery-red); }
+.workspace-leaf-content:is([data-type='all-properties'], [data-type='properties']) .tree-item:nth-child(14n+3) { --srcery-properties-icon-color: var(--srcery-green); }
+.workspace-leaf-content:is([data-type='all-properties'], [data-type='properties']) .tree-item:nth-child(14n+4) { --srcery-properties-icon-color: var(--srcery-blue); }
+.workspace-leaf-content:is([data-type='all-properties'], [data-type='properties']) .tree-item:nth-child(14n+5) { --srcery-properties-icon-color: var(--srcery-magenta); }
+.workspace-leaf-content:is([data-type='all-properties'], [data-type='properties']) .tree-item:nth-child(14n+6) { --srcery-properties-icon-color: var(--srcery-cyan); }
+.workspace-leaf-content:is([data-type='all-properties'], [data-type='properties']) .tree-item:nth-child(14n+7) { --srcery-properties-icon-color: var(--srcery-orange); }
+.workspace-leaf-content:is([data-type='all-properties'], [data-type='properties']) .tree-item:nth-child(14n+8) { --srcery-properties-icon-color: var(--srcery-bright-yellow); }
+.workspace-leaf-content:is([data-type='all-properties'], [data-type='properties']) .tree-item:nth-child(14n+9) { --srcery-properties-icon-color: var(--srcery-bright-red); }
+.workspace-leaf-content:is([data-type='all-properties'], [data-type='properties']) .tree-item:nth-child(14n+10) { --srcery-properties-icon-color: var(--srcery-bright-green); }
+.workspace-leaf-content:is([data-type='all-properties'], [data-type='properties']) .tree-item:nth-child(14n+11) { --srcery-properties-icon-color: var(--srcery-bright-blue); }
+.workspace-leaf-content:is([data-type='all-properties'], [data-type='properties']) .tree-item:nth-child(14n+12) { --srcery-properties-icon-color: var(--srcery-bright-magenta); }
+.workspace-leaf-content:is([data-type='all-properties'], [data-type='properties']) .tree-item:nth-child(14n+13) { --srcery-properties-icon-color: var(--srcery-bright-cyan); }
+.workspace-leaf-content:is([data-type='all-properties'], [data-type='properties']) .tree-item:nth-child(14n+14) { --srcery-properties-icon-color: var(--srcery-bright-orange); }
+
+.workspace-leaf-content:is([data-type='all-properties'], [data-type='properties']) .tree-item-self .tree-item-icon:not(.collapse-icon) {
+    color: var(--srcery-properties-icon-color);
+}
+
+/* All Properties collapsible groups use folder icon (replace default list icon) */
+.workspace-leaf-content:is([data-type='all-properties'], [data-type='properties']) .tree-item-self.mod-collapsible .tree-item-icon:not(.collapse-icon) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 14px;
+    height: 14px;
+    color: var(--srcery-properties-icon-color);
+}
+
+.workspace-leaf-content:is([data-type='all-properties'], [data-type='properties']) .tree-item-self.mod-collapsible .tree-item-icon:not(.collapse-icon) svg {
+    display: none;
+}
+
+.workspace-leaf-content:is([data-type='all-properties'], [data-type='properties']) .tree-item-self.mod-collapsible .tree-item-icon:not(.collapse-icon)::before {
+    content: "";
+    display: block;
+    width: 12px;
+    height: 12px;
+    background-color: currentColor;
+    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9l-.81-1.2A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z'/%3E%3C/svg%3E");
+    mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9l-.81-1.2A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z'/%3E%3C/svg%3E");
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    mask-position: center;
+}
+
+/* Outline collapsible rows use the same folder icon/color as file explorer folders */
+.workspace-leaf-content[data-type='outline'] .tree-item-self .tree-item-icon.collapse-icon + .tree-item-inner,
+.workspace-leaf-content[data-type='outline'] .tree-item-self.mod-collapsible .tree-item-inner {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 6px;
+}
+
+.workspace-leaf-content[data-type='outline'] .tree-item-self .tree-item-icon.collapse-icon + .tree-item-inner::before,
+.workspace-leaf-content[data-type='outline'] .tree-item-self.mod-collapsible .tree-item-inner::before {
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    flex: 0 0 12px;
+    margin-top: 2px;
+    background-color: var(--srcery-bright-green);
+    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9l-.81-1.2A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z'/%3E%3C/svg%3E");
+    mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9l-.81-1.2A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z'/%3E%3C/svg%3E");
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    mask-position: center;
+}
+
+/* Tags pane tree row visuals */
+.workspace-leaf-content[data-type='tag'] .tree-item-self .tree-item-flair,
+.workspace-leaf-content[data-type='tag'] .tree-item-self .tree-item-flair-outer {
+    color: var(--srcery-orange);
+}
+
+.workspace-leaf-content[data-type='tag'] .tree-item-self .tree-item-inner {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 6px;
+}
+
+/* Collapsible tag groups use the same folder icon/color as file explorer folders */
+.workspace-leaf-content[data-type='tag'] .tree-item-self .tree-item-icon.collapse-icon + .tree-item-inner::before,
+.workspace-leaf-content[data-type='tag'] .tree-item-self.mod-collapsible .tree-item-inner::before {
+    background-color: var(--srcery-bright-green);
+    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9l-.81-1.2A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z'/%3E%3C/svg%3E");
+    mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9l-.81-1.2A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z'/%3E%3C/svg%3E");
+}
+
+.workspace-leaf-content[data-type='tag'] .tree-item-self .tree-item-inner::before {
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    flex: 0 0 12px;
+    margin-top: 2px;
+    background-color: var(--srcery-teal);
+    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='4' y1='9' x2='20' y2='9'/%3E%3Cline x1='4' y1='15' x2='20' y2='15'/%3E%3Cline x1='10' y1='3' x2='8' y2='21'/%3E%3Cline x1='16' y1='3' x2='14' y2='21'/%3E%3C/svg%3E");
+    mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='4' y1='9' x2='20' y2='9'/%3E%3Cline x1='4' y1='15' x2='20' y2='15'/%3E%3Cline x1='10' y1='3' x2='8' y2='21'/%3E%3Cline x1='16' y1='3' x2='14' y2='21'/%3E%3C/svg%3E");
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    mask-position: center;
+}
+
+/* Markdown note header action buttons */
+.workspace-leaf-content[data-type='markdown'] .view-actions > .view-action:nth-child(3n+1):is(:hover, .is-active, .has-active-menu),
+.workspace-leaf-content[data-type='markdown'] .view-actions > .view-action:nth-child(3n+1):is(:hover, .is-active, .has-active-menu) svg { color: var(--srcery-yellow); }
+.workspace-leaf-content[data-type='markdown'] .view-actions > .view-action:nth-child(3n+2):is(:hover, .is-active, .has-active-menu),
+.workspace-leaf-content[data-type='markdown'] .view-actions > .view-action:nth-child(3n+2):is(:hover, .is-active, .has-active-menu) svg { color: var(--srcery-red); }
+.workspace-leaf-content[data-type='markdown'] .view-actions > .view-action:nth-child(3n+3):is(:hover, .is-active, .has-active-menu),
+.workspace-leaf-content[data-type='markdown'] .view-actions > .view-action:nth-child(3n+3):is(:hover, .is-active, .has-active-menu) svg { color: var(--srcery-green); }
+
+/* Left and right sidebar toggle buttons */
+.sidebar-toggle-button.mod-left:hover,
+.workspace.is-left-sidedock-open .sidebar-toggle-button.mod-left,
+.sidebar-toggle-button.mod-left:hover .clickable-icon,
+.workspace.is-left-sidedock-open .sidebar-toggle-button.mod-left .clickable-icon,
+.sidebar-toggle-button.mod-left:hover svg,
+.workspace.is-left-sidedock-open .sidebar-toggle-button.mod-left svg { color: var(--srcery-yellow); }
+.sidebar-toggle-button.mod-right:hover,
+.workspace.is-right-sidedock-open .sidebar-toggle-button.mod-right,
+.sidebar-toggle-button.mod-right:hover .clickable-icon,
+.workspace.is-right-sidedock-open .sidebar-toggle-button.mod-right .clickable-icon,
+.sidebar-toggle-button.mod-right:hover svg,
+.workspace.is-right-sidedock-open .sidebar-toggle-button.mod-right svg { color: var(--srcery-red); }
+
+/* Top tab and note navigation controls */
+.workspace-tab-header-new-tab:hover,
+.workspace-tab-header-new-tab:hover .clickable-icon,
+.workspace-tab-header-new-tab:hover svg { color: var(--srcery-yellow); }
+.workspace-tab-header-tab-list:is(:hover, .has-active-menu),
+.workspace-tab-header-tab-list:is(:hover, .has-active-menu) .clickable-icon,
+.workspace-tab-header-tab-list:is(:hover, .has-active-menu) svg { color: var(--srcery-blue); }
+.workspace-leaf-content[data-type='markdown'] .view-header-nav-buttons > .clickable-icon:first-child:hover,
+.workspace-leaf-content[data-type='markdown'] .view-header-nav-buttons > .clickable-icon:first-child:hover svg { color: var(--srcery-red); }
+.workspace-leaf-content[data-type='markdown'] .view-header-nav-buttons > .clickable-icon:nth-child(2):hover,
+.workspace-leaf-content[data-type='markdown'] .view-header-nav-buttons > .clickable-icon:nth-child(2):hover svg { color: var(--srcery-green); }
+
+.view-header-title {
+    font-weight: 700;
+}
+
+.workspace-leaf-header-title {
+    font-weight: 600;
+}
+
+.nav-file-title {
+    border-radius: 0;
+}
+
+.nav-file-tag {
+    color: var(--srcery-green);
+}
+
+/* File explorer folder icons */
+.workspace-leaf-content[data-type='file-explorer'] .nav-folder-title {
+    --srcery-folder-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9l-.81-1.2A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z'/%3E%3C/svg%3E");
+}
+
+.workspace-leaf-content[data-type='file-explorer'] .nav-folder-title .nav-folder-title-content::before {
+    content: "";
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    margin-right: 6px;
+    vertical-align: -2px;
+    background-color: var(--srcery-bright-green);
+    -webkit-mask-image: var(--srcery-folder-icon);
+    mask-image: var(--srcery-folder-icon);
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    mask-position: center;
+}
+
+/* File explorer filetype icons and colors */
+.workspace-leaf-content[data-type='file-explorer'] .nav-file-title {
+    --srcery-filetype-color: var(--srcery-white);
+    --srcery-filetype-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z'/%3E%3Cpath d='M14 2v6h6'/%3E%3C/svg%3E");
+}
+
+.workspace-leaf-content[data-type='file-explorer'] .nav-file-title[data-path$=".md" i] {
+    --srcery-filetype-color: var(--srcery-yellow);
+}
+
+.workspace-leaf-content[data-type='file-explorer'] .nav-file-title[data-path$=".pdf" i] {
+    --srcery-filetype-color: var(--srcery-red);
+}
+
+/* Base uses explicit database icon render path */
+.workspace-leaf-content[data-type='file-explorer'] .nav-file-title[data-path$=".base" i] {
+    --srcery-filetype-color: var(--srcery-green);
+    --srcery-filetype-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cellipse cx='12' cy='5' rx='9' ry='3'/%3E%3Cpath d='M3 5v14a9 3 0 0 0 18 0V5'/%3E%3Cpath d='M3 12a9 3 0 0 0 18 0'/%3E%3C/svg%3E");
+}
+.workspace-leaf-content[data-type='file-explorer'] .nav-file-title[data-path$=".base" i] .tree-item-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+    height: 16px;
+}
+.workspace-leaf-content[data-type='file-explorer'] .nav-file-title[data-path$=".base" i] .tree-item-icon svg {
+    display: none;
+}
+.workspace-leaf-content[data-type='file-explorer'] .nav-file-title[data-path$=".base" i] .tree-item-icon::before {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+    background-color: var(--srcery-filetype-color);
+    -webkit-mask-image: var(--srcery-filetype-icon);
+    mask-image: var(--srcery-filetype-icon);
+    -webkit-mask-size: 16px 16px;
+    mask-size: 16px 16px;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    mask-position: center;
+}
+.workspace-leaf-content[data-type='file-explorer'] .nav-file-title[data-path$=".canvas" i] {
+    --srcery-filetype-color: var(--srcery-bright-yellow);
+    --srcery-filetype-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='3' width='18' height='18' rx='2' ry='2'/%3E%3Cpath d='M3 9h18'/%3E%3Cpath d='M9 9v12'/%3E%3C/svg%3E");
+}
+
+/* Video files use explicit clapperboard icon render path */
+.workspace-leaf-content[data-type='file-explorer'] .nav-file-title:is([data-path$=".mp4" i], [data-path$=".mov" i], [data-path$=".mkv" i], [data-path$=".webm" i], [data-path$=".avi" i], [data-path$=".m4v" i], [data-path$=".wmv" i], [data-path$=".mpg" i], [data-path$=".mpeg" i], [data-path$=".flv" i], [data-path$=".3gp" i]) {
+    --srcery-filetype-color: var(--srcery-blue);
+    --srcery-filetype-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20.2 6 3 11l-.9-2.4c-.3-1.1.3-2.2 1.3-2.5l13.5-4c1.1-.3 2.2.3 2.5 1.3Z'/%3E%3Cpath d='m6.2 5.3 3.1 3.9'/%3E%3Cpath d='m12.4 3.4 3.1 4'/%3E%3Cpath d='M3 11h18v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Z'/%3E%3C/svg%3E");
+}
+.workspace-leaf-content[data-type='file-explorer'] .nav-file-title:is([data-path$=".mp4" i], [data-path$=".mov" i], [data-path$=".mkv" i], [data-path$=".webm" i], [data-path$=".avi" i], [data-path$=".m4v" i], [data-path$=".wmv" i], [data-path$=".mpg" i], [data-path$=".mpeg" i], [data-path$=".flv" i], [data-path$=".3gp" i]) .tree-item-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+    height: 16px;
+}
+.workspace-leaf-content[data-type='file-explorer'] .nav-file-title:is([data-path$=".mp4" i], [data-path$=".mov" i], [data-path$=".mkv" i], [data-path$=".webm" i], [data-path$=".avi" i], [data-path$=".m4v" i], [data-path$=".wmv" i], [data-path$=".mpg" i], [data-path$=".mpeg" i], [data-path$=".flv" i], [data-path$=".3gp" i]) .tree-item-icon svg {
+    display: none;
+}
+.workspace-leaf-content[data-type='file-explorer'] .nav-file-title:is([data-path$=".mp4" i], [data-path$=".mov" i], [data-path$=".mkv" i], [data-path$=".webm" i], [data-path$=".avi" i], [data-path$=".m4v" i], [data-path$=".wmv" i], [data-path$=".mpg" i], [data-path$=".mpeg" i], [data-path$=".flv" i], [data-path$=".3gp" i]) .tree-item-icon::before {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+    background-color: var(--srcery-filetype-color);
+    -webkit-mask-image: var(--srcery-filetype-icon);
+    mask-image: var(--srcery-filetype-icon);
+    -webkit-mask-size: 16px 16px;
+    mask-size: 16px 16px;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    mask-position: center;
+}
+.workspace-leaf-content[data-type='file-explorer'] .nav-file-title:is([data-path$=".png" i], [data-path$=".jpg" i], [data-path$=".jpeg" i], [data-path$=".gif" i], [data-path$=".webp" i], [data-path$=".svg" i], [data-path$=".avif" i], [data-path$=".bmp" i], [data-path$=".tiff" i], [data-path$=".tif" i], [data-path$=".heic" i], [data-path$=".heif" i], [data-path$=".ico" i]) {
+    --srcery-filetype-color: var(--srcery-magenta);
+}
+
+.workspace-leaf-content[data-type='file-explorer'] .nav-file-title:is([data-path$=".png" i], [data-path$=".jpg" i], [data-path$=".jpeg" i], [data-path$=".gif" i], [data-path$=".webp" i], [data-path$=".svg" i], [data-path$=".avif" i], [data-path$=".bmp" i], [data-path$=".tiff" i], [data-path$=".tif" i], [data-path$=".heic" i], [data-path$=".heif" i], [data-path$=".ico" i]) {
+    --srcery-filetype-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='3' width='18' height='18' rx='2' ry='2'/%3E%3Ccircle cx='8.5' cy='8.5' r='1.5'/%3E%3Cpath d='M21 15l-5-5L5 21'/%3E%3C/svg%3E");
+}
+
+.workspace-leaf-content[data-type='file-explorer'] .nav-file-title[data-path$=".excalidraw" i] {
+    --srcery-filetype-color: var(--srcery-cyan);
+}
+
+.workspace-leaf-content[data-type='file-explorer'] .nav-file-title:is([data-path$=".mp3" i], [data-path$=".m4a" i], [data-path$=".wav" i], [data-path$=".flac" i], [data-path$=".ogg" i], [data-path$=".aac" i]) {
+    --srcery-filetype-color: var(--srcery-orange);
+}
+
+/* Code-family files use code icon, then language-specific colors */
+.workspace-leaf-content[data-type='file-explorer'] .nav-file-title:is([data-path$=".js" i], [data-path$=".cjs" i], [data-path$=".mjs" i], [data-path$=".jsx" i], [data-path$=".ts" i], [data-path$=".tsx" i], [data-path$=".py" i], [data-path$=".lua" i], [data-path$=".rs" i], [data-path$=".go" i], [data-path$=".java" i], [data-path$=".kt" i], [data-path$=".kts" i], [data-path$=".rb" i], [data-path$=".php" i], [data-path$=".c" i], [data-path$=".h" i], [data-path$=".cpp" i], [data-path$=".cc" i], [data-path$=".cxx" i], [data-path$=".hpp" i], [data-path$=".hh" i], [data-path$=".hxx" i], [data-path$=".cs" i], [data-path$=".swift" i], [data-path$=".scala" i], [data-path$=".r" i], [data-path$=".sql" i], [data-path$=".css" i], [data-path$=".scss" i], [data-path$=".sass" i], [data-path$=".less" i], [data-path$=".html" i], [data-path$=".htm" i], [data-path$=".xml" i], [data-path$=".vue" i], [data-path$=".svelte" i], [data-path$=".json" i], [data-path$=".jsonc" i], [data-path$=".yaml" i], [data-path$=".yml" i], [data-path$=".toml" i], [data-path$=".ini" i], [data-path$=".conf" i], [data-path$=".env" i], [data-path$=".sh" i], [data-path$=".bash" i], [data-path$=".zsh" i], [data-path$=".fish" i]) {
+    --srcery-filetype-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z'/%3E%3Cpath d='M14 2v6h6'/%3E%3Cpath d='m10 13-2 2 2 2'/%3E%3Cpath d='m14 17 2-2-2-2'/%3E%3C/svg%3E");
+}
+
+.workspace-leaf-content[data-type='file-explorer'] .nav-file-title:is([data-path$=".js" i], [data-path$=".cjs" i], [data-path$=".mjs" i], [data-path$=".jsx" i]) {
+    --srcery-filetype-color: var(--srcery-yellow);
+}
+
+.workspace-leaf-content[data-type='file-explorer'] .nav-file-title[data-path$=".py" i] {
+    --srcery-filetype-color: var(--srcery-bright-yellow);
+}
+
+.workspace-leaf-content[data-type='file-explorer'] .nav-file-title[data-path$=".lua" i] {
+    --srcery-filetype-color: var(--srcery-blue);
+}
+
+.workspace-leaf-content[data-type='file-explorer'] .nav-file-title[data-path$=".rs" i] {
+    --srcery-filetype-color: var(--srcery-orange);
+}
+
+.workspace-leaf-content[data-type='file-explorer'] .nav-file-title:is([data-path$=".ts" i], [data-path$=".tsx" i]) {
+    --srcery-filetype-color: var(--srcery-bright-blue);
+}
+
+.workspace-leaf-content[data-type='file-explorer'] .nav-file-title[data-path$=".go" i] {
+    --srcery-filetype-color: var(--srcery-bright-cyan);
+}
+
+.workspace-leaf-content[data-type='file-explorer'] .nav-file-title:is([data-path$=".java" i], [data-path$=".kt" i], [data-path$=".kts" i], [data-path$=".rb" i], [data-path$=".php" i]) {
+    --srcery-filetype-color: var(--srcery-red);
+}
+
+.workspace-leaf-content[data-type='file-explorer'] .nav-file-title:is([data-path$=".c" i], [data-path$=".h" i], [data-path$=".cpp" i], [data-path$=".cc" i], [data-path$=".cxx" i], [data-path$=".hpp" i], [data-path$=".hh" i], [data-path$=".hxx" i], [data-path$=".cs" i], [data-path$=".swift" i], [data-path$=".scala" i], [data-path$=".r" i], [data-path$=".sql" i]) {
+    --srcery-filetype-color: var(--srcery-cyan);
+}
+
+.workspace-leaf-content[data-type='file-explorer'] .nav-file-title:is([data-path$=".css" i], [data-path$=".scss" i], [data-path$=".sass" i], [data-path$=".less" i], [data-path$=".html" i], [data-path$=".htm" i], [data-path$=".xml" i], [data-path$=".vue" i], [data-path$=".svelte" i], [data-path$=".json" i], [data-path$=".jsonc" i], [data-path$=".yaml" i], [data-path$=".yml" i], [data-path$=".toml" i], [data-path$=".ini" i], [data-path$=".conf" i], [data-path$=".env" i], [data-path$=".sh" i], [data-path$=".bash" i], [data-path$=".zsh" i], [data-path$=".fish" i]) {
+    --srcery-filetype-color: var(--srcery-bright-magenta);
+}
+.workspace-leaf-content[data-type='file-explorer'] .nav-file-title .tree-item-icon,
+.workspace-leaf-content[data-type='file-explorer'] .nav-file-title .tree-item-icon svg,
+.workspace-leaf-content[data-type='file-explorer'] .nav-file-title .nav-file-title-content::before,
+.workspace-leaf-content[data-type='file-explorer'] .nav-file-title .nav-file-tag {
+    color: var(--srcery-filetype-color);
+}
+.workspace-leaf-content[data-type='file-explorer'] .nav-file-title .tree-item-icon {
+    opacity: 1;
+    visibility: visible;
+}
+/* File icon fallback (for builds where file rows render no icon element) */
+.workspace-leaf-content[data-type='file-explorer'] .nav-file-title .nav-file-title-content::before {
+    content: "";
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    margin-right: 6px;
+    vertical-align: -2px;
+    background-color: var(--srcery-filetype-color);
+    -webkit-mask-image: var(--srcery-filetype-icon);
+    mask-image: var(--srcery-filetype-icon);
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    mask-position: center;
+}
+
+.nav-file-title-content[contenteditable] {
+    background-color: var(--srcery-gray3);
+}
+.inline-title[contenteditable] {
+    background-color: transparent;
+}
+
+/* Resize handles */
+.workspace-split.mod-vertical > * > .workspace-leaf-resize-handle,
+.workspace-split.mod-left-split > .workspace-leaf-resize-handle,
+.workspace-split.mod-right-split > .workspace-leaf-resize-handle {
+    width: 1px;
+    background-color: var(--srcery-cyan);
+}
+
+.workspace-split.mod-horizontal > * > .workspace-leaf-resize-handle {
+    height: 1px;
+    background-color: var(--srcery-cyan);
+}
+
+/* ================================================================
+   11. GRAPH VIEW
+   ================================================================ */
+.graph-view.color-circle,
+.graph-view.color-fill-highlight,
+.graph-view.color-line-highlight {
+    color: var(--interactive-accent-hsl);
+}
+
+.graph-view.color-text {
+    color: var(--text-normal);
+}
+
+/* Graph controls buttons — same 14-color hover cycle */
+.graph-controls > .graph-controls-button:nth-of-type(14n+1):hover,
+.graph-controls > .graph-controls-button:nth-of-type(14n+1):hover svg  { color: var(--srcery-yellow); }
+.graph-controls > .graph-controls-button:nth-of-type(14n+2):hover,
+.graph-controls > .graph-controls-button:nth-of-type(14n+2):hover svg  { color: var(--srcery-red); }
+.graph-controls > .graph-controls-button:nth-of-type(14n+3):hover,
+.graph-controls > .graph-controls-button:nth-of-type(14n+3):hover svg  { color: var(--srcery-green); }
+.graph-controls > .graph-controls-button:nth-of-type(14n+4):hover,
+.graph-controls > .graph-controls-button:nth-of-type(14n+4):hover svg  { color: var(--srcery-blue); }
+.graph-controls > .graph-controls-button:nth-of-type(14n+5):hover,
+.graph-controls > .graph-controls-button:nth-of-type(14n+5):hover svg  { color: var(--srcery-magenta); }
+.graph-controls > .graph-controls-button:nth-of-type(14n+6):hover,
+.graph-controls > .graph-controls-button:nth-of-type(14n+6):hover svg  { color: var(--srcery-cyan); }
+.graph-controls > .graph-controls-button:nth-of-type(14n+7):hover,
+.graph-controls > .graph-controls-button:nth-of-type(14n+7):hover svg  { color: var(--srcery-orange); }
+.graph-controls > .graph-controls-button:nth-of-type(14n+8):hover,
+.graph-controls > .graph-controls-button:nth-of-type(14n+8):hover svg  { color: var(--srcery-bright-yellow); }
+.graph-controls > .graph-controls-button:nth-of-type(14n+9):hover,
+.graph-controls > .graph-controls-button:nth-of-type(14n+9):hover svg  { color: var(--srcery-bright-red); }
+.graph-controls > .graph-controls-button:nth-of-type(14n+10):hover,
+.graph-controls > .graph-controls-button:nth-of-type(14n+10):hover svg { color: var(--srcery-bright-green); }
+.graph-controls > .graph-controls-button:nth-of-type(14n+11):hover,
+.graph-controls > .graph-controls-button:nth-of-type(14n+11):hover svg { color: var(--srcery-bright-blue); }
+.graph-controls > .graph-controls-button:nth-of-type(14n+12):hover,
+.graph-controls > .graph-controls-button:nth-of-type(14n+12):hover svg { color: var(--srcery-bright-magenta); }
+.graph-controls > .graph-controls-button:nth-of-type(14n+13):hover,
+.graph-controls > .graph-controls-button:nth-of-type(14n+13):hover svg { color: var(--srcery-bright-cyan); }
+.graph-controls > .graph-controls-button:nth-of-type(14n+14):hover,
+.graph-controls > .graph-controls-button:nth-of-type(14n+14):hover svg { color: var(--srcery-bright-orange); }
+
+/* Bases toolbar buttons */
+.bases-toolbar .bases-toolbar-item.bases-toolbar-views-menu .text-icon-button:is(:hover, .is-active),
+.bases-toolbar .bases-toolbar-item.bases-toolbar-views-menu .text-icon-button:is(:hover, .is-active) svg { color: var(--srcery-yellow); }
+.bases-toolbar .bases-toolbar-item.bases-toolbar-sort-menu .text-icon-button:is(:hover, .is-active),
+.bases-toolbar .bases-toolbar-item.bases-toolbar-sort-menu .text-icon-button:is(:hover, .is-active) svg { color: var(--srcery-red); }
+.bases-toolbar .bases-toolbar-item.bases-toolbar-filter-menu .text-icon-button:is(:hover, .is-active),
+.bases-toolbar .bases-toolbar-item.bases-toolbar-filter-menu .text-icon-button:is(:hover, .is-active) svg { color: var(--srcery-green); }
+.bases-toolbar .bases-toolbar-item.bases-toolbar-properties-menu .text-icon-button:is(:hover, .is-active),
+.bases-toolbar .bases-toolbar-item.bases-toolbar-properties-menu .text-icon-button:is(:hover, .is-active) svg { color: var(--srcery-blue); }
+.bases-toolbar :is(.bases-toolbar-item.bases-toolbar-search .text-icon-button, .bases-toolbar-search.text-icon-button):is(:hover, .is-active),
+.bases-toolbar :is(.bases-toolbar-item.bases-toolbar-search .text-icon-button, .bases-toolbar-search.text-icon-button):is(:hover, .is-active) svg { color: var(--srcery-magenta); }
+.bases-toolbar .bases-toolbar-item.bases-toolbar-new-item-menu .text-icon-button:is(:hover, .is-active),
+.bases-toolbar .bases-toolbar-item.bases-toolbar-new-item-menu .text-icon-button:is(:hover, .is-active) svg { color: var(--srcery-cyan); }
+
+/* Canvas accent variables (instruction overlay + selection accents) */
+.workspace-leaf-content[data-type='canvas'] {
+    --color-accent: var(--srcery-green);
+    --color-accent-rgb: 81, 159, 80;
+    --color-accent-hsl: 119, 33%, 47%;
+}
+
+/* Canvas controls buttons */
+.canvas-control-group > .canvas-control-item:nth-of-type(14n+1):hover,
+.canvas-control-group > .canvas-control-item:nth-of-type(14n+1):hover svg,
+.canvas-card-menu > .canvas-card-menu-button:nth-of-type(14n+1):hover,
+.canvas-card-menu > .canvas-card-menu-button:nth-of-type(14n+1):hover svg,
+.canvas-menu > .clickable-icon:nth-of-type(14n+1):hover,
+.canvas-menu > .clickable-icon:nth-of-type(14n+1):hover svg,
+.canvas-submenu > .clickable-icon:nth-of-type(14n+1):hover,
+.canvas-submenu > .clickable-icon:nth-of-type(14n+1):hover svg  { color: var(--srcery-yellow); }
+.canvas-control-group > .canvas-control-item:nth-of-type(14n+2):hover,
+.canvas-control-group > .canvas-control-item:nth-of-type(14n+2):hover svg,
+.canvas-card-menu > .canvas-card-menu-button:nth-of-type(14n+2):hover,
+.canvas-card-menu > .canvas-card-menu-button:nth-of-type(14n+2):hover svg,
+.canvas-menu > .clickable-icon:nth-of-type(14n+2):hover,
+.canvas-menu > .clickable-icon:nth-of-type(14n+2):hover svg,
+.canvas-submenu > .clickable-icon:nth-of-type(14n+2):hover,
+.canvas-submenu > .clickable-icon:nth-of-type(14n+2):hover svg  { color: var(--srcery-red); }
+.canvas-control-group > .canvas-control-item:nth-of-type(14n+3):hover,
+.canvas-control-group > .canvas-control-item:nth-of-type(14n+3):hover svg,
+.canvas-card-menu > .canvas-card-menu-button:nth-of-type(14n+3):hover,
+.canvas-card-menu > .canvas-card-menu-button:nth-of-type(14n+3):hover svg,
+.canvas-menu > .clickable-icon:nth-of-type(14n+3):hover,
+.canvas-menu > .clickable-icon:nth-of-type(14n+3):hover svg,
+.canvas-submenu > .clickable-icon:nth-of-type(14n+3):hover,
+.canvas-submenu > .clickable-icon:nth-of-type(14n+3):hover svg  { color: var(--srcery-green); }
+.canvas-control-group > .canvas-control-item:nth-of-type(14n+4):hover,
+.canvas-control-group > .canvas-control-item:nth-of-type(14n+4):hover svg,
+.canvas-card-menu > .canvas-card-menu-button:nth-of-type(14n+4):hover,
+.canvas-card-menu > .canvas-card-menu-button:nth-of-type(14n+4):hover svg,
+.canvas-menu > .clickable-icon:nth-of-type(14n+4):hover,
+.canvas-menu > .clickable-icon:nth-of-type(14n+4):hover svg,
+.canvas-submenu > .clickable-icon:nth-of-type(14n+4):hover,
+.canvas-submenu > .clickable-icon:nth-of-type(14n+4):hover svg  { color: var(--srcery-blue); }
+.canvas-control-group > .canvas-control-item:nth-of-type(14n+5):hover,
+.canvas-control-group > .canvas-control-item:nth-of-type(14n+5):hover svg,
+.canvas-card-menu > .canvas-card-menu-button:nth-of-type(14n+5):hover,
+.canvas-card-menu > .canvas-card-menu-button:nth-of-type(14n+5):hover svg,
+.canvas-menu > .clickable-icon:nth-of-type(14n+5):hover,
+.canvas-menu > .clickable-icon:nth-of-type(14n+5):hover svg,
+.canvas-submenu > .clickable-icon:nth-of-type(14n+5):hover,
+.canvas-submenu > .clickable-icon:nth-of-type(14n+5):hover svg  { color: var(--srcery-magenta); }
+.canvas-control-group > .canvas-control-item:nth-of-type(14n+6):hover,
+.canvas-control-group > .canvas-control-item:nth-of-type(14n+6):hover svg,
+.canvas-card-menu > .canvas-card-menu-button:nth-of-type(14n+6):hover,
+.canvas-card-menu > .canvas-card-menu-button:nth-of-type(14n+6):hover svg,
+.canvas-menu > .clickable-icon:nth-of-type(14n+6):hover,
+.canvas-menu > .clickable-icon:nth-of-type(14n+6):hover svg,
+.canvas-submenu > .clickable-icon:nth-of-type(14n+6):hover,
+.canvas-submenu > .clickable-icon:nth-of-type(14n+6):hover svg  { color: var(--srcery-cyan); }
+.canvas-control-group > .canvas-control-item:nth-of-type(14n+7):hover,
+.canvas-control-group > .canvas-control-item:nth-of-type(14n+7):hover svg,
+.canvas-card-menu > .canvas-card-menu-button:nth-of-type(14n+7):hover,
+.canvas-card-menu > .canvas-card-menu-button:nth-of-type(14n+7):hover svg,
+.canvas-menu > .clickable-icon:nth-of-type(14n+7):hover,
+.canvas-menu > .clickable-icon:nth-of-type(14n+7):hover svg,
+.canvas-submenu > .clickable-icon:nth-of-type(14n+7):hover,
+.canvas-submenu > .clickable-icon:nth-of-type(14n+7):hover svg  { color: var(--srcery-orange); }
+.canvas-control-group > .canvas-control-item:nth-of-type(14n+8):hover,
+.canvas-control-group > .canvas-control-item:nth-of-type(14n+8):hover svg,
+.canvas-card-menu > .canvas-card-menu-button:nth-of-type(14n+8):hover,
+.canvas-card-menu > .canvas-card-menu-button:nth-of-type(14n+8):hover svg,
+.canvas-menu > .clickable-icon:nth-of-type(14n+8):hover,
+.canvas-menu > .clickable-icon:nth-of-type(14n+8):hover svg,
+.canvas-submenu > .clickable-icon:nth-of-type(14n+8):hover,
+.canvas-submenu > .clickable-icon:nth-of-type(14n+8):hover svg  { color: var(--srcery-bright-yellow); }
+.canvas-control-group > .canvas-control-item:nth-of-type(14n+9):hover,
+.canvas-control-group > .canvas-control-item:nth-of-type(14n+9):hover svg,
+.canvas-card-menu > .canvas-card-menu-button:nth-of-type(14n+9):hover,
+.canvas-card-menu > .canvas-card-menu-button:nth-of-type(14n+9):hover svg,
+.canvas-menu > .clickable-icon:nth-of-type(14n+9):hover,
+.canvas-menu > .clickable-icon:nth-of-type(14n+9):hover svg,
+.canvas-submenu > .clickable-icon:nth-of-type(14n+9):hover,
+.canvas-submenu > .clickable-icon:nth-of-type(14n+9):hover svg  { color: var(--srcery-bright-red); }
+.canvas-control-group > .canvas-control-item:nth-of-type(14n+10):hover,
+.canvas-control-group > .canvas-control-item:nth-of-type(14n+10):hover svg,
+.canvas-card-menu > .canvas-card-menu-button:nth-of-type(14n+10):hover,
+.canvas-card-menu > .canvas-card-menu-button:nth-of-type(14n+10):hover svg,
+.canvas-menu > .clickable-icon:nth-of-type(14n+10):hover,
+.canvas-menu > .clickable-icon:nth-of-type(14n+10):hover svg,
+.canvas-submenu > .clickable-icon:nth-of-type(14n+10):hover,
+.canvas-submenu > .clickable-icon:nth-of-type(14n+10):hover svg { color: var(--srcery-bright-green); }
+.canvas-control-group > .canvas-control-item:nth-of-type(14n+11):hover,
+.canvas-control-group > .canvas-control-item:nth-of-type(14n+11):hover svg,
+.canvas-card-menu > .canvas-card-menu-button:nth-of-type(14n+11):hover,
+.canvas-card-menu > .canvas-card-menu-button:nth-of-type(14n+11):hover svg,
+.canvas-menu > .clickable-icon:nth-of-type(14n+11):hover,
+.canvas-menu > .clickable-icon:nth-of-type(14n+11):hover svg,
+.canvas-submenu > .clickable-icon:nth-of-type(14n+11):hover,
+.canvas-submenu > .clickable-icon:nth-of-type(14n+11):hover svg { color: var(--srcery-bright-blue); }
+.canvas-control-group > .canvas-control-item:nth-of-type(14n+12):hover,
+.canvas-control-group > .canvas-control-item:nth-of-type(14n+12):hover svg,
+.canvas-card-menu > .canvas-card-menu-button:nth-of-type(14n+12):hover,
+.canvas-card-menu > .canvas-card-menu-button:nth-of-type(14n+12):hover svg,
+.canvas-menu > .clickable-icon:nth-of-type(14n+12):hover,
+.canvas-menu > .clickable-icon:nth-of-type(14n+12):hover svg,
+.canvas-submenu > .clickable-icon:nth-of-type(14n+12):hover,
+.canvas-submenu > .clickable-icon:nth-of-type(14n+12):hover svg { color: var(--srcery-bright-magenta); }
+.canvas-control-group > .canvas-control-item:nth-of-type(14n+13):hover,
+.canvas-control-group > .canvas-control-item:nth-of-type(14n+13):hover svg,
+.canvas-card-menu > .canvas-card-menu-button:nth-of-type(14n+13):hover,
+.canvas-card-menu > .canvas-card-menu-button:nth-of-type(14n+13):hover svg,
+.canvas-menu > .clickable-icon:nth-of-type(14n+13):hover,
+.canvas-menu > .clickable-icon:nth-of-type(14n+13):hover svg,
+.canvas-submenu > .clickable-icon:nth-of-type(14n+13):hover,
+.canvas-submenu > .clickable-icon:nth-of-type(14n+13):hover svg { color: var(--srcery-bright-cyan); }
+.canvas-control-group > .canvas-control-item:nth-of-type(14n+14):hover,
+.canvas-control-group > .canvas-control-item:nth-of-type(14n+14):hover svg,
+.canvas-card-menu > .canvas-card-menu-button:nth-of-type(14n+14):hover,
+.canvas-card-menu > .canvas-card-menu-button:nth-of-type(14n+14):hover svg,
+.canvas-menu > .clickable-icon:nth-of-type(14n+14):hover,
+.canvas-menu > .clickable-icon:nth-of-type(14n+14):hover svg,
+.canvas-submenu > .clickable-icon:nth-of-type(14n+14):hover,
+.canvas-submenu > .clickable-icon:nth-of-type(14n+14):hover svg { color: var(--srcery-bright-orange); }
+
+/* ================================================================
+   12. MISC UI
+   ================================================================ */
+::selection {
+    background-color: var(--text-selection);
+}
+
+.workspace .cm-editor .cm-selectionBackground,
+.workspace .cm-editor.cm-focused .cm-selectionBackground {
+    background-color: var(--text-selection);
+}
+
+strong {
+    font-weight: 600;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.suggestion-item.is-selected {
+    background-color: var(--text-selection);
+}
+
+/* Status bar */
+.status-bar {
+    font-size: 12px;
+    color: var(--srcery-bright-black);
+}
+
+/* Hide frontmatter */
+.frontmatter-container {
+    display: none;
+}
+
+/* CTA buttons */
+.mod-cta {
+    color: var(--text-on-accent);
+    font-weight: 600;
+}
+
+/* Settings toggles & sliders */
+.checkbox-container {
+    background-color: var(--srcery-gray5);
+    border-radius: 5px;
+}
+.checkbox-container::after {
+    background-color: var(--srcery-gray6);
+    border-radius: 5px;
+}
+.checkbox-container.is-enabled {
+    background-color: var(--srcery-yellow);
+}
+.checkbox-container.is-enabled::after {
+    background-color: var(--srcery-gray3);
+}
+
+input[type="range"] {
+    background-color: var(--srcery-gray4);
+}
+input[type="range"]::-webkit-slider-thumb {
+    background-color: var(--srcery-cyan);
+    border: none;
+    border-radius: 5px;
+}
+input[type="range"]::-moz-range-thumb {
+    background-color: var(--srcery-cyan);
+    border: none;
+    border-radius: 5px;
+}
+
+/* Settings panels */
+.modal-container .modal,
+.modal {
+    background-color: var(--srcery-black);
+    border-color: var(--srcery-gray4);
+}
+
+.vertical-tab-header {
+    background-color: var(--srcery-black);
+}
+
+.vertical-tab-nav-item {
+    color: var(--srcery-white);
+}
+.vertical-tab-nav-item:hover {
+    background-color: var(--srcery-gray3);
+    color: var(--srcery-bright-white);
+}
+.vertical-tab-nav-item.is-active {
+    background-color: var(--srcery-gray4);
+    color: var(--srcery-bright-white);
+}
+.vertical-tab-nav-item:nth-child(4n+1) svg { color: var(--srcery-dark-green); }
+.vertical-tab-nav-item:nth-child(4n+2) svg { color: var(--srcery-dark-red); }
+.vertical-tab-nav-item:nth-child(4n+3) svg { color: var(--srcery-dim-green); }
+.vertical-tab-nav-item:nth-child(4n+4) svg { color: var(--srcery-dark-blue); }
+
+.vertical-tab-content-container,
+.vertical-tab-content {
+    background-color: var(--srcery-black);
+}
+
+input[type="text"],
+input[type="search"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+textarea {
+    background-color: var(--srcery-gray2);
+    border-color: var(--srcery-gray4);
+    color: var(--srcery-bright-white);
+}
+input[type="text"]:focus,
+input[type="search"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+textarea:focus {
+    border-color: var(--srcery-gray6);
+}
+
+.search-input-container input {
+    background-color: var(--srcery-gray2);
+    border-color: var(--srcery-gray4);
+    color: var(--srcery-bright-white);
+}
+
+select,
+.dropdown {
+    background-color: var(--srcery-gray2);
+    border-color: var(--srcery-gray4);
+    color: var(--srcery-bright-white);
+}
+
+.prompt {
+    background-color: var(--srcery-black);
+    border-color: var(--srcery-gray4);
+}
+
+.suggestion-container {
+    background-color: var(--srcery-black);
+}
+
+.menu {
+    background-color: var(--srcery-black);
+    border-color: var(--srcery-gray4);
+}
+
+.menu-item:hover {
+    background-color: var(--srcery-gray3);
+}
+
+.tooltip {
+    background-color: var(--srcery-gray3);
+    border-color: var(--srcery-bright-black);
+    color: var(--srcery-bright-white);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: var(--srcery-black);
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--srcery-gray5);
+    border-radius: 0;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--srcery-gray6);
+}
+::-webkit-scrollbar-thumb:active {
+    background-color: var(--srcery-gray6);
+}
+::-webkit-scrollbar-track {
+    background-color: var(--srcery-black);
+    border-radius: 0;
+}
+
+/* Line numbers */
+.cm-gutterElement {
+    color: var(--srcery-bright-black);
+}
+
+/* Vim cursor */
+.cm-fat-cursor .cm-cursor {
+    background-color: var(--cursor);
+    opacity: 0.6;
+}
+
+/* Markdown formatting tokens in source mode */
+.cm-formatting {
+    font-family: var(--font-monospace);
+}

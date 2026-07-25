@@ -1,0 +1,1254 @@
+/**
+ * Kami Reader — an Obsidian theme inspired by tw93/kami
+ *
+ * Visual language: warm parchment background, ink-blue accent, serif-led
+ * typography, warm-gray undertone across all neutrals.
+ *
+ * Published theme, with full coverage of Reading + Editing views.
+ *
+ * Source of design tokens: https://github.com/tw93/kami  (MIT)
+ * Fonts: Charter (macOS-native, OFL), LXGW WenKai Screen (OFL, user-installed),
+ * JetBrains Mono (OFL). System fallbacks provided for everything else.
+ *
+ * Author: Kenny Wu
+ */
+
+/* @settings
+name: Kami Reader
+id: kami-reader
+description: 微调字体、行距、加粗强调、强调色和阅读宽度，无需改 CSS。
+settings:
+  -
+    id: typography-heading
+    title: Typography · 字体与节奏
+    type: heading
+    level: 2
+  -
+    id: font-text-theme
+    title: 正文字体栈 · Body font family
+    description: 整体标题和正文使用的字体栈。默认 Charter (EN serif) + LXGW WenKai Screen (CJK 楷书)。楷书阅读疲劳可改 Charter + Source Han Serif SC（思源宋体）。
+    type: variable-text
+    default: ""
+  -
+    id: line-height-normal
+    title: 正文行距 · Body line-height
+    description: kami 阅读型默认 1.55。范围 1.3 (密排) 至 1.9 (宽松)。注意：CodeMirror 6 (Live Preview) 不响应 CSS line-height 动态变化，改完需要 toggle 阅读/编辑模式 (Cmd+E 切两次) 或重启 Obsidian 才能在编辑模式看到效果；Reading View 立即生效。看效果请测正文段落，不是标题（标题用 --line-height-tight，独立变量）。
+    type: variable-number-slider
+    min: 1.3
+    max: 1.9
+    step: 0.05
+    default: 1.55
+  -
+    id: file-line-width
+    title: 笔记最大宽度 · Note max width
+    description: kami 长文阅读默认 700px，避免中文长段落单行过长。更宽适合双栏。
+    type: variable-text
+    default: "700px"
+  -
+    id: bold-weight
+    title: 加粗强调强度 · Bold emphasis strength
+    description: 不同平台和字体对中等/加粗字重的渲染差异很大。未使用 Style Settings 覆盖时，浅色默认 500、深色默认 600，以保持长文中的克制与可辨识度；如果当前字体下加粗仍不明显，可调到 600 或 700。
+    type: variable-select
+    default: "500"
+    options:
+      -
+        label: 500 · Restrained
+        value: "500"
+      -
+        label: 600 · Stronger
+        value: "600"
+      -
+        label: 700 · High contrast
+        value: "700"
+  -
+    id: accent-heading
+    title: Accent · 强调色
+    type: heading
+    level: 2
+  -
+    id: text-accent
+    title: 强调色 · Accent color
+    description: 标题、链接、选区、CTA 按钮的统一色。默认 Light 油墨蓝 #1B365D，Dark Ink Light #2D5A8A。改色瞬间换主题气质，但破坏 kami 单色克制。
+    type: variable-themed-color
+    format: hex
+    opacity: false
+    default-light: '#1B365D'
+    default-dark: '#2D5A8A'
+  -
+    id: text-on-accent
+    title: 强调色上的文字色 · Text on accent
+    description: Primary 按钮、tag 上的文字色。默认 ivory #faf9f5。
+    type: variable-themed-color
+    format: hex
+    opacity: false
+    default-light: '#faf9f5'
+    default-dark: '#f4f3ee'
+  -
+    id: surface-heading
+    title: Surface · 背景表面
+    type: heading
+    level: 2
+  -
+    id: background-primary
+    title: 主背景 · Primary background
+    description: 笔记主区域背景色。默认 Light parchment #f5f4ed（暖米纸），Dark Deep Dark #141413（橄榄近黑）。parchment 太黄可调到 #faf8f1 或 ivory #faf9f5。
+    type: variable-themed-color
+    format: hex
+    opacity: false
+    default-light: '#f5f4ed'
+    default-dark: '#141413'
+  -
+    id: info-heading
+    title: About · 关于
+    type: heading
+    level: 2
+  -
+    id: info-kami-credits
+    title: About this theme
+    description: Kami Reader 是 tw93/kami 设计系统在 Obsidian 上的衍生适配。所有视觉 token 溯源至 kami v1.1.0 (MIT)。主题已于 2026-06-20 上线 Obsidian Theme Gallery。
+    type: info-text
+*/
+
+/* =========================================================================
+   1. Design Tokens — Shared + Light
+   ========================================================================= */
+/* Shared tokens must be defined for both themes. Obsidian's built-in app.css
+   defines its variables under .theme-light / .theme-dark (specificity
+   0,1,0); this compound selector is 0,1,1 and wins without relying on one
+   theme inheriting values from the other. Palette tokens stay in the theme
+   blocks below. */
+body.theme-light,
+body.theme-dark {
+    /* --- Typography --- */
+    /* Charter is macOS-native (/System/Library/Fonts/Charter.ttc), no install.
+       Georgia is the cross-platform fallback closest to Charter's proportions.
+       TsangerJinKai02 is the upstream Kami face; LXGW WenKai Screen is the
+       open fallback with a similar warm handwritten-serif tone. */
+    --font-text-theme: "Charter", "Georgia",
+                       "TsangerJinKai02",
+                       "LXGW WenKai Screen", "LXGW WenKai",
+                       "Source Han Serif SC", "Noto Serif CJK SC",
+                       "Songti SC", "STSong", "SimSun", serif;
+    --font-interface-theme: "Inter", -apple-system, BlinkMacSystemFont,
+                            "Segoe UI", "PingFang SC", "Microsoft YaHei",
+                            sans-serif;
+    --font-monospace-theme: "JetBrains Mono", "SF Mono", "Cascadia Code",
+                            Menlo, Consolas,
+                            "TsangerJinKai02", "LXGW WenKai Screen",
+                            "Source Han Serif SC", monospace;
+
+    --font-text-size: 16px;
+    --font-small:  0.933em;
+    --font-smaller: 0.875em;
+    --font-smallest: 0.8em;
+
+    --font-thin: 100;
+    --font-extralight: 200;
+    --font-light: 300;
+    --font-normal: 400;
+    --font-medium: 500;
+    --font-semibold: 500;
+    --font-bold: 700;
+
+    --bold-weight: 500;  /* restrained emphasis; avoid heavy patches in long-form reading */
+    --bold-color: inherit;
+    --italic-color: inherit;
+
+    --line-width: 52ch;
+    --line-width-wide: 72ch;
+    --max-width: 90%;
+    --file-line-width: 700px;
+
+    /* kami spec: tight 1.1-1.3 (headings) / dense 1.4-1.45 / reading 1.5-1.55 */
+    --line-height-normal: 1.55;
+    --line-height-tight: 1.25;
+    --line-height-readonly: 1.5;
+
+    --heading-spacing: 2em;
+    --p-spacing: 1.1em;
+
+    --list-indent: 1.55em;
+    --list-indent-nested: 1.35em;
+    --list-spacing: 0.25em;
+    --list-bullet-size: 0.3em;
+    --list-marker-color: var(--text-accent);
+
+    --link-decoration: none;
+    --link-decoration-hover: underline;
+    --link-color: var(--text-accent);
+    --link-color-hover: var(--text-accent-hover);
+    --link-unresolved-color: #a09a8a;
+    --link-unresolved-opacity: 0.7;
+    --link-unresolved-filter: none;
+
+    /* --- Sizes & radii --- */
+    --radius-s: 3px;
+    --radius-m: 5px;
+    --radius-l: 10px;
+    --radius-xl: 16px;
+    --input-height: 30px;
+    --header-height: 40px;
+    --drag-height: 28px;
+
+    /* --- Iconography --- */
+    --icon-color: var(--text-muted);
+    --icon-color-hover: var(--text-normal);
+    --icon-color-active: var(--text-accent);
+    --icon-opacity: 0.75;
+    --icon-opacity-hover: 1;
+
+    /* --- Code metrics --- */
+    --code-size: 0.875em;
+    --code-white-space: pre;
+
+    /* --- Misc --- */
+    --checkbox-size: 16px;
+    --toggle-width: 36px;
+    --toggle-thumb-radius: 18px;
+    --toggle-radius: 18px;
+}
+
+/* Use body.theme-light instead of :root for palette values. */
+body.theme-light {
+    /* --- Surfaces (warm parchment family) --- */
+    --background-primary:          #f5f4ed;  /* parchment — main note bg */
+    --background-primary-alt:      #f0eee4;  /* slightly darker for alt rows */
+    --background-secondary:        #faf9f5;  /* ivory — sidebars */
+    --background-secondary-alt:    #f3f1e7;
+    --background-modifier-border:  #e8e6dc;  /* warm sand */
+    --background-modifier-border-hover: #d9d6c8;
+    --background-modifier-border-focus: #c8c4b3;
+    --background-modifier-form-field: #faf9f5;
+    --background-modifier-cover:   rgba(245, 244, 237, 0.85);
+    --background-modifier-hover:   rgba(48, 48, 46, 0.05);
+    --background-modifier-active-hover: rgba(27, 54, 93, 0.08);
+    --background-modifier-success: rgba(82, 110, 54, 0.12);
+    --background-modifier-error:   rgba(140, 45, 45, 0.12);
+
+    /* --- Text (warm dark surfaces) --- */
+    --text-normal:                 #141413;  /* near-black with warm olive undertone */
+    --text-muted:                  #504e49;  /* olive */
+    --text-faint:                  #6b6a64;  /* stone */
+    --text-on-accent:              #faf9f5;
+    --text-error:                  #8c2d2d;
+    --text-success:                #526e36;
+    --text-accent:                 #1B365D;  /* ink blue */
+    --text-accent-hover:           #2a4a7a;
+    --text-highlight-bg:           #f3e3a8;  /* warm yellow highlight */
+    --text-highlight-bg-active:    #ead08a;
+    --text-selection:              rgba(27, 54, 93, 0.18);
+    --text-olive:                  #504e49;  /* quote/caption text — warmer than --text-muted */
+
+    /* --- Interactive (ink-blue family, ≤5% surface coverage) --- */
+    --interactive-normal:          #faf9f5;
+    --interactive-hover:           #f0eee4;
+    --interactive-accent:          #1B365D;
+    --interactive-accent-hover:    #2a4a7a;
+    --interactive-success:         #526e36;
+
+    /* --- Syntax (for code blocks, warm-leaning) --- */
+    --syntax-bg:                   #faf9f5;  /* kami Code Block: ivory surface */
+    --syntax-text:                 #141413;
+    --syntax-comment:              #8a8472;
+    --syntax-keyword:              #1B365D;  /* ink blue */
+    --syntax-string:               #504e49;  /* olive neutral */
+    --syntax-number:               #6b4a1f;  /* warm brown */
+    --syntax-tag:                  #3d3d3a;  /* dark warm neutral */
+    --syntax-atom:                 #1B365D;
+    --syntax-variable:             #4a463e;
+    --syntax-function:             #1B365D;
+    --syntax-property:             #504e49;
+    --syntax-punctuation:          #6b6a64;
+
+    --code-background:             var(--syntax-bg);
+    --code-normal:                 var(--syntax-text);
+    --inline-code-background:      #f8f7f1;
+    --inline-code-normal:          #504e49;
+    --code-comment:                var(--syntax-comment);
+    --code-function:               var(--syntax-function);
+    --code-important:              var(--syntax-keyword);
+    --code-keyword:                var(--syntax-keyword);
+    --code-operator:               var(--syntax-punctuation);
+    --code-property:               var(--syntax-property);
+    --code-punctuation:            var(--syntax-punctuation);
+    --code-string:                 var(--syntax-string);
+    --code-tag:                    var(--syntax-tag);
+    --code-value:                  var(--syntax-number);
+
+    /* --- Scrollbar --- */
+    --scrollbar-bg: transparent;
+    --scrollbar-thumb-bg: rgba(48, 48, 46, 0.15);
+    --scrollbar-active-thumb-bg: rgba(48, 48, 46, 0.3);
+
+    /* --- Depth (kami spec: ring shadow + whisper shadow, no hard drop shadow) --- */
+    --ring-warm: 0 0 0 1px var(--background-modifier-border-hover);
+    --whisper-shadow: 0 4px 24px rgba(0, 0, 0, 0.05);
+    /* Aliases — small surfaces get ring (button/card hover), large get whisper (modal) */
+    --shadow-s: var(--ring-warm);
+    --shadow-m: var(--ring-warm);
+    --shadow-l: var(--whisper-shadow);
+
+    /* Keep aliases stable for plugin compatibility */
+    --background-modifier-box-shadow: rgba(0, 0, 0, 0.05);
+    --background-modifier-box-shadow-hover: rgba(0, 0, 0, 0.08);
+}
+
+/* =========================================================================
+   2. Base — body, scrollbars, inputs
+   ========================================================================= */
+body {
+    --font-default: var(--font-interface-theme);
+    background-color: var(--background-primary);
+    color: var(--text-normal);
+}
+
+body {
+    font-family: var(--font-interface-theme);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    /* Keep browser default glyph shaping for smoother long-note scrolling in Electron. */
+}
+
+::selection {
+    background-color: var(--text-selection);
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--scrollbar-thumb-bg);
+    border-radius: var(--radius-l);
+    border: 2px solid transparent;
+    background-clip: padding-box;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--scrollbar-active-thumb-bg);
+}
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+input, textarea, button {
+    font-family: var(--font-interface-theme);
+}
+
+/* =========================================================================
+   3. App Frame — titlebar, workspace tabs, ribbon, sidebars
+   ========================================================================= */
+.titlebar {
+    background-color: var(--background-secondary);
+    border-bottom: 1px solid var(--background-modifier-border);
+}
+
+.workspace {
+    background-color: var(--background-primary);
+}
+
+.workspace-ribbon {
+    background-color: var(--background-secondary);
+    border-right: 1px solid var(--background-modifier-border);
+}
+.workspace-ribbon.mod-right {
+    border-right: none;
+    border-left: 1px solid var(--background-modifier-border);
+}
+
+.workspace-split.mod-vertical > .workspace-leaf,
+.workspace-split.mod-horizontal > .workspace-leaf {
+    background-color: var(--background-primary);
+}
+
+/* Tabs */
+.workspace-tab-header-container {
+    background-color: var(--background-secondary);
+    border-bottom: 1px solid var(--background-modifier-border);
+}
+.workspace-tab-header {
+    color: var(--text-muted);
+    transition: color 120ms ease, background-color 120ms ease;
+}
+.workspace-tab-header:hover {
+    color: var(--text-normal);
+    background-color: var(--background-modifier-hover);
+}
+.workspace-tab-header.is-active {
+    color: var(--text-accent);
+    background-color: var(--background-primary);
+    box-shadow: inset 0 -2px 0 var(--interactive-accent);
+}
+.workspace-tab-header.is-active .workspace-tab-header-inner-icon {
+    color: var(--text-accent);
+}
+
+/* Sidebar leaves (file explorer, search, etc.) */
+.workspace-leaf-content[data-type="file-explorer"],
+.workspace-leaf-content[data-type="search"] {
+    background-color: var(--background-secondary);
+}
+
+.nav-folder-title,
+.nav-file-title {
+    color: var(--text-normal);
+}
+.nav-folder-title:hover,
+.nav-file-title:hover {
+    color: var(--text-accent);
+    background-color: var(--background-modifier-hover);
+}
+.nav-folder-title.is-being-dragged-over,
+.nav-file-title.is-being-dragged-over {
+    background-color: var(--background-modifier-active-hover);
+}
+.nav-file-title.is-active,
+.nav-folder-title.is-active {
+    color: var(--text-accent);
+    background-color: var(--background-modifier-active-hover);
+}
+
+/* Status bar */
+.status-bar {
+    background-color: var(--background-secondary);
+    color: var(--text-muted);
+    border-top: 1px solid var(--background-modifier-border);
+    font-size: var(--font-smallest);
+}
+
+/* View header (note title bar) */
+.view-header {
+    border-bottom: 1px solid var(--background-modifier-border);
+    background-color: var(--background-primary);
+}
+.view-header-title-container .view-header-title {
+    color: var(--text-normal);
+    font-weight: var(--font-medium);
+}
+
+/* =========================================================================
+   4. Markdown Source — shared by Live Preview and Reading View
+   ========================================================================= */
+.markdown-source-view,
+.markdown-preview-view,
+.cm-s-obsidian {
+    font-family: var(--font-text-theme);
+    color: var(--text-normal);
+    font-size: var(--font-text-size);
+    line-height: var(--line-height-normal);
+}
+
+.markdown-preview-view {
+    padding: clamp(36px, 6vw, 88px) clamp(24px, 5vw, 64px) 120px;
+    font-variant-numeric: lining-nums tabular-nums;
+}
+
+.markdown-preview-view .markdown-preview-sizer {
+    max-width: var(--file-line-width);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Headings — serif-led, restrained weights (no synthetic bold).
+   Font family / size / weight are shared; vertical margins and the
+   section rail are scoped to Reading View only. Applying margin or
+   border-bottom to .cm-header-* in Live Preview breaks layout:
+   CodeMirror 6 ignores vertical margins between lines, and a wrapped
+   H1 would draw a border under every wrapped line. */
+h1, h2, h3, h4, h5, h6,
+.HyperMD-header-1, .HyperMD-header-2, .HyperMD-header-3,
+.HyperMD-header-4, .HyperMD-header-5, .HyperMD-header-6,
+.cm-header-1, .cm-header-2, .cm-header-3,
+.cm-header-4, .cm-header-5, .cm-header-6 {
+    font-family: var(--font-text-theme);
+    color: var(--text-normal);
+    font-weight: var(--font-medium);
+    line-height: var(--line-height-tight);
+    letter-spacing: 0;
+}
+
+h1, .HyperMD-header-1, .cm-header-1 { font-size: 1.9em; font-weight: var(--font-semibold); }
+h2, .HyperMD-header-2, .cm-header-2 { font-size: 1.44em; }
+h3, .HyperMD-header-3, .cm-header-3 { font-size: 1.22em; }
+h4, .HyperMD-header-4, .cm-header-4 { font-size: 1.1em; }
+h5, .HyperMD-header-5, .cm-header-5 { font-size: 1em; color: var(--text-muted); }
+h6, .HyperMD-header-6, .cm-header-6 { font-size: 1em; color: var(--text-muted); font-weight: var(--font-normal); }
+
+/* Reading-View-only heading rhythm */
+.markdown-preview-view h1 {
+    margin-top: 1.65em;
+    margin-bottom: 0.65em;
+}
+.markdown-preview-view .markdown-preview-sizer > h1:first-child {
+    margin-top: 0;
+}
+.markdown-preview-view h1 {
+    border-left: 2.5pt solid var(--text-accent);
+    border-radius: 2pt;
+    padding-left: 0.55em;
+}
+.markdown-preview-view h2 {
+    margin-top: 1.85em;
+    margin-bottom: 0.55em;
+    color: var(--text-normal);
+}
+.markdown-preview-view h3 { margin-top: 1.6em; margin-bottom: 0.4em; }
+.markdown-preview-view h4 { margin-top: 1.25em; margin-bottom: 0.35em; }
+.markdown-preview-view h5 { margin-top: 1em; margin-bottom: 0.2em; }
+.markdown-preview-view h6 { margin-top: 1em; margin-bottom: 0.2em; text-transform: none; }
+
+/* Body copy */
+p,
+.HyperMD-line {
+    line-height: var(--line-height-normal);
+}
+.markdown-preview-view :is(ul, ol) {
+    margin-top: 0.35em;
+    margin-bottom: 1.15em;
+}
+.markdown-preview-view :is(p, ul, ol) + :is(h2, h3) {
+    margin-top: 2em;
+}
+
+/* Bold / Italic — keep readable weights, kami forbids synthetic bold */
+strong,
+.cm-strong {
+    color: var(--bold-color);
+    font-weight: var(--bold-weight);
+}
+em,
+.cm-em {
+    color: var(--italic-color);
+}
+
+/* Strikethrough — faint, not loud */
+del,
+.cm-strikethrough {
+    color: var(--text-faint);
+}
+
+/* Highlight (==text==) — warm yellow parchment mark */
+mark,
+.cm-highlight {
+    background-color: var(--text-highlight-bg);
+    color: var(--text-normal);
+    padding: 0.05em 0.2em;
+    border-radius: var(--radius-s);
+}
+
+/* Links — ink blue, quiet underline on hover */
+a,
+.cm-hmd-internal-link,
+.cm-link {
+    color: var(--link-color);
+    text-decoration: var(--link-decoration);
+    transition: color 120ms ease;
+}
+a:hover,
+.cm-hmd-internal-link:hover,
+.cm-link:hover {
+    color: var(--link-color-hover);
+    text-decoration: var(--link-decoration-hover);
+}
+.cm-url,
+.cm-hmd-barelink {
+    color: var(--text-faint);
+    font-size: 0.95em;
+    font-family: var(--font-interface-theme);
+}
+
+a.internal-link.is-unresolved,
+.cm-hmd-internal-link.is-unresolved {
+    color: var(--link-unresolved-color);
+    opacity: var(--link-unresolved-opacity);
+    filter: var(--link-unresolved-filter);
+}
+
+/* Tag — solid #E4ECF5 (ink-blue tint on parchment), never rgba.
+   WeasyPrint's double-rect bug aside, solid hex keeps the tag visually
+   stable across light/dark and PDF export. */
+a.tag,
+.cm-hashtag {
+    color: var(--text-accent);
+    background-color: #E4ECF5;
+    padding: 0.05em 0.4em;
+    border-radius: var(--radius-s);
+    font-size: 1em;
+    font-family: var(--font-interface-theme);
+    text-decoration: none;
+}
+
+/* External link — subtle indicator */
+a.external-link {
+    color: var(--link-color);
+    text-decoration: none;
+    background-position: center right;
+    background-repeat: no-repeat;
+    padding-right: 1.15em;
+    background-size: 0.85em;
+}
+
+/* Blockquote — kami spec: 2pt ink-blue solid rail + olive text, no bg, no italic.
+   Background was wrong: kami quote is about typographic restraint, not surface fill. */
+blockquote,
+.HyperMD-quote {
+    border-left: 2pt solid var(--interactive-accent);
+    background-color: transparent;
+    padding: 0.35em 0 0.35em 1.1em;
+    margin: 1.15em 0 1.25em;
+    color: var(--text-olive);
+    font-style: normal;
+}
+.HyperMD-quote {
+    border-left: 2pt solid var(--interactive-accent);
+    padding-left: 1em;
+}
+
+/* Inline code & code blocks — quiet ivory surface */
+code,
+.cm-inline-code,
+.cm-formatting-code,
+.cm-formatting-code-block {
+    font-family: var(--font-monospace-theme);
+    font-size: 0.9em;
+}
+code:not(pre > code),
+.cm-inline-code {
+    background-color: var(--inline-code-background);
+    color: var(--inline-code-normal);
+    padding: 0.03em 0.22em;
+    border: none;
+    border-radius: 2pt;
+}
+
+pre,
+.markdown-preview-view pre {
+    background-color: var(--code-background);
+    border: 0.5pt solid var(--background-modifier-border);
+    border-radius: 6pt;  /* kami spec: code block 6pt 圆角 */
+    padding: 0.9em 1.15em;
+    margin: 1.15em 0 1.4em;
+    overflow-x: auto;
+    line-height: var(--line-height-readonly);
+    font-variant-numeric: tabular-nums;  /* kami Metric: tabular-nums for code/numeric alignment */
+    white-space: var(--code-white-space);
+}
+pre code {
+    background-color: transparent;
+    padding: 0;
+    color: var(--code-normal);
+    font-size: var(--code-size);
+    font-variant-numeric: tabular-nums;
+}
+
+/* Horizontal rule — thin warm sand */
+hr,
+.HyperMD-hr {
+    border: none;
+    border-top: 1px solid var(--background-modifier-border);
+    margin: 2em 0;
+}
+
+/* Lists — native markers kept across Reading and Live Preview.
+   Hierarchy comes from tuned indent and quiet marker color, not a marker
+   glyph that only works in Reading View. */
+ul, ol {
+    padding-left: var(--list-indent);
+}
+li > ul,
+li > ol {
+    padding-left: var(--list-indent-nested);
+}
+li {
+    margin: var(--list-spacing) 0;
+}
+ul li::marker {
+    color: var(--list-marker-color);
+    font-weight: var(--font-normal);
+}
+ol li::marker {
+    color: var(--list-marker-color);
+    font-family: var(--font-text-theme);
+    font-size: var(--font-smaller);
+    font-weight: var(--font-medium);
+}
+
+/* Task list checkbox — ink-blue accent */
+.task-list-item-checkbox,
+input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: var(--checkbox-size);
+    height: var(--checkbox-size);
+    border: 1px solid var(--background-modifier-border-focus);
+    border-radius: var(--radius-s);
+    background-color: var(--background-secondary);
+    cursor: pointer;
+    transition: background-color 120ms ease, border-color 120ms ease;
+    position: relative;
+    vertical-align: -2px;
+    margin-right: 0.5em;
+}
+input[type="checkbox"]:hover {
+    border-color: var(--interactive-accent);
+}
+input[type="checkbox"]:checked {
+    background-color: var(--interactive-accent);
+    border-color: var(--interactive-accent);
+}
+input[type="checkbox"]:checked::after {
+    content: "";
+    position: absolute;
+    left: 5px;
+    top: 1px;
+    width: 4px;
+    height: 9px;
+    border: solid var(--text-on-accent);
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+/* Completed tasks — keep Reading View completion from striking through
+   nested child lists. Obsidian applies completion to the whole <li>. */
+.markdown-preview-view ul > li.task-list-item:is([data-task="x"], [data-task="X"], .is-checked) {
+    color: var(--text-normal);
+    text-decoration: none;
+}
+.markdown-preview-view ul > li.task-list-item:is([data-task="x"], [data-task="X"], .is-checked) > p:first-child {
+    color: var(--checklist-done-color);
+    text-decoration: var(--checklist-done-decoration);
+}
+.markdown-preview-view ul > li.task-list-item:is([data-task="x"], [data-task="X"], .is-checked) > :is(ul, ol) {
+    color: var(--text-normal);
+    text-decoration: none;
+}
+
+/* Tables — restrained document rows, no default Markdown grid */
+.markdown-preview-view table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 1.25em 0 1.65em;
+    font-size: 0.95em;
+    font-variant-numeric: lining-nums tabular-nums;
+    border: 0;
+    background-color: transparent;
+}
+.markdown-preview-view thead,
+.markdown-preview-view tbody,
+.markdown-preview-view tr {
+    border: 0;
+    background-color: transparent;
+}
+.markdown-preview-view th {
+    font-family: var(--font-text-theme);
+    font-weight: var(--font-medium);
+    text-align: left;
+    padding: 0.6em 0.8em;
+    border: 0;
+    border-bottom: 1pt solid var(--background-modifier-border);
+    color: var(--text-normal);
+    background-color: transparent;
+}
+.markdown-preview-view td {
+    padding: 0.52em 0.8em;
+    border: 0;
+    border-bottom: 0.3pt solid var(--background-modifier-border);
+    color: var(--text-normal);
+    vertical-align: top;
+}
+.markdown-preview-view tbody tr:hover {
+    background-color: transparent;
+}
+
+/* Frontmatter (YAML) — muted, monospaced */
+.frontmatter-container,
+.cm-hmd-frontmatter {
+    background-color: var(--background-primary-alt);
+    border: 1px solid var(--background-modifier-border);
+    border-radius: var(--radius-m);
+    padding: 0.6em 1em;
+    margin-bottom: 1.5em;
+    font-family: var(--font-monospace-theme);
+    font-size: var(--font-smaller);
+    color: var(--text-muted);
+}
+.frontmatter-container .frontmatter-section-label {
+    color: var(--text-faint);
+}
+
+/* Embeds — quiet document surface, not a floating card */
+.markdown-embed,
+.file-embed {
+    border: 1px solid var(--background-modifier-border);
+    border-radius: var(--radius-m);
+    padding: 1em 1.2em;
+    margin: 1.2em 0;
+    background-color: var(--background-secondary);
+    box-shadow: none;
+}
+.markdown-embed-title,
+.file-embed-title {
+    color: var(--text-muted);
+    font-family: var(--font-interface-theme);
+    font-size: var(--font-smaller);
+    font-weight: var(--font-semibold);
+}
+
+/* Callout — kami monochrome document note.
+   Obsidian ships rainbow callouts by default; kami's single-accent rule
+   forbids that. We override every type color to ink-blue (RGB triple for
+   Obsidian's alpha-compositing usage) and encode severity in border-left
+   thickness instead. Lucide icons retain their shape; only color is unified. */
+.callout {
+    /* Single ink-blue for all types — kami restraint */
+    --callout-default-color: 27, 54, 93;
+    --callout-note-color: 27, 54, 93;
+    --callout-abstract-color: 27, 54, 93;
+    --callout-info-color: 27, 54, 93;
+    --callout-todo-color: 27, 54, 93;
+    --callout-tip-color: 27, 54, 93;
+    --callout-success-color: 27, 54, 93;
+    --callout-question-color: 27, 54, 93;
+    --callout-warning-color: 27, 54, 93;
+    --callout-failure-color: 27, 54, 93;
+    --callout-danger-color: 27, 54, 93;
+    --callout-bug-color: 27, 54, 93;
+    --callout-example-color: 27, 54, 93;
+    --callout-quote-color: 27, 54, 93;
+    --callout-color: 27, 54, 93;
+
+    background-color: var(--background-secondary);
+    border: 1px solid var(--background-modifier-border);
+    border-left: 2pt solid var(--text-accent);
+    border-radius: var(--radius-m);
+    padding: 0.75em 1em;
+    margin: 1.2em 0;
+    box-shadow: none;
+}
+.callout-title,
+.callout-icon,
+.callout-title-inner,
+.callout-fold {
+    color: var(--text-accent);
+}
+.callout-title {
+    background-color: transparent;  /* override Obsidian's rgba(--callout-color, 0.1) tint that would re-introduce color */
+    font-family: var(--font-interface-theme);
+    font-size: 1em;
+    font-weight: var(--font-semibold);
+    letter-spacing: 0;
+}
+.callout-content {
+    color: var(--text-normal);
+}
+.callout-content > :first-child {
+    margin-top: 0.4em;
+}
+
+/* Severity escalation — gentle tip / success / question: 2.5pt */
+.callout[data-callout="tip"],
+.callout[data-callout="success"],
+.callout[data-callout="check"],
+.callout[data-callout="question"],
+.callout[data-callout="help"],
+.callout[data-callout="faq"] {
+    border-left-width: 2.5pt;
+}
+/* Severity escalation — warning / caution / bug: 3pt */
+.callout[data-callout="warning"],
+.callout[data-callout="caution"],
+.callout[data-callout="bug"],
+.callout[data-callout="attention"] {
+    border-left-width: 3pt;
+}
+/* Severity escalation — danger / error / failure: 3pt + faint warm-red wash */
+.callout[data-callout="danger"],
+.callout[data-callout="error"],
+.callout[data-callout="failure"] {
+    border-left-width: 3pt;
+    background-color: rgba(140, 45, 45, 0.06);  /* barely-there warm-red, still monochrome-feeling */
+}
+
+/* =========================================================================
+   5. CodeMirror 6 — Live Preview & Source mode specifics
+   ========================================================================= */
+.cm-s-obsidian {
+    background-color: var(--background-primary);
+    color: var(--text-normal);
+    line-height: var(--line-height-normal);
+}
+
+/* Active line — soft, not glowing */
+.cm-s-obsidian .cm-activeLine,
+.cm-s-obsidian .cm-active-line {
+    background-color: transparent;
+}
+.cm-s-obsidian .cm-gutterElement.cm-active {
+    background-color: transparent;
+    color: var(--text-muted);
+}
+
+/* Selection — ink-blue translucent.
+   Triple-class compound selector (specificity 0,3,0) beats CodeMirror's
+   per-line cm-selectionBackground without resorting to !important. */
+.cm-s-obsidian .cm-line .cm-selectionBackground,
+.cm-s-obsidian .cm-line .cm-selection,
+.cm-s-obsidian .cm-content .cm-selection,
+.cm-s-obsidian .cm-content ::selection,
+.cm-s-obsidian .cm-lines .cm-selection {
+    background-color: var(--text-selection);
+}
+
+/* Cursor — ink blue, soft blink */
+.cm-s-obsidian .cm-cursor,
+.cm-s-obsidian .cm-cursorLayer .cm-cursor {
+    border-left: 2px solid var(--interactive-accent);
+    color: var(--interactive-accent);
+}
+
+/* Formatting marks (#, *, -, etc.) — faint, like punctuation */
+.cm-s-obsidian .cm-formatting,
+.cm-s-obsidian .cm-formatting-header,
+.cm-s-obsidian .cm-formatting-list-ul,
+.cm-s-obsidian .cm-formatting-list-ol,
+.cm-s-obsidian .cm-formatting-quote,
+.cm-s-obsidian .cm-formatting-strong,
+.cm-s-obsidian .cm-formatting-em,
+.cm-s-obsidian .cm-formatting-highlight,
+.cm-s-obsidian .cm-formatting-strikethrough,
+.cm-s-obsidian .cm-formatting-link,
+.cm-s-obsidian .cm-formatting-code,
+.cm-s-obsidian .cm-formatting-code-block {
+    color: var(--text-faint);
+    opacity: 0.7;
+}
+.cm-s-obsidian .cm-formatting-header {
+    font-weight: var(--font-semibold);
+}
+
+/* Headings in editor */
+.cm-s-obsidian .cm-header {
+    color: var(--text-normal);
+    font-weight: var(--font-medium);
+}
+.cm-s-obsidian .cm-header-1 { font-size: 1.8em; font-weight: var(--font-semibold); }
+.cm-s-obsidian .cm-header-2 { font-size: 1.5em; }
+.cm-s-obsidian .cm-header-3 { font-size: 1.25em; }
+.cm-s-obsidian .cm-header-4 { font-size: 1.1em; }
+.cm-s-obsidian .cm-header-5 { font-size: 1em; color: var(--text-muted); }
+.cm-s-obsidian .cm-header-6 { font-size: 1em; color: var(--text-muted); font-weight: var(--font-normal); }
+
+/* Code block language labels & content */
+.cm-s-obsidian .HyperMD-codeblock,
+.cm-s-obsidian .cm-hmd-frontmatter {
+    background-color: var(--code-background);
+    font-family: var(--font-monospace-theme);
+    font-size: var(--code-size);
+    line-height: var(--line-height-readonly);
+    color: var(--code-normal);
+}
+.cm-s-obsidian .HyperMD-codeblock {
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+/* =========================================================================
+   6. UI Components — buttons, inputs, modals, menus, prompts
+   ========================================================================= */
+/* Button two-tier system — kami Decision Lookup:
+   - Primary (mod-cta): ink-blue fill + ivory text
+   - Default (Secondary): warm-sand bg + charcoal text + ring shadow
+   Ghost variant removed: no matching Obsidian modifier class exists;
+   re-add when a community plugin surfaces a real `.mod-ghost` selector. */
+button {
+    background-color: var(--background-modifier-border);  /* warm-sand #e8e6dc */
+    color: var(--text-normal);  /* charcoal */
+    border: 1px solid transparent;
+    border-radius: 8pt;  /* kami Button spec */
+    padding: 0.4em 0.9em;
+    font-size: var(--font-small);
+    font-family: var(--font-interface-theme);
+    cursor: pointer;
+    transition: background-color 120ms ease, box-shadow 120ms ease;
+    box-shadow: var(--ring-warm);  /* kami Button: ring shadow */
+}
+button:hover {
+    background-color: var(--background-modifier-border-hover);
+    box-shadow: 0 0 0 1px var(--background-modifier-border-focus);
+}
+button:active {
+    background-color: var(--background-modifier-border-focus);
+}
+
+/* Primary CTA — ink-blue fill + ivory text */
+button.mod-cta,
+button.mod-primary {
+    background-color: var(--interactive-accent);
+    color: var(--text-on-accent);
+    box-shadow: none;
+}
+button.mod-cta:hover,
+button.mod-primary:hover {
+    background-color: var(--interactive-accent-hover);
+    box-shadow: none;
+}
+
+/* Text input, textarea, dropdown */
+input[type="text"],
+input[type="search"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+textarea,
+.dropdown {
+    background-color: var(--background-modifier-form-field);
+    border: 1px solid var(--background-modifier-border);
+    color: var(--text-normal);
+    border-radius: var(--radius-s);
+    /* Do NOT override padding — Obsidian's default input padding reserves
+       space for the magnifier icon in search inputs (command palette,
+       Style Settings search, file explorer search). Overriding to a small
+       uniform value causes the icon to overlap the placeholder text. */
+    font-size: var(--font-small);
+    font-family: var(--font-interface-theme);
+    transition: border-color 120ms ease, box-shadow 120ms ease;
+}
+input[type="text"]:focus,
+input[type="search"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+textarea:focus,
+.dropdown:focus {
+    border-color: var(--interactive-accent);
+    box-shadow: 0 0 0 2px var(--background-modifier-active-hover);
+    outline: none;
+}
+
+/* Modals & prompts (command palette, switcher, settings) */
+.modal-container .modal,
+.prompt,
+.suggestion-container {
+    background-color: var(--background-secondary);
+    border: 1px solid var(--background-modifier-border);
+    border-radius: var(--radius-l);
+    box-shadow: var(--shadow-l);
+}
+.modal .modal-title,
+.prompt .prompt-title {
+    color: var(--text-normal);
+    font-weight: var(--font-semibold);
+    font-family: var(--font-interface-theme);
+}
+.suggestion-item {
+    color: var(--text-normal);
+    border-radius: var(--radius-s);
+}
+.suggestion-item:hover,
+.suggestion-item.is-selected {
+    background-color: var(--background-modifier-active-hover);
+    color: var(--text-accent);
+}
+
+/* Right-click menu */
+.menu {
+    background-color: var(--background-secondary);
+    border: 1px solid var(--background-modifier-border);
+    border-radius: var(--radius-m);
+    box-shadow: var(--shadow-l);
+    padding: 4px;
+}
+.menu-item {
+    color: var(--text-normal);
+    border-radius: var(--radius-s);
+    padding: 0.4em 0.8em;
+    font-size: var(--font-small);
+    font-family: var(--font-interface-theme);
+}
+.menu-item:hover,
+.menu-item.is-selected {
+    background-color: var(--background-modifier-hover);
+    color: var(--text-normal);
+}
+.menu-item.is-label {
+    color: var(--text-faint);
+    font-size: var(--font-smallest);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* Notice (top-right toast) */
+.notice {
+    background-color: var(--interactive-accent);
+    color: var(--text-on-accent);
+    border-radius: var(--radius-m);
+    box-shadow: var(--shadow-m);
+    font-family: var(--font-interface-theme);
+}
+
+/* Settings panel — vertical tabs */
+.vertical-tab-header {
+    background-color: var(--background-secondary);
+    border-right: 1px solid var(--background-modifier-border);
+}
+.vertical-tab-nav-item {
+    color: var(--text-muted);
+    padding: 0.5em 1em;
+    font-family: var(--font-interface-theme);
+    transition: background-color 120ms ease, color 120ms ease;
+}
+.vertical-tab-nav-item:hover {
+    background-color: var(--background-modifier-hover);
+    color: var(--text-normal);
+}
+.vertical-tab-nav-item.is-active {
+    color: var(--text-accent);
+    background-color: var(--background-modifier-active-hover);
+    box-shadow: inset 2px 0 0 var(--interactive-accent);
+}
+.vertical-tab-content-container {
+    background-color: var(--background-primary);
+}
+.setting-item {
+    border-bottom: 1px solid var(--background-modifier-border);
+}
+
+/* Toggle switch */
+.toggle {
+    width: var(--toggle-width);
+    height: calc(var(--toggle-thumb-radius) + 4px);
+    border: 1px solid var(--background-modifier-border-hover);
+    background-color: var(--background-primary-alt);
+    border-radius: var(--toggle-radius);
+}
+.toggle.is-enabled {
+    background-color: var(--interactive-accent);
+    border-color: var(--interactive-accent);
+}
+.toggle-thumb {
+    width: var(--toggle-thumb-radius);
+    height: var(--toggle-thumb-radius);
+    background-color: var(--background-secondary);
+    border-radius: 50%;
+    box-shadow: var(--shadow-s);
+}
+
+/* =========================================================================
+   7. Dark Variant — Deep Dark (#141413) + Ink Light (#2D5A8A)
+   ========================================================================= */
+/* Aligned to kami v1.1.0 spec:
+   - Background uses Deep Dark #141413 (near-black with olive undertone, not
+     pure black) instead of the warmer #26241F we had before.
+   - Accent uses Ink Light #2D5A8A on dark surfaces — the same blue lineage
+     as the light Ink Blue #1B365D, not a lifted periwinkle. Keeps the
+     restrained single-accent rule intact in dark mode. */
+body.theme-dark {
+    /* --- Surfaces --- */
+    --background-primary:          #141413;  /* Deep Dark, olive undertone */
+    --background-primary-alt:      #1d1c1a;
+    --background-secondary:        #1a1917;
+    --background-secondary-alt:    #232220;
+    --background-modifier-border:  #353330;
+    --background-modifier-border-hover: #45413c;
+    --background-modifier-border-focus: #555049;
+    --background-modifier-form-field: #1d1c1a;
+    --background-modifier-cover:   rgba(20, 20, 19, 0.85);
+    --background-modifier-hover:   rgba(232, 227, 210, 0.05);
+    --background-modifier-active-hover: rgba(45, 90, 138, 0.16);
+    --background-modifier-success: rgba(138, 166, 96, 0.16);
+    --background-modifier-error:   rgba(200, 100, 100, 0.16);
+
+    /* --- Text --- */
+    --text-normal:                 #e8e3d2;
+    --text-muted:                  #a8a294;
+    --text-faint:                  #6e6855;
+    --text-olive:                  #b4b09e;  /* lifted olive for dark bg readability */
+    --text-on-accent:              #f4f3ee;
+    --text-error:                  #d68a8a;
+    --text-success:                #a3b878;
+    --text-accent:                 #2D5A8A;  /* Ink Light — official dark variant of Ink Blue */
+    --text-accent-hover:           #3a6a9a;
+    --text-highlight-bg:           #5a4a1f;
+    --text-highlight-bg-active:    #6e5c2a;
+    --text-selection:              rgba(45, 90, 138, 0.32);
+    --bold-weight:                 600;  /* dark surfaces need stronger emphasis to preserve salience */
+
+    /* --- Interactive --- */
+    --interactive-normal:          #1d1c1a;
+    --interactive-hover:           #2a2926;
+    --interactive-accent:          #2D5A8A;
+    --interactive-accent-hover:    #3a6a9a;
+    --interactive-success:         #a3b878;
+
+    /* --- Syntax --- */
+    --syntax-bg:                   #1a1917;
+    --syntax-text:                 #e8e3d2;
+    --syntax-comment:              #7a7568;
+    --syntax-keyword:              #6b9cc7;  /* Ink Light, used sparingly */
+    --syntax-string:               #b4b09e;
+    --syntax-number:               #c9a76a;
+    --syntax-tag:                  #a8a294;
+    --syntax-atom:                 #6b9cc7;
+    --syntax-variable:             #e8e3d2;
+    --syntax-function:             #6b9cc7;
+    --syntax-property:             #b4b09e;
+    --syntax-punctuation:          #a8a294;
+
+    --code-background:             var(--syntax-bg);
+    --code-normal:                 var(--syntax-text);
+    --inline-code-background:      #1d1c1a;
+    --inline-code-normal:          #b4b09e;
+    --code-comment:                var(--syntax-comment);
+    --code-function:               var(--syntax-function);
+    --code-important:              var(--syntax-keyword);
+    --code-keyword:                var(--syntax-keyword);
+    --code-operator:               var(--syntax-punctuation);
+    --code-property:               var(--syntax-property);
+    --code-punctuation:            var(--syntax-punctuation);
+    --code-string:                 var(--syntax-string);
+    --code-tag:                    var(--syntax-tag);
+    --code-value:                  var(--syntax-number);
+
+    /* --- Scrollbar --- */
+    --scrollbar-bg: transparent;
+    --scrollbar-thumb-bg: rgba(232, 227, 210, 0.10);
+    --scrollbar-active-thumb-bg: rgba(232, 227, 210, 0.20);
+
+    /* --- Depth: ring/whisper still, but darker ring tone --- */
+    --ring-warm: 0 0 0 1px var(--background-modifier-border-hover);
+    --whisper-shadow: 0 4px 24px rgba(0, 0, 0, 0.32);
+    --shadow-s: var(--ring-warm);
+    --shadow-m: var(--ring-warm);
+    --shadow-l: var(--whisper-shadow);
+
+    --background-modifier-box-shadow: rgba(0, 0, 0, 0.32);
+    --background-modifier-box-shadow-hover: rgba(0, 0, 0, 0.48);
+}
+
+/* =========================================================================
+   9. Reduced motion — respect user OS preference
+   ========================================================================= */
+/* Scoped to elements where kami itself defines transitions (120ms ease
+   etc.). Avoids universal `* { ... !important }` pattern flagged by
+   community lint. Specificity 0,0,1 covers kami's own transition rules
+   without polluting the cascade for plugins. */
+@media (prefers-reduced-motion: reduce) {
+    button,
+    input,
+    textarea,
+    .dropdown,
+    .callout,
+    .markdown-embed,
+    .file-embed,
+    .workspace-tab-header,
+    .nav-file-title,
+    .nav-folder-title,
+    .suggestion-item,
+    .vertical-tab-nav-item,
+    .menu-item,
+    a,
+    .cm-hmd-internal-link,
+    .cm-link {
+        transition-duration: 0.01ms;
+        animation-duration: 0.01ms;
+    }
+}

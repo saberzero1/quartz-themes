@@ -1228,9 +1228,9 @@ body.theme-light {
   --inline-title-color: var(--h1-color) !important;
   --text-error-hover: var(--red-robusta-beans) !important;
   --table-header-background-hover: var(--background-secondary) !important;
+  --table-text-color: var(--text-normal) !important;
   --table-header-font: var(--milk-foam) !important;
   --interactive-success: var(--red-robusta-beans) !important;
-  --table-text-color: var(--text-normal) !important;
   --nav-indetation-guide-color: var(--dark-beans) !important;
   --americano: #0f0a00 !important;
   --burnt-roast: #0f0b00 !important;
@@ -2309,9 +2309,9 @@ body.theme-dark {
   --inline-title-color: var(--h1-color) !important;
   --text-error-hover: var(--red-robusta-beans) !important;
   --table-header-background-hover: var(--dark-beans) !important;
+  --table-text-color: var(--text-normal) !important;
   --table-header-font: var(--white-luwak) !important;
   --interactive-success: var(--green-beans) !important;
-  --table-text-color: var(--text-normal) !important;
   --nav-indetation-guide-color: var(--crema) !important;
   --americano: #0f0a00 !important;
   --burnt-roast: #0f0b00 !important;

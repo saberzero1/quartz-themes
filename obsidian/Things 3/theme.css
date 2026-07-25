@@ -1,7 +1,7 @@
 /*──────────────────────────────────────
 Things 3 Theme for Obsidian
-Version 2.6.22
-@paralloid, 2026-05-15
+Version 2.7.2
+@paralloid, 2026-07-02
 ───────────────────────────────────────*/
 
 /* @settings
@@ -36,6 +36,11 @@ settings:
         type: class-toggle
         default: true
     -
+        id: no-remove-tag-button
+        title: Don't show the 'Remove' button for tags in properties 
+        type: class-toggle
+        default: false
+    -
         id: strong-stroke
         title: Thicker icon strokes
         type: class-toggle
@@ -51,7 +56,6 @@ body {
     --tab-radius-active: 12px 12px 0px 0px;
     --background-modifier-hover: rgba(var(--mono-rgb-100), 0.04);
     --interactive-accent: #67acff;
-    --callout-padding: 12px 0px 0px 12px;
     --code-function: #cd8c00;
     --code-important: #e96100;
     --code-keyword: #ba929e;
@@ -804,7 +808,7 @@ body.is-mobile .metadata-properties {
     background-color: #c3e1d3 !important;
 }
 
-.metadata-property .multi-select-pill-remove-button {
+.no-remove-tag-button .metadata-property .multi-select-pill-remove-button {
     display: none
 }
 

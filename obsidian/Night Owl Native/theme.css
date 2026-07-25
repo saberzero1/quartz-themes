@@ -1,0 +1,526 @@
+/*
+Night Owl Theme for Obsidian
+Developed by: Chiron (Agentic AI Developer)
+Inspiration & References:
+  - Night Owl VS Code Theme by Sarah Drasner (night_owl.json)
+  - Night Owl JetBrains Color Scheme (one_dark_native.icls)
+*/
+
+/* @settings
+name: Night Owl Theme Settings
+id: night-owl-theme
+settings:
+  - id: night-owl-colors
+    title: Colors (Màu sắc)
+    type: heading
+    level: 1
+  - id: night-owl-accent-color
+    title: Accent Color (Màu chủ đạo/Điểm nhấn)
+    description: Chọn màu điểm nhấn cho các liên kết, nút bấm và tiêu điểm. (Mặc định: #82aaff)
+    type: variable-color
+    format: hex
+    default: '#82aaff'
+  - id: night-owl-bg-dark
+    title: Dark Editor Background (Nền soạn thảo tối)
+    description: Màu nền chính cho giao diện Dark Mode. (Mặc định: #011627)
+    type: variable-color
+    format: hex
+    default: '#011627'
+  - id: night-owl-sidebar-dark
+    title: Dark Sidebar Background (Nền thanh bên tối)
+    description: Màu nền cho thanh bên và ribbon ở chế độ tối. (Mặc định: #011627)
+    type: variable-color
+    format: hex
+    default: '#011627'
+  - id: night-owl-bg-light
+    title: Light Editor Background (Nền soạn thảo sáng)
+    description: Màu nền chính cho giao diện Light Mode. (Mặc định: #f0f4f8)
+    type: variable-color
+    format: hex
+    default: '#f0f4f8'
+  - id: night-owl-sidebar-light
+    title: Light Sidebar Background (Nền thanh bên sáng)
+    description: Màu nền cho thanh bên và ribbon ở chế độ sáng. (Mặc định: #ebf1f6)
+    type: variable-color
+    format: hex
+    default: '#ebf1f6'
+  - id: night-owl-fonts
+    title: Typography (Phông chữ)
+    type: heading
+    level: 1
+  - id: night-owl-text-font
+    title: Primary Font (Phông chữ chính)
+    description: Phông chữ dùng cho toàn bộ ghi chú và giao diện.
+    type: variable-text
+    default: 'Inter, sans-serif'
+  - id: night-owl-monospace-font
+    title: Monospace Font (Phông chữ Code)
+    description: Phông chữ dùng cho code blocks và inline code.
+    type: variable-text
+    default: 'Fira Code, Source Code Pro, JetBrains Mono, monospace'
+  - id: night-owl-advanced
+    title: Advanced Features (Tính năng nâng cao)
+    type: heading
+    level: 1
+  - id: night-owl-sidebar-glass-effect
+    title: Glassmorphic Sidebar (Thanh bên mờ kính)
+    description: Bật hiệu ứng mờ kính trong suốt và blur cho thanh bên trái/phải.
+    type: class-toggle
+    class: night-owl-glass-sidebar
+    default: false
+  - id: night-owl-neon-glow-headers
+    title: Neon Glow for Headers (Hiệu ứng Neon phát sáng)
+    description: Bật hiệu ứng phát sáng neon mờ ảo cho các tiêu đề (H1 - H3).
+    type: class-toggle
+    class: night-owl-neon-glow
+    default: false
+  - id: night-owl-neo-brutalism-borders
+    title: Neo-brutalist Borders (Đường viền Neo-brutalist)
+    description: Tạo các đường viền rõ nét, sắc sảo xung quanh các khung editor và sidebar.
+    type: class-toggle
+    class: night-owl-neo-borders
+    default: false
+  - id: night-owl-custom-line-width
+    title: Readable Line Width (Độ rộng dòng soạn thảo)
+    description: Thiết lập độ rộng của văn bản để tăng khả năng đọc (ví dụ: 40rem, 45rem, 800px).
+    type: variable-text
+    default: '42rem'
+*/
+
+/* =========================================================================
+   CORE CONFIGURATION & TYPOGRAPHY
+   ========================================================================= */
+
+body {
+  --font-interface: var(--night-owl-text-font, 'Inter, sans-serif');
+  --font-text: var(--night-owl-text-font, 'Inter, sans-serif');
+  --font-editor: var(--night-owl-text-font, 'Inter, sans-serif');
+  --font-monospace: var(--night-owl-monospace-font, 'Fira Code, Source Code Pro, JetBrains Mono, monospace');
+  --line-width: var(--night-owl-custom-line-width, 42rem);
+  
+  /* Smooth transitions */
+  --transition-duration: 0.25s;
+  --transition-ease: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* =========================================================================
+   DARK THEME (NIGHT OWL COLD DARK - CORE #011627)
+   ========================================================================= */
+
+.theme-dark {
+  /* Core Variables mapped to official Obsidian tokens */
+  --accent-color: var(--night-owl-accent-color, #82aaff);
+  --background-primary: var(--night-owl-bg-dark, #011627); /* Editor Background */
+  --background-secondary: var(--night-owl-sidebar-dark, #011627); /* Sidebar Background synced with Editor */
+  --background-primary-alt: #0b253a; /* Input background / Alt primary */
+  --background-secondary-alt: #011627; /* Restored: #010e17 changed to #011627 */
+
+  /* Interactive Elements */
+  --text-accent: var(--accent-color);
+  --text-accent-hover: #b4ccff;
+  --interactive-accent: var(--accent-color);
+  --interactive-accent-hover: #b4ccff;
+  --text-selection: #1d3b53; /* selection.background */
+  --text-highlight-bg: rgba(23, 162, 184, 0.25);
+
+  /* Fonts Colors */
+  --text-normal: #d6deeb; /* editor.foreground */
+  --text-muted: #637777; /* comment color (DEFAULT_BLOCK_COMMENT) */
+  --text-faint: #4b6479; /* editorLineNumber.foreground */
+
+  /* UI Borders and scrollbar */
+  --background-modifier-border: #122d42; /* contrastBorder */
+  --border-color: #122d42;
+  --scrollbar-thumb-bg: rgba(8, 77, 129, 0.5); /* scrollbarSlider.background */
+  --scrollbar-active-thumb-bg: #82aaff;
+
+  /* Headings colors - Night Owl palette */
+  --h1-color: #c792ea; /* Purple (DEFAULT_KEYWORD) */
+  --h2-color: #addb67; /* Green (DEFAULT_IDENTIFIER) */
+  --h3-color: #7fdbca; /* Cyan (JSON.PROPERTY_KEY) */
+  --h4-color: #ecc48d; /* Yellow/Orange (DEFAULT_STRING) */
+  --h5-color: #82aaff; /* Blue (DEFAULT_FUNCTION_DECLARATION) */
+  --h6-color: #ffcb8b; /* Peach/Apricot (DEFAULT_CLASS_NAME) */
+
+  /* Inline Code & Code Block */
+  --code-normal: #7fdbca;
+  --code-background: #01111d; /* tab.inactiveBackground */
+  --code-comment: #637777;
+  
+  /* Navigation / File Explorer (Sidebar defaults) */
+  --nav-item-color: #6a8fd8;          /* High contrast light blue #6a8fd8 for folders & files */
+  --nav-item-color-hover: #ffffff;    /* Pure white on hover */
+  --nav-item-color-active: #7fdbca;   /* Active selection color in Teal */
+
+  /* Icon Colors */
+  --icon-color: #7fdbca;             /* Global UI icons set to Teal */
+  --icon-color-hover: #a9fef0;
+  --icon-color-active: #a9fef0;
+
+  /* Graph View Variables */
+  --graph-node: #7fdbca;             /* Bright Teal - Regular notes */
+  --graph-node-unresolved: #205047;  /* Dark Muted Teal - Empty links */
+  --graph-node-focused: #fcb45f;     /* Glowing Peach/Orange - Focused note ring */
+  --graph-node-tag: #c5e4fd;         /* Ice Blue - Tags */
+  --graph-node-attachment: #addb67;  /* Pale Mint Green - Media/attachments */
+  --graph-line: #0f2b3c;             /* Deep Slate Blue-Teal - Linking lines */
+  --graph-text: #7fdbca;             /* Teal - Node text labels */
+}
+
+/* =========================================================================
+   LIGHT THEME (NIGHT OWL LIGHT)
+   ========================================================================= */
+
+.theme-light {
+  /* Core Variables mapped to official Obsidian tokens */
+  --accent-color: var(--night-owl-accent-color, #0c969b);
+  --background-primary: var(--night-owl-bg-light, #f0f4f8);
+  --background-secondary: var(--night-owl-sidebar-light, #ebf1f6);
+  --background-primary-alt: #e1e8f0;
+  --background-secondary-alt: #e2ebf2;
+
+  /* Interactive Elements */
+  --text-accent: var(--accent-color);
+  --text-accent-hover: #11cbd2;
+  --interactive-accent: var(--accent-color);
+  --interactive-accent-hover: #11cbd2;
+  --text-selection: rgba(208, 221, 233, 0.99);
+
+  /* Fonts Colors */
+  --text-normal: #403f53;
+  --text-muted: #989fb1;
+  --text-faint: #989fb1;
+
+  /* UI Borders and scrollbar */
+  --background-modifier-border: #d0dde9;
+  --border-color: #d0dde9;
+  --scrollbar-thumb-bg: #d0dde9;
+  --scrollbar-active-thumb-bg: var(--accent-color);
+
+  /* Headings colors - Night Owl Light palette */
+  --h1-color: #905e99; /* Dark Purple */
+  --h2-color: #6e8d19; /* Olive Green */
+  --h3-color: #0c969b; /* Teal */
+  --h4-color: #a67c1e; /* Dark Orange */
+  --h5-color: #4876d6; /* Royal Blue */
+  --h6-color: #905e99; /* Dark Purple */
+
+  /* Inline Code & Code Block */
+  --code-normal: #0c969b;
+  --code-background: #e1e8f0;
+  --code-comment: #989fb1;
+
+  /* Navigation / File Explorer */
+  --nav-item-color: #403f53;
+  --nav-item-color-hover: #0c969b;
+  --nav-item-color-active: #0c969b;
+
+  /* Graph View Light Mode */
+  --graph-node: #0c969b;
+  --graph-node-unresolved: #d3423e;
+  --graph-node-focused: #4876d6;
+  --graph-node-tag: #905e99;
+  --graph-node-attachment: #6e8d19;
+  --graph-line: #d0dde9;
+  --graph-text: #2e3338;
+}
+
+/* =========================================================================
+   ELEMENT STYLING (COMMON MAPS)
+   ========================================================================= */
+
+body {
+  background-color: var(--background-primary);
+  color: var(--text-normal);
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6,
+.cm-header-1, .cm-header-2, .cm-header-3, .cm-header-4, .cm-header-5, .cm-header-6 {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+  color: var(--text-normal);
+}
+
+h1, .cm-header-1 { color: var(--h1-color) !important; font-size: 1.8em; }
+h2, .cm-header-2 { color: var(--h2-color) !important; font-size: 1.5em; }
+h3, .cm-header-3 { color: var(--h3-color) !important; font-size: 1.3em; }
+h4, .cm-header-4 { color: var(--h4-color) !important; font-size: 1.15em; }
+h5, .cm-header-5 { color: var(--h5-color) !important; font-size: 1em; }
+h6, .cm-header-6 { color: var(--h6-color) !important; font-size: 0.9em; }
+
+/* Links */
+a, .cm-link {
+  color: var(--accent-color) !important;
+  text-decoration: none;
+  transition: color var(--transition-duration) var(--transition-ease);
+  border-bottom: 1px dashed rgba(var(--interactive-accent-rgb), 0.2);
+}
+
+a:hover, .cm-link:hover {
+  color: var(--text-accent-hover) !important;
+  border-bottom-style: solid;
+}
+
+/* Code Blocks & Inline Code Container */
+code, .cm-inline-code {
+  font-family: var(--font-monospace) !important;
+  color: var(--code-normal);
+  background-color: var(--code-background) !important;
+  border-radius: 6px;
+  padding: 0.2em 0.4em;
+  font-size: 0.9em;
+}
+
+pre {
+  background-color: var(--code-background) !important;
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 8px;
+  padding: 1em;
+}
+
+pre code {
+  padding: 0;
+  background-color: transparent !important;
+  color: var(--text-normal);
+}
+
+/* Callouts Styling */
+.callout {
+  border-left: 4px solid var(--accent-color);
+  border-radius: 8px;
+  background-color: var(--background-primary-alt);
+  padding: 12px 16px;
+  margin: 1.5em 0;
+}
+
+.callout-title {
+  font-weight: 600;
+  color: var(--text-normal);
+}
+
+/* Tag Pills */
+.tag, a.tag {
+  background-color: var(--background-primary-alt) !important;
+  color: var(--accent-color) !important;
+  border: 1px solid var(--background-modifier-border) !important;
+  border-radius: 20px !important;
+  padding: 3px 10px !important;
+  font-size: 0.75em !important;
+  font-weight: 500;
+  transition: all var(--transition-duration) var(--transition-ease);
+}
+
+.tag:hover, a.tag:hover {
+  background-color: var(--accent-color) !important;
+  color: var(--background-primary) !important;
+  border-color: var(--accent-color) !important;
+}
+
+/* Checkboxes */
+.task-list-item-checkbox {
+  appearance: none;
+  -webkit-appearance: none;
+  background-color: transparent;
+  border: 2px solid var(--text-faint);
+  border-radius: 4px;
+  width: 1.2em;
+  height: 1.2em;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-right: 0.5em;
+  transition: all 0.2s ease;
+}
+
+.task-list-item-checkbox:checked {
+  background-color: #addb67;
+  border-color: #addb67;
+}
+
+.task-list-item-checkbox:checked::after {
+  content: '\2713';
+  color: #011627;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 0.85em;
+  font-weight: bold;
+}
+
+/* Active Line Highlight (Using caret row color 01121f from JetBrains) */
+.cm-active {
+  background-color: #01121f !important;
+}
+
+/* =========================================================================
+   SYNTAX HIGHLIGHTING (NIGHT OWL SCHEMA)
+   ========================================================================= */
+
+/* Dark Mode Syntax Highlighter (Prism & CodeMirror) */
+.theme-dark .token.comment, .theme-dark .cm-comment { color: #637777 !important; font-style: italic; }
+.theme-dark .token.keyword, .theme-dark .cm-keyword { color: #c792ea !important; font-style: italic; }
+.theme-dark .token.string, .theme-dark .cm-string { color: #ecc48d !important; }
+.theme-dark .token.number, .theme-dark .cm-number { color: #f78c6c !important; }
+.theme-dark .token.function, .theme-dark .cm-function { color: #82aaff !important; }
+.theme-dark .token.class-name, .theme-dark .token.class, .theme-dark .cm-class, .theme-dark .cm-type { color: #ffcb8b !important; }
+.theme-dark .token.property, .theme-dark .token.attr-name, .theme-dark .cm-property, .theme-dark .cm-attribute { color: #7fdbca !important; }
+.theme-dark .token.boolean, .theme-dark .cm-boolean { color: #ff5874 !important; }
+.theme-dark .token.operator, .theme-dark .cm-operator, .theme-dark .token.punctuation, .theme-dark .cm-punctuation { color: #c792ea !important; }
+.theme-dark .token.regex, .theme-dark .cm-meta { color: #5caeef !important; }
+.theme-dark .token.variable, .theme-dark .cm-variable { color: #addb67 !important; }
+.theme-dark .token.tag, .theme-dark .cm-tag { color: #7fdbca !important; }
+
+/* Light Mode Syntax Highlighter */
+.theme-light .token.comment, .theme-light .cm-comment { color: #989fb1 !important; font-style: italic; }
+.theme-light .token.keyword, .theme-light .cm-keyword { color: #905e99 !important; font-style: italic; }
+.theme-light .token.string, .theme-light .cm-string { color: #a67c1e !important; }
+.theme-light .token.number, .theme-light .cm-number { color: #a67c1e !important; }
+.theme-light .token.function, .theme-light .cm-function { color: #4876d6 !important; }
+.theme-light .token.class-name, .theme-light .token.class, .theme-light .cm-class, .theme-light .cm-type { color: #905e99 !important; }
+.theme-light .token.property, .theme-light .token.attr-name, .theme-light .cm-property, .theme-light .cm-attribute { color: #0c969b !important; }
+.theme-light .token.boolean, .theme-light .cm-boolean { color: #d3423e !important; }
+.theme-light .token.operator, .theme-light .cm-operator, .theme-light .token.punctuation, .theme-light .cm-punctuation { color: #905e99 !important; }
+
+/* =========================================================================
+   FILE EXPLORER & SIDEBAR CUSTOM STYLING (Near-white folders & files, blue headers)
+   ========================================================================= */
+
+.theme-dark .nav-folder-title {
+  color: #ffffff !important;         /* Pure white folders */
+  font-weight: 600 !important;
+}
+
+.theme-dark .nav-file-title {
+  color: #d6deeb !important;         /* Near-white files */
+  font-weight: 500 !important;
+}
+
+.theme-dark .nav-folder-title:hover,
+.theme-dark .nav-file-title:hover {
+  color: #ffffff !important;         /* Pure white on hover */
+  background-color: rgba(106, 143, 216, 0.12) !important;
+}
+
+.theme-dark .nav-file-title.is-active,
+.theme-dark .nav-folder-title.is-active {
+  color: #7fdbca !important;         /* Active selection color in Teal */
+  font-weight: 700 !important;
+  background-color: rgba(127, 219, 202, 0.18) !important;
+  border-left: 2px solid #7fdbca;
+}
+
+/* Sidebar Headings, Vault Titles, and Meta Labels set to #6a8fd8 */
+.theme-dark .nav-header,
+.theme-dark .workspace-drawer-vault-header,
+.theme-dark .workspace-tab-header-tab-title,
+.theme-dark .view-header-title,
+.theme-dark .metadata-properties-heading {
+  color: #6a8fd8 !important;         /* System Titles & Labels set to #6a8fd8 */
+  font-weight: 600 !important;
+}
+
+/* Force all collapse arrows & file explorer tree icons to Teal #7fdbca */
+.theme-dark .nav-folder-collapse-indicator,
+.theme-dark .tree-item-icon,
+.theme-dark .nav-folder-title .collapse-icon,
+.theme-dark .clickable-icon {
+  color: #7fdbca !important;         /* Pure Teal for icon indicators */
+}
+
+.theme-dark .clickable-icon:hover {
+  color: #a9fef0 !important;         /* Glowing mint teal on hover */
+}
+
+/* =========================================================================
+   GRAPH VIEW OVERRIDES (Comprehensive Target Specifiers for WebGL)
+   ========================================================================= */
+
+/* 1. Global Selectors (For WebGL color reader fallback outside theme container) */
+.graph-view.color-fill-focused {
+  color: #fcb45f !important;         /* Focused node inner fill */
+}
+.graph-view.color-fill-highlight {
+  color: #fcb45f !important;         /* Highlighted neighbor nodes fill */
+}
+.graph-view.color-line-highlight {
+  color: #fcb45f !important;         /* Highlighted connections */
+}
+
+/* 2. Theme-Dark Selectors (Highest specificity to override Obsidian default styles) */
+.theme-dark .graph-view.color-fill-focused {
+  color: #fcb45f !important;         /* Force Peach/Orange for focused node */
+}
+.theme-dark .graph-view.color-fill-highlight {
+  color: #fcb45f !important;         /* Force Peach/Orange for neighbor node highlights */
+}
+.theme-dark .graph-view.color-line-highlight {
+  color: #fcb45f !important;         /* Force Peach/Orange for connection lines highlight */
+}
+
+/* 3. Local graph container variables override */
+.theme-dark .graph-view-container,
+.theme-dark .workspace-leaf-content[data-type="graph"] {
+  --graph-node-focused: #fcb45f !important;
+  --interactive-accent: #fcb45f !important;
+  --text-accent: #fcb45f !important;
+}
+
+/* =========================================================================
+   ADVANCED STYLE SETTINGS TOGGLES
+   ========================================================================= */
+
+/* 1. Glassmorphic Sidebar Effect */
+body.night-owl-glass-sidebar .workspace-ribbon.mod-left,
+body.night-owl-glass-sidebar .workspace-split.mod-left-split,
+body.night-owl-glass-sidebar .workspace-split.mod-right-split {
+  background-color: rgba(1, 22, 39, 0.75) !important;  /* Synced to #011627: rgb(1, 22, 39) */
+  backdrop-filter: blur(16px) saturate(140%) !important;
+  -webkit-backdrop-filter: blur(16px) saturate(140%) !important;
+}
+
+body.night-owl-glass-sidebar.theme-light .workspace-ribbon.mod-left,
+body.theme-light.night-owl-glass-sidebar .workspace-split.mod-left-split,
+body.theme-light.night-owl-glass-sidebar .workspace-split.mod-right-split {
+  background-color: rgba(235, 241, 246, 0.75) !important;
+  backdrop-filter: blur(16px) saturate(140%) !important;
+  -webkit-backdrop-filter: blur(16px) saturate(140%) !important;
+}
+
+/* 2. Neon Glow Headers */
+body.night-owl-neon-glow h1,
+body.night-owl-neon-glow .cm-header-1 {
+  text-shadow: 0 0 10px rgba(199, 146, 234, 0.35), 0 0 25px rgba(199, 146, 234, 0.1) !important;
+}
+
+body.night-owl-neon-glow h2,
+body.night-owl-neon-glow .cm-header-2 {
+  text-shadow: 0 0 10px rgba(173, 219, 103, 0.35), 0 0 25px rgba(173, 219, 103, 0.1) !important;
+}
+
+body.night-owl-neon-glow h3,
+body.night-owl-neon-glow .cm-header-3 {
+  text-shadow: 0 0 10px rgba(127, 219, 202, 0.35), 0 0 25px rgba(127, 219, 202, 0.1) !important;
+}
+
+/* 3. Neo-brutalist Borders */
+body.night-owl-neo-borders {
+  --background-modifier-border: #82aaff;
+  --border-color: #82aaff;
+}
+
+body.night-owl-neo-borders.theme-light {
+  --background-modifier-border: #0c969b;
+  --border-color: #0c969b;
+}
+
+body.night-owl-neo-borders .workspace-split,
+body.night-owl-neo-borders .workspace-tabs,
+body.night-owl-neo-borders .workspace-leaf,
+body.night-owl-neo-borders .workspace-ribbon {
+  border: 1px solid var(--border-color) !important;
+}

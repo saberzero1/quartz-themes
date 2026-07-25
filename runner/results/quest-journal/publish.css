@@ -1477,13 +1477,13 @@ body.theme-light {
   --inline-title-color: var(--h1-color) !important;
   --font-family-code: "Consolas", "Menlo", monospace !important;
   --background-blockquote: #e8dcc5 !important;
+  --scrollbar-thumb: #c9bca6 !important;
   --font-headers: var(
     --qj-header-font,
     "Cinzel",
     "Crimson Text",
     serif
   ) !important;
-  --scrollbar-thumb: #c9bca6 !important;
   --sidebar-hover: rgba(138, 58, 58, 0.08) !important;
   --tab-hover: rgba(138, 58, 58, 0.05) !important;
   --text-navbar: #6b5a4b !important;
@@ -2579,13 +2579,13 @@ body.theme-dark {
   --inline-title-color: var(--h1-color) !important;
   --font-family-code: "Consolas", "Menlo", monospace !important;
   --background-blockquote: #2a221d !important;
+  --scrollbar-thumb: #3e3226 !important;
   --font-headers: var(
     --qj-header-font,
     "Cinzel",
     "Crimson Text",
     serif
   ) !important;
-  --scrollbar-thumb: #3e3226 !important;
   --sidebar-hover: rgba(205, 178, 120, 0.1) !important;
   --tab-hover: rgba(205, 178, 120, 0.05) !important;
   --text-navbar: #8c8175 !important;

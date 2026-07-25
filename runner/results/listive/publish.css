@@ -1104,12 +1104,12 @@ body.theme-light {
   --h6-color: hsl(45, 45%, 20%) !important;
   --inline-title-color: var(--h1-color) !important;
   --default-font: "Inter" !important;
+  --bold-color: var(--h1-color) !important;
+  --inline-title-font: var(--h1-font) !important;
   --h1-font: Courgette !important;
   --h2-font: Courgette !important;
   --h3-font: "Karla", "Inter" !important;
   --h4-font: "Karla", "Inter" !important;
-  --inline-title-font: var(--h1-font) !important;
-  --bold-color: var(--h1-color) !important;
   --h1-border-width: 1px !important;
   --h2-border-width: 1px !important;
   --h3-border-width: 0px !important;
@@ -1122,7 +1122,7 @@ body.theme-light {
   --h2-bottom-spacing-edit: var(--h2-bottom-spacing) !important;
   --h2-top-spacing: 1.4rem !important;
   --h2-top-spacing-edit: calc(
-    var(--h2-top-spacing) + var(--list-spacing) + var(--list-spacing) / 2
+    var(--h2-top-spacing) + var(--list-spacing) + var(--list-spacing)/2
   ) !important;
   --h4-bottom-spacing: 0.1rem !important;
   --ig-left-2: -12px !important;
@@ -1136,7 +1136,7 @@ body.theme-light {
   --list-indent-first: 1.6em !important;
   --list-indent-read: 1.5em !important;
   --lst-fab-b2-y: 30vh !important;
-  --lst-fab-button-radius: calc(var(--lst-fab-button-size) / 3) !important;
+  --lst-fab-button-radius: calc(var(--lst-fab-button-size)/3) !important;
   --lst-fab-button-size: 60px !important;
   --lst-fab-view-x: 2vw !important;
   --lst-fab-view-y: 10vh !important;
@@ -2224,12 +2224,12 @@ body.theme-dark {
   --h6-color: hsl(45, 45%, 65%) !important;
   --inline-title-color: var(--h1-color) !important;
   --default-font: "Inter" !important;
+  --bold-color: var(--h1-color) !important;
+  --inline-title-font: var(--h1-font) !important;
   --h1-font: Courgette !important;
   --h2-font: Courgette !important;
   --h3-font: "Karla", "Inter" !important;
   --h4-font: "Karla", "Inter" !important;
-  --inline-title-font: var(--h1-font) !important;
-  --bold-color: var(--h1-color) !important;
   --h1-border-width: 1px !important;
   --h2-border-width: 1px !important;
   --h3-border-width: 0px !important;
@@ -2243,7 +2243,7 @@ body.theme-dark {
   --h2-bottom-spacing-edit: var(--h2-bottom-spacing) !important;
   --h2-top-spacing: 1.4rem !important;
   --h2-top-spacing-edit: calc(
-    var(--h2-top-spacing) + var(--list-spacing) + var(--list-spacing) / 2
+    var(--h2-top-spacing) + var(--list-spacing) + var(--list-spacing)/2
   ) !important;
   --h4-bottom-spacing: 0.1rem !important;
   --ig-left-2: -12px !important;
@@ -2260,7 +2260,7 @@ body.theme-dark {
   --list-indent-first: 1.6em !important;
   --list-indent-read: 1.5em !important;
   --lst-fab-b2-y: 30vh !important;
-  --lst-fab-button-radius: calc(var(--lst-fab-button-size) / 3) !important;
+  --lst-fab-button-radius: calc(var(--lst-fab-button-size)/3) !important;
   --lst-fab-button-size: 60px !important;
   --lst-fab-view-x: 2vw !important;
   --lst-fab-view-y: 10vh !important;

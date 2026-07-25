@@ -1,0 +1,1147 @@
+@charset "UTF-8";
+
+/*
+=======================================================================
+Composed for Obsidian
+=======================================================================
+Version: 1.0.0
+Description: Clean, paper-like aesthetic with consistent behavior
+             across Reading Mode and Live Preview Mode.
+             PDF/Print export optimized for publishable book quality.
+             Attempting to achieve the visual feel of LaTeX typesetting.
+
+Table of Contents:
+  1. CSS Variables
+  2. Core Layout & Background
+  3. Sidebar
+  4. Typography - Headings
+  5. Typography - Text Elements
+  6. Inline Code & Syntax Highlighting
+  7. Tables
+  8. Blockquotes
+  9. Callouts
+  10. UI Cleanup
+  11. Scrollbar
+  12. Print / PDF Export (minimal reset)
+
+Note:
+  This theme is designed to be light-only,
+  and it deliberately hides some UI to achieve a zen-like interface.
+=======================================================================
+*/
+
+body {
+    /* ===== 1. CSS VARIABLES ===== */
+
+    /* --- Color Palette --- */
+    --paper-bg: #faf9f5;
+    --paper-text: #000000;
+    --paper-text-code: #0b0b0bdc;
+    --paper-code-bg: #eaecee;
+    --paper-border: #dad6cf;
+    --paper-border-strong: rgba(0, 0, 0, 0.8);
+    --paper-border-table: #d0d7de;
+    --paper-highlight: rgba(243, 232, 164, 0.69);
+    --paper-table-stripe: rgba(227, 235, 243, 0.23);
+    --paper-list-marker-color: rgb(89, 89, 89);
+    --paper-quote-border: #bbb;
+    --paper-quote-text: #555;
+
+    /* --- Paper Typography Scale --- */
+    --paper-text-font: var(
+        --font-text,
+        "Latin Modern Roman",
+        "New Computer Modern",
+        "CMU Serif",
+        serif
+    );
+    --paper-mono-font: var(
+        --font-monospace,
+        "Latin Modern Mono",
+        "CMU Typewriter Text",
+        ui-monospace,
+        SFMono-Regular,
+        Menlo,
+        Consolas,
+        monospace
+    );
+    --paper-body-line-height: 1.65;
+    --paper-prose-align: justify;
+    --paper-prose-align-last: start;
+    --paper-prose-hyphens: auto;
+    --paper-heading-line-height: 1.22;
+    --paper-h1-size: 1.78rem;
+    --paper-h2-size: 1.42rem;
+    --paper-h3-size: 1.18rem;
+    --paper-h4-size: 1.05rem;
+    --paper-h5-size: 0.95rem;
+    --paper-h6-size: 0.88rem;
+    --paper-heading-small-weight: 600;
+
+    /* Mirror the scale into Obsidian's native heading variables. */
+    --h1-size: var(--paper-h1-size);
+    --h2-size: var(--paper-h2-size);
+    --h3-size: var(--paper-h3-size);
+    --h4-size: var(--paper-h4-size);
+    --h5-size: var(--paper-h5-size);
+    --h6-size: var(--paper-h6-size);
+    --h1-line-height: var(--paper-heading-line-height);
+    --h2-line-height: var(--paper-heading-line-height);
+    --h3-line-height: var(--paper-heading-line-height);
+    --h4-line-height: var(--paper-heading-line-height);
+    --h5-line-height: var(--paper-heading-line-height);
+    --h6-line-height: var(--paper-heading-line-height);
+    --h1-weight: 700;
+    --h2-weight: 700;
+    --h3-weight: 650;
+    --h4-weight: 600;
+    --h5-weight: var(--paper-heading-small-weight);
+    --h6-weight: var(--paper-heading-small-weight);
+
+    --file-line-width: 640px;
+
+    /* --- Print Rhythm --- */
+    --paper-print-bg: #fff;
+    --paper-print-text: #000000;
+    --paper-print-line-height: 1.58;
+    --paper-print-paragraph-gap: 0.72em;
+    --app-bg: #ffffff;
+    --app-bg-alt: #f6f6f6;
+    --sidebar-bg: #f9f8f4;
+
+    /* --- Obsidian Native Variable Mapping --- */
+    --background-primary: var(--app-bg);
+    --background-primary-alt: var(--app-bg-alt);
+    --background-secondary: var(--sidebar-bg);
+    --background-secondary-alt: var(--sidebar-bg);
+    --background-modifier-border: var(--paper-border);
+    --background-modifier-border-hover: var(--paper-border-table);
+    --text-normal: var(--paper-text);
+    --code-background: var(--paper-code-bg);
+    --code-normal: var(--paper-text-code);
+    --blockquote-border-color: var(--paper-quote-border);
+    --blockquote-color: var(--paper-quote-text);
+
+    /* --- Code Syntax Colors --- */
+    --code-keyword: #0d47a1;
+    --code-string: #00796b;
+    --code-number: rgba(167, 98, 9, 0.86);
+    --code-function: #00838f;
+    --code-comment: #6a737d;
+    --code-operator: #0d47a1;
+    --code-variable: #b12020;
+    --code-class: #6d4c41;
+    --code-attribute: #5e35b1;
+}
+
+/* ===== 2. CORE LAYOUT & BACKGROUND ===== */
+
+/* Paper background belongs to Markdown content. */
+.workspace-leaf-content[data-type="markdown"]
+    :is(
+        .markdown-source-view.mod-cm6,
+        .markdown-preview-view,
+        .markdown-rendered
+    ) {
+    background-color: var(--paper-bg);
+    color: var(--paper-text);
+}
+
+/* Keep the document serif without leaking it into Obsidian's UI chrome. */
+.markdown-preview-view,
+.markdown-rendered,
+.markdown-source-view.mod-cm6 .cm-content {
+    font-family: var(--paper-text-font);
+    font-kerning: normal;
+    font-variant-ligatures: common-ligatures contextual;
+    text-rendering: optimizeLegibility;
+}
+
+.workspace-leaf-content[data-type="markdown"] .view-header {
+    background-color: var(--paper-bg) !important;
+}
+
+/* Active markdown tab matches the paper document surface. */
+.workspace-tab-header.is-active[data-type="markdown"] {
+    --tab-background-active: var(--paper-bg);
+    --tab-outline-color: var(--paper-border);
+    background-color: var(--paper-bg);
+    z-index: 1;
+}
+
+.workspace-tab-header.is-active[data-type="markdown"]
+    .workspace-tab-header-inner {
+    background-color: var(--paper-bg);
+}
+
+.mod-active .workspace-tab-header.is-active .workspace-tab-header-inner-title {
+    color: var(--interactive-accent) !important;
+    font-weight: 600;
+}
+
+/* ===== 3. SIDEBAR ===== */
+
+.workspace-split.mod-left-split .workspace-leaf-content,
+.workspace-split.mod-right-split .workspace-leaf-content {
+    background-color: var(--sidebar-bg);
+}
+
+/* ===== 4. TYPOGRAPHY - HEADINGS ===== */
+
+/* Shared heading rhythm: restrained, LaTeX-inspired hierarchy. */
+.markdown-rendered :is(h1, h2, h3, h4, h5, h6),
+.markdown-source-view.mod-cm6
+    :is(
+        .HyperMD-header-1,
+        .HyperMD-header-2,
+        .HyperMD-header-3,
+        .HyperMD-header-4,
+        .HyperMD-header-5,
+        .HyperMD-header-6
+    ) {
+    color: var(--paper-text);
+    line-height: var(--paper-heading-line-height);
+    letter-spacing: -0.01em;
+}
+
+/* Let CodeMirror tokens inherit heading sizing; the line owns the scale. */
+.markdown-source-view.mod-cm6
+    :is(
+        .cm-header-1,
+        .cm-header-2,
+        .cm-header-3,
+        .cm-header-4,
+        .cm-header-5,
+        .cm-header-6
+    ) {
+    color: inherit;
+    font-size: inherit;
+    font-style: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+}
+
+/* --- H1: centered paper title --- */
+.markdown-rendered h1,
+.markdown-source-view.mod-cm6 .HyperMD-header-1 {
+    font-size: var(--paper-h1-size);
+    font-weight: var(--h1-weight);
+    text-align: center;
+    text-wrap: balance;
+}
+
+.markdown-rendered h1 {
+    width: fit-content;
+    max-width: 100%;
+    margin: 2.2rem auto 1.95rem;
+}
+
+.markdown-source-view.mod-cm6 .HyperMD-header-1 {
+    padding-block: 1.35rem 0.85rem;
+}
+
+/* Live Preview keeps Markdown blank lines visible, so heading padding is tighter. */
+.markdown-source-view.mod-cm6.is-live-preview .HyperMD-header-1 {
+    padding-block: 0.55rem 0.95rem;
+}
+
+/* --- H2: primary section heading --- */
+.markdown-rendered h2,
+.markdown-source-view.mod-cm6 .HyperMD-header-2 {
+    font-size: var(--paper-h2-size);
+    font-weight: var(--h2-weight);
+}
+
+.markdown-rendered h2 {
+    margin-block: 1.8rem 0.75rem;
+}
+
+.markdown-source-view.mod-cm6.is-live-preview .HyperMD-header-2 {
+    padding-block: 0.3rem 0;
+}
+
+/* --- H3: subsection heading --- */
+.markdown-rendered h3,
+.markdown-source-view.mod-cm6 .HyperMD-header-3 {
+    font-size: var(--paper-h3-size);
+    font-weight: var(--h3-weight);
+}
+
+.markdown-rendered h3 {
+    margin-block: 1.45rem 0.55rem;
+}
+
+.markdown-source-view.mod-cm6.is-live-preview .HyperMD-header-3 {
+    padding-block: 0.15rem 0;
+}
+
+/* --- H4: paragraph-level heading --- */
+.markdown-rendered h4,
+.markdown-source-view.mod-cm6 .HyperMD-header-4 {
+    font-size: var(--paper-h4-size);
+    font-style: italic;
+    font-weight: var(--h4-weight);
+}
+
+.markdown-rendered h4 {
+    margin-block: 1.2rem 0.45rem;
+}
+
+.markdown-source-view.mod-cm6.is-live-preview .HyperMD-header-4 {
+    padding-block: 0.05rem 0;
+}
+
+/* --- H5 & H6: I strongly recommend not to use H5 or H6 headings, as they are nested too deeply --- */
+.markdown-rendered h5,
+.markdown-rendered h6,
+.markdown-source-view.mod-cm6 .HyperMD-header-5,
+.markdown-source-view.mod-cm6 .HyperMD-header-6 {
+    color: var(--text-muted);
+    font-variant: small-caps;
+    font-weight: var(--paper-heading-small-weight);
+    letter-spacing: 0.05em;
+}
+
+.markdown-rendered h5,
+.markdown-rendered h6 {
+    margin-block: 1rem 0.35rem;
+}
+
+.markdown-source-view.mod-cm6.is-live-preview
+    :is(.HyperMD-header-5, .HyperMD-header-6) {
+    padding-block: 0 0;
+}
+
+.markdown-rendered h5,
+.markdown-source-view.mod-cm6 .HyperMD-header-5 {
+    font-size: var(--paper-h5-size);
+}
+
+.markdown-rendered h6,
+.markdown-source-view.mod-cm6 .HyperMD-header-6 {
+    font-size: var(--paper-h6-size);
+}
+
+.markdown-rendered > :is(h1, h2, h3, h4, h5, h6):first-child {
+    margin-top: 0;
+}
+
+/* ===== 5. TYPOGRAPHY - TEXT ELEMENTS ===== */
+
+/* Links - both modes */
+:is(
+    .markdown-rendered a,
+    .markdown-source-view.mod-cm6 .cm-link,
+    .markdown-source-view.mod-cm6 .cm-hmd-internal-link,
+    .markdown-source-view.mod-cm6 .cm-url,
+    .markdown-source-view.mod-cm6 .cm-underline
+) {
+    text-decoration: underline;
+}
+
+/* Highlights - both modes */
+:is(.markdown-rendered mark, .markdown-source-view.mod-cm6 .cm-highlight) {
+    background-color: var(--paper-highlight);
+    color: inherit;
+    border-radius: 2px;
+    padding: 1px 2px;
+}
+
+/* --- Adjust line height --- */
+.markdown-source-view.mod-cm6,
+.markdown-preview-view,
+.markdown-source-view.mod-cm6 .cm-content {
+    line-height: var(--paper-body-line-height);
+}
+
+/* --- Typeset-style full justification for prose (read mode only) --- */
+.markdown-rendered p {
+    text-align: var(--paper-prose-align);
+    text-align-last: var(--paper-prose-align-last);
+    text-justify: inter-word;
+    -webkit-hyphens: var(--paper-prose-hyphens);
+    hyphens: var(--paper-prose-hyphens);
+}
+
+/* Keep structured short-form content more readable than forced-justified. */
+.markdown-rendered :is(li, th, td) {
+    text-align: start;
+    text-align-last: auto;
+    -webkit-hyphens: manual;
+    hyphens: manual;
+}
+
+/* --- A list should feel attached to the sentence that introduces it --- */
+.markdown-rendered p:has(+ :is(ul, ol)),
+.markdown-rendered .el-p:has(+ :is(.el-ul, .el-ol)) > p {
+    margin-bottom: 0.25em;
+}
+
+.markdown-rendered :is(ul, ol) {
+    margin-block: 0.2em 0.85em;
+}
+
+.markdown-rendered :is(h1, h2, h3, h4, h5, h6) + :is(ul, ol),
+.markdown-rendered
+    :is(.el-h1, .el-h2, .el-h3, .el-h4, .el-h5, .el-h6)
+    + :is(.el-ul, .el-ol)
+    > :is(ul, ol) {
+    margin-top: 1em;
+}
+
+.markdown-rendered li {
+    margin-block: 0.12em;
+}
+
+.markdown-rendered li > :is(ul, ol) {
+    margin-block: 0.12em 0.25em;
+}
+
+/* --- List markers --- */
+:is(.markdown-reading-view, .markdown-preview-view, .markdown-rendered)
+    ul
+    > li
+    > .list-bullet::after,
+.markdown-source-view.mod-cm6 .HyperMD-list-line-1 .list-bullet::after {
+    /* Bullet */
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    background-color: var(--paper-list-marker-color);
+}
+
+:is(.markdown-reading-view, .markdown-preview-view, .markdown-rendered)
+    ul
+    > li
+    > ul
+    > li
+    > .list-bullet::after,
+.markdown-source-view.mod-cm6 .HyperMD-list-line-2 .list-bullet::after {
+    /* Hollow Bullet */
+    height: 4px;
+    width: 4px;
+    background-color: transparent;
+    border-color: var(--paper-list-marker-color);
+    border-style: solid;
+    border-radius: 50%;
+    border-width: 1px;
+}
+
+:is(.markdown-reading-view, .markdown-preview-view, .markdown-rendered)
+    ul
+    > li
+    > ul
+    > li
+    > ul
+    > li
+    > .list-bullet::after,
+.markdown-source-view.mod-cm6 .HyperMD-list-line-3 .list-bullet::after {
+    /* Hyphen */
+    content: "-";
+    width: auto;
+    height: auto;
+    background-color: transparent;
+    border: none;
+    color: var(--paper-list-marker-color);
+    font-family: var(--paper-text-font);
+    font-size: 0.9em;
+    line-height: 1;
+}
+
+/* Ordered numbers read like text; unordered bullets stay slightly quieter. */
+:is(.markdown-reading-view, .markdown-preview-view, .markdown-rendered)
+    ol
+    > li::marker,
+.markdown-source-view.mod-cm6 .cm-formatting-list-ol {
+    color: var(--paper-text);
+}
+
+/* ===== 6. INLINE CODE & SYNTAX HIGHLIGHTING ===== */
+
+/*
+ * Fenced codeblock layout intentionally uses Obsidian defaults.
+ * Inline code and syntax token colors use the original theme palette.
+ */
+
+/* Code stays literal, not typographic. */
+:is(
+    .markdown-rendered code,
+    .markdown-rendered pre,
+    .markdown-source-view.mod-cm6 .cm-inline-code,
+    .markdown-source-view.mod-cm6 .HyperMD-codeblock
+) {
+    font-variant-ligatures: none;
+    text-rendering: auto;
+}
+
+/* --- Inline Code --- */
+:is(
+    .markdown-rendered code:not(pre code),
+    .markdown-source-view.mod-cm6 .cm-inline-code:not(.cm-formatting)
+) {
+    background-color: var(--paper-code-bg);
+    padding: 2px 6px;
+    border-radius: 3px;
+    color: var(--paper-text-code);
+    font-family: var(--paper-mono-font);
+    font-size: 0.9em;
+}
+
+/* --- Syntax Highlighting: original palette --- */
+.markdown-source-view.mod-cm6 :is(.cm-keyword, .cm-builtin),
+.markdown-rendered :is(.token.keyword, .token.builtin) {
+    color: var(--code-keyword);
+    font-weight: 600;
+}
+
+.markdown-source-view.mod-cm6 :is(.cm-string, .cm-string-2),
+.markdown-rendered .token.string {
+    color: var(--code-string);
+}
+
+.markdown-source-view.mod-cm6 :is(.cm-number, .cm-atom),
+.markdown-rendered :is(.token.number, .token.boolean, .token.constant) {
+    color: var(--code-number);
+    font-weight: 600;
+}
+
+.markdown-source-view.mod-cm6 :is(.cm-def, .cm-callee, .cm-property),
+.markdown-rendered :is(.token.function, .token.property) {
+    color: var(--code-function);
+    font-weight: 600;
+}
+
+.markdown-source-view.mod-cm6 .cm-comment,
+.markdown-rendered .token.comment {
+    color: var(--code-comment);
+    font-style: italic;
+}
+
+.markdown-source-view.mod-cm6 .cm-operator,
+.markdown-rendered .token.operator {
+    color: var(--code-operator);
+}
+
+.markdown-source-view.mod-cm6 :is(.cm-variable, .cm-variable-2, .cm-variable-3),
+.markdown-rendered .token.variable {
+    color: var(--code-variable);
+}
+
+.markdown-source-view.mod-cm6 :is(.cm-type, .cm-tag),
+.markdown-rendered :is(.token.class-name, .token.tag) {
+    color: var(--code-class);
+    font-weight: 600;
+}
+
+.markdown-source-view.mod-cm6 .cm-attribute,
+.markdown-rendered .token.attr-name {
+    color: var(--code-attribute);
+}
+
+.markdown-rendered .token.punctuation {
+    color: var(--paper-text);
+}
+
+/* --- Inline code in tables (both modes) --- */
+:is(.markdown-rendered, .markdown-source-view.mod-cm6 .cm-embed-block)
+    table
+    code,
+.markdown-source-view.mod-cm6
+    :is(table.cm-table-widget, .cm-table-widget table)
+    code {
+    background-color: var(--paper-code-bg);
+    padding: 2px 6px;
+
+    font-family: var(--paper-mono-font);
+    font-size: 0.9em;
+}
+
+/* ===== 7. TABLES ===== */
+
+/* Table base */
+:is(.markdown-rendered, .markdown-source-view.mod-cm6 .cm-embed-block) table,
+.markdown-source-view.mod-cm6
+    :is(table.cm-table-widget, .cm-table-widget table) {
+    width: 100%;
+    border-collapse: collapse;
+    display: table;
+    font-family: inherit;
+    font-size: 0.95em;
+}
+
+/* Table headers */
+:is(
+        .markdown-rendered,
+        .markdown-source-view.mod-cm6 .cm-embed-block,
+        .markdown-source-view.mod-cm6 .cm-table-widget
+    )
+    th {
+    background-color: transparent;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: 600;
+    line-height: inherit;
+    text-align: left;
+    vertical-align: middle;
+    border: none;
+    border-bottom: 2px solid var(--paper-border-strong);
+    padding: 8px 12px;
+}
+
+/* Table cells */
+:is(
+        .markdown-rendered,
+        .markdown-source-view.mod-cm6 .cm-embed-block,
+        .markdown-source-view.mod-cm6 .cm-table-widget
+    )
+    td {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    vertical-align: middle;
+    border: none;
+    border-top: 1px solid var(--paper-border-table);
+    padding: 8px 12px;
+}
+
+/* Give the final body row the same light rule as internal row dividers. */
+:is(
+        .markdown-rendered,
+        .markdown-source-view.mod-cm6 .cm-embed-block,
+        .markdown-source-view.mod-cm6 .cm-table-widget
+    )
+    tbody
+    tr:last-child
+    td {
+    border-bottom: 1px solid var(--paper-border-table);
+}
+
+/* Alternating row colors */
+:is(
+        .markdown-rendered,
+        .markdown-source-view.mod-cm6 .cm-embed-block,
+        .markdown-source-view.mod-cm6 .cm-table-widget
+    )
+    tbody
+    tr:nth-of-type(2n) {
+    background-color: var(--paper-table-stripe);
+}
+
+/* Live Preview table fixes */
+.markdown-source-view.mod-cm6
+    :is(.cm-embed-block, .cm-table-widget)
+    :is(td, th)
+    :is(.cm-line, .table-cell-wrapper) {
+    line-height: inherit;
+    padding: 0;
+}
+
+/* ===== 8. BLOCKQUOTES ===== */
+
+/* Reading view */
+.markdown-rendered blockquote {
+    border-left: 0.5pt solid var(--paper-quote-border);
+    color: var(--paper-quote-text);
+    font-style: italic;
+}
+
+/* Live Preview / editor text */
+.markdown-source-view.mod-cm6 :is(.cm-line.HyperMD-quote, .HyperMD-quote) {
+    background: transparent;
+    color: var(--paper-quote-text);
+    font-style: italic;
+}
+
+/* The actual quote bar in Live Preview */
+.markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote:before,
+.markdown-source-view.mod-cm6 .cm-blockquote-border:before {
+    border-inline-start: 0.5pt solid var(--paper-quote-border);
+}
+
+/* Optional: if theme applies color directly to the border element */
+.markdown-source-view.mod-cm6 .cm-blockquote-border {
+    border-color: var(--paper-quote-border);
+}
+
+/* ===== 9. CALLOUTS ===== */
+
+/*
+    I personally do not recommend using callouts in Obsidian though.
+    I understand that people like them; however, they are not part of
+    the standard syntax and therefore cannot be rendered in other editors.
+    Anyway, I will still style it by my taste.
+*/
+
+:is(.markdown-rendered, .markdown-source-view.mod-cm6) .callout {
+    background: transparent;
+    border: 0.75pt solid var(--paper-border-strong);
+    border-radius: 0.85em;
+    box-shadow: none;
+    color: var(--paper-text);
+    line-height: 1.35;
+    margin-block: 1em;
+    padding: 0.55em 0.75em 0.6em;
+    text-align: start;
+    text-align-last: auto;
+}
+
+:is(.markdown-rendered, .markdown-source-view.mod-cm6)
+    .callout
+    :is(.callout-icon, .callout-fold) {
+    display: none;
+}
+
+:is(.markdown-rendered, .markdown-source-view.mod-cm6)
+    .callout
+    :is(.callout-title, .callout-title-inner) {
+    color: inherit;
+    display: inline;
+    font: inherit;
+    font-weight: 700;
+    padding: 0;
+}
+
+:is(.markdown-rendered, .markdown-source-view.mod-cm6)
+    .callout
+    .callout-title-inner::after {
+    content: ":";
+}
+
+:is(.markdown-rendered, .markdown-source-view.mod-cm6) .callout-content {
+    color: inherit;
+    display: contents;
+}
+
+:is(.markdown-rendered, .markdown-source-view.mod-cm6)
+    .callout-content
+    > p:first-child {
+    display: inline;
+    margin: 0;
+    text-align: inherit;
+    text-align-last: inherit;
+}
+
+:is(.markdown-rendered, .markdown-source-view.mod-cm6)
+    .callout-content
+    > p:first-child::before {
+    content: " ";
+}
+
+:is(.markdown-rendered, .markdown-source-view.mod-cm6)
+    .callout-content
+    > p:first-child
+    + * {
+    margin-block-start: 0.55em;
+}
+
+/* ===== 10. UI CLEANUP ===== */
+
+/* Use Obsidian's native sidebar toggles as invisible edge targets. */
+body:not(.is-mobile)
+    .workspace
+    .sidebar-toggle-button:is(.mod-left, .mod-right) {
+    display: block;
+    position: fixed;
+    inset-block: var(--header-height) 0 !important;
+    width: 18px;
+    height: auto;
+    margin: 0;
+    padding: 0 !important;
+    opacity: 0;
+    z-index: 20 !important;
+}
+
+body:not(.is-mobile) .workspace .sidebar-toggle-button.mod-left {
+    inset-inline-start: 0;
+}
+
+body:not(.is-mobile) .workspace .sidebar-toggle-button.mod-right {
+    inset-inline-end: 0;
+}
+
+body:not(.is-mobile)
+    .workspace
+    .sidebar-toggle-button:is(.mod-left, .mod-right)
+    .clickable-icon {
+    width: 100% !important;
+    height: 100% !important;
+    min-width: 100% !important;
+    padding: 0;
+    cursor: pointer;
+    pointer-events: auto;
+}
+
+/* Smooth transitions for interactive elements */
+.workspace-tab-header,
+.nav-file-title,
+.nav-folder-title {
+    transition:
+        background-color 0.15s ease,
+        color 0.15s ease;
+}
+
+/* Fix cursor jumping issues */
+.markdown-source-view.mod-cm6 .cm-line {
+    caret-color: var(--paper-text);
+}
+
+/* Center embedded images */
+.markdown-rendered img {
+    display: block;
+    margin-inline: auto;
+}
+
+/* ===== 11. SCROLLBAR ===== */
+
+/* Minimal scrollbar styling */
+::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--text-faint);
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--text-muted);
+}
+
+/* ===== 12. PRINT / PDF EXPORT — Minimal Reset ===== */
+
+/*
+  This still doesn't make the printed PDF look perfect, but it should be more than enough for quick export. If you're looking for perfect typesetting, I'd recommend converting the file to LaTeX first and then compiling it.
+*/
+
+/* Manual page break helper */
+:is(.markdown-rendered, .markdown-source-view.mod-cm6) .page-break {
+    page-break-before: always;
+    break-before: always;
+    height: 0;
+    margin: 0;
+    padding: 0;
+}
+
+@media print {
+    /*
+    Three dashes to break page (print/export only),
+    this is probably not for everyone, though, I recommend
+    not to use three dashes as just regular breaks.
+    Uncomment the rules below to apply.
+    hr {
+        break-after: page;
+        page-break-after: always;
+        visibility: hidden;
+    }
+    */
+
+    /*
+     * Print/export rules intentionally use !important because Obsidian
+     * and PDF plugins inject layout chrome late in the cascade.
+     */
+
+    /* ── Page Setup ── */
+    @page {
+        /* Explicit paper margins: roomier than Obsidian's stripped wrappers. */
+        margin: 2.35cm 2.45cm 2.5cm;
+        size: A4;
+    }
+
+    /* ── Global Reset: remove ALL Obsidian chrome and spacing ── */
+    html,
+    body {
+        background: var(--paper-print-bg, #fff) !important;
+        color: var(--paper-print-text, #1e1e1e) !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+    }
+
+    /* ── Strip away Obsidian layout wrappers ──
+     * Every container between <body> and the actual content
+     * must be forced to full width with no extra padding/margin so the
+     * @page margin is the ONLY margin the reader sees.
+     */
+    .app-container,
+    .horizontal-main-container,
+    .workspace,
+    .workspace-split,
+    .workspace-leaf,
+    .workspace-leaf-content,
+    .workspace-tabs,
+    .workspace-tab-container,
+    .view-content,
+    .view-header,
+    .view-header-title-container,
+    .markdown-preview-view,
+    .markdown-rendered,
+    .markdown-preview-section,
+    .markdown-preview-sizer,
+    .cm-s-obsidian,
+    .cm-scroller,
+    .cm-sizer,
+    .cm-content {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        background: var(--paper-print-bg, #fff) !important;
+        box-shadow: none !important;
+        border: none !important;
+        position: static !important;
+        overflow: visible !important;
+        display: block !important;
+        float: none !important;
+        transform: none !important;
+    }
+
+    /* ── Print Typography & Vertical Rhythm ── */
+    :is(.markdown-preview-view, .markdown-rendered) {
+        font-family: var(--paper-text-font) !important;
+        font-size: 11pt !important;
+        line-height: var(--paper-print-line-height) !important;
+    }
+
+    :is(.markdown-preview-view, .markdown-rendered)
+        :is(h1, h2, h3, h4, h5, h6) {
+        break-after: avoid !important;
+        color: var(--paper-print-text, #1e1e1e) !important;
+        line-height: 1.22 !important;
+        page-break-after: avoid !important;
+    }
+
+    :is(.markdown-preview-view, .markdown-rendered) h1 {
+        font-size: 18pt !important;
+        margin: 1.8em auto 1.15em !important;
+        text-align: center !important;
+    }
+
+    :is(.markdown-preview-view, .markdown-rendered) > h1:first-child {
+        margin-top: 0 !important;
+    }
+
+    :is(.markdown-preview-view, .markdown-rendered) h2 {
+        font-size: 14pt !important;
+        margin: 1.55em 0 0.65em !important;
+    }
+
+    :is(.markdown-preview-view, .markdown-rendered) h3 {
+        font-size: 12.2pt !important;
+        margin: 1.25em 0 0.5em !important;
+    }
+
+    :is(.markdown-preview-view, .markdown-rendered) h4 {
+        font-size: 11pt !important;
+        margin: 1em 0 0.4em !important;
+    }
+
+    :is(.markdown-preview-view, .markdown-rendered) :is(h5, h6) {
+        font-size: 10pt !important;
+        margin: 0.9em 0 0.35em !important;
+    }
+
+    :is(.markdown-preview-view, .markdown-rendered) p {
+        margin: 0 0 var(--paper-print-paragraph-gap) !important;
+        orphans: 3 !important;
+        text-align: var(--paper-prose-align) !important;
+        text-align-last: var(--paper-prose-align-last) !important;
+        text-justify: inter-word !important;
+        -webkit-hyphens: var(--paper-prose-hyphens) !important;
+        hyphens: var(--paper-prose-hyphens) !important;
+        widows: 3 !important;
+    }
+
+    :is(.markdown-preview-view, .markdown-rendered) p:has(+ :is(ul, ol)),
+    :is(.markdown-preview-view, .markdown-rendered)
+        .el-p:has(+ :is(.el-ul, .el-ol))
+        > p {
+        margin-bottom: 0.25em !important;
+    }
+
+    :is(.markdown-preview-view, .markdown-rendered) :is(ul, ol) {
+        margin: 0.2em 0 0.85em 1.2em !important;
+        padding-left: 1.15em !important;
+    }
+
+    :is(.markdown-preview-view, .markdown-rendered) li {
+        margin-block: 0.16em !important;
+    }
+
+    :is(.markdown-preview-view, .markdown-rendered) li > :is(ul, ol) {
+        margin-block: 0.12em 0.25em !important;
+    }
+
+    :is(.markdown-preview-view, .markdown-rendered) blockquote {
+        margin: 0.85em 0 0.95em !important;
+        padding-left: 0.9em !important;
+    }
+
+    :is(.markdown-preview-view, .markdown-rendered) :is(table, pre) {
+        margin-block: 1.05em !important;
+    }
+
+    :is(.markdown-preview-view, .markdown-rendered) table {
+        font-family: inherit !important;
+        font-size: inherit !important;
+        line-height: 1.45 !important;
+    }
+
+    :is(.markdown-preview-view, .markdown-rendered) :is(th, td) {
+        font-family: inherit !important;
+        font-size: inherit !important;
+        line-height: inherit !important;
+    }
+
+    :is(.markdown-preview-view, .markdown-rendered) :is(code, pre) {
+        font-family: var(--paper-mono-font) !important;
+    }
+
+    /* ── Lists / bullets ──
+     * Print/export renderers do not consistently preserve Obsidian's
+     * `.list-bullet` spans. Use native markers in print so bullets keep
+     * the theme's disc / hollow circle / square rhythm everywhere.
+     */
+    :is(
+            .print,
+            #print-preview,
+            .better-export-pdf,
+            .markdown-preview-view,
+            .markdown-rendered
+        )
+        .list-bullet {
+        display: none !important;
+    }
+
+    :is(
+            .print,
+            #print-preview,
+            .better-export-pdf,
+            .markdown-preview-view,
+            .markdown-rendered
+        )
+        ul,
+    :is(
+            .print,
+            #print-preview,
+            .better-export-pdf,
+            .markdown-preview-view,
+            .markdown-rendered
+        )
+        ul.has-list-bullet {
+        list-style-type: disc !important;
+    }
+
+    :is(
+            .print,
+            #print-preview,
+            .better-export-pdf,
+            .markdown-preview-view,
+            .markdown-rendered
+        )
+        ul
+        ul,
+    :is(
+            .print,
+            #print-preview,
+            .better-export-pdf,
+            .markdown-preview-view,
+            .markdown-rendered
+        )
+        ul
+        ul.has-list-bullet {
+        list-style-type: circle !important;
+    }
+
+    :is(
+            .print,
+            #print-preview,
+            .better-export-pdf,
+            .markdown-preview-view,
+            .markdown-rendered
+        )
+        ul
+        ul
+        ul,
+    :is(
+            .print,
+            #print-preview,
+            .better-export-pdf,
+            .markdown-preview-view,
+            .markdown-rendered
+        )
+        ul
+        ul
+        ul.has-list-bullet {
+        list-style-type: "- " !important;
+    }
+
+    :is(
+            .print,
+            #print-preview,
+            .better-export-pdf,
+            .markdown-preview-view,
+            .markdown-rendered
+        )
+        ul
+        > li::marker {
+        color: var(--paper-list-marker-color) !important;
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+    }
+
+    :is(
+            .print,
+            #print-preview,
+            .better-export-pdf,
+            .markdown-preview-view,
+            .markdown-rendered
+        )
+        ol
+        > li::marker {
+        color: var(--paper-print-text, #1e1e1e) !important;
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+    }
+
+    /* ── Images ── */
+    :is(.markdown-preview-view, .markdown-rendered) img {
+        max-width: 100% !important;
+        height: auto !important;
+        page-break-inside: avoid !important;
+        break-inside: avoid !important;
+        display: block;
+        margin-inline: auto;
+    }
+
+    /* ── Embedded / Transclusion cleanup ── */
+    .markdown-embed,
+    .internal-embed {
+        border: none !important;
+        box-shadow: none !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    /* ── Better Export PDF plugin compatibility ──
+     * This plugin wraps content differently; these rules
+     * ensure the same full-width behavior.
+     */
+    :is(.print, #print-preview, .better-export-pdf)
+        :is(.markdown-preview-view, .markdown-rendered) {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+}
+
+/* ===== END OF THEME ===== */

@@ -1,0 +1,16 @@
+{
+  "_codeBlock": {
+    "backgroundColor": "oklab(0.922221 0.000322938 -0.0125731)",
+    "color": "rgb(167, 58, 138)"
+  },
+  "_preBlock": {
+    "backgroundColor": "oklab(0.922221 0.000322938 -0.0125731)",
+    "borderColor": "rgba(0, 0, 0, 0)"
+  },
+  "header": {
+    "color": "rgb(76, 80, 200)",
+    "fontStyle": "normal",
+    "fontWeight": "700",
+    "textDecoration": "none"
+  }
+}

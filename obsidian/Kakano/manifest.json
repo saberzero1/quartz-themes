@@ -1,7 +1,7 @@
 {
   "name": "Kakano",
-  "version": "7.0.6",
-  "minAppVersion": "1.11.0",
+  "version": "8.2.0",
+  "minAppVersion": "1.13.0",
   "author": "Isaac Freeman",
   "authorUrl": "https://isaac.freeman.org.nz"
 }

@@ -1,7 +1,7 @@
 /*──────────────────────────────────────
 Pomme Notes Theme for Obsidian
-Version 2.0.6
-@paralloid, 2026-02-13
+Version 2.1.1
+@paralloid, 2026-07-02
 ───────────────────────────────────────*/
 
 /* @settings
@@ -19,13 +19,14 @@ settings:
 
 @charset "UTF-8";
 body {
-    /* --background-modifier-hover: rgba(var(--mono-rgb-100), 0.1); */
-    --blockquote-background-color: rgba(128,128,128,0.1);
-    --blockquote-border-color: hsla(calc(var(--accent-h) - 120), calc(var(--accent-s) * 0.7), var(--accent-l), 0.9);
+    --blockquote-background-color: hsla(calc(var(--accent-h) - 180), calc(var(--accent-s) * 0.7), var(--accent-l), 0.15);
+    --blockquote-border-color: hsla(calc(var(--accent-h) - 180), calc(var(--accent-s) * 0.7), var(--accent-l), 0.9);
     --bold-color: var(--text-extreme);
     --border-width: 0.5px;
     --button-radius: var(--radius-l);
     --callout-padding: 15px 10px 0px 20px;
+    --callout-content-padding: 0px 0px 0px 1.25rem;
+    --callout-title-padding: 0px 0px 10px 0px;
     --checkbox-color: var(--color-accent);
     --checklist-done-color: var(--text-faint);
     --clickable-icon-radius: var(--radius-l);
@@ -33,30 +34,38 @@ body {
     --embed-padding: 0px;
     --font-bold: 600;
     --font-semibold: 500;
-    --font-ui-small: 13px;
+    --font-ui-small: 0.9em;
     --icon-l-stroke-width: 1.5px !important;
     --icon-stroke: 1.5px !important;
     --link-decoration-hover: none;
     --link-decoration: none;
     --list-spacing: 0em;
     --nav-item-background-hover: none;
-    --p-spacing-empty: 1.5rem;
-    --p-spacing: 1em;
     --pill-border-width: 1px !important;
-    --radius-l: 32px;
-    --radius-m: 18px;
-    --radius-s: 10px;
-    --radius-xl: 36px;
+    --radius-s: 12px;
+    --radius-m: 24px;
+    --radius-l: 36px;
+    --radius-xl: 48px;
     --setting-items-radius: var(--radius-l);
     --side-padding: 20px;
     --tab-curve: 0px;
     --tab-outline-width: 1px;
-    --tab-radius-active: 12px 12px 0px 0px;
+    --tab-radius-active: var(--radius-m);
     --tab-radius: var(--radius-m);
     --tab-stacked-pane-width: 1200px;
     --text-accent-hover: var(--color-accent-2);
     --tab-text-color-focused-active-current: var(--text-extreme);
     --text-highlight-bg: hsla(calc(var(--accent-h) + 120), calc(var(--accent-s) * 0.4), var(--accent-l), 0.5);
+    }
+
+@supports (corner-shape: squircle) {
+    .mod-macos {
+    --corner-shape: squircle;
+    --radius-s: 18px;
+    --radius-m: 32px;
+    --radius-l: 56px;
+    --radius-xl: 64px;
+    }
 }
 
 /* DARK MODE */
@@ -88,6 +97,21 @@ body {
     --element-shadow: 0 0px 15px rgba(0, 0, 0, 0.8);
     --div-color: rgba(170,170,170,0.2);
     --text-normal: #cccccc;
+    --callout-bug: hsla(calc(var(--accent-h) - 70), calc(var(--accent-s) * 0.2), var(--accent-l));
+    --callout-default: hsla(calc(var(--accent-h) - 180), calc(var(--accent-s) * 0.2), var(--accent-l));
+    --callout-error: hsla(calc(var(--accent-h) - 270), calc(var(--accent-s) * 0.2), var(--accent-l));
+    --callout-example: hsla(calc(var(--accent-h) - 220), calc(var(--accent-s) * 0.2), var(--accent-l));
+    --callout-fail: hsla(calc(var(--accent-h) - 30), calc(var(--accent-s) * 0.2), var(--accent-l));
+    --callout-important: hsla(calc(var(--accent-h) - 90), calc(var(--accent-s) * 0.2), var(--accent-l));
+    --callout-info: hsla(calc(var(--accent-h) - 120), calc(var(--accent-s) * 0.2), var(--accent-l));
+    --callout-question: hsla(calc(var(--accent-h) - 270), calc(var(--accent-s) * 0.2), var(--accent-l));
+    --callout-quote: hsla(calc(var(--accent-h) - 150), calc(var(--accent-s) * 0.2), var(--accent-l));
+    --callout-success: hsla(calc(var(--accent-h) - 50), calc(var(--accent-s) * 0.2), var(--accent-l));
+    --callout-summary: hsla(calc(var(--accent-h) - 0), calc(var(--accent-s) * 0.2), var(--accent-l));
+    --callout-tip: hsla(calc(var(--accent-h) - 320), calc(var(--accent-s) * 0.2), var(--accent-l));
+    --callout-todo: hsla(calc(var(--accent-h) - 270), calc(var(--accent-s) * 0.2), var(--accent-l));
+    --callout-warning: hsla(calc(var(--accent-h) - 30), calc(var(--accent-s) * 0.2), var(--accent-l));
+
 }
 
 /* LIGHT MODE COLORS */
@@ -103,6 +127,21 @@ body {
     --element-shadow: 0 0px 15px rgba(0, 0, 0, 0.1);
     --div-color: rgba(170,170,170,0.6);
     --text-normal: #404040;
+    --callout-bug: hsla(calc(var(--accent-h) - 70), calc(var(--accent-s) * 0.1), var(--accent-l));
+    --callout-default: hsla(calc(var(--accent-h) - 180), calc(var(--accent-s) * 0.1), var(--accent-l));
+    --callout-error: hsla(calc(var(--accent-h) - 270), calc(var(--accent-s) * 0.1), var(--accent-l));
+    --callout-example: hsla(calc(var(--accent-h) - 220), calc(var(--accent-s) * 0.1), var(--accent-l));
+    --callout-fail: hsla(calc(var(--accent-h) - 30), calc(var(--accent-s) * 0.1), var(--accent-l));
+    --callout-important: hsla(calc(var(--accent-h) - 90), calc(var(--accent-s) * 0.1), var(--accent-l));
+    --callout-info: hsla(calc(var(--accent-h) - 120), calc(var(--accent-s) * 0.1), var(--accent-l));
+    --callout-question: hsla(calc(var(--accent-h) - 270), calc(var(--accent-s) * 0.1), var(--accent-l));
+    --callout-quote: hsla(calc(var(--accent-h) - 150), calc(var(--accent-s) * 0.1), var(--accent-l));
+    --callout-success: hsla(calc(var(--accent-h) - 50), calc(var(--accent-s) * 0.1), var(--accent-l));
+    --callout-summary: hsla(calc(var(--accent-h) - 0), calc(var(--accent-s) * 0.1), var(--accent-l));
+    --callout-tip: hsla(calc(var(--accent-h) - 320), calc(var(--accent-s) * 0.1), var(--accent-l));
+    --callout-todo: hsla(calc(var(--accent-h) - 270), calc(var(--accent-s) * 0.1), var(--accent-l));
+    --callout-warning: hsla(calc(var(--accent-h) - 30), calc(var(--accent-s) * 0.1), var(--accent-l));
+
 }
 
 .tinted.theme-light {
@@ -605,6 +644,11 @@ button:not(.clickable-icon) {
     animation: fade-in 0.5s;
 }
 
+.callout-icon {
+    margin-left: -5px;
+    margin-right: 3px;
+}
+
 /* Highlights */
 
 .is-flashing {
@@ -627,17 +671,26 @@ button:not(.clickable-icon) {
 /* Headings */
 /* ====================== */
 
+body {
+    --h1-weight: 400;
+    --h2-weight: 400;
+    --h3-weight: 400;
+    --h4-weight: 400;
+    --h5-weight: 400;
+    --h6-weight: 400;
+    --h1-letter-spacing: 0;
+    --h2-letter-spacing: 0;
+    --h3-letter-spacing: 0;
+    --h4-letter-spacing: -0.005em;
+    --h5-letter-spacing: -0.002em;
+    --h6-letter-spacing: 0em;
+}
+
 .cm-editor h1,
 .markdown-rendered h1,
 .markdown-preview-view h1,
 .HyperMD-header-1 {
     color: var(--text-extreme);
-    font-size: 1.75em;
-    font-weight: 600;
-    padding-top: var(--p-spacing);
-    /* margin-top: 0px;
-    margin-bottom: 0.85em;
-    padding-top: 0.2rem; */
 }
 
 .cm-editor h2,
@@ -645,12 +698,6 @@ button:not(.clickable-icon) {
 .markdown-preview-view h2,
 .HyperMD-header-2 {
     color: var(--text-extreme);
-    font-size: 1.5em;
-    font-weight: 600 ;
-    /* margin-bottom: 1em;
-    padding-top: 0.33em;
-    padding-bottom: 0.33em; */
-    border-bottom: 1px solid var(--div-color);
 }
 
 .cm-editor h3,
@@ -658,11 +705,6 @@ button:not(.clickable-icon) {
 .markdown-preview-view h3,
 .HyperMD-header-3 {
     color: var(--text-extreme);
-    font-size: 1.25em;
-    font-weight: 600;
-    /* margin-top: 0px;
-    margin-bottom: 1em;
-    padding-bottom: 0.33em; */
 }
 
 .cm-editor h4,
@@ -670,39 +712,14 @@ button:not(.clickable-icon) {
 .markdown-preview-view h4,
 .HyperMD-header-4 {
     color: var(--text-extreme);
-    padding-bottom: 0px;
-    font-weight: 650;
-    font-size: 1em;
-    margin-top: 0px;
-    margin-bottom: 0em;
-    padding-top: 0px;
-    border-bottom: 1px solid var(--div-color); 
-    padding-bottom: 0.25rem;
-}
-
-.cm-editor h5,
-.markdown-rendered h5,
-.markdown-preview-view h5,
-.HyperMD-header-5 {
-    padding-bottom: 0px;
-    font-weight: 400;
-    font-size: 1em;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    padding-top: 0px;
 }
 
 .cm-editor h6,
 .markdown-rendered h6,
 .markdown-preview-view h6,
 .HyperMD-header-6 {
-    padding-bottom: 0px;
     font-weight: 400;
-    margin-top: 0px;
-    font-size: 1em;
     color: var(--color-accent);
-    margin-bottom: 0px;
-    padding-top: 0px;
 }
 
 @media print {
@@ -738,18 +755,6 @@ button:not(.clickable-icon) {
 /* ================================= */
 /* Paragraphs, checkboxes, and Lists */
 /* ================================= */
-
-/* .markdown-rendered p,
-.markdown-preview-view p {
-    margin-top: 0px;
-    margin-bottom: 1.5em;
-} */
-
-.markdown-rendered ol,
-.markdown-rendered ul {
-    margin-block-start: 0em;
-    margin-block-end: 1.5em;
-}
 
 .cm-html-embed thead > tr > th, .markdown-rendered thead > tr > th, .cm-html-embed tbody > tr > td, .markdown-rendered tbody > tr > td {
     border-color: var(--div-color) !important;
@@ -982,11 +987,6 @@ body.is-phone {
     box-shadow: var(--element-shadow);
     margin-top: 0px;
     padding-top: 0px;
-}
-
-iframe[src*="youtu"] {
-    width: 100%;
-    border-radius: var(--radius-m);
 }
 
 .mobile-navbar-action.has-longpress-menu .navbar-action-flair {
@@ -1326,6 +1326,7 @@ body {
 .theme-dark  { --glass-edge: var(--liquid-shadow-dark); }
 
 .status-bar,
+.bases-cards-item,
 .prompt, 
 .modal.mod-settings,
 .is-mobile .mobile-navbar,
@@ -1338,6 +1339,10 @@ body {
     box-shadow: var(--glass-edge) !important;
 }
 
+.mod-macos.is-popout-window .mod-settings {
+    border-radius: 0px !important;
+}
+
 .pdf-page-input,
 .document-replace-input {
 border-radius: var(--radius-l) !important;
@@ -1346,4 +1351,18 @@ border-radius: var(--radius-l) !important;
 .is-mobile .pdf-toolbar-left {
     padding-top: 8px;
     padding-bottom: 8px;
+}
+
+
+/* TYPOGRAPHY UPDATE */
+
+body {
+    --p-spacing: 1em;
+    --heading-spacing: 1em;
+}
+
+.cm-s-obsidian .cm-line.HyperMD-header,
+.markdown-rendered > .markdown-preview-section > .markdown-preview-pusher + div:not(.mod-ui) > :first-child, .markdown-rendered > .markdown-preview-section > .mod-ui + div:not(.mod-ui) > :first-child {
+    margin-top: 0;
+    padding-top: 0;
 }

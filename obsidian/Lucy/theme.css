@@ -1,0 +1,509 @@
+/*
+ * Lucid Theme for Obsidian (Lucy variation)
+ * A clean, spacious, Notion-inspired theme for clear thinking
+ *
+ * Author: Gabriel
+ * Version: 1.0.0
+ */
+
+/* ===================================================
+   THEME VARIABLES & SETTINGS
+   =================================================== */
+
+body {
+  /* Heading hierarchy tokens */
+  --p-spacing-empty: 1px;
+  --p-spacing-empty-double: calc(var(--p-spacing-empty) * 2);
+  --blockquote-border-inset: 7.5px;
+  --comment-height: 30px;
+}
+
+.theme-light {
+  /*--color-accent: var(--color-green);*/
+
+  --h1-line-color: color-mix(in srgb, var(--color-accent) 10%, rgba(70, 70, 70, 0.3));
+  --h2-line-color: color-mix(in srgb, var(--color-accent) 10%, rgba(150, 150, 150, 0.5));
+
+  --h1-text-color: color-mix(in srgb, var(--color-accent) 65%, var(--color-base-100));
+  --h2-text-color: color-mix(in srgb, var(--color-accent) 85%, var(--color-base-100));
+  --h3-text-color: color-mix(in srgb, var(--color-accent) 100%, transparent);
+  --h4-text-color: color-mix(in srgb, var(--color-accent) 70%, transparent);
+  --h5-text-color: color-mix(in srgb, var(--color-accent) 25%, var(--color-base-70));
+  --h6-text-color: color-mix(in srgb, var(--color-accent) 25%, var(--color-base-60));
+
+  --code-normal: rgb(235, 87, 87);
+  --text-highlight-bg: rgba(255, 208, 0, 0.4);
+  --text-highlight-bright-bg: rgba(249, 249, 95, 0.851);
+  --code-tag: var(--color-base-70);
+  --code-function: var(--color-base-70);
+  --list-marker-color: var(--color-base-50);
+
+  /* Links */
+  --text-accent: color-mix(in srgb, var(--color-accent) 85%, var(--color-base-100));
+
+  --link-color: var(--text-accent);
+  --link-color-hover: var(--text-accent-hover);
+  --link-decoration: underline;
+  --link-decoration-hover: underline;
+  --link-decoration-thickness: auto;
+  --link-weight: var(--font-weight);
+  --link-external-color: var(--text-accent);
+  --link-external-color-hover: var(--text-accent-hover);
+  --link-external-decoration: underline;
+  --link-external-decoration-hover: underline;
+  --link-external-filter: none;
+  --link-unresolved-color: var(--text-accent);
+  --link-unresolved-opacity: 0.7;
+  --link-unresolved-filter: none;
+  --link-unresolved-decoration-style: solid;
+  --link-unresolved-decoration-color: hsla(var(--interactive-accent-hsl), 0.3);
+
+  --color-accent-rgb: 65, 37, 131;
+  --callout-default: var(--color-accent-rgb);
+  --callout-info: var(--color-accent-rgb);
+  --callout-todo: var(--color-accent-rgb);
+
+  --table-header-border-width: 0;
+  --table-header-bottom-border-width: 1.5px;
+  --table-header-bottom-border-color: var(--color-base-50);
+  --table-column-first-border-width: 0;
+  --table-column-last-border-width: 0;
+  --table-row-last-border-width: 0;
+  --table-edge-cell-padding-first: 0;
+  --table-edge-cell-padding-last: 0;
+  --table-cell-padding: 4px 10px;
+  --table-header-background: color-mix(in srgb, var(--background-primary) 98%, var(--text-normal));
+  /*--table-cell-background: color-mix(in srgb, var(--background-primary) 97%, var(--text-normal));*/
+}
+
+.theme-dark {
+  --h1-line-color: color-mix(in srgb, var(--color-accent) 10%, rgba(255, 255, 255, 0.15));
+  --h2-line-color: color-mix(in srgb, var(--color-accent) 10%, rgba(255, 255, 255, 0.2));
+
+  --h1-text-color: color-mix(in srgb, var(--color-accent) 65%, var(--color-base-100));
+  --h2-text-color: color-mix(in srgb, var(--color-accent) 85%, var(--color-base-100));
+  --h3-text-color: color-mix(in srgb, var(--color-accent) 100%, transparent);
+  --h4-text-color: color-mix(in srgb, var(--color-accent) 70%, transparent);
+  --h5-text-color: color-mix(in srgb, var(--color-accent) 25%, var(--color-base-70));
+  --h6-text-color: color-mix(in srgb, var(--color-accent) 25%, var(--color-base-60));
+
+  --code-normal: rgb(235, 95, 95);
+  --text-highlight-bg: rgba(255, 208, 0, 0.25);
+  --code-tag: var(--color-base-70);
+  --code-function: var(--color-base-70);
+  --list-marker-color: var(--color-base-50);
+
+  /* Links */
+  --text-accent: color-mix(in srgb, var(--color-accent) 85%, var(--color-base-100));
+
+  --link-color: var(--text-accent);
+  --link-color-hover: var(--text-accent-hover);
+  --link-decoration: underline;
+  --link-decoration-hover: underline;
+  --link-decoration-thickness: auto;
+  --link-weight: var(--font-weight);
+  --link-external-color: var(--text-accent);
+  --link-external-color-hover: var(--text-accent-hover);
+  --link-external-decoration: underline;
+  --link-external-decoration-hover: underline;
+  --link-external-filter: none;
+  --link-unresolved-color: var(--text-accent);
+  --link-unresolved-opacity: 0.7;
+  --link-unresolved-filter: none;
+  --link-unresolved-decoration-style: solid;
+  --link-unresolved-decoration-color: hsla(var(--interactive-accent-hsl), 0.3);
+
+  --color-accent-rgb: 147, 206, 255;
+  --callout-default: var(--color-accent-rgb);
+  --callout-info: var(--color-accent-rgb);
+  --callout-todo: var(--color-accent-rgb);
+
+  --table-header-border-width: 0;
+  --table-header-bottom-border-width: 1.5px;
+  --table-header-bottom-border-color: var(--color-base-50);
+  --table-column-first-border-width: 0;
+  --table-column-last-border-width: 0;
+  --table-row-last-border-width: 0;
+  --table-edge-cell-padding-first: 0;
+  --table-edge-cell-padding-last: 0;
+  --table-cell-padding: 4px 10px;
+  --table-header-background: color-mix(in srgb, var(--background-primary) 85%, var(--text-normal)); /*OPTIONAL*/
+  /*--table-cell-background: color-mix(in srgb, var(--background-primary) 95%, var(--text-normal));*/ /*OPTIONAL*/
+}
+
+.cm-strikethrough {
+  color: var(--color-base-50);
+}
+
+/* ===================================================
+   EDITOR SPACING (LIVE PREVIEW)
+   =================================================== */
+
+.markdown-source-view.mod-cm6 .cm-line {
+  position: relative;
+  padding-top: var(--p-spacing-empty-double);
+  padding-bottom: var(--p-spacing-empty);
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.markdown-source-view.mod-cm6 .cm-content .cm-line.HyperMD-blank-line,
+.markdown-source-view.mod-cm6 .cm-content .cm-line:empty,
+.markdown-source-view.mod-cm6 .cm-content .cm-line:has(br:only-child) {
+  min-height: 8px;
+  height: 8px;
+  line-height: 8px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.markdown-source-view.mod-cm6 .cm-content .cm-line.HyperMD-blank-line::after,
+.markdown-source-view.mod-cm6 .cm-content .cm-line:has(br:only-child)::after {
+  content: "¬";
+  color: rgba(100, 100, 100, 0.15);
+  position: absolute;
+  left: -8px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.8em;
+  pointer-events: none;
+}
+
+/* bullet spacing */
+.markdown-source-view.mod-cm6 .cm-content .HyperMD-list-line.HyperMD-list-line-1.cm-line,
+.markdown-source-view.mod-cm6 .cm-content .HyperMD-list-line.HyperMD-list-line-2.cm-line,
+.markdown-source-view.mod-cm6 .cm-content .HyperMD-list-line.HyperMD-list-line-3.cm-line {
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+/* Custom bullet appearance */
+.cm-editor .cm-formatting-list-ul {
+  line-height: 1;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+.cm-editor .cm-formatting-list-ol {
+  margin-right: 8px;
+}
+
+/* Level-dependent bullet shapes (Editor / Live Preview)
+   Cycles every 3 levels: disc → circle → square
+*/
+
+/* Level 2, 5: hollow circle */
+.cm-editor .HyperMD-list-line-2 .list-bullet::after,
+.cm-editor .HyperMD-list-line-5 .list-bullet::after {
+  background-color: transparent;
+  border: 1.5px solid currentColor;
+  box-sizing: border-box;
+}
+
+/* Level 3, 6: filled square */
+.cm-editor .HyperMD-list-line-3 .list-bullet::after,
+.cm-editor .HyperMD-list-line-6 .list-bullet::after {
+  border-radius: 0;
+}
+
+/* ===================================================
+   H1 — EDITOR + RENDERED
+   =================================================== */
+
+.cm-editor .cm-line .cm-header-1,
+.cm-editor .cm-line.HyperMD-header-1,
+.markdown-rendered h1 {
+  font-size: 2.25em;
+  font-weight: 700;
+  line-height: 1.3;
+  padding: 24px 0 18px;
+  color: var(--h1-text-color);
+}
+
+.cm-editor .cm-line.HyperMD-header-1::before,
+.markdown-rendered h1::before {
+  top: 12px;
+}
+
+.cm-editor .cm-line.HyperMD-header-1::after,
+.markdown-rendered h1::after {
+  bottom: 12px;
+}
+
+.cm-editor .cm-line.HyperMD-header-1::before,
+.cm-editor .cm-line.HyperMD-header-1::after,
+.markdown-rendered h1::before,
+.markdown-rendered h1::after {
+  content: "";
+  position: absolute;
+  border-top: 2px solid var(--h1-line-color);
+  pointer-events: none;
+}
+
+/* Live Preview: full-viewport stretch */
+.markdown-source-view.mod-cm6 .cm-content .cm-line.HyperMD-header-1::before,
+.markdown-source-view.mod-cm6 .cm-content .cm-line.HyperMD-header-1::after {
+  left: 50%;
+  right: auto;
+  width: 100vw;
+  transform: translateX(-50%);
+}
+
+/* ===================================================
+   H2 — EDITOR + RENDERED
+   =================================================== */
+
+.cm-editor .cm-line .cm-header-2,
+.cm-editor .cm-line.HyperMD-header-2,
+.markdown-rendered h2 {
+  font-size: 1.8em;
+  font-weight: 600;
+  line-height: 1.3;
+  padding: 22px 0 6px;
+  margin-bottom: 12px !important;
+  color: var(--h2-text-color);
+}
+
+.cm-editor .cm-line.HyperMD-header-2,
+.markdown-rendered h2 {
+  border-bottom: 2px solid var(--h2-line-color);
+}
+
+/* ===================================================
+   H3 — EDITOR + RENDERED
+   =================================================== */
+
+.cm-editor .cm-line .cm-header-3,
+.cm-editor .cm-line.HyperMD-header-3,
+.markdown-rendered h3 {
+  font-size: 1.6em;
+  font-weight: 550;
+  line-height: 1.3;
+  padding: 20px 0 6px;
+  color: var(--h3-text-color);
+}
+
+/* ===================================================
+   H4 — EDITOR + RENDERED
+   =================================================== */
+
+.cm-editor .cm-line .cm-header-4,
+.cm-editor .cm-line.HyperMD-header-4,
+.markdown-rendered h4 {
+  font-size: 1.4em;
+  font-weight: 550;
+  line-height: 1.3;
+  padding: 18px 0 4px;
+  color: var(--h4-text-color);
+}
+
+/* ===================================================
+   H5 — EDITOR + RENDERED
+   =================================================== */
+
+.cm-editor .cm-line .cm-header-5,
+.cm-editor .cm-line.HyperMD-header-5,
+.markdown-rendered h5 {
+  font-size: 1.15em;
+  font-weight: 550;
+  line-height: 1.3;
+  padding: 16px 0 4px;
+  text-transform: none;
+  color: var(--h5-text-color);
+}
+
+/* ===================================================
+   H6 — EDITOR + RENDERED
+   =================================================== */
+
+.cm-editor .cm-line .cm-header-6,
+.cm-editor .cm-line.HyperMD-header-6,
+.markdown-rendered h6 {
+  font-size: 1.1em;
+  font-weight: 600;
+  line-height: 1.3;
+  padding: 12px 0 4px;
+  color: var(--h6-text-color);
+}
+
+/* Subtle heading markers */
+.cm-editor .cm-formatting-header {
+  color: rgba(55, 53, 47, 0.35);
+  font-weight: 400;
+}
+
+.theme-dark .cm-editor .cm-formatting-header {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+/* ===================================================
+   READING VIEW OTHER
+   =================================================== */
+
+/* Reading View: spacing between bullet/number and text */
+.markdown-rendered li {
+  padding-left: 8px;
+}
+
+/* ===================================================
+   Table formatting
+   =================================================== */
+
+.table-editor .cm-line {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+/* Unset 8px line height in tables */
+.table-editor .cm-s-obsidian.mod-cm6.is-live-preview .cm-line:has(br:only-child) {
+  min-height: unset;
+  height: unset;
+  line-height: unset;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.cm-html-embed table thead tr > *,
+.markdown-rendered table thead tr > * {
+  border-bottom: var(--table-header-bottom-border-width) solid var(--table-header-bottom-border-color);
+  background-color: var(--table-header-background) !important;
+}
+
+/* Keep table bodies lightly distinct from the page, with a clearer header row. */
+.cm-html-embed table tbody tr > *,
+.markdown-rendered table tbody tr > *,
+.cm-html-embed table tbody tr:hover > *,
+.markdown-rendered table tbody tr:hover > * {
+  background-color: var(--table-cell-background) !important;
+}
+
+/* ===================================================
+   Blockquotes
+   =================================================== */
+
+.markdown-source-view.mod-cm6 .cm-content .cm-line.HyperMD-quote::before,
+.markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote::before,
+.markdown-source-view.mod-cm6 .cm-blockquote-border::before {
+  top: var(--blockquote-border-inset);
+  bottom: var(--blockquote-border-inset);
+}
+
+/* Connect consecutive blockquotes */
+.markdown-source-view.mod-cm6 .cm-content .cm-line.HyperMD-quote:has(+ .HyperMD-quote)::before,
+.markdown-source-view.mod-cm6
+  .cm-content
+  .cm-line.HyperMD-quote-2:has(+ .HyperMD-quote-2)
+  .cm-blockquote-border::before {
+  bottom: 0;
+}
+
+.markdown-source-view.mod-cm6 .cm-content .cm-line.HyperMD-quote + .HyperMD-quote::before,
+.markdown-source-view.mod-cm6 .cm-content .cm-line.HyperMD-quote-2 + .HyperMD-quote-2 .cm-blockquote-border::before {
+  top: 0;
+}
+
+/* ===================================================
+   Formatting markers
+   =================================================== */
+.cm-formatting-header-1,
+.cm-formatting-header-2,
+.cm-formatting-header-3,
+.cm-formatting-header-4,
+.cm-formatting-header-5,
+.cm-formatting-header-6,
+.cm-formatting-strong,
+.cm-formatting-em,
+.cm-formatting-strikethrough,
+.cm-formatting-quote,
+.cm-formatting-math,
+.cm-formatting-code,
+.cm-formatting-code-block,
+.cm-formatting-task,
+.cm-formatting-link,
+.cm-formatting-highlight {
+  color: var(--list-marker-color) !important;
+}
+
+/* ===================================================
+   Comments
+   =================================================== */
+/* Comment markers %% - hide the text, keep the borders */
+/* Shared base */
+.cm-comment-start,
+.cm-comment-end,
+.cm-comment {
+  background: var(--text-highlight-bright-bg);
+  box-sizing: border-box;
+  display: inline;
+  line-height: var(--comment-height);
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  vertical-align: middle;
+}
+
+/* Markers */
+.cm-comment-start,
+.cm-comment-end {
+  color: var(--list-marker-color) !important;
+  font-size: 10px;
+  border-color: color-mix(in srgb, var(--text-highlight-bright-bg) 55%, var(--color-base-100)) !important;
+  padding: 9px 10px !important;
+}
+
+.cm-comment-start {
+  border-radius: 4px 0 0 4px;
+  border-left: 4px solid;
+  margin-left: 10px;
+}
+
+.cm-comment-end {
+  border-radius: 0 4px 4px 0;
+  border-right: 4px solid;
+  margin-right: 10px;
+}
+
+/* Body */
+.cm-comment {
+  color: var(--text-normal);
+  padding: 5.5px 0;
+}
+
+/* Inside headers: the fixed line-height + vertical padding above bleed
+   past the (tight, large-font) header line box and overlap wrapped rows.
+   Drop the vertical inflation so these spans flow within the header line. */
+.HyperMD-header .cm-comment,
+.HyperMD-header .cm-comment-start,
+.HyperMD-header .cm-comment-end,
+.HyperMD-header .cm-inline-code,
+.HyperMD-header .cm-highlight {
+  line-height: inherit;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  vertical-align: baseline;
+}
+
+/* ===================================================
+   Title
+   =================================================== */
+.view-header-title-container {
+  opacity: 0;
+  transition: opacity 0.1s ease-in-out;
+}
+.view-header:hover .view-header-title-container,
+.view-header-title-container:focus-within {
+  opacity: 1;
+  transition: opacity 0.1s ease-in-out;
+}
+
+/* ===================================================
+   Tab Container Background
+   =================================================== */
+
+/*.workspace-tab-header-container,
+.mod-macos.is-hidden-frameless:not(.is-popout-window) .sidebar-toggle-button.mod-right {
+  background-color: rgba(207, 207, 207, 0.919);
+}
+
+.mod-top-right-space .workspace-tab-header {
+	border: 1px solid var(--color-base-50);
+  }*/

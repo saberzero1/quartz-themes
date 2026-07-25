@@ -3404,11 +3404,12 @@ body.theme-light {
   --h6-color: var(--color-default-h6) !important;
   --inline-title-color: var(--h1-color) !important;
   --border-color: #d4d4d4 !important;
+  --text-strong: #171717 !important;
   --link-decoration-color: var(--link-color) !important;
   --link-unresolved-color-hover: var(--color-accent) !important;
   --font-header: var(--font-text) !important;
   --font-monospace-size: 1em !important;
-  --text-strong: #171717 !important;
+  --font-text-weight: 400 !important;
   --link-unresolved-decoration-color-hover: hsla(
     var(--link-unresolved-color-hover),
     0.3
@@ -3757,7 +3758,6 @@ body.theme-light {
   --font-tag: var(--font-monospace) !important;
   --font-tag-size: 1em !important;
   --font-tag-weight: 400 !important;
-  --font-text-weight: 400 !important;
   --font-underlined-color: var(--text-normal) !important;
   --font-underlined-decoration-color: var(--font-underlined-color) !important;
   --font-underlined-decoration-line: underline !important;
@@ -4866,11 +4866,12 @@ body.theme-dark {
   --h6-color: var(--color-default-h6) !important;
   --inline-title-color: var(--h1-color) !important;
   --border-color: #404040 !important;
+  --text-strong: #f5f5f5 !important;
   --link-decoration-color: var(--link-color) !important;
   --link-unresolved-color-hover: var(--color-accent) !important;
   --font-header: var(--font-text) !important;
   --font-monospace-size: 1em !important;
-  --text-strong: #f5f5f5 !important;
+  --font-text-weight: 400 !important;
   --link-unresolved-decoration-color-hover: hsla(
     var(--link-unresolved-color-hover),
     0.3
@@ -5219,7 +5220,6 @@ body.theme-dark {
   --font-tag: var(--font-monospace) !important;
   --font-tag-size: 1em !important;
   --font-tag-weight: 400 !important;
-  --font-text-weight: 400 !important;
   --font-underlined-color: var(--text-normal) !important;
   --font-underlined-decoration-color: var(--font-underlined-color) !important;
   --font-underlined-decoration-line: underline !important;

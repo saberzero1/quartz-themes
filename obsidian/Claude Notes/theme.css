@@ -1,0 +1,1066 @@
+/*
+Claude Warm for Obsidian
+Inspired by a warm ivory and charcoal Claude-style palette.
+*/
+
+body {
+  --cw-black-soft: #2A2522;
+  --cw-white-soft: #FAF9F5;
+  --cw-shadow-soft: 0 10px 34px -24px rgba(0, 0, 0, 0.2);
+
+  --font-interface-theme: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-text-theme: ui-serif, Georgia, Cambria, "Times New Roman", serif;
+  --font-monospace-theme: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+
+  --radius-s: 6px;
+  --radius-m: 8px;
+  --radius-l: 12px;
+  --radius-xl: 16px;
+  --input-radius: 8px;
+  --tab-radius-active: 8px 8px 0 0;
+  --checkbox-radius: 4px;
+
+  --bold-color: var(--text-normal);
+  --italic-color: var(--text-normal);
+  --h1-color: var(--text-normal);
+  --h2-color: var(--text-normal);
+  --h3-color: var(--text-normal);
+  --h4-color: var(--text-muted);
+  --h5-color: var(--text-muted);
+  --h6-color: var(--text-muted);
+  --h1-size: 1.85em;
+  --h2-size: 1.45em;
+  --h3-size: 1.2em;
+  --heading-spacing: 1.25rem;
+  --file-line-width: 760px;
+  --line-height-normal: 1.65;
+  --line-height-tight: 1.35;
+}
+
+.theme-dark {
+  color-scheme: dark;
+
+  --color-base-00: #1F1E1D;
+  --color-base-05: #2A2522;
+  --color-base-10: #2A2522;
+  --color-base-20: #3D3632;
+  --color-base-25: #3D3632;
+  --color-base-30: #5A524C;
+  --color-base-35: #665F56;
+  --color-base-40: #8C877D;
+  --color-base-50: #B1ADA1;
+  --color-base-60: #D4C9BC;
+  --color-base-70: #E6E0D4;
+  --color-base-100: #FAF9F5;
+
+  --background-primary: #1F1E1D;
+  --background-primary-alt: #2A2522;
+  --background-secondary: #2A2522;
+  --background-secondary-alt: #2A2522;
+  --background-modifier-hover: rgba(90, 82, 76, 0.25);
+  --background-modifier-active-hover: rgba(102, 95, 86, 0.3);
+  --background-modifier-border: transparent;
+  --background-modifier-border-hover: transparent;
+  --background-modifier-border-focus: rgba(217, 119, 87, 0.5);
+  --background-modifier-form-field: #3D3632;
+  --background-modifier-form-field-highlighted: #3D3632;
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.35);
+
+  --text-normal: #E6E0D4;
+  --text-muted: #B1ADA1;
+  --text-faint: #8C877D;
+  --text-on-accent: #FFFFFF;
+  --text-on-accent-inverted: #141413;
+  --text-error: #D14D41;
+  --text-warning: #E0A55B;
+  --text-success: #788C5D;
+  --text-selection: #D4E4F4;
+  --text-highlight-bg: #D4E4F4;
+  --text-accent: #D97757;
+  --text-accent-hover: #E0A55B;
+
+  --color-accent: #D97757;
+  --color-accent-1: #E0A55B;
+  --color-accent-2: #C96442;
+  --interactive-accent-rgb: 217, 119, 87;
+  --interactive-accent-hsl: 14, 67%, 60%;
+  --interactive-normal: #3D3632;
+  --interactive-hover: #5A524C;
+  --interactive-accent: #D97757;
+  --interactive-accent-hover: #E0A55B;
+  --interactive-success: #788C5D;
+  --input-focus-border-color: rgba(217, 119, 87, 0.5);
+  --input-focus-ring-color: rgba(217, 119, 87, 0.15);
+
+  --link-color: #000000;
+  --link-color-hover: #000000;
+  --link-external-color: #000000;
+  --link-external-color-hover: #000000;
+
+  --tag-color: #E0A55B;
+  --tag-background: rgba(217, 119, 87, 0.12);
+  --tag-background-hover: rgba(217, 119, 87, 0.22);
+  --cw-tag-border-color: rgba(217, 119, 87, 0.25);
+
+  --titlebar-background: #1F1E1D;
+  --titlebar-background-focused: #1F1E1D;
+  --ribbon-background: #2A2522;
+  --tab-container-background: #2A2522;
+  --tab-outline-color: transparent;
+  --tab-text-color: #8C877D;
+  --tab-text-color-active: #E6E0D4;
+  --tab-background-active: #1F1E1D;
+
+  --nav-item-color: #8C877D;
+  --nav-item-color-hover: #E6E0D4;
+  --nav-item-color-active: #E6E0D4;
+  --nav-item-background-hover: rgba(90, 82, 76, 0.2);
+  --nav-item-background-active: rgba(217, 119, 87, 0.12);
+
+  --blockquote-border-color: #D97757;
+  --blockquote-color: #B1ADA1;
+  --code-background: rgba(90, 82, 76, 0.15);
+  --code-normal: #B1ADA1;
+  --code-comment: #665F56;
+  --code-function: #E0A55B;
+  --code-important: #D97757;
+  --code-keyword: #9D7CB6;
+  --code-operator: #B1ADA1;
+  --code-property: #788C5D;
+  --code-punctuation: #8C877D;
+  --code-string: #788C5D;
+  --code-tag: #D97757;
+  --code-value: #E0A55B;
+
+  --table-header-background: #3D3632;
+  --table-header-background-hover: #5A524C;
+  --table-row-background-hover: rgba(90, 82, 76, 0.06);
+  --hr-color: rgba(90, 82, 76, 0.35);
+  --background-modifier-error-rgb: 209, 77, 65;
+  --background-modifier-error: rgba(209, 77, 65, 0.18);
+  --background-modifier-error-hover: rgba(209, 77, 65, 0.28);
+  --background-modifier-success-rgb: 120, 140, 93;
+  --background-modifier-success: rgba(120, 140, 93, 0.15);
+
+  --color-red-rgb: 209, 77, 65;
+  --color-orange-rgb: 217, 119, 87;
+  --color-yellow-rgb: 224, 165, 91;
+  --color-green-rgb: 120, 140, 93;
+  --color-cyan-rgb: 91, 146, 142;
+  --color-blue-rgb: 217, 119, 87;
+  --color-purple-rgb: 157, 124, 182;
+  --color-pink-rgb: 217, 119, 87;
+
+  --accent-h: 14;
+  --accent-s: 67%;
+  --accent-l: 60%;
+}
+
+.theme-light {
+  color-scheme: light;
+
+  --color-base-00: #FAF9F5;
+  --color-base-05: #F4F3EE;
+  --color-base-10: #F0ECE0;
+  --color-base-20: #E6E0D4;
+  --color-base-25: #E6E0D4;
+  --color-base-30: #D4C9BC;
+  --color-base-35: #D4C9BC;
+  --color-base-40: #B1ADA1;
+  --color-base-50: #8C877D;
+  --color-base-60: #665F56;
+  --color-base-70: #5A524C;
+  --color-base-100: #141413;
+
+  --background-primary: #FAF9F5;
+  --background-primary-alt: #F4F3EE;
+  --background-secondary: #F0ECE0;
+  --background-secondary-alt: #F4F3EE;
+  --background-modifier-hover: rgba(212, 201, 188, 0.25);
+  --background-modifier-active-hover: rgba(177, 173, 161, 0.35);
+  --background-modifier-border: transparent;
+  --background-modifier-border-hover: transparent;
+  --background-modifier-border-focus: rgba(217, 119, 87, 0.5);
+  --background-modifier-form-field: #FAF9F5;
+  --background-modifier-form-field-highlighted: #F4F3EE;
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.08);
+
+  --text-normal: #2A2522;
+  --text-muted: #5A524C;
+  --text-faint: #8C877D;
+  --text-on-accent: #FFFFFF;
+  --text-on-accent-inverted: #141413;
+  --text-error: #D14D41;
+  --text-warning: #E0A55B;
+  --text-success: #788C5D;
+  --text-selection: #D4E4F4;
+  --text-highlight-bg: #D4E4F4;
+  --text-accent: #D97757;
+  --text-accent-hover: #C96442;
+
+  --color-accent: #D97757;
+  --color-accent-1: #C96442;
+  --color-accent-2: #A85A3D;
+  --interactive-accent-rgb: 217, 119, 87;
+  --interactive-accent-hsl: 14, 67%, 60%;
+  --interactive-normal: #FAF9F5;
+  --interactive-hover: #F0ECE0;
+  --interactive-accent: #D97757;
+  --interactive-accent-hover: #C96442;
+  --interactive-success: #788C5D;
+  --input-focus-border-color: rgba(217, 119, 87, 0.5);
+  --input-focus-ring-color: rgba(217, 119, 87, 0.15);
+
+  --link-color: #E6E0D4;
+  --link-color-hover: #E6E0D4;
+  --link-external-color: #E6E0D4;
+  --link-external-color-hover: #E6E0D4;
+
+  --tag-color: #C96442;
+  --tag-background: rgba(217, 119, 87, 0.1);
+  --tag-background-hover: rgba(217, 119, 87, 0.18);
+  --cw-tag-border-color: rgba(217, 119, 87, 0.22);
+
+  --titlebar-background: #FAF9F5;
+  --titlebar-background-focused: #FAF9F5;
+  --ribbon-background: #F0ECE0;
+  --tab-container-background: #F0ECE0;
+  --tab-outline-color: transparent;
+  --tab-text-color: #5A524C;
+  --tab-text-color-active: #2A2522;
+  --tab-background-active: #FAF9F5;
+
+  --nav-item-color: #5A524C;
+  --nav-item-color-hover: #2A2522;
+  --nav-item-color-active: #2A2522;
+  --nav-item-background-hover: rgba(212, 201, 188, 0.25);
+  --nav-item-background-active: rgba(217, 119, 87, 0.1);
+
+  --blockquote-border-color: #D97757;
+  --blockquote-color: #5A524C;
+  --code-background: rgba(240, 236, 224, 0.5);
+  --code-normal: #2A2522;
+  --code-comment: #8C877D;
+  --code-function: #C96442;
+  --code-important: #D97757;
+  --code-keyword: #9D7CB6;
+  --code-operator: #5A524C;
+  --code-property: #788C5D;
+  --code-punctuation: #8C877D;
+  --code-string: #788C5D;
+  --code-tag: #D97757;
+  --code-value: #C96442;
+
+  --table-header-background: #EAE5DA;
+  --table-header-background-hover: #E6E0D4;
+  --table-row-background-hover: rgba(212, 201, 188, 0.08);
+  --hr-color: rgba(212, 201, 188, 0.45);
+  --background-modifier-error-rgb: 209, 77, 65;
+  --background-modifier-error: rgba(209, 77, 65, 0.12);
+  --background-modifier-error-hover: rgba(209, 77, 65, 0.18);
+  --background-modifier-success-rgb: 120, 140, 93;
+  --background-modifier-success: rgba(120, 140, 93, 0.12);
+
+  --color-red-rgb: 209, 77, 65;
+  --color-orange-rgb: 217, 119, 87;
+  --color-yellow-rgb: 224, 165, 91;
+  --color-green-rgb: 120, 140, 93;
+  --color-cyan-rgb: 91, 146, 142;
+  --color-blue-rgb: 217, 119, 87;
+  --color-purple-rgb: 157, 124, 182;
+  --color-pink-rgb: 217, 119, 87;
+
+  --accent-h: 14;
+  --accent-s: 67%;
+  --accent-l: 60%;
+}
+
+
+
+.workspace,
+.workspace-leaf,
+.markdown-source-view,
+.markdown-reading-view,
+.empty-state {
+  background-color: var(--background-primary);
+}
+
+.workspace-split.mod-left-split,
+.workspace-split.mod-right-split,
+.mod-sidedock .workspace-leaf-content,
+.workspace-ribbon,
+.status-bar,
+.titlebar,
+.workspace-tab-header-container {
+  background-color: var(--background-secondary);
+}
+
+.workspace-leaf-content {
+  background-color: var(--background-primary);
+  border-radius: 0;
+}
+
+.workspace-tab-header.is-active .workspace-tab-header-inner-title {
+  color: var(--tab-text-color-active);
+}
+
+.workspace-tab-header-inner-title,
+.workspace-tab-header-inner-icon {
+  color: var(--tab-text-color);
+}
+
+.nav-folder-title,
+.nav-file-title {
+  border-radius: var(--radius-m);
+  margin: 1px 6px;
+}
+
+.nav-folder-title:hover,
+.nav-file-title:hover {
+  background-color: var(--nav-item-background-hover);
+  color: var(--nav-item-color-hover);
+}
+
+.nav-file-title.is-active {
+  background-color: var(--nav-item-background-active);
+  color: var(--nav-item-color-active);
+  font-weight: 600;
+}
+
+.markdown-source-view.mod-cm6 .cm-scroller {
+  color: var(--text-normal);
+  font-family: var(--font-text-theme);
+}
+
+.markdown-preview-view {
+  color: var(--text-normal);
+  font-family: var(--font-text-theme);
+  padding-top: 24px;
+}
+
+.markdown-source-view.mod-cm6 .cm-content {
+  padding-top: 24px;
+}
+
+.markdown-source-view.mod-cm6 .cm-line {
+  caret-color: var(--interactive-accent);
+}
+
+.cm-s-obsidian span.cm-inline-code,
+.markdown-rendered code {
+  background-color: var(--code-background);
+  color: var(--code-important);
+  border-radius: var(--radius-s);
+  padding: 0.12em 0.35em;
+}
+
+.HyperMD-codeblock,
+.cm-line.HyperMD-codeblock {
+  background-color: var(--background-secondary-alt);
+}
+
+.markdown-rendered pre {
+  background-color: var(--background-secondary-alt);
+  border: 1px solid var(--background-modifier-border);
+  border-radius: var(--radius-l);
+  box-shadow: var(--cw-shadow-soft);
+  padding: 14px 16px;
+}
+
+.markdown-rendered pre code {
+  background: transparent;
+  color: var(--code-normal);
+  padding: 0;
+}
+
+.markdown-rendered blockquote {
+  color: var(--blockquote-color) !important;
+  border-left: 3px solid var(--blockquote-border-color) !important;
+  border-top: none !important;
+  border-right: none !important;
+  border-bottom: none !important;
+  border-radius: 0 !important;
+  margin: 12px 0 !important;
+  padding: 8px 16px !important;
+  background-color: rgba(217, 119, 87, 0.04) !important;
+  box-shadow: none !important;
+}
+
+.markdown-rendered blockquote p {
+  margin: 0 !important;
+}
+
+.markdown-rendered blockquote p + p {
+  margin-top: 8px !important;
+}
+
+.markdown-rendered blockquote blockquote {
+  border-left-color: rgba(217, 119, 87, 0.4) !important;
+  background-color: transparent !important;
+}
+
+/* --- Editor mode blockquotes --- */
+.cm-s-obsidian .cm-formatting-quote {
+  color: var(--blockquote-border-color) !important;
+  opacity: 0.4 !important;
+}
+
+.markdown-rendered table {
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 1px solid #B5AA9C;
+  border-radius: var(--radius-l);
+  overflow: visible;
+  table-layout: fixed;
+  width: 100%;
+}
+
+.markdown-rendered th,
+.markdown-rendered thead th,
+.markdown-rendered tr:first-child th {
+  background-color: var(--table-header-background);
+  color: var(--text-normal);
+  border-bottom: 1px solid #D1C8BC;
+  border-right: 1px solid #D1C8BC;
+  text-align: center !important;
+  padding: 10px 14px;
+  font-weight: 600;
+}
+
+.markdown-rendered th:first-child {
+  border-top-left-radius: var(--radius-l);
+}
+
+.markdown-rendered th:last-child {
+  border-top-right-radius: var(--radius-l);
+  border-right: none !important;
+}
+
+.markdown-rendered td {
+  border-bottom: 1px solid #D1C8BC;
+  border-right: 1px solid #D1C8BC;
+  text-align: left;
+  padding: 10px 14px;
+  background-color: #F7F5F0 !important;
+}
+
+.markdown-rendered td:nth-child(odd),
+.markdown-rendered td:nth-child(even) {
+  background-color: #F7F5F0 !important;
+}
+
+/* --- Editor mode tables: use Obsidian defaults --- */
+
+.markdown-rendered td:last-child {
+  border-right: none !important;
+}
+
+.markdown-rendered tr:last-child td {
+  border-bottom: none;
+}
+
+.markdown-rendered tr:last-child td:first-child {
+  border-bottom-left-radius: var(--radius-l);
+}
+
+.markdown-rendered tr:last-child td:last-child {
+  border-bottom-right-radius: var(--radius-l);
+}
+
+.markdown-rendered tr:hover,
+.markdown-rendered tr:hover td,
+.markdown-rendered tr:hover th,
+.markdown-rendered td:hover,
+.markdown-rendered th:hover {
+  background-color: var(--table-row-background-hover) !important;
+}
+
+.callout {
+  border: 1px solid rgba(var(--callout-color), 0.22);
+  border-radius: var(--radius-xl);
+  background-color: rgba(var(--callout-color), 0.08);
+  box-shadow: var(--cw-shadow-soft);
+}
+
+.callout-title {
+  color: var(--text-normal);
+}
+
+.metadata-container,
+.properties-container {
+  background-color: var(--background-primary-alt);
+  border: 1px solid var(--background-modifier-border);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--cw-shadow-soft);
+  padding: 8px 10px;
+}
+
+.modal,
+.prompt,
+.menu {
+  background-color: var(--background-primary-alt);
+  border: 1px solid var(--background-modifier-border);
+  border-radius: var(--radius-xl);
+  box-shadow: 0 8px 32px -4px rgba(0, 0, 0, 0.12), 0 2px 8px -2px rgba(0, 0, 0, 0.08);
+  z-index: 999999 !important;
+}
+
+.suggestion,
+.suggestion-container,
+.menu,
+.popover,
+.dropdown {
+  z-index: 999999 !important;
+  box-shadow: 0 8px 32px -4px rgba(0, 0, 0, 0.07), 0 2px 8px -2px rgba(0, 0, 0, 0.05) !important;
+}
+
+.suggestion-item,
+.menu-item {
+  border-radius: var(--radius-m);
+}
+
+.suggestion-item.is-selected,
+.menu-item:hover {
+  background-color: var(--background-modifier-hover);
+}
+
+input[type="text"],
+input[type="search"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+textarea,
+select,
+.dropdown {
+  background-color: var(--background-modifier-form-field);
+  border: 1px solid var(--background-modifier-border);
+  border-radius: var(--input-radius);
+  color: var(--text-normal);
+}
+
+input[type="text"]:focus,
+input[type="search"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+textarea:focus,
+select:focus,
+.dropdown:focus {
+  border-color: var(--background-modifier-border-focus);
+  box-shadow: 0 0 0 3px var(--input-focus-ring-color);
+}
+
+button,
+.clickable-icon {
+  border-radius: var(--radius-m);
+  color: var(--text-normal);
+}
+
+button.mod-cta,
+.mod-cta {
+  background-color: var(--interactive-accent);
+  color: #FFFFFF;
+}
+
+button.mod-cta:hover,
+.mod-cta:hover {
+  background-color: var(--interactive-accent-hover);
+}
+
+.checkbox-container,
+input[type="checkbox"] {
+  --checkbox-color: var(--interactive-accent);
+  --checkbox-color-hover: var(--interactive-accent-hover);
+  --checkbox-border-color: #B1ADA1;
+  --checkbox-border-color-hover: var(--interactive-accent);
+}
+
+.tag,
+a.tag {
+  background-color: var(--tag-background);
+  border: 1px solid var(--cw-tag-border-color);
+  border-radius: 999px;
+  color: var(--tag-color);
+  padding: 0.05em 0.45em;
+  text-decoration: none;
+}
+
+.tag:hover,
+a.tag:hover {
+  background-color: var(--tag-background-hover);
+  color: var(--tag-color);
+}
+
+.graph-view.color-fill,
+.graph-view.color-fill-highlight,
+.graph-view.color-line-highlight {
+  color: var(--interactive-accent);
+}
+
+.graph-view.color-fill-tag {
+  color: rgb(var(--color-yellow-rgb));
+}
+
+.graph-view.color-fill-attachment {
+  color: rgb(var(--color-green-rgb));
+}
+
+.graph-view.color-fill-unresolved {
+  color: var(--text-faint);
+}
+
+.theme-dark ::selection,
+.theme-light ::selection {
+  background-color: #D4E4F4;
+  color: #1A5FB4;
+}
+
+.cm-selectionBackground,
+.cm-line::selection,
+.cm-line .cm-selectionBackground {
+  background-color: #D4E4F4 !important;
+  color: #1A5FB4 !important;
+}
+
+.markdown-preview-view ::selection {
+  background-color: #D4E4F4;
+  color: #1A5FB4;
+}
+
+.theme-dark ::-webkit-scrollbar-thumb {
+  background-color: rgba(212, 201, 188, 0.3);
+}
+
+.theme-light ::-webkit-scrollbar-thumb {
+  background-color: rgba(212, 201, 188, 0.5);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--background-modifier-border-hover);
+}
+
+.workspace-split.mod-left-split {
+  border-right: 1px solid rgba(177, 173, 161, 0.35) !important;
+}
+
+.workspace-split.mod-right-split {
+  border-left: 1px solid rgba(177, 173, 161, 0.35) !important;
+}
+
+/* =============================================
+   TITLEBAR BUTTONS FIX — Inside left panel
+   ============================================= */
+
+/*
+ * Кнопки окна встроены бесшовно в левую панель.
+ * Позиционируются абсолютно внутри .mod-left-split
+ * и выглядят как часть интерфейса сайдбара.
+ */
+
+/* --- 1. Левая панель — контекст позиционирования --- */
+.workspace-split.mod-left-split {
+  position: relative !important;
+  z-index: 100 !important;
+  overflow: visible !important;
+}
+
+.app-container,
+.mod-left-split,
+.workspace-split.mod-left-split,
+.workspace {
+  overflow: visible !important;
+}
+
+/* =============================================
+   TITLEBAR — monolithic, unified style
+   ============================================= */
+
+/* --- Block 1: Titlebar background --- */
+.titlebar {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: auto !important;
+  z-index: 99999 !important;
+  width: 100vw !important;
+  height: 42px !important;
+  display: flex !important;
+  align-items: stretch !important;
+  justify-content: flex-end !important;
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  overflow: visible !important;
+  pointer-events: none !important;
+}
+
+.titlebar .titlebar-button-container {
+  pointer-events: auto !important;
+  margin-left: auto !important;
+  height: 100% !important;
+}
+
+.titlebar .titlebar-button-container .titlebar-button {
+  height: 100% !important;
+}
+
+.titlebar-inner {
+  overflow: visible !important;
+  height: 100% !important;
+  display: flex !important;
+  align-items: center !important;
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* --- Block 2: Reset child backgrounds --- */
+.titlebar *,
+.titlebar *::before,
+.titlebar *::after {
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* --- Block 2b: Unified clickable-icon styles --- */
+.titlebar .clickable-icon,
+.titlebar .nav-button,
+.titlebar .workspace-tab-header,
+.titlebar .ribbon-toggle {
+  background-color: transparent !important;
+  color: var(--text-muted) !important;
+  border-radius: 4px !important;
+  padding: 4px !important;
+  transition: none !important;
+}
+
+.titlebar .clickable-icon:hover,
+.titlebar .nav-button:hover,
+.titlebar .workspace-tab-header:hover,
+.titlebar .ribbon-toggle:hover {
+  background-color: rgba(90, 82, 76, 0.12) !important;
+  color: var(--text-normal) !important;
+}
+
+.titlebar .clickable-icon:active,
+.titlebar .nav-button:active,
+.titlebar .workspace-tab-header:active,
+.titlebar .ribbon-toggle:active {
+  background-color: rgba(90, 82, 76, 0.2) !important;
+}
+
+/* --- Block 2c: Hide Obsidian logo button --- */
+.titlebar .titlebar-button-container.mod-left > div {
+  display: none !important;
+}
+
+.titlebar .titlebar-button-container {
+  position: relative !important;
+  z-index: 99999 !important;
+  display: flex !important;
+  flex-shrink: 0 !important;
+  height: 100% !important;
+  align-items: stretch !important;
+  -webkit-app-region: no-drag !important;
+  pointer-events: auto !important;
+  overflow: visible !important;
+}
+
+.titlebar .titlebar-button-container .titlebar-button {
+  position: relative !important;
+  z-index: 99999 !important;
+  width: 46px !important;
+  height: 100% !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  flex-shrink: 0 !important;
+  padding: 0 !important;
+  -webkit-app-region: no-drag !important;
+  pointer-events: auto !important;
+  overflow: visible !important;
+}
+
+.titlebar .titlebar-button-container .titlebar-button svg,
+.titlebar .titlebar-button-container .titlebar-button img {
+  width: 12px !important;
+  height: 12px !important;
+  fill: currentColor !important;
+}
+
+/* --- Block 3: Hover states --- */
+.titlebar .titlebar-button-container .titlebar-button:hover {
+  background-color: rgba(90, 82, 76, 0.15) !important;
+}
+
+.titlebar .titlebar-button-container .titlebar-button:active {
+  background-color: rgba(90, 82, 76, 0.25) !important;
+}
+
+.titlebar .titlebar-button-container .titlebar-button.close-button:hover,
+.titlebar .titlebar-button-container .titlebar-button[data-flavor="close"]:hover {
+  background-color: rgba(209, 77, 65, 0.85) !important;
+}
+
+/* --- Block 4: Visual separation from workspace --- */
+.titlebar::after {
+  display: none !important;
+}
+
+/* --- Drag regions: сброс --- */
+.workspace,
+.workspace-split,
+.mod-root,
+.view-header,
+.workspace-tab-header-container {
+  -webkit-app-region: no-drag !important;
+}
+
+/* --- View-header: no custom background --- */
+.view-header {
+  box-shadow: none !important;
+}
+
+.view-header:focus,
+.view-header:focus-within,
+.view-header:has(:focus),
+.view-header.is-focused {
+  background-color: transparent !important;
+}
+
+.view-header .clickable-icon,
+.view-header button {
+  background-color: transparent !important;
+}
+
+/* --- Tab header containers: frosted glass --- */
+.workspace-tab-header-container {
+  background-color: rgba(var(--mono-rgb-0), 0.15) !important;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  overflow: visible !important;
+}
+
+.workspace-split.mod-right-split .workspace-tab-header-container {
+  background-color: rgba(var(--mono-rgb-0), 0.15) !important;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.workspace-tab-header-container-inner {
+  overflow: visible !important;
+}
+
+/* --- Tab header items --- */
+.workspace-tab-header.tappable {
+  background-color: transparent !important;
+  position: relative !important;
+  overflow: visible !important;
+}
+
+.workspace-tab-header.tappable::before,
+.workspace-tab-header.tappable::after {
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+/* --- Active tab: border outline --- */
+.workspace-tab-header.tappable.is-active,
+.workspace-tab-header.tappable.is-active.mod-active {
+  background-color: var(--background-secondary) !important;
+  border-left: 1px solid #D1C8BC !important;
+  border-top: 1px solid #D1C8BC !important;
+  border-right: 1px solid #D1C8BC !important;
+  border-bottom: none !important;
+  border-radius: 4px 4px 0 0 !important;
+  margin-bottom: -1px !important;
+  z-index: 1 !important;
+}
+
+/* --- Non-active tabs: no border --- */
+.workspace-tab-header.tappable:not(.is-active) {
+  border-bottom: none !important;
+}
+
+/* --- Container: bottom line via border --- */
+.workspace-split.mod-root .workspace-tab-header-container,
+.workspace .workspace-tabs .workspace-tab-header-container {
+  border-bottom: 1px solid #D1C8BC !important;
+}
+
+.workspace-split.mod-left-split .workspace-tab-header-container,
+.workspace-split.mod-right-split .workspace-tab-header-container {
+  border-bottom: none !important;
+}
+
+.workspace-tab-header-container::after {
+  display: none !important;
+}
+
+/* --- Active tab: covers the line with its background --- */
+.workspace-tab-header.tappable.is-active,
+.workspace-tab-header.tappable.is-active.mod-active {
+  background-color: var(--background-secondary) !important;
+  border-left: 1px solid #D1C8BC !important;
+  border-top: 1px solid #D1C8BC !important;
+  border-right: 1px solid #D1C8BC !important;
+  border-bottom: none !important;
+  border-radius: 4px 4px 0 0 !important;
+  margin-bottom: -1px !important;
+}
+
+.workspace-tab-header-inner,
+.workspace-tab-header-inner *,
+.workspace-tab-header-inner *::before,
+.workspace-tab-header-inner *::after {
+  background-color: transparent !important;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.workspace-tab-header-inner-title,
+.workspace-tab-header-inner-icon {
+  color: var(--tab-text-color);
+}
+
+.workspace-tab-header-inner-icon,
+.workspace-tab-header-inner-title,
+.workspace-tab-header-inner-close-button {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* --- 4. Overflow --- */
+.workspace,
+.workspace-split,
+.mod-root,
+.app-container,
+.workspace-leaf,
+.workspace-leaf-content {
+  overflow: visible !important;
+}
+
+/* --- Links: black text, subtle underline --- */
+.markdown-rendered a,
+.markdown-preview-view a,
+.cm-link {
+  color: #000000 !important;
+  text-decoration: underline !important;
+  text-decoration-color: rgba(0, 0, 0, 0.3) !important;
+  text-underline-offset: 2px !important;
+}
+
+.markdown-rendered a:hover,
+.markdown-preview-view a:hover,
+.cm-link:hover {
+  text-decoration-color: rgba(0, 0, 0, 0.6) !important;
+}
+
+/* --- Horizontal rules: compact + decorative --- */
+hr,
+.markdown-rendered hr,
+.HyperMD-hr {
+  border: none !important;
+  height: 1px !important;
+  margin: 16px 0 !important;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    #D4C9BC 15%,
+    #B5AA9C 50%,
+    #D4C9BC 85%,
+    transparent 100%
+  ) !important;
+}
+
+.cm-hr6,
+.cm-hr7,
+.HyperMD-hr.HyperMD-hr6,
+.HyperMD-hr.HyperMD-hr7 {
+  border: none !important;
+  height: 1px !important;
+  margin: 16px 0 !important;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    #D4C9BC 15%,
+    #B5AA9C 50%,
+    #D4C9BC 85%,
+    transparent 100%
+  ) !important;
+}
+
+/* --- Footnotes: Claude-style --- */
+.footnote-ref,
+sup.footnote-ref {
+  font-size: 0.7em !important;
+  vertical-align: super !important;
+  line-height: 1 !important;
+  color: #D97757 !important;
+  text-decoration: none !important;
+  font-weight: 600 !important;
+  padding: 0 2px !important;
+  border-radius: 3px !important;
+  background-color: rgba(217, 119, 87, 0.08) !important;
+  transition: none !important;
+}
+
+.footnote-ref:hover,
+sup.footnote-ref:hover {
+  background-color: rgba(217, 119, 87, 0.18) !important;
+  color: #C96442 !important;
+}
+
+.footnotes,
+.markdown-preview-view .footnotes,
+.markdown-rendered .footnotes {
+  margin-top: 24px !important;
+  padding-top: 16px !important;
+  border-top: 1px solid #D1C8BC !important;
+  font-size: 0.9em !important;
+  color: var(--text-muted) !important;
+}
+
+.footnotes ol,
+.markdown-preview-view .footnotes ol,
+.markdown-rendered .footnotes ol {
+  padding-left: 20px !important;
+}
+
+.footnotes li,
+.markdown-preview-view .footnotes li,
+.markdown-rendered .footnotes li {
+  margin-bottom: 6px !important;
+  line-height: 1.6 !important;
+}
+
+.footnote-backref,
+.footnotes a {
+  color: #D97757 !important;
+  text-decoration: none !important;
+  font-size: 0.85em !important;
+}
+
+.footnote-backref:hover,
+.footnotes a:hover {
+  text-decoration: underline !important;
+  color: #C96442 !important;
+}
+
+/* Editor mode footnotes */
+.HyperMD-footnote,
+.cm-footnote {
+  color: #D97757 !important;
+  font-weight: 600 !important;
+}
+
+.cm-footref {
+  font-size: 0.75em !important;
+  vertical-align: super !important;
+  color: #D97757 !important;
+  font-weight: 600 !important;
+}

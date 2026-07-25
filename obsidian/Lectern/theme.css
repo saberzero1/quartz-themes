@@ -1,0 +1,105 @@
+/*
+ * Lectern theme for Obsidian
+ * Colors sourced from Lectern's defaultDarkStyle()/defaultLightStyle()
+ * (src/settingsdialog.cpp) and applyTheme() (src/mainwindow.cpp).
+ */
+
+.theme-dark {
+  --background-primary: #191919;
+  --background-primary-alt: #1e1e1e;
+  --background-secondary: #282828;
+  --background-secondary-alt: #222222;
+  --background-modifier-border: #2d2d2d;
+  --background-modifier-hover: #454545;
+
+  --text-normal: #dcdcdc;
+  --text-muted: #a0a0b4;
+  --text-faint: #aaaabe;
+  --text-accent: #64a0ff;
+  --text-accent-hover: #82b4ff;
+  --text-on-accent: #ffffff;
+  --text-selection: #2a508c;
+
+  --interactive-normal: #2d2d2d;
+  --interactive-hover: #454545;
+  --interactive-accent: #2a508c;
+  --interactive-accent-hover: #3a60a0;
+
+  --link-color: #64a0ff;
+  --link-color-hover: #82b4ff;
+
+  --code-background: #232830;
+  --code-normal: #c8d2e6;
+
+  --h1-color: #82b4ff;
+  --h2-color: #b496ff;
+  --h3-color: #e6c864;
+  --h4-color: #82dcaa;
+  --h5-color: #dca08c;
+  --h6-color: #aaaabe;
+
+  --lectern-blockquote-color: #a0a0b4;
+  --lectern-table-border: #5078c8;
+  --lectern-table-header-bg: #222222;
+}
+
+.theme-light {
+  --background-primary: #ffffff;
+  --background-primary-alt: #f0f0f0;
+  --background-secondary: #f5f5f5;
+  --background-secondary-alt: #e6e6e6;
+  --background-modifier-border: #e0e0e0;
+  --background-modifier-hover: #d0d0d0;
+
+  --text-normal: #1e1e1e;
+  --text-muted: #5a5a6e;
+  --text-faint: #646478;
+  --text-accent: #145ac8;
+  --text-accent-hover: #1e50b4;
+  --text-on-accent: #ffffff;
+  --text-selection: #bcd4f6;
+
+  --interactive-normal: #e6e6e6;
+  --interactive-hover: #d0d0d0;
+  --interactive-accent: #3078d7;
+  --interactive-accent-hover: #4a8ce0;
+
+  --link-color: #145ac8;
+  --link-color-hover: #1e50b4;
+
+  --code-background: #d2dae4;
+  --code-normal: #283c5a;
+
+  --h1-color: #1e50b4;
+  --h2-color: #6432b4;
+  --h3-color: #967814;
+  --h4-color: #148250;
+  --h5-color: #a04632;
+  --h6-color: #646478;
+
+  --lectern-blockquote-color: #5a5a6e;
+  --lectern-table-border: #3c64b4;
+  --lectern-table-header-bg: #e0e0e0;
+}
+
+/* Blockquotes: reading view + editor (live preview / source) */
+.markdown-rendered blockquote,
+.cm-line.HyperMD-quote {
+  color: var(--lectern-blockquote-color);
+  border-left-color: var(--lectern-blockquote-color);
+}
+
+/* Tables: reading view + editor */
+.markdown-rendered table,
+.markdown-rendered table th,
+.markdown-rendered table td,
+.markdown-source-view table,
+.markdown-source-view table th,
+.markdown-source-view table td {
+  border-color: var(--lectern-table-border);
+}
+
+.markdown-rendered table th,
+.markdown-source-view table th {
+  background-color: var(--lectern-table-header-bg);
+}

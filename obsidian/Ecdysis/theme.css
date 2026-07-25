@@ -1,0 +1,459 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&display=swap');
+
+/* ============================================================
+   ECDYSIS — Dark Theme
+   by Kodama Chameleon
+   https://github.com/kodamaChameleon
+   ============================================================ */
+
+.theme-dark {
+
+  /* ── Palette ──────────────────────────────────────────── */
+  --clr-green:    #33ff4b;
+  --clr-cyan:     #49eaff;
+  --clr-magenta:  #df40fe;
+  --clr-yellow:   #ffcb49;
+  --clr-red:      #ff498f;
+
+  --clr-bg:       #0d0d0d;
+  --clr-bg-1:     #111111;
+  --clr-bg-2:     #161616;
+  --clr-bg-3:     #1c1c1c;
+  --clr-border:   #222222;
+
+  --clr-muted:    #2b8b9a;
+  --clr-faint:    #154850;
+
+  /* ── Backgrounds ──────────────────────────────────────── */
+  --background-primary:               var(--clr-bg);
+  --background-primary-alt:           var(--clr-bg-1);
+  --background-secondary:             var(--clr-bg-1);
+  --background-secondary-alt:         var(--clr-bg-2);
+  --background-modifier-border:       var(--clr-border);
+  --background-modifier-hover:        rgba(73, 234, 255, 0.06);
+  --background-modifier-active-hover: rgba(73, 234, 255, 0.10);
+  --background-modifier-form-field:   #090909;
+  --background-modifier-error:        rgba(255, 255, 255, 0.15);
+  --background-modifier-success:      rgba(51, 255, 75, 0.10);
+
+  /* ── Text ─────────────────────────────────────────────── */
+  --text-normal:     var(--clr-cyan);
+  --text-muted:      var(--clr-muted);
+  --text-faint:      var(--clr-faint);
+  --text-on-accent:  #0d0d0d;
+  --text-error:      var(--clr-red);
+  --text-success:    var(--clr-green);
+  --text-selection:  rgba(223, 64, 254, 0.22);
+  --text-highlight-bg: rgba(51, 255, 75, 0.18);
+
+  /* ── Accent & Interactive ─────────────────────────────── */
+  --text-accent:              var(--clr-magenta);
+  --text-accent-hover:        #e96aff;
+  --interactive-accent:       var(--clr-magenta);
+  --interactive-accent-hover: #e96aff;
+  --interactive-accent-rgb:   223, 64, 254;
+  --interactive-normal:       var(--clr-bg-2);
+  --interactive-hover:        var(--clr-bg-3);
+
+  /* ── Headings ─────────────────────────────────────────── */
+  --h1-color:       var(--clr-green);
+  --h2-color:       var(--clr-green);
+  --h3-color:       var(--clr-green);
+  --h4-color:       var(--clr-green);
+  --h5-color:       var(--clr-green);
+  --h6-color:       var(--clr-green);
+
+  --h1-font:        'Press Start 2P', monospace;
+  --h2-font:        'Press Start 2P', monospace;
+  --h3-font:        'Press Start 2P', monospace;
+  --h4-font:        'Press Start 2P', monospace;
+  --h5-font:        'Press Start 2P', monospace;
+  --h6-font:        'Press Start 2P', monospace;
+
+  --h1-size:        1.30em;
+  --h2-size:        1.10em;
+  --h3-size:        0.95em;
+  --h4-size:        0.82em;
+  --h5-size:        0.72em;
+  --h6-size:        0.60em;
+
+  --h1-weight:      400;
+  --h2-weight:      400;
+  --h3-weight:      400;
+  --h4-weight:      400;
+  --h5-weight:      400;
+  --h6-weight:      400;
+
+  --h1-line-height: 2.0;
+  --h2-line-height: 1.9;
+  --h3-line-height: 1.9;
+  --h4-line-height: 1.8;
+  --h5-line-height: 1.8;
+  --h6-line-height: 1.8;
+
+  /* ── Body Typography ──────────────────────────────────── */
+  --font-text:           'Roboto Mono', monospace;
+  --font-interface:      'Roboto Mono', monospace;
+  --font-monospace:      'Roboto Mono', monospace;
+  --font-text-size:      15px;
+  --line-height-normal:  1.75;
+  --font-text-weight:    400;
+
+  /* ── Code ─────────────────────────────────────────────── */
+  --code-background:  #060e06;
+  --code-normal:      var(--clr-green);
+  --code-comment:     #2d5a2d;
+  --code-tag:         var(--clr-magenta);
+  --code-string:      var(--clr-cyan);
+  --code-value:       var(--clr-yellow);
+  --code-keyword:     var(--clr-magenta);
+  --code-important:   var(--clr-red);
+  --code-size:        0.88em;
+
+  /* ── Links ────────────────────────────────────────────── */
+  --link-color:             var(--clr-magenta);
+  --link-color-hover:       #e96aff;
+  --link-unresolved-color:  rgba(223, 64, 254, 0.45);
+  --link-external-color:    var(--clr-magenta);
+  --link-decoration:        underline;
+  --link-decoration-hover:  underline;
+  --link-external-decoration: underline;
+
+  /* ── Borders ──────────────────────────────────────────── */
+  --divider-color:          var(--clr-border);
+  --divider-color-hover:    var(--clr-faint);
+  --hr-color:               var(--clr-green);
+  --table-border-color:     var(--clr-border);
+  --table-header-border:    var(--clr-green);
+
+  /* ── Checkboxes ───────────────────────────────────────── */
+  --checkbox-color:           var(--clr-magenta);
+  --checkbox-color-hover:     #e96aff;
+  --checkbox-border-color:    var(--clr-magenta);
+  --checkbox-border-radius:   2px;
+  --checklist-done-color:     var(--clr-muted);
+  --checklist-done-decoration: line-through;
+
+  /* ── Tags ─────────────────────────────────────────────── */
+  --tag-color:              var(--clr-magenta);
+  --tag-background:         rgba(223, 64, 254, 0.10);
+  --tag-background-hover:   rgba(223, 64, 254, 0.20);
+  --tag-border-color:       rgba(223, 64, 254, 0.50);
+  --tag-border-color-hover: var(--clr-magenta);
+  --tag-radius:             3px;
+  --tag-padding-x:          0.5em;
+  --tag-padding-y:          0.15em;
+
+  /* ── Callouts ─────────────────────────────────────────── */
+  --callout-default:  73, 234, 255;
+  --callout-info:     73, 234, 255;
+  --callout-note:     51, 255, 75;
+  --callout-tip:      51, 255, 75;
+  --callout-success:  51, 255, 75;
+  --callout-warning:  180, 180, 255;
+  --callout-caution:  255, 203, 73;
+  /* --callout-danger: 255, 255, 255; — Obsidian hardcodes --callout-color on this element, 
+  bypassing this variable; overridden via .callout[data-callout="danger"] */
+  --callout-failure:  255, 73, 143;
+  --callout-bug:      255, 73, 143;
+  --callout-question: 223, 64, 254;
+  --callout-example:  223, 64, 254;
+  --callout-abstract: 73, 234, 255;
+  --callout-summary:  73, 234, 255;
+  --callout-quote:    73, 234, 255;
+
+  /* ── Scrollbar ────────────────────────────────────────── */
+  --scrollbar-bg:     transparent;
+  --scrollbar-thumb-bg: var(--clr-border);
+  --scrollbar-active-thumb-bg: var(--clr-faint);
+}
+
+
+/* ============================================================
+   HEADINGS — glow + spacing
+   ============================================================ */
+
+.markdown-rendered h1,
+.markdown-rendered h2,
+.markdown-rendered h3,
+.markdown-rendered h4,
+.markdown-rendered h5,
+.markdown-rendered h6 {
+  letter-spacing: 0.03em;
+}
+
+.markdown-rendered h1 { text-shadow: 0 0 14px rgba(51, 255, 75, 0.45); }
+.markdown-rendered h2 { text-shadow: 0 0 10px rgba(51, 255, 75, 0.35); }
+.markdown-rendered h3 { text-shadow: 0 0  8px rgba(51, 255, 75, 0.28); }
+.markdown-rendered h4,
+.markdown-rendered h5,
+.markdown-rendered h6 { text-shadow: 0 0  6px rgba(51, 255, 75, 0.20); }
+
+/* Live preview / source mode heading glow */
+.cm-editor .cm-header-1 { text-shadow: 0 0 14px rgba(51, 255, 75, 0.45); }
+.cm-editor .cm-header-2 { text-shadow: 0 0 10px rgba(51, 255, 75, 0.35); }
+.cm-editor .cm-header-3 { text-shadow: 0 0  8px rgba(51, 255, 75, 0.28); }
+
+
+/* ============================================================
+   INLINE FORMATTING
+   ============================================================ */
+
+/* Bold → magenta */
+strong, .cm-strong {
+  color: var(--clr-magenta);
+  font-weight: 600;
+}
+
+/* Italic → slightly brighter cyan */
+em, .cm-em {
+  color: #7ff5ff;
+  font-style: italic;
+}
+
+/* Highlight */
+mark {
+  background: rgba(51, 255, 75, 0.18);
+  color: var(--clr-green);
+  border-radius: 2px;
+  padding: 0 2px;
+}
+
+/* Strikethrough */
+s, del, .cm-strikethrough {
+  color: var(--clr-muted);
+}
+
+/* Inline code */
+.markdown-rendered code,
+.cm-inline-code {
+  background: var(--code-background);
+  color: var(--clr-green);
+  border: 1px solid rgba(51, 255, 75, 0.25);
+  border-radius: 3px;
+  padding: 0.1em 0.4em;
+  font-size: var(--code-size);
+}
+
+
+/* ============================================================
+   CODE BLOCKS
+   ============================================================ */
+
+.markdown-rendered pre {
+  background: var(--code-background);
+  border: 1px solid rgba(51, 255, 75, 0.20);
+  border-left: 3px solid var(--clr-green);
+  border-radius: 4px;
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+.markdown-rendered pre > code {
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 0;
+}
+
+/* Code block copy button */
+.copy-code-button {
+  color: var(--clr-muted);
+  background: var(--clr-bg-2);
+  border: 1px solid var(--clr-border);
+  border-radius: 3px;
+}
+.copy-code-button:hover {
+  color: var(--clr-green);
+  border-color: var(--clr-green);
+}
+
+
+/* ============================================================
+   BLOCKQUOTES
+   ============================================================ */
+
+.markdown-rendered blockquote {
+  border-left: 3px solid var(--clr-magenta);
+  background: rgba(223, 64, 254, 0.04);
+  border-radius: 0 4px 4px 0;
+  margin-left: 0;
+  padding: 0.5em 1em;
+}
+
+
+/* ============================================================
+   HORIZONTAL RULES
+   ============================================================ */
+
+.markdown-rendered hr {
+  border: none;
+  border-top: 1px solid var(--clr-green);
+  opacity: 0.35;
+  margin: 2em 0;
+}
+
+
+/* ============================================================
+   TABLES
+   ============================================================ */
+
+.markdown-rendered table {
+  border-collapse: collapse;
+  border: 2px solid rgba(51, 255, 75, 0.45);
+}
+
+.markdown-rendered th {
+  color: var(--clr-green);
+  font-weight: 600;
+  border: 2px solid rgba(51, 255, 75, 0.55);
+  border-bottom: 2px solid var(--clr-green);
+  background: rgba(51, 255, 75, 0.07);
+  text-shadow: 0 0 6px rgba(51, 255, 75, 0.35);
+}
+
+.markdown-rendered td {
+  border: 2px solid rgba(51, 255, 75, 0.25);
+}
+
+.markdown-rendered tr:hover td {
+  background: rgba(73, 234, 255, 0.04);
+}
+
+
+/* ============================================================
+   CALLOUTS
+   ============================================================ */
+
+.callout {
+  border-radius: 4px;
+  border-left-width: 3px;
+}
+
+.callout-title {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 0.72em;
+  letter-spacing: 0.04em;
+  line-height: 2.0;
+}
+
+.callout[data-callout="danger"] {
+  --callout-color: 240, 240, 240;
+}
+
+/* ============================================================
+   TAGS
+   ============================================================ */
+
+.tag {
+  font-size: 0.82em;
+  letter-spacing: 0.02em;
+}
+
+
+/* ============================================================
+   TASK LIST
+   ============================================================ */
+
+.markdown-rendered .task-list-item-checkbox {
+  border-radius: var(--checkbox-border-radius);
+}
+
+.markdown-rendered .task-list-item.is-checked {
+  color: var(--clr-muted);
+}
+
+
+/* ============================================================
+   SCROLLBARS
+   ============================================================ */
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--clr-border);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--clr-magenta);
+}
+
+
+/* ============================================================
+   SIDEBAR & UI CHROME
+   ============================================================ */
+
+/* File tree active item */
+.nav-file-title.is-active {
+  color: var(--clr-green);
+  background: rgba(51, 255, 75, 0.08);
+}
+
+.nav-folder-title:hover,
+.nav-file-title:hover {
+  color: var(--clr-cyan);
+  background: rgba(73, 234, 255, 0.06);
+}
+
+/* Tab bar */
+.workspace-tab-header.is-active {
+  color: var(--clr-green);
+}
+
+.workspace-tab-header.is-active::after {
+  background: var(--clr-green);
+}
+
+/* Search highlights */
+.search-result-file-matched-text {
+  color: var(--clr-bg);
+  background: var(--clr-green);
+  border-radius: 2px;
+}
+
+/* Cursor / caret */
+.cm-editor .cm-cursor {
+  border-left-color: var(--clr-green);
+}
+
+/* Selection in editor */
+.cm-editor .cm-selectionBackground,
+.cm-editor .cm-selectionBackground .cm-selectionBackground {
+  background: rgba(223, 64, 254, 0.22);
+}
+
+
+/* ============================================================
+   TERMINAL FRAME — top/bottom solid, left/right fade vertically
+   ============================================================ */
+
+.workspace-leaf-content {
+  position: relative;
+}
+
+.workspace-leaf-content::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 10;
+  background:
+    /* top: solid */
+    linear-gradient(rgba(51, 255, 75, 0.65), rgba(51, 255, 75, 0.65))
+      top / 100% 3px no-repeat,
+    /* right: fades at vertical center */
+    linear-gradient(to bottom,
+      rgba(51, 255, 75, 0.65) 0%,
+      transparent               40%,
+      transparent               60%,
+      rgba(51, 255, 75, 0.65) 100%
+    ) right / 4px 100% no-repeat;
+}

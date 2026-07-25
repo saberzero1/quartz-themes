@@ -1,0 +1,36 @@
+{
+  "extractedAt": "2026-07-24T23:14:40.179Z",
+  "sourceTheme": "Dissociated IdentiTea",
+  "fonts": [
+    {
+      "family": "Sour Gummy",
+      "style": "normal",
+      "weight": "400",
+      "file": "sour-gummy.ttf",
+      "format": "ttf",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Holiday MDJP05",
+      "style": "normal",
+      "weight": "400",
+      "file": "holiday-mdjp05.otf",
+      "format": "otf",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Monaspace Krypton",
+      "style": "normal",
+      "weight": "400",
+      "file": "monaspace-krypton.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    }
+  ]
+}

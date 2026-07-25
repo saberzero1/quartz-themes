@@ -1088,10 +1088,10 @@ body.theme-light {
   --h6-color: var(--secondary-ink) !important;
   --inline-title-color: var(--h1-color) !important;
   --bold-color: var(--bold-accent-ink) !important;
-  --italic-color: var(--italic-accent-ink) !important;
   --embed-background: rgba(var(--color-base-50-rgb), 0.15) !important;
-  --link-unresolved-color-hover: var(--secondary-ink) !important;
+  --italic-color: var(--italic-accent-ink) !important;
   --tab-font-weight: 600 !important;
+  --link-unresolved-color-hover: var(--secondary-ink) !important;
   --muted: 0.85 !important;
   --bold-accent-ink: #4f6c4f !important;
   --color-base-00-rgb: 249, 246, 238 !important;
@@ -2174,10 +2174,10 @@ body.theme-dark {
   --h6-color: var(--secondary-ink) !important;
   --inline-title-color: var(--h1-color) !important;
   --bold-color: var(--bold-accent-ink) !important;
-  --italic-color: var(--italic-accent-ink) !important;
   --embed-background: rgba(var(--color-base-50-rgb), 0.15) !important;
-  --link-unresolved-color-hover: var(--secondary-ink) !important;
+  --italic-color: var(--italic-accent-ink) !important;
   --tab-font-weight: 600 !important;
+  --link-unresolved-color-hover: var(--secondary-ink) !important;
   --muted: 0.85 !important;
   --bold-accent-ink: #64ad4b !important;
   --color-base-00-rgb: 12, 12, 12 !important;

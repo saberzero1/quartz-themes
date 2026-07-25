@@ -1,0 +1,382 @@
+/* ============================================================
+   Lockett — a personal Obsidian theme
+   Built from the Martin Lockett brand guide.
+
+   Palette
+     Ink Navy    #1C2B40   depth, intellect      (dark surface / light headings)
+     Brass       #B8843E   the spark / accent
+     Slate Teal  #4A6360   groundedness          (muted secondary)
+     Parchment   #F3EEE4   authentic, paper      (light surface / dark text)
+     Graphite    #23282E   body text on light
+
+   Type
+     Fraunces — display & headings
+     Inter    — body & interface
+
+   Principles: whitespace is the brand · brass is a spark, not a fill ·
+   plain truth over polish · reward attention.
+   ============================================================ */
+
+/* ---- Brand colour tokens (raw) ---- */
+body {
+  --brand-ink:        #1C2B40;
+  --brand-ink-soft:   #182437;
+  --brand-ink-deep:   #14202F;
+  --brand-brass:      #B8843E;
+  --brand-brass-warm: #C89A56;
+  --brand-brass-deep: #9C6E30;
+  --brand-slate:      #4A6360;
+  --brand-slate-soft: #A9B3B0;
+  --brand-parchment:  #F3EEE4;
+  --brand-parch-alt:  #ECE5D7;
+  --brand-parch-dim:  #E4DCCB;
+  --brand-graphite:   #23282E;
+
+  /* Typography — Fraunces installed locally; graceful fallbacks */
+  --font-text-theme:      'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-interface-theme: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --brand-serif: 'Fraunces', Georgia, 'Times New Roman', serif;
+
+  /* Brass as the global accent (HSL drives Obsidian's interactive colours) */
+  --accent-h: 34;
+  --accent-s: 50%;
+  --accent-l: 48%;
+
+  /* A touch more air — whitespace is the brand */
+  --line-height-normal: 1.7;
+  --p-spacing: 1rem;
+  --file-line-width: 42rem;
+}
+
+/* ============================================================
+   LIGHT MODE — Parchment field, Graphite text, Ink headings
+   ============================================================ */
+.theme-light {
+  --background-primary:        var(--brand-parchment);
+  --background-primary-alt:    var(--brand-parch-alt);
+  --background-secondary:      var(--brand-parch-alt);
+  --background-secondary-alt:  var(--brand-parch-dim);
+
+  --text-normal:   var(--brand-graphite);
+  --text-muted:    var(--brand-slate);
+  --text-faint:    #8d8676;
+  --text-on-accent: var(--brand-parchment);
+
+  --text-accent:        var(--brand-brass-deep);
+  --text-accent-hover:  var(--brand-ink);
+
+  --interactive-accent:        var(--brand-brass);
+  --interactive-accent-hover:  var(--brand-brass-deep);
+
+  --background-modifier-border:         rgba(28, 43, 64, 0.14);
+  --background-modifier-border-hover:   rgba(28, 43, 64, 0.24);
+  --background-modifier-border-focus:   var(--brand-brass);
+
+  --text-selection:    rgba(184, 132, 62, 0.22);
+  --text-highlight-bg: rgba(184, 132, 62, 0.30);
+
+  --h1-color: var(--brand-ink);
+  --h2-color: var(--brand-ink);
+  --h3-color: var(--brand-ink);
+  --h4-color: var(--brand-ink);
+  --h5-color: var(--brand-slate);
+  --h6-color: var(--brand-slate);
+
+  --bold-color:      var(--brand-ink);
+  --italic-color:    var(--brand-slate);
+  --blockquote-color: var(--brand-slate);
+  --blockquote-border-color: var(--brand-brass);
+  --hr-color: rgba(184, 132, 62, 0.45);
+
+  --tag-color: var(--brand-brass-deep);
+  --tag-background: rgba(184, 132, 62, 0.12);
+
+  --code-normal: var(--brand-ink);
+  --code-background: rgba(28, 43, 64, 0.06);
+
+  --titlebar-background: var(--brand-parch-alt);
+  --titlebar-background-focused: var(--brand-parchment);
+
+  /* Graph view — Ink Navy nodes, Brass links */
+  --graph-node:            var(--brand-ink);
+  --graph-text:            var(--brand-graphite);
+  --graph-line:            rgba(184, 132, 62, 0.45);
+  --graph-node-focused:    var(--brand-brass);
+  --graph-node-tag:        var(--brand-slate);
+  --graph-node-attachment: #7d8e8b;
+  --graph-node-unresolved: rgba(35, 40, 46, 0.35);
+}
+
+/* ============================================================
+   DARK MODE — Ink Navy field, Parchment text, warm brass accent
+   ============================================================ */
+.theme-dark {
+  --background-primary:        var(--brand-ink);
+  --background-primary-alt:    var(--brand-ink-soft);
+  --background-secondary:      var(--brand-ink-soft);
+  --background-secondary-alt:  var(--brand-ink-deep);
+
+  --text-normal:   var(--brand-parchment);
+  --text-muted:    var(--brand-slate-soft);
+  --text-faint:    #6E7B82;
+  --text-on-accent: var(--brand-ink);
+
+  --text-accent:        var(--brand-brass-warm);
+  --text-accent-hover:  var(--brand-parchment);
+
+  --interactive-accent:        var(--brand-brass);
+  --interactive-accent-hover:  var(--brand-brass-warm);
+
+  --background-modifier-border:         rgba(243, 238, 228, 0.12);
+  --background-modifier-border-hover:   rgba(243, 238, 228, 0.22);
+  --background-modifier-border-focus:   var(--brand-brass-warm);
+
+  --text-selection:    rgba(184, 132, 62, 0.28);
+  --text-highlight-bg: rgba(200, 154, 86, 0.32);
+
+  --h1-color: var(--brand-parchment);
+  --h2-color: var(--brand-parchment);
+  --h3-color: #E7DFD1;
+  --h4-color: #E7DFD1;
+  --h5-color: var(--brand-slate-soft);
+  --h6-color: var(--brand-slate-soft);
+
+  --bold-color:      var(--brand-brass-warm);
+  --italic-color:    var(--brand-slate-soft);
+  --blockquote-color: var(--brand-slate-soft);
+  --blockquote-border-color: var(--brand-brass-warm);
+  --hr-color: rgba(200, 154, 86, 0.40);
+
+  --tag-color: var(--brand-brass-warm);
+  --tag-background: rgba(200, 154, 86, 0.14);
+
+  --code-normal: var(--brand-brass-warm);
+  --code-background: rgba(243, 238, 228, 0.06);
+
+  --titlebar-background: var(--brand-ink-soft);
+  --titlebar-background-focused: var(--brand-ink);
+
+  /* Graph view — Parchment nodes (legible on ink), warm Brass links */
+  --graph-node:            var(--brand-parchment);
+  --graph-text:            var(--brand-parchment);
+  --graph-line:            rgba(200, 154, 86, 0.50);
+  --graph-node-focused:    var(--brand-brass-warm);
+  --graph-node-tag:        var(--brand-slate-soft);
+  --graph-node-attachment: #7d8e8b;
+  --graph-node-unresolved: rgba(243, 238, 228, 0.30);
+}
+
+/* ============================================================
+   Headings & note title — Fraunces, across reading & editing
+   ============================================================ */
+.markdown-preview-view :is(h1, h2, h3, h4, h5, h6),
+.markdown-rendered :is(h1, h2, h3, h4, h5, h6),
+.cm-s-obsidian .HyperMD-header,
+.cm-s-obsidian .cm-header,
+.inline-title,
+.view-header-title {
+  font-family: var(--brand-serif);
+  letter-spacing: 0.2px;
+}
+
+.markdown-preview-view h1,
+.markdown-rendered h1,
+.inline-title {
+  font-weight: 600;
+}
+
+.markdown-preview-view :is(h2, h3, h4),
+.markdown-rendered :is(h2, h3, h4) {
+  font-weight: 500;
+}
+
+/* The note title sits a little prouder */
+.inline-title {
+  letter-spacing: 0.3px;
+}
+
+/* ============================================================
+   Brass details — quiet, never a fill (the 5% spark)
+   ============================================================ */
+
+/* Links: brass, with a refined underline on hover only */
+.markdown-rendered a.internal-link,
+.markdown-rendered a.external-link,
+.cm-s-obsidian .cm-link,
+.cm-s-obsidian .cm-url {
+  color: var(--text-accent);
+  text-decoration: none;
+}
+.markdown-rendered a.internal-link:hover,
+.markdown-rendered a.external-link:hover {
+  color: var(--text-accent-hover);
+  text-decoration: none;
+  border-bottom: 1px solid var(--brand-brass);
+}
+
+/* Blockquotes & callouts: a brass hairline, classical voice */
+.markdown-rendered blockquote {
+  border-left: 2px solid var(--blockquote-border-color);
+  border-radius: 0;
+  font-family: var(--brand-serif);
+  font-style: italic;
+  padding-left: 1.1em;
+}
+
+/* Horizontal rule as a fine brass line */
+.markdown-rendered hr {
+  border: none;
+  border-top: 1px solid var(--hr-color);
+}
+
+/* Tags as quiet brass pills */
+.markdown-rendered a.tag {
+  border-radius: 999px;
+  padding: 1px 9px;
+  font-size: 0.82em;
+  font-weight: 500;
+  border: 0.5px solid rgba(184, 132, 62, 0.35);
+}
+
+/* Active line accent in the editor */
+.cm-s-obsidian .cm-active.cm-line {
+  background: rgba(184, 132, 62, 0.05);
+}
+
+/* Workspace tab + ribbon active state lean on the brass accent
+   automatically via --interactive-accent. Generous, calm spacing: */
+.workspace-leaf-content .view-content {
+  --file-margins: 2.2rem;
+}
+
+/* ============================================================
+   Callouts — refined left-accent cards (esp. dark mode)
+   Drops the muddy translucent fill for a clean solid surface
+   with a thin coloured rule. Hairlines, not heavy blocks.
+   ============================================================ */
+.markdown-rendered .callout {
+  --callout-border-width: 0px;
+  --callout-radius: 8px;
+  mix-blend-mode: normal;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* DARK */
+.theme-dark .markdown-rendered .callout {
+  background-color: var(--brand-ink-soft);
+  border: 0.5px solid rgba(243, 238, 228, 0.10);
+  border-left: 2px solid rgb(var(--callout-color));
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.theme-dark .markdown-rendered .callout-title {
+  background-color: rgba(var(--callout-color), 0.12);
+  padding: 0.55em 0.9em;
+}
+.theme-dark .markdown-rendered .callout-title-inner {
+  color: var(--brand-parchment);
+  font-weight: 500;
+}
+.theme-dark .markdown-rendered .callout-icon,
+.theme-dark .markdown-rendered .callout-icon .svg-icon {
+  color: rgb(var(--callout-color));
+}
+.theme-dark .markdown-rendered .callout-content {
+  color: var(--brand-parchment);
+}
+/* Quote callouts in dark: lean on Brass rather than a grey */
+.theme-dark .markdown-rendered .callout[data-callout="quote"],
+.theme-dark .markdown-rendered .callout[data-callout="cite"] {
+  --callout-color: 200, 154, 86;
+}
+
+/* LIGHT — mirror the left-accent treatment for consistency */
+.theme-light .markdown-rendered .callout {
+  background-color: var(--brand-parch-alt);
+  border: 0.5px solid rgba(28, 43, 64, 0.10);
+  border-left: 2px solid rgb(var(--callout-color));
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.theme-light .markdown-rendered .callout-title {
+  background-color: rgba(var(--callout-color), 0.10);
+  padding: 0.55em 0.9em;
+}
+.theme-light .markdown-rendered .callout[data-callout="quote"],
+.theme-light .markdown-rendered .callout[data-callout="cite"] {
+  --callout-color: 184, 132, 62;
+}
+
+/* ------------------------------------------------------------
+   Brand-harmonized callout palette.
+   Stock Obsidian uses loud primaries that fight Ink Navy.
+   These are desaturated tones that read as one family with
+   Brass + Slate. Type is still distinguishable, never garish.
+   ------------------------------------------------------------ */
+
+/* DARK — soft tones tuned for the Ink Navy field */
+.theme-dark .markdown-rendered .callout { --callout-color: 138, 161, 158; }
+.theme-dark .markdown-rendered .callout[data-callout="note"],
+.theme-dark .markdown-rendered .callout[data-callout="info"],
+.theme-dark .markdown-rendered .callout[data-callout="todo"]      { --callout-color: 110, 143, 181; }
+.theme-dark .markdown-rendered .callout[data-callout="abstract"],
+.theme-dark .markdown-rendered .callout[data-callout="summary"],
+.theme-dark .markdown-rendered .callout[data-callout="tldr"],
+.theme-dark .markdown-rendered .callout[data-callout="tip"],
+.theme-dark .markdown-rendered .callout[data-callout="hint"],
+.theme-dark .markdown-rendered .callout[data-callout="important"] { --callout-color: 111, 163, 154; }
+.theme-dark .markdown-rendered .callout[data-callout="success"],
+.theme-dark .markdown-rendered .callout[data-callout="check"],
+.theme-dark .markdown-rendered .callout[data-callout="done"]      { --callout-color: 126, 158, 92; }
+.theme-dark .markdown-rendered .callout[data-callout="question"],
+.theme-dark .markdown-rendered .callout[data-callout="help"],
+.theme-dark .markdown-rendered .callout[data-callout="faq"]       { --callout-color: 200, 154, 86; }
+.theme-dark .markdown-rendered .callout[data-callout="warning"],
+.theme-dark .markdown-rendered .callout[data-callout="caution"],
+.theme-dark .markdown-rendered .callout[data-callout="attention"] { --callout-color: 208, 138, 74; }
+.theme-dark .markdown-rendered .callout[data-callout="failure"],
+.theme-dark .markdown-rendered .callout[data-callout="fail"],
+.theme-dark .markdown-rendered .callout[data-callout="missing"],
+.theme-dark .markdown-rendered .callout[data-callout="danger"],
+.theme-dark .markdown-rendered .callout[data-callout="error"],
+.theme-dark .markdown-rendered .callout[data-callout="bug"]       { --callout-color: 193, 106, 87; }
+.theme-dark .markdown-rendered .callout[data-callout="example"]   { --callout-color: 151, 133, 181; }
+
+/* LIGHT — deeper tones for contrast on Parchment */
+.theme-light .markdown-rendered .callout { --callout-color: 74, 99, 96; }
+.theme-light .markdown-rendered .callout[data-callout="note"],
+.theme-light .markdown-rendered .callout[data-callout="info"],
+.theme-light .markdown-rendered .callout[data-callout="todo"]      { --callout-color: 74, 107, 150; }
+.theme-light .markdown-rendered .callout[data-callout="abstract"],
+.theme-light .markdown-rendered .callout[data-callout="summary"],
+.theme-light .markdown-rendered .callout[data-callout="tldr"],
+.theme-light .markdown-rendered .callout[data-callout="tip"],
+.theme-light .markdown-rendered .callout[data-callout="hint"],
+.theme-light .markdown-rendered .callout[data-callout="important"] { --callout-color: 74, 99, 96; }
+.theme-light .markdown-rendered .callout[data-callout="success"],
+.theme-light .markdown-rendered .callout[data-callout="check"],
+.theme-light .markdown-rendered .callout[data-callout="done"]      { --callout-color: 99, 128, 66; }
+.theme-light .markdown-rendered .callout[data-callout="question"],
+.theme-light .markdown-rendered .callout[data-callout="help"],
+.theme-light .markdown-rendered .callout[data-callout="faq"]       { --callout-color: 184, 132, 62; }
+.theme-light .markdown-rendered .callout[data-callout="warning"],
+.theme-light .markdown-rendered .callout[data-callout="caution"],
+.theme-light .markdown-rendered .callout[data-callout="attention"] { --callout-color: 184, 116, 52; }
+.theme-light .markdown-rendered .callout[data-callout="failure"],
+.theme-light .markdown-rendered .callout[data-callout="fail"],
+.theme-light .markdown-rendered .callout[data-callout="missing"],
+.theme-light .markdown-rendered .callout[data-callout="danger"],
+.theme-light .markdown-rendered .callout[data-callout="error"],
+.theme-light .markdown-rendered .callout[data-callout="bug"]       { --callout-color: 168, 86, 68; }
+.theme-light .markdown-rendered .callout[data-callout="example"]   { --callout-color: 122, 104, 150; }
+
+/* ============================================================
+   Mobile — opaque tab options overlay (dark mode)
+   The dropdown list that appears over the sidebar content was
+   transparent, letting list items bleed through.
+   ============================================================ */
+.theme-dark .workspace-drawer-tab-options-list {
+  background-color: var(--brand-ink-soft);
+  border: 0.5px solid rgba(243, 238, 228, 0.10);
+}

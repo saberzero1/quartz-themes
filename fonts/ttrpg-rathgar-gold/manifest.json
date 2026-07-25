@@ -1,0 +1,36 @@
+{
+  "extractedAt": "2026-07-25T00:47:40.135Z",
+  "sourceTheme": "TTRPG - Rathgar Gold",
+  "fonts": [
+    {
+      "family": "Cinzel Decorative",
+      "style": "normal",
+      "weight": "400",
+      "file": "cinzel-decorative.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Cinzel Decorative",
+      "style": "normal",
+      "weight": "700",
+      "file": "cinzel-decorative-1.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Cinzel Decorative",
+      "style": "normal",
+      "weight": "900",
+      "file": "cinzel-decorative-2.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    }
+  ]
+}

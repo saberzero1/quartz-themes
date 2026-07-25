@@ -1,25 +1,14 @@
 /*
-Robsi Theme - A modern theme for Obsidian.
-By Riffaells - 2026
-Built: 2026-05-16T18:27:21.280005
-Files included: 26
+Robsi Theme for Obsidian
+By Riffaells
+Built: 2026-06-17T15:42:03.311722
+Files included: 28
 */
 
 /* base/variables.css */
 /* ========================================================================== */
 /*                           BASE VARIABLES                                   */
 /* ========================================================================== */
-
-:root {
-    /* --- Typography Fonts --- */
-    --font-family-theme: 'Inter', system-ui, -apple-system, sans-serif;
-    --font-family-heading: var(--font-family-theme);
-    --font-family-monospace: 'JetBrains Mono', 'Fira Code', 'SF Mono', Consolas, monospace;
-
-    /* --- Base Sizes --- */
-    --font-size-theme: 16px;
-    --line-height-theme: 1.6;
-}
 
 /* Common variables shared across both themes */
 .theme-dark,
@@ -28,8 +17,9 @@ Files included: 26
     /* ======================================================================== */
     /*                               TYPOGRAPHY                                */
     /* ======================================================================== */
-    --font-text-size: var(--font-size-theme);
-    --line-height-normal: var(--line-height-theme);
+    --font-text-size: 16px;
+    --line-height-normal: 1.6;
+    --font-monospace: 'JetBrains Mono', 'Fira Code', 'SF Mono', Consolas, monospace;
 
     /* ======================================================================== */
     /*                                BORDERS                                  */
@@ -47,8 +37,8 @@ Files included: 26
     --size-2-1: 2px;
     --size-2-2: 4px;
     --size-2-3: 6px;
-    --size-4-1: 8px;
-    --size-4-2: 10px;
+    --size-4-1: 4px;
+    --size-4-2: 8px;
     --size-4-3: 12px;
     --size-4-4: 14px;
     --size-4-5: 16px;
@@ -161,7 +151,7 @@ Files included: 26
     --background-modifier-form-field: transparent;
     --background-modifier-form-field-highlighted: var(--bg_dark);
     --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
-    --background-modifier-cover: rgba(var(--bg_dark_x), 0.8);
+    --background-modifier-cover: rgba(var(--bg_dark_x), 0.3);
     --background-modifier: rgba(var(--bg_highlight_x), 0.5);
     --background-modifier-hover: rgba(var(--bg_highlight_x), 0.7);
     --background-modifier-hover-rgb: var(--bg_highlight_x);
@@ -193,14 +183,17 @@ Files included: 26
     --h5-color: var(--blue);
     --h6-color: var(--yellow);
 
-    --hr-color: var(--text-normal);
-    --hr-thickness: 3px;
+    --hr-gradient-start: #B68D40;   /* Bronze gold */
+    --hr-gradient-mid: #E1A95F;     /* Light gold */
+    --hr-star-color: #FFC800;       /* Neon gold */
+    --hr-star-glow-mid: #FFD700;    /* Mid glow */
+    --hr-star-glow-outer: #FFA500;  /* Outer glow */
 
     /* Links */
-    --link-color: var(--purple);
-    --link-color-hover: var(--cyan);
-    --internal-link-color: var(--green);
-    --internal-link-color-hover: var(--blue);
+    --link-color: var(--green);
+    --link-color-hover: var(--blue);
+    --link-unresolved-color: var(--purple);
+    --link-unresolved-opacity: 0.6;
     --link-external-color: var(--purple);
     --link-external-color-hover: var(--cyan);
 	--link-decoration: none;
@@ -262,12 +255,12 @@ Files included: 26
     --graph-node-tag: var(--orange);
     --graph-node-attachment: var(--blue);
 
-	--bullet-new-color: var(--purple);
-
 	--setting-items-background: transparent;
 
 	--divider-vertical-height: 100%;
 	--embed-padding: 0;
+
+    --prompt-width: 900px;
 }
 
 
@@ -287,6 +280,7 @@ Files included: 26
     --accent-h: 202;
     --accent-s: 100%;
     --accent-l: 75%;
+    --accent-color: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
 
     /* ======================================================================== */
     /*                           BACKGROUND COLORS                             */
@@ -326,8 +320,12 @@ Files included: 26
     --comment_x: 120, 120, 120;
     --comment: rgb(var(--comment_x));
     
+    /* Code */
     --code-comment_x: 115, 125, 165;
     --code-comment: rgb(var(--code-comment_x));
+
+    --code-background: rgb(var(--purple_x), 0.1);
+    --code-normal: rgb(var(--fg_dark_x), .9);
 
     /* ======================================================================== */
     /*                             COLOR PALETTE                               */
@@ -350,7 +348,7 @@ Files included: 26
     --purple-light: rgb(var(--purple-light_x));
 
     /* Magentas */
-    --magent_hsl: 261 85% 79%;
+    --magenta_hsl: 261 85% 79%;
     --magenta_x: 187, 154, 247;
     --magenta: rgb(var(--magenta_x));
     --magenta-light_x: 210, 190, 255;
@@ -381,7 +379,7 @@ Files included: 26
     --red1_x: 219, 75, 75;
     --red1: rgb(var(--red1_x));
     --red-dark_x: 155, 45, 45;
-    --red-dark: rgb(var(--red_x));
+    --red-dark: rgb(var(--red-dark_x));
 
     /* Special */
     --terminal_black_x: 65, 72, 104;
@@ -399,7 +397,6 @@ Files included: 26
     --interactive-hover: var(--bg_highlight);
     --interactive-success: var(--green);
     --interactive-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
-    --accent-color: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
 
     /* Tabs */
     --tab-container-background: var(--background-primary);
@@ -408,15 +405,19 @@ Files included: 26
     --tab-background-hover: rgba(18, 18, 18, 0.8);
     --tab-divider-color: rgba(40, 40, 40, 0.3);
 
-    /* Code */
-    --code-background: rgb(var(--purple_x), 0.05);
-    --code-normal: var(--fg_dark);
     
     /* Workspace */
     --workspace-background-translucent: rgba(2, 2, 2, 0.9);
 
     /* Blockquote */
-    --blockquote-background-color: rgba(var(--purple_x), 0.12);
+    --blockquote-background-color: rgba(var(--teal_x), 0.12);
+    --blockquote-border: var(--teal);
+    --blockquote-border-color: rgba(var(--teal_x), 0.4);
+    --blockquote-color: var(--fg);
+    --blockquote-quote-mark: var(--teal);
+    --blockquote-accent: var(--teal);
+    --blockquote-gradient: rgba(var(--teal_x), 0.1), rgba(var(--teal_x), 0);
+    --blockquote-border-thickness: 3px;
 
     /* Spoiler */
     --spoiler-background: rgba(var(--bg_highlight_x), 0.3);
@@ -457,8 +458,9 @@ Files included: 26
     /*                           THEME ACCENT COLORS                           */
     /* ======================================================================== */
     --accent-h: 265;
-    --accent-s: 60%;
-    --accent-l: 55%;
+    --accent-s: 55%;
+    --accent-l: 45%;
+    --accent-color: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
 
     /* ======================================================================== */
     /*                           BACKGROUND COLORS                             */
@@ -518,7 +520,7 @@ Files included: 26
     --purple-light: rgb(var(--purple-light_x));
 
     /* Magentas */
-    --magent_hsl: 261 65% 50%;
+    --magenta_hsl: 261 65% 50%;
     --magenta_x: 160, 30, 140;
     --magenta: rgb(var(--magenta_x));
     --magenta-light_x: 180, 60, 200;
@@ -563,7 +565,6 @@ Files included: 26
     --interactive-hover: #cbd5e1;
     --interactive-success: var(--green);
     --interactive-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
-    --accent-color: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
     
     /* Tabs */
     --tab-container-background: var(--background-primary);
@@ -572,15 +573,14 @@ Files included: 26
     --tab-background-hover: rgba(248, 250, 252, 0.8);
     --tab-divider-color: rgba(200, 205, 210, 0.4);
 
-    /* Status bar */
-    .status-bar {
-        background: #f8fafc;
-        border-top: 1px solid #e2e8f0;
-        color: #64748b;
-    }
-
     /* Blockquote */
-    --blockquote-background-color: rgba(var(--purple_x), 0.08);
+    --blockquote-background-color: rgba(var(--teal_x), 0.08);
+    --blockquote-border: var(--teal);
+    
+    --blockquote-color: var(--fg);
+    --blockquote-quote-mark: var(--teal);
+    --blockquote-accent: var(--teal);
+    --blockquote-gradient: rgba(var(--teal_x), 0.08), rgba(var(--teal_x), 0);
 
     /* Code */
     --code-background: rgba(var(--purple_x), 0.06);
@@ -1091,6 +1091,22 @@ button.mod-small {
 
 /* ================================================= */
 
+/* components/checkboxes.css */
+/* CHECKBOXES */
+
+input[type="checkbox"] {
+    border: 3px solid var(--checkbox-border-color);
+    border-radius: var(--checkbox-radius);
+    cursor: pointer;
+}
+
+ul > li.task-list-item > .task-list-item-checkbox {
+    margin-inline-start: 0;
+}
+
+
+/* ================================================= */
+
 /* components/community-modal.css */
 /* ========================================================================== */
 /*                           COMMUNITY MODAL                                  */
@@ -1114,7 +1130,6 @@ button.mod-small {
 
 /* Plugin name and flair */
 .community-modal-info-name {
-    font-size: 1.3em;
     font-weight: 600;
     color: var(--text-normal);
     display: flex;
@@ -1243,7 +1258,6 @@ button.mod-small {
 }
 
 .community-modal-readme h2 {
-    font-size: 1.3em;
     margin-top: 1em;
     margin-bottom: 0.5em;
 }
@@ -1308,8 +1322,9 @@ textarea:focus {
 /* Prompt/Modal Inputs */
 input.prompt-input {
     background: rgba(var(--background-primary-rgb), 0.5);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px !important;
     border-color: var(--prompt-border-color);
-    font-size: 1.1em;
+    font-size: 1.4em;
     padding: 10px 14px;
 }
 
@@ -1398,133 +1413,198 @@ input[type=range]::-webkit-slider-thumb {
 /*                                   LINKS                                    */
 /* ========================================================================== */
 
-/* --- External Links --- */
-.external-link,
-.cm-link:not(.internal-link),
-.cm-url {
-  color: var(--link-external-color) !important;
-  text-decoration: none !important;
-  border-bottom: 1px solid rgba(var(--link-external-color-rgb), 0.5);
-  padding-inline-end: 0;
-  background: none;
+/* --- Internal Links (resolved) --- */
+/* Reading view */
+.markdown-preview-view a.internal-link,
+.markdown-rendered a.internal-link {
+    color: var(--link-color);
+    text-decoration: none;
 }
 
-.external-link:hover,
-.cm-link:not(.internal-link):hover,
-.cm-url:hover {
-  color: var(--link-external-color-hover) !important;
-  border-bottom-color: rgba(var(--link-external-color-hover-rgb), 0.7);
+.markdown-preview-view a.internal-link:hover,
+.markdown-rendered a.internal-link:hover {
+    color: var(--link-color-hover);
+    text-decoration: none;
 }
 
-/* Force disable filter on external links */
-.cm-s-obsidian span.cm-formatting-link.cm-url,
-.cm-s-obsidian span.cm-url,
-.external-link {
-  filter: none !important;
+/* Live Preview (CM6) */
+.cm-s-obsidian .cm-hmd-internal-link:not(.cm-hmd-unresolved) {
+    color: var(--link-color);
 }
 
-/* Remove underline from child 'a' tags */
-.cm-link:not(.internal-link) a.cm-underline,
-.cm-url a.cm-underline {
-    text-decoration: none !important;
-}
-
-/* External Link Icon */
-a.external-link::after {
-  content: ' ';
-  width: 12px;
-  height: 12px;
-  background-image: linear-gradient(transparent, transparent), url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>');
-  background-size: contain;
-  display: inline-block;
-  vertical-align: text-top;
-  opacity: 0.7;
-  transition: none;
-  border-bottom: none !important;
-  margin-left: 4px;
-}
-
-a.external-link:hover::after {
-  opacity: 1;
-}
-
-/* --- Internal Links --- */
-a.internal-link,
-.cm-hmd-internal-link,
-.cm-hmd-internal-link a,
-.HyperMD-header .cm-hmd-internal-link a,
-.cm-link,
-.cm-link .cm-hmd-internal-link,
-.markdown-preview-view .internal-link,
-.markdown-source-view .internal-link,
-.internal-lin,
-.metadata-property-value .internal-link,
-.markdown-rendered .internal-link,
-.cm-s-obsidian span.cm-hmd-internal-link {
-  color: var(--internal-link-color);
-  text-decoration: none !important;
-  transition: none;
-}
-
-a.internal-link:hover,
-.cm-hmd-internal-link:hover,
-.cm-hmd-internal-link a:hover,
-.internal-link:hover {
-  color: var(--internal-link-color-hover);
-  text-decoration: none !important;
+.cm-s-obsidian .cm-hmd-internal-link:not(.cm-hmd-unresolved):hover {
+    color: var(--link-color-hover);
 }
 
 /* --- Unresolved Links --- */
-a.internal-link.is-unresolved,
-.cm-hmd-internal-link.is-unresolved,
-.markdown-preview-view .internal-link.is-unresolved,
-.markdown-rendered .internal-link.is-unresolved {
-  color: var(--link-unresolved-color);
-  opacity: 0.7;
+/* Reading view */
+.markdown-preview-view a.internal-link.is-unresolved,
+.markdown-rendered a.internal-link.is-unresolved {
+    color: var(--link-unresolved-color);
+    opacity: var(--link-unresolved-opacity, 0.6);
+    text-decoration-color: var(--link-unresolved-color);
 }
 
-a.internal-link.is-unresolved:hover,
-.cm-hmd-internal-link.is-unresolved:hover,
-.internal-link.is-unresolved:hover {
-  color: var(--link-unresolved-color);
-  opacity: 0.7;
+.markdown-preview-view a.internal-link.is-unresolved:hover,
+.markdown-rendered a.internal-link.is-unresolved:hover {
+    opacity: 1;
 }
 
-/* --- Links inside bold / italic / both --- */
-/* Prevent bold-color and italic-color from overriding link color */
-.cm-strong .cm-hmd-internal-link,
-.cm-em .cm-hmd-internal-link,
-.cm-strong.cm-em .cm-hmd-internal-link,
+/* Live Preview (CM6) */
+.cm-s-obsidian .cm-hmd-internal-link.cm-hmd-unresolved,
+.cm-s-obsidian span.cm-hmd-unresolved {
+    color: var(--link-unresolved-color);
+    opacity: var(--link-unresolved-opacity, 0.6);
+}
+
+.cm-s-obsidian .cm-hmd-internal-link.cm-hmd-unresolved:hover,
+.cm-s-obsidian span.cm-hmd-unresolved:hover {
+    opacity: 1;
+}
+
+/* --- External Links --- */
+.external-link,
+a[href^="https://"],
+a[href^="http://"],
+.cm-s-obsidian .cm-link:not(.cm-hmd-internal-link),
+.cm-s-obsidian .cm-url {
+    color: var(--link-external-color);
+    text-decoration: none;
+    border-bottom: 1px solid var(--link-external-border-color);
+    padding-inline-end: 0;
+    background: none;
+}
+
+.external-link:hover,
+a[href^="https://"]:hover,
+a[href^="http://"]:hover,
+.cm-s-obsidian .cm-link:not(.cm-hmd-internal-link):hover,
+.cm-s-obsidian .cm-url:hover {
+    color: var(--link-external-color-hover);
+}
+
+
+a.external-link:hover::after,
+a[href^="https://"]:hover::after,
+a[href^="http://"]:hover::after {
+    opacity: 1;
+}
+
+.cm-s-obsidian .cm-link-alias-pipe {
+    opacity: 0.4;
+}
+
+/* --- Links inside bold / italic --- */
+.cm-strong .cm-hmd-internal-link:not(.cm-hmd-unresolved),
+.cm-em .cm-hmd-internal-link:not(.cm-hmd-unresolved),
 strong a.internal-link,
-em a.internal-link,
-strong em a.internal-link,
-em strong a.internal-link {
-  color: var(--internal-link-color) !important;
+em a.internal-link {
+    color: var(--link-color);
 }
 
-.cm-strong .cm-hmd-internal-link:hover,
-.cm-em .cm-hmd-internal-link:hover,
+.cm-strong .cm-hmd-internal-link:not(.cm-hmd-unresolved):hover,
+.cm-em .cm-hmd-internal-link:not(.cm-hmd-unresolved):hover,
 strong a.internal-link:hover,
 em a.internal-link:hover {
-  color: var(--internal-link-color-hover) !important;
+    color: var(--link-color-hover);
 }
 
-/* Helper for data-link-text */
-/* Lower specificity to allow plugin overrides via data-link-type */
-.data-link-text a.cm-underline {
-  color: var(--internal-link-color);
-  text-decoration: none !important;
+
+/* ================================================= */
+
+/* components/loading.css */
+/* LOADING SCREEN */
+
+.progress-bar {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    background-color: var(--background-primary);
+    z-index: 10000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
 }
 
-/* --- Links without plugin recognition (no data-link-text wrapper) --- */
-/* These are unresolved links not handled by Periodic Notes or similar plugins */
-.cm-hmd-internal-link:not(:has(.data-link-text)) {
-  color: var(--link-unresolved-color) !important;
-  opacity: 0.7;
+/* Hide default message */
+.progress-bar-message {
+    font-size: 0;
+    position: relative;
 }
 
-.cm-hmd-internal-link:not(:has(.data-link-text)):hover {
-  opacity: 1;
+/* Show OBSIDIAN with wave effect */
+.progress-bar-message::after {
+    content: "OBSIDIAN";
+    font-size: 4rem;
+    font-weight: 700;
+    letter-spacing: 0.35em;
+    text-transform: uppercase;
+    color: transparent;
+    background: linear-gradient(
+        90deg,
+        var(--text-muted) 0%,
+        var(--text-accent) 30%,
+        var(--text-accent-hover) 50%,
+        var(--text-accent) 70%,
+        var(--text-muted) 100%
+    );
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: robsi-wave 3s linear infinite;
+}
+
+/* Progress bar container */
+.progress-bar-indicator {
+    position: relative;
+    height: 5px;
+    width: 360px;
+    overflow: hidden;
+    border-radius: 99px;
+    background: rgba(var(--text-muted-rgb), 0.15);
+    margin: 0;
+}
+
+/* Hide base line */
+.progress-bar-line {
+    display: none;
+}
+
+/* Animated sublines */
+.progress-bar-subline {
+    position: absolute;
+    height: 100%;
+    border-radius: 99px;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        var(--text-accent),
+        var(--text-accent-hover),
+        transparent
+    );
+}
+
+.progress-bar-subline.mod-increase {
+    animation: robsi-loading 2s ease-in-out infinite;
+}
+
+.progress-bar-subline.mod-decrease {
+    animation: robsi-loading 2s ease-in-out 0.7s infinite;
+    opacity: 0.4;
+}
+
+@keyframes robsi-wave {
+    0%   { background-position: 200% center; }
+    100% { background-position: 0% center; }
+}
+
+@keyframes robsi-loading {
+    0%   { left: -60%; width: 60%; }
+    100% { left: 110%; width: 60%; }
 }
 
 
@@ -1554,6 +1634,10 @@ em a.internal-link:hover {
     padding: 4px 8px; /* Compact padding */
     font-size: 0.95em; /* Slightly smaller text */
     transition: background-color 0.1s ease;
+}
+
+.prompt .suggestion-item {
+    padding: 8px 12px; /* Compact padding */
 }
 
 /* Selected/Focused state */
@@ -1589,7 +1673,6 @@ em a.internal-link:hover {
 
 /* Modal backdrop with blur effect */
 .modal-bg {
-    background-color: rgba(0, 0, 0, 0.3) !important; /* Force semi-transparent black */
     backdrop-filter: blur(16px);
     opacity: 1 !important;
 }
@@ -1653,11 +1736,9 @@ em a.internal-link:hover {
 /* ================================================= */
 
 /* components/toggles.css */
-/* ========================================================================== */
-/*                           TOGGLES & CHECKBOXES                             */
-/* ========================================================================== */
+/* TOGGLES */
 
-/* --- Settings Toggles --- */
+/* --- Settings Toggle Item --- */
 .setting-item.mod-toggle {
     display: flex;
     align-items: center;
@@ -1666,7 +1747,6 @@ em a.internal-link:hover {
     padding-bottom: 8px;
 }
 
-/* Info section (Label + Desc) */
 .setting-item-info {
     padding-right: 12px;
     min-width: 0;
@@ -1678,7 +1758,6 @@ em a.internal-link:hover {
     color: var(--text-faint);
 }
 
-/* Control section (The Switch) */
 .setting-item-control {
     display: flex;
     align-items: center;
@@ -1709,14 +1788,7 @@ em a.internal-link:hover {
     box-shadow: var(--shadow-s);
 }
 
-/* --- General Checkboxes --- */
-input[type="checkbox"] {
-    border: 3px solid var(--checkbox-border-color);
-    border-radius: var(--checkbox-radius);
-    cursor: pointer;
-}
-
-/* Checkbox Container Wrapper (Obsidian UI Toggles) */
+/* --- Checkbox Container (UI Toggle Switch) --- */
 .checkbox-container {
     display: flex;
     align-items: center;
@@ -1736,7 +1808,6 @@ input[type="checkbox"] {
     box-shadow: var(--shadow-m);
 }
 
-/* Enabled state - Default Obsidian checkmark behavior */
 .checkbox-container.is-enabled {
     background-color: var(--interactive-accent);
     border-color: var(--interactive-accent);
@@ -1744,13 +1815,12 @@ input[type="checkbox"] {
     box-shadow: 0 2px 8px rgba(var(--interactive-accent-rgb), 0.3);
 }
 
-/* Disabled state */
 .checkbox-container input[type="checkbox"]:disabled {
     opacity: 0.5;
     cursor: not-allowed;
 }
 
-/* Extra Settings Buttons */
+/* --- Extra Settings Button --- */
 .extra-setting-button {
     width: 28px;
     height: 28px;
@@ -1765,9 +1835,9 @@ input[type="checkbox"] {
     background-color: var(--background-modifier-hover);
 }
 
-/* Installed Plugins List Spacing */
+/* --- Installed Plugins List --- */
 .installed-plugins-container .setting-item.mod-toggle {
-    background-color: rgba(var(--background-primary-rgb), 0.25) !important;
+    background-color: rgba(var(--background-primary-rgb), 0.25);
     border: 2px solid var(--background-modifier-border);
     border-radius: 12px;
     padding: 10px 12px;
@@ -1796,52 +1866,6 @@ input[type="checkbox"] {
 /* ================================================= */
 
 /* editor/blocks.css */
-/* ========================================================================== */
-/*                           BLOCK ELEMENTS                                   */
-/* ========================================================================== */
-
-/* --- Blockquotes --- */
-blockquote {
-	border: none;
-	border-left: 2px solid var(--blockquote-border);
-	border-radius: var(--radius-m);
-	color: var(--blockquote-color);
-	position: relative;
-
-	padding: 12px 16px 12px 40px; /* место под иконку */
-	overflow: hidden; /* КЛЮЧЕВО */
-}
-
-/* Decorative Quote Mark */
-blockquote::before {
-	content: "𒀭";
-	color: var(--blockquote-quote-mark);
-	position: absolute;
-	top: 7px;
-	left: 14px;
-	line-height: 1;
-	font-size: 1.2em;
-	font-family: 'Georgia', serif;
-	pointer-events: none;
-	opacity: 0.5;
-}
-
-/* Content styling - ensure text doesn't overlap with the decorative icon */
-blockquote p {
-    padding-left: 24px;
-    position: relative;
-    z-index: 1;
-    pointer-events: auto;
-    margin: 0;
-}
-
-/* Live Preview Formatting for Quotes */
-.cm-formatting.cm-formatting-quote {
-    color: var(--blockquote-accent) !important;
-    font-weight: 600;
-    opacity: 0.8;
-}
-
 
 
 /* ================================================= */
@@ -2027,10 +2051,10 @@ blockquote p {
 /* Большая точка */
 ul:not(li > *) > li > .list-bullet::after,
 .HyperMD-list-line-1 .list-bullet::after {
-	height: 6px;
-	width: 6px;
+	height: 8px;
+	width: 8px;
 	border-radius: 50%;
-	background-color: var(--bullet-new-color);
+	background-color: var(--list-marker-color);
 }
 
 /* ========== LEVEL 2 ========== */
@@ -2040,28 +2064,30 @@ ul:not(li > *) > li > ul > li > .list-bullet::after,
 	height: 6px;
 	width: 6px;
 	background-color: transparent;
-	border: 2px solid var(--bullet-new-color);
+	border: 2px solid var(--list-marker-color);
 	border-radius: 50%;
 }
 
 /* ========== LEVEL 3 ========== */
-/* Чёрточка */
+/* Ромб ◈ */
 ul:not(li > *) > li > ul > li > ul > li > .list-bullet::after,
 .HyperMD-list-line-3 .list-bullet::after {
-	height: 2px;
-	width: 8px;
-	border-radius: 0;
-	background-color: var(--bullet-new-color);
+	content: "◈";
+	height: unset;
+	width: unset;
+	background-color: transparent;
+	color: var(--list-marker-color);
+	margin-top: 3px;
 }
 
 /* ========== LEVEL 4 ========== */
 /* Маленькая точка */
 ul:not(li > *) > li > ul > li > ul > li > ul > li > .list-bullet::after,
 .HyperMD-list-line-4 .list-bullet::after {
-	height: 3px;
-	width: 3px;
-	border-radius: 50%;
-	background-color: var(--bullet-new-color);
+	height: 2px;
+	width: 8px;
+	border-radius: 0;
+	background-color: var(--list-marker-color);
 }
 
 /* ========== LEVEL 5 ========== */
@@ -2071,17 +2097,9 @@ ul:not(li > *) > li > ul > li > ul > li > ul > li > ul > li > .list-bullet::afte
 	height: 5px;
 	width: 5px;
 	border-radius: 0;
-	background-color: var(--bullet-new-color);
+	background-color: var(--list-marker-color);
 }
 
-ul > li.task-list-item > .task-list-item-checkbox {
-	margin-inline-start: 0;
-}
-
-.markdown-rendered ul > li,
-.markdown-rendered ol > li {
-    margin-inline-start: 2ch !important;
-}
 
 
 /* ================================================= */
@@ -2316,15 +2334,53 @@ ins, .cm-ins {
 /*                           Horizontal Rule (hr)                             */
 /* -------------------------------------------------------------------------- */
 
-hr,
-.markdown-rendered hr,
+/* Common styles for both views */
+.markdown-source-view.mod-cm6 hr,
 .markdown-preview-view hr {
+    position: relative;
+    overflow: initial;
     border: none;
-    height: var(--hr-thickness);
-    background: var(--hr-color);
-    border-radius: 4px;
-    margin: 2em 0;
-    opacity: 0.3;
+    height: 1px;
+    border-bottom: 1px solid;
+    border-image-slice: 1;
+    border-width: 2px;
+    border-image-source: linear-gradient(to right,
+        transparent 0%,
+        var(--hr-gradient-start) 16%,
+        var(--hr-gradient-mid) 46%,
+        transparent 48%,
+        transparent 52%,
+        var(--hr-gradient-mid) 54%,
+        var(--hr-gradient-start) 84%,
+        transparent 100%);
+}
+
+/* Margin adjustments */
+.markdown-source-view.mod-cm6 hr {
+    margin-block-start: 0.8em;
+    margin-block-end: 0.2em;
+}
+
+.markdown-preview-view hr {
+    margin-block-start: 2em;
+    margin-block-end: 1.2em;
+}
+
+/* Star decoration */
+.markdown-source-view.mod-cm6 hr::after,
+.markdown-preview-view hr::after {
+    content: '✧';
+    display: inline-block;
+    font-size: 1.4rem;
+    border-width: 2px;
+    position: absolute;
+    color: var(--hr-star-color);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow:
+        0 0 3px var(--hr-star-color),
+        0 0 6px var(--hr-star-glow-mid),
+        0 0 12px var(--hr-star-glow-outer);
 }
 
 

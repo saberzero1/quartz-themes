@@ -31,7 +31,7 @@ body {
 .workspace-sidedock-vault-profile,
 .workspace-tab-header-new-tab,
 .workspace-tab-header-tab-list {
-  display: none !important;
+  visibility: collapse;
 }
 
 .workspace-tab-header-spacer,
@@ -50,7 +50,7 @@ body {
 }
 
 .workspace-tab-header-container {
-  padding-right: var(--size-4-2) !important;
+  padding-inline: var(--size-4-2) !important;
 }
 
 .workspace-tab-header-container,
@@ -69,6 +69,13 @@ body {
   opacity: 1;
 }
 
+.workspace-tab-header-inner > .workspace-tab-header-inner-close-button {
+  visibility: collapse;
+}
+.workspace-tab-header-inner:hover > .workspace-tab-header-inner-close-button {
+  visibility: initial;
+}
+
 .workspace-tab-header-container:has(.sidebar-toggle-button.mod-right) {
   opacity: 1;
 }
@@ -82,12 +89,20 @@ body {
   justify-content: center;
 }
 
-.prompt-input {
-  padding-top: var(--size-4-8) !important;
-}
-
 .prompt {
   top: 15vh;
+}
+
+.prompt-input {
+  margin-top: var(--size-4-2);
+}
+
+.suggestion-item {
+  padding-block: var(--size-4-3);
+}
+
+.tree-item-self, .tree-item-self.nav-folder-title {
+  padding-block: var(--size-4-2);
 }
 
 .workspace-tab-header.is-active > .workspace-tab-header-inner {
@@ -96,4 +111,6 @@ body {
 
 .modal-container {
   animation: superflat-appear 0.35s;
-}/*# sourceMappingURL=theme.css.map */
+}
+
+/*# sourceMappingURL=theme.css.map */

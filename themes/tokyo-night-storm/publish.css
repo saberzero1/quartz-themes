@@ -1540,6 +1540,7 @@ body.theme-dark {
     var(--accent-s),
     var(--accent-l)
   ) !important;
+  --embed-background: var(--bg_dark) !important;
   --italic-color: hsl(
     var(--accent-h),
     var(--accent-s),
@@ -1556,19 +1557,18 @@ body.theme-dark {
   --red_x: 255, 117, 127 !important;
   --yellow: rgb(var(--yellow_x)) !important;
   --yellow_x: 224, 175, 104 !important;
-  --blue: rgb(var(--blue_x)) !important;
-  --comment: rgb(var(--comment_x)) !important;
-  --cyan: rgb(var(--cyan_x)) !important;
-  --embed-background: var(--bg_dark) !important;
   --flashing-background: rgba(var(--blue0_x), 0.3) !important;
   --mermaid-loopline: var(--blue) !important;
   --mermaid-note: var(--blue0) !important;
   --nav-file-tag: rgba(var(--yellow_x), 0.9) !important;
   --text-highlight-fg: var(--bg) !important;
+  --blue: rgb(var(--blue_x)) !important;
+  --comment: rgb(var(--comment_x)) !important;
+  --cyan: rgb(var(--cyan_x)) !important;
   --magenta: rgb(var(--magenta_x)) !important;
+  --bg: rgb(var(--bg_x)) !important;
   --teal: rgb(var(--teal_x)) !important;
   --fg: rgb(var(--fg_x)) !important;
-  --bg: rgb(var(--bg_x)) !important;
   --mermaid-actor: var(--fg_dark) !important;
   --bg_dark2: rgb(var(--bg_dark2_x)) !important;
   --bg_highlight: rgb(var(--bg_highlight_x)) !important;

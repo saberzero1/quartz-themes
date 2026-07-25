@@ -1080,10 +1080,10 @@ body.theme-light {
     --theme-color-baseTransparent25
   ) !important;
   --nav-item-children-margin-start: calc(
-    var(--size-4-4) / 2 - var(--nav-indentation-guide-width) / 2
+    var(--size-4-4)/2 - var(--nav-indentation-guide-width)/2
   ) !important;
   --nav-item-children-padding-start: calc(
-    1em - var(--nav-indentation-guide-width) / 2
+    1em - var(--nav-indentation-guide-width)/2
   ) !important;
   --nav-item-color: var(--theme-color-baseDarkened80) !important;
   --nav-item-color-active: var(--theme-color-baseLightened80) !important;
@@ -1502,12 +1502,12 @@ body.theme-light {
   --shadow-xs:
     0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065),
     var(--shadow-edges) !important;
-  --tab-background-inactive: var(--theme-color-baseLightened80) !important;
-  --embed-border-left: none !important;
-  --embed-border-right: none !important;
   --embed-background: var(--theme-color-baseTransparent12) !important;
-  --setting-items-padding: 0 !important;
   --tag-weight: 400 !important;
+  --embed-border-left: none !important;
+  --tab-background-inactive: var(--theme-color-baseLightened80) !important;
+  --embed-border-right: none !important;
+  --setting-items-padding: 0 !important;
   --radius-xs: calc(var(--theme-setting-baseRadius) * 0.25) !important;
   --r-background-color: var(--background-primary) !important;
   --r-heading-color: var(--text-normal) !important;
@@ -2747,10 +2747,10 @@ body.theme-dark {
     --theme-color-baseTransparent25
   ) !important;
   --nav-item-children-margin-start: calc(
-    var(--size-4-4) / 2 - var(--nav-indentation-guide-width) / 2
+    var(--size-4-4)/2 - var(--nav-indentation-guide-width)/2
   ) !important;
   --nav-item-children-padding-start: calc(
-    1em - var(--nav-indentation-guide-width) / 2
+    1em - var(--nav-indentation-guide-width)/2
   ) !important;
   --nav-item-color: var(--theme-color-baseLightened60) !important;
   --nav-item-color-active: var(--theme-color-baseDarkened80) !important;
@@ -3158,12 +3158,12 @@ body.theme-dark {
   --base-h: 0 !important;
   --base-l: 50% !important;
   --base-s: 65% !important;
-  --tab-background-inactive: var(--theme-color-baseDarkened85) !important;
-  --embed-border-left: none !important;
-  --embed-border-right: none !important;
   --embed-background: var(--theme-color-baseTransparent12) !important;
-  --setting-items-padding: 0 !important;
   --tag-weight: 400 !important;
+  --embed-border-left: none !important;
+  --tab-background-inactive: var(--theme-color-baseDarkened85) !important;
+  --embed-border-right: none !important;
+  --setting-items-padding: 0 !important;
   --radius-xs: calc(var(--theme-setting-baseRadius) * 0.25) !important;
   --r-background-color: var(--background-primary) !important;
   --r-heading-color: var(--text-normal) !important;

@@ -9,9 +9,8 @@ import { build } from "esbuild";
 import yaml from "js-yaml";
 
 const require = createRequire(import.meta.url);
-const parserEntryPoint = require.resolve(
-  "obsidian-style-settings/src/StyleSettingsParser.ts",
-);
+const parserEntryPoint =
+  require.resolve("obsidian-style-settings/src/StyleSettingsParser.ts");
 const tempParserDir = join(tmpdir(), "style-settings-migration-test");
 const tempParserPath = join(tempParserDir, "StyleSettingsParser.bundle.mjs");
 

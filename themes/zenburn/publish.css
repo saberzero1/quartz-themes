@@ -1517,13 +1517,13 @@ body.theme-dark {
   --black: #3f3f3f !important;
   --blue-light: #8cb0d3 !important;
   --magenta: #bc8cbc !important;
+  --bg: #3f3f3f !important;
   --yellow-bright: #efef8f !important;
   --task-checkbox: var(--red) !important;
   --table-header: var(--black-dim) !important;
   --table-hover: var(--black-bright) !important;
   --table-row-even: var(--black) !important;
   --table-row-odd: var(--black-dim) !important;
-  --bg: #3f3f3f !important;
   --black-bright: #7f7f7f !important;
   --blue-bright: #6996bf !important;
   --cyan-bright: #9ad6d9 !important;

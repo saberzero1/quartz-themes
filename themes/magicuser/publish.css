@@ -1462,14 +1462,15 @@ body.theme-light {
   --h6-color: var(--mu-h6) !important;
   --inline-title-color: var(--h1-color) !important;
   --vault-name-color: var(--mu-vault-title) !important;
+  --inline-title-font: var(--h1-font) !important;
   --h1-font: var(--mu-font-headings) !important;
   --h2-font: var(--mu-font-headings) !important;
   --h3-font: var(--mu-font-headings) !important;
   --h4-font: var(--mu-font-headings) !important;
   --h5-font: var(--mu-font-headings) !important;
   --h6-font: var(--mu-font-headings) !important;
-  --inline-title-font: var(--h1-font) !important;
   --embed-border-left: 2px solid #0072d348 !important;
+  --tab-font-weight: 500 !important;
   --embed-border-right: none !important;
   --status-bar-scroll-padding: calc(
     var(--status-bar-font-size) + 18px
@@ -1477,7 +1478,6 @@ body.theme-light {
   --vault-name-font-size: var(--font-ui-small) !important;
   --vault-name-font-weight: var(--font-medium) !important;
   --nav-item-weight-active: var(--font-semibold) !important;
-  --tab-font-weight: 500 !important;
   --cards-th-display: none !important;
   --hidden-text-underline-background-color: #ffff0088 !important;
   --hidden-text-underline-foreground-color: var(--text-normal) !important;
@@ -2782,14 +2782,15 @@ body.theme-dark {
   --h6-color: var(--mu-h6) !important;
   --inline-title-color: var(--h1-color) !important;
   --vault-name-color: var(--mu-vault-title) !important;
+  --inline-title-font: var(--h1-font) !important;
   --h1-font: var(--mu-font-headings) !important;
   --h2-font: var(--mu-font-headings) !important;
   --h3-font: var(--mu-font-headings) !important;
   --h4-font: var(--mu-font-headings) !important;
   --h5-font: var(--mu-font-headings) !important;
   --h6-font: var(--mu-font-headings) !important;
-  --inline-title-font: var(--h1-font) !important;
   --embed-border-left: 2px solid #0072d348 !important;
+  --tab-font-weight: 500 !important;
   --embed-border-right: none !important;
   --status-bar-scroll-padding: calc(
     var(--status-bar-font-size) + 18px
@@ -2797,7 +2798,6 @@ body.theme-dark {
   --vault-name-font-size: var(--font-ui-small) !important;
   --vault-name-font-weight: var(--font-medium) !important;
   --nav-item-weight-active: var(--font-semibold) !important;
-  --tab-font-weight: 500 !important;
   --cards-th-display: none !important;
   --hidden-text-underline-background-color: #ffff0088 !important;
   --hidden-text-underline-foreground-color: var(--text-normal) !important;

@@ -1315,6 +1315,7 @@ body.theme-light {
   --h5-color: var(--text-normal) !important;
   --h6-color: var(--text-normal) !important;
   --inline-title-color: var(--h1-color) !important;
+  --canvas-node-border-color: #232323 !important;
   --callout-note: 84, 122, 155;
   --checkbox-border-width: 0px !important;
   --dashboard-border-width: 1px !important;
@@ -1359,7 +1360,6 @@ body.theme-light {
   --calendar-dot-bg: #d10000 !important;
   --calendar-header-color: var(--text-muted) !important;
   --calendar-today-color: #d10000 !important;
-  --canvas-node-border-color: #232323 !important;
   --checkbox-bg-unchecked: #a9a9a9 !important;
   --cta-bg-dynamic: var(--interactive-accent) !important;
   --cta-bg-hover-dynamic: #000000 !important;
@@ -2496,6 +2496,7 @@ body.theme-dark {
   --h5-color: var(--dark-accent-custom) !important;
   --h6-color: var(--dark-accent-custom) !important;
   --inline-title-color: var(--h1-color) !important;
+  --canvas-node-border-color: #c0c0c0 !important;
   --callout-note: 96, 138, 176;
   --checkbox-border-width: 0px !important;
   --dashboard-border-width: 1px !important;
@@ -2540,7 +2541,6 @@ body.theme-dark {
   --calendar-dot-bg: #feb43f !important;
   --calendar-header-color: var(--text-muted) !important;
   --calendar-today-color: #feb43f !important;
-  --canvas-node-border-color: #c0c0c0 !important;
   --checkbox-bg-unchecked: #2f2f2f !important;
   --cta-bg-dynamic: var(--interactive-accent) !important;
   --cta-bg-hover-dynamic: color-mix(

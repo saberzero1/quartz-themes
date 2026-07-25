@@ -1525,11 +1525,11 @@ body.theme-dark {
   --vault-name-color: var(--text-normal) !important;
   --bold-color: var(--kuro-white-light) !important;
   --italic-color: var(--bold-color) !important;
+  --tag-weight: 100 !important;
   --embed-border-left: 2px solid var(--interactive-accent) !important;
   --embed-border-right: none !important;
   --vault-name-font-size: var(--font-ui-small) !important;
   --vault-name-font-weight: var(--font-medium) !important;
-  --tag-weight: 100 !important;
   --code-inline: var(--kuro-yellow-dark) !important;
   --h-font-style: oblique 10deg !important;
   --h-font-variant: proportional-nums !important;

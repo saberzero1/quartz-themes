@@ -1,0 +1,1108 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap');
+
+/* ==========================================================================
+   Paper Source — standalone Obsidian theme
+   ========================================================================== */
+
+/* @settings
+
+name: Paper Source
+id: paper-source
+settings:
+    -
+        id: ps-theme-head
+        title: Theme color
+        type: heading
+        level: 2
+        collapsed: false
+    -
+        id: cc-base-hue
+        title: Background tint hue
+        description: Rotate the whole paper palette around the wheel — backgrounds, text and headings shift together, so the default green can become pink, purple, blue, and so on. Lightness and saturation stay fixed, so the vibe is preserved. The tan accent is left untouched.
+        type: variable-number-slider
+        default: 132
+        min: 0
+        max: 360
+        step: 1
+    -
+        id: ps-layout-head
+        title: Layout & typography
+        type: heading
+        level: 2
+        collapsed: true
+    -
+        id: cc-radius
+        title: Corner radius
+        description: Roundness of cards, buttons, tabs and inputs.
+        type: variable-number-slider
+        default: 9
+        min: 0
+        max: 18
+        step: 1
+        format: px
+    -
+        id: cc-font-size
+        title: Body font size
+        type: variable-number-slider
+        default: 16
+        min: 13
+        max: 22
+        step: 1
+        format: px
+    -
+        id: cc-line-height
+        title: Line height
+        type: variable-number-slider
+        default: 1.6
+        min: 1.2
+        max: 2
+        step: 0.05
+    -
+        id: cc-reading-width
+        title: Reading line width
+        description: Maximum text width, in characters.
+        type: variable-number-slider
+        default: 72
+        min: 50
+        max: 110
+        step: 1
+        format: ch
+    -
+        id: cc-plain-emphasis
+        title: Plain bold & italic
+        description: Turn off the orange tint on bold and italic text.
+        type: class-toggle
+        default: false
+    -
+        id: cc-no-justify
+        title: Left-aligned body text
+        description: Disable justified paragraphs in reading view.
+        type: class-toggle
+        default: false
+    -
+        id: cc-image-shadow
+        title: Image shadow
+        description: Add a soft drop shadow under images in reading view.
+        type: class-toggle
+        default: false
+    -
+        id: cc-active-line
+        title: Highlight active line
+        description: Tint the line the cursor is on in the editor.
+        type: class-toggle
+        default: false
+    -
+        id: ps-graph-light-head
+        title: Graph colors — Light mode
+        type: heading
+        level: 2
+        collapsed: true
+    -
+        id: cc-graph-node-light
+        title: Node color
+        type: variable-color
+        format: hex
+        default: '#5e7a62'
+    -
+        id: cc-graph-line-light
+        title: Link color
+        type: variable-color
+        opacity: true
+        format: hex
+        default: '#5e7a6259'
+    -
+        id: cc-graph-tag-light
+        title: Tagged node color
+        type: variable-color
+        format: hex
+        default: '#d39a67'
+    -
+        id: cc-graph-unresolved-light
+        title: Unresolved node color
+        type: variable-color
+        format: hex
+        default: '#b9c8bc'
+    -
+        id: ps-graph-dark-head
+        title: Graph colors — Dark mode
+        type: heading
+        level: 2
+        collapsed: true
+    -
+        id: cc-graph-node-dark
+        title: Node color
+        type: variable-color
+        format: hex
+        default: '#bdd3c0'
+    -
+        id: cc-graph-line-dark
+        title: Link color
+        type: variable-color
+        opacity: true
+        format: hex
+        default: '#8aa68f4d'
+    -
+        id: cc-graph-tag-dark
+        title: Tagged node color
+        type: variable-color
+        format: hex
+        default: '#a6e22e'
+    -
+        id: cc-graph-unresolved-dark
+        title: Unresolved node color
+        type: variable-color
+        format: hex
+        default: '#6f7a70'
+*/
+
+/* Style Settings masters — declared at body scope (low specificity) so the
+   Style Settings plugin can override them. Everything else derives from these. */
+body {
+  --cc-base-hue: 132;
+
+  --cc-radius: 9;
+  --cc-font-size: 16;
+  --cc-line-height: 1.6;
+  --cc-reading-width: 72;
+
+  /* Graph colors — settable per mode in Style Settings, mapped in the
+     theme blocks below. */
+  --cc-graph-node-light:       #5e7a62;
+  --cc-graph-line-light:       #5e7a6259;
+  --cc-graph-tag-light:        #d39a67;
+  --cc-graph-unresolved-light: #b9c8bc;
+  --cc-graph-node-dark:        #bdd3c0;
+  --cc-graph-line-dark:        #8aa68f4d;
+  --cc-graph-tag-dark:         #a6e22e;  /* Monokai green */
+  --cc-graph-unresolved-dark:  #6f7a70;
+}
+
+.theme-light,
+.theme-dark {
+  --radius-s: calc(var(--cc-radius) * 1px - 3px);
+  --radius-m: calc(var(--cc-radius) * 1px);
+  --radius-l: calc(var(--cc-radius) * 1px + 3px);
+  --caret-color: var(--cc-coral);
+}
+
+.theme-light {
+  --cc-accent: #d39a67;                  /* tan accent — fixed, not driven by the hue slider */
+  --accent-h: 29; --accent-s: 58%; --accent-l: 61%;
+
+  --cc-coral:       var(--cc-accent);
+  --cc-coral-hover: #bd8650;
+  --cc-coral-soft:  #d39a672e;
+  --cc-paper-underline: #b37b40;         /* backlink underline */
+  --cc-paper-italic: #c86f2b;
+  --cc-paper-bold: #c86f2b;
+
+  --graph-line:            var(--cc-graph-line-light);
+  --graph-node:            var(--cc-graph-node-light);
+  --graph-node-tag:        var(--cc-graph-tag-light);
+  --graph-node-unresolved: var(--cc-graph-unresolved-light);
+  --graph-node-focused:    var(--cc-accent);
+
+  /* Paper surface — hue follows the Background tint slider, S/L fixed. */
+  --background-primary:        hsl(var(--cc-base-hue), 42%, 95%);
+  --background-primary-alt:    hsl(var(--cc-base-hue), 35%, 93%);
+  --background-secondary:      hsl(var(--cc-base-hue), 32%, 92%);
+  --background-secondary-alt:  hsl(var(--cc-base-hue), 30%, 88%);
+
+  --background-modifier-border:       hsl(var(--cc-base-hue), 23%, 85%);
+  --background-modifier-border-hover: hsl(var(--cc-base-hue), 22%, 78%);
+  --background-modifier-hover:        hsla(var(--cc-base-hue), 21%, 27%, 0.08);
+  --background-modifier-form-field:   hsl(var(--cc-base-hue), 39%, 98%);
+
+  --text-normal: hsl(var(--cc-base-hue), 21%, 27%);
+  --text-muted:  hsl(var(--cc-base-hue), 13%, 42%);
+  --text-faint:  hsl(var(--cc-base-hue), 11%, 62%);
+  --text-on-accent: #ffffff;
+  --text-accent: var(--cc-accent);
+  --text-selection: #d39a6740;
+
+  --interactive-accent:       var(--cc-accent);
+  --interactive-accent-hover: var(--cc-coral-hover);
+
+  --titlebar-background:         hsl(var(--cc-base-hue), 32%, 92%);
+  --titlebar-background-focused: hsl(var(--cc-base-hue), 35%, 93%);
+  --tab-background-active:       hsl(var(--cc-base-hue), 42%, 95%);
+
+  --h1-color: hsl(calc(var(--cc-base-hue) + 10), 51%, 16%);
+  --h2-color: hsl(calc(var(--cc-base-hue) + 10), 49%, 22%);
+  --h3-color: hsl(calc(var(--cc-base-hue) + 10), 49%, 27%);
+  --h4-color: hsl(calc(var(--cc-base-hue) + 10), 47%, 34%);
+  --h5-color: hsl(calc(var(--cc-base-hue) + 10), 47%, 40%);
+  --h6-color: hsl(calc(var(--cc-base-hue) + 10), 46%, 46%);
+  --inline-title-color: hsl(calc(var(--cc-base-hue) + 10), 51%, 16%);
+
+  --code-background: hsl(var(--cc-base-hue), 32%, 92%);
+  --code-normal:     hsl(var(--cc-base-hue), 21%, 27%);
+
+  --blockquote-border-color: hsl(var(--cc-base-hue), 23%, 85%);
+  --hr-color:                hsl(var(--cc-base-hue), 23%, 85%);
+  --checkbox-color:          var(--cc-accent);
+  --tag-background:          #d39a672e;
+  --tag-color:               #8a5e30;
+  --list-marker-color:       hsl(var(--cc-base-hue), 11%, 62%);
+
+  --scrollbar-thumb-bg:        hsla(var(--cc-base-hue), 21%, 27%, 0.15);
+  --scrollbar-active-thumb-bg: hsla(var(--cc-base-hue), 21%, 27%, 0.25);
+
+  --table-border-color: hsl(var(--cc-base-hue), 18%, 78%);
+}
+
+.theme-dark {
+  --cc-accent: #d39a67;                  /* tan accent — fixed, not driven by the hue slider */
+  --accent-h: 29; --accent-s: 58%; --accent-l: 61%;
+
+  --cc-coral:       var(--cc-accent);
+  --cc-coral-hover: #bd8650;
+  --cc-coral-soft:  #d39a672e;
+  --cc-paper-underline: #b37b40;         /* backlink underline */
+  --cc-paper-italic: #d39a67;
+  --cc-paper-bold: #d39a67;
+
+  --graph-line:            var(--cc-graph-line-dark);
+  --graph-node:            var(--cc-graph-node-dark);
+  --graph-node-tag:        var(--cc-graph-tag-dark);
+  --graph-node-unresolved: var(--cc-graph-unresolved-dark);
+  --graph-node-focused:    var(--cc-accent);
+
+  /* Monokai-dark surface — hue follows the slider; saturations stay low so
+     dark mode keeps its near-neutral character. */
+  --background-primary:        hsl(var(--cc-base-hue), 8%, 15%);
+  --background-primary-alt:    hsl(var(--cc-base-hue), 7%, 18%);
+  --background-secondary:      hsl(var(--cc-base-hue), 15%, 12%);
+  --background-secondary-alt:  hsl(var(--cc-base-hue), 14%, 10%);
+
+  --background-modifier-border:       hsl(var(--cc-base-hue), 8%, 26%);
+  --background-modifier-border-hover: hsl(var(--cc-base-hue), 9%, 34%);
+  --background-modifier-hover:        hsla(var(--cc-base-hue), 33%, 95%, 0.07);
+  --background-modifier-form-field:   hsl(var(--cc-base-hue), 15%, 12%);
+  --table-border-color:               hsl(var(--cc-base-hue), 8%, 33%);
+
+  --text-normal: hsl(var(--cc-base-hue), 33%, 95%);
+  --text-muted:  hsl(var(--cc-base-hue), 20%, 78%);
+  --text-faint:  hsl(var(--cc-base-hue), 14%, 60%);
+  --text-on-accent: #ffffff;
+  --text-accent: var(--cc-accent);
+  --text-selection: #d39a6740;
+
+  --interactive-accent:       var(--cc-accent);
+  --interactive-accent-hover: var(--cc-coral-hover);
+
+  --titlebar-background:         hsl(var(--cc-base-hue), 15%, 12%);
+  --titlebar-background-focused: hsl(var(--cc-base-hue), 8%, 15%);
+  --tab-background-active:       hsl(var(--cc-base-hue), 8%, 15%);
+
+  --h1-color: hsl(var(--cc-base-hue), 47%, 87%);
+  --h2-color: hsl(var(--cc-base-hue), 47%, 79%);
+  --h3-color: hsl(var(--cc-base-hue), 47%, 71%);
+  --h4-color: hsl(var(--cc-base-hue), 46%, 63%);
+  --h5-color: hsl(var(--cc-base-hue), 45%, 55%);
+  --h6-color: hsl(var(--cc-base-hue), 52%, 46%);
+  --inline-title-color: hsl(var(--cc-base-hue), 47%, 87%);
+
+  --code-background: hsl(var(--cc-base-hue), 15%, 12%);
+  --code-normal:     hsl(var(--cc-base-hue), 33%, 95%);
+
+  --blockquote-border-color: hsl(var(--cc-base-hue), 8%, 26%);
+  --hr-color:                hsl(var(--cc-base-hue), 8%, 26%);
+  --checkbox-color:          var(--cc-accent);
+  --tag-background:          #d39a672e;
+  --tag-color:               #e3c4a0;
+  --list-marker-color:       hsl(var(--cc-base-hue), 14%, 60%);
+
+  --scrollbar-thumb-bg:        hsla(var(--cc-base-hue), 33%, 95%, 0.13);
+  --scrollbar-active-thumb-bg: hsla(var(--cc-base-hue), 33%, 95%, 0.22);
+}
+
+/* --------------------------------------------------------------------------
+   Typography
+   -------------------------------------------------------------------------- */
+body {
+  --font-text-theme:      "Source Code Pro", ui-monospace, monospace;
+  --font-interface-theme: "Source Code Pro", ui-monospace, monospace;
+  --font-monospace-theme: "Source Code Pro", ui-monospace, monospace;
+
+  --font-text-size: calc(var(--cc-font-size) * 1px);
+  --line-height-normal: var(--cc-line-height);
+
+  --h1-weight: 620;
+  --h2-weight: 600;
+  --h3-weight: 600;
+  --bold-weight: 700;
+}
+
+.markdown-preview-sizer,
+.markdown-source-view.mod-cm6 .cm-sizer { max-width: calc(var(--cc-reading-width) * 1ch); }
+
+.markdown-preview-view,
+.markdown-source-view .cm-content,
+.inline-title,
+.nav-files-container,
+.workspace-tab-header,
+.status-bar { font-weight: 500; }
+
+/* Justified body (reading view) + underlined tan backlinks */
+.markdown-preview-view p,
+.markdown-rendered p {
+  text-align: justify;
+  hyphens: auto;
+}
+/* Don't justify text inside canvas nodes — let Advanced Canvas control
+   alignment (it sets text-align on the node, which we inherit here). */
+.canvas-node .markdown-preview-view p,
+.canvas-node .markdown-rendered p {
+  text-align: inherit;
+  hyphens: manual;
+}
+.internal-link,
+.cm-hmd-internal-link {
+  color: var(--cc-accent);
+  text-decoration: none;
+  border-bottom: 1px solid var(--cc-paper-underline);
+}
+
+/* Bold & Italic colored orange */
+.markdown-rendered strong,
+.markdown-rendered b,
+.markdown-preview-view strong,
+.cm-s-obsidian .cm-strong {
+  color: var(--cc-paper-bold);
+}
+.markdown-rendered em,
+.markdown-rendered i,
+.markdown-preview-view em,
+.cm-s-obsidian .cm-em {
+  color: var(--cc-paper-italic);
+}
+
+/* Style Settings opt-outs */
+body.cc-no-justify .markdown-preview-view p,
+body.cc-no-justify .markdown-rendered p { text-align: left; }
+
+body.cc-plain-emphasis .markdown-rendered strong,
+body.cc-plain-emphasis .markdown-rendered b,
+body.cc-plain-emphasis .markdown-preview-view strong,
+body.cc-plain-emphasis .cm-s-obsidian .cm-strong,
+body.cc-plain-emphasis .markdown-rendered em,
+body.cc-plain-emphasis .markdown-rendered i,
+body.cc-plain-emphasis .markdown-preview-view em,
+body.cc-plain-emphasis .cm-s-obsidian .cm-em { color: inherit; }
+
+/* --------------------------------------------------------------------------
+   App chrome — shared layout styles
+   -------------------------------------------------------------------------- */
+.workspace-ribbon.side-dock-ribbon { background: var(--background-secondary-alt); border: none; }
+.workspace-ribbon.side-dock-ribbon::before { display: none; }
+.side-dock-ribbon-action { color: var(--text-faint); border-radius: var(--radius-s); }
+.side-dock-ribbon-action:hover { color: var(--cc-coral); background: var(--background-modifier-hover); }
+
+.workspace-split.mod-left-split,
+.workspace-split.mod-right-split { background: var(--background-secondary); }
+.workspace-split.mod-left-split .workspace-tabs { background: var(--background-secondary); }
+
+.workspace-tab-header { border-radius: var(--radius-s); color: var(--text-faint); }
+.workspace-tab-header.is-active { color: var(--text-normal); }
+.workspace-tab-header.is-active .workspace-tab-header-inner {
+  background: var(--background-modifier-hover);
+  border-radius: var(--radius-s);
+}
+.workspace-tab-header-container { border-bottom: 1px solid var(--background-modifier-border); }
+
+/* File explorer */
+body { --nav-indentation-guide-color: transparent; }
+
+.workspace-leaf-content[data-type="file-explorer"] .nav-files-container { padding: 2px 4px 8px; }
+
+.nav-file-title,
+.nav-folder-title {
+  border-radius: var(--radius-s);
+  margin: 1px 4px;
+  padding: 5px 9px;
+  color: var(--text-muted);
+  font-size: 0.86em;
+  line-height: 1.35;
+}
+.tree-item-self:hover {
+  background: color-mix(in oklab, var(--text-normal) 5%, transparent);
+  color: var(--text-normal);
+}
+
+.nav-file-title-content::before {
+  content: "";
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  margin-right: 9px;
+  border-radius: 50%;
+  border: 1.5px solid var(--text-faint);
+  vertical-align: middle;
+  transition: background-color 140ms ease, border-color 140ms ease;
+}
+.nav-file-title:hover .nav-file-title-content::before { border-color: var(--text-muted); }
+
+.nav-file-title.is-active,
+.nav-file-title.has-focus {
+  background: color-mix(in oklab, var(--text-normal) 9%, transparent);
+  color: var(--text-normal);
+  font-weight: 560;
+}
+.nav-file-title.is-active .nav-file-title-content::before,
+.nav-file-title.has-focus .nav-file-title-content::before {
+  background: var(--cc-coral);
+  border-color: var(--cc-coral);
+}
+
+.nav-folder-title {
+  color: var(--text-normal);
+  font-weight: 580;
+}
+.nav-folder-title .nav-folder-collapse-indicator { color: var(--text-faint); }
+.nav-folder.mod-root > .nav-folder-title { display: none; }
+
+.inline-title { letter-spacing: -0.01em; }
+
+/* Color-coded heading ladder */
+.markdown-rendered h1, .cm-s-obsidian .HyperMD-header-1, .cm-s-obsidian .cm-header-1 { color: var(--h1-color); }
+.markdown-rendered h2, .cm-s-obsidian .HyperMD-header-2, .cm-s-obsidian .cm-header-2 { color: var(--h2-color); }
+.markdown-rendered h3, .cm-s-obsidian .HyperMD-header-3, .cm-s-obsidian .cm-header-3 { color: var(--h3-color); }
+.markdown-rendered h4, .cm-s-obsidian .HyperMD-header-4, .cm-s-obsidian .cm-header-4 { color: var(--h4-color); }
+.markdown-rendered h5, .cm-s-obsidian .HyperMD-header-5, .cm-s-obsidian .cm-header-5 { color: var(--h5-color); }
+.markdown-rendered h6, .cm-s-obsidian .HyperMD-header-6, .cm-s-obsidian .cm-header-6 { color: var(--h6-color); }
+
+.markdown-rendered code,
+:not(pre) > code {
+  background: var(--code-background);
+  border: 1px solid var(--background-modifier-border);
+  border-radius: var(--radius-s);
+  padding: 0.08em 0.4em;
+  font-size: 0.88em;
+}
+.markdown-rendered pre {
+  background: var(--code-background);
+  border: 1px solid var(--background-modifier-border);
+  border-radius: var(--radius-m);
+}
+
+
+.cm-s-obsidian .cm-link,
+.cm-s-obsidian .cm-url,
+.markdown-rendered a { color: var(--cc-coral); text-decoration: none; }
+.markdown-rendered a:hover { text-decoration: underline; text-underline-offset: 3px; }
+
+.markdown-rendered a.tag,
+.cm-s-obsidian .cm-hashtag {
+  background: var(--tag-background);
+  color: var(--tag-color);
+  border: none;
+  border-radius: 999px;
+  padding: 0.05em 0.55em;
+  font-size: 0.82em;
+  font-weight: 540;
+}
+
+.markdown-rendered blockquote {
+  border-left: 2px solid var(--background-modifier-border-hover);
+  color: var(--text-muted);
+  font-style: normal;
+}
+
+button.mod-cta, .mod-cta {
+  background: var(--cc-coral);
+  color: var(--text-on-accent);
+  font-weight: 600;
+  border-radius: var(--radius-s);
+}
+button.mod-cta:hover, .mod-cta:hover { background: var(--cc-coral-hover); }
+button:not(.mod-cta), .clickable-icon { border-radius: var(--radius-s); }
+
+.prompt {
+  background: var(--background-secondary);
+  border: 1px solid var(--background-modifier-border);
+  border-radius: var(--radius-l);
+}
+.prompt-input { background: transparent; }
+.suggestion-item.is-selected { background: var(--cc-coral-soft); border-radius: var(--radius-s); }
+.search-input-container input { border-radius: var(--radius-s); }
+
+.status-bar {
+  background: var(--background-secondary-alt);
+  border-top: 1px solid var(--background-modifier-border);
+  color: var(--text-faint);
+}
+.titlebar { border-bottom: 1px solid var(--background-modifier-border); }
+
+input[type="checkbox"]:checked { background-color: var(--cc-coral); border-color: var(--cc-coral); }
+
+.markdown-rendered th { color: var(--text-muted); font-weight: 600; }
+.markdown-rendered table { border-radius: var(--radius-s); overflow: hidden; }
+
+::-webkit-scrollbar { width: 11px; height: 11px; }
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb-bg);
+  border: 3px solid transparent;
+  background-clip: padding-box;
+  border-radius: 999px;
+}
+::-webkit-scrollbar-thumb:hover { background: var(--scrollbar-active-thumb-bg); background-clip: padding-box; }
+
+::selection { background: var(--cc-coral-soft); }
+
+.installed-plugins-container .setting-item,
+.community-modal-search-results .community-item {
+  border: 1px solid var(--background-modifier-border);
+  border-radius: var(--radius-m);
+  margin-bottom: 8px;
+  padding: 13px 15px;
+  background: var(--background-primary-alt);
+  transition: border-color 140ms ease, background-color 140ms ease;
+}
+.installed-plugins-container .setting-item:hover,
+.community-modal-search-results .community-item:hover {
+  border-color: var(--background-modifier-border-hover);
+  background: var(--background-secondary);
+}
+.installed-plugins-container .setting-item-name { font-weight: 600; }
+
+.tree-item-self, .workspace-tab-header, .side-dock-ribbon-action, button, .clickable-icon {
+  transition: background-color 160ms cubic-bezier(0.22, 1, 0.36, 1),
+              color 160ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* Table borders */
+.theme-light th,
+.theme-light td,
+.theme-light .bases-table-cell,
+.theme-light .bases-th,
+.theme-light .bases-td {
+  border-color: var(--table-border-color);
+}
+
+/* Active file dot in Monokai green */
+.theme-dark .nav-file-title.is-active .nav-file-title-content::before,
+.theme-dark .nav-file-title.has-focus .nav-file-title-content::before {
+  background: #a6e22e;
+  border-color: #a6e22e;
+}
+
+/* Graph: node labels use the normal text color (the default --graph-text is a
+   washed-out gray). Link/node/tag colors come from Style Settings, mapped in the
+   theme blocks above. */
+.theme-light,
+.theme-dark { --graph-text: var(--text-normal); }
+/* extended-graph reads the node-label color from the computed `color` of a probe
+   div `.graph-view.color-text` (it ignores --graph-text), so force it directly. */
+.graph-view.color-text { color: var(--text-normal); }
+
+/* Light-mode chrome contrast — on the pale surface the default chrome reads too
+   faint, so darken ribbon icons, tab headers, nav rows and file dots. Hues track
+   the Background tint slider. */
+.theme-light .side-dock-ribbon-action {
+  color: hsl(var(--cc-base-hue), 18%, 35%);
+}
+.theme-light .workspace-tab-header {
+  color: hsl(var(--cc-base-hue), 13%, 42%);
+}
+.theme-light .nav-file-title,
+.theme-light .nav-folder-title {
+  color: hsl(var(--cc-base-hue), 20%, 33%);
+}
+.theme-light .nav-folder-title {
+  font-weight: 600;
+}
+.theme-light .nav-file-title-content::before {
+  border-color: hsl(var(--cc-base-hue), 11%, 54%);
+}
+.theme-light .clickable-icon {
+  color: hsl(var(--cc-base-hue), 13%, 42%);
+}
+
+/* ==========================================================================
+   Added surfaces — callouts, syntax, properties, marks, canvas, tasks,
+   tables, footnotes, search, tooltips
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Theme tokens for the added surfaces
+   -------------------------------------------------------------------------- */
+.theme-light {
+  --cc-highlight: #f0d9a8;
+
+  --callout-quote: 211, 154, 103;
+  --callout-note:  79, 125, 88;
+
+  --text-highlight-bg: var(--cc-coral-soft);
+
+  --canvas-background:  var(--background-secondary);
+  --canvas-dot-pattern: #cfe1d3;
+
+  --cc-syn-keyword:  #b0305a;
+  --cc-syn-string:   #8a7320;
+  --cc-syn-number:   #7a52b8;
+  --cc-syn-function: #3f7d2a;
+  --cc-syn-class:    #1f7a8c;
+  --cc-syn-builtin:  #b06b2e;
+  --cc-syn-comment:  #93a896;
+  --cc-syn-punct:    #37553a;
+}
+
+.theme-dark {
+  --cc-highlight: #d39a6740;
+
+  --callout-quote: 211, 154, 103;
+  --callout-note:  118, 204, 128;
+
+  --text-highlight-bg: var(--cc-coral-soft);
+
+  --canvas-background:  var(--background-secondary);
+  --canvas-dot-pattern: #3a3b32;
+
+  --cc-syn-keyword:  #f92672;
+  --cc-syn-string:   #e6db74;
+  --cc-syn-number:   #ae81ff;
+  --cc-syn-function: #a6e22e;
+  --cc-syn-class:    #66d9ef;
+  --cc-syn-builtin:  #fd971f;
+  --cc-syn-comment:  #75715e;
+  --cc-syn-punct:    #f8f8f2;
+}
+
+/* --------------------------------------------------------------------------
+   Callouts
+   -------------------------------------------------------------------------- */
+.callout {
+  border-radius: var(--radius-m);
+  border: 1px solid var(--background-modifier-border);
+  background: var(--background-primary-alt);
+  padding: 0;
+  mix-blend-mode: normal;
+  overflow: hidden;
+}
+.callout-title {
+  padding: 0.55em 0.85em;
+  gap: 0.5em;
+  background: rgba(var(--callout-color), 0.08);
+  align-items: center;
+}
+.callout-title-inner { font-weight: 600; }
+.callout-content { padding: 0.1em 0.85em 0.6em; }
+.callout[data-callout="quote"] .callout-content,
+.callout[data-callout="cite"] .callout-content { font-style: italic; color: var(--text-muted); }
+
+/* --------------------------------------------------------------------------
+   Highlight (==mark==)
+   -------------------------------------------------------------------------- */
+.markdown-rendered mark,
+.cm-s-obsidian .cm-highlight {
+  background: var(--cc-highlight);
+  color: inherit;
+  border-radius: var(--radius-s);
+  padding: 0.02em 0.28em;
+}
+
+/* --------------------------------------------------------------------------
+   Properties / frontmatter panel
+   -------------------------------------------------------------------------- */
+.metadata-container {
+  border-radius: var(--radius-m);
+  background: var(--background-primary-alt);
+  border: 1px solid var(--background-modifier-border);
+  padding: 6px 10px;
+  margin-bottom: 1.2em;
+}
+.metadata-property { border-radius: var(--radius-s); }
+.metadata-property:hover { background: var(--background-modifier-hover); }
+.metadata-property-key-input { color: var(--text-muted); font-weight: 600; }
+.metadata-property-icon { color: var(--text-faint); }
+.metadata-add-button { color: var(--cc-coral); }
+
+/* --------------------------------------------------------------------------
+   Syntax highlighting — editor (CodeMirror) + reading view (Prism)
+   -------------------------------------------------------------------------- */
+.cm-s-obsidian .cm-keyword,
+.cm-s-obsidian .cm-operator,
+.cm-s-obsidian .cm-tag,
+.markdown-rendered .token.keyword,
+.markdown-rendered .token.operator,
+.markdown-rendered .token.tag,
+.markdown-rendered .token.selector { color: var(--cc-syn-keyword); }
+
+.cm-s-obsidian .cm-string,
+.cm-s-obsidian .cm-string-2,
+.markdown-rendered .token.string,
+.markdown-rendered .token.char,
+.markdown-rendered .token.attr-value,
+.markdown-rendered .token.regex { color: var(--cc-syn-string); }
+
+.cm-s-obsidian .cm-number,
+.cm-s-obsidian .cm-atom,
+.markdown-rendered .token.number,
+.markdown-rendered .token.boolean,
+.markdown-rendered .token.constant,
+.markdown-rendered .token.symbol { color: var(--cc-syn-number); }
+
+.cm-s-obsidian .cm-def,
+.markdown-rendered .token.function { color: var(--cc-syn-function); }
+
+.cm-s-obsidian .cm-type,
+.markdown-rendered .token.class-name { color: var(--cc-syn-class); font-style: italic; }
+
+.cm-s-obsidian .cm-builtin,
+.cm-s-obsidian .cm-attribute,
+.cm-s-obsidian .cm-property,
+.markdown-rendered .token.builtin,
+.markdown-rendered .token.important,
+.markdown-rendered .token.attr-name,
+.markdown-rendered .token.property { color: var(--cc-syn-builtin); }
+
+.cm-s-obsidian .cm-comment,
+.cm-s-obsidian .cm-meta,
+.markdown-rendered .token.comment,
+.markdown-rendered .token.prolog,
+.markdown-rendered .token.doctype,
+.markdown-rendered .token.cdata { color: var(--cc-syn-comment); font-style: italic; }
+
+.markdown-rendered .token.punctuation { color: var(--cc-syn-punct); }
+
+/* --------------------------------------------------------------------------
+   Canvas
+   -------------------------------------------------------------------------- */
+.canvas-node .canvas-node-container,
+.canvas-node-content { border-radius: var(--radius-m); }
+.canvas-node .canvas-node-container {
+  border: 1px solid var(--background-modifier-border);
+  box-shadow: none;
+}
+.canvas-node.is-focused .canvas-node-container { border-color: var(--cc-coral); }
+.canvas-node-label {
+  background: var(--background-secondary);
+  color: var(--text-muted);
+  border-radius: var(--radius-s);
+}
+
+/* --------------------------------------------------------------------------
+   Custom checkbox states
+   -------------------------------------------------------------------------- */
+.task-list-item[data-task="-"] .task-list-item-checkbox {
+  background-color: var(--text-faint);
+  border-color: var(--text-faint);
+}
+.task-list-item[data-task="-"] { color: var(--text-muted); text-decoration: line-through; }
+
+.task-list-item[data-task=">"] .task-list-item-checkbox,
+.task-list-item[data-task="<"] .task-list-item-checkbox { border-color: var(--cc-coral); }
+
+.task-list-item[data-task="?"] .task-list-item-checkbox { border-color: #c89a3a; }
+.task-list-item[data-task="!"] .task-list-item-checkbox { border-color: #c0552a; }
+.task-list-item[data-task="*"] .task-list-item-checkbox { border-color: var(--cc-syn-number); }
+
+/* --------------------------------------------------------------------------
+   Tables — header background + zebra striping
+   -------------------------------------------------------------------------- */
+.markdown-rendered thead th { background: var(--background-secondary); }
+.markdown-rendered tbody tr:nth-child(even) td {
+  background: color-mix(in oklab, var(--text-normal) 3%, transparent);
+}
+
+/* --------------------------------------------------------------------------
+   Footnotes
+   -------------------------------------------------------------------------- */
+.footnotes {
+  font-size: 0.88em;
+  color: var(--text-muted);
+  border-top: 1px solid var(--hr-color);
+  margin-top: 2em;
+  padding-top: 0.6em;
+}
+sup.footnote-ref a,
+.footnote-backref { color: var(--cc-coral); text-decoration: none; }
+.popover.footnote-popover {
+  background: var(--background-secondary);
+  border: 1px solid var(--background-modifier-border);
+  border-radius: var(--radius-m);
+}
+
+/* --------------------------------------------------------------------------
+   Search results highlight
+   -------------------------------------------------------------------------- */
+.search-result-file-matched-text {
+  background: var(--cc-coral-soft);
+  color: var(--text-normal);
+  border-radius: var(--radius-s);
+}
+.search-result-file-title { font-weight: 600; }
+.search-result-file-title:hover { color: var(--cc-coral); }
+
+/* --------------------------------------------------------------------------
+   Tooltips
+   -------------------------------------------------------------------------- */
+.tooltip {
+  background: var(--background-secondary);
+  color: var(--text-normal);
+  border: 1px solid var(--background-modifier-border);
+  border-radius: var(--radius-s);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+  font-size: 0.82em;
+  font-weight: 500;
+}
+.tooltip .tooltip-arrow { display: none; }
+
+/* ==========================================================================
+   v1.5.0 — callout coverage, journaling plugins, markdown surfaces, a11y
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Callouts — full type coverage
+   Every built-in type gets a palette-matched color. Box structure is
+   unchanged; only the per-type --callout-color (icon + title tint + stripe)
+   is set, directly on each data-callout so it works regardless of how core
+   maps its named variables. Muted in light, Monokai-leaning in dark.
+   quote/note keep their existing colors (set earlier in the file).
+   -------------------------------------------------------------------------- */
+.theme-light .callout[data-callout="info"],
+.theme-light .callout[data-callout="abstract"],
+.theme-light .callout[data-callout="summary"],
+.theme-light .callout[data-callout="tldr"]            { --callout-color: 31, 122, 140; }
+.theme-light .callout[data-callout="todo"]            { --callout-color: 79, 125, 160; }
+.theme-light .callout[data-callout="tip"],
+.theme-light .callout[data-callout="hint"]            { --callout-color: 63, 125, 42; }
+.theme-light .callout[data-callout="success"],
+.theme-light .callout[data-callout="check"],
+.theme-light .callout[data-callout="done"]            { --callout-color: 76, 140, 84; }
+.theme-light .callout[data-callout="question"],
+.theme-light .callout[data-callout="help"],
+.theme-light .callout[data-callout="faq"]             { --callout-color: 200, 154, 58; }
+.theme-light .callout[data-callout="warning"],
+.theme-light .callout[data-callout="caution"],
+.theme-light .callout[data-callout="attention"]       { --callout-color: 176, 107, 46; }
+.theme-light .callout[data-callout="failure"],
+.theme-light .callout[data-callout="fail"],
+.theme-light .callout[data-callout="missing"]         { --callout-color: 192, 85, 42; }
+.theme-light .callout[data-callout="danger"],
+.theme-light .callout[data-callout="error"],
+.theme-light .callout[data-callout="bug"]             { --callout-color: 176, 48, 90; }
+.theme-light .callout[data-callout="example"]         { --callout-color: 122, 82, 184; }
+.theme-light .callout[data-callout="important"]       { --callout-color: 211, 154, 103; }
+
+.theme-dark .callout[data-callout="info"],
+.theme-dark .callout[data-callout="abstract"],
+.theme-dark .callout[data-callout="summary"],
+.theme-dark .callout[data-callout="tldr"]             { --callout-color: 102, 217, 239; }
+.theme-dark .callout[data-callout="todo"]             { --callout-color: 120, 170, 240; }
+.theme-dark .callout[data-callout="tip"],
+.theme-dark .callout[data-callout="hint"]             { --callout-color: 166, 226, 46; }
+.theme-dark .callout[data-callout="success"],
+.theme-dark .callout[data-callout="check"],
+.theme-dark .callout[data-callout="done"]             { --callout-color: 166, 226, 46; }
+.theme-dark .callout[data-callout="question"],
+.theme-dark .callout[data-callout="help"],
+.theme-dark .callout[data-callout="faq"]              { --callout-color: 230, 219, 116; }
+.theme-dark .callout[data-callout="warning"],
+.theme-dark .callout[data-callout="caution"],
+.theme-dark .callout[data-callout="attention"]        { --callout-color: 253, 151, 31; }
+.theme-dark .callout[data-callout="failure"],
+.theme-dark .callout[data-callout="fail"],
+.theme-dark .callout[data-callout="missing"]          { --callout-color: 249, 38, 114; }
+.theme-dark .callout[data-callout="danger"],
+.theme-dark .callout[data-callout="error"],
+.theme-dark .callout[data-callout="bug"]              { --callout-color: 249, 38, 114; }
+.theme-dark .callout[data-callout="example"]          { --callout-color: 174, 129, 255; }
+.theme-dark .callout[data-callout="important"]        { --callout-color: 211, 154, 103; }
+
+/* --------------------------------------------------------------------------
+   Calendar plugin — map its own --color-* variables to the paper palette.
+   Tokens auto-adapt per mode, so one block covers light + dark.
+   -------------------------------------------------------------------------- */
+.workspace-leaf-content[data-type="calendar"] {
+  --color-background-heading:  transparent;
+  --color-background-day:      transparent;
+  --color-background-weeknum:  transparent;
+  --color-background-weekend:  var(--background-secondary);
+  --color-dot:                 var(--cc-accent);
+  --color-arrow:               var(--text-muted);
+  --color-text-title:          var(--text-normal);
+  --color-text-heading:        var(--text-faint);
+  --color-text-day:            var(--text-normal);
+  --color-text-today:          var(--cc-coral);
+  --color-text-weeknum:        var(--text-faint);
+}
+.workspace-leaf-content[data-type="calendar"] .calendar td {
+  border-radius: var(--radius-s);
+}
+.workspace-leaf-content[data-type="calendar"] .day:hover {
+  background: var(--background-modifier-hover);
+  border-radius: var(--radius-s);
+}
+.workspace-leaf-content[data-type="calendar"] .day.today {
+  font-weight: 700;
+}
+.workspace-leaf-content[data-type="calendar"] .day.active {
+  box-shadow: inset 0 0 0 1px var(--cc-accent);
+  border-radius: var(--radius-s);
+}
+
+/* --------------------------------------------------------------------------
+   Dataview — inline fields as paper pills; tables reuse the existing
+   header + zebra styling; error box reads as a danger surface.
+   -------------------------------------------------------------------------- */
+.markdown-rendered .inline-field-key {
+  background: var(--background-secondary);
+  color: var(--text-muted);
+  border-radius: var(--radius-s) 0 0 var(--radius-s);
+  padding: 0.05em 0.5em;
+  font-size: 0.84em;
+  font-weight: 560;
+}
+.markdown-rendered .inline-field-value {
+  background: var(--cc-coral-soft);
+  border-radius: 0 var(--radius-s) var(--radius-s) 0;
+  padding: 0.05em 0.5em;
+  font-size: 0.84em;
+}
+.markdown-rendered .inline-field-standalone-value {
+  background: var(--cc-coral-soft);
+  border-radius: var(--radius-s);
+  padding: 0.05em 0.5em;
+  font-size: 0.84em;
+}
+.dataview-error-box {
+  background: rgba(192, 85, 42, 0.08);
+  border: 1px solid rgba(192, 85, 42, 0.35);
+  border-radius: var(--radius-m);
+  color: var(--text-normal);
+}
+
+/* --------------------------------------------------------------------------
+   pretty-properties — round the banner; progress bars already follow the
+   accent via --accent-h/s/l set in the theme blocks.
+   -------------------------------------------------------------------------- */
+.banner-image img { border-radius: var(--radius-m); }
+.metadata-progress,
+.metadata-progress-wrapper { border-radius: var(--radius-s); overflow: hidden; }
+
+/* --------------------------------------------------------------------------
+   better-word-count — promote the status-bar count above the faint default.
+   -------------------------------------------------------------------------- */
+.status-bar-item.plugin-better-word-count { color: var(--text-muted); }
+
+/* --------------------------------------------------------------------------
+   Omnisearch — match the modal to the command palette surface.
+   -------------------------------------------------------------------------- */
+.omnisearch-modal {
+  background: var(--background-secondary);
+  border: 1px solid var(--background-modifier-border);
+  border-radius: var(--radius-l);
+}
+.omnisearch-result { border-radius: var(--radius-m); }
+.omnisearch-result-highlight,
+.omnisearch-highlight,
+.omnisearch-default-highlight {
+  background: var(--cc-coral-soft);
+  color: var(--text-normal);
+  border-radius: var(--radius-s);
+}
+
+/* --------------------------------------------------------------------------
+   Embeds / transclusions — accent stripe so embedded notes stand apart.
+   -------------------------------------------------------------------------- */
+.markdown-rendered .markdown-embed {
+  border: 1px solid var(--background-modifier-border);
+  border-inline-start: 2px solid var(--cc-accent);
+  border-radius: var(--radius-m);
+  padding-inline: 1em;
+  background: var(--background-primary-alt);
+}
+
+/* --------------------------------------------------------------------------
+   Images — rounded; centered captions; optional shadow (Style Settings).
+   -------------------------------------------------------------------------- */
+.markdown-rendered img:not(.emoji) { border-radius: var(--radius-m); }
+.markdown-rendered .image-embed { text-align: center; }
+.markdown-rendered figcaption {
+  color: var(--text-faint);
+  font-size: 0.85em;
+  text-align: center;
+  margin-top: 0.3em;
+}
+body.cc-image-shadow .markdown-rendered img:not(.emoji) {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.14);
+}
+
+/* --------------------------------------------------------------------------
+   Mermaid — pull diagram nodes/edges/labels into the palette.
+   -------------------------------------------------------------------------- */
+.markdown-rendered .mermaid {
+  background: var(--background-primary-alt);
+  border: 1px solid var(--background-modifier-border);
+  border-radius: var(--radius-m);
+  padding: 0.6em;
+}
+.markdown-rendered .mermaid .node rect,
+.markdown-rendered .mermaid .node circle,
+.markdown-rendered .mermaid .node polygon,
+.markdown-rendered .mermaid .node path {
+  fill: var(--background-secondary);
+  stroke: var(--cc-accent);
+}
+.markdown-rendered .mermaid .edgePath .path,
+.markdown-rendered .mermaid .flowchart-link { stroke: var(--text-muted); }
+.markdown-rendered .mermaid .nodeLabel,
+.markdown-rendered .mermaid .edgeLabel { color: var(--text-normal); }
+
+/* --------------------------------------------------------------------------
+   Editor — highlight active line (Style Settings toggle).
+   -------------------------------------------------------------------------- */
+body.cc-active-line .cm-active.cm-line {
+  background: color-mix(in oklab, var(--text-normal) 4%, transparent);
+}
+
+/* --------------------------------------------------------------------------
+   Accessibility — keyboard focus ring on interactive controls.
+   -------------------------------------------------------------------------- */
+button:focus-visible,
+.clickable-icon:focus-visible,
+.nav-file-title:focus-visible,
+.nav-folder-title:focus-visible,
+.workspace-tab-header:focus-visible,
+.menu-item:focus-visible,
+.suggestion-item:focus-visible,
+.metadata-property:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--cc-accent);
+  outline-offset: 2px;
+  border-radius: var(--radius-s);
+}
+
+/* Reduced motion — neutralize the theme's own transitions. Same selectors as
+   the transition rule above, declared later so they win without !important. */
+@media (prefers-reduced-motion: reduce) {
+  .tree-item-self,
+  .workspace-tab-header,
+  .side-dock-ribbon-action,
+  button,
+  .clickable-icon,
+  .nav-file-title-content::before {
+    transition: none;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Print / PDF export — clean white page, no app chrome, full measure.
+   -------------------------------------------------------------------------- */
+@media print {
+  .workspace-ribbon,
+  .workspace-split.mod-left-split,
+  .workspace-split.mod-right-split,
+  .status-bar,
+  .titlebar,
+  .workspace-tab-header-container { display: none; }
+
+  .markdown-preview-view,
+  .markdown-rendered { color: #000; background: #fff; }
+  .markdown-preview-view p,
+  .markdown-rendered p { text-align: left; }
+  .markdown-preview-sizer { max-width: none; }
+}

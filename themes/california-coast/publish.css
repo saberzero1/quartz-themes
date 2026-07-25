@@ -1520,6 +1520,8 @@ body.theme-light {
     var(--shadow-edges) !important;
   --opacity-translucency: 1 !important;
   --text-error-hover: rgb(var(--red-rgb)) !important;
+  --code-color: var(--text-normal) !important;
+  --radius: 0px !important;
   --indentation-guide: var(--shade-5) !important;
   --indentation-guide-active: rgba(var(--foreground-rgb), 0.15) !important;
   --accent-d: 52% !important;
@@ -1535,7 +1537,6 @@ body.theme-light {
   --background-rgb: var(--color-white-rgb) !important;
   --background-transparent: transparent !important;
   --blue-rgb: 0, 122, 255 !important;
-  --code-color: var(--text-normal) !important;
   --color-black-rgb: 0, 0, 0 !important;
   --color-white-rgb: 255, 255, 255 !important;
   --default-font-smoothing: auto !important;
@@ -1546,7 +1547,7 @@ body.theme-light {
   --editor-line-height: 1.88889 !important;
   --editor-line-height-rem: calc(var(--editor-line-height) * 1rem) !important;
   --editor-line-height-small: calc(
-    var(--editor-line-height) * var(--scale-small) / 100
+    var(--editor-line-height) * var(--scale-small)/100
   ) !important;
   --editor-line-height-small-rem: calc(
     var(--editor-line-height-small) * 1rem
@@ -1570,7 +1571,7 @@ body.theme-light {
   --h6-margin-top: 1.5 !important;
   --header-editor-font: var(--font-text) !important;
   --hr-spacing-bottom: calc(var(--editor-line-height-rem) * 1.5) !important;
-  --hr-spacing-top: calc(var(--editor-line-height-rem) / 2) !important;
+  --hr-spacing-top: calc(var(--editor-line-height-rem)/2) !important;
   --indigo-rgb: 88, 86, 214 !important;
   --med-small: 400px !important;
   --med-tall: 600px !important;
@@ -1587,7 +1588,6 @@ body.theme-light {
   --preview-line-height: var(--editor-line-height) !important;
   --preview-line-height-rem: calc(var(--preview-line-height) * 1rem) !important;
   --purple-rgb: 175, 82, 222 !important;
-  --radius: 0px !important;
   --red-rgb: 255, 59, 48 !important;
   --resize-handle-width: 2px !important;
   --scale-small: 90 !important;
@@ -2753,6 +2753,8 @@ body.theme-dark {
   --text-highlight-bg-active: rgba(255, 255, 255, 0.1) !important;
   --opacity-translucency: 1 !important;
   --text-error-hover: rgb(var(--red-rgb)) !important;
+  --code-color: var(--text-normal) !important;
+  --radius: 0px !important;
   --indentation-guide: var(--shade-5) !important;
   --indentation-guide-active: rgba(var(--foreground-rgb), 0.15) !important;
   --accent-d: 52% !important;
@@ -2768,7 +2770,6 @@ body.theme-dark {
   --background-rgb: 30, 30, 30 !important;
   --background-transparent: transparent !important;
   --blue-rgb: 10, 132, 255 !important;
-  --code-color: var(--text-normal) !important;
   --color-black-rgb: 0, 0, 0 !important;
   --color-white-rgb: 255, 255, 255 !important;
   --dark-separator: hsl(0, 0%, 9%) !important;
@@ -2780,7 +2781,7 @@ body.theme-dark {
   --editor-line-height: 1.88889 !important;
   --editor-line-height-rem: calc(var(--editor-line-height) * 1rem) !important;
   --editor-line-height-small: calc(
-    var(--editor-line-height) * var(--scale-small) / 100
+    var(--editor-line-height) * var(--scale-small)/100
   ) !important;
   --editor-line-height-small-rem: calc(
     var(--editor-line-height-small) * 1rem
@@ -2804,7 +2805,7 @@ body.theme-dark {
   --h6-margin-top: 1.5 !important;
   --header-editor-font: var(--font-text) !important;
   --hr-spacing-bottom: calc(var(--editor-line-height-rem) * 1.5) !important;
-  --hr-spacing-top: calc(var(--editor-line-height-rem) / 2) !important;
+  --hr-spacing-top: calc(var(--editor-line-height-rem)/2) !important;
   --indigo-rgb: 94, 92, 230 !important;
   --med-small: 400px !important;
   --med-tall: 600px !important;
@@ -2821,7 +2822,6 @@ body.theme-dark {
   --preview-line-height: var(--editor-line-height) !important;
   --preview-line-height-rem: calc(var(--preview-line-height) * 1rem) !important;
   --purple-rgb: 191, 90, 242 !important;
-  --radius: 0px !important;
   --red-rgb: 255, 69, 58 !important;
   --resize-handle-width: 2px !important;
   --scale-small: 90 !important;

@@ -1475,8 +1475,8 @@ body.theme-light {
   --h6-color: var(--green-forest) !important;
   --inline-title-color: var(--h1-color) !important;
   --bold-color: var(--green-forest) !important;
-  --inline-code-background: var(--grey) !important;
   --inline-code-color: var(--green-forest) !important;
+  --inline-code-background: var(--grey) !important;
   --hashtag-color: var(--green-forest) !important;
   --white: #ffffff !important;
   --codeblock-background: var(--grey) !important;
@@ -2607,8 +2607,8 @@ body.theme-dark {
   --h6-color: var(--green-forest) !important;
   --inline-title-color: var(--h1-color) !important;
   --bold-color: var(--green-forest) !important;
-  --inline-code-background: #131a16 !important;
   --inline-code-color: var(--green-bright) !important;
+  --inline-code-background: #131a16 !important;
   --hashtag-color: var(--green-bright) !important;
   --white: #ffffff !important;
   --codeblock-background: var(--black-light) !important;

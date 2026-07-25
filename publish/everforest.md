@@ -6,7 +6,7 @@ cssclasses:
 
 > This page is to quickly check how all features are rendered.
 
-- Theme author: MrGlitchByte
+- Theme author: 0xglitchbyte
 - Support the author: Author did not provide funding links in `manifest.json`
 - Install: `npm install @quartz-themes/core @quartz-themes/everforest`
 - <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/everforest/README.md">Full install instructions</a>

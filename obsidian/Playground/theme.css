@@ -128,11 +128,15 @@ span.cm-formatting-link.cm-formatting-link-end {
   --frame-left-space: calc(68px - var(--ribbon-width)) !important;
 }
 
+.mod-macos {
+  --frame-left-space: calc(68px - var(--ribbon-width)) !important;
+}
+
 body {
   --list-padding-inline-start: 0px;
   --list-indent-source: 0px;
   --padding-inline-start: 0px;
-  --checkbox-margin-inline-start: 0.4em;
+  --checkbox-margin-inline-start: 0.40em;
 }
 
 .cm-formatting-list {
@@ -190,7 +194,7 @@ body {
 body {
   --callout-default: var(--blue-300);
 }
-body .callout[data-callout="default"] {
+body .callout[data-callout=default] {
   --callout-title-color: var(--blue-400);
   --callout-content: var(--blue-600);
 }
@@ -198,9 +202,9 @@ body .callout[data-callout="default"] {
 body {
   --callout-summary: var(--gray-300);
 }
-body .callout[data-callout="summary"],
-body .callout[data-callout="tldr"],
-body .callout[data-callout="abstract"] {
+body .callout[data-callout=summary],
+body .callout[data-callout=tldr],
+body .callout[data-callout=abstract] {
   --callout-title-color: var(--gray-500);
   --callout-content: var(--gray-700);
 }
@@ -208,7 +212,7 @@ body .callout[data-callout="abstract"] {
 body {
   --callout-info: var(--gray-400);
 }
-body .callout[data-callout="info"] {
+body .callout[data-callout=info] {
   --callout-title-color: var(--gray-900);
   --callout-content: var(--gray-600);
 }
@@ -216,7 +220,7 @@ body .callout[data-callout="info"] {
 body {
   --callout-todo: var(--blue-300);
 }
-body .callout[data-callout="todo"] {
+body .callout[data-callout=todo] {
   --callout-title-color: var(--blue-500);
   --callout-content: var(--blue-700);
 }
@@ -224,8 +228,8 @@ body .callout[data-callout="todo"] {
 body {
   --callout-tip: var(--sea-green-300);
 }
-body .callout[data-callout="tip"],
-body .callout[data-callout="hint"] {
+body .callout[data-callout=tip],
+body .callout[data-callout=hint] {
   --callout-title-color: var(--sea-green-500);
   --callout-content: var(--sea-green-700);
 }
@@ -233,7 +237,7 @@ body .callout[data-callout="hint"] {
 body {
   --callout-important: var(--orange-300);
 }
-body .callout[data-callout="important"] {
+body .callout[data-callout=important] {
   --callout-title-color: var(--orange-400);
   --callout-content: var(--orange-700);
 }
@@ -241,9 +245,9 @@ body .callout[data-callout="important"] {
 body {
   --callout-success: var(--green-300);
 }
-body .callout[data-callout="success"],
-body .callout[data-callout="check"],
-body .callout[data-callout="done"] {
+body .callout[data-callout=success],
+body .callout[data-callout=check],
+body .callout[data-callout=done] {
   --callout-title-color: var(--green-500);
   --callout-content: var(--green-700);
 }
@@ -251,9 +255,9 @@ body .callout[data-callout="done"] {
 body {
   --callout-question: var(--orange-300);
 }
-body .callout[data-callout="question"],
-body .callout[data-callout="help"],
-body .callout[data-callout="faq"] {
+body .callout[data-callout=question],
+body .callout[data-callout=help],
+body .callout[data-callout=faq] {
   --callout-title-color: var(--orange-400);
   --callout-content: var(--orange-700);
 }
@@ -261,9 +265,9 @@ body .callout[data-callout="faq"] {
 body {
   --callout-warning: var(--orange-300);
 }
-body .callout[data-callout="warning"],
-body .callout[data-callout="attention"],
-body .callout[data-callout="caution"] {
+body .callout[data-callout=warning],
+body .callout[data-callout=attention],
+body .callout[data-callout=caution] {
   --callout-title-color: var(--orange-500);
   --callout-content: var(--orange-700);
 }
@@ -271,9 +275,9 @@ body .callout[data-callout="caution"] {
 body {
   --callout-fail: var(--red-300);
 }
-body .callout[data-callout="fail"],
-body .callout[data-callout="failure"],
-body .callout[data-callout="missing"] {
+body .callout[data-callout=fail],
+body .callout[data-callout=failure],
+body .callout[data-callout=missing] {
   --callout-title-color: var(--red-400);
   --callout-content: var(--red-600);
 }
@@ -281,8 +285,8 @@ body .callout[data-callout="missing"] {
 body {
   --callout-error: var(--red-300);
 }
-body .callout[data-callout="error"],
-body .callout[data-callout="danger"] {
+body .callout[data-callout=error],
+body .callout[data-callout=danger] {
   --callout-title-color: var(--red-400);
   --callout-content: var(--red-600);
 }
@@ -290,7 +294,7 @@ body .callout[data-callout="danger"] {
 body {
   --callout-bug: var(--red-300);
 }
-body .callout[data-callout="bug"] {
+body .callout[data-callout=bug] {
   --callout-title-color: var(--red-400);
   --callout-content: var(--red-700);
 }
@@ -298,7 +302,7 @@ body .callout[data-callout="bug"] {
 body {
   --callout-example: var(--yellow-300);
 }
-body .callout[data-callout="example"] {
+body .callout[data-callout=example] {
   --callout-title-color: var(--yellow-400);
   --callout-content: var(--yellow-800);
 }
@@ -306,8 +310,8 @@ body .callout[data-callout="example"] {
 body {
   --callout-quote: var(--gray-300);
 }
-body .callout[data-callout="quote"],
-body .callout[data-callout="cite"] {
+body .callout[data-callout=quote],
+body .callout[data-callout=cite] {
   --callout-title-color: var(--gray-500);
   --callout-content: var(--gray-700);
 }
@@ -324,22 +328,15 @@ body {
   padding: var(--size-2-2);
   height: 100%;
 }
-.mod-sidedock
-  .workspace-tab-header-container-inner
-  .workspace-tab-header.is-active {
+.mod-sidedock .workspace-tab-header-container-inner .workspace-tab-header.is-active {
   background-color: var(--gray-200);
 }
-.mod-sidedock
-  .workspace-tab-header-container-inner
-  .workspace-tab-header
-  .workspace-tab-header-inner {
+.mod-sidedock .workspace-tab-header-container-inner .workspace-tab-header .workspace-tab-header-inner {
   padding-left: var(--size-2-3);
   padding-right: var(--size-2-3);
   height: 100%;
 }
-.mod-sidedock
-  .workspace-tab-header-container-inner
-  .workspace-tab-header-inner-icon {
+.mod-sidedock .workspace-tab-header-container-inner .workspace-tab-header-inner-icon {
   color: var(--gray-300);
 }
 
@@ -350,9 +347,7 @@ body {
   padding: 0;
   padding-right: var(--size-4-2);
 }
-.mod-root
-  .workspace-tab-header-container-inner:has(.workspace-tab-header.is-active)
-  .workspace-tab-header.is-active {
+.mod-root .workspace-tab-header-container-inner:has(.workspace-tab-header.is-active) .workspace-tab-header.is-active {
   border-bottom: 1px solid;
   border-color: color-mix(in srgb, var(--gray-100) 50%, transparent);
 }
@@ -397,7 +392,7 @@ body {
 .theme-dark {
   --nav-item-color-active: var(--gray-700);
   --nav-item-background-active: var(--gray-100);
-  --modal-border-color: var(--gray-200);
+  --modal-border-color: var(--gray-200) ;
 }
 
 .sidebar-toggle-button.mod-left {
@@ -420,7 +415,7 @@ body {
   padding: var(--size-4-2);
 }
 
-.workspace-leaf-content[data-type="outline"] .view-content {
+.workspace-leaf-content[data-type=outline] .view-content {
   padding-top: var(--size-4-2);
 }
 
@@ -433,11 +428,11 @@ body {
   --interactive-normal: var(--gray-100);
   --interactive-hover: var(--gray-200);
   --input-font-weight: 600;
-  --checkbox-border-color: var(--gray-300);
+  --checkbox-border-color: var(--gray-300) ;
 }
 
 .theme-light {
-  --interactive-normal: var(--gray-25);
+  --interactive-normal: var(--gray-25) ;
 }
 
 .sidebar-toggle-button {
@@ -492,20 +487,11 @@ body {
 .table-styled table.dataview.table-view-table thead tr .table-view-th {
   padding: var(--size-2-3) var(--size-4-2) var(--size-2-3) var(--size-4-2);
 }
-.table-styled
-  table.dataview.table-view-table
-  thead
-  tr
-  .table-view-th
-  .small-text {
+.table-styled table.dataview.table-view-table thead tr .table-view-th .small-text {
   font-size: 12px !important;
 }
-.table-styled table.dataview.table-view-table thead,
-.table-styled table.dataview.table-view-table tr,
-.table-styled table.dataview.table-view-table th,
-.table-styled table.dataview.table-view-table tbody,
-.table-styled table.dataview.table-view-table tr,
-.table-styled table.dataview.table-view-table td {
+.table-styled table.dataview.table-view-table thead, .table-styled table.dataview.table-view-table tr, .table-styled table.dataview.table-view-table th,
+.table-styled table.dataview.table-view-table tbody, .table-styled table.dataview.table-view-table tr, .table-styled table.dataview.table-view-table td {
   width: 100%;
   display: flex;
 }
@@ -531,9 +517,7 @@ body {
 .table-styled--unique-lines table.dataview.table-view-table tr {
   margin: 0;
 }
-.table-styled--unique-lines
-  table.dataview.table-view-table
-  tr:not(:last-child) {
+.table-styled--unique-lines table.dataview.table-view-table tr:not(:last-child) {
   border-bottom: 1px solid var(--gray-100);
 }
 .table-styled--unique-lines table.dataview.table-view-table td {
@@ -547,27 +531,14 @@ body {
 .table-styled--unique-lines table.dataview.table-view-table thead th {
   background-color: var(--gray-100);
 }
-.table-styled--unique-lines
-  table.dataview.table-view-table
-  thead
-  tr
-  .table-view-th {
+.table-styled--unique-lines table.dataview.table-view-table thead tr .table-view-th {
   padding: var(--size-2-3) var(--size-4-2) var(--size-2-3) var(--size-4-2);
 }
-.table-styled--unique-lines
-  table.dataview.table-view-table
-  thead
-  tr
-  .table-view-th
-  .small-text {
+.table-styled--unique-lines table.dataview.table-view-table thead tr .table-view-th .small-text {
   font-size: 12px !important;
 }
-.table-styled--unique-lines table.dataview.table-view-table thead,
-.table-styled--unique-lines table.dataview.table-view-table tr,
-.table-styled--unique-lines table.dataview.table-view-table th,
-.table-styled--unique-lines table.dataview.table-view-table tbody,
-.table-styled--unique-lines table.dataview.table-view-table tr,
-.table-styled--unique-lines table.dataview.table-view-table td {
+.table-styled--unique-lines table.dataview.table-view-table thead, .table-styled--unique-lines table.dataview.table-view-table tr, .table-styled--unique-lines table.dataview.table-view-table th,
+.table-styled--unique-lines table.dataview.table-view-table tbody, .table-styled--unique-lines table.dataview.table-view-table tr, .table-styled--unique-lines table.dataview.table-view-table td {
   width: 100%;
   display: flex;
 }
@@ -578,9 +549,7 @@ body {
   font-size: 16px;
   font-weight: 600;
 }
-.table-styled--unique-lines
-  table.dataview.table-view-table
-  tr:has(.internal-link:hover) {
+.table-styled--unique-lines table.dataview.table-view-table tr:has(.internal-link:hover) {
   background-color: var(--gray-75);
 }
 .table-styled--unique-lines table.dataview.table-view-table {
@@ -598,21 +567,15 @@ body {
 .table-styled--unique-lines table.dataview.table-view-table thead {
   margin-bottom: 4px;
 }
-.table-styled--unique-lines
-  table.dataview.table-view-table
-  tbody.table-view-tbody {
+.table-styled--unique-lines table.dataview.table-view-table tbody.table-view-tbody {
   gap: 4px;
 }
-.table-styled--unique-lines
-  table.dataview.table-view-table
-  tbody.table-view-tbody
-  tr {
+.table-styled--unique-lines table.dataview.table-view-table tbody.table-view-tbody tr {
   border: 1px solid var(--gray-100);
   border-radius: 6px;
 }
 
-.table-nowrap table.dataview.table-view-table td > *,
-.table-nowrap table.dataview.table-view-table th > * {
+.table-nowrap table.dataview.table-view-table td > *, .table-nowrap table.dataview.table-view-table th > * {
   text-wrap: nowrap;
   white-space: nowrap;
   overflow-wrap: nowrap;
@@ -946,16 +909,6 @@ body {
   max-width: 320px;
 }
 
-body.theme-dark {
-  --canvas-color: var(--gray-rgb);
-  --canvas-color-1: var(--red-rgb);
-  --canvas-color-2: var(--orange-rgb);
-  --canvas-color-3: var(--yellow-rgb);
-  --canvas-color-4: var(--green-rgb);
-  --canvas-color-5: var(--sea-green-rgb);
-  --canvas-color-6: var(--blue-rgb);
-}
-
 body {
   --tag-background: var(--blue-200);
   --tag-color: var(--blue-600);
@@ -967,7 +920,7 @@ body {
 }
 
 body {
-  --code-radius: var(--radius-m);
+  --code-radius: var(--radius-m) ;
 }
 
 .markdown-source-view.mod-cm6 .cm-line.HyperMD-codeblock {
@@ -1013,7 +966,7 @@ body {
   );
 }
 
-input[type="checkbox"]:checked:hover {
+input[type=checkbox]:checked:hover {
   background-color: var(--gray-600);
 }
 
@@ -1047,13 +1000,13 @@ body li[data-task="/"] > p > input:checked {
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='19' height='19' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-loader'%3E%3Cpath d='M12 2v4'/%3E%3Cpath d='m16.2 7.8 2.9-2.9'/%3E%3Cpath d='M18 12h4'/%3E%3Cpath d='m16.2 16.2 2.9 2.9'/%3E%3Cpath d='M12 18v4'/%3E%3Cpath d='m4.9 19.1 2.9-2.9'/%3E%3Cpath d='M2 12h4'/%3E%3Cpath d='m4.9 4.9 2.9 2.9'/%3E%3C/svg%3E");
   transform: rotate(0deg);
 }
-body input[data-task="x"][type="checkbox"]:checked,
-body input[data-task="X"][type="checkbox"]:checked {
+body input[data-task=x][type=checkbox]:checked,
+body input[data-task=X][type=checkbox]:checked {
   background-color: transparent;
   border-color: transparent;
 }
-body input[data-task="x"][type="checkbox"]:checked:after:checked,
-body input[data-task="X"][type="checkbox"]:checked:after:checked {
+body input[data-task=x][type=checkbox]:checked:after:checked,
+body input[data-task=X][type=checkbox]:checked:after:checked {
   --checkbox-marker-color: transparent;
   border-color: transparent;
   border-radius: 0;
@@ -1061,17 +1014,17 @@ body input[data-task="X"][type="checkbox"]:checked:after:checked {
   background-color: currentColor;
   -webkit-mask-position: 50% 50%;
 }
-body input[data-task="x"][type="checkbox"]:checked:after,
-body input[data-task="X"][type="checkbox"]:checked:after {
+body input[data-task=x][type=checkbox]:checked:after,
+body input[data-task=X][type=checkbox]:checked:after {
   color: var(--checklist-done-color);
   background-color: currentColor;
   -webkit-mask-size: 23px;
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='16px' viewBox='0 -960 960 960' width='20px' fill='%23e8eaed'%3E%3Cpath d='m419-285 291-292-63-64-228 228-111-111-63 64 174 175Zm60.68 226q-86.32 0-163.65-32.6-77.32-32.61-134.57-89.86T91.6-316.03Q59-393.35 59-479.86q0-87.41 32.66-164.28Q124.33-721 181.7-778.58q57.38-57.57 134.41-90.49Q393.15-902 479.34-902q87.55 0 164.83 32.85 77.29 32.85 134.57 90.3 57.29 57.46 90.27 134.52Q902-567.26 902-479.46q0 86.74-32.93 163.55-32.92 76.81-90.49 134.2Q721-124.33 644.13-91.66 567.26-59 479.68-59Z'/%3E%3C/svg%3E");
 }
-body .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="x"],
-body .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="X"],
-body ul > li.task-list-item[data-task="x"],
-body ul > li.task-list-item[data-task="X"] {
+body .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task=x],
+body .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task=X],
+body ul > li.task-list-item[data-task=x],
+body ul > li.task-list-item[data-task=X] {
   text-decoration: var(--checklist-done-decoration);
   color: var(--gray-300);
 }
@@ -1156,20 +1109,11 @@ body li[data-task="<"] > p > input:checked {
   transform: rotate(0deg);
 }
 body .tasks-callout .task-list-item.plugin-tasks-list-item[data-task="?"] {
-  background-color: color-mix(
-    in srgb,
-    var(--checklist-orange-color),
-    var(--gray-50) 85%
-  );
-  border: color-mix(in srgb, var(--checklist-orange-color), var(--gray-50) 50%)
-    1px solid;
+  background-color: color-mix(in srgb, var(--checklist-orange-color), var(--gray-50) 85%);
+  border: color-mix(in srgb, var(--checklist-orange-color), var(--gray-50) 50%) 1px solid;
 }
 body .tasks-highlight .task-list-item.plugin-tasks-list-item[data-task="?"] {
-  background-color: color-mix(
-    in srgb,
-    var(--checklist-orange-color),
-    var(--gray-50) 85%
-  );
+  background-color: color-mix(in srgb, var(--checklist-orange-color), var(--gray-50) 85%);
 }
 body input[data-task="?"]:checked,
 body li[data-task="?"] > input:checked,
@@ -1189,20 +1133,11 @@ body li[data-task="?"] > p > input:checked {
   transform: rotate(0deg);
 }
 body .tasks-callout .task-list-item.plugin-tasks-list-item[data-task="!"] {
-  background-color: color-mix(
-    in srgb,
-    var(--checklist-red-color),
-    var(--gray-50) 85%
-  );
-  border: color-mix(in srgb, var(--checklist-red-color), var(--gray-50) 50%) 1px
-    solid;
+  background-color: color-mix(in srgb, var(--checklist-red-color), var(--gray-50) 85%);
+  border: color-mix(in srgb, var(--checklist-red-color), var(--gray-50) 50%) 1px solid;
 }
 body .tasks-highlight .task-list-item.plugin-tasks-list-item[data-task="!"] {
-  background-color: color-mix(
-    in srgb,
-    var(--checklist-red-color),
-    var(--gray-50) 85%
-  );
+  background-color: color-mix(in srgb, var(--checklist-red-color), var(--gray-50) 85%);
 }
 body input[data-task="!"]:checked,
 body li[data-task="!"] > input:checked,
@@ -1222,20 +1157,11 @@ body li[data-task="!"] > p > input:checked {
   transform: rotate(0deg);
 }
 body .tasks-callout .task-list-item.plugin-tasks-list-item[data-task="*"] {
-  background-color: color-mix(
-    in srgb,
-    var(--checklist-yellow-color),
-    var(--gray-50) 85%
-  );
-  border: color-mix(in srgb, var(--checklist-yellow-color), var(--gray-50) 50%)
-    1px solid;
+  background-color: color-mix(in srgb, var(--checklist-yellow-color), var(--gray-50) 85%);
+  border: color-mix(in srgb, var(--checklist-yellow-color), var(--gray-50) 50%) 1px solid;
 }
 body .tasks-highlight .task-list-item.plugin-tasks-list-item[data-task="*"] {
-  background-color: color-mix(
-    in srgb,
-    var(--checklist-yellow-color),
-    var(--gray-50) 85%
-  );
+  background-color: color-mix(in srgb, var(--checklist-yellow-color), var(--gray-50) 85%);
 }
 body input[data-task="*"]:checked,
 body li[data-task="*"] > input:checked,
@@ -1271,25 +1197,16 @@ body li[data-task=\"] > p > input:checked {
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2.3' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-quote'%3E%3Cpath d='M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z'/%3E%3Cpath d='M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z'/%3E%3C/svg%3E");
   transform: scaleY(0.9);
 }
-body .tasks-callout .task-list-item.plugin-tasks-list-item[data-task="l"] {
-  background-color: color-mix(
-    in srgb,
-    var(--checklist-red-color),
-    var(--gray-50) 85%
-  );
-  border: color-mix(in srgb, var(--checklist-red-color), var(--gray-50) 50%) 1px
-    solid;
+body .tasks-callout .task-list-item.plugin-tasks-list-item[data-task=l] {
+  background-color: color-mix(in srgb, var(--checklist-red-color), var(--gray-50) 85%);
+  border: color-mix(in srgb, var(--checklist-red-color), var(--gray-50) 50%) 1px solid;
 }
-body .tasks-highlight .task-list-item.plugin-tasks-list-item[data-task="l"] {
-  background-color: color-mix(
-    in srgb,
-    var(--checklist-red-color),
-    var(--gray-50) 85%
-  );
+body .tasks-highlight .task-list-item.plugin-tasks-list-item[data-task=l] {
+  background-color: color-mix(in srgb, var(--checklist-red-color), var(--gray-50) 85%);
 }
-body input[data-task="l"]:checked,
-body li[data-task="l"] > input:checked,
-body li[data-task="l"] > p > input:checked {
+body input[data-task=l]:checked,
+body li[data-task=l] > input:checked,
+body li[data-task=l] > p > input:checked {
   --checkbox-marker-color: transparent;
   border-color: transparent;
   border-radius: 0;
@@ -1297,23 +1214,23 @@ body li[data-task="l"] > p > input:checked {
   background-color: currentColor;
   -webkit-mask-position: 50% 50%;
 }
-body input[data-task="l"]:checked,
-body li[data-task="l"] > input:checked,
-body li[data-task="l"] > p > input:checked {
+body input[data-task=l]:checked,
+body li[data-task=l] > input:checked,
+body li[data-task=l] > p > input:checked {
   color: var(--checklist-red-color);
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='17' height='17' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-map-pin'%3E%3Cpath d='M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0'/%3E%3Ccircle cx='12' cy='10' r='3'/%3E%3C/svg%3E");
   transform: rotate(0deg);
 }
-body .tasks-callout .task-list-item.plugin-tasks-list-item[data-task="b"] {
+body .tasks-callout .task-list-item.plugin-tasks-list-item[data-task=b] {
   background-color: color-mix(in srgb, var(--blue-400), var(--gray-50) 85%);
   border: color-mix(in srgb, var(--blue-400), var(--gray-50) 50%) 1px solid;
 }
-body .tasks-highlight .task-list-item.plugin-tasks-list-item[data-task="b"] {
+body .tasks-highlight .task-list-item.plugin-tasks-list-item[data-task=b] {
   background-color: color-mix(in srgb, var(--blue-400), var(--gray-50) 85%);
 }
-body input[data-task="b"]:checked,
-body li[data-task="b"] > input:checked,
-body li[data-task="b"] > p > input:checked {
+body input[data-task=b]:checked,
+body li[data-task=b] > input:checked,
+body li[data-task=b] > p > input:checked {
   --checkbox-marker-color: transparent;
   border-color: transparent;
   border-radius: 0;
@@ -1321,23 +1238,23 @@ body li[data-task="b"] > p > input:checked {
   background-color: currentColor;
   -webkit-mask-position: 50% 50%;
 }
-body input[data-task="b"]:checked,
-body li[data-task="b"] > input:checked,
-body li[data-task="b"] > p > input:checked {
+body input[data-task=b]:checked,
+body li[data-task=b] > input:checked,
+body li[data-task=b] > p > input:checked {
   color: var(--blue-400);
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='17' height='17' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2.7' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-bookmark'%3E%3Cpath d='m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z'/%3E%3C/svg%3E");
   transform: rotate(0deg);
 }
-body .tasks-callout .task-list-item.plugin-tasks-list-item[data-task="i"] {
+body .tasks-callout .task-list-item.plugin-tasks-list-item[data-task=i] {
   background-color: color-mix(in srgb, var(--blue-400), var(--gray-50) 85%);
   border: color-mix(in srgb, var(--blue-400), var(--gray-50) 50%) 1px solid;
 }
-body .tasks-highlight .task-list-item.plugin-tasks-list-item[data-task="i"] {
+body .tasks-highlight .task-list-item.plugin-tasks-list-item[data-task=i] {
   background-color: color-mix(in srgb, var(--blue-400), var(--gray-50) 85%);
 }
-body input[data-task="i"]:checked,
-body li[data-task="i"] > input:checked,
-body li[data-task="i"] > p > input:checked {
+body input[data-task=i]:checked,
+body li[data-task=i] > input:checked,
+body li[data-task=i] > p > input:checked {
   --checkbox-marker-color: transparent;
   border-color: transparent;
   border-radius: 0;
@@ -1345,32 +1262,23 @@ body li[data-task="i"] > p > input:checked {
   background-color: currentColor;
   -webkit-mask-position: 50% 50%;
 }
-body input[data-task="i"]:checked,
-body li[data-task="i"] > input:checked,
-body li[data-task="i"] > p > input:checked {
+body input[data-task=i]:checked,
+body li[data-task=i] > input:checked,
+body li[data-task=i] > p > input:checked {
   color: var(--blue-400);
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='17' height='17' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-circle-alert'%3E%3Ccircle cx='12' cy='12' r='10'/%3E%3Cline x1='12' x2='12' y1='8' y2='12'/%3E%3Cline x1='12' x2='12.01' y1='16' y2='16'/%3E%3C/svg%3E");
   transform: rotate(0deg);
 }
-body .tasks-callout .task-list-item.plugin-tasks-list-item[data-task="S"] {
-  background-color: color-mix(
-    in srgb,
-    var(--checklist-green-color),
-    var(--gray-50) 85%
-  );
-  border: color-mix(in srgb, var(--checklist-green-color), var(--gray-50) 50%)
-    1px solid;
+body .tasks-callout .task-list-item.plugin-tasks-list-item[data-task=S] {
+  background-color: color-mix(in srgb, var(--checklist-green-color), var(--gray-50) 85%);
+  border: color-mix(in srgb, var(--checklist-green-color), var(--gray-50) 50%) 1px solid;
 }
-body .tasks-highlight .task-list-item.plugin-tasks-list-item[data-task="S"] {
-  background-color: color-mix(
-    in srgb,
-    var(--checklist-green-color),
-    var(--gray-50) 85%
-  );
+body .tasks-highlight .task-list-item.plugin-tasks-list-item[data-task=S] {
+  background-color: color-mix(in srgb, var(--checklist-green-color), var(--gray-50) 85%);
 }
-body input[data-task="S"]:checked,
-body li[data-task="S"] > input:checked,
-body li[data-task="S"] > p > input:checked {
+body input[data-task=S]:checked,
+body li[data-task=S] > input:checked,
+body li[data-task=S] > p > input:checked {
   --checkbox-marker-color: transparent;
   border-color: transparent;
   border-radius: 0;
@@ -1378,32 +1286,23 @@ body li[data-task="S"] > p > input:checked {
   background-color: currentColor;
   -webkit-mask-position: 50% 50%;
 }
-body input[data-task="S"]:checked,
-body li[data-task="S"] > input:checked,
-body li[data-task="S"] > p > input:checked {
+body input[data-task=S]:checked,
+body li[data-task=S] > input:checked,
+body li[data-task=S] > p > input:checked {
   color: var(--checklist-green-color);
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='17' height='17' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-circle-dollar-sign'%3E%3Ccircle cx='12' cy='12' r='10'/%3E%3Cpath d='M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8'/%3E%3Cpath d='M12 18V6'/%3E%3C/svg%3E");
   transform: rotate(0deg);
 }
-body .tasks-callout .task-list-item.plugin-tasks-list-item[data-task="I"] {
-  background-color: color-mix(
-    in srgb,
-    var(--checklist-yellow-color),
-    var(--gray-50) 85%
-  );
-  border: color-mix(in srgb, var(--checklist-yellow-color), var(--gray-50) 50%)
-    1px solid;
+body .tasks-callout .task-list-item.plugin-tasks-list-item[data-task=I] {
+  background-color: color-mix(in srgb, var(--checklist-yellow-color), var(--gray-50) 85%);
+  border: color-mix(in srgb, var(--checklist-yellow-color), var(--gray-50) 50%) 1px solid;
 }
-body .tasks-highlight .task-list-item.plugin-tasks-list-item[data-task="I"] {
-  background-color: color-mix(
-    in srgb,
-    var(--checklist-yellow-color),
-    var(--gray-50) 85%
-  );
+body .tasks-highlight .task-list-item.plugin-tasks-list-item[data-task=I] {
+  background-color: color-mix(in srgb, var(--checklist-yellow-color), var(--gray-50) 85%);
 }
-body input[data-task="I"]:checked,
-body li[data-task="I"] > input:checked,
-body li[data-task="I"] > p > input:checked {
+body input[data-task=I]:checked,
+body li[data-task=I] > input:checked,
+body li[data-task=I] > p > input:checked {
   --checkbox-marker-color: transparent;
   border-color: transparent;
   border-radius: 0;
@@ -1411,32 +1310,23 @@ body li[data-task="I"] > p > input:checked {
   background-color: currentColor;
   -webkit-mask-position: 50% 50%;
 }
-body input[data-task="I"]:checked,
-body li[data-task="I"] > input:checked,
-body li[data-task="I"] > p > input:checked {
+body input[data-task=I]:checked,
+body li[data-task=I] > input:checked,
+body li[data-task=I] > p > input:checked {
   color: var(--checklist-yellow-color);
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='18px' viewBox='0 -960 960 960' width='18px' fill='%23e8eaed'%3E%3Cpath d='M407.74-240Q378-240 357-261.15 336-282.3 336-312v-67q-57-37.3-88.5-95.65Q216-533 216-600q0-110.31 76.78-187.16 76.78-76.84 187-76.84T667-787.16q77 76.85 77 187.16 0 66.82-31.5 125.41T624-379v67q0 29.7-21.18 50.85Q581.65-240 551.91-240H407.74ZM396-96q-15.3 0-25.65-10.29Q360-116.58 360-131.79t10.35-25.71Q380.7-168 396-168h168q15.3 0 25.65 10.29Q600-147.42 600-132.21t-10.35 25.71Q579.3-96 564-96H396Z'/%3E%3C/svg%3E");
   transform: rotate(0deg);
 }
-body .tasks-callout .task-list-item.plugin-tasks-list-item[data-task="p"] {
-  background-color: color-mix(
-    in srgb,
-    var(--checklist-green-color),
-    var(--gray-50) 85%
-  );
-  border: color-mix(in srgb, var(--checklist-green-color), var(--gray-50) 50%)
-    1px solid;
+body .tasks-callout .task-list-item.plugin-tasks-list-item[data-task=p] {
+  background-color: color-mix(in srgb, var(--checklist-green-color), var(--gray-50) 85%);
+  border: color-mix(in srgb, var(--checklist-green-color), var(--gray-50) 50%) 1px solid;
 }
-body .tasks-highlight .task-list-item.plugin-tasks-list-item[data-task="p"] {
-  background-color: color-mix(
-    in srgb,
-    var(--checklist-green-color),
-    var(--gray-50) 85%
-  );
+body .tasks-highlight .task-list-item.plugin-tasks-list-item[data-task=p] {
+  background-color: color-mix(in srgb, var(--checklist-green-color), var(--gray-50) 85%);
 }
-body input[data-task="p"]:checked,
-body li[data-task="p"] > input:checked,
-body li[data-task="p"] > p > input:checked {
+body input[data-task=p]:checked,
+body li[data-task=p] > input:checked,
+body li[data-task=p] > p > input:checked {
   --checkbox-marker-color: transparent;
   border-color: transparent;
   border-radius: 0;
@@ -1444,32 +1334,23 @@ body li[data-task="p"] > p > input:checked {
   background-color: currentColor;
   -webkit-mask-position: 50% 50%;
 }
-body input[data-task="p"]:checked,
-body li[data-task="p"] > input:checked,
-body li[data-task="p"] > p > input:checked {
+body input[data-task=p]:checked,
+body li[data-task=p] > input:checked,
+body li[data-task=p] > p > input:checked {
   color: var(--checklist-green-color);
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-thumbs-up'%3E%3Cpath d='M7 10v12'/%3E%3Cpath d='M15 5.88 14 10h5.83a2 2 0 0 1 1.92 2.56l-2.33 8A2 2 0 0 1 17.5 22H4a2 2 0 0 1-2-2v-8a2 2 0 0 1 2-2h2.76a2 2 0 0 0 1.79-1.11L12 2a3.13 3.13 0 0 1 3 3.88Z'/%3E%3C/svg%3E");
   transform: rotate(0deg);
 }
-body .tasks-callout .task-list-item.plugin-tasks-list-item[data-task="c"] {
-  background-color: color-mix(
-    in srgb,
-    var(--checklist-red-color),
-    var(--gray-50) 85%
-  );
-  border: color-mix(in srgb, var(--checklist-red-color), var(--gray-50) 50%) 1px
-    solid;
+body .tasks-callout .task-list-item.plugin-tasks-list-item[data-task=c] {
+  background-color: color-mix(in srgb, var(--checklist-red-color), var(--gray-50) 85%);
+  border: color-mix(in srgb, var(--checklist-red-color), var(--gray-50) 50%) 1px solid;
 }
-body .tasks-highlight .task-list-item.plugin-tasks-list-item[data-task="c"] {
-  background-color: color-mix(
-    in srgb,
-    var(--checklist-red-color),
-    var(--gray-50) 85%
-  );
+body .tasks-highlight .task-list-item.plugin-tasks-list-item[data-task=c] {
+  background-color: color-mix(in srgb, var(--checklist-red-color), var(--gray-50) 85%);
 }
-body input[data-task="c"]:checked,
-body li[data-task="c"] > input:checked,
-body li[data-task="c"] > p > input:checked {
+body input[data-task=c]:checked,
+body li[data-task=c] > input:checked,
+body li[data-task=c] > p > input:checked {
   --checkbox-marker-color: transparent;
   border-color: transparent;
   border-radius: 0;
@@ -1477,32 +1358,23 @@ body li[data-task="c"] > p > input:checked {
   background-color: currentColor;
   -webkit-mask-position: 50% 50%;
 }
-body input[data-task="c"]:checked,
-body li[data-task="c"] > input:checked,
-body li[data-task="c"] > p > input:checked {
+body input[data-task=c]:checked,
+body li[data-task=c] > input:checked,
+body li[data-task=c] > p > input:checked {
   color: var(--checklist-red-color);
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-thumbs-up'%3E%3Cpath d='M7 10v12'/%3E%3Cpath d='M15 5.88 14 10h5.83a2 2 0 0 1 1.92 2.56l-2.33 8A2 2 0 0 1 17.5 22H4a2 2 0 0 1-2-2v-8a2 2 0 0 1 2-2h2.76a2 2 0 0 0 1.79-1.11L12 2a3.13 3.13 0 0 1 3 3.88Z'/%3E%3C/svg%3E");
   transform: rotate(180deg);
 }
-body .tasks-callout .task-list-item.plugin-tasks-list-item[data-task="f"] {
-  background-color: color-mix(
-    in srgb,
-    var(--checklist-orange-color),
-    var(--gray-50) 85%
-  );
-  border: color-mix(in srgb, var(--checklist-orange-color), var(--gray-50) 50%)
-    1px solid;
+body .tasks-callout .task-list-item.plugin-tasks-list-item[data-task=f] {
+  background-color: color-mix(in srgb, var(--checklist-orange-color), var(--gray-50) 85%);
+  border: color-mix(in srgb, var(--checklist-orange-color), var(--gray-50) 50%) 1px solid;
 }
-body .tasks-highlight .task-list-item.plugin-tasks-list-item[data-task="f"] {
-  background-color: color-mix(
-    in srgb,
-    var(--checklist-orange-color),
-    var(--gray-50) 85%
-  );
+body .tasks-highlight .task-list-item.plugin-tasks-list-item[data-task=f] {
+  background-color: color-mix(in srgb, var(--checklist-orange-color), var(--gray-50) 85%);
 }
-body input[data-task="f"]:checked,
-body li[data-task="f"] > input:checked,
-body li[data-task="f"] > p > input:checked {
+body input[data-task=f]:checked,
+body li[data-task=f] > input:checked,
+body li[data-task=f] > p > input:checked {
   --checkbox-marker-color: transparent;
   border-color: transparent;
   border-radius: 0;
@@ -1510,32 +1382,23 @@ body li[data-task="f"] > p > input:checked {
   background-color: currentColor;
   -webkit-mask-position: 50% 50%;
 }
-body input[data-task="f"]:checked,
-body li[data-task="f"] > input:checked,
-body li[data-task="f"] > p > input:checked {
+body input[data-task=f]:checked,
+body li[data-task=f] > input:checked,
+body li[data-task=f] > p > input:checked {
   color: var(--checklist-orange-color);
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-flame'%3E%3Cpath d='M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z'/%3E%3C/svg%3E");
   transform: rotate(0deg);
 }
-body .tasks-callout .task-list-item.plugin-tasks-list-item[data-task="k"] {
-  background-color: color-mix(
-    in srgb,
-    var(--checklist-orange-color),
-    var(--gray-50) 85%
-  );
-  border: color-mix(in srgb, var(--checklist-orange-color), var(--gray-50) 50%)
-    1px solid;
+body .tasks-callout .task-list-item.plugin-tasks-list-item[data-task=k] {
+  background-color: color-mix(in srgb, var(--checklist-orange-color), var(--gray-50) 85%);
+  border: color-mix(in srgb, var(--checklist-orange-color), var(--gray-50) 50%) 1px solid;
 }
-body .tasks-highlight .task-list-item.plugin-tasks-list-item[data-task="k"] {
-  background-color: color-mix(
-    in srgb,
-    var(--checklist-orange-color),
-    var(--gray-50) 85%
-  );
+body .tasks-highlight .task-list-item.plugin-tasks-list-item[data-task=k] {
+  background-color: color-mix(in srgb, var(--checklist-orange-color), var(--gray-50) 85%);
 }
-body input[data-task="k"]:checked,
-body li[data-task="k"] > input:checked,
-body li[data-task="k"] > p > input:checked {
+body input[data-task=k]:checked,
+body li[data-task=k] > input:checked,
+body li[data-task=k] > p > input:checked {
   --checkbox-marker-color: transparent;
   border-color: transparent;
   border-radius: 0;
@@ -1543,32 +1406,23 @@ body li[data-task="k"] > p > input:checked {
   background-color: currentColor;
   -webkit-mask-position: 50% 50%;
 }
-body input[data-task="k"]:checked,
-body li[data-task="k"] > input:checked,
-body li[data-task="k"] > p > input:checked {
+body input[data-task=k]:checked,
+body li[data-task=k] > input:checked,
+body li[data-task=k] > p > input:checked {
   color: var(--checklist-orange-color);
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='17' height='17' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-key'%3E%3Cpath d='m15.5 7.5 2.3 2.3a1 1 0 0 0 1.4 0l2.1-2.1a1 1 0 0 0 0-1.4L19 4'/%3E%3Cpath d='m21 2-9.6 9.6'/%3E%3Ccircle cx='7.5' cy='15.5' r='5.5'/%3E%3C/svg%3E");
   transform: rotate(0deg);
 }
-body .tasks-callout .task-list-item.plugin-tasks-list-item[data-task="w"] {
-  background-color: color-mix(
-    in srgb,
-    var(--checklist-yellow-color),
-    var(--gray-50) 85%
-  );
-  border: color-mix(in srgb, var(--checklist-yellow-color), var(--gray-50) 50%)
-    1px solid;
+body .tasks-callout .task-list-item.plugin-tasks-list-item[data-task=w] {
+  background-color: color-mix(in srgb, var(--checklist-yellow-color), var(--gray-50) 85%);
+  border: color-mix(in srgb, var(--checklist-yellow-color), var(--gray-50) 50%) 1px solid;
 }
-body .tasks-highlight .task-list-item.plugin-tasks-list-item[data-task="w"] {
-  background-color: color-mix(
-    in srgb,
-    var(--checklist-yellow-color),
-    var(--gray-50) 85%
-  );
+body .tasks-highlight .task-list-item.plugin-tasks-list-item[data-task=w] {
+  background-color: color-mix(in srgb, var(--checklist-yellow-color), var(--gray-50) 85%);
 }
-body input[data-task="w"]:checked,
-body li[data-task="w"] > input:checked,
-body li[data-task="w"] > p > input:checked {
+body input[data-task=w]:checked,
+body li[data-task=w] > input:checked,
+body li[data-task=w] > p > input:checked {
   --checkbox-marker-color: transparent;
   border-color: transparent;
   border-radius: 0;
@@ -1576,32 +1430,23 @@ body li[data-task="w"] > p > input:checked {
   background-color: currentColor;
   -webkit-mask-position: 50% 50%;
 }
-body input[data-task="w"]:checked,
-body li[data-task="w"] > input:checked,
-body li[data-task="w"] > p > input:checked {
+body input[data-task=w]:checked,
+body li[data-task=w] > input:checked,
+body li[data-task=w] > p > input:checked {
   color: var(--checklist-yellow-color);
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='17' height='17' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-crown'%3E%3Cpath d='M11.562 3.266a.5.5 0 0 1 .876 0L15.39 8.87a1 1 0 0 0 1.516.294L21.183 5.5a.5.5 0 0 1 .798.519l-2.834 10.246a1 1 0 0 1-.956.734H5.81a1 1 0 0 1-.957-.734L2.02 6.02a.5.5 0 0 1 .798-.519l4.276 3.664a1 1 0 0 0 1.516-.294z'/%3E%3Cpath d='M5 21h14'/%3E%3C/svg%3E");
   transform: rotate(0deg);
 }
-body .tasks-callout .task-list-item.plugin-tasks-list-item[data-task="u"] {
-  background-color: color-mix(
-    in srgb,
-    var(--checklist-green-color),
-    var(--gray-50) 85%
-  );
-  border: color-mix(in srgb, var(--checklist-green-color), var(--gray-50) 50%)
-    1px solid;
+body .tasks-callout .task-list-item.plugin-tasks-list-item[data-task=u] {
+  background-color: color-mix(in srgb, var(--checklist-green-color), var(--gray-50) 85%);
+  border: color-mix(in srgb, var(--checklist-green-color), var(--gray-50) 50%) 1px solid;
 }
-body .tasks-highlight .task-list-item.plugin-tasks-list-item[data-task="u"] {
-  background-color: color-mix(
-    in srgb,
-    var(--checklist-green-color),
-    var(--gray-50) 85%
-  );
+body .tasks-highlight .task-list-item.plugin-tasks-list-item[data-task=u] {
+  background-color: color-mix(in srgb, var(--checklist-green-color), var(--gray-50) 85%);
 }
-body input[data-task="u"]:checked,
-body li[data-task="u"] > input:checked,
-body li[data-task="u"] > p > input:checked {
+body input[data-task=u]:checked,
+body li[data-task=u] > input:checked,
+body li[data-task=u] > p > input:checked {
   --checkbox-marker-color: transparent;
   border-color: transparent;
   border-radius: 0;
@@ -1609,32 +1454,23 @@ body li[data-task="u"] > p > input:checked {
   background-color: currentColor;
   -webkit-mask-position: 50% 50%;
 }
-body input[data-task="u"]:checked,
-body li[data-task="u"] > input:checked,
-body li[data-task="u"] > p > input:checked {
+body input[data-task=u]:checked,
+body li[data-task=u] > input:checked,
+body li[data-task=u] > p > input:checked {
   color: var(--checklist-green-color);
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='17' height='17' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-circle-chevron-up'%3E%3Ccircle cx='12' cy='12' r='10'/%3E%3Cpath d='m8 14 4-4 4 4'/%3E%3C/svg%3E");
   transform: rotate(0deg);
 }
-body .tasks-callout .task-list-item.plugin-tasks-list-item[data-task="d"] {
-  background-color: color-mix(
-    in srgb,
-    var(--checklist-red-color),
-    var(--gray-50) 85%
-  );
-  border: color-mix(in srgb, var(--checklist-red-color), var(--gray-50) 50%) 1px
-    solid;
+body .tasks-callout .task-list-item.plugin-tasks-list-item[data-task=d] {
+  background-color: color-mix(in srgb, var(--checklist-red-color), var(--gray-50) 85%);
+  border: color-mix(in srgb, var(--checklist-red-color), var(--gray-50) 50%) 1px solid;
 }
-body .tasks-highlight .task-list-item.plugin-tasks-list-item[data-task="d"] {
-  background-color: color-mix(
-    in srgb,
-    var(--checklist-red-color),
-    var(--gray-50) 85%
-  );
+body .tasks-highlight .task-list-item.plugin-tasks-list-item[data-task=d] {
+  background-color: color-mix(in srgb, var(--checklist-red-color), var(--gray-50) 85%);
 }
-body input[data-task="d"]:checked,
-body li[data-task="d"] > input:checked,
-body li[data-task="d"] > p > input:checked {
+body input[data-task=d]:checked,
+body li[data-task=d] > input:checked,
+body li[data-task=d] > p > input:checked {
   --checkbox-marker-color: transparent;
   border-color: transparent;
   border-radius: 0;
@@ -1642,9 +1478,9 @@ body li[data-task="d"] > p > input:checked {
   background-color: currentColor;
   -webkit-mask-position: 50% 50%;
 }
-body input[data-task="d"]:checked,
-body li[data-task="d"] > input:checked,
-body li[data-task="d"] > p > input:checked {
+body input[data-task=d]:checked,
+body li[data-task=d] > input:checked,
+body li[data-task=d] > p > input:checked {
   color: var(--checklist-red-color);
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='17' height='17' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-circle-chevron-up'%3E%3Ccircle cx='12' cy='12' r='10'/%3E%3Cpath d='m8 14 4-4 4 4'/%3E%3C/svg%3E");
   transform: rotate(180deg);
@@ -1678,8 +1514,7 @@ body li[data-task="d"] > p > input:checked {
 .metadata-property-key {
   border: unset;
 }
-.metadata-property-value:focus,
-.metadata-property-value:focus-within,
+.metadata-property-value:focus, .metadata-property-value:focus-within,
 .metadata-property-key:focus,
 .metadata-property-key:focus-within {
   background-color: var(--gray-100);
@@ -1783,8 +1618,7 @@ body li[data-task="d"] > p > input:checked {
 
 .metadata-add-button {
   color: var(--gray-300);
-  transition: var(--ease-out) 150ms color,
-    var(--ease-out) 150ms background-color;
+  transition: var(--ease-out) 150ms color, var(--ease-out) 150ms background-color;
   opacity: 1;
 }
 .metadata-add-button:hover {
@@ -1793,12 +1627,8 @@ body li[data-task="d"] > p > input:checked {
 }
 
 .tasks-styled .contains-task-list.plugin-tasks-query-result li.task-list-item,
-.tasks-styled--detailed
-  .contains-task-list.plugin-tasks-query-result
-  li.task-list-item,
-.tasks-styled--minimal
-  .contains-task-list.plugin-tasks-query-result
-  li.task-list-item {
+.tasks-styled--detailed .contains-task-list.plugin-tasks-query-result li.task-list-item,
+.tasks-styled--minimal .contains-task-list.plugin-tasks-query-result li.task-list-item {
   all: unset;
   display: grid;
   grid-template-columns: 24px 1fr;
@@ -1811,233 +1641,89 @@ body li[data-task="d"] > p > input:checked {
   border-radius: 8px;
   cursor: default;
 }
-.tasks-styled
-  .contains-task-list.plugin-tasks-query-result
-  li.task-list-item
-  .tasks-postpone,
-.tasks-styled
-  .contains-task-list.plugin-tasks-query-result
-  li.task-list-item
-  .tasks-edit,
-.tasks-styled
-  .contains-task-list.plugin-tasks-query-result
-  li.task-list-item
-  .tasks-backlink,
-.tasks-styled--detailed
-  .contains-task-list.plugin-tasks-query-result
-  li.task-list-item
-  .tasks-postpone,
-.tasks-styled--detailed
-  .contains-task-list.plugin-tasks-query-result
-  li.task-list-item
-  .tasks-edit,
-.tasks-styled--detailed
-  .contains-task-list.plugin-tasks-query-result
-  li.task-list-item
-  .tasks-backlink,
-.tasks-styled--minimal
-  .contains-task-list.plugin-tasks-query-result
-  li.task-list-item
-  .tasks-postpone,
-.tasks-styled--minimal
-  .contains-task-list.plugin-tasks-query-result
-  li.task-list-item
-  .tasks-edit,
-.tasks-styled--minimal
-  .contains-task-list.plugin-tasks-query-result
-  li.task-list-item
-  .tasks-backlink {
+.tasks-styled .contains-task-list.plugin-tasks-query-result li.task-list-item .tasks-postpone,
+.tasks-styled .contains-task-list.plugin-tasks-query-result li.task-list-item .tasks-edit,
+.tasks-styled .contains-task-list.plugin-tasks-query-result li.task-list-item .tasks-backlink,
+.tasks-styled--detailed .contains-task-list.plugin-tasks-query-result li.task-list-item .tasks-postpone,
+.tasks-styled--detailed .contains-task-list.plugin-tasks-query-result li.task-list-item .tasks-edit,
+.tasks-styled--detailed .contains-task-list.plugin-tasks-query-result li.task-list-item .tasks-backlink,
+.tasks-styled--minimal .contains-task-list.plugin-tasks-query-result li.task-list-item .tasks-postpone,
+.tasks-styled--minimal .contains-task-list.plugin-tasks-query-result li.task-list-item .tasks-edit,
+.tasks-styled--minimal .contains-task-list.plugin-tasks-query-result li.task-list-item .tasks-backlink {
   transition-property: opacity, max-height;
   transition: 200ms cubic-bezier(0.37, 0, 0.63, 1);
   transition-delay: 150ms;
 }
-.tasks-styled
-  .contains-task-list.plugin-tasks-query-result
-  li.task-list-item:hover
-  .tasks-postpone,
-.tasks-styled
-  .contains-task-list.plugin-tasks-query-result
-  li.task-list-item:hover
-  .tasks-edit,
-.tasks-styled--detailed
-  .contains-task-list.plugin-tasks-query-result
-  li.task-list-item:hover
-  .tasks-postpone,
-.tasks-styled--detailed
-  .contains-task-list.plugin-tasks-query-result
-  li.task-list-item:hover
-  .tasks-edit,
-.tasks-styled--minimal
-  .contains-task-list.plugin-tasks-query-result
-  li.task-list-item:hover
-  .tasks-postpone,
-.tasks-styled--minimal
-  .contains-task-list.plugin-tasks-query-result
-  li.task-list-item:hover
-  .tasks-edit {
+.tasks-styled .contains-task-list.plugin-tasks-query-result li.task-list-item:hover .tasks-postpone,
+.tasks-styled .contains-task-list.plugin-tasks-query-result li.task-list-item:hover .tasks-edit,
+.tasks-styled--detailed .contains-task-list.plugin-tasks-query-result li.task-list-item:hover .tasks-postpone,
+.tasks-styled--detailed .contains-task-list.plugin-tasks-query-result li.task-list-item:hover .tasks-edit,
+.tasks-styled--minimal .contains-task-list.plugin-tasks-query-result li.task-list-item:hover .tasks-postpone,
+.tasks-styled--minimal .contains-task-list.plugin-tasks-query-result li.task-list-item:hover .tasks-edit {
   opacity: 1;
   max-height: 32px;
 }
-.tasks-styled
-  .contains-task-list.plugin-tasks-query-result
-  li.task-list-item:hover
-  .tasks-backlink,
-.tasks-styled--detailed
-  .contains-task-list.plugin-tasks-query-result
-  li.task-list-item:hover
-  .tasks-backlink,
-.tasks-styled--minimal
-  .contains-task-list.plugin-tasks-query-result
-  li.task-list-item:hover
-  .tasks-backlink {
+.tasks-styled .contains-task-list.plugin-tasks-query-result li.task-list-item:hover .tasks-backlink,
+.tasks-styled--detailed .contains-task-list.plugin-tasks-query-result li.task-list-item:hover .tasks-backlink,
+.tasks-styled--minimal .contains-task-list.plugin-tasks-query-result li.task-list-item:hover .tasks-backlink {
   opacity: 1;
   max-height: 32px;
 }
-.tasks-styled
-  .contains-task-list.plugin-tasks-query-result
-  li.task-list-item:has([data-task-priority="highest"]):not([data-task="x"]),
-.tasks-styled--detailed
-  .contains-task-list.plugin-tasks-query-result
-  li.task-list-item:has([data-task-priority="highest"]):not([data-task="x"]),
-.tasks-styled--minimal
-  .contains-task-list.plugin-tasks-query-result
-  li.task-list-item:has([data-task-priority="highest"]):not([data-task="x"]) {
+.tasks-styled .contains-task-list.plugin-tasks-query-result li.task-list-item:has([data-task-priority=highest]):not([data-task=x]),
+.tasks-styled--detailed .contains-task-list.plugin-tasks-query-result li.task-list-item:has([data-task-priority=highest]):not([data-task=x]),
+.tasks-styled--minimal .contains-task-list.plugin-tasks-query-result li.task-list-item:has([data-task-priority=highest]):not([data-task=x]) {
   background-color: var(--red-75) !important;
   outline: var(--red-200) 1px solid;
 }
-.tasks-styled
-  .contains-task-list.plugin-tasks-query-result
-  li.task-list-item:has([data-task-priority="highest"]):not([data-task="x"])
-  .task-description,
-.tasks-styled--detailed
-  .contains-task-list.plugin-tasks-query-result
-  li.task-list-item:has([data-task-priority="highest"]):not([data-task="x"])
-  .task-description,
-.tasks-styled--minimal
-  .contains-task-list.plugin-tasks-query-result
-  li.task-list-item:has([data-task-priority="highest"]):not([data-task="x"])
-  .task-description {
+.tasks-styled .contains-task-list.plugin-tasks-query-result li.task-list-item:has([data-task-priority=highest]):not([data-task=x]) .task-description,
+.tasks-styled--detailed .contains-task-list.plugin-tasks-query-result li.task-list-item:has([data-task-priority=highest]):not([data-task=x]) .task-description,
+.tasks-styled--minimal .contains-task-list.plugin-tasks-query-result li.task-list-item:has([data-task-priority=highest]):not([data-task=x]) .task-description {
   color: var(--red-500);
 }
-.tasks-styled
-  .contains-task-list.plugin-tasks-query-result
-  li.task-list-item:has([data-task-priority="high"]):not([data-task="x"]),
-.tasks-styled--detailed
-  .contains-task-list.plugin-tasks-query-result
-  li.task-list-item:has([data-task-priority="high"]):not([data-task="x"]),
-.tasks-styled--minimal
-  .contains-task-list.plugin-tasks-query-result
-  li.task-list-item:has([data-task-priority="high"]):not([data-task="x"]) {
+.tasks-styled .contains-task-list.plugin-tasks-query-result li.task-list-item:has([data-task-priority=high]):not([data-task=x]),
+.tasks-styled--detailed .contains-task-list.plugin-tasks-query-result li.task-list-item:has([data-task-priority=high]):not([data-task=x]),
+.tasks-styled--minimal .contains-task-list.plugin-tasks-query-result li.task-list-item:has([data-task-priority=high]):not([data-task=x]) {
   background-color: var(--orange-75) !important;
   outline: var(--orange-200) 1px solid;
 }
-.tasks-styled
-  .contains-task-list.plugin-tasks-query-result
-  li.task-list-item:has([data-task-priority="high"]):not([data-task="x"])
-  .task-description,
-.tasks-styled--detailed
-  .contains-task-list.plugin-tasks-query-result
-  li.task-list-item:has([data-task-priority="high"]):not([data-task="x"])
-  .task-description,
-.tasks-styled--minimal
-  .contains-task-list.plugin-tasks-query-result
-  li.task-list-item:has([data-task-priority="high"]):not([data-task="x"])
-  .task-description {
+.tasks-styled .contains-task-list.plugin-tasks-query-result li.task-list-item:has([data-task-priority=high]):not([data-task=x]) .task-description,
+.tasks-styled--detailed .contains-task-list.plugin-tasks-query-result li.task-list-item:has([data-task-priority=high]):not([data-task=x]) .task-description,
+.tasks-styled--minimal .contains-task-list.plugin-tasks-query-result li.task-list-item:has([data-task-priority=high]):not([data-task=x]) .task-description {
   color: var(--orange-500);
 }
-.tasks-styled
-  .contains-task-list.plugin-tasks-query-result
-  li.task-list-item:has([data-task-priority="medium"]):not([data-task="x"]),
-.tasks-styled--detailed
-  .contains-task-list.plugin-tasks-query-result
-  li.task-list-item:has([data-task-priority="medium"]):not([data-task="x"]),
-.tasks-styled--minimal
-  .contains-task-list.plugin-tasks-query-result
-  li.task-list-item:has([data-task-priority="medium"]):not([data-task="x"]) {
+.tasks-styled .contains-task-list.plugin-tasks-query-result li.task-list-item:has([data-task-priority=medium]):not([data-task=x]),
+.tasks-styled--detailed .contains-task-list.plugin-tasks-query-result li.task-list-item:has([data-task-priority=medium]):not([data-task=x]),
+.tasks-styled--minimal .contains-task-list.plugin-tasks-query-result li.task-list-item:has([data-task-priority=medium]):not([data-task=x]) {
   background-color: var(--yellow-75) !important;
   outline: var(--yellow-200) 1px solid;
 }
-.tasks-styled
-  .contains-task-list.plugin-tasks-query-result
-  li.task-list-item:has([data-task-priority="medium"]):not([data-task="x"])
-  .task-description,
-.tasks-styled--detailed
-  .contains-task-list.plugin-tasks-query-result
-  li.task-list-item:has([data-task-priority="medium"]):not([data-task="x"])
-  .task-description,
-.tasks-styled--minimal
-  .contains-task-list.plugin-tasks-query-result
-  li.task-list-item:has([data-task-priority="medium"]):not([data-task="x"])
-  .task-description {
+.tasks-styled .contains-task-list.plugin-tasks-query-result li.task-list-item:has([data-task-priority=medium]):not([data-task=x]) .task-description,
+.tasks-styled--detailed .contains-task-list.plugin-tasks-query-result li.task-list-item:has([data-task-priority=medium]):not([data-task=x]) .task-description,
+.tasks-styled--minimal .contains-task-list.plugin-tasks-query-result li.task-list-item:has([data-task-priority=medium]):not([data-task=x]) .task-description {
   color: var(--yellow-600);
 }
-.tasks-styled
-  .contains-task-list.plugin-tasks-query-result
-  li.task-list-item:has([data-task-priority="low"]):not([data-task="x"]),
-.tasks-styled--detailed
-  .contains-task-list.plugin-tasks-query-result
-  li.task-list-item:has([data-task-priority="low"]):not([data-task="x"]),
-.tasks-styled--minimal
-  .contains-task-list.plugin-tasks-query-result
-  li.task-list-item:has([data-task-priority="low"]):not([data-task="x"]) {
+.tasks-styled .contains-task-list.plugin-tasks-query-result li.task-list-item:has([data-task-priority=low]):not([data-task=x]),
+.tasks-styled--detailed .contains-task-list.plugin-tasks-query-result li.task-list-item:has([data-task-priority=low]):not([data-task=x]),
+.tasks-styled--minimal .contains-task-list.plugin-tasks-query-result li.task-list-item:has([data-task-priority=low]):not([data-task=x]) {
   background-color: var(--blue-75) !important;
   outline: var(--blue-200) 1px solid;
 }
-.tasks-styled
-  .contains-task-list.plugin-tasks-query-result
-  li.task-list-item:has([data-task-priority="low"]):not([data-task="x"])
-  .task-description,
-.tasks-styled--detailed
-  .contains-task-list.plugin-tasks-query-result
-  li.task-list-item:has([data-task-priority="low"]):not([data-task="x"])
-  .task-description,
-.tasks-styled--minimal
-  .contains-task-list.plugin-tasks-query-result
-  li.task-list-item:has([data-task-priority="low"]):not([data-task="x"])
-  .task-description {
+.tasks-styled .contains-task-list.plugin-tasks-query-result li.task-list-item:has([data-task-priority=low]):not([data-task=x]) .task-description,
+.tasks-styled--detailed .contains-task-list.plugin-tasks-query-result li.task-list-item:has([data-task-priority=low]):not([data-task=x]) .task-description,
+.tasks-styled--minimal .contains-task-list.plugin-tasks-query-result li.task-list-item:has([data-task-priority=low]):not([data-task=x]) .task-description {
   color: var(--blue-600);
 }
-.tasks-styled
-  .contains-task-list.plugin-tasks-query-result
-  li.task-list-item[data-task="x"]:not(:hover)
-  .tasks-list-text
-  > :not(.task-description),
-.tasks-styled
-  .contains-task-list.plugin-tasks-query-result
-  li.task-list-item[data-task="x"]:not(:hover)
-  .tasks-backlink,
-.tasks-styled--detailed
-  .contains-task-list.plugin-tasks-query-result
-  li.task-list-item[data-task="x"]:not(:hover)
-  .tasks-list-text
-  > :not(.task-description),
-.tasks-styled--detailed
-  .contains-task-list.plugin-tasks-query-result
-  li.task-list-item[data-task="x"]:not(:hover)
-  .tasks-backlink,
-.tasks-styled--minimal
-  .contains-task-list.plugin-tasks-query-result
-  li.task-list-item[data-task="x"]:not(:hover)
-  .tasks-list-text
-  > :not(.task-description),
-.tasks-styled--minimal
-  .contains-task-list.plugin-tasks-query-result
-  li.task-list-item[data-task="x"]:not(:hover)
-  .tasks-backlink {
+.tasks-styled .contains-task-list.plugin-tasks-query-result li.task-list-item[data-task=x]:not(:hover) .tasks-list-text > :not(.task-description),
+.tasks-styled .contains-task-list.plugin-tasks-query-result li.task-list-item[data-task=x]:not(:hover) .tasks-backlink,
+.tasks-styled--detailed .contains-task-list.plugin-tasks-query-result li.task-list-item[data-task=x]:not(:hover) .tasks-list-text > :not(.task-description),
+.tasks-styled--detailed .contains-task-list.plugin-tasks-query-result li.task-list-item[data-task=x]:not(:hover) .tasks-backlink,
+.tasks-styled--minimal .contains-task-list.plugin-tasks-query-result li.task-list-item[data-task=x]:not(:hover) .tasks-list-text > :not(.task-description),
+.tasks-styled--minimal .contains-task-list.plugin-tasks-query-result li.task-list-item[data-task=x]:not(:hover) .tasks-backlink {
   display: inline;
 }
-.tasks-styled
-  .contains-task-list.plugin-tasks-query-result
-  li.task-list-item[data-task="x"]:not(:hover)
-  .task-description,
-.tasks-styled--detailed
-  .contains-task-list.plugin-tasks-query-result
-  li.task-list-item[data-task="x"]:not(:hover)
-  .task-description,
-.tasks-styled--minimal
-  .contains-task-list.plugin-tasks-query-result
-  li.task-list-item[data-task="x"]:not(:hover)
-  .task-description {
+.tasks-styled .contains-task-list.plugin-tasks-query-result li.task-list-item[data-task=x]:not(:hover) .task-description,
+.tasks-styled--detailed .contains-task-list.plugin-tasks-query-result li.task-list-item[data-task=x]:not(:hover) .task-description,
+.tasks-styled--minimal .contains-task-list.plugin-tasks-query-result li.task-list-item[data-task=x]:not(:hover) .task-description {
   color: var(--gray-400);
   text-decoration-color: var(--gray-400);
 }
@@ -2046,27 +1732,17 @@ body li[data-task="d"] > p > input:checked {
 .tasks-styled--minimal .contains-task-list.plugin-tasks-query-result {
   padding: 1px;
 }
-.tasks-styled
-  .contains-task-list.plugin-tasks-query-result
-  .task-list-item-checkbox,
-.tasks-styled--detailed
-  .contains-task-list.plugin-tasks-query-result
-  .task-list-item-checkbox,
-.tasks-styled--minimal
-  .contains-task-list.plugin-tasks-query-result
-  .task-list-item-checkbox {
+.tasks-styled .contains-task-list.plugin-tasks-query-result .task-list-item-checkbox,
+.tasks-styled--detailed .contains-task-list.plugin-tasks-query-result .task-list-item-checkbox,
+.tasks-styled--minimal .contains-task-list.plugin-tasks-query-result .task-list-item-checkbox {
   margin: 0 !important;
   align-self: flex-start;
   margin-top: 5px !important;
   justify-self: center;
 }
 .tasks-styled .contains-task-list.plugin-tasks-query-result .tasks-list-text,
-.tasks-styled--detailed
-  .contains-task-list.plugin-tasks-query-result
-  .tasks-list-text,
-.tasks-styled--minimal
-  .contains-task-list.plugin-tasks-query-result
-  .tasks-list-text {
+.tasks-styled--detailed .contains-task-list.plugin-tasks-query-result .tasks-list-text,
+.tasks-styled--minimal .contains-task-list.plugin-tasks-query-result .tasks-list-text {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -2074,18 +1750,9 @@ body li[data-task="d"] > p > input:checked {
   grid-column: 2;
   padding-top: 2px;
 }
-.tasks-styled
-  .contains-task-list.plugin-tasks-query-result
-  .tasks-list-text
-  > *:not(.task-description),
-.tasks-styled--detailed
-  .contains-task-list.plugin-tasks-query-result
-  .tasks-list-text
-  > *:not(.task-description),
-.tasks-styled--minimal
-  .contains-task-list.plugin-tasks-query-result
-  .tasks-list-text
-  > *:not(.task-description) {
+.tasks-styled .contains-task-list.plugin-tasks-query-result .tasks-list-text > *:not(.task-description),
+.tasks-styled--detailed .contains-task-list.plugin-tasks-query-result .tasks-list-text > *:not(.task-description),
+.tasks-styled--minimal .contains-task-list.plugin-tasks-query-result .tasks-list-text > *:not(.task-description) {
   order: 2;
   background-color: var(--gray-100);
   outline: var(--gray-200) 1px solid;
@@ -2094,23 +1761,15 @@ body li[data-task="d"] > p > input:checked {
   height: fit-content;
 }
 .tasks-styled .contains-task-list.plugin-tasks-query-result .task-description,
-.tasks-styled--detailed
-  .contains-task-list.plugin-tasks-query-result
-  .task-description,
-.tasks-styled--minimal
-  .contains-task-list.plugin-tasks-query-result
-  .task-description {
+.tasks-styled--detailed .contains-task-list.plugin-tasks-query-result .task-description,
+.tasks-styled--minimal .contains-task-list.plugin-tasks-query-result .task-description {
   text-wrap: balance;
   line-height: 130%;
   flex-grow: 1;
 }
 .tasks-styled .contains-task-list.plugin-tasks-query-result .task-extras,
-.tasks-styled--detailed
-  .contains-task-list.plugin-tasks-query-result
-  .task-extras,
-.tasks-styled--minimal
-  .contains-task-list.plugin-tasks-query-result
-  .task-extras {
+.tasks-styled--detailed .contains-task-list.plugin-tasks-query-result .task-extras,
+.tasks-styled--minimal .contains-task-list.plugin-tasks-query-result .task-extras {
   grid-column: 2;
   display: flex;
   align-items: center;
@@ -2120,12 +1779,8 @@ body li[data-task="d"] > p > input:checked {
   font-size: var(--font-small);
 }
 .tasks-styled .contains-task-list.plugin-tasks-query-result .tasks-backlink,
-.tasks-styled--detailed
-  .contains-task-list.plugin-tasks-query-result
-  .tasks-backlink,
-.tasks-styled--minimal
-  .contains-task-list.plugin-tasks-query-result
-  .tasks-backlink {
+.tasks-styled--detailed .contains-task-list.plugin-tasks-query-result .tasks-backlink,
+.tasks-styled--minimal .contains-task-list.plugin-tasks-query-result .tasks-backlink {
   opacity: 0;
   max-height: 0;
   color: transparent;
@@ -2135,45 +1790,27 @@ body li[data-task="d"] > p > input:checked {
   text-overflow: ellipsis;
 }
 .tasks-styled .contains-task-list.plugin-tasks-query-result .tasks-backlink a,
-.tasks-styled--detailed
-  .contains-task-list.plugin-tasks-query-result
-  .tasks-backlink
-  a,
-.tasks-styled--minimal
-  .contains-task-list.plugin-tasks-query-result
-  .tasks-backlink
-  a {
+.tasks-styled--detailed .contains-task-list.plugin-tasks-query-result .tasks-backlink a,
+.tasks-styled--minimal .contains-task-list.plugin-tasks-query-result .tasks-backlink a {
   margin-left: -6px;
   color: var(--link-color);
   font-size: var(--font-smallest);
 }
 
-.tasks-styled--detailed
-  .contains-task-list.plugin-tasks-query-result
-  li.task-list-item {
+.tasks-styled--detailed .contains-task-list.plugin-tasks-query-result li.task-list-item {
   row-gap: 2px;
   padding: 4px;
 }
-.tasks-styled--detailed
-  .contains-task-list.plugin-tasks-query-result
-  .task-description {
+.tasks-styled--detailed .contains-task-list.plugin-tasks-query-result .task-description {
   width: 100%;
 }
-.tasks-styled--detailed
-  .contains-task-list.plugin-tasks-query-result
-  .tasks-postpone,
-.tasks-styled--detailed
-  .contains-task-list.plugin-tasks-query-result
-  .tasks-edit,
-.tasks-styled--detailed
-  .contains-task-list.plugin-tasks-query-result
-  .tasks-backlink {
+.tasks-styled--detailed .contains-task-list.plugin-tasks-query-result .tasks-postpone,
+.tasks-styled--detailed .contains-task-list.plugin-tasks-query-result .tasks-edit,
+.tasks-styled--detailed .contains-task-list.plugin-tasks-query-result .tasks-backlink {
   opacity: 1 !important;
   max-height: unset !important;
 }
-.tasks-styled--detailed
-  .contains-task-list.plugin-tasks-query-result
-  .tasks-list-text {
+.tasks-styled--detailed .contains-task-list.plugin-tasks-query-result .tasks-list-text {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -2181,18 +1818,12 @@ body li[data-task="d"] > p > input:checked {
   grid-column: 2;
   padding-top: 3px;
 }
-.tasks-styled--detailed
-  .contains-task-list.plugin-tasks-query-result
-  .tasks-list-text
-  > *:not(.task-description) {
+.tasks-styled--detailed .contains-task-list.plugin-tasks-query-result .tasks-list-text > *:not(.task-description) {
   padding: 0 10px;
   font-size: calc(var(--font-small) * 0.9);
   font-variant-numeric: tabular-nums;
 }
-.tasks-styled--detailed
-  .contains-task-list.plugin-tasks-query-result
-  .tasks-list-text
-  .task-priority {
+.tasks-styled--detailed .contains-task-list.plugin-tasks-query-result .tasks-list-text .task-priority {
   padding: 0 8px;
 }
 
@@ -2209,10 +1840,7 @@ body li[data-task="d"] > p > input:checked {
   grid-column: 2;
   padding-top: 2px;
 }
-.tasks-styled
-  .contains-task-list.plugin-tasks-query-result
-  .tasks-list-text
-  > *:not(.task-description) {
+.tasks-styled .contains-task-list.plugin-tasks-query-result .tasks-list-text > *:not(.task-description) {
   padding: 2px 6px;
   line-height: 110%;
   font-size: var(--font-smallest);
@@ -2221,34 +1849,22 @@ body li[data-task="d"] > p > input:checked {
   font-size: var(--font-small);
 }
 
-.tasks-styled--minimal
-  .contains-task-list.plugin-tasks-query-result
-  li.task-list-item {
+.tasks-styled--minimal .contains-task-list.plugin-tasks-query-result li.task-list-item {
   row-gap: 2px;
   padding: 4px;
 }
-.tasks-styled--minimal
-  .contains-task-list.plugin-tasks-query-result
-  li.task-list-item:hover {
+.tasks-styled--minimal .contains-task-list.plugin-tasks-query-result li.task-list-item:hover {
   background-color: var(--gray-100);
   outline: var(--gray-200) 1px solid;
 }
-.tasks-styled--minimal
-  .contains-task-list.plugin-tasks-query-result
-  li.task-list-item:hover
-  .tasks-list-text
-  > *:not(.task-description) {
+.tasks-styled--minimal .contains-task-list.plugin-tasks-query-result li.task-list-item:hover .tasks-list-text > *:not(.task-description) {
   max-height: 32px;
   opacity: 1;
 }
-.tasks-styled--minimal
-  .contains-task-list.plugin-tasks-query-result
-  .task-description {
+.tasks-styled--minimal .contains-task-list.plugin-tasks-query-result .task-description {
   width: 100%;
 }
-.tasks-styled--minimal
-  .contains-task-list.plugin-tasks-query-result
-  .tasks-list-text {
+.tasks-styled--minimal .contains-task-list.plugin-tasks-query-result .tasks-list-text {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -2256,10 +1872,7 @@ body li[data-task="d"] > p > input:checked {
   grid-column: 2;
   padding-top: 3px;
 }
-.tasks-styled--minimal
-  .contains-task-list.plugin-tasks-query-result
-  .tasks-list-text
-  > *:not(.task-description) {
+.tasks-styled--minimal .contains-task-list.plugin-tasks-query-result .tasks-list-text > *:not(.task-description) {
   transition-property: max-height, opacity;
   transition: 200ms cubic-bezier(0.37, 0, 0.63, 1);
   transition-delay: 150ms;
@@ -2269,321 +1882,115 @@ body li[data-task="d"] > p > input:checked {
   font-size: calc(var(--font-small) * 0.9);
   font-variant-numeric: tabular-nums;
 }
-.tasks-styled--minimal
-  .contains-task-list.plugin-tasks-query-result
-  .tasks-list-text
-  .task-priority {
+.tasks-styled--minimal .contains-task-list.plugin-tasks-query-result .tasks-list-text .task-priority {
   padding: 0 8px;
 }
 
-.tasks-styled
-  .contains-task-list.plugin-tasks-query-result
-  .tasks-list-text
-  [data-task-priority="highest"],
-.tasks-styled
-  .contains-task-list.plugin-tasks-query-result
-  .tasks-list-text
-  [data-task-priority="high"],
-.tasks-styled
-  .contains-task-list.plugin-tasks-query-result
-  .tasks-list-text
-  [data-task-priority="medium"],
-.tasks-styled
-  .contains-task-list.plugin-tasks-query-result
-  .tasks-list-text
-  [data-task-priority="low"],
-.tasks-styled
-  .contains-task-list.plugin-tasks-query-result
-  .tasks-list-text
-  [data-task-priority="lowest"],
-.tasks-styled--detailed
-  .contains-task-list.plugin-tasks-query-result
-  .tasks-list-text
-  [data-task-priority="highest"],
-.tasks-styled--detailed
-  .contains-task-list.plugin-tasks-query-result
-  .tasks-list-text
-  [data-task-priority="high"],
-.tasks-styled--detailed
-  .contains-task-list.plugin-tasks-query-result
-  .tasks-list-text
-  [data-task-priority="medium"],
-.tasks-styled--detailed
-  .contains-task-list.plugin-tasks-query-result
-  .tasks-list-text
-  [data-task-priority="low"],
-.tasks-styled--detailed
-  .contains-task-list.plugin-tasks-query-result
-  .tasks-list-text
-  [data-task-priority="lowest"],
-.tasks-styled--minimal
-  .contains-task-list.plugin-tasks-query-result
-  .tasks-list-text
-  [data-task-priority="highest"],
-.tasks-styled--minimal
-  .contains-task-list.plugin-tasks-query-result
-  .tasks-list-text
-  [data-task-priority="high"],
-.tasks-styled--minimal
-  .contains-task-list.plugin-tasks-query-result
-  .tasks-list-text
-  [data-task-priority="medium"],
-.tasks-styled--minimal
-  .contains-task-list.plugin-tasks-query-result
-  .tasks-list-text
-  [data-task-priority="low"],
-.tasks-styled--minimal
-  .contains-task-list.plugin-tasks-query-result
-  .tasks-list-text
-  [data-task-priority="lowest"] {
+.tasks-styled .contains-task-list.plugin-tasks-query-result .tasks-list-text [data-task-priority=highest],
+.tasks-styled .contains-task-list.plugin-tasks-query-result .tasks-list-text [data-task-priority=high],
+.tasks-styled .contains-task-list.plugin-tasks-query-result .tasks-list-text [data-task-priority=medium],
+.tasks-styled .contains-task-list.plugin-tasks-query-result .tasks-list-text [data-task-priority=low],
+.tasks-styled .contains-task-list.plugin-tasks-query-result .tasks-list-text [data-task-priority=lowest],
+.tasks-styled--detailed .contains-task-list.plugin-tasks-query-result .tasks-list-text [data-task-priority=highest],
+.tasks-styled--detailed .contains-task-list.plugin-tasks-query-result .tasks-list-text [data-task-priority=high],
+.tasks-styled--detailed .contains-task-list.plugin-tasks-query-result .tasks-list-text [data-task-priority=medium],
+.tasks-styled--detailed .contains-task-list.plugin-tasks-query-result .tasks-list-text [data-task-priority=low],
+.tasks-styled--detailed .contains-task-list.plugin-tasks-query-result .tasks-list-text [data-task-priority=lowest],
+.tasks-styled--minimal .contains-task-list.plugin-tasks-query-result .tasks-list-text [data-task-priority=highest],
+.tasks-styled--minimal .contains-task-list.plugin-tasks-query-result .tasks-list-text [data-task-priority=high],
+.tasks-styled--minimal .contains-task-list.plugin-tasks-query-result .tasks-list-text [data-task-priority=medium],
+.tasks-styled--minimal .contains-task-list.plugin-tasks-query-result .tasks-list-text [data-task-priority=low],
+.tasks-styled--minimal .contains-task-list.plugin-tasks-query-result .tasks-list-text [data-task-priority=lowest] {
   order: 1;
 }
-.tasks-styled
-  .contains-task-list.plugin-tasks-query-result
-  .tasks-list-text
-  [data-task-priority="highest"]
-  > *,
-.tasks-styled
-  .contains-task-list.plugin-tasks-query-result
-  .tasks-list-text
-  [data-task-priority="high"]
-  > *,
-.tasks-styled
-  .contains-task-list.plugin-tasks-query-result
-  .tasks-list-text
-  [data-task-priority="medium"]
-  > *,
-.tasks-styled
-  .contains-task-list.plugin-tasks-query-result
-  .tasks-list-text
-  [data-task-priority="low"]
-  > *,
-.tasks-styled
-  .contains-task-list.plugin-tasks-query-result
-  .tasks-list-text
-  [data-task-priority="lowest"]
-  > *,
-.tasks-styled--detailed
-  .contains-task-list.plugin-tasks-query-result
-  .tasks-list-text
-  [data-task-priority="highest"]
-  > *,
-.tasks-styled--detailed
-  .contains-task-list.plugin-tasks-query-result
-  .tasks-list-text
-  [data-task-priority="high"]
-  > *,
-.tasks-styled--detailed
-  .contains-task-list.plugin-tasks-query-result
-  .tasks-list-text
-  [data-task-priority="medium"]
-  > *,
-.tasks-styled--detailed
-  .contains-task-list.plugin-tasks-query-result
-  .tasks-list-text
-  [data-task-priority="low"]
-  > *,
-.tasks-styled--detailed
-  .contains-task-list.plugin-tasks-query-result
-  .tasks-list-text
-  [data-task-priority="lowest"]
-  > *,
-.tasks-styled--minimal
-  .contains-task-list.plugin-tasks-query-result
-  .tasks-list-text
-  [data-task-priority="highest"]
-  > *,
-.tasks-styled--minimal
-  .contains-task-list.plugin-tasks-query-result
-  .tasks-list-text
-  [data-task-priority="high"]
-  > *,
-.tasks-styled--minimal
-  .contains-task-list.plugin-tasks-query-result
-  .tasks-list-text
-  [data-task-priority="medium"]
-  > *,
-.tasks-styled--minimal
-  .contains-task-list.plugin-tasks-query-result
-  .tasks-list-text
-  [data-task-priority="low"]
-  > *,
-.tasks-styled--minimal
-  .contains-task-list.plugin-tasks-query-result
-  .tasks-list-text
-  [data-task-priority="lowest"]
-  > * {
+.tasks-styled .contains-task-list.plugin-tasks-query-result .tasks-list-text [data-task-priority=highest] > *,
+.tasks-styled .contains-task-list.plugin-tasks-query-result .tasks-list-text [data-task-priority=high] > *,
+.tasks-styled .contains-task-list.plugin-tasks-query-result .tasks-list-text [data-task-priority=medium] > *,
+.tasks-styled .contains-task-list.plugin-tasks-query-result .tasks-list-text [data-task-priority=low] > *,
+.tasks-styled .contains-task-list.plugin-tasks-query-result .tasks-list-text [data-task-priority=lowest] > *,
+.tasks-styled--detailed .contains-task-list.plugin-tasks-query-result .tasks-list-text [data-task-priority=highest] > *,
+.tasks-styled--detailed .contains-task-list.plugin-tasks-query-result .tasks-list-text [data-task-priority=high] > *,
+.tasks-styled--detailed .contains-task-list.plugin-tasks-query-result .tasks-list-text [data-task-priority=medium] > *,
+.tasks-styled--detailed .contains-task-list.plugin-tasks-query-result .tasks-list-text [data-task-priority=low] > *,
+.tasks-styled--detailed .contains-task-list.plugin-tasks-query-result .tasks-list-text [data-task-priority=lowest] > *,
+.tasks-styled--minimal .contains-task-list.plugin-tasks-query-result .tasks-list-text [data-task-priority=highest] > *,
+.tasks-styled--minimal .contains-task-list.plugin-tasks-query-result .tasks-list-text [data-task-priority=high] > *,
+.tasks-styled--minimal .contains-task-list.plugin-tasks-query-result .tasks-list-text [data-task-priority=medium] > *,
+.tasks-styled--minimal .contains-task-list.plugin-tasks-query-result .tasks-list-text [data-task-priority=low] > *,
+.tasks-styled--minimal .contains-task-list.plugin-tasks-query-result .tasks-list-text [data-task-priority=lowest] > * {
   display: none;
 }
-.tasks-styled
-  .contains-task-list.plugin-tasks-query-result
-  .tasks-list-text
-  [data-task-priority="highest"]::before,
-.tasks-styled--detailed
-  .contains-task-list.plugin-tasks-query-result
-  .tasks-list-text
-  [data-task-priority="highest"]::before,
-.tasks-styled--minimal
-  .contains-task-list.plugin-tasks-query-result
-  .tasks-list-text
-  [data-task-priority="highest"]::before {
+.tasks-styled .contains-task-list.plugin-tasks-query-result .tasks-list-text [data-task-priority=highest]::before,
+.tasks-styled--detailed .contains-task-list.plugin-tasks-query-result .tasks-list-text [data-task-priority=highest]::before,
+.tasks-styled--minimal .contains-task-list.plugin-tasks-query-result .tasks-list-text [data-task-priority=highest]::before {
   content: "Highest";
   color: var(--red-900);
 }
-.tasks-styled
-  .contains-task-list.plugin-tasks-query-result
-  .tasks-list-text
-  [data-task-priority="highest"],
-.tasks-styled--detailed
-  .contains-task-list.plugin-tasks-query-result
-  .tasks-list-text
-  [data-task-priority="highest"],
-.tasks-styled--minimal
-  .contains-task-list.plugin-tasks-query-result
-  .tasks-list-text
-  [data-task-priority="highest"] {
+.tasks-styled .contains-task-list.plugin-tasks-query-result .tasks-list-text [data-task-priority=highest],
+.tasks-styled--detailed .contains-task-list.plugin-tasks-query-result .tasks-list-text [data-task-priority=highest],
+.tasks-styled--minimal .contains-task-list.plugin-tasks-query-result .tasks-list-text [data-task-priority=highest] {
   background-color: var(--red-300);
   outline: var(--red-300) 1px solid;
 }
-.tasks-styled
-  .contains-task-list.plugin-tasks-query-result
-  .tasks-list-text
-  [data-task-priority="high"]::before,
-.tasks-styled--detailed
-  .contains-task-list.plugin-tasks-query-result
-  .tasks-list-text
-  [data-task-priority="high"]::before,
-.tasks-styled--minimal
-  .contains-task-list.plugin-tasks-query-result
-  .tasks-list-text
-  [data-task-priority="high"]::before {
+.tasks-styled .contains-task-list.plugin-tasks-query-result .tasks-list-text [data-task-priority=high]::before,
+.tasks-styled--detailed .contains-task-list.plugin-tasks-query-result .tasks-list-text [data-task-priority=high]::before,
+.tasks-styled--minimal .contains-task-list.plugin-tasks-query-result .tasks-list-text [data-task-priority=high]::before {
   content: "High";
   color: var(--orange-900);
 }
-.tasks-styled
-  .contains-task-list.plugin-tasks-query-result
-  .tasks-list-text
-  [data-task-priority="high"],
-.tasks-styled--detailed
-  .contains-task-list.plugin-tasks-query-result
-  .tasks-list-text
-  [data-task-priority="high"],
-.tasks-styled--minimal
-  .contains-task-list.plugin-tasks-query-result
-  .tasks-list-text
-  [data-task-priority="high"] {
+.tasks-styled .contains-task-list.plugin-tasks-query-result .tasks-list-text [data-task-priority=high],
+.tasks-styled--detailed .contains-task-list.plugin-tasks-query-result .tasks-list-text [data-task-priority=high],
+.tasks-styled--minimal .contains-task-list.plugin-tasks-query-result .tasks-list-text [data-task-priority=high] {
   background-color: var(--orange-400);
   outline: var(--orange-400) 1px solid;
 }
-.tasks-styled
-  .contains-task-list.plugin-tasks-query-result
-  .tasks-list-text
-  [data-task-priority="medium"]::before,
-.tasks-styled--detailed
-  .contains-task-list.plugin-tasks-query-result
-  .tasks-list-text
-  [data-task-priority="medium"]::before,
-.tasks-styled--minimal
-  .contains-task-list.plugin-tasks-query-result
-  .tasks-list-text
-  [data-task-priority="medium"]::before {
+.tasks-styled .contains-task-list.plugin-tasks-query-result .tasks-list-text [data-task-priority=medium]::before,
+.tasks-styled--detailed .contains-task-list.plugin-tasks-query-result .tasks-list-text [data-task-priority=medium]::before,
+.tasks-styled--minimal .contains-task-list.plugin-tasks-query-result .tasks-list-text [data-task-priority=medium]::before {
   content: "Medium";
   color: var(--yellow-100);
 }
-.tasks-styled
-  .contains-task-list.plugin-tasks-query-result
-  .tasks-list-text
-  [data-task-priority="medium"],
-.tasks-styled--detailed
-  .contains-task-list.plugin-tasks-query-result
-  .tasks-list-text
-  [data-task-priority="medium"],
-.tasks-styled--minimal
-  .contains-task-list.plugin-tasks-query-result
-  .tasks-list-text
-  [data-task-priority="medium"] {
+.tasks-styled .contains-task-list.plugin-tasks-query-result .tasks-list-text [data-task-priority=medium],
+.tasks-styled--detailed .contains-task-list.plugin-tasks-query-result .tasks-list-text [data-task-priority=medium],
+.tasks-styled--minimal .contains-task-list.plugin-tasks-query-result .tasks-list-text [data-task-priority=medium] {
   background-color: var(--yellow-600);
   outline: var(--yellow-600) 1px solid;
 }
-.tasks-styled
-  .contains-task-list.plugin-tasks-query-result
-  .tasks-list-text
-  [data-task-priority="low"]::before,
-.tasks-styled--detailed
-  .contains-task-list.plugin-tasks-query-result
-  .tasks-list-text
-  [data-task-priority="low"]::before,
-.tasks-styled--minimal
-  .contains-task-list.plugin-tasks-query-result
-  .tasks-list-text
-  [data-task-priority="low"]::before {
+.tasks-styled .contains-task-list.plugin-tasks-query-result .tasks-list-text [data-task-priority=low]::before,
+.tasks-styled--detailed .contains-task-list.plugin-tasks-query-result .tasks-list-text [data-task-priority=low]::before,
+.tasks-styled--minimal .contains-task-list.plugin-tasks-query-result .tasks-list-text [data-task-priority=low]::before {
   content: "Low";
   color: var(--blue-900);
 }
-.tasks-styled
-  .contains-task-list.plugin-tasks-query-result
-  .tasks-list-text
-  [data-task-priority="low"],
-.tasks-styled--detailed
-  .contains-task-list.plugin-tasks-query-result
-  .tasks-list-text
-  [data-task-priority="low"],
-.tasks-styled--minimal
-  .contains-task-list.plugin-tasks-query-result
-  .tasks-list-text
-  [data-task-priority="low"] {
+.tasks-styled .contains-task-list.plugin-tasks-query-result .tasks-list-text [data-task-priority=low],
+.tasks-styled--detailed .contains-task-list.plugin-tasks-query-result .tasks-list-text [data-task-priority=low],
+.tasks-styled--minimal .contains-task-list.plugin-tasks-query-result .tasks-list-text [data-task-priority=low] {
   background-color: var(--blue-200);
   outline: var(--blue-300) 1px solid;
 }
-.tasks-styled
-  .contains-task-list.plugin-tasks-query-result
-  .tasks-list-text
-  [data-task-priority="lowest"]::before,
-.tasks-styled--detailed
-  .contains-task-list.plugin-tasks-query-result
-  .tasks-list-text
-  [data-task-priority="lowest"]::before,
-.tasks-styled--minimal
-  .contains-task-list.plugin-tasks-query-result
-  .tasks-list-text
-  [data-task-priority="lowest"]::before {
+.tasks-styled .contains-task-list.plugin-tasks-query-result .tasks-list-text [data-task-priority=lowest]::before,
+.tasks-styled--detailed .contains-task-list.plugin-tasks-query-result .tasks-list-text [data-task-priority=lowest]::before,
+.tasks-styled--minimal .contains-task-list.plugin-tasks-query-result .tasks-list-text [data-task-priority=lowest]::before {
   content: "Lowest";
   color: var(--gray-900);
 }
-.tasks-styled
-  .contains-task-list.plugin-tasks-query-result
-  .tasks-list-text
-  [data-task-priority="lowest"],
-.tasks-styled--detailed
-  .contains-task-list.plugin-tasks-query-result
-  .tasks-list-text
-  [data-task-priority="lowest"],
-.tasks-styled--minimal
-  .contains-task-list.plugin-tasks-query-result
-  .tasks-list-text
-  [data-task-priority="lowest"] {
+.tasks-styled .contains-task-list.plugin-tasks-query-result .tasks-list-text [data-task-priority=lowest],
+.tasks-styled--detailed .contains-task-list.plugin-tasks-query-result .tasks-list-text [data-task-priority=lowest],
+.tasks-styled--minimal .contains-task-list.plugin-tasks-query-result .tasks-list-text [data-task-priority=lowest] {
   background-color: var(--gray-200);
   outline: var(--gray-300) 1px solid;
 }
 .tasks-styled .contains-task-list.plugin-tasks-query-result .tasks-edit,
-.tasks-styled--detailed
-  .contains-task-list.plugin-tasks-query-result
-  .tasks-edit,
-.tasks-styled--minimal
-  .contains-task-list.plugin-tasks-query-result
-  .tasks-edit {
+.tasks-styled--detailed .contains-task-list.plugin-tasks-query-result .tasks-edit,
+.tasks-styled--minimal .contains-task-list.plugin-tasks-query-result .tasks-edit {
   max-height: 0;
   opacity: 0;
   width: fit-content;
   height: fit-content;
 }
 .tasks-styled .contains-task-list.plugin-tasks-query-result .tasks-edit::before,
-.tasks-styled--detailed
-  .contains-task-list.plugin-tasks-query-result
-  .tasks-edit::before,
-.tasks-styled--minimal
-  .contains-task-list.plugin-tasks-query-result
-  .tasks-edit::before {
+.tasks-styled--detailed .contains-task-list.plugin-tasks-query-result .tasks-edit::before,
+.tasks-styled--minimal .contains-task-list.plugin-tasks-query-result .tasks-edit::before {
   content: "EDIT";
   font-size: var(--font-smallest);
   color: var(--gray-400);
@@ -2591,50 +1998,30 @@ body li[data-task="d"] > p > input:checked {
   margin-right: 4px;
 }
 .tasks-styled .contains-task-list.plugin-tasks-query-result .tasks-edit::after,
-.tasks-styled--detailed
-  .contains-task-list.plugin-tasks-query-result
-  .tasks-edit::after,
-.tasks-styled--minimal
-  .contains-task-list.plugin-tasks-query-result
-  .tasks-edit::after {
+.tasks-styled--detailed .contains-task-list.plugin-tasks-query-result .tasks-edit::after,
+.tasks-styled--minimal .contains-task-list.plugin-tasks-query-result .tasks-edit::after {
   content: "";
 }
 .tasks-styled .contains-task-list.plugin-tasks-query-result .tasks-postpone,
-.tasks-styled--detailed
-  .contains-task-list.plugin-tasks-query-result
-  .tasks-postpone,
-.tasks-styled--minimal
-  .contains-task-list.plugin-tasks-query-result
-  .tasks-postpone {
+.tasks-styled--detailed .contains-task-list.plugin-tasks-query-result .tasks-postpone,
+.tasks-styled--minimal .contains-task-list.plugin-tasks-query-result .tasks-postpone {
   max-height: 0;
   opacity: 0;
   width: fit-content;
   height: fit-content;
 }
-.tasks-styled
-  .contains-task-list.plugin-tasks-query-result
-  .tasks-postpone::before,
-.tasks-styled--detailed
-  .contains-task-list.plugin-tasks-query-result
-  .tasks-postpone::before,
-.tasks-styled--minimal
-  .contains-task-list.plugin-tasks-query-result
-  .tasks-postpone::before {
+.tasks-styled .contains-task-list.plugin-tasks-query-result .tasks-postpone::before,
+.tasks-styled--detailed .contains-task-list.plugin-tasks-query-result .tasks-postpone::before,
+.tasks-styled--minimal .contains-task-list.plugin-tasks-query-result .tasks-postpone::before {
   content: "POSTPONE";
   font-size: var(--font-smallest);
   color: var(--gray-400);
   font-weight: 600;
   margin-right: 4px;
 }
-.tasks-styled
-  .contains-task-list.plugin-tasks-query-result
-  .tasks-postpone::after,
-.tasks-styled--detailed
-  .contains-task-list.plugin-tasks-query-result
-  .tasks-postpone::after,
-.tasks-styled--minimal
-  .contains-task-list.plugin-tasks-query-result
-  .tasks-postpone::after {
+.tasks-styled .contains-task-list.plugin-tasks-query-result .tasks-postpone::after,
+.tasks-styled--detailed .contains-task-list.plugin-tasks-query-result .tasks-postpone::after,
+.tasks-styled--minimal .contains-task-list.plugin-tasks-query-result .tasks-postpone::after {
   content: "";
 }
 
@@ -2657,15 +2044,27 @@ body {
   --orange: rgb(255, 116, 23);
   --red: rgb(218, 1, 77);
   --pink: rgb(242, 66, 255);
-  --gray-rgb: 90, 93, 117;
-  --purple-rgb: 45, 36, 141;
-  --blue-rgb: 42, 113, 235;
-  --sea-green-rgb: 33, 255, 177;
-  --green-rgb: 78, 205, 43;
-  --yellow-rgb: 242, 208, 3;
-  --orange-rgb: 255, 116, 23;
-  --red-rgb: 218, 1, 77;
-  --pink-rgb: 242, 66, 255;
+}
+
+.theme-dark,
+.theme-light {
+  --color-gray-rgb: 90, 93, 117;
+  --color-purple-rgb: 45, 36, 141;
+  --color-blue-rgb: 42, 113, 235;
+  --color-sea-green-rgb: 33, 255, 177;
+  --color-green-rgb: 78, 205, 43;
+  --color-yellow-rgb: 242, 208, 3;
+  --color-orange-rgb: 255, 116, 23;
+  --color-red-rgb: 218, 1, 77;
+  --color-pink-rgb: 242, 66, 255;
+  --color-red: var(--red);
+  --color-orange: var(--orange);
+  --color-yellow: var(--yellow);
+  --color-green: var(--green);
+  --color-cyan: var(--cyan);
+  --color-blue: var(--blue);
+  --color-purple: var(--purple);
+  --color-pink: var(--pink);
 }
 
 .theme-light {
@@ -2941,22 +2340,20 @@ body {
   --text-muted: var(--gray-600);
   --text-faint: var(--gray-500);
   --text-inverse: var(--gray-25);
-  --font-text-theme: "Inter";
-  --file-header-font: "Inter";
+  --font-text-theme: 'Inter';
+  --file-header-font: 'Inter';
   --link-decoration: none;
   --bold-modifier: 200;
   --bold-modifier: 300;
   --semibold-modifier: 200;
 }
-body .cm-strong,
-body strong {
+body .cm-strong, body strong {
   letter-spacing: 0.02em;
 }
 body {
   --text-highlight-bg: var(--yellow-100);
 }
-body .cm-highlight,
-body .markdown-rendered mark {
+body .cm-highlight, body .markdown-rendered mark {
   border-radius: var(--radius-s);
   padding-left: var(--size-2-2);
   padding-right: var(--size-2-2);
@@ -2971,14 +2368,12 @@ body.theme-dark {
   cursor: pointer;
 }
 
-.theme-dark .HyperMD-footnote,
-span.cm-hmd-barelink.cm-hmd-footnote {
+.theme-dark .HyperMD-footnote, span.cm-hmd-barelink.cm-hmd-footnote {
   color: var(--gray-500);
   --text-muted: var(--gray-500);
 }
 
-.theme-light .HyperMD-footnote,
-span.cm-hmd-barelink.cm-hmd-footnote {
+.theme-light .HyperMD-footnote, span.cm-hmd-barelink.cm-hmd-footnote {
   color: var(--gray-400);
   --text-muted: var(--gray-400);
 }

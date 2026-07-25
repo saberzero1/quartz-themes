@@ -6,7 +6,7 @@ cssclasses:
 
 > This page is to quickly check how all features are rendered.
 
-- Theme author: <a href="https://github.com/Aduneer/gruber-darker-obsidian" target="_blank" rel="noopener noreferrer">Aduneer</a>
+- Theme author: <a href="https://github.com/Aduneer" target="_blank" rel="noopener noreferrer">Aduneer</a>
 - Support the author: Author did not provide funding links in `manifest.json`
 - Install: `npm install @quartz-themes/core @quartz-themes/gruber-darker`
 - <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/gruber-darker/README.md">Full install instructions</a>

@@ -1613,11 +1613,6 @@ body.theme-dark {
   --purple: #f899e7 !important;
   --red: #d63f4e !important;
   --yellow: #ebcb8b !important;
-  --blockquote-border: #b294bb !important;
-  --background-red: #6c0808 !important;
-  --input-disabled-border-color: transparent !important;
-  --input-hover-border-color: red !important;
-  --input-unfocused-border-color: transparent !important;
   --dark0: #390000 !important;
   --dark1: #290202 !important;
   --dark2: #3d0404 !important;
@@ -1628,6 +1623,11 @@ body.theme-dark {
   --light1: #fce6e4 !important;
   --light2: #fdf8ec !important;
   --light3: #5fa57a !important;
+  --blockquote-border: #b294bb !important;
+  --background-red: #6c0808 !important;
+  --input-disabled-border-color: transparent !important;
+  --input-hover-border-color: red !important;
+  --input-unfocused-border-color: transparent !important;
   --text-tag: #50fa7b !important;
   --markup-code: #ffb86c !important;
   --dracula-Comment: #6272a4 !important;

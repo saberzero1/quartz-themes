@@ -1107,11 +1107,12 @@ body.theme-light {
     0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065),
     var(--shadow-edges) !important;
   --table-header-background-hover: var(--table-background) !important;
-  --bases-table-text-size: 18px !important;
   --bold-color: var(--text-accent) !important;
+  --callout-title-size: 1rem;
+  --italic-color: var(--colorpalette-accent-550) !important;
+  --bases-table-text-size: 18px !important;
   --callout-c-adjust: -0.04;
   --callout-l-adjust: +0;
-  --callout-title-size: 1rem;
   --color-blockquote-border: hsl(207, 65%, 90%) !important;
   --color-neutral-cerulean-400: hsl(207, 30%, 50%) !important;
   --colormixer-accent-h: var(--accent-h) !important;
@@ -1317,7 +1318,6 @@ body.theme-light {
     calc(var(--colormixer-neutral-s) * 1.83),
     7.1%
   ) !important;
-  --italic-color: var(--colorpalette-accent-550) !important;
   --shadow-hover: var(--colorpalette-neutral-200) !important;
   --table-button: var(--colorpalette-accent-200) !important;
   --table-header-font: var(--font-text-override) !important;

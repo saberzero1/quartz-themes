@@ -1074,12 +1074,12 @@ body.theme-dark {
   --vault-name-font-size: var(--font-ui-small) !important;
   --vault-name-font-weight: var(--font-medium) !important;
   --list-min-width: 200px !important;
+  --callout-gap: 0.5rem;
+  --callout-margin: 5px;
+  --callout-min-width: 200px;
   --white: #ffffff !important;
   --titlebar-text-color-highlighted: var(--text-accent-hover) !important;
   --black: #000000 !important;
-  --callout-margin: 5px;
-  --callout-gap: 0.5rem;
-  --callout-min-width: 200px;
   --col-rule-color: var(--background-modifier-border) !important;
   --col-rule-width: 1px !important;
   --blue-100: #dbeafe !important;

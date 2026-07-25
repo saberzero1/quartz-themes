@@ -1116,10 +1116,11 @@ body.theme-light {
   --table-header-background-hover: var(--table-header-background) !important;
   --vault-name-color: var(--color-l-gray-100) !important;
   --bold-color: var(--color-l-red-30) !important;
+  --embed-background: var(--embed-bg-color-mix) !important;
   --italic-color: var(--color-l-blue-30) !important;
+  --inline-code-color: var(--color-l-red-10) !important;
   --color-gray: hsla(34, 9.9%, 68.2%, 1) !important;
   --graph-arrow: var(--color-l-gray-90) !important;
-  --inline-code-color: var(--color-l-red-10) !important;
   --link-decoration-color: color-mix(
     in srgb,
     var(--link-color) var(--link-decoration-opacity),
@@ -1137,8 +1138,8 @@ body.theme-light {
   --ribbon-border-width: 1px !important;
   --editor-border-color: var(--background-modifier-border) !important;
   --color-gray-rgb: 182, 175, 166 !important;
-  --embed-background: var(--embed-bg-color-mix) !important;
   --button-shadow: var(--input-shadow) !important;
+  --callout-title-color: var(--text-normal);
   --checklist-bg: var(--color-l-gray-10) !important;
   --h1-bg-color: transparent !important;
   --h2-bg-color: transparent !important;
@@ -1153,7 +1154,17 @@ body.theme-light {
     inset 0px 0px 0px 1px rgba(0, 0, 0, 0.15), 0 2px 2px rgba(0, 0, 0, 0.2) !important;
   --link-unresolved-color-hover: var(--color-l-gray-70) !important;
   --kanban-lane-border: 1px solid var(--color-l-gray-40) !important;
-  --callout-title-color: var(--text-normal);
+  --link-decoration-color-hover: color-mix(
+    in srgb,
+    var(--link-color-hover) var(--link-decoration-opacity),
+    transparent
+  ) !important;
+  --h1-text-transform: normal !important;
+  --h2-text-transform: normal !important;
+  --h3-text-transform: normal !important;
+  --h4-text-transform: normal !important;
+  --h5-text-transform: normal !important;
+  --h6-text-transform: normal !important;
   --link-unresolved-decoration-color-hover: color-mix(
     in srgb,
     var(--link-unresolved-color-hover) var(--link-decoration-opacity),
@@ -1190,6 +1201,11 @@ body.theme-light {
   --toggle-shadow:
     inset 0 4px 10px rgba(0, 0, 0, 0.09),
     inset 0px 0px 0px 1px rgba(0, 0, 0, 0.06), inset 0 0 1px rgba(0, 0, 0, 0.28) !important;
+  --toggle-bg: color-mix(
+    in hsl,
+    var(--color-l-gray-60) 80%,
+    var(--color-l-gray-70)
+  ) !important;
   --tab-active-shadow:
     inset 0px 1px 0px 0px rgba(255, 255, 255, 1),
     inset 0px calc(var(--button-inset-shadow-size) * -1) 0px 1px
@@ -1597,32 +1613,26 @@ body.theme-light {
   --h1-border-radius: 0px !important;
   --h1-border-style: solid !important;
   --h1-border-top-color: var(--background-modifier-border) !important;
-  --h1-text-transform: normal !important;
   --h2-border-bottom-color: var(--background-modifier-border) !important;
   --h2-border-radius: 0px !important;
   --h2-border-style: solid !important;
   --h2-border-top-color: var(--background-modifier-border) !important;
-  --h2-text-transform: normal !important;
   --h3-border-bottom-color: var(--background-modifier-border) !important;
   --h3-border-radius: 0px !important;
   --h3-border-style: solid !important;
   --h3-border-top-color: var(--background-modifier-border) !important;
-  --h3-text-transform: normal !important;
   --h4-border-bottom-color: var(--background-modifier-border) !important;
   --h4-border-radius: 0px !important;
   --h4-border-style: solid !important;
   --h4-border-top-color: var(--background-modifier-border) !important;
-  --h4-text-transform: normal !important;
   --h5-border-bottom-color: var(--background-modifier-border) !important;
   --h5-border-radius: 0px !important;
   --h5-border-style: solid !important;
   --h5-border-top-color: var(--background-modifier-border) !important;
-  --h5-text-transform: normal !important;
   --h6-border-bottom-color: var(--background-modifier-border) !important;
   --h6-border-radius: 0px !important;
   --h6-border-style: solid !important;
   --h6-border-top-color: var(--background-modifier-border) !important;
-  --h6-text-transform: normal !important;
   --icon-bg: transparent !important;
   --icon-bg-active: var(--color-l-gray-60) !important;
   --icon-bg-active-menu: transparent !important;
@@ -1709,11 +1719,6 @@ body.theme-light {
   --link-ahref-decoration-color-hover: color-mix(
     in srgb,
     var(--link-ahref-color-hover) var(--link-decoration-opacity),
-    transparent
-  ) !important;
-  --link-decoration-color-hover: color-mix(
-    in srgb,
-    var(--link-color-hover) var(--link-decoration-opacity),
     transparent
   ) !important;
   --link-decoration-opacity: 22% !important;
@@ -2192,11 +2197,6 @@ body.theme-light {
     in srgb,
     currentColor 70%,
     black
-  ) !important;
-  --toggle-bg: color-mix(
-    in hsl,
-    var(--color-l-gray-60) 80%,
-    var(--color-l-gray-70)
   ) !important;
   --toggle-bg-enabled: var(--color-l-green-30) !important;
   --toggle-shadow-focus:
@@ -3368,10 +3368,11 @@ body.theme-dark {
   --table-header-background-hover: var(--table-header-background) !important;
   --vault-name-color: var(--color-d-gray-40) !important;
   --bold-color: var(--color-d-red-30) !important;
+  --embed-background: var(--embed-bg-color-mix) !important;
   --italic-color: var(--color-d-blue-20) !important;
+  --inline-code-color: var(--color-d-red-20) !important;
   --color-gray: rgb(166, 150, 141) !important;
   --graph-arrow: var(--color-d-gray-50) !important;
-  --inline-code-color: var(--color-d-red-20) !important;
   --link-decoration-color: color-mix(
     in srgb,
     var(--link-color) var(--link-decoration-opacity),
@@ -3389,8 +3390,8 @@ body.theme-dark {
   --ribbon-border-width: 1px !important;
   --editor-border-color: var(--background-modifier-border) !important;
   --color-gray-rgb: 166, 150, 142 !important;
-  --embed-background: var(--embed-bg-color-mix) !important;
   --button-shadow: var(--input-shadow) !important;
+  --callout-title-color: var(--text-normal);
   --checklist-bg: var(--color-d-gray-110) !important;
   --h1-bg-color: transparent !important;
   --h2-bg-color: transparent !important;
@@ -3406,7 +3407,17 @@ body.theme-dark {
   --link-unresolved-color-hover: var(--color-d-gray-40) !important;
   --kanban-lane-border: 1px solid
     color-mix(in srgb, var(--color-d-gray-90) 40%, var(--color-d-gray-100)) !important;
-  --callout-title-color: var(--text-normal);
+  --link-decoration-color-hover: color-mix(
+    in srgb,
+    var(--link-color-hover) var(--link-decoration-opacity),
+    transparent
+  ) !important;
+  --h1-text-transform: normal !important;
+  --h2-text-transform: normal !important;
+  --h3-text-transform: normal !important;
+  --h4-text-transform: normal !important;
+  --h5-text-transform: normal !important;
+  --h6-text-transform: normal !important;
   --link-unresolved-decoration-color-hover: color-mix(
     in srgb,
     var(--link-unresolved-color-hover) var(--link-decoration-opacity),
@@ -3444,6 +3455,11 @@ body.theme-dark {
     inset 0 4px 10px rgba(0, 0, 0, 0.19),
     inset 0px 0px 0px 1px rgba(255, 255, 255, 0.09),
     inset 0 0 1px rgba(0, 0, 0, 0.4) !important;
+  --toggle-bg: color-mix(
+    in srgb,
+    var(--color-d-gray-70) 50%,
+    var(--color-d-gray-60)
+  ) !important;
   --tab-active-shadow:
     inset 0px 1px 0px 0px rgba(255, 255, 255, 0.1),
     inset 0px calc(var(--button-inset-shadow-size) * -1) 0px 1px
@@ -3896,32 +3912,26 @@ body.theme-dark {
   --h1-border-radius: 0px !important;
   --h1-border-style: solid !important;
   --h1-border-top-color: var(--background-modifier-border) !important;
-  --h1-text-transform: normal !important;
   --h2-border-bottom-color: var(--background-modifier-border) !important;
   --h2-border-radius: 0px !important;
   --h2-border-style: solid !important;
   --h2-border-top-color: var(--background-modifier-border) !important;
-  --h2-text-transform: normal !important;
   --h3-border-bottom-color: var(--background-modifier-border) !important;
   --h3-border-radius: 0px !important;
   --h3-border-style: solid !important;
   --h3-border-top-color: var(--background-modifier-border) !important;
-  --h3-text-transform: normal !important;
   --h4-border-bottom-color: var(--background-modifier-border) !important;
   --h4-border-radius: 0px !important;
   --h4-border-style: solid !important;
   --h4-border-top-color: var(--background-modifier-border) !important;
-  --h4-text-transform: normal !important;
   --h5-border-bottom-color: var(--background-modifier-border) !important;
   --h5-border-radius: 0px !important;
   --h5-border-style: solid !important;
   --h5-border-top-color: var(--background-modifier-border) !important;
-  --h5-text-transform: normal !important;
   --h6-border-bottom-color: var(--background-modifier-border) !important;
   --h6-border-radius: 0px !important;
   --h6-border-style: solid !important;
   --h6-border-top-color: var(--background-modifier-border) !important;
-  --h6-text-transform: normal !important;
   --icon-bg: transparent !important;
   --icon-bg-active: var(--color-d-gray-80) !important;
   --icon-bg-active-menu: transparent !important;
@@ -4008,11 +4018,6 @@ body.theme-dark {
   --link-ahref-decoration-color-hover: color-mix(
     in srgb,
     var(--link-ahref-color-hover) var(--link-decoration-opacity),
-    transparent
-  ) !important;
-  --link-decoration-color-hover: color-mix(
-    in srgb,
-    var(--link-color-hover) var(--link-decoration-opacity),
     transparent
   ) !important;
   --link-decoration-opacity: 22% !important;
@@ -4484,11 +4489,6 @@ body.theme-dark {
     in srgb,
     currentColor 70%,
     white
-  ) !important;
-  --toggle-bg: color-mix(
-    in srgb,
-    var(--color-d-gray-70) 50%,
-    var(--color-d-gray-60)
   ) !important;
   --toggle-bg-enabled: var(--color-d-green-40) !important;
   --toggle-shadow-focus:

@@ -1,0 +1,16 @@
+{
+  "_codeBlock": {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "oklch(0.5 0 0)"
+  },
+  "_preBlock": {
+    "backgroundColor": "oklch(0.93 0 0)",
+    "borderColor": "oklch(0.4 0 0 / 0.08)"
+  },
+  "header": {
+    "color": "oklch(0.15 0 0)",
+    "fontStyle": "normal",
+    "fontWeight": "600",
+    "textDecoration": "none"
+  }
+}

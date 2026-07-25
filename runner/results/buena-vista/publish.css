@@ -1506,8 +1506,8 @@ body.theme-light {
   --color-base-90: hsl(0, 0%, var(--color-90-l)) !important;
   --embed-border-left: 1px solid var(--interactive-accent) !important;
   --embed-border-right: dashed white 1px !important;
-  --accent-l-alt: min(var(--accent-l), 40%) !important;
   --color-base-15: hsl(0, 0%, var(--color-15-l)) !important;
+  --accent-l-alt: min(var(--accent-l), 40%) !important;
   --accent-i-h: calc(var(--accent-h) + 180) !important;
   --accent-s-alt: min(calc(var(--accent-s) * 1.25), 75%) !important;
   --background-blurred: var(--background-primary) !important;
@@ -2665,8 +2665,8 @@ body.theme-dark {
   --color-base-90: hsl(0, 0%, var(--color-90-l)) !important;
   --embed-border-left: 1px solid var(--interactive-accent) !important;
   --embed-border-right: dashed white 1px !important;
-  --accent-l-alt: max(var(--accent-l), 75%) !important;
   --color-base-15: hsl(0, 0%, var(--color-15-l)) !important;
+  --accent-l-alt: max(var(--accent-l), 75%) !important;
   --accent-i-h: calc(var(--accent-h) + 180) !important;
   --accent-s-alt: max(calc(var(--accent-s) * 0.75), 75%) !important;
   --background-blurred: var(--background-primary) !important;

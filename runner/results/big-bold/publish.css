@@ -2643,13 +2643,13 @@ body.theme-light {
     0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065),
     var(--shadow-edges) !important;
   --inline-title-color: var(--text-normal) !important;
+  --inline-title-font: var(--h1-font) !important;
   --h1-font: var(--heading-font-2) !important;
   --h2-font: var(--heading-font-2) !important;
   --h3-font: var(--heading-font-2) !important;
   --h4-font: var(--heading-font-2) !important;
   --h5-font: var(--heading-font-2) !important;
   --h6-font: var(--heading-font-2) !important;
-  --inline-title-font: var(--h1-font) !important;
   --table-header-font: var(--h1-font) !important;
   --button-background: var(--color-accent-2) !important;
   --embed-border-left: none !important;
@@ -3790,13 +3790,13 @@ body.theme-dark {
   --shadow-color: rgba(0, 0, 0, 0.2) !important;
   --text-highlight-bg-active: rgba(255, 128, 0, 0.4) !important;
   --inline-title-color: var(--text-normal) !important;
+  --inline-title-font: var(--h1-font) !important;
   --h1-font: var(--heading-font-2) !important;
   --h2-font: var(--heading-font-2) !important;
   --h3-font: var(--heading-font-2) !important;
   --h4-font: var(--heading-font-2) !important;
   --h5-font: var(--heading-font-2) !important;
   --h6-font: var(--heading-font-2) !important;
-  --inline-title-font: var(--h1-font) !important;
   --table-header-font: var(--h1-font) !important;
   --button-background: var(--color-accent-2) !important;
   --embed-border-left: none !important;

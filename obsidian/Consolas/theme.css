@@ -172,7 +172,18 @@ div.markdown-preview-view {
 	color: var(--color-alt-6);;
 }
 
+
 @media print {
+  body,
+  .markdown-preview-view,
+  .markdown-rendered,
+  .cm-scroller,
+  div.markdown-preview-view {
+    --font-text: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;
+    --font-text-theme: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;
+  }
+
   .markdown-preview-view h1,
   .markdown-preview-view h2,
   .markdown-preview-view h3,
@@ -181,6 +192,45 @@ div.markdown-preview-view {
   .markdown-preview-view h6,
   .inline-title {
     color: #000 !important;
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;
+  }
+
+  /* Make inline code background transparent on print */
+  .cm-s-obsidian span.cm-inline-code,
+  .cm-s-obsidian .HyperMD-codeblock,
+  .cm-s-obsidian .HyperMD-table-row .cm-inline-code,
+  .markdown-rendered code,
+  .markdown-rendered pre,
+  .cm-inline-code,
+  code {
+    background: transparent !important;
+    background-color: transparent !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  /* Table styling for print */
+  .markdown-rendered td {
+    border: 1px solid #555 !important;
+  }
+
+  .markdown-rendered thead tr > th {
+    border: 1px solid #000 !important;
+  }
+
+  .markdown-rendered thead {
+    border-color: #000 !important;
+  }
+
+  /* Link styling for print */
+  a,
+  .markdown-rendered a,
+  .cm-link,
+  .external-link,
+  .internal-link {
+    color: #555 !important;
+    text-decoration: underline !important;
   }
 }
 

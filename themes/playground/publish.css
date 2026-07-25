@@ -1074,13 +1074,13 @@ body.theme-dark {
   --h5-color: var(--gray-600) !important;
   --h6-color: var(--gray-600) !important;
   --inline-title-color: var(--h1-color) !important;
+  --inline-title-font: var(--h1-font) !important;
   --h1-font: "Bricolage Grotesque" !important;
   --h2-font: "Bricolage Grotesque" !important;
   --h3-font: "Bricolage Grotesque" !important;
   --h4-font: "Bricolage Grotesque" !important;
   --h5-font: "Bricolage Grotesque" !important;
   --h6-font: "Bricolage Grotesque" !important;
-  --inline-title-font: var(--h1-font) !important;
   --green: rgb(78, 205, 43) !important;
   --orange: rgb(255, 116, 23) !important;
   --purple: rgb(45, 36, 141) !important;
@@ -1172,6 +1172,7 @@ body.theme-dark {
   --red-600: oklch(84.5% 0.079 13.65) !important;
   --yellow-400: oklch(61.5% 0.126 97.11) !important;
   --yellow-600: oklch(84.5% 0.174 97.11) !important;
+  --color-sea-green-rgb: 33, 255, 177 !important;
   --blue-25: oklch(12% 0.038 260.58) !important;
   --blue-75: oklch(18% 0.061 260.58) !important;
   --callout-content: var(--blue-600);
@@ -1180,7 +1181,6 @@ body.theme-dark {
   --checklist-orange-color: var(--orange-400) !important;
   --checklist-red-color: var(--red-400) !important;
   --checklist-yellow-color: var(--yellow-500) !important;
-  --color-sea-green-rgb: 33, 255, 177 !important;
   --gray-25: oklch(12% 0.009 279.29) !important;
   --gray-75: oklch(18% 0.014 279.29) !important;
   --green-25: oklch(12% 0.032 140.09) !important;

@@ -505,12 +505,12 @@ body.theme-light {
   --indent-unit: 0.5625em !important;
   --indentation-guide-color: #ccd6eb !important;
   --indentation-guide-color-active: var(--accent) !important;
-  --indentation-guide-editing-indent: calc(var(--checkbox-size) / 3) !important;
+  --indentation-guide-editing-indent: calc(var(--checkbox-size)/3) !important;
   --indentation-guide-reading-indent: calc(
     var(--checkbox-size) * -1 + 2px
   ) !important;
   --indentation-guide-source-indent: calc(
-    var(--checkbox-size) / 3 * -1 + var(--checkbox-size) / 2.5
+    var(--checkbox-size)/3 * -1 + var(--checkbox-size)/2.5
   ) !important;
   --indentation-guide-width: 2px !important;
   --indentation-guide-width-active: var(--indentation-guide-width) !important;
@@ -571,7 +571,7 @@ body.theme-light {
   --list-bullet-border: none !important;
   --list-bullet-end-padding: 1.3rem !important;
   --list-bullet-radius: var(--radius-h) !important;
-  --list-bullet-size: calc(var(--font-text-size) / 2.5) !important;
+  --list-bullet-size: calc(var(--font-text-size)/2.5) !important;
   --list-bullet-transform: rotate(45deg) !important;
   --list-indent: 25px !important;
   --list-indent-editing: 0.75em !important;
@@ -1055,15 +1055,16 @@ body.theme-light {
     "Microsoft YaHei Light", sans-serif !important;
   --table-header-background-hover: var(--accent) !important;
   --vault-name-color: #c14343 !important;
+  --bold-color: #697580 !important;
+  --inline-title-font: Calisto MT !important;
+  --italic-color: #697580 !important;
   --h1-font: "Calisto MT" !important;
   --h2-font: "Calisto MT" !important;
   --h3-font: "Calisto MT" !important;
   --h4-font: "Calisto MT" !important;
   --h5-font: "Calisto MT" !important;
   --h6-font: "Calisto MT" !important;
-  --inline-title-font: Calisto MT !important;
-  --bold-color: #697580 !important;
-  --italic-color: #697580 !important;
+  --shadow-m: 3px 3px 0 var(--outline) !important;
   --graph-arrow: var(--soft-text) !important;
   --link-decoration-color: var(--text) !important;
   --chbx-a: 248, 114, 181 !important;
@@ -1085,8 +1086,9 @@ body.theme-light {
   --button-background: var(--bttn) !important;
   --button-border: var(--bttn) !important;
   --button-text: var(--text-dl) !important;
-  --folder-icon: "\e801" !important;
   --embed-border-left: 2px solid var(--embed-border-left-color) !important;
+  --tab-font-weight: 500 !important;
+  --folder-icon: "\e801" !important;
   --embed-border-right: 2px solid var(--embed-border-right-color) !important;
   --nav-item-children-margin-left: 15px !important;
   --nav-item-children-padding-left: 2px !important;
@@ -1101,13 +1103,13 @@ body.theme-light {
   --hr-width: false% !important;
   --vault-font:
     "Calisto MT", "Palatino Black", "Book Antiqua", "Georgia", "Suez One", serif !important;
+  --callout-margin: 5px 0;
   --button-background-hover: var(--interactive-accent-hover) !important;
   --graph-tag: #000000 !important;
   --he-title-bar-active-action: var(--lite-accent) !important;
   --he-title-bar-inactive-action: var(--soft-text) !important;
   --tag-text: var(--lite-accent) !important;
   --outline: #912e2e !important;
-  --shadow-m: 3px 3px 0 var(--outline) !important;
   --blockquote-padding: var(--size-4-3) var(--size-4-6) !important;
   --nav-item-weight: 500 !important;
   --nav-item-weight-hover: 700 !important;
@@ -1122,14 +1124,14 @@ body.theme-light {
   --tall: 700px !important;
   --tiny: 100px !important;
   --highlight: rgba(229, 149, 149, 0.37) !important;
-  --tab-font-weight: 500 !important;
   --hr-text-offset: 12px !important;
   --nav-item-border-color: var(--lite-accent) !important;
   --tag-background-color: var(--tag-background) !important;
-  --callout-margin: 5px 0;
   --tab-background: var(--outer-bar) !important;
   --graph-bg: #eef3fd !important;
   --tag-border-radius: 25px !important;
+  --bg: #dde4ef !important;
+  --code-bg: #eef6ff !important;
   --input-bg: var(--td) !important;
   --he-text-on-accent-active: var(--headers) !important;
   --he-text-on-accent-inactive: var(--text) !important;
@@ -1159,10 +1161,8 @@ body.theme-light {
   --h4-text-align: left !important;
   --h5-text-align: left !important;
   --h6-text-align: left !important;
-  --bg: #dde4ef !important;
   --embed-border: var(--embed-thickness) var(--embed-border-type)
     var(--embed-border-color) !important;
-  --code-bg: #eef6ff !important;
   --accent-text: #dcddde !important;
   --accent2: #d6deea !important;
   --accent2-lite: #5599d0 !important;
@@ -1419,7 +1419,7 @@ body.theme-light {
   --progress-bg: var(--bg) !important;
   --r-heading-font-weight: var(--header-weight) !important;
   --r-progress-color: var(--lite-accent) !important;
-  --radius-h: calc(var(--radius-s) / 0.5) !important;
+  --radius-h: calc(var(--radius-s)/0.5) !important;
   --rainbow-1: #dd3c3c !important;
   --rainbow-2: #f1ab27 !important;
   --rainbow-3: #118811 !important;
@@ -2046,12 +2046,12 @@ body.theme-dark {
   --indent-unit: 0.5625em !important;
   --indentation-guide-color: #283846 !important;
   --indentation-guide-color-active: var(--accent) !important;
-  --indentation-guide-editing-indent: calc(var(--checkbox-size) / 3) !important;
+  --indentation-guide-editing-indent: calc(var(--checkbox-size)/3) !important;
   --indentation-guide-reading-indent: calc(
     var(--checkbox-size) * -1 + 2px
   ) !important;
   --indentation-guide-source-indent: calc(
-    var(--checkbox-size) / 3 * -1 + var(--checkbox-size) / 2.5
+    var(--checkbox-size)/3 * -1 + var(--checkbox-size)/2.5
   ) !important;
   --indentation-guide-width: 2px !important;
   --indentation-guide-width-active: var(--indentation-guide-width) !important;
@@ -2112,7 +2112,7 @@ body.theme-dark {
   --list-bullet-border: none !important;
   --list-bullet-end-padding: 1.3rem !important;
   --list-bullet-radius: var(--radius-h) !important;
-  --list-bullet-size: calc(var(--font-text-size) / 2.5) !important;
+  --list-bullet-size: calc(var(--font-text-size)/2.5) !important;
   --list-bullet-transform: rotate(45deg) !important;
   --list-indent: 25px !important;
   --list-indent-editing: 0.75em !important;
@@ -2583,6 +2583,9 @@ body.theme-dark {
     "Microsoft YaHei Light", sans-serif !important;
   --table-header-background-hover: var(--accent) !important;
   --vault-name-color: #c14343 !important;
+  --bold-color: #bccad8 !important;
+  --inline-title-font: Calisto MT !important;
+  --italic-color: #bccad8 !important;
   --accent-color: 134, 55, 55 !important;
   --h1-font: "Calisto MT" !important;
   --h2-font: "Calisto MT" !important;
@@ -2590,9 +2593,7 @@ body.theme-dark {
   --h4-font: "Calisto MT" !important;
   --h5-font: "Calisto MT" !important;
   --h6-font: "Calisto MT" !important;
-  --inline-title-font: Calisto MT !important;
-  --bold-color: #bccad8 !important;
-  --italic-color: #bccad8 !important;
+  --shadow-m: 3px 3px 0 var(--outline) !important;
   --graph-arrow: var(--soft-text) !important;
   --link-decoration-color: var(--text) !important;
   --chbx-a: 248, 114, 181 !important;
@@ -2614,8 +2615,9 @@ body.theme-dark {
   --button-background: var(--bttn) !important;
   --button-border: var(--bttn) !important;
   --button-text: var(--text-dl) !important;
-  --folder-icon: "\e801" !important;
   --embed-border-left: 2px solid var(--embed-border-left-color) !important;
+  --tab-font-weight: 500 !important;
+  --folder-icon: "\e801" !important;
   --embed-border-right: 2px solid var(--embed-border-right-color) !important;
   --nav-item-children-margin-left: 15px !important;
   --nav-item-children-padding-left: 2px !important;
@@ -2630,13 +2632,13 @@ body.theme-dark {
   --hr-width: false% !important;
   --vault-font:
     "Calisto MT", "Palatino Black", "Book Antiqua", "Georgia", "Suez One", serif !important;
+  --callout-margin: 5px 0;
   --button-background-hover: var(--interactive-accent-hover) !important;
   --graph-tag: #c14343 !important;
   --he-title-bar-active-action: var(--lite-accent) !important;
   --he-title-bar-inactive-action: var(--soft-text) !important;
   --tag-text: #d04e4e !important;
   --outline: #cfd7dd !important;
-  --shadow-m: 3px 3px 0 var(--outline) !important;
   --blockquote-padding: var(--size-4-3) var(--size-4-6) !important;
   --nav-item-weight: 500 !important;
   --nav-item-weight-hover: 700 !important;
@@ -2651,14 +2653,14 @@ body.theme-dark {
   --tall: 700px !important;
   --tiny: 100px !important;
   --highlight: rgba(122, 20, 20, 0.4) !important;
-  --tab-font-weight: 500 !important;
   --hr-text-offset: 12px !important;
   --nav-item-border-color: var(--lite-accent) !important;
   --tag-background-color: var(--tag-background) !important;
-  --callout-margin: 5px 0;
   --tab-background: var(--outer-bar) !important;
   --graph-bg: #0b0f13 !important;
   --tag-border-radius: 25px !important;
+  --bg: #252c36 !important;
+  --code-bg: #232831 !important;
   --input-bg: rgba(0, 0, 0, 0.3) !important;
   --he-text-on-accent-active: var(--headers) !important;
   --he-text-on-accent-inactive: var(--text) !important;
@@ -2688,10 +2690,8 @@ body.theme-dark {
   --h4-text-align: left !important;
   --h5-text-align: left !important;
   --h6-text-align: left !important;
-  --bg: #252c36 !important;
   --embed-border: var(--embed-thickness) var(--embed-border-type)
     var(--embed-border-color) !important;
-  --code-bg: #232831 !important;
   --accent-text: #dcddde !important;
   --accent2: #3c5274 !important;
   --accent2-lite: #61afef !important;
@@ -2949,7 +2949,7 @@ body.theme-dark {
   --progress-bg: var(--bg) !important;
   --r-heading-font-weight: var(--header-weight) !important;
   --r-progress-color: var(--lite-accent) !important;
-  --radius-h: calc(var(--radius-s) / 0.5) !important;
+  --radius-h: calc(var(--radius-s)/0.5) !important;
   --rainbow-1: #b03a3a !important;
   --rainbow-2: #d59929 !important;
   --rainbow-3: #207a20 !important;

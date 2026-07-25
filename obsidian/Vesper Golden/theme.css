@@ -1,0 +1,233 @@
+/* Vesper Golden for Obsidian
+ * Warm gold-on-black. Colors derived from palette.json at the repo root.
+ * Layout: variant variables first (dark / light), then app chrome, markdown,
+ * and code-block syntax. Syntax selectors read --vg-syn-* so the two variants
+ * share one set of rules and only swap the variables.
+ */
+
+/* ---------------------------------------------------------------- dark ---- */
+.theme-dark {
+  /* palette */
+  --vg-bg: #0A0908;
+  --vg-bg-alt: #141414;
+  --vg-bg-input: #1C1C1C;
+  --vg-border: #1A1A1A;
+  --vg-fg: #FFFFFF;
+  --vg-muted: #AFACA7;
+  --vg-dim: #707070;
+  --vg-comment: #9A8B73;
+  --vg-accent: #FFBF3B;
+  --vg-accent-hover: #FFCFA8;
+  --vg-accent-text: #FFBF3B;
+  --vg-string: #F2E7DC;
+  --vg-green: #7CB342;
+  --vg-red: #FF8080;
+  --vg-blue: #74B3F7;
+
+  /* syntax (resolved from palette.syntax) */
+  --vg-syn-comment: var(--vg-comment);
+  --vg-syn-keyword: var(--vg-muted);
+  --vg-syn-accent: var(--vg-accent-text);
+  --vg-syn-string: var(--vg-string);
+  --vg-syn-var: var(--vg-fg);
+  --vg-syn-muted: var(--vg-muted);
+
+  /* on-accent text: dark ink reads on the gold fill */
+  --vg-on-accent: var(--vg-bg);
+}
+
+/* --------------------------------------------------------------- light ---- */
+.theme-light {
+  --vg-bg: #FEFEFE;
+  --vg-bg-alt: #F5F5F5;
+  --vg-bg-input: #FFFFFF;
+  --vg-border: #E0E0E0;
+  --vg-fg: #2C2C2C;
+  --vg-muted: #616161;
+  --vg-dim: #ADADAD;
+  --vg-comment: #7A6248;
+  --vg-accent: #FFBF3B;
+  --vg-accent-hover: #DAA520;
+  --vg-accent-text: #B8860B;
+  --vg-string: #5D4037;
+  --vg-green: #388E3C;
+  --vg-red: #D32F2F;
+  --vg-blue: #1976D2;
+
+  --vg-syn-comment: var(--vg-comment);
+  --vg-syn-keyword: var(--vg-muted);
+  --vg-syn-accent: var(--vg-accent-text);
+  --vg-syn-string: var(--vg-string);
+  --vg-syn-var: var(--vg-fg);
+  --vg-syn-muted: var(--vg-muted);
+
+  --vg-on-accent: #2C2C2C;
+}
+
+/* ----------------------------------------------------- app chrome (both) -- */
+.theme-dark,
+.theme-light {
+  /* backgrounds */
+  --background-primary: var(--vg-bg);
+  --background-primary-alt: var(--vg-bg-alt);
+  --background-secondary: var(--vg-bg-alt);
+  --background-secondary-alt: var(--vg-bg);
+  --background-modifier-border: var(--vg-border);
+  --background-modifier-border-hover: var(--vg-border);
+  --background-modifier-border-focus: var(--vg-accent);
+  --background-modifier-form-field: var(--vg-bg-input);
+
+  /* text */
+  --text-normal: var(--vg-fg);
+  --text-muted: var(--vg-muted);
+  --text-faint: var(--vg-dim);
+  --text-on-accent: var(--vg-on-accent);
+  --text-accent: var(--vg-accent-text);
+  --text-accent-hover: var(--vg-accent-hover);
+  --text-selection: rgba(255, 191, 59, 0.20);
+  --text-highlight-bg: rgba(255, 191, 59, 0.30);
+  --caret-color: var(--vg-accent);
+
+  /* interactive / accent */
+  --interactive-accent: var(--vg-accent);
+  --interactive-accent-hover: var(--vg-accent-hover);
+  --interactive-normal: var(--vg-bg-alt);
+  --interactive-hover: var(--vg-bg-input);
+
+  /* links */
+  --link-color: var(--vg-accent-text);
+  --link-color-hover: var(--vg-accent-hover);
+  --link-external-color: var(--vg-accent-text);
+  --link-external-color-hover: var(--vg-accent-hover);
+
+  /* headings: all gold */
+  --h1-color: var(--vg-accent-text);
+  --h2-color: var(--vg-accent-text);
+  --h3-color: var(--vg-accent-text);
+  --h4-color: var(--vg-accent-text);
+  --h5-color: var(--vg-accent-text);
+  --h6-color: var(--vg-accent-text);
+
+  /* inline + block code */
+  --code-background: var(--vg-bg-input);
+  --code-normal: var(--vg-string);
+  --code-comment: var(--vg-comment);
+
+  /* emphasis */
+  --bold-color: var(--vg-accent-text);
+  --italic-color: var(--vg-fg);
+  --blockquote-color: var(--vg-muted);
+  --blockquote-border-color: var(--vg-accent);
+  --hr-color: var(--vg-border);
+
+  /* tags */
+  --tag-color: var(--vg-accent-text);
+  --tag-background: rgba(255, 191, 59, 0.12);
+
+  /* chrome */
+  --titlebar-background: var(--vg-bg-alt);
+  --titlebar-background-focused: var(--vg-bg-alt);
+  --titlebar-text-color: var(--vg-muted);
+  --ribbon-background: var(--vg-bg-alt);
+  --divider-color: var(--vg-border);
+  --indentation-guide-color: var(--vg-border);
+  --scrollbar-thumb-bg: var(--vg-border);
+  --scrollbar-active-thumb-bg: var(--vg-dim);
+
+  /* nav */
+  --nav-item-color-active: var(--vg-fg);
+  --nav-item-background-active: var(--vg-bg-input);
+}
+
+/* active tab + nav accent strip */
+.workspace-tab-header.is-active {
+  --tab-text-color-focused-active: var(--vg-accent-text);
+}
+
+/* checkbox + selection accents */
+.checkbox-container.is-enabled {
+  background-color: var(--vg-accent);
+}
+
+/* ------------------------------------------------------- code: editor ----- */
+/* CodeMirror token classes inside code blocks (live preview / source).
+ * The class is doubled (.cm-s-obsidian.cm-s-obsidian) to out-specify
+ * Obsidian's default token colors through specificity alone. */
+.cm-s-obsidian.cm-s-obsidian .cm-comment,
+.cm-s-obsidian.cm-s-obsidian .HyperMD-codeblock .cm-comment {
+  color: var(--vg-syn-comment);
+  font-style: italic;
+}
+.cm-s-obsidian.cm-s-obsidian .cm-keyword,
+.cm-s-obsidian.cm-s-obsidian .cm-operator,
+.cm-s-obsidian.cm-s-obsidian .cm-meta {
+  color: var(--vg-syn-keyword);
+}
+.cm-s-obsidian.cm-s-obsidian .cm-def,
+.cm-s-obsidian.cm-s-obsidian .cm-builtin,
+.cm-s-obsidian.cm-s-obsidian .cm-tag,
+.cm-s-obsidian.cm-s-obsidian .cm-atom,
+.cm-s-obsidian.cm-s-obsidian .cm-number,
+.cm-s-obsidian.cm-s-obsidian .cm-type,
+.cm-s-obsidian.cm-s-obsidian .cm-variable-2,
+.cm-s-obsidian.cm-s-obsidian .cm-variable-3 {
+  color: var(--vg-syn-accent);
+}
+.cm-s-obsidian.cm-s-obsidian .cm-string,
+.cm-s-obsidian.cm-s-obsidian .cm-string-2 {
+  color: var(--vg-syn-string);
+}
+.cm-s-obsidian.cm-s-obsidian .cm-variable,
+.cm-s-obsidian.cm-s-obsidian .cm-property {
+  color: var(--vg-syn-var);
+}
+.cm-s-obsidian.cm-s-obsidian .cm-punctuation,
+.cm-s-obsidian.cm-s-obsidian .cm-bracket {
+  color: var(--vg-syn-muted);
+}
+
+/* ------------------------------------------------------ code: reading ----- */
+/* Prism token classes in the rendered reading view. */
+.markdown-rendered .token.comment,
+.markdown-rendered .token.prolog,
+.markdown-rendered .token.doctype,
+.markdown-rendered .token.cdata {
+  color: var(--vg-syn-comment);
+  font-style: italic;
+}
+.markdown-rendered .token.keyword,
+.markdown-rendered .token.operator,
+.markdown-rendered .token.atrule,
+.markdown-rendered .token.rule {
+  color: var(--vg-syn-keyword);
+}
+.markdown-rendered .token.function,
+.markdown-rendered .token.class-name,
+.markdown-rendered .token.constant,
+.markdown-rendered .token.number,
+.markdown-rendered .token.boolean,
+.markdown-rendered .token.tag,
+.markdown-rendered .token.symbol {
+  color: var(--vg-syn-accent);
+}
+.markdown-rendered .token.string,
+.markdown-rendered .token.char,
+.markdown-rendered .token.attr-value,
+.markdown-rendered .token.inserted {
+  color: var(--vg-syn-string);
+}
+.markdown-rendered .token.property,
+.markdown-rendered .token.variable,
+.markdown-rendered .token.attr-name {
+  color: var(--vg-syn-var);
+}
+.markdown-rendered .token.punctuation {
+  color: var(--vg-syn-muted);
+}
+
+/* text highlight (==mark==) reads on the gold-tinted bg */
+.markdown-rendered mark,
+.cm-s-obsidian span.cm-highlight {
+  background-color: var(--text-highlight-bg);
+  color: var(--vg-fg);
+}

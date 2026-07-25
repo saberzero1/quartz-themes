@@ -1117,8 +1117,8 @@ body.theme-light {
     0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065),
     var(--shadow-edges) !important;
   --table-header-background-hover: var(--background-modifier-hover) !important;
-  --h1-font: "Linux Libertine", "Georgia", "Times", serif !important;
   --inline-title-font: var(--h1-font) !important;
+  --h1-font: "Linux Libertine", "Georgia", "Times", serif !important;
   --embed-border-left: none !important;
   --nav-item-children-padding-left: 0px !important;
   --vault-name-font-size: 1.4em !important;
@@ -2234,8 +2234,8 @@ body.theme-dark {
   --zoom-factor: 1 !important;
   --img-max-width: 55% !important;
   --table-header-background-hover: var(--background-modifier-hover) !important;
-  --h1-font: "Linux Libertine", "Georgia", "Times", serif !important;
   --inline-title-font: var(--h1-font) !important;
+  --h1-font: "Linux Libertine", "Georgia", "Times", serif !important;
   --embed-border-left: none !important;
   --nav-item-children-padding-left: 0px !important;
   --vault-name-font-size: 1.4em !important;

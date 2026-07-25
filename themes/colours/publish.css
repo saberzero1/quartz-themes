@@ -1561,6 +1561,15 @@ body.theme-light {
       calc(c * 0.3) h / calc(0.6 * var(--font-brightness))
   ) !important;
   --inline-title-color: var(--h1-color) !important;
+  --text-highlight: oklch(
+    from var(--complement)
+      clamp(
+        0.2,
+        calc(var(--dynamic-switch) * 0.7 - var(--dynamic-switch) * 0.7 + 0.1),
+        0.9
+      )
+      c h
+  ) !important;
   --nn-theme-mobile-toolbar-button-active-icon-color: var(
     --background-primary
   ) !important;
@@ -1576,15 +1585,6 @@ body.theme-light {
     --text-highlight-bg
   ) !important;
   --nn-theme-foreground: var(--ui-normal) !important;
-  --text-highlight: oklch(
-    from var(--complement)
-      clamp(
-        0.2,
-        calc(var(--dynamic-switch) * 0.7 - var(--dynamic-switch) * 0.7 + 0.1),
-        0.9
-      )
-      c h
-  ) !important;
   --code-border: oklch(
     from var(--color-accent)
       calc(
@@ -2843,6 +2843,10 @@ body.theme-dark {
       var(--text-c) h
   ) !important;
   --inline-title-color: var(--h1-color) !important;
+  --text-highlight: oklch(
+    from var(--complement)
+      clamp(0.2, calc(1.1 - var(--dynamic-switch) * 0.75), 0.9) c h
+  ) !important;
   --nn-theme-mobile-toolbar-button-active-icon-color: var(
     --background-primary
   ) !important;
@@ -2858,10 +2862,6 @@ body.theme-dark {
     --text-highlight-bg
   ) !important;
   --nn-theme-foreground: var(--ui-normal) !important;
-  --text-highlight: oklch(
-    from var(--complement)
-      clamp(0.2, calc(1.1 - var(--dynamic-switch) * 0.75), 0.9) c h
-  ) !important;
   --code-border: oklch(
     from var(--background-primary) clamp(0.4, l * 2, 0.6) calc(c * 1) h / 0.9
   ) !important;

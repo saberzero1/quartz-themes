@@ -7,7 +7,7 @@ cssclasses:
 > This page is to quickly check how all features are rendered.
 
 - Theme author: <a href="https://chris-grieser.de/" target="_blank" rel="noopener noreferrer">pseudometa aka Chris Grieser</a>
-- Support the author: <a href="https://github.com/sponsors/chrisgrieser" target="_blank" rel="noopener noreferrer">PayPal</a>
+- Support the author: Author did not provide funding links in `manifest.json`
 - Install: `npm install @quartz-themes/core @quartz-themes/shimmering-focus`
 - <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/shimmering-focus/README.md">Full install instructions</a>
 

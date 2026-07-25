@@ -9,6 +9,18 @@ I’m working to make this as polished and functional as possible. Thanks for yo
 Please don't copy this code without mentioning repository link
 */
 
+
+/* Pluginy, pod które został napisany kod aby naprawić ich wyświetalnie:
+
+
+- Style Settings
+- Make.md
+- MySnippets
+- Day Planner
+- Remotely Save
+- [**Enchanted Animations**](https://github.com/Oczko24/Enchanted-Animations)
+
+*/
 /* ========= style settings plugin support ========== */
 
 /* @settings
@@ -220,6 +232,12 @@ settings:
         type: class-toggle
         default: false
     -
+        id: disable-checkbox-animations
+        title: "Disable Checkbox Animations"
+        description: "Turn off enchanted checkbox animations. Synchronized with Enchanted Animations — disabling here also disables in the plugin."
+        type: class-toggle
+        default: false
+    -
         id: animate-note-open
         title: "Animate Note Opening (beta)"
         description: "Slide-up + fade when opening or switching notes."
@@ -424,6 +442,15 @@ body .tooltip,
 body .tooltip.mod-right,
 body .tooltip.mod-left {
   animation-duration: var(--anim-duration-fast);
+  will-change: transform, opacity;
+  backface-visibility: hidden;
+}
+
+/* ===================== Performance Overrides (Scrollers) ===================== */
+.cm-scroller, .markdown-preview-view {
+  transform: translateZ(0);
+  will-change: transform;
+  backface-visibility: hidden;
 }
 
 /* 
@@ -552,6 +579,7 @@ body:not(.is-mobile) .setting-item[data-id*="disable-drawer-dimming"] {
   z-index: -1;
   pointer-events: none;
   transform: translateZ(0);
+  backface-visibility: hidden;
 }
 
 /* === AUTO (default) === */
@@ -695,9 +723,11 @@ body.is-focused .workspace-tab-header-container .workspace-tab-header {
   -webkit-backdrop-filter: blur(var(--ui-blur));
   backdrop-filter: blur(var(--ui-blur));
   transform: translateZ(0);
+  will-change: transform, opacity;
+  backface-visibility: hidden;
   /* GPU acceleration */
   contain: layout style paint;
-  border: 1px solid var(--tr);
+  border: 1px solid #00000000;
   background-color: var(--overlay-color);
   --settings-background: var(--overlay-color);
   --modal-background: var(--overlay-color);
@@ -732,9 +762,12 @@ is-mobile - tablet and phone
   -webkit-backdrop-filter: blur(var(--ui-blur));
   backdrop-filter: blur(var(--ui-blur));
   transform: translateZ(0);
+  will-change: transform, opacity;
+  backface-visibility: hidden;
   /* GPU acceleration */
+  contain: layout style paint;
   background-color: var(--overlay-color);
-  border: 1px solid var(--tr);
+  border: 1px solid #00000000;
 }
 
 hr {
@@ -755,8 +788,11 @@ body.theme-dark .prompt {
   -webkit-backdrop-filter: blur(var(--ui-blur));
   backdrop-filter: blur(var(--ui-blur));
   transform: translateZ(0);
+  will-change: transform, opacity;
+  backface-visibility: hidden;
   /* GPU acceleration */
-  border: 1px solid var(--tr);
+  contain: layout style paint;
+  border: 1px solid #00000000;
   background-color: var(--overlay-color);
 }
 
@@ -867,14 +903,12 @@ input[type="range"] {
   border-color: var(--tr);
   max-height: 600px;
 }
-
 /* Button styling */
-button:not(.clickable-icon) {
+button:not(.clickable-icon):not(.nn-icon-button):not(.nn-list-group-header-collapse-button):not(.nn-mobile-toolbar-button):not(.copy-code-button) { /* "nn" prefix = Notebook Navigator plugin integration */
   background-color: var(--color-accent);
   box-shadow: none;
-  color: #060606;
+  color: var(--text-on-accent);
 }
-
 /* right click on top right centered down arrow adjustments */
 .menu-scroll {
   display: inline;
@@ -1006,6 +1040,7 @@ body .cm-html-embed thead tr>th {
 .cm-s-obsidian span.cm-inline-code {
   background-color: var(--tr06);
 }
+
 
 .checkbox-container:after {
   background-color: #00000099;
@@ -1288,6 +1323,7 @@ body.show-scrollbars ::-webkit-scrollbar-thumb {
     margin-bottom var(--anim-duration-moderate) cubic-bezier(0.16, 1, 0.3, 1),
     transform var(--anim-duration-moderate) cubic-bezier(0.16, 1, 0.3, 1);
   will-change: transform, opacity;
+  backface-visibility: hidden;
 }
 
 .is-phone .view-header {
@@ -1295,6 +1331,7 @@ body.show-scrollbars ::-webkit-scrollbar-thumb {
     opacity var(--anim-duration-moderate) cubic-bezier(0.16, 1, 0.3, 1),
     transform var(--anim-duration-moderate) cubic-bezier(0.16, 1, 0.3, 1);
   will-change: transform, opacity;
+  backface-visibility: hidden;
 }
 
 
@@ -1313,6 +1350,7 @@ body.is-mobile.disable-drawer-dimming .clickable-icon.workspace-drawer-header-ic
 .workspace-drawer-inner {
   -webkit-backdrop-filter: brightness(var(--brightness)) blur(var(--ui-blur));
   backdrop-filter: brightness(var(--brightness)) blur(var(--ui-blur));
+  will-change: width, filter, backdrop-filter;
   transition: width cubic-bezier(0.16, 1, 0.3, 1) var(--anim-duration-slow);
 }
 
@@ -1367,29 +1405,6 @@ body.is-mobile.disable-drawer-dimming .workspace-drawer-inner {
 
 }
 
-/* Force slow animation for background and menu container */
-.suggestion-bg,
-.suggestion-container,
-.menu {
-  transition-property: opacity, transform, visibility;
-  transition-duration: 3s;
-  transition-timing-function: ease-in-out;
-}
-
-/* If Obsidian uses a class to hide it, let's slow it down */
-.suggestion-bg[style*="display: none"],
-.suggestion-container[style*="display: none"] {
-  display: block;
-  /* Attempt to block immediate disappearance */
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 3s ease-in-out, visibility 3s;
-}
-
-/* Specifically for the image background */
-div.suggestion-bg {
-  transition: opacity 3s ease-in-out;
-}
 
 .metadata-property-icon {
   padding: var(--size-4-1) 5px;
@@ -1598,7 +1613,7 @@ body:not(.disable-splash-screen):not(.no-animation):not(.enchanted-animations-pr
 
 /* ===================== Header Animations ===================== */
 
-body:not(.disable-header-animations) body:not(.enchanted-animations-present) .markdown-source-view.mod-cm6 .cm-line.HyperMD-header .cm-formatting-header {
+body:not(.disable-header-animations):not(.enchanted-animations-present) .markdown-source-view.mod-cm6 .cm-line.HyperMD-header .cm-formatting-header {
   position: absolute;
   top: auto;
   animation: materialPopHeader 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
@@ -1619,39 +1634,39 @@ body:not(.disable-header-animations) body:not(.enchanted-animations-present) .ma
 /* line loses focus */
 body:not(.disable-header-animations) .markdown-source-view.mod-cm6 .cm-line.HyperMD-header {
   position: relative;
-  padding-left: 0;
-  transition: padding-left 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateX(0);
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* line gains focus */
 body:not(.disable-header-animations) .markdown-source-view.mod-cm6 .cm-line.cm-active.HyperMD-header {
-  transition: padding-left 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+  transition: transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
 /* Hardcoded indent per header level — may need revisiting if header font sizes change */
 body:not(.disable-header-animations) .markdown-source-view.mod-cm6 .cm-line.cm-active {
   &.HyperMD-header-1 {
-    padding-left: 20px;
+    transform: translateX(20px);
   }
 
   &.HyperMD-header-2 {
-    padding-left: 30px;
+    transform: translateX(30px);
   }
 
   &.HyperMD-header-3 {
-    padding-left: 40px;
+    transform: translateX(40px);
   }
 
   &.HyperMD-header-4 {
-    padding-left: 50px;
+    transform: translateX(50px);
   }
 
   &.HyperMD-header-5 {
-    padding-left: 60px;
+    transform: translateX(60px);
   }
 
   &.HyperMD-header-6 {
-    padding-left: 70px;
+    transform: translateX(70px);
   }
 }
 
@@ -1660,14 +1675,12 @@ body:not(.disable-header-animations) .markdown-source-view.mod-cm6 .cm-line.cm-a
 
 @keyframes premiumHorizontalPush {
   0% {
-    margin-inline: -0.25em;
     /* left right */
     opacity: 0;
     transform: scale(0.85);
   }
 
   100% {
-    margin-inline: 0;
     /* left right */
     opacity: 1;
     transform: scale(1);
@@ -1683,10 +1696,161 @@ body:not(.disable-formatting-animations):not(.enchanted-animations-present) .mar
   line-height: 0;
   padding-block: 0;
   /* top down */
+  will-change: margin-inline, transform, opacity;
+  backface-visibility: hidden;
   animation: premiumHorizontalPush 0.3s cubic-bezier(0.25, 1, 0.5, 1.05) forwards;
 }
 
 /* ===================== Inline Formatting Animations ===================== */
+
+/* ===================== Checkbox Animations (from Enchanted Animations) ===================== */
+/*
+   Integration with Enchanted Animations plugin:
+   - disable-checkbox-animations is a shared kill switch (Style Settings toggle)
+     that disables checkbox animations from BOTH the theme AND the plugin.
+   - Plugin OFF → theme checkbox animations apply (using --animationspeed)
+   - Plugin ON, checkbox option OFF → theme checkbox animations still apply
+   - Plugin ON, checkbox option ON → plugin styles take priority
+     (with its own --enchanted-animations-speed / --enchanted-animations-easing)
+   - disable-checkbox-animations ON → no checkbox animations anywhere
+*/
+
+/* Smooth transition on checkbox scale */
+body:not(.ea-checkbox-animations):not(.disable-checkbox-animations) input[type="checkbox"],
+body:not(.ea-checkbox-animations):not(.disable-checkbox-animations) .task-list-item-checkbox {
+  transition: transform calc(var(--animationspeed) * 0.5) cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+/* Press-down squish */
+body:not(.ea-checkbox-animations):not(.disable-checkbox-animations) input[type="checkbox"]:active,
+body:not(.ea-checkbox-animations):not(.disable-checkbox-animations) .task-list-item-checkbox:active {
+  transform: scale(0.85);
+}
+
+/* Pop animation when checked */
+body:not(.ea-checkbox-animations):not(.disable-checkbox-animations) input[type="checkbox"]:checked,
+body:not(.ea-checkbox-animations):not(.disable-checkbox-animations) .task-list-item-checkbox:checked {
+  animation: tr-checkbox-pop calc(var(--animationspeed) * 0.8) cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+@keyframes tr-checkbox-pop {
+  0% { transform: scale(0.8); }
+  50% { transform: scale(1.15); }
+  100% { transform: scale(1); }
+}
+
+/* Checkmark icon transition */
+body:not(.ea-checkbox-animations):not(.disable-checkbox-animations) input[type="checkbox"]::after,
+body:not(.ea-checkbox-animations):not(.disable-checkbox-animations) .task-list-item-checkbox::after {
+  transition: transform calc(var(--animationspeed) * 0.5) cubic-bezier(0.2, 0.8, 0.2, 1),
+              opacity calc(var(--animationspeed) * 0.5) cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+/* Checkmark pop on check */
+body:not(.ea-checkbox-animations):not(.disable-checkbox-animations) input[type="checkbox"]:checked::after,
+body:not(.ea-checkbox-animations):not(.disable-checkbox-animations) .task-list-item-checkbox:checked::after {
+  animation: tr-checkmark-pop calc(var(--animationspeed) * 0.8) cubic-bezier(0.2, 0.8, 0.2, 1);
+  transform: scale(1);
+  opacity: 1;
+}
+
+/* Checkmark disappear on uncheck */
+body:not(.ea-checkbox-animations):not(.disable-checkbox-animations) input[type="checkbox"]:not(:checked)::after,
+body:not(.ea-checkbox-animations):not(.disable-checkbox-animations) .task-list-item-checkbox:not(:checked)::after {
+  transform: scale(0);
+  opacity: 0;
+}
+
+@keyframes tr-checkmark-pop {
+  0% { transform: scale(0); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+/* Strike-through animation for task list items (Reading View) */
+body:not(.ea-checkbox-animations):not(.disable-checkbox-animations) .task-list-item {
+  transition: opacity calc(var(--animationspeed) * 0.8) cubic-bezier(0.2, 0.8, 0.2, 1),
+              color calc(var(--animationspeed) * 0.8) cubic-bezier(0.2, 0.8, 0.2, 1),
+              text-decoration-color calc(var(--animationspeed) * 0.8) cubic-bezier(0.2, 0.8, 0.2, 1);
+  text-decoration-line: line-through;
+  text-decoration-color: transparent;
+}
+
+body:not(.ea-checkbox-animations):not(.disable-checkbox-animations) .task-list-item.is-checked {
+  opacity: 0.6;
+  text-decoration-color: var(--text-muted);
+  color: var(--text-muted);
+}
+
+/* Animated strikethrough in Live Preview */
+body:not(.ea-checkbox-animations):not(.disable-checkbox-animations) .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task] {
+  text-decoration: none;
+}
+
+body:not(.ea-checkbox-animations):not(.disable-checkbox-animations) .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task] .cm-line {
+  text-decoration: none;
+}
+
+body:not(.ea-checkbox-animations):not(.disable-checkbox-animations) .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task] span:not(.cm-formatting):not(.cm-widgetBuffer):not(.task-list-label):not(.cm-hmd-list-indent):not(.cm-indent) {
+  background-image: linear-gradient(var(--text-muted), var(--text-muted));
+  background-position: left center;
+  background-size: 0% 1.5px;
+  background-repeat: no-repeat;
+  transition: background-size calc(var(--animationspeed) * 0.8) cubic-bezier(0.2, 0.8, 0.2, 1),
+              color calc(var(--animationspeed) * 0.8) cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+body:not(.ea-checkbox-animations):not(.disable-checkbox-animations) .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task]:not([data-task=" "]) span:not(.cm-formatting):not(.cm-widgetBuffer):not(.task-list-label):not(.cm-hmd-list-indent):not(.cm-indent) {
+  background-size: 100% 1.5px;
+  color: var(--text-muted);
+}
+
+/* Strikethrough line animation in Live Preview */
+body:not(.ea-checkbox-animations):not(.disable-checkbox-animations) .cm-strikethrough {
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  color: var(--text-muted);
+}
+
+body:not(.ea-checkbox-animations):not(.disable-checkbox-animations) .cm-strikethrough::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  height: 1px;
+  background-color: currentColor;
+  transform-origin: left center;
+  animation: tr-strikethrough-anim calc(var(--animationspeed) * 0.8) cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+}
+
+/* Reading mode strike-through */
+body:not(.ea-checkbox-animations):not(.disable-checkbox-animations) .markdown-preview-view .task-list-item.is-checked s,
+body:not(.ea-checkbox-animations):not(.disable-checkbox-animations) .markdown-preview-view .task-list-item.is-checked del {
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+}
+
+body:not(.ea-checkbox-animations):not(.disable-checkbox-animations) .markdown-preview-view .task-list-item.is-checked s::after,
+body:not(.ea-checkbox-animations):not(.disable-checkbox-animations) .markdown-preview-view .task-list-item.is-checked del::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  height: 1.5px;
+  background-color: currentColor;
+  transform-origin: left center;
+  animation: tr-strikethrough-anim calc(var(--animationspeed) * 0.8) cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+}
+
+@keyframes tr-strikethrough-anim {
+  0% { transform: scaleX(0); }
+  100% { transform: scaleX(1); }
+}
+
+/* ===================== Checkbox Animations ===================== */
 
 /* ===================== iOS Fixes ===================== */
 body.is-ios .app-container .workspace,

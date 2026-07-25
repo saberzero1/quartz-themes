@@ -1141,7 +1141,16 @@ body.theme-dark {
   --transition-duration: 700ms !important;
   --background-transparent: #55555599 !important;
   --color-accent-rgb: var(--color-red-rgb) !important;
+  --color-blue-hsl: 193.9, 56.6%, 56.7% !important;
+  --color-cyan-hsl: 215.5, 68.9%, 67.3% !important;
+  --color-green-hsl: 97.6, 42.3%, 42.2% !important;
+  --color-orange-hsl: 21, 100%, 84.9% !important;
+  --color-pink-hsl: 26.3, 60%, 84.3% !important;
+  --color-purple-hsl: 231.3, 27.6%, 65.9% !important;
+  --color-red-hsl: 355.5, 77.6%, 56.3% !important;
+  --color-yellow-hsl: 37, 79.2%, 75.5% !important;
   --callout-cite: 87, 61, 132;
+  --transition-ease: ease !important;
   --ancestor-editor-color: var(--text-normal) !important;
   --aside-background: transparent !important;
   --aside-background-hover: var(--background-modifier-hover) !important;
@@ -1162,14 +1171,6 @@ body.theme-dark {
         calc(var(--accent-l) * 1.29),
         0.1
       ) !important;
-  --color-blue-hsl: 193.9, 56.6%, 56.7% !important;
-  --color-cyan-hsl: 215.5, 68.9%, 67.3% !important;
-  --color-green-hsl: 97.6, 42.3%, 42.2% !important;
-  --color-orange-hsl: 21, 100%, 84.9% !important;
-  --color-pink-hsl: 26.3, 60%, 84.3% !important;
-  --color-purple-hsl: 231.3, 27.6%, 65.9% !important;
-  --color-red-hsl: 355.5, 77.6%, 56.3% !important;
-  --color-yellow-hsl: 37, 79.2%, 75.5% !important;
   --o-h1-color: var(--background-modifier-border) !important;
   --o-h2-color: var(--background-modifier-border) !important;
   --o-h3-color: var(--background-modifier-border) !important;
@@ -1180,7 +1181,6 @@ body.theme-dark {
   --text-cite: 87, 161, 132 !important;
   --text-on-button: var(--color-base-00) !important;
   --transition-duration-short: 350ms !important;
-  --transition-ease: ease !important;
   --transition-props:
     background var(--transition-duration), border var(--transition-duration),
     color var(--transition-duration) !important;

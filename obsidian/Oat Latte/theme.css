@@ -1,0 +1,236 @@
+/* OAT LATTE - Custom Obsidian Theme by Giselle */
+
+/* ===== OAT LATTE — Obsidian ===== */
+
+/* Light mode */
+.theme-light {
+  --background-primary: #fbf7f2;
+  --background-secondary: #f5efe6;
+  --background-tertiary: #ede4d8;
+
+  --text-normal: #3f2e25;
+  --text-muted: #8b6f5a;
+  --text-faint: #a38f7a;
+
+  --accent-color: #c8b6a6;
+  --interactive-accent: #c8b6a6;
+
+  --titlebar-background: #f5efe6;
+}
+
+/* Dark mode */
+.theme-dark {
+  --background-primary: #362720;
+  --background-secondary: #2b1f1a;
+  --background-tertiary: #241914;
+
+  --text-normal: #f1e6d8;
+  --text-muted: #d2b49c;
+  --text-faint: #bfa38a;
+
+  --accent-color: #d2b49c;
+  --interactive-accent: #d2b49c;
+
+  --titlebar-background: #2b1f1a;
+}
+
+/* Editor font & spacing */
+.markdown-source-view,
+.markdown-preview-view {
+  font-family: "Libre Baskerville", "Lora", serif;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+/* Headings */
+h1, h2, h3 {
+  font-family: "Playfair Display", serif;
+  color: var(--text-muted);
+}
+
+/* Selection */
+::selection {
+  background: var(--accent-color);
+}
+
+/* Links */
+a {
+  color: var(--interactive-accent);
+  text-decoration: none;
+  border-bottom: 1px dashed var(--text-faint);
+}
+/* ===== Dreamy writing look ===== */
+
+.theme-light .markdown-source-view,
+.theme-light .markdown-preview-view {
+  color: #5b4a3c;
+  font-family: "Cormorant Garamond", "Libre Baskerville", serif;
+  font-size: 17px;
+  line-height: 1.8;
+  letter-spacing: 0.2px;
+}
+
+.theme-light p {
+  margin-block-start: 0.6em;
+  margin-block-end: 0.6em;
+}
+
+.theme-light h1,
+.theme-light h2,
+.theme-light h3 {
+  color: #7a6655;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 600;
+}
+
+em {
+  font-style: italic;
+  color: #6a5646;
+}
+.theme-dark .markdown-source-view,
+.theme-dark .markdown-preview-view {
+  color: #e6d8c8;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 17px;
+  line-height: 1.8;
+}
+.theme-light {
+  --text-normal: #5b4a3c;
+}
+/* ===== REAL LINED PAPER ===== */
+
+.cm-editor, 
+.markdown-preview-view {
+  background-color: #fbf7f2 !important;
+  background-image:
+    linear-gradient(to bottom, rgba(140, 110, 80, 0.18) 1px, transparent 1px);
+  background-size: 100% 1.57em;
+  background-position-y: 1.1em;
+}
+
+/* ===== Text selection (Light mode) ===== */
+
+.theme-light ::selection {
+  background-color: #cab6a3;
+  color: #3f2e25;
+}
+
+/* ===== Cursor color ===== */
+
+.theme-light .cm-editor .cm-cursor {
+  border-left-color: #8b6f5a;
+}
+
+/* ===== Active line highlight ===== */
+
+.theme-light .cm-activeLine {
+  background-color: rgba(202, 182, 163, 0.18);
+}
+
+/* ===== Active line highlight ===== */
+.theme-light .cm-activeLine {
+  background-color: rgba(202, 182, 163, 0.18);
+}
+/* ===== CASCADIA CODE FOR CODE BLOCKS ===== */
+
+/* Inline code */
+code {
+  font-family: "Cascadia Code", "Cascadia Mono", monospace;
+  font-size: 0.95em;
+}
+
+/* Code blocks */
+pre code {
+  font-family: "Cascadia Code", "Cascadia Mono", monospace;
+  font-size: 0.95em;
+  line-height: 1.6;
+}
+
+/* Obsidian editor (CodeMirror) */
+.cm-inline-code,
+.cm-codeblock {
+  font-family: "Cascadia Code", "Cascadia Mono", monospace;
+}
+
+code, pre, .cm-content {
+  font-variant-ligatures: contextual;
+}
+
+/* ===== FORCE CASCADIA IN READING MODE ===== */
+
+.markdown-reading-view,
+.markdown-preview-view {
+  font-family: "Cascadia Code", "Cascadia Mono", monospace !important;
+}
+/* ===== Highlight (==text==) ===== */
+
+/* Light mode */
+.theme-light mark {
+  background-color: #f2d6a2;
+  color: #3f2e25;
+  padding: 0 2px;
+  border-radius: 3px;
+}
+
+/* Dark mode */
+.theme-dark mark {
+  background-color: #7a5a2f;
+  color: #f1e6d8;
+  padding: 0 2px;
+  border-radius: 3px;
+}
+/* ===== LATTE HIGHLIGHT v2 (grain + deeper tone) ===== */
+
+/* Preview */
+.theme-light mark {
+  background-color: #d6b49a !important;
+  color: #3f2e25 !important;
+  padding: 0 3px;
+  border-radius: 4px;
+
+  /* ink bleed */
+  box-shadow: 0 0 4px rgba(214, 180, 154, 0.5);
+
+  /* grain hissi */
+  background-image: 
+    radial-gradient(rgba(90, 60, 40, 0.08) 0.5px, transparent 0.5px);
+  background-size: 3px 3px;
+}
+
+/* Dark mode */
+.theme-dark mark {
+  background-color: #4a3428 !important;
+  color: #f1e6d8 !important;
+  padding: 0 3px;
+  border-radius: 4px;
+
+  box-shadow: 0 0 5px rgba(74, 52, 40, 0.6);
+
+  background-image: 
+    radial-gradient(rgba(255, 230, 200, 0.05) 0.5px, transparent 0.5px);
+  background-size: 3px 3px;
+}
+
+/* Editor */
+.cm-highlight {
+  background-color: #d6b49a !important;
+  color: #3f2e25 !important;
+  border-radius: 4px;
+
+  box-shadow: 0 0 4px rgba(214, 180, 154, 0.5);
+
+  background-image: 
+    radial-gradient(rgba(90, 60, 40, 0.08) 0.5px, transparent 0.5px);
+  background-size: 3px 3px;
+}
+
+.theme-dark .cm-highlight {
+  background-color: #4a3428 !important;
+  color: #f1e6d8 !important;
+
+  box-shadow: 0 0 5px rgba(74, 52, 40, 0.6);
+
+  background-image: 
+    radial-gradient(rgba(255, 230, 200, 0.05) 0.5px, transparent 0.5px);
+  background-size: 3px 3px;
+}

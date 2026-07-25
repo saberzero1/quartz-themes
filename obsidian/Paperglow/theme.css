@@ -1,0 +1,1406 @@
+/*
+ * Paperglow for Obsidian
+ *
+ * Visual-equivalent port of the Typora Paperglow theme.
+ * Warm paper surfaces, terracotta accents, Montserrat typography,
+ * and editorial card-like reading panels adapted to Obsidian.
+ */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Noto+Sans+SC:wght@200;300;400;500;600;700&display=swap");
+
+body {
+  --font-text-theme: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans SC", "PingFang SC", sans-serif;
+  --font-interface-theme: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans SC", "PingFang SC", sans-serif;
+  --font-monospace-theme: "JetBrains Mono", "SF Mono", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --font-text-size: 16px;
+  --line-height-normal: 1.6;
+  --line-width: 980px;
+  --file-line-width: 980px;
+  --radius-s: 6px;
+  --radius-m: 10px;
+  --radius-l: 16px;
+  --checkbox-radius: 4px;
+  --border-width: 1px;
+  --link-decoration: none;
+  --link-decoration-hover: none;
+  --link-external-decoration: none;
+  --link-external-decoration-hover: none;
+  --link-unresolved-decoration-style: solid;
+  --h1-weight: 700;
+  --h2-weight: 600;
+  --h3-weight: 500;
+  --h4-weight: 500;
+  --h5-weight: 500;
+  --h6-weight: 500;
+  --h1-size: 2em;
+  --h2-size: 1.6875em;
+  --h3-size: 1.4375em;
+  --h4-size: 1.25em;
+  --h5-size: 1.125em;
+  --h6-size: 1.0625em;
+  --bold-weight: 700;
+  --pg-list-bullet-size-round: 0.3em;
+  --pg-list-bullet-size-square: 0.24em;
+  --pg-list-ordered-marker-size: 0.92em;
+  --pg-list-reading-nested-offset: 1.7em;
+}
+
+/* ========================================
+   Light Theme Tokens
+   ======================================== */
+.theme-light {
+  --accent-rgb: 188, 106, 58;
+  --background-primary: #fcfaf6;
+  --background-primary-alt: #f3ede5;
+  --background-secondary: #f7f2eb;
+  --background-secondary-alt: #efe7dc;
+  --background-modifier-border: #ddd5ca;
+  --background-modifier-border-hover: #d3b398;
+  --background-modifier-border-focus: #bc6a3a;
+  --background-modifier-form-field: #fcfaf6;
+  --background-modifier-box-shadow: none;
+  --background-modifier-hover: rgba(var(--accent-rgb), 0.08);
+  --background-modifier-active-hover: rgba(var(--accent-rgb), 0.12);
+  --background-modifier-message: #f3ede5;
+  --text-normal: #2b2621;
+  --text-muted: #61574f;
+  --text-faint: #7b6f64;
+  --text-on-accent: #fcfaf6;
+  --text-accent: #8f4b28;
+  --text-accent-hover: #743b1f;
+  --text-selection: rgba(var(--accent-rgb), 0.18);
+  --text-highlight-bg: rgba(var(--accent-rgb), 0.16);
+  --interactive-normal: #f3ede5;
+  --interactive-hover: #ede5da;
+  --interactive-accent: #bc6a3a;
+  --interactive-accent-hover: #a75e33;
+  --nav-item-background-hover: rgba(var(--accent-rgb), 0.08);
+  --nav-item-background-active: rgba(var(--accent-rgb), 0.12);
+  --nav-item-background-selected: rgba(var(--accent-rgb), 0.16);
+  --nav-item-color: #2b2621;
+  --nav-item-color-hover: #2b2621;
+  --nav-item-color-active: #8f4b28;
+  --icon-color: #75695d;
+  --icon-color-hover: #2b2621;
+  --icon-color-focused: #bc6a3a;
+  --icon-color-active: #bc6a3a;
+  --tag-background: #f3ede5;
+  --tag-color: #8f4b28;
+  --color-accent: #bc6a3a;
+  --color-accent-1: #bc6a3a;
+  --color-accent-2: #8f4b28;
+  --divider-color: rgba(86, 67, 52, 0.11);
+  --titlebar-background: #f3ede5;
+  --titlebar-background-focused: #efe7dc;
+  --scrollbar-bg: transparent;
+  --scrollbar-thumb-bg: #cbc0b3;
+  --scrollbar-active-thumb-bg: #a99a8a;
+  --code-background: #fcfbf8;
+  --code-border-color: #e7ddd2;
+  --code-normal: #1c1815;
+  --code-comment: #847a6f;
+  --code-keyword: #7b47c2;
+  --code-function: #2c5ec6;
+  --code-string: #2f8f2f;
+  --code-tag: #bb5a49;
+  --code-value: #c06a2a;
+  --code-operator: #342d27;
+  --table-border-color: #ddd5ca;
+  --table-row-alt-background: #f7f2eb;
+  --blockquote-border-color: #c58c64;
+  --blockquote-background-color: #f3ede5;
+  --blockquote-nested-background: #ede5da;
+  --inline-code-background: #f2ede7;
+  --inline-code-border: #d8cec3;
+  --inline-code-color: #a3493f;
+  --quote-inline-code-bg: rgba(var(--accent-rgb), 0.12);
+  --quote-inline-code-color: #8c4d31;
+  --table-inline-code-bg: #f5efe8;
+  --table-inline-code-border: #dbcbbb;
+  --window-bg-color: #f3ede5;
+  --panel-bg-color: #f7f2eb;
+  --card-border-color: rgba(96, 78, 63, 0.1);
+  --card-shadow: 0 1px 0 rgba(70, 52, 38, 0.05), 0 10px 22px rgba(70, 52, 38, 0.05);
+  --link-border-color: rgba(143, 75, 40, 0.28);
+}
+
+/* ========================================
+   Dark Theme Tokens
+   ======================================== */
+.theme-dark {
+  --accent-rgb: 213, 149, 103;
+  --background-primary: #2b2926;
+  --background-primary-alt: #262320;
+  --background-secondary: #222120;
+  --background-secondary-alt: #1e1d1b;
+  --background-modifier-border: #3d3936;
+  --background-modifier-border-hover: #584a3e;
+  --background-modifier-border-focus: #d59567;
+  --background-modifier-form-field: #2b2926;
+  --background-modifier-box-shadow: none;
+  --background-modifier-hover: rgba(var(--accent-rgb), 0.1);
+  --background-modifier-active-hover: rgba(var(--accent-rgb), 0.14);
+  --background-modifier-message: #2c2926;
+  --text-normal: #faf8f3;
+  --text-muted: #d5cdc0;
+  --text-faint: #b3a799;
+  --text-on-accent: #1e1c18;
+  --text-accent: #e3a57a;
+  --text-accent-hover: #efbb95;
+  --text-selection: rgba(var(--accent-rgb), 0.22);
+  --text-highlight-bg: rgba(var(--accent-rgb), 0.18);
+  --interactive-normal: #2c2926;
+  --interactive-hover: #332e2b;
+  --interactive-accent: #d59567;
+  --interactive-accent-hover: #efbb95;
+  --nav-item-background-hover: rgba(var(--accent-rgb), 0.1);
+  --nav-item-background-active: rgba(var(--accent-rgb), 0.14);
+  --nav-item-background-selected: rgba(var(--accent-rgb), 0.18);
+  --nav-item-color: #faf8f3;
+  --nav-item-color-hover: #faf8f3;
+  --nav-item-color-active: #efbb95;
+  --icon-color: #b8aca0;
+  --icon-color-hover: #faf8f3;
+  --icon-color-focused: #d59567;
+  --icon-color-active: #d59567;
+  --tag-background: #312c29;
+  --tag-color: #efbb95;
+  --color-accent: #d59567;
+  --color-accent-1: #d59567;
+  --color-accent-2: #efbb95;
+  --divider-color: rgba(242, 233, 223, 0.08);
+  --titlebar-background: #1e1d1b;
+  --titlebar-background-focused: #1b1714;
+  --scrollbar-bg: transparent;
+  --scrollbar-thumb-bg: #675c52;
+  --scrollbar-active-thumb-bg: #877a6e;
+  --code-background: #2a2725;
+  --code-border-color: #3d3936;
+  --code-normal: #f5efe6;
+  --code-comment: #ab9d90;
+  --code-keyword: #b899ff;
+  --code-function: #89b1ea;
+  --code-string: #81cb82;
+  --code-tag: #ea8c79;
+  --code-value: #d9a56f;
+  --code-operator: #f0eae2;
+  --table-border-color: #3d3936;
+  --table-row-alt-background: #262320;
+  --blockquote-border-color: #8a7565;
+  --blockquote-background-color: #342f2b;
+  --blockquote-nested-background: #262320;
+  --inline-code-background: #332e2b;
+  --inline-code-border: #4a413b;
+  --inline-code-color: #e1a092;
+  --quote-inline-code-bg: rgba(var(--accent-rgb), 0.16);
+  --quote-inline-code-color: #efbb95;
+  --table-inline-code-bg: #312c29;
+  --table-inline-code-border: #4a413b;
+  --window-bg-color: #1e1d1b;
+  --panel-bg-color: #222120;
+  --card-border-color: rgba(242, 233, 223, 0.08);
+  --card-shadow: 0 1px 0 rgba(255, 255, 255, 0.03), 0 12px 28px rgba(0, 0, 0, 0.18);
+  --link-border-color: rgba(227, 165, 122, 0.32);
+}
+
+/* ========================================
+   Shell - Workspace & Panels
+   ======================================== */
+body,
+.app-container,
+.workspace,
+.workspace-split,
+.workspace-tabs {
+  background: var(--window-bg-color);
+  color: var(--text-normal);
+}
+
+.workspace-ribbon,
+.side-dock-settings,
+.workspace-sidedock-vault-profile,
+.workspace-tab-header-container,
+.workspace-tabs .workspace-leaf,
+.workspace-split.mod-left-split,
+.workspace-split.mod-right-split,
+.workspace-split.mod-left-split .workspace-leaf-content,
+.workspace-split.mod-right-split .workspace-leaf-content {
+  background: var(--panel-bg-color);
+}
+
+.workspace-tab-header,
+.workspace-tab-header-inner,
+.nav-file-title,
+.nav-folder-title,
+.tree-item-self,
+.clickable-icon,
+button.mod-cta,
+.search-result-file-match {
+  border-radius: 10px;
+  transition: background-color 0.18s ease, color 0.18s ease, border-color 0.18s ease;
+}
+
+.workspace-tab-header:hover,
+.nav-file-title:hover,
+.nav-folder-title:hover,
+.tree-item-self:hover,
+.clickable-icon:hover,
+.search-result-file-match:hover {
+  background: var(--nav-item-background-hover);
+}
+
+.workspace-tab-header.is-active,
+.workspace-tab-header.is-active:hover,
+.nav-file-title.is-active,
+.tree-item-self.is-selected {
+  background: var(--nav-item-background-active);
+  box-shadow: none;
+}
+
+.workspace-tab-header.is-active .workspace-tab-header-inner,
+.nav-file-title.is-active,
+.tree-item-self.is-selected {
+  color: var(--nav-item-color-active);
+}
+
+.status-bar,
+.titlebar,
+.view-header,
+.workspace-leaf-resize-handle {
+  border-color: var(--divider-color);
+}
+
+.view-header-title-container-after,
+.view-header .clickable-icon {
+  color: var(--text-muted);
+}
+
+.view-header .clickable-icon:hover {
+  color: var(--text-normal);
+}
+
+/* ========================================
+   Tooltip
+   ======================================== */
+.tooltip {
+  background: var(--interactive-accent) !important;
+  color: var(--text-on-accent) !important;
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding: 4px 10px;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* ========================================
+   Notices
+   ======================================== */
+.notice-container {
+  z-index: 9999;
+}
+
+.notice {
+  background: var(--background-primary) !important;
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 12px;
+  box-shadow: var(--card-shadow), 0 18px 36px rgba(70, 52, 38, 0.16);
+  color: var(--text-normal) !important;
+  font-family: var(--font-interface-theme);
+  font-size: 0.95rem;
+  font-weight: 500;
+  line-height: 1.45;
+  max-width: min(520px, calc(100vw - 32px));
+  overflow-wrap: anywhere;
+  padding: 12px 18px;
+}
+
+.theme-dark .notice {
+  box-shadow: var(--card-shadow), 0 18px 40px rgba(0, 0, 0, 0.42);
+}
+
+.notice .notice-message {
+  color: inherit;
+}
+
+/* ========================================
+   Content Card - editorial reading panel
+   ======================================== */
+.workspace-leaf-content[data-type="markdown"] .view-content {
+  background:
+    linear-gradient(180deg, rgba(var(--accent-rgb), 0.04), transparent 220px),
+    var(--background-primary);
+}
+
+.workspace-leaf-content[data-type="markdown"] .markdown-preview-view,
+.workspace-leaf-content[data-type="markdown"] .cm-editor.mod-cm6 {
+  background: transparent;
+}
+
+.workspace-leaf-content[data-type="markdown"] .markdown-preview-sizer,
+.workspace-leaf-content[data-type="markdown"] .cm-sizer {
+  max-width: var(--line-width);
+  padding: 48px 56px 72px !important;
+}
+
+body:not(.is-mobile) .workspace-leaf-content[data-type="markdown"] .view-content {
+  padding: 12px 18px 36px;
+}
+
+/* ========================================
+   Typography
+   ======================================== */
+.markdown-rendered,
+.markdown-source-view.mod-cm6 .cm-content {
+  letter-spacing: 0.01em;
+}
+
+.markdown-rendered p,
+.markdown-rendered li,
+.markdown-source-view.mod-cm6.is-live-preview .cm-line:not(.HyperMD-codeblock):not(.HyperMD-header):not(.HyperMD-quote):not(.HyperMD-hr):not(.HyperMD-table-row) {
+  color: var(--text-normal);
+  line-height: 1.5;
+}
+
+.markdown-rendered h1,
+.markdown-rendered h2,
+.markdown-rendered h3,
+.markdown-rendered h4,
+.markdown-rendered h5,
+.markdown-rendered h6,
+.HyperMD-header {
+  color: var(--text-normal);
+  font-family: var(--font-text, var(--font-text-theme));
+  line-height: 1.4;
+  letter-spacing: normal;
+}
+
+.markdown-rendered h1 {
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+
+.markdown-rendered h2 {
+  border-bottom: 2px solid var(--table-border-color);
+  padding-bottom: 8px;
+}
+
+.markdown-rendered h5,
+.markdown-rendered h6,
+.markdown-source-view.mod-cm6.is-live-preview .HyperMD-header-5,
+.markdown-source-view.mod-cm6.is-live-preview .HyperMD-header-6 {
+  color: var(--text-normal);
+  letter-spacing: normal;
+  text-transform: none;
+}
+
+.markdown-rendered strong,
+.markdown-source-view.mod-cm6.is-live-preview .cm-strong {
+  color: var(--text-normal);
+}
+
+.markdown-rendered mark,
+.markdown-source-view.mod-cm6.is-live-preview .cm-highlight {
+  background: var(--text-highlight-bg);
+  color: var(--text-normal);
+  border-radius: 4px;
+  padding: 2px 6px;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+
+/* ========================================
+   Links
+   ======================================== */
+.markdown-rendered a,
+.cm-link,
+.external-link,
+.internal-link {
+  color: var(--text-accent);
+  text-decoration: none;
+  border-bottom: 1.5px solid var(--link-border-color);
+}
+
+.markdown-rendered a:hover,
+.cm-link:hover,
+.external-link:hover,
+.internal-link:hover {
+  color: var(--text-accent-hover);
+  text-decoration: none;
+  border-bottom-color: currentColor;
+}
+
+/* ========================================
+   Inline Code
+   ======================================== */
+
+/* Reading view — single <code> element, matches Typora exactly */
+.markdown-rendered code {
+  background: var(--inline-code-background) !important;
+  border: 1px solid var(--inline-code-border) !important;
+  border-radius: 6px;
+  color: var(--inline-code-color) !important;
+  font-family: var(--font-monospace-theme);
+  font-size: 0.85em;
+  padding: 2px 8px;
+}
+
+/* Exclude code inside pre blocks */
+.markdown-rendered pre code {
+  background: transparent !important;
+  border: none !important;
+  color: var(--code-normal) !important;
+  padding: 0;
+  font-size: inherit;
+}
+
+/* Source / Live Preview — CM6 splits inline code into multiple <span>.
+   Border per-span will break, so only apply background + color here. */
+.cm-inline-code {
+  background: var(--inline-code-background) !important;
+  color: var(--inline-code-color) !important;
+  font-family: var(--font-monospace-theme);
+  font-size: 0.85em;
+  padding: 2px 4px;
+}
+
+/* Live preview (formatting marks hidden) — content is a single span,
+   safe to apply full border + radius like Typora */
+.is-live-preview .cm-inline-code:not(.cm-formatting) {
+  border: 1px solid var(--inline-code-border) !important;
+  border-radius: 6px;
+  padding: 2px 8px;
+}
+
+/* When cursor enters inline code, formatting marks appear —
+   make the backtick marks blend into the background strip */
+.cm-inline-code.cm-formatting {
+  opacity: 0.5;
+  padding: 2px 2px;
+}
+
+.markdown-rendered blockquote code {
+  background: var(--quote-inline-code-bg);
+  color: var(--quote-inline-code-color);
+  border-color: transparent;
+}
+
+.markdown-rendered table code {
+  background: var(--table-inline-code-bg);
+  border-color: var(--table-inline-code-border);
+  border-radius: 999px;
+  padding: 2px 10px;
+  font-size: 0.85em;
+}
+
+/* ========================================
+   Keyboard Keys (<kbd>)
+   ======================================== */
+.markdown-rendered kbd {
+  font-family: var(--font-monospace-theme);
+  font-size: 0.8em;
+  padding: 2px 8px;
+  border-radius: 5px;
+  background: var(--inline-code-background);
+  border: 1px solid var(--inline-code-border);
+  border-bottom-width: 2.5px;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
+  color: var(--text-normal);
+  white-space: nowrap;
+  vertical-align: baseline;
+  line-height: 1;
+}
+
+/* ========================================
+   Code Blocks - Reading View
+   ======================================== */
+.markdown-rendered pre {
+  font-family: var(--font-monospace-theme);
+  font-size: 0.875rem;
+  line-height: 1.6;
+  background: var(--code-background);
+  border: 1px solid var(--code-border-color);
+  border-radius: 16px;
+  padding: 16px 20px;
+  overflow-x: auto;
+  margin: 1em 0;
+}
+
+.markdown-rendered pre[class*="language-"],
+.markdown-rendered pre:has(> code[class*="language-"]) {
+  --pg-code-language-block-padding: 16px 20px;
+  padding: var(--pg-code-language-block-padding);
+  position: relative;
+}
+
+.markdown-rendered pre[class*="language-"]::before,
+.markdown-rendered pre:has(> code[class*="language-"])::before {
+  background: var(--background-primary);
+  border: 1px solid var(--code-border-color);
+  border-radius: 8px;
+  color: var(--text-muted);
+  content: var(--pg-code-language-label, none);
+  font-family: var(--font-interface-theme);
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 1;
+  opacity: 0;
+  padding: 4px 8px;
+  pointer-events: none;
+  position: absolute;
+  right: 64px;
+  top: 12px;
+  transition: opacity 0.15s ease;
+  z-index: 1;
+}
+
+.markdown-rendered pre[class*="language-"]:hover::before,
+.markdown-rendered pre[class*="language-"]:focus-within::before,
+.markdown-rendered pre:has(> code[class*="language-"]):hover::before,
+.markdown-rendered pre:has(> code[class*="language-"]):focus-within::before {
+  opacity: 0.82;
+}
+
+.markdown-rendered pre[class~="language-shell"],
+.markdown-rendered pre:has(> code[class~="language-shell"]),
+.markdown-rendered pre[class~="language-bash"],
+.markdown-rendered pre:has(> code[class~="language-bash"]),
+.markdown-rendered pre[class~="language-sh"],
+.markdown-rendered pre:has(> code[class~="language-sh"]),
+.markdown-rendered pre[class~="language-zsh"],
+.markdown-rendered pre:has(> code[class~="language-zsh"]) {
+  --pg-code-language-label: "Shell";
+}
+
+.markdown-rendered pre[class~="language-powershell"],
+.markdown-rendered pre:has(> code[class~="language-powershell"]),
+.markdown-rendered pre[class~="language-pwsh"],
+.markdown-rendered pre:has(> code[class~="language-pwsh"]),
+.markdown-rendered pre[class~="language-ps1"],
+.markdown-rendered pre:has(> code[class~="language-ps1"]) {
+  --pg-code-language-label: "PowerShell";
+}
+
+.markdown-rendered pre[class~="language-json"],
+.markdown-rendered pre:has(> code[class~="language-json"]) {
+  --pg-code-language-label: "JSON";
+}
+
+.markdown-rendered pre[class~="language-css"],
+.markdown-rendered pre:has(> code[class~="language-css"]) {
+  --pg-code-language-label: "CSS";
+}
+
+.markdown-rendered pre[class~="language-scss"],
+.markdown-rendered pre:has(> code[class~="language-scss"]) {
+  --pg-code-language-label: "SCSS";
+}
+
+.markdown-rendered pre[class~="language-sass"],
+.markdown-rendered pre:has(> code[class~="language-sass"]) {
+  --pg-code-language-label: "Sass";
+}
+
+.markdown-rendered pre[class~="language-javascript"],
+.markdown-rendered pre:has(> code[class~="language-javascript"]),
+.markdown-rendered pre[class~="language-js"],
+.markdown-rendered pre:has(> code[class~="language-js"]) {
+  --pg-code-language-label: "JS";
+}
+
+.markdown-rendered pre[class~="language-typescript"],
+.markdown-rendered pre:has(> code[class~="language-typescript"]),
+.markdown-rendered pre[class~="language-ts"],
+.markdown-rendered pre:has(> code[class~="language-ts"]) {
+  --pg-code-language-label: "TS";
+}
+
+.markdown-rendered pre[class~="language-jsx"],
+.markdown-rendered pre:has(> code[class~="language-jsx"]) {
+  --pg-code-language-label: "JSX";
+}
+
+.markdown-rendered pre[class~="language-tsx"],
+.markdown-rendered pre:has(> code[class~="language-tsx"]) {
+  --pg-code-language-label: "TSX";
+}
+
+.markdown-rendered pre[class~="language-python"],
+.markdown-rendered pre:has(> code[class~="language-python"]),
+.markdown-rendered pre[class~="language-py"],
+.markdown-rendered pre:has(> code[class~="language-py"]) {
+  --pg-code-language-label: "Python";
+}
+
+.markdown-rendered pre[class~="language-html"],
+.markdown-rendered pre:has(> code[class~="language-html"]) {
+  --pg-code-language-label: "HTML";
+}
+
+.markdown-rendered pre[class~="language-xml"],
+.markdown-rendered pre:has(> code[class~="language-xml"]) {
+  --pg-code-language-label: "XML";
+}
+
+.markdown-rendered pre[class~="language-svg"],
+.markdown-rendered pre:has(> code[class~="language-svg"]) {
+  --pg-code-language-label: "SVG";
+}
+
+.markdown-rendered pre[class~="language-markdown"],
+.markdown-rendered pre:has(> code[class~="language-markdown"]),
+.markdown-rendered pre[class~="language-md"],
+.markdown-rendered pre:has(> code[class~="language-md"]) {
+  --pg-code-language-label: "Markdown";
+}
+
+.markdown-rendered pre[class~="language-yaml"],
+.markdown-rendered pre:has(> code[class~="language-yaml"]),
+.markdown-rendered pre[class~="language-yml"],
+.markdown-rendered pre:has(> code[class~="language-yml"]) {
+  --pg-code-language-label: "YAML";
+}
+
+.markdown-rendered pre[class~="language-toml"],
+.markdown-rendered pre:has(> code[class~="language-toml"]) {
+  --pg-code-language-label: "TOML";
+}
+
+.markdown-rendered pre[class~="language-sql"],
+.markdown-rendered pre:has(> code[class~="language-sql"]) {
+  --pg-code-language-label: "SQL";
+}
+
+.markdown-rendered pre[class~="language-dockerfile"],
+.markdown-rendered pre:has(> code[class~="language-dockerfile"]) {
+  --pg-code-language-label: "Dockerfile";
+}
+
+.markdown-rendered pre[class~="language-ini"],
+.markdown-rendered pre:has(> code[class~="language-ini"]) {
+  --pg-code-language-label: "INI";
+}
+
+.markdown-rendered pre[class~="language-java"],
+.markdown-rendered pre:has(> code[class~="language-java"]) {
+  --pg-code-language-label: "Java";
+}
+
+.markdown-rendered pre[class~="language-c"],
+.markdown-rendered pre:has(> code[class~="language-c"]) {
+  --pg-code-language-label: "C";
+}
+
+.markdown-rendered pre[class~="language-cpp"],
+.markdown-rendered pre:has(> code[class~="language-cpp"]),
+.markdown-rendered pre[class~="language-cxx"],
+.markdown-rendered pre:has(> code[class~="language-cxx"]) {
+  --pg-code-language-label: "C++";
+}
+
+.markdown-rendered pre[class~="language-csharp"],
+.markdown-rendered pre:has(> code[class~="language-csharp"]),
+.markdown-rendered pre[class~="language-cs"],
+.markdown-rendered pre:has(> code[class~="language-cs"]) {
+  --pg-code-language-label: "C#";
+}
+
+.markdown-rendered pre[class~="language-go"],
+.markdown-rendered pre:has(> code[class~="language-go"]) {
+  --pg-code-language-label: "Go";
+}
+
+.markdown-rendered pre[class~="language-rust"],
+.markdown-rendered pre:has(> code[class~="language-rust"]),
+.markdown-rendered pre[class~="language-rs"],
+.markdown-rendered pre:has(> code[class~="language-rs"]) {
+  --pg-code-language-label: "Rust";
+}
+
+.markdown-rendered pre[class~="language-ruby"],
+.markdown-rendered pre:has(> code[class~="language-ruby"]),
+.markdown-rendered pre[class~="language-rb"],
+.markdown-rendered pre:has(> code[class~="language-rb"]) {
+  --pg-code-language-label: "Ruby";
+}
+
+.markdown-rendered pre[class~="language-php"],
+.markdown-rendered pre:has(> code[class~="language-php"]) {
+  --pg-code-language-label: "PHP";
+}
+
+.markdown-rendered pre code {
+  background: transparent !important;
+  border: none !important;
+  color: var(--code-normal) !important;
+  font-size: 0.875rem;
+  padding: 0;
+  border-radius: 0;
+  counter-reset: codeblock-line;
+  display: block;
+}
+
+/* ========================================
+   Code Blocks - Source / Live Preview
+   ======================================== */
+.markdown-source-view.mod-cm6 .HyperMD-codeblock {
+  background: var(--code-background) !important;
+  color: var(--code-normal);
+  font-family: var(--font-monospace-theme);
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+
+.markdown-source-view.mod-cm6 .cm-lineNumbers .cm-gutterElement {
+  color: var(--text-faint);
+  opacity: 0.6;
+  font-size: 0.8em;
+  min-width: 2.5em;
+  text-align: right;
+}
+
+.markdown-source-view.mod-cm6 .HyperMD-codeblock-begin {
+  border-top: 1px solid var(--code-border-color);
+  border-left: 1px solid var(--code-border-color);
+  border-right: 1px solid var(--code-border-color);
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  padding-top: 8px;
+}
+
+.markdown-source-view.mod-cm6 .HyperMD-codeblock-end {
+  border-bottom: 1px solid var(--code-border-color);
+  border-left: 1px solid var(--code-border-color);
+  border-right: 1px solid var(--code-border-color);
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  padding-bottom: 8px;
+}
+
+.markdown-source-view.mod-cm6 .HyperMD-codeblock:not(.HyperMD-codeblock-begin):not(.HyperMD-codeblock-end) {
+  border-left: 1px solid var(--code-border-color);
+  border-right: 1px solid var(--code-border-color);
+}
+
+/* ========================================
+   Blockquote
+   ======================================== */
+.markdown-rendered blockquote,
+.markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote {
+  background: var(--blockquote-background-color);
+  color: var(--text-muted);
+  font-style: normal;
+  line-height: 1.5;
+}
+
+.markdown-rendered blockquote {
+  background: var(--blockquote-background-color);
+  border: none;
+  border-left: 3px solid var(--blockquote-border-color);
+  border-radius: 0 8px 8px 0;
+  color: var(--text-muted);
+  margin: 1.5em 0;
+  padding: 16px 20px;
+  font-style: normal;
+}
+
+.markdown-rendered blockquote p,
+.markdown-rendered blockquote li {
+  color: var(--text-muted);
+}
+
+.markdown-rendered blockquote p {
+  margin: 0 0 0.6em 0;
+  line-height: 1.5;
+}
+
+.markdown-rendered blockquote > :first-child {
+  margin-top: 0;
+}
+
+.markdown-rendered blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote {
+  margin: 0;
+  padding: 0 20px 0 20px;
+}
+
+.markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote:not(:has(.cm-quote)) {
+  line-height: 0.85;
+}
+
+.markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote:before {
+  border-inline-start: 3px solid var(--blockquote-border-color);
+}
+
+.markdown-source-view.mod-cm6 .cm-blockquote-border:before {
+  border-inline-start: 2px solid var(--background-modifier-border-hover);
+  inset-inline-start: 0;
+}
+
+.markdown-source-view.mod-cm6 .cm-blockquote-border {
+  display: inline-block;
+  position: relative;
+  width: 1px;
+  margin-left: 0;
+  margin-right: 20px;
+}
+
+.markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote:has(.cm-blockquote-border) {
+  --pg-blockquote-nested-panel-start: 20px;
+  background: linear-gradient(
+    to right,
+    var(--blockquote-background-color) 0 var(--pg-blockquote-nested-panel-start),
+    var(--blockquote-nested-background) var(--pg-blockquote-nested-panel-start) 100%
+  );
+}
+
+.markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote:has(.cm-blockquote-border + .cm-blockquote-border) {
+  --pg-blockquote-nested-panel-start: 41px;
+}
+
+.markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote:has(.cm-blockquote-border + .cm-blockquote-border + .cm-blockquote-border) {
+  --pg-blockquote-nested-panel-start: 62px;
+}
+
+.markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote:has(.cm-blockquote-border + .cm-blockquote-border + .cm-blockquote-border + .cm-blockquote-border) {
+  --pg-blockquote-nested-panel-start: 83px;
+}
+
+.markdown-source-view.mod-cm6.is-live-preview .cm-line:not(.HyperMD-quote)+.HyperMD-quote,
+.markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote:first-child {
+  border-top-right-radius: 8px;
+  margin-top: 1.5em;
+  padding-top: 16px;
+}
+
+.markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote:has(+ .cm-line:not(.HyperMD-quote)),
+.markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote:last-child {
+  border-bottom-right-radius: 8px;
+  margin-bottom: 1.5em;
+  padding-bottom: 16px;
+}
+
+.markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote:not(:has(.cm-blockquote-border))+.HyperMD-quote:has(.cm-blockquote-border),
+.markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote:first-child:has(.cm-blockquote-border) {
+  border-top-right-radius: 8px;
+  margin-top: 0.6em;
+  padding-top: 16px;
+}
+
+.markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote:has(.cm-blockquote-border):has(+ .HyperMD-quote:not(:has(.cm-blockquote-border))),
+.markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote:has(.cm-blockquote-border):has(+ .cm-line:not(.HyperMD-quote)),
+.markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote:last-child:has(.cm-blockquote-border) {
+  border-bottom-right-radius: 8px;
+  padding-bottom: 16px;
+}
+
+.markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote .cm-formatting-quote {
+  opacity: 0.55;
+}
+
+.markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote .cm-inline-code:not(.cm-formatting) {
+  background: var(--quote-inline-code-bg);
+  color: var(--quote-inline-code-color);
+  border-color: transparent;
+}
+
+.markdown-rendered blockquote blockquote {
+  margin: 0.6em 0 0 0;
+  border-left: 2px solid var(--background-modifier-border-hover);
+  background: var(--blockquote-nested-background);
+}
+
+.markdown-rendered blockquote strong {
+  font-weight: 700;
+  color: var(--text-normal);
+}
+
+/* ========================================
+   Callout — uniform warm card style (matches Typora)
+   ======================================== */
+.callout {
+  --callout-blend-mode: normal;
+  background: var(--blockquote-background-color) !important;
+  border: 1px solid var(--blockquote-border-color) !important;
+  border-left-width: 1px !important;
+  border-radius: 16px;
+  box-shadow: none;
+  padding: 20px 24px;
+  margin: 1em 0;
+  mix-blend-mode: normal;
+}
+
+.callout-title {
+  color: var(--text-normal);
+  font-weight: 600;
+  gap: 8px;
+}
+
+.callout-title-inner {
+  color: var(--text-normal);
+}
+
+.callout-icon .svg-icon,
+.callout-icon svg {
+  color: var(--interactive-accent) !important;
+}
+
+.callout-content,
+.callout-content p,
+.callout-content li {
+  color: var(--text-muted);
+}
+
+.callout-content a {
+  color: var(--text-muted);
+  border-bottom: 1px solid var(--link-border-color);
+}
+
+.callout-content a:hover {
+  border-bottom-color: var(--text-normal);
+}
+
+/* Override Obsidian's per-type callout colors & icons to match Typora/GitHub */
+.callout[data-callout="note"],
+.callout[data-callout="tip"],
+.callout[data-callout="important"],
+.callout[data-callout="warning"],
+.callout[data-callout="caution"],
+.callout[data-callout="abstract"],
+.callout[data-callout="summary"],
+.callout[data-callout="info"],
+.callout[data-callout="todo"],
+.callout[data-callout="success"],
+.callout[data-callout="question"],
+.callout[data-callout="help"],
+.callout[data-callout="failure"],
+.callout[data-callout="danger"],
+.callout[data-callout="bug"],
+.callout[data-callout="example"],
+.callout[data-callout="quote"],
+.callout[data-callout="cite"] {
+  --callout-color: 197, 140, 100;
+  background: var(--blockquote-background-color) !important;
+  border-color: var(--blockquote-border-color) !important;
+}
+
+
+/* ========================================
+   Horizontal Rule
+   ======================================== */
+.markdown-rendered hr,
+.markdown-source-view.mod-cm6.is-live-preview .HyperMD-hr {
+  margin: 2rem 0;
+}
+
+.markdown-rendered hr {
+  border: none;
+  border-top: 1px solid var(--table-border-color);
+}
+
+.markdown-source-view.mod-cm6.is-live-preview .HyperMD-hr {
+  border: none;
+  color: transparent;
+  position: relative;
+}
+
+.markdown-source-view.mod-cm6.is-live-preview .HyperMD-hr::after {
+  border-top: 1px solid var(--table-border-color);
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* ========================================
+   Tables — clean horizontal lines (matches Typora)
+   ======================================== */
+/* Force table wrapper to fill parent */
+.markdown-preview-view div:has(> table),
+.markdown-rendered div:has(> table),
+.table-container {
+  width: 100% !important;
+  max-width: 100% !important;
+  display: block !important;
+}
+
+.markdown-rendered table,
+.markdown-preview-view table {
+  border-collapse: collapse !important;
+  margin: 1.5em 0;
+  width: 100% !important;
+  min-width: 100% !important;
+  table-layout: auto;
+  font-size: 0.9375rem;
+  display: table !important;
+}
+
+.markdown-rendered table th,
+.markdown-rendered table td {
+  padding: 8px 16px 8px 1px;
+  text-align: left;
+  vertical-align: top;
+  font-size: inherit;
+  line-height: 1.7;
+  color: var(--text-normal);
+  border: none !important;
+  border-bottom: 0.5px solid rgba(var(--accent-rgb), 0.3) !important;
+}
+
+.markdown-rendered table th {
+  font-weight: 600;
+  border-bottom: 1px solid rgba(var(--accent-rgb), 0.6) !important;
+}
+
+.markdown-rendered table thead tr,
+.markdown-rendered table tbody tr {
+  border: none !important;
+  background: transparent !important;
+}
+
+.markdown-rendered table tbody tr:nth-child(2n) {
+  background: transparent !important;
+}
+
+.markdown-source-view.mod-cm6.is-live-preview .HyperMD-table-row {
+  border-bottom: 0.5px solid rgba(var(--accent-rgb), 0.3);
+  color: var(--text-normal);
+  font-size: 0.9375rem;
+  line-height: 1.7;
+  padding: 8px 0 8px 1px;
+}
+
+.markdown-source-view.mod-cm6.is-live-preview .HyperMD-table-row:first-of-type {
+  border-bottom: 1px solid rgba(var(--accent-rgb), 0.6);
+  font-weight: 600;
+}
+
+.markdown-source-view.mod-cm6.is-live-preview .HyperMD-table-row .cm-hmd-table-sep {
+  color: var(--text-faint);
+  opacity: 0.55;
+}
+
+/* ========================================
+   Images
+   ======================================== */
+.markdown-rendered img,
+.markdown-preview-view img {
+  border-radius: 16px;
+  box-shadow: var(--card-shadow);
+}
+
+/* ========================================
+   Lists
+   ======================================== */
+.markdown-rendered,
+.markdown-preview-view,
+.markdown-source-view.mod-cm6 {
+  --list-marker-color: rgba(var(--accent-rgb), 0.78);
+  --list-marker-color-hover: rgba(var(--accent-rgb), 0.9);
+  --list-marker-color-collapsed: rgba(var(--accent-rgb), 0.58);
+}
+
+.markdown-rendered ol > li::marker,
+.markdown-preview-view ol > li::marker {
+  color: var(--list-marker-color);
+  font-size: var(--pg-list-ordered-marker-size);
+  font-weight: 600;
+}
+
+.markdown-source-view.mod-cm6.is-live-preview .HyperMD-list-line .cm-formatting-list-ol,
+.markdown-source-view.mod-cm6.is-live-preview .HyperMD-list-line .list-number {
+  color: var(--list-marker-color);
+  font-size: var(--pg-list-ordered-marker-size);
+  font-weight: 600;
+}
+
+.markdown-rendered .list-bullet::after {
+  box-shadow: none;
+}
+
+.markdown-rendered ul ul > li,
+.markdown-rendered ul ol > li,
+.markdown-rendered ol ul > li,
+.markdown-rendered ol ol > li,
+.markdown-preview-view ul ul > li,
+.markdown-preview-view ul ol > li,
+.markdown-preview-view ol ul > li,
+.markdown-preview-view ol ol > li {
+  margin-inline-start: var(--pg-list-reading-nested-offset);
+}
+
+.markdown-rendered ul > li > .list-bullet::after,
+.markdown-rendered ul ul ul ul > li > .list-bullet::after,
+.markdown-rendered ul ul ul ul ul ul ul > li > .list-bullet::after {
+  background-color: var(--list-marker-color);
+  border: none;
+  border-radius: 999px;
+  height: var(--pg-list-bullet-size-round);
+  width: var(--pg-list-bullet-size-round);
+}
+
+.markdown-rendered ul ul > li > .list-bullet::after,
+.markdown-rendered ul ul ul ul ul > li > .list-bullet::after,
+.markdown-rendered ul ul ul ul ul ul ul ul > li > .list-bullet::after {
+  background-color: transparent;
+  border: 1.2px solid var(--list-marker-color);
+  border-radius: 999px;
+  height: var(--pg-list-bullet-size-round);
+  width: var(--pg-list-bullet-size-round);
+}
+
+.markdown-rendered ul ul ul > li > .list-bullet::after,
+.markdown-rendered ul ul ul ul ul ul > li > .list-bullet::after,
+.markdown-rendered ul ul ul ul ul ul ul ul ul > li > .list-bullet::after {
+  background-color: var(--list-marker-color);
+  border: none;
+  border-radius: 1px;
+  height: var(--pg-list-bullet-size-square);
+  width: var(--pg-list-bullet-size-square);
+}
+
+.markdown-source-view.mod-cm6.is-live-preview .HyperMD-list-line .list-bullet::after {
+  box-shadow: none;
+}
+
+.markdown-source-view.mod-cm6.is-live-preview .HyperMD-list-line-1 .list-bullet::after,
+.markdown-source-view.mod-cm6.is-live-preview .HyperMD-list-line-4 .list-bullet::after,
+.markdown-source-view.mod-cm6.is-live-preview .HyperMD-list-line-7 .list-bullet::after {
+  background-color: var(--list-marker-color);
+  border: none;
+  border-radius: 999px;
+  height: var(--pg-list-bullet-size-round);
+  width: var(--pg-list-bullet-size-round);
+}
+
+.markdown-source-view.mod-cm6.is-live-preview .HyperMD-list-line-2 .list-bullet::after,
+.markdown-source-view.mod-cm6.is-live-preview .HyperMD-list-line-5 .list-bullet::after,
+.markdown-source-view.mod-cm6.is-live-preview .HyperMD-list-line-8 .list-bullet::after {
+  background-color: transparent;
+  border: 1.2px solid var(--list-marker-color);
+  border-radius: 999px;
+  height: var(--pg-list-bullet-size-round);
+  width: var(--pg-list-bullet-size-round);
+}
+
+.markdown-source-view.mod-cm6.is-live-preview .HyperMD-list-line-3 .list-bullet::after,
+.markdown-source-view.mod-cm6.is-live-preview .HyperMD-list-line-6 .list-bullet::after,
+.markdown-source-view.mod-cm6.is-live-preview .HyperMD-list-line-9 .list-bullet::after {
+  background-color: var(--list-marker-color);
+  border: none;
+  border-radius: 1px;
+  height: var(--pg-list-bullet-size-square);
+  width: var(--pg-list-bullet-size-square);
+}
+
+/* ========================================
+   Task List
+   ======================================== */
+.markdown-rendered input[type="checkbox"],
+.task-list-item-checkbox {
+  accent-color: var(--interactive-accent);
+}
+
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-task-line[data-task="x"],
+.markdown-rendered .task-list-item.is-checked {
+  color: var(--text-faint);
+  text-decoration: line-through;
+}
+
+/* ========================================
+   Tags
+   ======================================== */
+.tag,
+.cm-hashtag {
+  background: var(--tag-background);
+  border-radius: 999px;
+  color: var(--tag-color);
+  padding: 2px 8px;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.tag:hover,
+.cm-hashtag:hover {
+  background: rgba(var(--accent-rgb), 0.18);
+  color: var(--color-accent-2);
+}
+
+/* ========================================
+   Metadata / Properties
+   ======================================== */
+.metadata-container {
+  border-bottom: 1px solid var(--divider-color);
+}
+
+.metadata-container .metadata-add-button,
+.metadata-container .metadata-properties-heading {
+  color: var(--text-muted);
+}
+
+.metadata-container .metadata-add-button:hover {
+  color: var(--text-normal);
+  background: var(--background-modifier-hover);
+}
+
+.metadata-property-key-input,
+.metadata-property-value-input,
+.metadata-input-longtext {
+  color: var(--text-normal);
+}
+
+.multi-select-pill {
+  background: var(--tag-background);
+  color: var(--tag-color);
+}
+
+.multi-select-pill:hover,
+.multi-select-pill.is-focused {
+  background: rgba(var(--accent-rgb), 0.18);
+  color: var(--color-accent-2);
+}
+
+/* ========================================
+   Unresolved Links
+   ======================================== */
+.is-unresolved {
+  color: #bb5a49;
+  opacity: 0.88;
+}
+
+/* ========================================
+   Syntax Highlighting - CodeMirror
+   ======================================== */
+.cm-s-obsidian span.cm-formatting-link,
+.cm-s-obsidian span.cm-url,
+.cm-s-obsidian span.cm-string.cm-url {
+  color: var(--text-muted);
+}
+
+.cm-s-obsidian span.cm-keyword {
+  color: var(--code-keyword);
+}
+
+.cm-s-obsidian span.cm-string {
+  color: var(--code-string);
+}
+
+.cm-s-obsidian span.cm-def,
+.cm-s-obsidian span.cm-variable-2 {
+  color: var(--code-function);
+}
+
+.cm-s-obsidian span.cm-number,
+.cm-s-obsidian span.cm-atom {
+  color: var(--code-value);
+}
+
+.cm-s-obsidian span.cm-comment {
+  color: var(--code-comment);
+  font-style: italic;
+}
+
+.cm-s-obsidian span.cm-operator,
+.cm-s-obsidian span.cm-variable {
+  color: var(--code-operator);
+}
+
+.cm-s-obsidian span.cm-tag {
+  color: var(--code-tag);
+}
+
+/* ========================================
+   Text Selection
+   ======================================== */
+.markdown-source-view.mod-cm6 .cm-selectionBackground,
+.markdown-source-view.mod-cm6.cm-focused > .cm-scroller > .cm-selectionLayer .cm-selectionBackground {
+  background-color: var(--text-selection) !important;
+  border-radius: 4px;
+}
+
+::selection {
+  background-color: var(--text-selection);
+  color: var(--text-normal);
+}
+
+pre::selection,
+pre *::selection,
+code::selection,
+code *::selection {
+  background-color: var(--text-selection) !important;
+}
+
+/* ========================================
+   Scrollbar
+   ======================================== */
+.nav-files-container,
+.workspace-tab-container,
+.workspace-tab-header-container-inner {
+  scrollbar-color: var(--scrollbar-thumb-bg) transparent;
+}
+
+/* ========================================
+   Responsive
+   ======================================== */
+@media (max-width: 960px) {
+
+  .workspace-leaf-content[data-type="markdown"] .markdown-preview-sizer,
+  .workspace-leaf-content[data-type="markdown"] .cm-sizer {
+    padding: 32px 24px 48px !important;
+  }
+}
+
+/* ========================================
+   Mermaid Diagrams — dark warm override
+   ======================================== */
+.theme-dark .mermaid .node rect,
+.theme-dark .mermaid .node circle,
+.theme-dark .mermaid .node ellipse,
+.theme-dark .mermaid .node polygon {
+  fill: #3a3430 !important;
+  stroke: #d59567 !important;
+  stroke-width: 1.5px !important;
+}
+
+.theme-dark .mermaid .nodeLabel,
+.theme-dark .mermaid .label {
+  color: #faf8f3 !important;
+  fill: #faf8f3 !important;
+}
+
+.theme-dark .mermaid .edgePath path,
+.theme-dark .mermaid path.flowchart-link,
+.theme-dark .mermaid .edge-pattern-solid,
+.theme-dark .mermaid [class*="edgePath"] path,
+.theme-dark .mermaid line {
+  stroke: #b3a799 !important;
+  stroke-width: 1.5px !important;
+}
+
+.theme-dark .mermaid .arrowheadPath,
+.theme-dark .mermaid marker path,
+.theme-dark .mermaid [id*="arrowhead"] path,
+.theme-dark .mermaid defs marker path {
+  fill: #b3a799 !important;
+  stroke: #b3a799 !important;
+}
+
+.theme-dark .mermaid .edgeLabel {
+  background-color: #2b2926 !important;
+  color: #d5cdc0 !important;
+}
+
+.theme-dark .mermaid .edgeLabel rect {
+  fill: #2b2926 !important;
+  opacity: 1 !important;
+}
+
+.theme-dark .mermaid .cluster rect {
+  fill: #2e2a27 !important;
+  stroke: #584a3e !important;
+}
+
+.theme-dark .mermaid .cluster span {
+  color: #d5cdc0 !important;
+}

@@ -1,0 +1,2301 @@
+/* @settings
+
+name: Terminal Workbench
+id: terminal-workbench
+settings:
+  - id: ta-colors
+    title: Colors
+    type: heading
+    level: 1
+  - id: ta-accent
+    title: Primary accent
+    description: Main prompt, active tab, and link color. Follows your Obsidian accent color until overridden here.
+    type: variable-themed-color
+    format: hex
+    default-light: '#007a4d'
+    default-dark: '#63f2ab'
+  - id: ta-accent-alt
+    title: Secondary accent
+    description: Used for sidebars, metadata, and quiet highlights.
+    type: variable-themed-color
+    format: hex
+    default-light: '#006f9e'
+    default-dark: '#6bdcff'
+  - id: ta-warm
+    title: Warm accent
+    description: Used for warnings, highlights, and subtle attention.
+    type: variable-themed-color
+    format: hex
+    default-light: '#a46600'
+    default-dark: '#f0c674'
+  - id: ta-layout
+    title: Layout
+    type: heading
+    level: 1
+  - id: ta-editor-line-width
+    title: Editor line width
+    description: Reading and editing width in pixels.
+    type: variable-number-slider
+    format: px
+    default: 780
+    min: 620
+    max: 1040
+    step: 20
+  - id: ta-ui-radius
+    title: UI radius
+    description: Corner radius for controls and panes.
+    type: variable-number-slider
+    format: px
+    default: 6
+    min: 0
+    max: 8
+    step: 1
+  - id: ta-compact
+    title: Compact workspace
+    description: Tightens sidebars, tabs, and headers.
+    type: class-toggle
+    default: false
+  - id: ta-soft-neon
+    title: Soft neon highlights
+    description: Adds a restrained glow to active elements.
+    type: class-toggle
+    default: false
+  - id: ta-terminal-prompts
+    title: Active-line prompt marker
+    description: Shows a small terminal prompt beside the active editor line.
+    type: class-toggle
+    default: false
+  - id: ta-fonts
+    title: Fonts
+    type: heading
+    level: 1
+  - id: ta-font-editor
+    title: Editor font
+    type: variable-text
+    default: '"Berkeley Mono", "JetBrains Mono", "Cascadia Code", "IBM Plex Mono", "SFMono-Regular", Consolas, monospace'
+  - id: ta-font-ui
+    title: UI font
+    type: variable-text
+    default: '"Inter", "SF Pro Text", "Segoe UI", system-ui, sans-serif'
+  - id: ta-font-code
+    title: Code font
+    type: variable-text
+    default: '"Berkeley Mono", "JetBrains Mono", "Cascadia Code", "IBM Plex Mono", "SFMono-Regular", Consolas, monospace'
+  - id: ta-explorer
+    title: File explorer
+    type: heading
+    level: 1
+  - id: ta-colored-folders
+    title: Colored folders
+    description: Gives each top-level folder its own color from the six below, cycled by order; every subfolder and note inside inherits its top folder's color.
+    type: class-toggle
+    default: false
+  - id: ta-folder-1
+    title: Folder color 1
+    type: variable-themed-color
+    format: hex
+    default-light: '#007a4d'
+    default-dark: '#63f2ab'
+  - id: ta-folder-2
+    title: Folder color 2
+    type: variable-themed-color
+    format: hex
+    default-light: '#006f9e'
+    default-dark: '#6bdcff'
+  - id: ta-folder-3
+    title: Folder color 3
+    type: variable-themed-color
+    format: hex
+    default-light: '#a46600'
+    default-dark: '#f0c674'
+  - id: ta-folder-4
+    title: Folder color 4
+    type: variable-themed-color
+    format: hex
+    default-light: '#7357b8'
+    default-dark: '#b78cff'
+  - id: ta-folder-5
+    title: Folder color 5
+    type: variable-themed-color
+    format: hex
+    default-light: '#b65800'
+    default-dark: '#f7a35c'
+  - id: ta-folder-6
+    title: Folder color 6
+    type: variable-themed-color
+    format: hex
+    default-light: '#c8324c'
+    default-dark: '#ff6e7a'
+  - id: ta-file-color
+    title: File name color
+    type: variable-themed-color
+    format: hex
+    default-light: '#60706a'
+    default-dark: '#879994'
+  - id: ta-headings
+    title: Headings
+    type: heading
+    level: 1
+  - id: ta-plain-headings
+    title: Neutral heading colors
+    description: Uses the normal text color for H2-H4 instead of the accent colors.
+    type: class-toggle
+    default: false
+  - id: ta-no-heading-rules
+    title: Hide heading underline rules
+    description: Removes the fading rule below H1 and H2.
+    type: class-toggle
+    default: false
+  - id: ta-editor
+    title: Editor
+    type: heading
+    level: 1
+  - id: ta-no-active-line
+    title: Hide active line highlight
+    description: Removes the tinted background and accent bar on the active editor line.
+    type: class-toggle
+    default: false
+  - id: ta-no-blockquote-glyph
+    title: Hide blockquote marker
+    description: Removes the ">" glyph at the start of blockquotes.
+    type: class-toggle
+    default: false
+  - id: line-height-normal
+    title: Text line height
+    type: variable-number-slider
+    default: 1.7
+    min: 1.4
+    max: 1.9
+    step: 0.05
+  - id: ta-code-blocks
+    title: Code blocks
+    type: heading
+    level: 1
+  - id: ta-plain-code-header
+    title: Hide code block header band
+    description: Removes the header strip and glyph, leaving a plain framed block.
+    type: class-toggle
+    default: false
+  - id: ta-chrome
+    title: Workspace chrome
+    type: heading
+    level: 1
+  - id: ta-plain-tabs
+    title: Plain tab titles
+    description: Interface font tab titles instead of uppercase monospace.
+    type: class-toggle
+    default: false
+  - id: ta-plain-breadcrumb
+    title: Plain breadcrumb
+    description: Interface font note path instead of the monospace shell style.
+    type: class-toggle
+    default: false
+  - id: ta-tasks-tags
+    title: Tasks and tags
+    type: heading
+    level: 1
+  - id: ta-plain-tasks
+    title: Neutral task states
+    description: Cancelled, deferred, and important tasks use the standard checkbox color.
+    type: class-toggle
+    default: false
+  - id: tag-radius
+    title: Tag shape
+    type: variable-select
+    default: '4px'
+    options:
+      - label: Square
+        value: '4px'
+      - label: Pill
+        value: '999px'
+  - id: ta-mermaid
+    title: Mermaid
+    type: heading
+    level: 1
+  - id: ta-plain-mermaid
+    title: Stock Mermaid diagrams
+    description: Disables the theme's diagram styling and uses Obsidian's defaults.
+    type: class-toggle
+    default: false
+  - id: ta-callouts
+    title: Callout colors
+    type: heading
+    level: 1
+    collapsed: true
+  - id: ta-callouts-info
+    title: Recolor callouts
+    description: Pick a palette color for each callout type. Aliases follow their base type (for example, hint follows Tip, and caution follows Warning).
+    type: info-text
+    markdown: false
+  - id: callout-default
+    title: Note callout
+    type: variable-select
+    default: 'var(--ta-green-rgb)'
+    options:
+      - label: Blue
+        value: 'var(--color-blue-rgb)'
+      - label: Green
+        value: 'var(--ta-green-rgb)'
+      - label: Cyan
+        value: 'var(--ta-cyan-rgb)'
+      - label: Amber
+        value: 'var(--ta-amber-rgb)'
+      - label: Orange
+        value: 'var(--ta-orange-rgb)'
+      - label: Red
+        value: 'var(--ta-red-rgb)'
+      - label: Violet
+        value: 'var(--ta-violet-rgb)'
+      - label: Gray
+        value: 'var(--ta-gray-rgb)'
+  - id: callout-summary
+    title: Abstract / Summary callout
+    type: variable-select
+    default: 'var(--ta-cyan-rgb)'
+    options:
+      - label: Blue
+        value: 'var(--color-blue-rgb)'
+      - label: Green
+        value: 'var(--ta-green-rgb)'
+      - label: Cyan
+        value: 'var(--ta-cyan-rgb)'
+      - label: Amber
+        value: 'var(--ta-amber-rgb)'
+      - label: Orange
+        value: 'var(--ta-orange-rgb)'
+      - label: Red
+        value: 'var(--ta-red-rgb)'
+      - label: Violet
+        value: 'var(--ta-violet-rgb)'
+      - label: Gray
+        value: 'var(--ta-gray-rgb)'
+  - id: callout-info
+    title: Info callout
+    type: variable-select
+    default: 'var(--ta-cyan-rgb)'
+    options:
+      - label: Blue
+        value: 'var(--color-blue-rgb)'
+      - label: Green
+        value: 'var(--ta-green-rgb)'
+      - label: Cyan
+        value: 'var(--ta-cyan-rgb)'
+      - label: Amber
+        value: 'var(--ta-amber-rgb)'
+      - label: Orange
+        value: 'var(--ta-orange-rgb)'
+      - label: Red
+        value: 'var(--ta-red-rgb)'
+      - label: Violet
+        value: 'var(--ta-violet-rgb)'
+      - label: Gray
+        value: 'var(--ta-gray-rgb)'
+  - id: callout-todo
+    title: Todo callout
+    type: variable-select
+    default: 'var(--ta-cyan-rgb)'
+    options:
+      - label: Blue
+        value: 'var(--color-blue-rgb)'
+      - label: Green
+        value: 'var(--ta-green-rgb)'
+      - label: Cyan
+        value: 'var(--ta-cyan-rgb)'
+      - label: Amber
+        value: 'var(--ta-amber-rgb)'
+      - label: Orange
+        value: 'var(--ta-orange-rgb)'
+      - label: Red
+        value: 'var(--ta-red-rgb)'
+      - label: Violet
+        value: 'var(--ta-violet-rgb)'
+      - label: Gray
+        value: 'var(--ta-gray-rgb)'
+  - id: callout-tip
+    title: Tip / Hint callout
+    type: variable-select
+    default: 'var(--ta-cyan-rgb)'
+    options:
+      - label: Blue
+        value: 'var(--color-blue-rgb)'
+      - label: Green
+        value: 'var(--ta-green-rgb)'
+      - label: Cyan
+        value: 'var(--ta-cyan-rgb)'
+      - label: Amber
+        value: 'var(--ta-amber-rgb)'
+      - label: Orange
+        value: 'var(--ta-orange-rgb)'
+      - label: Red
+        value: 'var(--ta-red-rgb)'
+      - label: Violet
+        value: 'var(--ta-violet-rgb)'
+      - label: Gray
+        value: 'var(--ta-gray-rgb)'
+  - id: callout-important
+    title: Important callout
+    type: variable-select
+    default: 'var(--ta-cyan-rgb)'
+    options:
+      - label: Blue
+        value: 'var(--color-blue-rgb)'
+      - label: Green
+        value: 'var(--ta-green-rgb)'
+      - label: Cyan
+        value: 'var(--ta-cyan-rgb)'
+      - label: Amber
+        value: 'var(--ta-amber-rgb)'
+      - label: Orange
+        value: 'var(--ta-orange-rgb)'
+      - label: Red
+        value: 'var(--ta-red-rgb)'
+      - label: Violet
+        value: 'var(--ta-violet-rgb)'
+      - label: Gray
+        value: 'var(--ta-gray-rgb)'
+  - id: callout-success
+    title: Success / Done callout
+    type: variable-select
+    default: 'var(--ta-green-rgb)'
+    options:
+      - label: Blue
+        value: 'var(--color-blue-rgb)'
+      - label: Green
+        value: 'var(--ta-green-rgb)'
+      - label: Cyan
+        value: 'var(--ta-cyan-rgb)'
+      - label: Amber
+        value: 'var(--ta-amber-rgb)'
+      - label: Orange
+        value: 'var(--ta-orange-rgb)'
+      - label: Red
+        value: 'var(--ta-red-rgb)'
+      - label: Violet
+        value: 'var(--ta-violet-rgb)'
+      - label: Gray
+        value: 'var(--ta-gray-rgb)'
+  - id: callout-question
+    title: Question / Help callout
+    type: variable-select
+    default: 'var(--ta-violet-rgb)'
+    options:
+      - label: Blue
+        value: 'var(--color-blue-rgb)'
+      - label: Green
+        value: 'var(--ta-green-rgb)'
+      - label: Cyan
+        value: 'var(--ta-cyan-rgb)'
+      - label: Amber
+        value: 'var(--ta-amber-rgb)'
+      - label: Orange
+        value: 'var(--ta-orange-rgb)'
+      - label: Red
+        value: 'var(--ta-red-rgb)'
+      - label: Violet
+        value: 'var(--ta-violet-rgb)'
+      - label: Gray
+        value: 'var(--ta-gray-rgb)'
+  - id: callout-warning
+    title: Warning / Caution callout
+    type: variable-select
+    default: 'var(--ta-orange-rgb)'
+    options:
+      - label: Blue
+        value: 'var(--color-blue-rgb)'
+      - label: Green
+        value: 'var(--ta-green-rgb)'
+      - label: Cyan
+        value: 'var(--ta-cyan-rgb)'
+      - label: Amber
+        value: 'var(--ta-amber-rgb)'
+      - label: Orange
+        value: 'var(--ta-orange-rgb)'
+      - label: Red
+        value: 'var(--ta-red-rgb)'
+      - label: Violet
+        value: 'var(--ta-violet-rgb)'
+      - label: Gray
+        value: 'var(--ta-gray-rgb)'
+  - id: callout-fail
+    title: Failure / Missing callout
+    type: variable-select
+    default: 'var(--ta-red-rgb)'
+    options:
+      - label: Blue
+        value: 'var(--color-blue-rgb)'
+      - label: Green
+        value: 'var(--ta-green-rgb)'
+      - label: Cyan
+        value: 'var(--ta-cyan-rgb)'
+      - label: Amber
+        value: 'var(--ta-amber-rgb)'
+      - label: Orange
+        value: 'var(--ta-orange-rgb)'
+      - label: Red
+        value: 'var(--ta-red-rgb)'
+      - label: Violet
+        value: 'var(--ta-violet-rgb)'
+      - label: Gray
+        value: 'var(--ta-gray-rgb)'
+  - id: callout-error
+    title: Danger / Error callout
+    type: variable-select
+    default: 'var(--ta-red-rgb)'
+    options:
+      - label: Blue
+        value: 'var(--color-blue-rgb)'
+      - label: Green
+        value: 'var(--ta-green-rgb)'
+      - label: Cyan
+        value: 'var(--ta-cyan-rgb)'
+      - label: Amber
+        value: 'var(--ta-amber-rgb)'
+      - label: Orange
+        value: 'var(--ta-orange-rgb)'
+      - label: Red
+        value: 'var(--ta-red-rgb)'
+      - label: Violet
+        value: 'var(--ta-violet-rgb)'
+      - label: Gray
+        value: 'var(--ta-gray-rgb)'
+  - id: callout-bug
+    title: Bug callout
+    type: variable-select
+    default: 'var(--ta-red-rgb)'
+    options:
+      - label: Blue
+        value: 'var(--color-blue-rgb)'
+      - label: Green
+        value: 'var(--ta-green-rgb)'
+      - label: Cyan
+        value: 'var(--ta-cyan-rgb)'
+      - label: Amber
+        value: 'var(--ta-amber-rgb)'
+      - label: Orange
+        value: 'var(--ta-orange-rgb)'
+      - label: Red
+        value: 'var(--ta-red-rgb)'
+      - label: Violet
+        value: 'var(--ta-violet-rgb)'
+      - label: Gray
+        value: 'var(--ta-gray-rgb)'
+  - id: callout-example
+    title: Example callout
+    type: variable-select
+    default: 'var(--ta-violet-rgb)'
+    options:
+      - label: Blue
+        value: 'var(--color-blue-rgb)'
+      - label: Green
+        value: 'var(--ta-green-rgb)'
+      - label: Cyan
+        value: 'var(--ta-cyan-rgb)'
+      - label: Amber
+        value: 'var(--ta-amber-rgb)'
+      - label: Orange
+        value: 'var(--ta-orange-rgb)'
+      - label: Red
+        value: 'var(--ta-red-rgb)'
+      - label: Violet
+        value: 'var(--ta-violet-rgb)'
+      - label: Gray
+        value: 'var(--ta-gray-rgb)'
+  - id: callout-quote
+    title: Quote / Cite callout
+    type: variable-select
+    default: 'var(--ta-gray-rgb)'
+    options:
+      - label: Blue
+        value: 'var(--color-blue-rgb)'
+      - label: Green
+        value: 'var(--ta-green-rgb)'
+      - label: Cyan
+        value: 'var(--ta-cyan-rgb)'
+      - label: Amber
+        value: 'var(--ta-amber-rgb)'
+      - label: Orange
+        value: 'var(--ta-orange-rgb)'
+      - label: Red
+        value: 'var(--ta-red-rgb)'
+      - label: Violet
+        value: 'var(--ta-violet-rgb)'
+      - label: Gray
+        value: 'var(--ta-gray-rgb)'
+
+*/
+
+body {
+  --ta-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --ta-accent-alt: #6bdcff;
+  --ta-warm: #f0c674;
+  --ta-red: #ff6e7a;
+  --ta-orange: #f7a35c;
+  --ta-violet: #b78cff;
+  --ta-folder-1: var(--ta-accent);
+  --ta-folder-2: var(--ta-accent-alt);
+  --ta-folder-3: var(--ta-warm);
+  --ta-folder-4: var(--ta-violet);
+  --ta-folder-5: var(--ta-orange);
+  --ta-folder-6: var(--ta-red);
+  --ta-file-color: var(--nav-item-color);
+  --ta-font-editor: "Berkeley Mono", "JetBrains Mono", "Cascadia Code", "IBM Plex Mono", "SFMono-Regular", Consolas, monospace;
+  --ta-font-ui: "Inter", "SF Pro Text", "Segoe UI", system-ui, sans-serif;
+  --ta-font-code: "Berkeley Mono", "JetBrains Mono", "Cascadia Code", "IBM Plex Mono", "SFMono-Regular", Consolas, monospace;
+  --ta-editor-line-width: 780px;
+  --ta-ui-radius: 6px;
+  --ta-border-width: 1px;
+  --ta-pane-shadow: 0 20px 60px rgba(0, 0, 0, 0.22);
+  --ta-glow: 0 0 0 transparent;
+
+  --font-interface-theme: var(--ta-font-ui);
+  --font-text-theme: var(--ta-font-editor);
+  --font-monospace-theme: var(--ta-font-code);
+  --font-ui-small: 12px;
+  --font-ui-smaller: 11px;
+  --font-ui-medium: 13px;
+  --font-ui-large: 15px;
+  --line-height-normal: 1.7;
+  --line-height-tight: 1.45;
+  --icon-color: var(--text-soft);
+  --icon-color-hover: var(--text-normal);
+  --icon-color-active: var(--ta-accent);
+  --icon-color-focused: var(--text-normal);
+  --icon-opacity: 1;
+  --icon-opacity-hover: 1;
+  --icon-opacity-active: 1;
+  --icon-stroke: 2px;
+
+  --radius-s: calc(var(--ta-ui-radius) - 2px);
+  --radius-m: var(--ta-ui-radius);
+  --radius-l: calc(var(--ta-ui-radius) + 2px);
+  --input-radius: var(--ta-ui-radius);
+  --tab-radius-active: var(--ta-ui-radius);
+  --checkbox-radius: 4px;
+  --checkbox-color: var(--ta-accent);
+  --checkbox-border-color: var(--background-modifier-border-hover);
+
+  --tag-radius: var(--radius-s);
+  --tag-border-width: var(--ta-border-width);
+  --tag-color: var(--ta-accent);
+  --tag-color-hover: var(--text-on-accent);
+  --tag-background: color-mix(in srgb, var(--ta-accent) 13%, transparent);
+  --tag-background-hover: var(--ta-accent);
+  --tag-border-color: color-mix(in srgb, var(--ta-accent) 28%, transparent);
+  --tag-border-color-hover: var(--ta-accent);
+  --tag-size: 0.82em;
+  --tag-weight: 650;
+  --tag-padding-x: 0.5em;
+  --tag-padding-y: 0.12em;
+  --toggle-radius: 999px;
+  --toggle-thumb-radius: 999px;
+  --slider-thumb-radius: 999px;
+
+  --file-line-width: var(--ta-editor-line-width);
+  --line-width: var(--ta-editor-line-width);
+  --line-width-adaptive: var(--ta-editor-line-width);
+}
+
+body.theme-dark {
+  color-scheme: dark;
+  --accent-h: 150;
+  --accent-s: 85%;
+  --accent-l: 67%;
+  --ta-bg-0: #090c0d;
+  --ta-bg-1: #0e1214;
+  --ta-bg-2: #13191c;
+  --ta-bg-3: #182024;
+  --ta-bg-4: #202a2f;
+  --ta-border: #2a363d;
+  --ta-border-strong: #39484f;
+  --ta-selection: color-mix(in srgb, var(--ta-accent) 20%, transparent);
+  --ta-active-line: color-mix(in srgb, var(--ta-accent-alt) 7.5%, transparent);
+  --ta-text: #dce4df;
+  --ta-text-soft: #b4c3bd;
+  --ta-muted: #879994;
+  --ta-faint: #63736f;
+  --ta-inverted: #07100d;
+  --ta-green-rgb: 99, 242, 171;
+  --ta-cyan-rgb: 107, 220, 255;
+  --ta-amber-rgb: 240, 198, 116;
+  --ta-orange-rgb: 247, 163, 92;
+  --ta-red-rgb: 255, 110, 122;
+  --ta-violet-rgb: 183, 140, 255;
+  --ta-gray-rgb: 135, 153, 148;
+  --ta-mermaid-node-bg: #102022;
+  --ta-mermaid-node-border: #35d8c3;
+  --ta-mermaid-cluster-bg: #0d1618;
+  --ta-mermaid-edge: #5d746f;
+
+  --background-primary: var(--ta-bg-0);
+  --background-primary-alt: var(--ta-bg-1);
+  --background-secondary: var(--ta-bg-1);
+  --background-secondary-alt: var(--ta-bg-2);
+  --background-modifier-border: var(--ta-border);
+  --background-modifier-border-hover: var(--ta-border-strong);
+  --background-modifier-border-focus: var(--ta-accent);
+  --background-modifier-hover: rgba(255, 255, 255, 0.045);
+  --background-modifier-active-hover: color-mix(in srgb, var(--ta-accent) 12%, transparent);
+  --background-modifier-form-field: var(--ta-bg-1);
+  --background-modifier-form-field-highlighted: var(--ta-bg-2);
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.45);
+  --background-modifier-success: color-mix(in srgb, var(--ta-accent) 18%, transparent);
+  --background-modifier-error: color-mix(in srgb, var(--ta-red) 18%, transparent);
+  --background-modifier-error-hover: color-mix(in srgb, var(--ta-red) 28%, transparent);
+
+  --text-normal: var(--ta-text);
+  --text-soft: var(--ta-text-soft);
+  --text-muted: var(--ta-muted);
+  --text-faint: var(--ta-faint);
+  --text-on-accent: var(--ta-inverted);
+  --text-on-accent-inverted: var(--ta-bg-0);
+  --text-accent: var(--ta-accent);
+  --text-accent-hover: color-mix(in srgb, var(--ta-accent) 76%, white);
+  --text-selection: var(--ta-selection);
+  --text-highlight-bg: color-mix(in srgb, var(--ta-warm) 22%, transparent);
+  --text-highlight-bg-active: color-mix(in srgb, var(--ta-warm) 32%, transparent);
+  --text-error: var(--ta-red);
+  --text-success: var(--ta-accent);
+  --caret-color: var(--ta-accent);
+
+  --interactive-normal: var(--ta-bg-2);
+  --interactive-hover: var(--ta-bg-3);
+  --interactive-accent: var(--ta-accent);
+  --interactive-accent-hover: color-mix(in srgb, var(--ta-accent) 86%, white);
+
+  --titlebar-background: var(--ta-bg-1);
+  --titlebar-background-focused: var(--ta-bg-0);
+  --titlebar-text-color: var(--ta-muted);
+  --titlebar-text-color-focused: var(--ta-text-soft);
+  --ribbon-background: var(--ta-bg-1);
+  --tab-container-background: var(--ta-bg-1);
+  --tab-background-active: var(--ta-bg-0);
+  --tab-text-color: var(--ta-muted);
+  --tab-text-color-focused: var(--ta-text-soft);
+  --tab-text-color-focused-active: var(--ta-text);
+  --tab-outline-color: var(--ta-border);
+  --divider-color: var(--ta-border);
+  --status-bar-background: var(--ta-bg-1);
+  --modal-background: var(--ta-bg-1);
+  --prompt-border-color: var(--ta-border-strong);
+
+  --nav-item-color: var(--ta-muted);
+  --nav-item-color-hover: var(--ta-text);
+  --nav-item-color-active: var(--ta-accent);
+  --nav-item-background-hover: rgba(255, 255, 255, 0.04);
+  --nav-item-background-active: color-mix(in srgb, var(--ta-accent) 10.5%, transparent);
+
+  --link-color: var(--ta-accent-alt);
+  --link-color-hover: color-mix(in srgb, var(--ta-accent-alt) 70%, white);
+  --link-external-color: var(--ta-accent-alt);
+  --link-external-color-hover: color-mix(in srgb, var(--ta-accent-alt) 70%, white);
+  --link-unresolved-color: var(--ta-warm);
+  --link-unresolved-opacity: 0.82;
+
+  --ta-code-header-bg: #0c1113;
+  --code-background: #0f1517;
+  --code-normal: var(--ta-text-soft);
+  --code-comment: #6f807b;
+  --code-function: var(--ta-accent-alt);
+  --code-important: var(--ta-red);
+  --code-keyword: var(--ta-violet);
+  --code-operator: var(--ta-accent);
+  --code-property: var(--ta-warm);
+  --code-punctuation: var(--ta-muted);
+  --code-string: var(--ta-accent);
+  --code-tag: var(--ta-red);
+  --code-value: var(--ta-orange);
+
+  --blockquote-border-color: var(--ta-accent);
+  --blockquote-background-color: color-mix(in srgb, var(--ta-accent) 7%, transparent);
+  --table-header-background: var(--ta-bg-2);
+  --table-row-alt-background: rgba(255, 255, 255, 0.025);
+  --table-border-color: var(--ta-border);
+}
+
+body.theme-light {
+  color-scheme: light;
+  --accent-h: 158;
+  --accent-s: 100%;
+  --accent-l: 24%;
+  --ta-bg-0: #f5f7f4;
+  --ta-bg-1: #edf2ee;
+  --ta-bg-2: #e2eae5;
+  --ta-bg-3: #d6e1db;
+  --ta-bg-4: #c8d5cf;
+  --ta-border: #bfcbc5;
+  --ta-border-strong: #9daea7;
+  --ta-selection: color-mix(in srgb, var(--ta-accent) 17%, transparent);
+  --ta-active-line: color-mix(in srgb, var(--ta-accent-alt) 7.5%, transparent);
+  --ta-text: #17201d;
+  --ta-text-soft: #34443f;
+  --ta-muted: #60706a;
+  --ta-faint: #81918a;
+  --ta-accent-alt: #006f9e;
+  --ta-mermaid-node-bg: #ddebe6;
+  --ta-mermaid-node-border: #007e73;
+  --ta-mermaid-cluster-bg: #edf4f1;
+  --ta-mermaid-edge: #6b8078;
+  --ta-warm: #a46600;
+  --ta-red: #c8324c;
+  --ta-orange: #b65800;
+  --ta-violet: #7357b8;
+  --ta-inverted: #f9fbf8;
+  --ta-green-rgb: 0, 122, 77;
+  --ta-cyan-rgb: 0, 111, 158;
+  --ta-amber-rgb: 164, 102, 0;
+  --ta-orange-rgb: 182, 88, 0;
+  --ta-red-rgb: 200, 50, 76;
+  --ta-violet-rgb: 115, 87, 184;
+  --ta-gray-rgb: 96, 112, 106;
+
+  --background-primary: var(--ta-bg-0);
+  --background-primary-alt: var(--ta-bg-1);
+  --background-secondary: var(--ta-bg-1);
+  --background-secondary-alt: var(--ta-bg-2);
+  --background-modifier-border: var(--ta-border);
+  --background-modifier-border-hover: var(--ta-border-strong);
+  --background-modifier-border-focus: var(--ta-accent);
+  --background-modifier-hover: rgba(23, 32, 29, 0.055);
+  --background-modifier-active-hover: color-mix(in srgb, var(--ta-accent) 12%, transparent);
+  --background-modifier-form-field: #ffffff;
+  --background-modifier-form-field-highlighted: var(--ta-bg-1);
+  --background-modifier-box-shadow: rgba(23, 32, 29, 0.18);
+  --background-modifier-success: color-mix(in srgb, var(--ta-accent) 15%, transparent);
+  --background-modifier-error: color-mix(in srgb, var(--ta-red) 14%, transparent);
+  --background-modifier-error-hover: color-mix(in srgb, var(--ta-red) 21%, transparent);
+
+  --text-normal: var(--ta-text);
+  --text-soft: var(--ta-text-soft);
+  --text-muted: var(--ta-muted);
+  --text-faint: var(--ta-faint);
+  --text-on-accent: var(--ta-inverted);
+  --text-on-accent-inverted: var(--ta-bg-0);
+  --text-accent: var(--ta-accent);
+  --text-accent-hover: #006a43;
+  --text-selection: var(--ta-selection);
+  --text-highlight-bg: color-mix(in srgb, var(--ta-warm) 16%, transparent);
+  --text-highlight-bg-active: color-mix(in srgb, var(--ta-warm) 23%, transparent);
+  --text-error: var(--ta-red);
+  --text-success: var(--ta-accent);
+  --caret-color: var(--ta-accent);
+
+  --interactive-normal: var(--ta-bg-2);
+  --interactive-hover: var(--ta-bg-3);
+  --interactive-accent: var(--ta-accent);
+  --interactive-accent-hover: #00794d;
+
+  --titlebar-background: var(--ta-bg-1);
+  --titlebar-background-focused: var(--ta-bg-0);
+  --titlebar-text-color: var(--ta-muted);
+  --titlebar-text-color-focused: var(--ta-text-soft);
+  --ribbon-background: var(--ta-bg-1);
+  --tab-container-background: var(--ta-bg-1);
+  --tab-background-active: var(--ta-bg-0);
+  --tab-text-color: var(--ta-muted);
+  --tab-text-color-focused: var(--ta-text-soft);
+  --tab-text-color-focused-active: var(--ta-text);
+  --tab-outline-color: var(--ta-border);
+  --divider-color: var(--ta-border);
+  --status-bar-background: var(--ta-bg-1);
+  --modal-background: var(--ta-bg-0);
+  --prompt-border-color: var(--ta-border-strong);
+
+  --nav-item-color: var(--ta-muted);
+  --nav-item-color-hover: var(--ta-text);
+  --nav-item-color-active: var(--ta-accent);
+  --nav-item-background-hover: rgba(23, 32, 29, 0.055);
+  --nav-item-background-active: color-mix(in srgb, var(--ta-accent) 11%, transparent);
+
+  --link-color: var(--ta-accent-alt);
+  --link-color-hover: #00577b;
+  --link-external-color: var(--ta-accent-alt);
+  --link-external-color-hover: #00577b;
+  --link-unresolved-color: var(--ta-warm);
+  --link-unresolved-opacity: 0.86;
+
+  --ta-code-header-bg: #d6e1db;
+  --code-background: #e2eae5;
+  --code-normal: var(--ta-text-soft);
+  --code-comment: #75847e;
+  --code-function: var(--ta-accent-alt);
+  --code-important: var(--ta-red);
+  --code-keyword: var(--ta-violet);
+  --code-operator: var(--ta-accent);
+  --code-property: var(--ta-warm);
+  --code-punctuation: var(--ta-muted);
+  --code-string: var(--ta-accent);
+  --code-tag: var(--ta-red);
+  --code-value: var(--ta-orange);
+
+  --blockquote-border-color: var(--ta-accent);
+  --blockquote-background-color: color-mix(in srgb, var(--ta-accent) 7.5%, transparent);
+  --table-header-background: var(--ta-bg-2);
+  --table-row-alt-background: rgba(23, 32, 29, 0.032);
+  --table-border-color: var(--ta-border);
+}
+
+body.ta-soft-neon.theme-dark {
+  --ta-glow: 0 0 18px color-mix(in srgb, var(--ta-accent) 28%, transparent);
+}
+
+body.ta-soft-neon.theme-light {
+  --ta-glow: 0 0 14px color-mix(in srgb, var(--ta-accent) 16%, transparent);
+}
+
+.app-container,
+.horizontal-main-container,
+.workspace,
+.workspace-split.mod-root {
+  background: var(--background-primary);
+}
+
+.mod-root .workspace-leaf-content,
+.workspace-tabs .workspace-leaf {
+  background: var(--background-primary);
+}
+
+.workspace-split.mod-left-split,
+.workspace-split.mod-right-split,
+.workspace-ribbon {
+  background: var(--background-secondary);
+  border-color: var(--background-modifier-border);
+}
+
+.workspace-ribbon {
+  border-right: var(--ta-border-width) solid var(--background-modifier-border);
+}
+
+.workspace-ribbon.mod-right {
+  border-left: var(--ta-border-width) solid var(--background-modifier-border);
+  border-right: 0;
+}
+
+.side-dock-ribbon-action,
+.workspace-ribbon-collapse-btn,
+.nav-action-button,
+.clickable-icon {
+  color: var(--text-soft);
+  border-radius: var(--radius-s);
+  opacity: 0.96;
+}
+
+.side-dock-ribbon-action:hover,
+.workspace-ribbon-collapse-btn:hover,
+.nav-action-button:hover,
+.clickable-icon:hover {
+  color: var(--text-normal);
+  background: var(--background-modifier-hover);
+  opacity: 1;
+}
+
+.side-dock-ribbon-action.is-active,
+.nav-action-button.is-active,
+.clickable-icon.is-active {
+  color: var(--ta-accent);
+  background: var(--nav-item-background-active);
+  box-shadow: var(--ta-glow);
+}
+
+/* With the hidden window frame, Obsidian renders .titlebar as a transparent
+   click-through overlay on top of the tab bar; painting it would hide the
+   tabs beneath. Only style it when it is a real bar. */
+body:not(.is-hidden-frameless) .titlebar,
+body:not(.is-hidden-frameless) .titlebar-inner {
+  background: var(--titlebar-background);
+  color: var(--titlebar-text-color);
+  border-color: var(--background-modifier-border);
+}
+
+body.is-focused:not(.is-hidden-frameless) .titlebar,
+body.is-focused:not(.is-hidden-frameless) .titlebar-inner {
+  background: var(--titlebar-background-focused);
+  color: var(--titlebar-text-color-focused);
+}
+
+.titlebar-text,
+.titlebar-button,
+.titlebar-button-container,
+.titlebar .clickable-icon {
+  color: var(--titlebar-text-color-focused);
+  opacity: 0.98;
+}
+
+.is-focused .titlebar-text,
+.is-focused .titlebar-button,
+.is-focused .titlebar-button-container,
+.is-focused .titlebar .clickable-icon {
+  color: var(--text-soft);
+  opacity: 1;
+}
+
+.titlebar-button:hover,
+.titlebar .clickable-icon:hover {
+  color: var(--text-normal);
+  background: var(--background-modifier-hover);
+}
+
+.titlebar-button.mod-close:hover {
+  color: var(--ta-red);
+}
+
+.workspace-tab-header-container {
+  background: var(--tab-container-background);
+  border-bottom: var(--ta-border-width) solid var(--tab-outline-color);
+}
+
+/* --header-height also sizes the frameless titlebar overlay, view headers,
+   and the ribbon corner, so set the variable instead of raw heights. */
+body:not(.is-mobile) {
+  --header-height: 38px;
+}
+
+.workspace-tab-header {
+  color: var(--tab-text-color);
+  border-radius: var(--radius-s);
+  margin: 4px 2px;
+  min-width: 0;
+}
+
+.workspace-tab-header::before,
+.workspace-tab-header::after {
+  display: none;
+}
+
+.workspace-tab-header-inner {
+  padding: 0 10px;
+}
+
+.workspace-tab-header-inner-title {
+  font-family: var(--font-monospace);
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.workspace-tab-header:hover {
+  background: var(--background-modifier-hover);
+  color: var(--tab-text-color-focused);
+}
+
+/* tmux-style solid block for the active main-area tab; scoped to .mod-top
+   so sidebar tabs keep Obsidian's compact icon styling. */
+.workspace-tabs.mod-top .workspace-tab-header.is-active {
+  background: var(--ta-bg-3);
+  color: var(--ta-accent);
+  box-shadow: var(--ta-glow);
+}
+
+.workspace-tabs.mod-top .workspace-tab-header.is-active .workspace-tab-header-inner-title {
+  color: var(--ta-accent);
+}
+
+.workspace-tab-container-before,
+.workspace-tab-container-after {
+  background: transparent;
+}
+
+.view-header {
+  background: var(--background-primary);
+  border-bottom: var(--ta-border-width) solid var(--background-modifier-border);
+  color: var(--text-muted);
+}
+
+.view-header-title {
+  color: var(--text-normal);
+  font-family: var(--font-monospace);
+  font-size: 11.5px;
+  font-weight: 500;
+  opacity: 1;
+}
+
+.view-header-title-parent,
+.view-header-breadcrumb {
+  font-family: var(--font-monospace);
+  font-size: 11.5px;
+  color: var(--text-muted);
+}
+
+.view-header-breadcrumb-separator {
+  color: var(--text-faint);
+}
+
+.view-header-title-container,
+.view-header-nav-buttons .clickable-icon,
+.view-actions .clickable-icon,
+.view-header .clickable-icon {
+  color: var(--text-soft);
+  opacity: 0.98;
+}
+
+.workspace-leaf.mod-active .view-header-title {
+  color: var(--text-normal);
+}
+
+.view-header:hover .view-header-title,
+.view-header-title-container:not(.mod-at-start):before {
+  color: var(--text-normal);
+}
+
+.view-header .clickable-icon:hover,
+.view-header-nav-buttons .clickable-icon:hover,
+.view-actions .clickable-icon:hover {
+  color: var(--text-normal);
+  opacity: 1;
+}
+
+.status-bar {
+  background: var(--status-bar-background);
+  color: var(--text-faint);
+  border: var(--ta-border-width) solid var(--background-modifier-border);
+  border-right: 0;
+  border-bottom: 0;
+  border-radius: var(--radius-s) 0 0 0;
+  font-family: var(--font-interface);
+  font-size: 11px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.025);
+}
+
+.status-bar-item:hover {
+  color: var(--text-normal);
+}
+
+.nav-header {
+  padding: 10px 12px 7px;
+}
+
+.nav-buttons-container {
+  gap: 4px;
+}
+
+.nav-files-container {
+  padding: 2px 8px 12px;
+}
+
+.workspace-leaf-content[data-type="file-explorer"] .nav-folder-children {
+  margin-left: 7px;
+  padding-left: 9px;
+  border-left: var(--ta-border-width) solid color-mix(in srgb, var(--background-modifier-border) 82%, transparent);
+}
+
+.workspace-leaf-content[data-type="file-explorer"] .nav-folder.mod-root > .nav-folder-children {
+  margin-left: 0;
+  padding-left: 0;
+  border-left: 0;
+}
+
+.tree-item-self,
+.nav-file-title,
+.nav-folder-title {
+  color: var(--nav-item-color);
+  border-radius: var(--radius-s);
+  min-height: 27px;
+  margin: 1px 0;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+.tree-item-self:hover,
+.nav-file-title:hover,
+.nav-folder-title:hover {
+  color: var(--nav-item-color-hover);
+  background: var(--nav-item-background-hover);
+}
+
+.tree-item-self.is-active,
+.nav-file-title.is-active,
+.nav-folder-title.is-active {
+  color: var(--nav-item-color-active);
+  background: var(--nav-item-background-active);
+  box-shadow: inset 2px 0 0 var(--ta-accent);
+  font-weight: 650;
+}
+
+.nav-file-title-content,
+.nav-folder-title-content,
+.tree-item-inner {
+  font-family: var(--font-interface);
+  font-size: 12.5px;
+}
+
+.nav-file-title {
+  color: var(--ta-file-color);
+}
+
+.nav-folder.mod-root > .nav-folder-title,
+.tree-item-self.mod-root {
+  color: var(--text-faint);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.workspace-leaf-content[data-type="file-explorer"] .nav-file-tag {
+  color: var(--ta-warm);
+  background: transparent;
+}
+
+.search-input-container input,
+.prompt-input,
+input[type="text"],
+input[type="search"],
+input[type="email"],
+input[type="password"],
+textarea {
+  background: var(--background-modifier-form-field);
+  color: var(--text-normal);
+  border: var(--ta-border-width) solid var(--background-modifier-border);
+  border-radius: var(--input-radius);
+  box-shadow: none;
+}
+
+.search-input-container input:focus,
+.prompt-input:focus,
+input[type="text"]:focus,
+input[type="search"]:focus,
+textarea:focus {
+  border-color: var(--background-modifier-border-focus);
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--ta-accent) 18%, transparent);
+}
+
+button,
+.mod-cta {
+  border-radius: var(--input-radius);
+  box-shadow: none;
+}
+
+button.mod-cta,
+.mod-cta {
+  background: var(--interactive-accent);
+  color: var(--text-on-accent);
+  font-weight: 650;
+}
+
+button.mod-cta:hover,
+.mod-cta:hover {
+  background: var(--interactive-accent-hover);
+}
+
+.menu,
+.suggestion-container,
+.prompt,
+.modal,
+.popover,
+.popover.hover-popover {
+  background: var(--modal-background);
+  border: var(--ta-border-width) solid var(--background-modifier-border);
+  border-radius: var(--radius-m);
+  box-shadow: var(--ta-pane-shadow);
+}
+
+.menu-item,
+.suggestion-item {
+  border-radius: var(--radius-s);
+  color: var(--text-muted);
+}
+
+.menu-item:hover,
+.suggestion-item.is-selected {
+  color: var(--text-normal);
+  background: var(--nav-item-background-active);
+}
+
+.markdown-source-view.mod-cm6,
+.markdown-reading-view,
+.markdown-preview-view {
+  background: var(--background-primary);
+}
+
+.markdown-source-view.mod-cm6 .cm-editor,
+.markdown-source-view.mod-cm6 .cm-scroller,
+.markdown-preview-view {
+  font-family: var(--font-text);
+  color: var(--text-normal);
+  line-height: var(--line-height-normal);
+}
+
+/* Constrain and center the editing/reading column even when Obsidian's
+   "Readable line length" is off. Obsidian only adds the centering margins
+   under .is-readable-line-width, so without this the forced max-width would
+   hug the left. Mirrors Obsidian's own mechanism (margins on the sizer). */
+.markdown-source-view.mod-cm6 .cm-sizer,
+.markdown-preview-view .markdown-preview-sizer {
+  max-width: var(--file-line-width);
+  margin-inline: auto;
+}
+
+.markdown-source-view.mod-cm6 .cm-content {
+  max-width: var(--file-line-width);
+}
+
+.markdown-source-view.mod-cm6 .cm-line {
+  caret-color: var(--caret-color);
+}
+
+.markdown-source-view.mod-cm6 .cm-line.cm-active {
+  background: linear-gradient(90deg, var(--ta-active-line), transparent 72%);
+  box-shadow: inset 2px 0 0 color-mix(in srgb, var(--ta-accent-alt) 50%, transparent);
+}
+
+.cm-gutters,
+.markdown-source-view.mod-cm6 .cm-gutters {
+  background: var(--background-primary);
+  border-right: var(--ta-border-width) solid var(--background-modifier-border);
+  color: var(--text-faint);
+}
+
+.cm-lineNumbers .cm-gutterElement {
+  font-family: var(--font-monospace);
+  font-size: 11px;
+}
+
+.markdown-rendered,
+.markdown-source-view.mod-cm6 .cm-line {
+  font-size: var(--font-text-size);
+}
+
+.markdown-rendered p,
+.markdown-rendered ul,
+.markdown-rendered ol {
+  margin-block-start: 0.85em;
+  margin-block-end: 0.85em;
+}
+
+.inline-title,
+.markdown-rendered h1,
+.markdown-rendered h2,
+.markdown-rendered h3,
+.markdown-rendered h4,
+.markdown-rendered h5,
+.markdown-rendered h6,
+.HyperMD-header,
+.cm-header {
+  font-family: var(--font-text);
+  letter-spacing: 0;
+}
+
+.inline-title {
+  color: var(--text-normal);
+  font-size: 2.1em;
+  font-weight: 760;
+  line-height: 1.18;
+  margin-bottom: 0.75em;
+}
+
+.markdown-rendered h1,
+.HyperMD-header-1,
+.cm-header-1 {
+  color: var(--text-normal);
+  font-size: 1.72em;
+  font-weight: 760;
+  line-height: 1.22;
+}
+
+.markdown-rendered h2,
+.HyperMD-header-2,
+.cm-header-2 {
+  color: var(--ta-accent);
+  font-size: 1.38em;
+  font-weight: 740;
+  line-height: 1.28;
+}
+
+.markdown-rendered h3,
+.HyperMD-header-3,
+.cm-header-3 {
+  color: var(--ta-accent-alt);
+  font-size: 1.16em;
+  font-weight: 720;
+}
+
+.markdown-rendered h4,
+.HyperMD-header-4,
+.cm-header-4 {
+  color: var(--ta-warm);
+  font-size: 1.04em;
+  font-weight: 700;
+}
+
+.markdown-rendered h5,
+.HyperMD-header-5,
+.cm-header-5,
+.markdown-rendered h6,
+.HyperMD-header-6,
+.cm-header-6 {
+  color: var(--text-muted);
+  font-size: 0.95em;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+}
+
+.cm-formatting-header {
+  color: var(--text-faint);
+  font-weight: 500;
+}
+
+.markdown-rendered h1::after,
+.markdown-rendered h2::after {
+  content: "";
+  display: block;
+  height: 1px;
+  margin-top: 0.38em;
+  background: linear-gradient(90deg, color-mix(in srgb, currentColor 42%, transparent), transparent);
+}
+
+.markdown-rendered a,
+.cm-hmd-internal-link,
+.cm-link,
+.internal-link,
+.external-link {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+.markdown-rendered a:hover,
+.internal-link:hover,
+.external-link:hover {
+  color: var(--link-color-hover);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+.markdown-rendered mark,
+.cm-highlight {
+  color: var(--text-normal);
+  background: var(--text-highlight-bg);
+  border-radius: 3px;
+  padding: 0.05em 0.2em;
+}
+
+.markdown-rendered strong,
+.cm-strong {
+  color: var(--text-normal);
+  font-weight: 760;
+}
+
+.markdown-rendered em,
+.cm-em {
+  color: var(--text-soft, var(--text-normal));
+}
+
+.markdown-rendered hr {
+  border: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--background-modifier-border), transparent);
+  margin: 2em 0;
+}
+
+.markdown-rendered blockquote {
+  border-left: 2px solid var(--blockquote-border-color);
+  background: var(--blockquote-background-color);
+  border-radius: 0 var(--radius-s) var(--radius-s) 0;
+  margin: 1em 0;
+  padding: 0.7em 1em;
+  color: var(--text-soft, var(--text-normal));
+}
+
+.markdown-rendered blockquote p:first-child {
+  margin-top: 0;
+}
+
+.markdown-rendered blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-rendered blockquote::before {
+  content: ">";
+  color: var(--ta-accent);
+  font-family: var(--font-monospace);
+  font-weight: 700;
+  margin-right: 0.5em;
+}
+
+.markdown-rendered code,
+.cm-inline-code {
+  font-family: var(--font-monospace);
+  font-size: 0.92em;
+  color: var(--code-normal);
+  background: var(--code-background);
+  border: var(--ta-border-width) solid var(--background-modifier-border);
+  border-radius: var(--radius-s);
+  padding: 0.12em 0.34em;
+}
+
+.markdown-rendered pre {
+  position: relative;
+  background: var(--code-background);
+  border: var(--ta-border-width) solid var(--background-modifier-border);
+  border-radius: var(--radius-m);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.035);
+  padding: 0;
+  overflow: hidden;
+}
+
+/* Header band; the ">_" glyph is language-neutral because reading view
+   does not expose the code block language. */
+.markdown-rendered pre::before {
+  content: ">_";
+  display: block;
+  background: var(--ta-code-header-bg);
+  border-bottom: var(--ta-border-width) solid color-mix(in srgb, var(--background-modifier-border) 70%, transparent);
+  padding: 5px 12px;
+  font-family: var(--font-monospace);
+  font-size: 9.5px;
+  font-weight: 700;
+  letter-spacing: 0.09em;
+  line-height: 1.5;
+  color: var(--text-faint);
+}
+
+.markdown-rendered pre code {
+  display: block;
+  padding: 0.9em 1.2em 1.1em;
+  border: 0;
+  background: transparent;
+  color: var(--code-normal);
+  line-height: 1.62;
+  overflow-x: auto;
+}
+
+.markdown-rendered button.copy-code-button {
+  margin: 2px 6px;
+  padding: 3px 8px;
+  font-family: var(--font-monospace);
+  font-size: 9.5px;
+  font-weight: 700;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+  border-radius: var(--radius-s);
+}
+
+.markdown-rendered button.copy-code-button:hover {
+  color: var(--ta-accent);
+  background: var(--background-modifier-hover);
+}
+
+.HyperMD-codeblock,
+.cm-line.HyperMD-codeblock {
+  font-family: var(--font-monospace);
+  color: var(--code-normal);
+  background: var(--code-background);
+  border-left: var(--ta-border-width) solid var(--background-modifier-border);
+  border-right: var(--ta-border-width) solid var(--background-modifier-border);
+}
+
+.cm-line.HyperMD-codeblock-begin {
+  background: var(--ta-code-header-bg);
+  border-top: var(--ta-border-width) solid var(--background-modifier-border);
+  border-bottom: var(--ta-border-width) solid color-mix(in srgb, var(--background-modifier-border) 70%, transparent);
+  border-top-left-radius: var(--radius-m);
+  border-top-right-radius: var(--radius-m);
+}
+
+.cm-line.HyperMD-codeblock-end {
+  border-bottom: var(--ta-border-width) solid var(--background-modifier-border);
+  border-bottom-left-radius: var(--radius-m);
+  border-bottom-right-radius: var(--radius-m);
+}
+
+.markdown-source-view.mod-cm6 .code-block-flair {
+  font-family: var(--font-monospace);
+  font-size: 9.5px;
+  font-weight: 700;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.token.comment {
+  color: var(--code-comment);
+}
+
+.token.keyword,
+.cm-keyword {
+  color: var(--code-keyword);
+}
+
+.token.string,
+.cm-string {
+  color: var(--code-string);
+}
+
+.token.function,
+.cm-def,
+.cm-variable-2 {
+  color: var(--code-function);
+}
+
+.token.property,
+.cm-property {
+  color: var(--code-property);
+}
+
+.token.number,
+.cm-number {
+  color: var(--code-value);
+}
+
+.token.operator,
+.cm-operator {
+  color: var(--code-operator);
+}
+
+.token.punctuation {
+  color: var(--code-punctuation);
+}
+
+.markdown-rendered table {
+  border-collapse: separate;
+  border-spacing: 0;
+  width: 100%;
+  margin: 1.25em 0;
+  overflow: hidden;
+  border: var(--ta-border-width) solid var(--table-border-color);
+  border-radius: var(--radius-m);
+}
+
+.markdown-rendered th,
+.markdown-rendered td {
+  border: 0;
+  border-bottom: var(--ta-border-width) solid var(--table-border-color);
+  border-right: var(--ta-border-width) solid var(--table-border-color);
+  padding: 0.62em 0.75em;
+}
+
+.markdown-rendered tr:last-child td {
+  border-bottom: 0;
+}
+
+.markdown-rendered th:last-child,
+.markdown-rendered td:last-child {
+  border-right: 0;
+}
+
+.markdown-rendered th {
+  background: var(--table-header-background);
+  color: var(--text-normal);
+  font-weight: 720;
+}
+
+.markdown-rendered tr:nth-child(even) td {
+  background: var(--table-row-alt-background);
+}
+
+.markdown-rendered tbody tr:hover td {
+  background: color-mix(in srgb, var(--ta-accent-alt) 7%, transparent);
+}
+
+/* Tag shape and color come from the native --tag-* variables (set on body),
+   which also drive the begin/end hashtag merge in the editor and the
+   Properties tag pills. Only the font needs a rule. */
+.tag,
+.cm-hashtag {
+  font-family: var(--font-interface);
+}
+
+input[type="checkbox"] {
+  border-radius: var(--checkbox-radius);
+  border-color: var(--checkbox-border-color);
+  background: var(--background-primary-alt);
+}
+
+input[type="checkbox"]:checked {
+  border-color: var(--checkbox-color);
+  background: var(--checkbox-color);
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--checkbox-color) 14%, transparent);
+}
+
+.task-list-item-checkbox {
+  margin-inline-end: 0.55em;
+}
+
+.markdown-rendered .task-list-item.is-checked,
+.cm-line.HyperMD-task-line[data-task="x"] {
+  color: var(--text-faint);
+  text-decoration-color: var(--text-faint);
+}
+
+.markdown-rendered .task-list-item[data-task="-"],
+.cm-line.HyperMD-task-line[data-task="-"] {
+  --checkbox-color: var(--ta-red);
+  --checkbox-color-hover: var(--ta-red);
+  --checkbox-border-color: var(--ta-red);
+  --checkbox-border-color-hover: var(--ta-red);
+  --checkbox-marker-color: var(--ta-inverted);
+  color: color-mix(in srgb, var(--ta-red) 72%, var(--text-muted));
+  text-decoration: line-through;
+  text-decoration-thickness: 1px;
+  text-decoration-color: color-mix(in srgb, var(--ta-red) 68%, transparent);
+}
+
+.markdown-rendered .task-list-item[data-task=">"],
+.cm-line.HyperMD-task-line[data-task=">"] {
+  --checkbox-color: var(--ta-accent-alt);
+  --checkbox-color-hover: var(--ta-accent-alt);
+  --checkbox-border-color: var(--ta-accent-alt);
+  --checkbox-border-color-hover: var(--ta-accent-alt);
+  --checkbox-marker-color: var(--ta-inverted);
+  color: var(--ta-accent-alt);
+}
+
+.markdown-rendered .task-list-item[data-task="!"],
+.cm-line.HyperMD-task-line[data-task="!"] {
+  --checkbox-color: var(--ta-warm);
+  --checkbox-color-hover: var(--ta-warm);
+  --checkbox-border-color: var(--ta-warm);
+  --checkbox-border-color-hover: var(--ta-warm);
+  --checkbox-marker-color: var(--ta-inverted);
+  color: var(--ta-warm);
+  font-weight: 700;
+}
+
+.math,
+.math-block,
+.markdown-rendered .math,
+.markdown-rendered .math-block,
+.cm-math,
+.cm-formatting-math {
+  color: var(--text-soft);
+}
+
+.markdown-rendered .math-block,
+.mjx-container[jax="CHTML"][display="true"] {
+  background: color-mix(in srgb, var(--ta-accent-alt) 4%, transparent);
+  border-radius: var(--radius-s);
+  padding: 0.6em 0.8em;
+}
+
+.mjx-container,
+.MathJax {
+  font-size: 0.98em;
+}
+
+.cm-formatting-math {
+  color: var(--ta-accent-alt);
+  opacity: 0.75;
+}
+
+.footnotes {
+  margin-top: 2.2em;
+  padding-top: 1em;
+  border-top: var(--ta-border-width) solid var(--background-modifier-border);
+  color: var(--text-muted);
+  font-size: 0.92em;
+}
+
+.footnotes ol,
+.markdown-rendered .footnotes ol {
+  padding-left: 1.45em;
+}
+
+.footnotes li,
+.markdown-rendered .footnotes li {
+  padding-left: 0.25em;
+  color: var(--text-soft);
+}
+
+.footnotes li::marker,
+.markdown-rendered .footnotes li::marker {
+  color: var(--ta-accent-alt);
+  font-family: var(--font-monospace);
+  font-size: 0.84em;
+}
+
+.footnote-ref,
+.footnote-link,
+.footnote-backref,
+.cm-footref,
+.cm-hmd-footnote {
+  color: var(--ta-accent-alt);
+  font-family: var(--font-monospace);
+  font-size: 0.84em;
+  text-decoration: none;
+}
+
+.markdown-rendered sup {
+  color: var(--ta-accent-alt);
+  line-height: 0;
+}
+
+.footnote-definition,
+.markdown-rendered .footnote-definition {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  align-items: start;
+  gap: 0 0.7em;
+  margin: 0.45em 0;
+  color: var(--text-muted);
+}
+
+.footnote-definition-label,
+.markdown-rendered .footnote-definition-label {
+  color: var(--ta-accent-alt);
+  background: color-mix(in srgb, var(--ta-accent-alt) 10%, transparent);
+  border: var(--ta-border-width) solid color-mix(in srgb, var(--ta-accent-alt) 22%, transparent);
+  border-radius: var(--radius-s);
+  padding: 0.08em 0.38em;
+  font-family: var(--font-monospace);
+  font-size: 0.78em;
+  line-height: 1.55;
+}
+
+.footnote-definition p,
+.markdown-rendered .footnote-definition p {
+  margin: 0;
+  color: var(--text-soft);
+}
+
+.cm-comment,
+.cm-formatting-comment,
+.markdown-source-view.mod-cm6 .cm-comment {
+  color: color-mix(in srgb, var(--code-comment) 82%, var(--background-primary));
+  font-style: normal;
+}
+
+.markdown-embed,
+.file-embed {
+  border: var(--ta-border-width) solid var(--background-modifier-border);
+  border-radius: var(--radius-m);
+  background: var(--background-primary-alt);
+}
+
+.markdown-embed-title,
+.file-embed-title {
+  color: var(--ta-accent-alt);
+  font-family: var(--font-interface);
+  font-size: 0.86em;
+  font-weight: 700;
+}
+
+.markdown-embed-link,
+.file-embed-link {
+  color: var(--ta-accent);
+}
+
+.embed-error {
+  color: var(--text-muted);
+  background: var(--background-primary-alt);
+  border: var(--ta-border-width) dashed var(--background-modifier-border);
+  border-radius: var(--radius-m);
+  font-family: var(--font-monospace);
+}
+
+body:not(.ta-plain-mermaid) .mermaid {
+  display: flex;
+  justify-content: center;
+  margin: 1.2em 0;
+  padding: 1em;
+  border: var(--ta-border-width) solid var(--background-modifier-border);
+  border-radius: var(--radius-m);
+  background: color-mix(in srgb, var(--ta-accent-alt) 4%, var(--background-primary));
+}
+
+body:not(.ta-plain-mermaid) .mermaid svg {
+  max-width: 100%;
+  height: auto;
+}
+
+/* In dark mode Obsidian pixel-inverts Mermaid SVGs (invert + hue-rotate),
+   which would flip the palette below. Disable the filter only for diagram
+   types this theme fully restyles; pie, gantt, and other types keep the
+   invert treatment that makes their stock colors dark-friendly. */
+body.theme-dark:not(.ta-plain-mermaid) .mermaid > svg:is(
+  [aria-roledescription="flowchart-v2"],
+  [aria-roledescription="flowchart"],
+  [aria-roledescription="stateDiagram"],
+  [aria-roledescription="stateDiagram-v2"],
+  [aria-roledescription="class"],
+  [aria-roledescription="classDiagram"],
+  [aria-roledescription="sequence"]) {
+  filter: none;
+}
+
+/* Readability net for diagram text this theme does not explicitly style,
+   in the unfiltered diagram types above. */
+body.theme-dark:not(.ta-plain-mermaid) .mermaid > svg:is(
+  [aria-roledescription="flowchart-v2"],
+  [aria-roledescription="flowchart"],
+  [aria-roledescription="stateDiagram"],
+  [aria-roledescription="stateDiagram-v2"],
+  [aria-roledescription="class"],
+  [aria-roledescription="classDiagram"],
+  [aria-roledescription="sequence"]) text {
+  fill: var(--text-normal);
+}
+
+/* Mermaid injects a per-diagram <style> element with ID selectors, so
+   recoloring diagram parts cannot win without !important. Selectors are
+   scoped to flowchart/state/sequence part classes to leave pie, gantt,
+   and other chart types untouched. */
+body:not(.ta-plain-mermaid) .mermaid .node rect,
+body:not(.ta-plain-mermaid) .mermaid .node circle,
+body:not(.ta-plain-mermaid) .mermaid .node ellipse,
+body:not(.ta-plain-mermaid) .mermaid .node polygon,
+body:not(.ta-plain-mermaid) .mermaid .node path {
+  fill: var(--ta-mermaid-node-bg) !important;
+  stroke: var(--ta-mermaid-node-border) !important;
+  stroke-width: 1.4px !important;
+}
+
+body:not(.ta-plain-mermaid) .mermaid .cluster rect {
+  fill: var(--ta-mermaid-cluster-bg) !important;
+  stroke: var(--ta-mermaid-edge) !important;
+}
+
+body:not(.ta-plain-mermaid) .mermaid .nodeLabel,
+body:not(.ta-plain-mermaid) .mermaid .nodeLabel p,
+body:not(.ta-plain-mermaid) .mermaid .cluster-label span,
+body:not(.ta-plain-mermaid) .mermaid .node text,
+body:not(.ta-plain-mermaid) .mermaid .label text {
+  color: var(--text-normal) !important;
+  fill: var(--text-normal) !important;
+  background-color: transparent !important;
+}
+
+body:not(.ta-plain-mermaid) .mermaid .edgeLabel,
+body:not(.ta-plain-mermaid) .mermaid .edgeLabel p,
+body:not(.ta-plain-mermaid) .mermaid rect.labelBkg {
+  color: var(--text-soft) !important;
+  fill: var(--ta-mermaid-cluster-bg) !important;
+  background-color: var(--ta-mermaid-cluster-bg) !important;
+}
+
+body:not(.ta-plain-mermaid) .mermaid .edgePath .path,
+body:not(.ta-plain-mermaid) .mermaid .flowchart-link,
+body:not(.ta-plain-mermaid) .mermaid .transition {
+  stroke: var(--ta-mermaid-edge) !important;
+}
+
+body:not(.ta-plain-mermaid) .mermaid .marker,
+body:not(.ta-plain-mermaid) .mermaid .arrowheadPath {
+  fill: var(--ta-accent) !important;
+  stroke: var(--ta-accent) !important;
+}
+
+body:not(.ta-plain-mermaid) .mermaid .actor {
+  fill: var(--ta-mermaid-node-bg) !important;
+  stroke: var(--ta-mermaid-node-border) !important;
+}
+
+body:not(.ta-plain-mermaid) .mermaid text.actor > tspan {
+  fill: var(--text-normal) !important;
+}
+
+body:not(.ta-plain-mermaid) .mermaid .messageLine0,
+body:not(.ta-plain-mermaid) .mermaid .messageLine1,
+body:not(.ta-plain-mermaid) .mermaid .loopLine {
+  stroke: var(--ta-mermaid-edge) !important;
+}
+
+body:not(.ta-plain-mermaid) .mermaid .messageText,
+body:not(.ta-plain-mermaid) .mermaid .loopText,
+body:not(.ta-plain-mermaid) .mermaid .loopText > tspan {
+  fill: var(--text-soft) !important;
+}
+
+body:not(.ta-plain-mermaid) .mermaid .labelBox {
+  fill: var(--ta-mermaid-cluster-bg) !important;
+  stroke: var(--ta-mermaid-node-border) !important;
+}
+
+body:not(.ta-plain-mermaid) .mermaid .labelText,
+body:not(.ta-plain-mermaid) .mermaid .labelText > tspan {
+  fill: var(--text-normal) !important;
+}
+
+/* Default callout palette — each type maps to the theme palette so callouts
+   match the theme out of the box: green for the default/note flavor, cyan for
+   the info family, orange for warnings, red for danger, violet for questions,
+   gray for quotes. Style Settings can override any of these per type. */
+body {
+  --callout-default: var(--ta-green-rgb);
+  --callout-summary: var(--ta-cyan-rgb);
+  --callout-info: var(--ta-cyan-rgb);
+  --callout-todo: var(--ta-cyan-rgb);
+  --callout-tip: var(--ta-cyan-rgb);
+  --callout-important: var(--ta-cyan-rgb);
+  --callout-success: var(--ta-green-rgb);
+  --callout-question: var(--ta-violet-rgb);
+  --callout-warning: var(--ta-orange-rgb);
+  --callout-fail: var(--ta-red-rgb);
+  --callout-error: var(--ta-red-rgb);
+  --callout-bug: var(--ta-red-rgb);
+  --callout-example: var(--ta-violet-rgb);
+  --callout-quote: var(--ta-gray-rgb);
+}
+
+.callout {
+  background: color-mix(in srgb, rgb(var(--callout-color)) 9%, var(--background-primary));
+  border: var(--ta-border-width) solid color-mix(in srgb, rgb(var(--callout-color)) 34%, var(--background-modifier-border));
+  border-left: 3px solid rgb(var(--callout-color));
+  border-radius: var(--radius-m);
+  box-shadow: none;
+}
+
+.callout-title {
+  color: var(--text-normal);
+  font-family: var(--font-interface);
+  font-size: 0.92em;
+  font-weight: 750;
+}
+
+.metadata-container {
+  --metadata-label-font: var(--font-monospace);
+  --metadata-label-font-size: 12px;
+  --metadata-label-text-color: var(--text-muted);
+  --metadata-label-text-color-hover: var(--text-soft);
+  --metadata-divider-width: var(--ta-border-width);
+  --metadata-divider-color: color-mix(in srgb, var(--background-modifier-border) 55%, transparent);
+  border: var(--ta-border-width) solid var(--background-modifier-border);
+  border-radius: var(--radius-m);
+  background: var(--background-primary-alt);
+  padding: 8px 10px;
+}
+
+/* The theme's global text-input chrome would box the chromeless property
+   fields; hand them back to Obsidian's variable-driven styling. */
+.metadata-container input[type="text"],
+.metadata-container input[type="search"],
+.metadata-container textarea {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+.metadata-container input[type="text"]:focus,
+.metadata-container input[type="search"]:focus,
+.metadata-container textarea:focus {
+  background: var(--background-modifier-hover);
+  box-shadow: none;
+}
+
+.metadata-properties-heading {
+  display: block;
+  padding: 2px 4px 6px;
+  margin-bottom: 4px;
+  border-bottom: var(--ta-border-width) solid color-mix(in srgb, var(--background-modifier-border) 70%, transparent);
+}
+
+.metadata-properties-title {
+  font-family: var(--font-monospace);
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.metadata-property {
+  --metadata-label-background: transparent;
+  --metadata-input-background: transparent;
+  border-radius: var(--radius-s);
+}
+
+.metadata-property:hover {
+  background: var(--background-modifier-hover);
+}
+
+.metadata-container .metadata-property-key-input {
+  font-family: var(--metadata-label-font);
+  font-size: var(--metadata-label-font-size);
+  color: var(--metadata-label-text-color);
+}
+
+.metadata-property-icon {
+  color: var(--text-faint);
+}
+
+.metadata-container .metadata-add-button {
+  color: var(--text-faint);
+}
+
+.metadata-container .metadata-add-button:hover {
+  color: var(--ta-accent);
+}
+
+.graph-view.color-fill {
+  color: var(--ta-accent-alt);
+}
+
+.graph-view.color-line {
+  color: var(--background-modifier-border-hover);
+}
+
+.graph-view.color-fill-highlight,
+.graph-view.color-line-highlight {
+  color: var(--ta-accent);
+}
+
+.canvas-wrapper {
+  --canvas-background: var(--background-primary);
+  --canvas-dot-pattern: var(--background-modifier-border);
+}
+
+.canvas-node {
+  border-radius: var(--radius-m);
+}
+
+.canvas-node.is-focused,
+.canvas-node.is-selected {
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--ta-accent) 60%, transparent), var(--ta-glow);
+}
+
+.notice {
+  background: var(--background-secondary-alt);
+  border: var(--ta-border-width) solid var(--background-modifier-border);
+  border-left: 3px solid var(--ta-accent);
+  color: var(--text-normal);
+  border-radius: var(--radius-m);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: color-mix(in srgb, var(--text-faint) 46%, transparent);
+  border: 3px solid transparent;
+  border-radius: 999px;
+  background-clip: padding-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: color-mix(in srgb, var(--text-muted) 58%, transparent);
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+
+body.ta-compact {
+  --font-ui-small: 11.5px;
+  --font-ui-smaller: 10.5px;
+  --font-ui-medium: 12px;
+  --line-height-normal: 1.62;
+}
+
+body.ta-compact:not(.is-mobile) {
+  --header-height: 32px;
+}
+
+body.ta-compact .workspace-tab-header {
+  margin-top: 3px;
+}
+
+body.ta-compact .workspace-tab-header-inner {
+  padding: 0 8px;
+}
+
+body.ta-compact .nav-header {
+  padding: 7px 8px 5px;
+}
+
+body.ta-compact .nav-files-container {
+  padding: 0 5px 8px;
+}
+
+body.ta-compact .tree-item-self,
+body.ta-compact .nav-file-title,
+body.ta-compact .nav-folder-title {
+  min-height: 23px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+
+body.ta-terminal-prompts .markdown-source-view.mod-cm6 .cm-content {
+  padding-left: 2.4em;
+}
+
+body.ta-terminal-prompts .markdown-source-view.mod-cm6 .cm-line {
+  position: relative;
+}
+
+body.ta-terminal-prompts .markdown-source-view.mod-cm6 .cm-line.cm-active::before {
+  content: "$";
+  position: absolute;
+  left: -1.55em;
+  color: var(--ta-accent);
+  font-family: var(--font-monospace);
+  font-weight: 800;
+  opacity: 0.9;
+}
+
+body.ta-soft-neon .workspace-tab-header.is-active,
+body.ta-soft-neon .tree-item-self.is-active,
+body.ta-soft-neon .nav-file-title.is-active,
+body.ta-soft-neon .nav-folder-title.is-active,
+body.ta-soft-neon .side-dock-ribbon-action.is-active {
+  box-shadow: inset 0 2px 0 var(--ta-accent), var(--ta-glow);
+}
+
+body.ta-soft-neon .nav-file-title.is-active,
+body.ta-soft-neon .nav-folder-title.is-active,
+body.ta-soft-neon .tree-item-self.is-active {
+  box-shadow: inset 2px 0 0 var(--ta-accent), var(--ta-glow);
+}
+
+/* Colored folders — modeled on the Terminal Workbench site, where a folder and
+   everything inside it share one color drawn from the palette. Each TOP-LEVEL
+   folder is assigned one of six colors, cycled by its order among sibling
+   folders, and hands that color down to its whole subtree via a cascading
+   custom property (--ta-fc). Notes:
+   - `:nth-child(6n+k of .nav-folder)` counts only folders, so loose files and
+     the file tree's virtualization spacer never shift the cycle.
+   - `:not(.nav-folder .nav-folder)` restricts the assignment to top-level
+     folders; nested folders don't re-assign --ta-fc, so they inherit instead.
+   - Titles remap --nav-item-color (not `color`), leaving hover/active states,
+     which use their own variables, untouched.
+   Obsidian sorts folders alphabetically, so the colors are stable in practice;
+   a pure-CSS theme can key off order but not the folder name itself. */
+body.ta-colored-folders .nav-files-container { --ta-fc: var(--nav-item-color); }
+
+body.ta-colored-folders .nav-folder:not(.nav-folder .nav-folder):nth-child(6n+1 of .nav-folder) { --ta-fc: var(--ta-folder-1); }
+body.ta-colored-folders .nav-folder:not(.nav-folder .nav-folder):nth-child(6n+2 of .nav-folder) { --ta-fc: var(--ta-folder-2); }
+body.ta-colored-folders .nav-folder:not(.nav-folder .nav-folder):nth-child(6n+3 of .nav-folder) { --ta-fc: var(--ta-folder-3); }
+body.ta-colored-folders .nav-folder:not(.nav-folder .nav-folder):nth-child(6n+4 of .nav-folder) { --ta-fc: var(--ta-folder-4); }
+body.ta-colored-folders .nav-folder:not(.nav-folder .nav-folder):nth-child(6n+5 of .nav-folder) { --ta-fc: var(--ta-folder-5); }
+body.ta-colored-folders .nav-folder:not(.nav-folder .nav-folder):nth-child(6n+6 of .nav-folder) { --ta-fc: var(--ta-folder-6); }
+
+body.ta-colored-folders .nav-folder-title { --nav-item-color: var(--ta-fc); }
+
+body.ta-plain-headings .markdown-rendered h2,
+body.ta-plain-headings .HyperMD-header-2,
+body.ta-plain-headings .cm-header-2,
+body.ta-plain-headings .markdown-rendered h3,
+body.ta-plain-headings .HyperMD-header-3,
+body.ta-plain-headings .cm-header-3,
+body.ta-plain-headings .markdown-rendered h4,
+body.ta-plain-headings .HyperMD-header-4,
+body.ta-plain-headings .cm-header-4 {
+  color: var(--text-normal);
+}
+
+body.ta-no-heading-rules .markdown-rendered h1::after,
+body.ta-no-heading-rules .markdown-rendered h2::after {
+  content: none;
+}
+
+body.ta-no-active-line .markdown-source-view.mod-cm6 .cm-line.cm-active {
+  background: transparent;
+  box-shadow: none;
+}
+
+body.ta-no-blockquote-glyph .markdown-rendered blockquote::before {
+  content: none;
+}
+
+body.ta-plain-code-header .markdown-rendered pre::before {
+  content: none;
+}
+
+body.ta-plain-code-header .cm-line.HyperMD-codeblock-begin {
+  background: var(--code-background);
+  border-bottom: 0;
+}
+
+body.ta-plain-tabs .workspace-tab-header-inner-title {
+  font-family: var(--font-interface);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+body.ta-plain-tabs .workspace-tabs.mod-top .workspace-tab-header.is-active,
+body.ta-plain-tabs .workspace-tabs.mod-top .workspace-tab-header.is-active .workspace-tab-header-inner-title {
+  color: var(--text-normal);
+}
+
+body.ta-plain-breadcrumb .view-header-title,
+body.ta-plain-breadcrumb .view-header-title-parent,
+body.ta-plain-breadcrumb .view-header-breadcrumb {
+  font-family: var(--font-interface);
+  font-size: 12px;
+}
+
+body.ta-plain-tasks .markdown-rendered .task-list-item[data-task="-"],
+body.ta-plain-tasks .cm-line.HyperMD-task-line[data-task="-"],
+body.ta-plain-tasks .markdown-rendered .task-list-item[data-task=">"],
+body.ta-plain-tasks .cm-line.HyperMD-task-line[data-task=">"],
+body.ta-plain-tasks .markdown-rendered .task-list-item[data-task="!"],
+body.ta-plain-tasks .cm-line.HyperMD-task-line[data-task="!"] {
+  --checkbox-color: var(--ta-accent);
+  --checkbox-color-hover: var(--ta-accent);
+  --checkbox-border-color: var(--background-modifier-border-hover);
+  --checkbox-border-color-hover: var(--background-modifier-border-hover);
+  color: var(--text-faint);
+  font-weight: inherit;
+  text-decoration-color: var(--text-faint);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .clickable-icon,
+  .workspace-tab-header,
+  .nav-file-title,
+  .nav-folder-title,
+  .tree-item-self,
+  button,
+  .menu-item,
+  .suggestion-item {
+    transition: background-color 120ms ease, color 120ms ease, border-color 120ms ease, box-shadow 120ms ease;
+  }
+}
+
+@media print {
+  body {
+    --background-primary: #ffffff;
+    --text-normal: #111111;
+    --text-muted: #444444;
+    --text-faint: #666666;
+    --link-color: #005f8f;
+    --code-background: #f2f4f3;
+  }
+
+  .markdown-rendered pre,
+  .markdown-rendered code {
+    border-color: #d7ddda;
+  }
+
+  .markdown-rendered blockquote::before,
+  .markdown-rendered pre::before {
+    content: none;
+  }
+}
+
+/* Static fallbacks for engines without color-mix() (older Android WebViews) */
+@supports not (color: color-mix(in srgb, red 50%, transparent)) {
+  body.theme-dark {
+    --ta-selection: rgba(99, 242, 171, 0.2);
+    --text-accent-hover: #88f5bf;
+    --interactive-accent-hover: #79f4b7;
+    --link-color-hover: #97e6ff;
+    --link-external-color-hover: #97e6ff;
+  }
+
+  body.theme-light {
+    --ta-selection: rgba(0, 122, 77, 0.17);
+  }
+
+  body.ta-soft-neon.theme-dark {
+    --ta-glow: 0 0 18px rgba(99, 242, 171, 0.28);
+  }
+
+  body.ta-soft-neon.theme-light {
+    --ta-glow: 0 0 14px rgba(0, 122, 77, 0.16);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: var(--text-faint);
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--text-muted);
+  }
+}

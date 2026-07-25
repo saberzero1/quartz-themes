@@ -1154,15 +1154,15 @@ body.theme-light {
   --h6-color: #a68a2d !important;
   --inline-title-color: #354247 !important;
   --table-header-background-hover: #f0e6ef !important;
+  --bold-color: #754b79 !important;
+  --inline-title-font: "Open Sans Regular Obsidian", sans-serif !important;
+  --italic-color: #1e4a7d !important;
   --h1-font: "Open Sans Regular Obsidian", sans-serif !important;
   --h2-font: "Open Sans Regular Obsidian", sans-serif !important;
   --h3-font: "Open Sans Regular Obsidian", sans-serif !important;
   --h4-font: "Open Sans Regular Obsidian", sans-serif !important;
   --h5-font: "Open Sans Regular Obsidian", sans-serif !important;
   --h6-font: "Open Sans Regular Obsidian", sans-serif !important;
-  --inline-title-font: "Open Sans Regular Obsidian", sans-serif !important;
-  --bold-color: #754b79 !important;
-  --italic-color: #1e4a7d !important;
   --font-ui-larger: 18px !important;
 }
 
@@ -2213,15 +2213,15 @@ body.theme-dark {
   --h6-color: #d9c47a !important;
   --inline-title-color: #d3dfe6 !important;
   --table-header-background-hover: #1b0f17 !important;
+  --bold-color: #dad79b !important;
+  --inline-title-font: "Open Sans Light Obsidian", sans-serif !important;
+  --italic-color: #86b7f0 !important;
   --h1-font: "Open Sans Light Obsidian", sans-serif !important;
   --h2-font: "Open Sans Light Obsidian", sans-serif !important;
   --h3-font: "Open Sans Light Obsidian", sans-serif !important;
   --h4-font: "Open Sans Light Obsidian", sans-serif !important;
   --h5-font: "Open Sans Light Obsidian", sans-serif !important;
   --h6-font: "Open Sans Light Obsidian", sans-serif !important;
-  --inline-title-font: "Open Sans Light Obsidian", sans-serif !important;
-  --bold-color: #dad79b !important;
-  --italic-color: #86b7f0 !important;
   --font-ui-larger: 18px !important;
 }
 

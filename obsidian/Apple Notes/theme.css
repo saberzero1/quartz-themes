@@ -1,0 +1,563 @@
+/*
+ * Apple Notes theme for Obsidian
+ * Replicates the visual language of the macOS / iOS Notes app:
+ * warm off-white paper, SF font stack, yellow accents, generous spacing.
+ */
+
+/* ---------- Fonts ---------- */
+body {
+  --font-interface-override: -apple-system, BlinkMacSystemFont, "SF Pro Text",
+    "SF Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-text-override: -apple-system, BlinkMacSystemFont, "SF Pro Text",
+    "New York", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-monospace-override: "SF Mono", "Menlo", "Monaco", Consolas, monospace;
+
+  --font-text-size: 17px;
+  --line-height-normal: 1.5;
+  --line-height-tight: 1.3;
+}
+
+/* ---------- Light mode: paper / cream ---------- */
+.theme-light {
+  --accent-h: 45;
+  --accent-s: 100%;
+  --accent-l: 50%;
+
+  --color-accent: #d19a00;
+  --color-accent-1: #e0a800;
+  --color-accent-2: #b98700;
+  --interactive-accent: #d19a00;
+  --interactive-accent-hover: #b98700;
+  --text-accent: #b98700;
+  --text-accent-hover: #d19a00;
+  --text-selection: rgba(255, 214, 10, 0.35);
+
+  --background-primary: #ffffff;
+  --background-primary-alt: #fafafa;
+  --background-secondary: #f5f5f0;
+  --background-secondary-alt: #efefe9;
+  --background-modifier-border: #e5e5e0;
+  --background-modifier-border-hover: #d9d9d3;
+  --background-modifier-hover: rgba(0, 0, 0, 0.04);
+  --background-modifier-active-hover: rgba(255, 204, 0, 0.18);
+  --background-modifier-form-field: #ffffff;
+
+  --text-normal: #1c1c1e;
+  --text-muted: #6c6c70;
+  --text-faint: #a1a1a6;
+  --text-on-accent: #1c1c1e;
+
+  --divider-color: #e5e5e0;
+  --titlebar-background: #f5f5f0;
+  --titlebar-background-focused: #f0f0ea;
+
+  --tab-background-active: #ffffff;
+  --tab-outline-color: transparent;
+}
+
+/* ---------- Dark mode: charcoal ---------- */
+.theme-dark {
+  --accent-h: 45;
+  --accent-s: 100%;
+  --accent-l: 55%;
+
+  --color-accent: #ffd60a;
+  --color-accent-1: #ffdf3d;
+  --color-accent-2: #e6bf00;
+  --interactive-accent: #ffd60a;
+  --interactive-accent-hover: #ffdf3d;
+  --text-accent: #ffd60a;
+  --text-accent-hover: #ffdf3d;
+  --text-selection: rgba(255, 214, 10, 0.28);
+
+  --background-primary: #1c1c1e;
+  --background-primary-alt: #2c2c2e;
+  --background-secondary: #252527;
+  --background-secondary-alt: #2c2c2e;
+  --background-modifier-border: #3a3a3c;
+  --background-modifier-border-hover: #48484a;
+  --background-modifier-hover: rgba(255, 255, 255, 0.05);
+  --background-modifier-active-hover: rgba(255, 214, 10, 0.18);
+  --background-modifier-form-field: #2c2c2e;
+
+  --text-normal: #f2f2f7;
+  --text-muted: #98989e;
+  --text-faint: #6c6c70;
+  --text-on-accent: #1c1c1e;
+
+  --divider-color: #3a3a3c;
+  --titlebar-background: #252527;
+  --titlebar-background-focused: #2c2c2e;
+
+  --tab-background-active: #1c1c1e;
+  --tab-outline-color: transparent;
+}
+
+/* ---------- Global chrome ---------- */
+.workspace {
+  background-color: var(--background-secondary);
+}
+
+.workspace-split.mod-left-split,
+.workspace-split.mod-right-split {
+  background-color: var(--background-secondary);
+  border: none;
+}
+
+.workspace-leaf {
+  background-color: var(--background-primary);
+}
+
+.workspace-tabs .workspace-tab-header-container {
+  background-color: var(--background-secondary);
+  border-bottom: 1px solid var(--divider-color);
+}
+
+body .workspace-tab-header {
+  background: transparent;
+  border: none;
+  border-radius: 6px;
+  margin: 4px 2px;
+}
+
+body .workspace-tab-header.is-active {
+  background: var(--background-primary);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06);
+}
+
+/* ---------- Sidebar: folder / note list ---------- */
+.nav-files-container,
+.nav-folder-children {
+  padding: 4px 6px;
+}
+
+.nav-file-title,
+.nav-folder-title {
+  border-radius: 6px;
+  padding: 5px 10px;
+  font-size: 14px;
+  color: var(--text-normal);
+  font-weight: 400;
+  line-height: 1.35;
+}
+
+.nav-folder-title {
+  font-weight: 500;
+}
+
+.nav-file-title:hover,
+.nav-folder-title:hover {
+  background-color: var(--background-modifier-hover);
+}
+
+body .nav-file-title.is-active,
+body .nav-file-title.is-active:hover {
+  background-color: var(--interactive-accent);
+  color: var(--text-on-accent);
+}
+
+.nav-file-title.is-active .nav-file-title-content {
+  color: var(--text-on-accent);
+  font-weight: 500;
+}
+
+.nav-folder-collapse-indicator {
+  color: var(--text-muted);
+}
+
+/* Folder icons colored yellow like Apple Notes */
+.nav-folder-title::before {
+  color: var(--color-accent);
+}
+
+/* ---------- Title bar / view header ---------- */
+.view-header {
+  background-color: var(--background-primary);
+  border-bottom: 1px solid var(--divider-color);
+  height: 40px;
+}
+
+.view-header-title-container {
+  color: var(--text-muted);
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.view-header-icon {
+  color: var(--text-muted);
+}
+
+/* ---------- Editor / note body ---------- */
+.markdown-source-view,
+.markdown-preview-view {
+  padding: 24px 24px 24px;
+  font-family: var(--font-text);
+  color: var(--text-normal);
+  background-color: var(--background-primary);
+}
+
+/* Kill the tall bottom "scroll runway" Obsidian adds under the last line */
+body .cm-editor .cm-contentContainer,
+body .cm-editor .cm-sizer {
+  padding-bottom: 0;
+}
+
+body .cm-editor .cm-content {
+  padding-bottom: 24px;
+  padding-left: 0;
+}
+
+/* Full-width editor — override "readable line length" so text fills the pane */
+body .markdown-source-view.is-readable-line-width .cm-sizer,
+body .markdown-preview-view.is-readable-line-width .markdown-preview-sizer,
+body .markdown-source-view .cm-sizer,
+body .markdown-preview-view .markdown-preview-sizer,
+body .cm-editor .cm-contentContainer,
+body .cm-editor .cm-content,
+body .cm-editor .cm-line {
+  max-width: 100%;
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+body .workspace-leaf-content[data-type="markdown"] .view-content {
+  padding: 0;
+}
+
+/* Hide the CodeMirror gutter (line numbers, fold markers) */
+body .cm-editor .cm-gutters,
+body .markdown-source-view .cm-gutters {
+  display: none;
+  border: none;
+  background: transparent;
+}
+
+.markdown-preview-view {
+  font-size: var(--font-text-size);
+  line-height: var(--line-height-normal);
+}
+
+/* Inline title — the big bold note title at the top */
+.inline-title {
+  font-family: var(--font-text);
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.25;
+  color: var(--text-normal);
+  margin-bottom: 8px;
+  letter-spacing: -0.02em;
+}
+
+/* Headings — Apple Notes uses "Title / Heading / Subheading / Body" */
+.markdown-preview-view h1,
+.markdown-source-view.mod-cm6 .cm-header-1 {
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+  margin-top: 1.2em;
+  margin-bottom: 0.4em;
+  color: var(--text-normal);
+  border: none;
+}
+
+.markdown-preview-view h2,
+.markdown-source-view.mod-cm6 .cm-header-2 {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -0.015em;
+  line-height: 1.3;
+  margin-top: 1em;
+  margin-bottom: 0.3em;
+  color: var(--text-normal);
+}
+
+.markdown-preview-view h3,
+.markdown-source-view.mod-cm6 .cm-header-3 {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.35;
+  margin-top: 0.9em;
+  margin-bottom: 0.25em;
+  color: var(--text-normal);
+}
+
+.markdown-preview-view h4,
+.markdown-preview-view h5,
+.markdown-preview-view h6 {
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--text-normal);
+}
+
+/* Body paragraphs */
+.markdown-preview-view p {
+  margin: 0 0 0.6em 0;
+}
+
+/* Links */
+.markdown-preview-view a,
+.cm-link,
+.cm-url,
+.internal-link {
+  color: var(--text-accent);
+  text-decoration: underline;
+}
+
+/* Blockquotes — subtle left border */
+.markdown-preview-view blockquote,
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-quote {
+  border-left: 3px solid var(--color-accent);
+  padding-left: 14px;
+  margin-left: 0;
+  color: var(--text-muted);
+  font-style: normal;
+  background: transparent;
+}
+
+/* ---------- Lists & checkboxes ---------- */
+.markdown-preview-view ul,
+.markdown-preview-view ol {
+  padding-left: 1.5em;
+}
+
+.markdown-preview-view li {
+  margin-bottom: 0.15em;
+}
+
+/* Apple Notes-style round checkboxes
+ * Apple Notes: empty thin-outlined circle → filled gold circle
+ * with a small white check when done.
+ */
+body {
+  --checkbox-color: #f5b800;
+  --checkbox-color-hover: #ffcc00;
+  --checkbox-border-color: #c7c7cc;
+  --checkbox-border-color-hover: #f5b800;
+  --checkbox-marker-color: #ffffff;
+  --checkbox-radius: 50%;
+  --checkbox-size: 18px;
+}
+
+.theme-dark {
+  --checkbox-color: #ffcc00;
+  --checkbox-color-hover: #ffd60a;
+  --checkbox-border-color: #545458;
+  --checkbox-border-color-hover: #ffcc00;
+  --checkbox-marker-color: #1c1c1e;
+}
+
+input[type="checkbox"],
+.task-list-item-checkbox,
+.markdown-preview-view input[type="checkbox"],
+.markdown-source-view input[type="checkbox"],
+.HyperMD-task-line input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: var(--checkbox-size);
+  height: var(--checkbox-size);
+  min-width: var(--checkbox-size);
+  border-radius: var(--checkbox-radius);
+  border: 1.5px solid var(--checkbox-border-color);
+  background: transparent;
+  position: relative;
+  margin: 0 8px 0 0;
+  vertical-align: -4px;
+  cursor: pointer;
+  transition: background-color 0.12s ease, border-color 0.12s ease;
+  box-shadow: none;
+}
+
+input[type="checkbox"]:hover {
+  border-color: var(--checkbox-border-color-hover);
+}
+
+input[type="checkbox"]:checked {
+  background-color: var(--checkbox-color);
+  border-color: var(--checkbox-color);
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path fill='none' stroke='white' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round' d='M3.5 8.5 L6.8 11.5 L12.5 5'/></svg>");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 82% 82%;
+}
+
+.theme-dark input[type="checkbox"]:checked {
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path fill='none' stroke='%231c1c1e' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round' d='M3.5 8.5 L6.8 11.5 L12.5 5'/></svg>");
+}
+
+input[type="checkbox"]:checked:hover {
+  background-color: var(--checkbox-color-hover);
+  border-color: var(--checkbox-color-hover);
+}
+
+input[type="checkbox"]:checked::after,
+input[type="checkbox"]:checked::before {
+  content: none;
+}
+
+/* Completed task text: muted, not struck through — matches Apple Notes */
+.markdown-preview-view .task-list-item.is-checked,
+.markdown-preview-view li[data-task="x"],
+.markdown-preview-view li[data-task="X"],
+.HyperMD-task-line[data-task="x"],
+.HyperMD-task-line[data-task="X"] {
+  color: var(--text-muted);
+  text-decoration: none;
+}
+
+.markdown-preview-view .task-list-item.is-checked > *,
+.markdown-preview-view li[data-task="x"] > * {
+  text-decoration: none;
+}
+
+/* ---------- Tables ---------- */
+.markdown-preview-view table {
+  border-collapse: collapse;
+  border: 1px solid var(--divider-color);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.markdown-preview-view th {
+  background: var(--background-secondary);
+  font-weight: 600;
+  border-bottom: 1px solid var(--divider-color);
+  padding: 8px 12px;
+}
+
+.markdown-preview-view td {
+  padding: 8px 12px;
+  border-top: 1px solid var(--divider-color);
+}
+
+/* ---------- Code ---------- */
+.markdown-preview-view code,
+.cm-inline-code {
+  background: var(--background-secondary);
+  border-radius: 4px;
+  padding: 1px 5px;
+  font-size: 0.9em;
+  color: var(--text-normal);
+}
+
+.markdown-preview-view pre {
+  background: var(--background-secondary);
+  border-radius: 8px;
+  padding: 12px 14px;
+  border: 1px solid var(--divider-color);
+}
+
+/* ---------- Highlight (Apple Notes yellow highlighter) ---------- */
+.markdown-preview-view mark,
+.cm-highlight {
+  background: rgba(255, 214, 10, 0.4);
+  color: var(--text-normal);
+  border-radius: 2px;
+  padding: 0 2px;
+}
+
+/* ---------- Selection ---------- */
+::selection {
+  background: var(--text-selection);
+}
+
+/* ---------- Status bar ---------- */
+.status-bar {
+  background-color: var(--background-secondary);
+  border-top: 1px solid var(--divider-color);
+  color: var(--text-muted);
+  font-size: 12px;
+}
+
+/* ---------- Scrollbars — thin, Apple-like ---------- */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: transparent;
+  border-radius: 4px;
+}
+:hover::-webkit-scrollbar-thumb {
+  background: var(--background-modifier-border-hover);
+}
+
+/* ---------- Buttons ---------- */
+button,
+.mod-cta {
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+.mod-cta {
+  background: var(--interactive-accent);
+  color: var(--text-on-accent);
+}
+
+.mod-cta:hover {
+  background: var(--interactive-accent-hover);
+}
+
+/* ---------- Modals ---------- */
+.modal {
+  border-radius: 12px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+}
+
+.modal-bg {
+  backdrop-filter: blur(8px);
+  background: rgba(0, 0, 0, 0.3);
+}
+
+/* ---------- Search / suggestions ---------- */
+.suggestion-item.is-selected {
+  background-color: var(--interactive-accent);
+  color: var(--text-on-accent);
+}
+
+.search-input-container input {
+  background: var(--background-modifier-form-field);
+  border: 1px solid var(--divider-color);
+  border-radius: 6px;
+}
+
+/* ---------- Tag pills ---------- */
+.tag,
+a.tag {
+  background: rgba(255, 214, 10, 0.18);
+  color: var(--text-accent);
+  border: none;
+  border-radius: 10px;
+  padding: 1px 8px;
+  font-size: 0.85em;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+/* ---------- Callouts ---------- */
+.callout {
+  border-radius: 8px;
+  border: none;
+  padding: 12px 16px;
+  background: var(--background-secondary);
+}
+
+.callout[data-callout="note"] {
+  --callout-color: 209, 154, 0;
+}
+
+/* ---------- File explorer folder chevrons ---------- */
+.tree-item-icon {
+  color: var(--text-muted);
+}
+
+/* ---------- Left ribbon ---------- */
+.workspace-ribbon {
+  background-color: var(--background-secondary);
+  border-right: 1px solid var(--divider-color);
+}
+
+.workspace-ribbon .side-dock-ribbon-action:hover {
+  color: var(--color-accent);
+}

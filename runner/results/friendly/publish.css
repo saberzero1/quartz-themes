@@ -1136,6 +1136,7 @@ body.theme-light {
   --opacity-translucency: 0.85 !important;
   --reveal-font: "iA Writer Quattro V", "Segoe UI", serif !important;
   --text-error-hover: red !important;
+  --radius: 0px !important;
   --interactive-success: var(--interactive-normal) !important;
   --header-font: "iA Writer Quattro V Black", serif !important;
   --header-size: 100% !important;
@@ -1143,7 +1144,6 @@ body.theme-light {
   --med-tall: 600px !important;
   --medium: 500px !important;
   --micro: 70px !important;
-  --radius: 0px !important;
   --small: 200px !important;
   --small-med: 300px !important;
   --tall: 700px !important;
@@ -2253,6 +2253,7 @@ body.theme-dark {
   --opacity-translucency: 0.85 !important;
   --reveal-font: "Ranille Normal", "Segoe UI", serif !important;
   --text-error-hover: #9b2226 !important;
+  --radius: 0px !important;
   --interactive-success: var(--interactive-normal) !important;
   --header-font: "Ranille Normal", serif !important;
   --header-size: 110% !important;
@@ -2260,7 +2261,6 @@ body.theme-dark {
   --med-tall: 600px !important;
   --medium: 500px !important;
   --micro: 70px !important;
-  --radius: 0px !important;
   --small: 200px !important;
   --small-med: 300px !important;
   --tall: 700px !important;

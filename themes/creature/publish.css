@@ -1730,12 +1730,6 @@ body.theme-dark {
   --interactive-success: var(--success) !important;
   --green: #2edb6e !important;
   --red: red-base !important;
-  --background-modifier-success-hover: var(--success-hover) !important;
-  --blue: #009fff !important;
-  --primary: #2edb6e !important;
-  --white: rgb(255, 255, 255) !important;
-  --error: red-base !important;
-  --border: #323232 !important;
   --dark0: #1e1e1e !important;
   --dark1: #232323 !important;
   --dark2: #282828 !important;
@@ -1744,6 +1738,12 @@ body.theme-dark {
   --light1: rgba(255, 255, 255, 0.38) !important;
   --light2: rgba(255, 255, 255, 0.6) !important;
   --light3: rgba(255, 255, 255, 0.87) !important;
+  --background-modifier-success-hover: var(--success-hover) !important;
+  --blue: #009fff !important;
+  --primary: #2edb6e !important;
+  --white: rgb(255, 255, 255) !important;
+  --error: red-base !important;
+  --border: #323232 !important;
   --dark4: #323232 !important;
   --black: rgb(0, 0, 0) !important;
   --blue-light: #1aa9ff !important;

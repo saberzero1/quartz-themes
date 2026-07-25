@@ -1671,11 +1671,11 @@ body.theme-light {
   --table-header-background-hover: #f5ede8 !important;
   --vault-name-color: var(--color-text) !important;
   --bold-color: #ff69b4 !important;
-  --inline-code-background: rgba(196, 131, 122, 0.1) !important;
+  --embed-background: rgba(164, 95, 88, 0.02) !important;
   --inline-code-color: #8f4d48 !important;
+  --inline-code-background: rgba(196, 131, 122, 0.1) !important;
   --metadata-input-border-color: rgba(0, 0, 0, 0.06) !important;
   --tab-background-inactive: #fdf8f5 !important;
-  --embed-background: rgba(164, 95, 88, 0.02) !important;
   --background-primary-rgb: 253, 248, 245 !important;
   --embed-border-color: rgba(0, 0, 0, 0.06) !important;
   --background-secondary-rgb: 253, 248, 245 !important;
@@ -2775,11 +2775,11 @@ body.theme-dark {
   --table-header-background-hover: #111114 !important;
   --vault-name-color: var(--color-text) !important;
   --bold-color: #ff69b4 !important;
-  --inline-code-background: rgba(255, 143, 184, 0.1) !important;
+  --embed-background: rgba(255, 255, 255, 0.02) !important;
   --inline-code-color: #ffb7d0 !important;
+  --inline-code-background: rgba(255, 143, 184, 0.1) !important;
   --metadata-input-border-color: rgba(255, 255, 255, 0.06) !important;
   --tab-background-inactive: #0b0b0d !important;
-  --embed-background: rgba(255, 255, 255, 0.02) !important;
   --background-primary-rgb: 0, 0, 0 !important;
   --embed-border-color: rgba(255, 255, 255, 0.06) !important;
   --background-secondary-rgb: 0, 0, 0 !important;

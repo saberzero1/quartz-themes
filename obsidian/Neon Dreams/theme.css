@@ -1,0 +1,1316 @@
+/*
+
+    ███╗   ██╗███████╗ ██████╗ ███╗   ██╗
+    ████╗  ██║██╔════╝██╔═══██╗████╗  ██║
+    ██╔██╗ ██║█████╗  ██║   ██║██╔██╗ ██║
+    ██║╚██╗██║██╔══╝  ██║   ██║██║╚██╗██║
+    ██║ ╚████║███████╗╚██████╔╝██║ ╚████║
+    ╚═╝  ╚═══╝╚══════╝ ╚═════╝ ╚═╝  ╚═══╝
+
+    ██████╗ ██████╗ ███████╗ █████╗ ███╗   ███╗███████╗
+    ██╔══██╗██╔══██╗██╔════╝██╔══██╗████╗ ████║██╔════╝
+    ██║  ██║██████╔╝█████╗  ███████║██╔████╔██║███████╗
+    ██║  ██║██╔══██╗██╔══╝  ██╔══██║██║╚██╔╝██║╚════██║
+    ██████╔╝██║  ██║███████╗██║  ██║██║ ╚═╝ ██║███████║
+    ╚═════╝ ╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝╚═╝     ╚═╝╚══════╝
+
+    Neon Dreams  ::  a dark, structured theme for Obsidian
+    Author:   Guilherme Tagliati
+    License:  MIT
+
+*/
+
+/* ══════════════════════════════════════════════
+   CONTENTS
+   ══════════════════════════════════════════════
+   1.  Style settings        (Style Settings plugin config)
+   2.  Design tokens          (Layer 1: HSL primitives, fonts, shape)
+   3.  Semantic tokens dark   (Layer 2: dark palette + Obsidian mapping)
+   4.  Semantic tokens light  (Layer 2: light palette)
+   5.  Interface elements     (tabs, explorer, ribbon, menus, inputs, scrollbars)
+   6.  Typography             (sans for prose, mono for data)
+   7.  Side panels
+   8.  Editor
+   9.  Markdown styling        (headings, links, code, tables, tasks, tags, callouts)
+   10. Properties / metadata
+   11. Graph view
+   12. Canvas
+   13. Feature flags          (class-toggle behaviors from Style Settings)
+   ══════════════════════════════════════════════ */
+
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+
+/* ══════════════════════════════════════════════
+   1. STYLE SETTINGS
+   ══════════════════════════════════════════════ */
+
+/* @settings
+
+name: Neon Dreams
+id: neon-dreams
+settings:
+  -
+    id: nd-colors
+    title: Colors
+    type: heading
+    level: 2
+    collapsed: true
+  -
+    id: base-h
+    title: Base hue
+    description: "Hue of the background color scale (0–360). Default: 231 (blue-black)"
+    type: variable-number
+    default: 231
+    min: 0
+    max: 360
+    step: 1
+  -
+    id: base-s
+    title: Base saturation
+    description: "Saturation of the background scale. Default: 30%"
+    type: variable-text
+    default: '30%'
+  -
+    id: accent-h
+    title: Accent hue
+    description: "Hue of the primary interactive accent (0–360). Default: 234 (indigo)"
+    type: variable-number
+    default: 234
+    min: 0
+    max: 360
+    step: 1
+  -
+    id: accent-s
+    title: Accent saturation
+    description: "Saturation of the accent color. Default: 100%"
+    type: variable-text
+    default: '100%'
+  -
+    id: nd-editor
+    title: Editor
+    type: heading
+    level: 2
+    collapsed: true
+  -
+    id: active-line-on
+    title: Active line highlight
+    description: Highlight the current line in the editor
+    type: class-toggle
+    default: false
+  -
+    id: hide-markdown
+    title: Hide markdown syntax
+    description: Hide formatting symbols in Live Preview
+    type: class-toggle
+    default: false
+  -
+    id: nd-line-nums
+    title: Line numbers
+    description: Show line numbers in the editor gutter
+    type: class-toggle
+    default: false
+  -
+    id: nd-code-scroll
+    title: Code blocks scroll horizontally
+    description: Prevent code blocks from wrapping
+    type: class-toggle
+    default: false
+  -
+    id: nd-interface
+    title: Interface
+    type: heading
+    level: 2
+    collapsed: true
+  -
+    id: hider-ribbon
+    title: Hide ribbon
+    description: Show ribbon only on hover
+    type: class-toggle
+    default: false
+  -
+    id: nd-status-off
+    title: Minimal status bar
+    description: Reduce status bar visibility
+    type: class-toggle
+    default: false
+  -
+    id: disable-animations
+    title: Disable animations
+    description: Remove all transitions and animations
+    type: class-toggle
+    default: false
+  -
+    id: fast-animations
+    title: Fast animations
+    description: Speed up all transitions
+    type: class-toggle
+    default: false
+  -
+    id: nd-content
+    title: Content
+    type: heading
+    level: 2
+    collapsed: true
+  -
+    id: checkbox-square
+    title: Square checkboxes
+    description: Use square checkboxes instead of rounded
+    type: class-toggle
+    default: false
+  -
+    id: nd-unstyled-tags
+    title: Tags as plain text
+    description: Remove pill styling from tags
+    type: class-toggle
+    default: false
+  -
+    id: callouts-outlined
+    title: Outlined callouts
+    description: Use border-only style instead of filled background
+    type: class-toggle
+    default: false
+  -
+    id: embed-strict
+    title: Remove embed decorations
+    description: Hide embed borders and title
+    type: class-toggle
+    default: false
+  -
+    id: nd-tables
+    title: Tables
+    type: heading
+    level: 2
+    collapsed: true
+  -
+    id: maximize-tables
+    title: Full-width tables
+    description: Tables fill the content column
+    type: class-toggle
+    default: false
+  -
+    id: table-wide
+    title: Wide tables
+    description: Tables extend beyond the text column
+    type: class-toggle
+    default: false
+
+*/
+
+/* ══════════════════════════════════════════════
+   2. DESIGN TOKENS (LAYER 1: PRIMITIVES)
+   ══════════════════════════════════════════════ */
+
+:root {
+    --input-focus-border-color: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+    --input-focus-outline: 1px solid hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.25);
+    --input-unfocused-border-color: transparent;
+    --input-hover-border-color: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.35);
+    --input-disabled-border-color: transparent;
+}
+
+body {
+    /* HSL primitives: change these to retheme everything */
+    --base-h: 231;
+    --base-s: 30%;
+    --base-l: 4%;
+    --accent-h: 234;
+    --accent-s: 100%;
+    --accent-l: 70%;
+
+    /* Layout system */
+    --line-width: 42rem;
+    --line-width-wide: calc(var(--line-width) + 12.5%);
+    --max-width: 88%;
+    --file-line-width: var(--line-width);
+    --readable-line-length: var(--line-width);
+    --container-table-width: var(--line-width);
+    --container-img-width: var(--line-width);
+
+    /* Typography tokens */
+    --h1-size: 1.5em;
+    --h1-weight: 700;
+    --h1-style: normal;
+    --h1-variant: normal;
+    --h2-size: 1.25em;
+    --h2-weight: 700;
+    --h2-style: normal;
+    --h2-variant: normal;
+    --h3-size: 1.1em;
+    --h3-weight: 700;
+    --h3-style: normal;
+    --h3-variant: normal;
+    --h4-size: 1em;
+    --h4-weight: 600;
+    --h4-style: normal;
+    --h4-variant: normal;
+    --h5-size: 0.9em;
+    --h5-weight: 600;
+    --h5-style: normal;
+    --h5-variant: small-caps;
+    --h6-size: 0.85em;
+    --h6-weight: 500;
+    --h6-style: normal;
+    --h6-variant: small-caps;
+
+    /* Shape */
+    --radius-s: 4px;
+    --radius-m: 8px;
+    --radius-l: 12px;
+    --input-radius: 8px;
+    --tab-radius-active: 4px;
+    --checkbox-radius: 4px;
+    --toggle-radius: 9999px;
+    --toggle-thumb-radius: 9999px;
+    --slider-thumb-radius: 9999px;
+
+    /* Fonts */
+    --font-text-theme: Inter, -apple-system, system-ui, sans-serif;
+    --font-monospace-theme: 'JetBrains Mono', monospace;
+
+    /* Fixed semantic colors */
+    --nd-neon: #22C55E;
+    /* success / positive */
+    --nd-neon-hov: #4ade80;
+    --nd-neon-soft: #86efac;
+    --nd-cyan: #00C2FF;
+    /* info / data */
+    --nd-error: #FF5C7A;
+    /* danger / error */
+    --nd-warn: #F59E0B;
+    /* warning */
+    --nd-purple: #A78BFA;
+    /* system / misc */
+}
+
+/* ══════════════════════════════════════════════
+   3. SEMANTIC TOKENS (DARK)
+   ══════════════════════════════════════════════ */
+
+.theme-dark {
+
+    /* Background scale, derived from HSL base */
+    --nd-deep-bg: hsl(var(--base-h), var(--base-s), calc(var(--base-l) - 2%));
+    --nd-main-bg: hsl(var(--base-h), var(--base-s), var(--base-l));
+    --nd-sec-bg: hsl(var(--base-h), var(--base-s), calc(var(--base-l) + 3%));
+    --nd-surface: hsl(var(--base-h), var(--base-s), calc(var(--base-l) + 6%));
+    --nd-hover-bg: hsl(var(--base-h), var(--base-s), calc(var(--base-l) + 9%));
+    --nd-border: hsl(var(--base-h), var(--base-s), calc(var(--base-l) + 14%));
+    --nd-border-strong: hsl(var(--base-h), var(--base-s), calc(var(--base-l) + 20%));
+
+    /* Accent scale, derived from HSL accent */
+    --nd-primary: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+    --nd-primary-hov: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 8%));
+    --nd-primary-light: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 18%));
+
+    /* Text scale, ink-* (intentionally fixed) */
+    --nd-text-1: #F4F6FB;
+    /* ink-100: primary */
+    --nd-text-2: #B8BECC;
+    /* ink-200: secondary */
+    --nd-text-3: #858B9D;
+    /* ink-300: muted */
+    --nd-text-4: #5F6577;
+    /* ink-400: label */
+    --nd-text-dis: #4E5363;
+    /* ink-500: disabled */
+
+    /* ── Layer 3: Obsidian native variable mapping ── */
+    --background-primary: var(--nd-main-bg);
+    --background-primary-alt: var(--nd-deep-bg);
+    --background-secondary: var(--nd-main-bg);
+    --background-secondary-alt: var(--nd-sec-bg);
+
+    --background-modifier-hover: var(--nd-hover-bg);
+    --background-modifier-active-hover: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.10);
+    --background-modifier-border: var(--nd-border);
+    --background-modifier-border-hover: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.35);
+
+    --background-modifier-form-field: var(--nd-surface);
+    --background-modifier-form-field-highlighted: var(--nd-hover-bg);
+
+    --background-modifier-success: var(--nd-neon);
+    --background-modifier-error: rgba(255, 92, 122, 0.12);
+
+    --divider-color: var(--nd-border);
+
+    --interactive-normal: var(--nd-surface);
+    --interactive-hover: var(--nd-hover-bg);
+    --interactive-accent: var(--nd-primary);
+    --interactive-accent-hover: var(--nd-primary-hov);
+
+    --nav-item-background-active: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.10);
+    --nav-item-background-hover: var(--nd-hover-bg);
+    --nav-item-color: var(--nd-text-2);
+    --nav-item-color-active: var(--nd-primary);
+    --nav-item-color-hover: var(--nd-text-1);
+
+    --scrollbar-bg: var(--nd-main-bg);
+    --scrollbar-thumb-bg: var(--nd-border-strong);
+    --scrollbar-active-thumb-bg: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.35);
+
+    --tab-container-background: var(--nd-deep-bg);
+    --tab-outline-color: var(--nd-border);
+    --tab-text-color-focused-active: var(--nd-primary);
+    --tab-text-color-active: var(--nd-text-2);
+    --tab-text-color: var(--nd-text-3);
+
+    --titlebar-background: var(--nd-sec-bg);
+    --titlebar-background-focused: var(--nd-sec-bg);
+    --titlebar-text-color: var(--nd-text-3);
+    --titlebar-text-color-focused: var(--nd-text-2);
+
+    --text-normal: var(--nd-text-1);
+    --text-muted: var(--nd-text-2);
+    --text-faint: var(--nd-text-3);
+    --text-accent: var(--nd-primary);
+    --text-accent-hover: var(--nd-primary-hov);
+    --text-error: var(--nd-error);
+    --text-warning: var(--nd-warn);
+    --text-on-accent: #ffffff;
+    --text-selection: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.18);
+    --text-highlight-bg: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.12);
+
+    --blockquote-border-color: var(--nd-primary);
+
+    --code-background: var(--nd-deep-bg);
+    --code-normal: var(--nd-primary-light);
+    --code-comment: var(--nd-text-3);
+    --code-tag: var(--nd-primary);
+    --code-string: var(--nd-text-2);
+    --code-value: var(--nd-cyan);
+    --code-keyword: var(--nd-primary);
+    --code-function: var(--nd-primary-light);
+    --code-property: var(--nd-text-1);
+    --code-operator: var(--nd-text-2);
+    --code-important: var(--nd-error);
+
+    --checkbox-color: var(--nd-neon);
+    --checkbox-color-hover: var(--nd-neon-hov);
+    --checkbox-border-color: var(--nd-text-3);
+    --checkbox-marker-color: var(--nd-deep-bg);
+
+    --color-red: var(--nd-error);
+    --color-yellow: var(--nd-warn);
+    --color-blue: var(--nd-primary);
+    --color-green: var(--nd-neon);
+    --color-cyan: var(--nd-cyan);
+    --color-purple: var(--nd-purple);
+
+    --graph-node: var(--nd-text-2);
+    --graph-node-focused: var(--nd-primary);
+    --graph-node-tag: var(--nd-warn);
+    --graph-node-attachment: var(--nd-cyan);
+    --graph-node-unresolved: var(--nd-error);
+    --graph-line: var(--nd-border);
+    --graph-text: var(--nd-text-3);
+}
+
+/* ══════════════════════════════════════════════
+   4. SEMANTIC TOKENS (LIGHT)
+   ══════════════════════════════════════════════ */
+
+.theme-light {
+    --base-l: 96%;
+    --accent-l: 48%;
+
+    --nd-main-bg: hsl(var(--base-h), var(--base-s), var(--base-l));
+    --nd-deep-bg: hsl(var(--base-h), var(--base-s), calc(var(--base-l) - 2%));
+    --nd-sec-bg: hsl(var(--base-h), var(--base-s), calc(var(--base-l) - 4%));
+    --nd-surface: hsl(var(--base-h), var(--base-s), calc(var(--base-l) - 6%));
+    --nd-hover-bg: hsl(var(--base-h), var(--base-s), calc(var(--base-l) - 9%));
+    --nd-border: hsl(var(--base-h), var(--base-s), calc(var(--base-l) - 14%));
+    --nd-border-strong: hsl(var(--base-h), var(--base-s), calc(var(--base-l) - 22%));
+
+    --nd-primary: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+    --nd-primary-hov: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) - 8%));
+    --nd-primary-light: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 10%));
+
+    --nd-text-1: hsl(var(--base-h), var(--base-s), 10%);
+    --nd-text-2: hsl(var(--base-h), 20%, 30%);
+    --nd-text-3: hsl(var(--base-h), 15%, 48%);
+    --nd-text-4: hsl(var(--base-h), 10%, 58%);
+    --nd-text-dis: hsl(var(--base-h), 8%, 68%);
+
+    --background-primary: var(--nd-main-bg);
+    --background-secondary: var(--nd-deep-bg);
+    --background-modifier-border: var(--nd-border);
+    --text-normal: var(--nd-text-1);
+    --text-muted: var(--nd-text-2);
+    --text-faint: var(--nd-text-3);
+    --text-accent: var(--nd-primary);
+    --text-accent-hover: var(--nd-primary-hov);
+    --interactive-accent: var(--nd-primary);
+    --interactive-accent-hover: var(--nd-primary-hov);
+}
+
+/* ══════════════════════════════════════════════
+   5. INTERFACE ELEMENTS
+   ══════════════════════════════════════════════ */
+
+/* ── Subtle grid overlay ────────────────────── */
+.workspace::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.06;
+    background-image:
+        linear-gradient(hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.05) 1px, transparent 1px);
+    background-size: 24px 24px;
+}
+
+/* ── Tabs ───────────────────────────────────── */
+.workspace-tab-header.is-active {
+    color: var(--nd-primary);
+    background: var(--nd-main-bg);
+    border-bottom: 1px solid var(--nd-primary);
+}
+
+.workspace-tab-header:not(.is-active) {
+    color: var(--nd-text-3);
+}
+
+.workspace-tab-header:hover:not(.is-active) {
+    color: var(--nd-text-1);
+    background: var(--nd-surface);
+}
+
+/* ── File explorer ──────────────────────────── */
+.nav-file-title {
+    color: var(--nd-text-3);
+}
+
+.nav-file-title.is-active {
+    background: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.10);
+    color: var(--nd-text-1);
+    border-left: 2px solid var(--nd-primary);
+    font-weight: 600;
+}
+
+.nav-folder-title {
+    color: var(--nd-text-2);
+    font-weight: 600;
+}
+
+.nav-folder-title:hover,
+.nav-file-title:hover:not(.is-active) {
+    background: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.06);
+    color: var(--nd-text-1);
+}
+
+.nav-folder-collapse-indicator {
+    color: var(--nd-text-dis);
+}
+
+/* ── Ribbon ─────────────────────────────────── */
+.side-dock-ribbon-tab,
+.side-dock-ribbon-action {
+    color: var(--nd-text-3);
+}
+
+.side-dock-ribbon-tab:hover,
+.side-dock-ribbon-action:hover,
+.side-dock-ribbon-tab.is-active,
+.side-dock-ribbon-action.is-active {
+    color: var(--nd-primary);
+    background: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.08);
+}
+
+/* ── Menu / context menu ───────────────────── */
+.menu {
+    background: var(--nd-surface);
+    border: 1px solid var(--nd-border);
+    border-radius: var(--radius-l);
+}
+
+.menu-item:hover,
+.menu-item.selected {
+    background: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.10);
+    color: var(--nd-primary);
+    border-radius: var(--radius-m);
+}
+
+/* ── Modals / popovers / suggestions ────────── */
+.modal,
+.popover {
+    background: var(--nd-surface);
+    border: 1px solid var(--nd-border);
+    color: var(--nd-text-1);
+    border-radius: var(--radius-l);
+}
+
+.suggestion-container {
+    background: var(--nd-surface);
+    border: 1px solid var(--nd-border);
+    border-radius: var(--radius-l);
+}
+
+.suggestion-item.is-selected,
+.suggestion-item:hover {
+    background: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.10);
+    color: var(--nd-primary);
+    border-radius: var(--radius-m);
+}
+
+/* ── Inputs ─────────────────────────────────── */
+input,
+textarea,
+.search-input-container input {
+    background: var(--nd-main-bg);
+    border: 1px solid var(--nd-border);
+    color: var(--nd-text-1);
+    border-radius: var(--radius-m);
+}
+
+input:focus,
+textarea:focus {
+    border-color: var(--nd-primary);
+    box-shadow: 0 0 0 1px hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.25);
+    outline: none;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: var(--nd-text-dis);
+}
+
+/* ── Scrollbars ─────────────────────────────── */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--nd-sec-bg);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--nd-border-strong);
+    border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.35);
+}
+
+
+/* ══════════════════════════════════════════════
+   6. TYPOGRAPHY (SANS FOR PROSE, MONO FOR DATA)
+   ══════════════════════════════════════════════ */
+
+.markdown-source-view .cm-content,
+.markdown-preview-view,
+.markdown-rendered {
+    font-family: var(--font-text-theme);
+}
+
+code,
+pre,
+.cm-inline-code,
+.HyperMD-codeblock,
+.metadata-container,
+.tag,
+.markdown-preview-view table,
+.markdown-rendered table {
+    font-family: var(--font-monospace-theme);
+}
+
+/* ══════════════════════════════════════════════
+   7. SIDE PANELS
+   ══════════════════════════════════════════════ */
+
+.workspace-leaf-content {
+    border-color: var(--nd-border);
+}
+
+.workspace-leaf-content .view-content {
+    color: var(--nd-text-2);
+}
+
+.calendar .today,
+.workspace-leaf-content .is-today {
+    color: var(--nd-primary);
+    font-weight: 700;
+}
+
+.progress-bar {
+    background: var(--nd-hover-bg);
+    border-radius: 9999px;
+}
+
+.progress-bar-fill {
+    background: var(--nd-neon);
+    border-radius: 9999px;
+}
+
+.stat-card {
+    background: var(--nd-sec-bg);
+    border: 1px solid var(--nd-border);
+    border-radius: var(--radius-l);
+}
+
+/* ══════════════════════════════════════════════
+   8. EDITOR
+   ══════════════════════════════════════════════ */
+
+.cm-editor,
+.markdown-source-view {
+    background: var(--nd-main-bg);
+    color: var(--nd-text-1);
+}
+
+body .cm-cursor,
+body .cm-cursor-primary {
+    border-left-color: var(--nd-primary);
+}
+
+.cm-lineNumbers .cm-gutterElement {
+    color: var(--nd-text-dis);
+}
+
+body .cm-selectionBackground,
+body ::selection {
+    background: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.18);
+}
+
+/* ══════════════════════════════════════════════
+   9. MARKDOWN STYLING
+   ══════════════════════════════════════════════ */
+
+/* ── Headings ───────────────────────────────── */
+.markdown-preview-view h1,
+.markdown-rendered h1,
+.cm-header-1 {
+    color: var(--nd-text-1);
+    font-size: var(--h1-size);
+    font-weight: var(--h1-weight);
+    font-style: var(--h1-style);
+    font-variant: var(--h1-variant);
+    border-bottom: 1px solid var(--nd-border);
+    padding-bottom: 0.2em;
+    margin-bottom: 0.5em;
+}
+
+.markdown-preview-view h2,
+.markdown-rendered h2,
+.cm-header-2 {
+    color: var(--nd-primary-hov);
+    font-size: var(--h2-size);
+    font-weight: var(--h2-weight);
+    font-style: var(--h2-style);
+    font-variant: var(--h2-variant);
+}
+
+.markdown-preview-view h3,
+.markdown-rendered h3,
+.cm-header-3 {
+    color: var(--nd-text-2);
+    font-size: var(--h3-size);
+    font-weight: var(--h3-weight);
+}
+
+.markdown-preview-view h4,
+.markdown-rendered h4,
+.cm-header-4 {
+    color: var(--nd-text-2);
+    font-size: var(--h4-size);
+    font-weight: var(--h4-weight);
+}
+
+.markdown-preview-view h5,
+.markdown-rendered h5,
+.cm-header-5 {
+    color: var(--nd-text-3);
+    font-size: var(--h5-size);
+    font-weight: var(--h5-weight);
+    font-variant: var(--h5-variant);
+}
+
+.markdown-preview-view h6,
+.markdown-rendered h6,
+.cm-header-6 {
+    color: var(--nd-text-3);
+    font-size: var(--h6-size);
+    font-weight: var(--h6-weight);
+    font-variant: var(--h6-variant);
+}
+
+/* ── Horizontal rule ────────────────────────── */
+.markdown-preview-view hr,
+.markdown-rendered hr {
+    border: none;
+    border-top: 1px solid var(--nd-border);
+    margin: 1.5em 0;
+}
+
+/* ── Links ──────────────────────────────────── */
+a,
+.internal-link,
+.external-link {
+    color: var(--nd-primary);
+    text-decoration: underline;
+    transition: color 0.15s ease;
+}
+
+a:hover,
+.internal-link:hover,
+.external-link:hover {
+    color: var(--nd-primary-hov);
+}
+
+.is-unresolved {
+    color: var(--nd-warn);
+    opacity: 0.85;
+}
+
+/* ── Bold / italic ──────────────────────────── */
+strong,
+.cm-strong {
+    color: var(--nd-text-1);
+    font-weight: 700;
+}
+
+em,
+.cm-em {
+    color: var(--nd-text-2);
+}
+
+/* ── Inline code ────────────────────────────── */
+.markdown-preview-view :not(pre)>code,
+.markdown-rendered :not(pre)>code,
+.cm-inline-code {
+    background: var(--nd-surface);
+    color: var(--nd-primary-light);
+    border: 1px solid var(--nd-border);
+    border-radius: var(--radius-s);
+    padding: 0.1em 0.35em;
+    font-family: var(--font-monospace);
+    font-size: 0.88em;
+}
+
+/* ── Code blocks ────────────────────────────── */
+.markdown-preview-view pre,
+.markdown-rendered pre {
+    background: var(--nd-deep-bg);
+    border: 1px solid var(--nd-border);
+    border-left: 2px solid hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.40);
+    border-radius: var(--radius-m);
+    padding: 1em 1.2em;
+}
+
+.markdown-preview-view pre code,
+.markdown-rendered pre code {
+    background: transparent;
+    border: none;
+    padding: 0;
+    border-radius: 0;
+    color: var(--nd-text-1);
+    font-size: 0.9em;
+}
+
+/* Syntax tokens */
+.token.keyword,
+.cm-keyword {
+    color: var(--nd-primary);
+    font-weight: bold;
+}
+
+.token.function,
+.cm-def {
+    color: var(--nd-primary-light);
+}
+
+.token.class-name,
+.token.builtin,
+.cm-type {
+    color: var(--nd-cyan);
+}
+
+.token.string,
+.cm-string {
+    color: var(--nd-text-2);
+}
+
+.token.number,
+.token.constant,
+.cm-number,
+.cm-atom {
+    color: var(--nd-cyan);
+}
+
+.token.comment,
+.cm-comment {
+    color: var(--nd-text-dis);
+    font-style: italic;
+}
+
+.token.property,
+.cm-property {
+    color: var(--nd-text-1);
+}
+
+.token.decorator,
+.cm-meta {
+    color: var(--nd-warn);
+}
+
+.token.invalid {
+    color: var(--nd-error);
+}
+
+/* ── Blockquotes ────────────────────────────── */
+.markdown-preview-view blockquote,
+.markdown-rendered blockquote {
+    border-left: 2px solid var(--nd-primary);
+    background: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.06);
+    color: var(--nd-text-2);
+    padding: 0.5em 1em;
+    margin: 1em 0;
+    border-radius: 0 var(--radius-m) var(--radius-m) 0;
+}
+
+/* ── Tables ─────────────────────────────────── */
+.markdown-preview-view table,
+.markdown-rendered table {
+    border-collapse: collapse;
+    width: 100%;
+    font-variant-numeric: tabular-nums;
+}
+
+.markdown-preview-view th,
+.markdown-rendered th {
+    background: var(--nd-surface);
+    border: 1px solid var(--nd-border);
+    padding: 0.5em 0.75em;
+    font-weight: 600;
+    text-align: left;
+    font-family: var(--font-monospace-theme);
+    font-size: 0.8em;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    color: var(--nd-text-4);
+}
+
+.markdown-preview-view td,
+.markdown-rendered td {
+    border: 1px solid var(--nd-border);
+    padding: 0.4em 0.75em;
+    color: var(--nd-text-1);
+}
+
+.markdown-preview-view tr:hover td,
+.markdown-rendered tr:hover td {
+    background: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.05);
+}
+
+/* ── Checkboxes / tasks ─────────────────────── */
+body .task-list-item-checkbox {
+    appearance: none;
+    -webkit-appearance: none;
+    border: 1px solid var(--checkbox-border-color);
+    border-radius: var(--checkbox-radius);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+/* Hide Obsidian's default checkmark overlay for custom states */
+body input[data-task="/"]:checked::after,
+body input[data-task=">"]:checked::after,
+body input[data-task="?"]:checked::after,
+body input[data-task="-"]:checked::after,
+body li[data-task="/"] > input:checked::after,
+body li[data-task=">"] > input:checked::after,
+body li[data-task="?"] > input:checked::after,
+body li[data-task="-"] > input:checked::after,
+body li[data-task="/"] > p > input:checked::after,
+body li[data-task=">"] > p > input:checked::after,
+body li[data-task="?"] > p > input:checked::after,
+body li[data-task="-"] > p > input:checked::after {
+    display: none;
+}
+
+/* Reset checked background for custom states */
+body input[data-task="/"]:checked,
+body input[data-task=">"]:checked,
+body input[data-task="?"]:checked,
+body input[data-task="-"]:checked,
+body li[data-task="/"] > input:checked,
+body li[data-task=">"] > input:checked,
+body li[data-task="?"] > input:checked,
+body li[data-task="-"] > input:checked,
+body li[data-task="/"] > p > input:checked,
+body li[data-task=">"] > p > input:checked,
+body li[data-task="?"] > p > input:checked,
+body li[data-task="-"] > p > input:checked {
+    background-color: transparent;
+}
+
+/* Done (x): green fill + white check via Obsidian variables */
+li[data-task="x"] {
+    --checkbox-color: var(--nd-neon);
+    --checkbox-color-hover: var(--nd-neon-hov);
+    --checkbox-marker-color: #ffffff;
+}
+
+/* In progress (/): amber slash */
+li[data-task="/"] {
+    --checkbox-color: transparent;
+    --checkbox-border-color: var(--nd-warn);
+    --checkbox-marker-color: transparent;
+}
+
+body li[data-task="/"] > input:checked,
+body li[data-task="/"] > p > input:checked {
+    border-color: var(--nd-warn);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M11 4L5 12' fill='none' stroke='%23F59E0B' stroke-width='2.2' stroke-linecap='round'/%3E%3C/svg%3E");
+}
+
+/* Forwarded (>): cyan chevron */
+li[data-task=">"] {
+    --checkbox-color: transparent;
+    --checkbox-border-color: var(--nd-cyan);
+    --checkbox-marker-color: transparent;
+}
+
+body li[data-task=">"] > input:checked,
+body li[data-task=">"] > p > input:checked {
+    border-color: var(--nd-cyan);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M6 4l4 4-4 4' fill='none' stroke='%2300C2FF' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+}
+
+/* Question (?): cyan question mark */
+li[data-task="?"] {
+    --checkbox-color: transparent;
+    --checkbox-border-color: var(--nd-cyan);
+    --checkbox-marker-color: transparent;
+}
+
+body li[data-task="?"] > input:checked,
+body li[data-task="?"] > p > input:checked {
+    border-color: var(--nd-cyan);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Ctext x='8' y='12.5' font-size='13' font-weight='700' text-anchor='middle' font-family='monospace' fill='%2300C2FF'%3E%3F%3C/text%3E%3C/svg%3E");
+}
+
+/* Cancelled (-): red dash */
+li[data-task="-"] {
+    --checkbox-color: transparent;
+    --checkbox-border-color: var(--nd-error);
+    --checkbox-marker-color: transparent;
+}
+
+body li[data-task="-"] > input:checked,
+body li[data-task="-"] > p > input:checked {
+    border-color: var(--nd-error);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M4 8h8' fill='none' stroke='%23FF5C7A' stroke-width='2.2' stroke-linecap='round'/%3E%3C/svg%3E");
+}
+
+/* Per-state title color */
+li.task-list-item[data-task=" "] .task-list-item-title {
+    color: var(--nd-text-2);
+}
+
+li.task-list-item[data-task="/"] .task-list-item-title {
+    color: var(--nd-warn);
+}
+
+li.task-list-item[data-task=">"] .task-list-item-title {
+    color: var(--nd-cyan);
+}
+
+li.task-list-item[data-task="?"] .task-list-item-title {
+    color: var(--nd-cyan);
+}
+
+li.task-list-item[data-task="x"] .task-list-item-title {
+    color: var(--nd-text-dis);
+    text-decoration: line-through;
+}
+
+li.task-list-item[data-task="-"] .task-list-item-title {
+    color: var(--nd-error);
+    text-decoration: line-through;
+}
+
+/* ── Tags ───────────────────────────────────── */
+.tag {
+    background: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.08);
+    color: var(--nd-primary-light);
+    border: 1px solid hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.25);
+    border-radius: 9999px;
+    font-family: var(--font-monospace);
+    font-size: 0.82em;
+    padding: 0.1em 0.55em;
+    text-decoration: none;
+}
+
+.tag:hover {
+    background: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.15);
+    color: var(--nd-primary-hov);
+    border-color: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.45);
+}
+
+/* ── Callouts ───────────────────────────────── */
+.callout {
+    background: var(--nd-surface);
+    border: 1px solid var(--nd-border);
+    border-left-width: 2px;
+    border-radius: var(--radius-m);
+    padding: 0.75em 1em;
+    margin: 1em 0;
+}
+
+.callout[data-callout="note"],
+.callout[data-callout="info"] {
+    border-left-color: var(--nd-cyan);
+    --callout-color: 0, 194, 255;
+}
+
+.callout[data-callout="tip"],
+.callout[data-callout="success"],
+.callout[data-callout="check"],
+.callout[data-callout="done"] {
+    border-left-color: var(--nd-neon);
+    --callout-color: 34, 197, 94;
+}
+
+.callout[data-callout="warning"],
+.callout[data-callout="caution"],
+.callout[data-callout="attention"] {
+    border-left-color: var(--nd-warn);
+    --callout-color: 245, 158, 11;
+}
+
+.callout[data-callout="error"],
+.callout[data-callout="danger"],
+.callout[data-callout="failure"],
+.callout[data-callout="fail"],
+.callout[data-callout="missing"],
+.callout[data-callout="bug"] {
+    border-left-color: var(--nd-error);
+    --callout-color: 255, 92, 122;
+}
+
+.callout[data-callout="quote"],
+.callout[data-callout="cite"] {
+    border-left-color: var(--nd-text-3);
+    --callout-color: 133, 139, 157;
+}
+
+.callout-title {
+    color: rgb(var(--callout-color, 166, 170, 204));
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 0.4em;
+    margin-bottom: 0.4em;
+}
+
+.callout-icon {
+    color: rgb(var(--callout-color, 166, 170, 204));
+}
+
+/* ══════════════════════════════════════════════
+   10. PROPERTIES / METADATA
+   ══════════════════════════════════════════════ */
+
+.metadata-property-key,
+.metadata-property-icon {
+    color: var(--nd-text-4);
+    font-family: var(--font-monospace);
+    font-size: 0.85em;
+}
+
+.metadata-property-value {
+    color: var(--nd-text-1);
+}
+
+.metadata-input-longtext:focus,
+.metadata-input-text:focus,
+.metadata-input-number:focus {
+    border-color: var(--nd-primary);
+    box-shadow: 0 0 0 1px hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.25);
+}
+
+/* ══════════════════════════════════════════════
+   11. GRAPH VIEW
+   ══════════════════════════════════════════════ */
+
+.graph-view.color-fill {
+    color: var(--nd-text-2);
+}
+
+.graph-view.color-fill-focused {
+    color: var(--nd-primary);
+}
+
+.graph-view.color-fill-tag {
+    color: var(--nd-warn);
+}
+
+.graph-view.color-fill-attachment {
+    color: var(--nd-cyan);
+}
+
+.graph-view.color-fill-unresolved {
+    color: var(--nd-error);
+}
+
+.graph-view.color-arrow {
+    color: var(--nd-border);
+}
+
+.graph-view.color-circle {
+    color: var(--nd-border);
+}
+
+.graph-view.color-text {
+    color: var(--nd-text-3);
+}
+
+/* ══════════════════════════════════════════════
+   12. CANVAS
+   ══════════════════════════════════════════════ */
+
+.canvas-wrapper {
+    background: var(--nd-deep-bg);
+}
+
+.canvas-node-content {
+    background: var(--nd-surface);
+    border: 1px solid var(--nd-border);
+    color: var(--nd-text-1);
+    border-radius: var(--radius-m);
+}
+
+.canvas-node.is-focused .canvas-node-content,
+.canvas-node.is-selected .canvas-node-content {
+    border-color: var(--nd-primary);
+}
+
+.canvas-edge path {
+    stroke: var(--nd-border);
+}
+
+.canvas-edge.is-selected path {
+    stroke: var(--nd-primary);
+}
+
+/* ══════════════════════════════════════════════
+   13. FEATURE FLAGS
+   ══════════════════════════════════════════════ */
+
+/* ── Active line (opt-in) ───────────────────── */
+body .active-line-on .cm-activeLine {
+    background: hsla(var(--base-h), var(--base-s), calc(var(--base-l) + 6%), 0.70);
+}
+
+body .active-line-on .cm-activeLineGutter {
+    background: hsla(var(--base-h), var(--base-s), calc(var(--base-l) + 6%), 0.70);
+    color: var(--nd-primary);
+}
+
+/* ── Hide markdown syntax in Live Preview ───── */
+.hide-markdown .cm-line .cm-formatting:not(.cm-formatting-task),
+.hide-markdown .cm-line .cm-hmd-escape-backslash {
+    display: none;
+}
+
+/* ── Line numbers ───────────────────────────── */
+body:not(.nd-line-nums) .cm-lineNumbers {
+    display: none;
+}
+
+/* ── Code blocks horizontal scroll ─────────── */
+.nd-code-scroll .markdown-preview-view pre,
+.nd-code-scroll .markdown-rendered pre {
+    overflow-x: auto;
+    white-space: pre;
+}
+
+.nd-code-scroll .markdown-preview-view pre code,
+.nd-code-scroll .markdown-rendered pre code {
+    white-space: pre;
+}
+
+/* ── Ribbon hide (show on hover) ────────────── */
+.hider-ribbon .workspace-ribbon.side-dock-ribbon {
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.hider-ribbon .workspace-ribbon.side-dock-ribbon:hover {
+    opacity: 1;
+}
+
+/* ── Minimal status bar ─────────────────────── */
+.nd-status-off .status-bar {
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.nd-status-off .status-bar:hover {
+    opacity: 1;
+}
+
+/* ── Animations ─────────────────────────────── */
+body.disable-animations *,
+body.disable-animations *::before,
+body.disable-animations *::after {
+    transition: none;
+    animation: none;
+}
+
+body.fast-animations *,
+body.fast-animations *::before,
+body.fast-animations *::after {
+    transition-duration: 80ms;
+}
+
+/* ── Square checkboxes ──────────────────────── */
+body .checkbox-square .task-list-item-checkbox {
+    border-radius: 2px;
+}
+
+/* ── Unstyled tags ──────────────────────────── */
+body .nd-unstyled-tags .tag {
+    background: none;
+    border: none;
+    padding: 0;
+    border-radius: 0;
+    color: var(--nd-text-3);
+    font-family: inherit;
+    font-size: inherit;
+}
+
+/* ── Outlined callouts ──────────────────────── */
+.callouts-outlined .callout {
+    background: transparent;
+    border-color: rgb(var(--callout-color, 133, 139, 157));
+    border-left-width: 2px;
+}
+
+/* ── Embed strict (no border or title) ─────── */
+.embed-strict .markdown-embed {
+    border: none;
+    padding: 0;
+}
+
+.embed-strict .markdown-embed-title {
+    display: none;
+}
+
+/* ── Wide / full-width tables ───────────────── */
+.maximize-tables .markdown-preview-view table,
+.maximize-tables .markdown-rendered table {
+    width: 100%;
+    max-width: none;
+}
+
+.table-wide .markdown-preview-view table,
+.table-wide .markdown-rendered table {
+    width: calc(100% + 4rem);
+    margin-left: -2rem;
+}

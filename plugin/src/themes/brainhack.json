@@ -67,13 +67,13 @@
   "extras": "/* Screen/multiply blending for translucent layering effect */\n.workspace-leaf-content {\n  mix-blend-mode: screen;\n}\n\n.theme-light .workspace-leaf-content {\n  mix-blend-mode: multiply;\n}\n",
   "classSettings": {
     "enhanced-folders": {
-      "general": ".enhanced-folders .tree-item.nav-folder:not(.is-collapsed):not(:has(.tree-item.nav-folder:not(.is-collapsed))) {\nbackground: var(--background-3-2);\nborder-radius: .8em;\ntransition: .4s;\n}"
+      "general": ".enhanced-folders .tree-item.nav-folder:not(.is-collapsed):not(:has(.tree-item.nav-folder:not(.is-collapsed))) {\nbackground: var(--background-3-1);\nborder-radius: .8em;\ntransition: .4s;\n}"
     },
     "hide-scrollbars": {
       "general": "body:not(.native-scrollbars).hide-scrollbars ::-webkit-scrollbar {\nwidth: 0px;\nheight: 0px;\n}"
     },
     "cv1": {
-      "general": "body.cv1 .callout {\nmix-blend-mode: normal !important;\n--callout-padding: 0;\nborder-left: .3em solid var(--tc);\nborder-radius: .5em;\nborder-top-left-radius: 0 !important;\nborder-bottom-left-radius: 0 !important;\nbackground: var(--background-3-3);\nbox-shadow: none !important;\n}\n\nbody.cv1 .cm-embed-block.cm-callout {\nborder-top-left-radius: 0 !important;\nborder-bottom-left-radius: 0 !important;\nbottom: 0 !important;\noverflow: hidden !important;\n}"
+      "general": "body.cv1 .callout {\nmix-blend-mode: normal !important;\n--callout-padding: 0;\nborder-left: .3em solid rgba(var(--callout-rgb, var(--tc-rgb)), .5);\nborder-radius: .5em;\nborder-top-left-radius: 0 !important;\nborder-bottom-left-radius: 0 !important;\nbackground: var(--background-3-3);\nbox-shadow: none !important;\nmargin-bottom: .6em !important;\nmargin-top: .6em !important;\nmargin-right: .1em !important;\nmargin-left: .1em !important;\n}\n\nbody.cv1 .cm-embed-block.cm-callout {\nborder-top-left-radius: 0 !important;\nborder-bottom-left-radius: 0 !important;\nbottom: 0 !important;\noverflow: hidden !important;\n}"
     },
     "bv1": {
       "general": "body.bv1 .markdown-rendered blockquote, body.bv1 .blockquote {\nborder-left: .3em solid var(--tc);\nborder-radius: .5em;\nborder-top-left-radius: 0 !important;\nborder-bottom-left-radius: 0 !important;\nbackground: var(--background-3-3);\nbox-shadow: none !important;\npadding-left: .8em;\npadding-right: .8em !important;\nmargin-top: 1em;\nmargin-bottom: 1em;\n}"
@@ -82,20 +82,29 @@
       "general": "body.smartlists li:not(:first-of-type) {\nmargin-top: .8em;\nmargin-bottom: 0em;\n}"
     },
     "hv1": {
-      "general": "body.hv1 .markdown-rendered h1 {\ncolor: var(--main-color-2);\ndisplay: inline-block;\nbackground: var(--background-7);\ntranslate: -.05em;\npadding: .1rem .3rem .08rem .3rem;\nmargin: 0px;\nmargin: 0em !important;\n-moz-border-bottom-left-radius: var(--h1-radius);\n-webkit-border-bottom-left-radius: var(--h1-radius);\nborder-bottom-left-radius: var(--h1-radius);\n-moz-border-bottom-right-radius: var(--h1-radius);\n-webkit-border-bottom-right-radius: var(--h1-radius);\nborder-bottom-right-radius: var(--h1-radius);\n-moz-border-top-right-radius: var(--h1-radius);\n-webkit-border-top-right-radius: var(--h1-radius);\nborder-top-right-radius: var(--h1-radius);\n-moz-border-top-left-radius: var(--h1-radius);\n-webkit-border-top-left-radius: var(--h1-radius);\nborder-top-left-radius: var(--h1-radius);\n-webkit-box-decoration-break: clone;\n-o-box-decoration-break: clone;\nbox-decoration-break: clone;\n--h1-radius: .3em;\n}\n\nbody.hv1 .markdown-rendered h2 {\ncolor: var(--main-color-2);\ndisplay: inline-block;\ntranslate: -.05em;\npadding: .1rem .3rem .08rem .3rem;\nmargin: 0px;\nborder: .1em dashed;\nfont-weight: 600;\nborder-color: var(--colored-accent-4);\nbackground-color: var(--colored-accent-5);\n-moz-border-bottom-left-radius: var(--mark-radius);\n-webkit-border-bottom-left-radius: var(--mark-radius);\nborder-bottom-left-radius: var(--mark-radius);\n-moz-border-bottom-right-radius: var(--mark-radius);\n-webkit-border-bottom-right-radius: var(--mark-radius);\nborder-bottom-right-radius: var(--mark-radius);\n-moz-border-top-right-radius: var(--mark-radius);\n-webkit-border-top-right-radius: var(--mark-radius);\nborder-top-right-radius: var(--mark-radius);\n-moz-border-top-left-radius: var(--mark-radius);\n-webkit-border-top-left-radius: var(--mark-radius);\nborder-top-left-radius: var(--mark-radius);\n-webkit-box-decoration-break: clone;\n-o-box-decoration-break: clone;\nbox-decoration-break: clone;\n--mark-radius: .4em;\n}\n\nbody.hv1 .markdown-rendered h3 {\ndisplay: inline-block;\ntranslate: -.05em;\npadding: .1rem .3rem .08rem .3rem;\nmargin-bottom: 0px;\nborder: .08em dashed;\nborder-color: var(--colored-accent-4);\nbackground-color: var(--colored-accent-5);\n-moz-border-bottom-left-radius: var(--mark-radius);\n-webkit-border-bottom-left-radius: var(--mark-radius);\nborder-bottom-left-radius: var(--mark-radius);\n-moz-border-bottom-right-radius: var(--mark-radius);\n-webkit-border-bottom-right-radius: var(--mark-radius);\nborder-bottom-right-radius: var(--mark-radius);\n-moz-border-top-right-radius: var(--mark-radius);\n-webkit-border-top-right-radius: var(--mark-radius);\nborder-top-right-radius: var(--mark-radius);\n-moz-border-top-left-radius: var(--mark-radius);\n-webkit-border-top-left-radius: var(--mark-radius);\nborder-top-left-radius: var(--mark-radius);\n-webkit-box-decoration-break: clone;\n-o-box-decoration-break: clone;\nbox-decoration-break: clone;\n--mark-radius: .4em;\n}"
+      "general": "body.hv1 .markdown-rendered h1 {\n--h1-radius: .3em;\ncolor: var(--main-color-2);\ndisplay: inline-block;\nbackground: var(--headingcolor1, var(--background-7));\ntranslate: -.05em;\npadding: .1rem .3rem .08rem .3rem;\nmargin: 0em !important;\nborder-radius: var(--h1-radius);\n-webkit-box-decoration-break: clone;\nbox-decoration-break: clone;\n}\n\nbody.hv1 .markdown-rendered h2 {\n--mark-radius: .4em;\ncolor: var(--main-color-2);\ndisplay: inline-block;\ntranslate: -.05em;\npadding: .1rem .3rem .08rem .3rem;\nmargin: 0px;\nborder: .1em dashed;\nfont-weight: 600;\nborder-color: var(--colored-accent-4);\nbackground-color: var(--headingcolor2, var(--colored-accent-5));\nborder-radius: var(--mark-radius);\n-webkit-box-decoration-break: clone;\nbox-decoration-break: clone;\n}\n\nbody.hv1 .markdown-rendered h3 {\n--mark-radius: .4em;\ndisplay: inline-block;\ntranslate: -.05em;\npadding: .1rem .3rem .08rem .3rem;\nmargin-bottom: 0px;\nborder: .08em dashed;\nborder-color: var(--colored-accent-4);\nbackground-color: var(--headingcolor3, var(--colored-accent-5));\nborder-radius: var(--mark-radius);\n-webkit-box-decoration-break: clone;\nbox-decoration-break: clone;\n}"
     },
     "hv2": {
-      "general": "body.hv2 .markdown-rendered h1 {\ncolor: var(--main-color-2);\nborder-bottom: .1em solid var(--tc);\n}\n\nbody.hv2 .markdown-rendered h2 {\ncolor: var(--main-color-2);\nborder-bottom: .1em solid var(--tc);\n}\n\nbody.hv2 .markdown-rendered h3 {\ncolor: var(--main-color-2);\nborder-bottom: .1em solid var(--tc);\n}"
+      "general": "body.hv2 .markdown-rendered h1 {\ncolor: var(--headingcolor1, --main-color-2);\nborder-bottom: .1em solid var(--tc);\n}\n\nbody.hv2 .markdown-rendered h2 {\ncolor: var(--headingcolor2, --main-color-2);\nborder-bottom: .1em solid var(--tc);\n}\n\nbody.hv2 .markdown-rendered h3 {\ncolor: var(--headingcolor3, --main-color-2);\nborder-bottom: .1em solid var(--tc);\n}"
+    },
+    "htv2": {
+      "general": "body.htv2 span.cm-highlight, body.htv2 .markdown-rendered mark {\nbackground: var(--colored-accent-3) !important;\n}"
+    },
+    "btv2": {
+      "general": "body.btv2 span.cm-strong:not(.cm-highlight), body.btv2 strong:not(:has(mark), mark strong) {\ncolor: var(--colored-accent-1) !important;\n}"
     },
     "status-bar-hover": {
-      "general": "body.status-bar-hover .status-bar {\nopacity: 0;\ntransition: all .5s;\n&:hover {        \n        opacity: 1;\n    };\n}"
+      "general": "body.status-bar-hover .status-bar {\nopacity: 0;\ntransition: all .5s;\n&:hover {\r\n        opacity: 1;\r\n    };\n}"
     },
     "nc": {
       "general": "body.nc .markdown-embed-content .node-insert-event {\nbackground: var(--canvas-color) !important;\n}"
     },
+    "coloredfolders": {
+      "general": "body.coloredfolders .nav-files-container > div > .nav-folder > .nav-folder-title {\ncolor: var(--foldercolor1, #ff0000);\nfont-weight: 600;\n}\n\nbody.coloredfolders .nav-files-container > div > .nav-folder > .nav-folder-children > .nav-folder > .nav-folder-title {\ncolor: var(--foldercolor2, #ff8c00);\n}\n\nbody.coloredfolders .nav-files-container > div > .nav-folder > .nav-folder-children > .nav-folder > .nav-folder-children > .nav-folder > .nav-folder-title {\ncolor: var(--foldercolor3, #7abc00);\n}\n\nbody.coloredfolders .nav-files-container > div > .nav-folder > .nav-folder-children > .nav-folder > .nav-folder-children > .nav-folder > .nav-folder-children > .nav-folder > .nav-folder-title {\ncolor: var(--foldercolor4, #00b75f);\n}"
+    },
     "greyscale-toggle": {
-      "dark": ".theme-dark img {\nborder-radius: 10px;\nmix-blend-mode: screen !important;\nfilter: invert(1) grayscale(100%) !important;\n}",
-      "light": ".theme-light img {\nborder-radius: 10px;\nmix-blend-mode: multiply !important;\nfilter: grayscale(100%) !important;\n}"
+      "dark": ".theme-dark img {\nmix-blend-mode: screen !important;\nfilter: invert(1) grayscale(100%) !important;\n}",
+      "light": ".theme-light img {\nmix-blend-mode: multiply !important;\nfilter: grayscale(100%) !important;\n}"
     }
   },
   "selectorImpacts": {},

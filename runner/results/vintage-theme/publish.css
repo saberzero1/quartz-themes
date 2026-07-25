@@ -1486,10 +1486,6 @@ body.theme-dark {
   --font-serif: "Newsreader", Georgia, serif !important;
   --red: #c63d0f !important;
   --yellow: #ebc06c !important;
-  --blue: #5e81ac !important;
-  --default-font-size: 20px !important;
-  --gray: #999999 !important;
-  --editor-line-height: 29px !important;
   --dark0: #333333 !important;
   --dark1: #474747 !important;
   --dark2: #5b5b5b !important;
@@ -1498,6 +1494,10 @@ body.theme-dark {
   --light1: #e3dacf !important;
   --light2: #fdf7f0 !important;
   --light3: #fefcfa !important;
+  --blue: #5e81ac !important;
+  --default-font-size: 20px !important;
+  --gray: #999999 !important;
+  --editor-line-height: 29px !important;
   --red2: #d1633e !important;
   --red1: #cb5026 !important;
   --yellow2: #b49c5f !important;

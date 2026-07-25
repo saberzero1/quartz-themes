@@ -421,11 +421,11 @@ body.theme-light {
   --accent-h: 232 !important;
   --accent-l: 64% !important;
   --accent-s: 80% !important;
-  --anim-duration-fast: calc(150ms / var(--anim-speed)) !important;
-  --anim-duration-moderate: calc(300ms / var(--anim-speed)) !important;
+  --anim-duration-fast: calc(150ms/var(--anim-speed)) !important;
+  --anim-duration-moderate: calc(300ms/var(--anim-speed)) !important;
   --anim-duration-none: 0 !important;
-  --anim-duration-slow: calc(600ms / var(--anim-speed)) !important;
-  --anim-duration-superfast: calc(75ms / var(--anim-speed)) !important;
+  --anim-duration-slow: calc(600ms/var(--anim-speed)) !important;
+  --anim-duration-superfast: calc(75ms/var(--anim-speed)) !important;
   --anim-motion-delay: cubic-bezier(0.65, 0.05, 0.36, 1) !important;
   --anim-motion-jumpy: cubic-bezier(0.68, -0.55, 0.27, 1.55) !important;
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;
@@ -1478,24 +1478,24 @@ body.theme-light {
   --blockquote-background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23000000' fill-opacity='0.12' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E") !important;
   --color-base-80: #464646 !important;
   --color-base-90: #333333 !important;
+  --color-base-15: #f7f7f7 !important;
   --color-accent-3: hsla(
     var(--accent-h),
     calc(var(--accent-s) * 0.4),
     calc(var(--accent-l))
+  ) !important;
+  --background-tertiary: hsl(
+    calc(var(--accent-h) - 18),
+    calc(var(--accent-s) - 4%),
+    calc(100% - (100% - var(--accent-l)) / 7)
   ) !important;
   --background: #f0f0f0 !important;
   --anim-speed: 1 !important;
   --background-mod-left-split: var(--background-secondary) !important;
   --background-mod-right-split: var(--background-secondary) !important;
   --background-mod-root-split: var(--background-primary) !important;
-  --background-tertiary: hsl(
-    calc(var(--accent-h) - 18),
-    calc(var(--accent-s) - 4%),
-    calc(100% - (100% - var(--accent-l)) / 7)
-  ) !important;
   --background-underlying: var(--background-tertiary) !important;
   --blockquote-padding: 8px !important;
-  --color-base-15: #f7f7f7 !important;
   --empty-state-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' fill='none' viewBox='0 0 20 20'%3E%3Cpath fill='black' fill-opacity='.15' d='M13.32 7.155a4.375 4.375 0 0 1-5.7 6.517l5.7-6.517ZM10 5.625a4.375 4.375 0 0 0-3.32 7.22l5.704-6.514A4.35 4.35 0 0 0 10 5.625ZM18.125 10A8.125 8.125 0 1 1 10 1.875 8.135 8.135 0 0 1 18.125 10Zm-2.5 0a5.6 5.6 0 0 0-1.476-3.793l.382-.483a.626.626 0 1 0-.937-.823l-.384.483a5.625 5.625 0 0 0-7.36 8.409l-.381.483a.625.625 0 0 0 .937.823l.384-.483A5.621 5.621 0 0 0 15.625 10Z'/%3E%3C/svg%3E") !important;
   --toggle-thumb-enabled-shadow:
     0px 4px 4px rgba(0, 0, 0, 0.05), 0px 1px 2px rgba(0, 0, 0, 0.3),

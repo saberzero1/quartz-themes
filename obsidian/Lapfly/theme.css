@@ -1,0 +1,248 @@
+/* ============================================================================
+   Lapfly  —  an Obsidian theme based on the lapfly.com colour scheme
+   A GitHub-dark foundation with a signature electric-blue accent (#58a6ff)
+   and a racing-lime pop (#b8ff00). Ships dark + light modes.
+   ============================================================================ */
+
+/* ----------------------------------------------------------------------------
+   Brand tokens (shared)
+   ---------------------------------------------------------------------------- */
+.theme-dark,
+.theme-light {
+  --lapfly-lime: #b8ff00;
+  --lapfly-lime-dim: #d2e026;
+  --lapfly-blue: #58a6ff;
+  --lapfly-blue-bright: #79c0ff;
+  --lapfly-lime-deep: #5e6e00; /* readable lime for light backgrounds */
+
+  --font-monospace-theme:
+    "JetBrains Mono", "SFMono-Regular", "Cascadia Code", "Fira Code",
+    Consolas, "Liberation Mono", Menlo, monospace;
+}
+
+/* ============================================================================
+   DARK  —  faithful to lapfly.com
+   ============================================================================ */
+.theme-dark {
+  /* Neutral / base scale: 00 = deepest background, 100 = brightest text */
+  --color-base-00: #080c14;   /* deepest canvas (lapfly hero bg)            */
+  --color-base-05: #0d1117;   /* primary editor / note background          */
+  --color-base-10: #161b22;   /* secondary surface (sidebar, headers)      */
+  --color-base-20: #1c2333;   /* elevated surface (modals, hover navy)     */
+  --color-base-25: #21262d;   /* subtle borders / inputs                   */
+  --color-base-30: #30363d;   /* borders                                   */
+  --color-base-35: #3d444d;   /* stronger borders                          */
+  --color-base-40: #484f58;   /* faint text / disabled                     */
+  --color-base-50: #6e7681;   /* subtle text                               */
+  --color-base-60: #8b949e;   /* muted text                                */
+  --color-base-70: #aeb6c0;   /* secondary text                            */
+  --color-base-100: #e6edf3;  /* normal text                               */
+
+  /* Brand colour scale (callouts, tags, graph, syntax) */
+  --color-red: #f85149;
+  --color-orange: #f0883e;
+  --color-yellow: #e3b341;
+  --color-green: #3fb950;
+  --color-cyan: #39d0f0;
+  --color-blue: #58a6ff;
+  --color-purple: #bc8cff;
+  --color-pink: #f97583;
+
+  /* Accent driven by HSL so Obsidian derives hover/variants */
+  --accent-h: 212;
+  --accent-s: 100%;
+  --accent-l: 67%;
+}
+
+/* ============================================================================
+   LIGHT  —  a complementary daytime variant (lapfly has no native light mode)
+   GitHub-light neutrals, deeper blue accent so it reads on white.
+   ============================================================================ */
+.theme-light {
+  --color-base-00: #ffffff;   /* primary background      */
+  --color-base-05: #f6f8fa;   /* secondary surface       */
+  --color-base-10: #eaeef2;   /* sidebar / headers       */
+  --color-base-20: #dfe3e8;   /* elevated hover          */
+  --color-base-25: #d0d7de;   /* inputs / subtle border  */
+  --color-base-30: #afb8c1;   /* borders                 */
+  --color-base-35: #8c959f;   /* stronger borders        */
+  --color-base-40: #6e7781;   /* faint text              */
+  --color-base-50: #57606a;   /* subtle text             */
+  --color-base-60: #424a53;   /* muted text              */
+  --color-base-70: #2d333b;   /* secondary text          */
+  --color-base-100: #1f2328;  /* normal text             */
+
+  --color-red: #cf222e;
+  --color-orange: #bc4c00;
+  --color-yellow: #9a6700;
+  --color-green: #1a7f37;
+  --color-cyan: #1b7c83;
+  --color-blue: #0969da;
+  --color-purple: #8250df;
+  --color-pink: #bf3989;
+
+  --accent-h: 216;
+  --accent-s: 84%;
+  --accent-l: 45%;
+}
+
+/* ============================================================================
+   Shared component refinements
+   ============================================================================ */
+
+/* Links: lapfly's bright blue, with a lime underline on hover */
+.markdown-rendered a,
+.cm-link,
+.cm-url,
+.internal-link {
+  color: var(--lapfly-blue);
+}
+.theme-light .markdown-rendered a,
+.theme-light .cm-link,
+.theme-light .cm-url,
+.theme-light .internal-link {
+  color: var(--color-blue);
+}
+.markdown-rendered a:hover,
+.internal-link:hover {
+  text-decoration: none;
+  border-bottom: 1px solid var(--lapfly-lime);
+}
+
+/* Headings: main headers carry the brand lime; H1 brightest, H2 a step down */
+.markdown-rendered h1,
+.HyperMD-header-1 {
+  color: var(--lapfly-lime);
+  letter-spacing: -0.01em;
+}
+.markdown-rendered h2,
+.HyperMD-header-2 {
+  color: var(--lapfly-lime-dim);
+}
+.theme-light .markdown-rendered h1,
+.theme-light .HyperMD-header-1,
+.theme-light .markdown-rendered h2,
+.theme-light .HyperMD-header-2 {
+  color: var(--lapfly-lime-deep);
+}
+
+/* Active tab gets a lime top indicator — the "speed line" */
+.workspace-tab-header.is-active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 2px;
+  background: var(--lapfly-lime);
+}
+.theme-light .workspace-tab-header.is-active::after {
+  background: var(--accent-color, var(--lapfly-blue));
+}
+
+/* Checkboxes: checked state in racing lime (dark) */
+.theme-dark input[type="checkbox"]:checked,
+.theme-dark .task-list-item-checkbox:checked {
+  --checkbox-color: var(--lapfly-lime);
+  --checkbox-color-hover: var(--lapfly-lime-dim);
+  --checkbox-marker-color: #080c14;
+}
+
+/* Blockquotes: lime left rule */
+.markdown-rendered blockquote {
+  border-inline-start-color: var(--lapfly-lime);
+}
+.theme-light .markdown-rendered blockquote {
+  border-inline-start-color: var(--color-blue);
+}
+
+/* Inline code & code blocks */
+.theme-dark {
+  --code-background: #0d1117;
+  --code-normal: #e6edf3;
+}
+.markdown-rendered code {
+  border: 1px solid var(--color-base-30);
+}
+
+/* Selection & active line */
+.theme-dark {
+  --text-selection: rgba(88, 166, 255, 0.20);
+  --text-highlight-bg: rgba(184, 255, 0, 0.30);
+}
+.theme-light {
+  --text-selection: rgba(9, 105, 218, 0.15);
+  --text-highlight-bg: rgba(154, 103, 0, 0.18);
+}
+
+/* Scrollbars */
+.theme-dark {
+  --scrollbar-thumb-bg: rgba(110, 118, 129, 0.35);
+  --scrollbar-active-thumb-bg: rgba(88, 166, 255, 0.45);
+}
+
+/* Title bar / ribbon blend with the deep canvas */
+.theme-dark .titlebar,
+.theme-dark .workspace-ribbon {
+  background-color: var(--color-base-00);
+}
+
+/* ============================================================================
+   Ambient background  —  lapfly.com dot grid + corner orbs (dark only)
+   Values lifted verbatim from lapfly.com: a 40px dot grid at 6% white, a red
+   orb (rgba(196,38,31,.11)) top-right and a navy orb (rgba(22,35,66,.7))
+   bottom-left, both 700px and blurred 60px. The editor surface is made
+   transparent so the layer shows behind notes; cards keep their own bg.
+   ============================================================================ */
+.theme-dark .app-container {
+  position: relative;
+  background-color: var(--color-base-00);
+}
+
+/* Corner orbs: fixed, blurred, behind the UI */
+.theme-dark .app-container::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(circle 350px at calc(100% - 150px) 150px,
+      rgba(196, 38, 31, 0.11) 0%, transparent 70%),
+    radial-gradient(circle 350px at 150px calc(100% - 150px),
+      rgba(22, 35, 66, 0.70) 0%, transparent 70%);
+  filter: blur(60px);
+}
+
+/* Dot grid overlay: fixed, behind the UI */
+.theme-dark .app-container::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background-image:
+    radial-gradient(circle, rgba(255, 255, 255, 1) 1px, transparent 1px);
+  background-size: 40px 40px;
+  opacity: 0.06;
+}
+
+/* Reveal the ambient layer through the MAIN editor area only. Scoped to
+   .mod-root so sidebars, modals (e.g. Settings), popovers and menus keep
+   their opaque backgrounds — no global --background-primary override. */
+.theme-dark .workspace-split.mod-root,
+.theme-dark .workspace-split.mod-root .workspace-tabs,
+.theme-dark .workspace-split.mod-root .workspace-tab-container,
+.theme-dark .workspace-split.mod-root .workspace-leaf,
+.theme-dark .workspace-split.mod-root .workspace-leaf-content,
+.theme-dark .workspace-split.mod-root .view-content,
+.theme-dark .workspace-split.mod-root .markdown-source-view,
+.theme-dark .workspace-split.mod-root .markdown-reading-view,
+.theme-dark .workspace-split.mod-root .cm-editor,
+.theme-dark .workspace-split.mod-root .cm-scroller {
+  background-color: transparent;
+}
+.theme-dark .workspace {
+  position: relative;
+  z-index: 1;
+}

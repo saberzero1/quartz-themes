@@ -1,7 +1,7 @@
 /* ==
 @name             Minimal Dracula
 @namespace        github.com/druxorey/minimal-dracula-for-obsidian
-@version          1.8.4
+@version          1.8.7
 @description      Are you tired of the same boring colors on Obsidian? Then try this modern color style based on the Dracula theme
 @author           Druxorey
 @license          GNU General Public License v3.0
@@ -11,7 +11,6 @@
 
 :root {
 	background-color: #1E1F29;
-
 	--drx-border-radius-outer: 16px;
 	--drx-border-radius-inner: 10px;
 }
@@ -24,10 +23,10 @@ body {
 	--h5-weight: 500;
 	--h6-weight: 500;
 
-	--h1-size: 1.60em;
-	--h2-size: 1.40em;
+	--h1-size: 1.80em;
+	--h2-size: 1.45em;
 	--h3-size: 1.25em;
-	--h4-size: 1.15em;
+	--h4-size: 1.12em;
 	--h5-size: 1.10em;
 	--h6-size: 1.05em;
 
@@ -42,6 +41,11 @@ body {
 
 	--link-unresolved-opacity: 0.5;
 	--table-width: 88cqw;
+
+	--line-height-normal: 1.6;
+	--heading-spacing: 1.8em;
+	--hr-thickness: 1px;
+	--p-margin-bottom: 0.8rem;
 
 	--drx-color-callout-comment:  98, 114, 164;
 	--drx-color-callout-red:     255,  85,  85;
@@ -67,6 +71,13 @@ body {
 	--callout-success: var(--drx-color-callout-green);
 	--callout-question: var(--drx-color-callout-orange);
 	--callout-warning: var(--drx-color-callout-orange);
+
+	/* Properties (metadata) variables */
+	--metadata-background: var(--drx-color-base);
+	--metadata-border-width: 1px;
+	--metadata-border-radius: var(--drx-border-radius-outer);
+	--metadata-divider-color: transparent;
+	--metadata-divider-width: 0px;
 }
 
 /* ============================ DARK THEME =========================== */
@@ -99,7 +110,7 @@ body.theme-dark {
 	--drx-color-yellow-3: #D8E173;
 	--drx-color-green-1: #69FF94;
 	--drx-color-green-2: #50FA7B;
-	--drx-color-green-3: #37EB62; 
+	--drx-color-green-3: #37EB62;
 	--drx-color-cyan-1: #A4FFFF;
 	--drx-color-cyan-2: #8BE9FD;
 	--drx-color-cyan-3: #72D0E4;
@@ -113,7 +124,10 @@ body.theme-dark {
 	--drx-color-pink-2: #FF79C6;
 	--drx-color-pink-3: #E660AD;
 
-	--bold-color: var(--drx-color-accent);
+	--drx-button-border: rgba(255, 255, 255, 0.08);
+	--drx-button-shadow: 0 1px 2px rgba(0, 0, 0, 0.15), inset 0 -1px 0 rgba(0, 0, 0, 0.25);
+
+	--bold-color: inherit;
 	--text-selection: color-mix(in srgb, var(--drx-color-accent), transparent 70%);
 	--mono-rgb-100: 127, 140, 187 !important;
 
@@ -239,57 +253,32 @@ body.theme-dark {
 	}
 
 	/* Callouts styling */
-	.cm-callout, .markdown-rendered .callout {
+	.callout {
 		border-radius: var(--drx-border-radius-inner) !important;
+		border: 1px solid color-mix(in srgb, rgb(var(--callout-color)), white 20%) !important;
+		background-color: rgba(var(--callout-color), 0.1) !important;
+		--bold-color: color-mix(in srgb, rgb(var(--callout-color)), white 35%) !important;
+		overflow: hidden;
+		background-clip: padding-box;
 	}
 
 	.callout-title {
 		font-weight: 500;
+		color: color-mix(in srgb, rgb(var(--callout-color)), white 35%) !important;
+	}
+
+	.callout-icon {
+		color: color-mix(in srgb, rgb(var(--callout-color)), white 35%) !important;
 	}
 
 	.callout a {
 		font-weight: 500;
+		color: color-mix(in srgb, rgb(var(--callout-color)), white 35%) !important;
 	}
 
 	.callout[data-callout="todo"] {
-		--bold-color: var(--drx-color-text);
 		background: var(--drx-color-red-2) !important;
 		a { color: var(--drx-color-text) !important; }
-	}
-
-	.callout[data-callout="important"] {
-		--bold-color: var(--drx-color-purple-2);
-		a { color: var(--drx-color-purple-2) !important; }
-	}
-
-	.callout[data-callout="example"] {
-		--bold-color: var(--drx-color-pink-2);
-		a { color: var(--drx-color-pink-2) !important; }
-	}
-
-	.callout[data-callout="tldr"], .callout[data-callout="summary"], .callout[data-callout="tip"] {
-		--bold-color: var(--drx-color-cyan-2);
-		a { color: var(--drx-color-cyan-2) !important; }
-	}
-
-	.callout[data-callout="bug"], .callout[data-callout="error"], .callout[data-callout="fail"] {
-		--bold-color: var(--drx-color-red-2);
-		a { color: var(--drx-color-red-2) !important; }
-	}
-
-	.callout[data-callout="quote"] {
-		--bold-color: var(--drx-color-purple-2);
-		a { color: var(--drx-color-purple-2) !important; }
-	}
-
-	.callout[data-callout="success"] {
-		--bold-color: var(--drx-color-green-2);
-		a { color: var(--drx-color-green-2) !important; }
-	}
-
-	.callout[data-callout="question"], .callout[data-callout="warning"] {
-		--bold-color: var(--drx-color-orange-2);
-		a { color: var(--drx-color-orange-2) !important; }
 	}
 }
 
@@ -337,7 +326,13 @@ body.theme-light {
 	--drx-color-pink-2: #A3144D;
 	--drx-color-pink-3: #82103E;
 
-	--bold-color: var(--drx-color-accent);
+	--drx-inline-code-bg: var(--drx-color-overlay);
+	--drx-inline-code-color: var(--drx-color-orange-2);
+
+	--drx-button-border: rgba(0, 0, 0, 0.08);
+	--drx-button-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0 -1.5px 0 rgba(0, 0, 0, 0.1);
+
+	--bold-color: inherit;
 	--text-selection: color-mix(in srgb, var(--drx-color-accent), transparent 70%);
 
 	--color-base-00: var(--drx-color-base);
@@ -410,7 +405,7 @@ body.theme-light {
 	}
 
 	/* Fixes the title bar color issue in light mode */
-	.workspace-tab-header-container, 
+	.workspace-tab-header-container,
 	.titlebar-button {
 		background-color: var(--drx-color-base);
 	}
@@ -460,20 +455,18 @@ body.theme-light {
 	}
 
 	/* Callouts styling */
-	.cm-callout, .markdown-rendered .callout {
-		border-radius: var(--drx-border-radius-inner) !important;
-		border: solid 1px var(--drx-color-highlight);
-		box-shadow: 0 0.25rem 0.5rem #CECCC0B6;
-	}
-
-	.cm-callout:hover, .markdown-rendered .callout:hover {
-		border-radius: var(--drx-border-radius-inner) !important;
-		box-shadow: 0 0.25rem 0.5rem var(--drx-color-base) !important;
-	}
-
 	.callout {
+		border-radius: var(--drx-border-radius-inner) !important;
+		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04) !important;
 		padding: 0px;
-		background: #6272A43F !important;
+		background-color: color-mix(in srgb, var(--drx-color-comment) 25%, transparent) !important;
+		overflow: hidden;
+		background-clip: padding-box;
+	}
+
+	.callout:hover {
+		border-radius: var(--drx-border-radius-inner) !important;
+		box-shadow: 0 3px 8px rgba(0, 0, 0, 0.06) !important;
 	}
 
 	.callout-title {
@@ -492,94 +485,158 @@ body.theme-light {
 		font-weight: 500;
 	}
 
-	.callout[data-callout="todo"] {
-		background: var(--drx-color-red-2) !important;
-		color: white !important;
-		.callout-content { color: var(--drx-color-text) !important; }
-		--bold-color: var(--drx-color-text);
+	.callout .callout-title,
+	.callout .callout-icon .svg-icon {
+		color: white;
 		a { color: white !important; }
 	}
 
-	.callout[data-callout="important"], .callout[data-callout="example"] {
-		background: #A3144D4F !important;
-		.callout-title, .callout-icon .svg-icon { color: var(--drx-color-pink-2); }
+
+	.callout[data-callout="todo"] {
+		background: var(--drx-color-red-2) !important;
+		color: white !important;
+
+		.callout-content {
+			padding: 0rem 1rem;
+			box-shadow: inset 0 -0.25rem 0.25rem var(--drx-color-red-3);
+			background: var(--drx-color-red-2) !important;
+		}
+
+		.callout-title {
+			padding: 1rem 1rem 0rem 1rem;
+		}
+
+		a { color: white !important; }
+	}
+
+	.callout[data-callout="important"],
+	.callout[data-callout="example"] {
+		background: var(--drx-color-pink-2) !important;
 		--bold-color: var(--drx-color-pink-2);
+		--drx-inline-code-color: var(--drx-color-pink-2);
 		a { color: var(--drx-color-pink-2) !important; }
 	}
 
-	.callout[data-callout="summary"], .callout[data-callout="tldr"], .callout[data-callout="tip"] {
-		background: #036A964F !important;
-		.callout-title, .callout-icon .svg-icon { color: var(--drx-color-blue-2); }
+	.callout[data-callout="summary"],
+	.callout[data-callout="tldr"],
+	.callout[data-callout="tip"] {
+		background: var(--drx-color-blue-2) !important;
 		--bold-color: var(--drx-color-blue-2);
+		--drx-inline-code-color: var(--drx-color-blue-2);
 		a { color: var(--drx-color-blue-2) !important; }
 	}
 
-	.callout[data-callout="bug"], .callout[data-callout="error"], .callout[data-callout="fail"] {
-		background: #A3144D4F !important;
-		.callout-title, .callout-icon .svg-icon { color: var(--drx-color-red-2); }
+	.callout[data-callout="bug"],
+	.callout[data-callout="error"],
+	.callout[data-callout="fail"] {
+		background: var(--drx-color-red-2) !important;
 		--bold-color: var(--drx-color-red-2);
+		--drx-inline-code-color: var(--drx-color-red-2);
 		a { color: var(--drx-color-red-2) !important; }
 	}
 
 	.callout[data-callout="quote"] {
-		background: #644AC94F !important;
-		.callout-title, .callout-icon .svg-icon { color: var(--drx-color-purple-2); }
+		background: var(--drx-color-purple-2) !important;
 		--bold-color: var(--drx-color-purple-2);
+		--drx-inline-code-color: var(--drx-color-purple-2);
 		a { color: var(--drx-color-purple-2) !important; }
 	}
 
 	.callout[data-callout="success"] {
-		background: #14710A4F !important;
-		.callout-title, .callout-icon .svg-icon { color: var(--drx-color-green-2); }
+		background: var(--drx-color-green-2) !important;
 		--bold-color: var(--drx-color-green-2);
+		--drx-inline-code-color: var(--drx-color-green-2);
 		a { color: var(--drx-color-green-2) !important; }
 	}
 
-	.callout[data-callout="question"], .callout[data-callout="warning"] {
-		background: #AF3A034F !important;
-		.callout-title, .callout-icon .svg-icon { color: var(--drx-color-orange-2); }
-		--bold-color: var(--drx-color-orange-2);
-		a { color: var(--drx-color-orange-2) !important; }
+	.callout[data-callout="question"],
+	.callout[data-callout="warning"] {
+		background: var(--drx-color-yellow-2) !important;
+		--bold-color: var(--drx-color-yellow-2);
+		--drx-inline-code-color: var(--drx-color-yellow-2);
+		a { color: var(--drx-color-yellow-2) !important; }
+	}
+	
+	/* Styles inline code blocks in markdown */
+	.cm-inline-code,
+	:not(pre)>code {
+		color: var(--drx-inline-code-color) !important;
+		font-weight: 500;
+		background-color: var(--drx-inline-code-bg) !important;
 	}
 }
 
 /* ========================== GENERAL STYLING ======================== */
 
+/* Fenced code block rounding (affects both light and dark themes) */
+.markdown-rendered pre {
+	border-radius: var(--drx-border-radius-inner) !important;
+}
+
+.cm-s-obsidian div.HyperMD-codeblock-begin-bg {
+	border-top-left-radius: var(--drx-border-radius-inner) !important;
+	border-top-right-radius: var(--drx-border-radius-inner) !important;
+}
+
+.cm-s-obsidian div.HyperMD-codeblock-end-bg {
+	border-bottom-left-radius: var(--drx-border-radius-inner) !important;
+	border-bottom-right-radius: var(--drx-border-radius-inner) !important;
+}
+
 /* General link styling */
-a { color: var(--drx-color-accent) !important; }
+a {
+	color: var(--drx-color-accent) !important;
+}
 
-a:hover { color: var(--drx-color-important) !important; }
+a:hover {
+	color: var(--drx-color-important) !important;
+}
 
-/* Explicit H1 font size */
-.markdown-rendered h1[align="center"], h1 {
-	font-size: 2em;
+/* Explicit H1 font size for centered title (Document Title) */
+h1[align="center"],
+.markdown-rendered h1[align="center"] {
+	font-size: 2.4em;
+	font-weight: 800;
+	margin-top: 1em !important;
+	margin-bottom: 1.5em !important;
+	line-height: 1.2;
+	text-align: center;
 }
 
 /* Rounds the corners of all panels */
-.workspace-tab-container, .prompt {
+.workspace-tab-container,
+.prompt {
 	margin: 10px;
 	border-radius: var(--drx-border-radius-outer);
 }
 
 /* Margins to visually group headers with their content */
-.markdown-rendered h1,
+.markdown-rendered h1:not([align="center"]),
 .markdown-rendered h2,
-.markdown-rendered h3 {
-    margin-top: 2em !important;
-    margin-bottom: 0.5em !important;
+.markdown-rendered h3,
+.HyperMD-header-1,
+.HyperMD-header-2,
+.HyperMD-header-3 {
+	margin-top: 1.8em !important;
+	margin-bottom: 0.5em !important;
 }
 
 /* Styles header 1 in markdown with an underline (Live Preview & Reading Mode) */
 .HyperMD-header-1,
 .markdown-rendered h1:not([align="center"]) {
-	border-bottom: 3px solid;
-	border-color: var(--drx-color-accent);
-	padding-bottom: 0.3em !important;
+	border-bottom: 1.5px solid var(--hr-color);
+	padding-bottom: 0.25em !important;
 }
 
-/* Styles inline code blocks in markdown (text between ```) */
-.cm-s-obsidian span.cm-inline-code  {
-	color: var(--drx-color-subtext);
+/* Custom styling for horizontal rules (---) */
+.markdown-rendered hr,
+.hr.cm-line hr,
+.cm-hr {
+	width: 30% !important;
+	margin: 3.5rem auto !important;
+	border: none !important;
+	border-top: var(--hr-thickness) solid var(--hr-color) !important;
+	opacity: 0.6;
 }
 
 /* Styles the vault selection area at the bottom-left */
@@ -651,25 +708,119 @@ body:not(.table-width-obsidian-default) :is(.markdown-rendered, .markdown-source
 	margin-left: (calc(200rem - 100%) / -2) !important;
 }
 
+/* Properties (metadata) panel styling */
+.metadata-container {
+	background-color: var(--metadata-background) !important;
+	border-radius: var(--metadata-border-radius) !important;
+	padding: 1.25rem 1.5rem !important;
+	margin-bottom: 2rem !important;
+}
+
+/* Make inner fields transparent and clean */
+.metadata-properties {
+	background: transparent !important;
+	border: none !important;
+}
+
+.metadata-container .metadata-property,
+.metadata-container .metadata-property-key,
+.metadata-container .metadata-property-value,
+.metadata-container input,
+.metadata-container textarea,
+.metadata-container select,
+.metadata-container .multi-select-container {
+	background-color: transparent !important;
+	border: none !important;
+	box-shadow: none !important;
+}
+
+.metadata-property-key {
+	font-weight: 500 !important;
+	color: var(--drx-color-deactivate) !important;
+}
+
+/* "Add Property" button styling */
+.metadata-add-button {
+	background-color: color-mix(in srgb, var(--drx-color-accent) 10%, transparent) !important;
+	color: var(--drx-color-accent) !important;
+	border: 1px solid color-mix(in srgb, var(--drx-color-accent) 20%, transparent) !important;
+	border-radius: 6px !important;
+	padding: 6px 12px !important;
+	font-weight: 500 !important;
+	transition: all 0.2s ease !important;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05) !important;
+}
+
+.metadata-add-button:hover {
+	background-color: var(--drx-color-accent) !important;
+	color: var(--drx-color-base) !important;
+	border-color: var(--drx-color-accent) !important;
+}
+
+/* Rotating metadata tag pill colors */
+.metadata-container .multi-select-pill:nth-child(5n+1) {
+	background-color: color-mix(in srgb, var(--drx-color-yellow-2) 15%, transparent) !important;
+	color: var(--drx-color-yellow-2) !important;
+	border: 1px solid color-mix(in srgb, var(--drx-color-yellow-2) 30%, transparent) !important;
+}
+
+.metadata-container .multi-select-pill:nth-child(5n+2) {
+	background-color: color-mix(in srgb, var(--drx-color-pink-2) 15%, transparent) !important;
+	color: var(--drx-color-pink-2) !important;
+	border: 1px solid color-mix(in srgb, var(--drx-color-pink-2) 30%, transparent) !important;
+}
+
+.metadata-container .multi-select-pill:nth-child(5n+3) {
+	background-color: color-mix(in srgb, var(--drx-color-cyan-2) 15%, transparent) !important;
+	color: var(--drx-color-cyan-2) !important;
+	border: 1px solid color-mix(in srgb, var(--drx-color-cyan-2) 30%, transparent) !important;
+}
+
+.metadata-container .multi-select-pill:nth-child(5n+4) {
+	background-color: color-mix(in srgb, var(--drx-color-green-2) 15%, transparent) !important;
+	color: var(--drx-color-green-2) !important;
+	border: 1px solid color-mix(in srgb, var(--drx-color-green-2) 30%, transparent) !important;
+}
+
+.metadata-container .multi-select-pill:nth-child(5n+5) {
+	background-color: color-mix(in srgb, var(--drx-color-orange-2) 15%, transparent) !important;
+	color: var(--drx-color-orange-2) !important;
+	border: 1px solid color-mix(in srgb, var(--drx-color-orange-2) 30%, transparent) !important;
+}
+
 /* Dropdowns and comboboxes styling */
 button:not(.clickable-icon),
-select, .combobox-button, .dropdown {
-	box-shadow: none;
-	border-radius: var(--drx-border-radius-inner);
+select,
+.combobox-button,
+.dropdown {
+	border-radius: var(--drx-border-radius-inner) !important;
+	border: 1px solid var(--drx-button-border) !important;
+	box-shadow: var(--drx-button-shadow) !important;
+	transition: all 0.2s ease !important;
 }
 
 button:not(.clickable-icon):hover {
-	background: var(--drx-color-accent);
+	background-color: var(--drx-color-accent) !important;
+	color: var(--drx-color-base) !important;
+	border-color: var(--drx-color-accent) !important;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
 	cursor: pointer;
 }
 
 button.mod-cta {
-	color: var(--drx-color-text) !important; 
+	background-color: var(--drx-color-accent) !important;
+	color: var(--drx-color-base) !important;
+	border-color: var(--drx-color-accent) !important;
+}
+
+button.mod-cta:hover {
+	background-color: var(--drx-color-important) !important;
+	border-color: var(--drx-color-important) !important;
 }
 
 /* Kanban plugin global fixes */
-.kanban-plugin__lane-header-wrapper, 
-.kanban-plugin__scroll-container.kanban-plugin__vertical, 
+.kanban-plugin__lane-header-wrapper,
+.kanban-plugin__scroll-container.kanban-plugin__vertical,
 .kanban-plugin__item-button-wrapper {
 	border: none;
 }
@@ -690,7 +841,7 @@ button.mod-cta {
 
 /* Active tab view header transparency */
 .workspace-leaf.mod-active .view-header,
-.is-focused .workspace-leaf.mod-active .view-header{
+.is-focused .workspace-leaf.mod-active .view-header {
 	background: transparent;
 }
 
@@ -703,42 +854,22 @@ button.mod-cta {
 	position: unset;
 }
 
-/* ============================ PRINTING ============================= */
+/* Checklist spacing adjustments */
+.markdown-rendered .task-list-item {
+	margin-bottom: 0.5em !important;
+}
 
-@media print {
-
-	.internal-embed{
-		margin-left:-30px;
-	}
-
-	h2, h3, h4, h5, h6 {
-		page-break-after: avoid;
-	}
-
-	pre, blockquote {
-		page-break-inside: avoid;
-	}
-
-	/* Light mode callouts enforcement on print */
-	.theme-light .callout {
-		page-break-inside: avoid;
-		border-radius: 10px !important;
-		box-shadow: 0 0.25rem 0.5rem #CFCFCF66 !important;
-		border: solid 1px var(--drx-color-highlight) !important;
-	}
-
-	.theme-light .callout-content {
-		background: #FFFBEB !important;
-		box-shadow: inset 0 -0.25rem 0.25rem #CFCFCF66;
-	}
+.markdown-source-view.mod-cm6 .cm-contentContainer>.cm-content .cm-line.HyperMD-task-line {
+	padding-top: 0.25em !important;
+	padding-bottom: 0.25em !important;
 }
 
 /* ======================== IMAGES AND MEDIA ========================= */
 
 /* Left aligned images based on alt text */
 img[alt*="left"] {
-	float:left;
-	clear:left;
+	float: left;
+	clear: left;
 	margin-right: 2rem;
 	margin-bottom: 4px;
 	margin-top: 4px;
@@ -746,16 +877,16 @@ img[alt*="left"] {
 
 /* Right aligned images based on alt text */
 img[alt*="right"] {
-	float:right;
-	clear:right;
+	float: right;
+	clear: right;
 	margin-left: 1rem;
 	margin-bottom: 4px;
 	margin-top: 4px;
 }
 
 /* Center aligned images based on alt text */
-img[alt*="center"],img[alt*="centre"] {
-	display:block;
+img[alt*="center"] {
+	display: block;
 	margin-right: auto;
 	margin-left: auto;
 	margin-bottom: 4px;

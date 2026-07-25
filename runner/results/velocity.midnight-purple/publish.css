@@ -1085,16 +1085,18 @@ body.theme-light {
   --h5-color: var(--color-base-80) !important;
   --h6-color: var(--color-base-70) !important;
   --inline-title-color: var(--h1-color) !important;
-  --bases-table-text-size: var(--table-text-size) !important;
+  --pill-weight: var(--font-semi-medium) !important;
   --bold-color: var(--color-base-100) !important;
+  --metadata-label-font-weight: var(--font-semi-medium) !important;
+  --tag-weight: var(--font-semi-medium) !important;
+  --bases-table-text-size: var(--table-text-size) !important;
   --color-base-80: oklch(var(--bl-80) var(--bsat-str) var(--bhue)) !important;
   --color-base-90: oklch(var(--bl-90) var(--bsat-low) var(--bhue)) !important;
+  --tab-font-weight: var(--font-normal) !important;
   --font-ui-larger: 24px !important;
   --strikethrough-color: var(--text-faint) !important;
   --radius-sm: 10px !important;
-  --pill-weight: var(--font-semi-medium) !important;
   --setting-items-padding: calc(var(--vl-layout-padding) + 8px) !important;
-  --tag-weight: var(--font-semi-medium) !important;
   --color-accent-3: color-mix(
     in oklch,
     var(--color-accent) 50%,
@@ -1103,7 +1105,7 @@ body.theme-light {
   --radius-xs: 6px !important;
   --math-color: var(--color-base-100) !important;
   --corner-smoothing: 60% !important;
-  --tab-font-weight: var(--font-normal) !important;
+  --list-bullet-color: var(--icon-color) !important;
   --settings-background: color-mix(
     in oklab,
     var(--background-secondary) 70%,
@@ -1111,7 +1113,6 @@ body.theme-light {
   ) !important;
   --color-base-55: oklch(var(--bl-55) var(--bsat-xtr) var(--bhue)) !important;
   --color-highlight: rgb(var(--color-highlight-rgb)) !important;
-  --metadata-label-font-weight: var(--font-semi-medium) !important;
   --nav-folder-color: var(--color-base-80) !important;
   --color-accent-4: color-mix(
     in oklch,
@@ -1209,7 +1210,6 @@ body.theme-light {
   --icon-stroke-thick: 2.25px !important;
   --link-color-sidebar: var(--color-accent-1) !important;
   --link-unresolved-lch: 0.7 !important;
-  --list-bullet-color: var(--icon-color) !important;
   --list-dash-color: oklch(0% 0 0 / 0.25) !important;
   --maximize-visibility: flex !important;
   --minimize-visibility: flex !important;
@@ -1271,7 +1271,7 @@ body.theme-light {
   --tab-close-bg: oklch(from var(--color-base-30) l c h / 0.8) !important;
   --tab-right-fade: linear-gradient(
     to left,
-    oklch(91.5% calc(var(--bsat-xtr) / 3) var(--bhue)) 80%,
+    oklch(91.5% calc(var(--bsat-xtr)/3) var(--bhue)) 80%,
     transparent
   ) !important;
   --tab-right-fade-alt: linear-gradient(
@@ -2378,16 +2378,18 @@ body.theme-dark {
   --h5-color: var(--color-base-90) !important;
   --h6-color: var(--color-base-80) !important;
   --inline-title-color: var(--h1-color) !important;
-  --bases-table-text-size: var(--table-text-size) !important;
+  --pill-weight: var(--font-semi-medium) !important;
   --bold-color: var(--color-base-100) !important;
+  --metadata-label-font-weight: var(--font-semi-medium) !important;
+  --tag-weight: var(--font-semi-medium) !important;
+  --bases-table-text-size: var(--table-text-size) !important;
   --color-base-80: oklch(var(--bl-80) var(--bsat-str) var(--bhue)) !important;
   --color-base-90: oklch(var(--bl-90) var(--bsat-str) var(--bhue)) !important;
+  --tab-font-weight: var(--font-normal) !important;
   --font-ui-larger: 24px !important;
   --strikethrough-color: var(--text-faint) !important;
   --radius-sm: 10px !important;
-  --pill-weight: var(--font-semi-medium) !important;
   --setting-items-padding: calc(var(--vl-layout-padding) + 8px) !important;
-  --tag-weight: var(--font-semi-medium) !important;
   --color-accent-3: color-mix(
     in oklab,
     var(--color-accent) 50%,
@@ -2396,7 +2398,7 @@ body.theme-dark {
   --radius-xs: 6px !important;
   --math-color: var(--color-base-100) !important;
   --corner-smoothing: 60% !important;
-  --tab-font-weight: var(--font-normal) !important;
+  --list-bullet-color: var(--color-base-80) !important;
   --settings-background: radial-gradient(
     at -100% 50%,
     var(--bg-main-inner) 0%,
@@ -2404,7 +2406,6 @@ body.theme-dark {
   ) !important;
   --color-base-55: oklch(var(--bl-55) var(--bsat-xtr) var(--bhue)) !important;
   --color-highlight: rgb(var(--color-highlight-rgb)) !important;
-  --metadata-label-font-weight: var(--font-semi-medium) !important;
   --nav-folder-color: var(--color-base-80) !important;
   --color-accent-4: color-mix(
     in oklab,
@@ -2530,7 +2531,6 @@ body.theme-dark {
   --icon-stroke-thick: 2.25px !important;
   --link-color-sidebar: var(--color-accent-2) !important;
   --link-unresolved-lch: 0.75 !important;
-  --list-bullet-color: var(--color-base-80) !important;
   --list-dash-color: var(--trans-faint-60) !important;
   --maximize-visibility: flex !important;
   --minimize-visibility: flex !important;

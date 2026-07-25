@@ -1435,9 +1435,9 @@ body.theme-light {
   --h6-color: var(--color-red) !important;
   --inline-title-color: var(--text-color) !important;
   --text-color: var(--text) !important;
-  --border-color: var(--border-color-primary) !important;
   --bold-color: var(--accent-color-light) !important;
   --italic-color: var(--accent-color-light) !important;
+  --border-color: var(--border-color-primary) !important;
   --code-variable: var(--text) !important;
   --accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l)) !important;
   --text: #575279 !important;
@@ -1446,6 +1446,7 @@ body.theme-light {
   --surface: #fffaf3 !important;
   --base: #faf4ed !important;
   --gold: #ea9d34 !important;
+  --accent-color-light: var(--rose) !important;
   --foam: #56949f !important;
   --highlight-high: #cecacd !important;
   --highlight-low: #f4ede8 !important;
@@ -1460,7 +1461,6 @@ body.theme-light {
   --selection-background-color: var(--overlay) !important;
   --accent-color-hover: var(--iris) !important;
   --accent-color-dark: var(--pine) !important;
-  --accent-color-light: var(--rose) !important;
   --border-color-primary: var(--highlight-med) !important;
   --border-color-secondary: var(--highlight-high) !important;
   --code-boolean: var(--rose) !important;
@@ -2521,9 +2521,9 @@ body.theme-dark {
   --h6-color: var(--color-red) !important;
   --inline-title-color: var(--text-color) !important;
   --text-color: var(--foreground) !important;
-  --border-color: var(--border-color-primary) !important;
   --bold-color: var(--accent-color-light) !important;
   --italic-color: var(--accent-color-light) !important;
+  --border-color: var(--border-color-primary) !important;
   --code-variable: var(--text-color) !important;
   --accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l)) !important;
   --code-builtin: var(--color-cyan) !important;
@@ -2532,13 +2532,13 @@ body.theme-dark {
   --bg-blue: #73b8f1 !important;
   --bg-yellow: #ebd09c !important;
   --bg0: #282c34 !important;
+  --accent-color-light: var(--color-cyan) !important;
   --selection-background-color: var(--bg3) !important;
   --grey: #5c6370 !important;
   --accent-color-hover: var(--bg-blue) !important;
   --light-grey: #848b98 !important;
   --foreground: #abb2bf !important;
   --accent-color-dark: var(--color-blue) !important;
-  --accent-color-light: var(--color-cyan) !important;
   --border-color-primary: var(--bg2) !important;
   --border-color-secondary: var(--bg1) !important;
   --code-boolean: var(--color-orange) !important;

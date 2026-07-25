@@ -710,7 +710,7 @@ body.theme-light {
     transparent
   ) !important;
   --nav-item-children-margin-start: calc(
-    20px - var(--nav-indentation-guide-width) / 2
+    20px - var(--nav-indentation-guide-width)/2
   ) !important;
   --nav-item-children-padding-start: var(--size-2-2) !important;
   --nav-item-color: var(--text-muted) !important;
@@ -1116,13 +1116,15 @@ body.theme-light {
   --shadow-xs:
     0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065),
     var(--shadow-edges) !important;
+  --embed-background: var(--background-primary-alt) !important;
+  --inline-title-font: var(--font-text-override), "Instrument Serif" !important;
+  --tag-weight: var(--font-medium) !important;
   --h1-font: var(--font-text-override), "Instrument Serif" !important;
   --h2-font: var(--font-text-override), "Instrument Serif" !important;
   --h3-font: var(--font-text-override), "Instrument Serif" !important;
   --h4-font: var(--font-text-override), "Instrument Serif" !important;
   --h5-font: var(--font-text-override), "Instrument Serif" !important;
   --h6-font: var(--font-text-override), "Instrument Serif" !important;
-  --inline-title-font: var(--font-text-override), "Instrument Serif" !important;
   --banner-fade-height: 80px !important;
   --banner-icon-size: 3rem !important;
   --banner-image-height: 320px !important;
@@ -1139,7 +1141,6 @@ body.theme-light {
   --blockquote-size: var(--font-text-size) !important;
   --callout-size: var(--font-text-size);
   --density-modifier: 1 !important;
-  --embed-background: var(--background-primary-alt) !important;
   --font-ui-modifier: 0px !important;
   --hover-sidedock-delay: 160ms !important;
   --hover-sidedock-trigger-area: 4px !important;
@@ -1184,7 +1185,6 @@ body.theme-light {
     rgba(var(--mono-rgb-100), 0.04) 0px 2px 4px -2px !important;
   --tab-action-width: 32px !important;
   --tab-text-align: left !important;
-  --tag-weight: var(--font-medium) !important;
   --translucent-dark-opacity: 50% !important;
   --translucent-light-opacity: 50% !important;
   --view-top-spacing-markdown: 0px !important;
@@ -1888,7 +1888,7 @@ body.theme-dark {
     transparent
   ) !important;
   --nav-item-children-margin-start: calc(
-    20px - var(--nav-indentation-guide-width) / 2
+    20px - var(--nav-indentation-guide-width)/2
   ) !important;
   --nav-item-children-padding-start: var(--size-2-2) !important;
   --nav-item-color: var(--text-muted) !important;
@@ -2283,13 +2283,15 @@ body.theme-dark {
   --cards-padding: 4px !important;
   --line-width: 700px !important;
   --line-width-wide: 50rem !important;
+  --embed-background: var(--background-primary-alt) !important;
+  --inline-title-font: var(--font-text-override), "Instrument Serif" !important;
+  --tag-weight: var(--font-medium) !important;
   --h1-font: var(--font-text-override), "Instrument Serif" !important;
   --h2-font: var(--font-text-override), "Instrument Serif" !important;
   --h3-font: var(--font-text-override), "Instrument Serif" !important;
   --h4-font: var(--font-text-override), "Instrument Serif" !important;
   --h5-font: var(--font-text-override), "Instrument Serif" !important;
   --h6-font: var(--font-text-override), "Instrument Serif" !important;
-  --inline-title-font: var(--font-text-override), "Instrument Serif" !important;
   --banner-fade-height: 80px !important;
   --banner-icon-size: 3rem !important;
   --banner-image-height: 320px !important;
@@ -2306,7 +2308,6 @@ body.theme-dark {
   --blockquote-size: var(--font-text-size) !important;
   --callout-size: var(--font-text-size);
   --density-modifier: 1 !important;
-  --embed-background: var(--background-primary-alt) !important;
   --font-ui-modifier: 0px !important;
   --hover-sidedock-delay: 160ms !important;
   --hover-sidedock-trigger-area: 4px !important;
@@ -2351,7 +2352,6 @@ body.theme-dark {
     rgba(var(--mono-rgb-100), 0.04) 0px 2px 4px -2px !important;
   --tab-action-width: 32px !important;
   --tab-text-align: left !important;
-  --tag-weight: var(--font-medium) !important;
   --translucent-dark-opacity: 50% !important;
   --translucent-light-opacity: 50% !important;
   --view-top-spacing-markdown: 0px !important;

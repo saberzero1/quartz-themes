@@ -1516,13 +1516,13 @@ body.theme-light {
     0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065),
     var(--shadow-edges) !important;
   --vault-name-color: var(--text-normal) !important;
+  --inline-title-font: var(--h1-font) !important;
   --h1-font: var(--font-text) !important;
   --h2-font: var(--font-text) !important;
   --h3-font: var(--font-text) !important;
   --h4-font: var(--font-text) !important;
   --h5-font: var(--font-text) !important;
   --h6-font: var(--font-text) !important;
-  --inline-title-font: var(--h1-font) !important;
   --indentation-guide: rgb(var(--mono-rgb-100) 0.15) !important;
   --indentation-guide-active: rgb(var(--mono-rgb-100) 0.3) !important;
   --green: var(--green-50) !important;
@@ -1531,14 +1531,15 @@ body.theme-light {
   --text-primary: rgb(var(--gray-100)) !important;
   --text-secondary: rgb(var(--gray-70)) !important;
   --yellow: var(--yellow-30) !important;
+  --embed-border-left: var(--embed-border-width) solid var(--embed-border-color) !important;
   --blue: var(--blue-60) !important;
   --pink: var(--pink-50) !important;
-  --embed-border-left: var(--embed-border-width) solid var(--embed-border-color) !important;
   --embed-border-right: none !important;
   --vault-name-font-size: var(--font-ui-medium) !important;
   --vault-name-font-weight: var(--font-medium) !important;
   --cyan: var(--cyan-50) !important;
   --blockquote-size: 0.9rem !important;
+  --callout-title-background: transparent;
   --white: 253, 254, 254 !important;
   --background: rgb(var(--gray-10)) !important;
   --highlight: rgba(var(--color-accent-rgb), 0.7) !important;
@@ -1554,6 +1555,8 @@ body.theme-light {
   --size-6: 24px !important;
   --size-7: 32px !important;
   --size-8: 40px !important;
+  --layer-1: rgb(var(--white)) !important;
+  --layer-2: rgb(var(--gray-10)) !important;
   --font-editor: var(--font-editor-theme), var(--font-text) !important;
   --lavender: var(--lavender-50) !important;
   --duration-fast-1: 70ms !important;
@@ -1601,7 +1604,6 @@ body.theme-light {
   --background-active: rgba(var(--gray-50), 0.32) !important;
   --background-hover: rgba(var(--gray-50), 0.12) !important;
   --pistachio: var(--pistachio-50) !important;
-  --callout-title-background: transparent;
   --focus: var(--cyan-60) !important;
   --overlay: rgba(var(--gray-100), 0.5) !important;
   --aside-background: transparent !important;
@@ -1617,8 +1619,6 @@ body.theme-light {
   --orange-80: hsl(342.1deg, 82.5%, 24.7%) !important;
   --orange-90: hsl(346.4deg, 100%, 16.5%) !important;
   --green-10: hsl(77.6deg, 48.6%, 93.1%) !important;
-  --layer-1: rgb(var(--white)) !important;
-  --layer-2: rgb(var(--gray-10)) !important;
   --active-line-accent: transparent !important;
   --background-inverse: rgb(var(--gray-80)) !important;
   --background-inverse-hover: rgba(var(--gray-70), 0.5) !important;
@@ -2824,13 +2824,13 @@ body.theme-dark {
   --text-code: var(--pink-50) !important;
   --text-highlight-bg-active: var(--highlight) !important;
   --vault-name-color: var(--text-normal) !important;
+  --inline-title-font: var(--h1-font) !important;
   --h1-font: var(--font-text) !important;
   --h2-font: var(--font-text) !important;
   --h3-font: var(--font-text) !important;
   --h4-font: var(--font-text) !important;
   --h5-font: var(--font-text) !important;
   --h6-font: var(--font-text) !important;
-  --inline-title-font: var(--h1-font) !important;
   --indentation-guide: rgb(var(--mono-rgb-100) 0.15) !important;
   --indentation-guide-active: rgb(var(--mono-rgb-100) 0.3) !important;
   --green: var(--green-50) !important;
@@ -2839,14 +2839,15 @@ body.theme-dark {
   --text-primary: rgb(var(--gray-10)) !important;
   --text-secondary: rgb(var(--gray-30)) !important;
   --yellow: var(--yellow-30) !important;
+  --embed-border-left: var(--embed-border-width) solid var(--embed-border-color) !important;
   --blue: var(--blue-60) !important;
   --pink: var(--pink-50) !important;
-  --embed-border-left: var(--embed-border-width) solid var(--embed-border-color) !important;
   --embed-border-right: none !important;
   --vault-name-font-size: var(--font-ui-medium) !important;
   --vault-name-font-weight: var(--font-medium) !important;
   --cyan: var(--cyan-50) !important;
   --blockquote-size: 0.9rem !important;
+  --callout-title-background: transparent;
   --white: 253, 254, 254 !important;
   --background: rgb(var(--gray-100)) !important;
   --highlight: rgba(var(--color-accent-rgb), 0.7) !important;
@@ -2862,6 +2863,8 @@ body.theme-dark {
   --size-6: 24px !important;
   --size-7: 32px !important;
   --size-8: 40px !important;
+  --layer-1: rgb(var(--gray-90)) !important;
+  --layer-2: rgb(var(--gray-80)) !important;
   --font-editor: var(--font-editor-theme), var(--font-text) !important;
   --lavender: var(--lavender-50) !important;
   --duration-fast-1: 70ms !important;
@@ -2909,7 +2912,6 @@ body.theme-dark {
   --background-active: rgba(var(--gray-50), 0.4) !important;
   --background-hover: rgba(var(--gray-50), 0.16) !important;
   --pistachio: var(--pistachio-50) !important;
-  --callout-title-background: transparent;
   --focus: var(--cyan-60) !important;
   --overlay: rgba(var(--gray-100), 0.7) !important;
   --aside-background: transparent !important;
@@ -2925,8 +2927,6 @@ body.theme-dark {
   --orange-80: hsl(342.1deg, 82.5%, 24.7%) !important;
   --orange-90: hsl(346.4deg, 100%, 16.5%) !important;
   --green-10: hsl(77.6deg, 48.6%, 93.1%) !important;
-  --layer-1: rgb(var(--gray-90)) !important;
-  --layer-2: rgb(var(--gray-80)) !important;
   --active-line-accent: transparent !important;
   --background-inverse: rgb(var(--gray-10)) !important;
   --background-inverse-hover: rgba(var(--gray-20), 0.5) !important;

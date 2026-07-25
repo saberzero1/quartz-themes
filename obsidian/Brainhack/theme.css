@@ -1,5 +1,5 @@
 /*===================================== INFORMATION =================================================
-This theme uses content created by other theme creators.
+This theme uses content created by other creators.
 Wherever such content is used, their author is attributed.
 If you have any questions or concerns, please contact me on GitHub: https://github.com/Spekulucius */
 
@@ -10,20 +10,28 @@ name: Theme Settings
 id: Brainhack
 description: "Thank you for using my theme. If you encounter issues or have suggestions, please open a ticket on my GitHub repo <3"
 settings:
-    -
-        id: morespace
-        title: More Space
-        type: class-toggle
-    -
-        id: smartlists
-        title: Smart Lists (WIP)
-        type: class-toggle
+    - 
+        id: Info-Text
+        title: A word from the developer
+        description: "Thank you for 10k downloads! This is a milestone I never expected to reach. I started creating this theme just for myself, and it fills me with so much joy seeing that other people enjoy it! So: THANK YOU for using my theme! If you encounter issues or have suggestions, please open a ticket on my GitHub repo <3"
+        type: info-text
+        markdown: true
     -
         id: Text and Spacing
         title: Text and Spacing
         type: heading
-        collapsed: ture
+        collapsed: true
         level: 2
+    -
+        id: filelinewidth
+        title: Adjust File Line Width
+        description: 
+        type: variable-number-slider
+        format: px
+        default: 1000
+        min: 450
+        max: 1600
+        step: 10
     -
         id: custom-font-weight
         title: Adjust Font Weight
@@ -49,15 +57,74 @@ settings:
         description:
         type: variable-number-slider
         format:
-        default: 1.5
+        default: 2
         min: 1.5
         max: 2.5
         step: .1
+    - 
+        id: Bold Text Variants
+        title: Bold Text Variants
+        type: class-select
+        allowEmpty: false
+        default: default
+        options:
+            - 
+                label: brainhack default
+                value: default
+            - 
+                label: just bold
+                value: btv1
+            - 
+                label: colored bold
+                value: btv2
+    -
+        id: bold-weight
+        title: Bold Text Weight
+        description:
+        type: variable-number-slider
+        format: 
+        default: 900
+        min: 100
+        max: 900
+        step: 100
+    -
+        id: italic-weight
+        title: Italic Text Weight
+        description:
+        type: variable-number-slider
+        format: 
+        default: 300
+        min: 100
+        max: 900
+        step: 100
+    - 
+        id: italic-text-color
+        title: Italic Text Color
+        type: variable-color
+        opacity: false
+        format: hex
+        default: '#none'
+    - 
+        id: Highlighted Text Variants
+        title: Highlighted Text Variants
+        type: class-select
+        allowEmpty: false
+        default: default
+        options:
+            - 
+                label: brainhack default
+                value: default
+            - 
+                label: obsidian default
+                value: htv1
+            - 
+                label: obsidian default + accent color
+                value: htv2
     -
         id: Headings
         title: Headings
         type: heading
-        collapsed: ture
+        collapsed: true
         level: 2
     - 
         id: Heading variants
@@ -76,10 +143,56 @@ settings:
                 label: Variant 2
                 value: hv2
     -
+        id: coloredheadings
+        title: Colored Headings
+        type: class-toggle
+    - 
+        id: headingcolor1
+        title: Heading Color 1
+        type: variable-color
+        opacity: false
+        format: hex
+        default: '#none'
+    - 
+        id: headingcolor2
+        title: heading Color 2
+        type: variable-color
+        opacity: false
+        format: hex
+        default: '#none'
+    - 
+        id: headingcolor3
+        title: Heading Color 3
+        type: variable-color
+        opacity: false
+        format: hex
+        default: '#none'
+    - 
+        id: headingcolor4
+        title: Heading Color 4
+        type: variable-color
+        opacity: false
+        format: hex
+        default: '#none'
+    - 
+        id: headingcolor5
+        title: heading Color 5
+        type: variable-color
+        opacity: false
+        format: hex
+        default: '#none'
+    - 
+        id: headingcolor6
+        title: Heading Color 6
+        type: variable-color
+        opacity: false
+        format: hex
+        default: '#none'
+    -
         id: Blockquotes
         title: Blockquotes
         type: heading
-        collapsed: ture
+        collapsed: true
         level: 2
     - 
         id: Blockquote variants
@@ -98,7 +211,7 @@ settings:
         id: Callouts
         title: Callouts
         type: heading
-        collapsed: ture
+        collapsed: true
         level: 2
     - 
         id: Callout variants
@@ -117,7 +230,7 @@ settings:
         id: Canvas
         title: Canvas
         type: heading
-        collapsed: ture
+        collapsed: true
         level: 2
     - 
         id: Node Colors
@@ -133,10 +246,10 @@ settings:
                 label: Colored Nodes
                 value: nc
     -
-        id: Colors
-        title: Colors
+        id: Background
+        title: Background
         type: heading
-        collapsed: ture
+        collapsed: true
         level: 2
     -
         id: bgt_s
@@ -155,10 +268,48 @@ settings:
         max: 10
         step: 1
     -
+        id: Folder-settings
+        title: Folders
+        type: heading
+        collapsed: true
+        level: 2
+    -
+        id: coloredfolders
+        title: Colored Folders
+        type: class-toggle
+    - 
+        id: foldercolor1
+        title: Folder Color 1
+        type: variable-color
+        opacity: false
+        format: hex
+        default: '#none'
+    - 
+        id: foldercolor2
+        title: Folder Color 2
+        type: variable-color
+        opacity: false
+        format: hex
+        default: '#none'
+    - 
+        id: foldercolor3
+        title: Folder Color 3
+        type: variable-color
+        opacity: false
+        format: hex
+        default: '#none'
+    - 
+        id: foldercolor4
+        title: Folder Color 4
+        type: variable-color
+        opacity: false
+        format: hex
+        default: '#none'
+    -
         id: Experimental Settings
         title: Experimental Settings
         type: heading
-        collapsed: ture
+        collapsed: true
         level: 2
     - 
         id: cbr
@@ -169,15 +320,6 @@ settings:
         max: 50
         step: 1
         format: px
-    -
-        id: crm
-        title: Custom Workspace Element Radius
-        type: variable-number-slider
-        default: 1
-        min: 0
-        max: 2
-        step: 0.1
-        format: em
     -
         id: status-bar-hover
         title: Hide Status Bar
@@ -196,54 +338,117 @@ settings:
         id: hide-scrollbars
         title: Hide scrollbars
         type: class-toggle
+    -
+        id: smartlists
+        title: Smart Lists (WIP)
+        type: class-toggle
 */
 
-/*////////////////////////////////////////////////////////////////// COLORS ///////////////////////////////////////////////////////////////////////////////*/
-body {
+/* ============================================================================
+   TABLE OF CONTENTS
+    1. Color system (custom properties)
+    2. Workspace layout
+    3. Left sidebar / ribbon / sidebar buttons
+    4. Tab bar (main editor area)
+    5. File navigator
+    6. Nav header
+    7. Right sidebar
+    8. Settings UI & modals
+    9. Callouts - typed color variants
+   10. Callouts & blockquotes - structure
+   11. Paragraph & list spacing
+   12. Headings
+   13. Highlighting, bold & search
+   14. Typography (Style Settings sliders)
+   15. Misc: tables, images, status bar, greyscale, canvas, colored folders
+   ============================================================================ */
 
+
+/* ============================================================================
+   1. COLOR SYSTEM
+   ============================================================================ */
+
+/* Scheme-independent variables */
+body {
+    --file-line-width: var(--filelinewidth, 1000px);
+
+    /* Canvas dot grid follows the subtle background tint */
     --canvas-dot-pattern: var(--background-3-1);
+
+    /* Accent at 10% opacity; used e.g. as background for bold text */
     --colored-accent-4: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.1);
-    --radius-m: var(--crm, 1em);
+
+    /* Global medium corner radius (callouts, blockquotes) */
+    --radius-m: .7em;
+
+    /* Bold text renders 300 weight units above the body font weight */
+    --bold-modifier: 300;
+
+    /* Line height, driven by the "Adjust Line Spacing" slider */
+    --line-height-normal: var(--custom-line-height, 2);
 }
 
-.theme-light, .theme-dark {
+/* Variables shared by both color schemes */
+.theme-light,
+.theme-dark {
+    /* Readable "inverse" of the accent: snaps to near-black for light
+       accents and near-white for dark accents (i1 = hard, i2 = soft) */
     --colored-accent-i1: hsl(var(--accent-h), var(--accent-s), calc(calc(var(--accent-l) - 49%)*-100));
     --colored-accent-i2: hsl(var(--accent-h), var(--accent-s), calc(calc(var(--accent-l) - 20%)*-100));
+
+    /* Accent color at decreasing opacities */
     --colored-accent-1: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
     --colored-accent-2: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.5);
     --colored-accent-3: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.3);
     --colored-accent-5: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.05);
+
+    /* Dark, accent-tinted drop shadow */
     --shadow-1: hsla(var(--accent-h), var(--accent-s), 5%, .5);
     --custom-accent-bold: var(--colored-accent-1);
-    
+
+    /* Map core Obsidian variables onto the theme palette */
     --background-secondary: var(--background-2);
     --canvas-background: var(--background-2);
     --code-background: var(--background-3);
+    --color-base-00: var(--background-3);
+    --color-base-50: var(--colored-accent-1) !important;
+    --interactive-accent: var(--colored-accent-1);
+    --background-1-item: var(--nav-item-color);
 
+    /* Larger page-preview popovers */
+    --popover-width: 1050px;
+    --popover-height: 1250px;
 }
 
 .theme-light {
+    --border-callout: white;
+    --border-2: rgb(205, 205, 205);
+    --text-faint: rgb(161, 161, 161);
+
+    /* Editor background: hue follows the accent; saturation/lightness are
+       adjustable via the background sliders (--bgt_s / --bgt_l) */
     --background-primary: hsl(var(--background-2_h), calc(calc(var(--accent-s) * 0) + calc(.5% * var(--bgt_s, 1))), calc(calc(var(--background-2_l) - 5%) + calc(calc(var(--bgt_l, 0) * 1%) + 2%)));
 
     --background-1: hsl(var(--accent-h), calc(var(--accent-s) - 20%), 90%, 100%);
     --background-1_2: rgb(234, 234, 234);
     --background-1-h: #bdbdbd;
-    --background-1-item: var(--nav-item-color);
 
     --background-2_h: var(--accent-h);
     --background-2_s: 10%;
     --background-2_l: 99%;
     --background-2: rgb(255, 255, 255);
 
-    --background-3: hsl(0, 0%, 98%);
-    --background-3-1: rgb(197, 197, 197);
-    --background-3-2: rgba(197, 197, 197, 0.288);
+    --background-3: #ffffff;
+    --background-3-1: #00000010;
+    --background-3-2: rgb(202, 202, 202);
     --background-3-3: hsla(0, 0%, 73%, 0.112);
-    --background-4: white;
+    --background-4: #F5F5F5;
+    --background-4-1: #d3d3d3;
+    --background-4-2: #ffffff;
     --background-5: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 90%);
-    --background-6: hsla(var(--accent-h), var(--accent-s), var(--accent-l), .2);  
+    --background-6: hsla(var(--accent-h), var(--accent-s), var(--accent-l), .2);
     --background-7: rgb(221, 221, 221);
-    
+
     --highlight-1: rgba(0, 0, 0, 0.056);
     --highlight-2: rgba(214, 214, 214, 0.308);
 
@@ -251,40 +456,44 @@ body {
     --shadow-3: rgba(0, 0, 0, 0.08);
     --shadow-4: hsla(var(--background-2_h), calc(calc(var(--accent-s) * .5) + calc(.1% * var(--bgt_s, 1))), calc(calc(var(--background-2_l) - 20%) + calc(var(--bgt_l, 0) * 1%)), .2);
 
-
     --divider-color: rgba(200, 200, 200, 0.441);
 
-    --color-base-00: var(--background-3);
-    --color-base-50: var(--colored-accent-1) !important;
-    --interactive-accent: var(--colored-accent-1);
     --text-color-inverted: black;
     --tc: rgb(67, 67, 67);
-    --italic-color: rgb(154, 154, 154);
-    --canvas-background: var(--background-2);
+    --tc-rgb: 67, 67, 67;
+    --italic-color: var(--italic-text-color, rgb(154, 154, 154));
+
+    /* Light scheme overrides the shared code background */
     --code-background: var(--background-1_2);
 
     --main-color: black;
-    --main-color-2:rgb(56, 56, 56);
+    --main-color-2: rgb(56, 56, 56);
     --main-color-inverted: white;
     --main-color-inverted-2: rgb(252, 252, 252);
     --main-color-05: rgba(0, 0, 0, 0.116);
 }
 
 .theme-dark {
+    --border-callout: rgba(0, 0, 0, 0);
+    --border-2: rgb(69, 69, 69);
+    --text-faint: rgb(98, 98, 98);
+
     --background-1: #171717;
     --background-1-h: var(--colored-accent-1);
-    --background-1-item: var(--nav-item-color);
 
     --background-2_h: var(--accent-h);
     --background-2_s: 0%;
     --background-2_l: 10%;
+    /* Workspace background: hue follows the accent; adjustable via sliders */
     --background-2: hsl(var(--background-2_h), calc(calc(var(--accent-s) * .01) + calc(.1% * var(--bgt_s, 1))), calc(var(--background-2_l) + calc(calc(var(--bgt_l, 0) * 1%) + 2%)));
 
-    --background-3: rgb(33, 33, 33);
-    --background-3-1: rgb(70, 70, 70);
-    --background-3-2: rgba(70, 70, 70, 0.27);
+    --background-3: #292929;
+    --background-3-1: rgb(43, 43, 43);
+    --background-3-2: rgba(70, 70, 70, 0.667);
     --background-3-3: hsla(0, 0%, 26%, 0.326);
-    --background-4: rgb(12, 12, 12);
+    --background-4: #191919;
+    --background-4-1: #000000;
+    --background-4-2: #1b1b1b;
     --background-5: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 30%);
     --background-6: hsla(var(--accent-h), calc(var(--accent-s) * .1), var(--accent-l), 0.2);
     --background-7: rgb(53, 53, 53);
@@ -298,12 +507,10 @@ body {
 
     --divider-color: rgba(105, 105, 105, 0.441);
 
-    --color-base-00: var(--background-3);
-    --color-base-50: var(--colored-accent-1) !important;
-    --interactive-accent: var(--colored-accent-1);
     --text-color-inverted: rgb(223, 223, 223);
     --tc: rgb(194, 194, 194);
-    --italic-color: rgb(97, 97, 97);
+    --tc-rgb: 194, 194, 194;    
+    --italic-color: var(--italic-text-color, rgb(97, 97, 97));
 
     --main-color: white;
     --main-color-2: rgb(224, 224, 224);
@@ -313,87 +520,82 @@ body {
 }
 
 
-/*////////////////////////////////////////////////////////////////////////////// MAIN BODY - GENERAL CONFIG //////////////////////////////////////////////////////////////////////////////*/
-/*============================= ADJUST SPACING OF MAIN BODY ===================================*/
-body:not(.is-mobile, .morespace)
-.workspace {
-    background-color: transparent;
-    right: 10px !important;
+/* ============================================================================
+   2. WORKSPACE LAYOUT & CHROME
+   ============================================================================ */
+
+/* Main workspace while a sidebar is open: shifts the workspace 10px off the
+   window edge so the rounded container floats. */
+body:not(.is-mobile) .workspace:is(.is-left-sidedock-open, .is-right-sidedock-open) {
     position: relative;
-    overflow: visible;
-    display: flex;
-    flex: 1 0 0;
+    right: 10px !important;
     width: calc(100% - 10px) !important;
     margin-left: 10px;
-}
-body:not(.is-mobile, .morespace)
-.horizontal-main-container {
     padding-bottom: 10px;
     display: flex;
-    overflow: visible;
     flex: 1 0 0;
+    overflow: visible;
     background: transparent;
-}
-body:not(.is-mobile):not(.show-ribbon, .morespace)
-.horizontal-main-container {
-    padding-left: 10px;
+    transition: .5s !important;
 }
 
-body:not(.is-mobile):not(.show-ribbon, .morespace) .workspace:before {
+/* Gap between an open sidebar and the editor area */
+body > div.app-container > div.horizontal-main-container > .workspace:is(.is-left-sidedock-open, .is-right-sidedock-open) > div.workspace-split.mod-vertical.mod-root {
+    margin-left: .5em;
+}
+
+/* Without the ribbon, the workspace backdrop spans the full width */
+body:not(.is-mobile):not(.show-ribbon) .workspace:before {
     width: 100%;
 }
-/*============== Ribbon ===========================*/
+
+/* Gap between the editor area and the right sidebar */
+body > div.app-container > div.horizontal-main-container > div > div.workspace-split.mod-horizontal.mod-sidedock.mod-right-split > div.workspace-tabs.mod-top.mod-top-right-space {
+    margin-left: .5em;
+    width: calc(100% - .5em);
+}
+
+/* --- Ribbon -------------------------------------------------------------- */
 .workspace-ribbon.side-dock-ribbon.mod-left {
     flex-basis: 44px;
     background: transparent !important;
 }
-/*==================== REMOVE BORDERS ===============================*/
-.workspace-tab-header-container, .workspace-ribbon.side-dock-ribbon.mod-left {
+
+/* Remove the default borders of tab bar and ribbon */
+.workspace-tab-header-container,
+.workspace-ribbon.side-dock-ribbon.mod-left {
     border: none !important;
 }
 .workspace-tab-header-container {
     background: transparent;
 }
 
-/*============== ADD NEW BORDERS =====================*/
-body:not(.morespace)
-.workspace:not(.is-mobile)::before {
-    content: " ";
-    width: 100%;
-    height: calc(100% - 40px);
-    background-color: transparent;
-    border-radius: var(--cbr, 20px);
-    position: absolute;
-    bottom: 0px;
-    right: 0px;
-    box-shadow: 0px 0px 0px 1px var(--divider-color), 0 0 5px 1px var(--shadow-4);
-}
-/*adjust borders to align with ribbon animation*/
-body:has(.show-ribbon):not(.is-mobile, .morespace),:has(.workspace-ribbon.side-dock-ribbon:hover) .workspace::before {
-    width: calc(100% - 44px);
-    transition-duration: .1s;
-}
-
-body:has(.show-ribbon):not(.is-mobile, .morespace),:has(.workspace-ribbon.side-dock-ribbon) .workspace::before {
-    width: calc(100% - 44px);
-    transition: all .5s ease;
-}
-
-/*================ ADJUST WORKSPACE BACKGROUND ========================*/
+/* --- Workspace background ------------------------------------------------ */
+/* Sidebar open: splits become transparent so the body background shows */
 .titlebar-button-container.mod-right:not(.is-mobile),
-.workspace-split:not(.is-mobile) {
+.workspace:is(.is-left-sidedock-open, .is-right-sidedock-open) .workspace-split:not(.is-mobile) {
     background: transparent !important;
+    transition: .5s;
 }
 
-/*===== mobile fix */ body.is-mobile .titlebar-button-container.mod-right, body.is-mobile .workspace-split {background: var(--background-4) !important;}
+/* Sidebar closed: splits use the regular workspace background */
+.titlebar-button-container.mod-right:not(.is-mobile),
+.workspace:not(.is-left-sidedock-open) .workspace-split:not(.is-mobile) {
+    background: var(--background-2);
+    transition: .5s;
+}
 
+/* Mobile: always use the solid sidebar background */
+body.is-mobile .titlebar-button-container.mod-right,
+body.is-mobile .workspace-split {
+    background: var(--background-4) !important;
+}
 
+/* Solid background for all content surfaces */
 .view-header,
-.workspace-split.mod-left-split .workspace-sidedock-vault-profile,
 .empty-state,
 .markdown-rendered,
 .community-modal-details,
-.workspace-tab-container,
 .cm-scroller {
     background-color: var(--background-2) !important;
 }
@@ -401,154 +603,344 @@ body:has(.show-ribbon):not(.is-mobile, .morespace),:has(.workspace-ribbon.side-d
     background: var(--background-2);
 }
 
-
-
-/*==================== ADJUST RESIZE HANDLES ====================*/
+/* --- Resize handles ------------------------------------------------------ */
 .workspace-split.mod-vertical > * > .workspace-leaf-resize-handle,
-.workspace-split.mod-left-split > .workspace-leaf-resize-handle { 
-    height: calc(var(--divider-vertical-height) - var(--header-height)) !important;
+.workspace-split.mod-left-split > .workspace-leaf-resize-handle {
     bottom: 0px !important;
-    border-right-style: dashed;
+    border: solid transparent;
 }
 
-.workspace-split.mod-right-split > .workspace-leaf-resize-handle { 
+.workspace-split.mod-right-split > .workspace-leaf-resize-handle {
     height: calc(var(--divider-vertical-height) - var(--header-height)) !important;
     bottom: 0px !important;
     border-left-style: dashed;
 }
 
-/*=================== workspace rounded corners ===================*/
-body:has(.workspace-ribbon.side-dock-ribbon.mod-left.is-collapsed):not(.is-mobile)
-.mod-root {
+/* --- Rounded workspace corners (radius via the "cbr" setting) ------------ */
+/* Bottom corners of the main editor container */
+body:not(.is-mobile) .workspace:is(.is-left-sidedock-open, .is-right-sidedock-open) .mod-root {
+    border-bottom-right-radius: var(--cbr, 20px) !important;
     border-bottom-left-radius: var(--cbr, 20px) !important;
     overflow: hidden;
 }
-body:not(.is-mobile)
-.workspace:not(.is-right-sidedock-open)
-.mod-root {
-    border-bottom-right-radius: var(--cbr, 20px) !important;
-    overflow: hidden;
+
+/* Top-right corner of the right-most tab container */
+body:not(.is-mobile) .workspace:is(.is-left-sidedock-open, .is-right-sidedock-open) .mod-vertical .workspace-tabs:last-of-type .workspace-tab-container,
+div.workspace-split.mod-vertical.mod-root > div > div.workspace-tabs.mod-top:last-of-type > div.workspace-tab-container {
+    border-top-right-radius: var(--cbr, 20px) !important;
 }
-body:not(.is-mobile)
-.workspace:not(.is-right-sidedock-open)
-.workspace-split:last-of-type .mod-top-right-space .workspace-tab-container {
-    border-top-right-radius: var(--cbr, 20px);
-}
-body:not(.is-mobile)
-.mod-top-left-space .workspace-tab-container {
+
+/* Top-left corner of the left-most tab container */
+body:not(.is-mobile) .workspace:is(.is-left-sidedock-open, .is-right-sidedock-open) .workspace-tabs:first-of-type .workspace-tab-container {
     border-top-left-radius: var(--cbr, 20px) !important;
 }
-body:not(.is-mobile)
-.workspace:not(.is-right-sidedock-open)
-.workspace-tabs.mod-top-right-space:last-of-type .workspace-tab-container {
-    border-top-right-radius: var(--cbr, 20px);
+
+/* Rounded file container in the right sidebar */
+body > div.app-container > div.horizontal-main-container > div > div.workspace-split.mod-horizontal.mod-sidedock.mod-right-split > div.workspace-tabs.mod-top.mod-top-right-space > div.workspace-tab-container {
+    border-radius: var(--cbr, 20px) !important;
 }
-body:not(.is-mobile)
-.mod-sidedock.mod-right-split{
-    border-bottom-right-radius: var(--cbr, 20px);
-    overflow: hidden !important;
+
+
+/* ============================================================================
+   3. LEFT SIDEBAR / RIBBON / SIDEBAR BUTTONS
+   ============================================================================ */
+
+/* Transparent tab header/container so the floating panel background shows */
+body > div.app-container > div.horizontal-main-container > div > div.workspace-split.mod-horizontal.mod-sidedock.mod-left-split > div.workspace-tabs.mod-top.mod-top-left-space > div.workspace-tab-container > div:nth-child(1) {
+    background: transparent;
 }
-body:not(.is-mobile)
-.workspace-sidedock-vault-profile {
-    border-bottom-left-radius: var(--cbr, 20px);
-    background: var(--background-3) !important;
-    border-bottom-right-radius: 0px !important;
+
+body > div.app-container > div.horizontal-main-container > div > div.workspace-split.mod-horizontal.mod-sidedock.mod-left-split > div.workspace-tabs.mod-top.mod-top-left-space > div.workspace-tab-container {
+    background: transparent !important;
 }
-body:not(.is-mobile)
-.mod-sidedock.mod-right-split .workspace-tabs.mod-top .workspace-tab-container {
-    border-top-right-radius: var(--cbr, 20px);
+
+/* Vault profile row at the bottom of the left sidebar */
+body > div.app-container > div.horizontal-main-container > div > div.workspace-split.mod-horizontal.mod-sidedock.mod-left-split > div.workspace-sidedock-vault-profile {
+    background: transparent !important;
+    border: transparent;
+    height: 40px;
+    width: calc(100% - 1em);
+    margin-left: .5em;
+    margin-bottom: .5em;
 }
-body:not(.is-mobile)
-.mod-sidedock.mod-left-split .workspace-tabs.mod-top .workspace-tab-container {
-    border-top-left-radius: var(--cbr, 20px);
+
+/* Vault switcher as a rounded pill */
+body > div.app-container > div.horizontal-main-container > div > div.workspace-split.mod-horizontal.mod-sidedock.mod-left-split > div.workspace-sidedock-vault-profile > div.workspace-drawer-vault-switcher {
+    height: 32px;
+    border-radius: 1em;
+    transition: .5s;
+
+    &:hover {
+        box-shadow: 0 0 .35em var(--shadow-2) !important;
+        background: var(--main-color-inverted-2);
+    }
 }
-/*////////////////////////////////////////////////////////////////////////////// MAIN BODY - TAB BAR //////////////////////////////////////////////////////////////////////////////*/
-/*========================= TABS ===========================*/
-body > div.app-container > div.horizontal-main-container > div > div.workspace-split.mod-vertical.mod-root > div > div.workspace-tab-header-container {
+
+/* Spacing for the vault action buttons */
+body > div.app-container > div.horizontal-main-container > div > div.workspace-split.mod-horizontal.mod-sidedock.mod-left-split > div.workspace-sidedock-vault-profile > div.workspace-drawer-vault-actions > * {
+    padding: 5px;
+    margin-left: 5px;
+}
+
+/* The left sidebar itself: floating rounded panel with outline and shadow */
+body > div.app-container > div.horizontal-main-container > div > div.workspace-split.mod-horizontal.mod-sidedock.mod-left-split {
+    margin-top: .5em;
+    margin-left: .5em;
+    margin-bottom: .5em;
+    height: calc(100% - .5em);
+    border-radius: var(--cbr, 20px);
+    outline: .01em solid var(--border-2);
+    background: var(--background-4) !important;
+    box-shadow: inset 0 0 0 .065em var(--border-callout), 0 0 .5em 0em var(--background-3-2);
+    transition: .5s;
+}
+
+/* When the ribbon is visible, tuck the panel underneath it */
+body:is(.show-ribbon) > div.app-container > div.horizontal-main-container > div > div.workspace-split.mod-horizontal.mod-sidedock.mod-left-split {
+    padding-left: 44px;
+    margin-left: -36px;
+}
+
+/* Ribbon padding while the left sidebar is open */
+body:not(.mod-macos) > div.app-container > div.horizontal-main-container > .workspace.is-left-sidedock-open > div.workspace-ribbon.side-dock-ribbon.mod-left {
+    padding-left: 16px;
+    padding-right: 0px;
+    margin-top: 3px !important;
+}
+
+body.mod-macos > div.app-container > div.horizontal-main-container > .workspace.is-left-sidedock-open > div.workspace-ribbon.side-dock-ribbon.mod-left {
+    padding-left: 16px;
+    padding-right: 0px;
+    margin-top: 30px !important;
+}
+
+/* Ribbon layout while the left sidebar is closed */
+body:not(.mod-macos) > div.app-container > div.horizontal-main-container > .workspace:not(.workspace.is-left-sidedock-open) > div.workspace-ribbon.side-dock-ribbon.mod-left {
+    transition: .5s; 
+    align-items: center;
+    margin-top: 0 !important;
+    padding-top: 2px;
+    padding-left: .5em;
+}
+
+body.mod-macos > div.app-container > div.horizontal-main-container > .workspace:not(.workspace.is-left-sidedock-open) > div.workspace-ribbon.side-dock-ribbon.mod-left {
+    transition: .5s; 
+    align-items: center;
+    margin-top: 0 !important;
+    padding-top: 40px;
+    padding-left: .5em;
+}
+
+/* Sidebar toggle button in the ribbon. */
+body > div.app-container > div.horizontal-main-container > .workspace.is-left-sidedock-open > div.workspace-ribbon.side-dock-ribbon.mod-left > div.sidebar-toggle-button.mod-left,
+body > div.app-container > div.horizontal-main-container > .workspace:not(.workspace.is-left-sidedock-open) > div.workspace-ribbon.side-dock-ribbon.mod-left > div.sidebar-toggle-button.mod-left {
+    align-items: center;
+    padding: 0;
+    margin: 0 !important;
+    position: relative;
+    width: 28px;
+    transition: .5s;
+}
+
+/* Ribbon action icons: transparent, tinted on hover */
+body > div.app-container > div.horizontal-main-container > div > div.workspace-ribbon.side-dock-ribbon.mod-left > div.side-dock-actions > *,
+body > div.app-container > div.horizontal-main-container > div > div.workspace-ribbon.side-dock-ribbon.mod-left > div.sidebar-toggle-button.mod-left > div {
+    background: transparent;
+    transition: .5s;
+
+    &:hover {
+        color: var(--text-color-inverted);
+        transition: .5s;
+    }
+}
+
+/* Toggle button inside the left tab header: pill with hover elevation */
+body > div.app-container > div.horizontal-main-container > div > div.workspace-split.mod-horizontal.mod-sidedock.mod-left-split > div.workspace-tabs.mod-top.mod-top-left-space > div.workspace-tab-header-container > div.sidebar-toggle-button.mod-left > div {
+    margin-top: 2px;
+    margin-right: 1px;
+    border-radius: .5em;
+    padding-top: .81em;
+    padding-bottom: .8em;
+    padding-left: .3em;
+    padding-right: .3em;
+    transition: .3s;
+
+    &:hover {
+        background: var(--background-2);
+        box-shadow: 0 0 .6em 0 var(--shadow-2);
+        transition: .3s;
+    }
+}
+
+/* Toggle buttons in the main tab bar (left/right) */
+body > div.app-container > div.horizontal-main-container > div > div.workspace-split.mod-vertical.mod-root > div > div.workspace-tab-header-container > div.sidebar-toggle-button.mod-left > div,
+body > div.app-container > div.horizontal-main-container > div > div.workspace-split.mod-vertical.mod-root > div > div.workspace-tab-header-container > div.sidebar-toggle-button.mod-right > div {
+    border-radius: .5em;
+    padding-top: .81em;
+    padding-bottom: .8em;
+    padding-left: .3em;
+    padding-right: .3em;
+    transition: .3s;
+
+    &:hover {
+        background: var(--background-2);
+        box-shadow: 0 0 .6em 0 var(--shadow-2);
+        transition: .3s;
+    }
+}
+
+/* Generic small icon buttons: subtle hover pill */
+body > div.app-container > div.horizontal-main-container > div > div.workspace-split.mod-vertical.mod-root > div > div.workspace-tab-header-container > div.workspace-tab-header-tab-list > span,
+body > div.app-container > div.horizontal-main-container > div > div.workspace-split.mod-vertical.mod-root > div > div.workspace-tab-header-container > div.workspace-tab-header-new-tab > span,
+span.clickable-icon,
+div.workspace-tab-header-inner-close-button {
+    padding: 2px;
+    border-radius: .4em;
+
+    &:hover {
+        background: var(--background-2);
+        box-shadow: 0 0 .6em 0 var(--shadow-2);
+        transition: .3s;
+    }
+}
+
+/* Right sidebar toggle button hover */
+div.sidebar-toggle-button.mod-right > div {
+    border-radius: .4em;
+
+    &:hover {
+        background: var(--background-2);
+        box-shadow: 0 0 .6em 0 var(--shadow-2);
+        transition: .3s;
+    }
+}
+
+/* More buttons hover design */
+body > div.app-container > div.horizontal-main-container > div > div.workspace-split.mod-vertical.mod-root > div > div.workspace-tab-container > div > div > div.view-header > div.view-actions > button,
+body > div.app-container > div.horizontal-main-container > div > div.workspace-split.mod-vertical.mod-root > div > div.workspace-tab-container > div > div > div.view-header > div.view-header-left > div {
+    border-radius: .4em;
+
+    &:hover {
+        background: var(--background-2);
+        box-shadow: 0 0 .6em 0 var(--shadow-2);
+        transition: .3s;
+    }
+}
+
+body.mod-macos .sidebar-toggle-button.mod-right {
+    margin-top: 6px;
+}
+
+/* Right sidebar tab header: inner padding */
+body > div.app-container > div.horizontal-main-container > div > div.workspace-split.mod-horizontal.mod-sidedock.mod-right-split > div.workspace-tabs.mod-top.mod-top-right-space > div.workspace-tab-header-container > div.workspace-tab-header-container-inner {
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+/* Right sidebar header icons: pill hover */
+body > div.app-container > div.horizontal-main-container > div > div.workspace-split.mod-horizontal.mod-sidedock.mod-right-split > div.workspace-tabs.mod-top.mod-top-right-space > div.workspace-tab-header-container > div.workspace-tab-header-container-inner > *,
+body > div.app-container > div.horizontal-main-container > div > div.workspace-split.mod-horizontal.mod-sidedock.mod-right-split > div.workspace-tabs.mod-top.mod-top-right-space > div.workspace-tab-header-container > div.workspace-tab-header-container-inner > * > * {
+    border-radius: .4em;
+    background: transparent;
+
+    &:hover {
+        background: var(--background-2);
+        box-shadow: 0 0 .3em 0 var(--shadow-3);
+        transition: .3s;
+    }
+}
+
+/* The active right-sidebar tab keeps the pill highlight */
+body > div.app-container > div.horizontal-main-container > div > div.workspace-split.mod-horizontal.mod-sidedock.mod-right-split > div.workspace-tabs.mod-top.mod-top-right-space.mod-active > div.workspace-tab-header-container > div.workspace-tab-header-container-inner > *:is(.is-active) {
+    background: var(--background-2);
+    box-shadow: 0 0 .3em 0 var(--shadow-3);
+    transition: .3s;
+}
+
+
+/* ============================================================================
+   4. TAB BAR (main editor area)
+   ============================================================================ */
+
+.mod-vertical .workspace-tab-header-container {
+    align-items: center;
+    padding-top: 5px;
     padding-bottom: 3px;
+    height: 48px;
 }
-.workspace-split.mod-vertical .workspace-tab-header-container-inner { 
-    margin-top: 5px !important;
-    padding-top: 1.5px !important;
-    gap: 2px;
+
+.mod-vertical .workspace-tab-header-container-inner {
+    margin-top: 3px !important;
 }
+
 .workspace .mod-root .workspace-tab-header {
     box-shadow: none;
-    padding-bottom: 5.5px;
     background: transparent;
-    margin-left: 0px;
-    padding-left: 0px;
 }
-/*tabs AND buttons height adjustment*/
-.workspace-tab-header.tappable {
-    margin-top: -2px;
-    margin-bottom: -1px;
-}
-/*Tabs text color */
+
+/* Tab title colors: active tab uses the strong text color */
 .mod-vertical .workspace-tab-header.tappable.is-active .workspace-tab-header-inner-title {
     color: var(--text-color-inverted) !important;
 }
 .mod-vertical .workspace-tab-header.tappable .workspace-tab-header-inner-title {
     color: var(--tc) !important;
-}
-/*Tab headers*/
-.mod-vertical .workspace-tabs:not(.mod-stacked) .workspace-tab-header.tappable .workspace-tab-header-inner {
-    border-radius: 7px;
-    position: relative;
-    background-color: var(--background-6);
-    transition: all .5s !important;
-        &:hover {
-        background-color: var(--colored-accent-2) !important;
-        color: var(--colored-accent-i1) !important;
-        }
-}
-.mod-vertical .workspace-tabs:is(.mod-stacked) .workspace-tab-header.tappable .workspace-tab-header-inner {
-    position: relative;
-    transition: all .5s !important;
-        &:hover {
-        background-color: var(--colored-accent-2) !important;
-        color: var(--colored-accent-i1) !important;
-        }
-}
-.mod-vertical .workspace-tabs:is(.mod-stacked) .workspace-tab-header {
-    box-shadow: none !important;
-    transform: scale(1.001);
+    padding-left: 5px;
 }
 
+/* Left padding for the tab strip */
+body > div.app-container > div.horizontal-main-container > div > div.workspace-split.mod-vertical.mod-root div.workspace-tab-header-container > div.workspace-tab-header-container-inner {
+    padding-left: 7px;
+}
+
+/* Active tab: raised pill. */
+.mod-vertical .workspace-tabs .workspace-tab-header.tappable.is-active .workspace-tab-header-inner {
+    height: 32px;
+    border-radius: 1em !important;
+    position: relative;
+    outline: .01em solid var(--border-2);
+    background: rgba(0, 0, 0, 0.097);
+    box-shadow: inset 0 0 0 .02em var(--background-2), inset 0 0 2em 0 var(--background-4-2), 0 0 .3em 0em var(--background-3-2), inset 5px 10px 2em -1.5em white;
+}
+
+/* Close button color */
+div.workspace-tab-header-inner-close-button {
+    color: var(--tc) !important;
+}
+
+/* Hovered tab: darker pill */
+.mod-vertical .workspace-tabs .workspace-tab-header.tappable:hover .workspace-tab-header-inner {
+    border-radius: 1em !important;
+    background-color: var(--background-4-1) !important;
+    box-shadow: inset 0 0 2em 0 var(--background-4-2), 0 0 .3em 0em var(--background-3-2);
+    color: var(--colored-accent-i1) !important;
+}
+
+/* Active tab: solid base color and bolder title */
 .mod-vertical .workspace-tab-header.tappable.is-active .workspace-tab-header-inner {
     position: relative;
-    background-color: var(--colored-accent-3) !important;
-    -border: .05em dashed var(--colored-accent-1);
+    background-color: var(--main-color-inverted) !important;
     font-weight: 600;
-    transition: all .5s !important;
-    transform: scale(1);
-        &:hover {
-        background-color: var(--colored-accent-2) !important;
-        color: var(--colored-accent-i2) !important;
-    }
+    transition: background .5s;
 }
 
 .workspace-tab-header-inner-close-button {
     color: var(--colored-accent-i1) !important;
     border-radius: 5px;
     transition: all .2s !important;
-            &:hover {
-        background-color: rgba(255, 255, 255, 0.7) !important;
-        color: var(--colored-accent-i1) !important;
-    }
+    margin-right: 3px;
 }
 
+/* Clip content to the rounded tab container */
 body > div.app-container > div.horizontal-main-container > div > div.workspace-split.mod-vertical.mod-root > div > div.workspace-tab-container {
     overflow: hidden;
 }
 
-/*Macos sidebar toggle button fix*/
+/* macOS sidebar toggle button fix */
 .sidebar-toggle-button.mod-right {
     background: transparent !important;
 }
 
-
-/*win-app-symbols*/
+/* Windows titlebar buttons (minimize/maximize/close) as rounded pills */
 body > div.titlebar > div > div.titlebar-button-container.mod-right > div.titlebar-button.mod-minimize,
 body > div.titlebar > div > div.titlebar-button-container.mod-right > div.titlebar-button.mod-maximize,
 body > div.titlebar > div > div.titlebar-button-container.mod-right > div.titlebar-button.mod-close {
@@ -561,126 +953,271 @@ body > div.titlebar > div > div.titlebar-button-container.mod-right {
 }
 
 
-/*////////////////////////////////////////////////////////////////////////////// LEFT WORKSPACE / RIBBON //////////////////////////////////////////////////////////////////////////////*/
+/* Mobile Tab Bar Fix */
+body.is-mobile 
+.view-header {
+    background: transparent !important;
+}
 
+/* ============================================================================
+   5. FILE NAVIGATOR
+   ============================================================================ */
+
+body > div.app-container > div.horizontal-main-container > div {
+    background: var(--background-2);
+}
+
+/* File rows: taller, rounded; active file uses the strong text color */
 .tree-item.nav-file .tree-item-self.nav-file-title {
-    padding-top: .5em;
-    padding-bottom: .5em;
+    padding-top: .7em;
+    padding-bottom: .7em;
     border-radius: .8em;
+
     &.is-active {
-        color:var(--main-color);
+        color: var(--main-color);
     }
 }
 
+/* Folder rows: same height/rounding as file rows */
 .tree-item-self.nav-folder-title.is-clickable {
-    padding-top: .5em;
-    padding-bottom: .5em;
+    padding-top: .7em;
+    padding-bottom: .7em;
     border-radius: .8em;
 }
 
+/* Underline the active file name */
 .tree-item-self.nav-file-title.is-active .tree-item-inner {
     border-bottom: inset 2px var(--main-color-2);
     margin-bottom: -2px !important;
 }
 
+/* Opened folders are shown bold */
 .tree-item.nav-folder .nav-folder-title:not(:has(.is-collapsed)) {
     color: var(--main-color);
     font-weight: 900;
+
     &:hover {
         color: var(--main-color);
         font-weight: 900;
     }
 }
-.enhanced-folders
-.tree-item.nav-folder:not(.is-collapsed):not(:has(.tree-item.nav-folder:not(.is-collapsed))) {
-    background: var(--background-3-2);
+
+
+
+/* "Enhanced Folders" toggle: highlight the deepest opened folder */
+.enhanced-folders .tree-item.nav-folder:not(.is-collapsed):not(:has(.tree-item.nav-folder:not(.is-collapsed))) {
+    background: var(--background-3-1);
     border-radius: .8em;
     transition: .4s;
 }
 
+/* Solid panel background for the sidebar leaf and the third header icon */
+body > div.app-container > div.horizontal-main-container > div > div.workspace-split.mod-horizontal.mod-sidedock.mod-left-split > div.workspace-tabs.mod-top.mod-top-left-space > div.workspace-tab-header-container > div.workspace-tab-header-container-inner > div:nth-child(3) > div,
+body > div.app-container > div.horizontal-main-container > div > div.workspace-split.mod-horizontal.mod-sidedock.mod-left-split > div.workspace-tabs.mod-top.mod-top-left-space > div.workspace-tab-container > div.workspace-leaf {
+    background: var(--background-4) !important;
+}
 
+/* Left tab strip as a pill that tints on hover */
+body > div.app-container > div.horizontal-main-container > div > div.workspace-split.mod-horizontal.mod-sidedock.mod-left-split > div.workspace-tabs.mod-top.mod-top-left-space > div.workspace-tab-header-container > div.workspace-tab-header-container-inner {
+    app-region: no-drag;
+    padding-top: .3em;
+    padding-left: .2em;
+    padding-right: .25em;
+    padding-bottom: .2em;
+    margin-top: .5em;
+    border-radius: 5em;
+    transition: .5s;
 
+    &:hover {
+        background: var(--background-4-1);
+        transition: .5s;
+    }
+}
 
-/*=============== HIDE ATTACHMENT FOLDER: "000_attachments_000" - if used ==================*/
-div[data-path$='000_attachments_000'], 
-div[data-path$='000_attachments_000'] + div.nav-folder-children 
-{
-    display: none;
+/* Individual sidebar tabs: transparent pills with hover tint */
+body > div.app-container > div.horizontal-main-container > div > div.workspace-split.mod-horizontal.mod-sidedock.mod-left-split > div.workspace-tabs.mod-top.mod-top-left-space > div.workspace-tab-header-container > div.workspace-tab-header-container-inner > .workspace-tab-header.tappable,
+body > div.app-container > div.horizontal-main-container > div > div.workspace-split.mod-horizontal.mod-sidedock.mod-left-split > div.workspace-tabs.mod-top.mod-top-left-space > div.workspace-tab-header-container > div.workspace-tab-header-container-inner > .workspace-tab-header.tappable > * {
+    margin-top: .01em;
+    margin-bottom: .01em;
+    background: transparent !important;
+    border-radius: 50em;
+
+    &:hover {
+        background: var(--background-4-2) !important;
+    }
+}
+
+/* While hovering the strip, keep the active sidebar tab highlighted */
+body > div.app-container > div.horizontal-main-container > div > div.workspace-split.mod-horizontal.mod-sidedock.mod-left-split > div.workspace-tabs.mod-top.mod-top-left-space > div.workspace-tab-header-container > div.workspace-tab-header-container-inner:hover > .workspace-tab-header.tappable.is-active,
+body > div.app-container > div.horizontal-main-container > div > div.workspace-split.mod-horizontal.mod-sidedock.mod-left-split > div.workspace-tabs.mod-top.mod-top-left-space > div.workspace-tab-header-container > div.workspace-tab-header-container-inner:hover > .workspace-tab-header.tappable.is-active > * {
+    background: var(--background-3) !important;
+    transition: .5s;
+    box-shadow: 0 0 5em 0em var(--shadow-1), 0 0 1em 0em var(--shadow-3);
 }
 
 
+/* ============================================================================
+   6. NAV HEADER (buttons above the file navigator)
+   Collapsed to small dots; expands to full buttons while hovering the header.
+   ============================================================================ */
 
-/*=========================================== Settings general styling ===================================================*/
-
-/* settings switches background */
-.checkbox-container.is-enabled {
-    background-color: var(--colored-accent-2);
+/* Collapsed state: buttons are shown as small pills/dots */
+body:not(.is-mobile)
+div.nav-header div.nav-buttons-container .clickable-icon {
+    width: 0px;
+    height: 3px;
+    padding: 3px;
+    flex-grow: 0;
+    background: var(--background-3-2);
+    color: transparent;
+    border-radius: 50px;
+    transition: .2s;
 }
-/* settings switches auto coloring */
-.checkbox-container.is-enabled::after {
+
+/* Expanded state: full-size buttons while the header is hovered */
+body:not(.is-mobile)
+div.nav-header:hover div.nav-buttons-container .clickable-icon {
+    height: 28px;
+    flex-grow: 1;
+    padding: .6em;
+    color: var(--nav-item-color);
+    background: transparent;
+    border-radius: .4em;
+    transition: .2s;
+}
+body:not(.is-mobile)
+div.nav-header div.nav-buttons-container .clickable-icon:hover {
+    background: var(--background-3-2);
+}
+
+/* Container animates from a narrow strip ... */
+body:not(.is-mobile)
+div.nav-header div.nav-buttons-container {
+    width: 40px;
+    max-width: 100%;
+    justify-self: center !important;
+    transition: .2s;
+}
+
+/* ... to a wide, tinted bar on hover */
+body:not(.is-mobile)
+div.nav-header:hover div.nav-buttons-container {
+    padding: .2em;
+    width: 200px;
+    max-width: 100%;
+    justify-self: center !important;
+    border-radius: .5em !important;
+    background: var(--background-3-1) !important;
     transition: .2s;
 }
 
 
+/* ============================================================================
+   7. RIGHT SIDEBAR
+   ============================================================================ */
+
+/* Leaf backgrounds in the right sidebar. */
+body > div.app-container > div.horizontal-main-container > div > div.workspace-split.mod-horizontal.mod-sidedock.mod-right-split > div.workspace-tabs.mod-top.mod-top-right-space.mod-active > div.workspace-tab-container,
+body > div.app-container > div.horizontal-main-container > div > div.workspace-split.mod-horizontal.mod-sidedock.mod-right-split > div.workspace-tabs.mod-top.mod-top-right-space > div.workspace-tab-container > div,
+body > div.app-container > div.horizontal-main-container > div > div.workspace-split.mod-horizontal.mod-sidedock.mod-right-split > div.workspace-tabs.mod-top.mod-top-right-space.mod-active > div.workspace-tab-container > div.workspace-leaf.mod-active {
+    background: transparent !important;
+}
+
+/* Hide the divider line above the right sidebar */
+body > div.app-container > div.horizontal-main-container > div > div.workspace-split.mod-horizontal.mod-sidedock.mod-right-split > hr {
+    border: transparent;
+}
+
+body > div.app-container > div.horizontal-main-container > div > div.workspace-split.mod-horizontal.mod-sidedock.mod-right-split > div.workspace-tabs.mod-top.mod-top-right-space > div.workspace-tab-header-container {
+    margin-top: .4em;
+}
+
+/* Hide the attachment folder "000_attachments_000" (if used) */
+div[data-path$='000_attachments_000'],
+div[data-path$='000_attachments_000'] + div.nav-folder-children {
+    display: none;
+}
 
 
+/* ============================================================================
+   8. SETTINGS UI & MODALS
+   ============================================================================ */
 
+/* Toggle switches: accent-tinted when enabled */
+.checkbox-container.is-enabled {
+    background-color: var(--colored-accent-2);
+}
+.checkbox-container.is-enabled::after {
+    transition: .2s;
+}
 
-
+/* Vertical alignment fix for sidebar tabs */
 body > div.app-container > div.horizontal-main-container > div > div.workspace-split.mod-horizontal.mod-sidedock.mod-left-split > div.workspace-tabs.mod-top.mod-top-left-space > div.workspace-tab-header-container > div.workspace-tab-header-container-inner > div.workspace-tab-header.tappable {
     margin-top: -1px;
 }
 
-
-
-
-body:not(.native-scrollbars).hide-scrollbars
-::-webkit-scrollbar {
+/* "Hide scrollbars" toggle */
+body:not(.native-scrollbars).hide-scrollbars ::-webkit-scrollbar {
     width: 0px;
     height: 0px;
 }
 
+/* Tooltips as light, rounded chips */
+.tooltip {
+    --background-modifier-message: var(--main-color-inverted);
+    background: var(--main-color-inverted);
+    color: var(--main-color);
+    padding: 10px;
+    border-radius: 2em;
+    filter: drop-shadow(0 0 16px var(--shadow-3));
+}
 
-
-
-
-
-
-
-/***************SETTINGS MODS********************/
+/* Primary (CTA) buttons: solid pill in the main text color */
 .setting-item-control .mod-cta {
+    --button-padding: 1.3em;
     color: var(--main-color-inverted);
+    background: var(--main-color);
     border-radius: 20em;
     padding-top: var(--button-padding);
     padding-bottom: var(--button-padding);
-    --button-padding: 1.3em;
-    background: var(--main-color);
+
     &:hover {
         background: var(--main-color-2);
     }
 }
 
+/* Dropdowns: rounded with a soft inset border */
 .setting-item-control .dropdown {
     height: 2.5em;
     border-radius: 1em;
     box-shadow: inset 0 0 0 .04em var(--background-3-1), 0 0 .35em var(--shadow-3) !important;
 }
 
+/* Secondary buttons: pill with a hover shadow */
 .setting-item-control button {
     height: 2.5em;
     border-radius: 10em;
     box-shadow: inset 0 0 0 .05em var(--background-3-1);
     background: var(--main-color-inverted-2);
+
     &:hover {
-    box-shadow: inset 0 0 0 .05em var(--background-3-1), 0 0 .35em var(--shadow-3) !important;
+        box-shadow: inset 0 0 0 .05em var(--background-3-1), 0 0 .35em var(--shadow-3) !important;
     }
 }
 
+/* Left column of the settings modal: floating rounded panel. */
 body > div.modal-container.mod-dim > div.modal.mod-settings.mod-sidebar-layout > div.modal-content.vertical-tabs-container > div.vertical-tab-header {
     border: none;
-    background: var(--background-primary)
+    margin: .5em;
+    height: calc(100% - 1em) !important;
+    border-radius: var(--cbr, 20px);
+    outline: .01em solid var(--border-2);
+    background: var(--background-4) !important;
+    box-shadow: inset 0 0 0 .065em var(--border-callout), 0 0 .5em 0em var(--background-3-2);
+    transition: .5s;
 }
 
+/* Settings navigation entries */
 .modal-content.vertical-tabs-container .vertical-tab-header .vertical-tab-header-group .vertical-tab-header-group-items .vertical-tab-nav-item {
     padding-top: .5em;
     padding-bottom: .5em;
@@ -689,287 +1226,225 @@ body > div.modal-container.mod-dim > div.modal.mod-settings.mod-sidebar-layout >
 
 .modal-content.vertical-tabs-container .vertical-tab-header .vertical-tab-header-group .vertical-tab-header-group-items .vertical-tab-nav-item.is-active {
     background: var(--main-color-05);
-    color: var(--text-color-inverted)
+    color: var(--text-color-inverted);
+    transition: .5s;
+}
+
+.modal-content.vertical-tabs-container .vertical-tab-header .vertical-tab-header-group .vertical-tab-header-group-items > * {
+    transition: .15s !important;
+}
+
+/* Rounded settings modal */
+body > div.modal-container.mod-dim > div.modal.mod-settings.mod-sidebar-layout {
+    border-radius: 2em !important;
+}
+
+/* Style Settings section headings: keep square corners */
+body > div.modal-container.mod-dim > div.modal.mod-settings.mod-sidebar-layout > div.modal-content.vertical-tabs-container > div.vertical-tab-content-container div.setting-item.setting-item-heading.style-settings-heading {
+    border-radius: 0;
 }
 
 
+/* ============================================================================
+   9. CALLOUTS - TYPED COLOR VARIANTS
+   ============================================================================ */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.callout-title {
-    border-color: var(--callout-border-color) !important;
-}
-
-
-
+/* --- Per-type color channels (R, G, B) ----------------------------------- */
 .callout[data-callout="note"] {
-    background: rgba(68, 138, 255, .1) !important;
-    box-shadow: inset 0 0 0 .04em rgba(68, 138, 255, .5)!important;
-    --callout-border-color: rgba(68, 138, 255, .5);
-    & .callout-icon {
-    display: flex;
+    --callout-rgb: 68, 138, 255;
 }
-& .callout-content blockquote, .callout-content .callout {
-    box-shadow: inset 0 0 0 .04em rgba(68, 138, 255, .5), 0 0 .35em var(--shadow-3);  
+.callout[data-callout="abstract"],
+.callout[data-callout="summary"],
+.callout[data-callout="tldr"] {
+    --callout-rgb: 0, 176, 255;
 }
-}
-
-
-.callout[data-callout="abstract"], .callout[data-callout="summary"], .callout[data-callout="tldr"] {
-    background: rgba(0, 176, 255, .1) !important;
-    box-shadow: inset 0 0 0 .04em rgba(0, 176, 255, .5)!important;
-    --callout-border-color: rgba(0, 176, 255, .5);
-    & .callout-icon {
-    display: flex;
-}
-& .callout-content blockquote, .callout-content .callout {
-    box-shadow: inset 0 0 0 .04em rgba(0, 176, 255, .5), 0 0 .35em var(--shadow-3);
-    }
-}
-
-.callout[data-callout="info"] {
-    background: rgba(0, 184, 212, .1) !important;
-    box-shadow: inset 0 0 0 .04em rgba(0, 184, 212, .5)!important;
-    --callout-border-color: rgba(0, 184, 212, .5);
-    & .callout-icon {
-    display: flex;
-}
-& .callout-content blockquote, .callout-content .callout {
-    box-shadow: inset 0 0 0 .04em rgba(0, 184, 212, .5), 0 0 .35em var(--shadow-3);
-    }
-}
-
-
+.callout[data-callout="info"],
 .callout[data-callout="todo"] {
-    background: rgba(0, 184, 212, .1) !important;
-    box-shadow: inset 0 0 0 .04em rgba(0, 184, 212, .5)!important;
-    --callout-border-color: rgba(0, 184, 212, .5);
-    & .callout-icon {
-    display: flex;
+    --callout-rgb: 0, 184, 212;
 }
-& .callout-content blockquote, .callout-content .callout {
-    box-shadow: inset 0 0 0 .04em rgba(0, 184, 212, .5), 0 0 .35em var(--shadow-3);
-    }
+.callout[data-callout="tip"],
+.callout[data-callout="hint"],
+.callout[data-callout="important"] {
+    --callout-rgb: 0, 191, 165;
 }
-
-
-.callout[data-callout="tip"], .callout[data-callout="hint"], .callout[data-callout="important"] {
-    background: rgba(0, 191, 165, .1) !important;
-    box-shadow: inset 0 0 0 .04em rgba(0, 191, 165, .5)!important;
-    --callout-border-color: rgba(0, 191, 165, .5);
-    & .callout-icon {
-    display: flex;
+.callout[data-callout="success"],
+.callout[data-callout="check"],
+.callout[data-callout="done"] {
+    --callout-rgb: 0, 200, 83;
 }
-& .callout-content blockquote, .callout-content .callout {
-    box-shadow: inset 0 0 0 .04em rgba(0, 191, 165, .5), 0 0 .35em var(--shadow-3);
-    }
+.callout[data-callout="question"],
+.callout[data-callout="help"],
+.callout[data-callout="faq"] {
+    --callout-rgb: 255, 160, 0;
 }
-
-
-
-.callout[data-callout="success"], .callout[data-callout="check"], .callout[data-callout="done"] {
-    background: rgba(0, 200, 83, .1) !important;
-    box-shadow: inset 0 0 0 .04em rgba(0, 200, 83, .5)!important;
-    --callout-border-color: rgba(0, 200, 83, .5);
-    & .callout-icon {
-    display: flex;
+.callout[data-callout="warning"],
+.callout[data-callout="caution"],
+.callout[data-callout="attention"] {
+    --callout-rgb: 255, 145, 0;
 }
-& .callout-content blockquote, .callout-content .callout {
-    box-shadow: inset 0 0 0 .04em rgba(0, 200, 83, .5), 0 0 .35em var(--shadow-3);
-    }
+.callout[data-callout="failure"],
+.callout[data-callout="fail"],
+.callout[data-callout="missing"],
+.callout[data-callout="danger"],
+.callout[data-callout="error"] {
+    --callout-rgb: 255, 82, 82;
 }
-
-
-.callout[data-callout="question"], .callout[data-callout="help"], .callout[data-callout="faq"] {
-    background: rgba(255, 160, 0, .1) !important;
-    box-shadow: inset 0 0 0 .04em rgba(255, 160, 0, .5)!important;
-    --callout-border-color: rgba(255, 160, 0, .5);
-    & .callout-icon {
-    display: flex;
-}
-& .callout-content blockquote, .callout-content .callout {
-    box-shadow: inset 0 0 0 .04em rgba(255, 160, 0, .5), 0 0 .35em var(--shadow-3);
-    }
-}
-
-
-.callout[data-callout="warning"], .callout[data-callout="caution"], .callout[data-callout="attention"] {
-    background: rgba(255, 145, 0, .1) !important;
-    box-shadow: inset 0 0 0 .04em rgba(255, 145, 0, .5)!important;
-    --callout-border-color: rgba(255, 145, 0, .5);
-    & .callout-icon {
-    display: flex;
-}
-& .callout-content blockquote, .callout-content .callout {
-    box-shadow: inset 0 0 0 .04em rgba(255, 145, 0, .5), 0 0 .35em var(--shadow-3);
-    }
-}
-
-
-.callout[data-callout="failure"], .callout[data-callout="fail"], .callout[data-callout="missing"] {
-    background: rgba(255, 82, 82, .1) !important;
-    box-shadow: inset 0 0 0 .04em rgba(255, 82, 82, .5)!important;
-    --callout-border-color: rgba(255, 82, 82, .5);
-    & .callout-icon {
-    display: flex;
-}
-& .callout-content blockquote, .callout-content .callout {
-    box-shadow: inset 0 0 0 .04em rgba(255, 82, 82, .5), 0 0 .35em var(--shadow-3);
-    }
-}
-
-
-.callout[data-callout="danger"], .callout[data-callout="error"] {
-    background: rgba(255, 82, 82, .1) !important;
-    box-shadow: inset 0 0 0 .04em rgba(255, 82, 82, .5)!important;
-    --callout-border-color: rgba(255, 82, 82, .5);
-    & .callout-icon {
-    display: flex;
-}
-& .callout-content blockquote, .callout-content .callout {
-    box-shadow: inset 0 0 0 .04em rgba(255, 82, 82, .5), 0 0 .35em var(--shadow-3);
-    }
-}
-
-
 .callout[data-callout="bug"] {
-    background: rgba(255, 6, 93, 0.1) !important;
-    box-shadow: inset 0 0 0 .04em rgba(245, 0, 87, .5)!important;
-    --callout-border-color: rgba(245, 0, 87, .5);
-    & .callout-icon {
-    display: flex;
-}
-& .callout-content blockquote, .callout-content .callout {
-    box-shadow: inset 0 0 0 .04em rgba(245, 0, 87, .5), 0 0 .35em var(--shadow-3);
-    }
+    --callout-rgb: 245, 0, 87;
 }
 .callout[data-callout="example"] {
-    background: rgba(124, 77, 255, .1) !important;
-    box-shadow: inset 0 0 0 .04em rgba(124, 77, 255, .5)!important;
-    --callout-border-color: rgba(124, 77, 255, .5);
+    --callout-rgb: 124, 77, 255;
+}
+.callout[data-callout="quote"],
+.callout[data-callout="cite"] {
+    --callout-rgb: 158, 158, 158;
+}
+
+/* --- Shared frame for all typed callouts ---------------------------------
+   Tinted background, colored outline, inner border, visible type icon. */
+.callout:is(
+    [data-callout="note"],
+    [data-callout="abstract"], [data-callout="summary"], [data-callout="tldr"],
+    [data-callout="info"],
+    [data-callout="todo"],
+    [data-callout="tip"], [data-callout="hint"], [data-callout="important"],
+    [data-callout="success"], [data-callout="check"], [data-callout="done"],
+    [data-callout="question"], [data-callout="help"], [data-callout="faq"],
+    [data-callout="warning"], [data-callout="caution"], [data-callout="attention"],
+    [data-callout="failure"], [data-callout="fail"], [data-callout="missing"],
+    [data-callout="danger"], [data-callout="error"],
+    [data-callout="bug"],
+    [data-callout="example"],
+    [data-callout="quote"], [data-callout="cite"]
+) {
+    outline: .1em solid rgba(var(--callout-rgb), .5) !important;
+    background: rgba(var(--callout-rgb), .1) !important;
+    box-shadow: 
+    inset 0 0 0 .05em var(--border-callout),
+    inset 0 -100em 100em -90em color-mix(in srgb, color-mix(in srgb, rgb(var(--callout-rgb)), black 8%) 10.7%, transparent),
+    inset 0 10em 10em -9em color-mix(in srgb, color-mix(in srgb, rgb(var(--callout-rgb)), white 30%) 5.1%, transparent) !important;
+    
     & .callout-icon {
-    display: flex;
-}
-    & .callout-content blockquote, .callout-content .callout {
-        box-shadow: inset 0 0 0 .04em rgba(124, 77, 255, .5), 0 0 .35em var(--shadow-3);
-}
-}
-
-
-.callout[data-callout="quote"], .callout[data-callout="cite"] {
-    background: rgba(158, 158, 158, .1) !important;
-    box-shadow: inset 0 0 0 .04em rgba(158, 158, 158, .5)!important;
-    --callout-border-color: rgba(158, 158, 158, .5);
-    & .callout-icon {
-    display: flex;
-    }
-    & .callout-content blockquote, .callout-content .callout {
-        box-shadow: inset 0 0 0 .04em rgba(158, 158, 158, .5), 0 0 .35em var(--shadow-3);    
+        display: flex;
     }
 }
 
+/* Nested blockquotes/callouts inside a typed callout repeat the outline
+   color - all types except tip/hint/important (see exception below). */
+.callout:is(
+    [data-callout="note"],
+    [data-callout="abstract"], [data-callout="summary"], [data-callout="tldr"],
+    [data-callout="info"],
+    [data-callout="todo"],
+    [data-callout="success"], [data-callout="check"], [data-callout="done"],
+    [data-callout="question"], [data-callout="help"], [data-callout="faq"],
+    [data-callout="warning"], [data-callout="caution"], [data-callout="attention"],
+    [data-callout="failure"], [data-callout="fail"], [data-callout="missing"],
+    [data-callout="danger"], [data-callout="error"],
+    [data-callout="bug"],
+    [data-callout="example"],
+    [data-callout="quote"], [data-callout="cite"]
+) {
+    & .callout-content blockquote,
+    & .callout-content .callout {
+        outline: .1em solid rgba(var(--callout-rgb), .5) !important;
+    }
+}
 
+/* Exception: tip/hint/important mark nested elements with a soft shadow
+   instead of an outline (preserved from the original). */
+.callout:is([data-callout="tip"], [data-callout="hint"], [data-callout="important"]) {
+    & .callout-content blockquote,
+    & .callout-content .callout {
+        box-shadow: inset 0 0 0 .04em rgba(0, 191, 165, .5), 0 0 .35em var(--shadow-3);
+    }
+}
+
+/* Exception: "bug" uses a slightly different hue for the background than
+   for the outline (preserved from the original). */
+.callout[data-callout="bug"] {
+    background: rgba(255, 6, 93, .1) !important;
+}
+
+/* Accent-colored custom callout (no icon rule, as in the original) */
 .callout[data-callout="brainhack"] {
+    outline: .1em solid hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.5) !important;
     background: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.1) !important;
-    box-shadow: inset 0 0 0 .04em hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.5)!important;
-    --callout-border-color: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.5);
-    & .callout-content blockquote, .callout-content .callout {
-        box-shadow: inset 0 0 0 .04em hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.5), 0 0 .35em var(--shadow-3);
+    box-shadow: inset 0 0 0 .05em var(--border-callout) !important;
+
+    & .callout-content blockquote,
+    & .callout-content .callout {
+        outline: .1em solid hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.5) !important;
     }
 }
 
-
-
+/* Minimal callout "1": no icon, subtle title separator color
+   (consumed by the .callout-title rule in section 10). */
 .callout[data-callout="1"] {
     --callout-border-color: var(--background-3-1);
+
     & .callout-icon {
         display: none;
-        }
+    }
 }
 
+.callout-content blockquote {
+    border-color: rgb(var(--callout-rgb)) !important;
+}
 
+/* ============================================================================
+   10. CALLOUTS & BLOCKQUOTES - STRUCTURE
+   Two variants each, switched via body classes from Style Settings:
+   default vs. .cv1 (callouts) and default vs. .bv1 (blockquotes).
+   ============================================================================ */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*================================= EDITOR =================================*/
+/* Default callout: rounded card with inner border and soft inset shadow */
 body:not(.cv1) .callout {
-    color: inherit;
-    margin-bottom: .5em !important;
-    margin-top: .5em !important;
-    border-radius: var(--radius-m);
-    --callout-padding: 0;
+    --callout-background: var(--background-3);
+    --callout-padding: .5em;
     --callout-title-color: inherit;
     --callout-title-padding: 4px 10px;
     --callout-title-size: inherit;
     --callout-content-radius: 0px;
     --callout-blend-mode: normal;
-    background: var(--background-3);
-    box-shadow: inset 0 0 0 .04em var(--background-3-1);
+    outline: .09em solid var(--background-3-2);
+    color: inherit;
+    margin-bottom: .6em !important;
+    margin-top: .6em !important;
+    margin-right: .1em !important;
+    margin-left: .1em !important;
+    border-radius: var(--radius-m);
+    background: var(--callout-background);
+    box-shadow: 
+    inset 0 0 0 .05em var(--border-callout), inset 0 0em 5em 0em var(--background-3),
+    inset 0 -100em 100em -90em color-mix(in srgb, color-mix(in srgb, rgb(var(--tc-rgb)), black 90%) 10%, transparent),
+    inset 0 10em 10em -9em color-mix(in srgb, color-mix(in srgb, rgb(var(--tc-rgb)), white 90%) 10%, transparent);
     overflow: hidden !important;
 }
+
+body:not(.cv1) .callout .callout {
+    margin-bottom: 0 !important;
+}
+
+
+/* Variant 1 (.cv1): flat block with a thick left border */
 body.cv1 .callout {
     mix-blend-mode: normal !important;
     --callout-padding: 0;
-    border-left: .3em solid var(--tc);
+    border-left: .3em solid rgba(var(--callout-rgb, var(--tc-rgb)), .5);
     border-radius: .5em;
     border-top-left-radius: 0 !important;
     border-bottom-left-radius: 0 !important;
     background: var(--background-3-3);
     box-shadow: none !important;
+    margin-bottom: .6em !important;
+    margin-top: .6em !important;
+    margin-right: .1em !important;
+    margin-left: .1em !important;
 }
 
+/* Extra vertical space around top-level callouts in reading view
+   (excludes callouts nested in other callouts or lists) */
 .markdown-preview-view .callout:not(.callout-content .callout, ul.has-list-bullet div.callout) {
     margin-bottom: 2em;
     margin-top: 1em !important;
@@ -983,6 +1458,7 @@ li:not(:first-of-type):has(.callout) {
     padding-top: .5em;
 }
 
+/* Trim leading/trailing margins inside callouts and blockquotes */
 .callout-content > *:first-child {
     margin-top: 0 !important;
 }
@@ -990,7 +1466,7 @@ li:not(:first-of-type):has(.callout) {
     margin-top: .2em !important;
 }
 .callout-content > *:last-child {
-    margin-bottom: 0 !important;
+    margin-bottom: 0em !important;
 }
 blockquote > *:first-child {
     margin-top: 0 !important;
@@ -998,38 +1474,45 @@ blockquote > *:first-child {
 blockquote > *:last-child {
     margin-bottom: 0 !important;
 }
+
+/* Disable Obsidian's hover shadow on embedded blocks */
 .cm-embed-block:hover {
     box-shadow: 0 0 rgba(255, 0, 0, 0) !important;
 }
 
+/* Callout embeds in the editor follow the active variant's corner style */
 body:not(.cv1) .cm-embed-block.cm-callout {
     border-radius: 10px;
     bottom: 0 !important;
     overflow: hidden !important;
 }
-
 body.cv1 .cm-embed-block.cm-callout {
     border-top-left-radius: 0 !important;
     border-bottom-left-radius: 0 !important;
     bottom: 0 !important;
     overflow: hidden !important;
 }
-.callout-content, .blockquote {
+
+.callout-content,
+.blockquote {
     overflow: hidden !important;
 }
+
+/* Callout title: larger, with a dashed separator to the content. */
 .callout-title {
+    border-color: var(--callout-border-color) !important;
     color: var(--text-color-inverted);
     font-size: 1.3em;
-    border-bottom: dashed .1em;
+    border-bottom: dashed var(--text-faint) .1em !important;
     margin-left: .6em;
     margin-right: 10px;
     padding-left: 0em;
     padding-right: 0px;
     padding-bottom: .15em;
-    padding-top:.3em;
+    padding-top: .3em;
 }
 
-
+/* No separator while a collapsible callout is collapsed */
 .callout.is-collapsible.is-collapsed .callout-title {
     border-bottom: transparent !important;
 }
@@ -1042,10 +1525,11 @@ body.cv1 .cm-embed-block.cm-callout {
     padding-left: 10px;
 }
 
+/* --- Blockquotes: default variant ---------------------------------------- */
 body:not(.bv1) .markdown-rendered blockquote,
-body:not(.bv1) .blockquote{
+body:not(.bv1) .blockquote {
     border-radius: var(--radius-m);
-    background-color: var(--background-3);
+    background-color: var(--background-3-3);
     border-left: none;
     padding-left: .8em;
     padding-right: .8em !important;
@@ -1055,7 +1539,8 @@ body:not(.bv1) .blockquote{
     margin-bottom: 1em;
 }
 
-.markdown-source-view.mod-cm6.is-live-preview:not(.bv1) .HyperMD-quote{
+/* Same look for quote lines in live preview */
+.markdown-source-view.mod-cm6.is-live-preview:not(.bv1) .HyperMD-quote {
     border-radius: var(--radius-m);
     background-color: var(--background-3);
     border-left: none;
@@ -1066,6 +1551,7 @@ body:not(.bv1) .blockquote{
     margin-bottom: 1em;
 }
 
+/* Soft outline drawn on the ::before layer behind the quote */
 body:not(.bv1) .markdown-rendered blockquote:before,
 body:not(.bv1) .markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote:before {
     z-index: -1;
@@ -1074,6 +1560,7 @@ body:not(.bv1) .markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote:befo
     box-shadow: 0 0 0 .04em var(--background-3-1), 0 0 .35em var(--shadow-3);
 }
 
+/* --- Blockquotes: variant 1 (.bv1) - thick left border ------------------- */
 body.bv1 .markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote,
 body.bv1 .markdown-rendered blockquote,
 body.bv1 .blockquote {
@@ -1089,99 +1576,96 @@ body.bv1 .blockquote {
     margin-bottom: 1em;
 }
 
-
-body:not(.bv1) .el-blockquote,body:not(.bv1) blockquote {
+/* Inset outline for default blockquotes */
+body:not(.bv1) .el-blockquote,
+body:not(.bv1) blockquote {
     width: 100%;
     border-radius: var(--radius-m);
     box-shadow: inset 0 0 0 .04em var(--background-3-1);
 }
 
+/* List spacing inside callouts and blockquotes */
 .callout-content ol {
     margin-top: 0em;
     margin-bottom: .5em;
 }
-
-
-blockquote > ol>:last-child {
+blockquote > ol > :last-child {
     padding-bottom: 0em !important;
     margin-bottom: 0em !important;
 }
-blockquote > ol>:first-child {
+blockquote > ol > :first-child {
     padding-top: 0em !important;
     margin-top: 0em !important;
 }
 
-
-.callout-icon, .callout-content .callout-icon {
+/* Icons are hidden by default; typed callouts re-enable them (section 9) */
+.callout-icon,
+.callout-content .callout-icon {
     display: none;
 }
+
+/* Hover ring for collapsible callouts in reading view */
 .markdown-preview-view .callout.is-collapsible:hover {
     box-shadow: 0 0 0px 2px rgba(115, 115, 115, 0.508);
 }
+
 .is-live-preview .HyperMD-quote:before {
     border: 0px solid transparent !important;
 }
 
-.callout-content blockquote {
-    border-radius: calc(var(--radius-m) - .3em);
-}
+/* Nested quotes/callouts get a slightly smaller radius. */
+.callout-content blockquote,
 .callout-content .callout {
     border-radius: calc(var(--radius-m) - .3em);
 }
-
 blockquote > blockquote {
     border-radius: calc(var(--radius-m) - .3em) !important;
 }
 
-
-/* Even columns */
-.callout[data-callout="2"] > .callout-title  {
-  /* Removes padding and background colour from the container */
-  justify-content: center;
+/* Callout "2": lays its content out in even, responsive columns */
+.callout[data-callout="2"] > .callout-title {
+    justify-content: center;
 }
 .callout[data-callout="2"] > .callout-content {
-  /* Arranges the content in columns */
-  display: grid;
-  /* minmax sets the minimum width of a column. Make the columns 'skinnier' by setting 15rem to a smaller number */
-  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-  gap: 10px;
+    display: grid;
+    /* minmax sets the minimum column width; lower 15rem for skinnier columns */
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 10px;
 }
 
-
-
+/* Callout "!": accent-colored ring */
 .callout[data-callout="!"] {
     box-shadow: inset 0 0 0em .1em var(--colored-accent-1) !important;
 }
 
-
-
-
-/*BLOCKQUOTE PREVIEW VIEW BORDER FIX*/
+/* --- Live-preview fix: consecutive quote lines join seamlessly -----------
+   Adjacent .HyperMD-quote lines drop the radius (and padding) on the edge
+   where they touch, so multi-line quotes render as one block. */
 .HyperMD-quote + .HyperMD-quote {
     border-top-right-radius: 0px !important;
     border-top-left-radius: 0px !important;
-}
-.HyperMD-quote:has(+.HyperMD-quote) {
-    border-bottom-right-radius: 0px !important;
-    border-bottom-left-radius: 0px !important;
-}
-ul.has-list-bullet * blockquote {
-    margin-top: 0;
-}
-.HyperMD-quote + .HyperMD-quote {
+
     &:before {
         border-top-right-radius: 0px !important;
-        border-top-left-radius: 0px !important
+        border-top-left-radius: 0px !important;
     }
 }
 .HyperMD-quote:has(+ .HyperMD-quote) {
+    border-bottom-right-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+
     &:before {
         border-bottom-right-radius: 0px !important;
         border-bottom-left-radius: 0px !important;
-    }    
+    }
 }
+
+ul.has-list-bullet * blockquote {
+    margin-top: 0;
+}
+
 .markdown-preview-view blockquote {
-   padding: .8em !important;
+    padding: .8em !important;
 }
 
 .markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote + .HyperMD-quote {
@@ -1192,56 +1676,42 @@ ul.has-list-bullet * blockquote {
 }
 
 
+/* ============================================================================
+   11. PARAGRAPH & LIST SPACING
+   ============================================================================ */
+
 .el-p + .el-p {
     margin-top: 2em !important;
 }
 
 p:not(:first-child) {
-    margin-top: .5em !important;
-    margin-bottom: .5em !important;
+    margin-top: .5em;
+    margin-bottom: .5em;
 }
 
 p + p {
     margin-top: 1em !important;
 }
 
+/* A list directly after a paragraph sticks to it */
 p + ul {
     margin-top: 0px !important;
 }
-
-
 p:has(+ ul.has-list-bullet) {
     margin-bottom: 0px;
 }
 
-
-
-
+/* "Smart Lists" toggle (WIP): more air between list items */
 body.smartlists li:not(:first-of-type) {
     margin-top: .8em;
     margin-bottom: 0em;
 }
--li > ul li {
-    margin-top: .4em;
-}
 
--li:has(ul) + li:has(ul) {
-    margin-top: 1.2em;
-}
-
-
-/*blockquote list fix*/
+/* Blockquote inside a list item */
 li:has(blockquote) {
     margin-top: .5em;
 }
 
-
-/*
-ul {
-    margin-top: 0em !important;
-    margin-bottom: 0em !important;
-}
-*/
 li > blockquote {
     margin-bottom: 0em !important;
     margin-top: 0em !important;
@@ -1260,111 +1730,71 @@ li > .callout {
 }
 
 
-/*heading mark*/
-/*H1*/
-body:not(.hv1, .hv2)
-.cm-header.cm-header-1:not(.cm-formatting.cm-formatting-header.cm-formatting-header-1.cm-header.cm-header-1),
-body:not(.hv1, .hv2)
-.markdown-rendered h1 {
-    color: var(--main-color-2);
-    display: inline-block;
-    -background: var(--background-7);
-    margin: 0em !important;
-        -moz-border-bottom-left-radius: var(--h1-radius);
-        -webkit-border-bottom-left-radius: var(--h1-radius);
-        border-bottom-left-radius: var(--h1-radius);
-        -moz-border-bottom-right-radius: var(--h1-radius);
-        -webkit-border-bottom-right-radius: var(--h1-radius);
-        border-bottom-right-radius: var(--h1-radius);
-        -moz-border-top-right-radius: var(--h1-radius);
-        -webkit-border-top-right-radius: var(--h1-radius);
-        border-top-right-radius: var(--h1-radius);
-        -moz-border-top-left-radius: var(--h1-radius);
-        -webkit-border-top-left-radius: var(--h1-radius);
-        border-top-left-radius: var(--h1-radius);
-        -webkit-box-decoration-break: clone;
-        -o-box-decoration-break: clone;
-        box-decoration-break: clone;
+/* ============================================================================
+   12. HEADINGS
+   Three variants via body classes: default, .hv1 (badge style),
+   .hv2 (underline style). Each heading level can be recolored through the
+   Style Settings color pickers (--headingcolor1..6).
+   ============================================================================ */
+
+/* --- H1 ------------------------------------------------------------------ */
+body:not(.hv1, .hv2) .cm-header.cm-header-1:not(.cm-formatting.cm-formatting-header.cm-formatting-header-1.cm-header.cm-header-1),
+body:not(.hv1, .hv2) .markdown-rendered h1 {
     --h1-radius: .4em;
+    color: var(--headingcolor1, --main-color-2);
+    display: inline-block;
+    margin: 0em !important;
+    border-radius: var(--h1-radius);
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
 }
 
-body.hv1
-.cm-header.cm-header-1:not(.cm-formatting.cm-formatting-header.cm-formatting-header-1.cm-header.cm-header-1),
-body.hv1
-.markdown-rendered h1 {
+body.hv1 .cm-header.cm-header-1:not(.cm-formatting.cm-formatting-header.cm-formatting-header-1.cm-header.cm-header-1),
+body.hv1 .markdown-rendered h1 {
+    --h1-radius: .3em;
     color: var(--main-color-2);
     display: inline-block;
-    background: var(--background-7);
+    background: var(--headingcolor1, var(--background-7));
     translate: -.05em;
     padding: .1rem .3rem .08rem .3rem;
-    margin: 0px;
     margin: 0em !important;
-        -moz-border-bottom-left-radius: var(--h1-radius);
-        -webkit-border-bottom-left-radius: var(--h1-radius);
-        border-bottom-left-radius: var(--h1-radius);
-        -moz-border-bottom-right-radius: var(--h1-radius);
-        -webkit-border-bottom-right-radius: var(--h1-radius);
-        border-bottom-right-radius: var(--h1-radius);
-        -moz-border-top-right-radius: var(--h1-radius);
-        -webkit-border-top-right-radius: var(--h1-radius);
-        border-top-right-radius: var(--h1-radius);
-        -moz-border-top-left-radius: var(--h1-radius);
-        -webkit-border-top-left-radius: var(--h1-radius);
-        border-top-left-radius: var(--h1-radius);
-        -webkit-box-decoration-break: clone;
-        -o-box-decoration-break: clone;
-        box-decoration-break: clone;
-    --h1-radius: .3em;
+    border-radius: var(--h1-radius);
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
 }
 
-body.hv2
-.cm-header.cm-header-1:not(.cm-formatting.cm-formatting-header.cm-formatting-header-1.cm-header.cm-header-1),
-body.hv2
-.markdown-rendered h1 {
-    color: var(--main-color-2);
+body.hv2 .cm-header.cm-header-1:not(.cm-formatting.cm-formatting-header.cm-formatting-header-1.cm-header.cm-header-1),
+body.hv2 .markdown-rendered h1 {
+    color: var(--headingcolor1, --main-color-2);
     border-bottom: .1em solid var(--tc);
 }
-/* heading mark link color correction */
-h1 > a, 
-h2 > a, 
-h3 > a, 
-h4 > a, 
-h5 > a, 
+
+/* Links inside headings keep the heading text color */
+h1 > a,
+h2 > a,
+h3 > a,
+h4 > a,
+h5 > a,
 h6 > a {
     color: var(--text-color-inverted) !important;
 }
 
-/*H2*/
-body:not(.hv1, .hv2)
-.cm-header.cm-header-2:not(.cm-formatting.cm-formatting-header.cm-formatting-header-2.cm-header.cm-header-2),
-body:not(.hv1, .hv2)
-.markdown-rendered h2 {
-    color: var(--main-color-2);
+/* --- H2 ------------------------------------------------------------------ */
+body:not(.hv1, .hv2) .cm-header.cm-header-2:not(.cm-formatting.cm-formatting-header.cm-formatting-header-2.cm-header.cm-header-2),
+body:not(.hv1, .hv2) .markdown-rendered h2 {
+    --mark-radius: .4em;
+    color: var(--headingcolor2, --main-color-2);
     display: inline-block;
     font-weight: 600;
     border-color: var(--colored-accent-4);
-        -moz-border-bottom-left-radius: var(--mark-radius);
-        -webkit-border-bottom-left-radius: var(--mark-radius);
-        border-bottom-left-radius: var(--mark-radius);
-        -moz-border-bottom-right-radius: var(--mark-radius);
-        -webkit-border-bottom-right-radius: var(--mark-radius);
-        border-bottom-right-radius: var(--mark-radius);
-        -moz-border-top-right-radius: var(--mark-radius);
-        -webkit-border-top-right-radius: var(--mark-radius);
-        border-top-right-radius: var(--mark-radius);
-        -moz-border-top-left-radius: var(--mark-radius);
-        -webkit-border-top-left-radius: var(--mark-radius);
-        border-top-left-radius: var(--mark-radius);
-        -webkit-box-decoration-break: clone;
-        -o-box-decoration-break: clone;
-        box-decoration-break: clone;
-    --mark-radius: .4em;
+    border-radius: var(--mark-radius);
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
 }
 
-body.hv1
-.cm-header.cm-header-2:not(.cm-formatting.cm-formatting-header.cm-formatting-header-2.cm-header.cm-header-2),
-body.hv1
-.markdown-rendered h2 {
+body.hv1 .cm-header.cm-header-2:not(.cm-formatting.cm-formatting-header.cm-formatting-header-2.cm-header.cm-header-2),
+body.hv1 .markdown-rendered h2 {
+    --mark-radius: .4em;
     color: var(--main-color-2);
     display: inline-block;
     translate: -.05em;
@@ -1373,255 +1803,208 @@ body.hv1
     border: .1em dashed;
     font-weight: 600;
     border-color: var(--colored-accent-4);
-    background-color: var(--colored-accent-5);
-        -moz-border-bottom-left-radius: var(--mark-radius);
-        -webkit-border-bottom-left-radius: var(--mark-radius);
-        border-bottom-left-radius: var(--mark-radius);
-        -moz-border-bottom-right-radius: var(--mark-radius);
-        -webkit-border-bottom-right-radius: var(--mark-radius);
-        border-bottom-right-radius: var(--mark-radius);
-        -moz-border-top-right-radius: var(--mark-radius);
-        -webkit-border-top-right-radius: var(--mark-radius);
-        border-top-right-radius: var(--mark-radius);
-        -moz-border-top-left-radius: var(--mark-radius);
-        -webkit-border-top-left-radius: var(--mark-radius);
-        border-top-left-radius: var(--mark-radius);
-        -webkit-box-decoration-break: clone;
-        -o-box-decoration-break: clone;
-        box-decoration-break: clone;
-    --mark-radius: .4em;
+    background-color: var(--headingcolor2, var(--colored-accent-5));
+    border-radius: var(--mark-radius);
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
 }
 
-body.hv2
-.cm-header.cm-header-2:not(.cm-formatting.cm-formatting-header.cm-formatting-header-2.cm-header.cm-header-2),
-body.hv2
-.markdown-rendered h2 {
-    color: var(--main-color-2);
+body.hv2 .cm-header.cm-header-2:not(.cm-formatting.cm-formatting-header.cm-formatting-header-2.cm-header.cm-header-2),
+body.hv2 .markdown-rendered h2 {
+    color: var(--headingcolor2, --main-color-2);
     border-bottom: .1em solid var(--tc);
 }
 
-/*H3*/
-body:not(.hv1, .hv2)
-.cm-header.cm-header-3:not(.cm-formatting.cm-formatting-header.cm-formatting-header-3.cm-header.cm-header-3),
-body:not(.hv1, .hv2)
-.markdown-rendered h3 {
+/* --- H3 ------------------------------------------------------------------ */
+body:not(.hv1, .hv2) .cm-header.cm-header-3:not(.cm-formatting.cm-formatting-header.cm-formatting-header-3.cm-header.cm-header-3),
+body:not(.hv1, .hv2) .markdown-rendered h3 {
+    --mark-radius: .4em;
+    color: var(--headingcolor3, --main-color-2);
     display: inline-block;
     translate: -.05em;
     padding: .1rem .3rem .08rem .3rem;
     margin-bottom: 0px;
     border-color: var(--colored-accent-4);
-        -moz-border-bottom-left-radius: var(--mark-radius);
-        -webkit-border-bottom-left-radius: var(--mark-radius);
-        border-bottom-left-radius: var(--mark-radius);
-        -moz-border-bottom-right-radius: var(--mark-radius);
-        -webkit-border-bottom-right-radius: var(--mark-radius);
-        border-bottom-right-radius: var(--mark-radius);
-        -moz-border-top-right-radius: var(--mark-radius);
-        -webkit-border-top-right-radius: var(--mark-radius);
-        border-top-right-radius: var(--mark-radius);
-        -moz-border-top-left-radius: var(--mark-radius);
-        -webkit-border-top-left-radius: var(--mark-radius);
-        border-top-left-radius: var(--mark-radius);
-        -webkit-box-decoration-break: clone;
-        -o-box-decoration-break: clone;
-        box-decoration-break: clone;
-    --mark-radius: .4em;
+    border-radius: var(--mark-radius);
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
 }
 
-body.hv1
-.cm-header.cm-header-3:not(.cm-formatting.cm-formatting-header.cm-formatting-header-3.cm-header.cm-header-3),
-body.hv1
-.markdown-rendered h3 {
+body.hv1 .cm-header.cm-header-3:not(.cm-formatting.cm-formatting-header.cm-formatting-header-3.cm-header.cm-header-3),
+body.hv1 .markdown-rendered h3 {
+    --mark-radius: .4em;
     display: inline-block;
     translate: -.05em;
     padding: .1rem .3rem .08rem .3rem;
     margin-bottom: 0px;
     border: .08em dashed;
     border-color: var(--colored-accent-4);
-    background-color: var(--colored-accent-5);
-        -moz-border-bottom-left-radius: var(--mark-radius);
-        -webkit-border-bottom-left-radius: var(--mark-radius);
-        border-bottom-left-radius: var(--mark-radius);
-        -moz-border-bottom-right-radius: var(--mark-radius);
-        -webkit-border-bottom-right-radius: var(--mark-radius);
-        border-bottom-right-radius: var(--mark-radius);
-        -moz-border-top-right-radius: var(--mark-radius);
-        -webkit-border-top-right-radius: var(--mark-radius);
-        border-top-right-radius: var(--mark-radius);
-        -moz-border-top-left-radius: var(--mark-radius);
-        -webkit-border-top-left-radius: var(--mark-radius);
-        border-top-left-radius: var(--mark-radius);
-        -webkit-box-decoration-break: clone;
-        -o-box-decoration-break: clone;
-        box-decoration-break: clone;
-    --mark-radius: .4em;
+    background-color: var(--headingcolor3, var(--colored-accent-5));
+    border-radius: var(--mark-radius);
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
 }
 
-body.hv2
-.cm-header.cm-header-3:not(.cm-formatting.cm-formatting-header.cm-formatting-header-3.cm-header.cm-header-3),
-body.hv2
-.markdown-rendered h3 {
-    color: var(--main-color-2);
+body.hv2 .cm-header.cm-header-3:not(.cm-formatting.cm-formatting-header.cm-formatting-header-3.cm-header.cm-header-3),
+body.hv2 .markdown-rendered h3 {
+    color: var(--headingcolor3, --main-color-2);
     border-bottom: .1em solid var(--tc);
 }
-/*DYNAMIC HEADING SPACING ADJUST*/
+
+/* --- H4-H6: color only ---------------------------------------------------- */
+.cm-header.cm-header-4:not(.cm-formatting.cm-formatting-header.cm-formatting-header-4.cm-header.cm-header-4),
+.markdown-rendered h4 {
+    color: var(--headingcolor4, --main-color-2);
+}
+
+.cm-header.cm-header-5:not(.cm-formatting.cm-formatting-header.cm-formatting-header-5.cm-header.cm-header-5),
+.markdown-rendered h5 {
+    color: var(--headingcolor5, --main-color-2);
+}
+
+.cm-header.cm-header-6:not(.cm-formatting.cm-formatting-header.cm-formatting-header-6.cm-header.cm-header-6),
+.markdown-rendered h6 {
+    color: var(--headingcolor6, --main-color-2);
+}
+
+/* --- Dynamic heading spacing ----------------------------------------------
+   Adds top margin before headings (reading view), but removes it again when
+   a heading directly follows a heading of the same or a higher level, so
+   stacked headings stay compact. */
 div.el-h1 {
     margin-top: var(--dynamic-heading-spacing, 0em);
 }
-
 div.el-h2 {
     margin-top: var(--dynamic-heading-spacing, 0em) !important;
 }
-
 div.el-h3 {
     margin-top: var(--dynamic-heading-spacing, 0em) !important;
 }
 
-
 div.el-h1 + div.el-h1 {
     margin-top: 0em !important;
 }
-
 div.el-h1 + div.el-h2, div.el-h2 + div.el-h2 {
     margin-top: 0em !important;
 }
-
 div.el-h1 + div.el-h3, div.el-h2 + div.el-h3, div.el-h3 + div.el-h3 {
     margin-top: 0em !important;
 }
-
-div.el-h1 + div.el-h4, div.el-h2 + div.el-h4, div.el-h3 + div.el-h4, div.el-h4 + div.el-h4  {
+div.el-h1 + div.el-h4, div.el-h2 + div.el-h4, div.el-h3 + div.el-h4, div.el-h4 + div.el-h4 {
+    margin-top: 0em !important;
+}
+div.el-h1 + div.el-h5, div.el-h2 + div.el-h5, div.el-h3 + div.el-h5, div.el-h4 + div.el-h5, div.el-h5 + div.el-h5 {
+    margin-top: 0em !important;
+}
+div.el-h1 + div.el-h6, div.el-h2 + div.el-h6, div.el-h3 + div.el-h6, div.el-h4 + div.el-h6, div.el-h5 + div.el-h6, div.el-h6 + div.el-h6 {
     margin-top: 0em !important;
 }
 
-div.el-h1 + div.el-h5, div.el-h2 + div.el-h5, div.el-h3 + div.el-h5, div.el-h4 + div.el-h5, div.el-h5 + div.el-h5  {
-    margin-top: 0em !important;
-}
 
-div.el-h1 + div.el-h6, div.el-h2 + div.el-h6, div.el-h3 + div.el-h6, div.el-h4 + div.el-h6, div.el-h5 + div.el-h6, div.el-h6 + div.el-h6  {
-    margin-top: 0em !important;
-}
+/* ============================================================================
+   13. HIGHLIGHTING, BOLD & SEARCH
+   ============================================================================ */
 
 
-/*==================== HIGHLIGHTING ====================*/
-span.cm-highlight,
-.markdown-rendered mark {
-    background: transparent;
+/* Change italic text weight universally */
+.cm-em, em {
+    font-weight: var(--italic-weight); /* Adjust this value as needed */
 }
 
 
-span.cm-highlight,
-.markdown-rendered mark {
+
+/* ==Highlighted== text as a grey pill. */
+body:not(.htv1, .htv2) span.cm-highlight,
+body:not(.htv1, .htv2) .markdown-rendered mark {
+    --mark-radius: .3rem;
     padding: 0rem .2rem 0rem .2rem;
     margin: .1rem .1rem .1rem .1rem;
     background: var(--background-7) !important;
-        -moz-border-bottom-left-radius: var(--mark-radius);
-        -webkit-border-bottom-left-radius: var(--mark-radius);
-        border-bottom-left-radius: var(--mark-radius);
-        -moz-border-bottom-right-radius: var(--mark-radius);
-        -webkit-border-bottom-right-radius: var(--mark-radius);
-        border-bottom-right-radius: var(--mark-radius);
-        -moz-border-top-right-radius: var(--mark-radius);
-        -webkit-border-top-right-radius: var(--mark-radius);
-        border-top-right-radius: var(--mark-radius);
-        -moz-border-top-left-radius: var(--mark-radius);
-        -webkit-border-top-left-radius: var(--mark-radius);
-        border-top-left-radius: var(--mark-radius);
-        -webkit-box-decoration-break: clone;
-        -o-box-decoration-break: clone;
-        box-decoration-break: clone;
-    --mark-radius: .3rem;
+    border-radius: var(--mark-radius);
+    -webkit-box-decoration-break: clone; /* keep radius on wrapped lines */
+    box-decoration-break: clone;
     font-weight: 600;
-    color: var(--tc);
 }
 
+body.htv2 span.cm-highlight,
+body.htv2 .markdown-rendered mark {
+    background: var(--colored-accent-3) !important;
+}
 
-span.cm-strong:not(.cm-highlight),
-strong:not(:has(mark), mark strong)  {
+/* **Bold** text as an accent-tinted pill */
+body:not(.btv1, .btv2) span.cm-strong:not(.cm-highlight),
+body:not(.btv1, .btv2) strong:not(:has(mark), mark strong) {
+    --mark-radius: .3rem;
     padding: 0rem .2rem 0rem .2rem;
     margin: -.2rem .1rem .1rem -.2rem;
     background: var(--colored-accent-4) !important;
-        -moz-border-bottom-left-radius: var(--mark-radius);
-        -webkit-border-bottom-left-radius: var(--mark-radius);
-        border-bottom-left-radius: var(--mark-radius);
-        -moz-border-bottom-right-radius: var(--mark-radius);
-        -webkit-border-bottom-right-radius: var(--mark-radius);
-        border-bottom-right-radius: var(--mark-radius);
-        -moz-border-top-right-radius: var(--mark-radius);
-        -webkit-border-top-right-radius: var(--mark-radius);
-        border-top-right-radius: var(--mark-radius);
-        -moz-border-top-left-radius: var(--mark-radius);
-        -webkit-border-top-left-radius: var(--mark-radius);
-        border-top-left-radius: var(--mark-radius);
-        -webkit-box-decoration-break: clone;
-        -o-box-decoration-break: clone;
-        box-decoration-break: clone;
-    --mark-radius: .3rem;
+    border-radius: var(--mark-radius);
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
     color: var(--colored-accent-1);
-    font-weight: 900;
+    font-weight: var(--bold-weight, 900);
+}
+body.btv2 span.cm-strong:not(.cm-highlight),
+body.btv2 strong:not(:has(mark), mark strong) { 
+    color: var(--colored-accent-1) !important;
 }
 
-
-
-
-
+/* The `==` markers themselves: accent color, no pill */
 .cm-formatting.cm-formatting-highlight.cm-highlight {
     background: none;
     color: var(--colored-accent-1);
 }
-/*======== SEARCHED TEXT HIGHLIGHTING =================*/
-.search-result-file-matched-text {
-    background:var(--colored-accent-1);
-    color: var(--colored-accent-i1);
-    border-radius: 3px;
-    padding-left:   2px;
-    padding-right:  2px;
-    padding-top:    0px;
-    padding-bottom: 0px;
-    border-radius: 3px;
-}
 
+/* --- Search result highlighting ------------------------------------------- */
+.search-result-file-matched-text,
 .is-flashing {
-    background:var(--colored-accent-1) !important;
     color: var(--colored-accent-i1);
     border-radius: 3px;
-    padding-left:   2px;
-    padding-right:  2px;
-    padding-top:    0px;
-    padding-bottom: 0px;
-    border-radius: 3px;
+    padding: 0px 2px;
+}
+.search-result-file-matched-text {
+    background: var(--colored-accent-1);
+}
+.is-flashing {
+    background: var(--colored-accent-1) !important;
 }
 
 
+/* ============================================================================
+   14. TYPOGRAPHY (Style Settings sliders)
+   Font weight, letter spacing and line height are user-adjustable;
+   --bold-modifier and --line-height-normal are defined on body (section 1).
+   ============================================================================ */
 
-/*================== adjust font weight ===============*/
-.markdown-preview-view, .view-content>.cm-s-obsidian, .view-content>.markdown-source-view.mod-cm6.is-live-preview>.cm-scroller, body {
+.markdown-preview-view,
+.view-content > .cm-s-obsidian,
+.view-content > .markdown-source-view.mod-cm6.is-live-preview > .cm-scroller,
+body {
     font-weight: var(--custom-font-weight, 400);
     color: var(--tc);
     letter-spacing: var(--custom-letter-spacing, .1px);
 }
-.cm-html-embed th, .markdown-rendered th {
-    font-weight: var(--custom-font-weight, 400);
-    letter-spacing: var(--custom-letter-spacing, .1px);
-}
+
+/* Tables and table headers follow the same sliders
+   (merged from two rules with identical declarations) */
+.cm-html-embed th,
+.markdown-rendered th,
 table {
     font-weight: var(--custom-font-weight, 400);
     letter-spacing: var(--custom-letter-spacing, .1px);
 }
+
 .view-content {
     border: 0px;
     letter-spacing: var(--custom-letter-spacing, .1px);
 }
 
-body {
-    --bold-modifier: 300;
-    --line-height-normal: var(--custom-line-height, 1.5);
-}
 
+/* ============================================================================
+   15. MISC
+   ============================================================================ */
 
-
-
-/*disable some elements*/
+/* Remove leftover decorations of the default theme */
 .workspace-ribbon.side-dock-ribbon.mod-left::before,
 .workspace-tab-header.tappable:before,
 .workspace-tab-header.tappable:after,
@@ -1629,76 +2012,95 @@ body {
 .workspace-tab-header-container:before {
     display: none !important;
 }
-/*================ EMBEDS =================*/
+
+/* --- Embeds --------------------------------------------------------------- */
 img {
     border-radius: 10px;
 }
-/*================= ROUNDED TABLES =================*/
-/*Credit goes to "FireIsGood": https://forum.obsidian.md/t/adding-rounded-corners-to-markdown-tables-with-snippets-a-clean-solution/60551 */
-/* TABLES: Fix the borders and add a radius variable */
+
+/* --- Rounded tables --------------------------------------------------------
+   Credit: "FireIsGood"
+   https://forum.obsidian.md/t/adding-rounded-corners-to-markdown-tables-with-snippets-a-clean-solution/60551 */
+
+/* Fix the borders and add a radius variable */
 :root table {
     --table-border-radius: 8px;
     border-collapse: separate;
     border-spacing: 0;
 }
-/* Add the radius */
-th:first-child {border-top-left-radius: var(--table-border-radius)}
-th:last-child {border-top-right-radius: var(--table-border-radius)}
-tr:last-child td:first-child {border-bottom-left-radius: var(--table-border-radius)}
-tr:last-child td:last-child {border-bottom-right-radius: var(--table-border-radius)}
-      
-/* Redo the borders */
+
+/* Round the four outer corners */
+th:first-child { border-top-left-radius: var(--table-border-radius); }
+th:last-child { border-top-right-radius: var(--table-border-radius); }
+tr:last-child td:first-child { border-bottom-left-radius: var(--table-border-radius); }
+tr:last-child td:last-child { border-bottom-right-radius: var(--table-border-radius); }
+
+/* Redo the cell borders (right/bottom only) after the collapse change */
 :root :is(td, th) {
     border-width: 0 var(--table-border-width) var(--table-border-width) 0;
     border-color: var(--accent-color-light10) !important;
 }
-      
-.cm-html-embed table, .markdown-rendered table {
+
+.cm-html-embed table,
+.markdown-rendered table {
     margin-top: 15px;
 }
-/*virtual link styling*/
+
+/* Virtual link styling (plugin) */
 .virtual-link-default {
     filter: brightness(1);
 }
 
-/*increase popup size*/
-.theme-light, .theme-dark {
-    --popover-width: 1050px;
-    --popover-height: 1250px;
-}
-
-
-
-
-
-
-
-
-/*status bar hider*/
-body.status-bar-hover .status-bar{
+/* --- "Hide Status Bar" toggle: fade in only on hover ----------------------- */
+body.status-bar-hover .status-bar {
     opacity: 0;
     transition: all .5s;
-    &:hover {        
+
+    &:hover {
         opacity: 1;
     }
 }
 
-
-/*greyscale toggle*/
+/* --- Greyscale image toggle -------------------------------------------------
+   Dark mode inverts before desaturating and screens the result onto the
+   background; light mode multiplies, so images blend with either scheme. */
 .greyscale-toggle.theme-dark img {
-   	border-radius: 10px;
-   	mix-blend-mode: screen !important;
+    mix-blend-mode: screen !important;
     filter: invert(1) grayscale(100%) !important;
 }
 
-
 .greyscale-toggle.theme-light img {
-	border-radius: 10px;
- 	mix-blend-mode: multiply !important;
-	filter: grayscale(100%) !important;
+    mix-blend-mode: multiply !important;
+    filter: grayscale(100%) !important;
 }
 
-
+/* --- Canvas: "Colored Nodes" option ---------------------------------------- */
 body.nc .markdown-embed-content .node-insert-event {
     background: var(--canvas-color) !important;
 }
+
+/* --- "Colored Folders" toggle -----------------------------------------------
+   Colors folder titles by nesting depth (levels 1-4), each adjustable via
+   a Style Settings color picker. */
+
+/* Level 1 (root folders) */
+body.coloredfolders .nav-files-container > div > .nav-folder > .nav-folder-title {
+    color: var(--foldercolor1, #ff0000);
+    font-weight: 600;
+}
+
+/* Level 2 (subfolders) */
+body.coloredfolders .nav-files-container > div > .nav-folder > .nav-folder-children > .nav-folder > .nav-folder-title {
+    color: var(--foldercolor2, #ff8c00);
+}
+
+/* Level 3 */
+body.coloredfolders .nav-files-container > div > .nav-folder > .nav-folder-children > .nav-folder > .nav-folder-children > .nav-folder > .nav-folder-title {
+    color: var(--foldercolor3, #7abc00);
+}
+
+/* Level 4 */
+body.coloredfolders .nav-files-container > div > .nav-folder > .nav-folder-children > .nav-folder > .nav-folder-children > .nav-folder > .nav-folder-children > .nav-folder > .nav-folder-title {
+    color: var(--foldercolor4, #00b75f);
+}
+

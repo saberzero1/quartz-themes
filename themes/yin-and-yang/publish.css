@@ -1196,6 +1196,16 @@ body.theme-light {
   --purple: #d2b3ff !important;
   --red: #ff5582 !important;
   --yellow: #fff3a3 !important;
+  --dark0: #2e3440 !important;
+  --dark1: #3b4252 !important;
+  --dark2: #434c5e !important;
+  --dark3: #4c566a !important;
+  --frost1: #88c0d0 !important;
+  --frost3: #f1ced0 !important;
+  --light0: #d8dee9 !important;
+  --light1: #e5e9f0 !important;
+  --light2: #cacfd9 !important;
+  --light3: #ffffff !important;
   --base-d: 5% !important;
   --em-color: var(--cerulean) !important;
   --pink: #f2b3cf !important;
@@ -1210,13 +1220,13 @@ body.theme-light {
     calc(var(--base-l)),
     0.8
   ) !important;
-  --graph-circle-fill-highlight: var(--interactive-accent) !important;
-  --graph-circle-outline: var(--text-faint) !important;
   --background-tertiary: hsl(
     var(--base-h),
     var(--base-s),
     calc(var(--base-l) - 5%)
   ) !important;
+  --graph-circle-fill-highlight: var(--interactive-accent) !important;
+  --graph-circle-outline: var(--text-faint) !important;
   --accent-hsl:
     var(--l-accent-h), var(--l-accent-s), var(--l-accent-l) !important;
   --background-match-highlight: hsla(
@@ -1244,16 +1254,6 @@ body.theme-light {
   --strong-weight: 600 !important;
   --h1: 1rem !important;
   --h2: 0.95rem !important;
-  --dark0: #2e3440 !important;
-  --dark1: #3b4252 !important;
-  --dark2: #434c5e !important;
-  --dark3: #4c566a !important;
-  --frost1: #88c0d0 !important;
-  --frost3: #f1ced0 !important;
-  --light0: #d8dee9 !important;
-  --light1: #e5e9f0 !important;
-  --light2: #cacfd9 !important;
-  --light3: #ffffff !important;
   --h3: 0.9rem !important;
   --h4: 0.85rem !important;
   --h5: 0.8rem !important;
@@ -2615,6 +2615,16 @@ body.theme-dark {
   --purple: #d2b3ff !important;
   --red: #ff5582 !important;
   --yellow: #fff3a3 !important;
+  --dark0: #2e3440 !important;
+  --dark1: #3b4252 !important;
+  --dark2: #434c5e !important;
+  --dark3: #4c566a !important;
+  --frost1: #88c0d0 !important;
+  --frost3: #f1ced0 !important;
+  --light0: #d8dee9 !important;
+  --light1: #e5e9f0 !important;
+  --light2: #cacfd9 !important;
+  --light3: #ffffff !important;
   --base-d: 5% !important;
   --em-color: var(--cerulean) !important;
   --pink: #f2b3cf !important;
@@ -2629,13 +2639,13 @@ body.theme-dark {
     var(--base-d),
     0.8
   ) !important;
-  --graph-circle-fill-highlight: var(--interactive-accent) !important;
-  --graph-circle-outline: var(--text-faint) !important;
   --background-tertiary: hsl(
     var(--base-h),
     var(--base-s),
     calc(var(--base-d) + 10%)
   ) !important;
+  --graph-circle-fill-highlight: var(--interactive-accent) !important;
+  --graph-circle-outline: var(--text-faint) !important;
   --accent-hsl:
     var(--d-accent-h), var(--d-accent-s), var(--d-accent-l) !important;
   --background-match-highlight: hsla(
@@ -2663,16 +2673,6 @@ body.theme-dark {
   --strong-weight: 600 !important;
   --h1: 1rem !important;
   --h2: 0.95rem !important;
-  --dark0: #2e3440 !important;
-  --dark1: #3b4252 !important;
-  --dark2: #434c5e !important;
-  --dark3: #4c566a !important;
-  --frost1: #88c0d0 !important;
-  --frost3: #f1ced0 !important;
-  --light0: #d8dee9 !important;
-  --light1: #e5e9f0 !important;
-  --light2: #cacfd9 !important;
-  --light3: #ffffff !important;
   --h3: 0.9rem !important;
   --h4: 0.85rem !important;
   --h5: 0.8rem !important;

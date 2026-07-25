@@ -1438,6 +1438,7 @@ body.theme-dark {
   --shadow-2:
     0 0 0 1px #0a5230 inset, 0 0 22px rgba(0, 255, 65, 0.1) !important;
   --background-modifier-active: #164a30 !important;
+  --tag-border: #00ffaa !important;
   --code-border: #00ffaa !important;
   --color-border: #0a7a3f !important;
   --border-w: 1.5px !important;
@@ -1451,7 +1452,6 @@ body.theme-dark {
   --med: 180ms !important;
   --scrollbar-thumb-hover-bg: #00ff41 !important;
   --slow: 260ms !important;
-  --tag-border: #00ffaa !important;
   --tag-foreground: #00ff41 !important;
 }
 

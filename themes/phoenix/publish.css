@@ -1624,7 +1624,6 @@ body.theme-light {
   --text-title-h6: var(--r-mist-energy-blue) !important;
   --vim-cursor: var(--r-bright-orange) !important;
   --embed-border-left: none !important;
-  --gray: #928374 !important;
   --dark0: #282828 !important;
   --dark1: #3c3836 !important;
   --dark2: #504945 !important;
@@ -1633,6 +1632,7 @@ body.theme-light {
   --light1: #ebdbb2 !important;
   --light2: #d5c4a1 !important;
   --light3: #bdae93 !important;
+  --gray: #928374 !important;
   --text-tag: var(--r-deep-orange) !important;
   --dark4: #7c6f64 !important;
   --editor-font:
@@ -2861,7 +2861,6 @@ body.theme-dark {
   --text-title-h6: var(--r-mist-energy-blue) !important;
   --vim-cursor: var(--r-bright-orange) !important;
   --embed-border-left: none !important;
-  --gray: #928374 !important;
   --dark0: #282828 !important;
   --dark1: #3c3836 !important;
   --dark2: #504945 !important;
@@ -2870,6 +2869,7 @@ body.theme-dark {
   --light1: #ebdbb2 !important;
   --light2: #d5c4a1 !important;
   --light3: #bdae93 !important;
+  --gray: #928374 !important;
   --text-tag: var(--r-bright-orange) !important;
   --dark4: #7c6f64 !important;
   --editor-font:

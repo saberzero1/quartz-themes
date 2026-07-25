@@ -1514,6 +1514,7 @@ body.theme-light {
   --shadow-xs:
     0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065),
     var(--shadow-edges) !important;
+  --inline-code-color: var(--alice-claret) !important;
   --alice-claret: #840b2a !important;
   --alice-gin-tonic: #e5e6e1 !important;
   --alice-gin-tonic-muted: #c9cbc5 !important;
@@ -1543,7 +1544,6 @@ body.theme-light {
   --graph-line-highlight: rgba(132, 11, 42, 0.82) !important;
   --inline-code-background: rgba(246, 150, 179, 0.32) !important;
   --inline-code-border-color: rgba(132, 11, 42, 0.28) !important;
-  --inline-code-color: var(--alice-claret) !important;
   --interactive-success: var(--alice-wineshade) !important;
   --link-decoration-color: rgba(132, 11, 42, 0.35) !important;
   --menu-item-background-hover: rgba(132, 11, 42, 0.14) !important;
@@ -2612,6 +2612,7 @@ body.theme-dark {
   ) !important;
   --blockquote-color: rgba(229, 230, 225, 0.82) !important;
   --font-editor-theme: var(--font-text-theme) !important;
+  --inline-code-color: #ffb3c8 !important;
   --alice-claret: #840b2a !important;
   --alice-gin-tonic: #e5e6e1 !important;
   --alice-gin-tonic-muted: #c9cbc5 !important;
@@ -2641,7 +2642,6 @@ body.theme-dark {
   --graph-line-highlight: rgba(221, 20, 64, 0.9) !important;
   --inline-code-background: rgba(246, 150, 179, 0.14) !important;
   --inline-code-border-color: rgba(246, 150, 179, 0.35) !important;
-  --inline-code-color: #ffb3c8 !important;
   --interactive-success: #d9dccf !important;
   --link-decoration-color: rgba(246, 150, 179, 0.42) !important;
   --menu-item-background-hover: rgba(132, 11, 42, 0.5) !important;

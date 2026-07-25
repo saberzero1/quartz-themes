@@ -1,0 +1,1695 @@
+/*
+ * Esther Inspired for Obsidian 1.1.19
+ * Light: Esther Paper · Dark: Esther Midnight
+ * Adapted from Esther Design System by ESTHER不二 (esthersjw)
+ * Source: https://github.com/esthersjw/esther-design-system
+ * License: CC BY-NC-SA 4.0 (non-commercial, attribution, share-alike)
+ */
+
+/* @settings
+
+name: Esther Inspired Theme
+id: esther-inspired-theme
+settings:
+  - id: esther-reading-width
+    title: Reading width
+    title.zh: 正文阅读宽度
+    type: variable-number-slider
+    default: 820
+    min: 620
+    max: 1100
+    step: 10
+    format: px
+  - id: esther-compact-ui
+    title: Compact interface
+    title.zh: 紧凑界面
+    type: class-toggle
+    default: false
+  - id: esther-hover-file-actions
+    title: Reveal file actions on hover
+    title.zh: 文件列表按钮仅在悬停时显示
+    description: Hide the file explorer action buttons until the header is hovered or focused.
+    description.zh: 隐藏文件列表顶部操作按钮，鼠标移入或键盘聚焦时再显示。
+    type: class-toggle
+    default: false
+*/
+
+body {
+  --esther-reading-width: 820px;
+  --font-text-theme: "Noto Sans SC", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", system-ui, sans-serif;
+  --font-interface-theme: "Noto Sans SC", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", system-ui, sans-serif;
+  --font-monospace-theme: "Fira Code", "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  --esther-font-serif: "Noto Serif SC", "Songti SC", STSong, "Times New Roman", serif;
+  --esther-font-display: "Fraunces", "Noto Serif SC", "Songti SC", Georgia, serif;
+
+  --file-line-width: var(--esther-reading-width);
+  --line-height-normal: 1.82;
+  --line-height-tight: 1.45;
+  --font-text-size: 16px;
+  --font-smallest: 0.78em;
+  --font-smaller: 0.86em;
+  --font-small: 0.92em;
+
+  --h1-font: var(--esther-font-serif);
+  --h2-font: var(--esther-font-serif);
+  --h3-font: var(--esther-font-serif);
+  --h4-font: var(--esther-font-serif);
+  --h5-font: var(--esther-font-serif);
+  --h6-font: var(--esther-font-serif);
+  --h1-size: 2.6em;
+  --h2-size: 1.75em;
+  --h3-size: 1.34em;
+  --h4-size: 1.12em;
+  --h5-size: 0.98em;
+  --h6-size: 0.88em;
+  --h1-weight: 800;
+  --h2-weight: 800;
+  --h3-weight: 800;
+  --h4-weight: 800;
+  --h5-weight: 800;
+  --h6-weight: 800;
+  --heading-spacing: calc(var(--p-spacing) * 2.1);
+
+  --radius-s: 6px;
+  --radius-m: 10px;
+  --radius-l: 16px;
+  --radius-xl: 20px;
+  --input-radius: 8px;
+  --button-radius: 9px;
+  --tab-radius-active: 9px 9px 0 0;
+  --checkbox-radius: 4px;
+  --modal-radius: 18px;
+  --menu-radius: 12px;
+  --callout-radius: 16px;
+  --embed-block-shadow-hover: 0 10px 32px var(--esther-shadow);
+
+  --bold-weight: 700;
+  --link-decoration: underline;
+  --link-decoration-thickness: 0.14em;
+  --link-external-decoration: underline;
+  --link-unresolved-decoration-style: dotted;
+  --list-indent: 1.75em;
+  --list-spacing: 0.08em;
+  --table-border-width: 1px;
+  --table-header-weight: 800;
+  --blockquote-border-thickness: 0;
+  --blockquote-font-style: normal;
+  --code-radius: 6px;
+
+  letter-spacing: 0.01em;
+}
+
+body.theme-light {
+  color-scheme: light;
+
+  --color-base-00: #fefcf6;
+  --color-base-05: #fcf9f1;
+  --color-base-10: #faf6eb;
+  --color-base-20: #f2ecdf;
+  --color-base-25: #e8e0cf;
+  --color-base-30: #d8ccb5;
+  --color-base-35: #c8baa0;
+  --color-base-40: #aaa08e;
+  --color-base-50: #85858f;
+  --color-base-60: #626275;
+  --color-base-70: #4a4a5a;
+  --color-base-100: #1a1a2e;
+
+  --accent-h: 211;
+  --accent-s: 67%;
+  --accent-l: 43%;
+
+  --background-primary: #fefcf6;
+  --background-primary-alt: #fffdf8;
+  --background-secondary: #faf6eb;
+  --background-secondary-alt: #f4eddf;
+  --background-modifier-hover: rgba(244, 215, 88, 0.20);
+  --background-modifier-active-hover: rgba(43, 127, 216, 0.10);
+  --background-modifier-border: #e8e0cf;
+  --background-modifier-border-hover: #d8ccb5;
+  --background-modifier-border-focus: #d8ccb5;
+  --background-modifier-form-field: #fffdf8;
+  --background-modifier-form-field-highlighted: #ffffff;
+  --background-modifier-box-shadow: rgba(62, 48, 22, 0.10);
+  --background-modifier-cover: rgba(26, 26, 46, 0.28);
+  --background-modifier-message: #fffdf8;
+  --background-modifier-success: rgba(70, 170, 100, 0.16);
+  --background-modifier-error: rgba(232, 74, 95, 0.14);
+  --background-modifier-error-hover: rgba(232, 74, 95, 0.21);
+
+  --text-normal: #1a1a2e;
+  --text-muted: #555568;
+  --text-faint: #85858f;
+  --text-on-accent: #fefcf6;
+  --text-on-accent-inverted: #1a1a2e;
+  --text-error: #d93c52;
+  --text-success: #2e8f52;
+  --text-selection: rgba(244, 215, 88, 0.62);
+  --text-highlight-bg: rgba(244, 215, 88, 0.40);
+  --text-highlight-bg-active: rgba(244, 215, 88, 0.64);
+
+  --interactive-normal: #fffdf8;
+  --interactive-hover: #ffffff;
+  --interactive-accent: #236dbb;
+  --interactive-accent-hover: #1f68b4;
+  --interactive-success: #3e9b5f;
+
+  --esther-blue: #2b7fd8;
+  --esther-blue-soft: rgba(43, 127, 216, 0.10);
+  --esther-yellow: #f4d758;
+  --esther-yellow-soft: rgba(244, 215, 88, 0.28);
+  --esther-red: #e84a5f;
+  --esther-red-soft: rgba(232, 74, 95, 0.10);
+  --esther-link-resolved-bg: rgba(43, 127, 216, 0.08);
+  --esther-link-unresolved-bg: rgba(232, 74, 95, 0.08);
+  --esther-ink: #17172a;
+  --esther-surface: #fffdf8;
+  --esther-surface-strong: #ffffff;
+  --esther-surface-soft: #faf6eb;
+  --esther-code-bg: #f7f8fa;
+  --esther-code-toolbar: #eef0f4;
+  --esther-code-text: #252832;
+  --esther-code-muted: #727887;
+  --esther-code-border: #d9dde5;
+  --esther-code-cursor: #156fd1;
+  --esther-code-active-line: rgba(43, 127, 216, 0.08);
+  --code-normal: #252832;
+  --code-comment: #5f6675;
+  --code-function: #8a4b08;
+  --code-important: #9a3f00;
+  --code-keyword: #8a2d75;
+  --code-operator: #b4233a;
+  --code-property: #006d77;
+  --code-punctuation: #555c6b;
+  --code-string: #2f6f3e;
+  --code-tag: #a1283e;
+  --code-value: #6346a5;
+  --esther-inline-code-bg: #f5efe1;
+  --esther-inline-code-text: #b43c50;
+  --esther-border: #e8e0cf;
+  --esther-border-strong: #d8ccb5;
+  --esther-shadow: rgba(62, 48, 22, 0.10);
+
+  --h1-color: #17172a;
+  --h2-color: #17172a;
+  --h3-color: #2b7fd8;
+  --h4-color: #17172a;
+  --h5-color: #17172a;
+  --h6-color: #626275;
+  --bold-color: #17172a;
+  --italic-color: #555568;
+  --link-color: #236dbb;
+  --link-color-hover: #17172a;
+  --link-unresolved-color: #e84a5f;
+  --list-marker-color: #e84a5f;
+  --list-marker-color-hover: #2b7fd8;
+  --list-marker-color-collapsed: #f4d758;
+  --blockquote-color: #555568;
+  --blockquote-background-color: #ffffff;
+  --code-background: #f5efe1;
+  --tag-color: #1f68b4;
+  --tag-background: rgba(43, 127, 216, 0.10);
+  --tag-color-hover: #17172a;
+  --tag-background-hover: rgba(244, 215, 88, 0.28);
+  --table-header-background: rgba(43, 127, 216, 0.10);
+  --table-header-background-hover: rgba(43, 127, 216, 0.15);
+  --table-row-alt-background: #faf6eb;
+  --table-row-background-hover: rgba(244, 215, 88, 0.20);
+  --table-border-color: #e8e0cf;
+  --nav-item-color-active: #1f68b4;
+  --nav-item-background-active: rgba(43, 127, 216, 0.10);
+  --nav-item-color-hover: #1a1a2e;
+  --nav-item-background-hover: rgba(244, 215, 88, 0.20);
+  --titlebar-background: #faf6eb;
+  --titlebar-background-focused: #faf6eb;
+  --tab-container-background: #faf6eb;
+  --tab-text-color-focused-active: #1f68b4;
+  --icon-color-active: #2b7fd8;
+  --ribbon-background: #faf6eb;
+  --status-bar-background: #faf6eb;
+  --divider-color: transparent;
+  --divider-color-hover: #d8ccb5;
+  --scrollbar-thumb-bg: #d8ccb5;
+  --scrollbar-active-thumb-bg: #aaa08e;
+  --graph-line: #d8ccb5;
+  --graph-node: #2b7fd8;
+  --graph-node-focused: #e84a5f;
+  --graph-node-tag: #f4d758;
+  --graph-node-attachment: #85858f;
+}
+
+body.theme-dark {
+  color-scheme: dark;
+
+  --color-base-00: #0d1117;
+  --color-base-05: #11141c;
+  --color-base-10: #151821;
+  --color-base-20: #1b1f29;
+  --color-base-25: #202531;
+  --color-base-30: #303645;
+  --color-base-35: #3a4150;
+  --color-base-40: #454c5c;
+  --color-base-50: #777b86;
+  --color-base-60: #aaa9a8;
+  --color-base-70: #c8c5bd;
+  --color-base-100: #f1ede3;
+
+  --accent-h: 211;
+  --accent-s: 77%;
+  --accent-l: 67%;
+
+  --background-primary: #151821;
+  --background-primary-alt: #1b1f29;
+  --background-secondary: #10131a;
+  --background-secondary-alt: #0d1117;
+  --background-modifier-hover: rgba(244, 215, 88, 0.10);
+  --background-modifier-active-hover: rgba(104, 169, 236, 0.14);
+  --background-modifier-border: #303645;
+  --background-modifier-border-hover: #454c5c;
+  --background-modifier-border-focus: #454c5c;
+  --background-modifier-form-field: #1b1f29;
+  --background-modifier-form-field-highlighted: #202531;
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.28);
+  --background-modifier-cover: rgba(0, 0, 0, 0.58);
+  --background-modifier-message: #202531;
+  --background-modifier-success: rgba(74, 222, 128, 0.13);
+  --background-modifier-error: rgba(255, 112, 130, 0.13);
+  --background-modifier-error-hover: rgba(255, 112, 130, 0.20);
+
+  --text-normal: #ddd9cf;
+  --text-muted: #aaa9a8;
+  --text-faint: #777b86;
+  --text-on-accent: #10131a;
+  --text-on-accent-inverted: #f1ede3;
+  --text-error: #ff7082;
+  --text-success: #4ade80;
+  --text-selection: rgba(244, 215, 88, 0.36);
+  --text-highlight-bg: rgba(244, 215, 88, 0.25);
+  --text-highlight-bg-active: rgba(244, 215, 88, 0.40);
+
+  --interactive-normal: #1b1f29;
+  --interactive-hover: #202531;
+  --interactive-accent: #68a9ec;
+  --interactive-accent-hover: #8bc0f4;
+  --interactive-success: #4ade80;
+
+  --esther-blue: #68a9ec;
+  --esther-blue-soft: rgba(104, 169, 236, 0.13);
+  --esther-yellow: #f4d758;
+  --esther-yellow-soft: rgba(244, 215, 88, 0.18);
+  --esther-red: #ff7082;
+  --esther-red-soft: rgba(255, 112, 130, 0.12);
+  --esther-link-resolved-bg: rgba(104, 169, 236, 0.12);
+  --esther-link-unresolved-bg: rgba(255, 112, 130, 0.11);
+  --esther-ink: #f1ede3;
+  --esther-surface: #1b1f29;
+  --esther-surface-strong: #202531;
+  --esther-surface-soft: #11141c;
+  --esther-code-bg: #0d1117;
+  --esther-code-toolbar: #1b1f29;
+  --esther-code-text: #e7e3d9;
+  --esther-code-muted: #9ca4b4;
+  --esther-code-border: #303645;
+  --esther-code-cursor: #f4d758;
+  --esther-code-active-line: rgba(244, 215, 88, 0.07);
+  --code-normal: #e7e3d9;
+  --code-comment: #9ca4b4;
+  --code-function: #f4c76b;
+  --code-important: #ff9f6e;
+  --code-keyword: #e997d4;
+  --code-operator: #ff8b9a;
+  --code-property: #77d4dd;
+  --code-punctuation: #b4bccb;
+  --code-string: #8ed39f;
+  --code-tag: #ff8b9a;
+  --code-value: #c3a6ff;
+  --esther-inline-code-bg: #292331;
+  --esther-inline-code-text: #ff8b9a;
+  --esther-border: #303645;
+  --esther-border-strong: #454c5c;
+  --esther-shadow: rgba(0, 0, 0, 0.28);
+
+  --h1-color: #f1ede3;
+  --h2-color: #f1ede3;
+  --h3-color: #68a9ec;
+  --h4-color: #f1ede3;
+  --h5-color: #f1ede3;
+  --h6-color: #aaa9a8;
+  --bold-color: #f1ede3;
+  --italic-color: #aaa9a8;
+  --link-color: #68a9ec;
+  --link-color-hover: #f1ede3;
+  --link-unresolved-color: #ff7082;
+  --list-marker-color: #ff7082;
+  --list-marker-color-hover: #68a9ec;
+  --list-marker-color-collapsed: #f4d758;
+  --blockquote-color: #aaa9a8;
+  --blockquote-background-color: #202531;
+  --code-background: #292331;
+  --tag-color: #8bc0f4;
+  --tag-background: rgba(104, 169, 236, 0.13);
+  --tag-color-hover: #f1ede3;
+  --tag-background-hover: rgba(244, 215, 88, 0.18);
+  --table-header-background: rgba(104, 169, 236, 0.15);
+  --table-header-background-hover: rgba(104, 169, 236, 0.20);
+  --table-row-alt-background: #11141c;
+  --table-row-background-hover: rgba(244, 215, 88, 0.10);
+  --table-border-color: #303645;
+  --nav-item-color-active: #8bc0f4;
+  --nav-item-background-active: rgba(104, 169, 236, 0.14);
+  --nav-item-color-hover: #f1ede3;
+  --nav-item-background-hover: rgba(244, 215, 88, 0.10);
+  --titlebar-background: #10131a;
+  --titlebar-background-focused: #10131a;
+  --tab-container-background: #10131a;
+  --tab-text-color-focused-active: #8bc0f4;
+  --icon-color-active: #68a9ec;
+  --ribbon-background: #10131a;
+  --status-bar-background: #10131a;
+  --divider-color: transparent;
+  --divider-color-hover: #454c5c;
+  --scrollbar-thumb-bg: #454c5c;
+  --scrollbar-active-thumb-bg: #777b86;
+  --graph-line: #454c5c;
+  --graph-node: #68a9ec;
+  --graph-node-focused: #ff7082;
+  --graph-node-tag: #f4d758;
+  --graph-node-attachment: #777b86;
+}
+
+/* Workspace surfaces */
+body.theme-light .workspace-leaf-content[data-type="markdown"] .view-content {
+  background:
+    radial-gradient(circle at 88% -10%, rgba(244, 215, 88, 0.16), transparent 27rem),
+    var(--background-primary);
+}
+
+body.theme-dark .workspace-leaf-content[data-type="markdown"] .view-content {
+  background:
+    radial-gradient(circle at 86% -12%, rgba(43, 127, 216, 0.12), transparent 30rem),
+    var(--background-primary);
+}
+
+.workspace-ribbon,
+.workspace-sidedock-vault-profile,
+.workspace-tab-header-container,
+.titlebar,
+.status-bar {
+  border-color: var(--esther-border);
+}
+
+.workspace-tab-header {
+  margin: 5px 3px 0;
+  border-radius: 9px 9px 0 0;
+}
+
+.workspace-tab-header.is-active {
+  color: var(--nav-item-color-active);
+  background: var(--nav-item-background-active);
+}
+
+.workspace-tab-header.is-active::before,
+.workspace-tab-header.is-active::after {
+  display: none;
+}
+
+.workspace-tab-header-inner-title {
+  font-weight: 600;
+}
+
+.mod-root .workspace-tab-header.is-active .workspace-tab-header-inner-title {
+  font-weight: 750;
+}
+
+body .workspace-split.mod-vertical > .workspace-tabs,
+body .workspace-split.mod-vertical > .workspace-leaf,
+body .workspace-split.mod-left-split,
+body .workspace-split.mod-right-split,
+body .workspace-tabs,
+body .workspace-leaf-content {
+  border-inline-color: transparent;
+  outline: 0;
+  box-shadow: none;
+}
+
+body .workspace-split.mod-vertical > * > .workspace-leaf-resize-handle,
+body .workspace-split.mod-left-split > .workspace-leaf-resize-handle,
+body .workspace-split.mod-right-split > .workspace-leaf-resize-handle {
+  border-inline-color: transparent;
+  background-color: transparent;
+}
+
+body .workspace-split.mod-vertical > * > .workspace-leaf-resize-handle:hover,
+body .workspace-split.mod-left-split > .workspace-leaf-resize-handle:hover,
+body .workspace-split.mod-right-split > .workspace-leaf-resize-handle:hover {
+  border-inline-color: var(--esther-border-strong);
+  background-color: var(--esther-border-strong);
+  opacity: 0.45;
+}
+
+/* Reading width and text rhythm */
+.markdown-reading-view .markdown-preview-sizer {
+  max-width: var(--esther-reading-width);
+  margin-inline: auto;
+}
+
+.markdown-source-view.mod-cm6 > .cm-editor > .cm-scroller > .cm-sizer > .cm-content,
+.markdown-reading-view .markdown-preview-sizer {
+  padding-top: 48px;
+  padding-bottom: 110px;
+}
+
+.markdown-rendered,
+.markdown-source-view.mod-cm6 > .cm-editor > .cm-scroller {
+  line-height: 1.82;
+  letter-spacing: 0.012em;
+}
+
+.markdown-rendered p {
+  margin-block: 1em;
+}
+
+/* Editorial headings */
+.markdown-rendered :is(h1, h2, h3, h4, h5, h6),
+.markdown-source-view.mod-cm6 .HyperMD-header {
+  font-family: var(--esther-font-serif);
+  font-weight: 800;
+  line-height: 1.35;
+  letter-spacing: -0.025em;
+}
+
+.markdown-rendered h1,
+.markdown-source-view.mod-cm6 .HyperMD-header-1 {
+  margin-top: 0.55em;
+  margin-bottom: 0.75em;
+  line-height: 1.18;
+  letter-spacing: -0.045em;
+}
+
+.markdown-rendered h1::after,
+.markdown-source-view.mod-cm6 .HyperMD-header-1::after {
+  content: "";
+  display: block;
+  width: 3.2rem;
+  height: 0.42rem;
+  margin-top: 0.46rem;
+  border-radius: 999px 52% 999px 46%;
+  background: var(--esther-yellow);
+  transform: rotate(-1.5deg);
+}
+
+.markdown-rendered h2,
+.markdown-source-view.mod-cm6 .HyperMD-header-2 {
+  margin-top: 2.2em;
+  padding-bottom: 0.42em;
+  border-bottom: 1px solid var(--esther-border);
+}
+
+.markdown-rendered h2::before,
+.markdown-source-view.mod-cm6 .HyperMD-header-2::before {
+  content: "";
+  display: inline-block;
+  width: 0.48em;
+  height: 0.48em;
+  margin-right: 0.46em;
+  border-radius: 50%;
+  background: var(--esther-blue);
+  box-shadow: 0.25em 0.22em 0 var(--esther-yellow);
+  vertical-align: 0.08em;
+}
+
+.markdown-rendered h3,
+.markdown-source-view.mod-cm6 .HyperMD-header-3 {
+  color: var(--esther-blue);
+}
+
+.markdown-rendered h5,
+.markdown-rendered h6,
+.markdown-source-view.mod-cm6 :is(.HyperMD-header-5, .HyperMD-header-6) {
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.markdown-rendered :is(h1, h2, h3, h4, h5, h6) a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Inline emphasis */
+.markdown-rendered strong,
+.cm-strong {
+  color: var(--esther-ink);
+  font-weight: 700;
+}
+
+.markdown-rendered em,
+.cm-em {
+  color: var(--text-muted);
+}
+
+.markdown-rendered mark,
+.markdown-preview-view mark,
+.markdown-source-view.mod-cm6 .cm-highlight,
+.markdown-source-view.mod-cm6 span.cm-highlight {
+  padding: 0 0.14em;
+  color: var(--esther-ink);
+  background-color: transparent;
+  background-image: linear-gradient(
+    to bottom,
+    transparent 0 56%,
+    var(--esther-yellow) 56% 100%
+  );
+  border-radius: 0;
+}
+
+.markdown-rendered a,
+.cm-hmd-internal-link,
+.cm-link,
+.internal-link,
+.external-link {
+  text-decoration: none;
+  box-shadow: inset 0 -0.12em 0 var(--esther-yellow);
+}
+
+.markdown-rendered a:hover,
+.internal-link:hover,
+.external-link:hover {
+  color: var(--esther-ink);
+  background: var(--esther-yellow-soft);
+}
+
+/* Balance wrapped URLs so the last line is not only a few characters and an icon. */
+body .markdown-rendered p:has(a.external-link),
+body .markdown-source-view.mod-cm6 .cm-line:has(.cm-link) {
+  text-wrap: pretty;
+}
+
+body .markdown-rendered a.external-link,
+body .markdown-source-view.mod-cm6 .cm-link {
+  overflow-wrap: anywhere;
+  word-break: normal;
+}
+
+/* Obsidian wiki links: resolved notes, aliases and missing notes */
+.markdown-rendered .internal-link,
+.markdown-source-view.mod-cm6 .cm-hmd-internal-link {
+  border-radius: 0.28em;
+  color: var(--link-color);
+  font-weight: 650;
+  text-decoration: none;
+  box-shadow: inset 0 -0.12em 0 var(--esther-yellow);
+}
+
+.markdown-rendered .internal-link:hover,
+.markdown-source-view.mod-cm6 .cm-hmd-internal-link:hover {
+  color: var(--esther-ink);
+  background: var(--esther-link-resolved-bg);
+}
+
+.markdown-rendered .internal-link.is-unresolved,
+.markdown-source-view.mod-cm6 .is-unresolved,
+.markdown-source-view.mod-cm6 .cm-hmd-internal-link.is-unresolved {
+  color: var(--esther-red);
+  background: var(--esther-link-unresolved-bg);
+  border-bottom: 0.1em dotted var(--esther-red);
+  box-shadow: none;
+}
+
+.markdown-rendered .internal-link[data-href*="#"],
+.markdown-rendered .internal-link[data-href*="^"] {
+  border-bottom: 0.1em dashed currentColor;
+  box-shadow: none;
+}
+
+/* Lists and tasks */
+.markdown-rendered :is(ul, ol),
+.markdown-source-view.mod-cm6 .HyperMD-list-line {
+  line-height: 1.58;
+}
+
+.markdown-rendered ul > li::marker {
+  color: var(--esther-red);
+  font-size: 0.88em;
+}
+
+.markdown-rendered ol > li::marker {
+  color: var(--esther-blue);
+  font-family: var(--esther-font-display);
+  font-weight: 800;
+}
+
+.markdown-source-view.mod-cm6 .list-bullet::after {
+  background: var(--esther-red);
+}
+
+input[type="checkbox"],
+.task-list-item-checkbox {
+  border: 1.5px solid var(--esther-border-strong);
+  box-shadow: none;
+}
+
+input[type="checkbox"]:checked,
+.task-list-item-checkbox:checked {
+  border-color: var(--esther-blue);
+  background-color: var(--esther-blue);
+}
+
+.task-list-item.is-checked,
+.HyperMD-task-line[data-task="x"] {
+  color: var(--text-faint);
+}
+
+/* Designed pull quote */
+body .markdown-rendered blockquote {
+  position: relative;
+  min-height: 2.3em;
+  margin: 1.7em 0;
+  padding: 1.55em 1.75em 1.45em 3.7em;
+  overflow: hidden;
+  border: 0;
+  border-radius: 18px;
+  color: var(--text-muted);
+  background-color: var(--blockquote-background-color);
+  background-image: none;
+  box-shadow: 0 10px 34px var(--esther-shadow);
+}
+
+body .markdown-rendered blockquote::before {
+  content: "“";
+  position: absolute;
+  top: 0.02em;
+  left: 0.28em;
+  color: var(--esther-yellow);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 4.6rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.markdown-rendered blockquote > :first-child {
+  margin-top: 0;
+}
+
+.markdown-rendered blockquote > :last-child {
+  margin-bottom: 0;
+}
+
+body .markdown-rendered blockquote :is(ul, ol) {
+  margin-block: 0.4em;
+}
+
+body .markdown-rendered blockquote li {
+  margin-block: 0.12em;
+}
+
+body .markdown-rendered blockquote ul > li.task-list-item::marker {
+  content: "";
+}
+
+/* Match Typora: nested quotes inherit the same padding and radius, change only surface and shadow. */
+body .markdown-rendered blockquote blockquote {
+  margin: 1em 0 0;
+  background-color: var(--esther-surface-soft);
+  box-shadow: none;
+}
+
+body .markdown-source-view.mod-cm6 .cm-line.HyperMD-quote:not(.HyperMD-callout) {
+  --esther-quote-shadow-top: 0 0 transparent;
+  --esther-quote-shadow-bottom: 0 0 transparent;
+  position: relative;
+  box-sizing: border-box;
+  min-height: 1.82em;
+  padding-right: 1.75em;
+  padding-left: 3.7em;
+  text-indent: 0 !important;
+  border-radius: 0;
+  color: var(--text-muted);
+  background-color: var(--blockquote-background-color);
+  background-image: none;
+  box-shadow:
+    var(--esther-quote-shadow-top),
+    -10px 0 24px -20px var(--esther-shadow),
+    10px 0 24px -20px var(--esther-shadow),
+    var(--esther-quote-shadow-bottom);
+}
+
+body .markdown-source-view.mod-cm6 .cm-line.HyperMD-quote:not(.HyperMD-callout).cm-active,
+body .markdown-source-view.mod-cm6 .cm-line.HyperMD-quote:not(.HyperMD-callout):hover {
+  background-color: var(--blockquote-background-color);
+  background-image: none;
+}
+
+.markdown-source-view.mod-cm6 .cm-line:not(.HyperMD-quote):not(:has(> .cm-formatting-quote)) + .cm-line.HyperMD-quote:not(.HyperMD-callout),
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-quote:not(.HyperMD-callout):first-child {
+  position: relative;
+  z-index: 1;
+  margin-top: 1.7em;
+  padding-top: 1.55em;
+  padding-left: 3.7em;
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+  --esther-quote-shadow-top: 0 -8px 26px -14px var(--esther-shadow);
+}
+
+.markdown-source-view.mod-cm6 .cm-line:not(.HyperMD-quote):not(:has(> .cm-formatting-quote)) + .cm-line.HyperMD-quote:not(.HyperMD-callout)::before,
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-quote:not(.HyperMD-callout):first-child::before {
+  content: "“";
+  position: absolute;
+  top: 0.02em;
+  left: 0.28em;
+  z-index: 2;
+  color: var(--esther-yellow);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 4.6rem;
+  font-weight: 700;
+  line-height: 1;
+  pointer-events: none;
+}
+
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-quote:not(.HyperMD-callout):not(:has(+ .HyperMD-quote:not(.HyperMD-callout), + .cm-line > .cm-formatting-quote)) {
+  margin-bottom: 1.7em;
+  padding-bottom: 1.45em;
+  border-bottom-right-radius: 18px;
+  border-bottom-left-radius: 18px;
+  --esther-quote-shadow-bottom: 0 10px 30px -8px var(--esther-shadow);
+}
+
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-quote:not(.HyperMD-callout) .cm-formatting-quote {
+  color: var(--esther-yellow);
+  font-weight: 800;
+  opacity: 0;
+}
+
+/* Live Preview keeps nested quotes as CodeMirror lines rather than real blockquote elements. */
+body .markdown-source-view.mod-cm6 .cm-line.HyperMD-quote-2:not(.HyperMD-quote-3, .HyperMD-callout),
+body .markdown-source-view.mod-cm6 .cm-line.HyperMD-quote-3:not(.HyperMD-callout) {
+  --esther-quote-shadow-top: 0 0 transparent;
+  --esther-quote-shadow-bottom: 0 0 transparent;
+  isolation: isolate;
+  padding-right: 2.25em;
+  padding-left: 5.5em;
+  background-color: var(--blockquote-background-color);
+}
+
+body .markdown-source-view.mod-cm6 .cm-line.HyperMD-quote-3:not(.HyperMD-callout) {
+  padding-right: 3em;
+  padding-left: 7.4em;
+}
+
+body .markdown-source-view.mod-cm6 .cm-line.HyperMD-quote-2:not(.HyperMD-quote-3, .HyperMD-callout)::after,
+body .markdown-source-view.mod-cm6 .cm-line.HyperMD-quote-3:not(.HyperMD-callout)::after {
+  content: "";
+  position: absolute;
+  inset: 0 1.25em 0 3.7em;
+  z-index: 0;
+  background: var(--esther-surface-soft);
+  pointer-events: none;
+}
+
+body .markdown-source-view.mod-cm6 .cm-line.HyperMD-quote-2:not(.HyperMD-quote-3, .HyperMD-callout) > *,
+body .markdown-source-view.mod-cm6 .cm-line.HyperMD-quote-3:not(.HyperMD-callout) > * {
+  position: relative;
+  z-index: 1;
+}
+
+.markdown-source-view.mod-cm6 .cm-line:not(.HyperMD-quote-2) + .cm-line.HyperMD-quote-2:not(.HyperMD-quote-3, .HyperMD-callout) {
+  padding-top: 1.15em;
+}
+
+.markdown-source-view.mod-cm6 .cm-line:not(.HyperMD-quote-2) + .cm-line.HyperMD-quote-2:not(.HyperMD-quote-3, .HyperMD-callout)::before {
+  content: "“";
+  position: absolute;
+  top: 0.02em;
+  left: 3.98rem;
+  z-index: 2;
+  color: var(--esther-yellow);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 4.6rem;
+  font-weight: 700;
+  line-height: 1;
+  pointer-events: none;
+}
+
+.markdown-source-view.mod-cm6 .cm-line:not(.HyperMD-quote-2) + .cm-line.HyperMD-quote-2:not(.HyperMD-quote-3, .HyperMD-callout)::after {
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-quote-2:not(.HyperMD-quote-3, .HyperMD-callout):not(:has(+ :is(.HyperMD-quote-2, .HyperMD-quote-3))) {
+  padding-bottom: 1.05em;
+}
+
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-quote-2:not(.HyperMD-quote-3, .HyperMD-callout):not(:has(+ :is(.HyperMD-quote-2, .HyperMD-quote-3)))::after {
+  border-bottom-right-radius: 16px;
+  border-bottom-left-radius: 16px;
+}
+
+.markdown-source-view.mod-cm6 .cm-line:not(.HyperMD-quote-3) + .cm-line.HyperMD-quote-3:not(.HyperMD-callout) {
+  padding-top: 0.9em;
+}
+
+.markdown-source-view.mod-cm6 .cm-line:not(.HyperMD-quote-3) + .cm-line.HyperMD-quote-3:not(.HyperMD-callout)::before {
+  content: "“";
+  position: absolute;
+  top: -0.02em;
+  left: 7.68rem;
+  z-index: 2;
+  color: var(--esther-yellow);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 4.2rem;
+  font-weight: 700;
+  line-height: 1;
+  pointer-events: none;
+}
+
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-quote-3:not(.HyperMD-callout):not(:has(+ :is(.HyperMD-quote-2, .HyperMD-quote-3))) {
+  padding-bottom: 1.05em;
+}
+
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-quote-3:not(.HyperMD-callout):not(:has(+ :is(.HyperMD-quote-2, .HyperMD-quote-3)))::after {
+  border-bottom-right-radius: 16px;
+  border-bottom-left-radius: 16px;
+}
+
+/* Active quoted tasks are exposed as Markdown links by Obsidian; keep them neutral. */
+body .markdown-source-view.mod-cm6 .cm-line.HyperMD-quote:not(.HyperMD-callout) :is(.cm-hmd-barelink, .cm-formatting-link) {
+  color: inherit;
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+  text-decoration: none;
+}
+
+body .markdown-source-view.mod-cm6 .cm-line.HyperMD-quote:not(.HyperMD-callout):has(> .cm-hmd-barelink:not(.cm-formatting-link)) > .cm-quote:nth-child(2),
+body .markdown-source-view.mod-cm6 .cm-line.HyperMD-quote:not(.HyperMD-callout):has(> .cm-hmd-barelink:not(.cm-formatting-link)) > .cm-formatting-link {
+  display: none;
+}
+
+body .markdown-source-view.mod-cm6 .cm-line.HyperMD-quote:not(.HyperMD-callout):has(> .cm-hmd-barelink:not(.cm-formatting-link)) > .cm-hmd-barelink:not(.cm-formatting-link) {
+  display: inline-grid;
+  box-sizing: border-box;
+  width: 1.05em;
+  height: 1.05em;
+  margin-right: 0.45em;
+  place-items: center;
+  border: 1.5px solid var(--esther-border-strong);
+  border-radius: 4px;
+  color: var(--esther-blue);
+  font-size: 0.86em;
+  font-weight: 800;
+  line-height: 1;
+  vertical-align: -0.08em;
+}
+
+/* Tables */
+.markdown-rendered table {
+  display: table;
+  width: 100%;
+  border: 1px solid var(--esther-border);
+  border-spacing: 0;
+  border-collapse: separate;
+  border-radius: 14px;
+  background: var(--esther-surface);
+  box-shadow: 0 6px 22px var(--esther-shadow);
+  overflow: hidden;
+}
+
+.markdown-rendered .el-table {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.markdown-rendered :is(th, td) {
+  padding: 0.72em 0.9em;
+  border: 0;
+  border-right: 1px solid var(--esther-border);
+  border-bottom: 1px solid var(--esther-border);
+}
+
+.markdown-rendered th {
+  color: var(--esther-ink);
+  font-family: var(--esther-font-serif);
+  font-weight: 800;
+}
+
+.markdown-rendered tr:last-child td {
+  border-bottom: 0;
+}
+
+.markdown-rendered :is(th, td):last-child {
+  border-right: 0;
+}
+
+.markdown-rendered tbody tr:nth-child(even) {
+  background: var(--table-row-alt-background);
+}
+
+.markdown-source-view.mod-cm6 .cm-table-widget .table-wrapper {
+  border: 1px solid var(--esther-border);
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 6px 22px var(--esther-shadow);
+}
+
+/* Table cells use nested editors and must not inherit document page padding. */
+.markdown-source-view.mod-cm6 .cm-table-widget .cm-content {
+  padding: 0;
+}
+
+/* Inline and fenced code */
+.markdown-rendered code,
+.markdown-source-view.mod-cm6 .cm-inline-code:not(.cm-formatting) {
+  padding: 0.16em 0.38em;
+  border: 1px solid var(--esther-border);
+  border-radius: 6px;
+  color: var(--esther-inline-code-text);
+  background: var(--esther-inline-code-bg);
+  font-size: 0.88em;
+  overflow-wrap: anywhere;
+  word-break: break-all;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+
+.markdown-rendered code {
+  white-space: break-spaces;
+}
+
+/* Quoted fenced blocks intentionally reuse this rule instead of adding a second compact override. */
+.markdown-rendered pre {
+  position: relative;
+  margin: 1.5em 0;
+  padding: 3.25em 1.25em 1.25em;
+  border: 1px solid var(--esther-code-border);
+  border-radius: 15px;
+  color: var(--esther-code-text);
+  background-color: var(--esther-code-bg);
+  background-image: linear-gradient(
+    to bottom,
+    var(--esther-code-toolbar) 0 2.35rem,
+    var(--esther-code-border) 2.35rem 2.4rem,
+    var(--esther-code-bg) 2.4rem 100%
+  );
+  background-repeat: no-repeat;
+  box-shadow: 0 12px 30px var(--esther-shadow);
+}
+
+.markdown-rendered pre::before {
+  content: "";
+  position: absolute;
+  top: 0.86rem;
+  left: 1.2em;
+  z-index: 1;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #ff5f57;
+  box-shadow: 17px 0 0 #febc2e, 34px 0 0 #28c840;
+}
+
+.markdown-rendered pre code {
+  padding: 0;
+  border: 0;
+  color: inherit;
+  background: transparent;
+  font-size: 0.88rem;
+  line-height: 1.68;
+  white-space: pre;
+  overflow-wrap: normal;
+  word-break: normal;
+  -webkit-box-decoration-break: slice;
+  box-decoration-break: slice;
+}
+
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-codeblock {
+  box-sizing: border-box;
+  padding-inline: 1.2em;
+  border-right: 1px solid var(--esther-code-border);
+  border-left: 1px solid var(--esther-code-border);
+  color: var(--esther-code-text);
+  background-color: var(--esther-code-bg);
+}
+
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-codeblock-begin {
+  position: relative;
+  min-height: 3.25rem;
+  padding-top: 2.45rem;
+  border-top: 1px solid var(--esther-code-border);
+  border-radius: 15px 15px 0 0;
+  background-color: var(--esther-code-bg);
+  background-image: linear-gradient(
+    to bottom,
+    var(--esther-code-toolbar) 0 2.35rem,
+    var(--esther-code-border) 2.35rem 2.4rem,
+    var(--esther-code-bg) 2.4rem 100%
+  );
+  background-repeat: no-repeat;
+}
+
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-codeblock-begin::before {
+  content: "";
+  position: absolute;
+  top: 0.86rem;
+  left: 1.2rem;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #ff5f57;
+  box-shadow: 17px 0 0 #febc2e, 34px 0 0 #28c840;
+  pointer-events: none;
+}
+
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-codeblock-end {
+  padding-bottom: 1em;
+  border-bottom: 1px solid var(--esther-code-border);
+  border-radius: 0 0 15px 15px;
+  box-shadow: 0 10px 28px var(--esther-shadow);
+}
+
+/* Obsidian exposes fenced code inside an active quote as three inline-code lines. */
+body .markdown-source-view.mod-cm6 .cm-line.HyperMD-quote:not(.HyperMD-callout):has(> .cm-formatting-quote + .cm-inline-code:last-child) {
+  isolation: isolate;
+  min-height: 1.68em;
+  padding-right: 2.95em;
+  padding-left: 4.9em;
+  color: var(--esther-code-text);
+  background-color: var(--blockquote-background-color);
+  background-image: none;
+  box-shadow:
+    var(--esther-quote-shadow-top),
+    -10px 0 24px -20px var(--esther-shadow),
+    10px 0 24px -20px var(--esther-shadow),
+    var(--esther-quote-shadow-bottom);
+}
+
+body .markdown-source-view.mod-cm6 .cm-line.HyperMD-quote:not(.HyperMD-callout):has(> .cm-formatting-quote + .cm-inline-code:last-child)::after {
+  content: "";
+  position: absolute;
+  inset: 0 1.75em 0 3.7em;
+  z-index: 0;
+  border-right: 1px solid var(--esther-code-border);
+  border-left: 1px solid var(--esther-code-border);
+  background: var(--esther-code-bg);
+  pointer-events: none;
+}
+
+body .markdown-source-view.mod-cm6 .cm-line.HyperMD-quote:not(.HyperMD-callout):has(> .cm-formatting-quote + .cm-inline-code:last-child) > * {
+  position: relative;
+  z-index: 1;
+}
+
+body .markdown-source-view.mod-cm6 .cm-line.HyperMD-quote:not(.HyperMD-callout):has(> .cm-formatting-quote + .cm-inline-code:last-child) > .cm-inline-code {
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  color: inherit;
+  background: transparent;
+  font-size: 0.88rem;
+  line-height: 1.68;
+  overflow-wrap: normal;
+  word-break: normal;
+  box-shadow: none;
+}
+
+body .markdown-source-view.mod-cm6 .cm-line:not(:has(> .cm-formatting-quote + .cm-inline-code:last-child)) + .cm-line.HyperMD-quote:not(.HyperMD-callout):has(> .cm-formatting-quote + .cm-inline-code:last-child),
+body .markdown-source-view.mod-cm6 .cm-line.HyperMD-quote:not(.HyperMD-callout):has(> .cm-formatting-quote + .cm-inline-code:last-child):first-child {
+  min-height: 3.25rem;
+  padding-top: 2.45rem;
+}
+
+body .markdown-source-view.mod-cm6 .cm-line:not(:has(> .cm-formatting-quote + .cm-inline-code:last-child)) + .cm-line.HyperMD-quote:not(.HyperMD-callout):has(> .cm-formatting-quote + .cm-inline-code:last-child)::after,
+body .markdown-source-view.mod-cm6 .cm-line.HyperMD-quote:not(.HyperMD-callout):has(> .cm-formatting-quote + .cm-inline-code:last-child):first-child::after {
+  border-top: 1px solid var(--esther-code-border);
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-image: linear-gradient(
+    to bottom,
+    var(--esther-code-toolbar) 0 2.35rem,
+    var(--esther-code-border) 2.35rem 2.4rem,
+    var(--esther-code-bg) 2.4rem 100%
+  );
+}
+
+body .markdown-source-view.mod-cm6 .cm-line:not(:has(> .cm-formatting-quote + .cm-inline-code:last-child)) + .cm-line.HyperMD-quote:not(.HyperMD-callout):has(> .cm-formatting-quote + .cm-inline-code:last-child)::before,
+body .markdown-source-view.mod-cm6 .cm-line.HyperMD-quote:not(.HyperMD-callout):has(> .cm-formatting-quote + .cm-inline-code:last-child):first-child::before {
+  content: "";
+  position: absolute;
+  top: 0.86rem;
+  left: 4.9rem;
+  z-index: 2;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #ff5f57;
+  box-shadow: 17px 0 0 #febc2e, 34px 0 0 #28c840;
+  pointer-events: none;
+}
+
+body .markdown-source-view.mod-cm6 .cm-line:not(:has(> .cm-formatting-quote + .cm-inline-code:last-child)) + .cm-line.HyperMD-quote:not(.HyperMD-callout):has(> .cm-formatting-quote + .cm-inline-code:last-child) > .cm-inline-code,
+body .markdown-source-view.mod-cm6 .cm-line.HyperMD-quote:not(.HyperMD-callout):has(> .cm-formatting-quote + .cm-inline-code:last-child):first-child > .cm-inline-code {
+  opacity: 0;
+}
+
+body .markdown-source-view.mod-cm6 .cm-line.HyperMD-quote:not(.HyperMD-callout):has(> .cm-formatting-quote + .cm-inline-code:last-child):not(:has(+ .cm-line > .cm-inline-code)) {
+  padding-bottom: 1em;
+}
+
+body .markdown-source-view.mod-cm6 .cm-line.HyperMD-quote:not(.HyperMD-callout):has(> .cm-formatting-quote + .cm-inline-code:last-child):not(:has(+ .cm-line > .cm-inline-code))::after {
+  border-bottom: 1px solid var(--esther-code-border);
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+body .markdown-source-view.mod-cm6 .cm-line.HyperMD-quote:not(.HyperMD-callout):has(> .cm-formatting-quote + .cm-inline-code:last-child):not(:has(+ .cm-line > .cm-inline-code)) > .cm-inline-code {
+  opacity: 0;
+}
+
+.markdown-source-view.mod-cm6 .cm-editor.cm-focused .cm-line.HyperMD-codeblock.cm-active {
+  background-color: var(--esther-code-active-line);
+}
+
+.cm-s-obsidian .cm-cursor,
+.cm-s-obsidian .cm-dropCursor {
+  border-left: 2px solid var(--esther-code-cursor);
+}
+
+.markdown-source-view.mod-cm6 .cm-content {
+  caret-color: var(--esther-code-cursor);
+}
+
+.markdown-source-view.mod-cm6 .cm-formatting-code-block,
+.markdown-source-view.mod-cm6 .code-block-flair {
+  color: var(--esther-code-muted);
+}
+
+/* Callouts */
+.callout {
+  border: 0;
+  border-radius: 16px;
+  background: var(--esther-blue-soft);
+  box-shadow: 0 8px 26px var(--esther-shadow);
+}
+
+.callout-title {
+  font-family: var(--esther-font-serif);
+  font-weight: 800;
+}
+
+.callout[data-callout="warning"],
+.callout[data-callout="question"] {
+  background: var(--esther-yellow-soft);
+}
+
+.callout[data-callout="danger"],
+.callout[data-callout="failure"],
+.callout[data-callout="bug"] {
+  background: var(--esther-red-soft);
+}
+
+.callout[data-callout="success"],
+.callout[data-callout="tip"] {
+  background: rgba(74, 222, 128, 0.11);
+}
+
+/* Tags, footnotes and embeds */
+.tag,
+a.tag {
+  padding: 0.14em 0.65em;
+  border: 0;
+  border-radius: 999px;
+  font-size: 0.8em;
+  font-weight: 650;
+}
+
+.footnotes {
+  margin-top: 4em;
+  padding-top: 1.4em;
+  border-top: 2px solid var(--esther-yellow);
+  color: var(--text-muted);
+  font-size: 0.9em;
+}
+
+.footnote-link,
+.footnote-backref {
+  color: var(--esther-red);
+}
+
+.internal-embed,
+.markdown-embed,
+.file-embed {
+  position: relative;
+  border: 1px solid var(--esther-border);
+  border-radius: 16px;
+  background: var(--esther-surface);
+  box-shadow: 0 7px 24px var(--esther-shadow);
+}
+
+.markdown-embed-title {
+  color: var(--esther-blue);
+  font-family: var(--esther-font-serif);
+  font-weight: 800;
+}
+
+.markdown-embed-link,
+.file-embed-link {
+  top: 0.65em;
+  right: 0.65em;
+  padding: 0.32em;
+  border-radius: 999px;
+  color: var(--esther-blue);
+  background: var(--esther-blue-soft);
+}
+
+.markdown-embed-content > .markdown-preview-view {
+  background: transparent;
+}
+
+.markdown-embed .markdown-preview-sizer {
+  max-width: none;
+  padding: 0 1.2em 1em;
+}
+
+/* Backlinks and outgoing links */
+:is(.backlink-pane, .outgoing-link-pane) {
+  --nav-item-size: 14px;
+  --font-text-size: 14px;
+  font-family: var(--font-interface-theme);
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.backlink-pane .search-result-file-title,
+.outgoing-link-pane .search-result-file-title {
+  color: var(--link-color);
+  font-family: var(--font-interface-theme);
+  font-size: 14px;
+  font-weight: 750;
+  line-height: 1.55;
+}
+
+:is(.backlink-pane, .outgoing-link-pane) :is(.tree-item-self, .tree-item-inner) {
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.backlink-pane .search-result-file-match,
+.outgoing-link-pane .search-result-file-match {
+  margin-block: 0.32em;
+  padding: 0.55em 0.7em;
+  border: 1px solid var(--esther-border);
+  border-radius: 10px;
+  background: var(--esther-surface);
+  font-family: var(--font-interface-theme);
+  font-size: 14px;
+  line-height: 1.65;
+}
+
+:is(.backlink-pane, .outgoing-link-pane) .search-result-file-match :is(
+  .markdown-rendered,
+  p,
+  li,
+  a,
+  span,
+  strong,
+  em,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6
+) {
+  font-family: var(--font-interface-theme);
+  font-size: 14px;
+  line-height: 1.65;
+  letter-spacing: normal;
+  text-transform: none;
+}
+
+:is(.backlink-pane, .outgoing-link-pane) .search-result-file-match :is(h1, h2, h3, h4, h5, h6) {
+  margin-block: 0.25em;
+  padding: 0;
+  border: 0;
+  color: var(--text-normal);
+  font-weight: 700;
+}
+
+:is(.backlink-pane, .outgoing-link-pane) .search-result-file-match :is(h1, h2, h3, h4, h5, h6)::before,
+:is(.backlink-pane, .outgoing-link-pane) .search-result-file-match :is(h1, h2, h3, h4, h5, h6)::after {
+  content: none;
+}
+
+.backlink-pane .tree-item-flair,
+.outgoing-link-pane .tree-item-flair {
+  min-width: 1.7em;
+  padding-inline: 0.5em;
+  border-radius: 999px;
+  color: var(--link-color);
+  background: var(--esther-blue-soft);
+  font-size: 11px;
+  font-weight: 800;
+  line-height: 1.45;
+}
+
+.image-embed img,
+.markdown-rendered img {
+  border-radius: 14px;
+  box-shadow: 0 12px 32px var(--esther-shadow);
+}
+
+.markdown-rendered hr {
+  width: 42%;
+  height: 5px;
+  margin: 3.2rem auto;
+  border: 0;
+  border-radius: 50%;
+  background: var(--esther-yellow);
+  box-shadow: 14px 0 0 var(--esther-blue), -14px 0 0 var(--esther-red);
+  opacity: 0.78;
+}
+
+/* Properties */
+.metadata-container {
+  margin-bottom: 2em;
+  padding: 1em 1.2em;
+  border: 1px solid var(--esther-border);
+  border-radius: 14px;
+  background: var(--esther-surface);
+}
+
+.metadata-properties-heading {
+  color: var(--esther-red);
+  font-family: var(--esther-font-display);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.metadata-property-key,
+.metadata-property-value {
+  border-radius: 7px;
+}
+
+/* File explorer, outline and search */
+.workspace-leaf-content[data-type="file-explorer"] {
+  --nav-indentation-guide-width: 0;
+  --nav-indentation-guide-color: transparent;
+}
+
+.workspace-leaf-content[data-type="file-explorer"] .nav-folder-children {
+  border-inline-start: 0;
+}
+
+.nav-folder-title,
+.nav-file-title,
+.tree-item-self {
+  margin-block: 1px;
+  border-radius: 8px;
+}
+
+.nav-folder-title-content {
+  color: var(--text-muted);
+  font-weight: 700;
+}
+
+.workspace-leaf-content[data-type="file-explorer"]
+  .nav-folder.mod-root
+  > .nav-folder-children
+  > .nav-folder
+  > .nav-folder-title {
+  position: relative;
+  margin-top: 4px;
+  padding-right: 28px;
+}
+
+.workspace-leaf-content[data-type="file-explorer"]
+  .nav-folder.mod-root
+  > .nav-folder-children
+  > .nav-folder
+  > .nav-folder-title
+  .nav-folder-title-content {
+  color: var(--text-normal);
+  font-family: var(--esther-font-serif);
+  font-weight: 780;
+  letter-spacing: 0.01em;
+}
+
+.workspace-leaf-content[data-type="file-explorer"]
+  .nav-folder.mod-root
+  > .nav-folder-children
+  > .nav-folder
+  > .nav-folder-title::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 9px;
+  width: 12px;
+  height: 3px;
+  border-radius: 999px;
+  background: var(--esther-yellow);
+  opacity: 0.66;
+  transform: translateY(-50%) rotate(-3deg);
+  pointer-events: none;
+}
+
+.nav-file-title.is-active {
+  border: 0;
+  background: var(--nav-item-background-active);
+  box-shadow: none;
+}
+
+.nav-file-title.is-active .nav-file-title-content {
+  color: var(--nav-item-color-active);
+  font-weight: 750;
+}
+
+.tree-item-self.is-clickable:hover,
+.nav-file-title:hover,
+.nav-folder-title:hover {
+  color: var(--nav-item-color-hover);
+  background: var(--nav-item-background-hover);
+}
+
+.workspace-split.mod-left-split .workspace-sidedock-vault-profile .workspace-drawer-vault-name {
+  color: var(--text-normal);
+  font-family: var(--esther-font-serif);
+  font-weight: 780;
+}
+
+.search-result-file-title {
+  color: var(--esther-blue);
+  font-family: var(--esther-font-serif);
+  font-weight: 800;
+}
+
+.search-result-file-match {
+  border-radius: 8px;
+}
+
+.search-result-file-matched-text,
+.is-flashing {
+  color: var(--esther-ink);
+  background: var(--esther-yellow);
+}
+
+/* Inputs, menus and settings */
+input,
+textarea,
+.search-input-container input {
+  border-color: var(--esther-border);
+  background-color: var(--esther-surface);
+  box-shadow: none;
+}
+
+select,
+.dropdown {
+  border-color: var(--esther-border);
+  background-color: var(--esther-surface);
+  background-repeat: no-repeat;
+  box-shadow: none;
+}
+
+input:focus,
+textarea:focus,
+select:focus,
+.dropdown:focus {
+  border-color: var(--esther-blue);
+  box-shadow: 0 0 0 3px var(--esther-blue-soft);
+}
+
+button:not(.clickable-icon) {
+  border: 1px solid var(--esther-border);
+  background: var(--esther-surface);
+  box-shadow: none;
+}
+
+button.mod-cta {
+  color: var(--text-on-accent);
+  border-color: var(--esther-blue);
+  background: var(--esther-blue);
+}
+
+.menu,
+.suggestion-container,
+.modal,
+.prompt {
+  border: 1px solid var(--esther-border);
+  background: var(--esther-surface-strong);
+  box-shadow: 0 18px 50px var(--esther-shadow);
+}
+
+.suggestion-item.is-selected,
+.menu-item.selected:not(.is-disabled):not(.is-label) {
+  background: var(--esther-yellow-soft);
+}
+
+/* Hover labels in the ribbon and other icon-only controls */
+.tooltip {
+  color: var(--text-normal);
+  border: 1px solid var(--esther-border);
+  background: var(--esther-surface-strong);
+  box-shadow: 0 8px 20px var(--esther-shadow);
+}
+
+/* System notices and plugin update progress */
+.notice-container .notice {
+  color: var(--text-normal);
+  border: 1px solid var(--esther-border);
+  background: var(--esther-surface-strong);
+  box-shadow: 0 12px 30px var(--esther-shadow);
+}
+
+.notice-container .notice :is(.notice-message, .notice-content) {
+  color: inherit;
+}
+
+.notice-container .notice .notice-progress {
+  background: var(--esther-blue);
+}
+
+.notice-container .notice .notice-close-button {
+  color: var(--text-muted);
+}
+
+.setting-item-heading .setting-item-name,
+.vertical-tab-nav-item.is-active {
+  color: var(--esther-blue);
+  font-family: var(--esther-font-serif);
+  font-weight: 800;
+}
+
+/* Canvas */
+.canvas-node-container {
+  border: 1px solid var(--esther-border);
+  border-radius: 16px;
+  background: var(--esther-surface);
+  box-shadow: 0 8px 26px var(--esther-shadow);
+}
+
+.canvas-node.is-focused .canvas-node-container,
+.canvas-node.is-selected .canvas-node-container {
+  border-color: var(--esther-blue);
+  box-shadow: 0 0 0 3px var(--esther-blue-soft), 0 8px 26px var(--esther-shadow);
+}
+
+/* Compact UI option for Style Settings */
+body.esther-compact-ui {
+  --nav-item-size: 0.88rem;
+  --tab-font-size: 0.78rem;
+  --status-bar-font-size: 0.72rem;
+}
+
+body.esther-compact-ui .nav-file-title,
+body.esther-compact-ui .nav-folder-title {
+  padding-block: 2px;
+}
+
+/* Optional file explorer action reveal for Style Settings */
+body:not(.is-mobile).esther-hover-file-actions
+  .workspace-leaf-content[data-type="file-explorer"]
+  > .nav-header
+  .nav-buttons-container {
+  opacity: 0;
+  transform: translateY(-5px);
+  pointer-events: none;
+  transition: opacity 160ms ease, transform 160ms ease;
+}
+
+body:not(.is-mobile).esther-hover-file-actions
+  .workspace-leaf-content[data-type="file-explorer"]
+  > .nav-header:is(:hover, :focus-within)
+  .nav-buttons-container,
+body:not(.is-mobile).esther-hover-file-actions
+  .workspace-tab-header-container:hover
+  ~ .workspace-tab-container
+  .workspace-leaf-content[data-type="file-explorer"]
+  > .nav-header
+  .nav-buttons-container {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+/* Scrollbars */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  border: 3px solid transparent;
+  border-radius: 999px;
+  background: var(--scrollbar-thumb-bg);
+  background-clip: padding-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--scrollbar-active-thumb-bg);
+  background-clip: padding-box;
+}
+
+@media (max-width: 720px) {
+  body {
+    --file-line-width: 100%;
+    --h1-size: 2.1em;
+    --h2-size: 1.52em;
+  }
+
+  .markdown-source-view.mod-cm6 > .cm-editor > .cm-scroller > .cm-sizer > .cm-content,
+  .markdown-reading-view .markdown-preview-sizer {
+    padding-top: 28px;
+    padding-inline: 22px;
+  }
+
+  .markdown-rendered blockquote {
+    padding: 1.35em 1.25em 1.25em 3.25em;
+  }
+}
+
+@media print {
+  body,
+  body.theme-dark {
+    --background-primary: #fefcf6;
+    --text-normal: #1a1a2e;
+    --text-muted: #555568;
+    --esther-ink: #17172a;
+    --esther-surface: #fffdf8;
+    --esther-surface-strong: #ffffff;
+    --esther-border: #e8e0cf;
+    --esther-shadow: transparent;
+    color: #1a1a2e;
+    background: #fefcf6;
+  }
+
+  .markdown-rendered blockquote,
+  .markdown-rendered table,
+  .callout,
+  .internal-embed {
+    box-shadow: none;
+  }
+}

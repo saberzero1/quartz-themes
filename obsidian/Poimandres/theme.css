@@ -89,13 +89,18 @@ body {
 	--background-modifier-border-focus: var(--bg_highlight);
 	--background-modifier-border-hover: var(--bg_highlight);
 	--background-modifier-form-field: var(--bg_dark2);
-	--background-modifier-form-field-highlighted: var(--bg_dark2);
+	--background-modifier-form-field-highlighted: var(--bg_dark2); /* This is an old legacy CSS var and is kept to not break the theme for older versions. */
+	--background-modifier-form-field-hover: var(--bg_dark2);
 	--background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
 	--background-modifier-success: var(--green);
+	--background-modifier-success-rgb: 123, 191, 176;
 	--background-modifier-error: var(--red1);
 	--background-modifier-error-hover: var(--red);
+	--background-modifier-error-rgb: 192, 96, 117;
+	--background-modifier-warning: var(--orange);
+	--background-modifier-warning-hover: var(--orange);
 	--background-modifier-cover: var(--bg_dark2);
-	--background-modifier-hover: var(--accent-s);
+	--background-modifier-hover: var(--bg_highlight);
 	--background-modifier-message: var(--bg_highlight_dark);
 	--background-modifier-active-hover: var(--bg);
 
@@ -103,10 +108,10 @@ body {
 	--text-faint: var(--comment);
 	--text-muted: var(--fg_dark);
 	--text-error: var(--red);
+	--text-error-hover: var(--fg); /* This is an old legacy CSS var and is kept to not break the theme for older versions. */
 	--text-accent: var(--magenta);
 	--text-accent-hover: var(--cyan);
-	--text-error-hover: var(--fg);
-	--text-selection: var(--bg_highlight_dark);
+	--text-selection: color-mix(in oklch, var(--cyan) 25%, transparent);
 	--text-on-accent: var(--bg);
 	--text-highlight-bg: var(--orange);
 	--bold-color: var(--cyan);
@@ -114,7 +119,7 @@ body {
 
 	--interactive-normal: var(--bg_dark2);
 	--interactive-hover: var(--bg);
-	--interactive-success: var(--green);
+	--interactive-success: var(--green); /* This is an old legacy CSS var and is kept to not break the theme for older versions. */
 	--interactive-accent: hsl(var(--accent-h),
 			var(--accent-s),
 			var(--accent-l));
@@ -135,9 +140,20 @@ body {
 	--border-width: 2px;
 
 	--tag-color: var(--magenta);
-	--tag-background: var(--magenta);
+	--tag-background: color-mix(in oklch, var(--magenta) 20%, transparent);
 	--tag-color-hover: var(--cyan);
-	--tag-background-hover: var(--cyan);
+	--tag-background-hover: color-mix(in oklch, var(--cyan) 20%, transparent);
+	--tag-border-color: color-mix(in oklch, var(--magenta) 40%, transparent);
+	--tag-border-color-hover: color-mix(in oklch, var(--cyan) 40%, transparent);
+	--tag-border-width: 1px;
+	--tag-corner-shape: round;
+	--tag-decoration: none;
+	--tag-decoration-hover: none;
+	--tag-padding-x: 0.65em;
+	--tag-padding-y: 0.25em;
+	--tag-radius: 2em;
+	--tag-size: var(--font-smaller);
+	--tag-weight: inherit;
 
 	--link-color: var(--fg_dark);
 	--link-color-hover: var(--cyan);
@@ -157,8 +173,6 @@ body {
 	--table-row-alt-background: var(--bg_dark2);
 	--table-row-background-hover: var(--bg_dark2);
 
-	--flashing-background: var(--bg_dark2);
-
 	--code-normal: var(--fg);
 	--code-background: var(--bg_highlight_dark);
 	--code-comment: var(--fg_dark);
@@ -172,9 +186,11 @@ body {
 	--code-tag: var(--green);
 	--code-value: var(--green);
 
-	--mermaid-note: var(--blue0);
-	--mermaid-actor: var(--fg_dark);
-	--mermaid-loopline: var(--blue0);
+	--flashing-background: var(--bg_dark2); /* This is an old legacy CSS var and is kept to not break the theme for older versions. */
+
+	--mermaid-note: var(--blue0); /* This is an old legacy CSS var and is kept to not break the theme for older versions. */
+	--mermaid-actor: var(--fg_dark); /* This is an old legacy CSS var and is kept to not break the theme for older versions. */
+	--mermaid-loopline: var(--blue0); /* This is an old legacy CSS var and is kept to not break the theme for older versions. */
 
 	--blockquote-background-color: var(--bg_dark2);
 	--callout-default: var(--blue0);
@@ -200,7 +216,7 @@ body {
 	--nav-item-background-hover: var(--bg_highlight);
 	--nav-item-color-active: var(--green);
 	--nav-item-background-active: var(--bg_highlight);
-	--nav-file-tag: var(--yellow);
+	--nav-file-tag: var(--yellow); /* This is an old legacy CSS var and is kept to not break the theme for older versions. */
 	--nav-indentation-guide-color: var(--bg_highlight);
 
 	--indentation-guide-color: var(--comment);
@@ -211,8 +227,12 @@ body {
 	--graph-node-tag: var(--orange);
 	--graph-node-attachment: var(--blue0);
 
+	--tab-text-color: var(--fg_dark);
+	--tab-text-color-active: var(--fg);
+	--tab-text-color-focused: var(--fg);
 	--tab-text-color-focused-active: var(--green);
 	--tab-text-color-focused-active-current: var(--unknown);
+	--tab-text-color-focused-highlighted: var(--magenta);
 
 	--modal-border-color: var(--bg_highlight);
 	--prompt-border-color: var(--bg_highlight);
@@ -220,8 +240,16 @@ body {
 
 	--embed-background: var(--bg_highlight);
 	--embed-padding: 1.5rem 1.5rem 0.5rem;
+	--embed-border-start: 2px solid var(--bg_highlight);
 
+	--canvas-background: var(--bg_dark2);
 	--canvas-color: var(--bg_highlight_dark);
+	--canvas-color-1: var(--red);
+	--canvas-color-2: var(--orange);
+	--canvas-color-3: var(--yellow);
+	--canvas-color-4: var(--green);
+	--canvas-color-5: var(--cyan);
+	--canvas-color-6: var(--magenta);
 
 	--toggle-thumb-color: var(--bg);
 }

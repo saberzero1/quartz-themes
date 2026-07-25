@@ -1491,16 +1491,29 @@ body.theme-light {
   ) !important;
   --vault-name-font-size: var(--font-ui-small) !important;
   --vault-name-font-weight: var(--font-medium) !important;
-  --background-tertiary: hsl(calc(var(--accent-h) + 10), 18%, 90%) !important;
+  --background-button: hsl(calc(var(--accent-h) + 20), 45%, 70%) !important;
+  --background-button-alt: hsl(calc(var(--accent-h) + 50), 15%, 85%) !important;
+  --background-highlight: hsl(
+    calc(var(--accent-h) + 10),
+    calc(var(--accent-s) - 10%),
+    calc(var(--accent-l) + 10%)
+  ) !important;
   --background-table: hsl(
     calc(var(--accent-h) + 10),
     calc(var(--accent-s) - 20%),
     calc(var(--accent-l) + 20%)
   ) !important;
-  --callout-margin: 0px;
+  --background-tertiary: hsl(calc(var(--accent-h) + 10), 18%, 90%) !important;
   --callout-gap: 1em;
+  --callout-margin: 0px;
   --callout-min-width: 200px;
   --callout-nowrap-min-width: 250px;
+  --callout-title-background: transparent;
+  --color-headings: hsl(
+    calc(var(--accent-h)),
+    calc(var(--accent-s) - 40%),
+    calc(var(--accent-l) + 17%)
+  ) !important;
   --mcc-img-snw-display: none !important;
   --text-important: hsl(
     calc(var(--accent-h) + 30),
@@ -1512,7 +1525,6 @@ body.theme-light {
     calc(var(--accent-s) - 40%),
     calc(var(--accent-l) - 50%)
   ) !important;
-  --callout-title-background: transparent;
   --A01: hsl(calc(var(--accent-h)), 30%, 80%) !important;
   --A02: hsl(calc(var(--accent-h) - 15), 30%, 80%) !important;
   --A03: hsl(calc(var(--accent-h) - 30), 30%, 80%) !important;
@@ -1524,19 +1536,7 @@ body.theme-light {
   --A09: hsl(calc(var(--accent-h) - 120), 30%, 80%) !important;
   --A10: hsl(calc(var(--accent-h) - 135), 30%, 80%) !important;
   --A11: hsl(calc(var(--accent-h) - 150), 30%, 80%) !important;
-  --background-button: hsl(calc(var(--accent-h) + 20), 45%, 70%) !important;
-  --background-button-alt: hsl(calc(var(--accent-h) + 50), 15%, 85%) !important;
-  --background-highlight: hsl(
-    calc(var(--accent-h) + 10),
-    calc(var(--accent-s) - 10%),
-    calc(var(--accent-l) + 10%)
-  ) !important;
   --background-inverted: hsl(calc(var(--accent-h)), 30%, 60%) !important;
-  --color-headings: hsl(
-    calc(var(--accent-h)),
-    calc(var(--accent-s) - 40%),
-    calc(var(--accent-l) + 17%)
-  ) !important;
   --text-folder: var(--text-title) !important;
 }
 
@@ -2641,16 +2641,29 @@ body.theme-dark {
   ) !important;
   --vault-name-font-size: var(--font-ui-small) !important;
   --vault-name-font-weight: var(--font-medium) !important;
-  --background-tertiary: hsl(calc(var(--accent-h)), 10%, 13%) !important;
+  --background-button: hsl(calc(var(--accent-h)), 30%, 30%) !important;
+  --background-button-alt: hsl(calc(var(--accent-h) - 10), 10%, 30%) !important;
+  --background-highlight: hsl(
+    calc(var(--accent-h)),
+    calc(var(--accent-s) - 70%),
+    calc(var(--accent-l) - 40%)
+  ) !important;
   --background-table: hsl(
     calc(var(--accent-h) - 30),
     calc(var(--accent-s) - 85%),
     calc(var(--accent-l) - 35%)
   ) !important;
-  --callout-margin: 0px;
+  --background-tertiary: hsl(calc(var(--accent-h)), 10%, 13%) !important;
   --callout-gap: 1em;
+  --callout-margin: 0px;
   --callout-min-width: 200px;
   --callout-nowrap-min-width: 250px;
+  --callout-title-background: transparent;
+  --color-headings: hsl(
+    calc(var(--accent-h)),
+    calc(var(--accent-s) - 55%),
+    calc(var(--accent-l) - 35%)
+  ) !important;
   --mcc-img-snw-display: none !important;
   --text-important: hsl(
     calc(var(--accent-h) + 10),
@@ -2662,7 +2675,6 @@ body.theme-dark {
     calc(var(--accent-s) - 20%),
     calc(var(--accent-l) + 30%)
   ) !important;
-  --callout-title-background: transparent;
   --A01: hsl(
     calc(var(--accent-h)),
     calc(var(--accent-s) - 50%),
@@ -2718,19 +2730,7 @@ body.theme-dark {
     calc(var(--accent-s) - 50%),
     calc(var(--accent-l) - 43%)
   ) !important;
-  --background-button: hsl(calc(var(--accent-h)), 30%, 30%) !important;
-  --background-button-alt: hsl(calc(var(--accent-h) - 10), 10%, 30%) !important;
-  --background-highlight: hsl(
-    calc(var(--accent-h)),
-    calc(var(--accent-s) - 70%),
-    calc(var(--accent-l) - 40%)
-  ) !important;
   --background-inverted: hsl(calc(var(--accent-h)), 30%, 10%) !important;
-  --color-headings: hsl(
-    calc(var(--accent-h)),
-    calc(var(--accent-s) - 55%),
-    calc(var(--accent-l) - 35%)
-  ) !important;
   --text-folder: var(--text-title) !important;
 }
 

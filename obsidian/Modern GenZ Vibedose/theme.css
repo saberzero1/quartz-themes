@@ -68,13 +68,17 @@ body {
 
 	--text-highlight-bg: dodgerblue;
 	--background-primary: var(--background-secondary);
-	--background-secondary: #101010;
+	--background-secondary: #151515;
 
 	--ribbon-background: var(--background-secondary);
 	--divider-color: #292929;
 	--status-bar-background: var(--background-secondary);
 	--titlebar-background: var(--background-secondary);
 	--titlebar-background-focused: var(--background-secondary);
+
+	thead {
+		background-color: #353535;
+	}
 
 	.hr hr {
 		background-color: #444a4f;
@@ -120,7 +124,7 @@ body {
 	--divider-color: transparent;
 
 	--background-primary: var(--background-secondary);
-	--background-secondary: #fff;
+	--background-secondary: #ffffff;
 
 	--ribbon-background: var(--background-secondary);
 	--status-bar-background: var(--background-secondary);
@@ -131,6 +135,10 @@ body {
 	.nav-buttons-container {
 		background-color: #f7f7f7;
 		border-radius: 16px;
+	}
+
+	thead {
+		background-color: var(--faded-blue);
 	}
 
 	.hr hr {
@@ -148,14 +156,14 @@ body {
 	}
 }
 
-.markdown-source-view.mod-cm6 .cm-content > * {
-	padding-bottom: 0.5rem !important;
-}
-
 .workspace-tab-header.is-active::before,
 .workspace-tab-header.is-active::after {
 	display: none;
 }
+
+img {
+    border-radius: 8px;
+  }
 
 svg * {
 	stroke-linecap: square;
@@ -201,7 +209,7 @@ svg * {
 }
 
 .titlebar-button {
-	border-radius: 16px;
+	border-radius: 8px;
 }
 
 .dropdown,
@@ -219,11 +227,7 @@ button {
 	right: 16px;
 }
 
-/* ============= Callout Customization ============ */
-
-/* .callout[data-callout="note"]{
-	background-color: #0d5c56;
-} */
+/* .callout[data-callout="note"]{} */
 
 .cm-s-obsidian span.cm-formatting-highlight,
 .cm-s-obsidian span.cm-highlight {
@@ -234,19 +238,8 @@ button {
 	padding-bottom: 1px;
 }
 
-.cm-content {
-	margin: 0px 32px 0px 0px;
-}
-
-.cm-s-obsidian .cm-line.HyperMD-header::before {
-	content: "";
-	display: block;
-	height: var(--p-spacing);
-}
-
 .cm-formatting-list {
 	margin: 0px;
-	padding: 0px 8px 0px 8px;
 }
 
 .hr hr {
@@ -259,11 +252,9 @@ button {
 th * {
 	font-weight: bold;
 	color: white;
-	text-align: center;
-}
-
-thead {
-	background-color: #353535;
+	display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .table-wrapper {
@@ -271,19 +262,7 @@ thead {
 	overflow: hidden;
 }
 
-/* Bold in live edit */
-.cm-strong {
-	color: #d7815f !important;
-	font-weight: 700;
-}
-
-/* Italic in live edit */
-.cm-em {
-	color: #d7815f !important;
-	font-style: italic;
-}
-
-/* Bold+Italic combined */
-.cm-strong.cm-em {
-	color: #ff7700 !important; /* distinct color for bold+italic */
+.cm-s-obsidian .cm-line.HyperMD-header {
+	padding-bottom: var(--p-spacing);
+	padding-top: var(--p-spacing);
 }

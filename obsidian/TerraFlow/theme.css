@@ -5,10 +5,10 @@ id: seasonal-themes
 settings:
     -
         id: seasonal-heading
-        title: 🎨 Color Scheme
+        title: Color Scheme
         type: heading
         level: 2
-        collapsed: false
+        collapsed: true
     -
         id: season-selector
         title: Active Season
@@ -47,16 +47,19 @@ settings:
             -
                 label: 🏜️ Melange
                 value: melange-theme
+            -
+                label: 🌆 Tokyo Night
+                value: tokyo-theme
     -
         id: use-custom-accent
-        title: Custom Accent Colour
-        description: Enable to override the seasonal accent with the colour below
+        title: Custom Accent Color
+        description: Enable to override the seasonal accent with the color below
         type: class-toggle
         default: false
     -
         id: custom-accent
-        title: Accent Colour (when override is on)
-        description: The accent colour used when Custom Accent Override is enabled
+        title: Accent Color (when override is on)
+        description: The accent color used when Custom Accent Override is enabled
         type: variable-color
         default: "#5E7D6E"
         opacity: false
@@ -75,8 +78,8 @@ settings:
         default: false
     -
         id: heading-color-intensity
-        title: Heading Colour Intensity
-        description: Muted blends headings into the text colour (dark, barely noticeable); Vivid lifts them to full palette saturation (funky!)
+        title: Heading Color Intensity
+        description: Muted blends headings into the text color (dark, barely noticeable); Vivid lifts them to full palette saturation (funky!)
         type: class-select
         allowEmpty: false
         default: heading-color-default
@@ -93,7 +96,7 @@ settings:
     -
         id: tinted-body-text
         title: Season-Tinted Body Text
-        description: Blend the season's accent colour into body text so the palette shows through — verified readable in every season
+        description: Blend the season's accent color into body text so the palette shows through — verified readable in every season
         type: class-toggle
         default: false
     -
@@ -114,20 +117,20 @@ settings:
         default: false
     -
         id: custom-heading-colors-heading
-        title: Custom Heading Colours
-        description: Override the season's H1–H6 colours with your own
+        title: Custom Heading Colors
+        description: Override the season's H1–H6 colors with your own
         type: heading
         level: 3
         collapsed: true
     -
         id: custom-heading-colors
-        title: Enable Custom Heading Colours
-        description: Use the colours below instead of the season palette — composes with Heading Colour Intensity
+        title: Custom Heading Colors
+        description: Use the colors below instead of the season palette — composes with Heading Color Intensity
         type: class-toggle
         default: false
     -
         id: custom-h1
-        title: H1 Colour
+        title: H1 Color
         type: variable-color
         format: hex
         opacity: false
@@ -138,7 +141,7 @@ settings:
                 format: rgb-values
     -
         id: custom-h2
-        title: H2 Colour
+        title: H2 Color
         type: variable-color
         format: hex
         opacity: false
@@ -149,7 +152,7 @@ settings:
                 format: rgb-values
     -
         id: custom-h3
-        title: H3 Colour
+        title: H3 Color
         type: variable-color
         format: hex
         opacity: false
@@ -160,7 +163,7 @@ settings:
                 format: rgb-values
     -
         id: custom-h4
-        title: H4 Colour
+        title: H4 Color
         type: variable-color
         format: hex
         opacity: false
@@ -171,7 +174,7 @@ settings:
                 format: rgb-values
     -
         id: custom-h5
-        title: H5 Colour
+        title: H5 Color
         type: variable-color
         format: hex
         opacity: false
@@ -182,7 +185,7 @@ settings:
                 format: rgb-values
     -
         id: custom-h6
-        title: H6 Colour
+        title: H6 Color
         type: variable-color
         format: hex
         opacity: false
@@ -194,7 +197,7 @@ settings:
 
     -
         id: interface-heading
-        title: 🖥️ Interface
+        title: Interface
         type: heading
         level: 2
         collapsed: true
@@ -221,7 +224,7 @@ settings:
     -
         id: depth-warm
         title: Tinted Ambient Shadows
-        description: Tint shadows with the accent colour for a warm, Apple-style ambient elevation (requires Depth & Shadows)
+        description: Tint shadows with the accent color for a warm, Apple-style ambient elevation (requires Depth & Shadows)
         type: class-toggle
         default: false
     -
@@ -231,15 +234,118 @@ settings:
         type: class-toggle
         default: false
     -
-        id: system-fonts
-        title: System Font (San Francisco)
-        description: Use the native system font stack (SF Pro on Apple platforms) for text and interface
+        id: neutral-chrome
+        title: Neutral Chrome
+        description: Reserve the accent color for selection and active states — icon and button hovers wash gray instead of tinting, and the accent glow is removed
+        type: class-toggle
+        default: false
+    -
+        id: file-explorer-style
+        title: File Explorer Style
+        description: Folder presentation in the file browser
+        type: class-select
+        allowEmpty: false
+        default: explorer-style-rainbow
+        options:
+            -
+                label: Rainbow Cards (Default)
+                value: explorer-style-rainbow
+            -
+                label: Minimal
+                value: explorer-style-minimal
+            -
+                label: Finder
+                value: explorer-style-finder
+            -
+                label: Glass
+                value: explorer-style-glass
+    -
+        id: enable-floating-nav
+        title: Floating Nav Buttons
+        description: Transform sidebar navigation buttons into a floating pill that expands on hover
+        type: class-toggle
+        default: false
+    -
+        id: show-header-on-hover
+        title: Show View Header on Hover
+        description: Only show the view header (title and buttons) when hovering the top area
+        type: class-toggle
+        default: false
+    -
+        id: ribbon-autohide
+        title: Auto-Hide Ribbon
+        description: Hide the ribbon completely — glide your cursor to the left screen edge (or tab into it) and it slides back in, pushing the workspace over
+        type: class-toggle
+        default: false
+    -
+        id: ambient-gradient
+        title: Ambient Accent Gradient
+        description: Wash the top of the workspace with a soft accent-color gradient that fades into the background
+        type: class-toggle
+        default: false
+    -
+        id: scroll-edge-fade
+        title: Scroll Edge Dissolve
+        description: Note content melts softly into the chrome at the top and bottom of the scroll area instead of clipping hard
+        type: class-toggle
+        default: false
+    -
+        id: pill-tabs
+        title: Soft Pill Tabs
+        description: Restyle workspace tabs as quiet translucent pills instead of squared tab shapes
+        type: class-toggle
+        default: false
+
+    -
+        id: liquid-glass-heading
+        title: Liquid Glass
+        type: heading
+        level: 2
+        collapsed: true
+    -
+        id: tf-glass-tint
+        title: Glass Tint
+        description: How solid the glass material is across menus, popovers, panels and modals — lower is clearer, higher is more tinted
+        type: variable-number-slider
+        default: 65
+        min: 35
+        max: 90
+        step: 5
+        format: "%"
+    -
+        id: tf-liquid-tags
+        title: Liquid Tags
+        description: Tags become gel chips with a specular rim, seasonal tint, and a squashy press
+        type: class-toggle
+        default: false
+    -
+        id: tf-liquid-properties
+        title: Liquid Properties Panel
+        description: The frontmatter/properties block becomes a floating frosted card with a specular edge
+        type: class-toggle
+        default: false
+    -
+        id: tf-liquid-tables
+        title: Liquid Tables
+        description: Whole tables become liquid glass with a distinct seasonal-accent header row that sticks while rows scroll beneath it (reading mode)
+        type: class-toggle
+        default: false
+    -
+        id: tf-liquid-statusbar
+        title: Liquid Status Bar
+        description: The expanded status pill gets true glass material — refraction blur and a specular rim
+        type: class-toggle
+        default: false
+    -
+        id: tf-liquid-prompt
+        title: Liquid Command Palette
+        description: Deeper refraction on the palette and a liquid gradient on the selected row
         type: class-toggle
         default: false
 
     -
         id: animations-heading
-        title: ✨ Animations
+        title: Animations
         type: heading
         level: 2
         collapsed: true
@@ -257,12 +363,183 @@ settings:
             -
                 label: Whimsy (Bouncy)
                 value: animation-style-whimsy
+    -
+        id: smooth-caret
+        title: Smooth Caret (iA Writer)
+        description: The text cursor glides between positions instead of jumping — satisfying, but turn off if it feels laggy while typing
+        type: class-toggle
+        default: false
+    -
+        id: scroll-progress
+        title: Reading Progress Bar
+        description: A hairline accent bar under the note header that fills as you scroll through the note
+        type: class-toggle
+        default: false
+    -
+        id: scroll-reveal
+        title: Rise Into View
+        description: Callouts, tables, images and code blocks gently fade and rise as they scroll into view (reading mode)
+        type: class-toggle
+        default: false
 
     -
         id: content-styles-heading
-        title: ✍️ Editor & Content
+        title: Editor & Content
         type: heading
         level: 2
+        collapsed: true
+    -
+        id: font-normal
+        title: Body Text Weight
+        description: Font weight for body text (Obsidian default is 400)
+        type: variable-number-slider
+        default: 400
+        min: 300
+        max: 600
+        step: 50
+    -
+        id: optical-text-trim
+        title: Optical Text Centering
+        description: Trim the font's invisible leading in short labels (tag chips, tab titles, callout titles) so text centers on its letterforms, not its line box
+        type: class-toggle
+        default: true
+    -
+        id: tf-luminous
+        title: Luminous Details
+        description: Horizontal rules become glowing seasonal gradient hairlines and images get a gentle hover lift with an accent-tinted shadow
+        type: class-toggle
+        default: false
+    -
+        id: tf-embed-cards
+        title: Elegant Embed Cards
+        description: Note embeds and transclusions become soft accent-edged cards with a hover lift and a link icon that appears on hover
+        type: class-toggle
+        default: false
+    -
+        id: tf-aurora-title
+        title: Aurora Note Title
+        description: The inline note title shimmers with a slow-drifting gradient of the season's heading colors
+        type: class-toggle
+        default: false
+    -
+        id: link-style-selector
+        title: Link Style
+        description: Choose a visual style for links in your notes
+        type: class-select
+        allowEmpty: false
+        default: link-style-default
+        options:
+            -
+                label: Default (Subtle Pill)
+                value: link-style-default
+            -
+                label: Plain (No Background)
+                value: link-style-plain
+            -
+                label: Underline Accent
+                value: link-style-underline
+            -
+                label: Neon Glow
+                value: link-style-glow
+    -
+        id: highlight-style-selector
+        title: Highlight Style
+        description: Choose a visual style for text highlights
+        type: class-select
+        allowEmpty: false
+        default: highlight-style-default
+        options:
+            -
+                label: Default
+                value: highlight-style-default
+            -
+                label: Glass
+                value: highlight-style-glass
+    -
+        id: blockquote-style-selector
+        title: Blockquote Style
+        description: Choose a visual style for blockquotes in your notes
+        type: class-select
+        allowEmpty: false
+        default: blockquote-style-default
+        options:
+            -
+                label: Default
+                value: blockquote-style-default
+            -
+                label: Modern Glass
+                value: blockquote-style-glass
+            -
+                label: Bold Dramatic
+                value: blockquote-style-bold
+            -
+                label: Liquid Glass
+                value: blockquote-style-liquid
+    -
+        id: callout-style-selector
+        title: Callout Style
+        description: Choose a visual style for your callouts
+        type: class-select
+        allowEmpty: false
+        default: callout-style-default
+        options:
+            -
+                label: Default (Gradient)
+                value: callout-style-default
+            -
+                label: Vintage Paper
+                value: callout-style-vintage
+            -
+                label: Modern Glass
+                value: callout-style-glass
+            -
+                label: Bold Border
+                value: callout-style-bold
+            -
+                label: Liquid Glass
+                value: callout-style-liquid
+    -
+        id: inline-code-accent
+        title: Accent Inline Code
+        description: Highlight inline code with gradient backgrounds and accent colors
+        type: class-toggle
+        default: false
+    -
+        id: tabular-numerics
+        title: Tabular Numerics
+        description: Use tabular (fixed-width) numerals in metadata, tables, and status bar for precise alignment
+        type: class-toggle
+        default: false
+    -
+        id: tag-chips
+        title: Braun Tag Chips
+        description: Restyle inline tags as minimal uppercase chips — no background, hairline border, tight tracking
+        type: class-toggle
+        default: false
+    -
+        id: enable-fancy-bullets
+        title: Fancy Multilevel Bullet Styles
+        description: Unique custom bullet shapes per list nesting level
+        type: class-toggle
+        default: false
+    -
+        id: caret-accent
+        title: Accent Caret & Selection
+        description: Color the cursor caret and text-selection with the accent color (visionOS-style)
+        type: class-toggle
+        default: false
+    -
+        id: caret-no-blink
+        title: Static Caret (No Blink)
+        description: Keeps the cursor steady instead of blinking — easier on the eyes during long writing sessions
+        type: class-toggle
+        default: false
+    -
+        id: heading-case-heading
+        title: Headings
+        description: Style, alignment, typography, and per-level text case
+        type: heading
+        level: 3
         collapsed: true
     -
         id: heading-style-selector
@@ -291,6 +568,9 @@ settings:
                 label: Glass (Frosted)
                 value: heading-style-glass
             -
+                label: Liquid Glass
+                value: heading-style-liquid
+            -
                 label: Badge (Pill)
                 value: heading-style-badge
     -
@@ -314,15 +594,15 @@ settings:
         type: variable-text
         default: inherit
     -
-        id: heading-case-heading
-        title: Heading Case
-        description: Per-level text case — Title Case capitalizes the first letter of every word
-        type: heading
-        level: 3
-        collapsed: true
+        id: heading-tight-tracking
+        title: Tight Heading Tracking
+        description: Apply negative letter-spacing to H1/H2 for Apple-style optical display tightening
+        type: class-toggle
+        default: false
     -
         id: h1-case
         title: H1 Case
+        description: Title Case capitalizes the first letter of every word
         type: class-select
         allowEmpty: false
         default: h1-case-normal
@@ -417,101 +697,6 @@ settings:
                 label: UPPERCASE
                 value: h6-case-upper
     -
-        id: heading-tight-tracking
-        title: Tight Heading Tracking
-        description: Apply negative letter-spacing to H1/H2 for Apple-style optical display tightening
-        type: class-toggle
-        default: false
-    -
-        id: link-style-selector
-        title: Link Style
-        description: Choose a visual style for links in your notes
-        type: class-select
-        allowEmpty: false
-        default: link-style-default
-        options:
-            -
-                label: Default (Subtle Pill)
-                value: link-style-default
-            -
-                label: Plain (No Background)
-                value: link-style-plain
-            -
-                label: Underline Accent
-                value: link-style-underline
-            -
-                label: Neon Glow
-                value: link-style-glow
-    -
-        id: highlight-style-selector
-        title: Highlight Style
-        description: Choose a visual style for text highlights
-        type: class-select
-        allowEmpty: false
-        default: highlight-style-default
-        options:
-            -
-                label: Default
-                value: highlight-style-default
-            -
-                label: Glass
-                value: highlight-style-glass
-    -
-        id: blockquote-style-selector
-        title: Blockquote Style
-        description: Choose a visual style for blockquotes in your notes
-        type: class-select
-        allowEmpty: false
-        default: blockquote-style-default
-        options:
-            -
-                label: Default
-                value: blockquote-style-default
-            -
-                label: Modern Glass
-                value: blockquote-style-glass
-            -
-                label: Bold Dramatic
-                value: blockquote-style-bold
-    -
-        id: callout-style-selector
-        title: Callout Style
-        description: Choose a visual style for your callouts
-        type: class-select
-        allowEmpty: false
-        default: callout-style-default
-        options:
-            -
-                label: Default (Gradient)
-                value: callout-style-default
-            -
-                label: Vintage Paper
-                value: callout-style-vintage
-            -
-                label: Modern Glass
-                value: callout-style-glass
-            -
-                label: Bold Border
-                value: callout-style-bold
-    -
-        id: inline-code-accent
-        title: Accent Inline Code
-        description: Highlight inline code with gradient backgrounds and accent colors
-        type: class-toggle
-        default: false
-    -
-        id: tabular-numerics
-        title: Tabular Numerics
-        description: Use tabular (fixed-width) numerals in metadata, tables, and status bar for precise alignment
-        type: class-toggle
-        default: false
-    -
-        id: caret-accent
-        title: Accent Caret & Selection
-        description: Colour the cursor caret and text-selection with the accent colour (visionOS-style)
-        type: class-toggle
-        default: false
-    -
         id: alt-checkboxes-heading
         title: Alternate Checkboxes
         description: Decorative task states — [/], [-], [>], [?], [!], [*] and more
@@ -520,7 +705,7 @@ settings:
         collapsed: true
     -
         id: alt-checkboxes
-        title: Enable Alternate Checkboxes
+        title: Alternate Checkboxes
         description: Style extended task states with seasonal colors and glyphs in editor and reading mode
         type: class-toggle
         default: false
@@ -561,71 +746,8 @@ settings:
         default: false
 
     -
-        id: focus-mode-heading
-        title: 🔬 Deep Focus Mode
-        description: Science-backed single-switch mode — sepia/warm-dark palette, neutral headings, flattened chrome, 68ch measure. Overrides any active season palette.
-        type: heading
-        level: 2
-        collapsed: true
-    -
-        id: focus-mode
-        title: Enable Deep Focus Mode
-        description: Activates warm sepia (light) or warm dark (dark) palette, collapses heading colour hierarchy, kills decorative backgrounds and animations, and hides the ribbon and status bar. Overrides whatever season is active.
-        type: class-toggle
-        default: false
-    -
-        id: focus-mode-dim-paragraphs
-        title: Typewriter Dimming
-        description: Fade non-active lines to ~50% opacity in live-preview (iA Writer style). Reading mode dims all paragraphs until hovered.
-        type: class-toggle
-        default: false
-    -
-        id: focus-mode-hide-sidebars
-        title: Hide Sidebar Panels
-        description: Collapse the left and right sidebar content panels so only the editor canvas is visible.
-        type: class-toggle
-        default: false
-    -
-        id: focus-mode-keep-chrome
-        title: Keep Ribbon & Status Bar
-        description: Escape hatch — show ribbon and status bar even in Focus Mode. Palette and heading neutralisation remain active.
-        type: class-toggle
-        default: false
-
-    -
-        id: ui-elements-heading
-        title: 🖼️ UI Elements
-        type: heading
-        level: 2
-        collapsed: true
-    -
-        id: enable-fancy-bullets
-        title: Fancy Multilevel Bullet Styles
-        description: Toggle unique custom bullet shapes
-        type: class-toggle
-        default: false
-    -
-        id: tag-chips
-        title: Braun Tag Chips
-        description: Restyle inline tags as minimal uppercase chips — no background, hairline border, tight tracking
-        type: class-toggle
-        default: false
-    -
-        id: enable-floating-nav
-        title: Floating Nav Buttons
-        description: Transform sidebar navigation buttons into a floating pill that expands on hover.
-        type: class-toggle
-        default: false
-    -
-        id: show-header-on-hover
-        title: Show View Header on Hover
-        description: Only show the entire view header (title and buttons) when hovering over the top area.
-        type: class-toggle
-        default: false
-
-    -
         id: layout-heading
-        title: 📐 Layout & Spacing
+        title: Layout & Spacing
         type: heading
         level: 2
         collapsed: true
@@ -637,17 +759,28 @@ settings:
         default: 64ch
     -
         id: editor-line-height
-        title: Editor Line Height
-        description: Line height for editor text (e.g. 1.4, 1.6, 1.8)
+        title: Line Height
+        description: Line height for editor and reading view text (e.g. 1.4, 1.6, 1.8)
         type: variable-text
         default: "1.6"
     -
+        id: focus-grid
+        title: Focus Dot Grid
+        description: Faint Bauhaus-style 24px dot grid behind the editor — tactile, barely perceptible
+        type: class-toggle
+        default: false
+    -
         id: block-width-heading
         title: Block Width (cssclasses)
-        description: "Add cssclasses to a note's properties: wide-page, full-page, wide-table, wide-image"
         type: heading
         level: 3
         collapsed: true
+    -
+        id: block-width-info
+        title: Usage
+        type: info-text
+        markdown: true
+        description: "Add `cssclasses` to a note's properties: `wide-page`, `full-page`, `wide-table`, `wide-image`"
     -
         id: wide-block-width
         title: Wide Block Width
@@ -657,10 +790,15 @@ settings:
     -
         id: banners-cards-heading
         title: "Banners & Cards (cssclasses)"
-        description: "banner: mark an image ![[img|banner]] as a cover. cards: render Dataview tables as a card grid"
         type: heading
         level: 3
         collapsed: true
+    -
+        id: banners-cards-info
+        title: Usage
+        type: info-text
+        markdown: true
+        description: "`banner`: mark an image `![[img|banner]]` as a cover · `cards`: render Dataview tables as a card grid"
     -
         id: banner-height
         title: Banner Height
@@ -673,41 +811,66 @@ settings:
         description: Minimum card width in notes using the cards cssclass
         type: variable-text
         default: 180px
+
     -
-        id: focus-grid
-        title: Focus Dot Grid
-        description: Faint Bauhaus-style 24px dot grid behind the editor — tactile, barely perceptible
+        id: focus-mode-heading
+        title: Deep Focus Mode
+        type: heading
+        level: 2
+        collapsed: true
+    -
+        id: focus-mode
+        title: Deep Focus Mode
+        description: Warm sepia (light) or warm dark (dark) palette, neutral heading hierarchy, no decorative backgrounds or animations, ribbon and status bar hidden, 68ch measure
+        type: class-toggle
+        default: false
+    -
+        id: focus-mode-dim-paragraphs
+        title: Typewriter Dimming
+        description: Fade non-active lines to ~50% opacity in live-preview (iA Writer style). Reading mode dims all paragraphs until hovered.
+        type: class-toggle
+        default: false
+    -
+        id: focus-mode-hide-sidebars
+        title: Hide Sidebar Panels
+        description: Collapse the left and right sidebar content panels so only the editor canvas is visible
+        type: class-toggle
+        default: false
+    -
+        id: focus-mode-keep-chrome
+        title: Keep Ribbon & Status Bar
+        description: Escape hatch — show ribbon and status bar even in Focus Mode. Palette and heading neutralisation remain active.
         type: class-toggle
         default: false
 
     -
         id: performance-heading
-        title: ⚡ Performance & Accessibility
+        title: Performance & Accessibility
         type: heading
         level: 2
         collapsed: true
     -
         id: disable-ui-animations
         title: Disable UI Animations
-        description: Turn off subtle pop-up animations for menus and modals (Enabled by default)
+        description: Turn off pop-up and press animations across the interface
         type: class-toggle
         default: false
     -
         id: disable-modal-frost
         title: Disable Modal Frost
-        description: Turn off frosted glass effect for modal backgrounds (Enabled by default)
+        description: Turn off frosted glass effect for modal backgrounds
         type: class-toggle
         default: false
     -
         id: disable-glass-menus
         title: Disable Glass Menus
-        description: Turn off glass effects for menus, popovers, and suggestions.
+        description: Turn off glass effects for menus, popovers, and suggestions
         type: class-toggle
         default: false
     -
         id: disable-shadows
         title: Disable Box Shadows
-        description: Remove all box-shadows and elevation styling for maximum speed and flat look.
+        description: Remove all box-shadows and elevation styling for maximum speed and a flat look
         type: class-toggle
         default: false
     -
@@ -730,6 +893,9 @@ settings:
 /* ========================================= */
 
 :root {
+    /* Enable height: 0 → auto transitions everywhere (Chrome 129+).
+       No effect unless an element also has a height transition — safe to set globally. */
+    interpolate-size: allow-keywords;
     --s1: 4px;
     --s2: 8px;
     --s3: 12px;
@@ -752,9 +918,9 @@ settings:
     --shadow-overlay: 0 10px 40px rgba(0, 0, 0, 0.16);
     --shadow-overlay-dark: 0 12px 48px rgba(0, 0, 0, 0.45);
     --accent-glow: 0 0 12px rgba(var(--primary-color-rgb), .35);
-    --fast: 0.15s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-    --normal: 0.25s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-    --slow: 0.32s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    --fast: 0.15s cubic-bezier(0.32, 0.72, 0, 1);
+    --normal: 0.25s cubic-bezier(0.32, 0.72, 0, 1);
+    --slow: 0.32s cubic-bezier(0.32, 0.72, 0, 1);
     --bounce: 0.25s cubic-bezier(.34, 1.15, .64, 1);
     --weight-normal: 400;
     --weight-medium: 500;
@@ -804,19 +970,35 @@ settings:
     --dur-quick: 0.22s;
     --dur-modal: 0.34s;
     --dur-sheet: 0.42s;
-    --transition-ui: 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-    --transition-bounce: 0.3s var(--ease-bounce-md);
-    --transition-callout-link: transform 0.18s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 0.15s cubic-bezier(0.25, 0.46, 0.45, 0.94), background-color 0.18s, color 0.18s;
-    --transition-depth: box-shadow 0.2s var(--ease-bounce-sm), transform 0.2s var(--ease-bounce-sm);
+    --transition-ui: 0.22s cubic-bezier(0.32, 0.72, 0, 1);
+    --transition-bounce: 0.3s var(--ease-spring-md);
+    --transition-callout-link: transform 0.18s cubic-bezier(0.32, 0.72, 0, 1), opacity 0.15s cubic-bezier(0.32, 0.72, 0, 1), background-color 0.18s, color 0.18s;
+    --transition-depth: box-shadow 0.2s var(--ease-spring-sm), transform 0.2s var(--ease-spring-sm);
 
     /* ===== WHIMSY ANIMATION TOKENS ===== */
 
-    /* Easing Curves - Bounce Intensities */
-    --ease-bounce-sm: cubic-bezier(0.175, 0.885, 0.32, 1.2);
-    --ease-bounce-md: cubic-bezier(0.175, 0.885, 0.32, 1.5);
-    --ease-bounce-lg: cubic-bezier(0.175, 0.885, 0.32, 1.8);
-    --ease-bounce-xl: cubic-bezier(0.175, 0.885, 0.32, 2.2);
-    --ease-overshoot: cubic-bezier(0.68, -0.3, 0.32, 1.3);
+    /* True spring curves via linear() — damped harmonic oscillators sampled
+       at ~2% resolution (48 points). Sparse hand-placed points read as
+       piecewise-linear chop at large travel; dense sampling is what makes
+       the motion fluid. Generated: x(t) = 1 - e^(-ζωt)(cos(ωdt) + (ζω/ωd)sin(ωdt)) */
+    /* Anticipation dip → overshoot → settle (dip to -0.05, peak 1.10) */
+    --ease-overshoot: linear(0, -0.0225 2.1%, -0.0402 4.2%, -0.0493 6.25%, -0.0478 8.3%, -0.036 10.4%, -0.0165 12.5%, 0.0032 14.6%, 0.0593 16.7%, 0.1655 18.75%, 0.2996 20.8%, 0.4438 22.9%, 0.5849 25%, 0.7139 27.1%, 0.8251 29.2%, 0.916 31.25%, 0.9861 33.3%, 1.037 35.4%, 1.069 37.5%, 1.088 39.6%, 1.095 41.7%, 1.093 43.75%, 1.085 45.8%, 1.073 47.9%, 1.06 50%, 1.046 52.1%, 1.033 54.2%, 1.022 56.25%, 1.012 58.3%, 1.004 60.4%, 0.9987 62.5%, 0.9948 64.6%, 0.9924 66.7%, 0.9912 68.75%, 0.991 70.8%, 0.9915 72.9%, 0.9925 75%, 0.9937 77.1%, 0.995 79.2%, 0.9962 81.25%, 0.9974 83.3%, 0.9984 85.4%, 0.9992 87.5%, 0.9999 89.6%, 1 91.7%, 1.001 93.75%, 1.001 95.8%, 1.001 97.9%, 1);
+    /* Quick, one gentle overshoot (peak 1.054, ζ=0.68 ω=13) */
+    --ease-spring-sm: linear(0, 0.0324 2.1%, 0.1138 4.2%, 0.2241 6.25%, 0.3478 8.3%, 0.4732 10.4%, 0.592 12.5%, 0.6991 14.6%, 0.7916 16.7%, 0.8683 18.75%, 0.9294 20.8%, 0.9759 22.9%, 1.01 25%, 1.032 27.1%, 1.046 29.2%, 1.053 31.25%, 1.054 33.3%, 1.052 35.4%, 1.047 37.5%, 1.041 39.6%, 1.034 41.7%, 1.027 43.75%, 1.021 45.8%, 1.015 47.9%, 1.011 50%, 1.006 52.1%, 1.003 54.2%, 1.001 56.25%, 0.9992 58.3%, 0.9981 60.4%, 0.9974 62.5%, 0.9971 64.6%, 0.9971 66.7%, 0.9975 70.8%, 0.9982 75%, 0.9989 79.2%, 0.9995 83.3%, 0.9998 87.5%, 1);
+    /* Lively, faint second wave (peak 1.126, ζ=0.55 ω=14) */
+    --ease-spring-md: linear(0, 0.0381 2.1%, 0.1352 4.2%, 0.2681 6.25%, 0.4175 8.3%, 0.5679 10.4%, 0.7083 12.5%, 0.8313 14.6%, 0.9326 16.7%, 1.011 18.75%, 1.067 20.8%, 1.103 22.9%, 1.122 25%, 1.126 27.1%, 1.121 29.2%, 1.108 31.25%, 1.091 33.3%, 1.072 35.4%, 1.053 37.5%, 1.035 39.6%, 1.02 41.7%, 1.007 43.75%, 0.9977 45.8%, 0.9909 47.9%, 0.9867 50%, 0.9845 52.1%, 0.9841 54.2%, 0.9849 56.25%, 0.9866 58.3%, 0.9888 60.4%, 0.9912 62.5%, 0.9936 64.6%, 0.9958 66.7%, 0.9977 68.75%, 0.9992 70.8%, 1.001 75%, 1.002 79.2%, 1.002 83.3%, 1.001 87.5%, 1.001 91.7%, 1 95.8%, 1);
+    /* Big double bounce (peak 1.232, dip 0.946, ζ=0.42 ω=16) */
+    --ease-spring-xl: linear(0, 0.0503 2.1%, 0.1794 4.2%, 0.3558 6.25%, 0.551 8.3%, 0.7417 10.4%, 0.9105 12.5%, 1.047 14.6%, 1.145 16.7%, 1.206 18.75%, 1.232 20.8%, 1.229 22.9%, 1.205 25%, 1.167 27.1%, 1.123 29.2%, 1.077 31.25%, 1.035 33.3%, 1 35.4%, 0.9739 37.5%, 0.9564 39.6%, 0.9473 41.7%, 0.9456 43.75%, 0.9495 45.8%, 0.9572 47.9%, 0.9672 50%, 0.9779 52.1%, 0.9881 54.2%, 0.997 56.25%, 1.004 58.3%, 1.009 60.4%, 1.012 62.5%, 1.013 64.6%, 1.012 66.7%, 1.011 68.75%, 1.009 70.8%, 1.006 72.9%, 1.004 75%, 1.001 77.1%, 0.9996 79.2%, 0.9983 81.25%, 0.9975 83.3%, 0.9971 85.4%, 0.9971 87.5%, 0.9973 89.6%, 0.9978 91.7%, 0.9983 93.75%, 0.9989 95.8%, 0.9995 97.9%, 1);
+    /* Soft landing: one late overshoot, long drift to rest (peak 1.038, ζ=0.72 ω=9) */
+    --ease-spring-soft: linear(0, 0.016 2.1%, 0.0585 4.2%, 0.1199 6.25%, 0.1938 8.3%, 0.2749 10.4%, 0.3591 12.5%, 0.4431 14.6%, 0.5243 16.7%, 0.601 18.75%, 0.6717 20.8%, 0.7358 22.9%, 0.7928 25%, 0.8427 27.1%, 0.8857 29.2%, 0.922 31.25%, 0.9521 33.3%, 0.9765 35.4%, 0.9959 37.5%, 1.011 39.6%, 1.022 41.7%, 1.03 43.75%, 1.035 45.8%, 1.037 47.9%, 1.038 50%, 1.038 52.1%, 1.036 54.2%, 1.034 56.25%, 1.031 58.3%, 1.028 60.4%, 1.025 62.5%, 1.022 64.6%, 1.019 66.7%, 1.016 68.75%, 1.013 70.8%, 1.01 72.9%, 1.008 75%, 1.006 77.1%, 1.005 79.2%, 1.003 81.25%, 1.002 83.3%, 1.001 85.4%, 1 87.5%, 0.9997 89.6%, 0.9992 91.7%, 0.9989 93.75%, 0.9987 95.8%, 0.9986 97.9%, 1);
+
+    /* Rebound tokens (sidebar slide-in, folder settle) — one clear
+       overshoot here; body.animation-style-whimsy overrides to full bounce */
+    --rebound-ease: var(--ease-spring-sm);
+    --rebound-dur: 0.45s;
+    --rebound-dur-lg: 0.65s;
+    --rebound-slide: 22px;
+    --rebound-scale-y: 0.95;
 
     /* Animation Durations */
     --whimsy-micro: 0.15s;   /* Checkboxes, tiny elements */
@@ -850,8 +1032,8 @@ settings:
     --height-button-sm: 32px;
     --height-input: 38px;
 
-    /* Glass Surface Tokens */
-    --glass-bg: rgba(var(--background-secondary-rgb), 0.6);
+    /* Glass Surface Tokens (--glass-bg lives on body below — its alpha
+       rides the Glass Tint slider, which Style Settings injects on body) */
     --glass-border: rgba(255, 255, 255, 0.2);
 }
 
@@ -860,9 +1042,21 @@ settings:
    and Obsidian's own --file-line-width default is body-scoped. */
 body {
     --line-normal: var(--editor-line-height, 1.6);
+    /* Route reading mode through the same value so both modes read identically:
+       --line-height-normal drives .markdown-preview-view line-height. */
+    --line-height-normal: var(--line-normal);
     --file-line-width: var(--line-width, 64ch);
     --editor-max-width: var(--line-width, 64ch);
     --reading-max-width: var(--line-width, 64ch);
+    --glass-bg: rgba(var(--background-secondary-rgb), var(--tf-glass-tint, 65%));
+}
+
+/* Body Text Weight — Obsidian hardcodes font-weight: 400 on body and only
+   routes --font-normal to links/callout titles/bold-calc, so plain note
+   text needs an explicit hook for the Style Settings slider. */
+.markdown-source-view,
+.markdown-preview-view {
+    font-weight: var(--font-normal);
 }
 
 /* ========================================= */
@@ -878,7 +1072,8 @@ body {
 .theme-light.spring-theme, .theme-dark.spring-theme,
 .theme-light.summer-theme, .theme-dark.summer-theme,
 .theme-light.paper-theme, .theme-dark.paper-theme,
-.theme-light.melange-theme, .theme-dark.melange-theme {
+.theme-light.melange-theme, .theme-dark.melange-theme,
+.theme-light.tokyo-theme, .theme-dark.tokyo-theme {
     --setting-items-background: var(--background-secondary);
 }
 
@@ -2531,6 +2726,187 @@ body {
     --tab-bg-inactive-hover: rgba(41, 37, 34, .25);
 }
 
+/* --- Tokyo Night Theme --- */
+/* Faithful to the Bear "Tokyo Night" / "Tokyo Night Light" themes:
+   dark = Storm base, blue accent (Bear bold/header blue), all-blue headings;
+   light = neutral gray, teal accent (Bear bold/header teal), orange links,
+   all-teal headings */
+.tokyo-theme {
+    --accent-h: 221;
+    --accent-s: 89%;
+    --accent-l: 72%;
+}
+
+.theme-light.tokyo-theme {
+    --accent-h: 194;
+    --accent-s: 94%;
+    --accent-l: 24%;
+    --background-primary: #eaeaed;
+    --background-primary-rgb: 234, 234, 237;
+    --background-secondary: #e3e3e9;
+    --background-secondary-rgb: 227, 227, 233;
+    --background-secondary-alt: #d4d4da;
+    --text-normal: #343b58;
+    --text-normal-rgb: 52, 59, 88;
+    --text-muted: #6c6f85;
+    --text-faint: #7c7f93;
+    --emphasis-color: #2c3252;
+    --emphasis-color-light: #343b58;
+    --primary-color: #045d77;
+    --primary-color-rgb: 4, 93, 119;
+    --primary-color-dark: #034d62;
+    --interactive-accent: var(--primary-color);
+    --interactive-accent-hover: var(--primary-color-dark);
+    --link-color: #a35021;
+    --link-color-hover: #83401a;
+    --link-unresolved-color: var(--link-color);
+    --blockquote-border-color: var(--primary-color);
+    --checkbox-color: #96979f;
+    --text-accent: var(--primary-color-dark);
+    --divider-color: #d7d7dd88;
+    --text-selection: #d2dfe8;
+    --scrollbar-thumb: rgba(124, 141, 160, .45);
+    --scrollbar-track: rgba(234, 234, 237, .2);
+    --code-background: #e3e3e9;
+    --code-normal: var(--text-normal);
+    --code-comment: #9699a3;
+    --code-function: #166775;
+    --code-important: #b4640e;
+    --code-keyword: #a56eef;
+    --code-property: #166775;
+    --code-punctuation: #6c6f85;
+    --code-string: #587539;
+    --code-tag: #b4640e;
+    --code-value: #8f5e15;
+    /* Per-level ramp from the Bear Tokyo Night Light palette: teal title,
+       purple/blue from the sidebar accents (darkened for contrast on the
+       gray bg), then green, sea-teal, and lavender slate */
+    --heading-primary: #045d77;
+    --heading-secondary: #7e4dd2;
+    --heading-tertiary: #3a6fc4;
+    --heading-quaternary: #587539;
+    --heading-quinary: #2e8a90;
+    --heading-senary: #565f89;
+    --heading-primary-rgb: 4, 93, 119;
+    --heading-secondary-rgb: 126, 77, 210;
+    --heading-tertiary-rgb: 58, 111, 196;
+    --heading-quaternary-rgb: 88, 117, 57;
+    --heading-quinary-rgb: 46, 138, 144;
+    --heading-senary-rgb: 86, 95, 137;
+    --callout-note: #4d8de8;
+    --callout-note-rgb: 77, 141, 232;
+    --callout-info: #166775;
+    --callout-info-rgb: 22, 103, 117;
+    --callout-warning: #b4640e;
+    --callout-warning-rgb: 180, 100, 14;
+    --callout-success: #587539;
+    --callout-success-rgb: 88, 117, 57;
+    --callout-danger: #84464f;
+    --callout-danger-rgb: 132, 70, 79;
+    --callout-example: #a35021;
+    --callout-example-rgb: 163, 80, 33;
+    --callout-cite: #a56eef;
+    --callout-cite-rgb: 165, 110, 239;
+    --callout-video: #3eb4bb;
+    --callout-video-rgb: 62, 180, 187;
+    --callout-quote: #7c7f93;
+    --callout-quote-rgb: 124, 127, 147;
+    --highlight-bg: #b8d4d2;
+    --highlight-bg-rgb: 184, 212, 210;
+    --highlight-bg-dark: #a3c6c3;
+    --highlight-bg-dark-color: #131f1e;
+    --surface-accent: #d4d4da;
+    --surface-accent-rgb: 212, 212, 218;
+    --surface-dark: #343b58;
+    --surface-dark-rgb: 52, 59, 88;
+    --tab-bg-inactive: rgba(234, 234, 237, .08);
+    --tab-bg-inactive-hover: rgba(234, 234, 237, .12);
+}
+
+.theme-dark.tokyo-theme {
+    --background-primary: #24283b;
+    --background-primary-rgb: 36, 40, 59;
+    --background-secondary: #16161f;
+    --background-secondary-rgb: 22, 22, 31;
+    --background-secondary-alt: #292e47;
+    --text-normal: #9aa5ce;
+    --text-normal-rgb: 154, 165, 206;
+    --text-muted: #646e9d;
+    --text-faint: #414868;
+    --emphasis-color: #c0caf5;
+    --emphasis-color-light: #d5dbf8;
+    --primary-color: #7aa2f7;
+    --primary-color-rgb: 122, 162, 247;
+    --primary-color-dark: #6586cc;
+    --interactive-accent: var(--primary-color);
+    --interactive-accent-hover: var(--primary-color-dark);
+    --link-color: #bb9af7;
+    --link-color-hover: #9d7cd8;
+    --link-unresolved-color: var(--link-color);
+    --blockquote-border-color: #414868;
+    --checkbox-color: #e0af68;
+    --text-accent: var(--primary-color-dark);
+    --divider-color: #1a1c2888;
+    --text-selection: #4b538a;
+    --scrollbar-thumb: rgba(96, 105, 163, .35);
+    --scrollbar-track: rgba(36, 40, 59, .2);
+    --code-background: #292e47;
+    --code-normal: #c0caf5;
+    --code-comment: #565f89;
+    --code-function: #7aa2f7;
+    --code-important: #ff9e64;
+    --code-keyword: #bb9af7;
+    --code-property: #2ac3de;
+    --code-punctuation: #646e9d;
+    --code-string: #9ece6a;
+    --code-tag: #f7768e;
+    --code-value: #ff9e64;
+    /* Per-level ramp from the Bear Tokyo Night palette — all cool:
+       blue, purple, cyan, teal, sky, soft lavender */
+    --heading-primary: #7aa2f7;
+    --heading-secondary: #bb9af7;
+    --heading-tertiary: #2ac3de;
+    --heading-quaternary: #73daca;
+    --heading-quinary: #7dcfff;
+    --heading-senary: #c0caf5;
+    --heading-primary-rgb: 122, 162, 247;
+    --heading-secondary-rgb: 187, 154, 247;
+    --heading-tertiary-rgb: 42, 195, 222;
+    --heading-quaternary-rgb: 115, 218, 202;
+    --heading-quinary-rgb: 125, 207, 255;
+    --heading-senary-rgb: 192, 202, 245;
+    --callout-note: #7aa2f7;
+    --callout-note-rgb: 122, 162, 247;
+    --callout-info: #7dcfff;
+    --callout-info-rgb: 125, 207, 255;
+    --callout-warning: #e0af68;
+    --callout-warning-rgb: 224, 175, 104;
+    --callout-success: #9ece6a;
+    --callout-success-rgb: 158, 206, 106;
+    --callout-danger: #f7768e;
+    --callout-danger-rgb: 247, 118, 142;
+    --callout-example: #ff9e64;
+    --callout-example-rgb: 255, 158, 100;
+    --callout-cite: #bb9af7;
+    --callout-cite-rgb: 187, 154, 247;
+    --callout-video: #2ac3de;
+    --callout-video-rgb: 42, 195, 222;
+    --callout-quote: #565f89;
+    --callout-quote-rgb: 86, 95, 137;
+    /* Bear default highlighter: slate blue block with bright text */
+    --highlight-bg: #43476b;
+    --highlight-bg-rgb: 67, 71, 107;
+    --highlight-bg-dark: #545a8c;
+    --highlight-bg-dark-color: #545a8c;
+    --highlight-bg-light-color: #c0caf5;
+    --surface-accent: #292e47;
+    --surface-accent-rgb: 41, 46, 71;
+    --surface-dark: #16161f;
+    --surface-dark-rgb: 22, 22, 31;
+    --tab-bg-inactive: rgba(36, 40, 59, .15);
+    --tab-bg-inactive-hover: rgba(36, 40, 59, .25);
+}
+
 /* Paper Theme Specific Table Overrides for Readability */
 .theme-dark.paper-theme .markdown-rendered table th,
 .theme-dark.paper-theme .markdown-preview-view table th {
@@ -3046,8 +3422,6 @@ body.focus-mode :is(
     .markdown-source-view.mod-cm6 .cm-line .cm-header-6
 ) {
     background: transparent !important;
-    background-color: transparent !important;
-    background-image: none !important;
     border-color: transparent !important;
     box-shadow: none !important;
     text-shadow: none !important;
@@ -3095,7 +3469,6 @@ body.focus-mode :is(
     text-shadow: none !important;
     box-shadow: none !important;
     background: none !important;
-    background-color: transparent !important;
     text-decoration: underline !important;
     text-decoration-style: solid !important;
     text-decoration-color: var(--link-color) !important;
@@ -3137,7 +3510,7 @@ body.focus-mode .metadata-container {
 
 body.focus-mode .metadata-container:hover {
     opacity: 1;
-    transition: opacity 0.15s ease !important;
+    transition: opacity 0.15s var(--ease-apple) !important;
 }
 
 body.focus-mode .metadata-container .metadata-property-key {
@@ -3159,7 +3532,7 @@ body.focus-mode.focus-mode-dim-paragraphs .markdown-preview-view p {
 
 body.focus-mode.focus-mode-dim-paragraphs .markdown-preview-view p:hover {
     opacity: 1;
-    transition: opacity 0.15s ease !important;
+    transition: opacity 0.15s var(--ease-apple) !important;
 }
 
 /* ---- Sub-toggle: Hide Sidebar Panels ---- */
@@ -3170,7 +3543,7 @@ body.focus-mode.focus-mode-hide-sidebars .workspace-split.mod-right-split {
 
 /* Global Transitions */
 body {
-    transition: background-color 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94), color 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transition: background-color 0.3s cubic-bezier(0.32, 0.72, 0, 1), color 0.3s cubic-bezier(0.32, 0.72, 0, 1);
 }
 
 .markdown-source-view.mod-cm6 .cm-content,
@@ -3311,6 +3684,7 @@ body.is-focused .workspace-tabs.mod-top {
     background-color: var(--background-primary);
     border-radius: var(--r3);
     -electron-corner-smoothing: var(--squircle-main);
+    corner-shape: squircle;
     overflow: hidden;
 }
 
@@ -3328,6 +3702,7 @@ body.is-focused .workspace-tabs.mod-top {
 .vertical-tab-nav-item:hover {
     background: rgba(var(--primary-color-rgb), .12);
     -electron-corner-smoothing: var(--squircle-btn);
+    corner-shape: superellipse(1.5);
     transform: translateY(-2px);
 }
 
@@ -3365,6 +3740,7 @@ body.is-focused .workspace-tabs.mod-top {
     border: var(--border-thin) solid var(--glass-border);
     border-radius: var(--r3);
     -electron-corner-smoothing: var(--squircle-main);
+    corner-shape: squircle;
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
 }
 
@@ -3384,6 +3760,7 @@ body.is-focused .workspace-tabs.mod-top {
     background-color: rgba(var(--primary-color-rgb), .05);
     border-radius: var(--r2);
     -electron-corner-smoothing: var(--squircle-btn);
+    corner-shape: superellipse(1.5);
     border: none !important;
     transform: none !important;
 }
@@ -3406,6 +3783,7 @@ body.is-focused .workspace-tabs.mod-top {
     outline-offset: calc(var(--border-thick) * -1);
     border-radius: var(--r2);
     -electron-corner-smoothing: var(--squircle-btn);
+    corner-shape: superellipse(1.5);
 }
 
 .vertical-tab-nav-item:focus:not(:focus-visible) {
@@ -3424,6 +3802,7 @@ body.is-focused .workspace-tabs.mod-top {
 .vertical-tab-header {
     border-radius: var(--r3);
     -electron-corner-smoothing: var(--squircle-btn);
+    corner-shape: superellipse(1.5);
     background: rgba(var(--primary-color-rgb), .05);
     padding-block: 8px;
     padding-inline: 12px;
@@ -3438,7 +3817,8 @@ body.is-focused .workspace-tabs.mod-top {
     background: transparent;
     border-radius: var(--r2);
     -electron-corner-smoothing: var(--squircle-btn);
-    transition: opacity 0.15s cubic-bezier(0.25, 0.46, 0.45, 0.94), background-color 0.18s, color 0.18s;
+    corner-shape: superellipse(1.5);
+    transition: opacity 0.15s cubic-bezier(0.32, 0.72, 0, 1), background-color 0.18s, color 0.18s;
     border: none !important;
 }
 
@@ -3450,6 +3830,20 @@ body.is-focused .workspace-tabs.mod-top {
     background: rgba(var(--primary-color-rgb), .15);
     border-inline-start: none !important;
     font-weight: var(--weight-medium);
+}
+
+/* ========================================= */
+/*          TEXT WRAP (ORPHAN CONTROL)       */
+/* ========================================= */
+
+/* Prevent orphaned words on body copy in reading view */
+:is(.markdown-preview-view, .markdown-reading-view) :is(p, li, blockquote, figcaption) {
+    text-wrap: pretty;
+}
+
+/* Same in live preview — targets paragraph and list lines, skips code blocks */
+.markdown-source-view.mod-cm6 .cm-line:not(.HyperMD-codeblock):not(.HyperMD-codeblock-begin):not(.HyperMD-codeblock-end) {
+    text-wrap: pretty;
 }
 
 /* ========================================= */
@@ -3498,6 +3892,7 @@ body.is-focused .workspace-tabs.mod-top {
     line-height: var(--line-tight);
     border-radius: var(--r2);
     -electron-corner-smoothing: var(--squircle-main);
+    corner-shape: squircle;
     position: relative;
     font-weight: var(--weight-semibold);
     letter-spacing: -.01em;
@@ -3517,6 +3912,8 @@ body:not(.is-mobile) .markdown-source-view.mod-cm6 .cm-line [class*="cm-header-"
 .markdown-source-view.mod-cm6 .cm-line .cm-header-1 {
     --scale: var(--heading-scale-1);
     --scale-x: var(--heading-scale-x-1);
+    --h-rgb: var(--heading-primary-rgb);
+    --h-color: var(--heading-primary);
     background-color: rgba(var(--heading-primary-rgb), var(--heading-bg-opacity));
     color: hsl(from var(--heading-primary) h s calc(l * var(--heading-text-multiplier)));
     font-size: 1.8em;
@@ -3527,6 +3924,8 @@ body:not(.is-mobile) .markdown-source-view.mod-cm6 .cm-line [class*="cm-header-"
 .markdown-source-view.mod-cm6 .cm-line .cm-header-2 {
     --scale: var(--heading-scale-2);
     --scale-x: var(--heading-scale-x-2);
+    --h-rgb: var(--heading-secondary-rgb);
+    --h-color: var(--heading-secondary);
     background-color: rgba(var(--heading-secondary-rgb), var(--heading-bg-opacity));
     color: hsl(from var(--heading-secondary) h s calc(l * var(--heading-text-multiplier)));
     font-size: 1.4em;
@@ -3537,6 +3936,8 @@ body:not(.is-mobile) .markdown-source-view.mod-cm6 .cm-line [class*="cm-header-"
 .markdown-source-view.mod-cm6 .cm-line .cm-header-3 {
     --scale: var(--heading-scale-3);
     --scale-x: var(--heading-scale-x-3);
+    --h-rgb: var(--heading-tertiary-rgb);
+    --h-color: var(--heading-tertiary);
     background-color: rgba(var(--heading-tertiary-rgb), var(--heading-bg-opacity));
     color: hsl(from var(--heading-tertiary) h s calc(l * var(--heading-text-multiplier)));
     font-size: 1.35em;
@@ -3547,6 +3948,8 @@ body:not(.is-mobile) .markdown-source-view.mod-cm6 .cm-line [class*="cm-header-"
 .markdown-source-view.mod-cm6 .cm-line .cm-header-4 {
     --scale: var(--heading-scale-4);
     --scale-x: var(--heading-scale-x-4);
+    --h-rgb: var(--heading-quaternary-rgb);
+    --h-color: var(--heading-quaternary);
     background-color: rgba(var(--heading-quaternary-rgb), var(--heading-bg-opacity));
     color: hsl(from var(--heading-quaternary) h s calc(l * var(--heading-text-multiplier)));
     font-size: 1.15em;
@@ -3556,6 +3959,8 @@ body:not(.is-mobile) .markdown-source-view.mod-cm6 .cm-line [class*="cm-header-"
 .markdown-source-view.mod-cm6 .cm-line .cm-header-5 {
     --scale: var(--heading-scale-5);
     --scale-x: var(--heading-scale-x-5);
+    --h-rgb: var(--heading-quinary-rgb);
+    --h-color: var(--heading-quinary);
     background-color: rgba(var(--heading-quinary-rgb), var(--heading-bg-opacity));
     color: hsl(from var(--heading-quinary) h s calc(l * var(--heading-text-multiplier)));
     font-size: 1.1em;
@@ -3565,6 +3970,8 @@ body:not(.is-mobile) .markdown-source-view.mod-cm6 .cm-line [class*="cm-header-"
 .markdown-source-view.mod-cm6 .cm-line .cm-header-6 {
     --scale: var(--heading-scale-6);
     --scale-x: var(--heading-scale-x-6);
+    --h-rgb: var(--heading-senary-rgb);
+    --h-color: var(--heading-senary);
     background-color: rgba(var(--heading-senary-rgb), var(--heading-bg-opacity));
     color: hsl(from var(--heading-senary) h s calc(l * var(--heading-text-multiplier)));
     font-size: 1.05em;
@@ -3581,7 +3988,6 @@ body:not(.is-mobile) .markdown-source-view.mod-cm6 .cm-line [class*="cm-header-"
     padding: 0 !important;
     border-radius: 0 !important;
     box-shadow: none !important;
-    background-image: none !important;
 }
 
 /* Heading Fold Indicator */
@@ -3610,12 +4016,7 @@ body:not(.is-mobile) .markdown-source-view.mod-cm6 .cm-line [class*="cm-header-"
     opacity: 1 !important;
 }
 
-/* Make fold indicator stretch full heading line height so child's 50% centers correctly */
-.markdown-source-view.mod-cm6 .cm-line:is(.HyperMD-header-1, .HyperMD-header-2, .HyperMD-header-3, .HyperMD-header-4, .HyperMD-header-5, .HyperMD-header-6) .cm-fold-indicator {
-    position: absolute !important;
-    inset-block-start: 0 !important;
-    inset-block-end: 0 !important;
-}
+/* Heading fold chevron: keep NATIVE inline flow — absolute stretch centers on padding-top, lands too high; do not re-add */
 
 /* Reveal arrow on hover */
 :is(.cm-line:hover, .cm-gutterElement:hover) .cm-fold-indicator .collapse-indicator {
@@ -3661,7 +4062,6 @@ body.h6-case-upper :is(h6, .cm-header-6) {
 .heading-style-underline .markdown-preview-view h6,
 .heading-style-underline .markdown-source-view.mod-cm6 .cm-line [class*="cm-header-"] {
     background: transparent !important;
-    background-image: none !important;
     box-shadow: none;
     padding-block: .2em;
     padding-inline: 0;
@@ -3720,7 +4120,6 @@ body.h6-case-upper :is(h6, .cm-header-6) {
 .heading-style-border .markdown-preview-view h6,
 .heading-style-border .markdown-source-view.mod-cm6 .cm-line [class*="cm-header-"] {
     background: transparent !important;
-    background-image: none !important;
     box-shadow: none;
     padding-block: .2em;
     padding-inline-start: .8em;
@@ -3732,37 +4131,35 @@ body.h6-case-upper :is(h6, .cm-header-6) {
 .heading-style-border .markdown-preview-view h1,
 .heading-style-border .markdown-source-view.mod-cm6 .cm-line .cm-header-1 {
     border-inline-start-color: var(--heading-primary);
-    border-left-width: 5px;
+    border-inline-start-width: 5px;
 }
 
 .heading-style-border .markdown-preview-view h2,
 .heading-style-border .markdown-source-view.mod-cm6 .cm-line .cm-header-2 {
     border-inline-start-color: var(--heading-secondary);
-    border-left-width: 4px;
 }
 
 .heading-style-border .markdown-preview-view h3,
 .heading-style-border .markdown-source-view.mod-cm6 .cm-line .cm-header-3 {
     border-inline-start-color: var(--heading-tertiary);
-    border-left-width: 4px;
 }
 
 .heading-style-border .markdown-preview-view h4,
 .heading-style-border .markdown-source-view.mod-cm6 .cm-line .cm-header-4 {
     border-inline-start-color: var(--heading-quaternary);
-    border-left-width: 3px;
+    border-inline-start-width: 3px;
 }
 
 .heading-style-border .markdown-preview-view h5,
 .heading-style-border .markdown-source-view.mod-cm6 .cm-line .cm-header-5 {
     border-inline-start-color: var(--heading-quinary);
-    border-left-width: 3px;
+    border-inline-start-width: 3px;
 }
 
 .heading-style-border .markdown-preview-view h6,
 .heading-style-border .markdown-source-view.mod-cm6 .cm-line .cm-header-6 {
     border-inline-start-color: var(--heading-senary);
-    border-left-width: 3px;
+    border-inline-start-width: 3px;
 }
 
 .heading-style-border :is(.markdown-preview-view, .markdown-source-view.mod-cm6 .cm-line) :is(h1, h2, h3, h4, h5, h6, .cm-header-1, .cm-header-2, .cm-header-3, .cm-header-4, .cm-header-5, .cm-header-6):hover {
@@ -3779,7 +4176,6 @@ body.h6-case-upper :is(h6, .cm-header-6) {
 .heading-style-minimal .markdown-preview-view h6,
 .heading-style-minimal .markdown-source-view.mod-cm6 .cm-line [class*="cm-header-"] {
     background: transparent !important;
-    background-image: none !important;
     box-shadow: none;
     padding-block: .2em;
     padding-inline: 0;
@@ -3866,13 +4262,17 @@ body.h6-case-upper :is(h6, .cm-header-6) {
     max-inline-size: 100%;
     display: inline-block;
     line-height: 1.4;
+}
+
+/* GPU hints desktop-only — these break iOS scroll containment */
+body:not(.is-mobile) .heading-style-glass :is(.markdown-preview-view, .markdown-source-view.mod-cm6 .cm-content) :is(h1, h2, h3, h4, h5, h6, .cm-header-1, .cm-header-2, .cm-header-3, .cm-header-4, .cm-header-5, .cm-header-6) {
     will-change: transform;
     contain: layout style;
 }
 
-/* Apply backdrop-filter only if supported and performance mode not enabled */
+/* Backdrop-filter desktop-only — per-heading blur repaints on every scroll frame on iOS */
 @supports (backdrop-filter: blur(1px)) {
-    body:not(.disable-glass-menus) .heading-style-glass :is(.markdown-preview-view, .markdown-source-view.mod-cm6 .cm-content) :is(h1, h2, h3, h4, h5, h6, .cm-header-1, .cm-header-2, .cm-header-3, .cm-header-4, .cm-header-5, .cm-header-6) {
+    body:not(.is-mobile):not(.disable-glass-menus) .heading-style-glass :is(.markdown-preview-view, .markdown-source-view.mod-cm6 .cm-content) :is(h1, h2, h3, h4, h5, h6, .cm-header-1, .cm-header-2, .cm-header-3, .cm-header-4, .cm-header-5, .cm-header-6) {
         backdrop-filter: blur(8px) saturate(160%) brightness(1.03);
         -webkit-backdrop-filter: blur(8px) saturate(160%) brightness(1.03);
     }
@@ -3951,6 +4351,91 @@ body.h6-case-upper :is(h6, .cm-header-6) {
     background-color: rgba(var(--heading-senary-rgb), 0.3) !important;
     color: hsl(from var(--heading-senary) h s 90%) !important;
     border-color: rgba(var(--heading-senary-rgb), 0.35);
+}
+
+/* Liquid Glass Style — same material as Liquid Glass callouts/blockquotes:
+   per-level tint (--h-rgb/--h-color set in the base heading rules) under
+   specular inset rims, refraction blur, and a hover sheen sweep */
+.heading-style-liquid :is(.markdown-preview-view, .markdown-source-view.mod-cm6 .cm-content) :is(h1, h2, h3, h4, h5, h6, .cm-header-1, .cm-header-2, .cm-header-3, .cm-header-4, .cm-header-5, .cm-header-6) {
+    border-radius: var(--r3);
+    border: none;
+    position: relative;
+    background:
+        radial-gradient(ellipse at top left,
+            rgba(var(--h-rgb), .26) 0%,
+            transparent 60%),
+        linear-gradient(160deg,
+            rgba(255, 255, 255, .18) 0%,
+            rgba(var(--h-rgb), .12) 45%,
+            rgba(var(--background-primary-rgb), .3) 100%) !important;
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, .5),
+        inset 0 0 0 1px rgba(255, 255, 255, .12),
+        0 8px 24px rgba(0, 0, 0, .12);
+    color: hsl(from var(--h-color) h s 28%);
+    transition: box-shadow var(--transition-ui), filter var(--transition-ui);
+    width: fit-content;
+    max-inline-size: 100%;
+    display: inline-block;
+    line-height: 1.4;
+    padding: calc(var(--heading-pad-y) * var(--scale)) calc(var(--heading-pad-x) * var(--scale-x));
+}
+
+.theme-dark.heading-style-liquid :is(.markdown-preview-view, .markdown-source-view.mod-cm6 .cm-content) :is(h1, h2, h3, h4, h5, h6, .cm-header-1, .cm-header-2, .cm-header-3, .cm-header-4, .cm-header-5, .cm-header-6) {
+    background:
+        radial-gradient(ellipse at top left,
+            rgba(var(--h-rgb), .34) 0%,
+            transparent 60%),
+        linear-gradient(160deg,
+            rgba(255, 255, 255, .07) 0%,
+            rgba(var(--h-rgb), .18) 45%,
+            rgba(var(--background-primary-rgb), .4) 100%) !important;
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, .22),
+        inset 0 0 0 1px rgba(255, 255, 255, .08),
+        0 10px 28px rgba(0, 0, 0, .3);
+    color: hsl(from var(--h-color) h s 90%);
+}
+
+/* GPU-expensive refraction blur desktop-only (same gating as Glass headings) */
+@supports (backdrop-filter: blur(1px)) {
+    body:not(.is-mobile):not(.disable-glass-menus) .heading-style-liquid :is(.markdown-preview-view, .markdown-source-view.mod-cm6 .cm-content) :is(h1, h2, h3, h4, h5, h6, .cm-header-1, .cm-header-2, .cm-header-3, .cm-header-4, .cm-header-5, .cm-header-6) {
+        backdrop-filter: blur(18px) saturate(190%);
+        -webkit-backdrop-filter: blur(18px) saturate(190%);
+    }
+}
+
+/* Specular sheen: background-position sweep inside the pseudo-element, so no
+   overflow clipping is needed (headings must keep overflow visible for the
+   collapse chevron); snaps back invisibly on leave like the callout sheen */
+.heading-style-liquid :is(.markdown-preview-view, .markdown-reading-view) :is(h1, h2, h3, h4, h5, h6)::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    background: linear-gradient(115deg,
+            transparent 32%,
+            rgba(255, 255, 255, .14) 46%,
+            rgba(255, 255, 255, .26) 50%,
+            rgba(255, 255, 255, .14) 54%,
+            transparent 68%);
+    background-size: 250% 100%;
+    background-position: 175% 0;
+    background-repeat: no-repeat;
+    pointer-events: none;
+}
+
+body:not(.is-mobile):not(.terraflow-quiet) .heading-style-liquid :is(.markdown-preview-view, .markdown-reading-view) :is(h1, h2, h3, h4, h5, h6):hover::after {
+    background-position: -75% 0;
+    transition: background-position 0.9s var(--ease-apple);
+}
+
+.heading-style-liquid :is(.markdown-preview-view, .markdown-source-view.mod-cm6 .cm-content) :is(h1, h2, h3, h4, h5, h6, .cm-header-1, .cm-header-2, .cm-header-3, .cm-header-4, .cm-header-5, .cm-header-6):hover {
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, .55),
+        inset 0 0 0 1px rgba(255, 255, 255, .16),
+        0 10px 28px rgba(0, 0, 0, .18);
+    filter: brightness(1.04);
 }
 
 /* Heading Alignment Options */
@@ -4095,7 +4580,7 @@ body.link-style-underline :is(.markdown-rendered a, .markdown-rendered .internal
 body.link-style-glow :is(.markdown-rendered a, .markdown-rendered .internal-link, .markdown-rendered .external-link, .markdown-source-view.mod-cm6 .cm-link:not(.cm-formatting), .markdown-source-view.mod-cm6 .cm-url:not(.cm-formatting), .markdown-source-view.mod-cm6 .cm-hmd-internal-link:not(.cm-formatting), .markdown-source-view.mod-cm6 .cm-hmd-external-link:not(.cm-formatting)) {
     color: var(--link-color);
     background: rgba(var(--primary-color-rgb), .08);
-    border-radius: 8px;
+    border-radius: var(--radius-m);
     padding-block: 5px;
     padding-inline: 6px;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
@@ -4125,11 +4610,7 @@ body.link-style-glow :is(.markdown-rendered a, .markdown-rendered .internal-link
 .markdown-source-view.mod-cm6 .cm-line .cm-link,
 .markdown-source-view.mod-cm6 .cm-line .cm-url,
 .markdown-source-view.mod-cm6 .cm-line .cm-hmd-internal-link,
-.markdown-source-view.mod-cm6 .cm-line .cm-hmd-external-link {
-    text-decoration: none !important;
-    border-block-end: none !important;
-}
-
+.markdown-source-view.mod-cm6 .cm-line .cm-hmd-external-link,
 .markdown-source-view.mod-cm6 .cm-line .cm-link:hover,
 .markdown-source-view.mod-cm6 .cm-line .cm-url:hover,
 .markdown-source-view.mod-cm6 .cm-line .cm-hmd-internal-link:hover,
@@ -4207,6 +4688,7 @@ body.link-style-glow :is(.markdown-rendered a, .markdown-rendered .internal-link
     --nav-collapse-icon-color: var(--folder-text-color);
     border-radius: var(--r1);
     -electron-corner-smoothing: var(--squircle-main);
+    corner-shape: squircle;
     margin-block-end: var(--s1);
     position: relative;
     transition: transform var(--transition-ui), background-color var(--transition-ui);
@@ -4232,10 +4714,9 @@ body.link-style-glow :is(.markdown-rendered a, .markdown-rendered .internal-link
     min-inline-size: 0 !important;
 }
 
-/* Fix: Normal collapse icon animation */
-.collapse-icon svg,
-.nav-folder-collapse-indicator svg {
-    transition: transform 0.28s var(--ease-apple);
+/* Springy chevrons (svg.svg-icon ties native specificity; later load wins) */
+:is(.collapse-icon, .nav-folder-collapse-indicator, .callout-fold) svg.svg-icon {
+    transition: transform 0.3s var(--ease-spring-sm);
 }
 
 .nav-folder-title {
@@ -4364,6 +4845,100 @@ body.link-style-glow :is(.markdown-rendered a, .markdown-rendered .internal-link
     background-color: rgba(255, 255, 255, var(--link-opacity-unresolved)) !important;
 }
 
+/* ============================== */
+/*   FILE EXPLORER STYLES         */
+/* ============================== */
+/* Minimal/Finder override the Rainbow base; body:is(.theme-*) outranks nth-child rainbow rules */
+
+/* Both alternate styles: no tinted cards, no rainbow, no hover lift */
+body:is(.theme-light, .theme-dark):is(.explorer-style-minimal, .explorer-style-finder) .nav-files-container>div>.nav-folder {
+    --folder-color: transparent;
+    --folder-text-color: var(--text-normal);
+    --folder-heading-rgb: var(--primary-color-rgb);
+    background-color: transparent;
+    margin-block-end: 0;
+}
+
+body:is(.explorer-style-minimal, .explorer-style-finder) .nav-files-container>div>.nav-folder:hover {
+    transform: none;
+}
+
+/* …and calm neutral hovers instead of the white-overlay + brightness */
+body:is(.explorer-style-minimal, .explorer-style-finder) .nav-folder-title:hover,
+body:is(.explorer-style-minimal, .explorer-style-finder) .nav-file-title:is(:not(.is-active)):hover {
+    background-color: color-mix(in srgb, var(--text-normal) 7%, transparent) !important;
+    filter: none;
+}
+
+body:is(.explorer-style-minimal, .explorer-style-finder) .nav-folder .nav-folder-title:hover .nav-folder-title-content {
+    transform: none;
+}
+
+/* Minimal: quiet monochrome tree, no folder glyphs */
+body.explorer-style-minimal .nav-folder .nav-folder-title-content::before {
+    display: none;
+}
+
+body.explorer-style-minimal .nav-folder-title {
+    color: var(--text-muted);
+    font-weight: var(--weight-medium);
+}
+
+/* Finder: neutral labels, accent folder glyphs */
+body.explorer-style-finder .nav-folder .nav-folder-title-content::before {
+    background-color: var(--primary-color);
+    opacity: .85;
+}
+
+body.explorer-style-finder .nav-folder-title {
+    font-weight: var(--weight-normal);
+}
+
+/* Glass: frosted folder cards in each folder's hue (no backdrop-filter — one compositing pass per card) */
+body:is(.theme-light, .theme-dark).explorer-style-glass .nav-files-container>div>.nav-folder {
+    /* files inherit via --nav-item-color */
+    --folder-text-color: color-mix(in srgb, rgb(var(--folder-heading-rgb)) 55%, var(--text-normal));
+    /* hue-tinted hairline (white reads chalky) */
+    background-color: rgba(var(--folder-heading-rgb), .09);
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, .18), rgba(255, 255, 255, 0) 55%);
+    border: var(--border-thin) solid rgba(var(--folder-heading-rgb), .25);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, .4), 0 4px 14px rgba(0, 0, 0, .05);
+    border-radius: var(--r3);
+    -electron-corner-smoothing: var(--squircle-soft);
+    corner-shape: superellipse(3);
+    padding: 4px;
+    margin-block-end: var(--s2);
+}
+
+body.theme-dark.explorer-style-glass .nav-files-container>div>.nav-folder {
+    background-color: rgba(var(--folder-heading-rgb), .12);
+    border-color: rgba(var(--folder-heading-rgb), .28);
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, .04), rgba(255, 255, 255, 0) 55%);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, .07), 0 6px 18px rgba(0, 0, 0, .18);
+}
+
+/* Hover deepens the whole card */
+body.explorer-style-glass .nav-files-container>div>.nav-folder:hover {
+    background-color: rgba(var(--folder-heading-rgb), .15);
+}
+
+/* No surfaces on folder titles (depth-shadows hover painted the box); text = folder hue toward text-normal */
+body.explorer-style-glass .nav-files-container .nav-folder-title,
+body.explorer-style-glass .nav-files-container .nav-folder-title:hover {
+    background-color: transparent !important;
+    filter: none !important;
+    box-shadow: none !important;
+    color: color-mix(in srgb, rgb(var(--folder-heading-rgb)) 55%, var(--text-normal));
+}
+
+/* Active file: liquid-glass pill — tinted fill under a specular highlight */
+body.explorer-style-glass .nav-files-container>div>.nav-folder .nav-file-title.is-active .nav-file-title-content {
+    background-color: rgba(var(--folder-heading-rgb), .22);
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, .25), rgba(255, 255, 255, 0) 60%);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, .4), 0 2px 8px rgba(0, 0, 0, .1);
+    color: var(--text-normal);
+}
+
 .nav-folder .nav-folder-children .nav-folder {
     --folder-color: inherit;
     --folder-text-color: inherit;
@@ -4386,6 +4961,7 @@ body.link-style-glow :is(.markdown-rendered a, .markdown-rendered .internal-link
     padding-inline: var(--s3);
     border-radius: var(--r1);
     -electron-corner-smoothing: var(--squircle-main);
+    corner-shape: squircle;
     border: none;
     font-weight: var(--weight-semibold);
 }
@@ -4400,6 +4976,7 @@ body.link-style-glow :is(.markdown-rendered a, .markdown-rendered .internal-link
     inline-size: 3px;
     border-radius: 0 var(--r1) var(--r1) 0;
     -electron-corner-smoothing: var(--squircle-main);
+    corner-shape: squircle;
     opacity: .8;
     z-index: 2;
 }
@@ -4426,6 +5003,7 @@ body.link-style-glow :is(.markdown-rendered a, .markdown-rendered .internal-link
     background-color: rgba(var(--primary-color-rgb), .15) !important;
     border-radius: var(--r1);
     -electron-corner-smoothing: var(--squircle-main);
+    corner-shape: squircle;
 }
 
 .nav-file-title.is-selected .nav-file-title-content {
@@ -4443,6 +5021,7 @@ body.link-style-glow :is(.markdown-rendered a, .markdown-rendered .internal-link
     inline-size: 3px;
     border-radius: 0 var(--r1) var(--r1) 0;
     -electron-corner-smoothing: var(--squircle-main);
+    corner-shape: squircle;
     background-color: var(--primary-color);
     opacity: .7;
 }
@@ -4458,6 +5037,7 @@ body.link-style-glow :is(.markdown-rendered a, .markdown-rendered .internal-link
             rgba(var(--callout-color-rgb), .03) 100%);
     border-radius: var(--r4) var(--r1) var(--r4) var(--r1);
     -electron-corner-smoothing: var(--squircle-main);
+    corner-shape: squircle;
     border: none;
     border-inline-start: var(--border-heavy) solid var(--callout-color);
 }
@@ -4509,6 +5089,7 @@ body.link-style-glow :is(.markdown-rendered a, .markdown-rendered .internal-link
     padding: .5em;
     border-radius: var(--r1);
     -electron-corner-smoothing: var(--squircle-main);
+    corner-shape: squircle;
     flex-shrink: 0;
     color: var(--callout-color);
 }
@@ -4518,6 +5099,15 @@ body.link-style-glow :is(.markdown-rendered a, .markdown-rendered .internal-link
     padding-inline: 0;
     font-size: .95em;
     line-height: var(--line-normal);
+}
+
+/* Fade-in callout content on expand using @starting-style (Chrome 117+).
+   Only fires when the element first appears or exits display:none — no-op otherwise. */
+body:not(.disable-ui-animations):not(.animation-style-whimsy) .callout:not(.is-collapsed) .callout-content {
+    transition: opacity 0.2s var(--ease-apple);
+    @starting-style {
+        opacity: 0;
+    }
 }
 
 .markdown-source-view.mod-cm6 .cm-embed-block.cm-callout {
@@ -4613,6 +5203,7 @@ body.link-style-glow :is(.markdown-rendered a, .markdown-rendered .internal-link
     text-decoration: none;
     border-radius: var(--r1);
     -electron-corner-smoothing: var(--squircle-main);
+    corner-shape: squircle;
     padding-inline: 3px;
     transition: var(--transition-callout-link);
 }
@@ -4629,6 +5220,7 @@ body.link-style-glow :is(.markdown-rendered a, .markdown-rendered .internal-link
     text-decoration: none;
     border-radius: var(--r1);
     -electron-corner-smoothing: var(--squircle-main);
+    corner-shape: squircle;
     padding-inline: 3px;
     transition: var(--transition-callout-link);
 }
@@ -4643,6 +5235,7 @@ body.link-style-glow :is(.markdown-rendered a, .markdown-rendered .internal-link
     text-decoration: none;
     border-radius: var(--r1);
     -electron-corner-smoothing: var(--squircle-main);
+    corner-shape: squircle;
     padding-inline: 3px;
     transition: var(--transition-callout-link);
 }
@@ -4709,6 +5302,7 @@ body.link-style-underline [data-callout] :is(a, .internal-link, .external-link, 
     padding: 3px 4px;
     border-radius: var(--r1);
     -electron-corner-smoothing: var(--squircle-main);
+    corner-shape: squircle;
     display: inline;
     background-color: rgba(var(--callout-color-rgb), .2);
     color: var(--callout-color);
@@ -4742,6 +5336,7 @@ body.link-style-underline [data-callout] :is(a, .internal-link, .external-link, 
     padding-inline: .3em;
     border-radius: var(--r2);
     -electron-corner-smoothing: var(--squircle-main);
+    corner-shape: squircle;
     font-weight: var(--weight-semibold);
     letter-spacing: -.01em;
     margin-block: .5em;
@@ -4863,16 +5458,20 @@ body.link-style-underline [data-callout] :is(a, .internal-link, .external-link, 
     filter: sepia(0.2) contrast(1.1) !important;
 }
 
-/* Modern Glass Style - Deep blur, floating effect */
+/* Modern Glass Style - structural properties apply on all devices */
 .callout-style-glass :is(.callout, .cm-callout) {
-    backdrop-filter: blur(12px) saturate(180%) brightness(1.06) !important;
-    -webkit-backdrop-filter: blur(12px) saturate(180%) brightness(1.06) !important;
     border-inline-start: none !important;
     border-radius: var(--r4) !important;
+    position: relative;
+}
+
+/* GPU-expensive blur + multi-layer shadow desktop-only */
+body:not(.is-mobile) .callout-style-glass :is(.callout, .cm-callout) {
+    backdrop-filter: blur(12px) saturate(180%) brightness(1.06) !important;
+    -webkit-backdrop-filter: blur(12px) saturate(180%) brightness(1.06) !important;
     box-shadow:
         0 6px 18px rgba(0, 0, 0, 0.12),
         inset 0 1px 0 rgba(255, 255, 255, 0.5) !important;
-    position: relative;
 }
 
 .callout-style-glass .markdown-source-view.mod-cm6 .cm-callout {
@@ -4893,14 +5492,19 @@ body.link-style-underline [data-callout] :is(a, .internal-link, .external-link, 
     pointer-events: none;
 }
 
+/* Dark glass callout: gradient background applies on all devices */
 .theme-dark .callout-style-glass :is(.callout, .cm-callout) {
     background:
         radial-gradient(ellipse at top left, rgba(var(--callout-color-rgb), 0.3) 0%, transparent 62%),
         radial-gradient(ellipse at bottom right, rgba(var(--callout-color-rgb), 0.22) 0%, transparent 62%),
         linear-gradient(135deg, rgba(var(--callout-color-rgb), 0.26) 0%, rgba(var(--background-primary-rgb), 0.38) 100%) !important;
+    border-color: rgba(var(--callout-color-rgb), 0.35) !important;
+}
+
+/* Desktop-only: heavy blur + multi-layer shadow */
+body:not(.is-mobile).theme-dark .callout-style-glass :is(.callout, .cm-callout) {
     backdrop-filter: blur(16px) saturate(160%) brightness(0.98) !important;
     -webkit-backdrop-filter: blur(16px) saturate(160%) brightness(0.98) !important;
-    border-color: rgba(var(--callout-color-rgb), 0.35) !important;
     box-shadow:
         0 8px 22px rgba(0, 0, 0, 0.35),
         inset 0 1px 0 rgba(255, 255, 255, 0.18) !important;
@@ -4980,6 +5584,7 @@ body.link-style-underline [data-callout] :is(a, .internal-link, .external-link, 
         padding: 6px 4px;
         border-radius: var(--r1);
         -electron-corner-smoothing: var(--squircle-main);
+    corner-shape: squircle;
         display: inline;
         transition: background-color var(--transition-ui), transform var(--transition-ui);
     }
@@ -5089,6 +5694,7 @@ body.link-style-underline [data-callout] :is(a, .internal-link, .external-link, 
 :is(.markdown-preview-view blockquote, .markdown-rendered blockquote, div:not(.CodeMirror-activeline)>.HyperMD-quote, .markdown-source-view.mod-cm6 .cm-line.HyperMD-quote) {
     border-radius: var(--r3);
     -electron-corner-smoothing: var(--squircle-main);
+    corner-shape: squircle;
     border: none;
     overflow: hidden;
     padding-block: 5px;
@@ -5117,6 +5723,7 @@ body.link-style-underline [data-callout] :is(a, .internal-link, .external-link, 
     transform: translateY(-2px);
     border-radius: var(--r3);
     -electron-corner-smoothing: var(--squircle-main);
+    corner-shape: squircle;
     border-block-end: var(--border-thin) solid rgba(var(--primary-color-rgb), .2);
 }
 
@@ -5155,6 +5762,7 @@ body.link-style-underline [data-callout] :is(a, .internal-link, .external-link, 
     padding-inline: 6px;
     border-radius: var(--r1);
     -electron-corner-smoothing: var(--squircle-btn);
+    corner-shape: superellipse(1.5);
     font-size: 0.9em;
     font-family: var(--font-monospace);
     border: var(--border-thin) solid rgba(var(--primary-color-rgb), .1);
@@ -5171,12 +5779,29 @@ body.link-style-underline [data-callout] :is(a, .internal-link, .external-link, 
     border-color: rgba(var(--primary-color-rgb), .15);
 }
 
+/* Keyboard Keys — macOS-style keycap for <kbd> in notes: neutral surface
+   (not accent-tinted like inline code) with a bottom ledge for physicality */
+:is(.markdown-rendered, .markdown-preview-view) kbd {
+    background-color: var(--background-secondary);
+    color: var(--text-normal);
+    padding-block: 1px;
+    padding-inline: 5px;
+    border-radius: var(--r1);
+    -electron-corner-smoothing: var(--squircle-btn);
+    corner-shape: superellipse(1.5);
+    font-size: 0.85em;
+    font-family: var(--font-monospace);
+    border: var(--border-thin) solid var(--background-modifier-border);
+    box-shadow: inset 0 -1.5px 0 var(--background-modifier-border);
+}
+
 /* Code Block Styling */
 :is(.markdown-rendered pre, .markdown-preview-view pre) {
     background-color: var(--background-secondary-alt);
     background-image: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1));
     border-radius: var(--r3);
     -electron-corner-smoothing: var(--squircle-main);
+    corner-shape: squircle;
     padding: var(--s3);
     margin-block: var(--s3);
     margin-inline: 0;
@@ -5206,6 +5831,7 @@ body.link-style-underline [data-callout] :is(a, .internal-link, .external-link, 
     background-image: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1));
     border-radius: var(--r3);
     -electron-corner-smoothing: var(--squircle-main);
+    corner-shape: squircle;
     border: var(--border-thick) solid rgba(var(--primary-color-rgb), .15);
     box-shadow: var(--shadow-2), inset 0 2px 6px rgba(0, 0, 0, .1);
     margin-block: var(--s3);
@@ -5336,6 +5962,7 @@ body.link-style-underline [data-callout] :is(a, .internal-link, .external-link, 
     border: var(--border-thin) solid rgba(var(--primary-color-rgb), .15);
     border-radius: var(--r1);
     -electron-corner-smoothing: var(--squircle-btn);
+    corner-shape: superellipse(1.5);
     padding-block: 4px;
     padding-inline: 8px;
     font-size: 0.75em;
@@ -5355,11 +5982,44 @@ body.link-style-underline [data-callout] :is(a, .internal-link, .external-link, 
     transform: scale(1.05);
 }
 
+/* Horizontal rules: centered short hairline (Apple-doc section break) instead
+   of a full-width bar. tf-luminous later re-skins color/height; width and
+   centering carry through to it. */
+:is(.markdown-rendered, .markdown-preview-view, .markdown-source-view.mod-cm6) hr {
+    border: none;
+    height: 1px;
+    width: 50%;
+    margin-inline: auto;
+    background-color: var(--hr-color);
+}
+
+/* Image captions: smaller, muted, centered — Apple-article style */
+:is(.markdown-rendered, .markdown-preview-view) figcaption {
+    font-size: 0.85em;
+    color: var(--text-muted);
+    text-align: center;
+    margin-top: 6px;
+}
+
 /* Image Styling */
 :is(.markdown-rendered img, .markdown-source-view.mod-cm6 .cm-content img) {
     border-radius: var(--r3);
     -electron-corner-smoothing: var(--squircle-main);
+    corner-shape: squircle;
     max-inline-size: 100%;
+}
+
+/* Hairline outline so light image edges don't dissolve into matching backgrounds.
+   Pure black/white (never a tinted neutral — tint reads as dirt on the edge);
+   outline paints above the pixels, negative offset keeps it on the image edge. */
+.theme-light :is(.markdown-rendered img, .markdown-source-view.mod-cm6 .cm-content img) {
+    outline: 1px solid rgba(0, 0, 0, 0.1);
+    outline-offset: -1px;
+}
+
+.theme-dark :is(.markdown-rendered img, .markdown-source-view.mod-cm6 .cm-content img) {
+    outline: 1px solid rgba(255, 255, 255, 0.1);
+    outline-offset: -1px;
 }
 
 /* Table Styling */
@@ -5367,6 +6027,7 @@ body.link-style-underline [data-callout] :is(a, .internal-link, .external-link, 
 .markdown-preview-view table {
     border-radius: var(--r3);
     -electron-corner-smoothing: var(--squircle-main);
+    corner-shape: squircle;
     overflow: hidden;
     border-collapse: separate;
     border-spacing: 0;
@@ -5402,8 +6063,11 @@ body.link-style-underline [data-callout] :is(a, .internal-link, .external-link, 
     border-block-end: var(--border-thin) solid var(--divider-color);
 }
 
-.markdown-rendered table th strong {
+/* Headers already sit at semibold on an inverted background, so bold needs
+   both the color guard and a weight jump past --weight-bold to read at all */
+:is(.markdown-rendered, .markdown-preview-view, .markdown-source-view.mod-cm6 .cm-table-widget) table th strong {
     color: inherit;
+    font-weight: 800;
 }
 
 .theme-light :is(.markdown-rendered, .markdown-preview-view) table tr:nth-child(n) th {
@@ -5562,30 +6226,124 @@ body.enable-fancy-bullets {
     100% { transform: translate(-50%, -50%) scale(1);    opacity: 1; }
 }
 
+/* Matter-style unfurl: the menu grows from the cursor corner, resolves
+   from a soft blur, and swings 2% past rest before settling */
 @keyframes menuPop {
     0% {
         opacity: 0;
-        transform: scale(0.97);
+        transform: scale(0.88);
+        filter: blur(6px);
+    }
+
+    70% {
+        opacity: 1;
+        transform: scale(1.02);
+        filter: blur(0);
     }
 
     100% {
         opacity: 1;
         transform: scale(1);
+        filter: blur(0);
     }
 }
 
-/* Apply animation to menus, modals, and popovers */
-body:not(.disable-ui-animations) .menu,
-body:not(.disable-ui-animations) .modal,
+/* Apply animation to menus (modals use macosSheetDrop below) */
+body:not(.disable-ui-animations) .menu {
+    transform-origin: top left;
+    animation: menuPop 0.28s var(--ease-apple) forwards;
+}
+
+/* Palette, suggestions, and page-preview popovers: rise with a soft
+   overshoot and resolve from a blur, settling sharp by the overshoot
+   point (whimsy replaces this with its bigger spring) */
+@keyframes tf-pop-settle {
+    0%   { opacity: 0; transform: scale(0.93) translateY(10px); filter: blur(6px); }
+    70%  { opacity: 1; transform: scale(1.015) translateY(-3px); filter: blur(0); }
+    100% { opacity: 1; transform: scale(1) translateY(0); filter: blur(0); }
+}
+
 body:not(.disable-ui-animations) .popover,
-body:not(.disable-ui-animations) .prompt,
 body:not(.disable-ui-animations) .suggestion-container {
-    animation: menuPop var(--dur-quick) var(--ease-apple) forwards;
+    animation: tf-pop-settle var(--dur-modal) var(--ease-apple) forwards;
+}
+
+/* Command palette / quick switcher: Spotlight-style — drops from above,
+   resolves from a blur, dips 2px past rest, and the results ripple in.
+   Ripple is fast + capped so retyping doesn't shimmer. */
+@keyframes tf-palette-drop {
+    0%   { opacity: 0; transform: translateY(-24px) scale(0.97); filter: blur(8px); }
+    65%  { opacity: 1; transform: translateY(5px) scale(1.005); filter: blur(0); }
+    100% { opacity: 1; transform: translateY(0) scale(1); filter: blur(0); }
+}
+
+body:not(.disable-ui-animations) .prompt {
+    animation: tf-palette-drop var(--dur-modal) var(--ease-apple) forwards;
+}
+
+body:not(.disable-ui-animations) .prompt .suggestion-item {
+    animation: menuItemSlide 0.12s var(--ease-apple) both;
+    animation-delay: min(calc(sibling-index() * 6ms), 60ms);
+}
+
+/* Anchored popups grow from their attachment corner like the cursor menus;
+   the centered palette keeps its default center origin */
+body:not(.disable-ui-animations) .popover,
+body:not(.disable-ui-animations) .suggestion-container {
+    transform-origin: top left;
+}
+
+/* Menu items cascade in with a stagger using sibling-index() (Chrome 136+).
+   opacity+translateY runs on the compositor — zero layout/paint cost. */
+@keyframes menuItemSlide {
+    from { opacity: 0; transform: translateY(5px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+body:not(.disable-ui-animations) .menu .menu-item,
+body:not(.disable-ui-animations) .suggestion-container .suggestion-item {
+    animation: menuItemSlide var(--dur-quick) var(--ease-apple) both;
+    animation-delay: min(calc(sibling-index() * 12ms), 120ms);
+}
+
+/* Matter-style theme crossfade: light/dark and seasonal switches blend on
+   one clock instead of snapping. Large containers only — elements with
+   their own transitions or hover backgrounds (view-header, workspace
+   splits, metadata-container) are deliberately excluded so pointer
+   feedback stays instant. */
+body:not(.disable-ui-animations),
+body:not(.disable-ui-animations) :is(
+    .workspace,
+    .workspace-tabs,
+    .workspace-leaf-content,
+    .markdown-source-view,
+    .markdown-preview-view,
+    .nav-files-container,
+    .workspace-ribbon,
+    .workspace-tab-header-container,
+    .status-bar
+) {
+    transition:
+        background-color 0.35s var(--ease-apple),
+        color 0.35s var(--ease-apple),
+        border-color 0.35s var(--ease-apple);
 }
 
 /* Tooltips: Apple-style instant fade — no scale, just opacity */
 body:not(.disable-ui-animations) .tooltip {
-    animation: tooltipFade var(--dur-instant) ease-out forwards;
+    animation: tooltipFade var(--dur-instant) var(--ease-apple) forwards;
+}
+
+/* Tooltip surface: superellipse corners + inner hairline ring so the dark
+   pill reads as a material, not a flat rect (native is a bare 4px box).
+   Inset ring is white in both themes — tooltips stay dark in light mode too. */
+.tooltip {
+    border-radius: var(--r1);
+    -electron-corner-smoothing: var(--squircle-btn);
+    corner-shape: superellipse(1.5);
+    box-shadow:
+        inset 0 0 0 1px rgba(255, 255, 255, 0.12),
+        0 2px 8px var(--background-modifier-box-shadow);
 }
 
 @keyframes tooltipFade {
@@ -5614,23 +6372,38 @@ body.is-phone:not(.disable-ui-animations) .menu {
     transform-origin: bottom center;
 }
 
-/* iOS-style modal "zoom-in" with a touch of overshoot */
-@keyframes iosModalZoom {
+/* macOS-sheet modal entrance: drops from above, dips 2px past its resting
+   point, then eases back — Settings and all dialogs */
+@keyframes macosSheetDrop {
     0% {
         opacity: 0;
-        transform: scale(0.94);
+        transform: translateY(-36px) scale(0.96);
     }
     60% {
-        transform: scale(1.005);
+        opacity: 1;
+        transform: translateY(5px) scale(1.008);
     }
     100% {
         opacity: 1;
-        transform: scale(1);
+        transform: translateY(0) scale(1);
     }
 }
 
 body:not(.disable-ui-animations):not(.animation-style-whimsy) .modal {
-    animation: iosModalZoom var(--dur-modal) var(--ease-apple) forwards;
+    animation: macosSheetDrop var(--dur-sheet) var(--ease-apple) forwards;
+}
+
+/* Settings: after the sheet lands, nav items ripple in (per header group,
+   capped so 40 plugin tabs don't take a second) and the content pane
+   drops in a beat later */
+body:not(.disable-ui-animations) .modal.mod-settings .vertical-tab-nav-item {
+    animation: menuItemSlide 0.25s var(--ease-apple) both;
+    animation-delay: min(calc(sibling-index() * 14ms), 220ms);
+}
+
+body:not(.disable-ui-animations) .modal.mod-settings .vertical-tab-content {
+    animation: tf-drop-in 0.4s var(--ease-spring-soft) both;
+    animation-delay: 80ms;
 }
 
 /* iOS-style backdrop blur fade-in for modal background */
@@ -5647,16 +6420,111 @@ body:not(.disable-ui-animations):not(.disable-modal-frost) .modal-bg {
     animation: iosBackdropFade 0.28s var(--ease-apple) forwards;
 }
 
-/* iOS-style press feedback: quick scale-down on tap/click — feels tactile */
+/* Rubber-band callout fold: transition only (never fires on mount); title-only — hover-lift owns .callout */
+body:not(.disable-ui-animations):not(.animation-style-whimsy) :is(.callout, .cm-callout) .callout-title {
+    transform-origin: top center;
+    transition: transform 0.35s var(--ease-spring-sm);
+}
+
+body:not(.disable-ui-animations):not(.animation-style-whimsy) :is(.callout, .cm-callout).is-collapsed .callout-title {
+    transform: scaleY(0.94);
+}
+
+/* Sidebar rubberband: Obsidian JS-animates the split's width, so the spring
+   goes on the contents instead — they slide in with overshoot when the
+   sidedock expands. Collapse has no visible counterpart (width hits 0 first). */
+@keyframes tf-sidedock-in-left {
+    from { transform: translateX(calc(-1 * var(--rebound-slide))); opacity: 0.5; }
+    to   { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes tf-sidedock-in-right {
+    from { transform: translateX(var(--rebound-slide)); opacity: 0.5; }
+    to   { transform: translateX(0); opacity: 1; }
+}
+
+body:not(.is-mobile):not(.disable-ui-animations) .workspace-split.mod-left-split:not(.is-sidedock-collapsed) .workspace-tabs {
+    animation: tf-sidedock-in-left var(--rebound-dur-lg) var(--rebound-ease);
+}
+
+body:not(.is-mobile):not(.disable-ui-animations) .workspace-split.mod-right-split:not(.is-sidedock-collapsed) .workspace-tabs {
+    animation: tf-sidedock-in-right var(--rebound-dur-lg) var(--rebound-ease);
+}
+
+/* Properties panel: drops in from above with a spring landing
+   (whimsy has its own settle-bounce for this) */
+@keyframes tf-drop-in {
+    from { opacity: 0; transform: translateY(-14px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+body:not(.disable-ui-animations):not(.animation-style-whimsy) .metadata-container:not(.is-collapsed) .metadata-content {
+    animation: tf-drop-in var(--rebound-dur) var(--ease-spring-sm);
+}
+
+/* Folder expand settle: children scale down from the fold point and spring
+   to rest (spring easing supplies the overshoot). mod-root excluded so the
+   whole file list doesn't bounce on vault load. */
+@keyframes tf-settle-y {
+    from { transform: scaleY(var(--rebound-scale-y)); opacity: 0.7; }
+    to   { transform: scaleY(1); opacity: 1; }
+}
+
+body:not(.disable-ui-animations) .nav-folder:not(.mod-root):not(.is-collapsed) > .nav-folder-children {
+    transform-origin: top center;
+    animation: tf-settle-y var(--rebound-dur) var(--rebound-ease);
+}
+
+/* List rows: flat press dip (liquid squash reads wrong on full-width rows) */
 body:not(.disable-ui-animations) :is(
     .menu-item,
     .suggestion-item,
-    .clickable-icon,
     .nav-file-title,
     .nav-folder-title
 ):active {
     transform: scale(0.97);
     transition: transform 80ms var(--ease-apple);
+}
+
+/* Liquid Glass press: fast squash in, jelly rebound out; carries hover transitions (outranks per-area rules) */
+body:not(.disable-ui-animations) :is(button, .mod-cta, .clickable-icon) {
+    transition:
+        transform 0.4s var(--ease-spring-md),
+        color var(--transition-ui),
+        background-color var(--transition-ui),
+        border-color var(--transition-ui),
+        box-shadow var(--transition-ui),
+        opacity var(--transition-ui);
+}
+
+body:not(.disable-ui-animations) :is(button, .mod-cta):active {
+    transform: scale(1.03, 0.94);
+    transition: transform 0.1s var(--ease-apple);
+}
+
+body:not(.disable-ui-animations) .clickable-icon:active {
+    transform: scale(1.06, 0.9);
+    transition: transform 0.1s var(--ease-apple);
+}
+
+/* Keep native scale(-1,1) mirror of the right toggle icon while pressed */
+body:not(.disable-ui-animations) .sidebar-toggle-button.mod-right .clickable-icon:active {
+    transform: scale(-1.06, 0.9);
+}
+
+/* Subtle hover pop: icons swell slightly on the spring curve so the
+   bounce personality reads everywhere, not just on press. Areas with
+   their own tuned hover transforms (ribbon, side dock, view actions,
+   floating nav) are excluded so this never downgrades their scale(1.1).
+   Whimsy replaces this with its bigger scale-pop. */
+body:not(.disable-ui-animations):not(.animation-style-whimsy)
+    .clickable-icon:hover:not(:active):not(.workspace-ribbon *):not(.side-dock-actions *):not(.view-actions *):not(.nav-buttons-container *):not(.sidebar-toggle-button.mod-right *) {
+    transform: scale(1.07);
+}
+
+/* Mirrored right toggle keeps its native flip while swelling */
+body:not(.disable-ui-animations):not(.animation-style-whimsy) .sidebar-toggle-button.mod-right .clickable-icon:hover:not(:active) {
+    transform: scale(-1.07, 1.07);
 }
 
 /* ================================================= ==================================================
@@ -5665,27 +6533,65 @@ body:not(.disable-ui-animations) :is(
 
 /* --- Keyframes --- */
 
+/* Big sheet spring: rushes up from below and oscillates to rest on the
+   spring-xl curve. Transform only — opacity/blur ride the separate
+   tf-deblur-in on a smooth ease so they resolve once instead of
+   flickering with the oscillation. */
 @keyframes whimsy-modal-open {
-    0% {
-        transform: translateY(18px) scale(0.99);
+    from {
+        transform: translateY(36px) scale(0.9);
     }
 
-    65% {
-        transform: translateY(-1px) scale(1.01);
+    to {
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* Smaller cousin for anchored popups: grows from the attachment corner
+   with the same spring physics */
+@keyframes whimsy-pop-in {
+    from {
+        transform: scale(0.8) translateY(10px);
     }
 
-    100% {
+    to {
+        transform: scale(1) translateY(0);
+    }
+}
+
+/* Fade + focus companion track for the springs above */
+@keyframes tf-deblur-in {
+    from {
+        opacity: 0;
+        filter: blur(6px);
+    }
+
+    to {
+        opacity: 1;
+        filter: blur(0);
+    }
+}
+
+/* Stagger row entrance: rows bounce up into place behind their container */
+@keyframes whimsy-item-in {
+    from {
+        opacity: 0;
+        transform: translateY(8px) scale(0.97);
+    }
+
+    to {
+        opacity: 1;
         transform: translateY(0) scale(1);
     }
 }
 
 @keyframes whimsy-settle-bounce {
     0% {
-        transform: scaleY(1.05);
+        transform: scaleY(1.08);
     }
 
     60% {
-        transform: scaleY(0.98);
+        transform: scaleY(0.965);
     }
 
     100% {
@@ -5699,7 +6605,7 @@ body:not(.disable-ui-animations) :is(
     }
 
     40% {
-        transform: scaleY(1.06);
+        transform: scaleY(1.1);
     }
 
     100% {
@@ -5710,7 +6616,7 @@ body:not(.disable-ui-animations) :is(
 @keyframes whimsy-notice-in {
     0% {
         opacity: 0;
-        transform: translateY(-8px) scale(0.96);
+        transform: translateY(-18px) scale(0.9);
     }
 
     100% {
@@ -5721,14 +6627,26 @@ body:not(.disable-ui-animations) :is(
 
 /* --- Application Rules --- */
 
-/* Modals */
-body.animation-style-whimsy:not(.disable-ui-animations) .modal-container {
-    transform-origin: center;
-    animation: whimsy-modal-open var(--whimsy-fast) var(--ease-bounce-lg) !important;
+/* Rebound tokens: full-strength springs in whimsy */
+body.animation-style-whimsy {
+    --rebound-ease: var(--ease-spring-xl);
+    --rebound-dur: 0.55s;
+    --rebound-dur-lg: 0.7s;
+    --rebound-slide: 28px;
+    --rebound-scale-y: 0.86;
+    --transition-bounce: 0.4s var(--ease-spring-xl);
+    --whimsy-scale-emphasis: 1.12;
+    --whimsy-scale-pop: 1.18;
 }
 
+/* Modals: the dialog itself takes the sheet spring (not .modal-container,
+   whose transform would drag the dim backdrop along); the backdrop keeps
+   its iosBackdropFade */
 body.animation-style-whimsy:not(.disable-ui-animations) .modal {
-    animation: none !important;
+    transform-origin: center;
+    animation:
+        whimsy-modal-open var(--whimsy-slow) var(--ease-spring-xl),
+        tf-deblur-in 0.28s var(--ease-apple) both !important;
 }
 
 /* Metadata/Properties */
@@ -5741,29 +6659,29 @@ body.animation-style-whimsy:not(.disable-ui-animations) .metadata-container:not(
 }
 
 body.animation-style-whimsy:not(.disable-ui-animations) .metadata-container.is-collapsed {
-    animation: whimsy-collapse-bounce var(--whimsy-normal) var(--ease-bounce-xl) forwards;
+    animation: whimsy-collapse-bounce var(--whimsy-normal) var(--ease-spring-xl) forwards;
 }
 
 /* Notices */
 body.animation-style-whimsy:not(.disable-ui-animations) .notice-container {
-    animation: whimsy-notice-in var(--whimsy-normal) var(--ease-bounce-xl) !important;
+    animation: whimsy-notice-in var(--whimsy-normal) var(--ease-spring-xl) !important;
     transform-origin: top center;
 }
 
 /* Callouts */
 body.animation-style-whimsy:not(.disable-ui-animations) .callout:not(.is-collapsed) {
-    animation: whimsy-settle-bounce var(--whimsy-normal) var(--ease-bounce-xl) !important;
+    animation: whimsy-settle-bounce var(--whimsy-normal) var(--ease-spring-xl) !important;
     transform-origin: top center;
 }
 
 body.animation-style-whimsy:not(.disable-ui-animations) .callout.is-collapsed {
-    animation: whimsy-collapse-bounce var(--whimsy-normal) var(--ease-bounce-xl) forwards !important;
+    animation: whimsy-collapse-bounce var(--whimsy-normal) var(--ease-spring-xl) forwards !important;
     transform-origin: top center;
 }
 
 /* Callout Icons - Bouncy Entrance */
 body.animation-style-whimsy:not(.disable-ui-animations) .callout .callout-icon {
-    animation: whimsy-callout-icon-bounce var(--whimsy-normal) var(--ease-bounce-sm) forwards;
+    animation: whimsy-callout-icon-bounce var(--whimsy-normal) var(--ease-spring-sm) forwards;
     transform-origin: center center;
 }
 
@@ -5788,15 +6706,19 @@ body.animation-style-whimsy:not(.disable-ui-animations) .callout .callout-icon {
 
 @keyframes whimsy-checkbox-pop {
     0% {
-        transform: scale(1);
+        transform: scale(1) rotate(0);
     }
 
     40% {
-        transform: scale(1.35);
+        transform: scale(1.5) rotate(8deg);
+    }
+
+    70% {
+        transform: scale(0.92) rotate(-3deg);
     }
 
     100% {
-        transform: scale(1);
+        transform: scale(1) rotate(0);
     }
 }
 
@@ -5848,19 +6770,46 @@ body.animation-style-whimsy:not(.disable-ui-animations) .callout .callout-icon {
     }
 }
 
-/* Popups (Menu, Popover, Etc) */
+/* Popups: anchored surfaces spring from their corner; the palette gets
+   the full sheet spring like a modal */
 body.animation-style-whimsy:not(.disable-ui-animations) .menu,
 body.animation-style-whimsy:not(.disable-ui-animations) .popover,
-body.animation-style-whimsy:not(.disable-ui-animations) .prompt,
-body.animation-style-whimsy:not(.disable-ui-animations) .suggestion-container,
+body.animation-style-whimsy:not(.disable-ui-animations) .suggestion-container {
+    animation:
+        whimsy-pop-in var(--whimsy-normal) var(--ease-spring-xl),
+        tf-deblur-in 0.22s var(--ease-apple) both !important;
+}
+
+body.animation-style-whimsy:not(.disable-ui-animations) .prompt {
+    animation:
+        whimsy-modal-open var(--whimsy-slow) var(--ease-spring-xl),
+        tf-deblur-in 0.28s var(--ease-apple) both !important;
+}
+
+/* Tooltips: same spring, smaller and quicker so they never lag the pointer */
 body.animation-style-whimsy:not(.disable-ui-animations) .tooltip {
-    animation: whimsy-modal-open var(--whimsy-fast) var(--ease-bounce-lg) !important;
+    animation:
+        whimsy-pop-in var(--whimsy-fast) var(--ease-spring-md),
+        tf-deblur-in 0.15s var(--ease-apple) both !important;
+}
+
+/* Rows inside menus/suggestions bounce in one after another */
+body.animation-style-whimsy:not(.disable-ui-animations) :is(.menu .menu-item, .suggestion-container .suggestion-item) {
+    animation: whimsy-item-in var(--whimsy-normal) var(--ease-spring-md) backwards;
+    animation-delay: min(calc(sibling-index() * 14ms), 140ms);
+}
+
+/* Palette rows re-render on every keystroke — same bounce, much quicker,
+   so retyping never feels laggy */
+body.animation-style-whimsy:not(.disable-ui-animations) .prompt .suggestion-item {
+    animation: whimsy-item-in 0.2s var(--ease-spring-md) backwards;
+    animation-delay: min(calc(sibling-index() * 8ms), 80ms);
 }
 
 /* Checkboxes */
 body.animation-style-whimsy:not(.disable-ui-animations) input[type="checkbox"]:checked,
 body.animation-style-whimsy:not(.disable-ui-animations) .task-list-item-checkbox:checked {
-    animation: whimsy-checkbox-pop var(--whimsy-micro) var(--ease-bounce-md) !important;
+    animation: whimsy-checkbox-pop var(--whimsy-fast) var(--ease-spring-md) !important;
 }
 
 /* Buttons and Icons Hover */
@@ -5890,20 +6839,23 @@ body.animation-style-whimsy .workspace-tab-header-inner-close-button:hover {
     color: var(--background-primary) !important;
 }
 
-/* Sidebar Toggle Buttons - Smart rotation based on side */
-body.animation-style-whimsy .sidebar-toggle-button.mod-left,
-body.animation-style-whimsy .sidebar-toggle-button.mod-right {
-    transition: transform 0.5s var(--ease-bounce-md);
+/* Sidebar toggles: gentle tilt on inner icon only (container transforms travel during collapse) */
+body.animation-style-whimsy .sidebar-toggle-button.mod-left .clickable-icon,
+body.animation-style-whimsy .sidebar-toggle-button.mod-right .clickable-icon {
+    transition: transform 0.3s var(--ease-spring-sm);
 }
 
-/* Left sidebar rotates counter-clockwise (opening to the left) */
-body.animation-style-whimsy .sidebar-toggle-button.mod-left:hover {
-    transform: rotate(-180deg) scale(1.1);
+body.animation-style-whimsy .sidebar-toggle-button.mod-left:hover .clickable-icon {
+    transform: rotate(-12deg) scale(1.08);
 }
 
-/* Right sidebar rotates clockwise (opening to the right) */
-body.animation-style-whimsy .sidebar-toggle-button.mod-right:hover {
-    transform: rotate(180deg) scale(1.1);
+/* Mirrored right icon: keep flip, mirror rotation so tilt reads +12° */
+body.animation-style-whimsy .sidebar-toggle-button.mod-right:hover .clickable-icon {
+    transform: scale(-1, 1) rotate(-12deg) scale(1.08);
+}
+
+body.animation-style-whimsy .sidebar-toggle-button.mod-right .clickable-icon:active {
+    transform: scale(-0.9, 0.9);
 }
 
 /* Ribbon collapse buttons have subtle rotation */
@@ -5953,7 +6905,7 @@ body.animation-style-whimsy .side-dock-ribbon-action,
 body.animation-style-whimsy .workspace-ribbon-collapse-btn,
 body.animation-style-whimsy .view-header-icon,
 body.animation-style-whimsy .modal-close-button {
-    transition: color var(--transition-ui), transform 0.4s var(--ease-bounce-md);
+    transition: color var(--transition-ui), transform 0.4s var(--ease-spring-md);
 }
 
 /* Toggles */
@@ -5967,7 +6919,7 @@ body.animation-style-whimsy .checkbox-container:after {
 
 /* Sliders */
 body.animation-style-whimsy input[type=range]::-webkit-slider-thumb {
-    transition: transform 0.2s var(--ease-bounce-md);
+    transition: transform 0.2s var(--ease-spring-md);
 }
 
 body.animation-style-whimsy input[type=range]::-webkit-slider-thumb:active {
@@ -5983,6 +6935,48 @@ body.animation-style-whimsy:not(.disable-ui-animations) .notice.mod-warning {
 /* Settings Toggles - Jelly on Click */
 body.animation-style-whimsy:not(.disable-ui-animations) .checkbox-container:active {
     animation: whimsy-jelly var(--whimsy-normal) ease-in-out;
+}
+
+/* --- Whimsy Throughout the Workspace --- */
+
+/* New tabs bounce into the tab strip. Fill is backwards-only so the
+   finished animation never overrides Obsidian's inline drag transforms. */
+@keyframes whimsy-tab-in {
+    from {
+        opacity: 0;
+        transform: translateY(10px) scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+body.animation-style-whimsy:not(.disable-ui-animations) .workspace-tab-header {
+    animation: whimsy-tab-in var(--whimsy-normal) var(--ease-spring-md) backwards;
+}
+
+/* File explorer rows nudge right on the spring; :not(:active) keeps the
+   flat press dip (scale 0.97) in charge while clicking */
+body.animation-style-whimsy :is(.nav-file-title, .nav-folder-title) {
+    transition: transform 0.3s var(--ease-spring-md), background-color var(--transition-ui), color var(--transition-ui);
+}
+
+body.animation-style-whimsy :is(.nav-file-title, .nav-folder-title):hover:not(:active) {
+    transform: translateX(4px);
+}
+
+/* Search results spring in with a stagger as matches arrive */
+body.animation-style-whimsy:not(.disable-ui-animations) .search-result-container .search-result {
+    animation: whimsy-item-in var(--whimsy-normal) var(--ease-spring-md) backwards;
+    animation-delay: min(calc(sibling-index() * 18ms), 180ms);
+}
+
+/* Note title takes a small bow when a file opens (editor + reading mode).
+   When Aurora Title is on, its later drift animation wins — by design. */
+body.animation-style-whimsy:not(.disable-ui-animations) .inline-title {
+    animation: whimsy-item-in var(--whimsy-normal) var(--ease-spring-md) backwards;
 }
 
 /* Modal Close Button - Spin on Hover */
@@ -6025,6 +7019,7 @@ body:not(.disable-modal-frost) .modal-bg {
     color: inherit !important;
     border-radius: 3px;
     -electron-corner-smoothing: var(--squircle-btn);
+    corner-shape: superellipse(1.5);
     box-shadow: 0 0 0 1px rgba(var(--primary-color-rgb), .2);
     outline: none !important;
     padding: 0 1px !important;
@@ -6042,6 +7037,7 @@ body:not(.disable-modal-frost) .modal-bg {
     background-color: rgba(var(--background-secondary-rgb), .7);
     border-radius: var(--r3);
     -electron-corner-smoothing: var(--squircle-main);
+    corner-shape: squircle;
     padding: var(--s4);
     margin-block-end: var(--s4);
     border: none;
@@ -6098,6 +7094,7 @@ body:not(.disable-modal-frost) .modal-bg {
     border-radius: var(--r3) var(--r3) 0 0;
     overflow: visible;
     -electron-corner-smoothing: var(--squircle-main);
+    corner-shape: squircle;
     margin-inline-end: 0;
     margin-block-end: 0;
     background-color: rgba(var(--background-secondary-rgb), 0.9);
@@ -6225,13 +7222,15 @@ body:not(.disable-modal-frost) .modal-bg {
     background-color: var(--glass-bg);
     border-radius: var(--r3);
     -electron-corner-smoothing: var(--squircle-soft);
+    corner-shape: superellipse(3);
     border: var(--border-thin) solid var(--glass-border);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
     position: relative;
     z-index: 1;
     display: flex;
     flex-direction: column;
-    transition: box-shadow var(--transition-ui), transform var(--transition-ui), background-color var(--transition-ui);
+    /* no transform: would re-time Obsidian's native collapse */
+    transition: box-shadow var(--transition-ui), background-color var(--transition-ui);
     contain: layout;
 }
 
@@ -6241,6 +7240,33 @@ body:not(.disable-modal-frost) .modal-bg {
     box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
     transform: none;
     z-index: 10;
+}
+
+/* Sidedock ghost fix: hide header during slide (class lands at slide start), fade in after landing */
+.workspace-split:is(.mod-left-split, .mod-right-split) .workspace-tab-header-container {
+    transition:
+        opacity 0.18s var(--ease-apple) 0.1s,
+        transform 0.35s var(--ease-spring-sm) 0.1s;
+}
+
+.workspace-split:is(.mod-left-split, .mod-right-split).is-sidedock-collapsed .workspace-tab-header-container {
+    opacity: 0;
+    transition: none;
+}
+
+/* Landing settle: icons drift in from window edge as the panel lands */
+.workspace-split.mod-right-split.is-sidedock-collapsed .workspace-tab-header-container {
+    transform: translateX(8px);
+}
+
+.workspace-split.mod-left-split.is-sidedock-collapsed .workspace-tab-header-container {
+    transform: translateX(-8px);
+}
+
+/* Hide the animated toggle CLONE Obsidian leaves in mod-root on re-parent (updateFrameless → cloneNode) */
+body.mod-macos .workspace.is-right-sidedock-open .workspace-split.mod-root .sidebar-toggle-button.mod-right,
+body.mod-macos .workspace.is-left-sidedock-open .workspace-split.mod-root .sidebar-toggle-button.mod-left {
+    visibility: hidden;
 }
 
 .workspace-tabs .workspace-leaf {
@@ -6281,18 +7307,18 @@ body:not(.is-mobile):not(.disable-status-bar) .status-bar {
     padding-inline: var(--s3);
     border-radius: var(--r4);
     -electron-corner-smoothing: var(--squircle-btn);
+    corner-shape: superellipse(1.5);
     background-color: var(--background-secondary);
     border: var(--border-thin) solid var(--divider-color);
     box-shadow: var(--shadow-1);
     color: var(--text-muted);
-    text-wrap: balance;
-    white-space: normal;
-    word-wrap: break-word;
+    /* Single row always: wrapping while max-width/height animate makes items
+       reflow every frame and height:auto re-resolve — the reveal jumbles */
+    white-space: nowrap;
     overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
     cursor: default;
     transform-origin: bottom center;
     /* allow-keywords lets height morph 6px -> auto smoothly (Chromium 129+);
@@ -6336,7 +7362,6 @@ body:not(.disable-status-bar) .status-bar>.status-bar-item {
         opacity var(--dur-quick) var(--ease-apple),
         transform var(--dur-quick) var(--ease-apple),
         filter var(--dur-quick) var(--ease-apple);
-    white-space: normal;
     color: inherit;
     display: flex;
     align-items: center;
@@ -6363,6 +7388,7 @@ body:not(.disable-status-bar) .status-bar:hover .status-bar-item button:hover {
     background-color: rgba(var(--primary-color-rgb), .1);
     border-radius: var(--r1);
     -electron-corner-smoothing: var(--squircle-btn);
+    corner-shape: superellipse(1.5);
     color: var(--text-normal);
 }
 
@@ -6392,6 +7418,7 @@ body:not(.disable-status-bar) .status-bar:hover .status-bar-item button:hover {
     position: relative;
     border-radius: var(--r1);
     -electron-corner-smoothing: var(--squircle-soft);
+    corner-shape: superellipse(3);
     min-height: 24px;
     height: auto !important;
     padding: var(--s1) var(--s2);
@@ -6481,25 +7508,35 @@ body:not(.disable-status-bar) .status-bar:hover .status-bar-item button:hover {
     background-color: transparent;
     border-radius: var(--r3);
     -electron-corner-smoothing: var(--squircle-main);
+    corner-shape: squircle;
 }
 
 ::-webkit-scrollbar-thumb {
     background-color: var(--scrollbar-thumb);
     border-radius: var(--r3);
     -electron-corner-smoothing: var(--squircle-main);
-    transition: background-color 0.18s ease-out;
+    corner-shape: squircle;
+    transition: background-color 0.25s var(--ease-apple);
+}
+
+/* macOS overlay behavior: thumb hides while the pane is idle */
+:not(:hover)::-webkit-scrollbar-thumb {
+    background-color: transparent;
 }
 
 ::-webkit-scrollbar-thumb:hover {
     background-color: var(--interactive-accent);
 }
 
+/* macOS scrollbars have no track */
 ::-webkit-scrollbar-track {
-    background-color: var(--scrollbar-track);
+    background-color: transparent;
     border-radius: var(--r3);
     -electron-corner-smoothing: var(--squircle-main);
+    corner-shape: squircle;
 }
 
+/* macOS overlay scrollbars: visible only while the pane is hovered */
 body:not(.disable-scrollbars) :is(
     .markdown-preview-view,
     .markdown-source-view .cm-scroller,
@@ -6514,7 +7551,24 @@ body:not(.disable-scrollbars) :is(
     .backlink-pane
 ) {
     scrollbar-width: thin;
-    scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
+    scrollbar-color: transparent transparent;
+    transition: scrollbar-color 0.25s var(--ease-apple);
+}
+
+body:not(.disable-scrollbars) :is(
+    .markdown-preview-view,
+    .markdown-source-view .cm-scroller,
+    .nav-files-container,
+    .workspace-leaf-content,
+    .modal-container,
+    .vertical-tab-content-container,
+    .suggestion-container,
+    .prompt-results,
+    .tag-container,
+    .workspace-leaf-content[data-type="outline"] .view-content,
+    .backlink-pane
+):hover {
+    scrollbar-color: var(--scrollbar-thumb) transparent;
 }
 
 /* Popover Styling */
@@ -6523,6 +7577,7 @@ body:not(.disable-scrollbars) :is(
     border: var(--border-thin) solid var(--glass-border);
     border-radius: var(--r3);
     -electron-corner-smoothing: var(--squircle-main);
+    corner-shape: squircle;
     box-shadow: var(--shadow-overlay);
     backdrop-filter: blur(10px) saturate(150%);
     -webkit-backdrop-filter: blur(10px) saturate(150%);
@@ -6554,10 +7609,10 @@ body:not(.disable-scrollbars) :is(
     border: var(--border-thin) solid var(--glass-border);
     border-radius: var(--r4);
     -electron-corner-smoothing: var(--squircle-main);
+    corner-shape: squircle;
     box-shadow: var(--shadow-overlay);
     backdrop-filter: blur(12px) saturate(160%);
     -webkit-backdrop-filter: blur(12px) saturate(160%);
-    overflow: hidden;
 }
 
 .theme-light .prompt {
@@ -6579,6 +7634,9 @@ body:not(.disable-scrollbars) :is(
     background-color: var(--background-secondary);
     border-block-end: var(--border-thin) solid rgba(var(--primary-color-rgb), .1);
     padding: var(--s3);
+    /* Clip input background to prompt's top rounded corners (replaces overflow:hidden on parent) */
+    border-start-start-radius: var(--r4);
+    border-start-end-radius: var(--r4);
 }
 
 .prompt-input {
@@ -6586,6 +7644,7 @@ body:not(.disable-scrollbars) :is(
     border: var(--border-thin) solid rgba(var(--primary-color-rgb), .12);
     border-radius: var(--r2);
     -electron-corner-smoothing: var(--squircle-btn);
+    corner-shape: superellipse(1.5);
     padding-block: var(--s2);
     padding-inline: var(--s3);
     color: var(--text-normal);
@@ -6611,6 +7670,7 @@ body:not(.disable-scrollbars) :is(
     border: var(--border-thin) solid var(--glass-border);
     border-radius: var(--r3);
     -electron-corner-smoothing: var(--squircle-main);
+    corner-shape: squircle;
     box-shadow: var(--shadow-overlay);
     backdrop-filter: blur(10px) saturate(150%);
     -webkit-backdrop-filter: blur(10px) saturate(150%);
@@ -6636,9 +7696,16 @@ body:not(.disable-scrollbars) :is(
     padding: var(--s2);
     border-radius: var(--r1);
     -electron-corner-smoothing: var(--squircle-btn);
+    corner-shape: superellipse(1.5);
     margin: 2px var(--s1);
     cursor: pointer;
     transition: background-color var(--fast), transform var(--fast);
+}
+
+/* Concentric with the 16px prompt shell: items are inset 4px, so
+   16 − 4 = 12. Plain 12px suggestion popups keep the 6px default. */
+.prompt .suggestion-item {
+    border-radius: var(--r3);
 }
 
 .suggestion-item:hover {
@@ -6664,6 +7731,7 @@ body:not(.disable-scrollbars) :is(
     border: var(--border-thin) solid rgba(var(--primary-color-rgb), .15);
     border-radius: var(--r1);
     -electron-corner-smoothing: var(--squircle-btn);
+    corner-shape: superellipse(1.5);
     padding-block: 2px;
     padding-inline: 6px;
     font-size: 0.75em;
@@ -6682,6 +7750,7 @@ body:not(.disable-scrollbars) :is(
     border: var(--border-thin) solid var(--glass-border);
     border-radius: var(--r2);
     -electron-corner-smoothing: var(--squircle-main);
+    corner-shape: squircle;
     box-shadow: var(--shadow-overlay);
     overflow: hidden;
     padding: 4px;
@@ -6721,7 +7790,8 @@ body.theme-dark.disable-glass-menus :is(.popover, .prompt, .suggestion-container
     padding: var(--s2);
     border-radius: var(--r1);
     -electron-corner-smoothing: var(--squircle-btn);
-    cursor: pointer;
+    corner-shape: superellipse(1.5);
+    /* macOS menus keep the arrow cursor; pointer reads as web/Android */
     transition: background-color var(--fast);
     display: flex;
     align-items: center;
@@ -6760,6 +7830,7 @@ body.theme-dark.disable-glass-menus :is(.popover, .prompt, .suggestion-container
     border: var(--border-thin) solid var(--glass-border);
     border-radius: var(--r4);
     -electron-corner-smoothing: var(--squircle-main);
+    corner-shape: squircle;
     box-shadow:
         0 12px 36px rgba(0, 0, 0, 0.25),
         inset 0 1px 0 rgba(255, 255, 255, 0.4);
@@ -6850,6 +7921,7 @@ input[type='password'],
 input[type='number'] {
     border-radius: var(--r4);
     -electron-corner-smoothing: var(--squircle-btn);
+    corner-shape: superellipse(1.5);
 }
 
 .search-input-container input {
@@ -6862,6 +7934,7 @@ input[type='number'] {
 .dropdown-menu {
     border-radius: var(--r3);
     -electron-corner-smoothing: var(--squircle-main);
+    corner-shape: squircle;
     overflow: hidden;
 }
 
@@ -6894,6 +7967,7 @@ input[type='number'] {
     color: var(--text-muted);
     border-radius: var(--r1);
     -electron-corner-smoothing: var(--squircle-btn);
+    corner-shape: superellipse(1.5);
     padding: var(--s1);
     margin-block: 2px;
     margin-inline: 0;
@@ -6937,6 +8011,7 @@ input[type='number'] {
     color: var(--text-muted);
     border-radius: var(--r1);
     -electron-corner-smoothing: var(--squircle-btn);
+    corner-shape: superellipse(1.5);
     padding: 4px;
     transition: color var(--transition-ui), background-color var(--transition-ui), transform var(--transition-ui);
 }
@@ -6950,6 +8025,14 @@ input[type='number'] {
 
 .view-actions .clickable-icon:active {
     transform: scale(0.95);
+}
+
+/* Keyboard focus: soft accent ring on controls that natively show nothing.
+   :focus-visible only — mouse clicks never trigger it. Text inputs excluded;
+   they already get Obsidian's native focus box-shadow. */
+body :is(button, .clickable-icon, .checkbox-container, .dropdown, select, a):focus-visible {
+    outline: 2px solid rgba(var(--primary-color-rgb), 0.5);
+    outline-offset: 1px;
 }
 
 /* Universal press feedback — Apple presses every interactive element */
@@ -7218,6 +8301,9 @@ body:not(.is-mobile).enable-floating-nav .nav-buttons-container {
     transition: width 0.32s var(--ease-apple), height 0.32s var(--ease-apple), background-color var(--slow), box-shadow var(--slow), opacity var(--slow);
     overflow: hidden;
     display: flex;
+    /* Obsidian's own .nav-buttons-container sets flex-wrap: wrap — while the
+       width animates, the last icon wraps to a second row below the pill */
+    flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
     gap: 0;
@@ -7232,7 +8318,9 @@ body:not(.is-mobile).enable-floating-nav .nav-buttons-container:hover {
     height: var(--height-input);
     background-color: var(--background-secondary-alt);
     box-shadow: var(--shadow-2);
-    overflow: visible;
+    /* keep overflow hidden: anything outside the pill mid-animation must clip;
+       side padding gives the edge icons room for their scale(1.1) hover */
+    padding-inline: 4px;
     opacity: 1;
     gap: 4px;
     margin-block-start: 7px !important;
@@ -7458,6 +8546,77 @@ body.show-header-on-hover.layout-card .view-header:hover {
     border-block-end: none !important;
 }
 
+/* ============================== */
+/*       AUTO-HIDE RIBBON         */
+/* ============================== */
+
+/* Push-reveal, slide-in flavor: the ribbon stays in the flex flow but
+   hides by pulling itself off-screen with a negative margin-left equal
+   to its own width — flow footprint 0, so it's completely gone and the
+   workspace reclaims the space. Hover slides it back in, pushing the
+   sidebar/notes right. Only margin-left animates: one layout property
+   at constant geometry (no squish, no clipping), on a crisp ease-out —
+   the old width/flex-basis spring re-laid-out every pane per frame and
+   read as stutter. The fixed ::after strip below stays pinned to the
+   screen edge and carries :hover while the ribbon is off-screen. NO
+   transforms on the ribbon — a transform would become the containing
+   block for the fixed strip and un-pin it from the edge. */
+body:not(.is-mobile).ribbon-autohide .workspace-ribbon.mod-left {
+    /* -2px fudge tucks the border-right hairline off-screen too */
+    margin-left: calc(-1 * var(--ribbon-width) - 2px);
+    /* 140ms grace on retract so grazing out doesn't flicker;
+       background-color keeps the theme-switch crossfade alive */
+    transition:
+        margin-left 0.3s var(--ease-apple) 140ms,
+        background-color 0.35s var(--ease-apple);
+}
+
+/* With the ribbon out of flow, macOS traffic-light clearance comes up
+   short: native --frame-left-space is calc(80px - var(--ribbon-width)),
+   which assumes the ribbon still occupies its width at the left edge.
+   Reserve the full 80px so the top-left tab header (and the sidebar
+   collapse icon when the left sidebar is collapsed) clears the lights. */
+body:not(.is-mobile).ribbon-autohide.mod-macos {
+    --frame-left-space: 80px;
+}
+
+/* Invisible 10px hot strip pinned to the screen edge — position: fixed
+   on the pseudo keeps it hit-testable while the ribbon is off-screen,
+   independent of the ribbon's own geometry */
+body:not(.is-mobile).ribbon-autohide .workspace-ribbon.mod-left::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 10px;
+}
+
+/* :focus-within keeps the ribbon reachable by keyboard */
+body:not(.is-mobile).ribbon-autohide .workspace-ribbon.mod-left:is(:hover, :focus-within) {
+    margin-left: 0;
+    transition-delay: 0s;
+}
+
+/* Icons hang back, then glide in on the spring a beat after the panel —
+   containers animate (not the icons) so icon hover transforms stay intact */
+body:not(.is-mobile).ribbon-autohide .workspace-ribbon.mod-left :is(.side-dock-actions, .side-dock-settings) {
+    opacity: 0;
+    transform: translateX(-10px);
+    transition: opacity 0.18s var(--ease-apple), transform 0.35s var(--ease-spring-md);
+}
+
+body:not(.is-mobile).ribbon-autohide .workspace-ribbon.mod-left:is(:hover, :focus-within) :is(.side-dock-actions, .side-dock-settings) {
+    opacity: 1;
+    transform: translateX(0);
+    transition-delay: 60ms;
+}
+
+/* Settings cluster lands last for a two-beat cascade */
+body:not(.is-mobile).ribbon-autohide .workspace-ribbon.mod-left:is(:hover, :focus-within) .side-dock-settings {
+    transition-delay: 120ms;
+}
+
 /* Modern Glass Style - Frosted glass effect */
 .blockquote-style-glass :is(.markdown-preview-view blockquote, .markdown-rendered blockquote, div:not(.CodeMirror-activeline)>.HyperMD-quote, .markdown-source-view.mod-cm6 .cm-line.HyperMD-quote) {
     background: linear-gradient(135deg, rgba(var(--background-secondary-rgb), 0.6), rgba(var(--background-secondary-rgb), 0.4)) !important;
@@ -7566,11 +8725,19 @@ body.show-header-on-hover.layout-card .view-header:hover {
 /*     MOBILE & iPAD FIXES        */
 /* ============================== */
 
+/* Mobile CSS variable defaults — override once here, let the cascade do the rest */
+body.is-mobile {
+    --safe-area-inset-side: 16px;   /* fallback; Obsidian sets the real value on device */
+    --input-border-width-focus: 0;  /* prevents focus-ring flash on tap */
+}
+
 /* MOBILE SCROLLING: let Obsidian handle it natively.
    Do NOT add overflow, overscroll-behavior, height, or -webkit-overflow-scrolling
    overrides here — they fight iOS WebKit and cause oscillating scroll. */
 
-/* Strip all theme `contain` / `will-change` hints on mobile — they break iOS scroll containment */
+/* Strip `contain` / `will-change` hints on mobile — they break iOS scroll containment.
+   Glass heading hints are now gated to desktop at source; this covers workspace
+   containers where TerraFlow sets contain for card layout performance. */
 body.is-mobile :is(
     .workspace-leaf-content,
     .view-content,
@@ -7582,8 +8749,7 @@ body.is-mobile :is(
     .metadata-container,
     .workspace-split,
     .workspace-split.mod-left-split,
-    .workspace-split.mod-right-split,
-    .heading-style-glass :is(h1, h2, h3, h4, h5, h6)
+    .workspace-split.mod-right-split
 ) {
     contain: none !important;
     will-change: auto !important;
@@ -7681,39 +8847,55 @@ body.is-mobile .workspace-tab-header-container {
     overflow-x: auto !important;
 }
 
-/* Ensure readable font sizes on small screens */
-@media (max-width: 768px) {
-    body {
-        font-size: 16px !important;
-    }
-
-    .markdown-preview-view,
-    .markdown-source-view {
-        font-size: 1em !important;
-    }
-
-    /* Adjust heading sizes on mobile */
-    .markdown-rendered h1,
-    .cm-header-1 {
-        font-size: 1.8em !important;
-    }
-
-    .markdown-rendered h2,
-    .cm-header-2 {
-        font-size: 1.5em !important;
-    }
-
-    .markdown-rendered h3,
-    .cm-header-3 {
-        font-size: 1.3em !important;
-    }
+/* Readable font sizes on phone — use .is-mobile:not(.is-tablet) so iPad (which is
+   both .is-mobile AND .is-tablet) doesn't get phone-size fonts. The old
+   @media (max-width: 768px) block would fire on iPad portrait (768px wide), which was wrong. */
+body.is-mobile:not(.is-tablet) {
+    font-size: 16px;
 }
 
-/* Fix card layout specifically on iPad (wider screens but still touch) */
-@media (min-width: 768px) and (max-width: 1024px) and (hover: none) {
-    body.layout-card .workspace-leaf {
-        margin: 8px !important;
-    }
+body.is-mobile:not(.is-tablet) .markdown-preview-view,
+body.is-mobile:not(.is-tablet) .markdown-source-view {
+    font-size: 1em;
+}
+
+body.is-mobile:not(.is-tablet) .markdown-rendered h1,
+body.is-mobile:not(.is-tablet) .cm-header-1 {
+    font-size: 1.8em;
+}
+
+body.is-mobile:not(.is-tablet) .markdown-rendered h2,
+body.is-mobile:not(.is-tablet) .cm-header-2 {
+    font-size: 1.5em;
+}
+
+body.is-mobile:not(.is-tablet) .markdown-rendered h3,
+body.is-mobile:not(.is-tablet) .cm-header-3 {
+    font-size: 1.3em;
+}
+
+/* iPad-specific card margins — use Obsidian's .is-tablet class rather than a
+   viewport-width media query (more reliable, not fooled by split-screen sizes) */
+body.is-tablet.layout-card .workspace-leaf {
+    margin: 8px !important;
+}
+
+/* Strip elevated card effect from .mod-raised on mobile — prevents any
+   backdrop-filter on workspace widgets from janking scroll */
+body.is-mobile .mod-raised {
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    box-shadow: none !important;
+}
+
+/* Honour prefers-reduced-motion on mobile: kill transitions on all overlay elements */
+body.reduce-motion.is-mobile .mobile-tab-switcher,
+body.reduce-motion.is-mobile .menu,
+body.reduce-motion.is-mobile .suggestion-container,
+body.reduce-motion.is-mobile .prompt,
+body.reduce-motion.is-mobile .modal,
+body.reduce-motion.is-mobile .modal-bg {
+    transition: none !important;
 }
 
 /* === CRITICAL MOBILE OVERRIDE: Force metadata background === */
@@ -7731,7 +8913,6 @@ body.is-mobile .metadata-container {
 body.is-mobile .metadata-content,
 body.is-mobile .metadata-properties-heading {
     background: transparent !important;
-    background-color: transparent !important;
 }
 
 /* ============================== */
@@ -7742,15 +8923,15 @@ body.is-mobile .metadata-properties-heading {
 body.depth-shadows {
     --depth-1: 0 1px 2px rgba(0, 0, 0, 0.05),
                0 2px 4px rgba(0, 0, 0, 0.03);
-    
+
     --depth-2: 0 2px 4px rgba(0, 0, 0, 0.06),
                0 4px 8px rgba(0, 0, 0, 0.04),
                0 8px 16px rgba(0, 0, 0, 0.02);
-    
+
     --depth-3: 0 4px 8px rgba(0, 0, 0, 0.08),
                0 8px 16px rgba(0, 0, 0, 0.06),
                0 16px 32px rgba(0, 0, 0, 0.04);
-    
+
     --depth-4: 0 8px 16px rgba(0, 0, 0, 0.1),
                0 16px 32px rgba(0, 0, 0, 0.08),
                0 32px 64px rgba(0, 0, 0, 0.06);
@@ -7759,15 +8940,15 @@ body.depth-shadows {
 body.depth-shadows.theme-dark {
     --depth-1: 0 1px 2px rgba(0, 0, 0, 0.2),
                0 2px 4px rgba(0, 0, 0, 0.15);
-    
+
     --depth-2: 0 2px 4px rgba(0, 0, 0, 0.25),
                0 4px 8px rgba(0, 0, 0, 0.2),
                0 8px 16px rgba(0, 0, 0, 0.15);
-    
+
     --depth-3: 0 4px 8px rgba(0, 0, 0, 0.3),
                0 8px 16px rgba(0, 0, 0, 0.25),
                0 16px 32px rgba(0, 0, 0, 0.2);
-    
+
     --depth-4: 0 8px 16px rgba(0, 0, 0, 0.35),
                0 16px 32px rgba(0, 0, 0, 0.3),
                0 32px 64px rgba(0, 0, 0, 0.25);
@@ -7776,7 +8957,7 @@ body.depth-shadows.theme-dark {
 /* Callouts, Metadata, Canvas cards - depth 2 base */
 body.depth-shadows :is(.callout, .metadata-container, .canvas-card) {
     box-shadow: var(--depth-2);
-    transition: box-shadow 0.3s var(--ease-bounce-sm), transform 0.3s var(--ease-bounce-sm);
+    transition: box-shadow 0.3s var(--ease-spring-sm), transform 0.3s var(--ease-spring-sm);
 }
 
 body.depth-shadows .callout:hover {
@@ -7798,7 +8979,7 @@ body.depth-shadows .canvas-card:hover {
 /* Card layout leaves - depth 2 */
 body.depth-shadows:not(.is-mobile).layout-card .workspace-leaf-content {
     box-shadow: var(--depth-2);
-    transition: box-shadow 0.3s var(--ease-bounce-sm);
+    transition: box-shadow 0.3s var(--ease-spring-sm);
     overflow: hidden !important;
 }
 
@@ -7837,13 +9018,13 @@ body.depth-shadows :is(.markdown-rendered pre:hover, .markdown-preview-view pre:
 }
 
 /* Buttons - depth 1 with depth 2 on hover */
-body.depth-shadows .button, 
+body.depth-shadows .button,
 body.depth-shadows button:not(.clickable-icon) {
     box-shadow: var(--depth-1);
     transition: var(--transition-depth);
 }
 
-body.depth-shadows .button:hover, 
+body.depth-shadows .button:hover,
 body.depth-shadows button:not(.clickable-icon):hover {
     box-shadow: var(--depth-2);
     transform: translateY(-1px) !important;
@@ -7998,11 +9179,11 @@ body.inline-code-accent :not(pre) > code:hover {
 }
 
 @keyframes code-pulse {
-    0%, 100% { 
+    0%, 100% {
         opacity: 1;
         border-left-color: var(--primary-color);
     }
-    50% { 
+    50% {
         opacity: 0.95;
         border-left-color: rgba(var(--primary-color-rgb), 0.7);
     }
@@ -8083,8 +9264,12 @@ body.layout-card .workspace-ribbon.side-dock-ribbon.mod-left {
     border-radius: var(--radius-pill);
     border: none !important;
     box-shadow: none;
-    padding: 8px 6px !important;
-    margin: 12px 4px !important;
+    /* must clear the pill's semicircular end caps */
+    padding: 14px 6px !important;
+    /* left margin 12px balances the composite gap on the right (4px ribbon
+       margin + 5px leaf margin + split gap ≈ 13px) so the pill sits centered
+       between window edge and note card instead of hugging the edge */
+    margin: 12px 4px 12px 12px !important;
     margin-top: 80px !important;
     width: fit-content !important;
     min-height: 0 !important;
@@ -8156,6 +9341,57 @@ body:not(.is-mobile).layout-card:not(.show-ribbon) .workspace-ribbon.side-dock-r
     display: none !important;
 }
 
+/* Auto-Hide Ribbon ⨯ Card layout: same slide-in mechanics, pill look —
+   width is pinned to 48px (36px icons + 12px padding, border-box) so
+   the hidden offset is exact: -54px margin-left tucks pill + 4px right
+   margin fully off-screen (flow footprint 0); hover restores the
+   pill's normal 12px inset and pushes the workspace right. overflow:
+   hidden keeps the icon slide-in clipped inside the capsule (the fixed
+   edge strip is NOT clipped — its containing block is the viewport).
+   Both collapsed states listed so this outranks the pill's own
+   !important margins. */
+body:not(.is-mobile).ribbon-autohide.layout-card .workspace-ribbon.side-dock-ribbon.mod-left:not(.is-collapsed),
+body:not(.is-mobile).ribbon-autohide.layout-card .workspace-ribbon.side-dock-ribbon.mod-left.is-collapsed {
+    margin: 80px 4px 12px !important;
+    margin-left: -54px !important;
+    width: 48px !important;
+    padding: 14px 6px !important;
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: max-content !important;
+    overflow: hidden !important;
+    border-radius: var(--radius-pill);
+}
+
+body:not(.is-mobile).ribbon-autohide.layout-card .workspace-ribbon.side-dock-ribbon.mod-left:not(.is-collapsed):is(:hover, :focus-within),
+body:not(.is-mobile).ribbon-autohide.layout-card .workspace-ribbon.side-dock-ribbon.mod-left.is-collapsed:is(:hover, :focus-within) {
+    margin-left: 12px !important;
+}
+
+/* macOS frameless keeps the extra traffic-light clearance */
+body.mod-macos.is-hidden-frameless:not(.is-mobile).ribbon-autohide.layout-card .workspace-ribbon.side-dock-ribbon.mod-left:not(.is-collapsed),
+body.mod-macos.is-hidden-frameless:not(.is-mobile).ribbon-autohide.layout-card .workspace-ribbon.side-dock-ribbon.mod-left.is-collapsed {
+    margin-top: 90px !important;
+}
+
+/* While the ribbon is tucked away, the left sidebar card gets the same
+   5px edge gap the cards have on the right (the .workspace-leaf margin)
+   instead of sitting flush against the screen edge. The gap collapses
+   in sync with the ribbon slide-in (ribbon and split are siblings), so
+   revealed geometry is identical to the non-autohide pill layout. */
+body:not(.is-mobile).ribbon-autohide.layout-card .workspace-split.mod-left-split {
+    margin-left: 5px;
+    transition:
+        box-shadow var(--transition-ui),
+        background-color var(--transition-ui),
+        margin-left 0.3s var(--ease-apple) 140ms;
+}
+
+body:not(.is-mobile).ribbon-autohide.layout-card .workspace-ribbon.mod-left:is(:hover, :focus-within) ~ .workspace-split.mod-left-split {
+    margin-left: 0;
+    transition-delay: 0s, 0s, 0s;
+}
+
 /* Fix ribbon container background to match theme in card layout */
 /* The issue was .workspace.is-left-sidedock-open having #F8F8FE background */
 body.layout-card .workspace.is-left-sidedock-open,
@@ -8167,21 +9403,64 @@ body.layout-card .workspace {
 /*         STYLE SETTINGS PANEL UI          */
 /* ========================================= */
 
-/* Section container backgrounds for visual grouping */
+/* iOS inset-grouped settings cards */
 /* h2 level */
 .style-settings-heading[data-level="2"] + .style-settings-container {
     background-color: rgba(var(--background-secondary-rgb), 0.55);
-    border-radius: var(--r1);
+    border-radius: var(--r2);
     margin-bottom: 4px;
-    padding: 2px 0;
+    padding: 4px 8px;
 }
 
 /* h3 level: deeper, nested inside h2 container */
 .style-settings-container > .style-settings-heading[data-level="3"] + .style-settings-container {
     background-color: rgba(var(--background-secondary-rgb), 0.75);
-    border-radius: var(--r1);
+    border-radius: var(--r2);
     margin: 2px 6px;
-    padding: 2px 0;
+    padding: 4px 8px;
+}
+
+.style-settings-container .setting-item {
+    border-radius: var(--r1);
+}
+
+/* Bring the plugin's native section chevron in-flow (!important beats its (0,4,0) gutter rule) */
+.style-settings-heading[data-level] .setting-item-name .style-settings-collapse-indicator {
+    margin-left: 0 !important;
+    margin-right: 8px;
+    color: var(--text-muted);
+    display: inline-flex;
+    align-items: center;
+    vertical-align: -1px;
+}
+
+.style-settings-heading[data-level] .setting-item-name .style-settings-collapse-indicator > svg {
+    height: 12px !important;
+    width: 12px !important;
+    transition: transform 0.3s var(--ease-spring-sm);
+}
+
+.style-settings-heading:hover .style-settings-collapse-indicator {
+    color: var(--primary-color);
+}
+
+.style-settings-heading:hover {
+    background-color: color-mix(in srgb, var(--text-normal) 4%, transparent);
+    border-radius: var(--r1);
+}
+
+/* Neutral heading text; export/import icons quiet until row hover */
+.style-settings-heading .setting-item-name {
+    color: var(--text-normal) !important;
+}
+
+.style-settings-heading :is(.style-settings-export, .style-settings-import) {
+    opacity: 0.25;
+    transition: opacity var(--transition-ui);
+}
+
+.style-settings-heading:hover :is(.style-settings-export, .style-settings-import) {
+    opacity: 1;
 }
 
 /* ============================== */
@@ -8227,6 +9506,19 @@ body.low-contrast:not(.is-mobile).layout-card .workspace-tab-header:not(.is-acti
 body.low-contrast .workspace-ribbon {
     background-color: transparent;
     border-inline-end-color: transparent;
+}
+
+/* Blockquotes vanish on the unified surface: hairline outline + text-mixed fill */
+body.low-contrast.blockquote-style-default :is(.markdown-preview-view blockquote, .markdown-rendered blockquote, div:not(.CodeMirror-activeline)>.HyperMD-quote, .markdown-source-view.mod-cm6 .cm-line.HyperMD-quote) {
+    background-color: color-mix(in srgb, var(--text-normal) 5%, transparent);
+    border-block: var(--border-thin) solid color-mix(in srgb, var(--text-normal) 14%, transparent);
+    border-inline-end: var(--border-thin) solid color-mix(in srgb, var(--text-normal) 14%, transparent);
+}
+
+/* Properties card: same treatment as blockquotes */
+body.low-contrast:not(.is-mobile) .metadata-container {
+    background-color: color-mix(in srgb, var(--text-normal) 5%, transparent);
+    border: var(--border-thin) solid color-mix(in srgb, var(--text-normal) 14%, transparent);
 }
 
 /* ============================== */
@@ -8286,14 +9578,29 @@ body.tinted-body-text.theme-light, body.tinted-body-text.theme-dark {
 }
 
 /* ============================== */
-/*   SYSTEM FONT (SAN FRANCISCO)  */
+/*   NEUTRAL CHROME (APPLE)       */
 /* ============================== */
-/* On body, not :root — Obsidian layers the user's own font choices
-   above --font-*-theme, so user-set fonts still win. */
-body.system-fonts {
-    --font-text-theme: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
-    --font-interface-theme: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
-    --font-monospace-theme: ui-monospace, "SF Mono", SFMono-Regular, Menlo, Consolas, monospace;
+/* Accent only for active/selected; hovers wash gray */
+body.neutral-chrome {
+    /* all chrome glows route through this var */
+    --accent-glow: none;
+}
+
+body.neutral-chrome :is(
+    .side-dock-ribbon-action,
+    .side-dock-actions .clickable-icon,
+    .workspace-ribbon .clickable-icon,
+    .view-actions .clickable-icon,
+    .workspace-ribbon-collapse-btn,
+    .modal-close-button
+):hover {
+    color: var(--text-normal);
+    background-color: color-mix(in srgb, var(--text-normal) 7%, transparent);
+}
+
+body.neutral-chrome .side-dock-ribbon-action .clickable-icon:hover {
+    color: var(--text-normal);
+    background-color: color-mix(in srgb, var(--text-normal) 7%, transparent);
 }
 
 /* ============================== */
@@ -8392,7 +9699,10 @@ body.tabular-numerics .nav-folder-title {
 /*   ACCENT CARET & SELECTION     */
 /* ============================== */
 
-/* Accent caret */
+/* Accent caret — 3px always, covers both CM6 cursor div and native caret */
+body.caret-accent {
+    --caret-color: var(--interactive-accent);
+}
 body.caret-accent .cm-editor .cm-cursor,
 body.caret-accent .cm-editor .cm-cursor-primary {
     border-left-color: var(--interactive-accent) !important;
@@ -8410,6 +9720,17 @@ body.caret-accent .cm-editor.cm-focused .cm-selectionBackground {
 body.caret-accent .markdown-preview-view ::selection,
 body.caret-accent .markdown-rendered ::selection {
     background: rgba(var(--primary-color-rgb), 0.2) !important;
+}
+
+/* No-blink caret (caret-animation ships in Chrome 139 / Electron 29+) */
+body.caret-no-blink .cm-editor .cm-content {
+    caret-animation: manual;
+}
+
+/* Smooth caret: transition CM's inline left/top; 80ms keeps typing snappy */
+body.smooth-caret .cm-editor .cm-cursor,
+body.smooth-caret .cm-editor .cm-cursor-primary {
+    transition: left 80ms var(--ease-apple), top 80ms var(--ease-apple);
 }
 
 /* ============================== */
@@ -8848,6 +10169,7 @@ body.is-mobile :is(.wide-page, .full-page, .wide-table, .wide-image) {
     object-fit: cover;
     border-radius: var(--r3);
     -electron-corner-smoothing: var(--squircle-main);
+    corner-shape: squircle;
 }
 
 :is(.markdown-preview-view.banner.banner-fade, .markdown-source-view.mod-cm6.banner.banner-fade) img[alt="banner"] {
@@ -8886,6 +10208,7 @@ body.is-mobile :is(.wide-page, .full-page, .wide-table, .wide-image) {
     border: var(--border-thin) solid var(--divider-color);
     border-radius: var(--r3);
     -electron-corner-smoothing: var(--squircle-main);
+    corner-shape: squircle;
     box-shadow: var(--shadow-1);
     padding: var(--s2);
     overflow: hidden;
@@ -8918,6 +10241,7 @@ body.is-mobile :is(.wide-page, .full-page, .wide-table, .wide-image) {
     object-fit: cover;
     border-radius: var(--r2);
     -electron-corner-smoothing: var(--squircle-main);
+    corner-shape: squircle;
 }
 
 /* ============================== */
@@ -8935,6 +10259,7 @@ body.is-mobile :is(.wide-page, .full-page, .wide-table, .wide-image) {
 .bases-cards-item {
     border-radius: var(--r3);
     -electron-corner-smoothing: var(--squircle-main);
+    corner-shape: squircle;
     background-color: var(--background-secondary);
     box-shadow: var(--shadow-1);
     transition: box-shadow var(--transition-ui);
@@ -8946,4 +10271,721 @@ body.is-mobile :is(.wide-page, .full-page, .wide-table, .wide-image) {
 
 .bases-cards-label {
     color: var(--text-muted);
+}
+
+/* ============================================================
+   Ambient & Pill Options (opt-in via Style Settings)
+   1. Ambient Accent Gradient  — body.ambient-gradient
+   2. Soft Pill Tabs           — body.pill-tabs
+   ============================================================ */
+
+/* --- 1. Ambient Accent Gradient ----------------------------
+   Accent wash fading from the top of the viewport. Rendered as
+   a fixed, non-interactive overlay; z-index 20 sits above
+   workspace chrome but below popovers (30), modals (50),
+   menus (65). */
+/* Fixed full-viewport overlay creates a compositing overlap on every scroll frame —
+   desktop-only so mobile scroll is unaffected */
+body:not(.is-mobile).ambient-gradient .app-container::after {
+    content: '';
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 20;
+    background: linear-gradient(to bottom,
+            rgba(var(--primary-color-rgb), 0.11) 0%,
+            rgba(var(--primary-color-rgb), 0.05) 22%,
+            transparent 48%);
+}
+
+body:not(.is-mobile).theme-light.ambient-gradient .app-container::after {
+    background: linear-gradient(to bottom,
+            rgba(var(--primary-color-rgb), 0.07) 0%,
+            rgba(var(--primary-color-rgb), 0.03) 22%,
+            transparent 48%);
+}
+
+/* --- 2. Soft Pill Tabs ---------------------------------------
+   Workspace tabs as quiet vibrancy pills: inactive tabs
+   transparent, active tab a translucent accent pill, no scale
+   transforms. The layout-card variants match the (0,5,1)
+   specificity of the layout-card tab rules near line 6320 so
+   the pill look wins. */
+body.pill-tabs .workspace-tab-header-container-inner {
+    gap: 3px;
+    align-items: center;
+}
+
+body.pill-tabs .workspace-tab-header,
+body:not(.is-mobile).pill-tabs.layout-card .workspace-tab-header {
+    border-radius: var(--radius-pill) !important;
+    -electron-corner-smoothing: 0;
+    background-color: transparent !important;
+    box-shadow: none !important;
+}
+
+body.pill-tabs .workspace-tab-header:not(.is-active),
+body:not(.is-mobile).pill-tabs.layout-card .workspace-tab-header:not(.is-active),
+body:not(.is-mobile).pill-tabs.layout-card.theme-dark .workspace-tab-header:not(.is-active) {
+    background-color: transparent !important;
+}
+
+body.pill-tabs .workspace-tab-header:hover,
+body.pill-tabs .workspace-tab-header.is-active:hover {
+    transform: none;
+}
+
+body.pill-tabs .workspace-tab-header:not(.is-active):hover,
+body:not(.is-mobile).pill-tabs.layout-card .workspace-tab-header:not(.is-active):hover,
+body:not(.is-mobile).pill-tabs.layout-card.theme-dark .workspace-tab-header:not(.is-active):hover {
+    background-color: rgba(var(--primary-color-rgb), 0.07) !important;
+}
+
+body:not(.is-mobile).pill-tabs .workspace-tab-header.is-active,
+body:not(.is-mobile).pill-tabs.layout-card .workspace-tab-header.is-active,
+body:not(.is-mobile).pill-tabs.layout-card.theme-dark .workspace-tab-header.is-active {
+    transform: none;
+    background-color: rgba(var(--primary-color-rgb), 0.14) !important;
+    backdrop-filter: blur(8px) saturate(150%);
+    -webkit-backdrop-filter: blur(8px) saturate(150%);
+    box-shadow: inset 0 0 0 1px rgba(var(--primary-color-rgb), 0.18) !important;
+}
+
+/* ============================== */
+/*   LUMINOUS DETAILS (opt-in)    */
+/* ============================== */
+
+/* Horizontal rules: seasonal gradient hairline with a soft center glow */
+body.tf-luminous :is(.markdown-rendered, .markdown-preview-view, .markdown-source-view.mod-cm6) hr {
+    border: none;
+    height: 2px;
+    border-radius: var(--radius-pill);
+    background: linear-gradient(90deg,
+            transparent 0%,
+            rgba(var(--primary-color-rgb), 0.4) 18%,
+            rgba(var(--primary-color-rgb), 0.85) 50%,
+            rgba(var(--primary-color-rgb), 0.4) 82%,
+            transparent 100%);
+    box-shadow: 0 0 14px rgba(var(--primary-color-rgb), 0.35);
+}
+
+/* Quiet mode: keep the gradient, drop the glow */
+body.tf-luminous.terraflow-quiet :is(.markdown-rendered, .markdown-preview-view, .markdown-source-view.mod-cm6) hr {
+    box-shadow: none;
+}
+
+/* Images: gentle lift with an accent-tinted shadow bloom (desktop pointer only;
+   touch devices are covered by the global hover kill-switch) */
+body.tf-luminous:not(.is-mobile):not(.terraflow-quiet) :is(.markdown-rendered img, .markdown-source-view.mod-cm6 .cm-content img) {
+    transition: transform var(--transition-ui), box-shadow var(--transition-ui);
+}
+
+body.tf-luminous:not(.is-mobile):not(.terraflow-quiet) :is(.markdown-rendered img, .markdown-source-view.mod-cm6 .cm-content img):hover {
+    transform: translateY(-2px) scale(1.01);
+    box-shadow:
+        0 12px 32px rgba(0, 0, 0, 0.16),
+        0 0 18px rgba(var(--primary-color-rgb), 0.15);
+}
+
+/* ============================== */
+/*   ELEGANT EMBED CARDS (opt-in) */
+/* ============================== */
+
+/* Transclusions as soft accent-edged cards, matching the callout design language */
+body.tf-embed-cards .markdown-embed {
+    background:
+        radial-gradient(ellipse at top right,
+            rgba(var(--primary-color-rgb), .08) 0%,
+            transparent 65%),
+        rgba(var(--background-secondary-rgb), .35);
+    border: var(--border-thin) solid rgba(var(--primary-color-rgb), .12);
+    border-inline-start: var(--border-heavy) solid rgba(var(--primary-color-rgb), .55);
+    border-radius: var(--r1) var(--r3) var(--r3) var(--r1);
+    -electron-corner-smoothing: var(--squircle-main);
+    corner-shape: squircle;
+    padding: var(--s2) var(--s3);
+    transition: box-shadow var(--transition-ui), transform var(--transition-ui), border-color var(--transition-ui);
+}
+
+body.tf-embed-cards:not(.is-mobile):not(.terraflow-quiet) .markdown-embed:hover {
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-2);
+    border-color: rgba(var(--primary-color-rgb), .25);
+    border-inline-start-color: var(--primary-color);
+}
+
+body.tf-embed-cards .markdown-embed-title {
+    color: var(--text-muted);
+    font-size: 0.85em;
+    font-weight: var(--weight-semibold);
+    letter-spacing: 0.02em;
+}
+
+/* Open-link icon: revealed on hover (desktop only — stays visible on touch) */
+body.tf-embed-cards:not(.is-mobile) .markdown-embed .markdown-embed-link {
+    opacity: 0;
+    transition: opacity var(--transition-ui);
+}
+
+body.tf-embed-cards:not(.is-mobile) .markdown-embed:hover .markdown-embed-link {
+    opacity: 1;
+}
+
+/* ============================== */
+/*   AURORA NOTE TITLE (opt-in)   */
+/* ============================== */
+
+/* Inline title wears a gradient of the season's heading colors */
+body.tf-aurora-title .inline-title {
+    background-image: linear-gradient(100deg,
+            var(--primary-color) 0%,
+            var(--heading-secondary) 35%,
+            var(--heading-tertiary, var(--primary-color)) 65%,
+            var(--primary-color) 100%);
+    background-size: 200% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Slow drift — quiet mode keeps the gradient but stops the motion;
+   focus mode and prefers-reduced-motion already zero animation durations */
+body.tf-aurora-title:not(.terraflow-quiet) .inline-title {
+    animation: tf-aurora-drift 14s ease-in-out infinite;
+}
+
+@keyframes tf-aurora-drift {
+
+    0%,
+    100% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+}
+
+/* ============================== */
+/*   LIQUID GLASS CALLOUT STYLE   */
+/* ============================== */
+
+/* Structural properties on all devices; !important mirrors the other callout styles */
+.callout-style-liquid :is(.callout, .cm-callout) {
+    border: none !important;
+    border-inline-start: none !important;
+    border-radius: var(--r4) !important;
+    position: relative;
+    overflow: hidden;
+    background:
+        radial-gradient(ellipse at top left,
+            rgba(var(--callout-color-rgb), .22) 0%,
+            transparent 60%),
+        linear-gradient(160deg,
+            rgba(255, 255, 255, .18) 0%,
+            rgba(var(--callout-color-rgb), .1) 45%,
+            rgba(var(--background-primary-rgb), .3) 100%) !important;
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, .5),
+        inset 0 0 0 1px rgba(255, 255, 255, .12),
+        0 8px 24px rgba(0, 0, 0, .12) !important;
+}
+
+.theme-dark .callout-style-liquid :is(.callout, .cm-callout) {
+    background:
+        radial-gradient(ellipse at top left,
+            rgba(var(--callout-color-rgb), .3) 0%,
+            transparent 60%),
+        linear-gradient(160deg,
+            rgba(255, 255, 255, .07) 0%,
+            rgba(var(--callout-color-rgb), .16) 45%,
+            rgba(var(--background-primary-rgb), .4) 100%) !important;
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, .22),
+        inset 0 0 0 1px rgba(255, 255, 255, .08),
+        0 10px 28px rgba(0, 0, 0, .3) !important;
+}
+
+/* GPU-expensive refraction blur desktop-only (same gating as Modern Glass) */
+body:not(.is-mobile) .callout-style-liquid :is(.callout, .cm-callout) {
+    backdrop-filter: blur(18px) saturate(190%) !important;
+    -webkit-backdrop-filter: blur(18px) saturate(190%) !important;
+}
+
+.callout-style-liquid .markdown-source-view.mod-cm6 .cm-callout {
+    border: none !important;
+    outline: none !important;
+}
+
+/* Specular sheen: sweeps across on hover, snaps back invisibly on leave */
+.callout-style-liquid .callout::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(115deg,
+            transparent 32%,
+            rgba(255, 255, 255, .14) 46%,
+            rgba(255, 255, 255, .26) 50%,
+            rgba(255, 255, 255, .14) 54%,
+            transparent 68%);
+    transform: translateX(-130%);
+    pointer-events: none;
+}
+
+body:not(.is-mobile):not(.terraflow-quiet) .callout-style-liquid .callout:hover::after {
+    transform: translateX(130%);
+    transition: transform 0.9s var(--ease-apple);
+}
+
+/* ============================== */
+/*   LIQUID GLASS BLOCKQUOTE      */
+/* ============================== */
+
+/* Shared material: seasonal tint + specular insets (mirrors Liquid Glass callouts) */
+.blockquote-style-liquid :is(.markdown-preview-view blockquote, .markdown-rendered blockquote, div:not(.CodeMirror-activeline)>.HyperMD-quote, .markdown-source-view.mod-cm6 .cm-line.HyperMD-quote) {
+    background:
+        radial-gradient(ellipse at top left,
+            rgba(var(--primary-color-rgb), .14) 0%,
+            transparent 60%),
+        linear-gradient(160deg,
+            rgba(255, 255, 255, .16) 0%,
+            rgba(var(--background-secondary-rgb), .35) 100%) !important;
+    border: none !important;
+    border-inline-start: var(--border-heavy) solid rgba(var(--primary-color-rgb), .65) !important;
+}
+
+.theme-dark .blockquote-style-liquid :is(.markdown-preview-view blockquote, .markdown-rendered blockquote, div:not(.CodeMirror-activeline)>.HyperMD-quote, .markdown-source-view.mod-cm6 .cm-line.HyperMD-quote) {
+    background:
+        radial-gradient(ellipse at top left,
+            rgba(var(--primary-color-rgb), .2) 0%,
+            transparent 60%),
+        linear-gradient(160deg,
+            rgba(255, 255, 255, .06) 0%,
+            rgba(var(--background-secondary-rgb), .3) 100%) !important;
+}
+
+/* Block-level extras: radius, shadow, refraction, sheen (reading mode block only) */
+.blockquote-style-liquid :is(.markdown-preview-view blockquote, .markdown-rendered blockquote) {
+    position: relative;
+    overflow: hidden;
+    border-radius: var(--r2) var(--r3) var(--r3) var(--r2);
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, .4),
+        inset 0 0 0 1px rgba(255, 255, 255, .1),
+        0 6px 18px rgba(0, 0, 0, .1);
+}
+
+body:not(.is-mobile) .blockquote-style-liquid :is(.markdown-preview-view blockquote, .markdown-rendered blockquote) {
+    backdrop-filter: blur(14px) saturate(180%);
+    -webkit-backdrop-filter: blur(14px) saturate(180%);
+}
+
+.blockquote-style-liquid :is(.markdown-preview-view blockquote, .markdown-rendered blockquote)::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(115deg,
+            transparent 32%,
+            rgba(255, 255, 255, .12) 46%,
+            rgba(255, 255, 255, .22) 50%,
+            rgba(255, 255, 255, .12) 54%,
+            transparent 68%);
+    transform: translateX(-130%);
+    pointer-events: none;
+}
+
+body:not(.is-mobile):not(.terraflow-quiet) .blockquote-style-liquid :is(.markdown-preview-view blockquote, .markdown-rendered blockquote):hover::after {
+    transform: translateX(130%);
+    transition: transform 0.9s var(--ease-apple);
+}
+
+/* ============================== */
+/*   LIQUID TAGS                  */
+/* ============================== */
+
+body.tf-liquid-tags :is(.markdown-rendered, .markdown-preview-view) a.tag {
+    background:
+        linear-gradient(160deg,
+            rgba(255, 255, 255, .22) 0%,
+            rgba(var(--primary-color-rgb), .16) 100%);
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, .45),
+        inset 0 0 0 1px rgba(255, 255, 255, .12),
+        0 2px 6px rgba(0, 0, 0, .08);
+    border: none;
+    border-radius: var(--radius-pill);
+    padding: 0.15em 0.7em;
+    color: var(--primary-color);
+    transition: transform var(--transition-ui), box-shadow var(--transition-ui);
+}
+
+body.tf-liquid-tags:not(.is-mobile):not(.terraflow-quiet) :is(.markdown-rendered, .markdown-preview-view) a.tag:hover {
+    transform: translateY(-1px);
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, .5),
+        inset 0 0 0 1px rgba(255, 255, 255, .16),
+        0 4px 12px rgba(var(--primary-color-rgb), .25);
+}
+
+/* Gel press, same language as buttons */
+body.tf-liquid-tags :is(.markdown-rendered, .markdown-preview-view) a.tag:active {
+    transform: scale(1.03, 0.94);
+    transition: transform 0.1s var(--ease-apple);
+}
+
+/* Live-preview hashtag halves share one continuous chip */
+body.tf-liquid-tags .cm-line :is(.cm-hashtag-begin, .cm-hashtag-end) {
+    background: linear-gradient(160deg,
+            rgba(255, 255, 255, .22) 0%,
+            rgba(var(--primary-color-rgb), .16) 100%);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, .45);
+    color: var(--primary-color);
+}
+
+body.tf-liquid-tags .cm-line .cm-hashtag-begin {
+    border-start-start-radius: var(--radius-pill);
+    border-end-start-radius: var(--radius-pill);
+    padding-inline-start: 0.5em;
+}
+
+body.tf-liquid-tags .cm-line .cm-hashtag-end {
+    border-start-end-radius: var(--radius-pill);
+    border-end-end-radius: var(--radius-pill);
+    padding-inline-end: 0.6em;
+}
+
+/* ============================== */
+/*   LIQUID PROPERTIES PANEL      */
+/* ============================== */
+
+body.tf-liquid-properties .metadata-container {
+    background:
+        radial-gradient(ellipse at top left,
+            rgba(var(--primary-color-rgb), .1) 0%,
+            transparent 60%),
+        linear-gradient(160deg,
+            rgba(255, 255, 255, .16) 0%,
+            rgba(var(--background-secondary-rgb), .4) 100%);
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, .4),
+        inset 0 0 0 1px rgba(255, 255, 255, .1),
+        0 6px 18px rgba(0, 0, 0, .1);
+}
+
+body.theme-dark.tf-liquid-properties .metadata-container {
+    background:
+        radial-gradient(ellipse at top left,
+            rgba(var(--primary-color-rgb), .14) 0%,
+            transparent 60%),
+        linear-gradient(160deg,
+            rgba(255, 255, 255, .05) 0%,
+            rgba(var(--background-secondary-rgb), .35) 100%);
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, .16),
+        inset 0 0 0 1px rgba(255, 255, 255, .07),
+        0 8px 22px rgba(0, 0, 0, .28);
+}
+
+body.tf-liquid-properties:not(.is-mobile) .metadata-container {
+    backdrop-filter: blur(14px) saturate(180%);
+    -webkit-backdrop-filter: blur(14px) saturate(180%);
+}
+
+/* Hover keeps the existing lift; deepen the drop shadow only */
+body.tf-liquid-properties:not(.is-mobile):not(.terraflow-quiet) .metadata-container:hover {
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, .4),
+        inset 0 0 0 1px rgba(255, 255, 255, .12),
+        0 12px 30px rgba(0, 0, 0, .16);
+}
+
+/* ============================== */
+/*   LIQUID TABLES                */
+/* ============================== */
+
+/* Whole table becomes liquid material; overflow releases so headers can stick
+   (background and shadow follow the table's own border-radius; corner rounding
+   also lives on the cells, so nothing clips wrong) */
+body.tf-liquid-tables :is(.markdown-rendered, .markdown-preview-view) table {
+    overflow: visible;
+    background:
+        radial-gradient(ellipse at top left,
+            rgba(var(--primary-color-rgb), .08) 0%,
+            transparent 55%),
+        linear-gradient(160deg,
+            rgba(255, 255, 255, .14) 0%,
+            rgba(var(--background-secondary-rgb), .35) 100%);
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, .35),
+        inset 0 0 0 1px rgba(255, 255, 255, .1),
+        0 6px 18px rgba(0, 0, 0, .1);
+}
+
+body.theme-dark.tf-liquid-tables :is(.markdown-rendered, .markdown-preview-view) table {
+    background:
+        radial-gradient(ellipse at top left,
+            rgba(var(--primary-color-rgb), .12) 0%,
+            transparent 55%),
+        linear-gradient(160deg,
+            rgba(255, 255, 255, .05) 0%,
+            rgba(var(--background-secondary-rgb), .3) 100%);
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, .14),
+        inset 0 0 0 1px rgba(255, 255, 255, .06),
+        0 8px 22px rgba(0, 0, 0, .26);
+}
+
+body.tf-liquid-tables:not(.is-mobile) :is(.markdown-rendered, .markdown-preview-view) table {
+    backdrop-filter: blur(10px) saturate(170%);
+    -webkit-backdrop-filter: blur(10px) saturate(170%);
+}
+
+/* Header row: distinct seasonal-accent glass, sticky over the scrolling rows */
+body.tf-liquid-tables:is(.theme-light, .theme-dark) :is(.markdown-rendered, .markdown-preview-view) table tr:nth-child(n) th {
+    position: sticky;
+    inset-block-start: 0;
+    z-index: 2;
+    filter: none;
+    background-color: rgba(var(--background-secondary-rgb), .8);
+    background-image: linear-gradient(160deg,
+            rgba(var(--primary-color-rgb), .28) 0%,
+            rgba(var(--primary-color-rgb), .14) 100%);
+    color: var(--text-normal);
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, .35),
+        inset 0 -1px 0 rgba(var(--primary-color-rgb), .4);
+}
+
+body.tf-liquid-tables:is(.theme-light, .theme-dark):not(.is-mobile) :is(.markdown-rendered, .markdown-preview-view) table tr:nth-child(n) th {
+    backdrop-filter: blur(10px) saturate(170%);
+    -webkit-backdrop-filter: blur(10px) saturate(170%);
+}
+
+/* Editor tables: same material, no sticky (CM6 scroll model doesn't suit it) */
+body.tf-liquid-tables .markdown-source-view.mod-cm6 .cm-table-widget table {
+    background:
+        radial-gradient(ellipse at top left,
+            rgba(var(--primary-color-rgb), .08) 0%,
+            transparent 55%),
+        linear-gradient(160deg,
+            rgba(255, 255, 255, .14) 0%,
+            rgba(var(--background-secondary-rgb), .35) 100%);
+    border-radius: var(--r3);
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, .35),
+        inset 0 0 0 1px rgba(255, 255, 255, .1),
+        0 6px 18px rgba(0, 0, 0, .1);
+}
+
+body.tf-liquid-tables:is(.theme-light, .theme-dark) .markdown-source-view.mod-cm6 .cm-table-widget table th {
+    filter: none;
+    background-color: rgba(var(--background-secondary-rgb), .8);
+    background-image: linear-gradient(160deg,
+            rgba(var(--primary-color-rgb), .28) 0%,
+            rgba(var(--primary-color-rgb), .14) 100%);
+    color: var(--text-normal);
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, .35),
+        inset 0 -1px 0 rgba(var(--primary-color-rgb), .4);
+}
+
+/* ============================== */
+/*   LIQUID STATUS BAR            */
+/* ============================== */
+
+/* Upgrade the expanded Dynamic Island pill to true glass material */
+body.tf-liquid-statusbar:not(.is-mobile):not(.disable-status-bar) .status-bar:hover {
+    background-color: rgba(var(--background-secondary-rgb), .55);
+    border-color: transparent;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, .35),
+        inset 0 0 0 1px rgba(255, 255, 255, .1),
+        0 8px 24px rgba(0, 0, 0, .18);
+}
+
+/* ============================== */
+/*   LIQUID COMMAND PALETTE       */
+/* ============================== */
+
+body.tf-liquid-prompt .prompt {
+    backdrop-filter: blur(24px) saturate(190%);
+    -webkit-backdrop-filter: blur(24px) saturate(190%);
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, .4),
+        inset 0 0 0 1px rgba(255, 255, 255, .12),
+        var(--shadow-overlay);
+}
+
+body.theme-dark.tf-liquid-prompt .prompt {
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, .18),
+        inset 0 0 0 1px rgba(255, 255, 255, .08),
+        var(--shadow-overlay-dark);
+}
+
+body.tf-liquid-prompt .suggestion-item.is-selected {
+    background:
+        linear-gradient(160deg,
+            rgba(var(--primary-color-rgb), .24) 0%,
+            rgba(var(--primary-color-rgb), .12) 100%);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, .25);
+}
+
+/* ============================== */
+/*   SCROLL EDGE DISSOLVE         */
+/* ============================== */
+
+/* Note content melts into the chrome at the top and bottom of the
+   scroller instead of hard-clipping (Apple Notes style). The mask must
+   sit on the scroll container itself — on an inner element it would
+   scroll away with the content. Direct-child chains keep it off nested
+   editors (table cells, canvas cards). Trade-off: the custom scrollbar
+   fades with the content at both ends. */
+body.scroll-edge-fade .workspace-leaf-content[data-type="markdown"] .markdown-source-view.mod-cm6 > .cm-editor > .cm-scroller,
+body.scroll-edge-fade .workspace-leaf-content[data-type="markdown"] .markdown-reading-view > .markdown-preview-view {
+    -webkit-mask-image: linear-gradient(to bottom, transparent, black 28px, black calc(100% - 28px), transparent);
+    mask-image: linear-gradient(to bottom, transparent, black 28px, black calc(100% - 28px), transparent);
+}
+
+/* ============================== */
+/*   SCROLL-DRIVEN ANIMATIONS     */
+/* ============================== */
+
+/* Reading Progress Bar + Rise Into View, driven by animation-timeline.
+   @supports-gated: without timeline support the pseudo-elements and
+   animations don't exist at all. Deep Focus / Disable UI Animations are
+   excluded with :not() guards because the global animation-duration
+   kill-switches can't stop scroll-driven animations — duration is
+   ignored once an animation has a timeline. */
+
+@supports (animation-timeline: scroll()) {
+
+    /* --- Reading Progress Bar --- */
+    /* The bar lives on the view header — outside the scroller — so the
+       Scroll Edge Dissolve mask can't clip it. Live preview and reading
+       mode get distinct timeline names: the hidden mode's scroller has
+       an inactive timeline, which leaves its bar at the un-animated
+       base state of scaleX(0). Notes too short to scroll also produce
+       an inactive timeline, so no bar appears. */
+    body.scroll-progress:not(.focus-mode):not(.disable-ui-animations) .workspace-leaf-content[data-type="markdown"] {
+        timeline-scope: --tf-scroll-lp, --tf-scroll-rv;
+    }
+
+    body.scroll-progress:not(.focus-mode):not(.disable-ui-animations) .workspace-leaf-content[data-type="markdown"] .markdown-source-view.mod-cm6 > .cm-editor > .cm-scroller {
+        scroll-timeline: --tf-scroll-lp block;
+    }
+
+    body.scroll-progress:not(.focus-mode):not(.disable-ui-animations) .workspace-leaf-content[data-type="markdown"] .markdown-reading-view > .markdown-preview-view {
+        scroll-timeline: --tf-scroll-rv block;
+    }
+
+    body.scroll-progress:not(.focus-mode):not(.disable-ui-animations) .workspace-leaf-content[data-type="markdown"] .view-header::before,
+    body.scroll-progress:not(.focus-mode):not(.disable-ui-animations) .workspace-leaf-content[data-type="markdown"] .view-header::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -1.5px; /* overlays the header's 1.5px border-block-end as it fills */
+        width: 100%;
+        height: 2px;
+        pointer-events: none;
+        z-index: 6;
+        background-color: rgba(var(--primary-color-rgb), 0.65);
+        transform: scaleX(0);
+        transform-origin: left center;
+        animation: tf-scroll-progress linear both;
+    }
+
+    body.scroll-progress:not(.focus-mode):not(.disable-ui-animations) .workspace-leaf-content[data-type="markdown"] .view-header::before {
+        animation-timeline: --tf-scroll-lp;
+    }
+
+    body.scroll-progress:not(.focus-mode):not(.disable-ui-animations) .workspace-leaf-content[data-type="markdown"] .view-header::after {
+        animation-timeline: --tf-scroll-rv;
+    }
+
+    /* --- Rise Into View (reading mode) --- */
+    /* Animates the section wrapper div, not the block itself, so hover
+       lifts and sticky liquid-table headers on the inner element aren't
+       frozen by the animation's fill. Ends on transform: none so no
+       containing block lingers after entry. Blocks already in view when
+       a note opens are past their entry range and render settled — no
+       load flicker. */
+    @media (prefers-reduced-motion: no-preference) {
+        body.scroll-reveal:not(.focus-mode):not(.disable-ui-animations) .markdown-reading-view .markdown-preview-sizer > div:has(> :is(.callout, table, pre, blockquote), .image-embed) {
+            animation: tf-rise-in linear both;
+            animation-timeline: view();
+            animation-range: entry 5% entry 45%;
+        }
+    }
+}
+
+@keyframes tf-scroll-progress {
+    from {
+        transform: scaleX(0);
+    }
+
+    to {
+        transform: scaleX(1);
+    }
+}
+
+@keyframes tf-rise-in {
+    from {
+        opacity: 0.5;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+/* ============================== */
+/*   OPTICAL TEXT CENTERING       */
+/* ============================== */
+
+/* text-box: trim-both cuts the font's invisible leading above cap height
+   and below the baseline, so short labels center on their letterforms
+   instead of their line box (Chromium 133+; inert where unsupported).
+   Applies to block containers only — Obsidian's flex-based buttons and
+   status-bar items are unaffected by design. */
+body.optical-text-trim .callout-title-inner {
+    text-box: trim-both cap alphabetic;
+}
+
+/* Tab titles ellipsize via overflow:hidden, which clips ink outside the
+   trimmed box — an alphabetic under-edge cuts descenders (p, g, y).
+   Trim only down to the font's descent edge here. */
+body.optical-text-trim .workspace-tab-header-inner-title {
+    text-box: trim-both cap text;
+}
+
+/* Tag chips need a block container for the trim to bite; inline-block
+   also prevents a chip breaking across lines */
+body.optical-text-trim :is(.markdown-rendered, .markdown-preview-view) a.tag {
+    display: inline-block;
+    text-box: trim-both cap alphabetic;
+}
+
+/* ============================== */
+/*   DARK ELEVATION LAYERS        */
+/* ============================== */
+
+/* Dark surfaces separate poorly through shadow alone — dark-on-dark
+   shadows carry almost no contrast. Overlay a translucent white lift
+   that rises with stacking order (menus → popovers → palette), creating
+   separation without adding color. Rides the Depth & Shadows toggle. */
+body.depth-shadows.theme-dark :is(.menu, .tooltip) {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.03));
+}
+
+body.depth-shadows.theme-dark :is(.popover, .suggestion-container) {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.045), rgba(255, 255, 255, 0.045));
+}
+
+body.depth-shadows.theme-dark .prompt {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.06));
 }

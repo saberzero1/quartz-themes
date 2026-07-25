@@ -241,4 +241,64 @@ visual-compare-all:
 visual-update-baseline themeName:
   bun runner/scripts/visual-regression.mjs --update-baseline --theme "{{themeName}}"
 
+[group('npm'), doc('Register all new themes (fetch licenses, add to themes.json)')]
+register-new-themes:
+  node scripts/register-new-themes.mjs
+
+[group('npm'), doc('Register a single new theme')]
+register-theme themeName:
+  node scripts/register-new-themes.mjs --filter="{{themeName}}"
+
+[group('npm'), doc('Preview new theme registration')]
+register-new-themes-dry:
+  node scripts/register-new-themes.mjs --dry-run
+
+[group('npm'), doc('Generate all per-theme npm packages into packages/')]
+generate-packages:
+  node scripts/generate-packages.mjs
+
+[group('npm'), doc('Generate npm package for a single theme')]
+generate-package themeName:
+  node scripts/generate-packages.mjs --filter={{themeName}}
+
+[group('npm'), doc('Preview what generate-packages would produce')]
+generate-packages-dry:
+  node scripts/generate-packages.mjs --dry-run
+
+[group('npm'), doc('Push all generated packages to their GitHub repos')]
+push-packages:
+  node scripts/push-packages.mjs
+
+[group('npm'), doc('Push a single theme package to its GitHub repo')]
+push-package themeName:
+  node scripts/push-packages.mjs --filter={{themeName}}
+
+[group('npm'), doc('Preview what push-packages would do')]
+push-packages-dry:
+  node scripts/push-packages.mjs --dry-run
+
+[group('npm'), doc('Tag all theme repos to trigger npm publish via CI')]
+publish-packages:
+  node scripts/publish-all.mjs --mode=tag
+
+[group('npm'), doc('Publish a single theme package via CI tag')]
+publish-package themeName:
+  node scripts/publish-all.mjs --mode=tag --filter={{themeName}}
+
+[group('npm'), doc('Preview what publish-packages would do')]
+publish-packages-dry:
+  node scripts/publish-all.mjs --mode=tag --dry-run
+
+[group('npm'), doc('Full npm pipeline: generate → push → publish')]
+npm-release:
+  just generate-packages
+  just push-packages
+  just publish-packages
+
+[group('npm'), doc('Single theme npm pipeline: generate → push → publish')]
+npm-release-theme themeName:
+  just generate-package {{themeName}}
+  just push-package {{themeName}}
+  just publish-package {{themeName}}
+
 everything-and-the-kitchen-sink: generate-callout-manifest style-settings cli-extract-baseline cli-extract-all-force drop prepare ingest compile generate-plugin convert format-non-generated

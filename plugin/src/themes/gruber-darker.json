@@ -66,6 +66,9 @@
   },
   "extras": null,
   "classSettings": {
+    "gd-oled-mode": {
+      "general": "body.gd-oled-mode {\n--gd-bg: #000000;\n--gd-bg-dark: #000000;\n--gd-bg-light: #0d0d0d;\n}"
+    },
     "gd-cursor-blink-solid": {
       "general": ".gd-cursor-blink-solid .cm-cursorLayer {\nanimation: none !important;\n}\n\n.gd-cursor-blink-solid .cm-cursor, .gd-cursor-blink-solid .cm-cursor-primary {\nanimation: none !important;\nopacity: 1 !important;\nvisibility: visible !important;\n}"
     },
@@ -104,6 +107,9 @@
     },
     "gd-smooth-scroll": {
       "general": ".gd-smooth-scroll .markdown-reading-view {\nscroll-behavior: smooth;\n}\n\n.gd-smooth-scroll .markdown-preview-view {\nscroll-behavior: smooth;\n}"
+    },
+    "gd-zen-mode": {
+      "general": ".gd-zen-mode .status-bar {\ndisplay: none !important;\n}"
     }
   },
   "selectorImpacts": {},

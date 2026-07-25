@@ -1093,10 +1093,10 @@ body.theme-light {
   --inline-title-color: var(--h1-color) !important;
   --text-color: rgb(8, 8, 8) !important;
   --italic-color: var(--text-accent) !important;
+  --scrollbar-thumb-color: rgba(0, 0, 0, 0.2) !important;
   --base-d: 0% !important;
   --floating-toc-background-color: transparent !important;
   --editor-bg-color: rgba(255, 255, 255, 0) !important;
-  --scrollbar-thumb-color: rgba(0, 0, 0, 0.2) !important;
   --radius-xxl: 20px !important;
   --active-border-color: rgb(0, 121, 172) !important;
   --app-model-bg-color: rgba(248, 248, 248, 0.8) !important;
@@ -2226,10 +2226,10 @@ body.theme-dark {
   --inline-title-color: var(--h1-color) !important;
   --text-color: rgb(240, 240, 240) !important;
   --italic-color: var(--text-accent) !important;
+  --scrollbar-thumb-color: rgba(255, 255, 255, 0.2) !important;
   --base-d: 0% !important;
   --floating-toc-background-color: transparent !important;
   --editor-bg-color: rgba(28, 28, 28, 0) !important;
-  --scrollbar-thumb-color: rgba(255, 255, 255, 0.2) !important;
   --radius-xxl: 20px !important;
   --active-border-color: rgba(0, 157, 255, 0.8) !important;
   --app-model-bg-color: rgba(28, 28, 28, 0.8) !important;

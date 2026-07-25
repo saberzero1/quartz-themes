@@ -1,675 +1,665 @@
 /***** TABLE OF CONTENTS *****/
-/* TODO: Reformat entire CSS file as below.
 /* 1. Font
 /* 2. Colours
-/*     2.1. Dark theme color variables
-/*     2.2. Light theme color variables
-/*     2.3. Dark theme implementation
-/*     2.4. Light theme implementation
-/* 3. General UI
-/*     3.1. Title Bar
-/* 4. Markdown (editor / preview)
-/*     4.1. Headings
-/*         4.1.1. Fix font weights
-/*     4.2. Links
-/*         4.2.1. Nifty arrow before internal links (also applies to embeds)
-/*     4.3. Embeds
-/*     4.4. Tables
-/*     4.5. Popovers
-/*     4.6. Task Lists
-/*     4.7. Blockquotes
-/*     4.8. Code
-/*     4.9. Bulleted lists
-/*     4.10. Misc Fixes
+/*     2.1. Everforest palette variables
+/*     2.2. Dark theme implementation
+/*     2.3. Light theme implementation
+/* 3. Markdown (editor / preview)
+/*     3.1. Editor
+/*     3.2. Reading view
+/*     3.3. Indentation guides
+/* 4. General UI
+/*     4.1. Workspace split handles
+/*     4.2. Suggestions
+/*     4.3. Empty state
 /* 5. Graph view colours
-/* 6. Notion Colour Blocks
-/* 7. In-document header (scrolls with the document) [remove for compatibility with Andy's mode]
-/*     7.1. Adjustments for non-in-document headers (graphs, etc)\
-/*     7.2. Active pane border 
-/*     7.3. Misc fixes
-/* 8. Tags
-/*     8.1. Tag custom colours
+/* 6. Mermaid
+/* 7. Tags
+/*     7.1. Tag custom colours
+/* 8. Mobile
+/* 9. PDF export
 /***** *****/
 
 /* 1. Font */
 body {
-    /* font stacks taken directly from Notion */
-    --font-monospace: "Hack Nerd Font", "Source Code Pro", monospace;
-    -webkit-font-smoothing: auto;
-    --h1-color: var(--text-title-h1);
-    --h2-color: var(--text-title-h2);
-    --h3-color: var(--text-title-h3);
-    --h4-color: var(--text-title-h4);
-    --h5-color: var(--text-title-h5);
-    --h6-color: var(--text-title-h6);
+  --font-monospace: "Source Code Pro", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  -webkit-font-smoothing: auto;
+  font-size: 16px;
+}
+
+body strong {
+  font-weight: 600;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body * {
+    animation-duration: 0.01ms;
+    animation-iteration-count: 1;
+    transition-duration: 0.01ms;
+  }
 }
 
 /* 2. Colours */
-:root
-{
-    /* 2.1 Dark theme color variables */
-    --bg0-dark:       #22282c;
-    --bg1-dark:       #272f34;
-    --bg-dark:        #2f383e;
-    --bg2-dark:       #374247;
-    --bg3-dark:       #404c51;
-    --bg4-dark:       #4a555b;
-    --bg5-dark:       #525c62;
-    --bg_visual:      #503946;
-    --bg_red:         #4e3e43;
-    --bg_green:       #404d44;
-    --bg_blue:        #394f5a;
-    --bg_yellow:      #4a4940;
-    --shadow:         #00000070;
+/* 2.1. Everforest palette variables */
+:root {
+  --everforest-bg0-dark: #22282c;
+  --everforest-bg1-dark: #272f34;
+  --everforest-bg-dark: #2f383e;
+  --everforest-bg2-dark: #374247;
+  --everforest-bg3-dark: #404c51;
+  --everforest-bg4-dark: #4a555b;
+  --everforest-bg5-dark: #525c62;
+  --everforest-bg-visual-dark: #503946;
+  --everforest-bg-red-dark: #4e3e43;
+  --everforest-bg-green-dark: #404d44;
+  --everforest-bg-blue-dark: #394f5a;
+  --everforest-bg-yellow-dark: #4a4940;
+  --everforest-fg-dark: #d3c6aa;
+  --everforest-grey0-dark: #7f897d;
+  --everforest-grey1-dark: #859289;
+  --everforest-grey2-dark: #9aa79d;
+  --everforest-faded-red: #e67e80;
+  --everforest-faded-orange: #e69875;
+  --everforest-faded-yellow: #dbbc7f;
+  --everforest-faded-green: #a7c080;
+  --everforest-faded-aqua: #83c092;
+  --everforest-faded-blue: #7fbbb3;
+  --everforest-faded-purple: #d699b6;
+  --everforest-dim-red: #da6362;
+  --everforest-dim-orange: #d77f48;
+  --everforest-dim-yellow: #bf983d;
+  --everforest-dim-green: #899c40;
+  --everforest-dim-aqua: #569d79;
+  --everforest-dim-blue: #5a93a2;
+  --everforest-dim-purple: #b87b9d;
+  --everforest-bg0-light: #f0edd8;
+  --everforest-bg1-light: #f6f1dd;
+  --everforest-bg-light: #fdf6e3;
+  --everforest-bg2-light: #f3efda;
+  --everforest-bg3-light: #edead5;
+  --everforest-bg4-light: #e4e1cd;
+  --everforest-bg5-light: #dfdbc8;
+  --everforest-bg-visual-light: #eaedc8;
+  --everforest-bg-red-light: #fbe3da;
+  --everforest-bg-green-light: #f0f1d2;
+  --everforest-bg-blue-light: #e9f0e9;
+  --everforest-bg-yellow-light: #faedcd;
+  --everforest-fg-light: #5c6a72;
+  --everforest-grey0-light: #a4ad9e;
+  --everforest-grey1-light: #939f91;
+  --everforest-grey2-light: #879686;
+  --everforest-light-red: #f85552;
+  --everforest-light-orange: #f57d26;
+  --everforest-light-yellow: #bf983d;
+  --everforest-light-green: #899c40;
+  --everforest-light-aqua: #569d79;
+  --everforest-light-blue: #5a93a2;
+  --everforest-light-purple: #b87b9d;
+  --everforest-light-dim-red: #f1706f;
+  --everforest-light-dim-orange: #f39459;
+  --everforest-light-dim-yellow: #e4b649;
+  --everforest-light-dim-green: #a4bb4a;
+  --everforest-light-dim-aqua: #6ec398;
+  --everforest-light-dim-blue: #6cb3c6;
+  --everforest-light-dim-purple: #e092be;
 
-    --fg-dark:        #d3c6aa;
-    --grey0-dark:     #7f897d;
-    --grey1-dark:     #859289;
-    --grey2-dark:     #9aa79d;
-
-    --faded-red:     #e67e80;
-    --faded-orange:  #e69875;
-    --faded-yellow:  #dbbc7f;
-    --faded-green:   #a7c080;
-    --faded-aqua:    #83c092;
-    --faded-blue:    #7fbbb3;
-    --faded-purple:  #d699b6;
-
-    --dim-red:       #da6362;
-    --dim-orange:    #d77f48;
-    --dim-yellow:    #bf983d;
-    --dim-green:     #899c40;
-    --dim-aqua:      #569d79;
-    --dim-blue:      #5a93a2;
-    --dim-purple:    #b87b9d;
-
-
-    /* 2.2 Light theme color variables */
-    --bg0-light:     #f0edd8;
-    --bg1-light:     #f6f1dd;
-    --bg-light:      #fdf6e3;
-    --bg2-light:     #f3efda;
-    --bg3-light:     #edead5;
-    --bg4-light:     #e4e1cd;
-    --bg5-light:     #dfdbc8;
-    --grey0-light:   #a4ad9e;
-    --grey1-light:   #939f91;
-    --grey2-light:   #879686;
-    --shadow-light:  #3c474d20;
-
-
-    --bg_visual_light:      #eaedc8;
-    --bg_red_light:         #fbe3da;
-    --bg_green_light:       #f0f1d2;
-    --bg_blue_light:        #e9f0e9;
-    --bg_yellow_light:      #faedcd;
-
-    --fg-light:       #5c6a72;
-    
-    --light-red:     #f85552;
-    --light-orange:  #f57d26;
-    --light-yellow:  #bf983d;
-    --light-green:   #899c40;
-    --light-aqua:    #569d79;
-    --light-blue:    #5a93a2;
-    --light-purple:  #b87b9d;
-
-    --light-dim-red:    #f1706f;
-    --light-dim-orange: #f39459;
-    --light-dim-yellow: #e4b649;
-    --light-dim-green:  #a4bb4a;
-    --light-dim-aqua:   #6ec398;
-    --light-dim-blue:   #6cb3c6;
-    --light-dim-purple: #e092be;
-
-
+  --everforest-shadow-dark: #00000070;
+  --everforest-shadow-light: #3c474d20;
 }
 
-/* 2.3 Dark theme implementation */
-.theme-dark
-{
-    --background-primary:         var(--bg-dark);
-    --background-primary-alt:     var(--bg-dark);
-    --background-secondary:       var(--bg-dark);
-    --background-secondary-alt:   var(--bg-dark);
-    --text-normal:                var(--fg-dark);
-    --text-faint:                 var(--grey1-dark);
-    --text-title-h1:              var(--dim-red);
-    --text-title-h2:              var(--dim-orange);
-    --text-title-h3:              var(--dim-yellow);
-    --text-title-h4:              var(--dim-green);
-    --text-title-h5:              var(--dim-aqua);
-    --text-title-h6:              var(--dim-purple);
-    --text-link:                  var(--faded-blue);
-    --text-a:                     var(--dim-aqua);
-    --text-a-hover:               var(--faded-aqua);
-    --text-mark:                  rgba(215, 153, 33, 0.4); /* light-yellow */
-    --pre-code:                   var(--bg1-dark);
-    --text-highlight-bg:          var(--bg_green);
-    --interactive-accent:         var(--dim-aqua);
-    --interactive-before:         var(--bg5-dark);
-    --background-modifier-border: var(--bg5-dark);
-    --text-accent:                var(--dim-blue);
-    --interactive-accent-rgb:     var(--dim-blue);
-    --inline-code:                var(--dim-blue);
-    --code-block:                 var(--fg-dark);
-    --vim-cursor:                 var(--faded-blue);
-    --text-selection:             var(--bg5-dark);
+/* 2.2. Dark theme implementation */
+.theme-dark {
+  --color-base-00: var(--everforest-bg0-dark);
+  --color-base-05: var(--everforest-bg1-dark);
+  --color-base-10: var(--everforest-bg-dark);
+  --color-base-20: var(--everforest-bg2-dark);
+  --color-base-25: var(--everforest-bg3-dark);
+  --color-base-30: var(--everforest-bg4-dark);
+  --color-base-35: var(--everforest-bg5-dark);
+  --color-base-40: var(--everforest-grey1-dark);
+  --color-base-50: var(--everforest-grey0-dark);
+  --color-base-60: var(--everforest-grey2-dark);
+  --color-base-70: #b8c4b8;
+  --color-base-100: var(--everforest-fg-dark);
+  --color-red-rgb: 230, 126, 128;
+  --color-orange-rgb: 230, 152, 117;
+  --color-yellow-rgb: 219, 188, 127;
+  --color-green-rgb: 167, 192, 128;
+  --color-cyan-rgb: 131, 192, 146;
+  --color-blue-rgb: 127, 187, 179;
+  --color-purple-rgb: 214, 153, 182;
+  --color-pink-rgb: 214, 153, 182;
+  --color-red: var(--everforest-faded-red);
+  --color-orange: var(--everforest-faded-orange);
+  --color-yellow: var(--everforest-faded-yellow);
+  --color-green: var(--everforest-faded-green);
+  --color-cyan: var(--everforest-faded-aqua);
+  --color-blue: var(--everforest-faded-blue);
+  --color-purple: var(--everforest-faded-purple);
+  --color-pink: var(--everforest-faded-purple);
+  --accent-h: 152;
+  --accent-s: 28%;
+  --accent-l: 48%;
+  --background-primary: var(--everforest-bg-dark);
+  --background-primary-alt: var(--everforest-bg1-dark);
+  --background-secondary: var(--everforest-bg2-dark);
+  --background-secondary-alt: var(--everforest-bg1-dark);
+  --background-modifier-border: var(--everforest-bg5-dark);
+  --background-modifier-border-hover: var(--everforest-bg4-dark);
+  --background-modifier-hover: rgba(var(--color-cyan-rgb), 0.08);
+  --background-modifier-active-hover: rgba(var(--color-cyan-rgb), 0.14);
+  --background-modifier-form-field: var(--everforest-bg2-dark);
+  --background-modifier-form-field-highlighted: var(--everforest-bg3-dark);
+  --background-modifier-error: var(--everforest-bg-red-dark);
+  --background-modifier-success: var(--everforest-bg-green-dark);
+  --text-normal: var(--everforest-fg-dark);
+  --text-muted: var(--everforest-grey2-dark);
+  --text-faint: var(--everforest-grey1-dark);
+  --text-on-accent: var(--everforest-bg0-dark);
+  --text-on-accent-inverted: var(--everforest-fg-dark);
+  --text-error: var(--everforest-faded-red);
+  --text-success: var(--everforest-faded-green);
+  --text-warning: var(--everforest-faded-yellow);
+  --text-selection: var(--everforest-bg5-dark);
+  --text-highlight-bg: var(--everforest-bg-green-dark);
+  --text-highlight-bg-active: var(--everforest-bg-blue-dark);
+  --text-accent: var(--everforest-dim-blue);
+  --text-accent-hover: var(--everforest-faded-aqua);
+  --interactive-normal: var(--everforest-bg3-dark);
+  --interactive-hover: var(--everforest-bg4-dark);
+  --interactive-accent: var(--everforest-dim-aqua);
+  --interactive-accent-hover: var(--everforest-faded-aqua);
+  --link-color: var(--everforest-dim-aqua);
+  --link-color-hover: var(--everforest-faded-aqua);
+  --link-unresolved-color: var(--everforest-faded-blue);
+  --link-unresolved-opacity: 0.85;
+  --link-external-color: var(--everforest-faded-blue);
+  --link-external-color-hover: var(--everforest-faded-aqua);
+  --tag-color: var(--everforest-dim-aqua);
+  --tag-color-hover: var(--everforest-faded-aqua);
+  --tag-background: var(--everforest-bg2-dark);
+  --tag-background-hover: var(--everforest-bg3-dark);
+  --tag-border-color: var(--everforest-dim-aqua);
+  --tag-border-color-hover: var(--everforest-faded-aqua);
+  --tag-radius: 8px;
+  --tag-padding-x: 6px;
+  --tag-padding-y: 1.5px;
+  --tag-weight: 500;
+  --code-normal: var(--everforest-fg-dark);
+  --code-background: var(--everforest-bg1-dark);
+  --code-comment: var(--everforest-grey1-dark);
+  --code-function: var(--everforest-faded-blue);
+  --code-important: var(--everforest-faded-orange);
+  --code-keyword: var(--everforest-faded-purple);
+  --code-operator: var(--everforest-faded-aqua);
+  --code-property: var(--everforest-faded-green);
+  --code-punctuation: var(--everforest-grey2-dark);
+  --code-string: var(--everforest-faded-green);
+  --code-tag: var(--everforest-dim-red);
+  --code-value: var(--everforest-faded-yellow);
+  --blockquote-border-color: var(--everforest-dim-blue);
+  --blockquote-color: var(--everforest-grey2-dark);
+  --divider-color: var(--everforest-bg5-dark);
+  --divider-color-hover: var(--everforest-dim-aqua);
+  --icon-color: var(--everforest-grey2-dark);
+  --icon-color-hover: var(--everforest-dim-aqua);
+  --icon-color-active: var(--everforest-faded-aqua);
+  --nav-item-color: var(--everforest-grey2-dark);
+  --nav-item-color-hover: var(--everforest-dim-aqua);
+  --nav-item-color-active: var(--everforest-faded-aqua);
+  --nav-item-background-hover: rgba(var(--color-cyan-rgb), 0.1);
+  --nav-item-background-active: rgba(var(--color-cyan-rgb), 0.16);
+  --nav-indentation-guide-color: var(--everforest-dim-blue);
+  --nav-collapse-icon-color: var(--everforest-dim-aqua);
+  --tab-text-color: var(--everforest-grey2-dark);
+  --tab-text-color-active: var(--everforest-fg-dark);
+  --tab-text-color-focused: var(--everforest-fg-dark);
+  --tab-text-color-focused-active: var(--everforest-fg-dark);
+  --tab-background-active: var(--everforest-bg-dark);
+  --tab-divider-color: var(--everforest-bg5-dark);
+  --tab-container-background: var(--everforest-bg1-dark);
+  --titlebar-background: var(--everforest-bg1-dark);
+  --titlebar-background-focused: var(--everforest-bg1-dark);
+  --titlebar-text-color: var(--everforest-fg-dark);
+  --titlebar-text-color-focused: var(--everforest-fg-dark);
+  --h1-color: var(--everforest-dim-red);
+  --h2-color: var(--everforest-dim-orange);
+  --h3-color: var(--everforest-dim-yellow);
+  --h4-color: var(--everforest-dim-green);
+  --h5-color: var(--everforest-dim-aqua);
+  --h6-color: var(--everforest-dim-purple);
+  --h1-size: 2.125em;
+  --h2-size: 1.625em;
+  --h3-size: 1.375em;
+  --h4-size: 1.25em;
+  --h5-size: 1.125em;
+  --h6-size: 1.125em;
+  --h1-weight: 500;
+  --h2-weight: 500;
+  --h3-weight: 500;
+  --h4-weight: 500;
+  --h5-weight: 500;
+  --h6-weight: 500;
+  --list-marker-color: var(--everforest-dim-aqua);
+  --list-marker-color-hover: var(--everforest-faded-aqua);
+  --list-indentation-guide-color: var(--everforest-dim-blue);
+  --checkbox-color: var(--everforest-faded-blue);
+  --checkbox-color-hover: var(--everforest-faded-aqua);
+  --checkbox-border-color: var(--everforest-faded-blue);
+  --checkbox-border-color-hover: var(--everforest-faded-aqua);
+  --caret-color: var(--everforest-faded-blue);
+  --metadata-background: var(--everforest-bg1-dark);
+  --metadata-border-color: var(--everforest-bg5-dark);
+  --metadata-divider-color: var(--everforest-bg5-dark);
+  --metadata-divider-color-hover: var(--everforest-dim-aqua);
+  --metadata-label-text-color: var(--everforest-grey2-dark);
+  --metadata-input-text-color: var(--everforest-fg-dark);
+  --metadata-input-background: var(--everforest-bg2-dark);
+  --metadata-input-background-hover: var(--everforest-bg3-dark);
+  --metadata-property-background-hover: rgba(var(--color-cyan-rgb), 0.08);
+  --callout-default: var(--everforest-dim-blue);
+  --callout-note: var(--everforest-dim-blue);
+  --callout-tip: var(--everforest-dim-aqua);
+  --callout-important: var(--everforest-dim-purple);
+  --callout-warning: var(--everforest-dim-yellow);
+  --callout-caution: var(--everforest-dim-orange);
+  --callout-info: var(--everforest-dim-blue);
+  --callout-question: var(--everforest-faded-aqua);
+  --callout-success: var(--everforest-dim-green);
+  --callout-error: var(--everforest-dim-red);
+  --callout-bug: var(--everforest-dim-red);
+  --callout-example: var(--everforest-dim-purple);
+  --callout-quote: var(--everforest-grey2-dark);
+  --callout-summary: var(--everforest-dim-blue);
+  --callout-todo: var(--everforest-grey1-dark);
+  --callout-fail: var(--everforest-dim-red);
+  --graph-text: var(--everforest-faded-aqua);
+  --graph-line: var(--everforest-bg5-dark);
+  --graph-node: var(--everforest-dim-aqua);
+  --graph-node-unresolved: var(--everforest-faded-blue);
+  --graph-node-focused: var(--everforest-faded-green);
+  --graph-node-tag: var(--everforest-dim-yellow);
+  --graph-node-attachment: var(--everforest-dim-purple);
+  --canvas-background: var(--everforest-bg0-dark);
+  --canvas-dot-pattern: var(--everforest-bg4-dark);
+  --canvas-card-label-color: var(--everforest-grey2-dark);
+  --canvas-color-1: var(--everforest-bg-red-dark);
+  --canvas-color-2: var(--everforest-bg-yellow-dark);
+  --canvas-color-3: var(--everforest-bg-green-dark);
+  --canvas-color-4: var(--everforest-bg-blue-dark);
+  --canvas-color-5: var(--everforest-bg-visual-dark);
+  --canvas-color-6: var(--everforest-bg3-dark);
+  --search-clear-button-color: var(--everforest-grey2-dark);
+  --search-icon-color: var(--everforest-grey1-dark);
+  --search-result-background: var(--everforest-bg2-dark);
+  --scrollbar-active-thumb-bg: var(--everforest-bg5-dark);
+  --scrollbar-bg: transparent;
+  --scrollbar-thumb-bg: var(--everforest-bg4-dark);
+  --ribbon-background: var(--everforest-bg1-dark);
+  --ribbon-background-collapsed: var(--everforest-bg1-dark);
+  --status-bar-background: var(--everforest-bg1-dark);
+  --status-bar-text-color: var(--everforest-grey2-dark);
+  --table-background: var(--everforest-bg2-dark);
+  --table-border-color: var(--everforest-bg5-dark);
+  --table-header-background: var(--everforest-bg3-dark);
+  --table-header-background-hover: var(--everforest-bg4-dark);
+  --embed-background: var(--everforest-bg2-dark);
+  --embed-border-color: var(--everforest-bg5-dark);
 }
 
-/* 2.4 Light theme implementation */
-.theme-light
-{
-    --background-primary:         var(--bg-light);
-    --background-primary-alt:     var(--bg-light);
-    --background-secondary:       var(--bg-light);
-    --background-secondary-alt:   var(--bg-light);
-    --text-normal:                var(--fg-light);
-    --text-faint:                 var(--grey1-light);
-    --text-title-h1:              var(--light-red);
-    --text-title-h2:              var(--light-orange);
-    --text-title-h3:              var(--light-yellow);
-    --text-title-h4:              var(--light-green);
-    --text-title-h5:              var(--light-aqua);
-    --text-title-h6:              var(--light-purple);
-    --text-link:                  var(--light-blue);
-    --text-a:                     var(--light-dim-blue);
-    --text-a-hover:               var(--light-blue);
-    --text-mark:                  rgba(215, 153, 33, 0.4); /* light-yellow */
-    --pre-code:                   var(--bg1-light);
-    --text-highlight-bg:          var(--light-dim-green);
-    --interactive-accent:         var(--bg5-light);
-    --interactive-before:         var(--bg5-light);
-    --background-modifier-border: var(--bg5-light);
-    --text-accent:                var(--light-dim-green);
-    --interactive-accent-rgb:     var(--light-dim-green);
-    --inline-code:                var(--light-blue);
-    --code-block:                 var(--fg-light);
-    --vim-cursor:                 var(--light-blue);
-    --text-selection:             rgba(189, 174, 147, 0.5); /* light3 */
+/* 2.3. Light theme implementation */
+.theme-light {
+  --color-base-00: #ffffff;
+  --color-base-05: var(--everforest-bg0-light);
+  --color-base-10: var(--everforest-bg-light);
+  --color-base-20: var(--everforest-bg2-light);
+  --color-base-25: var(--everforest-bg3-light);
+  --color-base-30: var(--everforest-bg4-light);
+  --color-base-35: var(--everforest-bg5-light);
+  --color-base-40: var(--everforest-grey1-light);
+  --color-base-50: var(--everforest-grey0-light);
+  --color-base-60: var(--everforest-grey2-light);
+  --color-base-70: #6d7a72;
+  --color-base-100: var(--everforest-fg-light);
+  --color-red-rgb: 248, 85, 82;
+  --color-orange-rgb: 245, 125, 38;
+  --color-yellow-rgb: 191, 152, 61;
+  --color-green-rgb: 137, 156, 64;
+  --color-cyan-rgb: 86, 157, 121;
+  --color-blue-rgb: 90, 147, 162;
+  --color-purple-rgb: 184, 123, 157;
+  --color-pink-rgb: 184, 123, 157;
+  --color-red: var(--everforest-light-red);
+  --color-orange: var(--everforest-light-orange);
+  --color-yellow: var(--everforest-light-yellow);
+  --color-green: var(--everforest-light-green);
+  --color-cyan: var(--everforest-light-aqua);
+  --color-blue: var(--everforest-light-blue);
+  --color-purple: var(--everforest-light-purple);
+  --color-pink: var(--everforest-light-dim-purple);
+  --accent-h: 74;
+  --accent-s: 42%;
+  --accent-l: 44%;
+  --background-primary: var(--everforest-bg-light);
+  --background-primary-alt: var(--everforest-bg1-light);
+  --background-secondary: var(--everforest-bg2-light);
+  --background-secondary-alt: var(--everforest-bg1-light);
+  --background-modifier-border: var(--everforest-bg5-light);
+  --background-modifier-border-hover: var(--everforest-bg4-light);
+  --background-modifier-hover: rgba(var(--color-green-rgb), 0.1);
+  --background-modifier-active-hover: rgba(var(--color-green-rgb), 0.16);
+  --background-modifier-form-field: var(--everforest-bg2-light);
+  --background-modifier-form-field-highlighted: var(--everforest-bg3-light);
+  --background-modifier-error: var(--everforest-bg-red-light);
+  --background-modifier-success: var(--everforest-bg-green-light);
+  --text-normal: var(--everforest-fg-light);
+  --text-muted: var(--everforest-grey2-light);
+  --text-faint: var(--everforest-grey1-light);
+  --text-on-accent: var(--everforest-bg-light);
+  --text-on-accent-inverted: var(--everforest-fg-light);
+  --text-error: var(--everforest-light-red);
+  --text-success: var(--everforest-light-green);
+  --text-warning: var(--everforest-light-yellow);
+  --text-selection: rgba(189, 174, 147, 0.5);
+  --text-highlight-bg: var(--everforest-light-dim-green);
+  --text-highlight-bg-active: var(--everforest-bg-blue-light);
+  --text-accent: var(--everforest-light-dim-green);
+  --text-accent-hover: var(--everforest-light-dim-aqua);
+  --interactive-normal: var(--everforest-bg3-light);
+  --interactive-hover: var(--everforest-bg4-light);
+  --interactive-accent: var(--everforest-light-dim-aqua);
+  --interactive-accent-hover: var(--everforest-light-aqua);
+  --link-color: var(--everforest-light-dim-blue);
+  --link-color-hover: var(--everforest-light-blue);
+  --link-unresolved-color: var(--everforest-light-blue);
+  --link-unresolved-opacity: 0.8;
+  --link-external-color: var(--everforest-light-blue);
+  --link-external-color-hover: var(--everforest-light-dim-aqua);
+  --tag-color: var(--everforest-light-dim-blue);
+  --tag-color-hover: var(--everforest-light-blue);
+  --tag-background: var(--everforest-bg2-light);
+  --tag-background-hover: var(--everforest-bg3-light);
+  --tag-border-color: var(--everforest-light-dim-aqua);
+  --tag-border-color-hover: var(--everforest-light-aqua);
+  --tag-radius: 8px;
+  --tag-padding-x: 6px;
+  --tag-padding-y: 1.5px;
+  --tag-weight: 500;
+  --code-normal: var(--everforest-fg-light);
+  --code-background: var(--everforest-bg1-light);
+  --code-comment: var(--everforest-grey1-light);
+  --code-function: var(--everforest-light-blue);
+  --code-important: var(--everforest-light-orange);
+  --code-keyword: var(--everforest-light-purple);
+  --code-operator: var(--everforest-light-aqua);
+  --code-property: var(--everforest-light-green);
+  --code-punctuation: var(--everforest-grey2-light);
+  --code-string: var(--everforest-light-dim-green);
+  --code-tag: var(--everforest-light-red);
+  --code-value: var(--everforest-light-yellow);
+  --blockquote-border-color: var(--everforest-light-blue);
+  --blockquote-color: var(--everforest-grey2-light);
+  --divider-color: var(--everforest-bg5-light);
+  --divider-color-hover: var(--everforest-light-aqua);
+  --icon-color: var(--everforest-grey2-light);
+  --icon-color-hover: var(--everforest-light-dim-aqua);
+  --icon-color-active: var(--everforest-light-aqua);
+  --nav-item-color: var(--everforest-grey2-light);
+  --nav-item-color-hover: var(--everforest-light-dim-blue);
+  --nav-item-color-active: var(--everforest-light-blue);
+  --nav-item-background-hover: rgba(var(--color-green-rgb), 0.12);
+  --nav-item-background-active: rgba(var(--color-green-rgb), 0.18);
+  --nav-indentation-guide-color: var(--everforest-light-blue);
+  --nav-collapse-icon-color: var(--everforest-light-dim-aqua);
+  --tab-text-color: var(--everforest-grey2-light);
+  --tab-text-color-active: var(--everforest-fg-light);
+  --tab-text-color-focused: var(--everforest-fg-light);
+  --tab-text-color-focused-active: var(--everforest-fg-light);
+  --tab-background-active: var(--everforest-bg-light);
+  --tab-divider-color: var(--everforest-bg5-light);
+  --tab-container-background: var(--everforest-bg1-light);
+  --titlebar-background: var(--everforest-bg1-light);
+  --titlebar-background-focused: var(--everforest-bg1-light);
+  --titlebar-text-color: var(--everforest-fg-light);
+  --titlebar-text-color-focused: var(--everforest-fg-light);
+  --h1-color: var(--everforest-light-red);
+  --h2-color: var(--everforest-light-orange);
+  --h3-color: var(--everforest-light-yellow);
+  --h4-color: var(--everforest-light-green);
+  --h5-color: var(--everforest-light-aqua);
+  --h6-color: var(--everforest-light-purple);
+  --h1-size: 2.125em;
+  --h2-size: 1.625em;
+  --h3-size: 1.375em;
+  --h4-size: 1.25em;
+  --h5-size: 1.125em;
+  --h6-size: 1.125em;
+  --h1-weight: 500;
+  --h2-weight: 500;
+  --h3-weight: 500;
+  --h4-weight: 500;
+  --h5-weight: 500;
+  --h6-weight: 500;
+  --list-marker-color: var(--everforest-light-dim-aqua);
+  --list-marker-color-hover: var(--everforest-light-aqua);
+  --list-indentation-guide-color: var(--everforest-light-blue);
+  --checkbox-color: var(--everforest-light-blue);
+  --checkbox-color-hover: var(--everforest-light-dim-aqua);
+  --checkbox-border-color: var(--everforest-light-blue);
+  --checkbox-border-color-hover: var(--everforest-light-dim-aqua);
+  --caret-color: var(--everforest-light-blue);
+  --metadata-background: var(--everforest-bg1-light);
+  --metadata-border-color: var(--everforest-bg5-light);
+  --metadata-divider-color: var(--everforest-bg5-light);
+  --metadata-divider-color-hover: var(--everforest-light-dim-aqua);
+  --metadata-label-text-color: var(--everforest-grey2-light);
+  --metadata-input-text-color: var(--everforest-fg-light);
+  --metadata-input-background: var(--everforest-bg2-light);
+  --metadata-input-background-hover: var(--everforest-bg3-light);
+  --metadata-property-background-hover: rgba(var(--color-green-rgb), 0.12);
+  --callout-default: var(--everforest-light-blue);
+  --callout-note: var(--everforest-light-blue);
+  --callout-tip: var(--everforest-light-aqua);
+  --callout-important: var(--everforest-light-purple);
+  --callout-warning: var(--everforest-light-yellow);
+  --callout-caution: var(--everforest-light-orange);
+  --callout-info: var(--everforest-light-blue);
+  --callout-question: var(--everforest-light-dim-aqua);
+  --callout-success: var(--everforest-light-green);
+  --callout-error: var(--everforest-light-red);
+  --callout-bug: var(--everforest-light-red);
+  --callout-example: var(--everforest-light-purple);
+  --callout-quote: var(--everforest-grey2-light);
+  --callout-summary: var(--everforest-light-blue);
+  --callout-todo: var(--everforest-grey1-light);
+  --callout-fail: var(--everforest-light-red);
+  --graph-text: var(--everforest-light-dim-aqua);
+  --graph-line: var(--everforest-bg5-light);
+  --graph-node: var(--everforest-light-aqua);
+  --graph-node-unresolved: var(--everforest-light-blue);
+  --graph-node-focused: var(--everforest-light-green);
+  --graph-node-tag: var(--everforest-light-yellow);
+  --graph-node-attachment: var(--everforest-light-purple);
+  --canvas-background: var(--everforest-bg0-light);
+  --canvas-dot-pattern: var(--everforest-bg4-light);
+  --canvas-card-label-color: var(--everforest-grey2-light);
+  --canvas-color-1: var(--everforest-bg-red-light);
+  --canvas-color-2: var(--everforest-bg-yellow-light);
+  --canvas-color-3: var(--everforest-bg-green-light);
+  --canvas-color-4: var(--everforest-bg-blue-light);
+  --canvas-color-5: var(--everforest-bg-visual-light);
+  --canvas-color-6: var(--everforest-bg3-light);
+  --search-clear-button-color: var(--everforest-grey2-light);
+  --search-icon-color: var(--everforest-grey1-light);
+  --search-result-background: var(--everforest-bg2-light);
+  --scrollbar-active-thumb-bg: var(--everforest-bg5-light);
+  --scrollbar-bg: transparent;
+  --scrollbar-thumb-bg: var(--everforest-bg4-light);
+  --ribbon-background: var(--everforest-bg1-light);
+  --ribbon-background-collapsed: var(--everforest-bg1-light);
+  --status-bar-background: var(--everforest-bg1-light);
+  --status-bar-text-color: var(--everforest-grey2-light);
+  --table-background: var(--everforest-bg2-light);
+  --table-border-color: var(--everforest-bg5-light);
+  --table-header-background: var(--everforest-bg3-light);
+  --table-header-background-hover: var(--everforest-bg4-light);
+  --embed-background: var(--everforest-bg2-light);
+  --embed-border-color: var(--everforest-bg5-light);
 }
 
-.theme-dark code[class*="language-"],
-.theme-dark pre[class*="language-"],
-.theme-light code[class*="language-"],
-.theme-light pre[class*="language-"]
-{
-    text-shadow: none ;
-    background-color: var(--pre-code) ;
+/* 3. Markdown (editor / preview) */
+/* 3.1. Editor */
+.markdown-source-view.mod-cm6 .cm-scroller {
+  font-family: var(--font-text);
 }
 
-/* 3. General UI */
-.view-header-title {
-    font-weight: 700;
-  }
-  
-  /* 3.1. Title bar */
-  .titlebar {
-    background-color: var(--background-secondary-alt);
-  }
-  
-  .titlebar-inner {
-    color: var(--text-normal);
-  }
+.markdown-source-view.mod-cm6 .cm-content {
+  caret-color: var(--caret-color);
+}
 
+.markdown-source-view.mod-cm6 .cm-line.cm-activeLine {
+  background-color: var(--background-modifier-hover);
+}
+
+/* 3.2. Reading view */
+.markdown-rendered mark {
+  background-color: rgba(215, 153, 33, 0.4);
+}
+
+.markdown-rendered .markdown-preview-section img,
+.markdown-rendered .image-embed img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* 3.3. Indentation guides */
+.markdown-source-view.mod-cm6 .cm-indent::before,
+.markdown-rendered.show-indentation-guide li > ul::before,
+.markdown-rendered.show-indentation-guide li > ol::before {
+  border-right-color: var(--list-indentation-guide-color);
+}
+
+/* 4. General UI */
+/* 4.1. Workspace split handles */
+.workspace-split.mod-vertical > .workspace-leaf-resize-handle,
+.workspace-split.mod-left-split > .workspace-leaf-resize-handle,
+.workspace-split.mod-right-split > .workspace-leaf-resize-handle {
+  width: 1px;
+  background-color: var(--interactive-accent);
+}
+
+.workspace-split.mod-horizontal > .workspace-leaf-resize-handle {
+  height: 1px;
+  background-color: var(--interactive-accent);
+}
+
+/* 4.2. Suggestions */
+.suggestion-item.is-selected {
+  background-color: var(--text-selection);
+}
+
+/* 4.3. Empty state */
+.empty-state-container:hover {
+  background-color: var(--background-secondary-alt);
+  border-color: var(--interactive-accent);
+}
+
+/* 5. Graph view colours */
 .graph-view.color-circle,
 .graph-view.color-fill-highlight,
-.graph-view.color-line-highlight
-{
-    color: var(--interactive-accent-rgb) ;
-}
-.graph-view.color-text
-{
-    color: var(--text-a-hover) ;
-}
-/*
-.graph-view.color-fill
-{
-    color: var(--background-secondary);
-}
-.graph-view.color-line
-{
-  color: var(--background-modifier-border);
-}
-*/
-
-html,
-body
-{
-    font-size: 16px ;
+.graph-view.color-line-highlight {
+  color: var(--graph-node);
 }
 
-strong
-{
-    font-weight: 600 ;
+.graph-view.color-text {
+  color: var(--graph-text);
 }
 
-a,
-.cm-hmd-internal-link
-{
-    color: var(--text-a) ;
-    text-decoration: none ;
+/* 6. Mermaid */
+.mermaid .note {
+  fill: var(--background-secondary);
 }
-
-a:hover,
-.cm-hmd-internal-link:hover,
-.cm-url
-{
-    color: var(--text-a-hover) ;
-    text-decoration: none ;
-}
-
 
 /*----------------------------------------------------------------
 TAGS
 ----------------------------------------------------------------*/
 
-.token.tag {
-    padding: 0px 0px;
-    background-color: transparent;
-    border: none;
-  }
-  
-  .token.tag:hover {
-    background: transparent;
-    color: var(--text-a-hover) !important;
-  }
-  
-  /*----------------------------------------------------------------
-  TAG PILLS
-  ----------------------------------------------------------------*/
-  .markdown-preview-section h1 a.tag,
-  .markdown-preview-section h2 a.tag,
-  .markdown-preview-section h3 a.tag,
-  .markdown-preview-section h4 a.tag,
-  .markdown-preview-section h5 a.tag,
-  .markdown-preview-section h4 a.tag {
-    font-weight: inherit;
-  }
-  
-  .tag {
-    background-color: var(--tag-base);
-    border: 1px solid var(--interactive-accent);
-    color: var(--text-a);
-    font-weight: 500;
-    padding: 1.5px 6px;
-    padding-left: 6px;
-    padding-right: 6px;
-    text-align: center;
-    text-decoration: none !important;
-    display: inline-block;
-    cursor: pointer;
-    border-radius: 8px;
-    transition: 0.2s ease-in-out;
-  }
-  
-  .tag:hover {
-    color: var(--interactive-accent);
-  }
-  
-  /*----------------------------------------------------------------
-  TAG REF STYLING
-  ----------------------------------------------------------------*/
-  
-  .tag[href^="#❗️"],
-  .tag[href^="#important❗️"] {
-    background-color: var(--tag-base);
-    border: 1px solid var(--boldred);
-  }
-  
-  .tag[href^="#📓"],
-  .tag[href^="#journal📓"] {
-    background-color: var(--tag-base);
-    border: 1px solid var(--purple);
-  }
-  
-  .tag[href^="#🌱"],
-  .tag[href^="#seedling🌱"],
-  .tag[href^="#🌿"],
-  .tag[href^="#budding🌿"],
-  .tag[href^="#🌳"],
-  .tag[href^="#evergreen🌳"] {
-    background-color: var(--tag-base);
-    border: 1px solid var(--boldgreen);
-  }
-
-mark
-{
-    background-color: var(--text-mark) ;
+/* 7.1. Tag custom colours */
+.markdown-rendered a.tag[href^="#❗️"],
+.markdown-rendered a.tag[href^="#important❗️"],
+.markdown-source-view a.tag[href^="#❗️"],
+.markdown-source-view a.tag[href^="#important❗️"] {
+  border-color: var(--everforest-dim-red);
 }
 
-.view-actions a
-{
-    color: var(--text-normal) ;
+.theme-light .markdown-rendered a.tag[href^="#❗️"],
+.theme-light .markdown-rendered a.tag[href^="#important❗️"],
+.theme-light .markdown-source-view a.tag[href^="#❗️"],
+.theme-light .markdown-source-view a.tag[href^="#important❗️"] {
+  border-color: var(--everforest-light-red);
 }
 
-.view-actions a:hover
-{
-    color: var(--text-a) ;
+.markdown-rendered a.tag[href^="#📓"],
+.markdown-rendered a.tag[href^="#journal📓"],
+.markdown-source-view a.tag[href^="#📓"],
+.markdown-source-view a.tag[href^="#journal📓"] {
+  border-color: var(--everforest-dim-purple);
 }
 
-.HyperMD-codeblock-bg
-{
-    background-color: var(--pre-code) ;
+.theme-light .markdown-rendered a.tag[href^="#📓"],
+.theme-light .markdown-rendered a.tag[href^="#journal📓"],
+.theme-light .markdown-source-view a.tag[href^="#📓"],
+.theme-light .markdown-source-view a.tag[href^="#journal📓"] {
+  border-color: var(--everforest-light-purple);
 }
 
-.HyperMD-codeblock
-{
-    line-height: 1.4em ;
-    color: var(--code-block) ;
+.markdown-rendered a.tag[href^="#🌱"],
+.markdown-rendered a.tag[href^="#seedling🌱"],
+.markdown-rendered a.tag[href^="#🌿"],
+.markdown-rendered a.tag[href^="#budding🌿"],
+.markdown-rendered a.tag[href^="#🌳"],
+.markdown-rendered a.tag[href^="#evergreen🌳"],
+.markdown-source-view a.tag[href^="#🌱"],
+.markdown-source-view a.tag[href^="#seedling🌱"],
+.markdown-source-view a.tag[href^="#🌿"],
+.markdown-source-view a.tag[href^="#budding🌿"],
+.markdown-source-view a.tag[href^="#🌳"],
+.markdown-source-view a.tag[href^="#evergreen🌳"] {
+  border-color: var(--everforest-dim-green);
 }
 
-.HyperMD-codeblock-begin
-{
-    border-top-left-radius: 4px ;
-    border-top-right-radius: 4px ;
+.theme-light .markdown-rendered a.tag[href^="#🌱"],
+.theme-light .markdown-rendered a.tag[href^="#seedling🌱"],
+.theme-light .markdown-rendered a.tag[href^="#🌿"],
+.theme-light .markdown-rendered a.tag[href^="#budding🌿"],
+.theme-light .markdown-rendered a.tag[href^="#🌳"],
+.theme-light .markdown-rendered a.tag[href^="#evergreen🌳"],
+.theme-light .markdown-source-view a.tag[href^="#🌱"],
+.theme-light .markdown-source-view a.tag[href^="#seedling🌱"],
+.theme-light .markdown-source-view a.tag[href^="#🌿"],
+.theme-light .markdown-source-view a.tag[href^="#budding🌿"],
+.theme-light .markdown-source-view a.tag[href^="#🌳"],
+.theme-light .markdown-source-view a.tag[href^="#evergreen🌳"] {
+  border-color: var(--everforest-light-dim-green);
 }
 
-.HyperMD-codeblock-end
-{
-    border-bottom-left-radius: 4px ;
-    border-bottom-right-radius: 4px ;
+/* 8. Mobile */
+.is-phone {
+  --metadata-label-font-size: var(--font-adaptive-small);
+  --metadata-input-font-size: var(--font-adaptive-small);
 }
 
-th
-{
-    font-weight: 600 ;
+.is-mobile .workspace-drawer {
+  --input-height: 36px;
 }
 
-thead
-{
-    border-bottom: 2px solid var(--background-modifier-border) ;
-}
-
-.HyperMD-table-row
-{
-    line-height: normal ;
-    padding-left: 4px ;
-    padding-right: 4px ;
-    /* background-color: var(--pre-code) ; */
-}
-
-.HyperMD-table-row-0
-{
-    padding-top: 4px ;
-}
-
-.CodeMirror-foldgutter-folded,
-.is-collapsed .nav-folder-collapse-indicator
-{
-    color: var(--text-a) ;
-}
-
-.nav-file-tag
-{
-    color: var(--text-a) ;
-}
-
-.is-active .nav-file-title
-{
-    color: var(--text-a) ;
-    background-color: var(--background-primary-alt) ;
-}
-
-.nav-file-title
-{
-    border-bottom-left-radius: 0 ;
-    border-bottom-right-radius: 0 ;
-    border-top-left-radius: 0 ;
-    border-top-right-radius: 0 ;
-}
-
-img
-{
-    display: block ;
-    margin-left: auto ;
-    margin-right: auto ;
-}
-
-.HyperMD-list-line
-{
-    padding-top: 0 ;
-}
-
-.CodeMirror-code,
-.CodeMirror-linenumber,
-.cm-formatting
-{
-    font-family: var(--font-monospace) ;
-    font-size: 0.9em;
-}
-
-.markdown-preview-section pre code,
-.markdown-preview-section code
-{
-    font-size: 0.9em ;
-    background-color: var(--pre-code) ;
-}
-
-.markdown-preview-section pre code
-{
-    padding: 4px ;
-    line-height: 1.4em ;
-    display: block ;
-    color: var(--code-block) ;
-}
-
-.markdown-preview-section code
-{
-    color: var(--inline-code) ;
-}
-
-.cm-s-obsidian,
-.cm-inline-code
-{
-    -webkit-font-smoothing: auto ;
-}
-
-.cm-inline-code
-{
-    color: var(--inline-code) ;
-    background-color: var(--pre-code) ;
-    padding: 1px ;
-}
-
-.workspace-leaf-header-title
-{
-    font-weight: 600 ;
-}
-
-.side-dock-title
-{
-    padding-top: 15px ;
-    font-size: 20px ;
-}
-
-.side-dock-ribbon-tab:hover,
-.side-dock-ribbon-action:hover,
-.side-dock-ribbon-action.is-active:hover,
-.nav-action-button:hover,
-.side-dock-collapse-btn:hover
-{
-    color: var(--text-a);
-}
-
-.side-dock
-{
-    border-right: 0 ;
-}
-
-.cm-s-obsidian,
-.markdown-preview-view
-{
-    /* padding-left: 10px ; */
-    padding-right: 10px ;
-}
-
-/* vertical resize-handle */
-.workspace-split.mod-vertical > * > .workspace-leaf-resize-handle,
-.workspace-split.mod-left-split > .workspace-leaf-resize-handle,
-.workspace-split.mod-right-split > .workspace-leaf-resize-handle
-{
-    width: 1px ;
-    background-color: var(--dim-aqua);
-}
-
-/* horizontal resize-handle */
-.workspace-split.mod-horizontal > * > .workspace-leaf-resize-handle
-{
-    height: 1px ;
-    background-color: var(--dim-aqua);
-}
-
-/* Remove vertical split padding */
-.workspace-split.mod-root .workspace-split.mod-vertical .workspace-leaf-content,
-.workspace-split.mod-vertical > .workspace-split,
-.workspace-split.mod-vertical > .workspace-leaf,
-.workspace-tabs
-{
-    padding-right: 0px;
-}
-
-.markdown-embed-title
-{
-    font-weight: 600 ;
-}
-
-.markdown-embed
-{
-    padding-left: 10px ;
-    padding-right: 10px ;
-    margin-left: 10px ;
-    margin-right: 10px ;
-}
-
-.cm-header-1,
-.markdown-preview-section h1
-{
-    font-weight: 500 ;
-    font-size: 34px ;
-    color: var(--text-title-h1) ;
-}
-
-.cm-header-2,
-.markdown-preview-section h2
-{
-    font-weight: 500 ;
-    font-size: 26px ;
-    color: var(--text-title-h2) ;
-}
-
-.cm-header-3,
-.markdown-preview-section h3
-{
-    font-weight: 500 ;
-    font-size: 22px ;
-    color: var(--text-title-h3) ;
-}
-
-.cm-header-4,
-.markdown-preview-section h4
-{
-    font-weight: 500 ;
-    font-size: 20px ;
-    color: var(--text-title-h4) ;
-}
-
-.cm-header-5,
-.markdown-preview-section h5
-{
-    font-weight: 500 ;
-    font-size: 18px ;
-    color: var(--text-title-h5) ;
-}
-
-.cm-header-6,
-.markdown-preview-section h6
-{
-    font-weight: 500 ;
-    font-size: 18px ;
-    color: var(--text-title-h6) ;
-}
-
-.suggestion-item.is-selected
-{
-    background-color: var(--text-selection);
-}
-
-.empty-state-container:hover
-{
-    background-color: var(--background-secondary-alt);
-    border: 5px solid var(--interactive-accent) ;
-}
-
-.checkbox-container
-{
-    background-color: var(--interactive-before);
-}
-
-.checkbox-container:after
-{
-    background-color: var(--interactive-accent);
-}
-
-.checkbox-container.is-enabled:after 
-{
-    background-color: var(--bg5-dark);
-}
-
-.mod-cta
-{
-    color: var(--background-secondary-alt) ;
-    font-weight: 600 ;
-}
-
-.mod-cta a
-{
-    color: var(--background-secondary-alt) ;
-    font-weight: 600 ;
-}
-
-.mod-cta:hover
-{
-    background-color: var(--interactive-before) ;
-    font-weight: 600 ;
-}
-
-.CodeMirror-cursor
-{
-    background-color: var(--vim-cursor) ;
-    opacity: 60% ;
-}
-
-input.task-list-item-checkbox {
-    border: 1px solid var(--faded-blue);
-    appearance: none;
-    -webkit-appearance: none;
-}
-
-input.task-list-item-checkbox:checked
-{
-    background-color: var(--faded-blue);
-    box-shadow: inset 0 0 0 2px var(--background-primary);
-}
-
-::selection
-{
-    background-color: var(--text-selection) ;
-}
-
-.mermaid .note
-{
-    fill: var(--dark3) ;
-}
-
-.frontmatter-container {
-    display: none;
-}
-
-/* Bullet point relationship lines */
-.markdown-source-view.mod-cm6 .cm-indent::before,
-.markdown-rendered.show-indentation-guide li > ul::before,
-.markdown-rendered.show-indentation-guide li > ol::before {
-  position: absolute;
-  border-right: 1px solid var(--dim-blue);
+/* 9. PDF export */
+@media print {
+  .markdown-preview-view h1 { color: var(--h1-color); }
+  .markdown-preview-view h2 { color: var(--h2-color); }
+  .markdown-preview-view h3 { color: var(--h3-color); }
+  .markdown-preview-view h4 { color: var(--h4-color); }
+  .markdown-preview-view h5 { color: var(--h5-color); }
+  .markdown-preview-view h6 { color: var(--h6-color); }
 }

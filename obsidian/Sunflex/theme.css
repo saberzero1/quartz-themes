@@ -1,0 +1,288 @@
+/*
+Sunflex
+
+Sunflex color configuration converted to Obsidian's native color
+variables so it can be used directly as a standalone theme.
+
+Sunflex
+MIT License
+Copyright (c) 2023 Sunflex
+*/
+
+body {
+  --base-h: 0; /* Base hue */
+  --base-s: 0%; /* Base saturation */
+  --base-l: 96%; /* Base lightness - 100 is white */
+  --accent-h: 201; /* Accent hue */
+  --accent-s: 17%; /* Accent saturation */
+  --accent-l: 50%; /* Accent lightness */
+}
+
+
+
+
+/* Light --------------------------------------------------------------- */
+.theme-light {
+  --base-h: 48;
+  --base-s: 100%;
+  --base-l: 97%;
+  --accent-h: 175;
+  --accent-s: 57%;
+  --accent-l: 33%;
+  --bg1: #FFFCF0;
+  --bg2: #F2F0E5;
+  --bg3: rgba(16,15,15,0.05);
+  --ui1: #E6E4D9;
+  --ui2: #DAD8CE;
+  --ui3: #CECDC3;
+  --tx1: #100F0F;
+  --tx2: #6F6E69;
+  --tx3: #B7B5AC;
+  --hl1: rgba(187,220,206,0.3);
+  --hl2: rgba(247,209,61,0.3);
+
+
+
+
+
+  --color-red-rgb: 175, 48, 41;
+  --color-orange-rgb: 188, 82, 21;
+  --color-yellow-rgb: 173, 131, 1;
+  --color-green-rgb: 102, 128, 11;
+  --color-cyan-rgb: 36, 131, 123;
+  --color-blue-rgb: 32, 94, 166;
+  --color-purple-rgb: 94, 64, 157;
+  --color-pink-rgb: 160, 47, 111;
+
+  /* --color-red: #AF3029;
+  --color-orange: #BC5215;
+  --color-yellow: #AD8301;
+  --color-green: #66800B;
+  --color-cyan: #24837B;
+  --color-blue: #205EA6;
+  --color-purple: #5E409D;
+  --color-pink: #A02F6F; */
+
+
+  --color-red: #dc322f;
+  --color-orange: #cb4b16;
+  --color-yellow: #c09104;
+  /* --color-orange: #BC5215;
+  --color-yellow: #cf9c01; */
+  --color-green: #859900;
+  --color-cyan: #2aa198;
+  --color-blue: #268bd2;
+  --color-purple: #6c71c4;
+  --color-pink: #d33682;
+
+  --accent-h: 175;
+  --accent-s: 57%;
+  --accent-l: 33%;
+
+  --color-base-00: #FFFCF0;
+  --color-base-05: #FFFCF0;
+  --color-base-10: #F2F0E5;
+  --color-base-20: #F2F0E5;
+  --color-base-25: #E6E4D9;
+
+  --color-base-30: #E6E4D9;
+  --color-base-35: #DAD8CE;
+  --color-base-40: #CECDC3;
+
+  --color-base-50: #B7B5AC;
+  --color-base-60: #878580;
+  --color-base-70: #6F6E69;
+  --color-base-100: #100F0F;
+
+  --nav-item-color: #6F6E69;
+  --nav-item-color-hover: #100F0F;
+  --nav-item-color-active: #100F0F;
+  --nav-item-color-selected: #100F0F;
+  --nav-collapse-icon-color: #6F6E69;
+  --nav-collapse-icon-color-collapsed: #878580;
+  --nav-indentation-guide-color: #E6E4D9;
+
+
+  /* --background-modifier-cover: pink !important; */
+  --background-modifier-cover:hsla(var(--base-h),calc(var(--base-s) - 70%),calc(var(--base-l) - 20%),0.5);
+}
+
+/* Dark ---------------------------------------------------------------- */
+.theme-dark {
+  --color-red-rgb: 209, 77, 65;
+  --color-orange-rgb: 218, 112, 44;
+  --color-yellow-rgb: 208, 162, 21;
+  --color-green-rgb: 135, 154, 57;
+  --color-cyan-rgb: 58, 169, 159;
+  --color-blue-rgb: 67, 133, 190;
+  --color-purple-rgb: 139, 126, 200;
+  --color-pink-rgb: 206, 93, 151;
+
+  --color-red: #D14D41;
+  --color-orange: #DA702C;
+  --color-yellow: #D0A215;
+  --color-green: #879A39;
+  --color-cyan: #3AA99F;
+  --color-blue: #4385BE;
+  --color-purple: #8B7EC8;
+  --color-pink: #CE5D97;
+
+  --accent-h: 175;
+  --accent-s: 49%;
+  --accent-l: 45%;
+
+  --color-base-00: #100F0F;
+  --color-base-05: #100F0F;
+  --color-base-10: #1C1B1A;
+  --color-base-20: #1C1B1A;
+  --color-base-25: #282726;
+
+  --color-base-30: #282726;
+  --color-base-35: #343331;
+  --color-base-40: #403E3C;
+
+  --color-base-50: #575653;
+  --color-base-60: #6F6E69;
+  --color-base-70: #878580;
+  --color-base-100: #CECDC3;
+
+
+  
+  --nav-item-color: #878580;
+  --nav-item-color-hover: #CECDC3;
+  --nav-item-color-active: #CECDC3;
+  --nav-item-color-selected: #CECDC3;
+  --nav-collapse-icon-color: #878580;
+  --nav-collapse-icon-color-collapsed: #575653;
+  --nav-indentation-guide-color: #282726;
+
+
+  --background-modifier-cover: hsla(var(--base-h),var(--base-s), calc(var(--base-l) - 12%), 0.5);
+}
+
+/* Optional: true-black dark variant (Sunflex dark-black) --- */
+.theme-dark.minimal-dark-black,
+.theme-dark.black {
+  --color-base-00: #000000;
+  --color-base-05: #000000;
+  --color-base-10: #100F0F;
+  --color-base-20: #1C1B1A;
+  --color-base-25: #1C1B1A;
+  --color-base-30: #1C1B1A;
+}
+
+.is-hidden-frameless:not(.colorful-frame) .mod-left-split .mod-top .workspace-tab-header-container {
+  background-color: pink !important;
+  background-color: var(--color-base-10) !important;
+  /* display: none !important; */
+}
+
+.nav-buttons-container {
+  justify-content: left;
+}
+
+
+/* background-color: var(--background-modifier-cover); */
+
+
+/* Headings — Sunflex colorful palette (size unchanged, defined in theme.css) */
+body {
+  /* --h1-color: var(--color-red);
+  --h2-color: var(--color-orange);
+  --h3-color: var(--color-yellow);
+  --h4-color: var(--color-green);
+  --h5-color: var(--color-blue);
+  --h6-color: var(--color-purple); */
+
+
+  /* 默认的 */
+  /* --h1-line-height: 1.2;
+  --h2-line-height: 1.2;
+  --h3-line-height: 1.3;
+  --h4-line-height: 1.4;
+  --h5-line-height: var(--line-height-normal);
+  --h6-line-height: var(--line-height-normal);
+  --h1-size: 1.618em;
+  --h2-size: 1.462em;
+  --h3-size: 1.318em;
+  --h4-size: 1.188em;
+  --h5-size: 1.076em;
+  --h6-size: 1em;
+
+  --h1-weight: 700;
+  --h2-weight: 680;
+  --h3-weight: 660;
+  --h4-weight: 640;
+  --h5-weight: 620;
+  --h6-weight: 600; */
+
+
+  /* 默认的 */
+  --h1-line-height: 1.2;
+  --h2-line-height: 1.2;
+  --h3-line-height: 1.3;
+  --h4-line-height: 1.4;
+  --h5-line-height: var(--line-height-normal);
+  --h6-line-height: var(--line-height-normal);
+  --h1-size: 1.8em;
+  --h2-size: 1.6em;
+  --h3-size: 1.3em;
+  --h4-size: 1.188em;
+  --h5-size: 1.076em;
+  --h6-size: 1em;
+
+  --h1-weight: 700;
+  --h2-weight: 680;
+  --h3-weight: 660;
+  --h4-weight: 640;
+  --h5-weight: 620;
+  --h6-weight: 600;
+}
+
+
+/* 编辑模式 - 标题折叠箭头始终显示 */
+.markdown-source-view.mod-cm6 .cm-fold-indicator .collapse-indicator {
+    opacity: 1 !important;
+}
+
+/* 阅读模式 - 标题折叠箭头始终显示 */
+.markdown-preview-view .heading-collapse-indicator .collapse-indicator,
+.markdown-preview-view .collapse-indicator {
+    opacity: 1 !important;
+}
+
+
+/* ===== 标题折叠箭头 —— 收起黑色 / 展开主题色 ===== */
+
+/* 编辑模式 - 收起（黑色） */
+.markdown-source-view.mod-cm6 .cm-fold-indicator.is-collapsed .collapse-indicator svg,
+.markdown-source-view.mod-cm6 .cm-gutterElement.is-collapsed .collapse-indicator svg {
+  color: #555 !important;
+  opacity: 1 !important;
+  cursor: pointer;
+}
+
+
+/* 编辑模式 - 展开（主题色） */
+.markdown-source-view.mod-cm6 .cm-fold-indicator:not(.is-collapsed) .collapse-indicator svg,
+.markdown-source-view.mod-cm6 .cm-gutterElement:not(.is-collapsed) .collapse-indicator svg {
+  color: #3370ff !important;
+  opacity: 1 !important;
+  cursor: pointer;
+}
+
+/* 阅读模式 - 收起（黑色） */
+.markdown-preview-view .heading-collapse-indicator.is-collapsed svg,
+.markdown-preview-view .collapse-indicator.is-collapsed svg {
+  color: #3370ff !important;
+  opacity: 1 !important;
+  cursor: pointer;
+}
+
+/* 阅读模式 - 展开（主题色） */
+.markdown-preview-view .heading-collapse-indicator:not(.is-collapsed) svg,
+.markdown-preview-view .collapse-indicator:not(.is-collapsed) svg {
+    color: #555 !important;
+    opacity: 1 !important;
+    cursor: pointer;
+}

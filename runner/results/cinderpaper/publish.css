@@ -1486,14 +1486,12 @@ body.theme-light {
   --red_x: 146, 68, 54 !important;
   --yellow: rgb(227, 176, 78) !important;
   --yellow_x: 125, 100, 35 !important;
-  --cursor-line-background: rgba(var(--red_x), 0.1) !important;
   --embed-border-left: 6px double var(--interactive-accent) !important;
-  --font-heading-theme:
-    "Fraunces", "Iowan Old Style", "Palatino Linotype", "Book Antiqua", serif !important;
   --calendar-background-hover: var(--light0) !important;
   --calendar-hover: var(--orange) !important;
   --calendar-today: var(--orange) !important;
   --calendar-week: var(--orange) !important;
+  --cursor-line-background: rgba(var(--red_x), 0.1) !important;
   --dark0: rgb(33, 31, 28) !important;
   --dark0_x: 33, 31, 28 !important;
   --dark1: rgb(46, 43, 39) !important;
@@ -1511,7 +1509,6 @@ body.theme-light {
   --frost1_x: 64, 110, 165 !important;
   --frost3: rgb(78, 104, 150) !important;
   --frost3_x: 48, 78, 122 !important;
-  --inline-code-border: rgba(var(--orange_x), 0.36) !important;
   --light0: rgb(236, 227, 212) !important;
   --light0_x: 236, 227, 212 !important;
   --light1: rgb(243, 237, 227) !important;
@@ -1521,7 +1518,6 @@ body.theme-light {
   --light3: rgb(255, 255, 255) !important;
   --light3_x: 255, 255, 255 !important;
   --link-url: var(--frost3) !important;
-  --link-url-hover: var(--red) !important;
   --mermaid-exclude: var(--light0) !important;
   --mermaid-loopline: var(--frost1) !important;
   --mermaid-note: var(--frost0) !important;
@@ -1529,6 +1525,10 @@ body.theme-light {
   --nav-file-tag: rgba(var(--orange_x), 0.9) !important;
   --tab-font-weight: 600 !important;
   --text-highlight-fg: var(--dark0) !important;
+  --font-heading-theme:
+    "Fraunces", "Iowan Old Style", "Palatino Linotype", "Book Antiqua", serif !important;
+  --inline-code-border: rgba(var(--orange_x), 0.36) !important;
+  --link-url-hover: var(--red) !important;
 }
 
 body.theme-dark {
@@ -2630,14 +2630,12 @@ body.theme-dark {
   --red_x: 220, 118, 95 !important;
   --yellow: rgb(227, 176, 78) !important;
   --yellow_x: 240, 196, 100 !important;
-  --cursor-line-background: rgba(var(--red_x), 0.2) !important;
   --embed-border-left: 6px double var(--interactive-accent) !important;
-  --font-heading-theme:
-    "Fraunces", "Iowan Old Style", "Palatino Linotype", "Book Antiqua", serif !important;
   --calendar-background-hover: var(--dark3) !important;
   --calendar-hover: var(--orange) !important;
   --calendar-today: var(--yellow) !important;
   --calendar-week: var(--orange) !important;
+  --cursor-line-background: rgba(var(--red_x), 0.2) !important;
   --dark0: rgb(33, 31, 28) !important;
   --dark0_x: 33, 31, 28 !important;
   --dark1: rgb(46, 43, 39) !important;
@@ -2655,7 +2653,6 @@ body.theme-dark {
   --frost1_x: 136, 178, 221 !important;
   --frost3: rgb(78, 104, 150) !important;
   --frost3_x: 110, 140, 190 !important;
-  --inline-code-border: rgba(var(--yellow_x), 0.34) !important;
   --light0: rgb(236, 227, 212) !important;
   --light0_x: 236, 227, 212 !important;
   --light1: rgb(243, 237, 227) !important;
@@ -2665,7 +2662,6 @@ body.theme-dark {
   --light3: rgb(255, 255, 255) !important;
   --light3_x: 255, 255, 255 !important;
   --link-url: var(--frost1) !important;
-  --link-url-hover: var(--frost0) !important;
   --mermaid-exclude: var(--dark3) !important;
   --mermaid-loopline: var(--frost1) !important;
   --mermaid-note: var(--frost3) !important;
@@ -2673,6 +2669,10 @@ body.theme-dark {
   --nav-file-tag: rgba(var(--orange_x), 0.95) !important;
   --tab-font-weight: 600 !important;
   --text-highlight-fg: var(--dark0) !important;
+  --font-heading-theme:
+    "Fraunces", "Iowan Old Style", "Palatino Linotype", "Book Antiqua", serif !important;
+  --inline-code-border: rgba(var(--yellow_x), 0.34) !important;
+  --link-url-hover: var(--frost0) !important;
 }
 
 body {

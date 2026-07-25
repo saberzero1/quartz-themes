@@ -1664,6 +1664,8 @@ body.theme-dark {
     "Microsoft Yahei", "SimSun", "Helvetica Neue", "Helvetica", sans-serif !important;
   --text-dim: rgba(69, 170, 255, 0.8) !important;
   --text-sub-accent: rgba(255, 40, 137, 0.8) !important;
+  --title-font:
+    "Optima LT Std", "Microsoft Yahei", "Noto Sans SC", sans-serif !important;
   --nightingale-blue: rgba(1, 65, 203, 1) !important;
   --nightingale-brown: rgba(127, 60, 0, 1) !important;
   --nightingale-cyan: rgba(23, 255, 221, 0.7) !important;
@@ -1680,8 +1682,6 @@ body.theme-dark {
   --quote-background: var(--background-primary-alt) !important;
   --text-title-1: rgba(216, 253, 7, 0.8) !important;
   --text-title-2: rgba(253, 49, 6, 0.8) !important;
-  --title-font:
-    "Optima LT Std", "Microsoft Yahei", "Noto Sans SC", sans-serif !important;
 }
 
 body .site-body-left-column-site-theme-toggle {

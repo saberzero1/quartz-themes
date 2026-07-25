@@ -1487,11 +1487,11 @@ body.theme-light {
   --callout-danger: 236, 40, 100;
   --callout-help: 255, 184, 108;
   --tag-border-radius: 4px !important;
-  --callout-caution: 255, 184, 108;
   --callout-cite: 107, 107, 107;
+  --callout-done: 25, 249, 216;
+  --callout-caution: 255, 184, 108;
   --callout-attention: 255, 184, 108;
   --callout-check: 25, 249, 216;
-  --callout-done: 25, 249, 216;
   --callout-faq: 255, 184, 108;
   --callout-tldr: 69, 169, 249;
   --callout-hint: 25, 249, 216;
@@ -2611,11 +2611,11 @@ body.theme-dark {
   --callout-danger: 236, 40, 100;
   --callout-help: 255, 184, 108;
   --tag-border-radius: 4px !important;
-  --callout-caution: 255, 184, 108;
   --callout-cite: 107, 107, 107;
+  --callout-done: 25, 249, 216;
+  --callout-caution: 255, 184, 108;
   --callout-attention: 255, 184, 108;
   --callout-check: 25, 249, 216;
-  --callout-done: 25, 249, 216;
   --callout-faq: 255, 184, 108;
   --callout-tldr: 69, 169, 249;
   --callout-hint: 25, 249, 216;

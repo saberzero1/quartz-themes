@@ -1438,8 +1438,8 @@ body.theme-light {
   --inline-title-color: var(--h1-color) !important;
   --text-error-hover: rgb(var(--mono-red), 80%) !important;
   --interactive-success: rgb(var(--mono-green)) !important;
-  --text-muted-rgb: var(--mono-subtext0) !important;
   --embed-border-left: 2px solid rgb(var(--mono-purple)) !important;
+  --text-muted-rgb: var(--mono-subtext0) !important;
   --hex-green: #218871 !important;
   --hex-red: #ce4770 !important;
   --hex-yellow: #b16803 !important;
@@ -2517,8 +2517,8 @@ body.theme-dark {
   --inline-title-color: var(--h1-color) !important;
   --text-error-hover: rgb(var(--mono-red), 80%) !important;
   --interactive-success: rgb(var(--mono-green)) !important;
-  --text-muted-rgb: var(--mono-subtext0) !important;
   --embed-border-left: 2px solid rgb(var(--mono-purple)) !important;
+  --text-muted-rgb: var(--mono-subtext0) !important;
   --hex-green: #7bd88f !important;
   --hex-red: #fc618d !important;
   --hex-yellow: #fce566 !important;

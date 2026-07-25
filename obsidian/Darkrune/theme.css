@@ -1,0 +1,663 @@
+/* ============================================================================
+   DARKRUNE
+   Tema Obsidian escuro — paleta ROXO · MAGENTA · VIOLETA · ROSA · PRETO,
+   com pegada de terminal (neon sutil, grafo com nebulosa).
+   Estrutura inspirada no Royal Velvet (sistema de camadas por HSL).
+   por doritosuai · v1.1.4
+   ----------------------------------------------------------------------------
+   COMO USAR:
+   1. Selecione "Darkrune" em Configurações → Aparência → Tema.
+   2. Ajuste o PAINEL DE CONTROLE abaixo — cores e efeitos num lugar só.
+   ============================================================================ */
+
+/* ===========================================================================
+   ▓▓▓  PAINEL DE CONTROLE  ▓▓▓  — mexa só aqui no dia a dia
+   =========================================================================== */
+body {
+	/* --- PALETA -----------------------------------------------------------
+	   PRINCIPAIS: roxo · magenta · violeta  (dominam o tema)
+	   DETALHES:   verde lima  (ícones, tags, grafo, marcadores)
+	   ESCRITA:    rosa · ciano (pequenos detalhes de texto/código)      */
+	--ds-roxo:     #a970ff;   /* PRINCIPAL — base do tema / H1 */
+	--ds-indigo:   #8b5cf6;   /* roxo mais profundo */
+	--ds-violeta:  #c77dff;   /* PRINCIPAL — roxo meio rosa */
+	--ds-lilas:    #e0aaff;   /* roxo-rosa bem claro */
+	--ds-magenta:  #ff4fd8;   /* PRINCIPAL — rosa quente / magenta */
+	--ds-rosa:     #ff5fb0;   /* rosa — pequenos detalhes de escrita */
+	--ds-rosa-cl:  #ffa6d5;   /* rosa claro */
+	--ds-ciano:    #22d3ee;   /* ciano — pequenos detalhes de escrita */
+	--ds-verde-lima:    #b6ff3a;   /* DETALHES: ícones, tags, grafo, marcadores */
+	--ds-verde-lima-cl: #cfff7a;   /* verde lima claro (hover) */
+	--ds-preto:    #07060a;   /* fundo base */
+
+	/* variações escuras (bordas, prompts, hovers) */
+	--ds-roxo-esc:    #7c3aed;
+	--ds-magenta-esc: #c93db0;
+	--ds-rosa-esc:    #c93d86;
+	--ds-verde-lima-esc: #6f9e10;
+
+
+	/* --- EFEITOS ---------------------------------------------------------- */
+	--ds-glow:       0 0 4px;   /* brilho no texto de acento — sutil ("none" desliga) */
+	--ds-scanlines:  0.04;      /* linhas de CRT: 0 = desligado */
+	--ds-prompt:     1;         /* prefixos # e $ nos títulos: 1 = liga, 0 = some */
+	--ds-fundo-notas:   0.35;   /* intensidade da nebulosa nas notas (0 = off) */
+	--ds-nota-escurece: 0.2;    /* camada preta por cima p/ escurecer (0 = nada … 1 = preto) */
+
+	/* --- FONTES ----------------------------------------------------------- */
+	--ds-font-ui:     'Inter', 'Segoe UI', ui-sans-serif, sans-serif;
+	--ds-font-mono:   'JetBrains Mono', 'Cascadia Code', 'Fira Code', 'Consolas', ui-monospace, monospace;
+	--ds-font-titulo: 'Montserrat', 'Segoe UI Black', 'Arial Black', 'Impact', sans-serif;  /* títulos cheios/grossos */
+	--ds-peso-titulo: 900;   /* peso dos títulos (400 normal … 900 super grosso) */
+}
+
+/* ===========================================================================
+   SISTEMA DE CAMADAS (estilo Royal Velvet) — do mais escuro ao mais claro
+   =========================================================================== */
+.theme-dark {
+	--layer-0: var(--ds-preto);   /* base absoluta */
+	--layer-1: #0d0b14;           /* sidebars / abas */
+	--layer-2: #12101c;           /* nota / superfícies */
+	--layer-3: #191527;           /* hover / elevação */
+	--edge:    #2a1f45;           /* bordas roxeadas */
+	--edge-hi: #3a2c66;
+}
+
+/* ===========================================================================
+   MAPEAMENTO ESCURO (tema principal)
+   =========================================================================== */
+.theme-dark {
+	/* fontes */
+	--font-text-theme:      var(--ds-font-ui);
+	--font-interface-theme: var(--ds-font-ui);
+	--font-monospace-theme: var(--ds-font-mono);
+
+	/* fundos */
+	--background-primary:        var(--layer-2);
+	--background-primary-alt:     var(--layer-1);
+	--background-secondary:       var(--layer-1);
+	--background-secondary-alt:   var(--layer-0);
+	--background-modifier-hover:  rgba(169, 112, 255, 0.08);
+	--background-modifier-active-hover: rgba(169, 112, 255, 0.14);
+	--background-modifier-border:       var(--edge);
+	--background-modifier-border-hover: var(--edge-hi);
+	--background-modifier-border-focus: var(--ds-roxo);
+	--background-modifier-form-field:   #0a0812;
+
+	/* texto */
+	--text-normal:  #d7d2e6;
+	--text-muted:   #9089a8;
+	--text-faint:   #5f5878;
+	--text-on-accent: #ffffff;
+
+	/* acentos */
+	--text-accent:              var(--ds-roxo);
+	--text-accent-hover:        var(--ds-rosa);
+	--interactive-accent:       var(--ds-roxo-esc);
+	--interactive-accent-hover: var(--ds-roxo);
+	--interactive-normal:       var(--layer-2);
+	--interactive-hover:        var(--layer-3);
+
+	/* links */
+	--link-color:            var(--ds-violeta);
+	--link-color-hover:      var(--ds-roxo);
+	--link-external-color:   var(--ds-magenta);
+	--link-external-color-hover: var(--ds-lilas);
+	--link-unresolved-color: #b06a8a;
+	--link-decoration:       underline;
+
+	/* seleção / realce */
+	--text-selection:    rgba(169, 112, 255, 0.28);
+	--text-highlight-bg: rgba(255, 79, 216, 0.28);
+
+	/* títulos: trio principal → roxo · magenta · violeta · lilás · indigo */
+	--h1-color: var(--ds-roxo);
+	--h2-color: var(--ds-magenta);
+	--h3-color: var(--ds-violeta);
+	--h4-color: var(--ds-lilas);
+	--h5-color: var(--ds-indigo);
+	--h6-color: var(--ds-rosa);
+	--bold-color:      var(--ds-lilas);
+	--italic-color:    var(--ds-violeta);
+
+	/* código — cada token num tom da paleta roxo→rosa */
+	--code-background:  #0a0812;
+	--code-normal:      #d7d2e6;
+	--code-comment:     #7a6f96;              /* comentários (violeta acinzentado) */
+	--code-keyword:     var(--ds-magenta);    /* if, for, return (principal) */
+	--code-function:    var(--ds-roxo);        /* nomes de função (principal) */
+	--code-string:      var(--ds-lilas);       /* "textos" */
+	--code-value:       var(--ds-ciano);       /* números / valores (escrita) */
+	--code-property:    var(--ds-rosa);        /* propriedades (escrita) */
+	--code-operator:    var(--ds-rosa-cl);     /* + - = && (escrita) */
+	--code-tag:         var(--ds-magenta);     /* <tags> html */
+	--code-punctuation: var(--ds-violeta);     /* { } ( ) ; */
+	--code-important:   var(--ds-ciano);       /* constantes / booleanos (escrita) */
+
+	/* ícones (config, ribbon, abas...) em verde lima */
+	--icon-color:          var(--ds-verde-lima);
+	--icon-color-hover:    #cfff7a;
+	--icon-color-active:   var(--ds-verde-lima);
+	--icon-color-focused:  var(--ds-verde-lima);
+	--ribbon-color:        var(--ds-verde-lima);
+	--nav-collapse-icon-color: var(--ds-verde-lima);
+
+	/* UI diversa */
+	--titlebar-background:         var(--layer-0);
+	--titlebar-background-focused: var(--layer-0);
+	--tab-text-color-focused-active: var(--ds-roxo);
+	--caret-color:             var(--ds-magenta);
+	--checkbox-color:          var(--ds-magenta);
+	--checkbox-color-hover:    var(--ds-lilas);
+	--blockquote-border-color: var(--ds-roxo);
+	--hr-color:                var(--ds-roxo-esc);
+	--scrollbar-bg:            transparent;
+	--scrollbar-thumb-bg:      rgba(169, 112, 255, 0.18);
+	--scrollbar-active-thumb-bg: rgba(169, 112, 255, 0.35);
+
+	/* grafo — linhas roxo (principal), bolinhas verde lima (detalhe) */
+	--graph-line:     var(--ds-roxo);
+	--graph-node:     var(--ds-verde-lima);
+	--graph-node-tag: var(--ds-verde-lima);
+	--graph-node-attachment:  var(--ds-verde-lima);
+	--graph-node-unresolved:  #6b6383;
+	--graph-node-focused:     var(--ds-lilas);
+
+	/* tags — verde lima (detalhe) */
+	--tag-color:       var(--ds-verde-lima);
+	--tag-color-hover: var(--ds-verde-lima-cl);
+	--tag-background:  rgba(182, 255, 58, 0.12);
+}
+
+/* ===========================================================================
+   MAPEAMENTO CLARO (fallback harmonizado — mesma família de cor)
+   =========================================================================== */
+.theme-light {
+	--background-primary:     #f6f4fb;
+	--background-secondary:   #efeaf7;
+	--text-normal:            #2a2340;
+	--text-accent:            #7c3aed;
+	--link-color:             #c93d86;
+	--link-external-color:    #c93db0;
+	--h1-color: #7c3aed;
+	--h2-color: #c93db0;
+	--h3-color: #c93d86;
+	--code-keyword:  #c93db0;
+	--code-function: #7c3aed;
+	--code-string:   #8b5cf6;
+	--interactive-accent: #7c3aed;
+}
+
+/* ===========================================================================
+   FONTE DOS TÍTULOS — cheia / grossa
+   =========================================================================== */
+.theme-dark .markdown-rendered h1,
+.theme-dark .markdown-rendered h2,
+.theme-dark .markdown-rendered h3,
+.theme-dark .markdown-rendered h4,
+.theme-dark .markdown-rendered h5,
+.theme-dark .markdown-rendered h6,
+.theme-dark .cm-header,
+.theme-dark .HyperMD-header,
+.theme-dark .inline-title {
+	font-family: var(--ds-font-titulo);
+	font-weight: var(--ds-peso-titulo);
+	letter-spacing: 0.005em;
+}
+
+/* ===========================================================================
+   LINHAS DE CRT (scanlines) — leve, por cima de tudo
+   =========================================================================== */
+.theme-dark .workspace::after {
+	content: '';
+	position: fixed;
+	inset: 0;
+	z-index: 9999;
+	pointer-events: none;
+	background: repeating-linear-gradient(
+		to bottom,
+		rgba(0, 0, 0, var(--ds-scanlines)) 0px,
+		rgba(0, 0, 0, var(--ds-scanlines)) 1px,
+		transparent 1px,
+		transparent 3px
+	);
+	mix-blend-mode: multiply;
+}
+
+/* ===========================================================================
+   BRILHO / GLOW nos títulos e links
+   =========================================================================== */
+.theme-dark .markdown-rendered h1,
+.theme-dark .cm-header-1 { text-shadow: var(--ds-glow) var(--ds-roxo); }
+.theme-dark .markdown-rendered h2,
+.theme-dark .cm-header-2 { text-shadow: var(--ds-glow) var(--ds-magenta); }
+.theme-dark .markdown-rendered h3,
+.theme-dark .cm-header-3 { text-shadow: var(--ds-glow) var(--ds-violeta); }
+.theme-dark .markdown-rendered h4,
+.theme-dark .cm-header-4 { text-shadow: var(--ds-glow) var(--ds-lilas); }
+.theme-dark .markdown-rendered h5,
+.theme-dark .cm-header-5 { text-shadow: var(--ds-glow) var(--ds-indigo); }
+.theme-dark .markdown-rendered h6,
+.theme-dark .cm-header-6 { text-shadow: var(--ds-glow) var(--ds-rosa); }
+.theme-dark a.internal-link { text-shadow: 0 0 3px rgba(199, 125, 255, 0.5); }
+.theme-dark a.external-link { text-shadow: 0 0 3px rgba(255, 79, 216, 0.5); }
+
+/* cursor piscando estilo terminal (cor vem de --caret-color) */
+.theme-dark .cm-cursorLayer .cm-cursor-primary {
+	border-left-width: 2px;
+	box-shadow: 0 0 5px var(--ds-magenta);
+	animation: ds-blink 1.05s steps(1) infinite;
+}
+@keyframes ds-blink { 50% { opacity: 0; } }
+
+/* ===========================================================================
+   TÍTULOS com prompt de terminal ( # e $ )
+   =========================================================================== */
+.theme-dark .markdown-rendered h1::before {
+	content: '# ';
+	color: var(--ds-roxo-esc);
+	opacity: var(--ds-prompt);
+}
+.theme-dark .markdown-rendered h2::before {
+	content: '$ ';
+	color: var(--ds-magenta-esc);
+	opacity: var(--ds-prompt);
+}
+
+/* ===========================================================================
+   CALLOUTS — caixa de terminal (você usa bastante)
+   =========================================================================== */
+/* card fosco e colorido pela cor do próprio tipo de callout */
+.theme-dark .callout {
+	background-color: rgba(12, 10, 18, 0.55);
+	background-image: linear-gradient(
+		135deg,
+		rgba(var(--callout-color), 0.14),
+		rgba(var(--callout-color), 0.04) 55%,
+		transparent);
+	border: 1px solid rgba(var(--callout-color), 0.40);
+	border-left: 3px solid rgb(var(--callout-color));
+	border-radius: 8px;
+	backdrop-filter: blur(6px);
+	box-shadow:
+		0 4px 18px rgba(0, 0, 0, 0.45),
+		inset 0 0 0 1px rgba(255, 255, 255, 0.02);
+}
+/* faixa do título com a cor do tipo */
+.theme-dark .callout-title {
+	background-color: rgba(var(--callout-color), 0.16);
+	border-radius: 6px 6px 0 0;
+	margin: -2px -4px 6px;
+	padding: 6px 10px;
+	text-shadow: 0 0 3px rgba(var(--callout-color), 0.6);
+}
+.theme-dark .callout-title-inner { color: rgb(var(--callout-color)); font-weight: 700; }
+
+/* --- CORES POR TIPO (RGB da paleta) --- */
+/* PRINCIPAIS */
+.theme-dark .callout[data-callout="note"]        { --callout-color: 169, 112, 255; }  /* roxo */
+.theme-dark .callout[data-callout="abstract"],
+.theme-dark .callout[data-callout="summary"],
+.theme-dark .callout[data-callout="tldr"],
+.theme-dark .callout[data-callout="example"]     { --callout-color: 199, 125, 255; }  /* violeta */
+.theme-dark .callout[data-callout="info"]        { --callout-color: 139, 92, 246; }   /* indigo */
+.theme-dark .callout[data-callout="warning"],
+.theme-dark .callout[data-callout="caution"],
+.theme-dark .callout[data-callout="attention"],
+.theme-dark .callout[data-callout="bug"]         { --callout-color: 255, 79, 216; }   /* magenta */
+/* DETALHE — verde lima */
+.theme-dark .callout[data-callout="tip"],
+.theme-dark .callout[data-callout="hint"],
+.theme-dark .callout[data-callout="important"],
+.theme-dark .callout[data-callout="success"],
+.theme-dark .callout[data-callout="check"],
+.theme-dark .callout[data-callout="done"],
+.theme-dark .callout[data-callout="todo"]        { --callout-color: 182, 255, 58; }   /* verde lima */
+/* ESCRITA/ALERTA — rosa e ciano */
+.theme-dark .callout[data-callout="question"],
+.theme-dark .callout[data-callout="help"],
+.theme-dark .callout[data-callout="faq"],
+.theme-dark .callout[data-callout="failure"],
+.theme-dark .callout[data-callout="fail"],
+.theme-dark .callout[data-callout="missing"],
+.theme-dark .callout[data-callout="danger"],
+.theme-dark .callout[data-callout="error"]       { --callout-color: 255, 95, 176; }   /* rosa */
+.theme-dark .callout[data-callout="quote"],
+.theme-dark .callout[data-callout="cite"]        { --callout-color: 224, 170, 255; }  /* lilás */
+
+/* ===========================================================================
+   BLOCOS DE CÓDIGO — janelinha de terminal com "botões"
+   =========================================================================== */
+.theme-dark .markdown-rendered pre {
+	border: 1px solid var(--edge);
+	border-radius: 6px;
+	padding-top: 2em;
+	position: relative;
+	box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.5);
+}
+.theme-dark .markdown-rendered pre::before {
+	content: '● ● ●';
+	position: absolute;
+	top: 0.4em; left: 0.8em;
+	letter-spacing: 0.3em;
+	font-size: 0.7em;
+	color: var(--ds-roxo);
+	opacity: 0.7;
+}
+
+/* ===========================================================================
+   REALCE DE SINTAXE
+   O modo leitura (Prism) já usa as variáveis --code-* do mapeamento acima —
+   o Obsidian aplica sozinho. Aqui só reforçamos o modo de edição (CodeMirror).
+   =========================================================================== */
+.theme-dark .cm-keyword            { color: var(--code-keyword); }
+.theme-dark .cm-def,
+.theme-dark .cm-variable-2         { color: var(--code-function); }
+.theme-dark .cm-string,
+.theme-dark .cm-string-2           { color: var(--code-string); }
+.theme-dark .cm-number             { color: var(--code-value); }
+.theme-dark .cm-atom,
+.theme-dark .cm-bool               { color: var(--code-important); }
+.theme-dark .cm-property,
+.theme-dark .cm-attribute          { color: var(--code-property); }
+.theme-dark .cm-operator           { color: var(--code-operator); }
+.theme-dark .cm-tag                { color: var(--code-tag); }
+.theme-dark .cm-comment            { color: var(--code-comment); font-style: italic; }
+.theme-dark .cm-meta,
+.theme-dark .cm-punctuation        { color: var(--code-punctuation); }
+
+/* ===========================================================================
+   CAMADAS DE NEBULOSA — variáveis reusadas no grafo e nas anotações
+   =========================================================================== */
+.theme-dark {
+	/* nuvens de cor (blobs) */
+	--ds-nebula-blobs:
+		radial-gradient(closest-side at 25% 30%, rgba(169, 112, 255, 0.30), transparent 70%),
+		radial-gradient(closest-side at 75% 62%, rgba(255, 79, 216, 0.26), transparent 70%),
+		radial-gradient(closest-side at 55% 82%, rgba(255, 95, 176, 0.22), transparent 70%),
+		radial-gradient(closest-side at 62% 18%, rgba(139, 92, 246, 0.24), transparent 70%),
+		radial-gradient(closest-side at 15% 75%, rgba(199, 125, 255, 0.20), transparent 70%),
+		radial-gradient(closest-side at 88% 30%, rgba(224, 170, 255, 0.16), transparent 70%),
+		radial-gradient(closest-side at 40% 50%, rgba(124, 58, 237, 0.18), transparent 75%);
+	/* partículas: ~10% verde lima, resto roxo (cor das linhas do grafo) */
+	--ds-particulas:
+		radial-gradient(3.5px 3.5px at 30px 40px,   rgba(169, 112, 255, 0.85), transparent),
+		radial-gradient(2px 2px at 120px 90px,      rgba(169, 112, 255, 0.70), transparent),
+		radial-gradient(4px 4px at 200px 160px,     rgba(169, 112, 255, 0.80), transparent),
+		radial-gradient(2.5px 2.5px at 80px 210px,  rgba(169, 112, 255, 0.80), transparent),
+		radial-gradient(4.5px 4.5px at 260px 60px,  rgba(169, 112, 255, 0.70), transparent),
+		radial-gradient(2px 2px at 160px 260px,     rgba(169, 112, 255, 0.70), transparent),
+		radial-gradient(3px 3px at 20px 150px,      rgba(169, 112, 255, 0.80), transparent),
+		radial-gradient(2.5px 2.5px at 230px 220px, rgba(169, 112, 255, 0.65), transparent),
+		radial-gradient(2.5px 2.5px at 60px 80px,   rgba(169, 112, 255, 0.70), transparent),
+		radial-gradient(3.5px 3.5px at 140px 30px,  rgba(169, 112, 255, 0.75), transparent),
+		radial-gradient(2px 2px at 290px 180px,     rgba(169, 112, 255, 0.70), transparent),
+		radial-gradient(4px 4px at 100px 140px,     rgba(169, 112, 255, 0.80), transparent),
+		radial-gradient(3px 3px at 180px 110px,     rgba(182, 255, 58, 0.80),  transparent),
+		radial-gradient(3px 3px at 40px 275px,      rgba(169, 112, 255, 0.70), transparent),
+		radial-gradient(2.5px 2.5px at 220px 40px,  rgba(169, 112, 255, 0.70), transparent),
+		radial-gradient(4px 4px at 270px 250px,     rgba(169, 112, 255, 0.65), transparent),
+		radial-gradient(2px 2px at 10px 110px,      rgba(169, 112, 255, 0.70), transparent),
+		radial-gradient(3.5px 3.5px at 150px 190px, rgba(169, 112, 255, 0.65), transparent),
+		radial-gradient(2.5px 2.5px at 90px 290px,  rgba(169, 112, 255, 0.70), transparent),
+		radial-gradient(4px 4px at 250px 130px,     rgba(182, 255, 58, 0.75),  transparent),
+		radial-gradient(3px 3px at 205px 240px,     rgba(169, 112, 255, 0.65), transparent),
+		radial-gradient(4.5px 4.5px at 130px 230px, rgba(169, 112, 255, 0.75), transparent),
+		radial-gradient(2px 2px at 55px 190px,      rgba(169, 112, 255, 0.65), transparent),
+		radial-gradient(2px 2px at 280px 100px,     rgba(182, 255, 58, 0.70),  transparent);
+}
+
+/* ===========================================================================
+   GRAFO — efeito NEON + NEBULOSA
+   =========================================================================== */
+/* fundo escuro por trás do canvas */
+.theme-dark .workspace-leaf-content[data-type="graph"] .view-content,
+.theme-dark .workspace-leaf-content[data-type="localgraph"] .view-content {
+	position: relative;
+	overflow: hidden;
+	background-color: #040308;
+}
+.theme-dark .workspace-leaf-content[data-type="graph"] .view-content::before,
+.theme-dark .workspace-leaf-content[data-type="localgraph"] .view-content::before {
+	content: '';
+	position: absolute;
+	inset: -35%;
+	z-index: 0;
+	pointer-events: none;
+	background: var(--ds-nebula-blobs);
+	filter: blur(48px) saturate(1.25);
+	animation: ds-nebula 40s ease-in-out infinite alternate;
+	will-change: transform, opacity;
+}
+@keyframes ds-nebula {
+	0%   { transform: translate(0, 0)    scale(1)    rotate(0deg);    opacity: 0.85; }
+	25%  { transform: translate(2%, -2%) scale(1.08) rotate(1.5deg); opacity: 1;    }
+	50%  { transform: translate(-1%, 2%) scale(1.14) rotate(-1deg);  opacity: 0.92; }
+	75%  { transform: translate(-3%, -1%) scale(1.1) rotate(2deg);   opacity: 1;    }
+	100% { transform: translate(1%, 3%)  scale(1.18) rotate(-2deg);  opacity: 0.88; }
+}
+
+/* PARTÍCULAS flutuantes (poeira mágica) — sobem devagar e cintilam */
+.theme-dark .workspace-leaf-content[data-type="graph"] .view-content::after,
+.theme-dark .workspace-leaf-content[data-type="localgraph"] .view-content::after {
+	content: '';
+	position: absolute;
+	inset: -24px;   /* folga p/ o balanço lateral não abrir buraco */
+	z-index: 0;
+	pointer-events: none;
+	background-image: var(--ds-particulas);
+	background-size: 300px 300px;
+	background-repeat: repeat;
+	opacity: 0.7;
+	animation:
+		ds-particulas 32s linear infinite,
+		ds-deriva 14s ease-in-out infinite,
+		ds-cintila 5s ease-in-out infinite;
+	will-change: transform, background-position, opacity;
+}
+@keyframes ds-particulas {
+	from { background-position: 0 0; }
+	to   { background-position: 0 -300px; }   /* = 1 tile: loop sem emenda */
+}
+@keyframes ds-cintila {
+	0%, 100% { opacity: 0.45; }
+	50%      { opacity: 0.85; }
+}
+/* balanço lateral (as partículas sobem gingando pros lados) */
+@keyframes ds-deriva {
+	0%   { transform: translateX(-16px); }
+	50%  { transform: translateX(16px); }
+	100% { transform: translateX(-16px); }
+}
+
+/* canvas acima da nebulosa + glow neon nas bolas e linhas */
+.theme-dark .workspace-leaf-content[data-type="graph"] canvas,
+.theme-dark .workspace-leaf-content[data-type="localgraph"] canvas {
+	position: relative;
+	z-index: 1;
+	filter:
+		drop-shadow(0 0 1px var(--ds-verde-lima))
+		drop-shadow(0 0 4px var(--ds-verde-lima))
+		saturate(1.15);
+}
+/* controles do grafo (engrenagem, animar, zoom) ACIMA do canvas — clicáveis */
+.theme-dark .workspace-leaf-content[data-type="graph"] .graph-controls,
+.theme-dark .workspace-leaf-content[data-type="localgraph"] .graph-controls {
+	z-index: 5;
+}
+
+/* ===========================================================================
+   FUNDO NEBULOSA NAS ANOTAÇÕES — réplica sutil do grafo
+   controle: --ds-fundo-notas (0 = desliga)
+   =========================================================================== */
+.theme-dark .workspace-leaf-content[data-type="markdown"] .view-content {
+	position: relative;
+	overflow: hidden;
+	background-color: var(--background-primary);
+}
+/* camada preta por cima da nebulosa (escurece p/ legibilidade) */
+.theme-dark .workspace-leaf-content[data-type="markdown"] .markdown-source-view,
+.theme-dark .workspace-leaf-content[data-type="markdown"] .markdown-reading-view {
+	background-color: rgba(7, 6, 10, var(--ds-nota-escurece));
+	position: relative;
+	z-index: 1;
+}
+/* camadas internas transparentes (não somar o escurecimento) */
+.theme-dark .workspace-leaf-content[data-type="markdown"] .cm-editor,
+.theme-dark .workspace-leaf-content[data-type="markdown"] .cm-scroller,
+.theme-dark .workspace-leaf-content[data-type="markdown"] .markdown-preview-view {
+	background-color: transparent;
+}
+/* nebulosa (blobs) atrás do texto */
+.theme-dark .workspace-leaf-content[data-type="markdown"] .view-content::before {
+	content: '';
+	position: absolute;
+	inset: -35%;
+	z-index: 0;
+	pointer-events: none;
+	background: var(--ds-nebula-blobs);
+	filter: blur(52px) saturate(1.15);
+	opacity: var(--ds-fundo-notas);
+	animation: ds-nebula 52s ease-in-out infinite alternate;
+	will-change: transform, opacity;
+}
+/* partículas atrás do texto (mais discretas) */
+.theme-dark .workspace-leaf-content[data-type="markdown"] .view-content::after {
+	content: '';
+	position: absolute;
+	inset: -24px;
+	z-index: 0;
+	pointer-events: none;
+	background-image: var(--ds-particulas);
+	background-size: 300px 300px;
+	background-repeat: repeat;
+	opacity: calc(var(--ds-fundo-notas) * 0.6);
+	animation:
+		ds-particulas 40s linear infinite,
+		ds-deriva 16s ease-in-out infinite,
+		ds-cintila 6s ease-in-out infinite;
+	will-change: transform, background-position, opacity;
+}
+
+/* ===========================================================================
+   ÍCONES (verde lima) + NOMES DE PASTA (roxo)
+   =========================================================================== */
+/* ícones da interface: ribbon, config, ações, abas, cabeçalhos */
+.theme-dark .clickable-icon,
+.theme-dark .side-dock-ribbon-action,
+.theme-dark .workspace-ribbon .clickable-icon,
+.theme-dark .nav-action-button,
+.theme-dark .view-action,
+.theme-dark .workspace-tab-header-inner-icon,
+.theme-dark .titlebar-button {
+	color: var(--ds-verde-lima);
+}
+.theme-dark .clickable-icon:hover,
+.theme-dark .side-dock-ribbon-action:hover,
+.theme-dark .nav-action-button:hover,
+.theme-dark .view-action:hover {
+	color: var(--ds-verde-lima-cl);
+	background-color: rgba(182, 255, 58, 0.10);
+}
+/* garante o traço dos SVG na cor certa */
+.theme-dark .clickable-icon svg,
+.theme-dark .side-dock-ribbon-action svg,
+.theme-dark .nav-action-button svg,
+.theme-dark .view-action svg {
+	color: var(--ds-verde-lima);
+}
+
+/* nomes das PASTAS (painel esquerdo) em roxo */
+.theme-dark .nav-folder-title-content {
+	color: var(--ds-roxo);
+	font-weight: 600;
+}
+.theme-dark .nav-folder-title:hover .nav-folder-title-content {
+	color: var(--ds-lilas);
+}
+/* seta de recolher pasta em verde lima */
+.theme-dark .nav-folder-collapse-indicator .collapse-icon,
+.theme-dark .tree-item-icon svg {
+	color: var(--ds-verde-lima);
+}
+
+/* detalhes em verde lima: marcadores de lista + citação */
+.theme-dark .markdown-rendered ul > li::marker,
+.theme-dark .markdown-rendered ol > li::marker {
+	color: var(--ds-verde-lima);
+}
+.theme-dark .markdown-rendered blockquote {
+	border-left-color: var(--ds-verde-lima);
+}
+
+/* ===========================================================================
+   DETALHES DE INTERFACE
+   =========================================================================== */
+.theme-dark .nav-file-title.is-active,
+.theme-dark .nav-folder-title.is-active {
+	color: var(--ds-roxo);
+	background-color: rgba(169, 112, 255, 0.10);
+	border-radius: 3px;
+	box-shadow: inset 2px 0 0 var(--ds-verde-lima);   /* acento lima */
+}
+.theme-dark .tree-item-self:hover { color: var(--ds-rosa); }
+.theme-dark .status-bar {
+	color: var(--ds-roxo);
+	font-family: var(--ds-font-mono);
+	font-size: 0.75em;
+	letter-spacing: 0.04em;
+}
+.theme-dark input:focus,
+.theme-dark textarea:focus {
+	box-shadow: 0 0 0 1px var(--ds-roxo), 0 0 8px rgba(169, 112, 255, 0.35);
+}
+.theme-dark ::selection { background: var(--text-selection); }
+
+/* ===========================================================================
+   MENU DE CONFIGURAÇÃO (modal de Settings)
+   =========================================================================== */
+/* fundo do modal e das colunas */
+.theme-dark .modal.mod-settings,
+.theme-dark .modal.mod-settings .vertical-tab-header,
+.theme-dark .modal.mod-settings .vertical-tab-content-container {
+	background-color: var(--layer-1);
+}
+.theme-dark .modal.mod-settings { border: 1px solid var(--edge); }
+
+/* título do modal */
+.theme-dark .modal-title,
+.theme-dark .setting-item-heading .setting-item-name {
+	color: var(--ds-roxo);
+}
+
+/* abas laterais (Aparência, Plugins, etc.) */
+.theme-dark .vertical-tab-nav-item {
+	color: var(--text-muted);
+	border-radius: 5px;
+}
+.theme-dark .vertical-tab-nav-item:hover {
+	color: var(--ds-lilas);
+	background-color: rgba(169, 112, 255, 0.08);
+}
+.theme-dark .vertical-tab-nav-item.is-active {
+	color: var(--ds-roxo);
+	background-color: rgba(169, 112, 255, 0.14);
+	box-shadow: inset 2px 0 0 var(--ds-verde-lima);   /* acento lima */
+}
+
+/* nome e descrição de cada opção */
+.theme-dark .setting-item-name        { color: var(--ds-lilas); }
+.theme-dark .setting-item-description  { color: var(--text-muted); }
+.theme-dark .setting-item { border-top-color: var(--edge); }
+
+/* botões e realces do modal */
+.theme-dark .modal.mod-settings button.mod-cta {
+	background-color: var(--ds-roxo-esc);
+	color: #fff;
+}
+.theme-dark .modal.mod-settings button.mod-cta:hover {
+	background-color: var(--ds-roxo);
+}
+.theme-dark .modal.mod-settings .search-input-container input:focus {
+	box-shadow: 0 0 0 1px var(--ds-roxo);
+}

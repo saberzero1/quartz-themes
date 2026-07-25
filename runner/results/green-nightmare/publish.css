@@ -1452,10 +1452,10 @@ body.theme-dark {
   --inline-title-color: #39ff14 !important;
   --bold-color: #ffffff !important;
   --italic-color: #dddddd !important;
-  --nav-item-weight-active: 900 !important;
-  --nav-item-weight: 500 !important;
   --nav-file-tag: #f4ec9e !important;
   --tab-font-weight: 900 !important;
+  --nav-item-weight-active: 900 !important;
+  --nav-item-weight: 500 !important;
   --tab-text-weight-focused-active-current: 900 !important;
 }
 

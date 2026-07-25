@@ -1,0 +1,1061 @@
+/* ============================================================
+   AZURE GLASS — an Obsidian theme
+   Frosted-glass panels · light azure accent · willemstadt-style
+   headings & callouts · gem divider · soft dark blue canvas
+   ============================================================ */
+
+/* @settings
+name: Azure Glass
+id: azure-glass
+settings:
+    -
+        id: ag-blur
+        title: Glass blur strength
+        description: How strong the frosted-glass blur is on panels, menus and modals.
+        type: variable-number-slider
+        default: 18
+        min: 0
+        max: 40
+        step: 1
+        format: px
+    -
+        id: ag-panel-alpha
+        title: Panel transparency
+        description: 0 = fully transparent panels, 1 = fully solid.
+        type: variable-number-slider
+        default: 0.42
+        min: 0.2
+        max: 1
+        step: 0.02
+    -
+        id: ag-note-alpha
+        title: Note transparency
+        description: Opacity of the note pane itself. 0 = fully transparent, 1 = solid.
+        type: variable-number-slider
+        default: 0.55
+        min: 0
+        max: 1
+        step: 0.05
+    -
+        id: ag-plain-headings
+        title: Plain headings
+        description: Turn OFF the willemstadt-style colour bars and use coloured text instead.
+        type: class-toggle
+        default: false
+        addCommand: true
+*/
+
+body {
+    --ag-blur: 18px;
+    --ag-panel-alpha: 0.42;
+    --ag-note-alpha: 0.55;
+    --ag-note-tint: 17, 25, 39;  /* hackthebox navy */
+
+    /* signature accent — light blurry blue */
+    --ag-accent: #8fd0ff;
+    --ag-accent-rgb: 143, 208, 255;
+    --ag-accent-deep: #3ea6ff;
+
+    /* heading palette (1–3 from willemstadt, 4–6 Azure Glass originals) */
+    --ag-h1-bg: #11565c;
+    --ag-h1-fg: #eafcff;
+    --ag-h2-bg: #0d5a41;      /* deep emerald            */
+    --ag-h2-fg: #9ff2cd;      /* luminous mint           */
+    --ag-h3-bg: #7a5a12;      /* burnished amber / brass */
+    --ag-h3-fg: #ffdd8a;      /* warm gold               */
+    --ag-h4-bg: #6cc6ff;
+    --ag-h4-fg: #06263d;
+    --ag-h5-bg: #a78bfa;
+    --ag-h5-fg: #1e1238;
+    --ag-h6-bg: #fb7fa6;
+    --ag-h6-fg: #3d0a1d;
+
+    --ag-radius: 0px;
+    --ag-radius-lg: 4px;
+
+    font-family: var(--font-interface);
+}
+
+/* ------------------------------------------------------------
+   1 · CANVAS — soft blue-lit backdrop the glass panels sit on
+   ------------------------------------------------------------ */
+
+.theme-dark {
+    --ag-canvas: #0e1c33;
+    --ag-glass: 30, 50, 84;          /* rgb of the glass tint      */
+    --ag-glass-soft: 38, 62, 100;
+
+    --background-primary: rgba(var(--ag-glass), var(--ag-panel-alpha));
+    --background-primary-alt: rgba(var(--ag-glass-soft), 0.55);
+    --background-secondary: rgba(20, 36, 64, 0.32);
+    --background-secondary-alt: rgba(26, 44, 76, 0.4);
+    --background-modifier-hover: rgba(var(--ag-accent-rgb), 0.08);
+    --background-modifier-active-hover: rgba(var(--ag-accent-rgb), 0.12);
+    --background-modifier-border: rgba(148, 197, 255, 0.13);
+    --background-modifier-border-hover: rgba(148, 197, 255, 0.26);
+    --background-modifier-border-focus: rgba(var(--ag-accent-rgb), 0.5);
+
+    --text-normal: #e2edf9;
+    --text-muted: #9db4d2;
+    --text-faint: #5d7089;
+    --text-accent: var(--ag-accent);
+    --text-accent-hover: #b7e1ff;
+    --text-on-accent: #06263d;
+    --text-selection: rgba(var(--ag-accent-rgb), 0.22);
+    --text-highlight-bg: rgba(var(--ag-accent-rgb), 0.24);
+
+    --interactive-accent: var(--ag-accent-deep);
+    --interactive-accent-hover: #63b8ff;
+    --link-color: var(--ag-accent);
+    --link-color-hover: #c3e7ff;
+    --link-external-color: var(--ag-accent);
+    --link-external-color-hover: #c3e7ff;
+
+    --code-background: rgba(9, 14, 26, 0.85);
+    --code-normal: #cfe3f8;
+
+    --hr-color: rgba(var(--ag-accent-rgb), 0.4);
+
+    --titlebar-background: transparent;
+    --titlebar-background-focused: transparent;
+
+    --scrollbar-thumb-bg: rgba(var(--ag-accent-rgb), 0.14);
+    --scrollbar-active-thumb-bg: rgba(var(--ag-accent-rgb), 0.3);
+    --scrollbar-bg: transparent;
+
+    --tab-outline-color: transparent;
+    --divider-color: rgba(148, 197, 255, 0.1);
+
+    --shadow-s: 0 4px 14px rgba(2, 8, 20, 0.35);
+    --shadow-l: 0 18px 50px rgba(2, 8, 20, 0.55);
+}
+
+/* the light theme: same glass, daylight sky */
+.theme-light {
+    --ag-canvas: #dcebfa;
+    --ag-glass: 244, 250, 255;
+    --ag-glass-soft: 232, 243, 253;
+
+    --background-primary: rgba(var(--ag-glass), var(--ag-panel-alpha));
+    --background-primary-alt: rgba(var(--ag-glass-soft), 0.6);
+    --background-secondary: rgba(226, 239, 252, 0.55);
+    --background-secondary-alt: rgba(219, 235, 251, 0.6);
+    --background-modifier-hover: rgba(62, 166, 255, 0.09);
+    --background-modifier-border: rgba(35, 96, 156, 0.16);
+    --background-modifier-border-hover: rgba(35, 96, 156, 0.3);
+
+    --text-normal: #16283c;
+    --text-muted: #4a6076;
+    --text-faint: #7b90a5;
+    --text-accent: #0d7ddb;
+    --text-accent-hover: #0a65b1;
+    --text-on-accent: #f2f9ff;
+    --text-selection: rgba(62, 166, 255, 0.2);
+    --text-highlight-bg: rgba(62, 166, 255, 0.2);
+
+    --interactive-accent: #0d7ddb;
+    --interactive-accent-hover: #0a65b1;
+    --link-color: #0d7ddb;
+
+    --code-background: rgba(13, 24, 40, 0.92);
+    --code-normal: #d7e8fa;
+
+    --hr-color: rgba(13, 125, 219, 0.35);
+    --divider-color: rgba(35, 96, 156, 0.12);
+
+    --ag-accent: #0d7ddb;
+    --ag-accent-rgb: 13, 125, 219;
+
+    --scrollbar-thumb-bg: rgba(13, 125, 219, 0.18);
+    --scrollbar-active-thumb-bg: rgba(13, 125, 219, 0.35);
+}
+
+/* ambient blue glow scene behind everything */
+body,
+.app-container {
+    background-color: var(--ag-canvas);
+}
+
+.theme-dark .app-container {
+    background-image:
+        radial-gradient(1000px 700px at 10% 6%, rgba(120, 180, 255, 0.42), transparent 62%),
+        radial-gradient(820px 600px at 90% 12%, rgba(72, 200, 255, 0.30), transparent 60%),
+        radial-gradient(700px 520px at 70% 55%, rgba(90, 140, 255, 0.18), transparent 60%),
+        radial-gradient(1200px 800px at 45% 110%, rgba(80, 150, 255, 0.30), transparent 62%),
+        linear-gradient(180deg, #14294a 0%, #0b1830 100%);
+    background-attachment: fixed;
+}
+
+.theme-light .app-container {
+    background-image:
+        radial-gradient(900px 620px at 12% 8%, rgba(255, 255, 255, 0.85), transparent 60%),
+        radial-gradient(800px 560px at 88% 16%, rgba(125, 200, 255, 0.5), transparent 62%),
+        radial-gradient(1100px 760px at 50% 108%, rgba(62, 166, 255, 0.3), transparent 62%),
+        linear-gradient(180deg, #e6f2fd 0%, #cfe4f8 100%);
+    background-attachment: fixed;
+}
+
+/* ------------------------------------------------------------
+   2 · GLASS — frosted panels everywhere
+   ------------------------------------------------------------ */
+
+.workspace-tabs .workspace-tab-container,
+.workspace-split.mod-left-split .workspace-tabs,
+.workspace-split.mod-right-split .workspace-tabs,
+.workspace-ribbon,
+.status-bar,
+.titlebar,
+.view-header {
+    backdrop-filter: blur(var(--ag-blur)) saturate(150%);
+    -webkit-backdrop-filter: blur(var(--ag-blur)) saturate(150%);
+}
+
+.modal,
+.prompt,
+.menu,
+.popover,
+.suggestion-container,
+.tooltip {
+    background-color: rgba(var(--ag-glass), 0.78);
+    backdrop-filter: blur(calc(var(--ag-blur) * 1.4)) saturate(160%);
+    -webkit-backdrop-filter: blur(calc(var(--ag-blur) * 1.4)) saturate(160%);
+    border: 1px solid var(--background-modifier-border);
+    box-shadow: var(--shadow-l);
+}
+
+.theme-light .modal,
+.theme-light .prompt,
+.theme-light .menu,
+.theme-light .popover,
+.theme-light .suggestion-container {
+    background-color: rgba(var(--ag-glass), 0.8);
+}
+
+.modal-bg,
+.prompt-bg {
+    background-color: rgba(4, 9, 18, 0.4);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+}
+
+.menu,
+.popover.hover-popover {
+    border-radius: var(--ag-radius-lg);
+}
+
+.workspace-ribbon {
+    background-color: rgba(var(--ag-glass), 0.4);
+    border-color: transparent;
+}
+
+.status-bar {
+    background-color: rgba(var(--ag-glass), 0.55);
+    border-top: 1px solid var(--background-modifier-border);
+}
+
+
+/* let the blue canvas shine through every structural layer */
+.horizontal-main-container,
+.workspace,
+.workspace-split,
+.workspace-tabs,
+.workspace-leaf,
+.workspace-tab-header-container,
+.workspace-tab-container,
+.workspace-leaf-content,
+.workspace-leaf-content .view-content,
+.markdown-source-view,
+.markdown-preview-view,
+.workspace-sidedock-vault-profile {
+    background-color: transparent;
+}
+
+/* the note pane itself: darker, colourless glass — mostly see-through */
+.workspace-split.mod-root .workspace-tabs .workspace-tab-container {
+    background-color: rgba(var(--ag-note-tint), var(--ag-note-alpha));
+}
+
+/* sidebars: thinner glass so the glow bleeds through more */
+.workspace-split.mod-left-split,
+.workspace-split.mod-right-split {
+    background-color: rgba(var(--ag-glass), calc(var(--ag-panel-alpha) * 0.55));
+    backdrop-filter: blur(var(--ag-blur)) saturate(150%);
+    -webkit-backdrop-filter: blur(var(--ag-blur)) saturate(150%);
+    border-right: 1px solid var(--background-modifier-border);
+}
+
+.workspace-split.mod-right-split {
+    border-right: none;
+    border-left: 1px solid var(--background-modifier-border);
+}
+
+/* rounded floating panes with a hairline glass edge */
+.workspace-split.mod-root .workspace-tabs .workspace-tab-container {
+    border-radius: var(--ag-radius-lg);
+    border: 1px solid var(--background-modifier-border);
+    box-shadow: var(--shadow-s);
+    overflow: hidden;
+}
+
+.workspace-split.mod-root .workspace-leaf {
+    padding: 6px;
+    background: transparent;
+}
+
+.workspace-leaf-content {
+    background: transparent;
+}
+
+/* tab headers */
+.workspace-tab-header-container {
+    background: transparent;
+    border: none;
+}
+
+.workspace-tab-header.is-active {
+    background-color: rgba(var(--ag-accent-rgb), 0.1);
+    border-radius: 4px;
+}
+
+.workspace-tab-header.is-active .workspace-tab-header-inner-title {
+    color: var(--text-accent);
+}
+
+.workspace-tab-header:hover {
+    border-radius: 4px;
+}
+
+/* sidebars: file explorer, search, outline … */
+.nav-file-title,
+.nav-folder-title,
+.tree-item-self {
+    border-radius: 4px;
+}
+
+.nav-file-title.is-active,
+.tree-item-self.is-active {
+    background-color: rgba(var(--ag-accent-rgb), 0.14);
+    color: var(--text-accent);
+}
+
+.nav-folder-title {
+    color: var(--text-muted);
+    font-weight: 600;
+}
+
+/* buttons & inputs get the glass treatment too */
+button:not(.clickable-icon),
+.mod-cta,
+input[type="text"],
+input[type="search"],
+input[type="email"],
+input[type="number"],
+textarea,
+select,
+.dropdown {
+    border-radius: 4px;
+}
+
+button:not(.clickable-icon):not(.mod-cta):not(.mod-warning) {
+    background-color: rgba(var(--ag-accent-rgb), 0.08);
+    border: 1px solid var(--background-modifier-border);
+    color: var(--text-normal);
+}
+
+button:not(.clickable-icon):not(.mod-cta):not(.mod-warning):hover {
+    background-color: rgba(var(--ag-accent-rgb), 0.16);
+    border-color: var(--background-modifier-border-hover);
+}
+
+button.mod-cta {
+    background: linear-gradient(135deg, #55b6ff, #2e8fe6);
+    color: #06263d;
+    font-weight: 600;
+    box-shadow: 0 4px 16px rgba(62, 166, 255, 0.35);
+}
+
+button.mod-cta:hover {
+    background: linear-gradient(135deg, #6fc3ff, #3f9cef);
+}
+
+input[type="text"],
+input[type="search"],
+textarea {
+    background-color: rgba(var(--ag-glass), 0.45);
+    border: 1px solid var(--background-modifier-border);
+}
+
+input:focus,
+textarea:focus {
+    border-color: rgba(var(--ag-accent-rgb), 0.55);
+    box-shadow: 0 0 0 3px rgba(var(--ag-accent-rgb), 0.14);
+}
+
+.clickable-icon:hover {
+    background-color: rgba(var(--ag-accent-rgb), 0.1);
+    border-radius: 4px;
+}
+
+/* scrollbars — thin & glassy */
+::-webkit-scrollbar {
+    width: 9px;
+    height: 9px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--scrollbar-thumb-bg);
+    border-radius: 99px;
+    border: 2px solid transparent;
+    background-clip: padding-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--scrollbar-active-thumb-bg);
+}
+
+/* ------------------------------------------------------------
+   3 · HEADINGS — willemstadt colour bars
+   H1–H3 keep the willemstadt palette; H4–H6 are Azure originals
+   ------------------------------------------------------------ */
+
+body {
+    --h1-size: 1.72em;
+    --h2-size: 1.5em;
+    --h3-size: 1.32em;
+    --h4-size: 1.18em;
+    --h5-size: 1.06em;
+    --h6-size: 0.98em;
+    --heading-spacing: 1.1em;
+}
+
+/* reading mode + rendered previews */
+body:not(.ag-plain-headings) .markdown-rendered h1,
+body:not(.ag-plain-headings) .markdown-rendered h2,
+body:not(.ag-plain-headings) .markdown-rendered h3,
+body:not(.ag-plain-headings) .markdown-rendered h4,
+body:not(.ag-plain-headings) .markdown-rendered h5,
+body:not(.ag-plain-headings) .markdown-rendered h6,
+/* live preview heading lines */
+body:not(.ag-plain-headings) .markdown-source-view.mod-cm6 .cm-line.HyperMD-header-1,
+body:not(.ag-plain-headings) .markdown-source-view.mod-cm6 .cm-line.HyperMD-header-2,
+body:not(.ag-plain-headings) .markdown-source-view.mod-cm6 .cm-line.HyperMD-header-3,
+body:not(.ag-plain-headings) .markdown-source-view.mod-cm6 .cm-line.HyperMD-header-4,
+body:not(.ag-plain-headings) .markdown-source-view.mod-cm6 .cm-line.HyperMD-header-5,
+body:not(.ag-plain-headings) .markdown-source-view.mod-cm6 .cm-line.HyperMD-header-6 {
+    padding: 0.28em 0.65em;
+    border-radius: 0;
+    line-height: 1.35;
+}
+
+body:not(.ag-plain-headings) .markdown-rendered h1,
+body:not(.ag-plain-headings) .cm-line.HyperMD-header-1 { background-color: var(--ag-h1-bg); }
+body:not(.ag-plain-headings) .markdown-rendered h2,
+body:not(.ag-plain-headings) .cm-line.HyperMD-header-2 { background-color: var(--ag-h2-bg); }
+body:not(.ag-plain-headings) .markdown-rendered h3,
+body:not(.ag-plain-headings) .cm-line.HyperMD-header-3 { background-color: var(--ag-h3-bg); }
+body:not(.ag-plain-headings) .markdown-rendered h4,
+body:not(.ag-plain-headings) .cm-line.HyperMD-header-4 { background-color: var(--ag-h4-bg); }
+body:not(.ag-plain-headings) .markdown-rendered h5,
+body:not(.ag-plain-headings) .cm-line.HyperMD-header-5 { background-color: var(--ag-h5-bg); }
+body:not(.ag-plain-headings) .markdown-rendered h6,
+body:not(.ag-plain-headings) .cm-line.HyperMD-header-6 { background-color: var(--ag-h6-bg); }
+
+
+/* jewel edge — a bright sliver of the original hue on H1–H3 */
+body:not(.ag-plain-headings) .markdown-rendered h1,
+body:not(.ag-plain-headings) .cm-line.HyperMD-header-1 {
+    border-left: 3px solid #35e0ec;
+}
+
+body:not(.ag-plain-headings) .markdown-rendered h2,
+body:not(.ag-plain-headings) .cm-line.HyperMD-header-2 {
+    border-left: 3px solid #12d98d;
+}
+
+body:not(.ag-plain-headings) .markdown-rendered h3,
+body:not(.ag-plain-headings) .cm-line.HyperMD-header-3 {
+    border-left: 3px solid #ffc233;
+}
+
+/* faint light sweep so the bars read as glass, not paint */
+body:not(.ag-plain-headings) .markdown-rendered h1,
+body:not(.ag-plain-headings) .markdown-rendered h2,
+body:not(.ag-plain-headings) .markdown-rendered h3,
+body:not(.ag-plain-headings) .markdown-rendered h4,
+body:not(.ag-plain-headings) .markdown-rendered h5,
+body:not(.ag-plain-headings) .markdown-rendered h6,
+body:not(.ag-plain-headings) .cm-line.HyperMD-header-1,
+body:not(.ag-plain-headings) .cm-line.HyperMD-header-2,
+body:not(.ag-plain-headings) .cm-line.HyperMD-header-3,
+body:not(.ag-plain-headings) .cm-line.HyperMD-header-4,
+body:not(.ag-plain-headings) .cm-line.HyperMD-header-5,
+body:not(.ag-plain-headings) .cm-line.HyperMD-header-6 {
+    background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.07), rgba(255, 255, 255, 0) 45%);
+}
+
+/* heading text colours (both modes, incl. the # marks in live preview) */
+h1, .cm-header-1 { color: var(--ag-h1-fg); font-weight: 700; }
+h2, .cm-header-2 { color: var(--ag-h2-fg); font-weight: 700; }
+h3, .cm-header-3 { color: var(--ag-h3-fg); font-weight: 700; }
+h4, .cm-header-4 { color: var(--ag-h4-fg); font-weight: 700; }
+h5, .cm-header-5 { color: var(--ag-h5-fg); font-weight: 700; }
+h6, .cm-header-6 { color: var(--ag-h6-fg); font-weight: 700; }
+
+body:not(.ag-plain-headings) .cm-line.HyperMD-header .cm-formatting-header {
+    opacity: 0.45;
+}
+
+/* heading collapse arrows should stay visible on the bars */
+.markdown-rendered .heading-collapse-indicator svg,
+.cm-line.HyperMD-header .collapse-indicator svg {
+    color: currentColor;
+    opacity: 0.7;
+}
+
+/* note title (inline title) */
+.inline-title {
+    color: var(--text-normal);
+    font-weight: 800;
+    letter-spacing: -0.01em;
+}
+
+/* if bars are toggled off, fall back to coloured text on transparent */
+body.ag-plain-headings h1, body.ag-plain-headings .cm-header-1 { color: #35c2cc; }
+body.ag-plain-headings h2, body.ag-plain-headings .cm-header-2 { color: #12d98d; }
+body.ag-plain-headings h3, body.ag-plain-headings .cm-header-3 { color: #ffc233; }
+body.ag-plain-headings h4, body.ag-plain-headings .cm-header-4 { color: var(--ag-h4-bg); }
+body.ag-plain-headings h5, body.ag-plain-headings .cm-header-5 { color: var(--ag-h5-bg); }
+body.ag-plain-headings h6, body.ag-plain-headings .cm-header-6 { color: var(--ag-h6-bg); }
+
+/* ------------------------------------------------------------
+   4 · CALLOUTS — willemstadt style
+   Tinted title strip · coloured title text · icon on the RIGHT
+   ------------------------------------------------------------ */
+
+.callout {
+    --callout-radius: var(--ag-radius);
+    background-color: rgba(var(--ag-glass-soft), 0.35);
+    border: 1px solid rgba(var(--callout-color), 0.28);
+    border-radius: var(--ag-radius);
+    overflow: hidden;
+    padding: 0;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+}
+
+.callout .callout-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 9px 14px;
+    margin: 0;
+    background-color: rgba(var(--callout-color), 0.14);
+    color: rgb(var(--callout-color));
+    font-weight: 700;
+}
+
+/* icon flies to the right edge, willemstadt-style */
+.callout .callout-icon {
+    order: 2;
+    margin-left: auto;
+    opacity: 0.9;
+}
+
+.callout .callout-title-inner {
+    order: 1;
+}
+
+.callout .callout-content {
+    padding: 10px 16px;
+    background-color: transparent;
+}
+
+.callout .callout-content > :first-child { margin-top: 4px; }
+.callout .callout-content > :last-child { margin-bottom: 4px; }
+
+/* foldable callouts: keep the fold arrow next to the text */
+.callout.is-collapsible .callout-title .callout-fold {
+    order: 1;
+    margin-left: 2px;
+}
+
+/* — palette (rgb triplets so Obsidian's rgba(var(--callout-color)) math works) — */
+.callout[data-callout="note"] { --callout-color: 45, 226, 130; }
+
+.callout[data-callout="abstract"],
+.callout[data-callout="summary"],
+.callout[data-callout="tldr"] { --callout-color: 61, 214, 245; }
+
+.callout[data-callout="todo"] { --callout-color: 78, 201, 224; }
+
+.callout[data-callout="info"] { --callout-color: 84, 198, 255; }
+
+.callout[data-callout="important"] { --callout-color: 255, 82, 82; }
+
+.callout[data-callout="tip"],
+.callout[data-callout="hint"] { --callout-color: 74, 222, 128; }
+
+.callout[data-callout="success"] { --callout-color: 74, 222, 100; }
+
+.callout[data-callout="check"] { --callout-color: 64, 156, 255; }
+
+.callout[data-callout="done"] { --callout-color: 52, 211, 153; }
+
+.callout[data-callout="example"] { --callout-color: 192, 132, 252; }
+
+.callout[data-callout="question"],
+.callout[data-callout="help"],
+.callout[data-callout="faq"] { --callout-color: 190, 227, 76; }
+
+.callout[data-callout="warning"],
+.callout[data-callout="caution"],
+.callout[data-callout="attention"] { --callout-color: 255, 183, 47; }
+
+.callout[data-callout="failure"],
+.callout[data-callout="fail"],
+.callout[data-callout="missing"] { --callout-color: 244, 63, 148; }
+
+.callout[data-callout="danger"],
+.callout[data-callout="error"] { --callout-color: 255, 61, 61; }
+
+.callout[data-callout="bug"] { --callout-color: 255, 122, 69; }
+
+.callout[data-callout="quote"],
+.callout[data-callout="cite"] { --callout-color: 158, 173, 192; }
+
+/* the SUCCESS showpiece — full gradient strip like the inspo */
+.callout[data-callout="success"] .callout-title {
+    background: linear-gradient(90deg, #22c55e 0%, #a3e635 100%);
+    color: #07290f;
+}
+
+.callout[data-callout="success"] .callout-icon svg {
+    color: #07290f;
+}
+
+/* ------------------------------------------------------------
+   5 · CODE — deep glass slabs with a visible copy button
+   ------------------------------------------------------------ */
+
+body {
+    --font-monospace: "JetBrains Mono", "Cascadia Code", "Fira Code", ui-monospace, Menlo, Consolas, monospace;
+    --code-size: 0.9em;
+}
+
+/* reading mode blocks */
+.markdown-rendered pre {
+    background-color: var(--code-background);
+    border: 1px solid rgba(var(--ag-accent-rgb), 0.14);
+    border-radius: 4px;
+    padding: 14px 18px;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.03), var(--shadow-s);
+}
+
+.markdown-rendered pre code {
+    color: var(--code-normal);
+}
+
+/* copy button: always visible, glassy pill */
+.markdown-rendered button.copy-code-button {
+    opacity: 1;
+    background-color: rgba(var(--ag-accent-rgb), 0.1);
+    border: 1px solid rgba(var(--ag-accent-rgb), 0.22);
+    border-radius: 3px;
+    color: var(--text-muted);
+    padding: 3px 9px;
+    top: 8px;
+    right: 8px;
+}
+
+.markdown-rendered button.copy-code-button:hover {
+    background-color: rgba(var(--ag-accent-rgb), 0.2);
+    color: var(--text-accent);
+}
+
+/* live preview blocks */
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-codeblock {
+    background-color: var(--code-background);
+    border-left: 1px solid rgba(var(--ag-accent-rgb), 0.14);
+    border-right: 1px solid rgba(var(--ag-accent-rgb), 0.14);
+    padding-left: 18px;
+    padding-right: 18px;
+    font-family: var(--font-monospace);
+}
+
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-codeblock-begin {
+    border-top: 1px solid rgba(var(--ag-accent-rgb), 0.14);
+    border-radius: 4px 4px 0 0;
+    padding-top: 8px;
+}
+
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-codeblock-end {
+    border-bottom: 1px solid rgba(var(--ag-accent-rgb), 0.14);
+    border-radius: 0 0 4px 4px;
+    padding-bottom: 8px;
+}
+
+/* inline code */
+.markdown-rendered code:not(pre code),
+.cm-s-obsidian span.cm-inline-code {
+    background-color: rgba(var(--ag-accent-rgb), 0.1);
+    color: #bfe3ff;
+    border-radius: 3px;
+    padding: 0.1em 0.4em;
+}
+
+.theme-light .markdown-rendered code:not(pre code),
+.theme-light .cm-s-obsidian span.cm-inline-code {
+    color: #0a5aa8;
+}
+
+/* ------------------------------------------------------------
+   6 · THE GEM DIVIDER — hr with the Obsidian crystal centred
+   ------------------------------------------------------------ */
+
+.markdown-rendered hr,
+.markdown-source-view.mod-cm6 hr {
+    border: none;
+    height: 2px;
+    margin: 2.2em 0;
+    position: relative;
+    overflow: visible;
+    background: linear-gradient(
+        90deg,
+        transparent 0%,
+        var(--hr-color) 12%,
+        var(--hr-color) 43%,
+        transparent 46%,
+        transparent 54%,
+        var(--hr-color) 57%,
+        var(--hr-color) 88%,
+        transparent 100%
+    );
+}
+
+.markdown-rendered hr::after,
+.markdown-source-view.mod-cm6 hr::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 22px;
+    height: 22px;
+    transform: translate(-50%, -50%);
+    background-color: var(--ag-accent);
+    -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M66 2 L94 34 L76 98 L30 84 L6 38 L34 10 Z'/%3E%3C/svg%3E") center / contain no-repeat;
+    mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M66 2 L94 34 L76 98 L30 84 L6 38 L34 10 Z'/%3E%3C/svg%3E") center / contain no-repeat;
+    filter: drop-shadow(0 0 6px rgba(var(--ag-accent-rgb), 0.6));
+}
+
+/* ------------------------------------------------------------
+   7 · PROSE POLISH — quotes, tables, tags, links, selection
+   ------------------------------------------------------------ */
+
+.markdown-rendered blockquote,
+.cm-s-obsidian .HyperMD-quote {
+    border-left: 3px solid rgba(var(--ag-accent-rgb), 0.55);
+    background-color: rgba(var(--ag-accent-rgb), 0.05);
+    border-radius: 0;
+}
+
+.markdown-rendered blockquote {
+    padding: 8px 16px;
+    margin-inline-start: 0;
+}
+
+/* tables */
+.markdown-rendered table {
+    border-collapse: separate;
+    border-spacing: 0;
+    border: 1px solid var(--background-modifier-border);
+    border-radius: var(--ag-radius);
+    overflow: hidden;
+}
+
+.markdown-rendered th {
+    background-color: rgba(var(--ag-accent-rgb), 0.1);
+    color: var(--text-accent);
+    font-weight: 700;
+    border-bottom: 1px solid var(--background-modifier-border);
+}
+
+.markdown-rendered td,
+.markdown-rendered th {
+    padding: 7px 12px;
+    border-right: 1px solid var(--background-modifier-border);
+}
+
+.markdown-rendered td:last-child,
+.markdown-rendered th:last-child {
+    border-right: none;
+}
+
+.markdown-rendered tr:nth-child(even) td {
+    background-color: rgba(var(--ag-accent-rgb), 0.035);
+}
+
+/* tags become glass pills */
+.tag,
+.cm-s-obsidian span.cm-hashtag {
+    background-color: rgba(var(--ag-accent-rgb), 0.12);
+    color: var(--text-accent);
+    border: 1px solid rgba(var(--ag-accent-rgb), 0.25);
+    border-radius: 99px;
+    padding: 1px 10px;
+    font-size: 0.85em;
+    text-decoration: none;
+}
+
+.cm-s-obsidian span.cm-hashtag-begin {
+    border-right: none;
+    border-radius: 99px 0 0 99px;
+    padding-right: 0;
+}
+
+.cm-s-obsidian span.cm-hashtag-end {
+    border-left: none;
+    border-radius: 0 99px 99px 0;
+    padding-left: 0;
+}
+
+.tag:hover {
+    background-color: rgba(var(--ag-accent-rgb), 0.22);
+}
+
+/* links */
+.markdown-rendered a,
+.cm-s-obsidian .cm-link,
+.cm-s-obsidian .cm-hmd-internal-link {
+    text-decoration: none;
+    border-bottom: 1px solid rgba(var(--ag-accent-rgb), 0.35);
+    transition: border-color 120ms ease, color 120ms ease;
+}
+
+.markdown-rendered a:hover,
+.cm-s-obsidian .cm-hmd-internal-link:hover {
+    border-bottom-color: rgba(var(--ag-accent-rgb), 0.9);
+}
+
+/* active line gets a whisper of blue */
+.markdown-source-view.mod-cm6 .cm-active.cm-line:not(.HyperMD-header):not(.HyperMD-codeblock) {
+    background-color: rgba(var(--ag-accent-rgb), 0.045);
+    border-radius: 0;
+}
+
+/* checkboxes */
+input[type="checkbox"] {
+    border: 1.5px solid rgba(var(--ag-accent-rgb), 0.5);
+    border-radius: 3px;
+}
+
+input[type="checkbox"]:checked {
+    background-color: var(--ag-accent-deep);
+    border-color: var(--ag-accent-deep);
+    box-shadow: 0 0 8px rgba(var(--ag-accent-rgb), 0.5);
+}
+
+/* bullets */
+.markdown-rendered ul > li::marker,
+.markdown-rendered ol > li::marker {
+    color: rgba(var(--ag-accent-rgb), 0.75);
+}
+
+/* embeds & transclusions as glass cards */
+.markdown-embed,
+.internal-embed.is-loaded {
+    border-radius: var(--ag-radius);
+    border: 1px solid var(--background-modifier-border);
+    background-color: rgba(var(--ag-glass-soft), 0.3);
+}
+
+/* graph view glass toolbar */
+.graph-controls {
+    background-color: rgba(var(--ag-glass), 0.7);
+    backdrop-filter: blur(var(--ag-blur));
+    -webkit-backdrop-filter: blur(var(--ag-blur));
+    border-radius: var(--ag-radius-lg);
+    border: 1px solid var(--background-modifier-border);
+}
+
+/* view header (note toolbar) */
+.view-header {
+    background-color: rgba(var(--ag-glass), 0.45);
+    border-bottom: 1px solid var(--background-modifier-border);
+}
+
+.view-header-title {
+    font-weight: 600;
+}
+
+/* settings: soften the vertical nav */
+.vertical-tab-header {
+    background-color: rgba(var(--ag-glass), 0.35);
+}
+
+.vertical-tab-nav-item.is-active {
+    background-color: rgba(var(--ag-accent-rgb), 0.14);
+    color: var(--text-accent);
+    border-radius: 4px;
+}
+
+
+/* ------------------------------------------------------------
+   8 · THE NOTE — hackthebox soul, azure glass body
+   Neon terminal accents scoped to the note pane only.
+   ------------------------------------------------------------ */
+
+body {
+    --ag-neon: 159, 239, 0;        /* HTB green   */
+    --ag-neon-hex: #9fef00;
+    --ag-cyan: 92, 225, 230;       /* HTB cyan    */
+}
+
+/* the pane reads as one dark terminal sheet with a neon top edge */
+.workspace-split.mod-root .workspace-tabs .workspace-tab-container {
+    box-shadow:
+        inset 0 1px 0 rgba(var(--ag-neon), 0.28),
+        inset 0 40px 60px -50px rgba(var(--ag-neon), 0.14),
+        var(--shadow-s);
+}
+
+/* terminal prompt before the note title */
+.inline-title {
+    color: #f2f7ff;
+}
+
+.inline-title::before {
+    content: "❯ ";
+    color: var(--ag-neon-hex);
+    font-family: var(--font-monospace);
+    font-weight: 700;
+    text-shadow: 0 0 10px rgba(var(--ag-neon), 0.55);
+}
+
+/* neon caret + green selection while writing */
+.markdown-source-view.mod-cm6 .cm-content {
+    caret-color: var(--ag-neon-hex);
+}
+
+.markdown-source-view ::selection,
+.markdown-preview-view ::selection {
+    background-color: rgba(var(--ag-neon), 0.18);
+}
+
+/* list markers glow green inside the note */
+.markdown-rendered ul > li::marker,
+.markdown-rendered ol > li::marker {
+    color: rgba(var(--ag-neon), 0.9);
+}
+
+.markdown-source-view.mod-cm6 .list-bullet::after {
+    background-color: var(--ag-neon-hex);
+}
+
+/* inline code = green terminal chips */
+.markdown-rendered code:not(pre code),
+.cm-s-obsidian span.cm-inline-code {
+    background-color: rgba(var(--ag-neon), 0.08);
+    border: 1px solid rgba(var(--ag-neon), 0.22);
+    color: var(--ag-neon-hex);
+}
+
+/* ==highlights== turn neon */
+.markdown-rendered mark,
+.cm-s-obsidian span.cm-highlight {
+    background-color: rgba(var(--ag-neon), 0.2);
+    color: #eaffd0;
+    border-radius: 2px;
+}
+
+/* checked boxes + active line pick up the green */
+input[type="checkbox"]:checked {
+    background-color: var(--ag-neon-hex);
+    border-color: var(--ag-neon-hex);
+    box-shadow: 0 0 8px rgba(var(--ag-neon), 0.55);
+}
+
+.markdown-source-view.mod-cm6 .cm-active.cm-line:not(.HyperMD-header):not(.HyperMD-codeblock) {
+    background-color: rgba(var(--ag-neon), 0.04);
+}
+
+/* CODE BLOCKS — the terminal window treatment */
+.markdown-rendered pre {
+    background-color: rgba(9, 14, 22, 0.92);
+    border: 1px solid rgba(var(--ag-neon), 0.22);
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.03),
+        0 0 24px -8px rgba(var(--ag-neon), 0.25);
+    padding-top: 34px;
+}
+
+/* traffic-light dots, terminal style */
+.markdown-rendered pre::before {
+    content: "";
+    position: absolute;
+    top: 12px;
+    left: 16px;
+    width: 44px;
+    height: 10px;
+    background-image:
+        radial-gradient(circle at 5px 5px,  #ff5f56 5px, transparent 5.5px),
+        radial-gradient(circle at 22px 5px, #ffbd2e 5px, transparent 5.5px),
+        radial-gradient(circle at 39px 5px, #27c93f 5px, transparent 5.5px);
+    background-repeat: no-repeat;
+    opacity: 0.85;
+}
+
+.markdown-rendered pre code {
+    color: #d6f5d6;
+}
+
+.markdown-rendered button.copy-code-button {
+    background-color: rgba(var(--ag-neon), 0.08);
+    border: 1px solid rgba(var(--ag-neon), 0.25);
+    color: rgba(var(--ag-neon), 0.85);
+}
+
+.markdown-rendered button.copy-code-button:hover {
+    background-color: rgba(var(--ag-neon), 0.18);
+    color: var(--ag-neon-hex);
+}
+
+/* live preview code lines match */
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-codeblock {
+    background-color: rgba(9, 14, 22, 0.92);
+    border-left: 1px solid rgba(var(--ag-neon), 0.22);
+    border-right: 1px solid rgba(var(--ag-neon), 0.22);
+}
+
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-codeblock-begin {
+    border-top: 1px solid rgba(var(--ag-neon), 0.22);
+}
+
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-codeblock-end {
+    border-bottom: 1px solid rgba(var(--ag-neon), 0.22);
+}
+
+/* blockquotes: cyan terminal pipe */
+.markdown-rendered blockquote,
+.cm-s-obsidian .HyperMD-quote {
+    border-left: 3px solid rgba(var(--ag-cyan), 0.75);
+    background-color: rgba(var(--ag-cyan), 0.05);
+}
+
+/* bold text gets a faint phosphor lift */
+.markdown-rendered strong,
+.cm-s-obsidian .cm-strong {
+    color: #f4fbff;
+}
+
+/* accessibility: keep motion & focus honest */
+:focus-visible {
+    outline: 2px solid rgba(var(--ag-accent-rgb), 0.7);
+    outline-offset: 1px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+    }
+}

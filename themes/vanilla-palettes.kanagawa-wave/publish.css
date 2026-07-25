@@ -1435,9 +1435,9 @@ body.theme-light {
   --h6-color: var(--color-red) !important;
   --inline-title-color: var(--text-color) !important;
   --text-color: var(--lotusInk1) !important;
-  --border-color: var(--border-color-primary) !important;
   --bold-color: var(--accent-color-light) !important;
   --italic-color: var(--accent-color-light) !important;
+  --border-color: var(--border-color-primary) !important;
   --code-variable: var(--lotusOrange) !important;
   --accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l)) !important;
   --code-builtin: var(--lotusTeal2) !important;
@@ -1482,10 +1482,10 @@ body.theme-light {
   --lotusYellow2: #836f4a !important;
   --lotusYellow3: #de9800 !important;
   --lotusYellow4: #f9d791 !important;
+  --accent-color-light: var(--lotusRed2) !important;
   --selection-background-color: var(--lotusViolet3) !important;
   --accent-color-hover: var(--lotusPink) !important;
   --accent-color-dark: var(--lotusTeal1) !important;
-  --accent-color-light: var(--lotusRed2) !important;
   --border-color-primary: var(--lotusWhite0) !important;
   --border-color-secondary: var(--lotusGray3) !important;
   --code-boolean: var(--lotusOrange) !important;
@@ -2544,9 +2544,9 @@ body.theme-dark {
   --h6-color: var(--color-red) !important;
   --inline-title-color: var(--text-color) !important;
   --text-color: var(--fujiWhite) !important;
-  --border-color: var(--border-color-primary) !important;
   --bold-color: var(--accent-color-light) !important;
   --italic-color: var(--accent-color-light) !important;
+  --border-color: var(--border-color-primary) !important;
   --accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l)) !important;
   --code-builtin: var(--crystalBlue) !important;
   --code-definition: var(--crystalBlue) !important;
@@ -2565,10 +2565,10 @@ body.theme-dark {
   --waveRed: #e46876 !important;
   --sumiInk5: #363646 !important;
   --sumiInk6: #54546d !important;
+  --accent-color-light: var(--sakuraPink) !important;
   --selection-background-color: var(--waveBlue1) !important;
   --accent-color-hover: var(--springViolet2) !important;
   --accent-color-dark: var(--crystalBlue) !important;
-  --accent-color-light: var(--sakuraPink) !important;
   --border-color-primary: var(--sumiInk5) !important;
   --border-color-secondary: var(--sumiInk6) !important;
   --code-boolean: var(--surimiOrange) !important;

@@ -1,0 +1,444 @@
+/* Windows XP (Luna Blue & Royale Noir) Theme for Obsidian */
+
+body {
+  /* Light Theme Variables (Luna Blue) */
+  --xp-bg: #ece9d8;
+  --xp-bg-secondary: #f5f4ea;
+  --xp-titlebar: linear-gradient(to bottom, #0058e6 0%, #3a93ff 8%, #288eff 40%, #127dff 88%, #0368e5 100%);
+  --xp-titlebar-text: #ffffff;
+  --xp-editor-bg: #ffffff;
+  --xp-text: #000000;
+  --xp-text-muted: #808080;
+  --xp-text-faint: #a0a0a0;
+  --xp-border: #808080;
+  --xp-input-border: #7f9db9;
+  
+  --btn-bg: #ece9d8;
+  --btn-highlight: #ffffff;
+  --btn-shadow: #808080;
+  --btn-shadow-dark: #000000;
+  --btn-active-bg: #e6e6e6;
+  
+  --scrollbar-bg: #ece9d8;
+  --scrollbar-thumb: #c8c4b7;
+  --scrollbar-thumb-hover: #b0aead;
+  
+  --input-bg: #ffffff;
+  --input-text: #000000;
+  
+  --tab-active: #ffffff;
+  --tab-inactive: #ece9d8;
+  
+  --tooltip-bg: #ffffe1;
+  --tooltip-border: #000000;
+  --tooltip-text: #000000;
+  
+  --xp-accent: #0055e5;
+  --xp-accent-hover: #3a93ff;
+}
+
+.theme-dark {
+  /* Dark Theme Variables (Royale Noir / XP Dark) */
+  --xp-bg: #2b2b2b;
+  --xp-bg-secondary: #1e1e1e;
+  --xp-titlebar: linear-gradient(to bottom, #4f5051 0%, #303132 8%, #1f2021 40%, #151617 88%, #0a0b0c 100%);
+  --xp-titlebar-text: #ffffff;
+  --xp-editor-bg: #1e1e1e;
+  --xp-text: #e0e0e0;
+  --xp-text-muted: #aaaaaa;
+  --xp-text-faint: #888888;
+  --xp-border: #555555;
+  --xp-input-border: #666666;
+  
+  --btn-bg: #333333;
+  --btn-highlight: #555555;
+  --btn-shadow: #111111;
+  --btn-shadow-dark: #000000;
+  --btn-active-bg: #222222;
+  
+  --scrollbar-bg: #2b2b2b;
+  --scrollbar-thumb: #444444;
+  --scrollbar-thumb-hover: #555555;
+  
+  --input-bg: #1e1e1e;
+  --input-text: #e0e0e0;
+  
+  --tab-active: #1e1e1e;
+  --tab-inactive: #2b2b2b;
+  
+  --tooltip-bg: #333333;
+  --tooltip-border: #555555;
+  --tooltip-text: #e0e0e0;
+  
+  --xp-accent: #66b2ff; /* Lighter blue for dark mode */
+  --xp-accent-hover: #99ccff;
+  
+  color-scheme: dark;
+}
+
+.theme-light, .theme-dark {
+  /* Core Colors Mapped */
+  --bg-color: var(--xp-bg);
+  --bg-color-secondary: var(--xp-bg-secondary);
+  --window-bg: var(--xp-bg);
+  --titlebar-bg: var(--xp-titlebar);
+  --titlebar-text: var(--xp-titlebar-text);
+  
+  /* Obsidian Backgrounds */
+  --background-primary: var(--xp-editor-bg);
+  --background-primary-alt: var(--xp-bg);
+  --background-secondary: var(--xp-bg);
+  --background-secondary-alt: var(--xp-bg-secondary);
+  --background-modifier-border: var(--xp-border);
+  --background-modifier-border-hover: var(--xp-accent);
+  --background-modifier-border-focus: var(--xp-accent);
+  
+  /* Text */
+  --text-normal: var(--xp-text);
+  --text-muted: var(--xp-text-muted);
+  --text-faint: var(--xp-text-faint);
+  --text-accent: var(--xp-accent);
+  --text-accent-hover: var(--xp-accent-hover);
+  
+  /* Icons */
+  --icon-color: var(--xp-accent);
+  --icon-color-hover: var(--xp-accent-hover);
+  --icon-color-active: var(--xp-text);
+  --icon-color-focused: var(--xp-accent-hover);
+  --nav-collapse-icon-color: var(--xp-text-faint);
+  --nav-collapse-icon-color-hover: var(--xp-text);
+  
+  /* Typography */
+  --font-interface: "Tahoma", "Segoe UI", sans-serif;
+  --font-text: "Tahoma", "Segoe UI", sans-serif;
+  --font-monospace: "Lucida Console", "Courier New", monospace;
+  
+  /* Interactive Elements */
+  --interactive-normal: var(--btn-bg);
+  --interactive-hover: var(--btn-active-bg);
+  --interactive-accent: var(--xp-accent);
+  --interactive-accent-hover: var(--xp-accent-hover);
+  
+  /* Borders - classic 3D look */
+  --border-width: 1px;
+  --border-color: var(--xp-border);
+  --table-border-color: var(--xp-border);
+  --hr-color: var(--xp-border);
+  
+  /* Navigation / Explorer */
+  --nav-item-background-hover: var(--btn-active-bg);
+  --nav-item-color-hover: var(--xp-text);
+  --nav-item-background-active: var(--btn-shadow);
+  --nav-item-color-active: var(--xp-text);
+  
+  /* Tabs */
+  --tab-background-active: var(--tab-active);
+  --tab-text-color-active: var(--xp-text);
+  --tab-background: var(--tab-inactive);
+  --tab-text-color: var(--xp-text-muted);
+  --tab-outline-color: var(--xp-border);
+  
+  /* Toggles and Checkboxes */
+  --checkbox-bg: var(--bg-color-secondary);
+  --checkbox-border-color: var(--xp-border);
+  --checkbox-bg-active: var(--xp-accent);
+  --toggle-bg: var(--xp-border);
+  --toggle-bg-active: var(--xp-accent);
+  --toggle-thumb-color: var(--xp-bg);
+}
+
+/* Base styles for XP feel */
+body {
+  background-color: var(--window-bg);
+  font-family: var(--font-interface);
+  --header-height: 40px !important;
+}
+
+/* --- Titlebar --- */
+.titlebar {
+  background: var(--titlebar-bg) !important;
+  color: var(--titlebar-text) !important;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+.titlebar-text,
+.titlebar-inner-title,
+div[class*="titlebar-text"],
+.titlebar-inner > div:not(.titlebar-button-container):not(.workspace-tab-header-container) {
+  display: none !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+}
+
+/* Make titlebar transparent in Hidden frame mode to prevent opaque overlapping */
+body.is-hidden-frameless .titlebar {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  z-index: 100 !important;
+}
+
+/* Ensure tab container is not negatively margined into the titlebar */
+.workspace-tab-header-container {
+  margin-top: 0 !important;
+}
+
+.titlebar-button-container {
+  padding-right: 4px;
+}
+
+/* --- UI Buttons (3D Bevel) --- */
+button, 
+.clickable-icon {
+  background-color: var(--btn-bg);
+  border: none;
+  border-radius: 3px;
+  color: var(--xp-text);
+  box-shadow: inset 1px 1px 0px var(--btn-highlight), inset -1px -1px 0px var(--btn-shadow);
+}
+
+button {
+  padding: 4px 12px;
+  margin: 2px;
+  box-shadow: inset 1px 1px 0px var(--btn-highlight), inset -1px -1px 0px var(--btn-shadow), 1px 1px 0px var(--btn-shadow-dark);
+}
+
+button:active {
+  box-shadow: inset 1px 1px 0px var(--btn-shadow), inset -1px -1px 0px var(--btn-highlight);
+  transform: translate(1px, 1px);
+}
+
+.clickable-icon:active {
+  box-shadow: inset 1px 1px 0px var(--btn-shadow), inset -1px -1px 0px var(--btn-highlight);
+  transform: translate(1px, 1px);
+}
+
+button.mod-cta {
+  background-color: #0055e5;
+  color: white;
+  box-shadow: inset 1px 1px 0px #5ba3ff, inset -1px -1px 0px #002266, 1px 1px 0px var(--btn-shadow-dark);
+}
+
+/* --- Scrollbars (Classic Windows 9x/XP style) --- */
+::-webkit-scrollbar {
+  width: 16px;
+  height: 16px;
+  background: var(--scrollbar-bg);
+}
+
+::-webkit-scrollbar-track {
+  background: repeating-linear-gradient(
+    45deg,
+    var(--btn-highlight),
+    var(--btn-highlight) 2px,
+    var(--scrollbar-bg) 2px,
+    var(--scrollbar-bg) 4px
+  );
+  border-left: 1px solid var(--btn-shadow);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-thumb);
+  border: 1px solid var(--btn-highlight);
+  border-right-color: var(--btn-shadow);
+  border-bottom-color: var(--btn-shadow);
+  border-radius: 0;
+  box-shadow: inset 1px 1px 0px var(--btn-highlight), inset -1px -1px 0px var(--btn-shadow);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--scrollbar-thumb-hover);
+}
+
+::-webkit-scrollbar-thumb:active {
+  background-color: var(--btn-shadow);
+  border: 1px solid var(--btn-shadow);
+  border-right-color: var(--btn-highlight);
+  border-bottom-color: var(--btn-highlight);
+  box-shadow: inset 1px 1px 0px var(--btn-shadow-dark), inset -1px -1px 0px var(--btn-highlight);
+}
+
+::-webkit-scrollbar-button {
+  display: block;
+  background-color: var(--scrollbar-bg);
+  border: 1px solid var(--btn-highlight);
+  border-right-color: var(--btn-shadow);
+  border-bottom-color: var(--btn-shadow);
+  width: 16px;
+  height: 16px;
+}
+
+::-webkit-scrollbar-button:active {
+  border: 1px solid var(--btn-shadow);
+  border-right-color: var(--btn-highlight);
+  border-bottom-color: var(--btn-highlight);
+}
+
+/* --- Inputs and Textareas --- */
+input[type="text"], 
+input[type="search"], 
+input[type="password"], 
+input[type="number"], 
+textarea,
+select,
+.dropdown,
+.search-input-container {
+  border: 1px solid var(--xp-input-border) !important;
+  background-color: var(--input-bg);
+  border-radius: 2px;
+  box-shadow: none;
+  color: var(--input-text);
+}
+
+.search-input-container input {
+  border: none !important;
+  box-shadow: none !important;
+  background: transparent !important;
+}
+
+input:focus, textarea:focus, select:focus, .dropdown:focus, .search-input-container:focus-within {
+  outline: none;
+  border-color: var(--xp-accent) !important;
+  box-shadow: 0 0 0 1px var(--xp-accent) !important;
+}
+
+.search-input-container:focus-within input {
+  box-shadow: none !important;
+  border: none !important;
+}
+
+/* --- Toggles / Checkboxes --- */
+.checkbox-container {
+  background-color: var(--xp-border) !important;
+}
+
+.checkbox-container.is-enabled {
+  background-color: var(--xp-accent) !important;
+}
+
+.checkbox-container:after {
+  background-color: var(--xp-bg) !important;
+}
+
+/* --- File Explorer --- */
+.nav-folder-title, .nav-file-title {
+  border-radius: 0;
+  color: var(--xp-text);
+}
+
+.nav-folder-title:hover, .nav-file-title:hover {
+  background-color: var(--nav-item-background-hover);
+  color: var(--nav-item-color-hover);
+  text-decoration: underline;
+}
+
+.nav-file-title.is-active, .nav-folder-title.is-active {
+  background-color: var(--nav-item-background-active);
+  color: var(--nav-item-color-active);
+  outline: 1px dotted var(--btn-highlight);
+}
+
+/* --- Tabs --- */
+.workspace-tab-header {
+  background-color: var(--tab-background);
+  border: 1px solid var(--btn-highlight);
+  border-right-color: var(--btn-shadow);
+  border-bottom: 1px solid var(--btn-shadow);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  margin-right: 2px;
+  margin-top: 4px;
+}
+
+.workspace-tab-header.is-active {
+  background-color: var(--tab-background-active);
+  border-bottom: 1px solid var(--tab-background-active);
+  margin-top: 0;
+  padding-bottom: 4px;
+}
+
+/* --- Tooltips --- */
+.tooltip {
+  background-color: var(--tooltip-bg);
+  color: var(--tooltip-text);
+  border: 1px solid var(--tooltip-border);
+  box-shadow: 2px 2px 3px rgba(0,0,0,0.3);
+  font-family: "Tahoma", sans-serif;
+  font-size: 11px;
+  border-radius: 0;
+}
+
+/* --- Modals / Dialogs --- */
+.modal {
+  background-color: var(--bg-color);
+  border: 2px solid #0055e5;
+  border-radius: 4px;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+}
+
+/* Modal Title bar style */
+.modal-title {
+  background: var(--titlebar-bg);
+  color: var(--titlebar-text);
+  padding: 4px 8px;
+  margin: -20px -20px 20px -20px;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  font-weight: bold;
+}
+
+/* --- Custom File Explorer Icons (Folder instead of Arrows) --- */
+
+/* Hide default SVG and remove rotation */
+.nav-folder-title .collapse-icon svg {
+  display: none !important;
+}
+.nav-folder-title .collapse-icon {
+  transform: none !important;
+}
+
+/* Base style for custom collapse icon */
+.nav-folder-title .collapse-icon::after {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  transition: opacity 0.15s ease;
+  opacity: 0.85;
+}
+
+/* Hover color */
+.nav-folder-title:hover .collapse-icon::after {
+  opacity: 1;
+}
+
+/* Closed Folder Icon (Replaces Right Arrow) */
+.nav-folder.is-collapsed > .nav-folder-title .collapse-icon::after {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='%23ffd766' stroke='%23d19d00' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z'/%3E%3C/svg%3E");
+}
+
+/* Open Folder Icon (Replaces Down Arrow) */
+.nav-folder:not(.is-collapsed) > .nav-folder-title .collapse-icon::after {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='%23ffd766' stroke='%23d19d00' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 14 1.45-2.9A2 2 0 0 1 9.24 10H20a2 2 0 0 1 1.94 2.5l-1.55 6a2 2 0 0 1-1.94 1.5H4a2 2 0 0 1-2-2V5c0-1.1.9-2 2-2h3.93a2 2 0 0 1 1.66.9l.82 1.2a2 2 0 0 0 1.66.9H18a2 2 0 0 1 2 2v2'/%3E%3C/svg%3E");
+}
+
+/* --- Colorful Icons (Windows XP Control Panel Style) --- */
+
+/* Create a repeating multi-color pattern for lists of icons */
+.vertical-tab-nav-item:nth-child(5n+1) svg, .workspace-ribbon .clickable-icon:nth-child(5n+1) svg, .nav-action-button:nth-child(5n+1) svg { color: #0055e5; }
+.vertical-tab-nav-item:nth-child(5n+2) svg, .workspace-ribbon .clickable-icon:nth-child(5n+2) svg, .nav-action-button:nth-child(5n+2) svg { color: #e6a514; }
+.vertical-tab-nav-item:nth-child(5n+3) svg, .workspace-ribbon .clickable-icon:nth-child(5n+3) svg, .nav-action-button:nth-child(5n+3) svg { color: #4caf50; }
+.vertical-tab-nav-item:nth-child(5n+4) svg, .workspace-ribbon .clickable-icon:nth-child(5n+4) svg, .nav-action-button:nth-child(5n+4) svg { color: #f44336; }
+.vertical-tab-nav-item:nth-child(5n+5) svg, .workspace-ribbon .clickable-icon:nth-child(5n+5) svg, .nav-action-button:nth-child(5n+5) svg { color: #9c27b0; }
+
+.theme-dark .vertical-tab-nav-item:nth-child(5n+1) svg, .theme-dark .workspace-ribbon .clickable-icon:nth-child(5n+1) svg, .theme-dark .nav-action-button:nth-child(5n+1) svg { color: #66b2ff; }
+.theme-dark .vertical-tab-nav-item:nth-child(5n+2) svg, .theme-dark .workspace-ribbon .clickable-icon:nth-child(5n+2) svg, .theme-dark .nav-action-button:nth-child(5n+2) svg { color: #fcd84c; }
+.theme-dark .vertical-tab-nav-item:nth-child(5n+3) svg, .theme-dark .workspace-ribbon .clickable-icon:nth-child(5n+3) svg, .theme-dark .nav-action-button:nth-child(5n+3) svg { color: #81c784; }
+.theme-dark .vertical-tab-nav-item:nth-child(5n+4) svg, .theme-dark .workspace-ribbon .clickable-icon:nth-child(5n+4) svg, .theme-dark .nav-action-button:nth-child(5n+4) svg { color: #e57373; }
+.theme-dark .vertical-tab-nav-item:nth-child(5n+5) svg, .theme-dark .workspace-ribbon .clickable-icon:nth-child(5n+5) svg, .theme-dark .nav-action-button:nth-child(5n+5) svg { color: #ba68c8; }

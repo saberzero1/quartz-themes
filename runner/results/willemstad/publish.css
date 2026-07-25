@@ -1233,12 +1233,12 @@ body.theme-light {
     var(--ch-color-base-l-l-15) var(--ch-color-base-l-c-15)
       var(--ch-color-base-l-h-15)
   ) !important;
+  --callout-gap: 0.5em;
   --font-heading: "Manrope", "Inter 4.1", "DM Sans" !important;
   --color-red-2: oklch(
     from var(--color-red) calc(l - 0.1) c calc(h + 4)
   ) !important;
   --font-editor: "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope" !important;
-  --callout-gap: 0.5em;
   --settings-background: var(--background-primary-alt) !important;
   --color-selection: var(
     --color-set-l-selection,
@@ -1651,7 +1651,7 @@ body.theme-light {
     var(--elements-padding) * 2 + var(--status-bar-min-height-intermediary)
   ) !important;
   --status-bar-min-height-intermediary: calc(
-    var(--line-height-tight) * var(--font-text-size) / 1.5
+    var(--line-height-tight) * var(--font-text-size)/1.5
   ) !important;
   --status-bar-shift-workspace-padding-bottom: calc(
     var(--status-bar-min-height) + var(--status-bar-padding) +
@@ -2859,12 +2859,12 @@ body.theme-dark {
     var(--ch-color-base-d-l-15) var(--ch-color-base-d-c-15)
       var(--ch-color-base-d-h-15)
   ) !important;
+  --callout-gap: 0.5em;
   --font-heading: "Manrope", "Inter 4.1", "DM Sans" !important;
   --color-red-2: oklch(
     from var(--color-red) calc(l - 0.1) c calc(h + 4)
   ) !important;
   --font-editor: "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope" !important;
-  --callout-gap: 0.5em;
   --settings-background: var(--background-primary-alt) !important;
   --color-selection: var(
     --color-set-d-selection,
@@ -3343,7 +3343,7 @@ body.theme-dark {
     var(--elements-padding) * 2 + var(--status-bar-min-height-intermediary)
   ) !important;
   --status-bar-min-height-intermediary: calc(
-    var(--line-height-tight) * var(--font-text-size) / 1.5
+    var(--line-height-tight) * var(--font-text-size)/1.5
   ) !important;
   --status-bar-shift-workspace-padding-bottom: calc(
     var(--status-bar-min-height) + var(--status-bar-padding) +

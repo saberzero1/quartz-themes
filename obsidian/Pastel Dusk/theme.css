@@ -1,0 +1,258 @@
+/*
+ * Pastel Dusk — a dark-only Obsidian theme.
+ * A soft, pastel take on the Nord palette.
+ *
+ * Based on "Obsidian Nord" by Eric Davis (insanum)
+ *   https://github.com/insanum/obsidian_nord  (MIT, (c) 2020 Eric Davis)
+ * Nord palette (c) Arctic Ice Studio — https://www.nordtheme.com
+ * Pastel Dusk modifications (c) 2026 SurprisedDuck. MIT.
+ */
+
+:root
+{
+    /* Deep, near-neutral (cool) dark backgrounds (dark only) — darkest → lightest */
+    --pf-backdrop:   #0d0e0f;
+    --pf-sidebar:    #131516;
+    --pf-nav:        #0f1112; /* left file-explorer (darker than other docks) */
+    --pf-elev:       #181a1b; /* secondary-alt surface */
+    --pf-editor:     #1d1f20;
+    --pf-surface:    #292c2d;
+    --pf-surface-hi: #353839;
+    --pf-row-odd:    #1b1d1e; /* table row striping (sits in the ramp) */
+    --pf-row-even:   #202223;
+
+    /* Pastel turquoise accent family */
+    --pf-teal:   #9fd6cb; /* pastel turquoise — accent / H1 / active / tags */
+    --pf-cyan:   #a9dad9; /* soft cyan        — code / highlight */
+    --pf-blue:   #9cc7cf; /* muted blue-teal  — info callout / list / keyword */
+
+    /* Link & file blue (pastel) */
+    --pf-link:       #97b8e0; /* links (slightly darker) */
+    --pf-link-hover: #bcd6f3; /* link hover */
+    --pf-fileblue:   #c8e0f6; /* file titles (lighter) */
+
+    /* Heading colours H2–H6 — one distinct pastel per level (H1 = accent) */
+    --pf-h2: #a7c8e8; /* soft blue  */
+    --pf-h3: #a9d6a4; /* soft green */
+    --pf-h4: #cdb0e2; /* soft lilac */
+    --pf-h5: #e8aeb4; /* soft rose  */
+    --pf-h6: #e6cb9a; /* soft amber */
+
+    /* Accent as RGB triplet (for rgba()) */
+    --pf-teal-rgb: 159,214,203;
+
+    /* Text — soft cool neutrals */
+    --pf-text:     #cfd6d6;
+    --pf-emphasis: #e8eded;
+    --pf-muted:    #828d8d;
+    --pf-faint:    #525b5b;
+
+    /* Pastel Aurora — semantic / syntax (muted) */
+    --pf-red:    #d59a96;
+    --pf-orange: #d6b48c;
+    --pf-yellow: #d8cf9c;
+    --pf-green:  #a7c2a0;
+    --pf-purple: #b9a8c4;
+}
+
+body
+{
+    /* Accent (HSL) — drives --interactive-accent, selection handles, toggles */
+    --accent-h: 168;
+    --accent-s: 40%;
+    --accent-l: 73%;
+
+    /* Link / tag decorations */
+    --link-decoration:                none;
+    --link-decoration-hover:          underline;
+    --link-external-decoration:       underline dotted;
+    --link-external-decoration-hover: underline dotted;
+    --tag-decoration:                 none;
+    --tag-decoration-hover:           underline;
+    --tag-padding-x:                  .55em;
+    --tag-padding-y:                  .25em;
+
+    /* Weights */
+    --bold-weight:     600;
+    --tab-font-weight: 600;
+
+    /* Radius scale */
+    --radius-s:          6px;
+    --radius-m:          8px;
+    --radius-l:          12px;
+    --tab-radius:        var(--radius-m);
+    --tab-radius-active: var(--radius-m);
+    --modal-radius:      var(--radius-l);
+    --checkbox-radius:   5px;
+
+    /* Headings — weight & rhythm */
+    --h1-weight:       800;
+    --h2-weight:       700;
+    --h3-weight:       600;
+    --h4-weight:       600;
+    --h5-weight:       600;
+    --h6-weight:       600;
+    --heading-spacing: 2.2em;
+}
+
+.theme-dark
+{
+    /* Backgrounds */
+    --background-primary:               var(--pf-editor);
+    --background-primary-alt:           var(--pf-editor);
+    --background-secondary:             var(--pf-sidebar);
+    --background-secondary-alt:         var(--pf-elev);
+    --background-modifier-border:       var(--pf-surface);
+    --background-modifier-border-hover: var(--pf-surface-hi);
+
+    /* Text */
+    --text-normal:    var(--pf-text);
+    --text-muted:     var(--pf-muted);
+    --text-faint:     var(--pf-faint);
+    --text-on-accent: var(--pf-editor);
+
+    /* Headings — one distinct pastel per level */
+    --h1-color:           var(--pf-teal);
+    --h2-color:           var(--pf-h2);
+    --h3-color:           var(--pf-h3);
+    --h4-color:           var(--pf-h4);
+    --h5-color:           var(--pf-h5);
+    --h6-color:           var(--pf-h6);
+    --inline-title-color: var(--pf-teal);
+
+    /* Links — pastel blue */
+    --text-accent:               var(--pf-link);
+    --text-accent-hover:         var(--pf-link-hover);
+    --link-color:                var(--pf-link);
+    --link-color-hover:          var(--pf-link-hover);
+    --link-external-color:       var(--pf-link);
+    --link-external-color-hover: var(--pf-link-hover);
+    --link-unresolved-color:     var(--pf-muted);
+
+    /* Emphasis */
+    --bold-color:   var(--pf-emphasis);
+    --italic-color: inherit;
+
+    /* Code */
+    --code-normal:     var(--pf-cyan);
+    --code-background: var(--pf-sidebar);
+
+    /* Highlight (==mark==) */
+    --text-highlight-bg: var(--pf-cyan);
+    --text-highlight-fg: var(--pf-editor);
+
+    /* Tags */
+    --tag-color:            var(--pf-teal);
+    --tag-background:       var(--pf-surface);
+    --tag-background-hover: var(--pf-surface-hi);
+
+    /* Checkboxes */
+    --checkbox-color:              var(--pf-teal);
+    --checkbox-color-hover:        var(--pf-cyan);
+    --checkbox-border-color:       var(--pf-teal);
+    --checkbox-border-color-hover: var(--pf-cyan);
+    --checklist-done-color:        var(--pf-muted);
+
+    /* Selection & active line */
+    --cursor-line-background: rgba(var(--pf-teal-rgb), .08);
+    --text-selection:         rgba(var(--pf-teal-rgb), .30);
+    --flashing-background:    rgba(var(--pf-teal-rgb), .25);
+
+    /* Semantic colours (callouts, syntax highlighting, graph) — pastel Aurora */
+    --color-red:    var(--pf-red);
+    --color-orange: var(--pf-orange);
+    --color-yellow: var(--pf-yellow);
+    --color-green:  var(--pf-green);
+    --color-cyan:   var(--pf-cyan);
+    --color-blue:   var(--pf-blue);
+    --color-purple: var(--pf-purple);
+    /* RGB triplets mirror --pf-red / --pf-green / --pf-blue above (keep in sync) */
+    --color-red-rgb:    213,154,150;
+    --color-green-rgb:  167,194,160;
+    --color-blue-rgb:   156,199,207;
+
+    /* Tables */
+    --table-header-background:       var(--pf-sidebar);
+    --table-header-background-hover: var(--pf-surface);
+    --table-row-even-background:     var(--pf-row-even);
+    --table-row-odd-background:      var(--pf-row-odd);
+    --table-row-background-hover:    var(--pf-surface);
+
+    /* Nav / icons / window chrome */
+    --nav-item-color-hover:        var(--pf-cyan);
+    --nav-item-color-active:       var(--pf-teal);
+    --nav-item-background-active:  rgba(var(--pf-teal-rgb), .15);
+    --icon-color-hover:            var(--pf-teal);
+    --icon-color-focused:          var(--pf-cyan);
+    --titlebar-text-color-focused: var(--pf-teal);
+    --tab-text-color-focused-active:         var(--pf-teal);
+    --tab-text-color-focused-active-current: var(--pf-teal);
+
+    /* Graph view */
+    --graph-line:            var(--pf-surface);
+    --graph-node:            var(--pf-text);
+    --graph-node-tag:        var(--pf-teal);
+    --graph-node-attachment: var(--pf-green);
+
+    /* Lists & quotes */
+    --list-marker-color:       var(--pf-blue);
+    --blockquote-border-color: var(--pf-teal);
+    --blockquote-color:        var(--pf-muted);
+
+    /* Scrollbars */
+    --scrollbar-thumb-bg:        var(--pf-surface);
+    --scrollbar-active-thumb-bg: var(--pf-surface-hi);
+    --scrollbar-bg:              transparent;
+
+    /* Code syntax highlighting — pastel dusk palette */
+    --code-comment:     var(--pf-faint);
+    --code-keyword:     var(--pf-blue);
+    --code-operator:    var(--pf-text);
+    --code-property:    var(--pf-cyan);
+    --code-punctuation: var(--pf-muted);
+    --code-function:    var(--pf-teal);
+    --code-tag:         var(--pf-red);
+    --code-string:      var(--pf-green);
+    --code-value:       var(--pf-orange);
+    --code-important:   var(--pf-yellow);
+}
+
+/* ── Rounded floating panes ───────────────────────────────────────── */
+/* Backdrop shows between leaves so each pane reads as a rounded card. */
+.theme-dark .workspace-split.mod-root { background: var(--pf-backdrop); }
+
+.theme-dark .workspace-tabs .workspace-leaf,
+.theme-dark .workspace-tab-container {
+    border-radius: var(--radius-l);
+}
+.theme-dark .workspace-tabs .workspace-leaf { margin: 3px; overflow: hidden; }
+
+/* Darker left sidebar (file explorer). */
+.theme-dark .workspace-split.mod-left-split,
+.theme-dark .workspace-split.mod-left-split .workspace-leaf-content {
+    background-color: var(--pf-nav);
+}
+
+/* Keep ==highlight== foreground readable in both reading and live-preview. */
+.theme-dark .markdown-rendered mark,
+.theme-dark .cm-highlight,
+.theme-dark span.cm-highlight {
+    color: var(--text-highlight-fg);
+}
+
+/* Rounded images and embeds. */
+.theme-dark .markdown-rendered img,
+.theme-dark .markdown-rendered .internal-embed,
+.theme-dark .cm-s-obsidian .image-embed img {
+    border-radius: var(--radius-m);
+}
+
+/* Subtle border + rounding on reading-view code blocks. */
+.theme-dark .markdown-rendered pre {
+    border: 1px solid var(--pf-surface);
+    border-radius: var(--radius-m);
+}
+
+/* Folders vs files in the explorer (files take the accent). */
+.theme-dark .nav-folder-title { color: var(--pf-text); font-weight: 600; }
+.theme-dark .nav-file-title   { color: var(--pf-fileblue); }

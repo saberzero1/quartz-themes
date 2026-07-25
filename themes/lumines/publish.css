@@ -1093,11 +1093,12 @@ body.theme-light {
   --h5-color: var(--color-accent) !important;
   --h6-color: var(--color-accent) !important;
   --inline-title-color: var(--text-normal) !important;
-  --bases-table-text-size: var(--font-smaller) !important;
   --bold-color: var(--color-accent) !important;
   --italic-color: var(--color-accent) !important;
+  --bases-table-text-size: var(--font-smaller) !important;
   --color-base-80: hsl(0, 0%, 17%) !important;
   --color-base-90: hsl(0, 0%, 14%) !important;
+  --primary-red: var(--red-h), var(--red-s), var(--red-l) !important;
   --blue-h: 207 !important;
   --cyan-h: 187 !important;
   --green-h: 130 !important;
@@ -1143,7 +1144,6 @@ body.theme-light {
   --primary-orange:
     var(--orange-h), var(--orange-s), var(--orange-l) !important;
   --primary-pink: var(--pink-h), var(--pink-s), var(--pink-l) !important;
-  --primary-red: var(--red-h), var(--red-s), var(--red-l) !important;
   --primary-sky: var(--sky-h), var(--sky-s), var(--sky-l) !important;
   --primary-violet:
     var(--violet-h), var(--violet-s), var(--violet-l) !important;
@@ -2221,11 +2221,12 @@ body.theme-dark {
   --h5-color: var(--color-accent) !important;
   --h6-color: var(--color-accent) !important;
   --inline-title-color: var(--text-normal) !important;
-  --bases-table-text-size: var(--font-smaller) !important;
   --bold-color: var(--color-accent) !important;
   --italic-color: var(--color-accent) !important;
+  --bases-table-text-size: var(--font-smaller) !important;
   --color-base-80: hsl(0, 0%, 93%) !important;
   --color-base-90: hsl(0, 0%, 96%) !important;
+  --primary-red: var(--red-h), var(--red-s), var(--red-l) !important;
   --blue-h: 207 !important;
   --cyan-h: 187 !important;
   --green-h: 130 !important;
@@ -2271,7 +2272,6 @@ body.theme-dark {
   --primary-orange:
     var(--orange-h), var(--orange-s), var(--orange-l) !important;
   --primary-pink: var(--pink-h), var(--pink-s), var(--pink-l) !important;
-  --primary-red: var(--red-h), var(--red-s), var(--red-l) !important;
   --primary-sky: var(--sky-h), var(--sky-s), var(--sky-l) !important;
   --primary-violet:
     var(--violet-h), var(--violet-s), var(--violet-l) !important;

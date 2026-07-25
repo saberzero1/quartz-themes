@@ -1520,6 +1520,8 @@ body.theme-light {
   --cw-tag-border-color: rgba(198, 99, 68, 0.17) !important;
   --cw-white-soft: #f8f7f2 !important;
   --input-focus-ring-color: rgba(198, 99, 68, 0.14) !important;
+  --font-editor-override:
+    "Charter", "Songti SC", "PingFang SC", serif !important;
   --cp-active-bg: rgba(198, 99, 68, 0.1) !important;
   --cp-border: rgba(82, 68, 58, 0.105) !important;
   --cp-border-soft: rgba(82, 68, 58, 0.07) !important;
@@ -1547,8 +1549,6 @@ body.theme-light {
   --cp-segment-border: rgba(82, 68, 58, 0.13) !important;
   --cp-sidebar-bg: #fcfcfc !important;
   --cp-workspace-bg: var(--background-primary) !important;
-  --font-editor-override:
-    "Charter", "Songti SC", "PingFang SC", serif !important;
 }
 
 body.theme-dark {
@@ -2619,6 +2619,8 @@ body.theme-dark {
   --cw-tag-border-color: rgba(217, 119, 87, 0.22) !important;
   --cw-white-soft: #f8f7f2 !important;
   --input-focus-ring-color: rgba(217, 119, 87, 0.18) !important;
+  --font-editor-override:
+    "Charter", "Songti SC", "PingFang SC", serif !important;
   --cp-active-bg: rgba(217, 119, 87, 0.14) !important;
   --cp-border: rgba(224, 213, 202, 0.12) !important;
   --cp-border-soft: rgba(224, 213, 202, 0.075) !important;
@@ -2647,8 +2649,6 @@ body.theme-dark {
   --cp-segment-border: rgba(224, 213, 202, 0.12) !important;
   --cp-sidebar-bg: #222222 !important;
   --cp-workspace-bg: var(--background-primary) !important;
-  --font-editor-override:
-    "Charter", "Songti SC", "PingFang SC", serif !important;
 }
 
 body {

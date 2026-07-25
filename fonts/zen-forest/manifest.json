@@ -1,0 +1,16 @@
+{
+  "extractedAt": "2026-07-25T01:00:50.152Z",
+  "sourceTheme": "Zen Forest",
+  "fonts": [
+    {
+      "family": "number-font",
+      "style": "normal",
+      "weight": "100",
+      "file": "number-font.woff",
+      "format": "woff",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    }
+  ]
+}

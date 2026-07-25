@@ -1134,7 +1134,7 @@ body.theme-light {
   --editor-line-height: 1.88889 !important;
   --editor-line-height-rem: calc(var(--editor-line-height) * 1rem) !important;
   --editor-line-height-small: calc(
-    var(--editor-line-height) * var(--scale-small) / 100
+    var(--editor-line-height) * var(--scale-small)/100
   ) !important;
   --editor-line-height-small-rem: calc(
     var(--editor-line-height-small) * 1rem

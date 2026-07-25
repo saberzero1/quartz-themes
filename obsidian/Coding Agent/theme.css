@@ -1,0 +1,489 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap');
+
+/* ==========================================================================
+   coding agent — Obsidian theme
+   --------------------------------------------------------------------------
+   One theme, two coding-agent identities, switchable in Style Settings:
+
+     • Claude Code  (default) — warm near-black + Anthropic coral
+     • OpenAI Codex           — cool neutral black + OpenAI teal-green
+
+   The whole chrome (titlebar, tabs, sidebar, file tree, status bar,
+   scrollbars) is styled so the app reads as the chosen agent, not just the
+   note body. Every accent-derived token recomputes from a single --cc-accent,
+   so swapping looks repaints everything.
+   ========================================================================== */
+
+/* @settings
+name: coding agent
+id: coding-agent
+settings:
+  -
+    id: cc-look
+    title: Look
+    description: Overall visual identity of the whole app.
+    type: class-select
+    allowEmpty: false
+    default: cc-look-claude
+    options:
+      -
+        label: Claude Code
+        value: cc-look-claude
+      -
+        label: OpenAI Codex
+        value: cc-look-codex
+  -
+    id: cc-bg-depth
+    title: Background depth
+    description: How dark the main surface sits. Higher = deeper black.
+    type: variable-number-slider
+    default: 24.5
+    min: 16
+    max: 32
+    step: 0.5
+    format: '%'
+  -
+    id: cc-radius
+    title: Corner radius
+    description: Softness of panels, chips and buttons.
+    type: variable-number
+    default: 9
+    min: 0
+    max: 16
+    step: 1
+    format: px
+  -
+    id: cc-font-size
+    title: Font size
+    description: Base text size across notes.
+    type: variable-number-slider
+    default: 16
+    min: 12
+    max: 24
+    step: 0.5
+    format: px
+  -
+    id: cc-mono-ui
+    title: Monospace everything
+    description: Use the mono font across the whole UI for a terminal feel.
+    type: class-toggle
+    default: false
+  -
+    id: cc-heading-prompt
+    title: ✳ glyph before H1
+    description: Prefix top-level headings with the accent prompt glyph.
+    type: class-toggle
+    default: false
+*/
+
+/* --------------------------------------------------------------------------
+   Shared knobs
+   -------------------------------------------------------------------------- */
+.theme-dark,
+.theme-light {
+  --cc-bg-depth: 24.5%;
+  --cc-radius: 9px;
+
+  --radius-s: calc(var(--cc-radius) - 3px);
+  --radius-m: var(--cc-radius);
+  --radius-l: calc(var(--cc-radius) + 3px);
+
+  --caret-color: var(--cc-coral);
+}
+
+/* --------------------------------------------------------------------------
+   DARK — base = Claude Code look (applies when no/other look class present)
+   -------------------------------------------------------------------------- */
+.theme-dark {
+  --cc-accent: #d97757;            /* Anthropic coral */
+  --accent-h: 15; --accent-s: 63%; --accent-l: 60%;
+
+  /* Derived accent siblings — recompute automatically when --cc-accent changes */
+  --cc-coral:        var(--cc-accent);
+  --cc-coral-hover:  oklch(from var(--cc-accent) calc(l + 0.05) c h);
+  --cc-coral-soft:   oklch(from var(--cc-accent) l 0.07 h / 0.16);
+
+  /* Warm neutral ramp (hue ~70°) */
+  --background-primary:        oklch(var(--cc-bg-depth) 0.006 70);
+  --background-primary-alt:    oklch(calc(var(--cc-bg-depth) + 2.5%) 0.006 70);
+  --background-secondary:      oklch(calc(var(--cc-bg-depth) - 3.5%) 0.006 65);
+  --background-secondary-alt:  oklch(calc(var(--cc-bg-depth) - 5.5%) 0.006 65);
+
+  --background-modifier-border:        oklch(0.33 0.006 70);
+  --background-modifier-border-hover:  oklch(0.40 0.006 70);
+  --background-modifier-border-focus:  var(--cc-coral);
+  --background-modifier-hover:         oklch(1 0 0 / 0.045);
+  --background-modifier-active-hover:  var(--cc-coral-soft);
+  --background-modifier-form-field:    oklch(calc(var(--cc-bg-depth) - 6%) 0.006 65);
+
+  --text-normal:       oklch(0.905 0.008 80);
+  --text-muted:        oklch(0.705 0.008 78);
+  --text-faint:        oklch(0.525 0.008 76);
+  --text-on-accent:    oklch(0.20 0.01 70);
+  --text-accent:       var(--cc-coral);
+  --text-accent-hover: var(--cc-coral-hover);
+  --text-selection:    var(--cc-coral-soft);
+
+  --interactive-normal:        oklch(calc(var(--cc-bg-depth) + 4%) 0.006 70);
+  --interactive-hover:         oklch(calc(var(--cc-bg-depth) + 7%) 0.006 70);
+  --interactive-accent:        var(--cc-coral);
+  --interactive-accent-hover:  var(--cc-coral-hover);
+
+  --titlebar-background:         oklch(calc(var(--cc-bg-depth) - 5.5%) 0.006 65);
+  --titlebar-background-focused: oklch(calc(var(--cc-bg-depth) - 3.5%) 0.006 65);
+  --titlebar-text-color:         var(--text-muted);
+  --tab-background-active:       var(--background-primary);
+
+  /* Heading ladder — each level its own hue, readable on dark */
+  --h1-color: oklch(0.80 0.125 35);   /* coral-red */
+  --h2-color: oklch(0.82 0.105 70);   /* amber    */
+  --h3-color: oklch(0.83 0.100 130);  /* green    */
+  --h4-color: oklch(0.82 0.085 200);  /* teal     */
+  --h5-color: oklch(0.80 0.090 255);  /* blue     */
+  --h6-color: oklch(0.78 0.095 310);  /* violet   */
+  --inline-title-color: oklch(0.95 0.008 80);
+
+  --code-background: oklch(calc(var(--cc-bg-depth) - 6%) 0.006 65);
+  --code-normal:     oklch(0.86 0.01 80);
+  --code-comment:    var(--text-faint);
+  --code-string:     oklch(0.80 0.07 95);
+  --code-keyword:    var(--cc-coral);
+  --code-function:   oklch(0.80 0.06 60);
+  --code-property:   oklch(0.82 0.04 230);
+  --code-value:      oklch(0.80 0.07 95);
+
+  --blockquote-border-color: var(--background-modifier-border-hover);
+  --hr-color:                var(--background-modifier-border);
+  --checkbox-color:          var(--cc-coral);
+  --checkbox-color-hover:    var(--cc-coral-hover);
+  --list-marker-color:       var(--text-faint);
+  --tag-background:          var(--cc-coral-soft);
+  --tag-color:               var(--cc-coral);
+
+  --scrollbar-thumb-bg:        oklch(1 0 0 / 0.08);
+  --scrollbar-active-thumb-bg: oklch(1 0 0 / 0.16);
+  --scrollbar-bg:              transparent;
+}
+
+/* --------------------------------------------------------------------------
+   DARK — OpenAI Codex override (cool neutral black + teal-green)
+   Only the differences from the Claude base. Accent-derived tokens repaint
+   themselves because they reference --cc-accent.
+   -------------------------------------------------------------------------- */
+.cc-look-codex.theme-dark {
+  --cc-accent: #1ba884;            /* OpenAI teal-green */
+  --accent-h: 165; --accent-s: 64%; --accent-l: 45%;
+
+  /* Cool, near-neutral ramp (hue ~255°, lower chroma) */
+  --background-primary:        oklch(var(--cc-bg-depth) 0.004 255);
+  --background-primary-alt:    oklch(calc(var(--cc-bg-depth) + 2.5%) 0.004 255);
+  --background-secondary:      oklch(calc(var(--cc-bg-depth) - 3.5%) 0.004 255);
+  --background-secondary-alt:  oklch(calc(var(--cc-bg-depth) - 5.5%) 0.004 255);
+
+  --background-modifier-border:        oklch(0.33 0.004 255);
+  --background-modifier-border-hover:  oklch(0.40 0.004 255);
+  --background-modifier-form-field:    oklch(calc(var(--cc-bg-depth) - 6%) 0.004 255);
+
+  --text-normal:    oklch(0.920 0.004 250);
+  --text-muted:     oklch(0.710 0.005 250);
+  --text-faint:     oklch(0.530 0.005 250);
+  --text-on-accent: oklch(0.18 0.02 255);
+
+  --titlebar-background:         oklch(calc(var(--cc-bg-depth) - 5.5%) 0.004 255);
+  --titlebar-background-focused: oklch(calc(var(--cc-bg-depth) - 3.5%) 0.004 255);
+
+  --inline-title-color: oklch(0.96 0.004 250);
+
+  --code-background: oklch(calc(var(--cc-bg-depth) - 6%) 0.004 255);
+  --code-normal:     oklch(0.86 0.006 250);
+  --code-string:     oklch(0.80 0.10 168);   /* greenish strings */
+  --code-function:   oklch(0.82 0.05 230);
+  --code-property:   oklch(0.82 0.05 200);
+}
+
+/* --------------------------------------------------------------------------
+   LIGHT — base = Claude Code (paper); Codex override below
+   -------------------------------------------------------------------------- */
+.theme-light {
+  --cc-accent: #c5613f;
+  --accent-h: 15; --accent-s: 58%; --accent-l: 50%;
+
+  --cc-coral:       var(--cc-accent);
+  --cc-coral-hover: oklch(from var(--cc-accent) calc(l - 0.05) c h);
+  --cc-coral-soft:  oklch(from var(--cc-accent) 0.55 0.08 h / 0.14);
+
+  --background-primary:        oklch(0.985 0.004 85);
+  --background-primary-alt:    oklch(0.965 0.005 85);
+  --background-secondary:      oklch(0.955 0.006 85);
+  --background-secondary-alt:  oklch(0.93 0.006 85);
+
+  --background-modifier-border:       oklch(0.90 0.006 85);
+  --background-modifier-border-hover: oklch(0.84 0.006 85);
+  --background-modifier-hover:        oklch(0 0 0 / 0.04);
+  --background-modifier-form-field:   oklch(1 0 0);
+
+  --text-normal: oklch(0.30 0.012 70);
+  --text-muted:  oklch(0.50 0.010 72);
+  --text-faint:  oklch(0.66 0.008 74);
+  --text-on-accent: oklch(0.99 0 0);
+  --text-accent: var(--cc-coral);
+
+  --interactive-accent:       var(--cc-coral);
+  --interactive-accent-hover: var(--cc-coral-hover);
+
+  /* Heading ladder — darker for contrast on paper */
+  --h1-color: oklch(0.52 0.16 35);
+  --h2-color: oklch(0.55 0.13 70);
+  --h3-color: oklch(0.50 0.12 140);
+  --h4-color: oklch(0.52 0.10 210);
+  --h5-color: oklch(0.50 0.12 260);
+  --h6-color: oklch(0.50 0.13 315);
+  --checkbox-color: var(--cc-coral);
+  --tag-background: var(--cc-coral-soft);
+  --tag-color:      var(--cc-coral);
+}
+
+.cc-look-codex.theme-light {
+  --cc-accent: #0f9f7a;
+  --accent-h: 165; --accent-s: 62%; --accent-l: 38%;
+
+  --background-primary:       oklch(0.985 0.003 250);
+  --background-primary-alt:   oklch(0.965 0.004 250);
+  --background-secondary:     oklch(0.955 0.005 250);
+  --background-secondary-alt: oklch(0.93 0.005 250);
+
+  --background-modifier-border:       oklch(0.90 0.005 250);
+  --background-modifier-border-hover: oklch(0.84 0.005 250);
+
+  --text-normal: oklch(0.28 0.008 250);
+  --text-muted:  oklch(0.49 0.007 250);
+  --text-faint:  oklch(0.66 0.006 250);
+}
+
+/* --------------------------------------------------------------------------
+   Typography
+   -------------------------------------------------------------------------- */
+body {
+  --font-text-theme:      "Inter", ui-sans-serif, -apple-system, "Segoe UI", system-ui, sans-serif;
+  --font-interface-theme: "Inter", ui-sans-serif, -apple-system, "Segoe UI", system-ui, sans-serif;
+  --font-monospace-theme: ui-monospace, "SF Mono", "JetBrains Mono", "Cascadia Code", Consolas, monospace;
+
+  --cc-font-size: 16px;
+  --font-text-size: var(--cc-font-size);
+  --line-height-normal: 1.6;
+
+  --h1-weight: 620;
+  --h2-weight: 600;
+  --h3-weight: 600;
+  --bold-weight: 640;
+}
+
+.markdown-preview-sizer,
+.markdown-source-view.mod-cm6 .cm-sizer { max-width: 72ch; }
+
+body.cc-mono-ui {
+  --font-text-theme: var(--font-monospace-theme);
+  --font-interface-theme: var(--font-monospace-theme);
+}
+
+/* --------------------------------------------------------------------------
+   App chrome — shared, driven entirely by the tokens above
+   -------------------------------------------------------------------------- */
+.workspace-ribbon.side-dock-ribbon { background: var(--background-secondary-alt); border: none; }
+.workspace-ribbon.side-dock-ribbon::before { display: none; }
+.side-dock-ribbon-action { color: var(--text-faint); border-radius: var(--radius-s); }
+.side-dock-ribbon-action:hover { color: var(--cc-coral); background: var(--background-modifier-hover); }
+
+.workspace-split.mod-left-split,
+.workspace-split.mod-right-split { background: var(--background-secondary); }
+.workspace-split.mod-left-split .workspace-tabs { background: var(--background-secondary); }
+
+.workspace-tab-header { border-radius: var(--radius-s); color: var(--text-faint); }
+.workspace-tab-header.is-active { color: var(--text-normal); }
+.workspace-tab-header.is-active .workspace-tab-header-inner {
+  background: var(--background-modifier-hover);
+  border-radius: var(--radius-s);
+}
+.workspace-tab-header-container { border-bottom: 1px solid var(--background-modifier-border); }
+
+/* ── File explorer reskinned like the Claude Code "Recents" sidebar ────── */
+body { --nav-indentation-guide-color: transparent; }
+
+.workspace-leaf-content[data-type="file-explorer"] .nav-files-container { padding: 2px 4px 8px; }
+
+/* rows: airy, rounded, quiet */
+.nav-file-title,
+.nav-folder-title {
+  border-radius: var(--radius-s);
+  margin: 1px 4px;
+  padding: 5px 9px;
+  color: var(--text-muted);
+  font-size: 0.86em;
+  line-height: 1.35;
+}
+.tree-item-self:hover {
+  background: color-mix(in oklab, var(--text-normal) 5%, transparent);
+  color: var(--text-normal);
+}
+
+/* leading status dot before each file (hollow), like Claude's recents */
+.nav-file-title-content::before {
+  content: "";
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  margin-right: 9px;
+  border-radius: 50%;
+  border: 1.5px solid var(--text-faint);
+  vertical-align: middle;
+  transition: background-color 140ms ease, border-color 140ms ease;
+}
+.nav-file-title:hover .nav-file-title-content::before { border-color: var(--text-muted); }
+
+/* active file: neutral rounded fill + filled accent dot + brighter text */
+.nav-file-title.is-active,
+.nav-file-title.has-focus {
+  background: color-mix(in oklab, var(--text-normal) 9%, transparent);
+  color: var(--text-normal);
+  font-weight: 560;
+}
+.nav-file-title.is-active .nav-file-title-content::before,
+.nav-file-title.has-focus .nav-file-title-content::before {
+  background: var(--cc-coral);
+  border-color: var(--cc-coral);
+}
+
+/* folders: quiet section-header feel */
+.nav-folder-title {
+  color: var(--text-normal);
+  font-weight: 580;
+}
+.nav-folder-title .nav-folder-collapse-indicator { color: var(--text-faint); }
+.nav-folder.mod-root > .nav-folder-title { display: none; }
+
+.inline-title { letter-spacing: -0.01em; }
+
+/* Bold & italic carry the accent color */
+body { --bold-color: var(--cc-coral); --italic-color: var(--cc-coral); }
+.markdown-rendered strong,
+.markdown-rendered b,
+.markdown-preview-view strong,
+.cm-s-obsidian .cm-strong { color: var(--cc-coral); }
+.markdown-rendered em,
+.markdown-rendered i,
+.markdown-preview-view em,
+.cm-s-obsidian .cm-em { color: var(--cc-coral); }
+
+/* Color-coded heading ladder in both reading view and Live Preview */
+.markdown-rendered h1, .cm-s-obsidian .HyperMD-header-1, .cm-s-obsidian .cm-header-1 { color: var(--h1-color); }
+.markdown-rendered h2, .cm-s-obsidian .HyperMD-header-2, .cm-s-obsidian .cm-header-2 { color: var(--h2-color); }
+.markdown-rendered h3, .cm-s-obsidian .HyperMD-header-3, .cm-s-obsidian .cm-header-3 { color: var(--h3-color); }
+.markdown-rendered h4, .cm-s-obsidian .HyperMD-header-4, .cm-s-obsidian .cm-header-4 { color: var(--h4-color); }
+.markdown-rendered h5, .cm-s-obsidian .HyperMD-header-5, .cm-s-obsidian .cm-header-5 { color: var(--h5-color); }
+.markdown-rendered h6, .cm-s-obsidian .HyperMD-header-6, .cm-s-obsidian .cm-header-6 { color: var(--h6-color); }
+
+.cc-heading-prompt .markdown-rendered h1::before,
+.cc-heading-prompt .HyperMD-header-1::before {
+  content: "✳  ";
+  color: var(--cc-coral);
+  font-weight: 600;
+}
+
+.markdown-rendered code,
+:not(pre) > code {
+  background: var(--code-background);
+  border: 1px solid var(--background-modifier-border);
+  border-radius: var(--radius-s);
+  padding: 0.08em 0.4em;
+  font-size: 0.88em;
+}
+.markdown-rendered pre {
+  background: var(--code-background);
+  border: 1px solid var(--background-modifier-border);
+  border-radius: var(--radius-m);
+}
+
+.cm-s-obsidian .cm-link,
+.cm-s-obsidian .cm-url,
+.markdown-rendered a { color: var(--cc-coral); text-decoration: none; }
+.markdown-rendered a:hover { text-decoration: underline; text-underline-offset: 3px; }
+
+.markdown-rendered a.tag,
+.cm-s-obsidian .cm-hashtag {
+  background: var(--tag-background);
+  color: var(--tag-color);
+  border: none;
+  border-radius: 999px;
+  padding: 0.05em 0.55em;
+  font-size: 0.82em;
+  font-weight: 540;
+}
+
+.markdown-rendered blockquote {
+  border-left: 2px solid var(--background-modifier-border-hover);
+  color: var(--text-muted);
+  font-style: normal;
+}
+
+button.mod-cta, .mod-cta {
+  background: var(--cc-coral);
+  color: var(--text-on-accent);
+  font-weight: 600;
+  border-radius: var(--radius-s);
+}
+button.mod-cta:hover, .mod-cta:hover { background: var(--cc-coral-hover); }
+button:not(.mod-cta), .clickable-icon { border-radius: var(--radius-s); }
+
+.prompt {
+  background: var(--background-secondary);
+  border: 1px solid var(--background-modifier-border);
+  border-radius: var(--radius-l);
+}
+.prompt-input { background: transparent; }
+.suggestion-item.is-selected { background: var(--cc-coral-soft); border-radius: var(--radius-s); }
+.search-input-container input { border-radius: var(--radius-s); }
+
+.status-bar {
+  background: var(--background-secondary-alt);
+  border-top: 1px solid var(--background-modifier-border);
+  color: var(--text-faint);
+}
+.titlebar { border-bottom: 1px solid var(--background-modifier-border); }
+
+input[type="checkbox"]:checked { background-color: var(--cc-coral); border-color: var(--cc-coral); }
+
+.markdown-rendered th { color: var(--text-muted); font-weight: 600; }
+.markdown-rendered table { border-radius: var(--radius-s); overflow: hidden; }
+
+::-webkit-scrollbar { width: 11px; height: 11px; }
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb-bg);
+  border: 3px solid transparent;
+  background-clip: padding-box;
+  border-radius: 999px;
+}
+::-webkit-scrollbar-thumb:hover { background: var(--scrollbar-active-thumb-bg); background-clip: padding-box; }
+
+::selection { background: var(--cc-coral-soft); }
+
+/* Plugins in Settings shown as cards */
+.installed-plugins-container .setting-item,
+.community-modal-search-results .community-item {
+  border: 1px solid var(--background-modifier-border);
+  border-radius: var(--radius-m);
+  margin-bottom: 8px;
+  padding: 13px 15px;
+  background: var(--background-primary-alt);
+  transition: border-color 140ms ease, background-color 140ms ease;
+}
+.installed-plugins-container .setting-item:hover,
+.community-modal-search-results .community-item:hover {
+  border-color: var(--background-modifier-border-hover);
+  background: var(--background-secondary);
+}
+.installed-plugins-container .setting-item-name { font-weight: 600; }
+
+.tree-item-self, .workspace-tab-header, .side-dock-ribbon-action, button, .clickable-icon {
+  transition: background-color 160ms cubic-bezier(0.22, 1, 0.36, 1),
+              color 160ms cubic-bezier(0.22, 1, 0.36, 1);
+}

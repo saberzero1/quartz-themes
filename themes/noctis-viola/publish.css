@@ -2544,6 +2544,7 @@ body.theme-dark {
   --interactive-before: var(--noctis-fg-muted) !important;
   --interactive-success: var(--noctis-green) !important;
   --blockquote-border: #8767a8 !important;
+  --table-header-border: var(--noctis-border) !important;
   --noctis-accent: #bf8ef1 !important;
   --noctis-accent-hover: #996bc7 !important;
   --noctis-bg: #30243d !important;
@@ -2579,7 +2580,6 @@ body.theme-dark {
   --noctis-warning: #e69533 !important;
   --noctis-yellow: #e4b781 !important;
   --noctis-yellow-bright: #e69533 !important;
-  --table-header-border: var(--noctis-border) !important;
   --noctis-activity-foreground: #8767a8 !important;
   --noctis-activity-inactive: #8767a877 !important;
   --noctis-button-bg: #007f99 !important;

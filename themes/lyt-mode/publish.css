@@ -1085,15 +1085,15 @@ body.theme-dark {
   --opacity-translucency: 0.75 !important;
   --table-header-background-hover: var(--color-gray-100) !important;
   --vault-name-color: var(--text-normal) !important;
+  --bold-color: var(--color-yellowish-355) !important;
+  --italic-color: var(--color-purple-577) !important;
   --font-sans:
     "DM Sans", "Inter", -apple-system BlinkMacSystemFont, "Segoe UI", "Ubuntu",
     Helvetica, Arial, sans-serif !important;
-  --bold-color: var(--color-yellowish-355) !important;
-  --italic-color: var(--color-purple-577) !important;
   --indentation-guide: var(--border-900) !important;
   --indentation-guide-active: var(--border-300) !important;
-  --color-highlight-text: var(--color-cyan-530) !important;
   --embed-border-left: 2px solid var(--color-orange-500) !important;
+  --color-highlight-text: var(--color-cyan-530) !important;
   --embed-border-right: none !important;
   --vault-name-font-size: var(--font-ui-small) !important;
   --vault-name-font-weight: var(--font-medium) !important;
@@ -1101,6 +1101,7 @@ body.theme-dark {
   --strikethrough-color: var(--color-gray-60) !important;
   --color-white: hsl(220, 23%, 95%) !important;
   --font-mono: "DM Mono", "Fira Code", Courier, monospace !important;
+  --callout-title-background: transparent;
   --comment-color: var(--color-gray-15) !important;
   --titlebar-text-color-highlighted: var(--text-accent-hover) !important;
   --color-black: hsl(230, 9%, 13%) !important;
@@ -1310,7 +1311,6 @@ body.theme-dark {
   --border-300: rgba(255, 255, 255, 0.25) !important;
   --border-500: rgba(100, 100, 100, 0.25) !important;
   --border-700: rgba(0, 0, 0, 0.15) !important;
-  --callout-title-background: transparent;
   --color-cyan-540: hsl(194, 69%, 54%) !important;
   --color-cyan-555: hsl(175, 85%, 75%) !important;
   --color-cyan-577: hsl(13, 52%, 80%) !important;

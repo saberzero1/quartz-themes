@@ -1664,8 +1664,12 @@ select:focus,
    MARKDOWN HEADERS - GitHub-style with underlines
    ───────────────────────────────────────────────────────────────────────── */
 
-h1,
-.cm-header-1 {
+/* h1/h2 border-bottom & padding-bottom intentionally NOT applied to
+   .cm-header-1/.cm-header-2 (the inline heading-token span inside a CM6
+   .cm-line): the containing .cm-line.HyperMD-header-1/2 rule below already
+   draws that border for edit mode. Applying it to both produced a visible
+   double underline. */
+h1 {
     display: block;
     padding-bottom: .3em;
     border-bottom: 1px solid var(--color-base-50);
@@ -1673,8 +1677,7 @@ h1,
     margin-bottom: 16px;
 }
 
-h2,
-.cm-header-2 {
+h2 {
     display: block;
     padding-bottom: .3em;
     border-bottom: 1px solid var(--color-base-50);
@@ -1714,16 +1717,12 @@ h6,
     margin-bottom: 16px;
 }
 
-/* Match GitHub spacing for editing mode */
-.markdown-source-view.mod-cm6 .cm-line.HyperMD-header-1,
-.markdown-source-view.mod-cm6 .cm-line.HyperMD-header-2,
-.markdown-source-view.mod-cm6 .cm-line.HyperMD-header-3,
-.markdown-source-view.mod-cm6 .cm-line.HyperMD-header-4,
-.markdown-source-view.mod-cm6 .cm-line.HyperMD-header-5,
-.markdown-source-view.mod-cm6 .cm-line.HyperMD-header-6 {
-    margin-top: 16px !important;
-    margin-bottom: 12px !important;
-}
+/* Match GitHub spacing for editing mode.
+   margin-top/bottom removed here: forcing margins on .cm-line via !important
+   changes the element's rendered box height/position independently of what
+   CodeMirror 6 has cached for line layout, which desyncs its coordinate-to-
+   position mapping and breaks click/arrow-key cursor placement on lines
+   below a heading (see #10). */
 
 /* Full-width borders for H1/H2 in editing mode */
 .markdown-source-view.mod-cm6 .cm-line.HyperMD-header-1,

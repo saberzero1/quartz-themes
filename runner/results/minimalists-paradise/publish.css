@@ -474,11 +474,11 @@ body.theme-light {
   --accent-h: 258 !important;
   --accent-l: 66% !important;
   --accent-s: 88% !important;
-  --anim-duration-fast: calc(150ms / var(--anim-speed)) !important;
-  --anim-duration-moderate: calc(300ms / var(--anim-speed)) !important;
+  --anim-duration-fast: calc(150ms/var(--anim-speed)) !important;
+  --anim-duration-moderate: calc(300ms/var(--anim-speed)) !important;
   --anim-duration-none: 0 !important;
-  --anim-duration-slow: calc(600ms / var(--anim-speed)) !important;
-  --anim-duration-superfast: calc(75ms / var(--anim-speed)) !important;
+  --anim-duration-slow: calc(600ms/var(--anim-speed)) !important;
+  --anim-duration-superfast: calc(75ms/var(--anim-speed)) !important;
   --anim-motion-delay: cubic-bezier(0.65, 0.05, 0.36, 1) !important;
   --anim-motion-jumpy: cubic-bezier(0.68, -0.55, 0.27, 1.55) !important;
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;
@@ -660,7 +660,7 @@ body.theme-light {
   --checkbox-size: var(--font-text-size) !important;
   --checklist-done-color: var(--text-muted) !important;
   --checklist-done-decoration: line-through !important;
-  --clickable-icon-radius: calc(var(--default-radius) / 2) !important;
+  --clickable-icon-radius: calc(var(--default-radius)/2) !important;
   --code-background: var(--background-default) !important;
   --code-border-color: var(--background-modifier-border) !important;
   --code-border-width: 0px !important;
@@ -1338,7 +1338,7 @@ body.theme-light {
   --tab-max-width: 320px !important;
   --tab-outline-color: var(--divider-color) !important;
   --tab-outline-width: 1px !important;
-  --tab-radius: calc(var(--default-radius) / 2.5) !important;
+  --tab-radius: calc(var(--default-radius)/2.5) !important;
   --tab-radius-active: 6px 6px 0 0 !important;
   --tab-stacked-font-size: var(--font-ui-small) !important;
   --tab-stacked-font-weight: 400 !important;
@@ -1535,7 +1535,7 @@ body.theme-light {
     rgba(14, 30, 37, 0.32) 0px 2px 10px 0px !important;
   --cards-gap: 16px !important;
   --citation-bg: var(--color-accent) !important;
-  --citation-radius: calc(var(--default-radius) / 2) !important;
+  --citation-radius: calc(var(--default-radius)/2) !important;
   --color-panel: #a5aab6 !important;
   --default-radius: 16px !important;
   --external-link-text-shadow: 1px 1px 2px var(--color-accent) !important;
@@ -1633,11 +1633,11 @@ body.theme-dark {
   --accent-h: 258 !important;
   --accent-l: 66% !important;
   --accent-s: 88% !important;
-  --anim-duration-fast: calc(150ms / var(--anim-speed)) !important;
-  --anim-duration-moderate: calc(300ms / var(--anim-speed)) !important;
+  --anim-duration-fast: calc(150ms/var(--anim-speed)) !important;
+  --anim-duration-moderate: calc(300ms/var(--anim-speed)) !important;
   --anim-duration-none: 0 !important;
-  --anim-duration-slow: calc(600ms / var(--anim-speed)) !important;
-  --anim-duration-superfast: calc(75ms / var(--anim-speed)) !important;
+  --anim-duration-slow: calc(600ms/var(--anim-speed)) !important;
+  --anim-duration-superfast: calc(75ms/var(--anim-speed)) !important;
   --anim-motion-delay: cubic-bezier(0.65, 0.05, 0.36, 1) !important;
   --anim-motion-jumpy: cubic-bezier(0.68, -0.55, 0.27, 1.55) !important;
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;
@@ -1819,7 +1819,7 @@ body.theme-dark {
   --checkbox-size: var(--font-text-size) !important;
   --checklist-done-color: var(--text-muted) !important;
   --checklist-done-decoration: line-through !important;
-  --clickable-icon-radius: calc(var(--default-radius) / 2) !important;
+  --clickable-icon-radius: calc(var(--default-radius)/2) !important;
   --code-background: var(--background-default) !important;
   --code-border-color: var(--background-modifier-border) !important;
   --code-border-width: 0px !important;
@@ -2491,7 +2491,7 @@ body.theme-dark {
   --tab-max-width: 320px !important;
   --tab-outline-color: var(--divider-color) !important;
   --tab-outline-width: 1px !important;
-  --tab-radius: calc(var(--default-radius) / 2.5) !important;
+  --tab-radius: calc(var(--default-radius)/2.5) !important;
   --tab-radius-active: 6px 6px 0 0 !important;
   --tab-stacked-font-size: var(--font-ui-small) !important;
   --tab-stacked-font-weight: 400 !important;
@@ -2682,7 +2682,7 @@ body.theme-dark {
   --card-shadow: 0 3px 8px rgba(97, 97, 97, 0.15) !important;
   --cards-gap: 16px !important;
   --citation-bg: var(--color-accent) !important;
-  --citation-radius: calc(var(--default-radius) / 2) !important;
+  --citation-radius: calc(var(--default-radius)/2) !important;
   --color-panel: #0c0c0c !important;
   --custom-color-accent-dark: #68686e !important;
   --default-radius: 16px !important;

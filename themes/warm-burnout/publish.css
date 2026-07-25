@@ -1558,10 +1558,10 @@ body.theme-light {
   --table-row-even-background: var(--color-base-05) !important;
   --table-row-odd-background: var(--color-base-00) !important;
   --bold-color: var(--wb-fg) !important;
-  --italic-color: var(--color-base-70) !important;
   --embed-background: var(--color-base-05) !important;
-  --tooltip-bg: var(--color-base-10) !important;
   --embed-font-style: normal !important;
+  --italic-color: var(--color-base-70) !important;
+  --tooltip-bg: var(--color-base-10) !important;
   --cursor-color: var(--wb-cursor) !important;
   --tab-stacked-header-height: 36px !important;
   --wb-accent: #b8522e !important;
@@ -2627,10 +2627,10 @@ body.theme-dark {
   --table-row-even-background: var(--color-base-05) !important;
   --table-row-odd-background: var(--color-base-00) !important;
   --bold-color: var(--wb-fg) !important;
-  --italic-color: var(--color-base-70) !important;
   --embed-background: var(--color-base-05) !important;
-  --tooltip-bg: var(--color-base-10) !important;
   --embed-font-style: normal !important;
+  --italic-color: var(--color-base-70) !important;
+  --tooltip-bg: var(--color-base-10) !important;
   --cursor-color: var(--wb-cursor) !important;
   --tab-stacked-header-height: 36px !important;
   --wb-accent: #b8522e !important;

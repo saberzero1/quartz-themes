@@ -1450,16 +1450,17 @@ body.theme-light {
     0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065),
     var(--shadow-edges) !important;
   --inline-title-color: #009fdb !important;
+  --embed-background: #ffffff !important;
   --background-modifier-success-hover: #00a2e7 !important;
   --blockquote-border: #0070a1 !important;
   --syntax-comment: #6f7a82 !important;
   --syntax-constant: #b51224 !important;
   --syntax-keyword: #005f86 !important;
   --syntax-string: #868e00 !important;
-  --embed-background: #ffffff !important;
   --modal-border: #cdd7df !important;
   --prompt-border: #cdd7df !important;
   --background-primary-rgb: 247, 249, 251 !important;
+  --ribbon-background-hover: #edf2f6 !important;
   --sidebar-background: #ffffff !important;
   --background-secondary-rgb: 224, 232, 240 !important;
   --text-heading: #0b1a24 !important;
@@ -1475,7 +1476,6 @@ body.theme-light {
   --outline-item-color-active: #10212d !important;
   --pane-border-color: #cdd7df !important;
   --pane-border-width: 1px !important;
-  --ribbon-background-hover: #edf2f6 !important;
   --syntax-diff-changed: #a18a1a !important;
   --syntax-function: #006ea6 !important;
   --syntax-invalid: #c11124 !important;
@@ -2571,16 +2571,17 @@ body.theme-dark {
   --zoom-factor: 1 !important;
   --background-modifier-form-field-highlighted: #2c2c2c !important;
   --inline-title-color: #40aedd !important;
+  --embed-background: inherit !important;
   --background-modifier-success-hover: #47b8e6 !important;
   --blockquote-border: #0090cc !important;
   --syntax-comment: #888888 !important;
   --syntax-constant: #64c8f2 !important;
   --syntax-keyword: #cccccc !important;
   --syntax-string: #cbd200 !important;
-  --embed-background: inherit !important;
   --modal-border: #2e2e2e !important;
   --prompt-border: #2e2e2e !important;
   --background-primary-rgb: 34, 34, 34 !important;
+  --ribbon-background-hover: #1f1f1f !important;
   --sidebar-background: #151b1f !important;
   --background-secondary-rgb: 28, 28, 28 !important;
   --text-heading: #e4e4e4 !important;
@@ -2596,7 +2597,6 @@ body.theme-dark {
   --outline-item-color-active: #c6c6c6 !important;
   --pane-border-color: #2e2e2e !important;
   --pane-border-width: 1px !important;
-  --ribbon-background-hover: #1f1f1f !important;
   --syntax-diff-changed: #98e80f !important;
   --syntax-function: #6ed5ff !important;
   --syntax-invalid: #be0d22 !important;

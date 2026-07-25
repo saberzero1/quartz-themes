@@ -1669,13 +1669,15 @@ body.theme-light {
   --inline-title-color: var(--h1-color) !important;
   --text-error-hover: var(--red) !important;
   --table-header-background-hover: rgba(var(--bg_dark_x), 0.8) !important;
+  --bold-color: var(--cyan) !important;
+  --italic-color: var(--blue) !important;
   --accent-color: hsl(
     var(--accent-h),
     var(--accent-s),
     var(--accent-l)
   ) !important;
-  --bold-color: var(--cyan) !important;
-  --italic-color: var(--blue) !important;
+  --shadow-m:
+    0 3px 6px rgba(0, 0, 0, 0.15), 0 2px 4px rgba(0, 0, 0, 0.12) !important;
   --interactive-success: var(--green) !important;
   --green: rgb(var(--green_x)) !important;
   --green_x: 20, 140, 80 !important;
@@ -1687,6 +1689,7 @@ body.theme-light {
   --red_x: 200, 50, 70 !important;
   --yellow: rgb(var(--yellow_x)) !important;
   --yellow_x: 180, 120, 0 !important;
+  --nav-file-tag: rgba(var(--yellow_x), 0.9) !important;
   --text-muted-rgb: var(--fg_dark_x) !important;
   --blue: rgb(var(--blue_x)) !important;
   --pink: rgb(var(--pink_x)) !important;
@@ -1694,19 +1697,18 @@ body.theme-light {
   --cyan: rgb(var(--cyan_x)) !important;
   --blockquote-border: var(--teal) !important;
   --nav-item-weight-active: 600 !important;
-  --shadow-m:
-    0 3px 6px rgba(0, 0, 0, 0.15), 0 2px 4px rgba(0, 0, 0, 0.12) !important;
   --background-primary-rgb: var(--bg_x) !important;
-  --nav-file-tag: rgba(var(--yellow_x), 0.9) !important;
   --tab-background: rgba(240, 242, 246, 0.9) !important;
   --magenta: rgb(var(--magenta_x)) !important;
+  --bg: rgb(var(--bg_x)) !important;
   --teal: rgb(var(--teal_x)) !important;
   --fg: rgb(var(--fg_x)) !important;
   --background-secondary-rgb: var(--bg_dark_x) !important;
-  --bg: rgb(var(--bg_x)) !important;
   --purple-light: rgb(var(--purple-light_x)) !important;
   --tab-min-width: 40px !important;
   --border-radius: 8px !important;
+  --shadow-xl:
+    0 15px 25px rgba(0, 0, 0, 0.15), 0 5px 10px rgba(0, 0, 0, 0.05) !important;
   --bg_dark2: rgb(var(--bg_dark2_x)) !important;
   --bg_highlight: rgb(var(--bg_highlight_x)) !important;
   --bg_highlight_dark: rgb(var(--bg_highlight_dark_x)) !important;
@@ -1765,8 +1767,6 @@ body.theme-light {
   --motion-easing-standard: cubic-bezier(0.4, 0, 0.2, 1) !important;
   --pink_hsl: 320 65% 50% !important;
   --purple-light_x: 140, 100, 220 !important;
-  --shadow-xl:
-    0 15px 25px rgba(0, 0, 0, 0.15), 0 5px 10px rgba(0, 0, 0, 0.05) !important;
   --spoiler-background: rgba(var(--bg_dark_x), 0.5) !important;
   --spoiler-background-hover: rgba(var(--bg_dark_x), 0.7) !important;
   --spoiler-pattern:
@@ -2873,13 +2873,15 @@ body.theme-dark {
   --inline-title-color: var(--h1-color) !important;
   --text-error-hover: var(--red) !important;
   --table-header-background-hover: rgba(var(--bg_highlight_x), 0.7) !important;
+  --bold-color: var(--cyan) !important;
+  --italic-color: var(--blue) !important;
   --accent-color: hsl(
     var(--accent-h),
     var(--accent-s),
     var(--accent-l)
   ) !important;
-  --bold-color: var(--cyan) !important;
-  --italic-color: var(--blue) !important;
+  --shadow-m:
+    0 3px 6px rgba(0, 0, 0, 0.15), 0 2px 4px rgba(0, 0, 0, 0.12) !important;
   --interactive-success: var(--green) !important;
   --green: rgb(var(--green_x)) !important;
   --green_x: 158, 206, 106 !important;
@@ -2891,6 +2893,7 @@ body.theme-dark {
   --red_x: 255, 117, 127 !important;
   --yellow: rgb(var(--yellow_x)) !important;
   --yellow_x: 224, 175, 104 !important;
+  --nav-file-tag: rgba(var(--yellow_x), 0.9) !important;
   --text-muted-rgb: var(--fg_dark_x) !important;
   --blue: rgb(var(--blue_x)) !important;
   --pink: rgb(var(--pink_x)) !important;
@@ -2898,20 +2901,19 @@ body.theme-dark {
   --cyan: rgb(var(--cyan_x)) !important;
   --blockquote-border: var(--teal) !important;
   --nav-item-weight-active: 600 !important;
-  --shadow-m:
-    0 3px 6px rgba(0, 0, 0, 0.15), 0 2px 4px rgba(0, 0, 0, 0.12) !important;
   --background-primary-rgb: var(--bg_x) !important;
-  --nav-file-tag: rgba(var(--yellow_x), 0.9) !important;
   --bg-primary: #020202 !important;
   --tab-background: rgba(2, 2, 2, 0.9) !important;
   --magenta: rgb(var(--magenta_x)) !important;
+  --bg: rgb(var(--bg_x)) !important;
   --teal: rgb(var(--teal_x)) !important;
   --fg: rgb(var(--fg_x)) !important;
   --background-secondary-rgb: var(--bg_dark_x) !important;
-  --bg: rgb(var(--bg_x)) !important;
   --purple-light: rgb(var(--purple-light_x)) !important;
   --tab-min-width: 40px !important;
   --border-radius: 8px !important;
+  --shadow-xl:
+    0 15px 25px rgba(0, 0, 0, 0.15), 0 5px 10px rgba(0, 0, 0, 0.05) !important;
   --bg_dark2: rgb(var(--bg_dark2_x)) !important;
   --bg_highlight: rgb(var(--bg_highlight_x)) !important;
   --bg_highlight_dark: rgb(var(--bg_highlight_dark_x)) !important;
@@ -2977,8 +2979,6 @@ body.theme-dark {
   --purple-light_x: 210, 180, 255 !important;
   --red-dark: rgb(var(--red-dark_x)) !important;
   --red-dark_x: 155, 45, 45 !important;
-  --shadow-xl:
-    0 15px 25px rgba(0, 0, 0, 0.15), 0 5px 10px rgba(0, 0, 0, 0.05) !important;
   --spoiler-background: rgba(var(--bg_highlight_x), 0.3) !important;
   --spoiler-background-hover: rgba(var(--bg_highlight_x), 0.5) !important;
   --spoiler-pattern:

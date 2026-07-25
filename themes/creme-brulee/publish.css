@@ -1492,15 +1492,16 @@ body.theme-light {
   --shadow-xs:
     0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065),
     var(--shadow-edges) !important;
+  --bold-color: var(--color-orange) !important;
+  --inline-title-font: var(--h1-font) !important;
+  --italic-color: var(--color-cyan) !important;
   --h1-font: Merriweather, Lucida Bright, Georgia, serif !important;
   --h2-font: Merriweather, Lucida Bright, Georgia, serif !important;
   --h3-font: Merriweather, Lucida Bright, Georgia, serif !important;
-  --inline-title-font: var(--h1-font) !important;
-  --bold-color: var(--color-orange) !important;
-  --italic-color: var(--color-cyan) !important;
   --button-background: var(--color-creme-0) !important;
   --button-border: var(--background-modifier-border) !important;
   --bold-italic-color: var(--color-green) !important;
+  --callout-margin: 0 0 1em 0;
   --button-background-hover: var(--background-primary-alt) !important;
   --blockquote-padding: var(--blockquote-padding-top)
     var(--blockquote-padding-right) var(--blockquote-padding-bottom)
@@ -1512,7 +1513,6 @@ body.theme-light {
   --blockquote-padding-right: 8px !important;
   --blockquote-padding-top: 6px !important;
   --button-size: 0.8em !important;
-  --callout-margin: 0 0 1em 0;
   --callout-opacity: 0.01;
   --callout-title-opacity: 0.1;
   --color-creme-0: white !important;
@@ -2621,15 +2621,16 @@ body.theme-dark {
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13);'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
+  --bold-color: var(--color-orange) !important;
+  --inline-title-font: var(--h1-font) !important;
+  --italic-color: var(--color-cyan) !important;
   --h1-font: Merriweather, Lucida Bright, Georgia, serif !important;
   --h2-font: Merriweather, Lucida Bright, Georgia, serif !important;
   --h3-font: Merriweather, Lucida Bright, Georgia, serif !important;
-  --inline-title-font: var(--h1-font) !important;
-  --bold-color: var(--color-orange) !important;
-  --italic-color: var(--color-cyan) !important;
   --button-background: var(--color-creme-0) !important;
   --button-border: var(--background-modifier-border) !important;
   --bold-italic-color: var(--color-green) !important;
+  --callout-margin: 0 0 1em 0;
   --button-background-hover: var(--background-primary-alt) !important;
   --blockquote-padding: var(--blockquote-padding-top)
     var(--blockquote-padding-right) var(--blockquote-padding-bottom)
@@ -2641,7 +2642,6 @@ body.theme-dark {
   --blockquote-padding-right: 8px !important;
   --blockquote-padding-top: 6px !important;
   --button-size: 0.8em !important;
-  --callout-margin: 0 0 1em 0;
   --callout-opacity: 0.01;
   --callout-title-opacity: 0.1;
   --color-creme-0: hsl(30, 20%, 10%) !important;

@@ -1,6 +1,6 @@
 /*
  * Gruber Darker — Obsidian Theme
- * Version 2.0.1
+ * Version 2.1.1
  *
  * Ported from the Emacs gruber-darker-theme
  * Original Emacs theme: Copyright (C) 2009-2010, 2016 Jason R. Blevins
@@ -43,6 +43,12 @@ settings:
         type: heading
         level: 1
         collapsed: true
+    -
+        id: gd-oled-mode
+        title: "OLED Mode"
+        description: "Enables pure black background for OLED friendly view."
+        type: class-toggle
+        default: false
     -
         id: gd-fg
         title: "Foreground (fg)"
@@ -179,7 +185,7 @@ settings:
         title: "Editor"
         type: heading
         level: 1
-        collapsed: false
+        collapsed: true
     -
         id: gd-font-size
         title: "Base font size (px)"
@@ -231,6 +237,12 @@ settings:
     -
         id: gd-smooth-scroll
         title: "Smooth scrolling"
+        type: class-toggle
+        default: false
+    -
+        id: gd-zen-mode
+        title: "Zen Mode (Distraction-Free)"
+        description: "Hides sidebars, left ribbon, and status bar for a clean writing screen."
         type: class-toggle
         default: false
     -
@@ -390,7 +402,7 @@ settings:
         description: "Cursor appearance and Vim mode settings. Enable Obsidian's built-in Vim keybindings under Settings > Editor > Vim key bindings."
         type: heading
         level: 1
-        collapsed: false
+        collapsed: true
     -
         id: gd-cursor-color
         title: "Cursor color (normal editing)"
@@ -472,6 +484,7 @@ settings:
         type: class-toggle
         default: true
 
+
 */
 
 /* ============================================================
@@ -520,6 +533,15 @@ body {
 }
 
 /* ============================================================
+   OLED MODE
+   ============================================================ */
+body.gd-oled-mode {
+  --gd-bg: #000000;
+  --gd-bg-dark: #000000;
+  --gd-bg-light: #0d0d0d;
+}
+
+/* ============================================================
    CURSOR BLINK KEYFRAMES
    ============================================================
    NOTE: CodeMirror 6 (used by Obsidian) manages cursor blinking
@@ -561,7 +583,8 @@ body {
    We target .cm-cursorLayer (the container CM6 animates)
    AND .cm-cursor / .cm-cursor-primary (the individual elements).
    The !important on animation overrides CM6's inline styles.
-   ^ this is intentional for vim style cursors
+   ^ this is intentional for vim style cursors 
+   (optimally wouldn't use so many !important flags)
    ============================================================ */
 
 /* ── STATIC: kill ALL animation paths CM6 uses ─────────────── */
@@ -2079,4 +2102,14 @@ body:not(.gd-indent-guides) .cm-indent-guides {
 
 .theme-dark ::-webkit-scrollbar-corner {
   background: transparent;
+}
+
+/* ============================================================
+   ZEN MODE (DISTRACTION-FREE)
+   ============================================================ */
+.gd-zen-mode .workspace-split.mod-left-split,
+.gd-zen-mode .workspace-split.mod-right-split,
+.gd-zen-mode .workspace-ribbon.mod-left,
+.gd-zen-mode .status-bar {
+  display: none !important;
 }

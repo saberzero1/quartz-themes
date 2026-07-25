@@ -1479,8 +1479,8 @@ body.theme-light {
   --h6-color: inherit !important;
   --inline-title-color: var(--h1-color) !important;
   --vault-name-color: hsl(258 4% 10%) !important;
-  --hue: var(--accent-h, 278) !important;
   --embed-background: inherit !important;
+  --hue: var(--accent-h, 278) !important;
   --error-hue: 0 !important;
   --error-saturation: 84% !important;
   --interactive-normal-accent: hsl(258 4% 98%) !important;
@@ -3140,8 +3140,8 @@ body.theme-dark {
   --h6-color: inherit !important;
   --inline-title-color: var(--h1-color) !important;
   --vault-name-color: hsl(258 4% 90%) !important;
-  --hue: var(--accent-h, 278) !important;
   --embed-background: inherit !important;
+  --hue: var(--accent-h, 278) !important;
   --error-hue: 0 !important;
   --error-saturation: 84% !important;
   --interactive-normal-accent: hsl(258 4% 24%) !important;

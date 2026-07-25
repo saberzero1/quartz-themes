@@ -1,0 +1,1032 @@
+/* @settings
+name: Mia theme
+id: mia-theme
+settings:
+    -
+        id: mia-mono-links
+        title: Monochrome links
+        description: When disabled, external links use the accent color
+        type: class-toggle
+    -
+        id: mia-link-icon
+        title: External link icon
+        description: Icon shown after external links
+        type: class-select
+        allowEmpty: false
+        default: mia-icon-none
+        options:
+            -
+                label: No icon
+                value: mia-icon-none
+            -
+                label: External Link
+                value: mia-icon-extlink
+            -
+                label: Arrow Up Right
+                value: mia-icon-upright
+    -
+        id: blockquote-border-thickness
+        title: Blockquote border thickness
+        description: Thickness of left border for blockquotes (px)
+        type: variable-number-slider
+        default: 0
+        min: 0
+        max: 5
+        step: 0.5
+        format: px
+    -
+        id: checklist-done-decoration
+        title: Completed task decoration
+        description: "Completed task text is muted; also apply this decoration"
+        type: variable-select
+        default: none
+        options:
+            - none
+            - line-through
+    -
+        id: mia-table-header-background
+        title: Table header background
+        description: Table headers are shaded
+        default: true
+        type: class-toggle
+    -
+        id: mia-hang-headings
+        title: Hang heading characters in margin (source mode)
+        description: "Heading characters ### hang in the margin (requires 'Readable line length')"
+        type: class-toggle
+        default: true
+    -
+        id: mia-inline-h1
+        title: Show inline title with heading character (source mode)
+        description: "Prefix Inline title with # and hang in the margin (requires 'Readable line length')"
+        type: class-toggle
+        default: true
+    -
+        id: mia-image-muted
+        title: Opacity of images in dark mode
+        type: variable-number-slider
+        default: 0.85
+        min: 0.5
+        max: 1
+        step: 0.01
+    -
+        id: always-reader
+        title: Always use "reader" styling in reading view
+        description: Disable on indivudual classes by adding `no-reader` to cssclasses property
+        default: false
+        type: class-toggle
+    -
+        id: mia-line-width
+        title: Readable line width
+        description: "Settings → Editor → 'Readable line length' must also be enabled (px)"
+        type: variable-number-slider
+        default: 800
+        min: 500
+        max: 1000
+        step: 1
+        format: px
+*/
+
+/*** COLOURS ***/
+
+.theme-light {
+	--accent-h: 199;
+	--accent-s: 89%;
+	--accent-l: 38%;
+	--accent-color: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+	--accent-color-light: hsl(var(--accent-h), var(--accent-s), 65%);
+
+	--text-normal: #1a1a1a;
+	--text-muted: #808080;
+	--text-faint: #a8a8a8;
+
+	--background-primary: #f7f7f7;
+	--background-secondary: #f4f4f4;
+	--background-secondary-alt: #ffffff;
+	--code-background: #ededed;
+
+	--text-selection: #b6eefca6;
+	--caret-color: var(--accent-color);
+
+	--text-highlight-bg-rgb: 255, 208, 0;
+	--text-highlight-bg: #ffd00066;
+
+	--background-modifier-border: #d9d9d9;
+	--table-border-color: var(--text-faint);
+
+	--hr-color: oklch(0 0 0 / 25%);
+
+	--code-normal: var(--text-normal);
+	--code-comment: #808080;
+	--code-function: #947231;
+	--code-important: #f26669;
+	--code-keyword: #4d92ab;
+	--code-operator: var(--code-normal);
+	--code-property: #862753;
+	--code-punctuation: var(--code-normal);
+	--code-string: #526e2a;
+	--code-tag: var(--code-normal);
+	--code-value: #683a91;
+}
+
+.theme-dark {
+	--accent-h: 193;
+	--accent-s: 85%;
+	--accent-l: 45%;
+	--accent-color: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+	--accent-color-light: hsl(var(--accent-h), var(--accent-s), 70%);
+
+	--text-normal: #cccccc;
+	--text-muted: #909090;
+	--text-faint: #707070;
+
+	--background-primary: #1a1a1a;
+	--background-secondary: #262626;
+	--background-secondary-alt: #262626;
+	--code-background: #282828;
+
+	/* alternative */
+	--text-normal: #c0c0c0;
+	--background-primary: #171717;
+
+	--text-selection: #217591a6;
+	--text-highlight-bg: rgba(173, 131, 1, 0.65);
+	--caret-color: var(--accent-color-light);
+
+	--background-modifier-active-hover: #90909060;
+	--table-border-color: var(--text-faint);
+
+	--hr-color: oklch(1 0 0 / 20%);
+
+	--code-normal: var(--text-normal);
+	--code-comment: #808080;
+	--code-function: #d4a046;
+	--code-important: #f26669;
+	--code-keyword: #4d92ab;
+	--code-operator: var(--code-normal);
+	--code-property: #c76090;
+	--code-punctuation: var(--code-normal);
+	--code-string: #90ad65;
+	--code-tag: var(--code-normal);
+	--code-value: #a97dd1;
+}
+
+/*** STYLING ***/
+
+body {
+	--font-ui-small: 13px;
+	--font-ui-smaller: 12px;
+	--font-adaptive-smaller: 12px;
+
+	--tag-background: transparent;
+	--tag-background-hover: transparent;
+	--tag-size: 90%;
+	--tag-padding-x: 3px;
+	--tag-radius: 3px;
+	--tag-color: var(--text-muted);
+	--tag-color-hover: var(--tag-color);
+	--tag-decoration-hover: underline;
+
+	--checklist-done-decoration: none;
+	--checklist-done-color: var(--text-muted);
+
+	--search-result-background: var(--background-secondary);
+	--callout-title-weight: var(--font-weight);
+
+	--text-accent: var(--accent-color);
+
+	--blockquote-style: italic;
+	--blockquote-font-style: italic;
+	--blockquote-border-color: var(--text-faint);
+	--blockquote-border-thickness: 0px;
+
+	--list-marker-color: var(--text-normal);
+	--list-marker-color-hover: var(--text-normal);
+	--list-marker-color-collapsed: var(--text-muted);
+	--collapse-icon-color-collapsed: var(--text-faint);
+
+	.markdown-preview-view {
+		--list-marker-color: var(--text-normal);
+	}
+
+	--tab-text-color-focused-active: var(--text-normal);
+	--tab-text-color-focused: var(--text-muted);
+
+	--hr-thickness: 1px;
+
+	--embed-border-start: 1pt solid var(--text-faint);
+
+	/** slightly wider readable line width */
+	--file-line-width: var(--mia-line-width, 800px);
+}
+
+/** spacing */
+body {
+	--file-margins: var(--size-4-4) var(--size-4-12);
+	--inline-title-margin-bottom: 0.5em;
+	--p-spacing: 1rem;
+
+	--list-spacing: 0.2rem;
+	--p-spacing-empty: 0.2rem;
+}
+.inline-title,
+.iconic-title-wrapper .iconic-icon {
+	padding-top: 16px;
+}
+.inline-title {
+	margin-bottom: 6px;
+}
+.markdown-reading-view .inline-title {
+	margin-bottom: 1.25rem;
+}
+.markdown-preview-view .metadata-container {
+	margin-bottom: 1.2em;
+}
+
+/** math block extra space elimination (shows between bullets and displaymath */
+.math.math-block + img.cm-widgetBuffer {
+	width: 100px;
+	display: none !important;
+}
+
+/** get rid of extra top space if first element is a bullet or checklist */
+div.cm-contentContainer
+	> div
+	> div:not(.cm-line)
+	+ div.cm-line.HyperMD-list-line:nth-child(2):not(.HyperMD-task-line),
+div.cm-contentContainer
+	> div
+	> div.cm-line.HyperMD-list-line:first-child:not(.HyperMD-task-line) {
+	padding-top: 0;
+}
+/* in reading view too */
+div.mod-header + div.el-ul > :is(ul, ol):first-child > li:first-child,
+div.mod-header
+	+ div.mod-frontmatter
+	+ div.el-ul
+	> :is(ul, ol):first-child
+	> li:first-child {
+	padding-top: 0px;
+}
+
+/** blockquotes: use same indent as first list level */
+.markdown-rendered blockquote {
+	padding-left: 3ch;
+	margin-left: 0ch;
+	border-left-style: var(--mia-blockquote-reading-style, solid);
+}
+div.markdown-source-view.cm-s-obsidian.mod-cm6.is-live-preview div.HyperMD-quote.HyperMD-quote-1.cm-line {
+	margin-left: calc(var(--list-indent) - 1.35rem) !important;
+}
+div.markdown-source-view.cm-s-obsidian.mod-cm6.is-live-preview div.HyperMD-quote.HyperMD-quote-1.cm-line::before {
+	margin-left: calc(-1.1rem);
+}
+
+
+/** preformatted: shade entire line, and hide indentation width */
+.cm-line:has(> .cm-hmd-indented-code.cm-inline-code) {
+	--indentation-guide-width: 0px;
+	background: var(--code-background);
+}
+.markdown-source-view.mod-cm6 .cm-active-indent::before {
+	border-right-width: 0px;
+}
+
+/** tag styling: bug? */
+a.tag,
+.tag,
+a.tag:hover,
+.tag:hover,
+.cm-hashtag {
+	background-color: transparent;
+}
+
+/** highlighting */
+.cm-highlight,
+mark {
+	padding: 1px 3px;
+	border-radius: 3px;
+}
+
+/** strikethrough */
+del,
+.cm-strikethrough {
+	color: var(--text-muted);
+}
+
+/** table */
+.mia-table-header-background {
+	--table-header-background: var(--code-background);
+	--table-header-background-hover: var(--code-background);
+}
+
+/*** UI ELEMENTS ***/
+
+/** tab close and pin */
+.mod-root .workspace-tab-header-inner-close-button,
+.mod-root .workspace-tab-header-status-icon {
+	color: var(--text-muted);
+	transform: scale(0.9) translate(2px, 1px);
+	transform-origin: center;
+}
+
+/** status bar */
+.status-bar {
+	--status-bar-background: var(--background-primary);
+	--status-bar-border-color: var(--divider-color);
+	--status-bar-text-color: var(--text-normal);
+	--status-bar-border-width: 0;
+	--status-bar-radius: 0;
+	opacity: 0.7;
+}
+.status-bar {
+	padding-top: 0;
+	padding-right: var(--size-4-2);
+}
+
+/** search views: make files easier to identify */
+.search-result-file-title {
+	--nav-item-weight: bold;
+	--nav-item-weight-hover: bold;
+}
+
+/*** IMAGES ***/
+
+/** Center images */
+.markdown-source-view
+	div.image-embed:has(
+		img:not(
+			[alt*="float-right"],
+			[alt*="float-left"],
+			[alt*="drop-cap"],
+			[alt*="inline"]
+		)
+	) {
+	width: auto;
+	justify-content: center;
+	vertical-align: top;
+	text-align: center;
+}
+
+.markdown-rendered
+	span.internal-embed.media-embed:has(
+		> img:not(
+				[alt*="float-right"],
+				[alt*="float-left"],
+				[alt*="drop-cap"],
+				[alt*="inline"]
+			)
+	),
+.markdown-rendered
+	div.el-p
+	> p:has(
+		> img:not(
+				[alt*="float-right"],
+				[alt*="float-left"],
+				[alt*="drop-cap"],
+				[alt*="inline"]
+			)
+	) {
+	display: block;
+	text-align: center;
+}
+
+/** images have rounded corners */
+.markdown-rendered img:not(.emoji),
+.markdown-rendered video,
+.markdown-source-view img:not(.emoji),
+.markdown-source-view video {
+	border-radius: var(--radius-s);
+}
+
+/** Mute images a little in dark mode */
+body {
+	--mia-image-muted: 0.85;
+}
+.theme-dark .markdown-source-view img,
+.theme-dark .markdown-preview-view img {
+	opacity: var(--mia-image-muted);
+	transition: opacity 0.1s linear;
+}
+.theme-dark .markdown-source-view img:hover,
+.theme-dark .markdown-preview-view img:hover {
+	--mia-image-muted: 1;
+}
+@media print {
+	body {
+		--mia-image-muted: 1;
+	}
+}
+
+/** image spacing */
+.markdown-preview-view.is-readable-line-width
+	.markdown-preview-sizer
+	> .image-embed,
+.markdown-source-view.mod-cm6.is-readable-line-width
+	.cm-contentContainer.cm-contentContainer
+	> .cm-content
+	> .image-embed {
+	padding-top: 0.2rem;
+	padding-bottom: 0.2rem;
+}
+
+/*** CALLOUTS ***/
+
+/* === Reflection === */
+.callout[data-callout^="reflection"] {
+	--callout-color: rgb(187, 161, 44);
+	--callout-icon: lucide-eye-closed;
+	background-color: rgba(247, 217, 57, 0.2);
+}
+
+/*** LISTS AND CHECKBOXES ***/
+
+/** right-justify numbered list */
+.cm-formatting-list {
+	display: inline-block;
+	width: 4ch;
+	text-align: right;
+	margin-left: -1ch;
+}
+
+/** Checkbox style for cancelled [-] */
+input[data-task="-"]:checked::after,
+li[data-task="-"] > input:checked::after,
+li[data-task="-"] > p > input:checked::after {
+	mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z'/%3E%3C/svg%3E");
+	mask-size: 50%;
+}
+div[data-task="-"],
+li[data-task="-"] > span {
+	text-decoration: line-through;
+	color: var(--checklist-done-color);
+}
+input[data-task="-"]:checked {
+	opacity: 0.6;
+}
+
+/** make completed tasks muted, not strikethrough */
+body {
+	--checklist-done-decoration: none;
+	--checklist-done-color: var(--text-muted);
+}
+
+/** minimal theme accommodations */
+.checkbox-square {
+	--checkbox-size: var(--font-text-size);
+}
+a.tag,
+.cm-hashtag {
+	--tag-size: 90%;
+}
+
+/** Fix Outliner plugin styling */
+.cm-formatting-list-ul {
+	margin-right: 0em;
+}
+.list-bullet {
+	padding-right: 0.3em;
+}
+.list-bullet::after {
+	width: 0.4em;
+	height: 0.4em;
+	background-color: var(--text-muted);
+}
+
+/*** PDF EXPORT **/
+
+@media print {
+	body,
+	.theme-light,
+	.markdown-preview-view {
+		--font-text-size: 12pt !important;
+		--text-normal: black;
+		--list-marker-color: black;
+		color: black;
+	}
+}
+
+/*** TYPOGRAPHY **/
+
+/** make LaTeX symbols the 'correct' size */
+mjx-container {
+	line-height: 0px;
+	font-size: 120%;
+}
+.cm-s-obsidian span.cm-math {
+	--code-size: var(--font-text-size);
+}
+/** Don't italicise math source text */
+.cm-s-obsidian span.cm-math,
+.cm-s-obsidian span.hmd-fold-math-placeholder {
+	font-style: normal;
+}
+
+/** Typography: SF Pro or system-ui */
+body {
+	--font-text-theme: "SF Pro", system-ui;
+	--font-editor-override: var(--font-text-theme);
+	--line-height-normal: 1.5;
+	--bold-modifier: 300;
+
+	--font-monospace-theme: "SF Mono", ui-monospace, monospace;
+	--code-size: 94%;
+	mjx-math {
+		font-size: 94%;
+	}
+
+	/** font feature settings */
+	.markdown-rendered,
+	.view-content {
+		font-weight: var(--font-weight); /* bug in base product? */
+	}
+	.markdown-preview-view pre,
+	.cm-inline-code:not(.cm-formatting-code),
+	.HyperMD-codeblock:not(.HyperMD-codeblock-begin, .HyperMD-codeblock-end) {
+		font-weight: var(--font-normal);
+	}
+}
+
+/** Typography: more distinct heading sizes */
+/*
+H1 → page identity
+H2 → section structure
+H3 → subsection structure
+H4 → minor subsection / paragraph lead
+H5–H6 → semantic labels, not hierarchy
+*/
+body {
+	--h1-size: calc(var(--font-text-size) * 1.55);
+	--h2-size: calc(var(--font-text-size) * 1.35);
+	--h3-size: calc(var(--font-text-size) * 1.2);
+	--h4-size: calc(var(--font-text-size) * 1.1);
+	--h5-size: calc(var(--font-text-size) * 1.05);
+	--h6-size: calc(var(--font-text-size) * 1);
+
+	--h1-color: var(--text-normal);
+	--h1-style: normal;
+	--h1-weight: 700;
+	--h1-line-height: var(--line-height-normal);
+	--inline-title-line-height: 1.2;
+
+	--h2-style: normal;
+	--h2-color: var(--text-normal);
+	--h2-weight: 700;
+	--h2-line-height: var(--line-height-normal);
+
+	--h3-style: normal;
+	--h3-color: var(--text-normal);
+	--h3-weight: 600;
+	--h3-line-height: var(--line-height-normal);
+
+	--h4-style: normal;
+	--h4-color: var(--text-normal);
+	--h4-weight: 600;
+	--h4-line-height: var(--line-height-normal);
+
+	--h5-style: normal;
+	--h5-color: var(--text-normal);
+	--h5-weight: var(--font-weight);
+	--h5-line-height: var(--line-height-normal);
+	--h5-variant: normal;
+
+	--h6-style: normal;
+	--h6-color: var(--text-normal);
+	--h6-weight: var(--font-weight);
+	--h6-line-height: var(--line-height-normal);
+	--h6-variant: all-small-caps;
+}
+
+.cm-s-obsidian .cm-line.HyperMD-header {
+	padding-top: calc(var(--p-spacing) / 2);
+}
+
+/** Typography: source writing  */
+.markdown-source-view:not(.is-live-preview) .cm-scroller {
+	--font-text-theme:
+		var(--font-monospace-override), "SF Mono", ui-monospace, monospace;
+	font-family: var(--font-text-theme);
+
+	--font-monospace-theme: "SF Mono", ui-monospace, monospace;
+	--code-size: 100%;
+
+	--font-weight: var(--font-normal);
+	--line-height-normal: 1.55;
+	--list-spacing: 0rem;
+
+	--inline-title-size: 100%;
+	.inline-title {
+		margin-bottom: 1.55em;
+	}
+
+	--h1-size: 100%;
+	--h2-size: 100%;
+	--h3-size: 100%;
+	--h4-size: 100%;
+	--h5-size: 100%;
+	--h6-size: 100%;
+
+	--h2-color: var(--text-normal);
+	--h2-style: normal;
+	--h2-weight: var(--bold-weight);
+
+	--h3-color: var(--text-normal);
+	--h3-style: normal;
+	--h3-weight: var(--bold-weight);
+
+	--h4-color: var(--text-normal);
+	--h4-style: normal;
+	--h4-weight: var(--bold-weight);
+
+	--h5-color: var(--text-normal);
+	--h5-style: normal;
+	--h5-weight: var(--font-weight);
+	--h5-variant: normal;
+
+	--h6-color: var(--text-muted);
+	--h6-style: normal;
+	--h6-weight: var(--font-weight);
+	--h6-variant: normal;
+
+	/* avoid creating formatting space around code */
+	.cm-line .cm-inline-code:not(.cm-formatting) {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	/* pre-formatted lines and code blocks */
+	.cm-line.HyperMD-codeblock:not(.HyperMD-list-line),
+	.cm-line:has(> .cm-hmd-indented-code.cm-inline-code) {
+		--indentation-guide-width: 0px;
+		background: var(--code-background);
+		padding-inline-start: var(--size-4-2);
+		margin-left: calc(-1 * var(--size-4-2)) !important;
+	}
+}
+
+/** Hang header hashtags in the gutter if readable line width */
+body {
+	--mia-hanging-heading-color: var(--text-normal);
+}
+.mia-hang-headings
+	.markdown-source-view:not(.is-live-preview).is-readable-line-width
+	.cm-scroller {
+	.HyperMD-header span.cm-formatting-header {
+		--gutter-space: 4.2em;
+		display: inline-block;
+		position: relative;
+		left: calc(-1 * var(--gutter-space));
+		width: var(--gutter-space);
+		text-align: end;
+		white-space: nowrap;
+		margin-right: calc(
+			-1 * var(--gutter-space)
+		); /* This cancels the space it would normally take */
+		color: var(--mia-hanging-heading-color);
+	}
+}
+/* rendering on iPad differs from desktop */
+.mia-hang-headings.is-mobile
+	.markdown-source-view:not(.is-live-preview).is-readable-line-width
+	.cm-scroller
+	.HyperMD-header
+	span.cm-formatting-header {
+	padding-right: 1ch;
+}
+
+/** Indicate inline title as level 1 header (OPINIONATED) */
+.mia-inline-h1
+	.markdown-source-view:not(.is-live-preview).is-readable-line-width
+	.cm-scroller {
+	.inline-title::before {
+		content: "# ";
+		--gutter-space: 1.2em;
+		display: inline-block;
+		position: relative;
+		left: calc(-1 * var(--gutter-space));
+		width: var(--gutter-space);
+		text-align: right;
+		white-space: nowrap;
+		margin-right: calc(
+			-1 * var(--gutter-space)
+		); /* This cancels the space it would normally take */
+		color: var(--mia-hanging-heading-color);
+	}
+}
+
+/* Typography: phone */
+@media (max-width: 400pt) {
+	body.is-mobile {
+		--file-margins: var(--size-4-2) var(--size-4-4);
+		--line-height-normal: 1.4;
+
+		--h1-size: calc(var(--font-text-size) * 1.2);
+		--h2-size: calc(var(--font-text-size) * 1.1);
+		--h3-size: calc(var(--font-text-size) * 1);
+		--h4-size: calc(var(--font-text-size) * 1);
+		--h5-size: calc(var(--font-text-size) * 1);
+		--h6-size: calc(var(--font-text-size) * 1);
+	}
+}
+
+/*** LINKS ***/
+
+/* Subtle links treatment to keep visual noise down */
+
+/* internal links have normal text and faint underline */
+/* internal unresolved links have muted text and muted dotted underline */
+/* external links have accent text and accent underline */
+/* hover brightens/darkens all links, and the underline remains the same */
+
+body {
+	--link-color: var(--text-normal);
+	--link-color-hover: var(--text-muted);
+	--link-decoration: underline;
+	--mia-link-decoration-color: var(--text-faint);
+
+	--link-unresolved-color: var(--text-muted);
+	--mia-link-unresolved-color-hover: var(--text-normal);
+	--link-unresolved-opacity: 1;
+	--mia-link-unresolved-decoration-color: var(--text-muted);
+	--mia-link-unresolved-decoration-style: dotted;
+
+	--link-external-color: var(--accent-color);
+	--link-external-color-hover: var(--accent-color-light);
+	--link-external-decoration: underline;
+	--mia-link-external-decoration-color: hsla(
+		var(--interactive-accent-hsl),
+		0.67
+	);
+
+	--link-decoration-thickness: auto;
+	--mia-link-decoration-offset: 2px;
+}
+/* muted external links */
+body.mia-mono-links {
+	--link-external-color: var(--text-normal);
+	--link-external-color-hover: var(--accent-color);
+	--mia-link-external-decoration-color: var(--text-normal);
+}
+/* monochrome external link with icon doesn't need differentiated decoration*/
+body.mia-mono-links:is(.mia-icon-extlink, .mia-icon-upright) {
+	--mia-link-external-decoration-color: var(--mia-link-decoration-color);
+}
+
+/* one offset and thickness to rule them all */
+.markdown-source-view.mod-cm6 .cm-underline,
+.cm-s-obsidian span.cm-url,
+.metadata-property-value :is(.internal-link, .external-link),
+.markdown-rendered a:is(.internal-link, .external-link) {
+	text-underline-offset: var(--mia-link-decoration-offset);
+	text-decoration-thickness: var(--link-decoration-thickness);
+}
+
+/* internal link */
+.markdown-source-view.mod-cm6 .cm-hmd-internal-link .cm-underline,
+.metadata-property-value .internal-link,
+.markdown-rendered .internal-link {
+	text-decoration-color: var(--mia-link-decoration-color);
+}
+
+/* unresolved link */
+.markdown-source-view.mod-cm6 .is-unresolved .cm-underline,
+.metadata-property-value .internal-link.is-unresolved,
+.markdown-rendered .internal-link.is-unresolved {
+	text-decoration-style: var(--mia-link-unresolved-decoration-style);
+	text-decoration-color: var(--mia-link-unresolved-decoration-color);
+}
+/* unresolved hover */
+.markdown-source-view.mod-cm6 .is-unresolved .cm-underline:hover,
+.metadata-property-value .internal-link.is-unresolved:hover,
+.markdown-rendered .internal-link.is-unresolved:hover {
+	color: var(--mia-link-unresolved-color-hover);
+	text-decoration-color: var(--mia-link-unresolved-decoration-color);
+}
+
+/* external link */
+.markdown-source-view .cm-link .cm-underline,
+.markdown-source-view .cm-url .cm-underline,
+.metadata-property-value .external-link,
+.markdown-rendered a.external-link {
+	text-decoration-color: var(--mia-link-external-decoration-color);
+}
+
+/* hovering produces an extra underline with wrong offset - turn it off */
+@media (hover: hover) {
+	.cm-s-obsidian span.cm-hmd-internal-link:hover,
+    .cm-s-obsidian span.cm-formatting-link.cm-url:hover,
+    .cm-s-obsidian span.cm-url:hover,
+    .cm-s-obsidian span.cm-link:hover,
+    .cm-s-obsidian span.cm-url /* and this too */ {
+		text-decoration: none;
+	}
+}
+/* Restore the underline for source view */
+.markdown-source-view:not(.is-live-preview) span.cm-url {
+	text-decoration: var(--link-decoration);
+}
+
+/* no icon on external link */
+.mia-icon-none .external-link {
+	background-image: none;
+	padding-right: 0;
+}
+
+/* UP-RIGHT-ARROW */
+.mia-icon-upright .external-link {
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23909090' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M7 17 17 7'/%3E%3Cpath d='M7 7h10v10'/%3E%3C/svg%3E");
+	padding-right: 15px;
+}
+
+/* EXTERNAL-LINK */
+.mia-icon-extlink .external-link {
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23909090' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6'/%3E%3Cpath d='M15 3h6v6'/%3E%3Cpath d='M10 14L21 3'/%3E%3C/svg%3E");
+	background-size: 14px;
+	padding-right: 17px;
+}
+
+/* Adjust link colours when highlighted */
+span.cm-highlight,
+.markdown-rendered mark {
+	--link-color: var(--text-normal);
+	--link-unresolved-color: var(--text-normal);
+	--link-external-color: var(--text-normal);
+}
+.theme-light span.cm-highlight,
+.theme-light .markdown-rendered mark {
+	--link-color-hover: var(--text-muted);
+	--mia-link-unresolved-color-hover: var(--text-muted);
+	--link-external-color-hover: var(--accent-color);
+}
+.theme-dark span.cm-highlight,
+.theme-dark .markdown-rendered mark {
+	--link-color-hover: var(--background-secondary);
+	--mia-link-unresolved-color-hover: var(--background-secondary);
+	--link-external-color-hover: var(--accent-color);
+	--mia-link-decoration-color: var(--text-muted);
+	--mia-link-unresolved-decoration-color: var(--text-normal);
+	--mia-link-external-decoration-color: var(--text-normal);
+}
+body:is(.mia-icon-extlink, .mia-icon-upright).theme-dark span.cm-highlight,
+body:is(.mia-icon-extlink, .mia-icon-upright).theme-dark
+	.markdown-rendered
+	mark {
+	--mia-link-external-decoration-color: var(--mia-link-decoration-color);
+}
+
+/* Adjust spelling underline for consistency */
+.cm-content ::spelling-error {
+	text-decoration-color: crimson;
+	text-underline-offset: calc(var(--mia-link-decoration-offset) + 0.5px);
+	text-decoration-thickness: auto;
+}
+
+/* Tone-down the bare urls relative to the actual content */
+.cm-s-obsidian span.cm-string.cm-url:not(.cm-highlight) {
+	color: var(--text-faint);
+}
+.cm-s-obsidian span.cm-string.cm-url:hover {
+	color: var(--text-normal);
+}
+.cm-s-obsidian div.cm-active span.cm-string.cm-url {
+	color: var(--text-normal);
+	text-decoration: none;
+}
+
+/*** IMAGE ALT CLASSES ***/
+
+/** show top 250 px */
+div.image-embed[alt^="banner-top-250"] .image-wrapper img:not([width]) {
+	width: 100vw;
+	height: 250px;
+	object-fit: cover;
+	object-position: center top;
+}
+
+/** force standard mac screen aspect ratio */
+.image-embed
+	img:is([alt^="wallpaper"], [alt^="wp"], [alt^="16:10"], [alt^="screen"]) {
+	aspect-ratio: 16 / 10;
+	width: 100vw;
+	object-fit: cover;
+}
+
+/** invert image when appropriate */
+.theme-dark img[alt$="invert-dark"] {
+	filter: invert(1) hue-rotate(180deg);
+}
+
+.theme-light img[alt$="invert-light"] {
+	filter: invert(1) hue-rotate(180deg);
+}
+
+/** float image right, content wraps around */
+div.el-p > p > img[alt*="float-right"],
+.image-embed:has(img[alt*="float-right"]) {
+	position: relative;
+	z-index: 1;
+	float: right;
+	padding-left: 1em;
+	padding-top: 4px;
+	margin-bottom: 1em;
+
+	/* eliminate linebreak added after image in reading view */
+	+ br {
+		display: none;
+	}
+}
+
+/** float image left, content wraps around */
+div.el-p > p > img[alt*="float-left"],
+.image-embed:has(img[alt*="float-left"]) {
+	position: relative;
+	z-index: 1;
+	float: left;
+	padding-right: 1em;
+	padding-top: 4px;
+	margin-bottom: 1em;
+
+	/* eliminate linebreak added after image in reading view */
+	+ br {
+		display: none;
+	}
+}
+
+/** float image left, content wraps around */
+div.el-p > p > img[alt*="drop-cap"],
+.image-embed:has(img[alt*="drop-cap"]) {
+	position: relative;
+	z-index: 1;
+	float: left;
+	padding-right: 2px;
+	margin-bottom: 2px;
+
+	/* eliminate linebreak added after image in reading view */
+	+ br {
+		display: none;
+	}
+}
+
+/*** CSS CLASSES ***/
+
+/*** READING with cssclass: reader ***/
+
+/** reading view uses different font and weights */
+body.always-reader .markdown-reading-view :not(.no-reader),
+.markdown-reading-view .reader {
+	--font-text:
+		"Iowan Old Style", "Charter", "New York", "Palatino", "Georgia", serif;
+	--font-text-size: 15pt;
+	--table-text-size: var(--font-text-size);
+	--line-height-normal: 1.55;
+
+	--inline-title-color: var(--text-normal);
+	--h1-color: var(--text-normal);
+	--h2-color: var(--text-normal);
+	--h3-color: var(--text-normal);
+	--h4-color: var(--text-normal);
+	--h5-color: var(--text-normal);
+	--h6-color: var(--text-normal);
+
+	--h1-size: calc(var(--font-text-size) * 4.8 / 3);
+	--h2-size: calc(var(--font-text-size) * 6.5 / 5);
+	--h3-size: calc(var(--font-text-size) * 6 / 5);
+	--h4-size: calc(var(--font-text-size) * 9 / 8);
+	--h5-size: calc(var(--font-text-size) * 9 / 8);
+	--h6-size: calc(var(--font-text-size) * 9 / 8);
+
+	--inline-title-size: var(--h1-size);
+
+	.inline-title,
+	h1,
+	h2,
+	h3 {
+		font-weight: var(--bold-weight);
+		letter-spacing: -0.015em;
+	}
+
+	--file-line-width: 775px;
+
+	.metadata-container {
+		--metadata-label-font-size: 11.5pt;
+		--metadata-input-font-size: 11.5pt;
+	}
+
+	p {
+		margin: 0.9em 0;
+	}
+}
+
+/*** LEFT-ALIGNED math with cssclass: .math-left ***/
+
+.math-left {
+	.math-block {
+		text-align: left;
+		padding-left: 3ch;
+		padding-right: 3ch;
+	}
+
+	.math-block mjx-container {
+		text-align: left !important;
+	}
+}

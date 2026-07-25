@@ -1413,6 +1413,7 @@ body.theme-dark {
   --vault-name-color: var(--text-normal) !important;
   --bold-color: var(--yellow-5) !important;
   --italic-color: var(--yellow-2) !important;
+  --embed-border-left: 2px solid var(--code-comment) !important;
   --blue-1: rgb(72, 54, 153) !important;
   --blue-2: #4d3ca6 !important;
   --color-highlight-text: var(--yellow-1) !important;
@@ -1444,7 +1445,6 @@ body.theme-dark {
   --dark-7: #262626 !important;
   --dark-8: #282a36 !important;
   --dark-9: #2a2a2a !important;
-  --embed-border-left: 2px solid var(--code-comment) !important;
   --embed-border-right: 2px solid var(--code-comment) !important;
   --graph-controls-settings-name: var(--cyan-4) !important;
   --graph-node-resolved: var(--yellow-4) !important;

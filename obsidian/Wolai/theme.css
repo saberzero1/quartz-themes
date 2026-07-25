@@ -1,0 +1,547 @@
+/* ===========================================
+   Wolai Theme for Obsidian
+   Design tokens sourced directly from wolai.com
+   =========================================== */
+
+/* =========================================
+   CSS VARIABLES — sourced from wolai.com
+   Light:  --wolai-bg: #fff; text: rgba(0,0,0,0.85)
+   Dark:   html[theme="dark"] { --wolai-bg: #1a1a1c }
+   Brand:  #CF5659 (coral-red accent)
+   ========================================= */
+body {
+  /* Brand */
+  --wolai-red:          #CF5659;
+  --wolai-red-hover:    #B84C4E;
+  --wolai-red-active:   #DB615D;
+  --wolai-red-light:    #ffeded;
+  --wolai-red-muted:    rgba(235, 87, 87, 0.12);
+
+  /* Radius — from wolai source */
+  --wolai-radius-xs:  2px;
+  --wolai-radius-sm:  4px;
+  --wolai-radius-md:  8px;
+  --wolai-radius-lg:  12px;
+  --wolai-radius-pill: 43px;
+
+  /* Shadows — from wolai source */
+  --wolai-shadow-sm:   rgb(234, 234, 234) 0px 0px 0px 0.5px;
+  --wolai-shadow-md:   rgba(0, 0, 0, 0.07) 0px 4px 20px 0px;
+  --wolai-shadow-lg:   rgba(123, 46, 46, 0.11) 0px 6px 11px 0px;
+}
+
+/* =========================================
+   LIGHT THEME
+   Source: :root { --wolai-bg: #fff; }
+   ========================================= */
+.theme-light {
+  /* Background — wolai: bg=white, hover=#ececec, secondary=#fafafa */
+  --background-primary:               #ffffff;
+  --background-primary-alt:           #fafafa;
+  --background-secondary:             #fafafa;
+  --background-secondary-alt:         #f3f3f3;
+  --background-modifier-border:       #e1e1e1;
+  --background-modifier-border-hover: #d0d0d0;
+  --background-modifier-border-focus: rgba(207, 86, 89, 0.4);
+  --background-modifier-hover:        #ececec;
+  --background-modifier-active-hover: #ffeded;
+  --background-modifier-form-field:   #ffffff;
+
+  /* Text — wolai: primary=rgba(0,0,0,0.85), secondary=rgba(0,0,0,0.65), muted=rgba(0,0,0,0.45) */
+  --text-normal:         rgba(0, 0, 0, 0.85);
+  --text-muted:          rgba(0, 0, 0, 0.65);
+  --text-faint:          rgba(0, 0, 0, 0.45);
+  --text-on-accent:      #ffffff;
+  --text-accent:         #CF5659;
+  --text-accent-hover:   #B84C4E;
+  --text-selection:      #ffeded;
+  --text-highlight-bg:   #fff3b0;
+
+  /* Interactive */
+  --interactive-normal:        #f3f3f3;
+  --interactive-hover:         #ececec;
+  --interactive-accent:        #CF5659;
+  --interactive-accent-hover:  #B84C4E;
+  --interactive-success:       #38b060;
+
+  /* Scrollbar — wolai: transparent track, subtle thumb */
+  --scrollbar-bg:                transparent;
+  --scrollbar-thumb-bg:          #e1e1e1;
+  --scrollbar-active-thumb-bg:   #c8c8c8;
+
+  /* Components */
+  --divider-color:               #eaeaea;
+  --code-background:             #fafafa;
+  --code-normal:                 #c0392b;
+  --tag-background:              #ffeded;
+  --tag-color:                   #CF5659;
+  --tag-color-hover:             #B84C4E;
+  --tag-background-hover:        rgba(207, 86, 89, 0.18);
+  --blockquote-border-color:     #CF5659;
+  --blockquote-background-color: #ffeded;
+  --blockquote-color:            rgba(0, 0, 0, 0.65);
+  --table-header-background:     #fafafa;
+  --table-row-alt-background:    #fafafa;
+  --table-border-color:          #eaeaea;
+  --hr-color:                    #eaeaea;
+  --checkbox-color:              #CF5659;
+  --checkbox-color-hover:        #B84C4E;
+  --checkbox-border-color:       #d0d0d0;
+  --bold-color:                  rgba(0, 0, 0, 0.85);
+  --italic-color:                rgba(0, 0, 0, 0.65);
+
+  /* Nav — wolai: color=#333, hover bg=#eeeeee, active=brand red */
+  --nav-item-color:              #333333;
+  --nav-item-color-hover:        rgba(0, 0, 0, 0.85);
+  --nav-item-color-active:       #CF5659;
+  --nav-item-background-hover:   #eeeeee;
+  --nav-item-background-active:  #ffeded;
+
+  /* Titlebar & tabs */
+  --titlebar-background:         rgba(255, 255, 255, 0.88);
+  --titlebar-background-focused: rgba(255, 255, 255, 0.95);
+  --tab-background-active:       #ffffff;
+  --tab-text-color-focused-active: rgba(0, 0, 0, 0.85);
+
+  --ribbon-background:           #fafafa;
+  --ribbon-background-collapsed: #fafafa;
+}
+
+/* =========================================
+   DARK THEME
+   Source: html[theme="dark"] {
+     --wolai-bg: #1a1a1c;
+     --wll-color: #fff;
+     --wlp-wrapper-color: #323232;
+     --wlp-color: #909090;
+     --color-basic-200: #3e3e3e;
+     --color-basic-800: #bdbdbd;
+   }
+   ========================================= */
+.theme-dark {
+  /* Background */
+  --background-primary:               #1a1a1c;
+  --background-primary-alt:           #141416;
+  --background-secondary:             #141416;
+  --background-secondary-alt:         #0f0f11;
+  --background-modifier-border:       #2c2c2e;
+  --background-modifier-border-hover: #383838;
+  --background-modifier-border-focus: rgba(207, 86, 89, 0.5);
+  --background-modifier-hover:        #323232;
+  --background-modifier-active-hover: #2e1e1e;
+  --background-modifier-form-field:   #222224;
+
+  /* Text — derived from wolai dark: #fff primary, #bdbdbd secondary, #909090 muted */
+  --text-normal:         #e8e8e8;
+  --text-muted:          #bdbdbd;
+  --text-faint:          #909090;
+  --text-on-accent:      #ffffff;
+  --text-accent:         #e07075;
+  --text-accent-hover:   #ea8a8e;
+  --text-selection:      #3a1e1e;
+  --text-highlight-bg:   #4a3a00;
+
+  /* Interactive */
+  --interactive-normal:        #2a2a2c;
+  --interactive-hover:         #323232;
+  --interactive-accent:        #CF5659;
+  --interactive-accent-hover:  #e07075;
+  --interactive-success:       #40c070;
+
+  /* Scrollbar */
+  --scrollbar-bg:                transparent;
+  --scrollbar-thumb-bg:          #3e3e3e;
+  --scrollbar-active-thumb-bg:   #4e4e4e;
+
+  /* Components */
+  --divider-color:               #2c2c2e;
+  --code-background:             #141416;
+  --code-normal:                 #e07075;
+  --tag-background:              #2e1e1e;
+  --tag-color:                   #e07075;
+  --tag-color-hover:             #ea8a8e;
+  --tag-background-hover:        #3a2020;
+  --blockquote-border-color:     #CF5659;
+  --blockquote-background-color: #2e1e1e;
+  --blockquote-color:            #bdbdbd;
+  --table-header-background:     #141416;
+  --table-row-alt-background:    #1e1e20;
+  --table-border-color:          #2c2c2e;
+  --hr-color:                    #3e3e3e;
+  --checkbox-color:              #CF5659;
+  --checkbox-color-hover:        #e07075;
+  --checkbox-border-color:       #4e4e4e;
+  --bold-color:                  #f0f0f0;
+  --italic-color:                #d0d0d0;
+
+  /* Nav */
+  --nav-item-color:              #909090;
+  --nav-item-color-hover:        #e8e8e8;
+  --nav-item-color-active:       #e07075;
+  --nav-item-background-hover:   #2a2a2c;
+  --nav-item-background-active:  #2e1e1e;
+
+  /* Titlebar & tabs */
+  --titlebar-background:         rgba(20, 20, 22, 0.9);
+  --titlebar-background-focused: rgba(20, 20, 22, 0.95);
+  --tab-background-active:       #1a1a1c;
+  --tab-text-color-focused-active: #e8e8e8;
+
+  --ribbon-background:           #141416;
+  --ribbon-background-collapsed: #141416;
+}
+
+/* =========================================
+   TYPOGRAPHY
+   Source: wolai body font stack, sizes
+   ========================================= */
+body {
+  /* Wolai's exact font stack from source */
+  --font-text-theme:       "zh quote", -apple-system, "system-ui", "PingFang SC",
+                           "Noto Sans", "Noto Sans CJK SC", "Microsoft YaHei UI",
+                           "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  --font-interface-theme:  "zh quote", -apple-system, "system-ui", "PingFang SC",
+                           "Noto Sans", "Noto Sans CJK SC", "Microsoft YaHei UI",
+                           "Microsoft YaHei", sans-serif;
+  --font-monospace-theme:  "JetBrains Mono", "Fira Code", "SF Mono", "Cascadia Code",
+                           Consolas, "Liberation Mono", monospace;
+
+  /* Wolai base: 16px / line-height 24px (1.5) */
+  --font-text-size:    16px;
+  --line-height-normal: 1.5;
+
+  /* Heading scale — wolai: h1=48px/600, h2=28px/700 */
+  --h1-size:    2em;      /* 32px at 16px base */
+  --h2-size:    1.5em;    /* 24px */
+  --h3-size:    1.25em;   /* 20px */
+  --h4-size:    1.1em;
+  --h5-size:    1em;
+  --h6-size:    1em;
+
+  --h1-weight:  700;
+  --h2-weight:  700;
+  --h3-weight:  600;
+  --h4-weight:  600;
+  --h5-weight:  600;
+  --h6-weight:  600;
+
+  --h1-line-height: 1.3;
+  --h2-line-height: 1.35;
+  --h3-line-height: 1.4;
+
+  --h1-color: var(--text-normal);
+  --h2-color: var(--text-normal);
+  --h3-color: var(--text-normal);
+}
+
+/* =========================================
+   TITLEBAR — wolai glassmorphism header
+   Source: backdrop-filter: blur(16px);
+           background: rgba(255,255,255,0.88)
+   ========================================= */
+.titlebar,
+.workspace-tab-header-container-outer {
+  -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(16px);
+}
+
+/* =========================================
+   WORKSPACE & TABS
+   ========================================= */
+.workspace-tab-header-container {
+  border-bottom: 1px solid var(--background-modifier-border);
+}
+
+.workspace-tab-header {
+  border-radius: var(--wolai-radius-xs) var(--wolai-radius-xs) 0 0;
+}
+
+.workspace-tab-header.is-active {
+  box-shadow: none;
+}
+
+.workspace-tab-header.is-active .workspace-tab-header-inner-title {
+  font-weight: 600;
+}
+
+/* =========================================
+   EDITOR CONTENT
+   Source: --wolai-editor-color: #212529
+   ========================================= */
+
+/* Inline title — wolai hero h1 style */
+.inline-title {
+  font-size: 2em;
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+  color: var(--text-normal);
+  padding-bottom: 0.6em;
+  border-bottom: 1px solid var(--divider-color);
+  margin-bottom: 1.2em;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  letter-spacing: -0.01em;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+h2 {
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid var(--divider-color);
+}
+
+/* Horizontal rule — wolai: border: 1px solid #eaeaea */
+hr {
+  border: none;
+  border-top: 1px solid var(--hr-color);
+  margin: 2em 0;
+}
+
+/* Blockquote — wolai brand red left border */
+blockquote {
+  border-left: 3px solid var(--blockquote-border-color);
+  background-color: var(--blockquote-background-color);
+  border-radius: 0 var(--wolai-radius-sm) var(--wolai-radius-sm) 0;
+  margin: 1em 0;
+  padding: 0.75em 1em;
+  color: var(--blockquote-color);
+}
+
+blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+/* Code — wolai: .fTbwUB font-size:14px; border-radius:2px */
+code {
+  font-family: var(--font-monospace-theme);
+  font-size: 0.875em;
+  background-color: var(--code-background);
+  padding: 0.15em 0.35em;
+  border-radius: var(--wolai-radius-xs);
+  border: 1px solid var(--background-modifier-border);
+}
+
+pre code {
+  padding: 0;
+  border: none;
+  background: transparent;
+}
+
+pre {
+  background-color: var(--code-background);
+  border: 1px solid var(--background-modifier-border);
+  border-radius: var(--wolai-radius-sm);
+  padding: 1em 1.25em;
+  overflow-x: auto;
+  box-shadow: var(--wolai-shadow-sm);
+}
+
+/* Tables — wolai: border #eaeaea, header bg #fafafa */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid var(--table-border-color);
+  border-radius: var(--wolai-radius-md);
+  overflow: hidden;
+  font-size: 0.95em;
+}
+
+thead tr {
+  background-color: var(--table-header-background);
+}
+
+th {
+  font-weight: 600;
+  color: var(--text-normal);
+  text-align: left;
+}
+
+th, td {
+  padding: 0.6em 1em;
+  border-bottom: 1px solid var(--table-border-color);
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+tbody tr:nth-child(even) {
+  background-color: var(--table-row-alt-background);
+}
+
+/* Tags — wolai pill style, brand red */
+.tag {
+  font-size: 0.8em;
+  padding: 0.1em 0.6em;
+  border-radius: var(--wolai-radius-pill);
+  background-color: var(--tag-background);
+  color: var(--tag-color);
+  border: none;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.1s, color 0.1s;
+}
+
+.tag:hover {
+  background-color: var(--tag-background-hover);
+  color: var(--tag-color-hover);
+  text-decoration: none;
+}
+
+/* Links — wolai: color #333 nav, accent for internal */
+a.internal-link {
+  color: var(--text-accent);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(207, 86, 89, 0.3);
+  transition: color 0.1s linear, border-color 0.1s linear;
+}
+
+a.internal-link:hover {
+  color: var(--text-accent-hover);
+  border-bottom-color: var(--text-accent-hover);
+}
+
+/* Checkboxes */
+input[type="checkbox"] {
+  border-radius: var(--wolai-radius-xs);
+  border: 1.5px solid var(--checkbox-border-color);
+}
+
+.task-list-item.is-checked {
+  color: var(--text-muted);
+  text-decoration: line-through;
+}
+
+/* Callouts */
+.callout {
+  border-radius: var(--wolai-radius-sm);
+  border-left: 3px solid var(--callout-color, var(--wolai-red));
+  padding: 0.75em 1em;
+  margin: 1em 0;
+}
+
+.callout-title {
+  font-weight: 600;
+  font-size: 0.875em;
+  margin-bottom: 0.35em;
+}
+
+/* =========================================
+   SIDEBAR / FILE EXPLORER
+   Source: ._3nnbN:hover { background: #eeeeee; border-radius: 5px }
+   ========================================= */
+.nav-folder-title,
+.nav-file-title {
+  border-radius: var(--wolai-radius-sm);
+  padding: 3px 8px;
+  transition: background-color 0.1s linear, color 0.1s linear;
+  color: var(--nav-item-color);
+}
+
+.nav-folder-title:hover,
+.nav-file-title:hover {
+  background-color: var(--nav-item-background-hover);
+  color: var(--nav-item-color-hover);
+}
+
+.nav-file-title.is-active {
+  background-color: var(--nav-item-background-active);
+  color: var(--nav-item-color-active);
+  font-weight: 500;
+}
+
+/* =========================================
+   SEARCH HIGHLIGHT
+   Source: text-highlight-bg from wolai
+   ========================================= */
+.search-result-file-title {
+  font-weight: 600;
+  color: var(--text-normal);
+}
+
+.search-result-file-match mark {
+  background-color: var(--text-highlight-bg);
+  border-radius: 2px;
+  padding: 0 2px;
+}
+
+/* =========================================
+   MODALS & POPOVERS
+   Source: ._1p0uF { border-radius: 4px; box-shadow: rgba(123,46,46,0.11) 0px 6px 11px }
+   ========================================= */
+.modal {
+  border-radius: var(--wolai-radius-lg);
+  border: 1px solid var(--background-modifier-border);
+  box-shadow: var(--wolai-shadow-lg);
+}
+
+.suggestion-container {
+  border-radius: var(--wolai-radius-sm);
+  border: 1px solid var(--background-modifier-border);
+  box-shadow: var(--wolai-shadow-md);
+  overflow: hidden;
+}
+
+.suggestion-item {
+  border-radius: 0;
+  transition: background-color 0.1s;
+}
+
+.suggestion-item.is-selected {
+  background-color: var(--background-modifier-hover);
+}
+
+/* =========================================
+   SCROLLBAR
+   Source: ::-webkit-scrollbar { background: transparent }
+           ::-webkit-scrollbar-thumb { border-radius: 4px }
+   ========================================= */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-thumb-bg);
+  border-radius: var(--wolai-radius-sm);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--scrollbar-active-thumb-bg);
+}
+
+/* =========================================
+   STATUS BAR
+   ========================================= */
+.status-bar {
+  border-top: 1px solid var(--background-modifier-border);
+  font-size: 11px;
+  color: var(--text-faint);
+}
+
+/* =========================================
+   RIBBON
+   ========================================= */
+.side-dock-ribbon {
+  border-right: 1px solid var(--background-modifier-border);
+}
+
+/* =========================================
+   MOBILE
+   Source: wolai mobile font-size 16px base
+   ========================================= */
+.is-mobile {
+  --font-text-size: 16px;
+}
+
+.is-mobile .nav-file-title,
+.is-mobile .nav-folder-title {
+  padding: 6px 12px;
+}

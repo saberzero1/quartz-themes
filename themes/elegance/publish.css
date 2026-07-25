@@ -1470,11 +1470,13 @@ body.theme-light {
   --font-size-side-dock: 15px !important;
   --font-size-side-dock-title: 16px !important;
   --font-size-status-bar: 13.75px !important;
-  --embed-border-radius: 10px !important;
-  --callout-margin: 0px 5px;
-  --external-link: rgb(96, 123, 4) !important;
   --callout-gap: 1em;
+  --callout-margin: 0px 5px;
   --callout-min-width: 200px;
+  --callout-nowrap-min-width: 250px;
+  --mcc-img-snw-display: none !important;
+  --embed-border-radius: 10px !important;
+  --external-link: rgb(96, 123, 4) !important;
   --col-rule-color: var(--background-modifier-border) !important;
   --col-rule-width: 1px !important;
   --animation: 200ms !important;
@@ -1489,7 +1491,6 @@ body.theme-light {
   --bg-orange2: rgba(255, 132, 0, 0.85) !important;
   --bg-purple: rgba(150, 8, 220, 0.4) !important;
   --bg-purple2: rgba(150, 8, 220, 0.8) !important;
-  --callout-nowrap-min-width: 250px;
   --color-pink-list: rgb(255, 192, 227) !important;
   --color-pink-list2: rgb(255, 137, 202) !important;
   --color-pink-list3: rgb(255, 119, 194) !important;
@@ -1511,7 +1512,6 @@ body.theme-light {
   --fluro-pink-rgb: 255, 0, 255 !important;
   --list-grid-min-width: 250px !important;
   --list-grid-wide-min-width: 350px !important;
-  --mcc-img-snw-display: none !important;
   --mcl-card-bg-color: var(--background-secondary) !important;
   --mcl-card-border-color: var(--background-modifier-border) !important;
   --mcl-card-border-width: 1px !important;
@@ -2626,11 +2626,13 @@ body.theme-dark {
   --font-size-side-dock: 15px !important;
   --font-size-side-dock-title: 16px !important;
   --font-size-status-bar: 13.75px !important;
-  --embed-border-radius: 10px !important;
-  --callout-margin: 0px 5px;
-  --external-link: rgb(255, 219, 180) !important;
   --callout-gap: 1em;
+  --callout-margin: 0px 5px;
   --callout-min-width: 200px;
+  --callout-nowrap-min-width: 250px;
+  --mcc-img-snw-display: none !important;
+  --embed-border-radius: 10px !important;
+  --external-link: rgb(255, 219, 180) !important;
   --col-rule-color: var(--background-modifier-border) !important;
   --col-rule-width: 1px !important;
   --animation: 200ms !important;
@@ -2645,7 +2647,6 @@ body.theme-dark {
   --bg-orange2: rgb(255, 145, 18) !important;
   --bg-purple: rgba(165, 26, 234, 0.4) !important;
   --bg-purple2: rgb(180, 37, 252) !important;
-  --callout-nowrap-min-width: 250px;
   --color-pink-list: rgb(255, 192, 227) !important;
   --color-pink-list2: rgb(255, 137, 202) !important;
   --color-pink-list3: rgb(255, 119, 194) !important;
@@ -2667,7 +2668,6 @@ body.theme-dark {
   --fluro-pink-rgb: 255, 0, 255 !important;
   --list-grid-min-width: 250px !important;
   --list-grid-wide-min-width: 350px !important;
-  --mcc-img-snw-display: none !important;
   --mcl-card-bg-color: var(--background-secondary) !important;
   --mcl-card-border-color: var(--background-modifier-border) !important;
   --mcl-card-border-width: 1px !important;

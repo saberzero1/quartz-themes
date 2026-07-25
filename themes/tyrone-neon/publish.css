@@ -1467,8 +1467,8 @@ body.theme-light {
   --color-bg: #ffffff !important;
   --color-text: #404040 !important;
   --color-muted: #737373 !important;
-  --color-bg-alt: #ffffff !important;
   --color-bg-code: #e5e5e5 !important;
+  --color-bg-alt: #ffffff !important;
   --color-danger: #ff3b30 !important;
   --color-muted-graph: #e5e5e5 !important;
   --color-success: #28cd41 !important;
@@ -2554,8 +2554,8 @@ body.theme-dark {
   --color-bg: #000000 !important;
   --color-text: #d4d4d4 !important;
   --color-muted: #737373 !important;
-  --color-bg-alt: #000000 !important;
   --color-bg-code: #262626 !important;
+  --color-bg-alt: #000000 !important;
   --color-danger: #ff3b30 !important;
   --color-muted-graph: #262626 !important;
   --color-success: #34c759 !important;

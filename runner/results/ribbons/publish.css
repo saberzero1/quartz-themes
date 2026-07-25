@@ -1104,10 +1104,10 @@ body.theme-light {
   --h4-color: var(--text-subtitle) !important;
   --h5-color: var(--text-subtitle) !important;
   --inline-title-color: var(--h1-color) !important;
+  --inline-title-font: var(--h1-font) !important;
   --h1-font: "My Title font", "SF Compact Display" !important;
   --h3-font: "My Headings font", "New York Extra Large" !important;
   --h5-font: "My Table font", "SF Compact Rounded" !important;
-  --inline-title-font: var(--h1-font) !important;
   --chbx-a: 248, 114, 181 !important;
   --chbx-b: 251, 146, 76 !important;
   --chbx-B: 182, 118, 255 !important;
@@ -1124,6 +1124,7 @@ body.theme-light {
   --chbx-r: 249, 190, 123 !important;
   --chbx-R: 159, 186, 223 !important;
   --its: "its" !important;
+  --text-title: #4b254d !important;
   --med-small: 400px !important;
   --med-tall: 600px !important;
   --medium: 500px !important;
@@ -1132,7 +1133,6 @@ body.theme-light {
   --small-med: 300px !important;
   --tall: 700px !important;
   --tiny: 100px !important;
-  --text-title: #4b254d !important;
   --background-mythic: #082283 !important;
   --dropdown-padding-bottom: 0px !important;
   --dropdown-padding-left: 0.9em !important;
@@ -2244,10 +2244,10 @@ body.theme-dark {
   --h4-color: var(--text-subtitle) !important;
   --h5-color: var(--text-subtitle) !important;
   --inline-title-color: var(--h1-color) !important;
+  --inline-title-font: var(--h1-font) !important;
   --h1-font: "My Title font", "SF Compact Display" !important;
   --h3-font: "My Headings font", "New York Extra Large" !important;
   --h5-font: "My Table font", "SF Compact Rounded" !important;
-  --inline-title-font: var(--h1-font) !important;
   --chbx-a: 248, 114, 181 !important;
   --chbx-b: 230, 129, 63 !important;
   --chbx-B: 136, 94, 233 !important;
@@ -2264,6 +2264,7 @@ body.theme-dark {
   --chbx-r: 249, 190, 123 !important;
   --chbx-R: 170, 179, 202 !important;
   --its: "its" !important;
+  --text-title: #c59445 !important;
   --med-small: 400px !important;
   --med-tall: 600px !important;
   --medium: 500px !important;
@@ -2272,7 +2273,6 @@ body.theme-dark {
   --small-med: 300px !important;
   --tall: 700px !important;
   --tiny: 100px !important;
-  --text-title: #c59445 !important;
   --background-mythic: #6c80c9 !important;
   --dropdown-padding-bottom: 0px !important;
   --dropdown-padding-left: 0.9em !important;

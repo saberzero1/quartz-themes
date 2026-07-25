@@ -1093,6 +1093,7 @@ body.theme-dark {
   --purple: #9c7a99 !important;
   --red: #b06c5a !important;
   --yellow: #e8d8a3 !important;
+  --heading-line-height: 1.2 !important;
   --blue: #6b8ca4 !important;
   --gray: #a8a8a8 !important;
   --font-heading: var(--font-interface) !important;
@@ -1107,18 +1108,18 @@ body.theme-dark {
   --callout-color-info: var(--blue-rgb);
   --callout-color-success: var(--green-rgb);
   --callout-color-warning: var(--orange-rgb);
-  --border-radius: 4px !important;
-  --bg-accent: #504945 !important;
-  --bg-tertiary: #3c3836 !important;
   --callout-color-abstract: var(--purple-rgb);
-  --callout-color-bug: var(--red-rgb);
   --callout-color-danger: var(--red-rgb);
   --callout-color-example: var(--purple-rgb);
-  --callout-color-failure: var(--red-rgb);
-  --callout-color-note: var(--blue-rgb);
   --callout-color-question: var(--yellow-rgb);
   --callout-color-quote: var(--gray-rgb);
   --callout-color-tip: var(--green-rgb);
+  --border-radius: 4px !important;
+  --bg-accent: #504945 !important;
+  --bg-tertiary: #3c3836 !important;
+  --callout-color-bug: var(--red-rgb);
+  --callout-color-failure: var(--red-rgb);
+  --callout-color-note: var(--blue-rgb);
   --callout-color-todo: var(--gray-rgb);
   --fg-primary: #ebdbb2 !important;
   --fg-secondary: #d5c4a1 !important;
@@ -1126,7 +1127,6 @@ body.theme-dark {
   --font-terminal:
     "VT323", "Share Tech Mono", "Courier New", monospace !important;
   --gray-rgb: 168, 168, 168 !important;
-  --heading-line-height: 1.2 !important;
   --padding: 12px !important;
 }
 

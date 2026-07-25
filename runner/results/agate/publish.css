@@ -1120,6 +1120,7 @@ body.theme-light {
     0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065),
     var(--shadow-edges) !important;
   --inline-title-color: var(--color-base-100) !important;
+  --inline-title-font: "ITC Slimbach Std", "Noto Serif KR" !important;
   --accent-color: 55, 0, 255 !important;
   --bg-color: rgba(var(--light-color), var(--light-alpha-color)) !important;
   --h1-font: "Pretendard-Bold" !important;
@@ -1128,7 +1129,6 @@ body.theme-light {
   --h4-font: "Pretendard-Bold" !important;
   --h5-font: "Pretendard-Bold" !important;
   --h6-font: "Pretendard-Bold" !important;
-  --inline-title-font: "ITC Slimbach Std", "Noto Serif KR" !important;
   --light-alpha-color: 0 !important;
   --light-color: 170, 170, 170 !important;
   --line-color: rgba(20, 20, 20, 0.2) !important;

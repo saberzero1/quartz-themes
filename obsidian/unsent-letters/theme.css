@@ -1,0 +1,1188 @@
+/* @settings
+
+name: Unsent Letters — Frozen Typewriter
+id: unsent-letters
+settings:
+
+  - id: ul2-base-bg
+    title: Base Background
+    description: Cor de fundo principal — azul-preto ártico
+    type: variable-color
+    opacity: true
+    format: hex
+    default: '#0d1821'
+
+  - id: ul2-accent-color
+    title: Accent Color
+    description: Azul-gelo para links e elementos interativos
+    type: variable-color
+    opacity: true
+    format: hex
+    default: '#a8d8f0'
+
+  - id: ul2-frost-color
+    title: Frost Tint
+    description: Tint frio secundário para bordas e brilhos
+    type: variable-color
+    opacity: true
+    format: hex
+    default: '#c8e8ff'
+
+  - id: ul2-text-normal
+    title: Body Text Color
+    description: Texto principal — branco frio com toque de papel
+    type: variable-color
+    opacity: true
+    format: hex
+    default: '#ddeeff'
+
+  - id: ul2-typewriter-font
+    title: Typewriter Font (Escrita)
+    description: Fonte monoespaçada para a superfície de edição
+    type: variable-text
+    default: "'Courier New', 'IBM Plex Mono', Consolas, monospace"
+
+  - id: ul2-ui-font
+    title: UI Font
+    description: Sans-serif limpa para painéis, sidebar e chrome
+    type: variable-text
+    default: "-apple-system, 'Segoe UI', system-ui, sans-serif"
+
+  - id: ul2-heading-font
+    title: Heading Font
+    description: Fonte display para H1–H3
+    type: variable-text
+    default: "'Courier New', Consolas, monospace"
+
+  - id: ul2-font-size
+    title: Font Size
+    description: Tamanho base do texto (px)
+    type: variable-number-slider
+    default: 16
+    min: 13
+    max: 24
+    step: 1
+    format: px
+
+  - id: ul2-line-height
+    title: Line Height
+    type: variable-number-slider
+    default: 1.85
+    min: 1.4
+    max: 2.6
+    step: 0.05
+
+  - id: ul2-max-width
+    title: Content Max Width
+    type: variable-number-slider
+    default: 760
+    min: 480
+    max: 1400
+    step: 20
+    format: px
+
+  - id: ul2-border-radius
+    title: Border Radius
+    type: variable-number-slider
+    default: 6
+    min: 0
+    max: 20
+    step: 2
+    format: px
+
+  - id: ul2-transition-speed
+    title: Transition Speed
+    type: variable-number-slider
+    default: 140
+    min: 0
+    max: 500
+    step: 20
+    format: ms
+
+  - id: ul2-letter-spacing
+    title: Letter Spacing (body)
+    type: variable-number-slider
+    default: 0.02
+    min: 0
+    max: 0.12
+    step: 0.005
+
+  - id: ce-cores-title
+    title: "🎨 Brutalist Explorer — Paleta"
+    description: "Tons pastel suaves, otimizados para dark theme."
+    type: heading
+    level: 1
+    collapsed: false
+
+  - id: ce-1
+    title: "Slot 1 — Azul neblina"
+    type: variable-themed-color
+    format: hex
+    opacity: false
+    default-light: '#b3c9f2'
+    default-dark:  '#b3c9f2'
+  - id: ce-2
+    title: "Slot 2 — Lavanda"
+    type: variable-themed-color
+    format: hex
+    opacity: false
+    default-light: '#c5b8f0'
+    default-dark:  '#c5b8f0'
+  - id: ce-3
+    title: "Slot 3 — Rosa quartzo"
+    type: variable-themed-color
+    format: hex
+    opacity: false
+    default-light: '#f0b8d4'
+    default-dark:  '#f0b8d4'
+  - id: ce-4
+    title: "Slot 4 — Pêssego"
+    type: variable-themed-color
+    format: hex
+    opacity: false
+    default-light: '#f0d4b8'
+    default-dark:  '#f0d4b8'
+  - id: ce-5
+    title: "Slot 5 — Menta"
+    type: variable-themed-color
+    format: hex
+    opacity: false
+    default-light: '#b8f0cc'
+    default-dark:  '#b8f0cc'
+  - id: ce-6
+    title: "Slot 6 — Amarelo creme"
+    type: variable-themed-color
+    format: hex
+    opacity: false
+    default-light: '#f0f0b8'
+    default-dark:  '#f0f0b8'
+  - id: ce-7
+    title: "Slot 7 — Ciano gelo"
+    type: variable-themed-color
+    format: hex
+    opacity: false
+    default-light: '#b8e8f0'
+    default-dark:  '#b8e8f0'
+  - id: ce-8
+    title: "Slot 8 — Lilás"
+    type: variable-themed-color
+    format: hex
+    opacity: false
+    default-light: '#e8b8f0'
+    default-dark:  '#e8b8f0'
+  - id: ce-9
+    title: "Slot 9 — Salmão"
+    type: variable-themed-color
+    format: hex
+    opacity: false
+    default-light: '#f0c5b8'
+    default-dark:  '#f0c5b8'
+  - id: ce-10
+    title: "Slot 10 — Turquesa"
+    type: variable-themed-color
+    format: hex
+    opacity: false
+    default-light: '#b8f0e0'
+    default-dark:  '#b8f0e0'
+  - id: ce-11
+    title: "Slot 11 — Pistache"
+    type: variable-themed-color
+    format: hex
+    opacity: false
+    default-light: '#d4f0b8'
+    default-dark:  '#d4f0b8'
+  - id: ce-12
+    title: "Slot 12 — Coral rosado"
+    type: variable-themed-color
+    format: hex
+    opacity: false
+    default-light: '#f0b8b8'
+    default-dark:  '#f0b8b8'
+
+  - id: ce-background-title
+    title: "🖼 Brutalist Explorer — Background"
+    type: heading
+    level: 1
+    collapsed: false
+  - id: ce-bg-opacity
+    title: "Opacidade do fill"
+    description: "0 = transparente → 1 = bloco sólido. Padrão brutalista: 0.22."
+    type: variable-number-slider
+    default: 0.22
+    min: 0
+    max: 1
+    step: 0.02
+
+  - id: ce-shape-title
+    title: "📐 Brutalist Explorer — Forma & Espaçamento"
+    type: heading
+    level: 1
+    collapsed: false
+  - id: ce-radius
+    title: "Border radius (px)"
+    description: "0 = bordas brutalistas puras."
+    type: variable-number-slider
+    default: 0
+    min: 0
+    max: 20
+    step: 1
+    format: px
+  - id: ce-accent-border-width
+    title: "Largura da barra lateral (px)"
+    type: variable-number-slider
+    default: 6
+    min: 0
+    max: 12
+    step: 1
+    format: px
+  - id: ce-folder-gap
+    title: "Espaço entre pastas raiz (px)"
+    type: variable-number-slider
+    default: 8
+    min: 0
+    max: 20
+    step: 1
+    format: px
+
+  - id: ce-typography-title
+    title: "🔤 Brutalist Explorer — Tipografia"
+    type: heading
+    level: 1
+    collapsed: false
+  - id: ce-folder-font-weight
+    title: "Peso do label de pasta"
+    type: variable-select
+    default: '700'
+    options:
+      - label: Normal (400)
+        value: '400'
+      - label: Medium (500)
+        value: '500'
+      - label: Semibold (600)
+        value: '600'
+      - label: Bold (700)
+        value: '700'
+  - id: ce-file-font-weight
+    title: "Peso do label de arquivo"
+    type: variable-select
+    default: '600'
+    options:
+      - label: Normal (400)
+        value: '400'
+      - label: Medium (500)
+        value: '500'
+      - label: Semibold (600)
+        value: '600'
+      - label: Bold (700)
+        value: '700'
+
+*/
+
+/* ══════════════════════════════════════════════════════════════
+   UNSENT LETTERS — FROZEN TYPEWRITER  +  BRUTALIST EXPLORER
+   Obsidian Theme — Kanban · QuickAdd · Notebook Navigator
+                    Banner · Dataview · File Explorer
+   ══════════════════════════════════════════════════════════════ */
+
+/* ══════════════════════════════════════════════════════════════
+   TOKENS — único ponto de verdade para todo o arquivo
+   ══════════════════════════════════════════════════════════════ */
+
+:root {
+  /* — Tema principal — */
+  --ul2-base-bg:          #0d1821;
+  --ul2-accent-color:     #a8d8f0;
+  --ul2-frost-color:      #c8e8ff;
+  --ul2-text-normal:      #ddeeff;
+
+  /* — Tipografia — */
+  --ul2-typewriter-font:  "Courier New", "IBM Plex Mono", Consolas, monospace;
+  --ul2-ui-font:          -apple-system, "Segoe UI", system-ui, sans-serif;
+  --ul2-heading-font:     "Courier New", Consolas, monospace;
+  --ul2-font-size:        16px;
+  --ul2-line-height:      1.85;
+  --ul2-letter-spacing:   0.02em;
+
+  /* — Layout — */
+  --ul2-max-width:        760px;
+  --ul2-border-radius:    6px;
+  --ul2-transition-speed: 140ms;
+
+  /* — Fundo derivado — */
+  --ul2-bg-0: #0d1821;
+  --ul2-bg-1: #111e2b;
+  --ul2-bg-2: #162435;
+  --ul2-bg-3: #1c2d40;
+  --ul2-bg-4: #243448;
+
+  /* — Gelo (opacidades sobre accent) — */
+  --ul2-ice-faint:   rgba(168, 216, 240, 0.06);
+  --ul2-ice-soft:    rgba(168, 216, 240, 0.14);
+  --ul2-ice-medium:  rgba(168, 216, 240, 0.28);
+
+  /* — Bordas — */
+  --ul2-border-faint: rgba(100, 160, 210, 0.18);
+  --ul2-border-soft:  rgba(120, 180, 230, 0.32);
+  --ul2-border-glow:  rgba(168, 216, 240, 0.50);
+
+  /* — Aurora — */
+  --ul2-aurora-teal:   #7de8d8;
+  --ul2-aurora-violet: #b8a0f0;
+  --ul2-aurora-amber:  #f0d87a;
+  --ul2-danger:        #f08080;
+  --ul2-success:       #80e8c0;
+
+  /* — Brutalist Explorer — */
+  --ce-folder-gap:          8px;
+  --ce-item-padding:        4px 12px;
+  --ce-radius:              0px;
+  --ce-accent-border-width: 6px;
+  --ce-bg-opacity:          0.22;
+  --ce-folder-font-weight:  700;
+  --ce-file-font-weight:    600;
+
+  /* — Paleta pastel do Explorer — */
+  --ce-1:  #b3c9f2; /* Azul neblina   */
+  --ce-2:  #c5b8f0; /* Lavanda        */
+  --ce-3:  #f0b8d4; /* Rosa quartzo   */
+  --ce-4:  #f0d4b8; /* Pêssego        */
+  --ce-5:  #b8f0cc; /* Menta          */
+  --ce-6:  #f0f0b8; /* Amarelo creme  */
+  --ce-7:  #b8e8f0; /* Ciano gelo     */
+  --ce-8:  #e8b8f0; /* Lilás          */
+  --ce-9:  #f0c5b8; /* Salmão         */
+  --ce-10: #b8f0e0; /* Turquesa       */
+  --ce-11: #d4f0b8; /* Pistache       */
+  --ce-12: #f0b8b8; /* Coral rosado   */
+}
+
+/* ══════════════════════════════════════════════════════════════
+   PALETA DARK
+   ══════════════════════════════════════════════════════════════ */
+
+.theme-dark {
+  /* Fundos */
+  --background-primary:              var(--ul2-bg-0);
+  --background-primary-alt:          var(--ul2-bg-1);
+  --background-secondary:            var(--ul2-bg-2);
+  --background-secondary-alt:        var(--ul2-bg-3);
+  --background-modifier-hover:       var(--ul2-ice-faint);
+  --background-modifier-active-hover: var(--ul2-ice-soft);
+  --background-modifier-border:      var(--ul2-border-faint);
+  --background-modifier-border-hover: var(--ul2-border-soft);
+  --background-modifier-border-focus: var(--ul2-border-glow);
+
+  /* Texto */
+  --text-normal:        var(--ul2-text-normal);
+  --text-muted:         rgba(180, 210, 235, 0.68);
+  --text-faint:         rgba(140, 175, 205, 0.50);
+  --text-accent:        var(--ul2-accent-color);
+  --text-accent-hover:  var(--ul2-frost-color);
+  --text-on-accent:     #0d1821;
+  --text-error:         var(--ul2-danger);
+  --text-success:       var(--ul2-success);
+  --text-warning:       var(--ul2-aurora-amber);
+
+  /* Interativo */
+  --interactive-accent:     var(--ul2-accent-color);
+  --interactive-accent-hover: var(--ul2-frost-color);
+  --interactive-accent-rgb: 168, 216, 240;
+  --interactive-normal:     var(--ul2-bg-3);
+  --interactive-hover:      var(--ul2-bg-4);
+
+  /* Links */
+  --link-color:           var(--ul2-accent-color);
+  --link-color-hover:     var(--ul2-frost-color);
+  --link-external-color:  rgba(186, 228, 255, 0.88);
+  --link-unresolved-color: rgba(140, 175, 210, 0.55);
+
+  /* Inline */
+  --text-highlight-bg: rgba(168, 216, 240, 0.18);
+  --bold-color:        rgba(220, 242, 255, 0.98);
+  --italic-color:      rgba(196, 228, 252, 0.90);
+
+  /* Código */
+  --code-normal:     rgba(220, 240, 255, 0.88);
+  --code-background: rgba(168, 216, 240, 0.08);
+  --code-comment:    rgba(140, 175, 205, 0.55);
+  --code-tag:        var(--ul2-aurora-teal);
+  --code-string:     rgba(200, 235, 200, 0.82);
+  --code-keyword:    var(--ul2-aurora-violet);
+  --code-operator:   var(--ul2-aurora-amber);
+  --code-function:   rgba(160, 210, 255, 0.90);
+  --code-number:     var(--ul2-aurora-amber);
+  --code-property:   rgba(168, 216, 240, 0.80);
+
+  /* Checkbox */
+  --checkbox-color:        var(--ul2-accent-color);
+  --checkbox-color-hover:  var(--ul2-frost-color);
+  --checkbox-border-color: var(--ul2-border-soft);
+  --checkbox-border-width: 1.5px;
+  --checkbox-radius:       3px;
+
+  /* Cursor & scrollbar */
+  --caret-color:               var(--ul2-frost-color);
+  --scrollbar-bg:              transparent;
+  --scrollbar-thumb-bg:        rgba(120, 180, 230, 0.22);
+  --scrollbar-active-thumb-bg: rgba(168, 216, 240, 0.45);
+
+  /* Sombras */
+  --shadow-s: 0 2px 12px rgba(10, 20, 35, 0.60);
+  --shadow-m: 0 4px 24px rgba(10, 20, 35, 0.70);
+  --shadow-l: 0 8px 48px rgba(10, 20, 35, 0.85);
+
+  /* Raios de borda (tokens Obsidian) */
+  --radius-s: 4px;
+  --radius-m: var(--ul2-border-radius);
+  --radius-l: calc(var(--ul2-border-radius) * 2);
+
+  /* Fontes */
+  --font-text:       var(--ul2-typewriter-font);
+  --font-interface:  var(--ul2-ui-font);
+  --font-monospace:  var(--ul2-typewriter-font);
+  --font-text-size:  var(--ul2-font-size);
+  --font-ui-small:   12px;
+  --font-ui-smaller: 11px;
+  --font-ui-medium:  13px;
+
+  /* Headings */
+  --h1-color: rgba(220, 244, 255, 1.00); --h1-size: 1.80em; --h1-weight: 700; --h1-font: var(--ul2-heading-font);
+  --h2-color: rgba(200, 232, 252, 0.96); --h2-size: 1.45em; --h2-weight: 600; --h2-font: var(--ul2-heading-font);
+  --h3-color: rgba(185, 218, 245, 0.90); --h3-size: 1.20em; --h3-weight: 600; --h3-font: var(--ul2-heading-font);
+  --h4-color: rgba(168, 210, 240, 0.82); --h4-size: 1.05em;
+  --h5-color: rgba(155, 198, 230, 0.75); --h5-size: 0.95em;
+  --h6-color: rgba(140, 185, 218, 0.68); --h6-size: 0.88em;
+}
+
+/* ══════════════════════════════════════════════════════════════
+   TIPOGRAFIA GLOBAL
+   ══════════════════════════════════════════════════════════════ */
+
+body {
+  font-family: var(--ul2-ui-font);
+  letter-spacing: 0.01em;
+}
+
+/* Editor & preview — fonte máquina de escrever */
+.markdown-source-view.mod-cm6 .cm-content,
+.cm-editor .cm-line,
+.markdown-preview-view {
+  font-family: var(--font-text);
+  font-size:     var(--ul2-font-size);
+  line-height:   var(--ul2-line-height);
+  letter-spacing: var(--ul2-letter-spacing);
+}
+
+/* Centralização do conteúdo */
+.markdown-source-view.mod-cm6 .cm-content,
+.markdown-preview-view {
+  max-width: var(--ul2-max-width);
+  margin: 0 auto;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+}
+
+/* Respiro entre parágrafos — essencial para textos longos.
+   Sem isso o texto vira um bloco só, difícil de escanear ao reler. */
+.markdown-source-view.mod-cm6 .cm-line,
+.markdown-preview-view p {
+  margin-bottom: 0.9em;
+}
+.markdown-preview-view p:first-child { margin-top: 0; }
+
+/* Foco no parágrafo atual — o resto da página esmaece um pouco,
+   ajudando a manter o olho na frase sendo escrita agora */
+.is-live-preview .cm-line {
+  transition: opacity var(--ul2-transition-speed) ease;
+}
+.markdown-source-view.mod-cm6.is-focused .cm-line:not(.cm-active) {
+  opacity: 0.72;
+}
+.markdown-source-view.mod-cm6.is-focused .cm-line.cm-active {
+  opacity: 1;
+}
+
+/* Cursor de escrita — grosso e visível, não um traço fino que some no fundo escuro */
+.cm-editor .cm-cursor,
+.cm-editor .cm-cursor-primary {
+  border-left: 2.5px solid var(--caret-color);
+}
+
+/* — Headings — */
+.cm-header-1, .markdown-rendered h1, .markdown-preview-view h1 {
+  font-family:   var(--ul2-heading-font);
+  color:         var(--h1-color);
+  font-size:     var(--h1-size);
+  font-weight:   var(--h1-weight);
+  letter-spacing: 0.04em;
+  border-bottom: 1px solid var(--ul2-border-faint);
+  padding-bottom: 0.35em;
+  margin-bottom:  0.60em;
+}
+.cm-header-2, .markdown-rendered h2, .markdown-preview-view h2 {
+  font-family:   var(--ul2-heading-font);
+  color:         var(--h2-color);
+  font-size:     var(--h2-size);
+  font-weight:   var(--h2-weight);
+  letter-spacing: 0.03em;
+}
+.cm-header-3, .markdown-rendered h3, .markdown-preview-view h3 {
+  font-family:   var(--ul2-heading-font);
+  color:         var(--h3-color);
+  font-size:     var(--h3-size);
+  letter-spacing: 0.025em;
+}
+.cm-header-4, .markdown-rendered h4, .markdown-preview-view h4 { color: var(--h4-color); }
+.cm-header-5, .markdown-rendered h5, .markdown-preview-view h5 { color: var(--h5-color); }
+.cm-header-6, .markdown-rendered h6, .markdown-preview-view h6 { color: var(--h6-color); font-style: italic; }
+
+/* ══════════════════════════════════════════════════════════════
+   SELEÇÃO DE TEXTO
+   ══════════════════════════════════════════════════════════════ */
+
+::selection {
+  background: rgba(168, 216, 240, 0.28);
+  color:      rgba(240, 250, 255, 1);
+}
+
+/* ══════════════════════════════════════════════════════════════
+   WORKSPACE & PAINÉIS
+   ══════════════════════════════════════════════════════════════ */
+
+.workspace-leaf,
+.workspace-tab-header-container,
+.side-dock-settings {
+  background: rgba(168, 216, 240, 0.04);
+}
+
+.workspace-split.mod-left-split  { background: var(--ul2-bg-0); border-right: 1px solid var(--ul2-border-faint); }
+.workspace-split.mod-right-split { background: var(--ul2-bg-0); border-left:  1px solid var(--ul2-border-faint); }
+
+/* Tabs */
+.workspace-tab-header {
+  border-bottom: 1px solid var(--ul2-border-faint);
+  font-family:   var(--ul2-ui-font);
+  font-size:     12px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.workspace-tab-header.is-active {
+  background:    rgba(168, 216, 240, 0.12);
+  border-radius: var(--ul2-border-radius) var(--ul2-border-radius) 0 0;
+  color:         var(--ul2-frost-color);
+  border-bottom: 1px solid var(--ul2-border-glow);
+}
+
+/* Leaf — efeito iceberg */
+.workspace-leaf-content,
+.view-content,
+.cm-editor {
+  box-shadow: inset 0 0 0 1px rgba(100, 160, 210, 0.08);
+}
+
+/* Ribbon */
+.workspace-ribbon {
+  background:   var(--ul2-bg-0);
+  border-right: 1px solid var(--ul2-border-faint);
+}
+.workspace-ribbon .side-dock-ribbon-action:hover {
+  background:    var(--ul2-ice-faint);
+  color:         var(--ul2-frost-color);
+  border-radius: 6px;
+}
+
+/* Toolbar */
+.workspace-toolbar {
+  background:    rgba(168, 216, 240, 0.04);
+  border-bottom: 1px solid var(--ul2-border-faint);
+}
+
+/* Status bar */
+.status-bar {
+  background:    rgba(168, 216, 240, 0.04);
+  border-top:    1px solid var(--ul2-border-faint);
+  color:         rgba(180, 210, 235, 0.65);
+  font-family:   var(--ul2-ui-font);
+  font-size:     11px;
+  letter-spacing: 0.03em;
+}
+
+/* ══════════════════════════════════════════════════════════════
+   SCROLLBAR
+   ══════════════════════════════════════════════════════════════ */
+
+::-webkit-scrollbar              { width: 6px; height: 6px; }
+::-webkit-scrollbar-track        { background: transparent; }
+::-webkit-scrollbar-thumb        { background: rgba(120, 180, 230, 0.20); border-radius: 6px; }
+::-webkit-scrollbar-thumb:hover  { background: rgba(168, 216, 240, 0.40); }
+
+/* ══════════════════════════════════════════════════════════════
+   CÓDIGO
+   ══════════════════════════════════════════════════════════════ */
+
+.markdown-rendered pre,
+.cm-s-obsidian .HyperMD-codeblock {
+  background:    var(--ul2-ice-faint);
+  border:        1px solid var(--ul2-border-faint);
+  border-radius: var(--ul2-border-radius);
+  font-family:   var(--ul2-typewriter-font);
+}
+
+.markdown-rendered code,
+.cm-inline-code {
+  background:    rgba(168, 216, 240, 0.10);
+  border:        1px solid var(--ul2-border-faint);
+  border-radius: 4px;
+  padding:       0.1em 0.35em;
+  font-family:   var(--ul2-typewriter-font);
+  font-size:     0.9em;
+}
+
+/* ══════════════════════════════════════════════════════════════
+   BLOCKQUOTES
+   ══════════════════════════════════════════════════════════════ */
+
+.markdown-rendered blockquote,
+.markdown-preview-view blockquote {
+  border-left:   3px solid var(--ul2-accent-color);
+  background:    rgba(168, 216, 240, 0.05);
+  border-radius: 0 var(--ul2-border-radius) var(--ul2-border-radius) 0;
+  padding:       0.75em 1.2em;
+  color:         rgba(196, 228, 252, 0.80);
+  font-style:    italic;
+}
+
+/* HR — fissura no gelo */
+.markdown-rendered hr,
+.markdown-preview-view hr {
+  border:     none;
+  height:     1px;
+  background: var(--ul2-ice-medium);
+  margin:     2em 0;
+}
+
+/* ══════════════════════════════════════════════════════════════
+   LINKS
+   ══════════════════════════════════════════════════════════════ */
+
+.markdown-rendered a,
+.cm-hmd-internal-link,
+.cm-link {
+  color:         var(--ul2-accent-color);
+  text-decoration: none;
+  border-bottom: 1px solid var(--ul2-ice-medium);
+  transition:
+    color       var(--ul2-transition-speed) ease,
+    border-color var(--ul2-transition-speed) ease;
+}
+.markdown-rendered a:hover,
+.cm-hmd-internal-link:hover {
+  color:        var(--ul2-frost-color);
+  border-color: rgba(200, 235, 255, 0.60);
+}
+
+/* ══════════════════════════════════════════════════════════════
+   CALLOUTS
+   ══════════════════════════════════════════════════════════════ */
+
+.callout {
+  border-radius: var(--ul2-border-radius);
+  border:        1px solid;
+  padding:       1em 1.2em;
+  margin:        1em 0;
+}
+.callout-title {
+  font-family:   var(--ul2-ui-font);
+  font-weight:   600;
+  font-size:     0.88em;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 0.5em;
+}
+
+/* Mapeamento rápido de variantes */
+.callout,
+.callout[data-callout="note"],
+.callout[data-callout="info"]     { --callout-color: 168,216,240; background: rgba(168,216,240,.07); border-color: rgba(168,216,240,.28); }
+.callout[data-callout="tip"],
+.callout[data-callout="hint"],
+.callout[data-callout="example"]  { --callout-color: 125,232,216; background: rgba(125,232,216,.07); border-color: rgba(125,232,216,.28); color: var(--ul2-aurora-teal); }
+.callout[data-callout="abstract"],
+.callout[data-callout="summary"],
+.callout[data-callout="question"] { --callout-color: 184,160,240; background: rgba(184,160,240,.07); border-color: rgba(184,160,240,.28); color: var(--ul2-aurora-violet); }
+.callout[data-callout="warning"],
+.callout[data-callout="caution"]  { --callout-color: 240,216,122; background: rgba(240,216,122,.07); border-color: rgba(240,216,122,.28); color: var(--ul2-aurora-amber); }
+.callout[data-callout="danger"],
+.callout[data-callout="error"],
+.callout[data-callout="bug"]      { --callout-color: 240,128,128; background: rgba(240,128,128,.07); border-color: rgba(240,128,128,.28); color: var(--ul2-danger); }
+.callout[data-callout="success"],
+.callout[data-callout="check"],
+.callout[data-callout="done"]     { --callout-color: 128,232,192; background: rgba(128,232,192,.07); border-color: rgba(128,232,192,.28); color: var(--ul2-success); }
+
+/* ══════════════════════════════════════════════════════════════
+   TAGS
+   ══════════════════════════════════════════════════════════════ */
+
+.tag, a.tag {
+  background:    rgba(168, 216, 240, 0.10);
+  border:        1px solid rgba(168, 216, 240, 0.28);
+  border-radius: 4px;
+  color:         var(--ul2-accent-color);
+  font-family:   var(--ul2-ui-font);
+  font-size:     0.8em;
+  letter-spacing: 0.04em;
+  padding:       0.1em 0.55em;
+  text-decoration: none;
+  transition:
+    background var(--ul2-transition-speed) ease,
+    color      var(--ul2-transition-speed) ease;
+}
+.tag:hover, a.tag:hover {
+  background: rgba(168, 216, 240, 0.18);
+  color:      var(--ul2-frost-color);
+}
+
+/* ══════════════════════════════════════════════════════════════
+   TABELAS
+   ══════════════════════════════════════════════════════════════ */
+
+.markdown-rendered table,
+.markdown-preview-view table {
+  border-collapse: collapse;
+  width:           100%;
+  border-radius:   var(--ul2-border-radius);
+  overflow:        hidden;
+  border:          1px solid var(--ul2-border-faint);
+}
+.markdown-rendered th,
+.markdown-preview-view th {
+  background:     rgba(168, 216, 240, 0.10);
+  border-bottom:  1px solid var(--ul2-border-soft);
+  color:          var(--ul2-frost-color);
+  font-family:    var(--ul2-ui-font);
+  font-size:      0.82em;
+  font-weight:    600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding:        0.6em 1em;
+  text-align:     left;
+}
+.markdown-rendered td,
+.markdown-preview-view td {
+  border-bottom: 1px solid var(--ul2-border-faint);
+  padding:       0.55em 1em;
+  font-family:   var(--ul2-typewriter-font);
+}
+.markdown-rendered tr:hover td,
+.markdown-preview-view tr:hover td { background: rgba(168, 216, 240, 0.05); }
+
+/* ══════════════════════════════════════════════════════════════
+   SEARCH / QUICK SWITCHER
+   ══════════════════════════════════════════════════════════════ */
+
+.prompt,
+.suggestion-container {
+  background:    var(--ul2-bg-1);
+  border:        1px solid var(--ul2-border-soft);
+  border-radius: var(--ul2-border-radius);
+  box-shadow:    0 8px 30px rgba(10, 20, 35, 0.70);
+  font-family:   var(--ul2-ui-font);
+}
+.prompt-input {
+  font-family: var(--font-text);
+  font-size:   1em;
+  color:       var(--ul2-text-normal);
+  border:      none;
+  border-bottom: 1px solid var(--ul2-border-faint);
+  background:  transparent;
+}
+.suggestion-item.is-selected {
+  background:    rgba(168, 216, 240, 0.12);
+  border-radius: 4px;
+  color:         var(--ul2-frost-color);
+}
+
+/* ══════════════════════════════════════════════════════════════
+   MODAIS
+   ══════════════════════════════════════════════════════════════ */
+
+.modal {
+  background:    var(--ul2-bg-1);
+  border:        1px solid var(--ul2-border-soft);
+  border-radius: calc(var(--ul2-border-radius) + 2px);
+  box-shadow:    0 8px 30px rgba(10, 20, 35, 0.80);
+}
+.modal-title {
+  font-family:   var(--ul2-heading-font);
+  color:         var(--ul2-frost-color);
+  letter-spacing: 0.03em;
+  border-bottom: 1px solid var(--ul2-border-faint);
+  padding-bottom: 0.6em;
+}
+
+/* ══════════════════════════════════════════════════════════════
+   BOTÕES
+   ══════════════════════════════════════════════════════════════ */
+
+button.mod-cta, .button.mod-cta {
+  background:    rgba(168, 216, 240, 0.14);
+  border:        1px solid var(--ul2-border-soft);
+  border-radius: var(--ul2-border-radius);
+  color:         var(--ul2-frost-color);
+  font-family:   var(--ul2-ui-font);
+  font-size:     0.85em;
+  font-weight:   500;
+  letter-spacing: 0.04em;
+  transition:    background var(--ul2-transition-speed) ease;
+}
+button.mod-cta:hover, .button.mod-cta:hover { background: rgba(168, 216, 240, 0.22); }
+button.mod-warning { border-color: rgba(240, 128, 128, 0.45); color: var(--ul2-danger); }
+
+/* ══════════════════════════════════════════════════════════════
+   CHECKBOXES (tarefas)
+   ══════════════════════════════════════════════════════════════ */
+
+.task-list-item-checkbox {
+  border:     1.5px solid var(--ul2-border-soft);
+  border-radius: 3px;
+  background: rgba(168, 216, 240, 0.05);
+  transition:
+    background   140ms ease,
+    border-color 140ms ease;
+}
+.task-list-item-checkbox:checked {
+  background:   rgba(168, 216, 240, 0.20);
+  border-color: var(--ul2-accent-color);
+}
+.task-list-item.is-checked {
+  color:           rgba(140, 175, 205, 0.50);
+  text-decoration: line-through;
+}
+
+/* ══════════════════════════════════════════════════════════════
+   INLINE TITLE
+   ══════════════════════════════════════════════════════════════ */
+
+.workspace-leaf-content .inline-title {
+  font-family:   var(--ul2-heading-font);
+  color:         rgba(220, 244, 255, 1);
+  letter-spacing: 0.04em;
+  font-size:     2em;
+}
+
+/* ══════════════════════════════════════════════════════════════
+   MODO FOCO / ZEN — para sessões de escrita sem distração
+   Ativa com o plugin "Various Complements"/Zen Mode ou
+   comando "Toggle Zen Mode" (via .is-zen no body/workspace)
+   ══════════════════════════════════════════════════════════════ */
+
+.is-zen .workspace-tab-header-container,
+.is-zen .workspace-ribbon,
+.is-zen .status-bar,
+.is-zen .workspace-tab-header-tab-list {
+  display: none;
+}
+.is-zen .markdown-source-view.mod-cm6 .cm-content,
+.is-zen .markdown-preview-view {
+  max-width: calc(var(--ul2-max-width) - 40px);
+}
+
+/* Contador de palavras — precisa estar legível, não é enfeite */
+.status-bar-item.plugin-word-count {
+  font-family: var(--ul2-ui-font);
+  color: var(--ul2-frost-color);
+  font-weight: 500;
+}
+
+/* ══════════════════════════════════════════════════════════════
+   READING VIEW
+   ══════════════════════════════════════════════════════════════ */
+
+.markdown-preview-view .markdown-preview-section {
+  max-width: var(--ul2-max-width);
+  margin:    0 auto;
+}
+
+/* ══════════════════════════════════════════════════════════════
+   GRAPH VIEW
+   ══════════════════════════════════════════════════════════════ */
+
+.graph-view.color-fill            { color: rgba(168, 216, 240, 0.60); }
+.graph-view.color-fill-highlight  { color: rgba(200, 235, 255, 1.00); }
+.graph-view.color-line            { color: rgba(100, 160, 210, 0.30); }
+.graph-view.color-line-highlight  { color: rgba(168, 216, 240, 0.70); }
+.graph-view.color-text            { color: rgba(200, 228, 252, 0.90); }
+.graph-view.color-fill-attachment { color: rgba(125, 232, 216, 0.55); }
+.graph-view.color-fill-tag        { color: rgba(184, 160, 240, 0.60); }
+.graph-view.color-fill-unresolved { color: rgba(100, 140, 180, 0.40); }
+.graph-view.color-arrow           { color: rgba(168, 216, 240, 0.35); }
+
+/* ══════════════════════════════════════════════════════════════
+   ── BRUTALIST FILE EXPLORER ────────────────────────────────
+   ══════════════════════════════════════════════════════════════ */
+
+/* Atribuição de cores por slot (herança em cascade para subpastas) */
+.nav-files-container > div > .nav-folder { --ce-color: var(--ce-1); margin-bottom: var(--ce-folder-gap); } /* fallback + espaçamento */
+.nav-files-container > div > .nav-folder:nth-child(12n+1)  { --ce-color: var(--ce-1);  }
+.nav-files-container > div > .nav-folder:nth-child(12n+2)  { --ce-color: var(--ce-2);  }
+.nav-files-container > div > .nav-folder:nth-child(12n+3)  { --ce-color: var(--ce-3);  }
+.nav-files-container > div > .nav-folder:nth-child(12n+4)  { --ce-color: var(--ce-4);  }
+.nav-files-container > div > .nav-folder:nth-child(12n+5)  { --ce-color: var(--ce-5);  }
+.nav-files-container > div > .nav-folder:nth-child(12n+6)  { --ce-color: var(--ce-6);  }
+.nav-files-container > div > .nav-folder:nth-child(12n+7)  { --ce-color: var(--ce-7);  }
+.nav-files-container > div > .nav-folder:nth-child(12n+8)  { --ce-color: var(--ce-8);  }
+.nav-files-container > div > .nav-folder:nth-child(12n+9)  { --ce-color: var(--ce-9);  }
+.nav-files-container > div > .nav-folder:nth-child(12n+10) { --ce-color: var(--ce-10); }
+.nav-files-container > div > .nav-folder:nth-child(12n+11) { --ce-color: var(--ce-11); }
+.nav-files-container > div > .nav-folder:nth-child(12n+12) { --ce-color: var(--ce-12); }
+
+/* Ponto de partida comum: pastas raiz do explorer */
+.nav-files-container > div > .nav-folder :is(.nav-folder-title, .nav-file-title) {
+  --_fill:        color-mix(in srgb, var(--ce-color) calc(var(--ce-bg-opacity) * 100%), transparent);
+  --_fill-hover:  color-mix(in srgb, var(--ce-color) 32%, transparent);
+  --_fill-active: color-mix(in srgb, var(--ce-color) 42%, transparent);
+  --_bar-dim:     color-mix(in srgb, var(--ce-color) 45%, transparent);
+  color:            var(--ce-color);
+  background-color: var(--_fill);
+  border-radius:    var(--ce-radius);
+  padding:          var(--ce-item-padding);
+}
+
+/* Dark theme: fill mais sutil para não competir com o fundo escuro */
+.theme-dark .nav-files-container > div > .nav-folder :is(.nav-folder-title, .nav-file-title) {
+  --_fill:        color-mix(in srgb, var(--ce-color) 14%, transparent);
+  --_fill-active: color-mix(in srgb, var(--ce-color) 28%, transparent);
+}
+
+/* Título da pasta vs. linha de arquivo — só o que difere entre os dois */
+.nav-files-container > div > .nav-folder .nav-folder-title {
+  border-left: var(--ce-accent-border-width) solid var(--ce-color);
+  font-weight: var(--ce-folder-font-weight);
+}
+.nav-files-container > div > .nav-folder .nav-file-title {
+  border-left: var(--ce-accent-border-width) solid var(--_bar-dim);
+  font-weight: var(--ce-file-font-weight);
+}
+
+/* Ícone da pasta */
+.nav-files-container > div > .nav-folder .nav-folder-title :is(.nav-folder-collapse-indicator, svg) {
+  color: var(--ce-color);
+}
+
+/* Hover */
+.nav-files-container > div > .nav-folder :is(.nav-folder-title, .nav-file-title):hover {
+  background-color: var(--_fill-hover);
+  border-left-color: var(--ce-color);
+}
+
+/* Ativo / selecionado */
+.nav-files-container > div > .nav-folder :is(.nav-file-title, .nav-folder-title).is-active {
+  background-color:  var(--_fill-active);
+  color:             var(--ce-color);
+  border-left-color: var(--ce-color);
+  border-left-width: 8px;
+  font-weight:       700;
+}
+
+/* ══════════════════════════════════════════════════════════════
+   ── KANBAN PLUGIN ──────────────────────────────────────────
+   ══════════════════════════════════════════════════════════════ */
+
+.kanban-plugin__board { background: var(--ul2-bg-0); padding: 1em; }
+
+.kanban-plugin__lane-header-wrapper {
+  background:    rgba(168, 216, 240, 0.07);
+  border:        1px solid var(--ul2-border-faint);
+  border-radius: var(--ul2-border-radius) var(--ul2-border-radius) 0 0;
+  padding:       0.5em 0.8em;
+  font-family:   var(--ul2-ui-font);
+  font-size:     0.8em;
+  font-weight:   600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color:         var(--ul2-accent-color);
+}
+
+.kanban-plugin__lane {
+  background:    rgba(168, 216, 240, 0.03);
+  border:        1px solid var(--ul2-border-faint);
+  border-top:    none;
+  border-radius: 0 0 var(--ul2-border-radius) var(--ul2-border-radius);
+  min-width:     260px;
+  max-width:     300px;
+}
+.kanban-plugin__lane.is-drop-target { border-color: var(--ul2-border-glow); }
+
+.kanban-plugin__item-content-wrapper {
+  background:    var(--ul2-bg-2);
+  border:        1px solid var(--ul2-border-faint);
+  border-radius: var(--ul2-border-radius);
+  box-shadow:    0 1px 4px rgba(10, 20, 35, 0.35);
+  font-family:   var(--ul2-typewriter-font);
+  font-size:     0.93em;
+}
+.kanban-plugin__item-content-wrapper:hover { border-color: var(--ul2-border-soft); }
+
+.kanban-plugin__item-tag {
+  background:    rgba(168, 216, 240, 0.10);
+  border:        1px solid rgba(168, 216, 240, 0.22);
+  border-radius: 4px;
+  color:         var(--ul2-accent-color);
+  font-size:     0.75em;
+  letter-spacing: 0.03em;
+}
+
+/* ══════════════════════════════════════════════════════════════
+   ── QUICKADD PLUGIN ────────────────────────────────────────
+   ══════════════════════════════════════════════════════════════ */
+
+.quickadd-modal, .qm-modal {
+  background:    var(--ul2-bg-1);
+  border:        1px solid var(--ul2-border-soft);
+  border-radius: var(--ul2-border-radius);
+  box-shadow:    0 12px 40px rgba(10, 20, 35, 0.75);
+}
+.quickadd-modal .prompt-input, .qm-input {
+  font-family: var(--ul2-typewriter-font);
+  background:  rgba(168, 216, 240, 0.05);
+  border:      1px solid var(--ul2-border-faint);
+  border-radius: 4px;
+  color:       var(--ul2-text-normal);
+  font-size:   1em;
+}
+.quickadd-modal .prompt-input:focus, .qm-input:focus {
+  border-color: var(--ul2-border-glow);
+  outline:      none;
+}
+
+/* ══════════════════════════════════════════════════════════════
+   ── NOTEBOOK NAVIGATOR ─────────────────────────────────────
+   ══════════════════════════════════════════════════════════════ */
+
+.notebook-navigator, .nn-container { font-family: var(--ul2-ui-font); }
+
+.notebook-navigator .tree-item-self, .nn-file-item {
+  border-radius: 4px;
+  font-size:     13px;
+  padding:       2px 6px;
+  letter-spacing: 0.02em;
+}
+.notebook-navigator .tree-item-self:hover, .nn-file-item:hover {
+  background: var(--ul2-ice-faint);
+  color:      var(--ul2-frost-color);
+}
+.notebook-navigator .tree-item-self.is-selected, .nn-file-item.is-selected {
+  background:  rgba(168, 216, 240, 0.14);
+  color:       var(--ul2-frost-color);
+  border-left: 2px solid var(--ul2-accent-color);
+}
+.notebook-navigator .nav-folder-title, .nn-section-header {
+  font-family:   var(--ul2-ui-font);
+  font-size:     0.75em;
+  font-weight:   600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color:         var(--text-faint);
+  padding-top:   0.8em;
+}
+
+/* ══════════════════════════════════════════════════════════════
+   ── BANNER PLUGIN ──────────────────────────────────────────
+   ══════════════════════════════════════════════════════════════ */
+
+.obsidian-banner-wrapper::after {
+  content:  "";
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height:   60%;
+  background: linear-gradient(to top, rgba(13,24,33,.85) 0%, rgba(13,24,33,.4) 60%, transparent 100%);
+  pointer-events: none;
+}
+.obsidian-banner-wrapper img, .banner-image {
+  filter:        saturate(0.7) brightness(0.8) hue-rotate(185deg);
+  border-radius: 0 0 var(--ul2-border-radius) var(--ul2-border-radius);
+  transition:    filter 400ms ease;
+}
+.obsidian-banner-wrapper:hover img, .banner-image:hover {
+  filter: saturate(0.85) brightness(0.9) hue-rotate(180deg);
+}
+.obsidian-banner-wrapper .banner-header .inline-title,
+.obsidian-banner-wrapper .obsidian-banner-header-title {
+  font-family:   var(--ul2-heading-font);
+  color:         rgba(220, 244, 255, 0.98);
+  letter-spacing: 0.04em;
+}
+
+/* ══════════════════════════════════════════════════════════════
+   ── DATAVIEW PLUGIN ────────────────────────────────────────
+   ══════════════════════════════════════════════════════════════ */
+
+.dataview.table-view-table { border-collapse: collapse; width: 100%; font-family: var(--ul2-ui-font); font-size: 0.88em; }
+
+.dataview.table-view-table th {
+  background:     rgba(168, 216, 240, 0.08);
+  border-bottom:  1px solid var(--ul2-border-soft);
+  color:          var(--ul2-frost-color);
+  font-size:      0.8em;
+  font-weight:    600;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  padding:        0.55em 0.9em;
+  text-align:     left;
+}
+.dataview.table-view-table td {
+  border-bottom: 1px solid var(--ul2-border-faint);
+  padding:       0.48em 0.9em;
+  font-family:   var(--ul2-typewriter-font);
+  vertical-align: middle;
+}
+.dataview.table-view-table tr:hover td { background: rgba(168, 216, 240, 0.05); }
+
+.dataview.list-view-ul { list-style: none; padding: 0; margin: 0; }
+.dataview.list-view-ul li {
+  border-bottom: 1px solid var(--ul2-border-faint);
+  padding:       0.35em 0;
+  font-family:   var(--ul2-typewriter-font);
+  font-size:     0.93em;
+  color:         var(--text-muted);
+}
+.dataview.list-view-ul li:last-child { border-bottom: none; }
+
+.dataview-inline-field-key {
+  background:    rgba(168, 216, 240, 0.10);
+  border:        1px solid rgba(168, 216, 240, 0.20);
+  border-radius: 4px;
+  color:         var(--ul2-accent-color);
+  font-family:   var(--ul2-ui-font);
+  font-size:     0.8em;
+  font-weight:   500;
+  letter-spacing: 0.04em;
+  padding:       0 0.4em;
+}
+.dataview-inline-field-value {
+  color:       var(--ul2-text-normal);
+  font-family: var(--ul2-typewriter-font);
+  font-size:   0.9em;
+}
+.dataview input[type="checkbox"] { accent-color: var(--ul2-accent-color); width: 14px; height: 14px; }
+
+/* ══════════════════════════════════════════════════════════════
+   ACESSIBILIDADE & MOBILE
+   ══════════════════════════════════════════════════════════════ */
+
+/* Desativa as transições e animações definidas por este tema.
+   Não alcança CSS de terceiros — isso exigiria !important. */
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --ul2-transition-speed: 0ms;
+  }
+  * { transition-duration: 0ms; animation-duration: 0ms; }
+}
+
+@media screen and (max-width: 768px) {
+  :root {
+    --ul2-font-size: 15px;
+    --ul2-max-width: 100%;
+  }
+  .kanban-plugin__lane { min-width: 220px; max-width: 260px; }
+}

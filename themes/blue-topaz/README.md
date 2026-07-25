@@ -1,7 +1,7 @@
 # Blue Topaz
 
 - Theme: Blue Topaz
-- Author: <a href="https://github.com/whyt-byte" target="_blank" rel="noopener noreferrer">WhyI & Pkmer</a>
+- Author: <a href="https://github.com/PKM-er" target="_blank" rel="noopener noreferrer">WhyI & Pkmer</a>
 
 ## Preview
 

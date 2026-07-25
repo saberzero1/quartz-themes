@@ -1,0 +1,1247 @@
+/* ============================================================
+ * VSCode 2026 — Obsidian Theme
+ * Author : yangsonhung
+ * License: MIT
+ * Repo   : https://github.com/yangsonhung/obsidian-vscode-2026
+ *
+ * Sections:
+ *   0  Meta / Credits
+ *   1  Root Variables (shared)
+ *   2  Light Mode Variables
+ *   3  Dark Mode Variables
+ *   4  Typography & Base Reset
+ *   5  macOS Vibrancy & Window Chrome
+ *   6  Workspace Shell (ribbon, sidebar, status bar, tabs, titlebar)
+ *   7  File Explorer / Outline / Search
+ *   8  Editor (Live Preview + Source)
+ *   9  Reading View
+ *  10  Code Blocks & Syntax Highlighting
+ *  11  Callouts
+ *  12  Tables / Quotes / Lists / Checkboxes / Tags / Links
+ *  13  Graph View
+ *  14  Canvas
+ *  15  Settings Modal & Command Palette
+ *  16  Scrollbars (macOS overlay style)
+ *  17  Third-party Plugins (Calendar, Dataview)
+ *  18  Animations & Focus States
+ * ============================================================ */
+
+
+/* ============================================================
+ *  Section 1 — Root Variables (shared)
+ * ============================================================ */
+:root {
+  /* — Typography — */
+  --font-interface-theme: -apple-system, "SF Pro Text", BlinkMacSystemFont,
+                          "Segoe UI Variable", "Segoe UI", Roboto, sans-serif;
+  --font-text-theme:      -apple-system, "SF Pro Text", BlinkMacSystemFont,
+                          "Segoe UI Variable", "Segoe UI", Roboto, sans-serif;
+  --font-monospace-theme: "SF Mono", "JetBrains Mono", Menlo, Monaco,
+                          "Cascadia Mono", Consolas, monospace;
+
+  --font-ui-smaller: 12px;
+  --font-ui-small:   13px;
+  --font-ui-medium:  14px;
+  --font-ui-large:   16px;
+
+  /* — Radius (macOS Tahoe) — */
+  --radius-s:    6px;
+  --radius-m:    8px;
+  --radius-l:   12px;
+  --radius-xl:  16px;
+  --radius-pill: 999px;
+
+  --input-radius:    var(--radius-m);
+  --button-radius:   var(--radius-m);
+  --tab-radius:      var(--radius-m);
+  --modal-radius:    var(--radius-l);
+  --callout-radius:  var(--radius-m);
+
+  /* — Motion — */
+  --anim-duration-fast:    120ms;
+  --anim-duration-default: 180ms;
+  --anim-duration-slow:    280ms;
+  --anim-motion-smooth:    cubic-bezier(0.22, 0.61, 0.36, 1);
+
+  /* — Vibrancy — */
+  --vibrancy-blur:       24px;
+  --vibrancy-saturation: 180%;
+
+  /* — Spacing aliases (do not override Obsidian core spacing) — */
+}
+
+
+/* ============================================================
+ *  Section 2 — Light Mode Variables
+ *  VS 2026 Fluent Light + VSCode Light+ syntax tokens
+ * ============================================================ */
+.theme-light {
+  /* — Accent / interactive — */
+  --interactive-accent:        #005FB8;
+  --interactive-accent-hover:  #1A6FBE;
+  --interactive-accent-rgb:    0, 95, 184;
+  --text-on-accent:            #FFFFFF;
+
+  /* — Backgrounds — */
+  --background-primary:        #FFFFFF;
+  --background-primary-alt:    #F6F8FC;
+  --background-secondary:      #F6F8FC;
+  --background-secondary-alt:  #DDE7FF;
+
+  --background-modifier-hover:        rgba(0, 95, 184, 0.08);
+  --background-modifier-active-hover: rgba(0, 95, 184, 0.14);
+  --background-modifier-border:        rgba(149, 164, 191, 0.45);
+  --background-modifier-border-hover:  rgba(149, 164, 191, 0.7);
+  --background-modifier-border-focus:  #005FB8;
+  --background-modifier-form-field:    #FFFFFF;
+  --background-modifier-error:         rgba(209, 52, 56, 0.12);
+  --background-modifier-success:       rgba(22, 130, 93, 0.12);
+
+  /* — Chrome — */
+  --titlebar-background:         #DDE7FF;
+  --titlebar-background-focused: #DDE7FF;
+  --ribbon-background:           #F6F8FC;
+  --status-bar-background:       #005FB8;
+  --status-bar-text-color:       #FFFFFF;
+  --status-bar-border-color:     transparent;
+
+  /* — Text — */
+  --text-normal:        #1F1F1F;
+  --text-muted:         #5A5A5A;
+  --text-faint:         #8A8A8A;
+  --text-accent:        #005FB8;
+  --text-accent-hover:  #1A6FBE;
+  --text-error:         #D13438;
+  --text-success:       #16825D;
+  --text-warning:       #BC7500;
+  --text-selection:     rgba(0, 95, 184, 0.18);
+  --text-highlight-bg:  rgba(255, 213, 0, 0.45);
+
+  /* — Headings (subtle blue gradient feel) — */
+  --h1-color: #1F1F1F;
+  --h2-color: #1F1F1F;
+  --h3-color: #005FB8;
+  --h4-color: #267F99;
+  --h5-color: #795E26;
+  --h6-color: #5A5A5A;
+  --inline-title-color: var(--text-normal);
+
+  /* — Links — */
+  --link-color:                #005FB8;
+  --link-color-hover:          #1A6FBE;
+  --link-external-color:       #005FB8;
+  --link-external-color-hover: #AF00DB;
+  --link-unresolved-color:     #D13438;
+  --link-unresolved-opacity:   0.7;
+
+  /* — Code (Light+) — */
+  --code-background:   #F3F3F3;
+  --code-normal:       #1F1F1F;
+  --code-keyword:      #0000FF;
+  --code-string:       #A31515;
+  --code-comment:      #008000;
+  --code-function:     #795E26;
+  --code-variable:     #001080;
+  --code-property:     #001080;
+  --code-type:         #267F99;
+  --code-tag:          #800000;
+  --code-attribute:    #E50000;
+  --code-number:       #098658;
+  --code-operator:     #1F1F1F;
+  --code-punctuation:  #1F1F1F;
+  --code-control:      #AF00DB;
+  --code-builtin:      #267F99;
+  --code-regex:        #811F3F;
+  --code-important:    #AF00DB;
+
+  /* — Callouts (RGB triplets, consumed via rgba()) — */
+  --callout-note:     0, 95, 184;
+  --callout-tip:      22, 130, 93;
+  --callout-info:     0, 120, 152;
+  --callout-success:  22, 130, 93;
+  --callout-question: 188, 117, 0;
+  --callout-warning:  188, 117, 0;
+  --callout-failure:  209, 52, 56;
+  --callout-error:    209, 52, 56;
+  --callout-bug:      209, 52, 56;
+  --callout-example:  136, 23, 152;
+  --callout-quote:    100, 100, 100;
+  --callout-abstract: 0, 120, 152;
+  --callout-todo:     0, 95, 184;
+  --callout-import:   175, 0, 219;
+
+  /* — Tags — */
+  --tag-color:       #005FB8;
+  --tag-color-hover: #1A6FBE;
+  --tag-background:  rgba(0, 95, 184, 0.10);
+  --tag-background-hover: rgba(0, 95, 184, 0.18);
+  --tag-radius:      var(--radius-pill);
+  --tag-border-color: transparent;
+  --tag-border-width: 0;
+  --tag-padding-x:   8px;
+  --tag-padding-y:   1px;
+
+  /* — Tables — */
+  --table-border-color:      var(--background-modifier-border);
+  --table-header-background: #F6F8FC;
+  --table-header-color:      var(--text-normal);
+  --table-row-alt-background: #FAFBFD;
+  --table-row-hover-background: rgba(0, 95, 184, 0.05);
+
+  /* — Blockquote — */
+  --blockquote-border-color: rgba(149, 164, 191, 0.7);
+  --blockquote-color:        #5A5A5A;
+  --bold-color:              #005FB8;
+  --italic-color:            #795E26;
+
+  /* — Checkbox — */
+  --checkbox-color:               #005FB8;
+  --checkbox-color-hover:         #1A6FBE;
+  --checkbox-border-color:        rgba(149, 164, 191, 0.7);
+  --checkbox-border-color-hover:  #005FB8;
+  --checkbox-marker-color:        #FFFFFF;
+
+  /* — Graph view — */
+  --graph-line:             #95A4BF;
+  --graph-node:             #5A5A5A;
+  --graph-node-tag:         #267F99;
+  --graph-node-attachment:  #795E26;
+  --graph-node-unresolved:  #B0B0B0;
+  --graph-node-focused:     #005FB8;
+  --graph-text:             #1F1F1F;
+  --graph-fill-tag:         #267F99;
+  --graph-fill-attachment:  #795E26;
+  --graph-fill-unresolved:  rgba(176, 176, 176, 0.4);
+
+  /* — Canvas — */
+  --canvas-background:    #F6F8FC;
+  --canvas-card-bg:       #FFFFFF;
+  --canvas-card-border:   var(--background-modifier-border);
+  --canvas-edge:          #5A5A5A;
+
+  /* — Calendar plugin — */
+  --color-background-heading: transparent;
+  --color-text-heading:       var(--text-normal);
+  --color-text-day:           var(--text-normal);
+  --color-text-today:         var(--interactive-accent);
+  --color-background-day:     transparent;
+  --color-background-today:   rgba(0, 95, 184, 0.12);
+  --color-dot:                var(--interactive-accent);
+
+  /* — Tab — */
+  --tab-background-active:        var(--background-primary);
+  --tab-container-background:     var(--background-secondary);
+  --tab-text-color:               var(--text-muted);
+  --tab-text-color-active:        var(--text-normal);
+  --tab-text-color-focused-active: var(--text-normal);
+
+  /* — Nav — */
+  --nav-item-color:               var(--text-muted);
+  --nav-item-color-hover:         var(--text-normal);
+  --nav-item-color-active:        var(--interactive-accent);
+  --nav-item-background-hover:    var(--background-modifier-hover);
+  --nav-item-background-active:   var(--background-modifier-active-hover);
+
+  /* — Scrollbar — */
+  --scrollbar-bg:               transparent;
+  --scrollbar-thumb-bg:         rgba(0, 0, 0, 0.16);
+  --scrollbar-active-thumb-bg:  rgba(0, 0, 0, 0.32);
+
+  /* — Indentation guides — */
+  --indentation-guide-color:        rgba(0, 0, 0, 0.06);
+  --indentation-guide-color-active: rgba(0, 95, 184, 0.30);
+
+  /* — Divider — */
+  --divider-color:        var(--background-modifier-border);
+  --divider-color-hover:  #005FB8;
+
+  /* — Shadows — */
+  --shadow-s: 0 1px 2px rgba(15, 30, 60, 0.06);
+  --shadow-m: 0 4px 12px rgba(15, 30, 60, 0.10);
+  --shadow-l: 0 12px 32px rgba(15, 30, 60, 0.14);
+}
+
+
+/* ============================================================
+ *  Section 3 — Dark Mode Variables
+ *  Fluent Dark surfaces + VSCode Dark+ syntax tokens
+ * ============================================================ */
+.theme-dark {
+  /* — Accent — */
+  --interactive-accent:        #2F72C4;
+  --interactive-accent-hover:  #4A8AD8;
+  --interactive-accent-rgb:    47, 114, 196;
+  --text-on-accent:            #FFFFFF;
+
+  /* — Backgrounds — */
+  --background-primary:        #1F1F1F;
+  --background-primary-alt:    #181818;
+  --background-secondary:      #181818;
+  --background-secondary-alt:  #2A2D2E;
+
+  --background-modifier-hover:        rgba(255, 255, 255, 0.06);
+  --background-modifier-active-hover: rgba(47, 114, 196, 0.22);
+  --background-modifier-border:       rgba(255, 255, 255, 0.08);
+  --background-modifier-border-hover: rgba(255, 255, 255, 0.16);
+  --background-modifier-border-focus: #2F72C4;
+  --background-modifier-form-field:   #1F1F1F;
+  --background-modifier-error:        rgba(244, 135, 113, 0.16);
+  --background-modifier-success:      rgba(78, 201, 176, 0.16);
+
+  /* — Chrome — */
+  --titlebar-background:         #181818;
+  --titlebar-background-focused: #181818;
+  --ribbon-background:           #181818;
+  --status-bar-background:       #2F72C4;
+  --status-bar-text-color:       #FFFFFF;
+  --status-bar-border-color:     transparent;
+
+  /* — Text — */
+  --text-normal:        #CCCCCC;
+  --text-muted:         #9D9D9D;
+  --text-faint:         #6E6E6E;
+  --text-accent:        #4A8AD8;
+  --text-accent-hover:  #6BA3E5;
+  --text-error:         #F48771;
+  --text-success:       #4EC9B0;
+  --text-warning:       #DCDCAA;
+  --text-selection:     rgba(47, 114, 196, 0.30);
+  --text-highlight-bg:  rgba(220, 220, 170, 0.22);
+
+  /* — Headings — */
+  --h1-color: #D4D4D4;
+  --h2-color: #D4D4D4;
+  --h3-color: #569CD6;
+  --h4-color: #4EC9B0;
+  --h5-color: #DCDCAA;
+  --h6-color: #9D9D9D;
+  --inline-title-color: var(--text-normal);
+
+  /* — Links — */
+  --link-color:                #4A8AD8;
+  --link-color-hover:          #6BA3E5;
+  --link-external-color:       #4A8AD8;
+  --link-external-color-hover: #C586C0;
+  --link-unresolved-color:     #F48771;
+  --link-unresolved-opacity:   0.7;
+
+  /* — Code (Dark+) — */
+  --code-background:   #1E1E1E;
+  --code-normal:       #D4D4D4;
+  --code-keyword:      #569CD6;
+  --code-string:       #CE9178;
+  --code-comment:      #6A9955;
+  --code-function:     #DCDCAA;
+  --code-variable:     #9CDCFE;
+  --code-property:     #9CDCFE;
+  --code-type:         #4EC9B0;
+  --code-tag:          #569CD6;
+  --code-attribute:    #9CDCFE;
+  --code-number:       #B5CEA8;
+  --code-operator:     #D4D4D4;
+  --code-punctuation:  #D4D4D4;
+  --code-control:      #C586C0;
+  --code-builtin:      #4EC9B0;
+  --code-regex:        #D16969;
+  --code-important:    #C586C0;
+
+  /* — Callouts — */
+  --callout-note:     86, 156, 214;
+  --callout-tip:      78, 201, 176;
+  --callout-info:     86, 156, 214;
+  --callout-success:  78, 201, 176;
+  --callout-question: 220, 220, 170;
+  --callout-warning:  220, 220, 170;
+  --callout-failure:  244, 135, 113;
+  --callout-error:    244, 135, 113;
+  --callout-bug:      244, 135, 113;
+  --callout-example:  197, 134, 192;
+  --callout-quote:    156, 156, 156;
+  --callout-abstract: 78, 201, 176;
+  --callout-todo:     86, 156, 214;
+  --callout-import:   197, 134, 192;
+
+  /* — Tags — */
+  --tag-color:            #4A8AD8;
+  --tag-color-hover:      #6BA3E5;
+  --tag-background:       rgba(47, 114, 196, 0.18);
+  --tag-background-hover: rgba(47, 114, 196, 0.32);
+
+  /* — Tables — */
+  --table-border-color:         var(--background-modifier-border);
+  --table-header-background:    #252526;
+  --table-header-color:         var(--text-normal);
+  --table-row-alt-background:   #1A1A1A;
+  --table-row-hover-background: rgba(47, 114, 196, 0.10);
+
+  /* — Blockquote — */
+  --blockquote-border-color: rgba(255, 255, 255, 0.16);
+  --blockquote-color:        #9D9D9D;
+  --bold-color:              #569CD6;
+  --italic-color:            #CE9178;
+
+  /* — Checkbox — */
+  --checkbox-color:              #2F72C4;
+  --checkbox-color-hover:        #4A8AD8;
+  --checkbox-border-color:       rgba(255, 255, 255, 0.30);
+  --checkbox-border-color-hover: #4A8AD8;
+  --checkbox-marker-color:       #FFFFFF;
+
+  /* — Graph view — */
+  --graph-line:             rgba(255, 255, 255, 0.10);
+  --graph-node:             #9D9D9D;
+  --graph-node-tag:         #4EC9B0;
+  --graph-node-attachment:  #DCDCAA;
+  --graph-node-unresolved:  #5A5A5A;
+  --graph-node-focused:     #4A8AD8;
+  --graph-text:             #CCCCCC;
+  --graph-fill-tag:         #4EC9B0;
+  --graph-fill-attachment:  #DCDCAA;
+  --graph-fill-unresolved:  rgba(90, 90, 90, 0.4);
+
+  /* — Canvas — */
+  --canvas-background:  #1A1A1A;
+  --canvas-card-bg:     #252526;
+  --canvas-card-border: var(--background-modifier-border);
+  --canvas-edge:        #9D9D9D;
+
+  /* — Calendar — */
+  --color-background-today: rgba(47, 114, 196, 0.22);
+  --color-dot:              var(--interactive-accent);
+
+  /* — Tab — */
+  --tab-background-active:        var(--background-primary);
+  --tab-container-background:     var(--background-secondary);
+  --tab-text-color:               var(--text-muted);
+  --tab-text-color-active:        var(--text-normal);
+  --tab-text-color-focused-active: var(--text-normal);
+
+  /* — Nav — */
+  --nav-item-color:             var(--text-muted);
+  --nav-item-color-hover:       #FFFFFF;
+  --nav-item-color-active:      #FFFFFF;
+  --nav-item-background-hover:  var(--background-modifier-hover);
+  --nav-item-background-active: var(--background-modifier-active-hover);
+
+  /* — Scrollbar — */
+  --scrollbar-bg:               transparent;
+  --scrollbar-thumb-bg:         rgba(255, 255, 255, 0.16);
+  --scrollbar-active-thumb-bg:  rgba(255, 255, 255, 0.32);
+
+  /* — Indentation guides — */
+  --indentation-guide-color:        rgba(255, 255, 255, 0.05);
+  --indentation-guide-color-active: rgba(74, 138, 216, 0.45);
+
+  /* — Divider — */
+  --divider-color:       var(--background-modifier-border);
+  --divider-color-hover: #2F72C4;
+
+  /* — Shadows — */
+  --shadow-s: 0 1px 2px rgba(0, 0, 0, 0.30);
+  --shadow-m: 0 4px 12px rgba(0, 0, 0, 0.40);
+  --shadow-l: 0 12px 32px rgba(0, 0, 0, 0.50);
+}
+
+
+/* ============================================================
+ *  Section 4 — Typography & Base Reset
+ * ============================================================ */
+body {
+  --font-interface-override: var(--font-interface-theme);
+  --font-text-override:      var(--font-text-theme);
+  --font-monospace-override: var(--font-monospace-theme);
+  --font-text-size:          15px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: "ss01", "cv01", "cv09", "cv11";
+  text-rendering: optimizeLegibility;
+}
+
+.markdown-source-view.mod-cm6 .cm-line,
+.markdown-rendered {
+  line-height: 1.65;
+}
+
+/* Heading sizes & weights */
+.markdown-rendered h1, .HyperMD-header-1, .cm-header-1 { font-size: 1.75em; font-weight: 600; }
+.markdown-rendered h2, .HyperMD-header-2, .cm-header-2 { font-size: 1.45em; font-weight: 600; }
+.markdown-rendered h3, .HyperMD-header-3, .cm-header-3 { font-size: 1.20em; font-weight: 600; }
+.markdown-rendered h4, .HyperMD-header-4, .cm-header-4 { font-size: 1.05em; font-weight: 600; }
+.markdown-rendered h5, .HyperMD-header-5, .cm-header-5 { font-size: 1.00em; font-weight: 600; }
+.markdown-rendered h6, .HyperMD-header-6, .cm-header-6 { font-size: 0.95em; font-weight: 600; }
+
+.markdown-rendered h1 { color: var(--h1-color); }
+.markdown-rendered h2 { color: var(--h2-color); }
+.markdown-rendered h3 { color: var(--h3-color); }
+.markdown-rendered h4 { color: var(--h4-color); }
+.markdown-rendered h5 { color: var(--h5-color); }
+.markdown-rendered h6 { color: var(--h6-color); }
+
+.cm-header-1 { color: var(--h1-color); }
+.cm-header-2 { color: var(--h2-color); }
+.cm-header-3 { color: var(--h3-color); }
+.cm-header-4 { color: var(--h4-color); }
+.cm-header-5 { color: var(--h5-color); }
+.cm-header-6 { color: var(--h6-color); }
+
+.inline-title { color: var(--inline-title-color); font-weight: 600; }
+
+
+/* ============================================================
+ *  Section 5 — macOS Vibrancy & Window Chrome
+ *  All backdrop-filter rules are scoped to body.is-translucent
+ *  so non-translucent windows fall back to solid colors.
+ * ============================================================ */
+body.is-translucent .workspace-ribbon,
+body.is-translucent .workspace-tab-header-container,
+body.is-translucent .workspace-split.mod-left-split,
+body.is-translucent .workspace-split.mod-right-split,
+body.is-translucent .status-bar,
+body.is-translucent .titlebar {
+  background-color: color-mix(in srgb, var(--background-secondary) 72%, transparent);
+  -webkit-backdrop-filter: saturate(var(--vibrancy-saturation)) blur(var(--vibrancy-blur));
+  backdrop-filter:         saturate(var(--vibrancy-saturation)) blur(var(--vibrancy-blur));
+}
+
+/* Status bar keeps accent color but goes vibrant */
+body.is-translucent .status-bar {
+  background-color: color-mix(in srgb, var(--status-bar-background) 88%, transparent);
+}
+
+/* Defocused window — desaturate, tighten alpha */
+body.is-translucent:not(.is-focused) .workspace-ribbon,
+body.is-translucent:not(.is-focused) .workspace-split.mod-left-split,
+body.is-translucent:not(.is-focused) .workspace-split.mod-right-split,
+body.is-translucent:not(.is-focused) .status-bar,
+body.is-translucent:not(.is-focused) .titlebar {
+  background-color: color-mix(in srgb, var(--background-secondary) 88%, transparent);
+  -webkit-backdrop-filter: saturate(110%) blur(calc(var(--vibrancy-blur) * 0.6));
+  backdrop-filter:         saturate(110%) blur(calc(var(--vibrancy-blur) * 0.6));
+  transition: background-color var(--anim-duration-default) var(--anim-motion-smooth);
+}
+
+/* Modals, command palette, menus — strong vibrancy */
+body.is-translucent .modal-bg { background-color: rgba(0, 0, 0, 0.18); }
+
+body.is-translucent .modal,
+body.is-translucent .suggestion-container,
+body.is-translucent .menu,
+body.is-translucent .prompt {
+  background-color: color-mix(in srgb, var(--background-primary) 78%, transparent);
+  -webkit-backdrop-filter: saturate(180%) blur(28px);
+  backdrop-filter:         saturate(180%) blur(28px);
+  border: 0.5px solid var(--background-modifier-border);
+  border-radius: var(--modal-radius);
+  box-shadow: var(--shadow-l);
+}
+
+
+/* ============================================================
+ *  Section 6 — Workspace Shell
+ * ============================================================ */
+/* Titlebar */
+.titlebar {
+  background-color: var(--titlebar-background);
+  border-bottom: 0.5px solid var(--background-modifier-border);
+}
+.titlebar .titlebar-text { color: var(--text-muted); font-size: var(--font-ui-small); }
+
+/* Ribbon (left activity bar) */
+.workspace-ribbon {
+  background-color: var(--ribbon-background);
+  border-right: 0.5px solid var(--background-modifier-border);
+}
+.workspace-ribbon .side-dock-ribbon-action {
+  color: var(--text-muted);
+  border-radius: var(--radius-s);
+  transition: color var(--anim-duration-fast) var(--anim-motion-smooth),
+              background-color var(--anim-duration-fast) var(--anim-motion-smooth);
+}
+.workspace-ribbon .side-dock-ribbon-action:hover {
+  color: var(--text-normal);
+  background-color: var(--background-modifier-hover);
+}
+.workspace-ribbon .side-dock-ribbon-action.is-active {
+  color: var(--interactive-accent);
+  background-color: var(--background-modifier-active-hover);
+}
+
+/* Status bar */
+.status-bar {
+  background-color: var(--status-bar-background);
+  color: var(--status-bar-text-color);
+  border-top: 0.5px solid var(--status-bar-border-color);
+  font-size: var(--font-ui-smaller);
+}
+.status-bar .status-bar-item { color: var(--status-bar-text-color); }
+.status-bar .status-bar-item-icon { opacity: 0.9; }
+.status-bar .status-bar-item:hover { background-color: rgba(255, 255, 255, 0.12); }
+
+/* Tabs */
+.workspace-tab-header-container {
+  background-color: var(--tab-container-background);
+  border-bottom: 0.5px solid var(--background-modifier-border);
+}
+.workspace-tab-header {
+  border-radius: var(--tab-radius) var(--tab-radius) 0 0;
+  transition: background-color var(--anim-duration-fast) var(--anim-motion-smooth),
+              color var(--anim-duration-fast) var(--anim-motion-smooth);
+}
+.workspace-tab-header:not(.is-active) { background-color: transparent; }
+.workspace-tab-header:not(.is-active):hover { background-color: var(--background-modifier-hover); }
+.workspace-tab-header.is-active {
+  background-color: var(--tab-background-active);
+  border-top: 1px solid var(--interactive-accent);
+}
+.workspace-tab-header-inner-title { color: var(--tab-text-color); }
+.workspace-tab-header.is-active .workspace-tab-header-inner-title { color: var(--tab-text-color-active); }
+
+/* View header (per-tab title row) */
+.view-header {
+  background-color: var(--background-primary);
+  border-bottom: 0.5px solid var(--background-modifier-border);
+}
+.view-header-title { color: var(--text-normal); font-weight: 500; }
+
+
+/* ============================================================
+ *  Section 7 — File Explorer / Outline / Search
+ * ============================================================ */
+.workspace-split.mod-left-split,
+.workspace-split.mod-right-split {
+  background-color: var(--background-secondary);
+}
+
+.nav-folder-title,
+.nav-file-title {
+  color: var(--nav-item-color);
+  border-radius: var(--radius-s);
+  padding: 4px 8px;
+  transition: background-color var(--anim-duration-fast) var(--anim-motion-smooth),
+              color var(--anim-duration-fast) var(--anim-motion-smooth);
+}
+.nav-folder-title:hover,
+.nav-file-title:hover {
+  background-color: var(--nav-item-background-hover);
+  color: var(--nav-item-color-hover);
+}
+.nav-file-title.is-active {
+  background-color: var(--nav-item-background-active);
+  color: var(--nav-item-color-active);
+  font-weight: 500;
+}
+.nav-folder.mod-root > .nav-folder-title { font-weight: 600; }
+
+/* Outline */
+.outline .tree-item-self {
+  color: var(--text-muted);
+  border-radius: var(--radius-s);
+}
+.outline .tree-item-self:hover {
+  color: var(--text-normal);
+  background-color: var(--background-modifier-hover);
+}
+
+/* Search */
+.search-result-file-title { color: var(--text-normal); font-weight: 500; }
+.search-result-file-matched-text {
+  background-color: rgba(var(--interactive-accent-rgb), 0.22);
+  color: var(--text-normal);
+  border-radius: var(--radius-s);
+}
+.search-input-container input {
+  border-radius: var(--input-radius);
+}
+.search-input-container input[type="text"],
+.search-input-container input[type="search"] {
+  padding-inline-start: 36px;
+}
+
+
+/* ============================================================
+ *  Section 8 — Editor (Live Preview + Source)
+ * ============================================================ */
+.markdown-source-view.mod-cm6,
+.cm-editor {
+  background-color: var(--background-primary);
+  color: var(--text-normal);
+  caret-color: var(--interactive-accent);
+}
+
+.cm-editor .cm-cursor,
+.cm-editor .cm-cursor-primary {
+  border-left: 2px solid var(--interactive-accent);
+}
+
+.cm-editor .cm-selectionBackground,
+.cm-editor.cm-focused .cm-selectionBackground,
+.cm-line ::selection,
+.markdown-rendered ::selection {
+  background-color: var(--text-selection);
+}
+
+.cm-active.cm-line {
+  background-color: rgba(var(--interactive-accent-rgb), 0.06);
+}
+
+.cm-line { padding: 0 6px; }
+
+/* Indentation guides */
+.cm-indent-mark {
+  border-left: 1px solid var(--indentation-guide-color);
+}
+.cm-active .cm-indent-mark {
+  border-left-color: var(--indentation-guide-color-active);
+}
+
+/* HR */
+.markdown-rendered hr,
+.cm-hr {
+  border: none;
+  border-top: 1px solid var(--background-modifier-border);
+}
+
+
+/* ============================================================
+ *  Section 9 — Reading View
+ * ============================================================ */
+.markdown-rendered {
+  color: var(--text-normal);
+}
+.markdown-rendered a.internal-link              { color: var(--link-color); }
+.markdown-rendered a.internal-link:hover        { color: var(--link-color-hover); }
+.markdown-rendered a.external-link              { color: var(--link-external-color); }
+.markdown-rendered a.external-link:hover        { color: var(--link-external-color-hover); }
+.markdown-rendered a.internal-link.is-unresolved { color: var(--link-unresolved-color); opacity: var(--link-unresolved-opacity); }
+
+.markdown-rendered strong { color: var(--bold-color); font-weight: 600; }
+.markdown-rendered em     { color: var(--italic-color); }
+.markdown-rendered mark,
+.cm-highlight             { background-color: var(--text-highlight-bg); color: var(--text-normal); border-radius: 2px; padding: 0 2px; }
+
+
+/* ============================================================
+ *  Section 10 — Code Blocks & Syntax Highlighting
+ * ============================================================ */
+
+/* Inline code — both editor and reading */
+.markdown-rendered :not(pre) > code,
+.cm-s-obsidian .cm-inline-code:not(.cm-formatting) {
+  font-family: var(--font-monospace-theme);
+  font-size: 0.92em;
+  background-color: var(--code-background);
+  color: var(--code-normal);
+  padding: 0.1em 0.4em;
+  border-radius: var(--radius-s);
+  border: 0.5px solid var(--background-modifier-border);
+}
+
+/* Code blocks (Reading + Live Preview) */
+.markdown-rendered pre,
+.markdown-source-view.mod-cm6 .HyperMD-codeblock-bg {
+  background-color: var(--code-background);
+  border: 1px solid var(--background-modifier-border);
+  border-radius: var(--radius-m);
+  box-shadow: var(--shadow-s);
+}
+.markdown-rendered pre {
+  padding: 14px 16px;
+}
+.markdown-rendered pre > code {
+  background: transparent;
+  padding: 0;
+  border: none;
+  font-family: var(--font-monospace-theme);
+  font-size: 13px;
+  color: var(--code-normal);
+}
+.HyperMD-codeblock { color: var(--code-normal); font-family: var(--font-monospace-theme); }
+
+/* CodeMirror 6 syntax tokens (editor view) */
+.cm-s-obsidian .cm-keyword,
+.cm-s-obsidian .tok-keyword           { color: var(--code-keyword); }
+.cm-s-obsidian .cm-string,
+.cm-s-obsidian .cm-string-2,
+.cm-s-obsidian .tok-string            { color: var(--code-string); }
+.cm-s-obsidian .cm-comment,
+.cm-s-obsidian .cm-block-comment,
+.cm-s-obsidian .cm-line-comment,
+.cm-s-obsidian .tok-comment           { color: var(--code-comment); font-style: italic; }
+.cm-s-obsidian .cm-number,
+.cm-s-obsidian .tok-number            { color: var(--code-number); }
+.cm-s-obsidian .cm-atom,
+.cm-s-obsidian .tok-atom              { color: var(--code-keyword); }
+.cm-s-obsidian .cm-variable,
+.cm-s-obsidian .cm-variable-2,
+.cm-s-obsidian .cm-variable-3,
+.cm-s-obsidian .tok-variableName      { color: var(--code-variable); }
+.cm-s-obsidian .cm-def,
+.cm-s-obsidian .tok-definition        { color: var(--code-function); }
+.cm-s-obsidian .cm-property,
+.cm-s-obsidian .tok-propertyName      { color: var(--code-property); }
+.cm-s-obsidian .cm-type,
+.cm-s-obsidian .cm-meta,
+.cm-s-obsidian .tok-typeName,
+.cm-s-obsidian .tok-className         { color: var(--code-type); }
+.cm-s-obsidian .cm-builtin,
+.cm-s-obsidian .tok-standard          { color: var(--code-builtin); }
+.cm-s-obsidian .cm-tag,
+.cm-s-obsidian .tok-tagName           { color: var(--code-tag); }
+.cm-s-obsidian .cm-attribute,
+.cm-s-obsidian .tok-attributeName     { color: var(--code-attribute); }
+.cm-s-obsidian .cm-operator,
+.cm-s-obsidian .tok-operator          { color: var(--code-operator); }
+.cm-s-obsidian .cm-punctuation,
+.cm-s-obsidian .cm-bracket,
+.cm-s-obsidian .tok-punctuation,
+.cm-s-obsidian .tok-bracket           { color: var(--code-punctuation); }
+.cm-s-obsidian .cm-qualifier          { color: var(--code-type); }
+.cm-s-obsidian .cm-link,
+.cm-s-obsidian .tok-link              { color: var(--text-accent); text-decoration: underline; }
+.cm-s-obsidian .cm-url,
+.cm-s-obsidian .tok-url               { color: var(--text-faint); }
+.cm-s-obsidian .cm-quote              { color: var(--text-muted); font-style: italic; }
+.cm-s-obsidian .cm-error,
+.cm-s-obsidian .tok-invalid           { color: var(--text-error); border-bottom: 1px dotted var(--text-error); }
+.cm-s-obsidian .cm-regexp,
+.cm-s-obsidian .tok-regexp            { color: var(--code-regex); }
+.cm-s-obsidian .tok-controlKeyword    { color: var(--code-control); }
+
+/* Prism (Reading view) */
+.markdown-rendered code[class*="language-"],
+.markdown-rendered pre[class*="language-"] { color: var(--code-normal); }
+.token.keyword                    { color: var(--code-keyword); }
+.token.string,
+.token.attr-value                 { color: var(--code-string); }
+.token.comment,
+.token.prolog,
+.token.cdata                      { color: var(--code-comment); font-style: italic; }
+.token.function                   { color: var(--code-function); }
+.token.variable                   { color: var(--code-variable); }
+.token.property,
+.token.attr-name                  { color: var(--code-property); }
+.token.class-name,
+.token.namespace                  { color: var(--code-type); }
+.token.builtin                    { color: var(--code-builtin); }
+.token.tag                        { color: var(--code-tag); }
+.token.number,
+.token.boolean,
+.token.constant,
+.token.symbol                     { color: var(--code-number); }
+.token.operator,
+.token.entity,
+.token.url                        { color: var(--code-operator); }
+.token.punctuation                { color: var(--code-punctuation); }
+.token.regex                      { color: var(--code-regex); }
+.token.important                  { color: var(--code-important); font-weight: 600; }
+.token.selector                   { color: var(--code-type); }
+.token.atrule                     { color: var(--code-control); }
+.token.parameter                  { color: var(--code-variable); }
+.token.deleted                    { color: var(--text-error); }
+.token.inserted                   { color: var(--text-success); }
+
+
+/* ============================================================
+ *  Section 11 — Callouts
+ * ============================================================ */
+.callout {
+  --callout-color: var(--callout-note);
+  background-color: rgba(var(--callout-color), 0.08);
+  border-left: 3px solid rgb(var(--callout-color));
+  border-radius: var(--callout-radius);
+  padding: 10px 14px;
+  box-shadow: var(--shadow-s);
+}
+.theme-dark .callout { background-color: rgba(var(--callout-color), 0.12); }
+
+.callout-title {
+  color: rgb(var(--callout-color));
+  font-weight: 600;
+  font-size: 0.95em;
+}
+.callout-icon { color: rgb(var(--callout-color)); }
+.callout-content { color: var(--text-normal); }
+
+.callout[data-callout="note"]      { --callout-color: var(--callout-note); }
+.callout[data-callout="tip"],
+.callout[data-callout="hint"],
+.callout[data-callout="important"] { --callout-color: var(--callout-tip); }
+.callout[data-callout="info"]      { --callout-color: var(--callout-info); }
+.callout[data-callout="success"],
+.callout[data-callout="check"],
+.callout[data-callout="done"]      { --callout-color: var(--callout-success); }
+.callout[data-callout="question"],
+.callout[data-callout="help"],
+.callout[data-callout="faq"]       { --callout-color: var(--callout-question); }
+.callout[data-callout="warning"],
+.callout[data-callout="caution"],
+.callout[data-callout="attention"] { --callout-color: var(--callout-warning); }
+.callout[data-callout="failure"],
+.callout[data-callout="fail"],
+.callout[data-callout="missing"]   { --callout-color: var(--callout-failure); }
+.callout[data-callout="error"],
+.callout[data-callout="danger"]    { --callout-color: var(--callout-error); }
+.callout[data-callout="bug"]       { --callout-color: var(--callout-bug); }
+.callout[data-callout="example"]   { --callout-color: var(--callout-example); }
+.callout[data-callout="quote"],
+.callout[data-callout="cite"]      { --callout-color: var(--callout-quote); }
+.callout[data-callout="abstract"],
+.callout[data-callout="summary"],
+.callout[data-callout="tldr"]      { --callout-color: var(--callout-abstract); }
+.callout[data-callout="todo"]      { --callout-color: var(--callout-todo); }
+.callout[data-callout="import"]    { --callout-color: var(--callout-import); }
+
+
+/* ============================================================
+ *  Section 12 — Tables / Quotes / Lists / Checkboxes / Tags / Links
+ * ============================================================ */
+
+/* Tables */
+.markdown-rendered table {
+  border-collapse: collapse;
+  border-radius: var(--radius-m);
+  overflow: hidden;
+  border: 1px solid var(--table-border-color);
+}
+.markdown-rendered th {
+  background-color: var(--table-header-background);
+  color: var(--table-header-color);
+  font-weight: 600;
+  border-bottom: 1px solid var(--table-border-color);
+  padding: 8px 12px;
+  text-align: left;
+}
+.markdown-rendered td {
+  border-top: 1px solid var(--table-border-color);
+  padding: 8px 12px;
+}
+.markdown-rendered tr:nth-child(even) td {
+  background-color: var(--table-row-alt-background);
+}
+.markdown-rendered tr:hover td {
+  background-color: var(--table-row-hover-background);
+}
+
+/* Blockquote */
+.markdown-rendered blockquote {
+  border-left: 3px solid var(--blockquote-border-color);
+  color: var(--blockquote-color);
+  background: transparent;
+  padding-left: 14px;
+  margin-left: 0;
+}
+
+/* Checkboxes */
+.task-list-item-checkbox,
+input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 14px;
+  height: 14px;
+  border: 1.5px solid var(--checkbox-border-color);
+  border-radius: var(--radius-s);
+  background-color: transparent;
+  cursor: pointer;
+  vertical-align: middle;
+  position: relative;
+  transition: all var(--anim-duration-fast) var(--anim-motion-smooth);
+}
+.task-list-item-checkbox:hover,
+input[type="checkbox"]:hover {
+  border-color: var(--checkbox-border-color-hover);
+}
+.task-list-item-checkbox:checked,
+input[type="checkbox"]:checked {
+  background-color: var(--checkbox-color);
+  border-color: var(--checkbox-color);
+}
+.task-list-item-checkbox:checked::after,
+input[type="checkbox"]:checked::after {
+  content: "";
+  position: absolute;
+  left: 3.5px;
+  top: 0.5px;
+  width: 4px;
+  height: 8px;
+  border: solid var(--checkbox-marker-color);
+  border-width: 0 1.5px 1.5px 0;
+  transform: rotate(45deg);
+}
+.task-list-item.is-checked .task-list-item-content,
+li.task-list-item[data-task="x"] { color: var(--text-faint); text-decoration: line-through; }
+
+/* Tags */
+a.tag,
+.cm-hashtag {
+  background-color: var(--tag-background);
+  color: var(--tag-color);
+  border-radius: var(--tag-radius);
+  padding: var(--tag-padding-y) var(--tag-padding-x);
+  font-size: 0.88em;
+  font-weight: 500;
+  text-decoration: none;
+  border: var(--tag-border-width) solid var(--tag-border-color);
+}
+a.tag:hover,
+.cm-hashtag:hover {
+  background-color: var(--tag-background-hover);
+  color: var(--tag-color-hover);
+}
+
+
+/* ============================================================
+ *  Section 13 — Graph View
+ * ============================================================ */
+.graph-view.color-line             { color: var(--graph-line); }
+.graph-view.color-line-highlight   { color: var(--interactive-accent); }
+.graph-view.color-fill             { color: var(--graph-node); }
+.graph-view.color-fill-focused     { color: var(--graph-node-focused); }
+.graph-view.color-fill-highlight   { color: var(--interactive-accent); }
+.graph-view.color-fill-tag         { color: var(--graph-fill-tag); }
+.graph-view.color-fill-attachment  { color: var(--graph-fill-attachment); }
+.graph-view.color-fill-unresolved  { color: var(--graph-fill-unresolved); }
+.graph-view.color-arrow            { color: var(--graph-line); }
+.graph-view.color-text             { color: var(--graph-text); }
+.graph-view.color-circle           { color: var(--interactive-accent); }
+
+
+/* ============================================================
+ *  Section 14 — Canvas
+ * ============================================================ */
+.canvas-wrapper,
+.canvas-background {
+  background-color: var(--canvas-background);
+  --canvas-color-1: 245, 102, 102;
+  --canvas-color-2: 245, 158, 11;
+  --canvas-color-3: 220, 220, 170;
+  --canvas-color-4: 78, 201, 176;
+  --canvas-color-5: 86, 156, 214;
+  --canvas-color-6: 197, 134, 192;
+}
+.canvas-node {
+  background-color: var(--canvas-card-bg);
+  border: 1px solid var(--canvas-card-border);
+  border-radius: var(--radius-m);
+  box-shadow: var(--shadow-s);
+  transition: box-shadow var(--anim-duration-default) var(--anim-motion-smooth),
+              border-color var(--anim-duration-default) var(--anim-motion-smooth);
+}
+.canvas-node:hover { box-shadow: var(--shadow-m); }
+.canvas-node.is-focused {
+  border-color: var(--interactive-accent);
+  box-shadow: 0 0 0 2px rgba(var(--interactive-accent-rgb), 0.30), var(--shadow-m);
+}
+.canvas-node-label { color: var(--text-normal); }
+.canvas-edge { stroke: var(--canvas-edge); }
+
+
+/* ============================================================
+ *  Section 15 — Settings Modal & Command Palette
+ * ============================================================ */
+.modal {
+  background-color: var(--background-primary);
+  border-radius: var(--modal-radius);
+  border: 0.5px solid var(--background-modifier-border);
+  box-shadow: var(--shadow-l);
+}
+.modal-title { color: var(--text-normal); font-weight: 600; }
+.modal-bg { background-color: rgba(0, 0, 0, 0.32); }
+
+/* Settings panel */
+.vertical-tab-header {
+  background-color: var(--background-secondary);
+  border-right: 0.5px solid var(--background-modifier-border);
+}
+.vertical-tab-nav-item {
+  color: var(--text-muted);
+  border-radius: var(--radius-s);
+  margin: 1px 4px;
+  padding: 4px 8px;
+}
+.vertical-tab-nav-item:hover {
+  color: var(--text-normal);
+  background-color: var(--background-modifier-hover);
+}
+.vertical-tab-nav-item.is-active {
+  color: var(--interactive-accent);
+  background-color: var(--background-modifier-active-hover);
+  font-weight: 500;
+}
+.setting-item { border-top: 1px solid var(--background-modifier-border); }
+.setting-item-name { color: var(--text-normal); }
+.setting-item-description { color: var(--text-muted); font-size: var(--font-ui-small); }
+
+/* Inputs / buttons */
+input[type="text"],
+input[type="search"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+textarea,
+.dropdown {
+  background-color: var(--background-modifier-form-field);
+  color: var(--text-normal);
+  border: 1px solid var(--background-modifier-border);
+  border-radius: var(--input-radius);
+  padding: 6px 10px;
+  transition: border-color var(--anim-duration-fast) var(--anim-motion-smooth),
+              box-shadow var(--anim-duration-fast) var(--anim-motion-smooth);
+}
+input:focus,
+textarea:focus,
+.dropdown:focus {
+  outline: none;
+  border-color: var(--interactive-accent);
+  box-shadow: 0 0 0 3px rgba(var(--interactive-accent-rgb), 0.20);
+}
+button,
+.clickable-icon {
+  border-radius: var(--button-radius);
+  transition: background-color var(--anim-duration-fast) var(--anim-motion-smooth),
+              color var(--anim-duration-fast) var(--anim-motion-smooth);
+}
+button.mod-cta,
+.mod-cta {
+  background-color: var(--interactive-accent);
+  color: var(--text-on-accent);
+  border: none;
+}
+button.mod-cta:hover,
+.mod-cta:hover { background-color: var(--interactive-accent-hover); }
+
+/* Command palette / Quick switcher */
+.prompt {
+  background-color: var(--background-primary);
+  border-radius: var(--modal-radius);
+  border: 0.5px solid var(--background-modifier-border);
+  box-shadow: var(--shadow-l);
+}
+.prompt-input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid var(--background-modifier-border);
+  border-radius: 0;
+  font-size: var(--font-ui-large);
+  padding: 14px 16px;
+}
+.prompt-input:focus {
+  border-color: var(--background-modifier-border);
+  box-shadow: none;
+}
+.suggestion-item {
+  color: var(--text-normal);
+  border-radius: var(--radius-s);
+  padding: 6px 10px;
+}
+.suggestion-item.is-selected {
+  background-color: var(--background-modifier-active-hover);
+  color: var(--text-normal);
+}
+.suggestion-highlight {
+  background-color: rgba(var(--interactive-accent-rgb), 0.22);
+  color: var(--text-normal);
+  border-radius: 2px;
+  font-weight: 600;
+}
+.menu {
+  background-color: var(--background-primary);
+  border: 0.5px solid var(--background-modifier-border);
+  border-radius: var(--radius-m);
+  box-shadow: var(--shadow-l);
+  padding: 4px;
+}
+.menu-item {
+  color: var(--text-normal);
+  border-radius: var(--radius-s);
+  padding: 5px 10px;
+}
+.menu-item:hover,
+.menu-item.is-active { background-color: var(--background-modifier-hover); }
+
+
+/* ============================================================
+ *  Section 16 — Scrollbars (macOS overlay style)
+ * ============================================================ */
+::-webkit-scrollbar { width: 12px; height: 12px; background: transparent; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-corner { background: transparent; }
+::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  border: 3px solid transparent;
+  border-radius: 999px;
+  background-clip: padding-box;
+  transition: background-color var(--anim-duration-default) var(--anim-motion-smooth);
+}
+*:hover::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-thumb-bg);
+  background-clip: padding-box;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--scrollbar-active-thumb-bg);
+  background-clip: padding-box;
+}
+
+
+/* ============================================================
+ *  Section 17 — Third-party Plugins (Calendar, Dataview)
+ * ============================================================ */
+
+/* Calendar (liamcain/obsidian-calendar-plugin) */
+#calendar-container .heading,
+#calendar-container .month {
+  color: var(--text-normal);
+  font-weight: 500;
+}
+#calendar-container .day {
+  color: var(--color-text-day);
+  border-radius: var(--radius-s);
+  transition: background-color var(--anim-duration-fast) var(--anim-motion-smooth);
+}
+#calendar-container .day:hover { background-color: var(--background-modifier-hover); }
+#calendar-container .day.adjacent-month { color: var(--text-faint); }
+#calendar-container .day.today {
+  color: var(--color-text-today);
+  background-color: var(--color-background-today);
+  font-weight: 600;
+}
+#calendar-container .day.active {
+  color: var(--text-on-accent);
+  background-color: var(--interactive-accent);
+}
+#calendar-container .dot { fill: var(--color-dot); color: var(--color-dot); }
+#calendar-container .arrow { color: var(--text-muted); }
+#calendar-container .arrow:hover { color: var(--text-normal); }
+
+/* Dataview */
+.block-language-dataview,
+.block-language-dataviewjs {
+  font-size: 0.95em;
+}
+.block-language-dataview table { margin-top: 8px; }
+.block-language-dataview .dataview.task-list-item { margin: 2px 0; }
+
+
+/* ============================================================
+ *  Section 18 — Animations & Focus States
+ * ============================================================ */
+.workspace-tab-header,
+.workspace-ribbon,
+.status-bar,
+.titlebar {
+  transition: background-color var(--anim-duration-default) var(--anim-motion-smooth),
+              border-color     var(--anim-duration-default) var(--anim-motion-smooth);
+}
+
+body:not(.is-focused) .titlebar { opacity: 0.85; }
+body:not(.is-focused) .workspace-tab-header.is-active { border-top-color: var(--background-modifier-border); }
+
+/* Reduced motion — respect macOS Accessibility setting */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms;
+    animation-iteration-count: 1;
+    transition-duration: 0.001ms;
+  }
+}

@@ -1053,6 +1053,7 @@ body.theme-dark {
   --vault-name-font-size: var(--font-ui-small) !important;
   --vault-name-font-weight: var(--font-medium) !important;
   --color-base-15: #1a1a1a !important;
+  --text-important: var(--color-base-100) !important;
   --color-accent-rgb: 165, 230, 147 !important;
   --color-complement: hsl(
     var(--complement-h),
@@ -1085,7 +1086,6 @@ body.theme-dark {
   ) !important;
   --text-complement: var(--color-complement) !important;
   --text-complement-hover: var(--color-complement-2) !important;
-  --text-important: var(--color-base-100) !important;
 }
 
 body .site-body-left-column-site-theme-toggle {

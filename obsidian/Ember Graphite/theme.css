@@ -1,0 +1,218 @@
+/* @settings
+
+name: Ember
+id: ember-theme
+settings:
+  -
+    id: ember-dark-variant
+    title: Dark variant
+    type: class-select
+    default: ember-default
+    options:
+      -
+        label: Ember
+        value: ember-default
+      -
+        label: Ember Soft
+        value: ember-soft
+
+*/
+
+/* ─── Dark: Ember ───
+   bg #1c1b19  fg #d8d0c0
+   accent coral #e08060
+   ─────────────────── */
+
+.theme-dark {
+  --mono-rgb-0: 20, 19, 17;
+  --mono-rgb-100: 216, 208, 192;
+
+  --accent-h: 15;
+  --accent-s: 67%;
+  --accent-l: 63%;
+
+  --color-base-00: #141311;
+  --color-base-05: #1a1917;
+  --color-base-10: #1c1b19;
+  --color-base-20: #252320;
+  --color-base-25: #2c2a26;
+  --color-base-30: #353330;
+  --color-base-35: #3e3b37;
+  --color-base-40: #504c47;
+  --color-base-50: #716c64;
+  --color-base-60: #968f83;
+  --color-base-70: #b8b0a2;
+  --color-base-100: #d8d0c0;
+
+  --color-red-rgb: 176, 120, 120;
+  --color-orange-rgb: 192, 144, 88;
+  --color-yellow-rgb: 200, 180, 104;
+  --color-green-rgb: 138, 152, 104;
+  --color-cyan-rgb: 128, 160, 144;
+  --color-blue-rgb: 120, 144, 160;
+  --color-purple-rgb: 152, 128, 144;
+
+  --color-red: #b07878;
+  --color-orange: #c09058;
+  --color-yellow: #c8b468;
+  --color-green: #8a9868;
+  --color-cyan: #80a090;
+  --color-blue: #7890a0;
+  --color-purple: #988090;
+
+  --code-normal: #d8d0c0;
+  --code-comment: #716c64;
+  --code-function: #c8b468;
+  --code-keyword: #e08060;
+  --code-string: #8a9868;
+  --code-property: #c09058;
+  --code-tag: #e08060;
+  --code-value: #c09058;
+  --code-operator: #b8b0a2;
+  --code-punctuation: #716c64;
+  --code-important: #e08060;
+
+  --graph-line: var(--color-base-30);
+  --graph-node: var(--color-base-60);
+  --graph-node-focused: #e08060;
+
+  --text-highlight-bg: rgba(224, 128, 96, 0.2);
+  --text-selection: rgba(224, 128, 96, 0.15);
+}
+
+/* ─── Dark: Ember Soft (Style Settings) ───
+   bg #242320  fg #d8d0c0
+   ───────────────────────────────────────── */
+
+.ember-soft.theme-dark {
+  --color-base-00: #1c1b18;
+  --color-base-05: #201f1c;
+  --color-base-10: #242320;
+  --color-base-20: #2d2b27;
+  --color-base-25: #34322e;
+  --color-base-30: #3d3a36;
+  --color-base-35: #46433e;
+  --color-base-40: #585550;
+  --color-base-50: #787369;
+  --color-base-60: #9a9488;
+  --color-base-70: #b8b0a2;
+  --color-base-100: #d8d0c0;
+}
+
+/* ─── Light: Ember Light ───
+   bg #e6dac4  fg #282418
+   accent coral #b84c30
+   ───────────────────────── */
+
+.theme-light {
+  --mono-rgb-0: 239, 229, 210;
+  --mono-rgb-100: 40, 36, 24;
+
+  --accent-h: 12;
+  --accent-s: 59%;
+  --accent-l: 45%;
+
+  --color-base-00: #efe5d2;
+  --color-base-05: #e6dac4;
+  --color-base-10: #ddd0b8;
+  --color-base-20: #cfc0a8;
+  --color-base-25: #c4b498;
+  --color-base-30: #b0a288;
+  --color-base-35: #9c8e78;
+  --color-base-40: #887a68;
+  --color-base-50: #706450;
+  --color-base-60: #584e3c;
+  --color-base-70: #403828;
+  --color-base-100: #282418;
+
+  --color-red-rgb: 144, 80, 80;
+  --color-orange-rgb: 148, 96, 48;
+  --color-yellow-rgb: 122, 104, 32;
+  --color-green-rgb: 74, 104, 48;
+  --color-cyan-rgb: 56, 104, 88;
+  --color-blue-rgb: 58, 96, 128;
+  --color-purple-rgb: 112, 96, 112;
+
+  --color-red: #905050;
+  --color-orange: #946030;
+  --color-yellow: #7a6820;
+  --color-green: #4a6830;
+  --color-cyan: #386858;
+  --color-blue: #3a6080;
+  --color-purple: #706070;
+
+  --code-normal: #282418;
+  --code-comment: #9c8e78;
+  --code-function: #7a6820;
+  --code-keyword: #b84c30;
+  --code-string: #4a6830;
+  --code-property: #946030;
+  --code-tag: #b84c30;
+  --code-value: #946030;
+  --code-operator: #403828;
+  --code-punctuation: #9c8e78;
+  --code-important: #b84c30;
+
+  --graph-line: var(--color-base-30);
+  --graph-node: var(--color-base-60);
+  --graph-node-focused: #b84c30;
+
+  --text-highlight-bg: rgba(184, 76, 48, 0.2);
+  --text-selection: rgba(184, 76, 48, 0.15);
+}
+
+/* ─── Borders ─── */
+
+.theme-dark {
+  --background-modifier-border: var(--color-base-25);
+  --background-modifier-border-hover: var(--color-base-30);
+  --background-modifier-border-focus: var(--color-base-35);
+  --divider-color: var(--color-base-20);
+  --scrollbar-bg: var(--color-base-10);
+  --scrollbar-thumb-bg: var(--color-base-35);
+  --scrollbar-active-thumb-bg: var(--color-base-40);
+}
+
+.theme-light {
+  --background-modifier-border: var(--color-base-20);
+  --background-modifier-border-hover: var(--color-base-25);
+  --background-modifier-border-focus: var(--color-base-30);
+  --divider-color: var(--color-base-10);
+  --scrollbar-bg: var(--color-base-05);
+  --scrollbar-thumb-bg: var(--color-base-30);
+  --scrollbar-active-thumb-bg: var(--color-base-35);
+}
+
+body:not(.native-scrollbars) ::-webkit-scrollbar {
+  background-color: var(--color-base-00);
+}
+
+body:not(.native-scrollbars) ::-webkit-scrollbar-track {
+  background-color: var(--color-base-00);
+}
+
+body:not(.native-scrollbars) ::-webkit-scrollbar-thumb {
+  background-color: var(--color-base-40);
+  -webkit-border-radius: var(--radius-l);
+  background-clip: padding-box;
+  border: 3px solid var(--color-base-00);
+  min-height: 45px;
+}
+
+body:not(.native-scrollbars) ::-webkit-scrollbar-thumb:hover,
+body:not(.native-scrollbars) ::-webkit-scrollbar-thumb:active {
+  background-color: var(--color-base-50);
+}
+
+.menu {
+  padding: var(--size-2-1);
+}
+
+.menu-item {
+  padding: var(--size-4-1) var(--size-4-2);
+}
+
+.menu-separator {
+  margin: var(--size-2-1) calc(var(--size-2-1) * -1);
+}
+

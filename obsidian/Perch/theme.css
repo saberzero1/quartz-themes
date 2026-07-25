@@ -1,0 +1,928 @@
+/* ==========================================================================
+   Perch — Dual theme for long-form writing in Obsidian
+   Dawn Perch (Light) / Dusk Perch (Dark)
+
+   Structure:
+     [1] Design Token definitions   —— single source of truth for the design
+     [2] Mapping to Obsidian native variables —— makes the whole UI apply automatically
+     [3] Selector-level fine-tuning  —— details that native variables can't reach
+
+   Implementation notes: caret blink rhythm, current-line highlight, and
+   spelling/grammar error underlines all require hooking into CodeMirror 6's
+   internal editor structure, whose stability and compatibility are insufficient,
+   so this theme does not customize them and keeps Obsidian's native behavior.
+   Caret color still stays amber via the native --caret-color.
+   ========================================================================== */
+
+/* ==========================================================================
+   [1] DESIGN TOKENS
+   ========================================================================== */
+
+/* --- 1a. Non-color tokens: radius / spacing / motion (shared light & dark) --- */
+.theme-light,
+.theme-dark {
+  /* Radius */
+  --radius-xs: 2px;
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-full: 9999px;
+
+  /* Spacing (4px grid) */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+
+  /* Motion */
+  --motion-theme: 560ms; /* Light/dark theme switch */
+  --motion-editor: 120ms; /* Editor micro-interactions */
+  --motion-panel: 300ms; /* Panel expand/collapse */
+  --motion-hover: 100ms; /* Hover feedback */
+  --ease-standard: cubic-bezier(0.2, 0, 0, 1);
+  --ease-out: cubic-bezier(0, 0, 0.2, 1);
+
+  /* Font stacks */
+  --font-body:
+    "HarmonyOS Sans SC", "Source Han Sans SC", "Noto Sans CJK SC",
+    "PingFang SC", "Microsoft YaHei", system-ui, -apple-system, sans-serif;
+  --font-ui:
+    "Inter", "PingFang SC", "Microsoft YaHei", system-ui, -apple-system,
+    sans-serif;
+  --font-mono:
+    "JetBrains Mono", "IBM Plex Mono", "Cascadia Code", "Sarasa Mono SC",
+    ui-monospace, "SF Mono", Consolas, monospace;
+}
+
+/* --- 1b. Dawn Perch Light Mode color tokens ------------------------------- */
+.theme-light {
+  /* Background layers */
+  --color-bg-primary: #f8f5ee;
+  --color-bg-secondary: #f1ede2;
+  --color-bg-tertiary: #fbf9f3;
+  --color-bg-floating: #fffdf8;
+  --color-bg-code: #f3efe5;
+
+  /* Text */
+  --color-text-body: #4a4234;
+  --color-text-heading: #2e2820;
+  --color-text-secondary: #6b6250;
+  --color-text-muted: #8a8069;
+  --color-text-placeholder: #a69c82;
+  --color-text-oncode: #4a4234;
+  --color-text-italic: #6b6250;
+
+  /* Primary amber */
+  --color-primary-500: #c6892a;
+  --color-primary-600: #a67122;
+  --color-primary-link: #a35d0e; /* saturated amber-orange — livelier internal links */
+  --color-primary-link-hover: #854a0a; /* one step deeper on hover */
+  --color-primary-100: #f8e8cc;
+  --color-primary-400: #e0a544;
+
+  /* Vivid orange-red for list markers — livelier than the earthy amber */
+  --color-list-marker: #e8622e;
+  --color-list-marker-hover: #cf4d1c;
+
+  /* Accent bright sky-blue — complementary to the warm amber base, livelier */
+  --color-accent-500: #2f8fdf;
+  --color-accent-visited: #5f57a6; /* muted indigo-violet, distinguishes visited links */
+  --color-accent-100: #d8ecfa;
+  --color-accent-300: #b5dcf5;
+  --color-accent-text: #1c6fb5; /* deeper blue for text on light bg (AA) */
+  --color-accent-text-hover: #14568f; /* deepened blue for hovered tag text */
+
+  /* Neutral scale */
+  --color-neutral-100: #f3efe5;
+  --color-neutral-200: #e9e3d5;
+  --color-neutral-300: #dad2c0;
+  --color-neutral-500: #a69c82;
+  --color-neutral-600: #8a8069;
+
+  /* Borders */
+  --color-border-default: #e9e3d5;
+  --color-border-hover: #dad2c0;
+  --color-border-strong: #c4bba3;
+  --color-border-divider: #f1ede2;
+  --color-focus-ring: rgba(198, 137, 42, 0.45);
+
+  /* Semantic colors */
+  --color-success-bg: #e3f1e7;
+  --color-success-main: #3e9b63;
+  --color-success-text: #235f3c;
+  --color-warning-bg: #f7e9ce;
+  --color-warning-main: #c67d1e;
+  --color-warning-text: #7a4e13;
+  --color-error-bg: #f8e4df;
+  --color-error-main: #d25a4e;
+  --color-error-text: #8a3229;
+  --color-info-bg: #e2ecf2;
+  --color-info-main: #3e7ca0;
+  --color-info-text: #244b63;
+
+  /* Callout accent RGB triplets — Obsidian derives callout tint backgrounds via
+     rgba(var(--callout-x), opacity), so these must be comma-separated RGB, not
+     hex. Kept livelier (higher saturation/brightness) than the earthy semantic
+     mains so callouts read fresh rather than muted. */
+  --color-info-main-rgb: 45, 150, 220;
+  --color-success-main-rgb: 46, 178, 110;
+  --color-warning-main-rgb: 240, 150, 28;
+  --color-error-main-rgb: 235, 88, 74;
+  --color-accent-500-rgb: 47, 143, 223;
+  --color-primary-500-rgb: 224, 151, 42;
+  --color-text-muted-rgb: 138, 128, 105;
+
+  /* Code syntax highlighting */
+  --color-syntax-keyword: #c47510;
+  --color-syntax-string: #37864f;
+  --color-syntax-comment: #a69c82;
+  --color-syntax-function: #2670a8;
+  --color-syntax-number: #cf5836;
+  --color-syntax-operator: #268a7c;
+
+  /* Editor-specific scenes */
+  --color-caret: #c6892a;
+  --color-selection-bg: rgba(198, 137, 42, 0.2);
+  --color-search-bg: #cfe6f7;
+  --color-search-current-bg: #7bb8e6;
+  --color-mark-bg: #f8e8cc;
+  --color-overlay: rgba(74, 58, 40, 0.55);
+  --color-backdrop: rgba(74, 58, 40, 0.72);
+
+  /* Shadows (warm brown tone) */
+  --shadow-xs: 0 1px 2px rgba(74, 58, 40, 0.05);
+  --shadow-sm: 0 2px 4px rgba(74, 58, 40, 0.06);
+  --shadow-md: 0 4px 10px rgba(74, 58, 40, 0.08);
+  --shadow-lg: 0 8px 24px rgba(74, 58, 40, 0.1);
+  --shadow-xl: 0 16px 40px rgba(74, 58, 40, 0.12);
+
+  /* Opacity */
+  --opacity-hover: 0.08;
+  --opacity-active: 0.14;
+  --opacity-disabled: 0.4;
+  --opacity-ghost: 0.6; /* Non-current paragraph in focus mode */
+
+  /* Text on accent background (Light amber base #C6892A uses near-white, ~3.4:1) */
+  --text-on-accent: #fffdf8;
+  --text-on-accent-inverted: #2e2820;
+
+  /* hover/active overlay tint: Light darkens with warm brown */
+  --overlay-tint: 74, 58, 40;
+
+  /* Accent HSL components (primary-500 #C6892A), for Obsidian to derive hover etc. */
+  --accent-h: 38;
+  --accent-s: 66%;
+  --accent-l: 47%;
+}
+
+/* --- 1c. Dusk Perch Dark Mode color tokens -------------------------------- */
+.theme-dark {
+  /* Background layers */
+  --color-bg-primary: #1b2124;
+  --color-bg-secondary: #171c1f;
+  --color-bg-tertiary: #232a2e;
+  --color-bg-floating: #2a3236;
+  --color-bg-code: #151a1d;
+
+  /* Text */
+  --color-text-body: #c6cbc8;
+  --color-text-heading: #e4e7e3;
+  --color-text-secondary: #9aa6ac;
+  --color-text-muted: #7c8990;
+  --color-text-placeholder: #5a676d;
+  --color-text-oncode: #c6cbc8;
+  --color-text-italic: #9aa6ac;
+
+  /* Primary amber (chroma reduced) */
+  --color-primary-500: #b39150;
+  --color-primary-600: #c9a868;
+  --color-primary-link: #c9a868; /* Dark link = primary-600 */
+  --color-primary-link-hover: #dbc088; /* primary-700 */
+  --color-primary-100: #3a3120;
+  --color-primary-400: #8f7638;
+
+  /* Vivid orange-red for list markers — brighter on the dark base */
+  --color-list-marker: #f2814a;
+  --color-list-marker-hover: #ff9a63;
+
+  /* Accent bright sky-blue — brighter, livelier on the dark base */
+  --color-accent-500: #63b8f0;
+  --color-accent-visited: #a99ce0; /* soft indigo-violet, visited links on dark */
+  --color-accent-100: #152d40;
+  --color-accent-300: #3f7aa8;
+  --color-accent-text: #8ecdf5; /* bright blue reads fine on dark bg */
+  --color-accent-text-hover: #acd8f7; /* brightened blue for hovered tag text on dark */
+
+  /* Neutral scale */
+  --color-neutral-100: #1b2124;
+  --color-neutral-200: #232a2e;
+  --color-neutral-300: #2e373b;
+  --color-neutral-500: #5a676d;
+  --color-neutral-600: #7c8990;
+
+  /* Borders (Dark carries the main layer distinction) */
+  --color-border-default: #2e373b;
+  --color-border-hover: #3d484d;
+  --color-border-strong: #4a565c;
+  --color-border-divider: #232a2e;
+  --color-focus-ring: rgba(179, 145, 80, 0.55);
+
+  /* Semantic colors */
+  --color-success-bg: #1a2a20;
+  --color-success-main: #6fb287;
+  --color-success-text: #9eceae;
+  --color-warning-bg: #2c2416;
+  --color-warning-main: #cca75c;
+  --color-warning-text: #dcc085;
+  --color-error-bg: #2e1e1b;
+  --color-error-main: #d98071;
+  --color-error-text: #e8a99d;
+  --color-info-bg: #182530;
+  --color-info-main: #6fa3c4;
+  --color-info-text: #9cc2da;
+
+  /* Callout accent RGB triplets (dark) — brighter, more saturated than the
+     dark semantic mains so callouts stay lively on the dim base. See light note. */
+  --color-info-main-rgb: 90, 180, 235;
+  --color-success-main-rgb: 82, 200, 140;
+  --color-warning-main-rgb: 235, 185, 80;
+  --color-error-main-rgb: 240, 130, 115;
+  --color-accent-500-rgb: 99, 184, 240;
+  --color-primary-500-rgb: 214, 172, 90;
+  --color-text-muted-rgb: 124, 137, 144;
+
+  /* Code syntax highlighting (bright levels on dark base) */
+  --color-syntax-keyword: #c9a868;
+  --color-syntax-string: #6fb287;
+  --color-syntax-comment: #5a676d;
+  --color-syntax-function: #6fa3c4;
+  --color-syntax-number: #d98071;
+  --color-syntax-operator: #8bb8b0;
+
+  /* Editor-specific scenes */
+  --color-caret: #b39150;
+  --color-selection-bg: rgba(179, 145, 80, 0.22);
+  --color-search-bg: #1e3548;
+  --color-search-current-bg: #3d6489;
+  --color-mark-bg: #3a3120;
+  --color-overlay: rgba(8, 11, 13, 0.6);
+  --color-backdrop: rgba(8, 11, 13, 0.78);
+
+  /* Shadows (near-black ink teal, weakened to a supporting role) */
+  --shadow-xs: 0 1px 2px rgba(8, 11, 13, 0.2);
+  --shadow-sm: 0 2px 6px rgba(8, 11, 13, 0.28);
+  --shadow-md: 0 4px 12px rgba(8, 11, 13, 0.35);
+  --shadow-lg: 0 8px 28px rgba(8, 11, 13, 0.45);
+  --shadow-xl: 0 16px 44px rgba(8, 11, 13, 0.55);
+
+  /* Opacity (retuned for the dark base) */
+  --opacity-hover: 0.1;
+  --opacity-active: 0.18;
+  --opacity-disabled: 0.38;
+  --opacity-ghost: 0.55; /* Non-current paragraph in focus mode, slightly higher on dark to avoid disappearing */
+
+  /* Text on accent background (Dark bright amber base #B39150 uses deep ink teal, ~5.6:1, better contrast) */
+  --text-on-accent: #1b2124;
+  --text-on-accent-inverted: #e4e7e3;
+
+  /* hover/active overlay tint: Dark "adds light" with a pale color */
+  --overlay-tint: 230, 235, 232;
+
+  /* Accent HSL components (primary-500 #B39150), for Obsidian to derive hover etc. */
+  --accent-h: 40;
+  --accent-s: 36%;
+  --accent-l: 51%;
+}
+
+/* ==========================================================================
+   [2] MAPPING TO OBSIDIAN NATIVE VARIABLES
+   —— Both modes share the same set of mappings; values come from each mode's tokens
+   ========================================================================== */
+
+.theme-light,
+.theme-dark {
+  /* --- Fonts --- */
+  --font-text-theme: var(--font-body);
+  --font-interface-theme: var(--font-ui);
+  --font-monospace-theme: var(--font-mono);
+
+  /* --- Background layers --- */
+  --background-primary: var(--color-bg-primary);
+  --background-primary-alt: var(--color-bg-tertiary);
+  --background-secondary: var(--color-bg-secondary);
+  --background-secondary-alt: var(--color-bg-secondary);
+
+  /* --- Surface modifiers --- */
+  --background-modifier-hover: rgba(var(--overlay-tint), var(--opacity-hover));
+  --background-modifier-active-hover: rgba(
+    var(--overlay-tint),
+    var(--opacity-active)
+  );
+  --background-modifier-border: var(--color-border-default);
+  --background-modifier-border-hover: var(--color-border-hover);
+  --background-modifier-border-focus: var(--color-primary-500);
+  --background-modifier-form-field: var(--color-bg-tertiary);
+  --background-modifier-error-rgb: 210, 90, 78;
+  --background-modifier-error: var(--color-error-bg);
+  --background-modifier-error-hover: var(--color-error-main);
+  --background-modifier-success: var(--color-success-bg);
+  --background-modifier-message: var(--color-bg-secondary);
+
+  /* --- Text --- */
+  --text-normal: var(--color-text-body);
+  --text-muted: var(--color-text-secondary);
+  --text-faint: var(--color-text-muted);
+  /* --text-on-accent / -inverted are defined inside each mode's tokens (text on accent base must pick a contrasting color per light/dark) */
+  --text-accent: var(--color-primary-link);
+  --text-accent-hover: var(--color-primary-link-hover);
+  --text-success: var(--color-success-text);
+  --text-warning: var(--color-warning-text);
+  --text-error: var(--color-error-text);
+  --text-selection: var(--color-selection-bg);
+  --text-highlight-bg: var(--color-mark-bg);
+  --caret-color: var(--color-caret);
+
+  /* --- Interactive colors --- */
+  --interactive-normal: var(--color-bg-tertiary);
+  --interactive-hover: var(--color-border-hover);
+  --interactive-accent: var(--color-primary-500);
+  --interactive-accent-hover: var(--color-primary-600);
+
+  /* --- Links --- */
+  --link-color: var(--color-primary-link);
+  --link-color-hover: var(--color-primary-link-hover);
+  --link-decoration: none;
+  --link-decoration-hover: underline;
+  --link-external-color: var(--color-accent-500); /* start = checkbox blue */
+  --link-external-color-hover: var(
+    --color-accent-text
+  ); /* deepen on hover, stay blue */
+  --link-unresolved-color: var(--color-text-muted);
+  --link-unresolved-opacity: 0.7;
+
+  /* --- Radius (mapped to native + components) --- */
+  --radius-s: var(--radius-sm);
+  --radius-m: var(--radius-md);
+  --radius-l: var(--radius-lg);
+  /* Note: --radius-xl is already defined in [1a] as 16px, same name as Obsidian native, no need to re-map */
+  --input-radius: var(--radius-sm);
+  --button-radius: var(--radius-sm);
+  --checkbox-radius: var(--radius-xs);
+  --tag-radius: var(--radius-xs);
+  --tab-radius: var(--radius-sm);
+  --tab-radius-active: var(--radius-sm);
+  --modal-radius: var(--radius-lg);
+  --swatch-radius: var(--radius-sm);
+  --slider-thumb-radius: var(--radius-full);
+  --toggle-radius: var(--radius-full);
+  --toggle-thumb-radius: var(--radius-full);
+  --clickable-icon-radius: var(--radius-sm);
+  --metadata-property-radius: var(--radius-sm);
+
+  /* --- Body typography --- */
+  --font-text-size: 17px;
+  --file-line-width: min(
+    1600px,
+    85vw
+  ); /* Readable line width, wider than native 700px */
+  --line-height-normal: 1.75;
+  --line-height-tight: 1.3;
+  --p-spacing: 1.15em;
+  --bold-color: var(--color-text-heading);
+  --italic-color: var(--color-text-italic);
+
+  /* --- Headings H1–H6 --- */
+  --h1-color: var(--color-text-heading);
+  --h2-color: var(--color-text-heading);
+  --h3-color: var(--color-text-heading);
+  --h4-color: var(--color-text-heading);
+  --h5-color: var(--color-text-heading);
+  --h6-color: var(--color-text-heading);
+  --h1-size: 30px;
+  --h2-size: 24px;
+  --h3-size: 20px;
+  --h4-size: 17px;
+  --h5-size: 15px;
+  --h6-size: 15px;
+  --h1-weight: 700;
+  --h2-weight: 650;
+  --h3-weight: 600;
+  --h4-weight: 600;
+  --h5-weight: 600;
+  --h6-weight: 600;
+  --h1-line-height: 1.25;
+  --h2-line-height: 1.3;
+  --h3-line-height: 1.4;
+  --h4-line-height: 1.5;
+  --h5-line-height: 1.5;
+  --h6-line-height: 1.5;
+  --heading-formatting: var(--color-text-placeholder);
+
+  /* --- Inline title (file title) --- */
+  --inline-title-color: var(--color-text-heading);
+  --inline-title-size: 32px;
+  --inline-title-weight: 700;
+  --inline-title-line-height: 1.2;
+
+  /* --- Code --- */
+  --code-background: var(--color-bg-code);
+  --code-size: 0.9em;
+  --code-normal: var(--color-text-oncode);
+  --code-comment: var(--color-syntax-comment);
+  --code-keyword: var(--color-syntax-keyword);
+  --code-string: var(--color-syntax-string);
+  --code-function: var(--color-syntax-function);
+  --code-property: var(--color-syntax-function);
+  --code-value: var(--color-syntax-number);
+  --code-operator: var(--color-syntax-operator);
+  --code-punctuation: var(--color-text-secondary);
+  --code-tag: var(--color-syntax-keyword);
+  --code-important: var(--color-syntax-number);
+
+  /* --- Blockquote --- */
+  --blockquote-background-color: var(--color-bg-secondary);
+  --blockquote-border-color: var(--color-primary-400);
+  --blockquote-border-thickness: 3px;
+  --blockquote-color: var(--color-text-secondary);
+  --blockquote-font-style: normal;
+
+  /* --- Lists --- */
+  --list-marker-color: var(--color-list-marker);
+  --list-marker-color-hover: var(--color-list-marker-hover);
+  --list-indent: 1.6em;
+  --list-spacing: 0.4em;
+  --list-bullet-end-padding: 0.6em; /* gap between bullet and first char */
+
+  /* --- Tags --- */
+  --tag-color: var(--color-accent-text);
+  --tag-color-hover: var(--color-accent-text-hover);
+  --tag-background: var(--color-accent-100);
+  --tag-background-hover: var(--color-accent-300);
+  --tag-border-color: transparent;
+  --tag-weight: 500;
+  --tag-decoration: none;
+
+  /* --- Tables --- */
+  --table-background: transparent;
+  --table-border-width: 1px;
+  --table-border-color: var(--color-border-default);
+  --table-header-background: var(--color-neutral-100);
+  --table-header-color: var(--color-text-heading);
+  --table-header-weight: 700;
+  --table-header-size: calc(var(--font-text-size) + 1px);
+  --table-text-color: var(--color-text-body);
+  --table-text-size: var(--font-text-size);
+  --table-line-height: 1.55;
+  --table-row-background-hover: rgba(var(--overlay-tint), var(--opacity-hover));
+  --table-row-alt-background: transparent;
+  --table-selection: var(--color-selection-bg);
+
+  /* --- Horizontal rule --- */
+  --hr-color: var(--color-border-strong);
+  --hr-thickness: 1px;
+
+  /* --- Callout (reuses semantic colors) --- */
+  --callout-border-width: 0px;
+  --callout-border-opacity: 0.25;
+  --callout-radius: var(--radius-md);
+  --callout-info: var(--color-info-main-rgb);
+  --callout-default: var(--color-info-main-rgb);
+  --callout-success: var(--color-success-main-rgb);
+  --callout-tip: var(--color-accent-500-rgb);
+  --callout-summary: var(--color-accent-500-rgb);
+  --callout-question: var(--color-warning-main-rgb);
+  --callout-warning: var(--color-warning-main-rgb);
+  --callout-important: var(--color-warning-main-rgb);
+  --callout-todo: var(--color-info-main-rgb);
+  --callout-error: var(--color-error-main-rgb);
+  --callout-fail: var(--color-error-main-rgb);
+  --callout-bug: var(--color-error-main-rgb);
+  --callout-example: var(--color-primary-500-rgb);
+  --callout-quote: var(--color-text-muted-rgb);
+
+  /* --- Inputs / borders --- */
+  --input-height: 30px;
+  --input-border-width: 1px;
+
+  /* --- Navigation (file tree / sidebar) --- */
+  --nav-item-color: var(--color-text-secondary);
+  --nav-item-color-hover: var(--color-text-body);
+  --nav-item-color-active: var(--color-text-heading);
+  --nav-item-color-selected: var(--color-text-heading);
+  --nav-item-background-hover: rgba(var(--overlay-tint), var(--opacity-hover));
+  --nav-item-background-active: rgba(
+    var(--overlay-tint),
+    var(--opacity-active)
+  );
+  --nav-item-background-selected: var(--color-primary-100);
+  --nav-item-weight: 400;
+  --nav-collapse-icon-color: var(--color-text-muted);
+
+  /* --- Tabs --- */
+  --tab-background-active: var(--color-bg-primary);
+  --tab-text-color: var(--color-text-muted);
+  --tab-text-color-focused-active-current: var(--color-text-heading);
+  --tab-font-size: var(--font-ui-small);
+  --tab-container-background: var(--color-bg-secondary);
+  --titlebar-background: var(--color-bg-secondary);
+  --titlebar-background-focused: var(--color-bg-secondary);
+  --titlebar-text-color: var(--color-text-secondary);
+
+  /* --- Sidebar Ribbon / status bar --- */
+  --ribbon-background: var(--color-bg-secondary);
+  --status-bar-background: var(--color-bg-secondary);
+  --status-bar-text-color: var(--color-text-muted);
+  --status-bar-border-color: var(--color-border-default);
+
+  /* --- Modal / dialog / floating layer --- */
+  --modal-background: var(--color-bg-floating);
+  --modal-border-color: var(--color-border-default);
+  --modal-border-width: 1px;
+  --prompt-border-color: var(--color-border-default);
+  --background-modifier-cover: var(--color-overlay);
+
+  /* --- Scrollbar --- */
+  --scrollbar-bg: transparent;
+  --scrollbar-thumb-bg: rgba(var(--overlay-tint), var(--opacity-hover));
+  --scrollbar-active-thumb-bg: rgba(var(--overlay-tint), var(--opacity-active));
+
+  /* --- Dividers --- */
+  --divider-color: var(--color-border-default);
+  --divider-color-hover: var(--color-border-hover);
+
+  /* --- Checkboxes / task lists --- */
+  --checkbox-color: var(--color-accent-500);
+  --checkbox-color-hover: var(
+    --color-accent-text
+  ); /* deepen on hover (accent-300 is now lighter than 500) */
+  --checkbox-border-color: var(--color-neutral-500);
+  --checkbox-border-color-hover: var(
+    --color-accent-500
+  ); /* unchecked box hints accent on hover */
+  --checkbox-marker-color: var(--color-bg-floating);
+  --checklist-done-color: var(--color-text-placeholder);
+  --checklist-done-decoration: line-through;
+
+  /* --- Graph view --- */
+  --graph-node: var(--color-text-secondary);
+  --graph-node-unresolved: var(--color-text-placeholder);
+  --graph-node-focused: var(--color-primary-500);
+  --graph-node-tag: var(--color-accent-500);
+  --graph-line: var(--color-border-strong);
+  --graph-text: var(--color-text-muted);
+
+  /* --- Search (panel/results) --- */
+  --search-result-background: var(--color-bg-tertiary);
+
+  /* --- Properties --- */
+  --metadata-label-text-color: var(--color-text-secondary);
+  --metadata-input-text-color: var(--color-text-body);
+  --metadata-divider-color: var(--color-border-default);
+}
+
+/* ==========================================================================
+   [3] Selector-level fine-tuning —— design details native variables can't reach
+   ========================================================================== */
+
+/* --- 3a. Global font features & theme-switch transition --- */
+body {
+  font-feature-settings:
+    "kern" 1,
+    "liga" 1,
+    "calt" 1;
+}
+
+/* Give the eyes a buffer on light/dark switch: 560ms transition (background/text color only, to avoid layout jitter) */
+.workspace,
+.workspace-leaf-content,
+.markdown-source-view,
+.markdown-preview-view,
+.nav-files-container {
+  transition:
+    background-color var(--motion-theme) ease-in-out,
+    color var(--motion-theme) ease-in-out;
+}
+
+/* Tables / ordered lists / line numbers: monospaced digits for alignment */
+table,
+ol,
+.cm-lineNumbers {
+  font-feature-settings:
+    "tnum" 1,
+    "kern" 1;
+}
+
+/* Turn off ligatures in code blocks to keep symbols distinguishable */
+.cm-line .cm-inline-code,
+pre code,
+code {
+  font-feature-settings:
+    "liga" 0,
+    "calt" 0;
+}
+
+/* Dark-only: antialiasing to prevent text looking heavy on dark base */
+.theme-dark {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* --- 3b. Links —— no underline by default, underline appears on hover --- */
+.markdown-rendered a,
+.markdown-source-view.mod-cm6 .cm-hmd-internal-link,
+.cm-link {
+  text-decoration: none;
+  text-underline-offset: 2px;
+  transition: color var(--motion-hover) ease-out;
+}
+.markdown-rendered a:hover,
+.markdown-source-view.mod-cm6 .cm-hmd-internal-link:hover,
+.cm-link:hover {
+  text-decoration: underline;
+  color: var(--color-primary-link-hover);
+}
+/* External links stay blue: start = checkbox blue, deepen (not turn brown) on hover.
+   Needed because the broad `a:hover` rule above forces brown via a selector,
+   which outranks the --link-external-color-hover token default. */
+.markdown-rendered a.external-link:hover,
+.cm-url:hover {
+  color: var(--color-accent-text);
+}
+/* Visited internal links use muted indigo-violet to distinguish (Reading view) */
+.markdown-preview-view a.internal-link:visited {
+  color: var(--color-accent-visited);
+}
+
+/* --- 3c. Inline code —— monospace + background + 0.15em horizontal padding + radius --- */
+.markdown-rendered code:not(pre code),
+.cm-inline-code {
+  background-color: var(--color-mark-bg);
+  color: var(--color-text-body);
+  padding: 0.1em 0.35em;
+  border: 1px solid var(--color-border-strong);
+  border-radius: var(--radius-xs);
+}
+
+/* Code block: deeper background + 1px border + radius */
+.markdown-rendered pre,
+.markdown-source-view.mod-cm6 .HyperMD-codeblock-bg {
+  background-color: var(--color-bg-code);
+}
+.markdown-rendered pre {
+  border: 1px solid var(--color-border-default);
+  border-radius: var(--radius-md);
+  padding: 1em;
+  /* Code font is 0.9em, so a raw 1.75 line-height yields a smaller absolute
+     row spacing than body text. Divide by --code-size (0.9) to compensate,
+     matching the body's absolute line spacing visually. */
+  line-height: calc(var(--line-height-normal) / 0.9);
+}
+/* Live Preview code blocks default to the editor's tighter line-height (~1.3);
+   align them with the body's absolute line spacing (same 0.9 compensation) so
+   code isn't cramped and stays consistent across reading/editing modes */
+.markdown-source-view.mod-cm6 .HyperMD-codeblock {
+  line-height: calc(var(--line-height-normal) / 0.9);
+}
+
+/* --- 3c-1. Ordered-list number gap --- */
+/* --list-bullet-end-padding only affects unordered bullets. For numbered
+   lists, widen the space between the number and the first character by
+   padding the list item's leading side in reading view. */
+.markdown-rendered ol > li {
+  padding-inline-start: 0.6em;
+}
+
+/* --- 3d. Bold / italic --- */
+/* Bold: one step deeper than body (mapping already sets --bold-color), moderate weight */
+.markdown-rendered strong,
+.cm-strong {
+  font-weight: 650;
+  color: var(--color-text-heading);
+}
+.theme-dark .markdown-rendered strong,
+.theme-dark .cm-strong {
+  font-weight: 600; /* Prevent smudging on dark base */
+}
+/* Italic: serif rendering + one step lighter color, a literary quiet voice */
+.markdown-rendered em,
+.cm-em {
+  font-style: italic;
+  color: var(--color-text-italic);
+  font-family: var(--font-body);
+}
+
+/* --- 3e. Mark highlight —— background fill, text unchanged --- */
+.markdown-rendered mark,
+.cm-highlight {
+  background-color: var(--color-mark-bg);
+  color: var(--color-text-body);
+  padding: 0 0.1em;
+  border-radius: var(--radius-xs);
+}
+
+/* --- 3f. Strikethrough —— dropped to a muted color level --- */
+.markdown-rendered del,
+.markdown-rendered s,
+.cm-strikethrough {
+  color: var(--color-text-muted);
+}
+
+/* --- 3g. Blockquote —— left border + very light background + padding --- */
+.markdown-rendered blockquote {
+  background-color: var(--color-bg-secondary);
+  border-left: 3px solid var(--color-primary-400);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  padding: 1em 1.6em;
+  color: var(--color-text-secondary);
+  font-style: normal;
+}
+/* Live preview (CM6): every quote line is its own .cm-line.HyperMD-quote, and
+   .cm-blockquote is an inline span, so vertical padding on the span can't expand
+   the block. Pad each line horizontally, then add top/bottom breathing room only
+   on the first / last line of a quote group (detected via adjacency + :has). */
+.markdown-source-view.mod-cm6 .HyperMD-quote {
+  padding-left: 1.6em;
+  padding-right: 1.6em;
+}
+/* First line of a quote group: not preceded by another quote line */
+.markdown-source-view.mod-cm6 .cm-line:not(.HyperMD-quote) + .HyperMD-quote,
+.markdown-source-view.mod-cm6 .cm-content > .HyperMD-quote:first-child {
+  padding-top: 1em;
+}
+/* Last line of a quote group: only when the quote ends the document.
+   (Avoided :has(+ .cm-line:not(.HyperMD-quote)) — broad selector invalidation
+   in the editor hurts performance; mid-document quotes lose bottom padding in
+   live preview, but reading view uses a real blockquote and is unaffected.) */
+.markdown-source-view.mod-cm6 .HyperMD-quote:last-child {
+  padding-bottom: 1em;
+}
+
+/* --- 3i. Focus ring —— primary color semi-transparent 2px outward --- */
+input:focus-visible,
+textarea:focus-visible,
+button:focus-visible,
+.clickable-icon:focus-visible,
+.checkbox-container:focus-within {
+  box-shadow: 0 0 0 2px var(--color-focus-ring);
+  outline: none;
+}
+
+/* --- 3j. Card / floating layer shadows —— Dark relies on borders, Light on warm shadows --- */
+.suggestion-container,
+.menu,
+.popover,
+.tooltip {
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--color-border-default);
+  border-radius: var(--radius-md);
+}
+/* Tooltip: native uses --text-on-accent (near-white in light mode) on a light bubble,
+   making text invisible. Pin readable background + text color for both modes. */
+.tooltip {
+  background-color: var(--color-bg-floating);
+  color: var(--color-text-body);
+}
+.tooltip .tooltip-arrow {
+  border-top-color: var(--color-bg-floating);
+  border-bottom-color: var(--color-bg-floating);
+  border-left-color: var(--color-bg-floating);
+  border-right-color: var(--color-bg-floating);
+}
+/* Notice: same trap as tooltip — native text inherits --text-on-accent
+   (near-white in light mode) on a light message background, making load
+   errors and notifications invisible. Pin readable background + text. */
+.notice {
+  background-color: var(--color-bg-floating);
+  color: var(--color-text-body);
+  border: 1px solid var(--color-border-default);
+  box-shadow: var(--shadow-md);
+}
+.modal {
+  box-shadow: var(--shadow-lg);
+  border: 1px solid var(--color-border-default);
+}
+.prompt {
+  box-shadow: var(--shadow-xl);
+  border: 1px solid var(--color-border-strong);
+  border-radius: var(--radius-xl);
+}
+/* Dialog/floating layer appearance: 120ms + 4px upward fade-in */
+.menu,
+.suggestion-container,
+.popover.hover-popover {
+  animation: perch-float-in var(--motion-editor) var(--ease-out);
+}
+@keyframes perch-float-in {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* --- 3k. Menu item padding (echoing the template approach) --- */
+.menu {
+  padding: var(--space-1);
+}
+.menu-item {
+  padding: var(--space-1) var(--space-2);
+  border-radius: var(--radius-sm);
+}
+.menu-separator {
+  margin: var(--space-1) 0;
+  border-color: var(--color-border-divider);
+}
+
+/* --- 3l. Search highlight —— normal sky-blue light background / current item deepened + bright edge --- */
+.markdown-preview-view .search-highlight,
+.cm-editor .cm-searchMatch {
+  background-color: var(--color-search-bg);
+  border-radius: var(--radius-xs);
+}
+.cm-editor .cm-searchMatch-selected,
+.markdown-preview-view .search-highlight.is-active {
+  background-color: var(--color-search-current-bg);
+  box-shadow: 0 0 0 1px var(--color-accent-500);
+}
+
+/* --- 3m. Focus mode —— non-current paragraphs fade out (requires adding the perch-focus-mode class to body) --- */
+body.perch-focus-mode .markdown-source-view.mod-cm6 .cm-line {
+  opacity: var(--opacity-ghost);
+  transition: opacity var(--motion-panel) ease-out;
+}
+body.perch-focus-mode .markdown-source-view.mod-cm6 .cm-active.cm-line {
+  opacity: 1;
+}
+
+/* --- 3n. Editor padding under readable line width --- */
+/* Inline title and the properties block both live in .cm-sizer (outside
+   .cm-content), so they miss the content padding and drift left of the body.
+   Pin the same padding on them to keep the file title and properties aligned
+   with the H1 below. */
+.markdown-source-view.is-readable-line-width .cm-content,
+.markdown-source-view.is-readable-line-width .inline-title,
+.markdown-source-view.is-readable-line-width .metadata-container,
+.markdown-preview-view.is-readable-line-width .markdown-preview-sizer {
+  padding-left: var(--space-12);
+  padding-right: var(--space-12);
+}
+
+/* --- 3n-1. Properties font —— match body typeface --- */
+/* Obsidian defaults the properties block to the interface font (--font-ui,
+   Inter-first), so its CJK glyphs diverge from the body. Pin the body font on
+   the metadata block only, leaving other UI (tabs, sidebar) untouched. */
+.metadata-container,
+.metadata-property-key,
+.metadata-property-key-input,
+.metadata-property-value,
+.metadata-property-value input,
+.metadata-property-value textarea {
+  font-family: var(--font-body);
+}
+/* Widen pill horizontal padding via selector —— the --pill-padding-x var isn't
+   consumed by the native pill in this Obsidian build, so set it directly. */
+.metadata-property-value .multi-select-pill {
+  padding-left: var(--size-4-2);
+  padding-right: var(--size-4-2);
+}
+@media (min-width: 1200px) {
+  .markdown-source-view.is-readable-line-width .cm-content,
+  .markdown-source-view.is-readable-line-width .inline-title,
+  .markdown-source-view.is-readable-line-width .metadata-container,
+  .markdown-preview-view.is-readable-line-width .markdown-preview-sizer {
+    padding-left: var(--space-16);
+    padding-right: var(--space-16);
+  }
+}
+
+/* --- 3n2. Table cells —— roomier left/right padding (no native var exists) --- */
+.markdown-rendered table th,
+.markdown-rendered table td {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+/* --- 3o. Table cell editing —— keep content aligned before/after edit --- */
+/* In live preview, clicking a table cell swaps rendered text for an inline
+   CM editor that carries its own indent/padding, so text jumps right. Pin a
+   consistent padding on the wrapper and strip the inner editor's extra indent. */
+.markdown-source-view.mod-cm6 .table-cell-wrapper {
+  padding: 0.3em 1em;
+}
+.markdown-source-view.mod-cm6 .table-cell-wrapper .cm-editor .cm-content,
+.markdown-source-view.mod-cm6 .table-cell-wrapper .cm-editor .cm-line {
+  padding: 0;
+}
+.markdown-source-view.mod-cm6 .table-cell-wrapper .cm-editor .cm-scroller {
+  padding: 0;
+}

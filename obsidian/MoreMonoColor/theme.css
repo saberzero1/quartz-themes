@@ -1,0 +1,282 @@
+body {
+	--radius-s:  5px;
+	--radius-m:  5px;
+	--radius-l:  5px;
+	--input-radius:  5px;
+	--tab-radius-active: 0;
+	--checkbox-radius: 50%;
+	--toggle-radius: 10px;
+	--toggle-thumb-radius: 50%;
+	--slider-thumb-radius: 50%;
+
+	--background-primary: color-mix(in srgb, var(--color-base-00) 95%, hsla(var(--accent-h), var(--accent-s), var(--accent-l), 1));
+	--background-secondary: color-mix(in srgb, var(--color-base-20) 95%, hsla(var(--accent-h), var(--accent-s), var(--accent-l), 1));
+    --icon-color: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 1) !important;
+}
+
+.workspace-tab-header.is-active::before, .workspace-tab-header.is-active::after {
+	display: none;
+}
+
+svg * {
+	stroke-linecap: square;
+	stroke-linejoin: miter;
+	rx: 0;
+	ry: 0;
+}
+
+.menu {
+	padding: var(--size-2-1);
+}
+
+.menu-item {
+	padding: var(--size-4-1) var(--size-4-2);
+}
+
+.menu-separator {
+	margin: var(--size-2-1) calc(var(--size-2-1) * -1);
+}
+
+.inline-title {
+	color: hsla(var(--accent-h), calc(var(--accent-s)), calc(var(--accent-l)), 1);
+}
+
+/* Iconize */
+
+.iconize-icon {
+    color: hsla(var(--accent-h), calc(var(--accent-s)), calc(var(--accent-l)), 1);
+}
+
+/* Frontmatter */
+
+.cm-hmd-frontmatter {
+	color: color-mix(in srgb, var(--text-muted) 50%, hsla(var(--accent-h), var(--accent-s), var(--accent-l), 1))
+}
+
+/* Tag */
+
+span.tag,
+span.cm-hashtag {
+    color: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 1);
+    border-color: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 1) !important;
+    border-width: 0.2em !important;
+	font-size: 0.8em;
+}
+
+.tag,
+.cm-hashtag.cm-hashtag-end {
+	border-bottom-right-radius: 3px;
+	border-top-right-radius: 3px;
+}
+
+.tag,
+.cm-hashtag.cm-hashtag-begin {
+	border-bottom-left-radius: 3px;
+	border-top-left-radius: 3px;
+}
+
+/* Headers */
+
+.HyperMD-header {
+    color:  hsla(var(--accent-h), calc(var(--accent-s)), calc(var(--accent-l)), 1);
+}
+
+h1, h2, h3, h4 {
+    color:  hsla(var(--accent-h), calc(var(--accent-s)), calc(var(--accent-l)), 1);
+    padding-left: 1rem;
+}
+
+.HyperMD-header.HyperMD-header-1 .cm-header.cm-header-1, h1 {
+    border-left: 7px solid hsla(var(--accent-h), calc(var(--accent-s)), calc(var(--accent-l)), 1);
+    padding-left: 1rem;
+}
+
+.HyperMD-header.HyperMD-header-2 .cm-header.cm-header-2, h2 {
+    border-left: 7px solid hsla(var(--accent-h), calc(var(--accent-s)), calc(var(--accent-l)), 1);
+    padding-left: 1rem;
+}
+
+.HyperMD-header.HyperMD-header-3 .cm-header.cm-header-3, h3 {
+    border-left: 7px solid hsla(var(--accent-h), calc(var(--accent-s)), calc(var(--accent-l)), 1);
+    padding-left: 1rem;
+}
+
+.HyperMD-header.HyperMD-header-4 .cm-header.cm-header-4, h4 {
+    border-left: 7px solid hsla(var(--accent-h), calc(var(--accent-s)), calc(var(--accent-l)), 0.2);
+    padding-left: 1rem;
+}
+
+.HyperMD-header.HyperMD-header-5 .cm-header.cm-header-5, h5{
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 3px;
+    text-decoration-skip-ink: none;
+    font-weight: 900;
+}
+
+.HyperMD-header.HyperMD-header-6 .cm-header.cm-header-6, h6 {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+    font-weight: 300;
+}
+
+/* Progress */
+
+progress,
+progress:after,
+progress:before {
+    width: 100%;
+    height: 1rem !important;
+    box-shadow: 0 0 5px hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.5);
+}
+
+progress::-webkit-progress-bar,
+progress::-webkit-progress-value {
+	border-radius: 3px !important;
+}
+
+/* Quote */
+
+.HyperMD-quote {
+	border-inline-start-width: 5px;
+    border-inline-start-style: solid;
+    border-left: 5px solid hsla(var(--accent-h), calc(var(--accent-s)), calc(var(--accent-l)), 1);
+}
+
+/* Divisor */
+
+.hr hr {
+ 	border-color: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.5);
+}
+
+/* List */
+
+.list-number {
+    color: hsla(var(--accent-h), var(--accent-s), var(--accent-l) , 1);
+}
+
+.list-bullet::before, 
+.list-bullet::after {
+    background-color: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 1);
+    font-size: 1.1em;
+}
+
+/* Super */
+
+.cm-em.cm-strong,
+strong em,
+em strong {
+    font-style: normal;
+    color: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 1);
+    font-weight: bold;
+}
+
+
+/* Internal Link */
+
+.cm-hmd-internal-link span.cm-underline, 
+.internal-link {
+    text-decoration-thickness: 0.2em !important;
+    text-underline-offset: 0.1em !important;
+    font-weight: bolder;
+    font-size: normal;
+}
+
+/* External Link */
+
+span.cm-url .cm-underline {
+    font-family: monospace;    
+    font-size: 0.9em;
+    background-color: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.1);
+}
+
+/* Highlight */
+
+.cm-highlight, mark {
+    background-color: hsla(var(--accent-h), calc(var(--accent-s) - 5%), calc(var(--accent-l) + 10%), 0.3) !important;
+    padding: 2px 3px 2px 3px;
+}
+
+/* Footnote */
+
+span.cm-hmd-footnote,
+span.cm-footref {
+	color: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 1) !important;
+}
+
+.internal-embed.markdown-embed.inline-embed.is-loaded{
+	border-left: 5px solid hsla(var(--accent-h), var(--accent-s), var(--accent-l), 1) !important;
+}
+
+/* Table */
+
+.cm-table-widget.markdown-rendered {
+	display: flex !important;
+	align-items: center !important;
+	justify-content: center !important;
+}
+
+.table-wrapper {
+    min-width: 50% !important;
+}
+
+table {
+    min-width: 100% !important;
+}
+
+table th {
+    color: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 1) !important;
+}
+
+.table-wrapper td, 
+.table-wrapper th {
+    font-size: unset !important;
+    --table-border-color: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 1) !important;
+    --table-header-border-color: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 1) !important;
+    border-width: 1px;
+}
+
+
+/* Callout Colored */
+
+.callout[data-callout="colored"] {
+    background-color: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.1) !important;
+    border-color: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 1) !important;
+    --callout-icon: text;
+}
+
+.callout[data-callout="colored"]::before {
+    background-color: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.1) !important;    
+}
+
+.callout[data-callout="colored"] .callout-title {
+    color: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 1) !important;
+}
+
+.callout[data-callout="colored"] .callout-title .callout-icon .svg-icon  {
+    color: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 1) !important;
+}
+
+/* Callout Hided */
+
+.callout[data-callout="hided"] {
+    background-color: rgba(175, 175, 175, 0.2) !important;
+    border-color: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 1) !important;
+    --callout-icon: circle-user;
+    opacity: 0.1;
+}
+
+.callout[data-callout="hided"]::before {
+    background-color: rgba(175, 175, 175, 0.2) !important;
+    border-color: rgba(175, 175, 175, 1) !important;
+    background: rgba(175, 175, 175, 0.2) !important;
+}
+
+.callout[data-callout="hided"] > .callout-title {
+    color: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 1) !important;
+}
+
+.callout[data-callout="hided"] > .callout-title .callout-icon .svg-icon  {
+    color: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 1) !important;
+}

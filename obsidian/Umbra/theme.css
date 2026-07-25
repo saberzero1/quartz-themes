@@ -1,0 +1,363 @@
+/* Umbra: a very dark, minimalist theme for Obsidian.
+   The darkest part of a shadow. Near black surfaces, hairline borders,
+   quiet grays, and a single restrained accent. Dark mode only.
+
+   The accent is one variable: --umbra-accent. Everything accent related
+   derives from it, so changing one color restyles the whole theme.
+   Install the Style Settings plugin to get a color picker for it. */
+
+/* @settings
+
+name: Umbra
+id: umbra
+settings:
+    -
+        id: umbra-accent
+        title: Accent color
+        description: The one color Umbra allows itself. Links, tags, the caret, checkboxes, and the active tab all derive from it.
+        type: variable-color
+        format: hex
+        default: '#7d76e8'
+
+*/
+
+.theme-dark {
+  color-scheme: dark;
+
+  /* ---- Type ------------------------------------------------------------ */
+  /* System-installed faces only, never downloaded. Your own font choice in
+     Settings, Appearance always wins over these. */
+  --font-text-theme: "Avenir Next", "Inter", "Segoe UI Variable", "Segoe UI",
+    system-ui, sans-serif;
+  --font-interface-theme: "Avenir Next", "Inter", "Segoe UI Variable",
+    "Segoe UI", system-ui, sans-serif;
+  --font-monospace-theme: "JetBrains Mono", "SF Mono", ui-monospace,
+    "Cascadia Code", Menlo, Consolas, monospace;
+
+  /* ---- The one accent, and everything derived from it ------------------ */
+  --umbra-accent: #7d76e8;
+  --umbra-accent-strong: color-mix(in srgb, var(--umbra-accent), #ffffff 12%);
+  --umbra-accent-text: color-mix(in srgb, var(--umbra-accent), #ffffff 24%);
+  --umbra-accent-text-strong: color-mix(in srgb, var(--umbra-accent), #ffffff 38%);
+
+  /* ---- Surfaces ------------------------------------------------------- */
+  --background-primary: #09090c;
+  --background-primary-alt: #0d0d11;
+  --background-secondary: #0c0c10;
+  --background-secondary-alt: #0f0f14;
+  --titlebar-background: #09090c;
+  --titlebar-background-focused: #09090c;
+
+  /* Hairlines instead of visible chrome */
+  --background-modifier-border: rgba(255, 255, 255, 0.06);
+  --background-modifier-border-hover: rgba(255, 255, 255, 0.1);
+  --background-modifier-border-focus: color-mix(in srgb, var(--umbra-accent) 35%, transparent);
+  --divider-color: rgba(255, 255, 255, 0.05);
+  --tab-outline-color: transparent;
+
+  --background-modifier-hover: rgba(255, 255, 255, 0.04);
+  --background-modifier-active-hover: color-mix(in srgb, var(--umbra-accent) 10%, transparent);
+  --background-modifier-form-field: #0e0e13;
+  --background-modifier-message: #16161c;
+
+  /* ---- Text ----------------------------------------------------------- */
+  --text-normal: #c7c7cf;
+  --text-muted: #82828c;
+  --text-faint: #55555e;
+  --text-on-accent: #0b0b0e;
+  --text-on-accent-inverted: #e9e9f0;
+
+  --bold-color: #e4e4ec;
+  --italic-color: #d6d6de;
+
+  /* ---- Accent applications ---------------------------------------------- */
+  --interactive-accent: var(--umbra-accent);
+  --interactive-accent-hover: var(--umbra-accent-strong);
+  --text-accent: var(--umbra-accent-text);
+  --text-accent-hover: var(--umbra-accent-text-strong);
+  --link-color: var(--umbra-accent-text);
+  --link-color-hover: var(--umbra-accent-text-strong);
+  --link-external-color: var(--umbra-accent-text);
+  --link-external-color-hover: var(--umbra-accent-text-strong);
+  --link-decoration: none;
+  --link-external-decoration: none;
+  --link-decoration-hover: underline;
+
+  --text-selection: color-mix(in srgb, var(--umbra-accent) 22%, transparent);
+  --text-highlight-bg: color-mix(in srgb, var(--umbra-accent) 16%, transparent);
+  --caret-color: var(--umbra-accent-strong);
+
+  /* ---- Headings: same ink, different weight only ----------------------- */
+  --heading-formatting: var(--text-faint);
+  --h1-color: #e4e4ec;
+  --h2-color: #e4e4ec;
+  --h3-color: #dcdce4;
+  --h4-color: #d2d2da;
+  --h5-color: #c7c7cf;
+  --h6-color: #82828c;
+  --h1-weight: 650;
+  --h2-weight: 650;
+  --h3-weight: 600;
+  --h4-weight: 600;
+  --h5-weight: 600;
+  --h6-weight: 600;
+  --h1-size: 1.6em;
+  --h2-size: 1.35em;
+  --h3-size: 1.18em;
+  --h4-size: 1.05em;
+  --h5-size: 1em;
+  --h6-size: 0.92em;
+  --inline-title-weight: 650;
+  --inline-title-color: #e4e4ec;
+
+  /* ---- Editor comfort --------------------------------------------------- */
+  --line-height-normal: 1.6;
+  --p-spacing: 0.9em;
+
+  /* ---- Code ------------------------------------------------------------- */
+  --code-background: #0f0f15;
+  --code-normal: #b9b9c4;
+  --code-comment: #5f5f6a;
+  --code-function: var(--umbra-accent-text);
+  --code-keyword: color-mix(in srgb, var(--umbra-accent), #ffffff 8%);
+  --code-string: #9aa88a;
+  --code-value: #c2a889;
+  --code-property: #b9b9c4;
+  --code-punctuation: #82828c;
+  --code-tag: color-mix(in srgb, var(--umbra-accent), #ffffff 8%);
+  --code-radius: 6px;
+
+  /* ---- Blockquotes, rules, tables --------------------------------------- */
+  --blockquote-border-color: rgba(255, 255, 255, 0.14);
+  --blockquote-border-thickness: 1px;
+  --blockquote-color: #a2a2ac;
+  --hr-color: rgba(255, 255, 255, 0.08);
+  --hr-thickness: 1px;
+  --table-border-color: rgba(255, 255, 255, 0.07);
+  --table-header-weight: 600;
+  --table-header-color: #a2a2ac;
+  --table-row-even-background: transparent;
+  --table-row-alt-background: rgba(255, 255, 255, 0.015);
+
+  /* ---- Lists and checkboxes ---------------------------------------------- */
+  --checkbox-radius: 4px;
+  --checkbox-color: var(--umbra-accent);
+  --checkbox-color-hover: var(--umbra-accent-strong);
+  --checkbox-border-color: rgba(255, 255, 255, 0.22);
+  --checkbox-border-color-hover: rgba(255, 255, 255, 0.35);
+  --checklist-done-color: #55555e;
+  --checklist-done-decoration: line-through;
+  --list-marker-color: #55555e;
+
+  /* ---- Tags -------------------------------------------------------------- */
+  --tag-background: color-mix(in srgb, var(--umbra-accent) 9%, transparent);
+  --tag-background-hover: color-mix(in srgb, var(--umbra-accent) 16%, transparent);
+  --tag-color: var(--umbra-accent-text);
+  --tag-color-hover: var(--umbra-accent-text-strong);
+  --tag-decoration: none;
+  --tag-decoration-hover: none;
+  --tag-radius: 4px;
+
+  /* ---- App chrome: quiet until needed ------------------------------------- */
+  --ribbon-background: #09090c;
+  --ribbon-background-collapsed: #09090c;
+  --tab-background-active: #0d0d11;
+  --tab-text-color: #74747e;
+  --tab-text-color-focused: #a2a2ac;
+  --tab-text-color-focused-active: #e4e4ec;
+  --tab-text-color-focused-active-current: #e4e4ec;
+  --icon-color: #6b6b75;
+  --icon-color-hover: #c7c7cf;
+  --icon-color-active: var(--umbra-accent-text);
+  --icon-color-focused: #c7c7cf;
+  --nav-item-color: #82828c;
+  --nav-item-color-hover: #c7c7cf;
+  --nav-item-color-active: #e4e4ec;
+  --nav-item-background-active: rgba(255, 255, 255, 0.045);
+  --nav-item-background-hover: rgba(255, 255, 255, 0.03);
+  --nav-item-weight-active: 500;
+  --nav-indentation-guide-color: rgba(255, 255, 255, 0.04);
+  --status-bar-background: transparent;
+  --status-bar-border-color: transparent;
+  --status-bar-text-color: #55555e;
+  --status-bar-border-width: 0;
+  --prompt-border-color: rgba(255, 255, 255, 0.08);
+  --modal-border-color: rgba(255, 255, 255, 0.08);
+
+  /* ---- Scrollbars: hairline ------------------------------------------------ */
+  --scrollbar-bg: transparent;
+  --scrollbar-thumb-bg: rgba(255, 255, 255, 0.08);
+  --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.16);
+
+  /* ---- Graph ---------------------------------------------------------------- */
+  --graph-line: rgba(255, 255, 255, 0.08);
+  --graph-node: #82828c;
+  --graph-node-unresolved: #454550;
+  --graph-node-tag: var(--umbra-accent);
+  --graph-node-attachment: #9aa88a;
+  --graph-node-focused: var(--umbra-accent-text);
+  --graph-text: #82828c;
+
+  /* ---- Misc ------------------------------------------------------------------- */
+  --embed-border-left: 1px solid rgba(255, 255, 255, 0.14);
+  --collapse-icon-color: #55555e;
+  --collapse-icon-color-collapsed: #82828c;
+  --indentation-guide-color: rgba(255, 255, 255, 0.04);
+  --indentation-guide-color-active: rgba(255, 255, 255, 0.09);
+  --shadow-s: none;
+  --shadow-l: 0 4px 28px rgba(0, 0, 0, 0.5);
+  --input-shadow: none;
+  --input-shadow-hover: none;
+}
+
+/* ---- Signature details ---------------------------------------------- */
+
+/* Titles carry a hint of display tightening */
+.theme-dark .inline-title,
+.theme-dark .markdown-rendered h1,
+.theme-dark .cm-header-1 {
+  letter-spacing: -0.015em;
+}
+
+/* The active tab earns a hairline of accent */
+.theme-dark .workspace-tab-header.is-active.mod-active::after {
+  content: "";
+  position: absolute;
+  left: 12px;
+  right: 12px;
+  bottom: 0;
+  height: 2px;
+  border-radius: 2px;
+  background: var(--interactive-accent);
+  opacity: 0.85;
+}
+
+/* Callouts: monochrome surfaces, the type color survives only as a
+   left hairline and the icon, so twelve callout types stop shouting */
+.theme-dark .callout {
+  background: rgba(255, 255, 255, 0.022);
+  border: none;
+  border-left: 2px solid rgba(var(--callout-color), 0.55);
+  border-radius: 4px;
+}
+.theme-dark .callout .callout-title {
+  color: rgb(var(--callout-color));
+  opacity: 0.9;
+}
+.theme-dark .callout .callout-content {
+  color: var(--text-normal);
+}
+
+/* Tables: horizontal rules only, like a book */
+.theme-dark .markdown-rendered table th,
+.theme-dark .markdown-rendered table td,
+.theme-dark .markdown-source-view.mod-cm6 .cm-table-widget th,
+.theme-dark .markdown-source-view.mod-cm6 .cm-table-widget td {
+  border-left: none;
+  border-right: none;
+}
+.theme-dark .markdown-rendered table,
+.theme-dark .markdown-source-view.mod-cm6 .cm-table-widget table {
+  border: none;
+  border-top: 1px solid var(--table-border-color);
+  border-bottom: 1px solid var(--table-border-color);
+}
+
+/* Tags become quiet pills */
+.theme-dark .tag,
+.theme-dark .cm-hashtag {
+  border-radius: 999px;
+  padding: 0.05em 0.65em;
+  font-size: 0.85em;
+  border: none;
+}
+.theme-dark .cm-hashtag-begin {
+  padding-right: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.theme-dark .cm-hashtag-end {
+  padding-left: 0.1em;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+/* Code blocks get a hairline so they hold their shape on any background */
+.theme-dark .markdown-rendered pre,
+.theme-dark .markdown-source-view.mod-cm6 .HyperMD-codeblock {
+  border: none;
+}
+.theme-dark .markdown-rendered pre {
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* The status bar sleeps until you look at it */
+.theme-dark .status-bar {
+  opacity: 0.55;
+  transition: opacity 150ms ease;
+}
+.theme-dark .status-bar:hover {
+  opacity: 1;
+}
+
+/* Interactions ease instead of snapping */
+.theme-dark .nav-file-title,
+.theme-dark .nav-folder-title,
+.theme-dark .workspace-tab-header,
+.theme-dark .clickable-icon,
+.theme-dark .checkbox-container,
+.theme-dark a,
+.theme-dark .tag,
+.theme-dark .cm-hashtag {
+  transition: color 120ms ease, background-color 120ms ease,
+    border-color 120ms ease, opacity 120ms ease;
+}
+.theme-dark input[type="checkbox"] {
+  transition: background-color 120ms ease, border-color 120ms ease;
+}
+
+/* Popovers and menus float on true depth, the one place shadows remain */
+.theme-dark .menu,
+.theme-dark .popover,
+.theme-dark .prompt,
+.theme-dark .modal {
+  border: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+/* Footnote references take the accent quietly */
+.theme-dark .markdown-rendered sup.footnote-ref a,
+.theme-dark .cm-footref {
+  color: var(--text-accent);
+  text-decoration: none;
+}
+
+/* Frontmatter properties: recede unless you look at them */
+.theme-dark .metadata-container {
+  --metadata-label-text-color: #55555e;
+  --metadata-input-text-color: #82828c;
+  --metadata-divider-color: transparent;
+}
+
+/* The active line breathes, barely */
+.theme-dark .markdown-source-view.mod-cm6 .cm-active.cm-line {
+  background-color: rgba(255, 255, 255, 0.014);
+}
+
+/* Hairline under the tab bar only when a note is open */
+.theme-dark .workspace-tab-header-container {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Quiet the view header until hovered */
+.theme-dark .view-header-title {
+  color: var(--text-muted);
+}
+.theme-dark .workspace-leaf.mod-active .view-header-title {
+  color: var(--text-normal);
+}
+
+/* Search matches use the accent softly */
+.theme-dark .search-result-file-matched-text {
+  background-color: color-mix(in srgb, var(--umbra-accent) 18%, transparent);
+  color: inherit;
+}

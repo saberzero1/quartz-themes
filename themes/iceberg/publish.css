@@ -1456,6 +1456,7 @@ body.theme-dark {
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13);'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
   --interactive-accent-rgb: 132, 160, 198 !important;
+  --text-strong: var(--brightWhite) !important;
   --font-family-editor:
     "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans",
     Meiryo, sans-serif !important;
@@ -1473,7 +1474,6 @@ body.theme-dark {
   --text-tag: var(--black) !important;
   --black: #1e2132 !important;
   --text-inline-code: var(--blue) !important;
-  --text-strong: var(--brightWhite) !important;
   --background-block-cursor: var(--white) !important;
   --background-tag-hover: #81859c !important;
   --brightBlack: #6b7089 !important;

@@ -2522,37 +2522,39 @@ body.theme-dark {
   --table-header-background-hover: var(--night-owl-bg-tab-active) !important;
   --vault-name-color: var(--night-owl-text-secondary) !important;
   --bold-color: var(--night-owl-accent-green) !important;
+  --embed-background: var(--night-owl-bg-secondary) !important;
+  --embed-font-style: italic !important;
   --italic-color: var(--night-owl-accent-purple) !important;
+  --table-text-color: var(--night-owl-text-primary) !important;
   --interactive-success: var(--night-owl-accent-green) !important;
   --menu-item-background-hover: var(--night-owl-bg-tab-active) !important;
   --embed-border-left: 2px solid var(--night-owl-accent-blue) !important;
+  --tag-border: var(--night-owl-border) !important;
+  --calendar-background-hover: var(--night-owl-bg-secondary) !important;
+  --calendar-hover: var(--night-owl-bg-tab-active) !important;
+  --calendar-today: var(--night-owl-accent-blue) !important;
+  --calendar-week: var(--night-owl-text-secondary) !important;
   --embed-border-right: none !important;
   --vault-name-font-size: var(--font-ui-small) !important;
   --vault-name-font-weight: 500 !important;
   --blockquote-border: 2px solid var(--night-owl-accent-cyan) !important;
   --nav-item-weight-active: normal !important;
-  --embed-background: var(--night-owl-bg-secondary) !important;
   --button-hover-bg: var(--night-owl-button-hover) !important;
-  --table-text-color: var(--night-owl-text-primary) !important;
   --modal-border: var(--night-owl-border) !important;
   --nav-item-weight-hover: normal !important;
   --status-bar-border: var(--night-owl-border-secondary) !important;
-  --calendar-background-hover: var(--night-owl-bg-secondary) !important;
-  --calendar-hover: var(--night-owl-bg-tab-active) !important;
-  --calendar-today: var(--night-owl-accent-blue) !important;
-  --calendar-week: var(--night-owl-text-secondary) !important;
+  --button-active-bg: var(--night-owl-accent-blue) !important;
   --input-bg: var(--night-owl-bg-secondary) !important;
   --checkbox-border: var(--night-owl-border) !important;
   --tooltip-bg: var(--night-owl-bg-tertiary) !important;
   --tooltip-color: var(--night-owl-text-primary) !important;
   --input-border-color: var(--night-owl-text-secondary) !important;
-  --tag-border: var(--night-owl-border) !important;
-  --button-active-bg: var(--night-owl-accent-blue) !important;
+  --titlebar-text: #eeefff !important;
+  --tooltip-border: var(--night-owl-border) !important;
   --button-default-bg: var(--night-owl-button-bg) !important;
   --button-default-border-color: transparent !important;
   --button-default-color: var(--night-owl-text-bright) !important;
   --checkbox-border-hover: var(--night-owl-accent-blue) !important;
-  --embed-font-style: italic !important;
   --highlight-background: rgba(255, 235, 149, 0.4) !important;
   --highlight-background-hover: rgba(255, 235, 149, 0.6) !important;
   --input-text-color: var(--night-owl-text-bright) !important;
@@ -2606,8 +2608,6 @@ body.theme-dark {
   --table-header-font-size: var(--font-smaller) !important;
   --table-header-font-weight: 600 !important;
   --titlebar-border: var(--night-owl-border-secondary) !important;
-  --titlebar-text: #eeefff !important;
-  --tooltip-border: var(--night-owl-border) !important;
 }
 
 body {

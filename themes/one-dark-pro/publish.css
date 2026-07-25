@@ -2579,9 +2579,9 @@ body.theme-dark {
   --inline-title-color: var(--odp-text) !important;
   --text-error-hover: #ec7780 !important;
   --table-header-background-hover: var(--odp-bg-elevated) !important;
+  --embed-background: var(--odp-bg-elevated) !important;
   --interactive-success: var(--odp-green) !important;
   --embed-border-left: 2px solid var(--odp-blue) !important;
-  --embed-background: var(--odp-bg-elevated) !important;
   --font-ui-theme: var(--font-interface) !important;
   --odp-bg: #282c34 !important;
   --odp-bg-alt: #21252b !important;

@@ -1435,9 +1435,9 @@ body.theme-light {
   --h6-color: var(--color-red) !important;
   --inline-title-color: var(--text-color) !important;
   --text-color: var(--text) !important;
-  --border-color: var(--border-color-primary) !important;
   --bold-color: var(--accent-color-light) !important;
   --italic-color: var(--accent-color-light) !important;
+  --border-color: var(--border-color-primary) !important;
   --code-variable: var(--text-color) !important;
   --green: #40a02b !important;
   --red: #d20f39 !important;
@@ -1456,6 +1456,7 @@ body.theme-light {
   --mauve: #8839ef !important;
   --surface1: #bcc0cc !important;
   --surface2: #acb0be !important;
+  --accent-color-light: var(--blue) !important;
   --selection-background-color: var(--crust) !important;
   --accent-color-hover: var(--maroon) !important;
   --overlay0: #9ca0b0 !important;
@@ -1465,7 +1466,6 @@ body.theme-light {
   --subtext1: #5c5f77 !important;
   --surface0: #ccd0da !important;
   --accent-color-dark: var(--mauve) !important;
-  --accent-color-light: var(--blue) !important;
   --border-color-primary: var(--surface0) !important;
   --border-color-secondary: var(--surface1) !important;
   --code-boolean: var(--peach) !important;
@@ -2531,9 +2531,9 @@ body.theme-dark {
   --h6-color: var(--color-red) !important;
   --inline-title-color: var(--text-color) !important;
   --text-color: var(--text) !important;
-  --border-color: var(--border-color-primary) !important;
   --bold-color: var(--accent-color-light) !important;
   --italic-color: var(--accent-color-light) !important;
+  --border-color: var(--border-color-primary) !important;
   --code-variable: var(--text-color) !important;
   --green: #a6da95 !important;
   --red: #ed8796 !important;
@@ -2552,6 +2552,7 @@ body.theme-dark {
   --mauve: #c6a0f6 !important;
   --surface1: #494d64 !important;
   --surface2: #5b6078 !important;
+  --accent-color-light: var(--blue) !important;
   --selection-background-color: var(--surface1) !important;
   --accent-color-hover: var(--maroon) !important;
   --overlay0: #6e738d !important;
@@ -2561,7 +2562,6 @@ body.theme-dark {
   --subtext1: #b8c0e0 !important;
   --surface0: #363a4f !important;
   --accent-color-dark: var(--mauve) !important;
-  --accent-color-light: var(--blue) !important;
   --border-color-primary: var(--surface1) !important;
   --border-color-secondary: var(--surface0) !important;
   --code-boolean: var(--peach) !important;

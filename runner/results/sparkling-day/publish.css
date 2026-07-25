@@ -1473,8 +1473,8 @@ body.theme-light {
   --h5-color: var(--ylmn-blue) !important;
   --h6-color: var(--ylmn-blue) !important;
   --inline-title-color: var(--h1-color) !important;
-  --inline-code-background: var(--anti-flash-white) !important;
   --inline-code-color: var(--tropical-indigo) !important;
+  --inline-code-background: var(--anti-flash-white) !important;
   --color-scheme: light !important;
   --background-code: var(--anti-flash-white) !important;
   --white: #fcfcfc !important;

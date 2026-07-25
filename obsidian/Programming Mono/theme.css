@@ -1,0 +1,709 @@
+/*
+Programming Mono — тема для Obsidian
+Автор: SATOS prod
+Стиль: программирование, без закруглений (angular), monospace-акценты
+Поддерживает тёмную (.theme-dark) и светлую (.theme-light) версии.
+
+Палитра (тёмная):
+  --bg:        #0e0e0c
+  --bg-alt:    #161614
+  --bg-code:   #0a0a08
+  --border:    #282826
+  --border-hi: #383836
+  --text:      #b8b6ae
+  --text-hi:   #dedad0
+  --text-lo:   #686660
+
+Палитра (светлая):
+  --bg:        #f5f4f1
+  --bg-alt:    #ebe9e4
+  --bg-code:   #eeece7
+  --border:    #d8d5cd
+  --border-hi: #c2beb3
+  --text:      #3a3934
+  --text-hi:   #1c1b18
+  --text-lo:   #8a8778
+
+Акценты (общие для обеих тем):
+  --accent-1:  #6a9ed4  (H1 / кнопки / основной)
+  --accent-2:  #a07cc8  (H2 / выделения)
+  --accent-3:  #89c87c  (H3 / выделения)
+  --accent-4:  #c06f6f  (H4 / выделения)
+*/
+
+.theme-dark {
+  --background-primary: #0e0e0c;
+  --background-primary-alt: #0a0a08;
+  --background-secondary: #161614;
+  --background-secondary-alt: #161614;
+  --background-modifier-border: #282826;
+  --background-modifier-border-hover: #383836;
+  --background-modifier-border-focus: #6a9ed4;
+  --background-modifier-hover: #1c1c1a;
+  --background-modifier-active-hover: #1c1c1a;
+  --background-modifier-form-field: #161614;
+  --background-modifier-form-field-highlighted: #161614;
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.5);
+  --background-modifier-cover: rgba(0, 0, 0, 0.7);
+  --background-modifier-message: #161614;
+  --background-modifier-success: #6aaa58;
+  --background-modifier-error: #c05040;
+  --background-modifier-error-rgb: 192, 80, 64;
+  --background-modifier-success-rgb: 106, 170, 88;
+
+  --text-normal: #b8b6ae;
+  --text-muted: #686660;
+  --text-faint: #4a4844;
+  --text-error: #c05040;
+  --text-error-hover: #c06f6f;
+  --text-accent: #6a9ed4;
+  --text-accent-hover: #89b6e6;
+  --text-on-accent: #0e0e0c;
+  --text-on-accent-inverted: #dedad0;
+  --text-selection: rgba(106, 158, 212, 0.25);
+  --text-highlight-bg: rgba(160, 124, 200, 0.25);
+
+  --interactive-normal: #161614;
+  --interactive-hover: #1c1c1a;
+  --interactive-accent: #6a9ed4;
+  --interactive-accent-hsl: 210, 51%, 63%;
+  --interactive-accent-hover: #89b6e6;
+  --interactive-success: #6aaa58;
+
+  --icon-color: #686660;
+  --icon-color-hover: #dedad0;
+  --icon-color-active: #6a9ed4;
+
+  --divider-color: #282826;
+
+  --font-text-theme: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', ui-monospace, monospace;
+  --font-monospace-theme: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', ui-monospace, monospace;
+  --font-interface-theme: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', ui-monospace, monospace;
+
+  /* без закруглений — угловой стиль */
+  --radius-s: 0px;
+  --radius-m: 0px;
+  --radius-l: 0px;
+  --radius-xl: 0px;
+  --checkbox-radius: 0px;
+  --input-radius: 0px;
+  --tab-radius: 0px;
+  --tab-radius-active: 0px;
+  --button-radius: 0px;
+
+  --code-background: #0a0a08;
+  --code-normal: #b8b6ae;
+  --code-comment: #686660;
+  --code-function: #6a9ed4;
+  --code-important: #c06f6f;
+  --code-keyword: #a07cc8;
+  --code-operator: #dedad0;
+  --code-property: #89c87c;
+  --code-punctuation: #686660;
+  --code-string: #89c87c;
+  --code-tag: #6a9ed4;
+  --code-value: #c06f6f;
+
+  --h1-color: #6a9ed4;
+  --h2-color: #a07cc8;
+  --h3-color: #89c87c;
+  --h4-color: #c06f6f;
+  --h5-color: #a07cc8;
+  --h6-color: #686660;
+
+  --bold-color: #dedad0;
+  --italic-color: #b8b6ae;
+  --link-color: #6a9ed4;
+  --link-color-hover: #89b6e6;
+  --link-external-color: #6a9ed4;
+  --link-external-color-hover: #89b6e6;
+  --link-unresolved-color: #c06f6f;
+
+  --blockquote-border-color: #383836;
+  --hr-color: #282826;
+
+  --tag-color: #a07cc8;
+  --tag-background: rgba(160, 124, 200, 0.12);
+  --tag-border-color: rgba(160, 124, 200, 0.35);
+
+  --titlebar-background: #0e0e0c;
+  --titlebar-background-focused: #0e0e0c;
+  --titlebar-text-color: #b8b6ae;
+
+  --nav-item-background-active: #1c1c1a;
+  --nav-item-color-active: #dedad0;
+  --nav-item-color-hover: #dedad0;
+  --nav-collapse-icon-color: #686660;
+
+  --tab-text-color: #686660;
+  --tab-text-color-active: #dedad0;
+  --tab-text-color-focused-active: #dedad0;
+  --tab-background-active: #161614;
+  --tab-outline-color: #282826;
+
+  --scrollbar-thumb-bg: #383836;
+  --scrollbar-active-thumb-bg: #686660;
+  --scrollbar-bg: #0e0e0c;
+}
+
+/* ── Светлая тема ───────────────────────────────────────────────── */
+.theme-light {
+  --background-primary: #f5f4f1;
+  --background-primary-alt: #eeece7;
+  --background-secondary: #ebe9e4;
+  --background-secondary-alt: #ebe9e4;
+  --background-modifier-border: #d8d5cd;
+  --background-modifier-border-hover: #c2beb3;
+  --background-modifier-border-focus: #6a9ed4;
+  --background-modifier-hover: #e4e1da;
+  --background-modifier-active-hover: #e4e1da;
+  --background-modifier-form-field: #ffffff;
+  --background-modifier-form-field-highlighted: #ffffff;
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
+  --background-modifier-cover: rgba(255, 255, 255, 0.7);
+  --background-modifier-message: #ebe9e4;
+  --background-modifier-success: #5a9a4a;
+  --background-modifier-error: #c05040;
+  --background-modifier-error-rgb: 192, 80, 64;
+  --background-modifier-success-rgb: 90, 154, 74;
+
+  --text-normal: #3a3934;
+  --text-muted: #8a8778;
+  --text-faint: #a5a294;
+  --text-error: #c05040;
+  --text-error-hover: #c06f6f;
+  --text-accent: #4a7fb5;
+  --text-accent-hover: #6a9ed4;
+  --text-on-accent: #f5f4f1;
+  --text-on-accent-inverted: #1c1b18;
+  --text-selection: rgba(74, 127, 181, 0.2);
+  --text-highlight-bg: rgba(160, 124, 200, 0.18);
+
+  --interactive-normal: #ffffff;
+  --interactive-hover: #e4e1da;
+  --interactive-accent: #4a7fb5;
+  --interactive-accent-hsl: 210, 45%, 47%;
+  --interactive-accent-hover: #6a9ed4;
+  --interactive-success: #5a9a4a;
+
+  --icon-color: #8a8778;
+  --icon-color-hover: #1c1b18;
+  --icon-color-active: #4a7fb5;
+
+  --divider-color: #d8d5cd;
+
+  --font-text-theme: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', ui-monospace, monospace;
+  --font-monospace-theme: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', ui-monospace, monospace;
+  --font-interface-theme: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', ui-monospace, monospace;
+
+  /* без закруглений — угловой стиль */
+  --radius-s: 0px;
+  --radius-m: 0px;
+  --radius-l: 0px;
+  --radius-xl: 0px;
+  --checkbox-radius: 0px;
+  --input-radius: 0px;
+  --tab-radius: 0px;
+  --tab-radius-active: 0px;
+  --button-radius: 0px;
+
+  --code-background: #eeece7;
+  --code-normal: #3a3934;
+  --code-comment: #8a8778;
+  --code-function: #4a7fb5;
+  --code-important: #b05a5a;
+  --code-keyword: #8a63a8;
+  --code-operator: #1c1b18;
+  --code-property: #4f9a44;
+  --code-punctuation: #8a8778;
+  --code-string: #4f9a44;
+  --code-tag: #4a7fb5;
+  --code-value: #b05a5a;
+
+  --h1-color: #4a7fb5;
+  --h2-color: #8a63a8;
+  --h3-color: #4f9a44;
+  --h4-color: #b05a5a;
+  --h5-color: #8a63a8;
+  --h6-color: #8a8778;
+
+  --bold-color: #1c1b18;
+  --italic-color: #3a3934;
+  --link-color: #4a7fb5;
+  --link-color-hover: #6a9ed4;
+  --link-external-color: #4a7fb5;
+  --link-external-color-hover: #6a9ed4;
+  --link-unresolved-color: #b05a5a;
+
+  --blockquote-border-color: #c2beb3;
+  --hr-color: #d8d5cd;
+
+  --tag-color: #8a63a8;
+  --tag-background: rgba(138, 99, 168, 0.1);
+  --tag-border-color: rgba(138, 99, 168, 0.3);
+
+  --titlebar-background: #f5f4f1;
+  --titlebar-background-focused: #f5f4f1;
+  --titlebar-text-color: #3a3934;
+
+  --nav-item-background-active: #e4e1da;
+  --nav-item-color-active: #1c1b18;
+  --nav-item-color-hover: #1c1b18;
+  --nav-collapse-icon-color: #8a8778;
+
+  --tab-text-color: #8a8778;
+  --tab-text-color-active: #1c1b18;
+  --tab-text-color-focused-active: #1c1b18;
+  --tab-background-active: #ebe9e4;
+  --tab-outline-color: #d8d5cd;
+
+  --scrollbar-thumb-bg: #c2beb3;
+  --scrollbar-active-thumb-bg: #8a8778;
+  --scrollbar-bg: #f5f4f1;
+}
+
+/* ── Общие элементы: без скруглений, моно-акценты ─────────────── */
+.theme-dark,
+.theme-light {
+  --font-ui-medium: 13px;
+  --font-ui-small: 12px;
+}
+
+.theme-dark .titlebar,
+.theme-dark .workspace,
+.theme-dark .workspace-tab-header-container,
+.theme-dark .status-bar,
+.theme-dark .side-dock-ribbon,
+.theme-light .titlebar,
+.theme-light .workspace,
+.theme-light .workspace-tab-header-container,
+.theme-light .status-bar,
+.theme-light .side-dock-ribbon {
+  border-radius: 0;
+}
+
+.theme-dark .prompt,
+.theme-dark .modal,
+.theme-dark .suggestion-container,
+.theme-dark .menu,
+.theme-dark input,
+.theme-dark textarea,
+.theme-dark select,
+/*.theme-dark .checkbox-container,
+.theme-dark .checkbox-container:after,*/
+.theme-dark .clickable-icon,
+.theme-dark .nav-file-title,
+.theme-dark .nav-folder-title,
+.theme-dark .workspace-tab-header,
+.theme-dark button:not(.mod-cta):not(.mod-warning),
+.theme-light .prompt,
+.theme-light .modal,
+.theme-light .suggestion-container,
+.theme-light .menu,
+.theme-light input,
+.theme-light textarea,
+.theme-light select,
+/*.theme-light .checkbox-container,
+.theme-light .checkbox-container:after,*/
+.theme-light .clickable-icon,
+.theme-light .nav-file-title,
+.theme-light .nav-folder-title,
+.theme-light .workspace-tab-header,
+.theme-light button:not(.mod-cta):not(.mod-warning) {
+  border-radius: 0;
+}
+
+/* ── Кнопки ─────────────────────────────────────────────────────── */
+.theme-dark button,
+.theme-dark .mod-cta {
+  border-radius: 0;
+  border: 1px solid #6a9ed4;
+  background: transparent;
+  color: #6a9ed4;
+  font-family: var(--font-monospace-theme);
+  font-size: 0.82rem;
+  transition: background 0.1s, color 0.1s;
+}
+
+.theme-dark button:hover,
+.theme-dark .mod-cta:hover {
+  background: #6a9ed4;
+  color: #0e0e0c;
+}
+
+.theme-dark .mod-warning {
+  border: 1px solid #c06f6f;
+  color: #c06f6f;
+  background: transparent;
+  border-radius: 0;
+}
+
+.theme-dark .mod-warning:hover {
+  background: #c06f6f;
+  color: #0e0e0c;
+}
+
+.theme-light button,
+.theme-light .mod-cta {
+  border-radius: 0;
+  border: 1px solid #4a7fb5;
+  background: transparent;
+  color: #4a7fb5;
+  font-family: var(--font-monospace-theme);
+  font-size: 0.82rem;
+  transition: background 0.1s, color 0.1s;
+}
+
+.theme-light button:hover,
+.theme-light .mod-cta:hover {
+  background: #4a7fb5;
+  color: #f5f4f1;
+}
+
+.theme-light .mod-warning {
+  border: 1px solid #b05a5a;
+  color: #b05a5a;
+  background: transparent;
+  border-radius: 0;
+}
+
+.theme-light .mod-warning:hover {
+  background: #b05a5a;
+  color: #f5f4f1;
+}
+
+/* ── Заголовки в редакторе и предпросмотре ──────────────────────── */
+.theme-dark .markdown-preview-view h1,
+.theme-dark .markdown-source-view h1,
+.theme-dark .cm-header-1 {
+  color: #6a9ed4;
+  font-weight: bold;
+  border-bottom: 1px solid #282826;
+  padding-bottom: 0.3rem;
+}
+
+.theme-light .markdown-preview-view h1,
+.theme-light .markdown-source-view h1,
+.theme-light .cm-header-1 {
+  color: #4a7fb5;
+  font-weight: bold;
+  border-bottom: 1px solid #d8d5cd;
+  padding-bottom: 0.3rem;
+}
+
+.theme-dark .markdown-preview-view h2,
+.theme-dark .markdown-source-view h2,
+.theme-dark .cm-header-2 {
+  color: #a07cc8;
+  font-weight: bold;
+}
+
+.theme-light .markdown-preview-view h2,
+.theme-light .markdown-source-view h2,
+.theme-light .cm-header-2 {
+  color: #8a63a8;
+  font-weight: bold;
+}
+
+.theme-dark .markdown-preview-view h3,
+.theme-dark .markdown-source-view h3,
+.theme-dark .cm-header-3 {
+  color: #89c87c;
+  font-weight: bold;
+}
+
+.theme-light .markdown-preview-view h3,
+.theme-light .markdown-source-view h3,
+.theme-light .cm-header-3 {
+  color: #4f9a44;
+  font-weight: bold;
+}
+
+.theme-dark .markdown-preview-view h4,
+.theme-dark .markdown-source-view h4,
+.theme-dark .cm-header-4 {
+  color: #c06f6f;
+  font-weight: bold;
+}
+
+.theme-light .markdown-preview-view h4,
+.theme-light .markdown-source-view h4,
+.theme-light .cm-header-4 {
+  color: #b05a5a;
+  font-weight: bold;
+}
+
+.theme-dark .markdown-preview-view h5,
+.theme-dark .cm-header-5 {
+  color: #a07cc8;
+}
+
+.theme-light .markdown-preview-view h5,
+.theme-light .cm-header-5 {
+  color: #8a63a8;
+}
+
+.theme-dark .markdown-preview-view h6,
+.theme-dark .cm-header-6 {
+  color: #686660;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 0.85em;
+}
+
+.theme-light .markdown-preview-view h6,
+.theme-light .cm-header-6 {
+  color: #8a8778;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 0.85em;
+}
+
+/* ── Выделения (highlight / mark) ───────────────────────────────── */
+.theme-dark mark,
+.theme-dark .cm-highlight {
+  background: rgba(160, 124, 200, 0.25);
+  color: #dedad0;
+  border-radius: 0;
+  padding: 0 0.15em;
+}
+
+.theme-light mark,
+.theme-light .cm-highlight {
+  background: rgba(138, 99, 168, 0.18);
+  color: #1c1b18;
+  border-radius: 0;
+  padding: 0 0.15em;
+}
+
+/* ── Инлайн-код и блоки кода ─────────────────────────────────────── */
+.theme-dark code,
+.theme-dark .cm-inline-code {
+  background: #161614;
+  color: #dedad0;
+  border-radius: 0;
+  border: 1px solid #282826;
+  padding: 0.05em 0.35em;
+  font-family: var(--font-monospace-theme);
+}
+
+.theme-light code,
+.theme-light .cm-inline-code {
+  background: #ebe9e4;
+  color: #1c1b18;
+  border-radius: 0;
+  border: 1px solid #d8d5cd;
+  padding: 0.05em 0.35em;
+  font-family: var(--font-monospace-theme);
+}
+
+.theme-dark pre,
+.theme-dark .cm-line pre,
+.theme-dark .markdown-preview-view pre {
+  background: #0a0a08;
+  border: 1px solid #282826;
+  border-left: 3px solid #383836;
+  border-radius: 0;
+  padding: 1rem 1.25rem;
+}
+
+.theme-light pre,
+.theme-light .cm-line pre,
+.theme-light .markdown-preview-view pre {
+  background: #eeece7;
+  border: 1px solid #d8d5cd;
+  border-left: 3px solid #c2beb3;
+  border-radius: 0;
+  padding: 1rem 1.25rem;
+}
+
+.theme-dark pre code,
+.theme-light pre code {
+  background: none;
+  border: none;
+}
+
+/* ── Ссылки ─────────────────────────────────────────────────────── */
+.theme-dark a,
+.theme-dark .cm-link,
+.theme-dark .internal-link {
+  color: #6a9ed4;
+  text-decoration: none;
+}
+
+.theme-dark a:hover,
+.theme-dark .internal-link:hover {
+  color: #dedad0;
+  text-decoration: underline;
+}
+
+.theme-dark .internal-link.is-unresolved {
+  color: #c06f6f;
+}
+
+.theme-light a,
+.theme-light .cm-link,
+.theme-light .internal-link {
+  color: #4a7fb5;
+  text-decoration: none;
+}
+
+.theme-light a:hover,
+.theme-light .internal-link:hover {
+  color: #1c1b18;
+  text-decoration: underline;
+}
+
+.theme-light .internal-link.is-unresolved {
+  color: #b05a5a;
+}
+
+/* ── Теги ───────────────────────────────────────────────────────── */
+.theme-dark .tag,
+.theme-dark a.tag {
+  background: rgba(160, 124, 200, 0.12);
+  border: 1px solid rgba(160, 124, 200, 0.35);
+  color: #a07cc8;
+  border-radius: 0;
+  font-family: var(--font-monospace-theme);
+  font-size: 0.78em;
+}
+
+.theme-light .tag,
+.theme-light a.tag {
+  background: rgba(138, 99, 168, 0.1);
+  border: 1px solid rgba(138, 99, 168, 0.3);
+  color: #8a63a8;
+  border-radius: 0;
+  font-family: var(--font-monospace-theme);
+  font-size: 0.78em;
+}
+
+/* ── Чекбоксы ────────────────────────────────────────────────────── */
+.theme-dark input[type="checkbox"] {
+  border-radius: 0;
+  border: 1px solid #383836;
+  accent-color: #6a9ed4;
+}
+
+.theme-light input[type="checkbox"] {
+  border-radius: 0;
+  border: 1px solid #c2beb3;
+  accent-color: #4a7fb5;
+}
+
+/* ── Цитаты ─────────────────────────────────────────────────────── */
+.theme-dark blockquote {
+  border-left: 3px solid #383836;
+  background: #161614;
+  color: #b8b6ae;
+  border-radius: 0;
+}
+
+.theme-light blockquote {
+  border-left: 3px solid #c2beb3;
+  background: #ebe9e4;
+  color: #3a3934;
+  border-radius: 0;
+}
+
+/* ── Таблицы ────────────────────────────────────────────────────── */
+.theme-dark table th {
+  color: #686660;
+  font-family: var(--font-monospace-theme);
+  text-transform: uppercase;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  border-bottom: 1px solid #282826;
+}
+
+.theme-light table th {
+  color: #8a8778;
+  font-family: var(--font-monospace-theme);
+  text-transform: uppercase;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  border-bottom: 1px solid #d8d5cd;
+}
+
+.theme-dark table td {
+  border-bottom: 1px solid #282826;
+}
+
+.theme-light table td {
+  border-bottom: 1px solid #d8d5cd;
+}
+
+.theme-dark table,
+.theme-dark table th,
+.theme-dark table td,
+.theme-light table,
+.theme-light table th,
+.theme-light table td {
+  border-radius: 0;
+}
+
+/* ── Вкладки ────────────────────────────────────────────────────── */
+.theme-dark .workspace-tab-header,
+.theme-light .workspace-tab-header {
+  border-radius: 0;
+}
+
+.theme-dark .workspace-tab-header.is-active {
+  border-bottom: 2px solid #6a9ed4;
+}
+
+.theme-light .workspace-tab-header.is-active {
+  border-bottom: 2px solid #4a7fb5;
+}
+
+/* ── Полоса статуса и боковая панель ────────────────────────────── */
+.theme-dark .status-bar,
+.theme-dark .workspace-ribbon-collapse-btn,
+.theme-dark .side-dock-ribbon-action,
+.theme-light .status-bar,
+.theme-light .workspace-ribbon-collapse-btn,
+.theme-light .side-dock-ribbon-action {
+  border-radius: 0;
+}
+
+.theme-dark .nav-file-title.is-active,
+.theme-dark .nav-folder-title.is-active {
+  background: #1c1c1a;
+  color: #dedad0;
+  border-radius: 0;
+}
+
+.theme-light .nav-file-title.is-active,
+.theme-light .nav-folder-title.is-active {
+  background: #e4e1da;
+  color: #1c1b18;
+  border-radius: 0;
+}
+
+/* ── Скроллбар ──────────────────────────────────────────────────── */
+.theme-dark ::-webkit-scrollbar,
+.theme-light ::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+.theme-dark ::-webkit-scrollbar-track {
+  background: #0e0e0c;
+}
+.theme-light ::-webkit-scrollbar-track {
+  background: #f5f4f1;
+}
+.theme-dark ::-webkit-scrollbar-thumb {
+  background: #383836;
+  border-radius: 0;
+}
+.theme-light ::-webkit-scrollbar-thumb {
+  background: #c2beb3;
+  border-radius: 0;
+}
+.theme-dark ::-webkit-scrollbar-thumb:hover {
+  background: #686660;
+}
+.theme-light ::-webkit-scrollbar-thumb:hover {
+  background: #8a8778;
+}

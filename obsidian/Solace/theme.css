@@ -1,0 +1,5405 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+
+.theme-dark,
+.theme-light,
+.theme-dark.solace-light,
+.theme-dark.solace-dusk {
+    box-sizing: border-box;
+}
+
+.theme-dark *,
+.theme-light *,
+.theme-dark.solace-light *,
+.theme-dark.solace-dusk *,
+.theme-dark *::before,
+.theme-light *::before,
+.theme-dark.solace-light *::before,
+.theme-dark.solace-dusk *::before,
+.theme-dark *::after,
+.theme-light *::after,
+.theme-dark.solace-light *::after,
+.theme-dark.solace-dusk *::after {
+    box-sizing: inherit;
+}
+
+/* ── Scrollbars ─────────────────────────────────────────────── */
+
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(152, 128, 232, 0.25);
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(152, 128, 232, 0.45);
+}
+
+/* Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(152, 128, 232, 0.25) transparent;
+}
+
+/*
+ * Solace — A minimal Obsidian theme with violet undertones and pastel syntax.
+ * Author: Bhavya Dang (bhavyadang.in)
+ *
+ * Variants:
+ *   Dark (default) — .theme-dark
+ *   Light           — add .solace-light to body
+ *   Dusk            — add .solace-dusk to body
+ *
+ * Install: copy this folder to .obsidian/themes/solace/
+ * Then enable "Solace" in Settings → Appearance → Themes.
+ */
+
+/* ──────────────────────────────────────────────────────────────
+   SOLACE DARK — Default
+   ────────────────────────────────────────────────────────────── */
+
+.theme-dark {
+    /* Base */
+    --background-primary: #16141f;
+    --background-primary-alt: #1b1827;
+    --background-secondary: #1b1827;
+    --background-secondary-alt: #1d1a2b;
+    --background-modifier-border: #231f30;
+    --background-modifier-form-field: #1d1a2b;
+    --background-modifier-form-field-hover: #221e31;
+    --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
+    --background-modifier-success: #a8ffec18;
+    --background-modifier-error: #ff80c815;
+    --background-modifier-error-hover: #ff80c825;
+
+    /* Text */
+    --text-normal: #f1eef8;
+    --text-muted: #a09ab8;
+    --text-faint: #504a68;
+    --text-accent: #c9a8ff;
+    --text-accent-hover: #d4baff;
+    --text-error: #ff80c8;
+    --text-success: #a8ffec;
+    --text-warning: #c9a8ff;
+    --text-on-accent: #16141f;
+    --text-on-accent-hover: #0e0d14;
+    --text-on-accent-inverted: #f1eef8;
+    --text-selection: rgba(201, 168, 255, 0.3);
+
+    /* Interactive */
+    --interactive-normal: #231f30;
+    --interactive-hover: #2a2540;
+    --interactive-accent: #c9a8ff;
+    --interactive-accent-hover: #d4baff;
+    --interactive-success: #a8ffec;
+    --interactive-muted: #1e1b2e;
+
+    /* Shadows */
+    --shadow-s: 0 1px 2px rgba(0, 0, 0, 0.3);
+    --shadow-l: 0 4px 12px rgba(0, 0, 0, 0.4);
+
+    /* Scrollbar */
+
+    /* Fonts */
+    --font-interface:
+        "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+        Arial, sans-serif;
+    --font-text:
+        "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+        Arial, sans-serif;
+    --font-monospace:
+        "JetBrains Mono", "Fira Code", "SF Mono", "Cascadia Code",
+        "Source Code Pro", monospace;
+    --font-preview: inherit;
+
+    /* Sizing */
+    --size-4-1: 4px;
+    --size-4-2: 8px;
+    --size-4-3: 12px;
+    --size-4-4: 16px;
+    --size-4-5: 20px;
+    --size-4-6: 24px;
+    --size-4-7: 28px;
+    --size-4-8: 32px;
+    --size-4-9: 36px;
+    --size-4-10: 40px;
+    --size-4-11: 44px;
+    --size-4-12: 48px;
+
+    /* Spacing */
+    --spacing-unit: 4px;
+
+    /* Tabs */
+    --tab-active-background: #141220;
+    --tab-active-border: #c9a8ff;
+    --tab-active-border-color: #c9a8ff;
+    --tab-text-color-override: #a09ab8;
+    --tab-active-text-color: #f1eef8;
+
+    /* Sidebar */
+    --sidebar-background: #16141f;
+    --sidebar-border-color: #1e1b2e;
+    --sidebar-tabs-background: #0e0d14;
+
+    /* Title bar */
+    --titlebar-background: #0e0d14;
+
+    /* Status bar */
+    --statusbar-background: #0e0d14;
+
+    /* Search */
+    --search-background: #c9a8ff30;
+    --search-match-color: #c9a8ff;
+
+    /* Callout */
+    --callout-default-color: #c9a8ff;
+    --callout-default-bg: #c9a8ff18;
+    --callout-info-color: #9880e8;
+    --callout-info-bg: #9880e818;
+    --callout-tip-color: #a8ffec;
+    --callout-tip-bg: #a8ffec18;
+    --callout-warning-color: #c9a8ff;
+    --callout-warning-bg: #c9a8ff18;
+    --callout-danger-color: #ff80c8;
+    --callout-danger-bg: #ff80c815;
+
+    /* Tag */
+    --tag-background: #c9a8ff18;
+    --tag-color: #c9a8ff;
+    --tag-border-color: #c9a8ff30;
+
+    /* Graph */
+    --graph-line-color: #231f30;
+
+    /* Inline title */
+    --inline-title-color: #c9a8ff;
+
+    /* Modal */
+    --modal-background: #1b1827;
+    --modal-border-color: #231f30;
+
+    /* Prompt */
+    --prompt-background: #1b1827;
+    --prompt-border-color: #231f30;
+
+    /* Popover */
+    --popover-background: #1b1827;
+    --popover-border-color: #231f30;
+
+    /* Tooltip */
+    --tooltip-background: #231f30;
+    --tooltip-border-color: #2a2540;
+
+    /* Checkbox */
+    --checkbox-color: #c9a8ff;
+    --checkbox-color-hover: #d4baff;
+    --checkbox-color-halfway: #c9a8ff;
+
+    /* Radio */
+    --interactive-accent-hsl: 260 100% 80%;
+}
+
+/* ── Solace Dark: Selection ─────────────────────────────────── */
+
+.theme-dark ::selection {
+    background-color: var(--text-selection, rgba(201, 168, 255, 0.3));
+    color: inherit;
+}
+
+/* ── Solace Dark: UI Chrome ─────────────────────────────────── */
+
+.theme-dark .workspace-leaf-content[data-type="explorer"] .nav-header,
+.theme-dark .workspace-leaf-content[data-type="file-explorer"] .nav-header,
+.theme-dark .sidebar {
+    background-color: var(--background-primary);
+}
+
+.theme-dark .nav-header,
+.theme-dark .nav-buttons-container {
+    border-color: var(--background-modifier-border);
+}
+
+.theme-dark .tab-container {
+    background-color: var(--sidebar-tabs-background);
+}
+
+.theme-dark .workspace-tabs .tab-container {
+    background-color: var(--sidebar-tabs-background);
+}
+
+.theme-dark .tab {
+    background-color: var(--sidebar-tabs-background);
+    border-color: var(--background-modifier-border);
+}
+
+.theme-dark .tab.active {
+    background-color: var(--tab-active-background);
+    border-bottom-color: var(--tab-active-border);
+}
+
+.theme-dark .workspace-leaf-content[data-type="outline"] .outlining-heading,
+.theme-dark .tree-item-self:hover {
+    background-color: var(--interactive-hover);
+}
+
+.theme-dark .suggestion-container .suggestion {
+    background-color: var(--background-primary);
+}
+
+.theme-dark .suggestion-container .suggestion.is-selected {
+    background-color: var(--interactive-hover);
+}
+
+.theme-dark .menu {
+    background-color: var(--popover-background);
+    border-color: var(--popover-border-color);
+}
+
+.theme-dark .menu-item:hover {
+    background-color: var(--interactive-hover);
+}
+
+.theme-dark .modal {
+    background-color: var(--modal-background);
+    border-color: var(--modal-border-color);
+}
+
+.theme-dark .modal .modal-close-button:hover {
+    color: var(--text-error);
+}
+
+.theme-dark .prompt {
+    background-color: var(--prompt-background);
+    border-color: var(--prompt-border-color);
+}
+
+.theme-dark .input {
+    background-color: var(--background-modifier-form-field);
+    border-color: var(--background-modifier-border);
+}
+
+.theme-dark .input:focus {
+    border-color: var(--interactive-accent);
+}
+
+.theme-dark .setting-item-info {
+    color: var(--text-normal);
+}
+
+.theme-dark .setting-item-description {
+    color: var(--text-muted);
+}
+
+.theme-dark .setting-item-name {
+    color: var(--text-normal);
+}
+
+.theme-dark .btn {
+    background-color: var(--interactive-normal);
+    border-color: var(--background-modifier-border);
+    color: var(--text-normal);
+}
+
+.theme-dark .btn:hover {
+    background-color: var(--interactive-hover);
+    border-color: var(--interactive-accent);
+}
+
+.theme-dark .btn-primary {
+    background-color: var(--interactive-accent);
+    color: var(--text-on-accent);
+    border-color: var(--interactive-accent);
+}
+
+.theme-dark .btn-primary:hover {
+    background-color: var(--interactive-accent-hover);
+}
+
+.theme-dark .internal-link {
+    color: var(--text-accent);
+}
+
+.theme-dark .internal-link:hover {
+    color: var(--text-accent-hover);
+}
+
+.theme-dark .external-link {
+    color: var(--text-accent);
+}
+
+.theme-dark .tag,
+.theme-dark a.tag {
+    background-color: var(--tag-background);
+    color: var(--tag-color);
+    border-color: var(--tag-border-color);
+    padding: var(--tag-padding-y, 0.25em) var(--tag-padding-x, 0.65em);
+    line-height: 1;
+    overflow: visible;
+    vertical-align: baseline;
+}
+
+.theme-dark .cm-hashtag {
+    background-color: var(--tag-background);
+    color: var(--tag-color);
+    border-color: var(--tag-border-color);
+    padding-top: var(--tag-padding-y, 0.25em);
+    padding-bottom: var(--tag-padding-y, 0.25em);
+    line-height: 1;
+    vertical-align: baseline;
+}
+
+.theme-dark .cm-hashtag.cm-hashtag-begin {
+    border-start-start-radius: var(--tag-radius, 2em);
+    border-end-start-radius: var(--tag-radius, 2em);
+    border-inline-end: none;
+    border-inline-start: var(--tag-border-width, 0px) solid var(--tag-border-color);
+    padding-inline-start: var(--tag-padding-x, 0.65em);
+}
+
+.theme-dark .cm-hashtag.cm-hashtag-end {
+    border-start-end-radius: var(--tag-radius, 2em);
+    border-end-end-radius: var(--tag-radius, 2em);
+    border-inline-start: none;
+    border-inline-end: var(--tag-border-width, 0px) solid var(--tag-border-color);
+    padding-inline-end: var(--tag-padding-x, 0.65em);
+}
+
+.theme-dark .cm-panels {
+    background-color: var(--background-secondary);
+    border-color: var(--background-modifier-border);
+}
+
+.theme-dark .cm-panel {
+    background-color: var(--background-secondary);
+}
+
+.theme-dark .cm-searchMatch {
+    background-color: var(--search-match-color);
+}
+
+.theme-dark .cm-selectionBackground {
+    background-color: #c9a8ff30;
+}
+
+.theme-dark .cm-activeLine {
+    background-color: #1d1a2b;
+}
+
+.theme-dark .cm-gutters {
+    background-color: var(--background-primary);
+    color: #504a68;
+    border-color: var(--background-modifier-border);
+}
+
+.theme-dark .cm-activeLineGutter {
+    color: var(--interactive-accent);
+    background-color: #221e31;
+}
+
+.theme-dark .cm-lineNumbers .cm-gutterElement {
+    color: #504a68;
+    padding: 0 8px;
+}
+
+.theme-dark .cm-cursor {
+    border-left-color: #c9a8ff;
+}
+
+.theme-dark .cm-matchingBracket {
+    background-color: #c9a8ff20;
+    color: #c9a8ff !important;
+}
+
+.theme-dark .cm-focusMatchingBracket {
+    background-color: #c9a8ff30;
+    color: #c9a8ff !important;
+}
+
+.theme-dark .cm-foldPlaceholder {
+    background-color: #231f30;
+    color: #504a68;
+    border-color: #231f30;
+}
+
+.theme-dark .cm-foldPlaceholder:hover {
+    background-color: #2a2540;
+    color: #a09ab8;
+}
+
+/* ── Solace Dark: Callouts ──────────────────────────────────── */
+
+.theme-dark .callout[data-callout="note"],
+.theme-dark .callout[data-callout="info"],
+.theme-dark .callout[data-callout="todo"] {
+    --callout-color: 152 128 232;
+}
+
+.theme-dark .callout[data-callout="tip"],
+.theme-dark .callout[data-callout="hint"],
+.theme-dark .callout[data-callout="important"] {
+    --callout-color: 168 255 236;
+}
+
+.theme-dark .callout[data-callout="success"] {
+    --callout-color: 168 255 236;
+}
+
+.theme-dark .callout[data-callout="warning"],
+.theme-dark .callout[data-callout="caution"],
+.theme-dark .callout[data-callout="attention"] {
+    --callout-color: 255 214 102;
+}
+
+.theme-dark .callout[data-callout="danger"],
+.theme-dark .callout[data-callout="error"] {
+    --callout-color: 255 128 200;
+}
+
+.theme-dark .callout[data-callout="failure"] {
+    --callout-color: 255 128 200;
+}
+
+.theme-dark .callout[data-callout="bug"] {
+    --callout-color: 255 128 200;
+}
+
+.theme-dark .callout[data-callout="example"] {
+    --callout-color: 255 179 209;
+}
+
+.theme-dark .callout[data-callout="quote"],
+.theme-dark .callout[data-callout="cite"] {
+    --callout-color: 160 154 184;
+}
+
+.theme-dark .callout[data-callout="abstract"],
+.theme-dark .callout[data-callout="summary"] {
+    --callout-color: 160 154 184;
+}
+
+.theme-dark .callout[data-callout="question"],
+.theme-dark .callout[data-callout="help"],
+.theme-dark .callout[data-callout="faq"] {
+    --callout-color: 152 128 232;
+}
+
+/* ── Solace Dark: Syntax Highlighting ───────────────────────── */
+
+/* Comments */
+.theme-dark span.cm-comment {
+    color: #7d799a;
+    font-style: italic;
+}
+
+.theme-dark .markdown-preview-view span.cm-comment {
+    color: #7d799a;
+    font-style: italic;
+}
+
+/* Keywords — if, else, return, const, let, var, function, import, export, class, etc. */
+.theme-dark .cm-s-obsidian span.cm-keyword,
+.theme-dark span.cm-keyword {
+    color: #c7bfff;
+}
+
+/* Strings */
+.theme-dark span.cm-string {
+    color: #f2b4ff;
+}
+
+.theme-dark span.cm-string-2 {
+    color: #f2b4ff;
+}
+
+/* Numbers */
+.theme-dark span.cm-number {
+    color: #ffd39a;
+}
+
+/* Booleans */
+.theme-dark span.cm-bool {
+    color: #ffb3d1;
+}
+
+/* Null/undefined */
+.theme-dark span.cm-null {
+    color: #ffb3d1;
+}
+
+/* Variables */
+.theme-dark span.cm-variable {
+    color: #ffffff;
+}
+
+.theme-dark span.cm-variable-2 {
+    color: #d8d3f0;
+}
+
+.theme-dark span.cm-variable-3 {
+    color: #b8a8ff;
+}
+
+/* Properties */
+.theme-dark span.cm-property {
+    color: #d8d3f0;
+}
+
+/* Definitions */
+.theme-dark span.cm-def {
+    color: #e0b8ff;
+}
+
+/* Operators */
+.theme-dark span.cm-operator {
+    color: #8d88a8;
+}
+
+/* Punctuation */
+.theme-dark span.cm-punctuation {
+    color: #8d88a8;
+}
+
+/* Brackets */
+.theme-dark span.cm-bracket {
+    color: #a09ab8;
+}
+
+/* Tags */
+.theme-dark span.cm-tag {
+    color: #a8ffec;
+}
+
+/* Attributes */
+.theme-dark span.cm-attribute {
+    color: #a09ab8;
+}
+
+/* Links */
+.theme-dark span.cm-link {
+    color: #c9a8ff;
+    font-style: italic;
+}
+
+.theme-dark span.cm-url {
+    color: #c9a8ff;
+}
+
+/* Headings */
+.theme-dark span.cm-header {
+    color: #c9a8ff;
+    font-weight: 700;
+}
+
+/* Emphasis */
+.theme-dark span.cm-em {
+    color: #ffffff;
+    font-style: italic;
+}
+
+.theme-dark span.cm-strong {
+    color: #ffffff;
+    font-weight: 700;
+}
+
+/* Formatting characters */
+.theme-dark span.cm-formatting {
+    color: #504a68;
+}
+
+/* Code */
+.theme-dark span.cm-meta {
+    color: #c9a8ff;
+}
+
+.theme-dark span.cm-atom {
+    color: #ffb3d1;
+}
+
+.theme-dark span.cm-builtin {
+    color: #d6b8ff;
+}
+
+.theme-dark span.cm-qualifier {
+    color: #a09ab8;
+}
+
+.theme-dark span.cm-callee {
+    color: #c9a8ff;
+}
+
+.theme-dark span.cm-hash {
+    color: #c9a8ff;
+}
+
+.theme-dark span.cm-dfn {
+    color: #e0b8ff;
+}
+
+/* Frontmatter */
+.theme-dark .frontmatter {
+    color: #a09ab8;
+}
+
+.theme-dark .frontmatter .cm-keyword {
+    color: #c7bfff;
+}
+
+.theme-dark .frontmatter .cm-string {
+    color: #f2b4ff;
+}
+
+.theme-dark .frontmatter .cm-number {
+    color: #ffd39a;
+}
+
+/* Markdown preview — headings */
+.theme-dark .markdown-preview-view h1,
+.theme-dark .markdown-preview-view h2,
+.theme-dark .markdown-preview-view h3,
+.theme-dark .markdown-preview-view h4,
+.theme-dark .markdown-preview-view h5,
+.theme-dark .markdown-preview-view h6 {
+    color: #c9a8ff;
+}
+
+.theme-dark .markdown-preview-view h1 {
+    color: #c9a8ff;
+    font-weight: 700;
+}
+
+.theme-dark .markdown-preview-view h2 {
+    color: #c9a8ff;
+    font-weight: 700;
+}
+
+.theme-dark .markdown-preview-view h3 {
+    color: #d4baff;
+    font-weight: 700;
+}
+
+.theme-dark .markdown-preview-view h4 {
+    color: #d4baff;
+    font-weight: 600;
+}
+
+.theme-dark .markdown-preview-view h5 {
+    color: #b8a8ff;
+    font-weight: 600;
+}
+
+.theme-dark .markdown-preview-view h6 {
+    color: #b8a8ff;
+    font-weight: 600;
+}
+
+/* Markdown preview — links */
+.theme-dark .markdown-preview-view a {
+    color: var(--text-accent);
+}
+
+/* Markdown preview — bold */
+.theme-dark .markdown-preview-view strong {
+    color: #ffffff;
+}
+
+/* Markdown preview — italic */
+.theme-dark .markdown-preview-view em {
+    color: #ffffff;
+    font-style: italic;
+}
+
+/* Markdown preview — code */
+.theme-dark .markdown-preview-view code {
+    background-color: #231f30;
+    color: #c9a8ff;
+}
+
+.theme-dark .markdown-preview-view pre {
+    background-color: #252236;
+    border: 1px solid #2a2540;
+}
+
+.theme-dark .markdown-preview-view pre code {
+    color: #f1eef8;
+    background-color: transparent;
+}
+
+/* Markdown preview — blockquotes */
+.theme-dark .markdown-preview-view blockquote {
+    border-left-color: #c9a8ff;
+    color: #a09ab8;
+}
+
+/* Markdown preview — horizontal rules */
+.theme-dark .markdown-preview-view hr {
+    border-color: #231f30;
+}
+
+/* Markdown preview — tables */
+.theme-dark .markdown-preview-view table {
+    border-color: #231f30;
+}
+
+.theme-dark .markdown-preview-view th {
+    background-color: #1b1827;
+    border-color: #231f30;
+    color: #c9a8ff;
+}
+
+.theme-dark .markdown-preview-view td {
+    border-color: #231f30;
+}
+
+.theme-dark .markdown-preview-view tr:nth-child(even) {
+    background-color: #1b182710;
+}
+
+/* Markdown preview — lists */
+.theme-dark .markdown-preview-view ul li::before {
+    color: #c9a8ff;
+}
+
+.theme-dark .markdown-preview-view ol li::before {
+    color: #c9a8ff;
+}
+
+/* Markdown preview — task lists */
+.theme-dark .markdown-preview-view .task-list-item-checkbox {
+    border-color: #504a68;
+}
+
+.theme-dark .markdown-preview-view .task-list-item-checkbox:checked {
+    background-color: var(--interactive-accent);
+    border-color: var(--interactive-accent);
+}
+
+/* Markdown preview — task lists (halfway) */
+.theme-dark .markdown-preview-view input[data-task="/"]:checked,
+.theme-dark .markdown-preview-view li[data-task="/"] > input:checked,
+.theme-dark .markdown-preview-view li[data-task="/"] > p > input:checked {
+    --checkbox-marker-color: transparent;
+    background-color: transparent;
+    border-color: var(--checkbox-color-halfway);
+    position: relative;
+    overflow: hidden;
+}
+
+.theme-dark .markdown-preview-view input[data-task="/"]:checked::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color: var(--checkbox-color-halfway);
+    -webkit-mask-image: none;
+}
+
+/* Markdown preview — task lists (question) */
+.theme-dark .markdown-preview-view input[data-task="?"]:checked,
+.theme-dark .markdown-preview-view li[data-task="?"] > input:checked,
+.theme-dark .markdown-preview-view li[data-task="?"] > p > input:checked {
+    --checkbox-marker-color: transparent;
+    background-color: #c9a8ff;
+    border-color: #c9a8ff;
+    position: relative;
+}
+
+.theme-dark .markdown-preview-view input[data-task="?"]:checked::before,
+.theme-dark .markdown-preview-view li[data-task="?"] > input:checked::before,
+.theme-dark .markdown-preview-view li[data-task="?"] > p > input:checked::before {
+    content: "?";
+    -webkit-mask-image: none;
+    background-color: transparent;
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #16141f;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+/* Markdown preview — task lists (canceled) */
+.theme-dark .markdown-preview-view input[data-task="-"]:checked,
+.theme-dark .markdown-preview-view li[data-task="-"] > input:checked,
+.theme-dark .markdown-preview-view li[data-task="-"] > p > input:checked {
+    --checkbox-marker-color: transparent;
+    background-color: #ff7369;
+    border-color: #ff7369;
+    position: relative;
+}
+
+.theme-dark .markdown-preview-view input[data-task="-"]:checked::before,
+.theme-dark .markdown-preview-view li[data-task="-"] > input:checked::before,
+.theme-dark .markdown-preview-view li[data-task="-"] > p > input:checked::before {
+    content: "−";
+    -webkit-mask-image: none;
+    background-color: transparent;
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000000;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.theme-dark .markdown-preview-view li[data-task="-"] {
+    text-decoration: line-through;
+    color: #504a68;
+}
+
+/* Markdown preview — tags */
+.theme-dark .markdown-preview-view .tag {
+    background-color: var(--tag-background);
+    color: var(--tag-color);
+}
+
+/* Markdown preview — callouts */
+/* Markdown preview — internal links */
+.theme-dark .markdown-preview-view .internal-link {
+    color: var(--text-accent);
+}
+
+/* Markdown preview — backlinks */
+.theme-dark .markdown-preview-view .backlink {
+    color: var(--text-accent);
+}
+
+/* Markdown preview — embeds */
+.theme-dark .markdown-preview-view .internal-embed {
+    border-color: var(--background-modifier-border);
+}
+
+/* Markdown preview — math */
+.theme-dark .markdown-preview-view .math {
+    color: #c9a8ff;
+}
+
+.theme-dark .markdown-preview-view .katex {
+    color: #c9a8ff;
+}
+
+/* Markdown preview — mermaid */
+.theme-dark .markdown-preview-view .mermaid {
+    background-color: transparent;
+}
+
+/* Markdown preview — dataview */
+.theme-dark .markdown-preview-view .dataview.table-view-table {
+    border-color: #231f30;
+}
+
+.theme-dark .markdown-preview-view .dataview.table-view-table th {
+    background-color: #1b1827;
+    color: #c9a8ff;
+    border-color: #231f30;
+}
+
+.theme-dark .markdown-preview-view .dataview.table-view-table td {
+    border-color: #231f30;
+}
+
+/* Markdown preview — kanban */
+.theme-dark .markdown-preview-view .kanban-plugin__board {
+    background-color: transparent;
+}
+
+.theme-dark .markdown-preview-view .kanban-plugin__lane {
+    background-color: #1b1827;
+    border-color: #231f30;
+}
+
+.theme-dark .markdown-preview-view .kanban-plugin__card {
+    background-color: var(--background-primary);
+    border-color: #231f30;
+}
+
+/* Reading view */
+.theme-dark .markdown-source-view .cm-content {
+    color: var(--text-normal);
+}
+
+.theme-dark .markdown-source-view .cm-line {
+    color: var(--text-normal);
+}
+
+.theme-dark .markdown-source-view .cm-heading {
+    color: #c9a8ff;
+}
+
+.theme-dark .markdown-source-view .cm-strong {
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.theme-dark .markdown-source-view .cm-em {
+    font-style: italic;
+    color: #ffffff;
+}
+
+.theme-dark .markdown-source-view .cm-link {
+    color: #c9a8ff;
+}
+
+.theme-dark .markdown-source-view .cm-url {
+    color: #c9a8ff;
+}
+
+.theme-dark .markdown-source-view .cm-code {
+    background-color: #231f30;
+    color: #c9a8ff;
+}
+
+.theme-dark .markdown-source-view .cm-strikethrough {
+    text-decoration: line-through;
+    color: #504a68;
+}
+
+/* Highlight */
+.theme-dark .markdown-preview-view mark {
+    background-color: #c9a8ff30;
+    color: inherit;
+}
+
+.theme-dark .markdown-source-view .cm-highlight {
+    background-color: #c9a8ff30;
+}
+
+/* Obsidian 1.4+ color variables */
+.theme-dark {
+    --color-red: #ff80c8;
+    --color-orange: #ffd39a;
+    --color-yellow: #ffd39a;
+    --color-green: #a8ffec;
+    --color-cyan: #b8a8ff;
+    --color-blue: #9880e8;
+    --color-purple: #c9a8ff;
+    --color-pink: #ff80c8;
+
+    --color-base-00: #16141f;
+    --color-base-10: #1b1827;
+    --color-base-20: #1e1b2e;
+    --color-base-30: #231f30;
+    --color-base-40: #2a2540;
+    --color-base-50: #3a3448;
+    --color-base-60: #504a68;
+    --color-base-70: #7d799a;
+    --color-base-100: #a09ab8;
+    --color-base-120: #c7c2e8;
+    --color-base-150: #f1eef8;
+
+    --color-accent: #c9a8ff;
+    --color-accent-1: #9880e8;
+    --color-accent-2: #a8ffec;
+    --color-accent-3: #ff80c8;
+    --color-accent-4: #ffd39a;
+    --color-accent-5: #ffb3d1;
+    --color-accent-6: #b8a8ff;
+}
+
+/* ── Solace Dark: Ribbon ────────────────────────────────────── */
+
+.theme-dark .side-dock-ribbon {
+    background-color: var(--titlebar-background);
+}
+
+.theme-dark .side-dock-ribbon-modicator {
+    background-color: var(--titlebar-background);
+}
+
+.theme-dark .side-dock-ribbon-btn:hover {
+    background-color: var(--interactive-hover);
+}
+
+.theme-dark .side-dock-ribbon-btn.mod-action:hover {
+    background-color: var(--interactive-hover);
+}
+
+/* ── Solace Dark: Breadcrumbs ───────────────────────────────── */
+
+.theme-dark .breadcrumb-container {
+    background-color: var(--background-primary);
+}
+
+.theme-dark .breadcrumb-item {
+    color: var(--text-muted);
+}
+
+.theme-dark .breadcrumb-item.active {
+    color: var(--text-normal);
+}
+
+.theme-dark .breadcrumb-item:hover {
+    color: var(--text-accent);
+}
+
+/* ── Solace Dark: Backlinks ─────────────────────────────────── */
+
+.theme-dark .backlink-pane {
+    background-color: var(--background-primary);
+}
+
+.theme-dark .backlink-pane .backlink-title {
+    color: var(--text-accent);
+}
+
+/* ── Solace Dark: Outline ───────────────────────────────────── */
+
+.theme-dark .outline-pane {
+    background-color: var(--background-primary);
+}
+
+.theme-dark .outline-pane .outline-heading {
+    color: var(--text-normal);
+}
+
+.theme-dark .outline-pane .outline-heading:hover {
+    color: var(--text-accent);
+}
+
+/* ── Solace Dark: Starred ───────────────────────────────────── */
+
+.theme-dark .starred-pane {
+    background-color: var(--background-primary);
+}
+
+/* ── Solace Dark: Daily notes ───────────────────────────────── */
+
+.theme-dark .daily-notes {
+    background-color: var(--background-primary);
+}
+
+/* ── Solace Dark: Graph view ────────────────────────────────── */
+
+.theme-dark .graph-view {
+    background-color: var(--background-primary);
+}
+
+.theme-dark .graph-controls {
+    background-color: var(--background-secondary);
+    border-color: var(--background-modifier-border);
+}
+
+/* ── Solace Dark: File explorer ─────────────────────────────── */
+
+.theme-dark .nav-files-container {
+    background-color: var(--background-primary);
+}
+
+.theme-dark .tree-item-self:hover {
+    background-color: var(--interactive-hover);
+}
+
+.theme-dark .tree-item-self.is-selected {
+    background-color: var(--interactive-accent);
+    color: var(--text-on-accent);
+}
+
+.theme-dark .tree-item-self.is-selected .tree-item-inner {
+    color: var(--text-on-accent);
+}
+
+.theme-dark .nav-folder-title {
+    color: var(--text-normal);
+}
+
+.theme-dark .nav-file-title {
+    color: var(--text-normal);
+}
+
+/* ── Solace Dark: Split view ────────────────────────────────── */
+
+.theme-dark .workspace-split {
+    background-color: var(--background-primary);
+}
+
+.theme-dark .workspace-leaf {
+    background-color: var(--background-primary);
+}
+
+/* ── Solace Dark: Find/replace ──────────────────────────────── */
+
+.theme-dark .search-dialog-container {
+    background-color: var(--modal-background);
+    border-color: var(--modal-border-color);
+}
+
+.theme-dark .search-input {
+    background-color: var(--background-modifier-form-field);
+    border-color: var(--background-modifier-border);
+}
+
+.theme-dark .search-input:focus {
+    border-color: var(--interactive-accent);
+}
+
+/* ── Solace Dark: Tag pane ──────────────────────────────────── */
+
+.theme-dark .tag-pane {
+    background-color: var(--background-primary);
+}
+
+.theme-dark .tag-pane .tag {
+    background-color: var(--tag-background);
+    color: var(--tag-color);
+}
+
+/* ── Solace Dark: Open in another app ───────────────────────── */
+
+.theme-dark .open-other-app-error {
+    color: var(--text-error);
+}
+
+/* ── Solace Dark: Settings ──────────────────────────────────── */
+
+.theme-dark .settings-container {
+    background-color: var(--background-primary);
+}
+
+.theme-dark .setting-group-title {
+    color: var(--text-accent);
+    border-bottom-color: var(--background-modifier-border);
+}
+
+.theme-dark .setting-item {
+    border-bottom-color: var(--background-modifier-border);
+}
+
+.theme-dark .setting-item-control {
+    color: var(--text-muted);
+}
+
+.theme-dark .setting-item-name {
+    color: var(--text-normal);
+}
+
+.theme-dark .setting-item-description {
+    color: var(--text-muted);
+}
+
+.theme-dark .setting-item-warning {
+    color: var(--text-warning);
+}
+
+/* ── Solace Dark: Hotkeys ───────────────────────────────────── */
+
+.theme-dark .hotkeys-container {
+    background-color: var(--background-primary);
+}
+
+.theme-dark .setting-hotkey {
+    background-color: var(--interactive-normal);
+    color: var(--text-normal);
+}
+
+.theme-dark .setting-hotkey:hover {
+    background-color: var(--interactive-hover);
+}
+
+/* ── Solace Dark: Command palette ───────────────────────────── */
+
+.theme-dark .prompt-list {
+    background-color: var(--prompt-background);
+    border-color: var(--prompt-border-color);
+}
+
+.theme-dark .suggestion-item {
+    background-color: var(--prompt-background);
+}
+
+.theme-dark .suggestion-item.is-selected {
+    background-color: var(--interactive-hover);
+}
+
+.theme-dark .suggestion-item-title {
+    color: var(--text-normal);
+}
+
+.theme-dark .suggestion-item-description {
+    color: var(--text-muted);
+}
+
+/* ── Solace Dark: Switcher ──────────────────────────────────── */
+
+.theme-dark .switcher {
+    background-color: var(--prompt-background);
+}
+
+.theme-dark .switcher .suggestion-item {
+    background-color: var(--prompt-background);
+}
+
+.theme-dark .switcher .suggestion-item.is-selected {
+    background-color: var(--interactive-hover);
+}
+
+/* ── Solace Dark: URI scheme ────────────────────────────────── */
+
+.theme-dark .urischeme-dialog {
+    background-color: var(--modal-background);
+    border-color: var(--modal-border-color);
+}
+
+/* ── Solace Dark: Export ────────────────────────────────────── */
+
+.theme-dark .export-dialog {
+    background-color: var(--modal-background);
+    border-color: var(--modal-border-color);
+}
+
+/* ── Solace Dark: Import ────────────────────────────────────── */
+
+.theme-dark .import-dialog {
+    background-color: var(--modal-background);
+    border-color: var(--modal-border-color);
+}
+
+/* ── Solace Dark: Plugin browser ────────────────────────────── */
+
+.theme-dark .plugin-browser-container {
+    background-color: var(--background-primary);
+}
+
+.theme-dark .plugin-browser-container .markdown-preview-view {
+    background-color: var(--background-primary);
+}
+
+.theme-dark .plugin-browser-container .markdown-preview-view h1,
+.theme-dark .plugin-browser-container .markdown-preview-view h2,
+.theme-dark .plugin-browser-container .markdown-preview-view h3 {
+    color: var(--text-normal);
+}
+
+.theme-dark .plugin-browser-container .markdown-preview-view a {
+    color: var(--text-accent);
+}
+
+.theme-dark .plugin-browser-container .markdown-preview-view code {
+    color: var(--text-accent);
+    background-color: var(--background-secondary);
+}
+
+.theme-dark .plugin-browser-container .markdown-preview-view pre {
+    background-color: var(--background-secondary);
+    border-color: var(--background-modifier-border);
+}
+
+.theme-dark .plugin-browser-container .markdown-preview-view blockquote {
+    border-left-color: var(--interactive-accent);
+    color: var(--text-muted);
+}
+
+.theme-dark .plugin-browser-container .markdown-preview-view strong {
+    color: var(--text-normal);
+}
+
+.theme-dark .plugin-browser-container .markdown-preview-view em {
+    color: var(--text-muted);
+}
+
+.theme-dark .plugin-browser-container .markdown-preview-view ul li::before {
+    color: var(--text-accent);
+}
+
+.theme-dark .plugin-browser-container .markdown-preview-view ol li::before {
+    color: var(--text-accent);
+}
+
+.theme-dark .plugin-browser-container .markdown-preview-view hr {
+    border-color: var(--background-modifier-border);
+}
+
+.theme-dark .plugin-browser-container .markdown-preview-view table {
+    border-color: var(--background-modifier-border);
+}
+
+.theme-dark .plugin-browser-container .markdown-preview-view th {
+    background-color: var(--background-secondary);
+    border-color: var(--background-modifier-border);
+}
+
+.theme-dark .plugin-browser-container .markdown-preview-view td {
+    border-color: var(--background-modifier-border);
+}
+
+/* ── Solace Dark: Community themes ──────────────────────────── */
+
+.theme-dark .theme-browser-container {
+    background-color: var(--background-primary);
+}
+
+/* ── Solace Dark: Snippets ──────────────────────────────────── */
+
+.theme-dark .snippets-view {
+    background-color: var(--background-primary);
+}
+
+/* ── Solace Dark: Stats ─────────────────────────────────────── */
+
+.theme-dark .stats-view {
+    background-color: var(--background-primary);
+}
+
+/* ── Solace Dark: Debug ─────────────────────────────────────── */
+
+.theme-dark .debug-view {
+    background-color: var(--background-primary);
+}
+
+/* ── Solace Dark: Console ───────────────────────────────────── */
+
+.theme-dark .console-view {
+    background-color: var(--background-primary);
+}
+
+/* ── Solace Dark: Obsidian Sync ─────────────────────────────── */
+
+.theme-dark .sync-view {
+    background-color: var(--background-primary);
+}
+
+/* ── Solace Dark: Obsidian Publish ──────────────────────────── */
+
+.theme-dark .publish-view {
+    background-color: var(--background-primary);
+}
+
+/* ── Solace Dark: Canvas ────────────────────────────────────── */
+
+.theme-dark .canvas-node {
+    background-color: var(--background-secondary);
+    border-color: var(--background-modifier-border);
+}
+
+.theme-dark .canvas-node-label {
+    color: var(--text-normal);
+}
+
+/* ── Solace Dark: Table view (DB Folder, etc.) ──────────────── */
+
+.theme-dark .table-view-container {
+    background-color: var(--background-primary);
+}
+
+.theme-dark .table-view-header {
+    background-color: var(--background-secondary);
+    color: var(--text-accent);
+}
+
+/* ──────────────────────────────────────────────────────────────
+   SOLACE LIGHT
+   ────────────────────────────────────────────────────────────── */
+
+.theme-dark.solace-light,
+.theme-light {
+    --background-primary: #f6f3fc;
+    --background-primary-alt: #f1edf8;
+    --background-secondary: #ece7f6;
+    --background-secondary-alt: #e7e0f1;
+    --background-modifier-border: #d8d0e6;
+    --background-modifier-form-field: #e7e0f1;
+    --background-modifier-form-field-hover: #eee8f7;
+    --background-modifier-box-shadow: rgba(0, 0, 0, 0.06);
+    --background-modifier-success: rgba(63, 154, 133, 0.09);
+    --background-modifier-error: rgba(211, 91, 147, 0.09);
+    --background-modifier-error-hover: rgba(211, 91, 147, 0.15);
+
+    --text-normal: #2c2638;
+    --text-muted: #736c86;
+    --text-faint: #9a94aa;
+    --text-accent: #8a63d2;
+    --text-accent-hover: #714bc4;
+    --text-error: #d35b93;
+    --text-success: #3f9a85;
+    --text-warning: #8a63d2;
+    --text-on-accent: #f6f3fc;
+    --text-on-accent-hover: #ffffff;
+    --text-on-accent-inverted: #2c2638;
+    --text-selection: rgba(138, 99, 210, 0.2);
+
+    --interactive-normal: #dbd0ee;
+    --interactive-hover: #d8d0e6;
+    --interactive-accent: #8a63d2;
+    --interactive-accent-hover: #714bc4;
+    --interactive-success: #3f9a85;
+    --interactive-muted: #e5ddf3;
+
+    --shadow-s: 0 1px 2px rgba(0, 0, 0, 0.06);
+    --shadow-l: 0 4px 12px rgba(0, 0, 0, 0.08);
+
+    --tab-active-background: #faf8fd;
+    --tab-active-border: #8a63d2;
+    --tab-active-border-color: #8a63d2;
+    --tab-text-color-override: #736c86;
+    --tab-active-text-color: #2c2638;
+
+    --sidebar-background: #f6f3fc;
+    --sidebar-border-color: #d8d0e6;
+    --sidebar-tabs-background: #e4ddf0;
+
+    --titlebar-background: #e8e2f2;
+
+    --statusbar-background: #ece7f6;
+
+    --search-background: rgba(138, 99, 210, 0.19);
+    --search-match-color: #8a63d2;
+
+    --callout-default-color: #8a63d2;
+    --callout-default-bg: rgba(138, 99, 210, 0.09);
+    --callout-info-color: #5675d6;
+    --callout-info-bg: rgba(86, 117, 214, 0.09);
+    --callout-tip-color: #3f9a85;
+    --callout-tip-bg: rgba(63, 154, 133, 0.09);
+    --callout-warning-color: #c07a2c;
+    --callout-warning-bg: rgba(192, 122, 44, 0.09);
+    --callout-danger-color: #d35b93;
+    --callout-danger-bg: rgba(211, 91, 147, 0.09);
+
+    --tag-background: rgba(138, 99, 210, 0.09);
+    --tag-color: #8a63d2;
+    --tag-border-color: rgba(138, 99, 210, 0.19);
+
+    --inline-title-color: #8a63d2;
+
+    --modal-background: #f0ecf8;
+    --modal-border-color: #d8d0e6;
+
+    --prompt-background: #f0ecf8;
+    --prompt-border-color: #d8d0e6;
+
+    --popover-background: #f0ecf8;
+    --popover-border-color: #d8d0e6;
+
+    --tooltip-background: #e8e0f2;
+    --tooltip-border-color: #d8d0e6;
+
+    --checkbox-color: #8a63d2;
+    --checkbox-color-hover: #714bc4;
+    --checkbox-color-halfway: #8a63d2;
+
+    --color-base-00: #f6f3fc;
+    --color-base-10: #f1edf8;
+    --color-base-20: #ece7f6;
+    --color-base-30: #e5ddf3;
+    --color-base-40: #dbd0ee;
+    --color-base-50: #cfc8de;
+    --color-base-60: #b0a9c0;
+    --color-base-70: #8d88a8;
+    --color-base-100: #736c86;
+    --color-base-120: #5f5774;
+    --color-base-150: #2c2638;
+
+    --color-accent: #8a63d2;
+    --color-accent-1: #5675d6;
+    --color-accent-2: #3f9a85;
+    --color-accent-3: #d35b93;
+    --color-accent-4: #c07a2c;
+    --color-accent-5: #d35b93;
+    --color-accent-6: #a35fd0;
+
+    --color-red: #d35b93;
+    --color-orange: #c07a2c;
+    --color-yellow: #c07a2c;
+    --color-green: #3f9a85;
+    --color-cyan: #4b9aa8;
+    --color-blue: #5675d6;
+    --color-purple: #8a63d2;
+    --color-pink: #d35b93;
+
+    --graph-line-color: #d8d0e6;
+}
+
+/* ── Solace Light: UI Chrome ────────────────────────────────── */
+
+.theme-light ::selection,
+.theme-dark.solace-light ::selection {
+    background-color: var(--text-selection, rgba(138, 99, 210, 0.2));
+    color: inherit;
+}
+
+.theme-light .side-dock-ribbon,
+.theme-dark.solace-light .side-dock-ribbon {
+    background-color: var(--titlebar-background);
+}
+
+.theme-light .side-dock-ribbon-modicator,
+.theme-dark.solace-light .side-dock-ribbon-modicator {
+    background-color: var(--titlebar-background);
+}
+
+.theme-light .side-dock-ribbon-btn:hover,
+.theme-dark.solace-light .side-dock-ribbon-btn:hover {
+    background-color: var(--interactive-hover);
+}
+
+/* ── Solace Light: Syntax Highlighting ──────────────────────── */
+
+.theme-light span.cm-comment,
+.theme-dark.solace-light span.cm-comment {
+    color: #8d88a1;
+    font-style: italic;
+}
+
+.theme-light span.cm-keyword,
+.theme-dark.solace-light span.cm-keyword {
+    color: #7a66b6;
+}
+
+.theme-light span.cm-string,
+.theme-dark.solace-light span.cm-string {
+    color: #c155a3;
+}
+
+.theme-light span.cm-string-2,
+.theme-dark.solace-light span.cm-string-2 {
+    color: #c155a3;
+}
+
+.theme-light span.cm-number,
+.theme-dark.solace-light span.cm-number {
+    color: #c07a2c;
+}
+
+.theme-light span.cm-bool,
+.theme-dark.solace-light span.cm-bool {
+    color: #d35b93;
+}
+
+.theme-light span.cm-null,
+.theme-dark.solace-light span.cm-null {
+    color: #d35b93;
+}
+
+.theme-light span.cm-variable,
+.theme-dark.solace-light span.cm-variable {
+    color: #2c2638;
+}
+
+.theme-light span.cm-variable-2,
+.theme-dark.solace-light span.cm-variable-2 {
+    color: #736c86;
+}
+
+.theme-light span.cm-variable-3,
+.theme-dark.solace-light span.cm-variable-3 {
+    color: #7d66d6;
+}
+
+.theme-light span.cm-property,
+.theme-dark.solace-light span.cm-property {
+    color: #5f5774;
+}
+
+.theme-light span.cm-def,
+.theme-dark.solace-light span.cm-def {
+    color: #714bc4;
+}
+
+.theme-light span.cm-operator,
+.theme-dark.solace-light span.cm-operator {
+    color: #736c86;
+}
+
+.theme-light span.cm-punctuation,
+.theme-dark.solace-light span.cm-punctuation {
+    color: #736c86;
+}
+
+.theme-light span.cm-bracket,
+.theme-dark.solace-light span.cm-bracket {
+    color: #8a839a;
+}
+
+.theme-light span.cm-tag,
+.theme-dark.solace-light span.cm-tag {
+    color: #3f9a85;
+}
+
+.theme-light span.cm-attribute,
+.theme-dark.solace-light span.cm-attribute {
+    color: #736c86;
+}
+
+.theme-light span.cm-link,
+.theme-dark.solace-light span.cm-link {
+    color: #7e5acb;
+    font-style: italic;
+}
+
+.theme-light span.cm-url,
+.theme-dark.solace-light span.cm-url {
+    color: #7e5acb;
+}
+
+.theme-light span.cm-header,
+.theme-dark.solace-light span.cm-header {
+    color: #7e5acb;
+    font-weight: 700;
+}
+
+.theme-light span.cm-em,
+.theme-dark.solace-light span.cm-em {
+    color: #2c2638;
+    font-style: italic;
+}
+
+.theme-light span.cm-strong,
+.theme-dark.solace-light span.cm-strong {
+    color: #2c2638;
+    font-weight: 700;
+}
+
+.theme-light span.cm-formatting,
+.theme-dark.solace-light span.cm-formatting {
+    color: #9a94aa;
+}
+
+.theme-light span.cm-meta,
+.theme-dark.solace-light span.cm-meta {
+    color: #7e5acb;
+}
+
+.theme-light span.cm-atom,
+.theme-dark.solace-light span.cm-atom {
+    color: #d35b93;
+}
+
+.theme-light span.cm-builtin,
+.theme-dark.solace-light span.cm-builtin {
+    color: #9267d7;
+}
+
+.theme-light span.cm-qualifier,
+.theme-dark.solace-light span.cm-qualifier {
+    color: #736c86;
+}
+
+.theme-light span.cm-callee,
+.theme-dark.solace-light span.cm-callee {
+    color: #7e5acb;
+}
+
+.theme-light span.cm-hash,
+.theme-dark.solace-light span.cm-hash {
+    color: #7e5acb;
+}
+
+.theme-light span.cm-dfn,
+.theme-dark.solace-light span.cm-dfn {
+    color: #714bc4;
+}
+
+/* ── Solace Light: Markdown preview ─────────────────────────── */
+
+.theme-light .markdown-preview-view h1,
+.theme-light .markdown-preview-view h2,
+.theme-light .markdown-preview-view h3,
+.theme-light .markdown-preview-view h4,
+.theme-light .markdown-preview-view h5,
+.theme-light .markdown-preview-view h6,
+.theme-dark.solace-light .markdown-preview-view h1,
+.theme-dark.solace-light .markdown-preview-view h2,
+.theme-dark.solace-light .markdown-preview-view h3,
+.theme-dark.solace-light .markdown-preview-view h4,
+.theme-dark.solace-light .markdown-preview-view h5,
+.theme-dark.solace-light .markdown-preview-view h6 {
+    color: #7e5acb;
+}
+
+.theme-light .markdown-preview-view a,
+.theme-dark.solace-light .markdown-preview-view a {
+    color: var(--text-accent);
+}
+
+.theme-light .markdown-preview-view code,
+.theme-dark.solace-light .markdown-preview-view code {
+    background-color: #e5ddf3;
+    color: #8a63d2;
+}
+
+.theme-light .markdown-preview-view pre,
+.theme-dark.solace-light .markdown-preview-view pre {
+    background-color: #e2dcee;
+    border: 1px solid #d8d0e6;
+}
+
+.theme-light .markdown-preview-view pre code,
+.theme-dark.solace-light .markdown-preview-view pre code {
+    color: #2c2638;
+    background-color: transparent;
+}
+
+.theme-light .markdown-preview-view blockquote,
+.theme-dark.solace-light .markdown-preview-view blockquote {
+    border-left-color: #8a63d2;
+    color: #736c86;
+}
+
+.theme-light .markdown-preview-view hr,
+.theme-dark.solace-light .markdown-preview-view hr {
+    border-color: #d8d0e6;
+}
+
+.theme-light .markdown-preview-view table,
+.theme-dark.solace-light .markdown-preview-view table {
+    border-color: #d8d0e6;
+}
+
+.theme-light .markdown-preview-view th,
+.theme-dark.solace-light .markdown-preview-view th {
+    background-color: #ece7f6;
+    border-color: #d8d0e6;
+    color: #8a63d2;
+}
+
+.theme-light .markdown-preview-view td,
+.theme-dark.solace-light .markdown-preview-view td {
+    border-color: #d8d0e6;
+}
+
+.theme-light .markdown-preview-view tr:nth-child(even),
+.theme-dark.solace-light .markdown-preview-view tr:nth-child(even) {
+    background-color: rgba(236, 231, 246, 0.3);
+}
+
+.theme-light .markdown-preview-view ul li::before,
+.theme-dark.solace-light .markdown-preview-view ul li::before {
+    color: #8a63d2;
+}
+
+.theme-light .markdown-preview-view ol li::before,
+.theme-dark.solace-light .markdown-preview-view ol li::before {
+    color: #8a63d2;
+}
+
+.theme-light .markdown-preview-view .task-list-item-checkbox,
+.theme-dark.solace-light .markdown-preview-view .task-list-item-checkbox {
+    border-color: #9a94aa;
+}
+
+.theme-light .markdown-preview-view .task-list-item-checkbox:checked,
+.theme-dark.solace-light
+    .markdown-preview-view
+    .task-list-item-checkbox:checked {
+    background-color: var(--interactive-accent);
+    border-color: var(--interactive-accent);
+}
+
+/* Markdown preview — task lists (halfway) */
+.theme-light .markdown-preview-view input[data-task="/"]:checked,
+.theme-light .markdown-preview-view li[data-task="/"] > input:checked,
+.theme-light .markdown-preview-view li[data-task="/"] > p > input:checked,
+.theme-dark.solace-light .markdown-preview-view input[data-task="/"]:checked,
+.theme-dark.solace-light
+    .markdown-preview-view
+    li[data-task="/"]
+    > input:checked,
+.theme-dark.solace-light
+    .markdown-preview-view
+    li[data-task="/"]
+    > p
+    > input:checked {
+    --checkbox-marker-color: transparent;
+    background-color: transparent;
+    border-color: var(--checkbox-color-halfway);
+    position: relative;
+    overflow: hidden;
+}
+
+.theme-light .markdown-preview-view input[data-task="/"]:checked::after,
+.theme-dark.solace-light
+    .markdown-preview-view
+    input[data-task="/"]:checked::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color: var(--checkbox-color-halfway);
+    -webkit-mask-image: none;
+}
+
+/* Markdown preview — task lists (question) */
+.theme-light .markdown-preview-view input[data-task="?"]:checked,
+.theme-light .markdown-preview-view li[data-task="?"] > input:checked,
+.theme-light .markdown-preview-view li[data-task="?"] > p > input:checked,
+.theme-dark.solace-light .markdown-preview-view input[data-task="?"]:checked,
+.theme-dark.solace-light .markdown-preview-view li[data-task="?"] > input:checked,
+.theme-dark.solace-light .markdown-preview-view li[data-task="?"] > p > input:checked {
+    --checkbox-marker-color: transparent;
+    background-color: #8a63d2;
+    border-color: #8a63d2;
+    position: relative;
+}
+
+.theme-light .markdown-preview-view input[data-task="?"]:checked::before,
+.theme-light .markdown-preview-view li[data-task="?"] > input:checked::before,
+.theme-light .markdown-preview-view li[data-task="?"] > p > input:checked::before,
+.theme-dark.solace-light .markdown-preview-view input[data-task="?"]:checked::before,
+.theme-dark.solace-light .markdown-preview-view li[data-task="?"] > input:checked::before,
+.theme-dark.solace-light .markdown-preview-view li[data-task="?"] > p > input:checked::before {
+    content: "?";
+    -webkit-mask-image: none;
+    background-color: transparent;
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f6f3fc;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+/* Markdown preview — task lists (canceled) */
+.theme-light .markdown-preview-view input[data-task="-"]:checked,
+.theme-light .markdown-preview-view li[data-task="-"] > input:checked,
+.theme-light .markdown-preview-view li[data-task="-"] > p > input:checked,
+.theme-dark.solace-light .markdown-preview-view input[data-task="-"]:checked,
+.theme-dark.solace-light .markdown-preview-view li[data-task="-"] > input:checked,
+.theme-dark.solace-light .markdown-preview-view li[data-task="-"] > p > input:checked {
+    --checkbox-marker-color: transparent;
+    background-color: #fa4c4c;
+    border-color: #fa4c4c;
+    position: relative;
+}
+
+.theme-light .markdown-preview-view input[data-task="-"]:checked::before,
+.theme-light .markdown-preview-view li[data-task="-"] > input:checked::before,
+.theme-light .markdown-preview-view li[data-task="-"] > p > input:checked::before,
+.theme-dark.solace-light .markdown-preview-view input[data-task="-"]:checked::before,
+.theme-dark.solace-light .markdown-preview-view li[data-task="-"] > input:checked::before,
+.theme-dark.solace-light .markdown-preview-view li[data-task="-"] > p > input:checked::before {
+    content: "−";
+    -webkit-mask-image: none;
+    background-color: transparent;
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000000;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.theme-light .markdown-preview-view li[data-task="-"],
+.theme-dark.solace-light .markdown-preview-view li[data-task="-"] {
+    text-decoration: line-through;
+    color: #9a94aa;
+}
+
+.theme-light .markdown-preview-view .tag,
+.theme-dark.solace-light .markdown-preview-view .tag {
+    background-color: var(--tag-background);
+    color: var(--tag-color);
+}
+
+.theme-light .markdown-preview-view .internal-link,
+.theme-dark.solace-light .markdown-preview-view .internal-link {
+    color: var(--text-accent);
+}
+
+.theme-light .markdown-preview-view strong,
+.theme-dark.solace-light .markdown-preview-view strong {
+    color: #2c2638;
+}
+
+.theme-light .markdown-preview-view em,
+.theme-dark.solace-light .markdown-preview-view em {
+    color: #2c2638;
+    font-style: italic;
+}
+
+.theme-light .markdown-preview-view mark,
+.theme-dark.solace-light .markdown-preview-view mark {
+    background-color: rgba(138, 99, 210, 0.19);
+    color: inherit;
+}
+
+/* ── Solace Light: Callouts ─────────────────────────────────── */
+
+.theme-light .callout[data-callout="note"],
+.theme-light .callout[data-callout="info"],
+.theme-light .callout[data-callout="todo"],
+.theme-dark.solace-light .callout[data-callout="note"],
+.theme-dark.solace-light .callout[data-callout="info"],
+.theme-dark.solace-light .callout[data-callout="todo"] {
+    --callout-color: 138 99 210;
+}
+
+.theme-light .callout[data-callout="tip"],
+.theme-light .callout[data-callout="hint"],
+.theme-light .callout[data-callout="important"],
+.theme-dark.solace-light .callout[data-callout="tip"],
+.theme-dark.solace-light .callout[data-callout="hint"],
+.theme-dark.solace-light .callout[data-callout="important"] {
+    --callout-color: 63 154 133;
+}
+
+.theme-light .callout[data-callout="success"],
+.theme-dark.solace-light .callout[data-callout="success"] {
+    --callout-color: 63 154 133;
+}
+
+.theme-light .callout[data-callout="warning"],
+.theme-light .callout[data-callout="caution"],
+.theme-light .callout[data-callout="attention"],
+.theme-dark.solace-light .callout[data-callout="warning"],
+.theme-dark.solace-light .callout[data-callout="caution"],
+.theme-dark.solace-light .callout[data-callout="attention"] {
+    --callout-color: 192 122 44;
+}
+
+.theme-light .callout[data-callout="danger"],
+.theme-light .callout[data-callout="error"],
+.theme-dark.solace-light .callout[data-callout="danger"],
+.theme-dark.solace-light .callout[data-callout="error"] {
+    --callout-color: 211 91 147;
+}
+
+.theme-light .callout[data-callout="failure"],
+.theme-dark.solace-light .callout[data-callout="failure"] {
+    --callout-color: 211 91 147;
+}
+
+.theme-light .callout[data-callout="bug"],
+.theme-dark.solace-light .callout[data-callout="bug"] {
+    --callout-color: 211 91 147;
+}
+
+.theme-light .callout[data-callout="example"],
+.theme-dark.solace-light .callout[data-callout="example"] {
+    --callout-color: 211 91 147;
+}
+
+.theme-light .callout[data-callout="quote"],
+.theme-light .callout[data-callout="cite"],
+.theme-dark.solace-light .callout[data-callout="quote"],
+.theme-dark.solace-light .callout[data-callout="cite"] {
+    --callout-color: 115 108 134;
+}
+
+.theme-light .callout[data-callout="abstract"],
+.theme-light .callout[data-callout="summary"],
+.theme-dark.solace-light .callout[data-callout="abstract"],
+.theme-dark.solace-light .callout[data-callout="summary"] {
+    --callout-color: 115 108 134;
+}
+
+.theme-light .callout[data-callout="question"],
+.theme-light .callout[data-callout="help"],
+.theme-light .callout[data-callout="faq"],
+.theme-dark.solace-light .callout[data-callout="question"],
+.theme-dark.solace-light .callout[data-callout="help"],
+.theme-dark.solace-light .callout[data-callout="faq"] {
+    --callout-color: 138 99 210;
+}
+
+/* ── Solace Light: Frontmatter ──────────────────────────────── */
+
+.theme-light .frontmatter,
+.theme-dark.solace-light .frontmatter {
+    color: #736c86;
+}
+
+.theme-light .frontmatter .cm-keyword,
+.theme-dark.solace-light .frontmatter .cm-keyword {
+    color: #7a66b6;
+}
+
+.theme-light .frontmatter .cm-string,
+.theme-dark.solace-light .frontmatter .cm-string {
+    color: #c155a3;
+}
+
+.theme-light .frontmatter .cm-number,
+.theme-dark.solace-light .frontmatter .cm-number {
+    color: #c07a2c;
+}
+
+/* ── Solace Light: Canvas ───────────────────────────────────── */
+
+.theme-light .canvas-node,
+.theme-dark.solace-light .canvas-node {
+    background-color: #f0ecf8;
+    border-color: #d8d0e6;
+}
+
+.theme-light .canvas-node-label,
+.theme-dark.solace-light .canvas-node-label {
+    color: #2c2638;
+}
+
+/* ── Solace Light: Editor ───────────────────────────────────── */
+
+.theme-light .cm-s-obsidian .cm-content,
+.theme-dark.solace-light .cm-s-obsidian .cm-content {
+    color: var(--text-normal);
+}
+
+.theme-light .cm-s-obsidian .cm-line,
+.theme-dark.solace-light .cm-s-obsidian .cm-line {
+    color: var(--text-normal);
+}
+
+.theme-light .cm-s-obsidian .cm-heading,
+.theme-dark.solace-light .cm-s-obsidian .cm-heading {
+    color: #8a63d2;
+}
+
+.theme-light .cm-s-obsidian .cm-strong,
+.theme-dark.solace-light .cm-s-obsidian .cm-strong {
+    font-weight: 700;
+    color: #2c2638;
+}
+
+.theme-light .cm-s-obsidian .cm-em,
+.theme-dark.solace-light .cm-s-obsidian .cm-em {
+    font-style: italic;
+    color: #2c2638;
+}
+
+.theme-light .cm-s-obsidian .cm-link,
+.theme-dark.solace-light .cm-s-obsidian .cm-link {
+    color: #7e5acb;
+}
+
+.theme-light .cm-s-obsidian .cm-url,
+.theme-dark.solace-light .cm-s-obsidian .cm-url {
+    color: #7e5acb;
+}
+
+.theme-light .cm-s-obsidian .cm-code,
+.theme-dark.solace-light .cm-s-obsidian .cm-code {
+    background-color: #e5ddf3;
+    color: #8a63d2;
+}
+
+.theme-light .cm-s-obsidian .cm-strikethrough,
+.theme-dark.solace-light .cm-s-obsidian .cm-strikethrough {
+    text-decoration: line-through;
+    color: #9a94aa;
+}
+
+/* ── Solace Light: CM panels ────────────────────────────────── */
+
+.theme-light .cm-panels,
+.theme-dark.solace-light .cm-panels {
+    background-color: var(--background-secondary);
+    border-color: var(--background-modifier-border);
+}
+
+.theme-light .cm-panel,
+.theme-dark.solace-light .cm-panel {
+    background-color: var(--background-secondary);
+}
+
+.theme-light .cm-searchMatch,
+.theme-dark.solace-light .cm-searchMatch {
+    background-color: var(--search-match-color);
+}
+
+.theme-light .cm-selectionBackground,
+.theme-dark.solace-light .cm-selectionBackground {
+    background-color: rgba(138, 99, 210, 0.19);
+}
+
+.theme-light .cm-activeLine,
+.theme-dark.solace-light .cm-activeLine {
+    background-color: #e7e0f1;
+}
+
+.theme-light .cm-gutters,
+.theme-dark.solace-light .cm-gutters {
+    background-color: var(--background-primary);
+    color: #9a94aa;
+    border-color: var(--background-modifier-border);
+}
+
+.theme-light .cm-activeLineGutter,
+.theme-dark.solace-light .cm-activeLineGutter {
+    color: var(--interactive-accent);
+    background-color: #e8e0f2;
+}
+
+.theme-light .cm-lineNumbers .cm-gutterElement,
+.theme-dark.solace-light .cm-lineNumbers .cm-gutterElement {
+    color: #a19ab3;
+    padding: 0 8px;
+}
+
+.theme-light .cm-cursor,
+.theme-dark.solace-light .cm-cursor {
+    border-left-color: #8a63d2;
+}
+
+.theme-light .cm-matchingBracket,
+.theme-dark.solace-light .cm-matchingBracket {
+    background-color: rgba(138, 99, 210, 0.13);
+    color: #8a63d2 !important;
+}
+
+.theme-light .cm-foldPlaceholder,
+.theme-dark.solace-light .cm-foldPlaceholder {
+    background-color: #d8d0e6;
+    color: #9a94aa;
+    border-color: #d8d0e6;
+}
+
+.theme-light .cm-foldPlaceholder:hover,
+.theme-dark.solace-light .cm-foldPlaceholder:hover {
+    background-color: #cfc8de;
+    color: #736c86;
+}
+
+/* ── Solace Light: Tab ──────────────────────────────────────── */
+
+.theme-light .tab,
+.theme-dark.solace-light .tab {
+    background-color: var(--sidebar-tabs-background);
+    border-color: var(--background-modifier-border);
+}
+
+.theme-light .tab.active,
+.theme-dark.solace-light .tab.active {
+    background-color: var(--tab-active-background);
+    border-bottom-color: var(--tab-active-border);
+}
+
+/* ── Solace Light: Sidebar ──────────────────────────────────── */
+
+.theme-light .workspace-leaf-content[data-type="explorer"] .nav-header,
+.theme-light .workspace-leaf-content[data-type="file-explorer"] .nav-header,
+.theme-dark.solace-light
+    .workspace-leaf-content[data-type="explorer"]
+    .nav-header,
+.theme-dark.solace-light
+    .workspace-leaf-content[data-type="file-explorer"]
+    .nav-header {
+    background-color: var(--background-primary);
+}
+
+.theme-light .nav-header,
+.theme-dark.solace-light .nav-header {
+    border-color: var(--background-modifier-border);
+}
+
+.theme-light .nav-buttons-container,
+.theme-dark.solace-light .nav-buttons-container {
+    border-color: var(--background-modifier-border);
+}
+
+/* ── Solace Light: Menu ─────────────────────────────────────── */
+
+.theme-light .menu,
+.theme-dark.solace-light .menu {
+    background-color: var(--popover-background);
+    border-color: var(--popover-border-color);
+}
+
+.theme-light .menu-item:hover,
+.theme-dark.solace-light .menu-item:hover {
+    background-color: var(--interactive-hover);
+}
+
+/* ── Solace Light: Modal ────────────────────────────────────── */
+
+.theme-light .modal,
+.theme-dark.solace-light .modal {
+    background-color: var(--modal-background);
+    border-color: var(--modal-border-color);
+}
+
+.theme-light .modal .modal-close-button:hover,
+.theme-dark.solace-light .modal .modal-close-button:hover {
+    color: var(--text-error);
+}
+
+/* ── Solace Light: Prompt ───────────────────────────────────── */
+
+.theme-light .prompt,
+.theme-dark.solace-light .prompt {
+    background-color: var(--prompt-background);
+    border-color: var(--prompt-border-color);
+}
+
+/* ── Solace Light: Input ────────────────────────────────────── */
+
+.theme-light .input,
+.theme-dark.solace-light .input {
+    background-color: var(--background-modifier-form-field);
+    border-color: var(--background-modifier-border);
+}
+
+.theme-light .input:focus,
+.theme-dark.solace-light .input:focus {
+    border-color: var(--interactive-accent);
+}
+
+/* ── Solace Light: Settings ─────────────────────────────────── */
+
+.theme-light .setting-item-info,
+.theme-dark.solace-light .setting-item-info {
+    color: var(--text-normal);
+}
+
+.theme-light .setting-item-description,
+.theme-dark.solace-light .setting-item-description {
+    color: var(--text-muted);
+}
+
+.theme-light .setting-item-name,
+.theme-dark.solace-light .setting-item-name {
+    color: var(--text-normal);
+}
+
+.theme-light .setting-group-title,
+.theme-dark.solace-light .setting-group-title {
+    color: var(--text-accent);
+    border-bottom-color: var(--background-modifier-border);
+}
+
+/* ── Solace Light: Buttons ──────────────────────────────────── */
+
+.theme-light .btn,
+.theme-dark.solace-light .btn {
+    background-color: var(--interactive-normal);
+    border-color: var(--background-modifier-border);
+    color: var(--text-normal);
+}
+
+.theme-light .btn:hover,
+.theme-dark.solace-light .btn:hover {
+    background-color: var(--interactive-hover);
+    border-color: var(--interactive-accent);
+}
+
+.theme-light .btn-primary,
+.theme-dark.solace-light .btn-primary {
+    background-color: var(--interactive-accent);
+    color: var(--text-on-accent);
+    border-color: var(--interactive-accent);
+}
+
+.theme-light .btn-primary:hover,
+.theme-dark.solace-light .btn-primary:hover {
+    background-color: var(--interactive-accent-hover);
+}
+
+/* ── Solace Light: Internal link ────────────────────────────── */
+
+.theme-light .internal-link,
+.theme-dark.solace-light .internal-link {
+    color: var(--text-accent);
+}
+
+.theme-light .internal-link:hover,
+.theme-dark.solace-light .internal-link:hover {
+    color: var(--text-accent-hover);
+}
+
+.theme-light .external-link,
+.theme-dark.solace-light .external-link {
+    color: var(--text-accent);
+}
+
+/* ── Solace Light: Tag ──────────────────────────────────────── */
+
+.theme-light .tag,
+.theme-dark.solace-light .tag,
+.theme-light a.tag,
+.theme-dark.solace-light a.tag {
+    background-color: var(--tag-background);
+    color: var(--tag-color);
+    border-color: var(--tag-border-color);
+    padding: var(--tag-padding-y, 0.25em) var(--tag-padding-x, 0.65em);
+    line-height: 1;
+    overflow: visible;
+    vertical-align: baseline;
+}
+
+.theme-light .cm-hashtag,
+.theme-dark.solace-light .cm-hashtag {
+    background-color: var(--tag-background);
+    color: var(--tag-color);
+    border-color: var(--tag-border-color);
+    padding-top: var(--tag-padding-y, 0.25em);
+    padding-bottom: var(--tag-padding-y, 0.25em);
+    line-height: 1;
+    vertical-align: baseline;
+}
+
+.theme-light .cm-hashtag.cm-hashtag-begin,
+.theme-dark.solace-light .cm-hashtag.cm-hashtag-begin {
+    border-start-start-radius: var(--tag-radius, 2em);
+    border-end-start-radius: var(--tag-radius, 2em);
+    border-inline-end: none;
+    border-inline-start: var(--tag-border-width, 0px) solid var(--tag-border-color);
+    padding-inline-start: var(--tag-padding-x, 0.65em);
+}
+
+.theme-light .cm-hashtag.cm-hashtag-end,
+.theme-dark.solace-light .cm-hashtag.cm-hashtag-end {
+    border-start-end-radius: var(--tag-radius, 2em);
+    border-end-end-radius: var(--tag-radius, 2em);
+    border-inline-start: none;
+    border-inline-end: var(--tag-border-width, 0px) solid var(--tag-border-color);
+    padding-inline-end: var(--tag-padding-x, 0.65em);
+}
+
+/* ── Solace Light: Tree items ───────────────────────────────── */
+
+.theme-light .tree-item-self:hover,
+.theme-dark.solace-light .tree-item-self:hover {
+    background-color: var(--interactive-hover);
+}
+
+.theme-light .tree-item-self.is-selected,
+.theme-dark.solace-light .tree-item-self.is-selected {
+    background-color: var(--interactive-accent);
+    color: var(--text-on-accent);
+}
+
+.theme-light .tree-item-self.is-selected .tree-item-inner,
+.theme-dark.solace-light .tree-item-self.is-selected .tree-item-inner {
+    color: var(--text-on-accent);
+}
+
+.theme-light .nav-folder-title,
+.theme-dark.solace-light .nav-folder-title {
+    color: var(--text-normal);
+}
+
+.theme-light .nav-file-title,
+.theme-dark.solace-light .nav-file-title {
+    color: var(--text-normal);
+}
+
+/* ── Solace Light: Suggestion ───────────────────────────────── */
+
+.theme-light .suggestion-container .suggestion,
+.theme-dark.solace-light .suggestion-container .suggestion {
+    background-color: var(--background-primary);
+}
+
+.theme-light .suggestion-container .suggestion.is-selected,
+.theme-dark.solace-light .suggestion-container .suggestion.is-selected {
+    background-color: var(--interactive-hover);
+}
+
+/* ── Solace Light: Prompt list ──────────────────────────────── */
+
+.theme-light .prompt-list,
+.theme-dark.solace-light .prompt-list {
+    background-color: var(--prompt-background);
+    border-color: var(--prompt-border-color);
+}
+
+.theme-light .suggestion-item,
+.theme-dark.solace-light .suggestion-item {
+    background-color: var(--prompt-background);
+}
+
+.theme-light .suggestion-item.is-selected,
+.theme-dark.solace-light .suggestion-item.is-selected {
+    background-color: var(--interactive-hover);
+}
+
+.theme-light .suggestion-item-title,
+.theme-dark.solace-light .suggestion-item-title {
+    color: var(--text-normal);
+}
+
+.theme-light .suggestion-item-description,
+.theme-dark.solace-light .suggestion-item-description {
+    color: var(--text-muted);
+}
+
+/* ── Solace Light: Breadcrumbs ──────────────────────────────── */
+
+.theme-light .breadcrumb-container,
+.theme-dark.solace-light .breadcrumb-container {
+    background-color: var(--background-primary);
+}
+
+.theme-light .breadcrumb-item,
+.theme-dark.solace-light .breadcrumb-item {
+    color: var(--text-muted);
+}
+
+.theme-light .breadcrumb-item.active,
+.theme-dark.solace-light .breadcrumb-item.active {
+    color: var(--text-normal);
+}
+
+.theme-light .breadcrumb-item:hover,
+.theme-dark.solace-light .breadcrumb-item:hover {
+    color: var(--text-accent);
+}
+
+/* ── Solace Light: Search ───────────────────────────────────── */
+
+.theme-light .search-dialog-container,
+.theme-dark.solace-light .search-dialog-container {
+    background-color: var(--modal-background);
+    border-color: var(--modal-border-color);
+}
+
+.theme-light .search-input,
+.theme-dark.solace-light .search-input {
+    background-color: var(--background-modifier-form-field);
+    border-color: var(--background-modifier-border);
+}
+
+.theme-light .search-input:focus,
+.theme-dark.solace-light .search-input:focus {
+    border-color: var(--interactive-accent);
+}
+
+/* ── Solace Light: Hotkeys ──────────────────────────────────── */
+
+.theme-light .setting-hotkey,
+.theme-dark.solace-light .setting-hotkey {
+    background-color: var(--interactive-normal);
+    color: var(--text-normal);
+}
+
+.theme-light .setting-hotkey:hover,
+.theme-dark.solace-light .setting-hotkey:hover {
+    background-color: var(--interactive-hover);
+}
+
+/* ── Solace Light: Tag pane ─────────────────────────────────── */
+
+.theme-light .tag-pane .tag,
+.theme-dark.solace-light .tag-pane .tag {
+    background-color: var(--tag-background);
+    color: var(--tag-color);
+}
+
+/* ── Solace Light: Plugin browser markdown ──────────────────── */
+
+.theme-light .plugin-browser-container .markdown-preview-view,
+.theme-dark.solace-light .plugin-browser-container .markdown-preview-view {
+    background-color: var(--background-primary);
+}
+
+.theme-light .plugin-browser-container .markdown-preview-view h1,
+.theme-light .plugin-browser-container .markdown-preview-view h2,
+.theme-light .plugin-browser-container .markdown-preview-view h3,
+.theme-dark.solace-light .plugin-browser-container .markdown-preview-view h1,
+.theme-dark.solace-light .plugin-browser-container .markdown-preview-view h2,
+.theme-dark.solace-light .plugin-browser-container .markdown-preview-view h3 {
+    color: var(--text-normal);
+}
+
+.theme-light .plugin-browser-container .markdown-preview-view a,
+.theme-dark.solace-light .plugin-browser-container .markdown-preview-view a {
+    color: var(--text-accent);
+}
+
+.theme-light .plugin-browser-container .markdown-preview-view code,
+.theme-dark.solace-light .plugin-browser-container .markdown-preview-view code {
+    color: var(--text-accent);
+    background-color: var(--background-secondary);
+}
+
+.theme-light .plugin-browser-container .markdown-preview-view pre,
+.theme-dark.solace-light .plugin-browser-container .markdown-preview-view pre {
+    background-color: var(--background-secondary);
+    border-color: var(--background-modifier-border);
+}
+
+.theme-light .plugin-browser-container .markdown-preview-view blockquote,
+.theme-dark.solace-light
+    .plugin-browser-container
+    .markdown-preview-view
+    blockquote {
+    border-left-color: var(--interactive-accent);
+    color: var(--text-muted);
+}
+
+.theme-light .plugin-browser-container .markdown-preview-view strong,
+.theme-dark.solace-light
+    .plugin-browser-container
+    .markdown-preview-view
+    strong {
+    color: var(--text-normal);
+}
+
+.theme-light .plugin-browser-container .markdown-preview-view em,
+.theme-dark.solace-light .plugin-browser-container .markdown-preview-view em {
+    color: var(--text-muted);
+}
+
+.theme-light .plugin-browser-container .markdown-preview-view ul li::before,
+.theme-dark.solace-light
+    .plugin-browser-container
+    .markdown-preview-view
+    ul
+    li::before {
+    color: var(--text-accent);
+}
+
+.theme-light .plugin-browser-container .markdown-preview-view ol li::before,
+.theme-dark.solace-light
+    .plugin-browser-container
+    .markdown-preview-view
+    ol
+    li::before {
+    color: var(--text-accent);
+}
+
+.theme-light .plugin-browser-container .markdown-preview-view hr,
+.theme-dark.solace-light .plugin-browser-container .markdown-preview-view hr {
+    border-color: var(--background-modifier-border);
+}
+
+.theme-light .plugin-browser-container .markdown-preview-view table,
+.theme-dark.solace-light
+    .plugin-browser-container
+    .markdown-preview-view
+    table {
+    border-color: var(--background-modifier-border);
+}
+
+.theme-light .plugin-browser-container .markdown-preview-view th,
+.theme-dark.solace-light .plugin-browser-container .markdown-preview-view th {
+    background-color: var(--background-secondary);
+    border-color: var(--background-modifier-border);
+}
+
+.theme-light .plugin-browser-container .markdown-preview-view td,
+.theme-dark.solace-light .plugin-browser-container .markdown-preview-view td {
+    border-color: var(--background-modifier-border);
+}
+
+/* ──────────────────────────────────────────────────────────────
+   SOLACE DUSK
+   ────────────────────────────────────────────────────────────── */
+
+.theme-dark.solace-dusk {
+    --background-primary: #191725;
+    --background-primary-alt: #1e1b2b;
+    --background-secondary: #1e1b2b;
+    --background-secondary-alt: #211e30;
+    --background-modifier-border: #282538;
+    --background-modifier-form-field: #211e30;
+    --background-modifier-form-field-hover: #282538;
+    --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
+    --background-modifier-success: rgba(138, 216, 194, 0.09);
+    --background-modifier-error: rgba(232, 136, 184, 0.08);
+    --background-modifier-error-hover: rgba(232, 136, 184, 0.15);
+
+    --text-normal: #d4cfe4;
+    --text-muted: #8a84a0;
+    --text-faint: #504a68;
+    --text-accent: #b89ef0;
+    --text-accent-hover: #c8a8f2;
+    --text-error: #e888b8;
+    --text-success: #8ad8c2;
+    --text-warning: #b89ef0;
+    --text-on-accent: #191725;
+    --text-on-accent-hover: #11101a;
+    --text-on-accent-inverted: #d4cfe4;
+    --text-selection: rgba(184, 158, 240, 0.25);
+
+    --interactive-normal: #282538;
+    --interactive-hover: #302d42;
+    --interactive-accent: #b89ef0;
+    --interactive-accent-hover: #c8a8f2;
+    --interactive-success: #8ad8c2;
+    --interactive-muted: #232031;
+
+    --shadow-s: 0 1px 2px rgba(0, 0, 0, 0.3);
+    --shadow-l: 0 4px 12px rgba(0, 0, 0, 0.4);
+
+    --tab-active-background: #141220;
+    --tab-active-border: #b89ef0;
+    --tab-active-border-color: #b89ef0;
+    --tab-text-color-override: #605a78;
+    --tab-active-text-color: #d4cfe4;
+
+    --sidebar-background: #191725;
+    --sidebar-border-color: #232031;
+    --sidebar-tabs-background: #11101a;
+
+    --titlebar-background: #11101a;
+
+    --statusbar-background: #11101a;
+
+    --search-background: rgba(184, 158, 240, 0.19);
+    --search-match-color: #b89ef0;
+
+    --callout-default-color: #b89ef0;
+    --callout-default-bg: rgba(184, 158, 240, 0.09);
+    --callout-info-color: #8b74d0;
+    --callout-info-bg: rgba(139, 116, 208, 0.09);
+    --callout-tip-color: #8ad8c2;
+    --callout-tip-bg: rgba(138, 216, 194, 0.09);
+    --callout-warning-color: #b89ef0;
+    --callout-warning-bg: rgba(184, 158, 240, 0.09);
+    --callout-danger-color: #e888b8;
+    --callout-danger-bg: rgba(232, 136, 184, 0.09);
+
+    --tag-background: rgba(184, 158, 240, 0.09);
+    --tag-color: #b89ef0;
+    --tag-border-color: rgba(184, 158, 240, 0.19);
+
+    --inline-title-color: #b89ef0;
+
+    --modal-background: #1e1b2b;
+    --modal-border-color: #282538;
+
+    --prompt-background: #1e1b2b;
+    --prompt-border-color: #282538;
+
+    --popover-background: #1e1b2b;
+    --popover-border-color: #282538;
+
+    --tooltip-background: #282538;
+    --tooltip-border-color: #302d42;
+
+    --checkbox-color: #b89ef0;
+    --checkbox-color-hover: #c8a8f2;
+    --checkbox-color-halfway: #b89ef0;
+
+    --color-base-00: #191725;
+    --color-base-10: #1e1b2b;
+    --color-base-20: #232031;
+    --color-base-30: #282538;
+    --color-base-40: #302d42;
+    --color-base-50: #3a3448;
+    --color-base-60: #504a68;
+    --color-base-70: #78719a;
+    --color-base-100: #8a84a0;
+    --color-base-120: #b8b3d0;
+    --color-base-150: #d4cfe4;
+
+    --color-accent: #b89ef0;
+    --color-accent-1: #8b74d0;
+    --color-accent-2: #8ad8c2;
+    --color-accent-3: #e888b8;
+    --color-accent-4: #ddb88c;
+    --color-accent-5: #e8a0c0;
+    --color-accent-6: #b098e0;
+
+    --color-red: #e888b8;
+    --color-orange: #ddb88c;
+    --color-yellow: #ddb88c;
+    --color-green: #8ad8c2;
+    --color-cyan: #b098e0;
+    --color-blue: #8b74d0;
+    --color-purple: #b89ef0;
+    --color-pink: #e888b8;
+
+    --graph-line-color: #282538;
+}
+
+/* ── Solace Dusk: Selection ─────────────────────────────────── */
+
+.theme-dark.solace-dusk ::selection {
+    background-color: var(--text-selection, rgba(184, 158, 240, 0.25));
+    color: inherit;
+}
+
+/* ── Solace Dusk: Syntax Highlighting ───────────────────────── */
+
+.theme-dark.solace-dusk span.cm-comment {
+    color: #78719a;
+    font-style: italic;
+}
+
+.theme-dark.solace-dusk span.cm-keyword {
+    color: #ada6e0;
+}
+
+.theme-dark.solace-dusk span.cm-string {
+    color: #dba8e0;
+}
+
+.theme-dark.solace-dusk span.cm-string-2 {
+    color: #dba8e0;
+}
+
+.theme-dark.solace-dusk span.cm-number {
+    color: #ddb88c;
+}
+
+.theme-dark.solace-dusk span.cm-bool {
+    color: #e8a0c0;
+}
+
+.theme-dark.solace-dusk span.cm-null {
+    color: #e8a0c0;
+}
+
+.theme-dark.solace-dusk span.cm-variable {
+    color: #d4cfe4;
+}
+
+.theme-dark.solace-dusk span.cm-variable-2 {
+    color: #c0bbd8;
+}
+
+.theme-dark.solace-dusk span.cm-variable-3 {
+    color: #ada6e0;
+}
+
+.theme-dark.solace-dusk span.cm-property {
+    color: #c0bbd8;
+}
+
+.theme-dark.solace-dusk span.cm-def {
+    color: #d0b0f0;
+}
+
+.theme-dark.solace-dusk span.cm-operator {
+    color: #7d78a0;
+}
+
+.theme-dark.solace-dusk span.cm-punctuation {
+    color: #7d78a0;
+}
+
+.theme-dark.solace-dusk span.cm-bracket {
+    color: #8a84a0;
+}
+
+.theme-dark.solace-dusk span.cm-tag {
+    color: #8ad8c2;
+}
+
+.theme-dark.solace-dusk span.cm-attribute {
+    color: #8a84a0;
+}
+
+.theme-dark.solace-dusk span.cm-link {
+    color: #b89ef0;
+    font-style: italic;
+}
+
+.theme-dark.solace-dusk span.cm-url {
+    color: #b89ef0;
+}
+
+.theme-dark.solace-dusk span.cm-header {
+    color: #b89ef0;
+    font-weight: 700;
+}
+
+.theme-dark.solace-dusk span.cm-em {
+    color: #d4cfe4;
+    font-style: italic;
+}
+
+.theme-dark.solace-dusk span.cm-strong {
+    color: #d4cfe4;
+    font-weight: 700;
+}
+
+.theme-dark.solace-dusk span.cm-formatting {
+    color: #504a68;
+}
+
+.theme-dark.solace-dusk span.cm-meta {
+    color: #b89ef0;
+}
+
+.theme-dark.solace-dusk span.cm-atom {
+    color: #e8a0c0;
+}
+
+.theme-dark.solace-dusk span.cm-builtin {
+    color: #c8a8f2;
+}
+
+.theme-dark.solace-dusk span.cm-qualifier {
+    color: #8a84a0;
+}
+
+.theme-dark.solace-dusk span.cm-callee {
+    color: #b89ef0;
+}
+
+.theme-dark.solace-dusk span.cm-hash {
+    color: #b89ef0;
+}
+
+.theme-dark.solace-dusk span.cm-dfn {
+    color: #d0b0f0;
+}
+
+/* ── Solace Dusk: Markdown preview ──────────────────────────── */
+
+.theme-dark.solace-dusk .markdown-preview-view h1,
+.theme-dark.solace-dusk .markdown-preview-view h2,
+.theme-dark.solace-dusk .markdown-preview-view h3,
+.theme-dark.solace-dusk .markdown-preview-view h4,
+.theme-dark.solace-dusk .markdown-preview-view h5,
+.theme-dark.solace-dusk .markdown-preview-view h6 {
+    color: #b89ef0;
+}
+
+.theme-dark.solace-dusk .markdown-preview-view a {
+    color: var(--text-accent);
+}
+
+.theme-dark.solace-dusk .markdown-preview-view code {
+    background-color: #282538;
+    color: #b89ef0;
+}
+
+.theme-dark.solace-dusk .markdown-preview-view pre {
+    background-color: #232035;
+    border: 1px solid #2a2540;
+}
+
+.theme-dark.solace-dusk .markdown-preview-view pre code {
+    color: #d4cfe4;
+    background-color: transparent;
+}
+
+.theme-dark.solace-dusk .markdown-preview-view blockquote {
+    border-left-color: #b89ef0;
+    color: #8a84a0;
+}
+
+.theme-dark.solace-dusk .markdown-preview-view hr {
+    border-color: #282538;
+}
+
+.theme-dark.solace-dusk .markdown-preview-view table {
+    border-color: #282538;
+}
+
+.theme-dark.solace-dusk .markdown-preview-view th {
+    background-color: #1e1b2b;
+    border-color: #282538;
+    color: #b89ef0;
+}
+
+.theme-dark.solace-dusk .markdown-preview-view td {
+    border-color: #282538;
+}
+
+.theme-dark.solace-dusk .markdown-preview-view tr:nth-child(even) {
+    background-color: rgba(30, 27, 43, 0.3);
+}
+
+.theme-dark.solace-dusk .markdown-preview-view ul li::before {
+    color: #b89ef0;
+}
+
+.theme-dark.solace-dusk .markdown-preview-view ol li::before {
+    color: #b89ef0;
+}
+
+.theme-dark.solace-dusk .markdown-preview-view .task-list-item-checkbox {
+    border-color: #504a68;
+}
+
+.theme-dark.solace-dusk
+    .markdown-preview-view
+    .task-list-item-checkbox:checked {
+    background-color: var(--interactive-accent);
+    border-color: var(--interactive-accent);
+}
+
+/* Markdown preview — task lists (halfway) */
+.theme-dark.solace-dusk .markdown-preview-view input[data-task="/"]:checked,
+.theme-dark.solace-dusk
+    .markdown-preview-view
+    li[data-task="/"]
+    > input:checked,
+.theme-dark.solace-dusk
+    .markdown-preview-view
+    li[data-task="/"]
+    > p
+    > input:checked {
+    --checkbox-marker-color: transparent;
+    background-color: transparent;
+    border-color: var(--checkbox-color-halfway);
+    position: relative;
+    overflow: hidden;
+}
+
+.theme-dark.solace-dusk
+    .markdown-preview-view
+    input[data-task="/"]:checked::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color: var(--checkbox-color-halfway);
+    -webkit-mask-image: none;
+}
+
+/* Markdown preview — task lists (question) */
+.theme-dark.solace-dusk .markdown-preview-view input[data-task="?"]:checked,
+.theme-dark.solace-dusk .markdown-preview-view li[data-task="?"] > input:checked,
+.theme-dark.solace-dusk .markdown-preview-view li[data-task="?"] > p > input:checked {
+    --checkbox-marker-color: transparent;
+    background-color: #b89ef0;
+    border-color: #b89ef0;
+    position: relative;
+}
+
+.theme-dark.solace-dusk .markdown-preview-view input[data-task="?"]:checked::before,
+.theme-dark.solace-dusk .markdown-preview-view li[data-task="?"] > input:checked::before,
+.theme-dark.solace-dusk .markdown-preview-view li[data-task="?"] > p > input:checked::before {
+    content: "?";
+    -webkit-mask-image: none;
+    background-color: transparent;
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #191725;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+/* Markdown preview — task lists (canceled) */
+.theme-dark.solace-dusk .markdown-preview-view input[data-task="-"]:checked,
+.theme-dark.solace-dusk .markdown-preview-view li[data-task="-"] > input:checked,
+.theme-dark.solace-dusk .markdown-preview-view li[data-task="-"] > p > input:checked {
+    --checkbox-marker-color: transparent;
+    background-color: #ff7369;
+    border-color: #ff7369;
+    position: relative;
+}
+
+.theme-dark.solace-dusk .markdown-preview-view input[data-task="-"]:checked::before,
+.theme-dark.solace-dusk .markdown-preview-view li[data-task="-"] > input:checked::before,
+.theme-dark.solace-dusk .markdown-preview-view li[data-task="-"] > p > input:checked::before {
+    content: "−";
+    -webkit-mask-image: none;
+    background-color: transparent;
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000000;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.theme-dark.solace-dusk .markdown-preview-view li[data-task="-"] {
+    text-decoration: line-through;
+    color: #504a68;
+}
+
+.theme-dark.solace-dusk .markdown-preview-view .tag {
+    background-color: var(--tag-background);
+    color: var(--tag-color);
+}
+
+.theme-dark.solace-dusk .markdown-preview-view .internal-link {
+    color: var(--text-accent);
+}
+
+.theme-dark.solace-dusk .markdown-preview-view strong {
+    color: #d4cfe4;
+}
+
+.theme-dark.solace-dusk .markdown-preview-view em {
+    color: #d4cfe4;
+    font-style: italic;
+}
+
+.theme-dark.solace-dusk .markdown-preview-view mark {
+    background-color: rgba(184, 158, 240, 0.19);
+    color: inherit;
+}
+
+/* ── Solace Dusk: Callouts ──────────────────────────────────── */
+
+.theme-dark.solace-dusk .callout[data-callout="note"],
+.theme-dark.solace-dusk .callout[data-callout="info"],
+.theme-dark.solace-dusk .callout[data-callout="todo"] {
+    --callout-color: 184 158 240;
+}
+
+.theme-dark.solace-dusk .callout[data-callout="tip"],
+.theme-dark.solace-dusk .callout[data-callout="hint"],
+.theme-dark.solace-dusk .callout[data-callout="important"] {
+    --callout-color: 138 216 194;
+}
+
+.theme-dark.solace-dusk .callout[data-callout="success"] {
+    --callout-color: 138 216 194;
+}
+
+.theme-dark.solace-dusk .callout[data-callout="warning"],
+.theme-dark.solace-dusk .callout[data-callout="caution"],
+.theme-dark.solace-dusk .callout[data-callout="attention"] {
+    --callout-color: 221 184 140;
+}
+
+.theme-dark.solace-dusk .callout[data-callout="danger"],
+.theme-dark.solace-dusk .callout[data-callout="error"] {
+    --callout-color: 232 136 184;
+}
+
+.theme-dark.solace-dusk .callout[data-callout="failure"] {
+    --callout-color: 232 136 184;
+}
+
+.theme-dark.solace-dusk .callout[data-callout="bug"] {
+    --callout-color: 232 136 184;
+}
+
+.theme-dark.solace-dusk .callout[data-callout="example"] {
+    --callout-color: 232 160 192;
+}
+
+.theme-dark.solace-dusk .callout[data-callout="quote"],
+.theme-dark.solace-dusk .callout[data-callout="cite"] {
+    --callout-color: 138 132 160;
+}
+
+.theme-dark.solace-dusk .callout[data-callout="abstract"],
+.theme-dark.solace-dusk .callout[data-callout="summary"] {
+    --callout-color: 138 132 160;
+}
+
+.theme-dark.solace-dusk .callout[data-callout="question"],
+.theme-dark.solace-dusk .callout[data-callout="help"],
+.theme-dark.solace-dusk .callout[data-callout="faq"] {
+    --callout-color: 139 116 208;
+}
+
+/* ── Solace Dusk: Frontmatter ───────────────────────────────── */
+
+.theme-dark.solace-dusk .frontmatter {
+    color: #8a84a0;
+}
+
+.theme-dark.solace-dusk .frontmatter .cm-keyword {
+    color: #ada6e0;
+}
+
+.theme-dark.solace-dusk .frontmatter .cm-string {
+    color: #dba8e0;
+}
+
+.theme-dark.solace-dusk .frontmatter .cm-number {
+    color: #ddb88c;
+}
+
+/* ── Solace Dusk: Canvas ────────────────────────────────────── */
+
+.theme-dark.solace-dusk .canvas-node {
+    background-color: #1e1b2b;
+    border-color: #282538;
+}
+
+.theme-dark.solace-dusk .canvas-node-label {
+    color: #d4cfe4;
+}
+
+/* ── Solace Dusk: Editor ────────────────────────────────────── */
+
+.theme-dark.solace-dusk .cm-s-obsidian .cm-content {
+    color: var(--text-normal);
+}
+
+.theme-dark.solace-dusk .cm-s-obsidian .cm-line {
+    color: var(--text-normal);
+}
+
+.theme-dark.solace-dusk .cm-s-obsidian .cm-heading {
+    color: #b89ef0;
+}
+
+.theme-dark.solace-dusk .cm-s-obsidian .cm-strong {
+    font-weight: 700;
+    color: #d4cfe4;
+}
+
+.theme-dark.solace-dusk .cm-s-obsidian .cm-em {
+    font-style: italic;
+    color: #d4cfe4;
+}
+
+.theme-dark.solace-dusk .cm-s-obsidian .cm-link {
+    color: #b89ef0;
+}
+
+.theme-dark.solace-dusk .cm-s-obsidian .cm-url {
+    color: #b89ef0;
+}
+
+.theme-dark.solace-dusk .cm-s-obsidian .cm-code {
+    background-color: #282538;
+    color: #b89ef0;
+}
+
+.theme-dark.solace-dusk .cm-s-obsidian .cm-strikethrough {
+    text-decoration: line-through;
+    color: #504a68;
+}
+
+/* ── Solace Dusk: CM panels ─────────────────────────────────── */
+
+.theme-dark.solace-dusk .cm-panels {
+    background-color: var(--background-secondary);
+    border-color: var(--background-modifier-border);
+}
+
+.theme-dark.solace-dusk .cm-panel {
+    background-color: var(--background-secondary);
+}
+
+.theme-dark.solace-dusk .cm-searchMatch {
+    background-color: var(--search-match-color);
+}
+
+.theme-dark.solace-dusk .cm-selectionBackground {
+    background-color: rgba(184, 158, 240, 0.19);
+}
+
+.theme-dark.solace-dusk .cm-activeLine {
+    background-color: #211e30;
+}
+
+.theme-dark.solace-dusk .cm-gutters {
+    background-color: var(--background-primary);
+    color: #504a68;
+    border-color: var(--background-modifier-border);
+}
+
+.theme-dark.solace-dusk .cm-activeLineGutter {
+    color: var(--interactive-accent);
+    background-color: #282538;
+}
+
+.theme-dark.solace-dusk .cm-lineNumbers .cm-gutterElement {
+    color: #504a68;
+    padding: 0 8px;
+}
+
+.theme-dark.solace-dusk .cm-cursor {
+    border-left-color: #b89ef0;
+}
+
+.theme-dark.solace-dusk .cm-matchingBracket {
+    background-color: rgba(184, 158, 240, 0.13);
+    color: #b89ef0 !important;
+}
+
+.theme-dark.solace-dusk .cm-foldPlaceholder {
+    background-color: #282538;
+    color: #504a68;
+    border-color: #282538;
+}
+
+.theme-dark.solace-dusk .cm-foldPlaceholder:hover {
+    background-color: #302d42;
+    color: #8a84a0;
+}
+
+/* ── Solace Dusk: Tab ───────────────────────────────────────── */
+
+.theme-dark.solace-dusk .tab {
+    background-color: var(--sidebar-tabs-background);
+    border-color: var(--background-modifier-border);
+}
+
+.theme-dark.solace-dusk .tab.active {
+    background-color: var(--tab-active-background);
+    border-bottom-color: var(--tab-active-border);
+}
+
+/* ── Solace Dusk: Sidebar ───────────────────────────────────── */
+
+.theme-dark.solace-dusk
+    .workspace-leaf-content[data-type="explorer"]
+    .nav-header,
+.theme-dark.solace-dusk
+    .workspace-leaf-content[data-type="file-explorer"]
+    .nav-header {
+    background-color: var(--background-primary);
+}
+
+.theme-dark.solace-dusk .nav-header {
+    border-color: var(--background-modifier-border);
+}
+
+.theme-dark.solace-dusk .nav-buttons-container {
+    border-color: var(--background-modifier-border);
+}
+
+/* ── Solace Dusk: Menu ──────────────────────────────────────── */
+
+.theme-dark.solace-dusk .menu {
+    background-color: var(--popover-background);
+    border-color: var(--popover-border-color);
+}
+
+.theme-dark.solace-dusk .menu-item:hover {
+    background-color: var(--interactive-hover);
+}
+
+/* ── Solace Dusk: Modal ─────────────────────────────────────── */
+
+.theme-dark.solace-dusk .modal {
+    background-color: var(--modal-background);
+    border-color: var(--modal-border-color);
+}
+
+.theme-dark.solace-dusk .modal .modal-close-button:hover {
+    color: var(--text-error);
+}
+
+/* ── Solace Dusk: Prompt ────────────────────────────────────── */
+
+.theme-dark.solace-dusk .prompt {
+    background-color: var(--prompt-background);
+    border-color: var(--prompt-border-color);
+}
+
+/* ── Solace Dusk: Input ─────────────────────────────────────── */
+
+.theme-dark.solace-dusk .input {
+    background-color: var(--background-modifier-form-field);
+    border-color: var(--background-modifier-border);
+}
+
+.theme-dark.solace-dusk .input:focus {
+    border-color: var(--interactive-accent);
+}
+
+/* ── Solace Dusk: Settings ──────────────────────────────────── */
+
+.theme-dark.solace-dusk .setting-item-info {
+    color: var(--text-normal);
+}
+
+.theme-dark.solace-dusk .setting-item-description {
+    color: var(--text-muted);
+}
+
+.theme-dark.solace-dusk .setting-item-name {
+    color: var(--text-normal);
+}
+
+.theme-dark.solace-dusk .setting-group-title {
+    color: var(--text-accent);
+    border-bottom-color: var(--background-modifier-border);
+}
+
+/* ── Solace Dusk: Buttons ───────────────────────────────────── */
+
+.theme-dark.solace-dusk .btn {
+    background-color: var(--interactive-normal);
+    border-color: var(--background-modifier-border);
+    color: var(--text-normal);
+}
+
+.theme-dark.solace-dusk .btn:hover {
+    background-color: var(--interactive-hover);
+    border-color: var(--interactive-accent);
+}
+
+.theme-dark.solace-dusk .btn-primary {
+    background-color: var(--interactive-accent);
+    color: var(--text-on-accent);
+    border-color: var(--interactive-accent);
+}
+
+.theme-dark.solace-dusk .btn-primary:hover {
+    background-color: var(--interactive-accent-hover);
+}
+
+/* ── Solace Dusk: Internal link ─────────────────────────────── */
+
+.theme-dark.solace-dusk .internal-link {
+    color: var(--text-accent);
+}
+
+.theme-dark.solace-dusk .internal-link:hover {
+    color: var(--text-accent-hover);
+}
+
+.theme-dark.solace-dusk .external-link {
+    color: var(--text-accent);
+}
+
+/* ── Solace Dusk: Tag ───────────────────────────────────────── */
+
+.theme-dark.solace-dusk .tag,
+.theme-dark.solace-dusk a.tag {
+    background-color: var(--tag-background);
+    color: var(--tag-color);
+    border-color: var(--tag-border-color);
+    padding: var(--tag-padding-y, 0.25em) var(--tag-padding-x, 0.65em);
+    line-height: 1;
+    overflow: visible;
+    vertical-align: baseline;
+}
+
+.theme-dark.solace-dusk .cm-hashtag {
+    background-color: var(--tag-background);
+    color: var(--tag-color);
+    border-color: var(--tag-border-color);
+    padding-top: var(--tag-padding-y, 0.25em);
+    padding-bottom: var(--tag-padding-y, 0.25em);
+    line-height: 1;
+    vertical-align: baseline;
+}
+
+.theme-dark.solace-dusk .cm-hashtag.cm-hashtag-begin {
+    border-start-start-radius: var(--tag-radius, 2em);
+    border-end-start-radius: var(--tag-radius, 2em);
+    border-inline-end: none;
+    border-inline-start: var(--tag-border-width, 0px) solid var(--tag-border-color);
+    padding-inline-start: var(--tag-padding-x, 0.65em);
+}
+
+.theme-dark.solace-dusk .cm-hashtag.cm-hashtag-end {
+    border-start-end-radius: var(--tag-radius, 2em);
+    border-end-end-radius: var(--tag-radius, 2em);
+    border-inline-start: none;
+    border-inline-end: var(--tag-border-width, 0px) solid var(--tag-border-color);
+    padding-inline-end: var(--tag-padding-x, 0.65em);
+}
+
+/* ── Solace Dusk: Tree items ────────────────────────────────── */
+
+.theme-dark.solace-dusk .tree-item-self:hover {
+    background-color: var(--interactive-hover);
+}
+
+.theme-dark.solace-dusk .tree-item-self.is-selected {
+    background-color: var(--interactive-accent);
+    color: var(--text-on-accent);
+}
+
+.theme-dark.solace-dusk .tree-item-self.is-selected .tree-item-inner {
+    color: var(--text-on-accent);
+}
+
+.theme-dark.solace-dusk .nav-folder-title {
+    color: var(--text-normal);
+}
+
+.theme-dark.solace-dusk .nav-file-title {
+    color: var(--text-normal);
+}
+
+/* ── Solace Dusk: Suggestion ────────────────────────────────── */
+
+.theme-dark.solace-dusk .suggestion-container .suggestion {
+    background-color: var(--background-primary);
+}
+
+.theme-dark.solace-dusk .suggestion-container .suggestion.is-selected {
+    background-color: var(--interactive-hover);
+}
+
+/* ── Solace Dusk: Prompt list ───────────────────────────────── */
+
+.theme-dark.solace-dusk .prompt-list {
+    background-color: var(--prompt-background);
+    border-color: var(--prompt-border-color);
+}
+
+.theme-dark.solace-dusk .suggestion-item {
+    background-color: var(--prompt-background);
+}
+
+.theme-dark.solace-dusk .suggestion-item.is-selected {
+    background-color: var(--interactive-hover);
+}
+
+.theme-dark.solace-dusk .suggestion-item-title {
+    color: var(--text-normal);
+}
+
+.theme-dark.solace-dusk .suggestion-item-description {
+    color: var(--text-muted);
+}
+
+/* ── Solace Dusk: Breadcrumbs ───────────────────────────────── */
+
+.theme-dark.solace-dusk .breadcrumb-container {
+    background-color: var(--background-primary);
+}
+
+.theme-dark.solace-dusk .breadcrumb-item {
+    color: var(--text-muted);
+}
+
+.theme-dark.solace-dusk .breadcrumb-item.active {
+    color: var(--text-normal);
+}
+
+.theme-dark.solace-dusk .breadcrumb-item:hover {
+    color: var(--text-accent);
+}
+
+/* ── Solace Dusk: Search ────────────────────────────────────── */
+
+.theme-dark.solace-dusk .search-dialog-container {
+    background-color: var(--modal-background);
+    border-color: var(--modal-border-color);
+}
+
+.theme-dark.solace-dusk .search-input {
+    background-color: var(--background-modifier-form-field);
+    border-color: var(--background-modifier-border);
+}
+
+.theme-dark.solace-dusk .search-input:focus {
+    border-color: var(--interactive-accent);
+}
+
+/* ── Solace Dusk: Hotkeys ───────────────────────────────────── */
+
+.theme-dark.solace-dusk .setting-hotkey {
+    background-color: var(--interactive-normal);
+    color: var(--text-normal);
+}
+
+.theme-dark.solace-dusk .setting-hotkey:hover {
+    background-color: var(--interactive-hover);
+}
+
+/* ── Solace Dusk: Tag pane ──────────────────────────────────── */
+
+.theme-dark.solace-dusk .tag-pane .tag {
+    background-color: var(--tag-background);
+    color: var(--tag-color);
+}
+
+/* ── Solace Dusk: Plugin browser markdown ───────────────────── */
+
+.theme-dark.solace-dusk .plugin-browser-container .markdown-preview-view {
+    background-color: var(--background-primary);
+}
+
+.theme-dark.solace-dusk .plugin-browser-container .markdown-preview-view h1,
+.theme-dark.solace-dusk .plugin-browser-container .markdown-preview-view h2,
+.theme-dark.solace-dusk .plugin-browser-container .markdown-preview-view h3 {
+    color: var(--text-normal);
+}
+
+.theme-dark.solace-dusk .plugin-browser-container .markdown-preview-view a {
+    color: var(--text-accent);
+}
+
+.theme-dark.solace-dusk .plugin-browser-container .markdown-preview-view code {
+    color: var(--text-accent);
+    background-color: var(--background-secondary);
+}
+
+.theme-dark.solace-dusk .plugin-browser-container .markdown-preview-view pre {
+    background-color: var(--background-secondary);
+    border-color: var(--background-modifier-border);
+}
+
+.theme-dark.solace-dusk
+    .plugin-browser-container
+    .markdown-preview-view
+    blockquote {
+    border-left-color: var(--interactive-accent);
+    color: var(--text-muted);
+}
+
+.theme-dark.solace-dusk
+    .plugin-browser-container
+    .markdown-preview-view
+    strong {
+    color: var(--text-normal);
+}
+
+.theme-dark.solace-dusk .plugin-browser-container .markdown-preview-view em {
+    color: var(--text-muted);
+}
+
+.theme-dark.solace-dusk
+    .plugin-browser-container
+    .markdown-preview-view
+    ul
+    li::before {
+    color: var(--text-accent);
+}
+
+.theme-dark.solace-dusk
+    .plugin-browser-container
+    .markdown-preview-view
+    ol
+    li::before {
+    color: var(--text-accent);
+}
+
+.theme-dark.solace-dusk .plugin-browser-container .markdown-preview-view hr {
+    border-color: var(--background-modifier-border);
+}
+
+.theme-dark.solace-dusk .plugin-browser-container .markdown-preview-view table {
+    border-color: var(--background-modifier-border);
+}
+
+.theme-dark.solace-dusk .plugin-browser-container .markdown-preview-view th {
+    background-color: var(--background-secondary);
+    border-color: var(--background-modifier-border);
+}
+
+.theme-dark.solace-dusk .plugin-browser-container .markdown-preview-view td {
+    border-color: var(--background-modifier-border);
+}
+
+/* ── Solace Dusk: Ribbon ────────────────────────────────────── */
+
+.theme-dark.solace-dusk .side-dock-ribbon {
+    background-color: var(--titlebar-background);
+}
+
+.theme-dark.solace-dusk .side-dock-ribbon-modicator {
+    background-color: var(--titlebar-background);
+}
+
+.theme-dark.solace-dusk .side-dock-ribbon-btn:hover {
+    background-color: var(--interactive-hover);
+}
+
+/* ── Solace Dusk: File explorer ─────────────────────────────── */
+
+.theme-dark.solace-dusk .nav-files-container {
+    background-color: var(--background-primary);
+}
+
+/* ── Solace Dusk: Split view ────────────────────────────────── */
+
+.theme-dark.solace-dusk .workspace-split {
+    background-color: var(--background-primary);
+}
+
+.theme-dark.solace-dusk .workspace-leaf {
+    background-color: var(--background-primary);
+}
+
+/* ──────────────────────────────────────────────────────────────
+   STYLE SETTINGS (solace-obsidian Style Settings config)
+   ────────────────────────────────────────────────────────────── */
+
+/*
+@settings
+
+name: Solace
+id: solace-obsidian
+description: "A minimal theme with violet undertones and pastel syntax."
+author: Bhavya Dang
+authorUrl: https://bhavyadang.in
+version: 1.0.0
+minimumVersion: 1.0.0
+
+settings:
+    -
+        id: solace-variant
+        title: Theme Variant
+        type: class-select
+        allowEmpty: false
+        default: solace-dark
+        description: "Switch between Dark, Light, and Dusk."
+        options:
+            -
+                label: Dark
+                value: solace-dark
+            -
+                label: Light
+                value: solace-light
+            -
+                label: Dusk
+                value: solace-dusk
+
+    -
+        id: solace-font-family
+        title: Interface font
+        type: variable-text
+        default: '"Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif'
+    -
+        id: solace-font-text
+        title: Editor font
+        type: variable-text
+        default: '"JetBrains Mono", "Fira Code", "SF Mono", "Cascadia Code", "Source Code Pro", monospace'
+
+    -
+        id: solace-callout-style
+        title: Callout style
+        type: class-select
+        allowEmpty: false
+        default: callout-style-filled
+        options:
+            -
+                label: Filled
+                value: callout-style-filled
+            -
+                label: Outlined
+                value: callout-style-outlined
+            -
+                label: Minimal
+                value: callout-style-minimal
+
+*/
+
+/* ── Typography ─────────────────────────────────────────────── */
+
+.theme-dark,
+.theme-light {
+    --font-interface:
+        "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+        Arial, sans-serif;
+    --font-text:
+        "JetBrains Mono", "Fira Code", "SF Mono", "Cascadia Code",
+        "Source Code Pro", monospace;
+}
+
+.theme-dark .app-container,
+.theme-light .app-container,
+.theme-dark.solace-light .app-container,
+.theme-dark.solace-dusk .app-container {
+    font-family: var(--solace-font-family, var(--font-interface));
+}
+
+.theme-dark .cm-s-obsidian .cm-content,
+.theme-light .cm-s-obsidian .cm-content,
+.theme-dark.solace-light .cm-s-obsidian .cm-content,
+.theme-dark.solace-dusk .cm-s-obsidian .cm-content {
+    font-family: var(--solace-font-text, var(--font-text));
+}
+
+.theme-dark .markdown-preview-view code,
+.theme-dark .markdown-preview-view pre,
+.theme-light .markdown-preview-view code,
+.theme-light .markdown-preview-view pre,
+.theme-dark.solace-light .markdown-preview-view code,
+.theme-dark.solace-light .markdown-preview-view pre,
+.theme-dark.solace-dusk .markdown-preview-view code,
+.theme-dark.solace-dusk .markdown-preview-view pre {
+    font-family: var(--solace-font-text, var(--font-text));
+}
+
+/* ── Callout Base ────────────────────────────────────────────── */
+
+.callout {
+    --callout-icon: lucide-pencil;
+    border-left-color: rgb(var(--callout-color, 152 128 232));
+    border-left-width: var(--callout-border-width, 4px);
+    border-radius: var(--callout-radius, 8px);
+    padding: var(--callout-padding, 16px);
+    background-color: rgb(var(--callout-color, 152 128 232) / 0.08);
+}
+
+.callout-title {
+    font-weight: 600;
+    color: rgb(var(--callout-color, 152 128 232));
+}
+
+.callout-title .callout-icon {
+    color: rgb(var(--callout-color, 152 128 232));
+}
+
+/* Solace icons (default) */
+.callout[data-callout="note"] { --callout-icon: lucide-pencil; }
+.callout[data-callout="info"] { --callout-icon: lucide-info; }
+.callout[data-callout="todo"] { --callout-icon: lucide-circle-check; }
+.callout[data-callout="tip"],
+.callout[data-callout="hint"] { --callout-icon: lucide-lightbulb; }
+.callout[data-callout="important"] { --callout-icon: lucide-star; }
+.callout[data-callout="success"] { --callout-icon: lucide-check-circle-2; }
+.callout[data-callout="warning"],
+.callout[data-callout="caution"],
+.callout[data-callout="attention"] { --callout-icon: lucide-alert-triangle; }
+.callout[data-callout="danger"],
+.callout[data-callout="error"] { --callout-icon: lucide-x; }
+.callout[data-callout="failure"] { --callout-icon: lucide-x; }
+.callout[data-callout="bug"] { --callout-icon: lucide-bug; }
+.callout[data-callout="example"] { --callout-icon: lucide-list; }
+.callout[data-callout="quote"],
+.callout[data-callout="cite"] { --callout-icon: lucide-quote; }
+.callout[data-callout="abstract"],
+.callout[data-callout="summary"] { --callout-icon: lucide-clipboard-list; }
+.callout[data-callout="question"],
+.callout[data-callout="help"],
+.callout[data-callout="faq"] { --callout-icon: lucide-help-circle; }
+
+/* Callout style: Outlined */
+.theme-dark.callout-style-outlined .callout,
+.theme-light.callout-style-outlined .callout,
+.theme-dark.solace-light.callout-style-outlined .callout,
+.theme-dark.solace-dusk.callout-style-outlined .callout {
+    background-color: transparent;
+    border: 1px solid rgb(var(--callout-color, 152 128 232) / 0.25);
+    border-left: 4px solid rgb(var(--callout-color, 152 128 232));
+    border-radius: var(--callout-radius, 8px);
+}
+
+.theme-dark.callout-style-outlined .callout .callout-title,
+.theme-light.callout-style-outlined .callout .callout-title,
+.theme-dark.solace-light.callout-style-outlined .callout .callout-title,
+.theme-dark.solace-dusk.callout-style-outlined .callout .callout-title {
+    background-color: rgb(var(--callout-color, 152 128 232) / 0.08);
+    margin: 0 0 8px 0;
+    padding: 8px 16px;
+    border-radius: var(--callout-radius, 8px) var(--callout-radius, 8px) 0 0;
+}
+
+.theme-dark.callout-style-outlined .callout .callout-content,
+.theme-light.callout-style-outlined .callout .callout-content,
+.theme-dark.solace-light.callout-style-outlined .callout .callout-content,
+.theme-dark.solace-dusk.callout-style-outlined .callout .callout-content {
+    padding: 0 16px 16px 16px;
+}
+
+/* Callout style: Minimal */
+.theme-dark.callout-style-minimal .callout,
+.theme-light.callout-style-minimal .callout,
+.theme-dark.solace-light.callout-style-minimal .callout,
+.theme-dark.solace-dusk.callout-style-minimal .callout {
+    background-color: rgb(var(--callout-color, 152 128 232) / 0.06);
+    border: none;
+    border-left: 3px solid rgb(var(--callout-color, 152 128 232));
+    border-radius: 0;
+    padding: 8px 16px;
+}
+
+/* ══════════════════════════════════════════════════════════════
+   FULL THEME CSS — All missing sections
+   ══════════════════════════════════════════════════════════════ */
+
+/* ── Notices / Toasts ───────────────────────────────────────── */
+
+.theme-dark .notice,
+.theme-light .notice,
+.theme-dark.solace-light .notice,
+.theme-dark.solace-dusk .notice {
+    border-radius: 8px;
+    padding: 12px 16px;
+    border: 1px solid var(--background-modifier-border);
+    box-shadow: var(--shadow-l);
+}
+
+.theme-dark .notice,
+.theme-dark.solace-dusk .notice {
+    background-color: #1b1827;
+    color: var(--text-normal);
+}
+
+.theme-light .notice,
+.theme-dark.solace-light .notice {
+    background-color: #f0ecf8;
+    color: var(--text-normal);
+}
+
+/* Notice: Info */
+.theme-dark .notice-info,
+.theme-dark.solace-dusk .notice-info {
+    background-color: rgba(201, 168, 255, 0.09);
+    border-left: 3px solid #c9a8ff;
+}
+
+.theme-light .notice-info,
+.theme-dark.solace-light .notice-info {
+    background-color: rgba(138, 99, 210, 0.09);
+    border-left: 3px solid #8a63d2;
+}
+
+/* Notice: Success */
+.theme-dark .notice-success,
+.theme-dark.solace-dusk .notice-success {
+    background-color: rgba(168, 255, 236, 0.09);
+    border-left: 3px solid #a8ffec;
+}
+
+.theme-light .notice-success,
+.theme-dark.solace-light .notice-success {
+    background-color: rgba(63, 154, 133, 0.12);
+    border-left: 3px solid #3f9a85;
+}
+
+/* Notice: Warning */
+.theme-dark .notice-warning,
+.theme-dark.solace-dusk .notice-warning {
+    background-color: rgba(255, 214, 102, 0.09);
+    border-left: 3px solid #ffd666;
+}
+
+.theme-light .notice-warning,
+.theme-dark.solace-light .notice-warning {
+    background-color: rgba(192, 122, 44, 0.12);
+    border-left: 3px solid #c07a2c;
+}
+
+/* Notice: Error */
+.theme-dark .notice-error,
+.theme-dark.solace-dusk .notice-error {
+    background-color: rgba(255, 128, 200, 0.08);
+    border-left: 3px solid #ff80c8;
+}
+
+.theme-light .notice-error,
+.theme-dark.solace-light .notice-error {
+    background-color: rgba(211, 91, 147, 0.12);
+    border-left: 3px solid #d35b93;
+}
+
+/* ── Progress Bars ──────────────────────────────────────────── */
+
+.theme-dark .progress-bar,
+.theme-light .progress-bar,
+.theme-dark.solace-light .progress-bar,
+.theme-dark.solace-dusk .progress-bar {
+    height: 4px;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.theme-dark .progress-bar,
+.theme-dark.solace-dusk .progress-bar {
+    background-color: #231f30;
+}
+
+.theme-light .progress-bar,
+.theme-dark.solace-light .progress-bar {
+    background-color: #d8d0e6;
+}
+
+.theme-dark .progress-bar-indicator,
+.theme-dark.solace-dusk .progress-bar-indicator {
+    background-color: #c9a8ff;
+}
+
+.theme-light .progress-bar-indicator,
+.theme-dark.solace-light .progress-bar-indicator {
+    background-color: #8a63d2;
+}
+
+/* ── Context Menus ──────────────────────────────────────────── */
+
+.theme-dark .context-menu,
+.theme-dark.solace-dusk .context-menu {
+    background-color: #1b1827;
+    border-color: #231f30;
+    border-radius: 8px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.4);
+}
+
+.theme-light .context-menu,
+.theme-dark.solace-light .context-menu {
+    background-color: #f0ecf8;
+    border-color: #d8d0e6;
+    border-radius: 8px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);
+}
+
+.theme-dark .context-menu-item,
+.theme-dark.solace-dusk .context-menu-item {
+    color: #f1eef8;
+}
+
+.theme-dark .context-menu-item:hover,
+.theme-dark.solace-dusk .context-menu-item:hover {
+    background-color: #231f30;
+}
+
+.theme-dark .context-menu-item.selected,
+.theme-dark.solace-dusk .context-menu-item.selected {
+    background-color: #c9a8ff20;
+}
+
+.theme-light .context-menu-item,
+.theme-dark.solace-light .context-menu-item {
+    color: #2c2638;
+}
+
+.theme-light .context-menu-item:hover,
+.theme-dark.solace-light .context-menu-item:hover {
+    background-color: #e8e0f2;
+}
+
+.theme-light .context-menu-item.selected,
+.theme-dark.solace-light .context-menu-item.selected {
+    background-color: #8a63d220;
+}
+
+.theme-dark .context-menu-separator,
+.theme-dark.solace-dusk .context-menu-separator {
+    border-color: #231f30;
+}
+
+.theme-light .context-menu-separator,
+.theme-dark.solace-light .context-menu-separator {
+    border-color: #d8d0e6;
+}
+
+.theme-dark .context-menu-item-icon,
+.theme-dark.solace-dusk .context-menu-item-icon {
+    color: #a09ab8;
+}
+
+.theme-light .context-menu-item-icon,
+.theme-dark.solace-light .context-menu-item-icon {
+    color: #736c86;
+}
+
+.theme-dark .context-menu-item-shortcut,
+.theme-dark.solace-dusk .context-menu-item-shortcut {
+    color: #504a68;
+}
+
+.theme-light .context-menu-item-shortcut,
+.theme-dark.solace-light .context-menu-item-shortcut {
+    color: #9a94aa;
+}
+
+/* ── Popover Menus ──────────────────────────────────────────── */
+
+.theme-dark .popover,
+.theme-dark.solace-dusk .popover {
+    background-color: #1b1827;
+    border-color: #231f30;
+    border-radius: 8px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.4);
+}
+
+.theme-light .popover,
+.theme-dark.solace-light .popover {
+    background-color: #f0ecf8;
+    border-color: #d8d0e6;
+    border-radius: 8px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);
+}
+
+.theme-dark .popover-content,
+.theme-dark.solace-dusk .popover-content {
+    background-color: #1b1827;
+}
+
+.theme-light .popover-content,
+.theme-dark.solace-light .popover-content {
+    background-color: #f0ecf8;
+}
+
+.theme-dark .popover .menu,
+.theme-dark.solace-dusk .popover .menu {
+    background-color: transparent;
+    border: none;
+}
+
+.theme-light .popover .menu,
+.theme-dark.solace-light .popover .menu {
+    background-color: transparent;
+    border: none;
+}
+
+/* ── Suggest Popup ──────────────────────────────────────────── */
+
+.theme-dark .suggest-popup,
+.theme-dark.solace-dusk .suggest-popup {
+    background-color: #1b1827;
+    border-color: #231f30;
+    border-radius: 8px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.4);
+}
+
+.theme-light .suggest-popup,
+.theme-dark.solace-light .suggest-popup {
+    background-color: #f0ecf8;
+    border-color: #d8d0e6;
+    border-radius: 8px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);
+}
+
+.theme-dark .suggest-title,
+.theme-dark.solace-dusk .suggest-title {
+    color: #a09ab8;
+    border-bottom-color: #231f30;
+}
+
+.theme-light .suggest-title,
+.theme-dark.solace-light .suggest-title {
+    color: #736c86;
+    border-bottom-color: #d8d0e6;
+}
+
+.theme-dark .suggest-item,
+.theme-dark.solace-dusk .suggest-item {
+    color: #f1eef8;
+}
+
+.theme-dark .suggest-item:hover,
+.theme-dark.solace-dusk .suggest-item:hover {
+    background-color: #231f30;
+}
+
+.theme-dark .suggest-item.selected,
+.theme-dark.solace-dusk .suggest-item.selected {
+    background-color: #c9a8ff20;
+    color: #f1eef8;
+}
+
+.theme-light .suggest-item,
+.theme-dark.solace-light .suggest-item {
+    color: #2c2638;
+}
+
+.theme-light .suggest-item:hover,
+.theme-dark.solace-light .suggest-item:hover {
+    background-color: #e8e0f2;
+}
+
+.theme-light .suggest-item.selected,
+.theme-dark.solace-light .suggest-item.selected {
+    background-color: #8a63d220;
+    color: #2c2638;
+}
+
+/* ── Workspace Tab Headers ──────────────────────────────────── */
+
+.theme-dark .workspace-tab-header,
+.theme-dark.solace-dusk .workspace-tab-header {
+    color: #a09ab8;
+}
+
+.theme-dark .workspace-tab-header:not(.is-active):hover,
+.theme-dark.solace-dusk .workspace-tab-header:not(.is-active):hover {
+    background-color: #231f30;
+}
+
+.theme-dark .workspace-tab-header.is-active,
+.theme-dark.solace-dusk .workspace-tab-header.is-active {
+    color: #f1eef8;
+}
+
+.theme-light .workspace-tab-header,
+.theme-dark.solace-light .workspace-tab-header {
+    color: #736c86;
+}
+
+.theme-light .workspace-tab-header:not(.is-active):hover,
+.theme-dark.solace-light .workspace-tab-header:not(.is-active):hover {
+    background-color: #e8e0f2;
+}
+
+.theme-light .workspace-tab-header.is-active,
+.theme-dark.solace-light .workspace-tab-header.is-active {
+    color: #2c2638;
+}
+
+.theme-dark .workspace-tab-header .workspace-tab-close,
+.theme-dark.solace-dusk .workspace-tab-header .workspace-tab-close {
+    color: #504a68;
+}
+
+.theme-dark .workspace-tab-header .workspace-tab-close:hover,
+.theme-dark.solace-dusk .workspace-tab-header .workspace-tab-close:hover {
+    color: #ff80c8;
+    background-color: #ff80c818;
+}
+
+.theme-light .workspace-tab-header .workspace-tab-close,
+.theme-dark.solace-light .workspace-tab-header .workspace-tab-close {
+    color: #9a94aa;
+}
+
+.theme-light .workspace-tab-header .workspace-tab-close:hover,
+.theme-dark.solace-light .workspace-tab-header .workspace-tab-close:hover {
+    color: #d35b93;
+    background-color: #d35b9318;
+}
+
+.theme-dark .workspace-tab-header-container,
+.theme-dark.solace-dusk .workspace-tab-header-container {
+    border-bottom-color: #1e1b2e;
+}
+
+.theme-light .workspace-tab-header-container,
+.theme-dark.solace-light .workspace-tab-header-container {
+    border-bottom-color: #d8d0e6;
+}
+
+.theme-dark .workspace-tab-header-tooltip,
+.theme-dark.solace-dusk .workspace-tab-header-tooltip {
+    background-color: #231f30;
+    color: #f1eef8;
+    border-color: #2a2540;
+}
+
+.theme-light .workspace-tab-header-tooltip,
+.theme-dark.solace-light .workspace-tab-header-tooltip {
+    background-color: #e8e0f2;
+    color: #2c2638;
+    border-color: #d8d0e6;
+}
+
+/* ── Workspace Split Dividers ───────────────────────────────── */
+
+.theme-dark .workspace-split-divider,
+.theme-dark.solace-dusk .workspace-split-divider {
+    background-color: #1e1b2e;
+}
+
+.theme-light .workspace-split-divider,
+.theme-dark.solace-light .workspace-split-divider {
+    background-color: #d8d0e6;
+}
+
+.theme-dark .workspace-split-divider:hover,
+.theme-dark.solace-dusk .workspace-split-divider:hover {
+    background-color: #c9a8ff;
+}
+
+.theme-light .workspace-split-divider:hover,
+.theme-dark.solace-light .workspace-split-divider:hover {
+    background-color: #8a63d2;
+}
+
+.theme-dark .workspace-split-divider.dragging,
+.theme-dark.solace-dusk .workspace-split-divider.dragging {
+    background-color: #c9a8ff;
+}
+
+.theme-light .workspace-split-divider.dragging,
+.theme-dark.solace-light .workspace-split-divider.dragging {
+    background-color: #8a63d2;
+}
+
+/* ── Tab Stacks ─────────────────────────────────────────────── */
+
+.theme-dark .tab-stack,
+.theme-dark.solace-dusk .tab-stack {
+    border-color: #1e1b2e;
+}
+
+.theme-light .tab-stack,
+.theme-dark.solace-light .tab-stack {
+    border-color: #d8d0e6;
+}
+
+/* ── Inline Title ───────────────────────────────────────────── */
+
+.theme-dark .inline-title,
+.theme-dark.solace-dusk .inline-title {
+    color: var(--inline-title-color) !important;
+    font-weight: 700;
+    border-bottom: 2px solid #231f30;
+    padding-bottom: 4px;
+}
+
+.theme-light .inline-title,
+.theme-dark.solace-light .inline-title {
+    color: var(--inline-title-color) !important;
+    font-weight: 700;
+    border-bottom: 2px solid #e5ddf3;
+    padding-bottom: 4px;
+}
+
+.theme-dark .inline-title:hover,
+.theme-dark.solace-dusk .inline-title:hover {
+    border-bottom-color: #c9a8ff;
+}
+
+.theme-light .inline-title:hover,
+.theme-dark.solace-light .inline-title:hover {
+    border-bottom-color: #8a63d2;
+}
+
+.theme-dark .inline-title:empty,
+.theme-dark.solace-dusk .inline-title:empty {
+    border-bottom-color: #1e1b2e;
+}
+
+.theme-light .inline-title:empty,
+.theme-dark.solace-light .inline-title:empty {
+    border-bottom-color: #e5ddf3;
+}
+
+/* ── Reading View ───────────────────────────────────────────── */
+
+.theme-dark .markdown-preview-view .markdown-preview-section,
+.theme-light .markdown-preview-view .markdown-preview-section,
+.theme-dark.solace-light .markdown-preview-view .markdown-preview-section,
+.theme-dark.solace-dusk .markdown-preview-view .markdown-preview-section {
+    padding-top: 24px;
+    padding-bottom: 48px;
+    line-height: 1.7;
+}
+
+/* ── Properties / Frontmatter ───────────────────────────────── */
+
+.theme-dark .metadata-container,
+.theme-dark.solace-dusk .metadata-container {
+    background-color: #1b1827;
+    border: 1px solid #231f30;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    padding: 12px 16px;
+}
+
+.theme-light .metadata-container,
+.theme-dark.solace-light .metadata-container {
+    background-color: #ece7f6;
+    border: 1px solid #d8d0e6;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    padding: 12px 16px;
+}
+
+.theme-dark .metadata-row,
+.theme-dark.solace-dusk .metadata-row {
+    border-bottom-color: #231f30;
+}
+
+.theme-light .metadata-row,
+.theme-dark.solace-light .metadata-row {
+    border-bottom-color: #d8d0e6;
+}
+
+.theme-dark .metadata-key,
+.theme-dark.solace-dusk .metadata-key {
+    color: #a09ab8;
+    font-weight: 500;
+}
+
+.theme-light .metadata-key,
+.theme-dark.solace-light .metadata-key {
+    color: #736c86;
+    font-weight: 500;
+}
+
+.theme-dark .metadata-value,
+.theme-dark.solace-dusk .metadata-value {
+    color: #f1eef8;
+}
+
+.theme-light .metadata-value,
+.theme-dark.solace-light .metadata-value {
+    color: #2c2638;
+}
+
+.theme-dark .metadata-input,
+.theme-dark.solace-dusk .metadata-input {
+    background-color: #1d1a2b;
+    border-color: #231f30;
+    color: #f1eef8;
+}
+
+.theme-light .metadata-input,
+.theme-dark.solace-light .metadata-input {
+    background-color: #e7e0f1;
+    border-color: #d8d0e6;
+    color: #2c2638;
+}
+
+.theme-dark .metadata-input:focus,
+.theme-dark.solace-dusk .metadata-input:focus,
+.theme-light .metadata-input:focus,
+.theme-dark.solace-light .metadata-input:focus {
+    border-color: var(--interactive-accent);
+}
+
+.theme-dark .metadata-add-field,
+.theme-dark.solace-dusk .metadata-add-field {
+    color: #504a68;
+}
+
+.theme-light .metadata-add-field,
+.theme-dark.solace-light .metadata-add-field {
+    color: #9a94aa;
+}
+
+.theme-dark .metadata-add-field:hover,
+.theme-dark.solace-dusk .metadata-add-field:hover {
+    color: #c9a8ff;
+}
+
+.theme-light .metadata-add-field:hover,
+.theme-dark.solace-light .metadata-add-field:hover {
+    color: #8a63d2;
+}
+
+/* Frontmatter in reading view */
+
+.theme-dark .markdown-preview-view .frontmatter,
+.theme-dark.solace-dusk .markdown-preview-view .frontmatter {
+    background-color: #1b1827;
+    border: 1px solid #231f30;
+    border-radius: 8px;
+    padding: 12px 16px;
+    margin-bottom: 16px;
+}
+
+.theme-light .markdown-preview-view .frontmatter,
+.theme-dark.solace-light .markdown-preview-view .frontmatter {
+    background-color: #ece7f6;
+    border: 1px solid #d8d0e6;
+    border-radius: 8px;
+    padding: 12px 16px;
+    margin-bottom: 16px;
+}
+
+/* ── Tables ──────────────────────────────────────────────────── */
+
+.theme-dark {
+    --table-background: transparent;
+    --table-border-width: 1px;
+    --table-border-color: var(--background-modifier-border);
+    --table-header-background: var(--background-secondary);
+    --table-header-border-width: var(--table-border-width);
+    --table-header-border-color: var(--table-border-color);
+    --table-header-color: var(--text-accent);
+    --table-header-weight: 600;
+    --table-cell-padding: 8px 12px;
+    --table-row-alt-background: var(--background-secondary);
+    --table-row-background-hover: var(--background-modifier-hover);
+}
+
+.theme-light,
+.theme-dark.solace-light {
+    --table-background: transparent;
+    --table-border-width: 1px;
+    --table-border-color: var(--background-modifier-border);
+    --table-header-background: var(--background-secondary);
+    --table-header-border-width: var(--table-border-width);
+    --table-header-border-color: var(--table-border-color);
+    --table-header-color: var(--text-accent);
+    --table-header-weight: 600;
+    --table-cell-padding: 8px 12px;
+    --table-row-alt-background: var(--background-secondary);
+    --table-row-background-hover: var(--background-modifier-hover);
+}
+
+.theme-dark.solace-dusk {
+    --table-background: transparent;
+    --table-border-width: 1px;
+    --table-border-color: var(--background-modifier-border);
+    --table-header-background: var(--background-secondary);
+    --table-header-border-width: var(--table-border-width);
+    --table-header-border-color: var(--table-border-color);
+    --table-header-color: var(--text-accent);
+    --table-header-weight: 600;
+    --table-cell-padding: 8px 12px;
+    --table-row-alt-background: var(--background-secondary);
+    --table-row-background-hover: var(--background-modifier-hover);
+}
+
+.markdown-preview-view table,
+.markdown-source-view.mod-cm6 table {
+    border: var(--table-border-width) solid var(--table-border-color);
+    border-collapse: collapse;
+}
+
+.markdown-preview-view th,
+.markdown-source-view.mod-cm6 th {
+    background-color: var(--table-header-background);
+    color: var(--table-header-color);
+    font-weight: var(--table-header-weight);
+    border-bottom-width: var(--table-header-border-width);
+    border-bottom-color: var(--table-header-border-color);
+}
+
+.markdown-preview-view td,
+.markdown-preview-view th,
+.markdown-source-view.mod-cm6 td,
+.markdown-source-view.mod-cm6 th {
+    padding: var(--table-cell-padding);
+    border-color: var(--table-border-color);
+}
+
+.markdown-preview-view tr:nth-child(even),
+.markdown-source-view.mod-cm6 tr:nth-child(even) {
+    background-color: var(--table-row-alt-background);
+}
+
+.markdown-preview-view tr:hover,
+.markdown-source-view.mod-cm6 tr:hover {
+    background-color: var(--table-row-background-hover);
+}
+
+/* ── Task List Checkboxes (source mode) ─────────────────────── */
+
+.theme-dark .markdown-source-view .task-list-item-checkbox,
+.theme-dark.solace-dusk .markdown-source-view .task-list-item-checkbox {
+    border-color: #504a68;
+    background-color: transparent;
+}
+
+.theme-dark .markdown-source-view .task-list-item-checkbox:hover,
+.theme-dark.solace-dusk .markdown-source-view .task-list-item-checkbox:hover {
+    border-color: #c9a8ff;
+}
+
+.theme-dark .markdown-source-view .task-list-item-checkbox:checked,
+.theme-dark.solace-dusk .markdown-source-view .task-list-item-checkbox:checked {
+    background-color: #c9a8ff;
+    border-color: #c9a8ff;
+}
+
+.theme-dark .markdown-source-view .task-list-item-checkbox:focus,
+.theme-dark.solace-dusk .markdown-source-view .task-list-item-checkbox:focus {
+    box-shadow: 0 0 0 2px #c9a8ff40;
+}
+
+/* Source mode — task lists (halfway) */
+.theme-dark .markdown-source-view input[data-task="/"]:checked,
+.theme-dark.solace-dusk .markdown-source-view input[data-task="/"]:checked {
+    --checkbox-marker-color: transparent;
+    background-color: transparent;
+    border-color: var(--checkbox-color-halfway);
+    position: relative;
+    overflow: hidden;
+}
+
+.theme-dark .markdown-source-view input[data-task="/"]:checked::after,
+.theme-dark.solace-dusk
+    .markdown-source-view
+    input[data-task="/"]:checked::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color: var(--checkbox-color-halfway);
+    -webkit-mask-image: none;
+}
+
+/* Source mode — task lists (question) */
+.theme-dark .markdown-source-view input[data-task="?"]:checked,
+.theme-dark.solace-dusk .markdown-source-view input[data-task="?"]:checked {
+    --checkbox-marker-color: transparent;
+    background-color: #c9a8ff;
+    border-color: #c9a8ff;
+    position: relative;
+}
+
+.theme-dark .markdown-source-view input[data-task="?"]:checked::before,
+.theme-dark.solace-dusk .markdown-source-view input[data-task="?"]:checked::before {
+    content: "?";
+    -webkit-mask-image: none;
+    background-color: transparent;
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #16141f;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+/* Source mode — task lists (canceled) */
+.theme-dark .markdown-source-view input[data-task="-"]:checked,
+.theme-dark.solace-dusk .markdown-source-view input[data-task="-"]:checked {
+    --checkbox-marker-color: transparent;
+    background-color: #ff7369;
+    border-color: #ff7369;
+    position: relative;
+}
+
+.theme-dark .markdown-source-view input[data-task="-"]:checked::before,
+.theme-dark.solace-dusk .markdown-source-view input[data-task="-"]:checked::before {
+    content: "−";
+    -webkit-mask-image: none;
+    background-color: transparent;
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000000;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.theme-dark .markdown-source-view li[data-task="-"],
+.theme-dark.solace-dusk .markdown-source-view li[data-task="-"] {
+    text-decoration: line-through;
+    color: #504a68;
+}
+
+.theme-light .markdown-source-view .task-list-item-checkbox,
+.theme-dark.solace-light .markdown-source-view .task-list-item-checkbox {
+    border-color: #9a94aa;
+    background-color: transparent;
+}
+
+.theme-light .markdown-source-view .task-list-item-checkbox:hover,
+.theme-dark.solace-light .markdown-source-view .task-list-item-checkbox:hover {
+    border-color: #8a63d2;
+}
+
+.theme-light .markdown-source-view .task-list-item-checkbox:checked,
+.theme-dark.solace-light
+    .markdown-source-view
+    .task-list-item-checkbox:checked {
+    background-color: #8a63d2;
+    border-color: #8a63d2;
+}
+
+.theme-light .markdown-source-view .task-list-item-checkbox:focus,
+.theme-dark.solace-light .markdown-source-view .task-list-item-checkbox:focus {
+    box-shadow: 0 0 0 2px #8a63d240;
+}
+
+/* Source mode — task lists (halfway) */
+.theme-light .markdown-source-view input[data-task="/"]:checked,
+.theme-dark.solace-light .markdown-source-view input[data-task="/"]:checked {
+    --checkbox-marker-color: transparent;
+    background-color: transparent;
+    border-color: var(--checkbox-color-halfway);
+    position: relative;
+    overflow: hidden;
+}
+
+.theme-light .markdown-source-view input[data-task="/"]:checked::after,
+.theme-dark.solace-light
+    .markdown-source-view
+    input[data-task="/"]:checked::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color: var(--checkbox-color-halfway);
+    -webkit-mask-image: none;
+}
+
+/* Source mode — task lists (question) */
+.theme-light .markdown-source-view input[data-task="?"]:checked,
+.theme-dark.solace-light .markdown-source-view input[data-task="?"]:checked {
+    --checkbox-marker-color: transparent;
+    background-color: #8a63d2;
+    border-color: #8a63d2;
+    position: relative;
+}
+
+.theme-light .markdown-source-view input[data-task="?"]:checked::before,
+.theme-dark.solace-light .markdown-source-view input[data-task="?"]:checked::before {
+    content: "?";
+    -webkit-mask-image: none;
+    background-color: transparent;
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f6f3fc;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+/* Source mode — task lists (canceled) */
+.theme-light .markdown-source-view input[data-task="-"]:checked,
+.theme-dark.solace-light .markdown-source-view input[data-task="-"]:checked {
+    --checkbox-marker-color: transparent;
+    background-color: #fa4c4c;
+    border-color: #fa4c4c;
+    position: relative;
+}
+
+.theme-light .markdown-source-view input[data-task="-"]:checked::before,
+.theme-dark.solace-light .markdown-source-view input[data-task="-"]:checked::before {
+    content: "−";
+    -webkit-mask-image: none;
+    background-color: transparent;
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000000;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.theme-light .markdown-source-view li[data-task="-"],
+.theme-dark.solace-light .markdown-source-view li[data-task="-"] {
+    text-decoration: line-through;
+    color: #9a94aa;
+}
+
+.theme-dark .task-list-item-checkbox,
+.theme-dark.solace-dusk .task-list-item-checkbox {
+    border-color: #504a68;
+}
+
+.theme-dark .task-list-item-checkbox:hover,
+.theme-dark.solace-dusk .task-list-item-checkbox:hover {
+    border-color: #c9a8ff;
+}
+
+.theme-dark .task-list-item-checkbox:checked,
+.theme-dark.solace-dusk .task-list-item-checkbox:checked {
+    background-color: #c9a8ff;
+    border-color: #c9a8ff;
+}
+
+/* General — task lists (halfway) */
+.theme-dark input[data-task="/"]:checked,
+.theme-dark.solace-dusk input[data-task="/"]:checked {
+    --checkbox-marker-color: transparent;
+    background-color: transparent;
+    border-color: var(--checkbox-color-halfway);
+    position: relative;
+    overflow: hidden;
+}
+
+.theme-dark input[data-task="/"]:checked::after,
+.theme-dark.solace-dusk input[data-task="/"]:checked::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color: var(--checkbox-color-halfway);
+    -webkit-mask-image: none;
+}
+
+/* General — task lists (question) */
+.theme-dark input[data-task="?"]:checked,
+.theme-dark.solace-dusk input[data-task="?"]:checked {
+    --checkbox-marker-color: transparent;
+    background-color: #c9a8ff;
+    border-color: #c9a8ff;
+    position: relative;
+}
+
+.theme-dark input[data-task="?"]:checked::before,
+.theme-dark.solace-dusk input[data-task="?"]:checked::before {
+    content: "?";
+    -webkit-mask-image: none;
+    background-color: transparent;
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #16141f;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+/* General — task lists (canceled) */
+.theme-dark input[data-task="-"]:checked,
+.theme-dark.solace-dusk input[data-task="-"]:checked {
+    --checkbox-marker-color: transparent;
+    background-color: #ff7369;
+    border-color: #ff7369;
+    position: relative;
+}
+
+.theme-dark input[data-task="-"]:checked::before,
+.theme-dark.solace-dusk input[data-task="-"]:checked::before {
+    content: "−";
+    -webkit-mask-image: none;
+    background-color: transparent;
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000000;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.theme-dark li[data-task="-"],
+.theme-dark.solace-dusk li[data-task="-"] {
+    text-decoration: line-through;
+    color: #504a68;
+}
+
+.theme-light .task-list-item-checkbox,
+.theme-dark.solace-light .task-list-item-checkbox {
+    border-color: #9a94aa;
+}
+
+.theme-light .task-list-item-checkbox:hover,
+.theme-dark.solace-light .task-list-item-checkbox:hover {
+    border-color: #8a63d2;
+}
+
+.theme-light .task-list-item-checkbox:checked,
+.theme-dark.solace-light .task-list-item-checkbox:checked {
+    background-color: #8a63d2;
+    border-color: #8a63d2;
+}
+
+/* General — task lists (halfway) */
+.theme-light input[data-task="/"]:checked,
+.theme-dark.solace-light input[data-task="/"]:checked {
+    --checkbox-marker-color: transparent;
+    background-color: transparent;
+    border-color: var(--checkbox-color-halfway);
+    position: relative;
+    overflow: hidden;
+}
+
+.theme-light input[data-task="/"]:checked::after,
+.theme-dark.solace-light input[data-task="/"]:checked::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color: var(--checkbox-color-halfway);
+    -webkit-mask-image: none;
+}
+
+/* General — task lists (question) */
+.theme-light input[data-task="?"]:checked,
+.theme-dark.solace-light input[data-task="?"]:checked {
+    --checkbox-marker-color: transparent;
+    background-color: #8a63d2;
+    border-color: #8a63d2;
+    position: relative;
+}
+
+.theme-light input[data-task="?"]:checked::before,
+.theme-dark.solace-light input[data-task="?"]:checked::before {
+    content: "?";
+    -webkit-mask-image: none;
+    background-color: transparent;
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f6f3fc;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+/* General — task lists (canceled) */
+.theme-light input[data-task="-"]:checked,
+.theme-dark.solace-light input[data-task="-"]:checked {
+    --checkbox-marker-color: transparent;
+    background-color: #fa4c4c;
+    border-color: #fa4c4c;
+    position: relative;
+}
+
+.theme-light input[data-task="-"]:checked::before,
+.theme-dark.solace-light input[data-task="-"]:checked::before {
+    content: "−";
+    -webkit-mask-image: none;
+    background-color: transparent;
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000000;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.theme-light li[data-task="-"],
+.theme-dark.solace-light li[data-task="-"] {
+    text-decoration: line-through;
+    color: #9a94aa;
+}
+
+/* ── Drag and Drop ──────────────────────────────────────────── */
+
+.theme-dark .drag-indicator,
+.theme-dark.solace-dusk .drag-indicator {
+    color: #c9a8ff;
+}
+
+.theme-light .drag-indicator,
+.theme-dark.solace-light .drag-indicator {
+    color: #8a63d2;
+}
+
+.theme-dark .drop-indicator,
+.theme-dark.solace-dusk .drop-indicator {
+    background-color: #c9a8ff;
+}
+
+.theme-light .drop-indicator,
+.theme-dark.solace-light .drop-indicator {
+    background-color: #8a63d2;
+}
+
+.theme-dark .is-being-dragged,
+.theme-dark.solace-dusk .is-being-dragged {
+    opacity: 0.5;
+}
+
+.theme-light .is-being-dragged,
+.theme-dark.solace-light .is-being-dragged {
+    opacity: 0.5;
+}
+
+.theme-dark .is-drop-target,
+.theme-dark.solace-dusk .is-drop-target {
+    background-color: #c9a8ff18;
+    border-color: #c9a8ff;
+}
+
+.theme-light .is-drop-target,
+.theme-dark.solace-light .is-drop-target {
+    background-color: #8a63d218;
+    border-color: #8a63d2;
+}
+
+/* ── Switcher (full) ────────────────────────────────────────── */
+
+.theme-dark .switcher,
+.theme-dark.solace-dusk .switcher {
+    background-color: #1b1827;
+}
+
+.theme-light .switcher,
+.theme-dark.solace-light .switcher {
+    background-color: #f0ecf8;
+}
+
+.theme-dark .switcher .suggestion-item,
+.theme-dark.solace-dusk .switcher .suggestion-item {
+    color: #f1eef8;
+}
+
+.theme-dark .switcher .suggestion-item.is-selected,
+.theme-dark.solace-dusk .switcher .suggestion-item.is-selected {
+    background-color: #231f30;
+    color: #f1eef8;
+}
+
+.theme-light .switcher .suggestion-item,
+.theme-dark.solace-light .switcher .suggestion-item {
+    color: #2c2638;
+}
+
+.theme-light .switcher .suggestion-item.is-selected,
+.theme-dark.solace-light .switcher .suggestion-item.is-selected {
+    background-color: #e8e0f2;
+    color: #2c2638;
+}
+
+.theme-dark .quick-switcher,
+.theme-dark.solace-dusk .quick-switcher {
+    background-color: #1b1827;
+}
+
+.theme-light .quick-switcher,
+.theme-dark.solace-light .quick-switcher {
+    background-color: #f0ecf8;
+}
+
+/* ── Vault Switcher ─────────────────────────────────────────── */
+
+.theme-dark .workspace-switcher,
+.theme-dark.solace-dusk .workspace-switcher {
+    background-color: #1b1827;
+    border-color: #231f30;
+}
+
+.theme-light .workspace-switcher,
+.theme-dark.solace-light .workspace-switcher {
+    background-color: #f0ecf8;
+    border-color: #d8d0e6;
+}
+
+.theme-dark .workspace-switcher-item,
+.theme-dark.solace-dusk .workspace-switcher-item {
+    color: #f1eef8;
+}
+
+.theme-dark .workspace-switcher-item:hover,
+.theme-dark.solace-dusk .workspace-switcher-item:hover {
+    background-color: #231f30;
+}
+
+.theme-dark .workspace-switcher-item.is-selected,
+.theme-dark.solace-dusk .workspace-switcher-item.is-selected {
+    background-color: #c9a8ff20;
+}
+
+.theme-light .workspace-switcher-item,
+.theme-dark.solace-light .workspace-switcher-item {
+    color: #2c2638;
+}
+
+.theme-light .workspace-switcher-item:hover,
+.theme-dark.solace-light .workspace-switcher-item:hover {
+    background-color: #e8e0f2;
+}
+
+.theme-light .workspace-switcher-item.is-selected,
+.theme-dark.solace-light .workspace-switcher-item.is-selected {
+    background-color: #8a63d220;
+}
+
+/* ── Import/Export Dialogs (light + dusk) ────────────────────── */
+
+.theme-light .export-dialog,
+.theme-dark.solace-light .export-dialog,
+.theme-dark.solace-dusk .export-dialog {
+    background-color: var(--modal-background);
+    border-color: var(--modal-border-color);
+}
+
+.theme-light .import-dialog,
+.theme-dark.solace-light .import-dialog,
+.theme-dark.solace-dusk .import-dialog {
+    background-color: var(--modal-background);
+    border-color: var(--modal-border-color);
+}
+
+/* ── Debug Console (light + dusk) ───────────────────────────── */
+
+.theme-light .debug-view,
+.theme-dark.solace-light .debug-view,
+.theme-dark.solace-dusk .debug-view {
+    background-color: var(--background-primary);
+}
+
+.theme-light .console-view,
+.theme-dark.solace-light .console-view,
+.theme-dark.solace-dusk .console-view {
+    background-color: var(--background-primary);
+}
+
+.theme-dark .console-view .console-line,
+.theme-dark.solace-dusk .console-view .console-line {
+    color: #f1eef8;
+    border-bottom-color: #1e1b2e;
+}
+
+.theme-light .console-view .console-line,
+.theme-dark.solace-light .console-view .console-line {
+    color: #2c2638;
+    border-bottom-color: #e5ddf3;
+}
+
+.theme-dark .console-view .console-error,
+.theme-dark.solace-dusk .console-view .console-error {
+    color: #ff80c8;
+}
+
+.theme-light .console-view .console-error,
+.theme-dark.solace-light .console-view .console-error {
+    color: #d35b93;
+}
+
+.theme-dark .console-view .console-warn,
+.theme-dark.solace-dusk .console-view .console-warn {
+    color: #ffd39a;
+}
+
+.theme-light .console-view .console-warn,
+.theme-dark.solace-light .console-view .console-warn {
+    color: #c07a2c;
+}
+
+/* ── Obsidian Publish (light + dusk) ────────────────────────── */
+
+.theme-light .publish-view,
+.theme-dark.solace-light .publish-view,
+.theme-dark.solace-dusk .publish-view {
+    background-color: var(--background-primary);
+}
+
+/* ── Obsidian Sync (light + dusk) ───────────────────────────── */
+
+.theme-light .sync-view,
+.theme-dark.solace-light .sync-view,
+.theme-dark.solace-dusk .sync-view {
+    background-color: var(--background-primary);
+}
+
+/* ── Canvas (full) ──────────────────────────────────────────── */
+
+.theme-dark .canvas-node-editing,
+.theme-dark.solace-dusk .canvas-node-editing {
+    border-color: #c9a8ff;
+}
+
+.theme-light .canvas-node-editing,
+.theme-dark.solace-light .canvas-node-editing {
+    border-color: #8a63d2;
+}
+
+.theme-dark .canvas-node-content,
+.theme-dark.solace-dusk .canvas-node-content {
+    color: #f1eef8;
+}
+
+.theme-light .canvas-node-content,
+.theme-dark.solace-light .canvas-node-content {
+    color: #2c2638;
+}
+
+.theme-dark .canvas-node-menu,
+.theme-dark.solace-dusk .canvas-node-menu {
+    background-color: #1b1827;
+    border-color: #231f30;
+}
+
+.theme-light .canvas-node-menu,
+.theme-dark.solace-light .canvas-node-menu {
+    background-color: #f0ecf8;
+    border-color: #d8d0e6;
+}
+
+.theme-dark .canvas-node-menu .button,
+.theme-dark.solace-dusk .canvas-node-menu .button {
+    color: #a09ab8;
+}
+
+.theme-dark .canvas-node-menu .button:hover,
+.theme-dark.solace-dusk .canvas-node-menu .button:hover {
+    color: #c9a8ff;
+}
+
+.theme-light .canvas-node-menu .button,
+.theme-dark.solace-light .canvas-node-menu .button {
+    color: #736c86;
+}
+
+.theme-light .canvas-node-menu .button:hover,
+.theme-dark.solace-light .canvas-node-menu .button:hover {
+    color: #8a63d2;
+}
+
+.theme-dark .canvas-background,
+.theme-dark.solace-dusk .canvas-background {
+    background-color: #0e0d14;
+}
+
+.theme-light .canvas-background,
+.theme-dark.solace-light .canvas-background {
+    background-color: #ece7f6;
+}
+
+.theme-dark .canvas-edge,
+.theme-dark.solace-dusk .canvas-edge {
+    stroke: #504a68;
+}
+
+.theme-light .canvas-edge,
+.theme-dark.solace-light .canvas-edge {
+    stroke: #9a94aa;
+}
+
+.theme-dark .canvas-edge:hover,
+.theme-dark.solace-dusk .canvas-edge:hover {
+    stroke: #c9a8ff;
+}
+
+.theme-light .canvas-edge:hover,
+.theme-dark.solace-light .canvas-edge:hover {
+    stroke: #8a63d2;
+}
+
+.theme-dark .canvas-color-presets,
+.theme-dark.solace-dusk .canvas-color-presets {
+    background-color: #1b1827;
+    border-color: #231f30;
+}
+
+.theme-light .canvas-color-presets,
+.theme-dark.solace-light .canvas-color-presets {
+    background-color: #f0ecf8;
+    border-color: #d8d0e6;
+}
+
+/* ── Dataview (light + dusk) ────────────────────────────────── */
+
+.theme-light .dataview.table-view-table,
+.theme-dark.solace-light .dataview.table-view-table,
+.theme-dark.solace-dusk .dataview.table-view-table {
+    border-color: var(--background-modifier-border);
+}
+
+.theme-light .dataview.table-view-table th,
+.theme-dark.solace-light .dataview.table-view-table th,
+.theme-dark.solace-dusk .dataview.table-view-table th {
+    background-color: var(--background-secondary);
+    border-color: var(--background-modifier-border);
+    color: var(--text-accent);
+}
+
+.theme-light .dataview.table-view-table td,
+.theme-dark.solace-light .dataview.table-view-table td,
+.theme-dark.solace-dusk .dataview.table-view-table td {
+    border-color: var(--background-modifier-border);
+    color: var(--text-normal);
+}
+
+.theme-light .dataview.table-view-table tr:hover,
+.theme-dark.solace-light .dataview.table-view-table tr:hover,
+.theme-dark.solace-dusk .dataview.table-view-table tr:hover {
+    background-color: var(--background-modifier-hover);
+}
+
+.theme-light .table-view-container,
+.theme-dark.solace-light .table-view-container,
+.theme-dark.solace-dusk .table-view-container {
+    background-color: var(--background-primary);
+}
+
+.theme-light .table-view-header,
+.theme-dark.solace-light .table-view-header,
+.theme-dark.solace-dusk .table-view-header {
+    background-color: var(--background-secondary);
+    color: var(--text-accent);
+}
+
+/* ── Kanban (light + dusk) ──────────────────────────────────── */
+
+.theme-light .kanban-plugin__board,
+.theme-dark.solace-light .kanban-plugin__board,
+.theme-dark.solace-dusk .kanban-plugin__board {
+    background-color: transparent;
+}
+
+.theme-light .kanban-plugin__lane,
+.theme-dark.solace-light .kanban-plugin__lane,
+.theme-dark.solace-dusk .kanban-plugin__lane {
+    background-color: var(--background-secondary);
+    border-color: var(--background-modifier-border);
+}
+
+.theme-light .kanban-plugin__card,
+.theme-dark.solace-light .kanban-plugin__card,
+.theme-dark.solace-dusk .kanban-plugin__card {
+    background-color: var(--background-primary);
+    border-color: var(--background-modifier-border);
+}
+
+.theme-light .kanban-plugin__card:hover,
+.theme-dark.solace-light .kanban-plugin__card:hover,
+.theme-dark.solace-dusk .kanban-plugin__card:hover {
+    background-color: var(--background-modifier-hover);
+}
+
+.theme-light .kanban-plugin__lane-header,
+.theme-dark.solace-light .kanban-plugin__lane-header,
+.theme-dark.solace-dusk .kanban-plugin__lane-header {
+    color: var(--text-accent);
+}
+
+.theme-light .kanban-plugin__title-input,
+.theme-dark.solace-light .kanban-plugin__title-input,
+.theme-dark.solace-dusk .kanban-plugin__title-input {
+    color: var(--text-normal);
+}
+
+.theme-light .kanban-plugin__meta,
+.theme-dark.solace-light .kanban-plugin__meta,
+.theme-dark.solace-dusk .kanban-plugin__meta {
+    color: var(--text-muted);
+}
+
+.theme-light .kanban-plugin__date,
+.theme-dark.solace-light .kanban-plugin__date,
+.theme-dark.solace-dusk .kanban-plugin__date {
+    color: var(--text-muted);
+}
+
+/* ── Markdown Source View (full) ────────────────────────────── */
+
+.theme-dark .markdown-source-view .cm-hmd-internal-link,
+.theme-dark.solace-dusk .markdown-source-view .cm-hmd-internal-link {
+    color: #c9a8ff;
+}
+
+.theme-light .markdown-source-view .cm-hmd-internal-link,
+.theme-dark.solace-light .markdown-source-view .cm-hmd-internal-link {
+    color: #7e5acb;
+}
+
+.theme-dark .markdown-source-view .cm-hmd-external-link,
+.theme-dark.solace-dusk .markdown-source-view .cm-hmd-external-link {
+    color: #c9a8ff;
+    text-decoration: underline;
+}
+
+.theme-light .markdown-source-view .cm-hmd-external-link,
+.theme-dark.solace-light .markdown-source-view .cm-hmd-external-link {
+    color: #7e5acb;
+    text-decoration: underline;
+}
+
+.theme-dark .markdown-source-view .cm-hmd-tag,
+.theme-dark.solace-dusk .markdown-source-view .cm-hmd-tag {
+    color: #c9a8ff;
+}
+
+.theme-light .markdown-source-view .cm-hmd-tag,
+.theme-dark.solace-light .markdown-source-view .cm-hmd-tag {
+    color: #8a63d2;
+}
+
+.theme-dark .markdown-source-view .cm-meta,
+.theme-dark.solace-dusk .markdown-source-view .cm-meta {
+    color: #c9a8ff;
+}
+
+.theme-light .markdown-source-view .cm-meta,
+.theme-dark.solace-light .markdown-source-view .cm-meta {
+    color: #7e5acb;
+}
+
+.theme-dark .markdown-source-view .cm-formatting,
+.theme-dark.solace-dusk .markdown-source-view .cm-formatting {
+    color: #504a68;
+}
+
+.theme-light .markdown-source-view .cm-formatting,
+.theme-dark.solace-light .markdown-source-view .cm-formatting {
+    color: #9a94aa;
+}
+
+.theme-dark .markdown-source-view .cm-embed,
+.theme-dark.solace-dusk .markdown-source-view .cm-embed {
+    color: #c9a8ff;
+}
+
+.theme-light .markdown-source-view .cm-embed,
+.theme-dark.solace-light .markdown-source-view .cm-embed {
+    color: #7e5acb;
+}
+
+/* ── Mobile ─────────────────────────────────────────────────── */
+
+.theme-dark .is-mobile .sidebar,
+.theme-dark.solace-dusk .is-mobile .sidebar {
+    background-color: #16141f;
+}
+
+.theme-light .is-mobile .sidebar,
+.theme-dark.solace-light .is-mobile .sidebar {
+    background-color: #f6f3fc;
+}
+
+.theme-dark .is-mobile .side-dock-ribbon,
+.theme-dark.solace-dusk .is-mobile .side-dock-ribbon {
+    background-color: #0e0d14;
+}
+
+.theme-light .is-mobile .side-dock-ribbon,
+.theme-dark.solace-light .is-mobile .side-dock-ribbon {
+    background-color: #e8e2f2;
+}
+
+.theme-dark .is-mobile .modal,
+.theme-dark.solace-dusk .is-mobile .modal {
+    width: calc(100vw - 16px);
+    max-height: calc(100vh - 32px);
+}
+
+.theme-light .is-mobile .modal,
+.theme-dark.solace-light .is-mobile .modal {
+    width: calc(100vw - 16px);
+    max-height: calc(100vh - 32px);
+}
+
+.theme-dark .is-mobile .markdown-preview-view,
+.theme-dark.solace-dusk .is-mobile .markdown-preview-view {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.theme-light .is-mobile .markdown-preview-view,
+.theme-dark.solace-light .is-mobile .markdown-preview-view {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.theme-dark .is-mobile .tab-container,
+.theme-dark.solace-dusk .is-mobile .tab-container {
+    background-color: #0e0d14;
+}
+
+.theme-light .is-mobile .tab-container,
+.theme-dark.solace-light .is-mobile .tab-container {
+    background-color: #e4ddf0;
+}
+
+/* ── Workspace Tab Header (full) ────────────────────────────── */
+
+.theme-dark .workspace-tab-header,
+.theme-dark.solace-dusk .workspace-tab-header {
+    border-color: #1e1b2e;
+}
+
+.theme-light .workspace-tab-header,
+.theme-dark.solace-light .workspace-tab-header {
+    border-color: #d8d0e6;
+}
+
+.theme-dark .workspace-tab-header .workspace-tab-icon,
+.theme-dark.solace-dusk .workspace-tab-header .workspace-tab-icon {
+    color: #504a68;
+}
+
+.theme-light .workspace-tab-header .workspace-tab-icon,
+.theme-dark.solace-light .workspace-tab-header .workspace-tab-icon {
+    color: #9a94aa;
+}
+
+.theme-dark .workspace-tab-header.is-active .workspace-tab-icon,
+.theme-dark.solace-dusk .workspace-tab-header.is-active .workspace-tab-icon {
+    color: #c9a8ff;
+}
+
+.theme-light .workspace-tab-header.is-active .workspace-tab-icon,
+.theme-dark.solace-light .workspace-tab-header.is-active .workspace-tab-icon {
+    color: #8a63d2;
+}
+
+.theme-dark .workspace-tab-header .workspace-tab-title,
+.theme-dark.solace-dusk .workspace-tab-header .workspace-tab-title {
+    color: #a09ab8;
+}
+
+.theme-dark .workspace-tab-header.is-active .workspace-tab-title,
+.theme-dark.solace-dusk .workspace-tab-header.is-active .workspace-tab-title {
+    color: #f1eef8;
+}
+
+.theme-light .workspace-tab-header .workspace-tab-title,
+.theme-dark.solace-light .workspace-tab-header .workspace-tab-title {
+    color: #736c86;
+}
+
+.theme-light .workspace-tab-header.is-active .workspace-tab-title,
+.theme-dark.solace-light .workspace-tab-header.is-active .workspace-tab-title {
+    color: #2c2638;
+}

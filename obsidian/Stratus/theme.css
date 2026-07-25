@@ -1,0 +1,2013 @@
+/*
+ * Stratus for Obsidian
+ * A quiet, content-first theme inspired by Cloudflare Docs and console clarity.
+ *
+ * @theme Stratus
+ * @author Ryan Hammang
+ * Copyright (C) 2026 Ryan Hammang
+ * @version 1.2.0
+ * @license GPL-3.0-only
+ */
+
+/* @settings
+
+name: Stratus
+id: stratus
+settings:
+  -
+    id: stratus-typography
+    title: Typography and layout
+    type: heading
+    level: 2
+    collapsed: false
+  -
+    id: stratus-width-preset
+    title: Reading width
+    description: Requires Settings → Editor → Readable line length. Note cssclasses `wide` / `max` still override per file.
+    type: class-select
+    allowEmpty: false
+    default: stratus-width-comfortable
+    options:
+      -
+        label: Comfortable
+        value: stratus-width-comfortable
+      -
+        label: Wide
+        value: stratus-width-wide
+      -
+        label: Full
+        value: stratus-width-full
+  -
+    id: file-line-width
+    title: Custom line width
+    description: Optional fine control. Leave untouched to use the Reading width preset above.
+    type: variable-number-slider
+    default: 1000
+    min: 600
+    max: 1600
+    step: 20
+    format: px
+  -
+    id: font-text-size
+    title: Editor text size
+    type: variable-number-slider
+    default: 15
+    min: 12
+    max: 22
+    step: 1
+    format: px
+  -
+    id: stratus-density
+    title: Interface density
+    description: Spacing for sidebars, tabs, and lists.
+    type: class-select
+    allowEmpty: false
+    default: stratus-density-default
+    options:
+      -
+        label: Compact
+        value: stratus-density-compact
+      -
+        label: Default
+        value: stratus-density-default
+      -
+        label: Spacious
+        value: stratus-density-spacious
+  -
+    id: stratus-appearance
+    title: Appearance
+    type: heading
+    level: 2
+    collapsed: false
+  -
+    id: stratus-accent
+    title: Accent color
+    description: Cloudflare orange (default) or console blue.
+    type: class-select
+    allowEmpty: false
+    default: stratus-accent-orange
+    options:
+      -
+        label: Orange
+        value: stratus-accent-orange
+      -
+        label: Blue
+        value: stratus-accent-blue
+  -
+    id: stratus-no-active-line
+    title: Disable active editor line highlight
+    type: class-toggle
+    default: false
+  -
+    id: stratus-properties-loud
+    title: Emphasize properties block
+    description: Off keeps properties quieter (Stratus default). On restores a stronger bordered block.
+    type: class-toggle
+    default: false
+  -
+    id: stratus-chrome
+    title: Focus mode
+    type: heading
+    level: 2
+    collapsed: true
+  -
+    id: stratus-hide-ribbon
+    title: Hide ribbon
+    type: class-toggle
+    default: false
+  -
+    id: stratus-hide-status-bar
+    title: Hide status bar
+    type: class-toggle
+    default: false
+  -
+    id: stratus-hide-tabs
+    title: Hide tab bar
+    type: class-toggle
+    default: false
+  -
+    id: stratus-hide-properties
+    title: Hide properties in Reading view
+    type: class-toggle
+    default: false
+  -
+    id: stratus-hide-inline-title
+    title: Hide inline title
+    type: class-toggle
+    default: false
+
+*/
+
+/*
+ * Kumo-derived portions retain the following notice:
+ *
+ * MIT License
+ * Copyright (c) 2026 Cloudflare, Inc.
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a
+ * copy of this software and associated documentation files (the "Software"),
+ * to deal in the Software without restriction, including without limitation
+ * the rights to use, copy, modify, merge, publish, distribute, sublicense,
+ * and/or sell copies of the Software, and to permit persons to whom the
+ * Software is furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice (including the next
+ * paragraph) shall be included in all copies or substantial portions of the
+ * Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+ * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+ * DEALINGS IN THE SOFTWARE.
+ *
+ * See THIRD_PARTY_NOTICES.md in the source repository for context.
+ */
+
+/* --------------------------------------------------------------------------
+   Foundation
+   -------------------------------------------------------------------------- */
+
+body {
+  --font-interface-theme:
+    "Inter", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+  --font-text-theme:
+    "Inter", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+  --font-monospace-theme:
+    "SFMono-Regular", "Cascadia Code", "Roboto Mono", Consolas, monospace;
+
+  --font-text-size: 15px;
+  --font-ui-smaller: 12px;
+  --font-ui-small: 13px;
+  --font-ui-medium: 14px;
+  --font-ui-large: 16px;
+  --line-height-normal: 1.65;
+  --line-height-tight: 1.2;
+  --file-line-width: 1000px;
+
+  --radius-s: 4px;
+  --radius-m: 7px;
+  --radius-l: 11px;
+  --radius-xl: 16px;
+  --input-radius: var(--radius-m);
+  --button-radius: var(--radius-m);
+  --tab-radius-active: var(--radius-m) var(--radius-m) 0 0;
+  --modal-radius: var(--radius-xl);
+  --menu-radius: var(--radius-l);
+  --callout-radius: var(--radius-m);
+
+  --size-2-1: 2px;
+  --size-2-2: 4px;
+  --size-2-3: 6px;
+  --size-4-1: 4px;
+  --size-4-2: 8px;
+  --size-4-3: 12px;
+  --size-4-4: 16px;
+  --size-4-5: 20px;
+  --size-4-6: 24px;
+  --size-4-8: 32px;
+  --size-4-12: 48px;
+
+  --p-spacing: 1.15rem;
+  --heading-spacing: calc(var(--p-spacing) * 2.15);
+  --list-spacing: 0.2em;
+  --list-indent: 1.6em;
+  --link-decoration: underline;
+  --link-decoration-hover: underline;
+  --link-decoration-thickness: 1px;
+  --link-external-decoration: underline;
+  --link-external-decoration-hover: underline;
+  --checklist-done-decoration: line-through;
+  --code-border-color: var(--background-modifier-border);
+  --code-border-width: 1px;
+  --code-radius: var(--radius-s);
+  --code-size: 0.88em;
+  --tag-border-width: 1px;
+  --tag-padding-x: 0.48em;
+  --tag-padding-y: 0.14em;
+  --tag-radius: 999px;
+  --tag-size: 0.82em;
+  --tag-weight: 500;
+  --h1-size: 2em;
+  --h2-size: 1.55em;
+  --h3-size: 1.3em;
+  --h4-size: 1.12em;
+  --h5-size: 1em;
+  --h6-size: 0.9em;
+  --h1-weight: 600;
+  --h2-weight: 600;
+  --h3-weight: 600;
+  --h4-weight: 600;
+  --h5-weight: 600;
+  --h6-weight: 600;
+}
+
+.theme-dark {
+  color-scheme: dark;
+
+  --stratus-ink-0: #030303;
+  --stratus-ink-1: #060606;
+  --stratus-ink-2: #0b0b0b;
+  --stratus-ink-3: #0f0f0f;
+  --stratus-ink-4: #171717;
+  --stratus-line: #292929;
+  --stratus-line-strong: #404040;
+  --stratus-cloud: #f5f5f5;
+  --stratus-mist: #a1a1a1;
+  --stratus-dim: #525252;
+  --stratus-faint: #797979;
+  --stratus-sky: #51a2ff;
+  --stratus-sky-strong: #8ec5ff;
+  --stratus-sky-wash: rgba(81, 162, 255, 0.13);
+  --stratus-cyan: #6ed6dc;
+  --stratus-green: #83d6a2;
+  --stratus-amber: #e6bf7a;
+  --stratus-red: #ef8d92;
+  --stratus-violet: #b8a2f2;
+  /* Cloudflare brand orange — https://www.cloudflare.com/ */
+  --stratus-orange: #f6821f;
+  --stratus-orange-strong: #ffa04d;
+  --stratus-orange-wash: rgba(246, 130, 31, 0.14);
+
+  /* Interactive accent defaults to Cloudflare orange. Sky blue remains for
+     informational surfaces; Style Settings can restore a blue accent. */
+  --accent-h: 27;
+  --accent-s: 92%;
+  --accent-l: 54%;
+  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+  --color-accent: hsl(var(--color-accent-hsl));
+  --color-accent-1: hsl(
+    var(--accent-h),
+    var(--accent-s),
+    calc(var(--accent-l) + 10%)
+  );
+  --color-accent-2: hsl(
+    var(--accent-h),
+    var(--accent-s),
+    calc(var(--accent-l) + 16%)
+  );
+
+  --background-primary: var(--stratus-ink-1);
+  --background-primary-alt: var(--stratus-ink-0);
+  --background-secondary: var(--stratus-ink-2);
+  --background-secondary-alt: var(--stratus-ink-1);
+  --background-modifier-hover: rgba(161, 161, 161, 0.075);
+  --background-modifier-active-hover: var(--stratus-orange-wash);
+  --background-modifier-border: var(--stratus-line);
+  --background-modifier-border-hover: var(--stratus-line-strong);
+  --background-modifier-border-focus: var(--color-accent);
+  --background-modifier-form-field: var(--stratus-ink-2);
+  --background-modifier-form-field-hover: var(--stratus-ink-3);
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.38);
+  --background-modifier-cover: rgba(3, 4, 6, 0.74);
+  --background-modifier-error: var(--stratus-red);
+  --background-modifier-error-rgb: 239, 141, 146;
+  --background-modifier-error-hover: #f3a4a8;
+  --background-modifier-success: var(--stratus-green);
+  --background-modifier-success-rgb: 131, 214, 162;
+  --background-modifier-message: var(--stratus-ink-4);
+
+  --text-normal: var(--stratus-cloud);
+  --text-muted: var(--stratus-mist);
+  --text-faint: var(--stratus-faint);
+  --text-on-accent: #1a0c00;
+  --text-on-accent-inverted: #1a0c00;
+  --text-accent: var(--color-accent);
+  --text-accent-hover: var(--color-accent-1);
+  --text-error: var(--stratus-red);
+  --text-success: var(--stratus-green);
+  --text-warning: var(--stratus-amber);
+  --text-selection: hsla(var(--color-accent-hsl), 0.22);
+  --caret-color: var(--color-accent-1);
+
+  --interactive-normal: var(--stratus-ink-3);
+  --interactive-hover: var(--stratus-ink-4);
+  --interactive-accent: var(--color-accent);
+  --interactive-accent-hover: var(--color-accent-1);
+  --interactive-accent-hsl: var(--color-accent-hsl);
+
+  --icon-color: var(--stratus-faint);
+  --icon-color-hover: var(--stratus-cloud);
+  --icon-color-active: var(--color-accent);
+  --icon-color-focused: var(--color-accent-1);
+  --nav-collapse-icon-color: var(--stratus-faint);
+
+  --divider-color: var(--stratus-line);
+  --divider-color-hover: var(--stratus-line-strong);
+  --scrollbar-bg: transparent;
+  --scrollbar-thumb-bg: #2b2b2b;
+  --scrollbar-active-thumb-bg: #404040;
+
+  --titlebar-background: var(--stratus-ink-1);
+  --titlebar-background-focused: var(--stratus-ink-1);
+  --titlebar-text-color: var(--stratus-dim);
+  --titlebar-text-color-focused: var(--stratus-mist);
+  --ribbon-background: var(--stratus-ink-1);
+  --ribbon-background-collapsed: var(--stratus-ink-1);
+
+  --tab-background-active: var(--stratus-ink-2);
+  --tab-text-color: var(--stratus-faint);
+  --tab-text-color-focused: var(--stratus-mist);
+  --tab-text-color-focused-active: var(--stratus-cloud);
+  --tab-text-color-focused-active-current: var(--stratus-cloud);
+  --tab-divider-color: transparent;
+  --tab-outline-color: var(--stratus-line);
+  --tab-curve: 0;
+
+  --nav-item-color: var(--stratus-mist);
+  --nav-item-color-hover: var(--stratus-cloud);
+  --nav-item-color-active: var(--stratus-cloud);
+  --nav-item-color-selected: var(--stratus-cloud);
+  --nav-item-background-hover: var(--background-modifier-hover);
+  --nav-item-background-active: var(--stratus-orange-wash);
+  --nav-item-background-selected: var(--stratus-orange-wash);
+
+  --link-color: var(--stratus-sky);
+  --link-color-hover: var(--stratus-sky-strong);
+  --link-external-color: var(--stratus-cyan);
+  --link-external-color-hover: #9ae7eb;
+  --link-unresolved-color: var(--stratus-mist);
+  --link-unresolved-opacity: 1;
+  --link-unresolved-decoration-color: rgba(161, 161, 161, 0.55);
+
+  --h1-color: #fafafa;
+  --h2-color: #f5f5f5;
+  --h3-color: #e5e5e5;
+  --h4-color: #d4d4d4;
+  --h5-color: #bdbdbd;
+  --h6-color: #a1a1a1;
+
+  --bold-color: #ffffff;
+  --italic-color: #d4d4d4;
+  --text-highlight-bg: rgba(230, 191, 122, 0.23);
+  --text-highlight-bg-active: rgba(230, 191, 122, 0.32);
+  --highlight-bg: var(--text-highlight-bg);
+  --highlight-text-color: var(--text-normal);
+
+  --blockquote-border-color: var(--stratus-line-strong);
+  --blockquote-color: var(--stratus-mist);
+  --code-normal: #d9e2ed;
+  --code-comment: #748194;
+  --code-function: var(--stratus-sky-strong);
+  --code-important: var(--stratus-red);
+  --code-keyword: var(--stratus-violet);
+  --code-operator: var(--stratus-cyan);
+  --code-property: #9ecbff;
+  --code-punctuation: #9ba8b8;
+  --code-string: var(--stratus-green);
+  --code-tag: var(--stratus-red);
+  --code-value: var(--stratus-amber);
+  --code-background: var(--stratus-ink-0);
+
+  --table-background: transparent;
+  --table-border-color: var(--stratus-line);
+  --table-header-background: var(--stratus-ink-3);
+  --table-header-background-hover: var(--stratus-ink-4);
+  --table-row-alt-background: rgba(161, 161, 161, 0.035);
+  --table-row-background-hover: rgba(246, 130, 31, 0.06);
+
+  --tag-color: var(--stratus-sky-strong);
+  --tag-color-hover: #c2dfff;
+  --tag-background: rgba(81, 162, 255, 0.11);
+  --tag-background-hover: rgba(81, 162, 255, 0.18);
+  --tag-border-color: rgba(81, 162, 255, 0.24);
+  --tag-border-color-hover: rgba(81, 162, 255, 0.38);
+
+  --checkbox-color: var(--color-accent);
+  --checkbox-color-hover: var(--color-accent-1);
+  --checkbox-border-color: var(--stratus-faint);
+  --checkbox-border-color-hover: var(--color-accent);
+  --checklist-done-color: var(--stratus-faint);
+
+  --metadata-label-text-color: var(--stratus-mist);
+  --metadata-input-text-color: var(--stratus-cloud);
+  --metadata-label-background: transparent;
+  --metadata-input-background: transparent;
+  --metadata-divider-color: var(--stratus-line);
+  --metadata-property-background-hover: var(--background-modifier-hover);
+  --metadata-property-box-shadow-hover: 0 0 0 1px var(--stratus-line);
+
+  --embed-background: rgba(17, 20, 25, 0.66);
+  --embed-border-start: 2px solid var(--stratus-line-strong);
+  --embed-padding: 0 0 0 1.25rem;
+  --file-header-background: var(--stratus-ink-1);
+  --inline-title-color: var(--stratus-cloud);
+
+  --callout-default: 81, 162, 255;
+  --callout-info: 110, 214, 220;
+  --callout-todo: 81, 162, 255;
+  --callout-tip: 131, 214, 162;
+  --callout-success: 131, 214, 162;
+  --callout-question: 246, 130, 31;
+  --callout-warning: 246, 130, 31;
+  --callout-fail: 239, 141, 146;
+  --callout-error: 239, 141, 146;
+  --callout-bug: 184, 162, 242;
+  --callout-example: 184, 162, 242;
+  --callout-quote: 174, 184, 197;
+
+  --graph-line: #313a45;
+  --graph-node: #8d99a8;
+  --graph-node-focused: var(--stratus-sky-strong);
+  --graph-node-tag: var(--stratus-green);
+  --graph-node-attachment: var(--stratus-violet);
+  --canvas-color: 246, 130, 31;
+  --canvas-dot-pattern: #242424;
+}
+
+/* Light mode is intentionally simple, but remains usable when Obsidian follows
+   the operating-system appearance. */
+.theme-light {
+  color-scheme: light;
+
+  --stratus-ink-0: #ffffff;
+  --stratus-ink-1: #fbfcfe;
+  --stratus-ink-2: #f4f6f9;
+  --stratus-ink-3: #e9edf2;
+  --stratus-ink-4: #dde3ea;
+  --stratus-line: #d8dee7;
+  --stratus-line-strong: #bcc6d2;
+  --stratus-cloud: #14191f;
+  --stratus-mist: #4f5b68;
+  --stratus-dim: #758190;
+  --stratus-faint: #66717f;
+  --stratus-sky: #1769c2;
+  --stratus-sky-strong: #0d56a5;
+  --stratus-sky-wash: rgba(23, 105, 194, 0.1);
+  --stratus-cyan: #077c85;
+  --stratus-green: #247849;
+  --stratus-amber: #966512;
+  --stratus-red: #b6434b;
+  --stratus-violet: #6f54b5;
+  --stratus-orange: #c2410c;
+  --stratus-orange-strong: #9a3412;
+  --stratus-orange-wash: rgba(194, 65, 12, 0.12);
+
+  --accent-h: 18;
+  --accent-s: 88%;
+  --accent-l: 40%;
+  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+  --color-accent: hsl(var(--color-accent-hsl));
+  --color-accent-1: hsl(
+    var(--accent-h),
+    var(--accent-s),
+    calc(var(--accent-l) - 8%)
+  );
+  --color-accent-2: hsl(
+    var(--accent-h),
+    var(--accent-s),
+    calc(var(--accent-l) - 13%)
+  );
+
+  --background-primary: var(--stratus-ink-0);
+  --background-primary-alt: var(--stratus-ink-1);
+  --background-secondary: var(--stratus-ink-2);
+  --background-secondary-alt: var(--stratus-ink-1);
+  --background-modifier-hover: rgba(32, 47, 64, 0.065);
+  --background-modifier-active-hover: var(--stratus-orange-wash);
+  --background-modifier-border: var(--stratus-line);
+  --background-modifier-border-hover: var(--stratus-line-strong);
+  --background-modifier-border-focus: var(--color-accent);
+  --background-modifier-form-field: var(--stratus-ink-0);
+  --background-modifier-form-field-hover: var(--stratus-ink-1);
+  --background-modifier-box-shadow: rgba(31, 45, 61, 0.13);
+  --background-modifier-cover: rgba(32, 40, 50, 0.32);
+  --background-modifier-error: var(--stratus-red);
+  --background-modifier-error-rgb: 182, 67, 75;
+  --background-modifier-error-hover: #9d3740;
+  --background-modifier-success: var(--stratus-green);
+  --background-modifier-success-rgb: 36, 120, 73;
+
+  --text-normal: var(--stratus-cloud);
+  --text-muted: var(--stratus-mist);
+  --text-faint: var(--stratus-faint);
+  --text-on-accent: #ffffff;
+  --text-on-accent-inverted: #ffffff;
+  --text-accent: var(--color-accent);
+  --text-accent-hover: var(--color-accent-1);
+  --text-error: var(--stratus-red);
+  --text-success: var(--stratus-green);
+  --text-warning: var(--stratus-amber);
+  --text-selection: hsla(var(--color-accent-hsl), 0.16);
+  --caret-color: var(--color-accent);
+
+  --interactive-normal: var(--stratus-ink-0);
+  --interactive-hover: var(--stratus-ink-2);
+  --interactive-accent: var(--color-accent);
+  --interactive-accent-hover: var(--color-accent-1);
+  --interactive-accent-hsl: var(--color-accent-hsl);
+  --icon-color: var(--stratus-faint);
+  --icon-color-hover: var(--stratus-cloud);
+  --icon-color-active: var(--color-accent);
+  --nav-collapse-icon-color: var(--stratus-faint);
+
+  --divider-color: var(--stratus-line);
+  --divider-color-hover: var(--stratus-line-strong);
+  --scrollbar-bg: transparent;
+  --scrollbar-thumb-bg: #c7ced8;
+  --scrollbar-active-thumb-bg: #aab5c2;
+  --titlebar-background: var(--stratus-ink-1);
+  --titlebar-background-focused: var(--stratus-ink-1);
+  --ribbon-background: var(--stratus-ink-1);
+  --tab-background-active: var(--stratus-ink-0);
+  --tab-text-color: var(--stratus-faint);
+  --tab-text-color-focused: var(--stratus-mist);
+  --tab-text-color-focused-active: var(--stratus-cloud);
+  --tab-outline-color: var(--stratus-line);
+  --tab-divider-color: transparent;
+  --tab-curve: 0;
+
+  --nav-item-color: var(--stratus-mist);
+  --nav-item-color-hover: var(--stratus-cloud);
+  --nav-item-color-active: var(--stratus-cloud);
+  --nav-item-color-selected: var(--stratus-cloud);
+  --nav-item-background-hover: var(--background-modifier-hover);
+  --nav-item-background-active: var(--stratus-orange-wash);
+  --nav-item-background-selected: var(--stratus-orange-wash);
+
+  --link-color: var(--stratus-sky);
+  --link-color-hover: var(--stratus-sky-strong);
+  --link-external-color: var(--stratus-cyan);
+  --link-external-color-hover: #05636a;
+  --link-unresolved-color: var(--stratus-mist);
+  --link-unresolved-opacity: 1;
+  --link-unresolved-decoration-color: rgba(79, 91, 104, 0.55);
+  --h1-color: #10151a;
+  --h2-color: #18202a;
+  --h3-color: #222c37;
+  --h4-color: #2f3a46;
+  --h5-color: #40505f;
+  --h6-color: #566473;
+  --bold-color: #080b0e;
+  --italic-color: #384451;
+  --text-highlight-bg: rgba(230, 191, 122, 0.37);
+  --text-highlight-bg-active: rgba(230, 191, 122, 0.48);
+  --highlight-bg: var(--text-highlight-bg);
+  --highlight-text-color: #4e3509;
+  --blockquote-border-color: var(--stratus-line-strong);
+  --blockquote-color: var(--stratus-mist);
+
+  --code-normal: #263341;
+  --code-comment: #5f6d7e;
+  --code-function: #135fae;
+  --code-important: var(--stratus-red);
+  --code-keyword: var(--stratus-violet);
+  --code-operator: var(--stratus-cyan);
+  --code-property: #235f98;
+  --code-punctuation: #5b6877;
+  --code-string: var(--stratus-green);
+  --code-tag: var(--stratus-red);
+  --code-value: var(--stratus-amber);
+  --code-background: var(--stratus-ink-2);
+
+  --table-background: transparent;
+  --table-border-color: var(--stratus-line);
+  --table-header-background: var(--stratus-ink-2);
+  --table-header-background-hover: var(--stratus-ink-3);
+  --table-row-alt-background: rgba(32, 47, 64, 0.025);
+  --table-row-background-hover: rgba(194, 65, 12, 0.06);
+  --tag-color: var(--stratus-sky);
+  --tag-color-hover: var(--stratus-sky-strong);
+  --tag-background: var(--stratus-sky-wash);
+  --tag-background-hover: rgba(23, 105, 194, 0.16);
+  --tag-border-color: rgba(23, 105, 194, 0.2);
+  --tag-border-color-hover: rgba(23, 105, 194, 0.34);
+  --checkbox-color: var(--color-accent);
+  --checkbox-color-hover: var(--color-accent-1);
+  --checkbox-border-color: var(--stratus-faint);
+  --checkbox-border-color-hover: var(--color-accent);
+  --checklist-done-color: var(--stratus-faint);
+
+  --metadata-label-text-color: var(--stratus-mist);
+  --metadata-input-text-color: var(--stratus-cloud);
+  --metadata-label-background: transparent;
+  --metadata-input-background: transparent;
+  --metadata-divider-color: var(--stratus-line);
+  --metadata-property-background-hover: var(--background-modifier-hover);
+  --embed-background: rgba(244, 246, 249, 0.7);
+  --embed-border-start: 2px solid var(--stratus-line-strong);
+  --embed-padding: 0 0 0 1.25rem;
+  --file-header-background: var(--stratus-ink-0);
+  --inline-title-color: var(--stratus-cloud);
+
+  --callout-default: 23, 105, 194;
+  --callout-info: 7, 124, 133;
+  --callout-todo: 23, 105, 194;
+  --callout-tip: 36, 120, 73;
+  --callout-success: 36, 120, 73;
+  --callout-question: 150, 101, 18;
+  --callout-warning: 150, 101, 18;
+  --callout-fail: 182, 67, 75;
+  --callout-error: 182, 67, 75;
+  --callout-bug: 111, 84, 181;
+  --callout-example: 111, 84, 181;
+  --callout-quote: 79, 91, 104;
+  --graph-line: #c9d1db;
+  --graph-node: #778493;
+  --graph-node-focused: var(--stratus-sky);
+  --graph-node-tag: var(--stratus-green);
+  --graph-node-attachment: var(--stratus-violet);
+  --canvas-color: 194, 65, 12;
+  --canvas-dot-pattern: #d8dee7;
+}
+
+/* --------------------------------------------------------------------------
+   Shared interaction details
+   -------------------------------------------------------------------------- */
+
+::selection {
+  background: var(--text-selection);
+}
+
+:where(
+    button,
+    input,
+    textarea,
+    select,
+    .clickable-icon,
+    .nav-file-title,
+    .nav-folder-title,
+    .workspace-tab-header,
+    .menu-item,
+    .suggestion-item
+  ):focus-visible {
+  outline: 2px solid var(--background-modifier-border-focus);
+  outline-offset: 2px;
+}
+
+.clickable-icon {
+  border-radius: var(--radius-m);
+}
+
+.clickable-icon:hover {
+  background-color: var(--background-modifier-hover);
+}
+
+body:not(.is-mobile) ::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+body:not(.is-mobile) ::-webkit-scrollbar-thumb {
+  border: 3px solid transparent;
+  border-radius: 999px;
+  background-clip: padding-box;
+}
+
+/* --------------------------------------------------------------------------
+   Reading view and editor
+   -------------------------------------------------------------------------- */
+
+.markdown-reading-view,
+.markdown-source-view {
+  --file-margins: clamp(20px, 5%, 56px);
+}
+
+.markdown-preview-sizer,
+.cm-sizer {
+  padding-bottom: 18vh;
+}
+
+.inline-title {
+  margin-bottom: 0;
+  padding-bottom: 1.5rem;
+  font-size: clamp(2rem, 4.2vw, 2.85rem);
+  font-weight: 650;
+  line-height: 1.08;
+}
+
+:where(.markdown-rendered, .markdown-source-view.mod-cm6) {
+  color: var(--text-normal);
+  font-variant-ligatures: common-ligatures contextual;
+  text-rendering: optimizeLegibility;
+}
+
+.markdown-rendered :where(p, li) {
+  text-wrap: pretty;
+}
+
+.markdown-rendered :where(h1, h2, h3, h4, h5, h6),
+.markdown-source-view.mod-cm6 :where(.HyperMD-header) {
+  text-wrap: balance;
+  line-height: var(--line-height-tight);
+}
+
+.markdown-rendered :where(h1, h2) {
+  padding-bottom: 0.32em;
+  border-bottom: 1px solid var(--background-modifier-border);
+}
+
+.markdown-source-view.mod-cm6 :where(.HyperMD-header-1, .HyperMD-header-2) {
+  border-bottom: 1px solid var(--background-modifier-border);
+}
+
+.markdown-rendered h1:first-child,
+.markdown-rendered h2:first-child {
+  margin-top: 0;
+}
+
+.markdown-rendered :where(strong, b),
+.markdown-source-view.mod-cm6 .cm-strong {
+  font-weight: 500;
+}
+
+.markdown-rendered :where(em, i),
+.markdown-source-view.mod-cm6 .cm-em {
+  color: var(--italic-color);
+}
+
+.markdown-rendered mark,
+.markdown-source-view.mod-cm6 .cm-highlight {
+  padding: 0.06em 0.2em;
+  border-radius: 3px;
+}
+
+.markdown-rendered hr,
+.markdown-source-view.mod-cm6 .HyperMD-hr {
+  border: 0;
+  border-top: 1px solid var(--background-modifier-border);
+}
+
+.markdown-rendered hr {
+  margin-block: 2.5rem;
+}
+
+/* Lists and tasks */
+.markdown-rendered :where(ul, ol) :where(ul, ol) {
+  margin-block: var(--list-spacing);
+}
+
+.markdown-rendered li::marker {
+  color: var(--text-faint);
+}
+
+.markdown-rendered ol > li::marker {
+  font-variant-numeric: tabular-nums;
+  color: var(--text-muted);
+}
+
+input[type="checkbox"],
+.task-list-item-checkbox {
+  width: 1.05em;
+  height: 1.05em;
+  margin-inline-end: 0.45em;
+  border-width: 1.5px;
+  border-radius: 4px;
+}
+
+/* Quotes */
+.markdown-rendered blockquote,
+.markdown-source-view.mod-cm6 .HyperMD-quote {
+  color: var(--blockquote-color);
+}
+
+.markdown-rendered blockquote {
+  margin-inline: 0;
+  padding: 0.2rem 1.1rem;
+  border-inline-start-width: 2px;
+  background: linear-gradient(
+    90deg,
+    color-mix(in srgb, var(--blockquote-border-color) 18%, transparent),
+    transparent 70%
+  );
+}
+
+.markdown-source-view.mod-cm6 .HyperMD-quote {
+  border-inline-start-color: var(--blockquote-border-color);
+}
+
+/* Inline and fenced code */
+.markdown-rendered code,
+.markdown-source-view.mod-cm6 .cm-inline-code {
+  font-variant-ligatures: none;
+}
+
+.markdown-rendered pre {
+  position: relative;
+  padding: 1rem 1.15rem;
+  border: 1px solid var(--background-modifier-border);
+  border-radius: var(--radius-m);
+  background-color: var(--code-background);
+  box-shadow: none;
+}
+
+.markdown-rendered kbd {
+  display: inline-block;
+  padding: 0.1em 0.4em;
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 4px;
+  background-color: var(--background-secondary);
+  color: var(--text-muted);
+  font-family: var(--font-monospace-theme);
+  font-size: 0.85em;
+  font-weight: 500;
+  box-shadow: 0 1px 0 var(--background-modifier-border);
+}
+
+.markdown-rendered pre code {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  font-size: 0.875em;
+  line-height: 1.65;
+}
+
+.markdown-source-view.mod-cm6 .HyperMD-codeblock {
+  font-variant-ligatures: none;
+  line-height: 1.65;
+}
+
+.code-block-flair {
+  color: var(--text-faint);
+  font-family: var(--font-interface-theme);
+  font-size: var(--font-ui-smaller);
+}
+
+/* Tables */
+.markdown-rendered table {
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: separate;
+  border: 1px solid var(--table-border-color);
+  border-radius: var(--radius-l);
+  overflow: hidden;
+  font-size: 0.94em;
+}
+
+.markdown-rendered :where(th, td) {
+  padding: 0.65rem 0.8rem;
+  border-width: 0 1px 1px 0;
+}
+
+.markdown-rendered tr > :last-child {
+  border-inline-end: 0;
+}
+
+.markdown-rendered tbody tr:last-child > td {
+  border-bottom: 0;
+}
+
+.markdown-rendered th {
+  color: var(--text-normal);
+  font-size: 0.82em;
+  font-weight: 600;
+}
+
+.table-editor .cm-line,
+.markdown-source-view.mod-cm6 .HyperMD-table-row {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Callouts */
+.callout {
+  padding: 0;
+  border: 1px solid rgba(var(--callout-color), 0.28);
+  border-inline-start-width: 3px;
+  background-color: rgba(var(--callout-color), 0.065);
+  box-shadow: none;
+}
+
+.callout-title {
+  gap: 0.6rem;
+  padding: 0.72rem 0.9rem;
+  color: rgb(var(--callout-color));
+  font-size: 0.92em;
+  font-weight: 600;
+}
+
+.callout-content {
+  padding: 0 0.9rem 0.85rem;
+  color: var(--text-muted);
+}
+
+.callout-content > :first-child {
+  margin-top: 0;
+}
+
+.callout-content > :last-child {
+  margin-bottom: 0;
+}
+
+/* Properties — quiet by default (docs-like); emphasize via Style Settings */
+.metadata-container {
+  margin-block-end: 1.35rem;
+  padding: 0.35rem 0.15rem;
+  border: 0;
+  border-bottom: 1px solid var(--metadata-divider-color);
+  border-radius: 0;
+  background: transparent;
+}
+
+body.stratus-properties-loud .metadata-container {
+  margin-block-end: 2rem;
+  padding: 0.6rem;
+  border: 1px solid var(--metadata-divider-color);
+  border-radius: var(--radius-l);
+  background: color-mix(in srgb, var(--background-secondary) 52%, transparent);
+}
+
+.metadata-properties-heading {
+  margin-bottom: 0.45rem;
+  color: var(--text-faint);
+  font-size: var(--font-ui-smaller);
+  font-weight: 600;
+}
+
+.metadata-property {
+  min-height: 34px;
+  border-radius: var(--radius-m);
+}
+
+.metadata-property-key {
+  font-size: var(--font-ui-small);
+  font-weight: 500;
+}
+
+.metadata-property-value {
+  font-size: var(--font-ui-small);
+}
+
+.metadata-property-icon {
+  color: var(--text-faint);
+}
+
+.multi-select-pill,
+.metadata-property-value .multi-select-pill {
+  border: 1px solid var(--tag-border-color);
+  background-color: var(--tag-background);
+  color: var(--tag-color);
+}
+
+/* Embeds and media */
+.internal-embed,
+.markdown-embed {
+  border-radius: var(--radius-m);
+}
+
+.markdown-embed {
+  padding-block: 0.55rem;
+  background-color: var(--embed-background);
+}
+
+.markdown-embed-title {
+  color: var(--text-faint);
+  font-size: var(--font-ui-smaller);
+  font-weight: 600;
+}
+
+.markdown-rendered :where(img, video) {
+  border-radius: var(--radius-m);
+}
+
+.image-embed img {
+  box-shadow: 0 0 0 1px var(--background-modifier-border);
+}
+
+.markdown-rendered figcaption {
+  margin-top: 0.55rem;
+  color: var(--text-faint);
+  font-size: 0.84em;
+  text-align: center;
+}
+
+/* --------------------------------------------------------------------------
+   App chrome
+   -------------------------------------------------------------------------- */
+
+.workspace {
+  background-color: var(--background-primary-alt);
+}
+
+.workspace-ribbon {
+  border-inline-end-color: var(--background-modifier-border);
+}
+
+.workspace-split.mod-root {
+  background-color: var(--background-primary);
+}
+
+.workspace-split.mod-root .workspace-tab-header-container {
+  border-bottom: 1px solid var(--tab-outline-color);
+  background-color: var(--background-primary-alt);
+}
+
+.workspace-tab-header-container-inner {
+  gap: 2px;
+  margin: 0 4px;
+}
+
+.workspace-tab-header {
+  border: 1px solid transparent;
+  border-bottom: 0;
+}
+
+.workspace-tab-header:hover {
+  background-color: var(--background-modifier-hover);
+}
+
+.workspace-tab-header.is-active {
+  border-color: var(--tab-outline-color);
+  background-color: var(--tab-background-active);
+  box-shadow: inset 0 2px 0 var(--interactive-accent);
+}
+
+.workspace-tab-header.is-active::before,
+.workspace-tab-header.is-active::after {
+  display: none;
+}
+
+.workspace-tab-header-inner-title {
+  font-size: var(--font-ui-small);
+  font-weight: 500;
+}
+
+.workspace-sidedock-vault-profile {
+  border-top: 1px solid var(--background-modifier-border);
+}
+
+.sidebar-toggle-button {
+  background-color: transparent;
+}
+
+.status-bar {
+  border: 1px solid var(--background-modifier-border);
+  border-width: 1px 0 0 1px;
+  border-radius: var(--radius-m) 0 0 0;
+  background-color: color-mix(
+    in srgb,
+    var(--background-secondary) 94%,
+    transparent
+  );
+  color: var(--text-faint);
+  font-size: var(--font-ui-smaller);
+  box-shadow: none;
+}
+
+.status-bar-item:hover {
+  color: var(--text-normal);
+}
+
+/* Sidebars, file explorer, and search */
+.workspace-split.mod-left-split,
+.workspace-split.mod-right-split {
+  background-color: var(--background-secondary);
+}
+
+.nav-header {
+  padding: 8px 10px 6px;
+}
+
+.nav-buttons-container {
+  gap: 2px;
+}
+
+.nav-files-container,
+.search-results-children {
+  padding: 4px 8px 16px;
+}
+
+.nav-folder-title,
+.nav-file-title {
+  min-height: 29px;
+  margin-bottom: 1px;
+  border-radius: var(--radius-m);
+  font-size: var(--font-ui-small);
+}
+
+.nav-folder-title {
+  font-weight: 500;
+}
+
+.nav-folder-title-content,
+.nav-file-title-content {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.nav-file-title.is-active {
+  box-shadow: inset 2px 0 0 var(--interactive-accent);
+}
+
+.search-input-container input {
+  padding-inline-start: 34px;
+}
+
+.search-result-file-title {
+  color: var(--text-normal);
+  font-size: var(--font-ui-small);
+  font-weight: 600;
+}
+
+.search-result-file-match {
+  margin-block: 5px;
+  padding: 8px 10px;
+  border: 1px solid var(--background-modifier-border);
+  border-radius: var(--radius-m);
+  background-color: color-mix(
+    in srgb,
+    var(--background-secondary) 78%,
+    transparent
+  );
+  color: var(--text-muted);
+}
+
+.search-result-file-match:hover {
+  border-color: var(--background-modifier-border-hover);
+  background-color: var(--background-modifier-hover);
+  color: var(--text-normal);
+}
+
+.search-result-file-matched-text {
+  border-radius: 2px;
+  background-color: var(--highlight-bg);
+  color: var(--highlight-text-color);
+  font-weight: 600;
+}
+
+/* Backlinks, outgoing links, outline — clearer secondary panes */
+.workspace-leaf-content[data-type="backlink"] .tree-item-self,
+.workspace-leaf-content[data-type="outgoing-link"] .tree-item-self,
+.workspace-leaf-content[data-type="outline"] .tree-item-self {
+  border-radius: var(--radius-m);
+  color: var(--text-muted);
+}
+
+.workspace-leaf-content[data-type="backlink"] .tree-item-self:hover,
+.workspace-leaf-content[data-type="outgoing-link"] .tree-item-self:hover,
+.workspace-leaf-content[data-type="outline"] .tree-item-self:hover {
+  background-color: var(--background-modifier-hover);
+  color: var(--text-normal);
+}
+
+.workspace-leaf-content[data-type="backlink"] .tree-item-self.is-active,
+.workspace-leaf-content[data-type="outgoing-link"] .tree-item-self.is-active,
+.workspace-leaf-content[data-type="outline"] .tree-item-self.is-active {
+  background-color: var(--background-modifier-active-hover);
+  color: var(--text-normal);
+  box-shadow: inset 2px 0 0 var(--interactive-accent);
+}
+
+.workspace-leaf-content[data-type="backlink"] .search-result-file-title,
+.workspace-leaf-content[data-type="outgoing-link"] .search-result-file-title {
+  color: var(--text-normal);
+}
+
+.workspace-leaf-content[data-type="outline"] .tree-item-inner {
+  font-size: var(--font-ui-small);
+}
+
+/* --------------------------------------------------------------------------
+   Menus, dialogs, settings, and controls
+   -------------------------------------------------------------------------- */
+
+.menu,
+.suggestion-container,
+.popover,
+.tooltip,
+.modal,
+.prompt {
+  border: 1px solid var(--background-modifier-border);
+  background-color: color-mix(
+    in srgb,
+    var(--background-secondary) 96%,
+    transparent
+  );
+  box-shadow:
+    0 18px 50px var(--background-modifier-box-shadow),
+    0 2px 8px var(--background-modifier-box-shadow);
+}
+
+.menu,
+.suggestion-container,
+.popover {
+  backdrop-filter: blur(16px);
+}
+
+.menu-item,
+.suggestion-item {
+  min-height: 30px;
+  border-radius: var(--radius-m);
+}
+
+.menu-item.selected,
+.suggestion-item.is-selected {
+  background-color: var(--background-modifier-active-hover);
+  color: var(--text-normal);
+}
+
+.menu-separator {
+  border-color: var(--background-modifier-border);
+}
+
+.tooltip {
+  padding: 6px 9px;
+  border-radius: var(--radius-m);
+  color: var(--text-normal);
+  font-size: var(--font-ui-smaller);
+}
+
+.modal {
+  overflow: hidden;
+}
+
+.modal-header {
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--background-modifier-border);
+}
+
+.modal-title {
+  font-weight: 600;
+}
+
+.modal-close-button {
+  border-radius: var(--radius-m);
+}
+
+.modal-close-button:hover {
+  background-color: var(--background-modifier-hover);
+}
+
+.prompt-input-container {
+  border-bottom: 1px solid var(--background-modifier-border);
+}
+
+.prompt-input {
+  font-size: var(--font-ui-large);
+}
+
+.vertical-tab-header {
+  border-inline-end: 1px solid var(--background-modifier-border);
+  background-color: var(--background-primary-alt);
+}
+
+.vertical-tab-nav-item {
+  border-radius: var(--radius-m);
+  color: var(--text-muted);
+}
+
+.vertical-tab-nav-item.is-active {
+  background-color: var(--background-modifier-active-hover);
+  color: var(--text-normal);
+  box-shadow: inset 2px 0 0 var(--interactive-accent);
+}
+
+.setting-item {
+  padding-block: 1rem;
+  border-top-color: var(--background-modifier-border);
+}
+
+.setting-item-heading .setting-item-name {
+  color: var(--text-normal);
+  font-weight: 600;
+}
+
+.setting-item-description {
+  color: var(--text-faint);
+  line-height: 1.5;
+}
+
+input[type="text"],
+input[type="search"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+textarea,
+select,
+.dropdown {
+  border: 1px solid var(--background-modifier-border);
+  background-color: var(--background-modifier-form-field);
+  color: var(--text-normal);
+  box-shadow: none;
+}
+
+:where(
+    input[type="text"],
+    input[type="search"],
+    input[type="email"],
+    input[type="password"],
+    input[type="number"],
+    textarea,
+    select,
+    .dropdown
+  ):hover {
+  border-color: var(--background-modifier-border-hover);
+}
+
+:where(
+    input[type="text"],
+    input[type="search"],
+    input[type="email"],
+    input[type="password"],
+    input[type="number"],
+    textarea,
+    select,
+    .dropdown
+  ):focus {
+  border-color: var(--background-modifier-border-focus);
+  outline: 2px solid var(--background-modifier-border-focus);
+  outline-offset: 1px;
+  box-shadow: none;
+}
+
+button:not(.clickable-icon, .mod-warning, .mod-destructive) {
+  border: 1px solid var(--background-modifier-border);
+  background-color: var(--interactive-normal);
+  color: var(--text-normal);
+  font-weight: 500;
+  box-shadow: none;
+}
+
+button:not(.clickable-icon, .mod-warning, .mod-destructive):hover {
+  border-color: var(--background-modifier-border-hover);
+  background-color: var(--interactive-hover);
+}
+
+button.mod-cta {
+  border-color: transparent;
+  background-color: var(--interactive-accent);
+  color: var(--text-on-accent);
+}
+
+button.mod-cta:hover {
+  background-color: var(--interactive-accent-hover);
+}
+
+.checkbox-container {
+  border: 1px solid var(--background-modifier-border);
+  background-color: var(--background-modifier-form-field);
+  box-shadow: none;
+}
+
+.checkbox-container.is-enabled {
+  border-color: transparent;
+  background-color: var(--interactive-accent);
+}
+
+.slider {
+  background-color: var(--background-modifier-border);
+}
+
+.slider::-webkit-slider-thumb {
+  border: 2px solid var(--background-primary);
+  background-color: var(--interactive-accent);
+  box-shadow: 0 0 0 1px var(--background-modifier-border);
+}
+
+/* Hover previews */
+.popover.hover-popover {
+  border-radius: var(--radius-l);
+}
+
+.popover.hover-popover .markdown-preview-view {
+  padding: 1.15rem 1.3rem;
+}
+
+.popover.hover-popover .markdown-preview-sizer {
+  padding-bottom: 0;
+}
+
+/* --------------------------------------------------------------------------
+   Core views: Graph, Canvas, and Bases
+   -------------------------------------------------------------------------- */
+
+.graph-view.color-fill {
+  color: var(--graph-node);
+}
+
+.graph-view.color-fill-focused {
+  color: var(--graph-node-focused);
+}
+
+.graph-view.color-fill-tag {
+  color: var(--graph-node-tag);
+}
+
+.graph-view.color-fill-attachment {
+  color: var(--graph-node-attachment);
+}
+
+.graph-view.color-line {
+  color: var(--graph-line);
+}
+
+.graph-controls {
+  border: 1px solid var(--background-modifier-border);
+  border-radius: var(--radius-l);
+  background-color: color-mix(
+    in srgb,
+    var(--background-secondary) 94%,
+    transparent
+  );
+  box-shadow: 0 12px 30px var(--background-modifier-box-shadow);
+}
+
+.canvas-wrapper {
+  --canvas-background: var(--background-primary);
+}
+
+.canvas-node-container {
+  border: 1px solid var(--background-modifier-border);
+  border-radius: var(--radius-m);
+  background-color: var(--background-primary);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.canvas-node.is-selected .canvas-node-container {
+  border-color: rgb(var(--canvas-color));
+  box-shadow: 0 0 0 2px rgba(var(--canvas-color), 0.18);
+}
+
+.canvas-control-group,
+.canvas-card-menu {
+  border: 1px solid var(--background-modifier-border);
+  border-radius: var(--radius-m);
+  background-color: var(--background-secondary);
+  box-shadow: 0 4px 16px var(--background-modifier-box-shadow);
+}
+
+.canvas-control-item {
+  color: var(--text-muted);
+}
+
+.canvas-control-item:hover {
+  background-color: var(--background-modifier-hover);
+  color: var(--text-normal);
+}
+
+.bases-view {
+  --table-border-color: var(--background-modifier-border);
+  color: var(--text-normal);
+}
+
+.bases-toolbar {
+  gap: 6px;
+  min-height: 40px;
+  padding-block: 6px;
+  border-bottom: 1px solid var(--background-modifier-border);
+  background-color: var(--background-primary-alt);
+}
+
+:where(.bases-table, .bases-cards-container) {
+  background-color: var(--background-primary);
+}
+
+:where(.bases-thead, .bases-table-header) {
+  background-color: var(--table-header-background);
+  color: var(--text-muted);
+  font-size: var(--font-ui-smaller);
+  font-weight: 600;
+}
+
+:where(.bases-td, .bases-table-cell) {
+  padding-block: 0.4rem;
+  border-color: var(--background-modifier-border);
+  font-size: var(--font-ui-small);
+}
+
+:where(.bases-tr, .bases-table-row):hover {
+  background-color: var(--table-row-background-hover);
+}
+
+:where(.bases-card, .bases-cards-item) {
+  border: 1px solid var(--background-modifier-border);
+  border-radius: var(--radius-m);
+  background-color: var(--background-secondary);
+}
+
+/* --------------------------------------------------------------------------
+   Responsive and accessibility
+   -------------------------------------------------------------------------- */
+
+.is-mobile {
+  --font-text-size: 16px;
+  --mobile-sidebar-width: min(88vw, 360px);
+}
+
+.is-mobile :where(.markdown-reading-view, .markdown-source-view) {
+  --file-margins: 20px;
+}
+
+.is-mobile .workspace-drawer-header {
+  border-bottom: 1px solid var(--background-modifier-border);
+  background-color: var(--background-secondary);
+}
+
+.is-mobile .workspace-drawer-inner {
+  background-color: var(--background-secondary);
+}
+
+.is-mobile .mobile-navbar {
+  border-top: 1px solid var(--background-modifier-border);
+  background-color: color-mix(
+    in srgb,
+    var(--background-secondary) 96%,
+    transparent
+  );
+}
+
+.is-mobile .modal {
+  border-radius: var(--radius-xl) var(--radius-xl) 0 0;
+}
+
+@media (max-width: 600px) {
+  .inline-title {
+    font-size: 1.9rem;
+  }
+
+  .markdown-rendered table {
+    font-size: 0.88em;
+  }
+
+  .metadata-container {
+    padding: 0.4rem;
+  }
+
+  .callout-title {
+    padding: 0.65rem 0.75rem;
+  }
+
+  .callout-content {
+    padding-inline: 0.75rem;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Note cssclasses, editor comfort, density, accent, and focus chrome
+   Inspired by the calm reading chrome of Cloudflare Docs:
+   https://developers.cloudflare.com/
+   -------------------------------------------------------------------------- */
+
+/* Reading width presets (Style Settings) + per-note overrides */
+body.stratus-width-comfortable {
+  --file-line-width: 1000px;
+}
+
+body.stratus-width-wide {
+  --file-line-width: 1200px;
+}
+
+body.stratus-width-full {
+  --file-line-width: 100%;
+}
+
+.wide {
+  --file-line-width: 1200px;
+}
+
+.max {
+  --file-line-width: 100%;
+}
+
+/* Full-bleed tables inside a note */
+.table-100 .markdown-rendered table,
+.table-100 .cm-table-widget table {
+  width: 100%;
+  max-width: 100%;
+}
+
+/* Soft card treatment for embeds and callouts */
+.cards .markdown-embed,
+.cards .internal-embed:not(.image-embed),
+.cards .callout {
+  border: 1px solid var(--background-modifier-border);
+  border-radius: var(--radius-l);
+  background-color: color-mix(
+    in srgb,
+    var(--background-secondary) 72%,
+    transparent
+  );
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.03);
+}
+
+.cards .callout {
+  border-color: rgba(var(--callout-color), 0.28);
+  background-color: rgba(var(--callout-color), 0.06);
+}
+
+/* Two-column image gallery */
+.img-grid .image-embed,
+.img-grid .internal-embed.media-embed {
+  display: inline-block;
+  width: calc(50% - 0.4rem);
+  margin: 0.25rem 0.2rem;
+  vertical-align: top;
+}
+
+.img-grid .image-embed img,
+.img-grid .internal-embed.media-embed img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: var(--radius-m);
+}
+
+/* Image helpers */
+.img-small .image-embed img,
+.img-small .internal-embed.media-embed img,
+.img-small img {
+  max-width: min(280px, 100%);
+  height: auto;
+}
+
+.img-center .image-embed,
+.img-center .internal-embed.media-embed,
+.img-center p > img {
+  display: block;
+  margin-inline: auto;
+  text-align: center;
+}
+
+.img-center .image-embed img,
+.img-center .internal-embed.media-embed img,
+.img-center p > img {
+  margin-inline: auto;
+}
+
+/* Callout variants via cssclasses */
+.callout-muted .callout {
+  border-color: var(--background-modifier-border);
+  background-color: color-mix(
+    in srgb,
+    var(--background-secondary) 70%,
+    transparent
+  );
+}
+
+.callout-muted .callout-title {
+  color: var(--text-muted);
+}
+
+.callout-borderless .callout {
+  border-color: transparent;
+  border-inline-start-width: 0;
+  background-color: transparent;
+  box-shadow: none;
+}
+
+/* Active line highlight (disable with Style Settings → stratus-no-active-line) */
+.markdown-source-view.mod-cm6 .cm-line.cm-active {
+  background-color: color-mix(
+    in srgb,
+    var(--stratus-orange-wash) 70%,
+    transparent
+  );
+  border-radius: 2px;
+}
+
+body.stratus-no-active-line .markdown-source-view.mod-cm6 .cm-line.cm-active {
+  background-color: transparent;
+}
+
+/* Custom task status markers */
+.markdown-rendered .task-list-item[data-task="/"] > input,
+.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="/"] .task-list-item-checkbox,
+.markdown-rendered .task-list-item[data-task="-"] > input,
+.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="-"] .task-list-item-checkbox {
+  border-color: var(--stratus-amber);
+  background-color: rgba(230, 191, 122, 0.18);
+}
+
+.markdown-rendered .task-list-item[data-task=">"] > input,
+.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task=">"] .task-list-item-checkbox {
+  border-color: var(--stratus-sky);
+  background-color: var(--stratus-sky-wash);
+}
+
+.markdown-rendered .task-list-item[data-task="!"] > input,
+.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="!"] .task-list-item-checkbox {
+  border-color: var(--stratus-orange);
+  background-color: var(--stratus-orange-wash);
+}
+
+.markdown-rendered .task-list-item[data-task="x"] > input:checked,
+.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="x"] .task-list-item-checkbox {
+  border-color: var(--stratus-green);
+  background-color: var(--stratus-green);
+  --checkbox-color: var(--stratus-green);
+}
+
+/* Folder tree guides — docs-sidebar clarity */
+.nav-folder-children {
+  margin-inline-start: 0.35rem;
+  padding-inline-start: 0.55rem;
+  border-inline-start: 1px solid var(--background-modifier-border);
+}
+
+/* Density */
+body.stratus-density-compact {
+  --p-spacing: 0.95rem;
+  --heading-spacing: calc(var(--p-spacing) * 1.7);
+  --list-spacing: 0.1em;
+  --size-4-2: 6px;
+  --size-4-3: 10px;
+  --size-4-4: 12px;
+}
+
+body.stratus-density-compact .nav-file-title,
+body.stratus-density-compact .nav-folder-title {
+  padding-block: 2px;
+}
+
+body.stratus-density-compact .workspace-tab-header {
+  padding-inline: 8px;
+}
+
+body.stratus-density-spacious {
+  --p-spacing: 1.35rem;
+  --heading-spacing: calc(var(--p-spacing) * 2.4);
+  --list-spacing: 0.35em;
+  --size-4-2: 10px;
+  --size-4-3: 14px;
+  --size-4-4: 20px;
+}
+
+body.stratus-density-spacious .nav-file-title,
+body.stratus-density-spacious .nav-folder-title {
+  padding-block: 6px;
+}
+
+/* Accent: restore console blue when selected */
+body.stratus-accent-blue.theme-dark {
+  --accent-h: 212;
+  --accent-s: 100%;
+  --accent-l: 66%;
+  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+  --color-accent: hsl(var(--color-accent-hsl));
+  --color-accent-1: hsl(
+    var(--accent-h),
+    var(--accent-s),
+    calc(var(--accent-l) + 12%)
+  );
+  --color-accent-2: hsl(
+    var(--accent-h),
+    var(--accent-s),
+    calc(var(--accent-l) + 18%)
+  );
+  --background-modifier-active-hover: var(--stratus-sky-wash);
+  --nav-item-background-active: var(--stratus-sky-wash);
+  --nav-item-background-selected: var(--stratus-sky-wash);
+  --text-on-accent: #07111d;
+  --text-on-accent-inverted: #07111d;
+  --text-selection: hsla(var(--color-accent-hsl), 0.24);
+  --interactive-accent: var(--color-accent);
+  --interactive-accent-hover: var(--color-accent-1);
+  --interactive-accent-hsl: var(--color-accent-hsl);
+  --canvas-color: 81, 162, 255;
+  --table-row-background-hover: rgba(81, 162, 255, 0.055);
+}
+
+body.stratus-accent-blue.theme-light {
+  --accent-h: 211;
+  --accent-s: 79%;
+  --accent-l: 43%;
+  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+  --color-accent: hsl(var(--color-accent-hsl));
+  --color-accent-1: hsl(
+    var(--accent-h),
+    var(--accent-s),
+    calc(var(--accent-l) - 8%)
+  );
+  --color-accent-2: hsl(
+    var(--accent-h),
+    var(--accent-s),
+    calc(var(--accent-l) - 13%)
+  );
+  --background-modifier-active-hover: var(--stratus-sky-wash);
+  --nav-item-background-active: var(--stratus-sky-wash);
+  --nav-item-background-selected: var(--stratus-sky-wash);
+  --text-on-accent: #ffffff;
+  --text-on-accent-inverted: #ffffff;
+  --text-selection: hsla(var(--color-accent-hsl), 0.18);
+  --interactive-accent: var(--color-accent);
+  --interactive-accent-hover: var(--color-accent-1);
+  --interactive-accent-hsl: var(--color-accent-hsl);
+  --canvas-color: 23, 105, 194;
+  --table-row-background-hover: rgba(23, 105, 194, 0.045);
+}
+
+body.stratus-accent-blue .markdown-source-view.mod-cm6 .cm-line.cm-active {
+  background-color: color-mix(in srgb, var(--stratus-sky-wash) 80%, transparent);
+}
+
+body.stratus-accent-blue.stratus-no-active-line
+  .markdown-source-view.mod-cm6
+  .cm-line.cm-active {
+  background-color: transparent;
+}
+
+/* Focus chrome — all default off for community-theme review safety */
+body.stratus-hide-ribbon .workspace-ribbon {
+  display: none;
+}
+
+body.stratus-hide-status-bar .status-bar {
+  display: none;
+}
+
+body.stratus-hide-tabs .workspace-split.mod-root .workspace-tab-header-container {
+  display: none;
+}
+
+body.stratus-hide-properties .markdown-reading-view .metadata-container {
+  display: none;
+}
+
+body.stratus-hide-inline-title .inline-title {
+  display: none;
+}
+
+/* --------------------------------------------------------------------------
+   Optional community plugins — progressive only; never required
+   Dataview and Tasks selectors no-op when those plugins are absent.
+   -------------------------------------------------------------------------- */
+
+.table-view-table,
+.dataview.table-view-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 1px solid var(--table-border-color);
+  border-radius: var(--radius-m);
+  overflow: hidden;
+  font-size: 0.94em;
+}
+
+.table-view-table th,
+.dataview.table-view-table th {
+  padding: 0.55rem 0.75rem;
+  background-color: var(--table-header-background);
+  color: var(--text-muted);
+  font-size: 0.82em;
+  font-weight: 600;
+  text-align: start;
+}
+
+.table-view-table td,
+.dataview.table-view-table td {
+  padding: 0.5rem 0.75rem;
+  border-top: 1px solid var(--table-border-color);
+  color: var(--text-normal);
+}
+
+.table-view-table tr:hover td,
+.dataview.table-view-table tr:hover td {
+  background-color: var(--table-row-background-hover);
+}
+
+ul.dataview,
+ol.dataview,
+.dataview.list-view-ul {
+  padding-inline-start: 1.25rem;
+}
+
+.dataview.list-view-ul > li,
+ul.dataview > li {
+  margin-block: 0.2em;
+  color: var(--text-normal);
+}
+
+/* Tasks plugin — keep markers readable without restyling the whole plugin */
+.plugin-tasks-list-item,
+.task-list-item.plugin-tasks-list-item {
+  border-radius: var(--radius-s);
+}
+
+.tasks-backlink,
+.task-extras {
+  color: var(--text-faint);
+  font-size: var(--font-ui-smaller);
+}
+
+.task-cancelled,
+.plugin-tasks-cancelled {
+  color: var(--text-faint);
+}
+
+/* Docs-like CTA buttons */
+button.mod-cta {
+  font-weight: 600;
+  border-radius: var(--radius-m);
+}
+
+/* Print / PDF export */
+@media print {
+  body {
+    --background-primary: #ffffff;
+    --background-primary-alt: #ffffff;
+    --background-secondary: #ffffff;
+    --text-normal: #14191f;
+    --text-muted: #4f5b68;
+    --text-faint: #66717f;
+    --background-modifier-border: #d8dee7;
+  }
+
+  .workspace-ribbon,
+  .status-bar,
+  .workspace-tab-header-container,
+  .view-header,
+  .workspace-split.mod-left-split,
+  .workspace-split.mod-right-split {
+    display: none;
+  }
+
+  .markdown-preview-view,
+  .markdown-reading-view {
+    max-width: none;
+    color: #14191f;
+    background: #ffffff;
+  }
+
+  a {
+    color: #1769c2;
+    text-decoration: underline;
+  }
+
+  .callout,
+  pre,
+  table {
+    break-inside: avoid;
+  }
+}
+
+@media (prefers-contrast: more) {
+  .theme-dark {
+    --stratus-line: #666666;
+    --stratus-line-strong: #8a8a8a;
+    --stratus-faint: var(--stratus-mist);
+    --checkbox-border-color: var(--stratus-mist);
+    --icon-color: var(--stratus-mist);
+  }
+
+  .theme-light {
+    --stratus-line: #6b7280;
+    --stratus-line-strong: #4b5563;
+    --stratus-faint: var(--stratus-mist);
+    --checkbox-border-color: var(--stratus-mist);
+    --icon-color: var(--stratus-mist);
+  }
+
+  :where(.theme-dark, .theme-light) {
+    --text-muted: var(--text-normal);
+    --link-unresolved-opacity: 1;
+  }
+
+  :where(.workspace-tab-header.is-active, .nav-file-title.is-active) {
+    outline: 1px solid var(--background-modifier-border-focus);
+    outline-offset: -1px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto;
+    animation-duration: 0.01ms;
+    animation-iteration-count: 1;
+    transition-duration: 0.01ms;
+  }
+}

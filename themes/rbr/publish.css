@@ -1440,6 +1440,7 @@ body.theme-dark {
   --vault-name-color: var(--rbr-rb-yellow) !important;
   --bold-color: var(--rbr-chequer-white) !important;
   --italic-color: var(--rbr-livery-blue-bright) !important;
+  --tag-weight: 600 !important;
   --code-number: var(--rbr-light-grey) !important;
   --interactive-success: var(--rbr-paddock-green) !important;
   --indentation-guide: var(--rbr-overlay-0) !important;
@@ -1448,7 +1449,6 @@ body.theme-dark {
   --callout-note: var(--rbr-oracle-blue-rgb);
   --callout-abstract: var(--rbr-oracle-blue-rgb);
   --toggle-border-color: var(--rbr-overlay-1) !important;
-  --tag-weight: 600 !important;
   --table-row-background: transparent !important;
   --callout-cite: 133, 144, 174;
   --popover-background: var(--rbr-surface-0) !important;

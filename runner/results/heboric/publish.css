@@ -1444,13 +1444,13 @@ body.theme-light {
   --h5-color: var(--color-base-80) !important;
   --h6-color: var(--color-base-80) !important;
   --inline-title-color: var(--color-base-100) !important;
+  --inline-title-font: var(--h1-font) !important;
   --h1-font: var(--sans-serif) !important;
   --h2-font: var(--sans-serif) !important;
   --h3-font: var(--sans-serif) !important;
   --h4-font: var(--sans-serif) !important;
   --h5-font: var(--sans-serif) !important;
   --h6-font: var(--sans-serif) !important;
-  --inline-title-font: var(--h1-font) !important;
   --table-header-font: var(--sans-serif) !important;
   --color-base-80: #444444 !important;
   --mono:
@@ -2517,13 +2517,13 @@ body.theme-dark {
   --h5-color: var(--color-base-80) !important;
   --h6-color: var(--color-base-80) !important;
   --inline-title-color: var(--color-base-100) !important;
+  --inline-title-font: var(--h1-font) !important;
   --h1-font: var(--sans-serif) !important;
   --h2-font: var(--sans-serif) !important;
   --h3-font: var(--sans-serif) !important;
   --h4-font: var(--sans-serif) !important;
   --h5-font: var(--sans-serif) !important;
   --h6-font: var(--sans-serif) !important;
-  --inline-title-font: var(--h1-font) !important;
   --table-header-font: var(--sans-serif) !important;
   --color-base-80: hsl(221, 8%, 85%) !important;
   --mono:

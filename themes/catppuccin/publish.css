@@ -1600,6 +1600,7 @@ body.theme-light {
   --text-error-hover: rgb(var(--ctp-red), 80%) !important;
   --vault-name-color: var(--text-normal) !important;
   --interactive-success: rgb(var(--ctp-green)) !important;
+  --embed-border-left: 2px solid var(--interactive-accent) !important;
   --ctp-accent: var(--ctp-lavender) !important;
   --ctp-base: 239, 241, 245 !important;
   --ctp-blue: 30, 102, 245 !important;
@@ -1630,7 +1631,6 @@ body.theme-light {
   --text-muted-rgb: var(--ctp-subtext0) !important;
   --transition-text-decoration-color: text-decoration-color 0.3s
     cubic-bezier(0.44, 0.21, 0, 1) !important;
-  --embed-border-left: 2px solid var(--interactive-accent) !important;
   --embed-border-right: none !important;
   --nav-item-children-margin-left: var(--size-4-3) !important;
   --nav-item-children-padding-left: var(--size-2-2) !important;
@@ -2686,6 +2686,7 @@ body.theme-dark {
   --text-error-hover: rgb(var(--ctp-red), 80%) !important;
   --vault-name-color: var(--text-normal) !important;
   --interactive-success: rgb(var(--ctp-green)) !important;
+  --embed-border-left: 2px solid var(--interactive-accent) !important;
   --ctp-accent: var(--ctp-lavender) !important;
   --ctp-base: 30, 30, 46 !important;
   --ctp-blue: 137, 180, 250 !important;
@@ -2716,7 +2717,6 @@ body.theme-dark {
   --text-muted-rgb: var(--ctp-subtext0) !important;
   --transition-text-decoration-color: text-decoration-color 0.3s
     cubic-bezier(0.44, 0.21, 0, 1) !important;
-  --embed-border-left: 2px solid var(--interactive-accent) !important;
   --embed-border-right: none !important;
   --nav-item-children-margin-left: var(--size-4-3) !important;
   --nav-item-children-padding-left: var(--size-2-2) !important;

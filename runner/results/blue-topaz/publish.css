@@ -1144,13 +1144,14 @@ body.theme-light {
   --text-error-hover: #f86959 !important;
   --light-purple: #b74ff3 !important;
   --light-yellow: #ab9a02 !important;
+  --inline-title-font: var(--h1-font) !important;
   --h1-font: var(--font-text), var(--font-default) !important;
   --h2-font: var(--font-text), var(--font-default) !important;
   --h3-font: var(--font-text), var(--font-default) !important;
   --h4-font: var(--font-text), var(--font-default) !important;
-  --inline-title-font: var(--h1-font) !important;
   --folder-title: #000000 !important;
   --panel-border-color: #dbdbdc !important;
+  --text-highlight: var(--text-normal) !important;
   --bases-table-text-size: var(--font-text-size) !important;
   --code-attribute: var(--code-function) !important;
   --code-number: #ff5370 !important;
@@ -1996,7 +1997,6 @@ body.theme-light {
   --text-folder-file-icon: var(--theme-color) !important;
   --text-gray: #37352f99 !important;
   --text-green: #00927f !important;
-  --text-highlight: var(--text-normal) !important;
   --text-highlight-bg-a-dark: 0.541 !important;
   --text-highlight-bg-a-light: 0.847 !important;
   --text-highlight-bg-h-dark: 57 !important;
@@ -3173,13 +3173,14 @@ body.theme-dark {
   --accent-strong: #e7e7e7 !important;
   --text-error-hover: #c9626a !important;
   --light-yellow: #cac685 !important;
+  --inline-title-font: var(--h1-font) !important;
   --h1-font: var(--font-text), var(--font-default) !important;
   --h2-font: var(--font-text), var(--font-default) !important;
   --h3-font: var(--font-text), var(--font-default) !important;
   --h4-font: var(--font-text), var(--font-default) !important;
-  --inline-title-font: var(--h1-font) !important;
   --folder-title: #ffffff !important;
   --panel-border-color: #18191e !important;
+  --text-highlight: var(--text-normal) !important;
   --bases-table-text-size: var(--font-text-size) !important;
   --code-attribute: var(--code-function) !important;
   --code-number: #ff5370 !important;
@@ -4029,7 +4030,6 @@ body.theme-dark {
   --text-folder-file-icon: var(--theme-color) !important;
   --text-gray: #acacac !important;
   --text-green: #52c7b2 !important;
-  --text-highlight: var(--text-normal) !important;
   --text-highlight-bg-a-dark: 0.541 !important;
   --text-highlight-bg-a-light: 0.847 !important;
   --text-highlight-bg-h-dark: 57 !important;
