@@ -10,7 +10,8 @@
   "files": [
     "theme.json",
     "README.md",
-    "LICENSE"
+    "LICENSE",
+    "fonts/"
   ],
   "keywords": [
     "quartz",

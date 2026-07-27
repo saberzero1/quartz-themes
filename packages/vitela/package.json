@@ -1,0 +1,31 @@
+{
+  "name": "@quartz-themes/vitela",
+  "version": "1.0.0",
+  "description": "Vitela theme for Quartz",
+  "main": "./theme.json",
+  "exports": {
+    ".": "./theme.json",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "theme.json",
+    "README.md",
+    "LICENSE",
+    "fonts/"
+  ],
+  "keywords": [
+    "quartz",
+    "quartz-theme",
+    "obsidian",
+    "vitela"
+  ],
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/quartz-themes/vitela.git"
+  },
+  "homepage": "https://quartz-themes.github.io/vitela"
+}

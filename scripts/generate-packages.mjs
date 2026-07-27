@@ -36,6 +36,7 @@ const themesDir = join(repoRoot, "plugin", "src", "themes");
 const themesJsonPath = join(repoRoot, "themes.json");
 const obsidianDir = join(repoRoot, "obsidian");
 const outputDir = join(repoRoot, "packages");
+const fontsSourceDir = join(repoRoot, "fonts");
 
 const DRY_RUN = process.argv.includes("--dry-run");
 const FILTER = process.argv
@@ -175,6 +176,7 @@ function makePackageJson(
   license,
   isCollection,
   variants,
+  hasFonts,
 ) {
   const pkg = {
     name: `@quartz-themes/${name}`,
@@ -192,6 +194,10 @@ function makePackageJson(
     },
     homepage: `https://quartz-themes.github.io/${name}`,
   };
+
+  if (hasFonts) {
+    pkg.files.push("fonts/");
+  }
 
   if (isCollection && variants.length > 0) {
     pkg.files.push("variants/");
@@ -286,6 +292,23 @@ function main() {
         .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
         .join(" ");
 
+      // Copy font files if available
+      const themeFontDir = join(fontsSourceDir, themeId);
+      let hasFonts = false;
+      if (existsSync(themeFontDir)) {
+        const fontFiles = readdirSync(themeFontDir).filter(
+          (f) => f !== "manifest.json",
+        );
+        if (fontFiles.length > 0) {
+          const destFontDir = join(packageDir, "fonts");
+          mkdirSync(destFontDir, { recursive: true });
+          for (const f of fontFiles) {
+            cpSync(join(themeFontDir, f), join(destFontDir, f));
+          }
+          hasFonts = true;
+        }
+      }
+
       // Write package.json
       const pkgJson = makePackageJson(
         themeId,
@@ -294,6 +317,7 @@ function main() {
         license,
         isCollection,
         variants,
+        hasFonts,
       );
       writeFileSync(join(packageDir, "package.json"), pkgJson);
 
