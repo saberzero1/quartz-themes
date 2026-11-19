@@ -12,15 +12,22 @@ import { fileURLToPath } from "node:url";
 import { startQuartz } from "../harness/quartz.mjs";
 
 const { core } = await import("../harness/core.mjs");
-const repo = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
-const arg = (k, d) => process.argv.find((a) => a.startsWith(`--${k}=`))?.slice(k.length + 3) ?? d;
+const repo = path.resolve(
+  path.dirname(fileURLToPath(import.meta.url)),
+  "../..",
+);
+const arg = (k, d) =>
+  process.argv.find((a) => a.startsWith(`--${k}=`))?.slice(k.length + 3) ?? d;
 const themes = arg("themes", "Minimal").split(",");
 const pages = arg("pages", "callouts").split(",");
 const modes = arg("modes", "dark,light").split(",");
 const outDir = path.resolve(arg("out", path.join(repo, "fidelity/out/shots")));
 const site = path.resolve(
   arg("site", "") ||
-    [path.join(repo, "../dev-mode/.dev/sites/dir-site"), path.join(repo, "runner/quartz/public")].find((d) => fs.existsSync(path.join(d, "index.html"))),
+    [
+      path.join(repo, "fidelity/out/site"),
+      path.join(repo, "../dev-mode/.dev/sites/dir-site"),
+    ].find((d) => fs.existsSync(path.join(d, "index.html"))),
 );
 const safe = (n) => n.replace(/[^\w.@-]+/g, "_");
 
@@ -29,7 +36,11 @@ const quartz = await startQuartz({ site });
 try {
   for (const theme of themes) {
     // Resolved like a site resolves it (registry name, owner/repo, URL or path).
-    const themeCss = (await core.resolveTheme(theme, { cacheDir: path.join(repo, "fidelity/out/theme-cache") })).css;
+    const themeCss = (
+      await core.resolveTheme(theme, {
+        cacheDir: path.join(repo, "fidelity/out/theme-cache"),
+      })
+    ).css;
     const css = core.convertTheme({ themeCss });
     for (const mode of modes) {
       const q = await quartz.newPage(css, mode);

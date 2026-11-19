@@ -1,8 +1,0 @@
-/* Screen/multiply blending for translucent layering effect */
-.workspace-leaf-content {
-  mix-blend-mode: screen;
-}
-
-.theme-light .workspace-leaf-content {
-  mix-blend-mode: multiply;
-}

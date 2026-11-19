@@ -13,7 +13,8 @@ import ObsidianLauncher from "obsidian-launcher";
 import { chromium } from "playwright";
 import { measureInPage } from "./probes.mjs";
 
-export const OBSIDIAN_ROOT = ".workspace-leaf.mod-active .markdown-preview-view";
+export const OBSIDIAN_ROOT =
+  ".workspace-leaf.mod-active .markdown-preview-view";
 
 /**
  * Build a lean vault: the specimen notes and plugins of `sourceVault`, plus the
@@ -24,7 +25,9 @@ function leanVault(sourceVault, themes, styleSettings) {
   const dir = fs.mkdtempSync(path.join(os.tmpdir(), "qt-fidelity-vault-"));
   fs.cpSync(sourceVault, dir, {
     recursive: true,
-    filter: (src) => !src.includes(`${path.sep}.obsidian${path.sep}themes`) && !src.endsWith(`${path.sep}workspace.json`),
+    filter: (src) =>
+      !src.includes(`${path.sep}.obsidian${path.sep}themes`) &&
+      !src.endsWith(`${path.sep}workspace.json`),
   });
   const themesOut = path.join(dir, ".obsidian", "themes");
   fs.mkdirSync(themesOut, { recursive: true });
@@ -32,26 +35,60 @@ function leanVault(sourceVault, themes, styleSettings) {
     const dir = path.join(themesOut, t.name);
     fs.mkdirSync(dir, { recursive: true });
     fs.writeFileSync(path.join(dir, "theme.css"), t.css);
-    fs.writeFileSync(path.join(dir, "manifest.json"), JSON.stringify({ name: t.name, version: "0.0.0", minAppVersion: "1.0.0" }));
+    fs.writeFileSync(
+      path.join(dir, "manifest.json"),
+      JSON.stringify({
+        name: t.name,
+        version: "0.0.0",
+        minAppVersion: "1.0.0",
+      }),
+    );
   }
   // Reading view by default, no theme yet.
-  fs.writeFileSync(path.join(dir, ".obsidian", "app.json"), JSON.stringify({ defaultViewMode: "preview", livePreview: true }));
-  fs.writeFileSync(path.join(dir, ".obsidian", "appearance.json"), JSON.stringify({ theme: "obsidian", cssTheme: "" }));
+  fs.writeFileSync(
+    path.join(dir, ".obsidian", "app.json"),
+    JSON.stringify({ defaultViewMode: "preview", livePreview: true }),
+  );
+  fs.writeFileSync(
+    path.join(dir, ".obsidian", "appearance.json"),
+    JSON.stringify({ theme: "obsidian", cssTheme: "" }),
+  );
   // Style Settings reads its export from data.json at load.
   const ss = path.join(dir, ".obsidian", "plugins", "obsidian-style-settings");
-  if (fs.existsSync(ss)) fs.writeFileSync(path.join(ss, "data.json"), JSON.stringify(styleSettings ?? {}));
+  if (fs.existsSync(ss))
+    fs.writeFileSync(
+      path.join(ss, "data.json"),
+      JSON.stringify(styleSettings ?? {}),
+    );
   return dir;
 }
 
-export async function startObsidian({ repo, themes, styleSettings = {}, appVersion = process.env.OBSIDIAN_VERSION ?? "latest", port = 9333 + Math.floor(Math.random() * 500) }) {
-  const launcher = new ObsidianLauncher({ cacheDir: path.join(repo, ".obsidian-cache") });
-  const vault = leanVault(path.join(repo, "runner/vault"), themes, styleSettings);
+export async function startObsidian({
+  repo,
+  themes,
+  styleSettings = {},
+  appVersion = process.env.OBSIDIAN_VERSION ?? "latest",
+  port = 9333 + Math.floor(Math.random() * 500),
+}) {
+  const launcher = new ObsidianLauncher({
+    cacheDir: path.join(repo, ".obsidian-cache"),
+  });
+  const vault = leanVault(
+    path.join(repo, "runner/vault"),
+    themes,
+    styleSettings,
+  );
   const { proc, configDir } = await launcher.launch({
     appVersion,
     installerVersion: "latest",
     vault,
     copy: false,
-    args: [`--remote-debugging-port=${port}`, "--window-size=1600,1200"],
+    args: [
+      `--remote-debugging-port=${port}`,
+      "--window-size=1600,1200",
+      // e.g. "--no-sandbox" on CI runners without Electron's SUID sandbox
+      ...(process.env.OBSIDIAN_EXTRA_ARGS ?? "").split(/\s+/).filter(Boolean),
+    ],
     spawnOptions: { stdio: "ignore" },
   });
 
@@ -67,14 +104,25 @@ export async function startObsidian({ repo, themes, styleSettings = {}, appVersi
 
   let page;
   for (let i = 0; i < 120 && !page; i++) {
-    page = browser.contexts().flatMap((c) => c.pages()).find((p) => p.url().startsWith("app://"));
+    page = browser
+      .contexts()
+      .flatMap((c) => c.pages())
+      .find((p) => p.url().startsWith("app://"));
     if (!page) await new Promise((r) => setTimeout(r, 500));
   }
   if (!page) throw new Error("no Obsidian window found");
-  await page.waitForFunction(() => window.app?.workspace?.layoutReady, null, { timeout: 120_000 });
+  await page.waitForFunction(() => window.app?.workspace?.layoutReady, null, {
+    timeout: 120_000,
+  });
   // Trust prompt / modals would steal the reading view.
-  await page.evaluate(() => document.querySelectorAll(".modal-close-button").forEach((b) => b.click()));
-  const version = await page.evaluate(() => window.electron?.ipcRenderer?.sendSync?.("version") ?? navigator.userAgent);
+  await page.evaluate(() =>
+    document.querySelectorAll(".modal-close-button").forEach((b) => b.click()),
+  );
+  const version = await page.evaluate(
+    () =>
+      window.electron?.ipcRenderer?.sendSync?.("version") ??
+      navigator.userAgent,
+  );
 
   return {
     page,
@@ -99,9 +147,15 @@ export async function setTheme(page, theme, mode) {
   );
   // Theme CSS is loaded asynchronously from disk; wait until the stylesheet
   // is in place and a couple of frames have been laid out.
-  await page.waitForFunction((theme) => window.app.customCss.theme === theme, theme);
+  await page.waitForFunction(
+    (theme) => window.app.customCss.theme === theme,
+    theme,
+  );
   await page.waitForTimeout(400);
-  await page.evaluate(() => new Promise((r) => requestAnimationFrame(() => requestAnimationFrame(r))));
+  await page.evaluate(
+    () =>
+      new Promise((r) => requestAnimationFrame(() => requestAnimationFrame(r))),
+  );
 }
 
 export async function openNote(page, note) {
@@ -112,7 +166,10 @@ export async function openNote(page, note) {
     await leaf.openFile(f, { state: { mode: "preview" }, active: true });
     window.app.workspace.setActiveLeaf(leaf, { focus: true });
   }, `${note}.md`);
-  await page.waitForSelector(`${OBSIDIAN_ROOT} .markdown-preview-section > div`, { timeout: 30_000 });
+  await page.waitForSelector(
+    `${OBSIDIAN_ROOT} .markdown-preview-section > div`,
+    { timeout: 30_000 },
+  );
   // Reading view is virtualized: only sections near the viewport are in the
   // DOM. Widen the render-ahead window so every section renders, like Quartz.
   await page.evaluate(() => {
@@ -122,13 +179,20 @@ export async function openNote(page, note) {
     r.updateShownSections?.();
     r.queueRender?.();
   });
-  await page.waitForFunction(() => {
-    const r = window.app.workspace.activeLeaf.view.previewMode.renderer;
-    return r.sections.length > 0 && r.sections.every((s) => s.rendered);
-  }, null, { timeout: 30_000 });
+  await page.waitForFunction(
+    () => {
+      const r = window.app.workspace.activeLeaf.view.previewMode.renderer;
+      return r.sections.length > 0 && r.sections.every((s) => s.rendered);
+    },
+    null,
+    { timeout: 30_000 },
+  );
   await page.waitForTimeout(250);
 }
 
 export async function measureObsidian(page, probes) {
-  return page.evaluate(measureInPage, { root: OBSIDIAN_ROOT, probes: probes.map((p) => ({ id: p.id, sel: p.obsidian, props: p.props })) });
+  return page.evaluate(measureInPage, {
+    root: OBSIDIAN_ROOT,
+    probes: probes.map((p) => ({ id: p.id, sel: p.obsidian, props: p.props })),
+  });
 }

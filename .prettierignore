@@ -1,9 +1,8 @@
 node_modules
-templates
-util
-styles.db
-runner/vault
-runner/quartz
 .obsidian-cache
-runner/results/**/dark.json
-runner/results/**/light.json
+fidelity/out
+runner
+themes
+media
+bun.lock
+app_latest.css

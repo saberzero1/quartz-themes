@@ -14,22 +14,41 @@ const { convertObsidianCss, resolveIcon } = core;
 import { transform, Features } from "lightningcss";
 
 // Same targets Quartz uses when minifying plugin CSS (componentResources.ts).
-const QUARTZ_TARGETS = { safari: (15 << 16) | (6 << 8), ios_saf: (15 << 16) | (6 << 8), edge: 115 << 16, firefox: 102 << 16, chrome: 109 << 16 };
+const QUARTZ_TARGETS = {
+  safari: (15 << 16) | (6 << 8),
+  ios_saf: (15 << 16) | (6 << 8),
+  edge: 115 << 16,
+  firefox: 102 << 16,
+  chrome: 109 << 16,
+};
 function quartzMinifies(css) {
   try {
-    transform({ filename: "plugin-resource.css", code: Buffer.from(css), minify: true, targets: QUARTZ_TARGETS, include: Features.MediaQueries });
+    transform({
+      filename: "plugin-resource.css",
+      code: Buffer.from(css),
+      minify: true,
+      targets: QUARTZ_TARGETS,
+      include: Features.MediaQueries,
+    });
     return null;
   } catch (e) {
     return `${e.loc?.line ?? "?"}: ${e.message}`;
   }
 }
 
-const repo = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
-const arg = (k, d) => process.argv.find((a) => a.startsWith(`--${k}=`))?.split("=")[1] ?? d;
+const repo = path.resolve(
+  path.dirname(fileURLToPath(import.meta.url)),
+  "../..",
+);
+const arg = (k, d) =>
+  process.argv.find((a) => a.startsWith(`--${k}=`))?.split("=")[1] ?? d;
 const outDir = path.resolve(arg("out", path.join(repo, "fidelity/out")));
 const filter = arg("filter", "");
 const runPrettier = !process.argv.includes("--no-prettier");
-const sourceOpts = { cacheDir: path.join(repo, "fidelity/out/theme-cache"), cacheTtl: 7 * 24 * 60 * 60 * 1000 };
+const sourceOpts = {
+  cacheDir: path.join(repo, "fidelity/out/theme-cache"),
+  cacheTtl: 7 * 24 * 60 * 60 * 1000,
+};
 
 /** Classes present in a built Quartz site (for reporting matched vs unmatched). */
 function quartzClasses() {
@@ -51,14 +70,19 @@ function quartzClasses() {
 // Every theme in Obsidian's community registry, downloaded like a site would
 // (cached). Obsidian's app.css is converted and bundled by core itself.
 const inputs = [];
-const names = (await core.getRegistry(sourceOpts)).map((t) => t.name).filter((n) => !filter || n.includes(filter));
+const names = (await core.getRegistry(sourceOpts))
+  .map((t) => t.name)
+  .filter((n) => !filter || n.includes(filter));
 const queue = [...names];
 await Promise.all(
   Array.from({ length: 8 }, async () => {
     while (queue.length) {
       const name = queue.shift();
       try {
-        inputs.push({ name, css: (await core.resolveTheme(name, sourceOpts)).css });
+        inputs.push({
+          name,
+          css: (await core.resolveTheme(name, sourceOpts)).css,
+        });
       } catch (e) {
         inputs.push({ name, error: String(e.message ?? e).split("\n")[0] });
       }
@@ -84,7 +108,11 @@ for (const { name, css, error } of inputs) {
   const t = performance.now();
   let result;
   try {
-    result = convertObsidianCss(css, { quartzClasses: qc, resolveIcon, filename: name });
+    result = convertObsidianCss(css, {
+      quartzClasses: qc,
+      resolveIcon,
+      filename: name,
+    });
   } catch (e) {
     report.themes[name] = { error: String(e.stack ?? e) };
     continue;
@@ -105,8 +133,17 @@ for (const { name, css, error } of inputs) {
   if (lightningError) lightningFail++;
   const safe = name.replace(/[^\w.@-]+/g, "_");
   fs.writeFileSync(path.join(outDir, "css", `${safe}.css`), result.css);
-  if (result.quarantine) fs.writeFileSync(path.join(outDir, "css", `${safe}.quarantine.css`), result.quarantine);
-  const relevant = s.rules - s.dropped.appOnly - s.dropped.wrapperSubject - s.dropped.leafType - s.dropped.staticFalse;
+  if (result.quarantine)
+    fs.writeFileSync(
+      path.join(outDir, "css", `${safe}.quarantine.css`),
+      result.quarantine,
+    );
+  const relevant =
+    s.rules -
+    s.dropped.appOnly -
+    s.dropped.wrapperSubject -
+    s.dropped.leafType -
+    s.dropped.staticFalse;
   report.themes[name] = {
     ms: Math.round(ms),
     inBytes: css.length,
@@ -122,13 +159,17 @@ for (const { name, css, error } of inputs) {
     lightningError,
     quarantined: s.quarantined,
     layoutStripped: s.layoutStripped,
-    topUnmatched: Object.entries(s.unmatchedClasses).sort((a, b) => b[1] - a[1]).slice(0, 15),
+    topUnmatched: Object.entries(s.unmatchedClasses)
+      .sort((a, b) => b[1] - a[1])
+      .slice(0, 15),
   };
-  for (const c of Object.keys(s.unmatchedClasses)) unmatched.set(c, (unmatched.get(c) ?? 0) + 1);
+  for (const c of Object.keys(s.unmatchedClasses))
+    unmatched.set(c, (unmatched.get(c) ?? 0) + 1);
 }
 
 const rows = Object.values(report.themes).filter((r) => !r.error);
-const sum = (k) => rows.reduce((a, r) => a + (typeof k === "function" ? k(r) : r[k]), 0);
+const sum = (k) =>
+  rows.reduce((a, r) => a + (typeof k === "function" ? k(r) : r[k]), 0);
 report.totals = {
   inputs: rows.length,
   errors: Object.values(report.themes).filter((r) => r.error).length,
@@ -148,9 +189,27 @@ report.totals = {
   droppedUnparseable: sum((r) => r.dropped.unparseable),
   droppedLeafType: sum((r) => r.dropped.leafType),
 };
-report.unmatchedClassesByThemeCount = [...unmatched].sort((a, b) => b[1] - a[1]).slice(0, 200);
-fs.writeFileSync(path.join(outDir, "report.json"), JSON.stringify(report, null, 1));
+report.unmatchedClassesByThemeCount = [...unmatched]
+  .sort((a, b) => b[1] - a[1])
+  .slice(0, 200);
+fs.writeFileSync(
+  path.join(outDir, "report.json"),
+  JSON.stringify(report, null, 1),
+);
 console.log(report.totals);
 console.log("Top unmatched classes (themes using them in surviving rules):");
-console.log(report.unmatchedClassesByThemeCount.slice(0, 60).map(([c, n]) => `${String(n).padStart(4)} ${c}`).join("\n"));
-for (const [n, r] of Object.entries(report.themes)) if (r.error || r.prettierError || r.lightningError) console.log("FAIL", n, r.error?.split("\n")[0] ?? "", r.lightningError ?? "", r.prettierError ?? "");
+console.log(
+  report.unmatchedClassesByThemeCount
+    .slice(0, 60)
+    .map(([c, n]) => `${String(n).padStart(4)} ${c}`)
+    .join("\n"),
+);
+for (const [n, r] of Object.entries(report.themes))
+  if (r.error || r.prettierError || r.lightningError)
+    console.log(
+      "FAIL",
+      n,
+      r.error?.split("\n")[0] ?? "",
+      r.lightningError ?? "",
+      r.prettierError ?? "",
+    );

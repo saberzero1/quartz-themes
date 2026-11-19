@@ -1,44 +1,18 @@
-name: Build and Test
+name: CI
 
 on:
-  workflow_dispatch:
+  push:
+    branches: [master]
+  pull_request:
 
 jobs:
-  build-and-test:
-    if: ${{ github.repository == 'saberzero1/quartz-themes' }}
-    strategy:
-      matrix:
-        # os: [windows-latest, macos-latest, ubuntu-latest]
-        os: [ubuntu-latest]
-    runs-on: ${{ matrix.os }}
-    permissions:
-      contents: write
+  check:
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-
-      - name: Install Nix
-        uses: cachix/install-nix-action@v31
-        with:
-          nix_path: nixpkgs=channel:nixos-unstable
-
-      - name: "Install npm dependencies"
-        run: nix develop --command npm ci
-
-      - name: "Check style"
-        run: nix develop --command npm run --silent verify-ci
-
-      - name: "Copy current lists"
-        run: |
-          cp quartz-syncer-file-list.json quartz-syncer-file-list-old.json
-          cp theme-list theme-list-old
-
-      - name: "Check Quartz Syncer file list"
-        run: |
-          nix develop --command npm run --silent json-compile
-          nix develop --command npx prettier quartz-syncer-file-list.json --write
-          cmp --silent quartz-syncer-file-list.json quartz-syncer-file-list-old.json && echo "Quartz Syncer file list up to date" && exit 0 || echo "Quartz Syncer file list mismatch" && exit 1
-
-      - name: "Check theme list"
-        run: cmp --silent theme-list theme-list-old && echo "Theme list up to date" && exit 0 || echo "Theme list mismatch" && exit 1
+      - uses: oven-sh/setup-bun@v2
+      - run: bun install --frozen-lockfile
+      - name: Format
+        run: bun run check
+      - name: Scripts parse
+        run: for f in fidelity/scripts/*.mjs fidelity/harness/*.mjs; do node --check "$f"; done

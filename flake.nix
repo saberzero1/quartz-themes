@@ -207,10 +207,9 @@
             echo "Node.js version: $(node --version)"
             echo "npm version: $(npm --version)"
             echo ""
-            echo "Run 'npm install' to install dependencies"
-            echo "Run 'just convert-themes' to run the static converter over all themes"
+            echo "Run 'bun install' to install dependencies"
+            echo "Run 'just' to list the fidelity commands"
             echo "Run 'e2e-headless [command]' to run Obsidian on a private display"
-            echo "Run 'just' to see available commands"
           '';
         };
       }
