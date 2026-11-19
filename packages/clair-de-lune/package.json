@@ -1,6 +1,6 @@
 {
   "name": "@quartz-themes/clair-de-lune",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Clair De Lune theme for Quartz",
   "main": "./theme.json",
   "exports": {

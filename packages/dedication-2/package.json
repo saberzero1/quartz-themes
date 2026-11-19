@@ -1,6 +1,6 @@
 {
   "name": "@quartz-themes/dedication-2",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Dedication 2 theme for Quartz",
   "main": "./theme.json",
   "exports": {

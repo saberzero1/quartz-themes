@@ -1,6 +1,6 @@
 {
   "name": "@quartz-themes/tokyo-terminal-obsd",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Tokyo Terminal Obsd theme for Quartz",
   "main": "./theme.json",
   "exports": {

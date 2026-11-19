@@ -1,6 +1,6 @@
 {
   "name": "@quartz-themes/cybertron-shifted",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Cybertron Shifted theme for Quartz",
   "main": "./theme.json",
   "exports": {

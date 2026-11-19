@@ -1,6 +1,6 @@
 {
   "name": "@quartz-themes/harbor-dark",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Harbor Dark theme for Quartz",
   "main": "./theme.json",
   "exports": {

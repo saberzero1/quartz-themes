@@ -1,6 +1,6 @@
 {
   "name": "@quartz-themes/mado-11",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Mado 11 theme for Quartz",
   "main": "./theme.json",
   "exports": {

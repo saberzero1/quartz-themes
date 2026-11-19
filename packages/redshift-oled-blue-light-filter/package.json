@@ -1,6 +1,6 @@
 {
   "name": "@quartz-themes/redshift-oled-blue-light-filter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Redshift Oled Blue Light Filter theme for Quartz",
   "main": "./theme.json",
   "exports": {

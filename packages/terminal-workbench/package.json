@@ -1,6 +1,6 @@
 {
   "name": "@quartz-themes/terminal-workbench",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Terminal Workbench theme for Quartz",
   "main": "./theme.json",
   "exports": {

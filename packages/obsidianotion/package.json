@@ -1,6 +1,6 @@
 {
   "name": "@quartz-themes/obsidianotion",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Obsidianotion theme for Quartz",
   "main": "./theme.json",
   "exports": {

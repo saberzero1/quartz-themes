@@ -1,6 +1,6 @@
 {
   "name": "@quartz-themes/vesper-golden",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Vesper Golden theme for Quartz",
   "main": "./theme.json",
   "exports": {

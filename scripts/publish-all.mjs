@@ -14,7 +14,7 @@
  *   node scripts/publish-all.mjs --filter=tokyo-night        # publish one theme
  */
 
-import { readdirSync, statSync, existsSync } from "node:fs";
+import { readdirSync, readFileSync, statSync, existsSync } from "node:fs";
 import { execSync } from "node:child_process";
 import { resolve, join } from "node:path";
 import { fileURLToPath } from "node:url";
@@ -71,7 +71,14 @@ async function publishLocal(name) {
 }
 
 async function tagRepo(name) {
-  const version = "v1.0.0";
+  const pkgJsonPath = join(packagesDir, name, "package.json");
+  if (!existsSync(pkgJsonPath)) {
+    return { status: "skipped", name, reason: "no package.json" };
+  }
+
+  const pkg = JSON.parse(readFileSync(pkgJsonPath, "utf8"));
+  const version = `v${pkg.version}`;
+
   try {
     if (DRY_RUN) {
       return {
@@ -84,11 +91,11 @@ async function tagRepo(name) {
     exec(
       `gh api repos/${ORG}/${name}/git/refs -f ref=refs/tags/${version} -f sha=$(gh api repos/${ORG}/${name}/commits/HEAD --jq '.sha')`,
     );
-    return { status: "tagged", name };
+    return { status: "tagged", name, detail: version };
   } catch (err) {
     const msg = err.stderr || err.message || String(err);
     if (msg.includes("Reference already exists")) {
-      return { status: "already-tagged", name };
+      return { status: "already-tagged", name, detail: version };
     }
     return { status: "error", name, error: msg.substring(0, 200) };
   }

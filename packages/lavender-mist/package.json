@@ -1,6 +1,6 @@
 {
   "name": "@quartz-themes/lavender-mist",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Lavender Mist theme for Quartz",
   "main": "./theme.json",
   "exports": {

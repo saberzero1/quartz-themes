@@ -1,6 +1,6 @@
 {
   "name": "@quartz-themes/prussian-blue",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Prussian Blue theme for Quartz",
   "main": "./theme.json",
   "exports": {

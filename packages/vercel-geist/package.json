@@ -1,6 +1,6 @@
 {
   "name": "@quartz-themes/vercel-geist",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Vercel Geist theme for Quartz",
   "main": "./theme.json",
   "exports": {

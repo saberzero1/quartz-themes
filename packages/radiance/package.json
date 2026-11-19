@@ -1,6 +1,6 @@
 {
   "name": "@quartz-themes/radiance",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Radiance theme for Quartz",
   "main": "./theme.json",
   "exports": {

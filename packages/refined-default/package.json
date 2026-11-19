@@ -1,6 +1,6 @@
 {
   "name": "@quartz-themes/refined-default",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Refined Default theme for Quartz",
   "main": "./theme.json",
   "exports": {

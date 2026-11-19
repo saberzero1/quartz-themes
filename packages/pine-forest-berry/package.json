@@ -1,6 +1,6 @@
 {
   "name": "@quartz-themes/pine-forest-berry",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Pine Forest Berry theme for Quartz",
   "main": "./theme.json",
   "exports": {

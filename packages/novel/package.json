@@ -1,6 +1,6 @@
 {
   "name": "@quartz-themes/novel",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Novel theme for Quartz",
   "main": "./theme.json",
   "exports": {

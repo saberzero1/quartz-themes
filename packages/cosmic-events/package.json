@@ -1,6 +1,6 @@
 {
   "name": "@quartz-themes/cosmic-events",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Cosmic Events theme for Quartz",
   "main": "./theme.json",
   "exports": {

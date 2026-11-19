@@ -1,6 +1,6 @@
 {
   "name": "@quartz-themes/vanilla-palettes",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Vanilla Palettes theme for Quartz",
   "main": "./theme.json",
   "exports": {

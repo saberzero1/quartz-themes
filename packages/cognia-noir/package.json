@@ -1,6 +1,6 @@
 {
   "name": "@quartz-themes/cognia-noir",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Cognia Noir theme for Quartz",
   "main": "./theme.json",
   "exports": {

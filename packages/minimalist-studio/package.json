@@ -1,6 +1,6 @@
 {
   "name": "@quartz-themes/minimalist-studio",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Minimalist Studio theme for Quartz",
   "main": "./theme.json",
   "exports": {

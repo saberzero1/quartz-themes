@@ -1,6 +1,6 @@
 {
   "name": "@quartz-themes/tomorrow",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Tomorrow theme for Quartz",
   "main": "./theme.json",
   "exports": {

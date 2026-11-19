@@ -1,6 +1,6 @@
 {
   "name": "@quartz-themes/pitch-black",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Pitch Black theme for Quartz",
   "main": "./theme.json",
   "exports": {

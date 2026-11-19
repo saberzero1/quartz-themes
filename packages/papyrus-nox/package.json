@@ -1,6 +1,6 @@
 {
   "name": "@quartz-themes/papyrus-nox",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Papyrus Nox theme for Quartz",
   "main": "./theme.json",
   "exports": {

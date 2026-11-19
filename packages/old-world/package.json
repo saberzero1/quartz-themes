@@ -1,6 +1,6 @@
 {
   "name": "@quartz-themes/old-world",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Old World theme for Quartz",
   "main": "./theme.json",
   "exports": {

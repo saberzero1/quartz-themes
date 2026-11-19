@@ -1,6 +1,6 @@
 {
   "name": "@quartz-themes/deeper-work",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Deeper Work theme for Quartz",
   "main": "./theme.json",
   "exports": {

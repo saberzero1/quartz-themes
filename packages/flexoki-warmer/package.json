@@ -1,6 +1,6 @@
 {
   "name": "@quartz-themes/flexoki-warmer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Flexoki Warmer theme for Quartz",
   "main": "./theme.json",
   "exports": {

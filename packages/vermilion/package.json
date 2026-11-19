@@ -1,6 +1,6 @@
 {
   "name": "@quartz-themes/vermilion",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Vermilion theme for Quartz",
   "main": "./theme.json",
   "exports": {

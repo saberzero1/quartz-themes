@@ -1,6 +1,6 @@
 {
   "name": "@quartz-themes/noctilux",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Noctilux theme for Quartz",
   "main": "./theme.json",
   "exports": {

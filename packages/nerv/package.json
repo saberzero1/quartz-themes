@@ -1,6 +1,6 @@
 {
   "name": "@quartz-themes/nerv",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Nerv theme for Quartz",
   "main": "./theme.json",
   "exports": {

@@ -1,6 +1,6 @@
 {
   "name": "@quartz-themes/ayu-mirage",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Ayu Mirage theme for Quartz",
   "main": "./theme.json",
   "exports": {

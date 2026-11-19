@@ -1,6 +1,6 @@
 {
   "name": "@quartz-themes/theme-that-shall-not-be-named",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Theme That Shall Not Be Named theme for Quartz",
   "main": "./theme.json",
   "exports": {

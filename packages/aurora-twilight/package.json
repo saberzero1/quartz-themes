@@ -1,6 +1,6 @@
 {
   "name": "@quartz-themes/aurora-twilight",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Aurora Twilight theme for Quartz",
   "main": "./theme.json",
   "exports": {

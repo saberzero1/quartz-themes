@@ -253,13 +253,13 @@ register-theme themeName:
 register-new-themes-dry:
   node scripts/register-new-themes.mjs --dry-run
 
-[group('npm'), doc('Generate all per-theme npm packages into packages/')]
-generate-packages:
-  node scripts/generate-packages.mjs
+[group('npm'), doc('Generate all per-theme npm packages into packages/ (bump: patch|minor|major)')]
+generate-packages bump="patch":
+  node scripts/generate-packages.mjs --bump={{bump}}
 
-[group('npm'), doc('Generate npm package for a single theme')]
-generate-package themeName:
-  node scripts/generate-packages.mjs --filter={{themeName}}
+[group('npm'), doc('Generate npm package for a single theme (bump: patch|minor|major)')]
+generate-package themeName bump="patch":
+  node scripts/generate-packages.mjs --filter={{themeName}} --bump={{bump}}
 
 [group('npm'), doc('Preview what generate-packages would produce')]
 generate-packages-dry:
@@ -301,18 +301,19 @@ update-core-no-publish:
 update-core-dry:
   node scripts/update-core-registry.mjs --dry-run
 
-[group('npm'), doc('Full npm pipeline: update core → generate → push → publish')]
-npm-release:
+[group('npm'), doc('Full npm pipeline: update core → generate → push → publish (bump: patch|minor|major)')]
+npm-release bump="patch":
   just update-core
-  just generate-packages
+  just generate-packages {{bump}}
   just push-packages
   just publish-packages
 
-[group('npm'), doc('Single theme npm pipeline: update core → generate → push → publish')]
-npm-release-theme themeName:
+[group('npm'), doc('Single theme npm pipeline: update core → generate → push → publish (bump: patch|minor|major)')]
+npm-release-theme themeName bump="patch":
   just update-core
-  just generate-package {{themeName}}
+  just generate-package {{themeName}} {{bump}}
   just push-package {{themeName}}
   just publish-package {{themeName}}
 
 everything-and-the-kitchen-sink: generate-callout-manifest style-settings cli-extract-baseline cli-extract-all-force drop prepare ingest compile generate-plugin convert format-non-generated
+

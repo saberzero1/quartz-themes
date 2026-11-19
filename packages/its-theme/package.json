@@ -1,6 +1,6 @@
 {
   "name": "@quartz-themes/its-theme",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Its Theme theme for Quartz",
   "main": "./theme.json",
   "exports": {

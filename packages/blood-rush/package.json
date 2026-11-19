@@ -1,6 +1,6 @@
 {
   "name": "@quartz-themes/blood-rush",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Blood Rush theme for Quartz",
   "main": "./theme.json",
   "exports": {

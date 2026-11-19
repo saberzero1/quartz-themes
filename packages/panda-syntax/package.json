@@ -1,6 +1,6 @@
 {
   "name": "@quartz-themes/panda-syntax",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Panda Syntax theme for Quartz",
   "main": "./theme.json",
   "exports": {

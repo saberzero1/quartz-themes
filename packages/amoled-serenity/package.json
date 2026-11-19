@@ -1,6 +1,6 @@
 {
   "name": "@quartz-themes/amoled-serenity",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Amoled Serenity theme for Quartz",
   "main": "./theme.json",
   "exports": {

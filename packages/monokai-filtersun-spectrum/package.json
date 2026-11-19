@@ -1,6 +1,6 @@
 {
   "name": "@quartz-themes/monokai-filtersun-spectrum",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Monokai Filtersun Spectrum theme for Quartz",
   "main": "./theme.json",
   "exports": {

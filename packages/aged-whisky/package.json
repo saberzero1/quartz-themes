@@ -1,6 +1,6 @@
 {
   "name": "@quartz-themes/aged-whisky",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Aged Whisky theme for Quartz",
   "main": "./theme.json",
   "exports": {

@@ -1,6 +1,6 @@
 {
   "name": "@quartz-themes/gitsidian",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Gitsidian theme for Quartz",
   "main": "./theme.json",
   "exports": {

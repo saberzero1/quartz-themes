@@ -1,6 +1,6 @@
 {
   "name": "@quartz-themes/obsidian-nord",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Obsidian Nord theme for Quartz",
   "main": "./theme.json",
   "exports": {

@@ -1,6 +1,6 @@
 {
   "name": "@quartz-themes/flexoki",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Flexoki theme for Quartz",
   "main": "./theme.json",
   "exports": {

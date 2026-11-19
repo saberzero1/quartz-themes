@@ -1,6 +1,6 @@
 {
   "name": "@quartz-themes/border",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Border theme for Quartz",
   "main": "./theme.json",
   "exports": {

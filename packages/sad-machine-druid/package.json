@@ -1,6 +1,6 @@
 {
   "name": "@quartz-themes/sad-machine-druid",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Sad Machine Druid theme for Quartz",
   "main": "./theme.json",
   "exports": {

@@ -1,6 +1,6 @@
 {
   "name": "@quartz-themes/antique-flowers",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Antique Flowers theme for Quartz",
   "main": "./theme.json",
   "exports": {

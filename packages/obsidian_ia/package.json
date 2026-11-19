@@ -1,6 +1,6 @@
 {
   "name": "@quartz-themes/obsidian_ia",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Obsidian_ia theme for Quartz",
   "main": "./theme.json",
   "exports": {

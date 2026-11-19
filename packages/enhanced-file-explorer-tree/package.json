@@ -1,6 +1,6 @@
 {
   "name": "@quartz-themes/enhanced-file-explorer-tree",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Enhanced File Explorer Tree theme for Quartz",
   "main": "./theme.json",
   "exports": {

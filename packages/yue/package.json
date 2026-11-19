@@ -1,6 +1,6 @@
 {
   "name": "@quartz-themes/yue",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Yue theme for Quartz",
   "main": "./theme.json",
   "exports": {

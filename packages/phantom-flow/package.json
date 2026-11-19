@@ -1,6 +1,6 @@
 {
   "name": "@quartz-themes/phantom-flow",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Phantom Flow theme for Quartz",
   "main": "./theme.json",
   "exports": {

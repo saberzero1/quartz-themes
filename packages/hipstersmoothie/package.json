@@ -1,6 +1,6 @@
 {
   "name": "@quartz-themes/hipstersmoothie",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Hipstersmoothie theme for Quartz",
   "main": "./theme.json",
   "exports": {

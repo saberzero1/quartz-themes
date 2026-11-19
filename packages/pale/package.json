@@ -1,6 +1,6 @@
 {
   "name": "@quartz-themes/pale",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Pale theme for Quartz",
   "main": "./theme.json",
   "exports": {

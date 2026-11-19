@@ -1,6 +1,6 @@
 {
   "name": "@quartz-themes/strict",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Strict theme for Quartz",
   "main": "./theme.json",
   "exports": {

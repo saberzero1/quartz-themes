@@ -1,6 +1,6 @@
 {
   "name": "@quartz-themes/atomus",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Atomus theme for Quartz",
   "main": "./theme.json",
   "exports": {

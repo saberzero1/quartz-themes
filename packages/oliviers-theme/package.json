@@ -1,6 +1,6 @@
 {
   "name": "@quartz-themes/oliviers-theme",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Oliviers Theme theme for Quartz",
   "main": "./theme.json",
   "exports": {

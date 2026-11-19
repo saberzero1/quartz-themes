@@ -1,6 +1,6 @@
 {
   "name": "@quartz-themes/monkey-king",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Monkey King theme for Quartz",
   "main": "./theme.json",
   "exports": {

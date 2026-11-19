@@ -1,6 +1,6 @@
 {
   "name": "@quartz-themes/miami-wind",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Miami Wind theme for Quartz",
   "main": "./theme.json",
   "exports": {

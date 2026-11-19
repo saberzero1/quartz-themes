@@ -1,6 +1,6 @@
 {
   "name": "@quartz-themes/obsidian-windows-98-edition",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Obsidian Windows 98 Edition theme for Quartz",
   "main": "./theme.json",
   "exports": {

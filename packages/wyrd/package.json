@@ -1,6 +1,6 @@
 {
   "name": "@quartz-themes/wyrd",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Wyrd theme for Quartz",
   "main": "./theme.json",
   "exports": {

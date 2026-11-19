@@ -1,6 +1,6 @@
 {
   "name": "@quartz-themes/warm-springs",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Warm Springs theme for Quartz",
   "main": "./theme.json",
   "exports": {

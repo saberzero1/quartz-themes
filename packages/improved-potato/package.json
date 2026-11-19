@@ -1,6 +1,6 @@
 {
   "name": "@quartz-themes/improved-potato",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Improved Potato theme for Quartz",
   "main": "./theme.json",
   "exports": {

@@ -1,6 +1,6 @@
 {
   "name": "@quartz-themes/vscode-dark-modern",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Vscode Dark Modern theme for Quartz",
   "main": "./theme.json",
   "exports": {

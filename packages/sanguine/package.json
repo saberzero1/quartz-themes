@@ -1,6 +1,6 @@
 {
   "name": "@quartz-themes/sanguine",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Sanguine theme for Quartz",
   "main": "./theme.json",
   "exports": {

@@ -1,6 +1,6 @@
 {
   "name": "@quartz-themes/emerald-synth",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Emerald Synth theme for Quartz",
   "main": "./theme.json",
   "exports": {

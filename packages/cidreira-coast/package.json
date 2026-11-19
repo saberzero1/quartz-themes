@@ -1,6 +1,6 @@
 {
   "name": "@quartz-themes/cidreira-coast",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Cidreira Coast theme for Quartz",
   "main": "./theme.json",
   "exports": {

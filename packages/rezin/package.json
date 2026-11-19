@@ -1,6 +1,6 @@
 {
   "name": "@quartz-themes/rezin",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Rezin theme for Quartz",
   "main": "./theme.json",
   "exports": {

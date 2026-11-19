@@ -1,6 +1,6 @@
 {
   "name": "@quartz-themes/bubble-space",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Bubble Space theme for Quartz",
   "main": "./theme.json",
   "exports": {

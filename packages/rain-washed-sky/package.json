@@ -1,6 +1,6 @@
 {
   "name": "@quartz-themes/rain-washed-sky",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Rain Washed Sky theme for Quartz",
   "main": "./theme.json",
   "exports": {

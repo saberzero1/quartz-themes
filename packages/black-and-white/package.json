@@ -1,6 +1,6 @@
 {
   "name": "@quartz-themes/black-and-white",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Black And White theme for Quartz",
   "main": "./theme.json",
   "exports": {

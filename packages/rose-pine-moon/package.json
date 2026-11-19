@@ -1,6 +1,6 @@
 {
   "name": "@quartz-themes/rose-pine-moon",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Rose Pine Moon theme for Quartz",
   "main": "./theme.json",
   "exports": {

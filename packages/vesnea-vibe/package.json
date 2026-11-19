@@ -1,6 +1,6 @@
 {
   "name": "@quartz-themes/vesnea-vibe",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Vesnea Vibe theme for Quartz",
   "main": "./theme.json",
   "exports": {

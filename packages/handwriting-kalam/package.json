@@ -1,6 +1,6 @@
 {
   "name": "@quartz-themes/handwriting-kalam",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Handwriting Kalam theme for Quartz",
   "main": "./theme.json",
   "exports": {

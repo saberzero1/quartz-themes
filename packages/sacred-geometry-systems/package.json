@@ -1,6 +1,6 @@
 {
   "name": "@quartz-themes/sacred-geometry-systems",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Sacred Geometry Systems theme for Quartz",
   "main": "./theme.json",
   "exports": {

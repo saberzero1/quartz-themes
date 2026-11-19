@@ -1,6 +1,6 @@
 {
   "name": "@quartz-themes/aura-dark",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Aura Dark theme for Quartz",
   "main": "./theme.json",
   "exports": {

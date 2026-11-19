@@ -1,6 +1,6 @@
 {
   "name": "@quartz-themes/an-old-hope",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "An Old Hope theme for Quartz",
   "main": "./theme.json",
   "exports": {

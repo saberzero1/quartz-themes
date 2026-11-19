@@ -1,6 +1,6 @@
 {
   "name": "@quartz-themes/blackbird",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Blackbird theme for Quartz",
   "main": "./theme.json",
   "exports": {

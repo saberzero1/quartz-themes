@@ -1,6 +1,6 @@
 {
   "name": "@quartz-themes/stratus",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Stratus theme for Quartz",
   "main": "./theme.json",
   "exports": {

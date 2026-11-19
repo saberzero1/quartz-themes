@@ -1,6 +1,6 @@
 {
   "name": "@quartz-themes/comfort-color-dark",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Comfort Color Dark theme for Quartz",
   "main": "./theme.json",
   "exports": {

@@ -1,6 +1,6 @@
 {
   "name": "@quartz-themes/apex",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Apex theme for Quartz",
   "main": "./theme.json",
   "exports": {

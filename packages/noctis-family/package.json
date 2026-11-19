@@ -1,6 +1,6 @@
 {
   "name": "@quartz-themes/noctis-family",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Noctis Family theme for Quartz",
   "main": "./theme.json",
   "exports": {

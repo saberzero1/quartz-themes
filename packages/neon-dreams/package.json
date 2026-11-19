@@ -1,6 +1,6 @@
 {
   "name": "@quartz-themes/neon-dreams",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Neon Dreams theme for Quartz",
   "main": "./theme.json",
   "exports": {

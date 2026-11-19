@@ -1,6 +1,6 @@
 {
   "name": "@quartz-themes/pastel-yumekawa",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Pastel Yumekawa theme for Quartz",
   "main": "./theme.json",
   "exports": {

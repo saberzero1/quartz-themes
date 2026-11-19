@@ -1,6 +1,6 @@
 {
   "name": "@quartz-themes/word_2019",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Word_2019 theme for Quartz",
   "main": "./theme.json",
   "exports": {

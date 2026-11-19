@@ -1,6 +1,6 @@
 {
   "name": "@quartz-themes/tokyo-night-simple",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Tokyo Night Simple theme for Quartz",
   "main": "./theme.json",
   "exports": {

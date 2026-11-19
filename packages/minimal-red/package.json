@@ -1,6 +1,6 @@
 {
   "name": "@quartz-themes/minimal-red",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Minimal Red theme for Quartz",
   "main": "./theme.json",
   "exports": {

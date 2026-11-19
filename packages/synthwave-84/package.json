@@ -1,6 +1,6 @@
 {
   "name": "@quartz-themes/synthwave-84",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Synthwave 84 theme for Quartz",
   "main": "./theme.json",
   "exports": {

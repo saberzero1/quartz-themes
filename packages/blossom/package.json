@@ -1,6 +1,6 @@
 {
   "name": "@quartz-themes/blossom",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Blossom theme for Quartz",
   "main": "./theme.json",
   "exports": {

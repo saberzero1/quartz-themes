@@ -1,6 +1,6 @@
 {
   "name": "@quartz-themes/latsidian",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Latsidian theme for Quartz",
   "main": "./theme.json",
   "exports": {

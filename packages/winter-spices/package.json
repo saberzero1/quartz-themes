@@ -1,6 +1,6 @@
 {
   "name": "@quartz-themes/winter-spices",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Winter Spices theme for Quartz",
   "main": "./theme.json",
   "exports": {

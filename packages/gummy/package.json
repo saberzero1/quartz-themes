@@ -1,6 +1,6 @@
 {
   "name": "@quartz-themes/gummy",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Gummy theme for Quartz",
   "main": "./theme.json",
   "exports": {

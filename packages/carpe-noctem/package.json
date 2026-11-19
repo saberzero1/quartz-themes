@@ -1,6 +1,6 @@
 {
   "name": "@quartz-themes/carpe-noctem",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Carpe Noctem theme for Quartz",
   "main": "./theme.json",
   "exports": {

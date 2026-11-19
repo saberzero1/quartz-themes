@@ -1,6 +1,6 @@
 {
   "name": "@quartz-themes/unsent-letters",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Unsent Letters theme for Quartz",
   "main": "./theme.json",
   "exports": {

@@ -1,6 +1,6 @@
 {
   "name": "@quartz-themes/colored-candy",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Colored Candy theme for Quartz",
   "main": "./theme.json",
   "exports": {

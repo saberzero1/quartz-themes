@@ -1,6 +1,6 @@
 {
   "name": "@quartz-themes/things-3",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Things 3 theme for Quartz",
   "main": "./theme.json",
   "exports": {

@@ -1,6 +1,6 @@
 {
   "name": "@quartz-themes/tomorrow-night-bright",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Tomorrow Night Bright theme for Quartz",
   "main": "./theme.json",
   "exports": {

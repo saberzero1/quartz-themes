@@ -1,6 +1,6 @@
 {
   "name": "@quartz-themes/powered-by-lancer-retouched",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Powered By Lancer Retouched theme for Quartz",
   "main": "./theme.json",
   "exports": {

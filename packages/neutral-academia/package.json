@@ -1,6 +1,6 @@
 {
   "name": "@quartz-themes/neutral-academia",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Neutral Academia theme for Quartz",
   "main": "./theme.json",
   "exports": {

@@ -1,6 +1,6 @@
 {
   "name": "@quartz-themes/trailmark",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Trailmark theme for Quartz",
   "main": "./theme.json",
   "exports": {

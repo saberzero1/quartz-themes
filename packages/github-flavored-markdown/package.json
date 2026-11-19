@@ -1,6 +1,6 @@
 {
   "name": "@quartz-themes/github-flavored-markdown",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Github Flavored Markdown theme for Quartz",
   "main": "./theme.json",
   "exports": {

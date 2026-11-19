@@ -1,6 +1,6 @@
 {
   "name": "@quartz-themes/nota-limonada-light",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Nota Limonada Light theme for Quartz",
   "main": "./theme.json",
   "exports": {

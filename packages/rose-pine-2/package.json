@@ -1,6 +1,6 @@
 {
   "name": "@quartz-themes/rose-pine-2",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Rose Pine 2 theme for Quartz",
   "main": "./theme.json",
   "exports": {

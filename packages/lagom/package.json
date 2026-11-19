@@ -1,6 +1,6 @@
 {
   "name": "@quartz-themes/lagom",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Lagom theme for Quartz",
   "main": "./theme.json",
   "exports": {

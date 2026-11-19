@@ -1,6 +1,6 @@
 {
   "name": "@quartz-themes/dark-moss",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Dark Moss theme for Quartz",
   "main": "./theme.json",
   "exports": {

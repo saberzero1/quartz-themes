@@ -1,6 +1,6 @@
 {
   "name": "@quartz-themes/buena-vista",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Buena Vista theme for Quartz",
   "main": "./theme.json",
   "exports": {

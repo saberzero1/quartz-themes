@@ -1,6 +1,6 @@
 {
   "name": "@quartz-themes/sandover",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Sandover theme for Quartz",
   "main": "./theme.json",
   "exports": {

@@ -1,6 +1,6 @@
 {
   "name": "@quartz-themes/simply-colorful",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simply Colorful theme for Quartz",
   "main": "./theme.json",
   "exports": {

@@ -1,6 +1,6 @@
 {
   "name": "@quartz-themes/saint-red-paper",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Saint Red Paper theme for Quartz",
   "main": "./theme.json",
   "exports": {

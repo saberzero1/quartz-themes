@@ -1,6 +1,6 @@
 {
   "name": "@quartz-themes/nordic",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Nordic theme for Quartz",
   "main": "./theme.json",
   "exports": {

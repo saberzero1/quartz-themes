@@ -1,6 +1,6 @@
 {
   "name": "@quartz-themes/wide-view",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Wide View theme for Quartz",
   "main": "./theme.json",
   "exports": {

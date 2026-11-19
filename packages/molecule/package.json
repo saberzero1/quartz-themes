@@ -1,6 +1,6 @@
 {
   "name": "@quartz-themes/molecule",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Molecule theme for Quartz",
   "main": "./theme.json",
   "exports": {

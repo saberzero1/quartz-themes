@@ -1,6 +1,6 @@
 {
   "name": "@quartz-themes/dark-graphite-pie",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Dark Graphite Pie theme for Quartz",
   "main": "./theme.json",
   "exports": {

@@ -1,6 +1,6 @@
 {
   "name": "@quartz-themes/vauxhall",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Vauxhall theme for Quartz",
   "main": "./theme.json",
   "exports": {
