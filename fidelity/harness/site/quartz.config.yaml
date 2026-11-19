@@ -1,0 +1,13 @@
+# Fidelity harness site: the specimen vault (runner/vault) built with the
+# current Quartz + @quartz-themes/core. The theme CSS is swapped per theme by
+# the harness, so the configured theme only needs to exist.
+extends: default
+configuration:
+  pageTitle: "Quartz Themes fidelity"
+  baseUrl: localhost
+  ignorePatterns: [".obsidian", "private", "templates"]
+plugins:
+  core:
+    enabled: true
+    options:
+      theme: Minimal

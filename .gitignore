@@ -171,3 +171,7 @@ publish/*
 result
 result-*
 .direnv/
+
+# fidelity harness output (reports, caches, screenshots, Obsidian references)
+fidelity/out/
+.obsidian-cache/

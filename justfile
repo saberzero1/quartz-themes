@@ -317,3 +317,24 @@ npm-release-theme themeName bump="patch":
 
 everything-and-the-kitchen-sink: generate-callout-manifest style-settings cli-extract-baseline cli-extract-all-force drop prepare ingest compile generate-plugin convert format-non-generated
 
+# --- Static converter (v2) -------------------------------------------------
+
+[group('converter'), doc('Convert every installed theme with the static converter and write fidelity/out/report.json')]
+convert-themes *args:
+  node fidelity/scripts/convert-all.mjs {{args}}
+
+[group('converter'), doc('Screenshot themes in the built Quartz site with converted CSS swapped in')]
+preview-themes themes="Minimal" pages="callouts" modes="dark,light":
+  node fidelity/scripts/preview.mjs --themes="{{themes}}" --pages="{{pages}}" --modes="{{modes}}"
+
+[group('converter'), doc('Fidelity: measure themes in real Obsidian (private Xvfb display) vs Quartz')]
+fidelity themes="Minimal,Tokyo Night" *args:
+  e2e-headless node fidelity/scripts/fidelity.mjs --themes="{{themes}}" {{args}}
+
+[group('converter'), doc('Fidelity for every installed theme (~45 min; Obsidian references are cached)')]
+fidelity-all *args:
+  e2e-headless node fidelity/scripts/fidelity.mjs --all {{args}}
+
+[group('converter'), doc('Re-score against cached Obsidian references only (no Obsidian needed, seconds)')]
+fidelity-cached themes="Minimal,Tokyo Night" *args:
+  node fidelity/scripts/fidelity.mjs --themes="{{themes}}" --cached {{args}}
