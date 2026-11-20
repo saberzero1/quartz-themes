@@ -30,13 +30,14 @@ Every theme in Obsidian's [community registry](https://github.com/obsidianmd/obs
 
 This repository measures it. The [fidelity harness](fidelity/README.md) renders the same notes in real Obsidian and in Quartz, then compares them element by element: headings, text, links, code, callouts, tables and more. It runs [weekly in CI](.github/workflows/fidelity.yml) over the whole registry.
 
-Across about 700 themes in both modes, measured against Obsidian 1.15:
+Across all 1,044 themes in Obsidian's registry (1,794 theme/mode pairs), measured against Obsidian 1.15:
 
-|                                  |       |
-| -------------------------------- | ----- |
-| Mean fidelity                    | 99.4% |
-| Median                           | 100%  |
-| Theme/mode pairs at 95% or above | 94%   |
+|                          |       |
+| ------------------------ | ----- |
+| Mean fidelity            | 99.4% |
+| Median                   | 100%  |
+| Pairs that match exactly | 87%   |
+| Pairs at 95% or above    | 94%   |
 
 The main known divergence is themes that choose fonts by operating system. A published site can't know its visitor's OS, so OS-specific rules are left out.
 
