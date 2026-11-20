@@ -158,20 +158,6 @@
               "icon": "lucide-list",
               "title": "Outline"
             }
-          },
-          {
-            "id": "73f06a1fc1671a72",
-            "type": "leaf",
-            "state": {
-              "type": "all-properties",
-              "state": {
-                "sortOrder": "frequency",
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-archive",
-              "title": "All properties"
-            }
           }
         ]
       },
