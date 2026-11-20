@@ -130,8 +130,25 @@ export async function startObsidian({
     async stop() {
       await browser.close().catch(() => {});
       proc.kill("SIGKILL");
-      fs.rmSync(vault, { recursive: true, force: true });
-      fs.rmSync(configDir, { recursive: true, force: true });
+      // Best effort: a dying Obsidian may still be writing to its dirs. Never let
+      // cleanup lose a run's results.
+      await new Promise(
+        (r) => proc.once("exit", r).once("error", r) && setTimeout(r, 5000),
+      );
+      for (const dir of [vault, configDir]) {
+        try {
+          fs.rmSync(dir, {
+            recursive: true,
+            force: true,
+            maxRetries: 5,
+            retryDelay: 200,
+          });
+        } catch (e) {
+          console.error(
+            `cleanup: could not remove ${dir}: ${e.code ?? e.message}`,
+          );
+        }
+      }
     },
   };
 }
