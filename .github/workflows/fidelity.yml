@@ -2,7 +2,8 @@ name: Fidelity
 
 # Measures how well @quartz-themes/core converts every theme in Obsidian's
 # community registry: the same notes rendered in real Obsidian (on Xvfb) and in
-# Quartz, compared element by element. See fidelity/README.md.
+# Quartz, compared element by element; and whether each theme leaves Quartz's
+# page layout working at phone, tablet and desktop widths. See fidelity/README.md.
 
 on:
   schedule:
@@ -98,6 +99,72 @@ jobs:
         with:
           name: report-${{ matrix.shard }}
           path: fidelity/out/fidelity/report-*.json
+
+  # Quartz's page layout under each theme (phone/tablet/desktop). No Obsidian.
+  layout:
+    needs: site
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: [1, 2, 3, 4]
+    env:
+      QUARTZ_THEMES_CORE: ${{ github.workspace }}/.core/dist/index.js
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - uses: oven-sh/setup-bun@v2
+      - run: bun install --frozen-lockfile
+      - name: Build @quartz-themes/core
+        run: |
+          git clone --depth 1 --branch "$CORE_REF" https://github.com/quartz-themes/core.git .core
+          cd .core && npm ci && npm run build
+      - run: npx playwright install --with-deps chromium
+      - uses: actions/download-artifact@v4
+        with:
+          name: site
+          path: fidelity/out/site
+      - name: Restore theme downloads
+        uses: actions/cache@v4
+        with:
+          path: fidelity/out/theme-cache
+          key: layout-themes-${{ matrix.shard }}-${{ github.run_id }}
+          restore-keys: layout-themes-${{ matrix.shard }}-
+      - name: Audit
+        run: |
+          if [ -n "${{ inputs.themes }}" ]; then
+            node fidelity/scripts/layout.mjs --themes="${{ inputs.themes }}" --shard=${{ matrix.shard }}/4 --concurrency=4
+          else
+            node fidelity/scripts/layout.mjs --all --shard=${{ matrix.shard }}/4 --concurrency=4
+          fi
+      - uses: actions/upload-artifact@v4
+        with:
+          name: layout-${{ matrix.shard }}
+          path: fidelity/out/layout/report-*.json
+
+  layout-summary:
+    needs: layout
+    if: always()
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: layout-*
+          path: fidelity/out/layout
+          merge-multiple: true
+      - name: Summary
+        run: |
+          node fidelity/scripts/layout-summary.mjs --json=fidelity/out/layout/report.json | tee layout.txt
+          { echo '## Layout audit'; echo; echo '```'; cat layout.txt; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: layout-report
+          path: |
+            fidelity/out/layout/report.json
+            layout.txt
 
   summary:
     needs: measure
