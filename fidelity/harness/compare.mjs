@@ -8,6 +8,17 @@ export const DELTA_E_OK = 6; // ~noticeable at a glance; < 2.3 is a JND
 
 function parseColor(s) {
   if (!s) return null;
+  // color(srgb r g b / a): channels 0–1.
+  const srgb = s.match(/color\(srgb\s+([^)]+)\)/);
+  if (srgb) {
+    const p = srgb[1].split(/[ /]+/).filter(Boolean).map(parseFloat);
+    return {
+      r: p[0] * 255,
+      g: p[1] * 255,
+      b: p[2] * 255,
+      a: p.length > 3 ? p[3] : 1,
+    };
+  }
   const m = s.match(/(rgba?|oklch|oklab)\(([^)]+)\)/);
   if (!m) return null;
   const num = (x) =>

@@ -486,6 +486,16 @@ PROBES.push(
     props: ALL,
   },
 
+  {
+    id: "property-icon",
+    aspect: "properties",
+    note: "theme-properties/note-properties",
+    obsidian:
+      '.metadata-property[data-property-key="tags"] .metadata-property-icon svg',
+    quartzScope: "page",
+    props: ["color", "width", "height", "opacity"],
+  },
+
   // Footnotes.
   {
     id: "footnote-ref",
@@ -550,16 +560,38 @@ export function sideProbe(p, side) {
  */
 export function measureInPage({ root, probes }) {
   const rootEl = document.querySelector(root);
+  // Any CSS colour (oklch, color(srgb …), color-mix results…) as [r, g, b, a].
+  const ctx = document
+    .createElement("canvas")
+    .getContext("2d", { willReadFrequently: true });
+  const rgba = (c) => {
+    ctx.clearRect(0, 0, 1, 1);
+    ctx.fillStyle = "rgba(0, 0, 0, 0)";
+    ctx.fillStyle = c;
+    ctx.fillRect(0, 0, 1, 1);
+    const [r, g, b, a] = ctx.getImageData(0, 0, 1, 1).data;
+    return [r, g, b, a / 255];
+  };
+  const COLOR =
+    /(?:rgba?|hsla?|hwb|lab|lch|oklab|oklch|color)\((?:[^()]|\([^()]*\))*\)|#[0-9a-f]{3,8}\b/gi;
+  // What's painted behind an element: the nearest opaque background colour,
+  // or a gradient (the average of its stops: a theme's pane gradient is what
+  // shows behind the note, not the colour under it).
   const effectiveBg = (el) => {
     for (let e = el; e; e = e.parentElement) {
-      const c = getComputedStyle(e).backgroundColor;
-      const m = c.match(/rgba?\(([^)]+)\)/);
-      if (m) {
-        const parts = m[1]
-          .split(/[ ,/]+/)
-          .filter(Boolean)
-          .map(Number);
-        if (parts.length < 4 || parts[3] > 0.05) return c;
+      const cs = getComputedStyle(e);
+      const own = rgba(cs.backgroundColor);
+      if (own[3] > 0.05) return cs.backgroundColor;
+      if (/gradient\(/.test(cs.backgroundImage)) {
+        const stops = (cs.backgroundImage.match(COLOR) ?? [])
+          .map(rgba)
+          .filter((s) => s[3] > 0.05);
+        if (stops.length) {
+          const avg = [0, 1, 2].map((k) =>
+            Math.round(stops.reduce((n, s) => n + s[k], 0) / stops.length),
+          );
+          return `rgb(${avg.join(", ")})`;
+        }
       }
     }
     return "rgb(255, 255, 255)";

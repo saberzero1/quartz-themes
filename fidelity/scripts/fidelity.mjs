@@ -20,7 +20,7 @@ import crypto from "node:crypto";
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import { PROBES, NOTES } from "../harness/probes.mjs";
+import { PROBES, NOTES, measureInPage } from "../harness/probes.mjs";
 import { compareMeasurements } from "../harness/compare.mjs";
 import { startQuartz } from "../harness/quartz.mjs";
 
@@ -75,7 +75,7 @@ const PROBES_HASH = hash(
       p.obsidianProps,
       p.obsidianScope,
     ]),
-  ),
+  ) + String(measureInPage), // how they're measured, too
 );
 
 // Resolve every theme once (download or cache), a few at a time.
