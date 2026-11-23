@@ -155,10 +155,13 @@ export async function startObsidian({
 
 /** Switch theme + mode. `theme` is the theme's folder name ("" = default). */
 export async function setTheme(page, theme, mode) {
-  await page.evaluate(
+  const { since, same } = await page.evaluate(
     async ({ theme, mode }) => {
+      const since = new Date().toISOString();
+      const same = window.app.customCss.theme === theme;
       window.app.changeTheme(mode === "dark" ? "obsidian" : "moonstone");
       await window.app.customCss.setTheme(theme);
+      return { since, same };
     },
     { theme, mode },
   );
@@ -169,6 +172,30 @@ export async function setTheme(page, theme, mode) {
     theme,
   );
   await page.waitForTimeout(400);
+  // Style Settings re-parses every stylesheet on `css-change` (debounced),
+  // then applies its variables and body classes: measuring before that sees a
+  // theme without its settings. Wait for a parse that started after the
+  // switch, and for no further one to be pending. (A mode switch alone
+  // doesn't re-parse: both modes' settings are already applied.)
+  if (!same)
+    await page
+      .waitForFunction(
+        (since) => {
+          const p = window.app.plugins.plugins["obsidian-style-settings"];
+          if (!p) return true;
+          const at = p.normalizedSchema?.generatedAt;
+          if (!at || at < since) return false;
+          if (window.__ssSeen !== at) {
+            window.__ssSeen = at;
+            window.__ssSeenAt = performance.now();
+            return false;
+          }
+          return performance.now() - window.__ssSeenAt > 300;
+        },
+        since,
+        { timeout: 15_000, polling: 50 },
+      )
+      .catch(() => {});
   await page.evaluate(
     () =>
       new Promise((r) => requestAnimationFrame(() => requestAnimationFrame(r))),

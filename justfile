@@ -20,6 +20,21 @@ fidelity-all *args:
 fidelity-cached themes="Minimal,Tokyo Night" *args:
   node fidelity/scripts/fidelity.mjs --themes="{{themes}}" --cached {{args}}
 
+[group('fidelity'), doc("Style Settings dependencies: gated settings, conflicts, covering configurations")]
+ss-deps themes *args:
+  node fidelity/scripts/ss-deps.mjs "{{themes}}" {{args}}
+
+[group('fidelity'), doc("Measure every covering Style Settings configuration of the given themes")]
+fidelity-ss-configs themes:
+  #!/usr/bin/env bash
+  set -euo pipefail
+  out=fidelity/out/fidelity/ss-configs
+  node fidelity/scripts/ss-deps.mjs "{{themes}}" --emit=$out/deps
+  node fidelity/scripts/ss-configs.mjs $out/deps $out "{{themes}}"
+  for f in $out/ss-config-*.json; do
+    e2e-headless node fidelity/scripts/fidelity.mjs --themes="$(cat ${f%.json}.themes)" --style-settings=$f --no-default
+  done
+
 [group('fidelity'), doc("Merge shard reports and print the corpus summary")]
 fidelity-summary *args:
   node fidelity/scripts/fidelity-summary.mjs {{args}}

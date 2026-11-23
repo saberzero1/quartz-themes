@@ -578,23 +578,43 @@ export function measureInPage({ root, probes }) {
   // or a gradient (the average of its stops: a theme's pane gradient is what
   // shows behind the note, not the colour under it).
   const effectiveBg = (el) => {
-    for (let e = el; e; e = e.parentElement) {
+    // Layers from the element outwards, each element's colour under its
+    // images, until one is opaque; then composited as painted. A gradient
+    // counts as the average of its stops (alpha included): overlays like a
+    // translucent radial glow tint what's beneath rather than replace it.
+    const layers = [];
+    let opaque = false;
+    for (let e = el; e && !opaque; e = e.parentElement) {
       const cs = getComputedStyle(e);
-      const own = rgba(cs.backgroundColor);
-      if (own[3] > 0.05) return cs.backgroundColor;
-      if (/gradient\(/.test(cs.backgroundImage)) {
-        const stops = (cs.backgroundImage.match(COLOR) ?? [])
-          .map(rgba)
-          .filter((s) => s[3] > 0.05);
-        if (stops.length) {
-          const avg = [0, 1, 2].map((k) =>
-            Math.round(stops.reduce((n, s) => n + s[k], 0) / stops.length),
-          );
-          return `rgb(${avg.join(", ")})`;
+      const own = [];
+      for (const img of cs.backgroundImage.match(
+        /(?:repeating-)?(?:linear|radial|conic)-gradient\((?:[^()]|\((?:[^()]|\([^()]*\))*\))*\)/g,
+      ) ?? []) {
+        const stops = (img.match(COLOR) ?? []).map(rgba);
+        if (!stops.length) continue;
+        own.push(
+          [0, 1, 2, 3].map(
+            (k) => stops.reduce((n, s) => n + s[k], 0) / stops.length,
+          ),
+        );
+      }
+      own.push(rgba(cs.backgroundColor)); // painted first, under the images
+      for (const l of own) {
+        if (l[3] <= 0.01) continue;
+        layers.push(l);
+        if (l[3] >= 0.99) {
+          opaque = true;
+          break;
         }
       }
     }
-    return "rgb(255, 255, 255)";
+    let [r, g, b] = [255, 255, 255];
+    for (const [lr, lg, lb, la] of layers.reverse()) {
+      r = lr * la + r * (1 - la);
+      g = lg * la + g * (1 - la);
+      b = lb * la + b * (1 - la);
+    }
+    return `rgb(${[r, g, b].map(Math.round).join(", ")})`;
   };
   const BLOCKS =
     "p, h1, h2, h3, h4, h5, h6, li, pre, table, blockquote, hr, .callout, ul, ol, section, img, .metadata-container";
