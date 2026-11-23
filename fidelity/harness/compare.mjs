@@ -3,7 +3,7 @@
  */
 
 const COLOR_PROPS = /color$/;
-const SIZE_PROPS = /(width|size|spacing|radius|height|padding.*)$/;
+const SIZE_PROPS = /(width|size|spacing|radius|height|padding.*|margin.*|gap)$/;
 export const DELTA_E_OK = 6; // ~noticeable at a glance; < 2.3 is a JND
 
 function parseColor(s) {
@@ -87,10 +87,39 @@ const firstFamily = (s) =>
 /**
  * @returns {{match: boolean, detail?: string}}
  */
-export function compareProp(prop, ref, cand, refProbe, candProbe) {
+export function compareProp(key, ref, cand, refProbe, candProbe) {
+  // "::before color" → pseudo "::before", property "color"
+  const [, pseudo, prop] = key.match(/^(?:(::?[\w-]+) )?(.+)$/);
+  if (pseudo === "::before" || pseudo === "::after") {
+    // A pseudo-element without content draws nothing: its other properties don't matter.
+    const empty = (p) =>
+      /^(none|normal|)$/.test(p?.[`${pseudo} content`] ?? "none");
+    if (prop !== "content" && empty(refProbe) && empty(candProbe))
+      return { match: true };
+    if (prop === "content") {
+      const norm = (v) => (/^(none|normal|)$/.test(v ?? "") ? "none" : v);
+      return { match: norm(ref) === norm(cand), detail: `${ref} vs ${cand}` };
+    }
+  }
+  if (prop.startsWith("$") && !COLOR_PROPS.test(prop)) {
+    // Geometry in px: within 2px or 15%.
+    const a = parseFloat(ref);
+    const b = parseFloat(cand);
+    if (isNaN(a) || isNaN(b))
+      return { match: ref === cand, detail: `${ref} vs ${cand}` };
+    return {
+      match: Math.abs(a - b) <= Math.max(2, 0.15 * Math.abs(a)),
+      detail: `${ref} vs ${cand}`,
+    };
+  }
+  if (prop === "opacity")
+    return {
+      match: Math.abs(+ref - +cand) <= 0.05,
+      detail: `${ref} vs ${cand}`,
+    };
   if (COLOR_PROPS.test(prop)) {
     // Border colours are irrelevant when there's no border.
-    const side = prop.match(/^border-(\w+)-color$/)?.[1];
+    const side = !pseudo && prop.match(/^border-(\w+)-color$/)?.[1];
     if (side) {
       const w1 = parseFloat(refProbe[`border-${side}-width`] ?? "1");
       const w2 = parseFloat(candProbe[`border-${side}-width`] ?? "1");

@@ -11,7 +11,7 @@ import os from "node:os";
 import path from "node:path";
 import ObsidianLauncher from "obsidian-launcher";
 import { chromium } from "playwright";
-import { measureInPage } from "./probes.mjs";
+import { measureInPage, sideProbe } from "./probes.mjs";
 
 export const OBSIDIAN_ROOT =
   ".workspace-leaf.mod-active .markdown-preview-view";
@@ -185,7 +185,7 @@ export async function openNote(page, note) {
   }, `${note}.md`);
   await page.waitForSelector(
     `${OBSIDIAN_ROOT} .markdown-preview-section > div`,
-    { timeout: 30_000 },
+    { timeout: 30_000, state: "attached" },
   );
   // Reading view is virtualized: only sections near the viewport are in the
   // DOM. Widen the render-ahead window so every section renders, like Quartz.
@@ -210,6 +210,6 @@ export async function openNote(page, note) {
 export async function measureObsidian(page, probes) {
   return page.evaluate(measureInPage, {
     root: OBSIDIAN_ROOT,
-    probes: probes.map((p) => ({ id: p.id, sel: p.obsidian, props: p.props })),
+    probes: probes.map((p) => sideProbe(p, "obsidian")),
   });
 }

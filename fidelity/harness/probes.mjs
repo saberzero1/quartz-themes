@@ -5,6 +5,17 @@
  * (`.markdown-preview-view`, present in both DOMs), first match wins.
  *
  * `quartz` defaults to `obsidian` when the markup is identical.
+ *
+ * Optional, per probe:
+ *   - `obsidianScope` / `quartzScope: "page"`: query the whole document instead
+ *     of the reading view (Quartz renders properties outside it).
+ *   - `obsidian` / `quartz` as `{ create: "class names", style?: "css" }`: measure
+ *     a hidden element created inside the root, for colours that only exist as
+ *     variables or as classes an app reads (graph colours, code tokens).
+ *   - props may name a pseudo-element: `"::before content"`, `"::marker color"`.
+ *   - `obsidianProps` / `quartzProps: { key: "css spec" }`: measure a different
+ *     property under the same key, where the apps draw the same thing
+ *     differently (Obsidian's `.list-bullet::after` dot vs Quartz's `::marker`).
  */
 
 const TEXT = [
@@ -227,7 +238,311 @@ export const PROBES = [
   ...["note", "warning", "tip", "danger", "quote"].flatMap(callout),
 ];
 
+// ---- Spacing, indentation, decorations, properties, footnotes, graph… -----
+
+// Geometry, as seen: the gap to the nearest block above and below, and where
+// the element's box starts relative to the note's paragraphs. Margins alone
+// mislead: the DOMs wrap blocks differently and margins collapse.
+const SPACING = ["$gap-before", "$gap-after", "padding-top", "padding-bottom"];
+const INDENT = ["$indent", "padding-left"];
+const PSEUDO = (pseudo) => [
+  `${pseudo} content`,
+  `${pseudo} color`,
+  `${pseudo} background-color`,
+  `${pseudo} width`,
+  `${pseudo} height`,
+];
+
+const spacing = (id, sel, note = "specimen", extra = []) => ({
+  id: `${id}-spacing`,
+  aspect: "spacing",
+  note,
+  obsidian: sel,
+  props: [...SPACING, ...extra],
+});
+
+// Obsidian draws bullets as `.list-bullet::after` (a dot with a background);
+// Quartz uses the list marker. Same key, different property.
+const bullet = (id, sel) => ({
+  id,
+  aspect: "decorations",
+  note: "layout",
+  // Quartz renders Obsidian's bullet markup (rehype-obsidian); $bullet-color
+  // also reads a plain list marker, for sites without it.
+  obsidian: `${sel} > .list-bullet`,
+  props: ["bullet-color"],
+  obsidianProps: { "bullet-color": "$bullet-color" },
+  quartzProps: { "bullet-color": "$bullet-color" },
+});
+
+const callouts2 = [
+  "abstract",
+  "info",
+  "todo",
+  "success",
+  "question",
+  "failure",
+  "bug",
+  "example",
+].flatMap(callout);
+
+const checkbox = (task, label) => [
+  {
+    id: `checkbox-${label}`,
+    aspect: "checkboxes",
+    note: "theme-checkboxes/special",
+    obsidian: `li[data-task="${task}"] > input.task-list-item-checkbox`,
+    quartz: `li[data-task="${task}"] > input[type=checkbox]`,
+    props: [
+      "background-color",
+      "border-left-color",
+      "border-left-width",
+      "border-top-left-radius",
+      "width",
+      ...PSEUDO("::after"),
+    ],
+  },
+  {
+    id: `checkbox-${label}-text`,
+    aspect: "checkboxes",
+    note: "theme-checkboxes/special",
+    obsidian: `li[data-task="${task}"]`,
+    props: ["color", "text-decoration-line"],
+  },
+];
+
+const token = (type, variable = type) => ({
+  id: `code-${type}`,
+  aspect: "code",
+  note: "theme-code/syntax-samples",
+  // The specimen vault highlights with Shiki's `obsidian-theme`, which colours
+  // tokens with the theme's --code-* variables, as Obsidian's own Prism does.
+  obsidian: { create: "", style: `color: var(--code-${variable})` },
+  quartz: `pre code span[data-token-type="${type}"]`,
+  props: ["color"],
+});
+
+const graph = (cls) => ({
+  id: `graph-${cls}`,
+  aspect: "graph",
+  note: "general",
+  // Both graphs read these hidden elements' colours.
+  obsidian: { create: `graph-view ${cls}` },
+  props: ["color", "opacity"],
+});
+
+PROBES.push(
+  // Spacing between blocks, as rendered.
+  spacing("p", "p"),
+  // Quartz's article title is an h1 too.
+  ...[1, 2, 3, 4, 5, 6].map((n) => ({
+    ...spacing(`h${n}`, `h${n}`, "headings"),
+    quartz: `h${n}:not(.article-title)`,
+    // h6 ends the note: nothing below it to measure.
+    ...(n === 6 && { props: SPACING.filter((p) => p !== "$gap-after") }),
+  })),
+  spacing("ul", "ul", "layout", INDENT),
+  spacing("ol", "ol", "layout", INDENT),
+  spacing("li", "ul > li", "layout"),
+  spacing("blockquote", "blockquote:not(.callout)", "specimen", [
+    ...INDENT,
+    "padding-right",
+  ]),
+  spacing("pre", "pre", "specimen", [...INDENT]),
+  spacing("table", "table", "tables"),
+  spacing("hr", "hr"),
+  spacing("callout", '.callout[data-callout="note"]', "callouts", [
+    ...INDENT,
+    "padding-right",
+  ]),
+  spacing(
+    "callout-title",
+    '.callout[data-callout="note"] .callout-title',
+    "callouts",
+    ["gap"],
+  ),
+  spacing(
+    "callout-content",
+    '.callout[data-callout="note"] .callout-content',
+    "callouts",
+  ),
+
+  // Indentation of nested lists: where each level's text starts.
+  {
+    id: "ul-nested",
+    aspect: "indentation",
+    note: "layout",
+    obsidian: "ul ul",
+    props: [...INDENT, "margin-top", "margin-bottom"],
+  },
+  {
+    id: "ul-nested-2",
+    aspect: "indentation",
+    note: "layout",
+    obsidian: "ul ul ul",
+    props: [...INDENT],
+  },
+  {
+    id: "ol-nested",
+    aspect: "indentation",
+    note: "layout",
+    obsidian: "ol ol",
+    props: [...INDENT],
+  },
+  {
+    id: "blockquote-nested",
+    aspect: "indentation",
+    note: "layout",
+    obsidian: "blockquote blockquote",
+    props: [...INDENT, "border-left-color", "border-left-width"],
+  },
+
+  // Decorations: list markers, heading and quote pseudo-elements.
+  bullet("bullet", "ul > li"),
+  bullet("bullet-nested", "ul ul > li"),
+  {
+    id: "ol-marker",
+    aspect: "decorations",
+    note: "layout",
+    obsidian: "ol > li",
+    props: ["::marker color", "::marker font-size", "list-style-type"],
+  },
+  ...[1, 2, 3, 4, 5, 6].map((n) => ({
+    id: `h${n}-before`,
+    aspect: "decorations",
+    note: "headings",
+    obsidian: `h${n}`,
+    quartz: `h${n}:not(.article-title)`,
+    props: [...PSEUDO("::before"), ...PSEUDO("::after")],
+  })),
+  {
+    id: "blockquote-before",
+    aspect: "decorations",
+    note: "specimen",
+    obsidian: "blockquote:not(.callout)",
+    props: [...PSEUDO("::before"), ...PSEUDO("::after")],
+  },
+  {
+    id: "hr-before",
+    aspect: "decorations",
+    note: "specimen",
+    obsidian: "hr",
+    props: [...PSEUDO("::before"), ...PSEUDO("::after")],
+  },
+
+  // The remaining callout types.
+  ...callouts2,
+
+  // Checkbox states, including the alternative ones many themes draw.
+  ...checkbox("x", "checked"),
+  ...checkbox("/", "slash"),
+  ...checkbox("-", "minus"),
+  ...checkbox("?", "question"),
+  ...checkbox("!", "bang"),
+  ...checkbox(">", "forward"),
+
+  // Note properties.
+  {
+    id: "properties",
+    aspect: "properties",
+    note: "theme-properties/note-properties",
+    obsidian: ".metadata-container",
+    quartzScope: "page",
+    // Quartz places the block above the note: only its own box compares.
+    props: [...BOX, ...TEXT, "padding-top", "padding-bottom", "padding-left"],
+  },
+  {
+    id: "properties-heading",
+    aspect: "properties",
+    note: "theme-properties/note-properties",
+    obsidian: ".metadata-properties-heading",
+    quartzScope: "page",
+    props: TEXT,
+  },
+  {
+    id: "property-key",
+    aspect: "properties",
+    note: "theme-properties/note-properties",
+    obsidian:
+      '.metadata-property[data-property-key="tags"] .metadata-property-key',
+    quartzScope: "page",
+    props: [...TEXT, "background-color", "width"],
+  },
+  {
+    id: "property-value",
+    aspect: "properties",
+    note: "theme-properties/note-properties",
+    obsidian:
+      '.metadata-property[data-property-key="aliases"] .metadata-property-value',
+    quartzScope: "page",
+    props: [...TEXT, "background-color"],
+  },
+  {
+    id: "property-pill",
+    aspect: "properties",
+    note: "theme-properties/note-properties",
+    obsidian: '.metadata-property[data-property-key="tags"] .multi-select-pill',
+    quartzScope: "page",
+    props: ALL,
+  },
+
+  // Footnotes.
+  {
+    id: "footnote-ref",
+    aspect: "footnotes",
+    note: "general",
+    obsidian: "sup.footnote-ref a",
+    quartz: "sup a[data-footnote-ref]",
+    props: TEXT,
+  },
+  {
+    id: "footnotes",
+    aspect: "footnotes",
+    note: "general",
+    obsidian: "section.footnotes",
+    props: [...TEXT, "border-top-width", ...SPACING],
+  },
+  {
+    id: "footnote-item",
+    aspect: "footnotes",
+    note: "general",
+    obsidian: "section.footnotes li",
+    props: TEXT,
+  },
+
+  // Syntax highlighting.
+  token("keyword"),
+  token("string"),
+  token("comment"),
+  token("function"),
+  token("value"),
+  token("property"),
+  token("operator"),
+  token("punctuation"),
+
+  // Graph colours.
+  graph("color-fill"),
+  graph("color-fill-focused"),
+  graph("color-fill-tag"),
+  graph("color-line"),
+  graph("color-line-highlight"),
+  graph("color-text"),
+);
+
 export const NOTES = [...new Set(PROBES.map((p) => p.note))];
+
+/** What one app measures for a probe. */
+export function sideProbe(p, side) {
+  const sel = side === "quartz" ? (p.quartz ?? p.obsidian) : p.obsidian;
+  const alias = (side === "quartz" ? p.quartzProps : p.obsidianProps) ?? {};
+  return {
+    id: p.id,
+    sel: typeof sel === "string" ? sel : null,
+    create: typeof sel === "object" ? sel : null,
+    page: (side === "quartz" ? p.quartzScope : p.obsidianScope) === "page",
+    props: p.props.map((k) => [k, alias[k] ?? k]),
+  };
+}
 
 /**
  * Runs inside the page. Measures every probe for one note.
@@ -249,11 +564,56 @@ export function measureInPage({ root, probes }) {
     }
     return "rgb(255, 255, 255)";
   };
+  const BLOCKS =
+    "p, h1, h2, h3, h4, h5, h6, li, pre, table, blockquote, hr, .callout, ul, ol, section, img, .metadata-container";
+  const geometry = (el, spec) => {
+    if (spec === "$bullet-color") {
+      // Obsidian: .list-bullet::after, a dot (background) or a glyph (color).
+      // Quartz: the list item's marker.
+      if (el.classList.contains("list-bullet")) {
+        const a = getComputedStyle(el, "::after");
+        if (a.display === "none" || /^(none|normal)$/.test(a.content))
+          return "none";
+        const bg = a.backgroundColor;
+        const transparent = /rgba\([^)]*,\s*0\)|transparent/.test(bg);
+        return transparent || parseFloat(a.width) === 0 ? a.color : bg;
+      }
+      const li = getComputedStyle(el);
+      if (li.listStyleType === "none" && li.listStyleImage === "none")
+        return "none";
+      return getComputedStyle(el, "::marker").color;
+    }
+    const r = el.getBoundingClientRect();
+    if (spec === "$indent") {
+      const p = (rootEl ?? document).querySelector(":scope p");
+      return p ? Math.round(r.left - p.getBoundingClientRect().left) : "";
+    }
+    let gap = Infinity;
+    for (const b of (rootEl ?? document).querySelectorAll(BLOCKS)) {
+      if (b === el || b.contains(el) || el.contains(b)) continue;
+      const br = b.getBoundingClientRect();
+      if (!br.height) continue;
+      if (spec === "$gap-before" && br.bottom <= r.top + 0.5)
+        gap = Math.min(gap, r.top - br.bottom);
+      if (spec === "$gap-after" && br.top >= r.bottom - 0.5)
+        gap = Math.min(gap, br.top - r.bottom);
+    }
+    return gap === Infinity ? "" : Math.round(gap);
+  };
   const out = {};
   for (const p of probes) {
     let el = null;
+    let created = null;
     try {
-      el = p.sel === ":scope" ? rootEl : rootEl?.querySelector(p.sel);
+      if (p.create) {
+        created = document.createElement("div");
+        created.className = p.create.create;
+        created.setAttribute("aria-hidden", "true");
+        created.style.cssText = `position:absolute;visibility:hidden;${p.create.style ?? ""}`;
+        (rootEl ?? document.body).appendChild(created);
+        el = created;
+      } else if (p.sel === ":scope") el = rootEl;
+      else el = (p.page ? document : rootEl)?.querySelector(p.sel);
     } catch {
       /* invalid selector */
     }
@@ -261,11 +621,21 @@ export function measureInPage({ root, probes }) {
       out[p.id] = null;
       continue;
     }
-    const cs = getComputedStyle(el);
     const v = {};
-    for (const prop of p.props) v[prop] = cs.getPropertyValue(prop);
+    // Older references pass plain property names.
+    for (const entry of p.props) {
+      const [key, spec] = Array.isArray(entry) ? entry : [entry, entry];
+      if (spec.startsWith("$")) {
+        v[key] = String(geometry(el, spec));
+        continue;
+      }
+      const m = spec.match(/^(::?[\w-]+) (.+)$/);
+      const cs = m ? getComputedStyle(el, m[1]) : getComputedStyle(el);
+      v[key] = cs.getPropertyValue(m ? m[2] : spec);
+    }
     v["$effective-bg"] = effectiveBg(el);
     out[p.id] = v;
+    created?.remove();
   }
   return out;
 }

@@ -67,7 +67,15 @@ const hash = (s) =>
   crypto.createHash("sha256").update(s).digest("hex").slice(0, 16);
 // References are only valid for the probe set they were measured with.
 const PROBES_HASH = hash(
-  JSON.stringify(PROBES.map((p) => [p.id, p.obsidian, p.props])),
+  JSON.stringify(
+    PROBES.map((p) => [
+      p.id,
+      p.obsidian,
+      p.props,
+      p.obsidianProps,
+      p.obsidianScope,
+    ]),
+  ),
 );
 
 // Resolve every theme once (download or cache), a few at a time.

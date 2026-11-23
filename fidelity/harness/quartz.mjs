@@ -8,7 +8,7 @@ import fs from "node:fs";
 import http from "node:http";
 import path from "node:path";
 import { chromium } from "playwright";
-import { measureInPage } from "./probes.mjs";
+import { measureInPage, sideProbe } from "./probes.mjs";
 
 export const QUARTZ_ROOT = ".markdown-preview-view";
 
@@ -100,7 +100,17 @@ export async function startQuartz({ site }) {
           async (route) => {
             if (route.request().resourceType() !== "document")
               return route.continue();
-            const res = await route.fetch();
+            // The local server occasionally resets a connection under load: retry.
+            let res;
+            for (let i = 0; ; i++) {
+              try {
+                res = await route.fetch();
+                break;
+              } catch (e) {
+                if (i >= 3) return route.abort().catch(() => {});
+                await new Promise((r) => setTimeout(r, 200 * (i + 1)));
+              }
+            }
             const html = (await res.text()).replace(
               "</head>",
               `<link rel="stylesheet" href="/__quartz-themes/main.css"><link rel="stylesheet" href="/__quartz-themes/raw.css"></head>`,
@@ -158,11 +168,7 @@ export async function startQuartz({ site }) {
         measure: (probes) =>
           page.evaluate(measureInPage, {
             root: QUARTZ_ROOT,
-            probes: probes.map((p) => ({
-              id: p.id,
-              sel: p.quartz ?? p.obsidian,
-              props: p.props,
-            })),
+            probes: probes.map((p) => sideProbe(p, "quartz")),
           }),
         close: () => ctx.close(),
       };
