@@ -6,10 +6,12 @@
  *   node fidelity/scripts/layout-explain.mjs --theme="Tokyo Night" \
  *     --selector="article .markdown-preview-view" --props=padding,overflow-y \
  *     [--width=375] [--mode=dark] [--page=specimen] [--eval="js"] [--shot=x.png]
+ *     [--style-settings=export.json]
  *
  * --theme also takes "(default)" (Obsidian's default theme) and "(quartz)"
  * (no theme CSS).
  */
+import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { startQuartz } from "../harness/quartz.mjs";
@@ -40,7 +42,10 @@ const css =
           theme === "(default)"
             ? ""
             : (await core.resolveTheme(theme, sourceOpts)).css,
-        styleSettings: {},
+        // --style-settings=export.json, as fidelity.mjs takes it.
+        styleSettings: arg("style-settings", "")
+          ? JSON.parse(fs.readFileSync(path.resolve(arg("style-settings")), "utf8"))
+          : {},
       });
 const quartz = await startQuartz({
   site: path.resolve(arg("site", path.join(repo, "fidelity/out/site"))),

@@ -177,6 +177,12 @@ export function compareProp(key, ref, cand, refProbe, candProbe) {
   }
   if (prop === "font-weight")
     return { match: Math.abs(+ref - +cand) < 150, detail: `${ref} vs ${cand}` };
+  if (prop === "font-style") {
+    // Obsidian's Electron serialises a computed `oblique` as `italic`, the
+    // harness's Chromium as `oblique`: the same slanted text.
+    const slant = (v) => v.replace(/^oblique( 14deg)?$/, "italic");
+    return { match: slant(ref) === slant(cand), detail: `${ref} vs ${cand}` };
+  }
   return { match: ref === cand, detail: `${ref} vs ${cand}` };
 }
 

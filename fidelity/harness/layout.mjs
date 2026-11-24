@@ -104,9 +104,17 @@ export function measureLayout(chrome) {
       ? "." + el.className.trim().split(/\s+/)[0]
       : "");
 
+  // The viewport takes the root's overflow, else <body>'s: clipped or hidden,
+  // the reader can't scroll to what overhangs it.
+  const viewportX =
+    getComputedStyle(de).overflowX !== "visible"
+      ? getComputedStyle(de).overflowX
+      : getComputedStyle(document.body).overflowX;
   const m = {
     vw,
-    hOverflow: Math.max(de.scrollWidth, document.body.scrollWidth) - vw,
+    hOverflow: /^(hidden|clip)$/.test(viewportX)
+      ? 0
+      : Math.max(de.scrollWidth, document.body.scrollWidth) - vw,
     pageH: de.scrollHeight,
   };
   const root =
