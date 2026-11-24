@@ -165,11 +165,13 @@ export async function startQuartz({ site }) {
           });
           await page.evaluate(() => document.fonts.ready);
         },
-        measure: (probes) =>
-          page.evaluate(measureInPage, {
+        async measure(probes) {
+          await page.mouse.move(0, 0); // no :hover, as in Obsidian
+          return page.evaluate(measureInPage, {
             root: QUARTZ_ROOT,
             probes: probes.map((p) => sideProbe(p, "quartz")),
-          }),
+          });
+        },
         close: () => ctx.close(),
       };
     },

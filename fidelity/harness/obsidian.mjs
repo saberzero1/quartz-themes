@@ -245,6 +245,7 @@ export async function openNote(page, note) {
 }
 
 export async function measureObsidian(page, probes) {
+  await page.mouse.move(0, 0); // no :hover from wherever the pointer rests
   return page.evaluate(measureInPage, {
     root: OBSIDIAN_ROOT,
     probes: probes.map((p) => sideProbe(p, "obsidian")),

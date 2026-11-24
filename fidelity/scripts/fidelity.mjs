@@ -93,6 +93,7 @@ const PROBES_HASH = hash(
   ) +
     String(measureInPage) + // how they're measured, too
     PLUGINS_OFF.join() +
+    "pointer-off" + // the pointer rests outside the note
     notesDigest(), // and on what
 );
 
