@@ -127,6 +127,32 @@ async function run(t) {
           window.scrollTo({ top: 0, left: 0, behavior: "instant" }),
         );
         await q.page.waitForTimeout(150);
+        // Settle before measuring: late fonts and images reflow the page, and
+        // entrance animations move the chrome (as the fidelity probes do).
+        await q.page.evaluate(async () => {
+          await Promise.race([
+            Promise.all([
+              document.fonts.ready,
+              ...[...document.images]
+                .filter((i) => !i.complete)
+                .map((i) => new Promise((r) => (i.onload = i.onerror = r))),
+            ]),
+            new Promise((r) => setTimeout(r, 3000)),
+          ]);
+          for (const a of document.getAnimations()) {
+            try {
+              if (a.effect?.getComputedTiming().endTime === Infinity) {
+                a.pause();
+                a.currentTime = 0;
+              } else a.finish();
+            } catch {
+              /* not seekable */
+            }
+          }
+          await new Promise((r) =>
+            requestAnimationFrame(() => requestAnimationFrame(r)),
+          );
+        });
         const m = await q.page.evaluate(measureLayout, CHROME);
         const row = { theme: t, mode, width, ...m };
         rows.push(row);
