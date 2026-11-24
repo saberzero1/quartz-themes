@@ -322,13 +322,16 @@ const checkbox = (task, label) => [
   },
 ];
 
-const token = (type, variable = type) => ({
+/** Prism's class for each token type Quartz's highlighter marks. */
+const PRISM = { value: "number" };
+const token = (type) => ({
   id: `code-${type}`,
   aspect: "code",
   note: "theme-code/syntax-samples",
-  // Obsidian's Prism colours tokens with the theme's --code-* variables; the
-  // probe colours its own element with them, whatever the highlighter.
-  obsidian: { create: "", style: `color: var(--code-${variable})` },
+  // Obsidian's own highlighter (Prism) marks tokens with classes; app.css
+  // and themes colour them, with --code-* variables that may be redefined
+  // inside code blocks.
+  obsidian: `pre code .token.${PRISM[type] ?? type}`,
   quartz: `pre code span[data-token-type="${type}"]`,
   props: ["color"],
 });
