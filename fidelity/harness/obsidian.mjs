@@ -11,7 +11,7 @@ import os from "node:os";
 import path from "node:path";
 import ObsidianLauncher from "obsidian-launcher";
 import { chromium } from "playwright";
-import { measureInPage, sideProbe } from "./probes.mjs";
+import { measureInPage, sideProbe, PLUGINS_OFF } from "./probes.mjs";
 
 export const OBSIDIAN_ROOT =
   ".workspace-leaf.mod-active .markdown-preview-view";
@@ -53,6 +53,16 @@ function leanVault(sourceVault, themes, styleSettings) {
     path.join(dir, ".obsidian", "appearance.json"),
     JSON.stringify({ theme: "obsidian", cssTheme: "" }),
   );
+  const enabled = path.join(dir, ".obsidian", "community-plugins.json");
+  if (fs.existsSync(enabled))
+    fs.writeFileSync(
+      enabled,
+      JSON.stringify(
+        JSON.parse(fs.readFileSync(enabled, "utf8")).filter(
+          (id) => !PLUGINS_OFF.includes(id),
+        ),
+      ),
+    );
   // Style Settings reads its export from data.json at load.
   const ss = path.join(dir, ".obsidian", "plugins", "obsidian-style-settings");
   if (fs.existsSync(ss))

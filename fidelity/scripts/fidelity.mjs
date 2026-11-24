@@ -20,7 +20,12 @@ import crypto from "node:crypto";
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import { PROBES, NOTES, measureInPage } from "../harness/probes.mjs";
+import {
+  PROBES,
+  NOTES,
+  measureInPage,
+  PLUGINS_OFF,
+} from "../harness/probes.mjs";
 import { compareMeasurements } from "../harness/compare.mjs";
 import { startQuartz } from "../harness/quartz.mjs";
 
@@ -65,6 +70,16 @@ const includeDefault = !flag("no-default");
 
 const hash = (s) =>
   crypto.createHash("sha256").update(s).digest("hex").slice(0, 16);
+// The specimen notes: references measured on other notes are stale.
+function notesDigest() {
+  const vault = path.join(repo, "runner/vault");
+  return fs
+    .readdirSync(vault, { recursive: true })
+    .filter((f) => String(f).endsWith(".md"))
+    .sort()
+    .map((f) => f + fs.readFileSync(path.join(vault, f), "utf8"))
+    .join("\0");
+}
 // References are only valid for the probe set they were measured with.
 const PROBES_HASH = hash(
   JSON.stringify(
@@ -75,7 +90,10 @@ const PROBES_HASH = hash(
       p.obsidianProps,
       p.obsidianScope,
     ]),
-  ) + String(measureInPage), // how they're measured, too
+  ) +
+    String(measureInPage) + // how they're measured, too
+    PLUGINS_OFF.join() +
+    notesDigest(), // and on what
 );
 
 // Resolve every theme once (download or cache), a few at a time.

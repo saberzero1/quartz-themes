@@ -86,12 +86,23 @@ const callout = (type) => [
   },
 ];
 
+/**
+ * Specimen-vault plugins left off when measuring. Shiki Highlighter replaces
+ * Obsidian's code blocks with Expressive Code's markup and margins, which no
+ * theme styles: themes (and the conversion) target Obsidian's own `<pre>`.
+ * The code-token probes colour their own elements, so they don't need it.
+ */
+export const PLUGINS_OFF = ["shiki-highlighter"];
+
 export const PROBES = [
   {
     id: "page",
     aspect: "base",
     note: "specimen",
-    obsidian: ":scope",
+    // Quartz's note is Obsidian's reading view and its sizer in one box; the
+    // text sits on the sizer (Trailside paints the view around a sizer page).
+    obsidian: ":scope > .markdown-preview-sizer",
+    quartz: ":scope",
     props: [
       "color",
       "background-color",
@@ -315,8 +326,8 @@ const token = (type, variable = type) => ({
   id: `code-${type}`,
   aspect: "code",
   note: "theme-code/syntax-samples",
-  // The specimen vault highlights with Shiki's `obsidian-theme`, which colours
-  // tokens with the theme's --code-* variables, as Obsidian's own Prism does.
+  // Obsidian's Prism colours tokens with the theme's --code-* variables; the
+  // probe colours its own element with them, whatever the highlighter.
   obsidian: { create: "", style: `color: var(--code-${variable})` },
   quartz: `pre code span[data-token-type="${type}"]`,
   props: ["color"],
@@ -560,6 +571,18 @@ export function sideProbe(p, side) {
  */
 export function measureInPage({ root, probes }) {
   const rootEl = document.querySelector(root);
+  // Animations as a reader sees them, the same on both sides: finished, or
+  // at their start when they loop (Byrcen Breathe's breathing backdrop).
+  for (const a of document.getAnimations()) {
+    try {
+      if (a.effect?.getComputedTiming().endTime === Infinity) {
+        a.pause();
+        a.currentTime = 0;
+      } else a.finish();
+    } catch {
+      /* not seekable */
+    }
+  }
   // Any CSS colour (oklch, color(srgb …), color-mix results…) as [r, g, b, a].
   const ctx = document
     .createElement("canvas")
