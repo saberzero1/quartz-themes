@@ -16,6 +16,8 @@
  *   - `obsidianProps` / `quartzProps: { key: "css spec" }`: measure a different
  *     property under the same key, where the apps draw the same thing
  *     differently (Obsidian's `.list-bullet::after` dot vs Quartz's `::marker`).
+ *   - `hover: "selector"`: measured with the pointer on that element (in the
+ *     reading view), for what only shows on hover (code blocks' copy button).
  */
 
 const TEXT = [
@@ -166,10 +168,23 @@ export const PROBES = [
   {
     id: "tag",
     aspect: "links",
-    note: "general",
+    note: "elements",
     obsidian: "a.tag",
-    quartz: "a.tag-link",
-    props: ALL,
+    props: [...ALL, "padding-left", "padding-top"],
+  },
+  {
+    id: "unresolved-link",
+    aspect: "links",
+    note: "elements",
+    obsidian: "a.is-unresolved",
+    // Quartz marks it `.broken` only with crawl-links' disableBrokenWikilinks.
+    quartz: 'a[data-slug="missing-note"]',
+    props: [
+      ...TEXT,
+      "opacity",
+      "text-decoration-style",
+      "text-decoration-color",
+    ],
   },
   {
     id: "inline-code",
@@ -247,6 +262,121 @@ export const PROBES = [
     props: ALL,
   },
   ...["note", "warning", "tip", "danger", "quote"].flatMap(callout),
+  {
+    id: "callout-folded",
+    aspect: "callouts",
+    note: "elements",
+    obsidian: ".callout.is-collapsed",
+    props: [...BOX, "padding-top", "padding-bottom", "height"],
+  },
+  {
+    id: "callout-folded-title",
+    aspect: "callouts",
+    note: "elements",
+    obsidian: ".callout.is-collapsed .callout-title",
+    props: [...TEXT, "background-color"],
+  },
+
+  // Embeds and the code block's copy button.
+  {
+    id: "note-embed",
+    aspect: "embeds",
+    note: "elements",
+    obsidian: ".markdown-embed",
+    props: [
+      ...BOX,
+      "border-top-width",
+      "border-right-width",
+      "padding-left",
+      "padding-top",
+      "$indent",
+    ],
+  },
+  {
+    id: "note-embed-text",
+    aspect: "embeds",
+    note: "elements",
+    obsidian: ".markdown-embed p",
+    props: TEXT,
+  },
+  {
+    id: "image-embed",
+    aspect: "embeds",
+    note: "elements",
+    obsidian: ".image-embed img",
+    props: [
+      "border-top-left-radius",
+      "border-left-width",
+      "border-left-style",
+      "border-left-color",
+      "width",
+      "opacity",
+      "$align",
+    ],
+  },
+  // Mermaid diagrams: Pele's, in Obsidian and in Quartz.
+  {
+    id: "mermaid",
+    aspect: "diagrams",
+    note: "integrations",
+    obsidian: ".mermaid",
+    props: [
+      "color",
+      "background-color",
+      "padding-left",
+      "border-left-width",
+      "border-left-style",
+      "border-left-color",
+      "border-top-left-radius",
+    ],
+  },
+  {
+    id: "mermaid-node",
+    aspect: "diagrams",
+    note: "integrations",
+    obsidian: ".mermaid .pele-actor rect",
+    props: ["fill", "stroke"],
+  },
+  {
+    id: "mermaid-line",
+    aspect: "diagrams",
+    note: "integrations",
+    obsidian: ".mermaid :is(path.pele-lifeline, .pele-lifeline path)",
+    props: ["stroke"],
+  },
+  {
+    id: "mermaid-edge",
+    aspect: "diagrams",
+    note: "integrations",
+    obsidian: ".mermaid .pele-message path",
+    props: ["stroke"],
+  },
+  {
+    id: "mermaid-label",
+    aspect: "diagrams",
+    note: "integrations",
+    obsidian: ".mermaid :is(text.pele-label, .pele-label text)",
+    props: ["fill", "font-family", "font-size"],
+  },
+  {
+    id: "copy-code-button",
+    aspect: "code",
+    note: "elements",
+    hover: "pre",
+    obsidian: "pre button.copy-code-button",
+    quartz: "pre .clipboard-button",
+    props: [
+      "color",
+      "background-color",
+      "border-left-width",
+      "border-left-style",
+      "border-left-color",
+      "border-top-left-radius",
+      "opacity",
+      "$inset-top",
+      "$inset-right",
+    ],
+  },
 ];
 
 // ---- Spacing, indentation, decorations, properties, footnotes, graph… -----
@@ -569,6 +699,33 @@ export function sideProbe(p, side) {
 }
 
 /**
+ * Measures one note's probes on one side: with the pointer off the note, then
+ * each `hover` probe with the pointer on its element.
+ */
+export async function measureProbes(page, root, probes, side) {
+  await page.mouse.move(0, 0); // no :hover from wherever the pointer rests
+  const out = await page.evaluate(measureInPage, {
+    root,
+    probes: probes.filter((p) => !p.hover).map((p) => sideProbe(p, side)),
+  });
+  for (const p of probes.filter((p) => p.hover)) {
+    const target = page.locator(`${root} ${p.hover}`).first();
+    if (await target.count()) {
+      await target.hover({ force: true });
+      Object.assign(
+        out,
+        await page.evaluate(measureInPage, {
+          root,
+          probes: [sideProbe(p, side)],
+        }),
+      );
+    }
+    await page.mouse.move(0, 0);
+  }
+  return out;
+}
+
+/**
  * Runs inside the page. Measures every probe for one note.
  * @param {{root: string, probes: {id: string, sel: string, props: string[]}[]}} arg
  */
@@ -662,6 +819,32 @@ export function measureInPage({ root, probes }) {
       return getComputedStyle(el, "::marker").color;
     }
     const r = el.getBoundingClientRect();
+    if (spec === "$inset-top" || spec === "$inset-right") {
+      // Where the element sits in its parent (the copy button in its code block).
+      const pr = el.parentElement?.getBoundingClientRect();
+      if (!pr || !r.width) return "";
+      return Math.round(
+        spec === "$inset-top" ? r.top - pr.top : pr.right - r.right,
+      );
+    }
+    if (spec === "$align") {
+      // Where the element sits across its block (start, center, end or fill).
+      // Unlike $indent it doesn't depend on the column's width, which differs
+      // between Obsidian's pane and Quartz's page.
+      let b = el.parentElement;
+      while (b && getComputedStyle(b).display === "inline") b = b.parentElement;
+      if (!b || !r.width) return "";
+      const bs = getComputedStyle(b);
+      const br = b.getBoundingClientRect();
+      const left = r.left - br.left - parseFloat(bs.paddingLeft);
+      const right = br.right - parseFloat(bs.paddingRight) - r.right;
+      const near = (v) => Math.abs(v) <= 2;
+      if (near(left) && near(right)) return "fill";
+      if (near(left - right)) return "center";
+      if (near(left)) return "start";
+      if (near(right)) return "end";
+      return `${Math.round((100 * left) / (left + right))}%`;
+    }
     if (spec === "$indent") {
       const p = (rootEl ?? document).querySelector(":scope p");
       return p ? Math.round(r.left - p.getBoundingClientRect().left) : "";

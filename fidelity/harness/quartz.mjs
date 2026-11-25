@@ -8,7 +8,7 @@ import fs from "node:fs";
 import http from "node:http";
 import path from "node:path";
 import { chromium } from "playwright";
-import { measureInPage, sideProbe } from "./probes.mjs";
+import { measureProbes } from "./probes.mjs";
 
 export const QUARTZ_ROOT = ".markdown-preview-view";
 
@@ -164,14 +164,19 @@ export async function startQuartz({ site }) {
             waitUntil: "networkidle",
           });
           await page.evaluate(() => document.fonts.ready);
+          // Diagrams render after load (Pele is imported on pages with one).
+          await page
+            .waitForFunction(
+              () =>
+                [...document.querySelectorAll("div.mermaid")].every((m) =>
+                  m.querySelector("svg"),
+                ),
+              null,
+              { timeout: 10_000 },
+            )
+            .catch(() => {});
         },
-        async measure(probes) {
-          await page.mouse.move(0, 0); // no :hover, as in Obsidian
-          return page.evaluate(measureInPage, {
-            root: QUARTZ_ROOT,
-            probes: probes.map((p) => sideProbe(p, "quartz")),
-          });
-        },
+        measure: (probes) => measureProbes(page, QUARTZ_ROOT, probes, "quartz"),
         close: () => ctx.close(),
       };
     },

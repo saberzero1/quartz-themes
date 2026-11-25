@@ -2,7 +2,8 @@
  * Compare two probe measurements (Obsidian = reference, Quartz = candidate).
  */
 
-const COLOR_PROPS = /color$/;
+// SVG paints (`fill`, `stroke`) are colours too (diagrams).
+const COLOR_PROPS = /(color|^fill|^stroke)$/;
 const SIZE_PROPS = /(width|size|spacing|radius|height|padding.*|margin.*|gap)$/;
 export const DELTA_E_OK = 6; // ~noticeable at a glance; < 2.3 is a JND
 

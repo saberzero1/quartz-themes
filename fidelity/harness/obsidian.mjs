@@ -11,10 +11,11 @@ import os from "node:os";
 import path from "node:path";
 import ObsidianLauncher from "obsidian-launcher";
 import { chromium } from "playwright";
-import { measureInPage, sideProbe, PLUGINS_OFF } from "./probes.mjs";
+import { measureProbes, PLUGINS_OFF } from "./probes.mjs";
 
+// The reading view's own: the hidden editor and embedded notes have one too.
 export const OBSIDIAN_ROOT =
-  ".workspace-leaf.mod-active .markdown-preview-view";
+  ".workspace-leaf.mod-active .markdown-reading-view > .markdown-preview-view";
 
 /**
  * Build a lean vault: the specimen notes and plugins of `sourceVault`, plus the
@@ -241,13 +242,20 @@ export async function openNote(page, note) {
     null,
     { timeout: 30_000 },
   );
+  // Diagrams render after their section.
+  await page
+    .waitForFunction(
+      (root) =>
+        [...document.querySelectorAll(`${root} .mermaid`)].every((m) =>
+          m.querySelector("svg"),
+        ),
+      OBSIDIAN_ROOT,
+      { timeout: 10_000 },
+    )
+    .catch(() => {});
   await page.waitForTimeout(250);
 }
 
 export async function measureObsidian(page, probes) {
-  await page.mouse.move(0, 0); // no :hover from wherever the pointer rests
-  return page.evaluate(measureInPage, {
-    root: OBSIDIAN_ROOT,
-    probes: probes.map((p) => sideProbe(p, "obsidian")),
-  });
+  return measureProbes(page, OBSIDIAN_ROOT, probes, "obsidian");
 }
