@@ -472,6 +472,9 @@ const graph = (cls) => ({
   note: "general",
   // Both graphs read these hidden elements' colours.
   obsidian: { create: `graph-view ${cls}` },
+  // ... and paint them on the graph's own canvas, not over the note: compared
+  // as they are, not over what's behind the hidden element.
+  canvas: true,
   props: ["color", "opacity"],
 });
 

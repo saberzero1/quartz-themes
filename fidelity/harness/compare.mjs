@@ -113,6 +113,15 @@ export function compareProp(key, ref, cand, refProbe, candProbe) {
       return { match: norm(ref) === norm(cand), detail: `${ref} vs ${cand}` };
     }
   }
+  // A border style is irrelevant when neither side draws the border (Auger's
+  // Tailwind reset gives every element a solid border 0px wide).
+  const styleSide = !pseudo && prop.match(/^border-(\w+)-style$/)?.[1];
+  if (
+    styleSide &&
+    parseFloat(refProbe[`border-${styleSide}-width`] ?? "1") === 0 &&
+    parseFloat(candProbe[`border-${styleSide}-width`] ?? "1") === 0
+  )
+    return { match: true };
   if (prop.startsWith("$") && !COLOR_PROPS.test(prop)) {
     // Geometry in px: within 2px or 15%.
     const a = parseFloat(ref);
@@ -149,7 +158,14 @@ export function compareProp(key, ref, cand, refProbe, candProbe) {
     const e1 = prop === "background-color" ? bg1 : over(c1, bg1);
     const e2 = prop === "background-color" ? bg2 : over(c2, bg2);
     const d = deltaE(e1, e2);
-    return { match: d <= DELTA_E_OK, detail: `ΔE ${d.toFixed(1)}` };
+    // The colours compared, as seen (over what's painted behind): the element's own
+    // values can be identical while what shows through differs.
+    const seen = (c) =>
+      c ? `rgb(${[c.r, c.g, c.b].map((v) => Math.round(v)).join(", ")})` : "?";
+    return {
+      match: d <= DELTA_E_OK,
+      detail: `ΔE ${d.toFixed(1)}, seen ${seen(e1)} vs ${seen(e2)}`,
+    };
   }
   if (prop === "font-family")
     return {
@@ -214,7 +230,15 @@ export function compareMeasurements(ref, cand, probes) {
     const diffs = {};
     let pOk = 0;
     for (const prop of p.props) {
-      const res = compareProp(prop, r[prop], c[prop], r, c);
+      const res = p.canvas
+        ? compareProp(
+            prop,
+            r[prop],
+            c[prop],
+            { ...r, "$effective-bg": undefined },
+            { ...c, "$effective-bg": undefined },
+          )
+        : compareProp(prop, r[prop], c[prop], r, c);
       if (res.match) pOk++;
       else
         diffs[prop] = {
