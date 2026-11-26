@@ -1,0 +1,189 @@
+name: Fidelity
+
+# Measures how well @quartz-themes/core converts every theme in Obsidian's
+# community registry: the same notes rendered in real Obsidian (on Xvfb) and in
+# Quartz, compared element by element; and whether each theme leaves Quartz's
+# page layout working at phone, tablet and desktop widths. See fidelity/README.md.
+
+on:
+  schedule:
+    - cron: "0 4 * * 1" # weekly, Monday 04:00 UTC
+  workflow_dispatch:
+    inputs:
+      core-ref:
+        description: "quartz-themes/core ref to test"
+        default: main
+      quartz-ref:
+        description: "jackyzha0/quartz ref for the specimen site"
+        default: v5
+      themes:
+        description: "Comma-separated theme names (empty = the whole registry)"
+        default: ""
+
+env:
+  SHARDS: 8
+  CORE_REF: ${{ inputs.core-ref || 'main' }}
+  QUARTZ_REF: ${{ inputs.quartz-ref || 'v5' }}
+
+jobs:
+  site:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Build the specimen site
+        run: |
+          git clone --depth 1 --branch "$QUARTZ_REF" https://github.com/jackyzha0/quartz.git "$RUNNER_TEMP/quartz"
+          cd "$RUNNER_TEMP/quartz"
+          npm ci
+          npx quartz build -d "$GITHUB_WORKSPACE/runner/vault" -o "$GITHUB_WORKSPACE/site"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: site
+          path: site
+
+  measure:
+    needs: site
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: [1, 2, 3, 4, 5, 6, 7, 8]
+    env:
+      DISPLAY: ":99"
+      OBSIDIAN_EXTRA_ARGS: "--no-sandbox"
+      QUARTZ_THEMES_CORE: ${{ github.workspace }}/.core/dist/index.js
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - uses: oven-sh/setup-bun@v2
+      - run: bun install --frozen-lockfile
+      - name: Build @quartz-themes/core
+        run: |
+          git clone --depth 1 --branch "$CORE_REF" https://github.com/quartz-themes/core.git .core
+          cd .core && npm ci && npm run build
+      - name: Browser and display
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq xvfb herbstluftwm x11-utils
+          npx playwright install --with-deps chromium
+          Xvfb "$DISPLAY" -screen 0 1600x1200x24 -dpi 96 +extension GLX -noreset &
+          for _ in $(seq 1 40); do xdpyinfo -display "$DISPLAY" >/dev/null 2>&1 && break; sleep 0.25; done
+          herbstluftwm &
+          sleep 2
+      - uses: actions/download-artifact@v4
+        with:
+          name: site
+          path: fidelity/out/site
+      - name: Restore caches (Obsidian build, references, theme downloads)
+        uses: actions/cache@v4
+        with:
+          path: |
+            .obsidian-cache
+            fidelity/out/fidelity/ref
+            fidelity/out/theme-cache
+          key: fidelity-${{ matrix.shard }}-${{ github.run_id }}
+          restore-keys: fidelity-${{ matrix.shard }}-
+      - name: Measure
+        run: |
+          if [ -n "${{ inputs.themes }}" ]; then
+            node fidelity/scripts/fidelity.mjs --themes="${{ inputs.themes }}" --shard=${{ matrix.shard }}/$SHARDS --concurrency=4
+          else
+            node fidelity/scripts/fidelity.mjs --all --shard=${{ matrix.shard }}/$SHARDS --concurrency=4
+          fi
+      - uses: actions/upload-artifact@v4
+        with:
+          name: report-${{ matrix.shard }}
+          path: fidelity/out/fidelity/report-*.json
+
+  # Quartz's page layout under each theme (phone/tablet/desktop). No Obsidian.
+  layout:
+    needs: site
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: [1, 2, 3, 4]
+    env:
+      QUARTZ_THEMES_CORE: ${{ github.workspace }}/.core/dist/index.js
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - uses: oven-sh/setup-bun@v2
+      - run: bun install --frozen-lockfile
+      - name: Build @quartz-themes/core
+        run: |
+          git clone --depth 1 --branch "$CORE_REF" https://github.com/quartz-themes/core.git .core
+          cd .core && npm ci && npm run build
+      - run: npx playwright install --with-deps chromium
+      - uses: actions/download-artifact@v4
+        with:
+          name: site
+          path: fidelity/out/site
+      - name: Restore theme downloads
+        uses: actions/cache@v4
+        with:
+          path: fidelity/out/theme-cache
+          key: layout-themes-${{ matrix.shard }}-${{ github.run_id }}
+          restore-keys: layout-themes-${{ matrix.shard }}-
+      - name: Audit
+        run: |
+          if [ -n "${{ inputs.themes }}" ]; then
+            node fidelity/scripts/layout.mjs --themes="${{ inputs.themes }}" --shard=${{ matrix.shard }}/4 --concurrency=4
+          else
+            node fidelity/scripts/layout.mjs --all --shard=${{ matrix.shard }}/4 --concurrency=4
+          fi
+      - uses: actions/upload-artifact@v4
+        with:
+          name: layout-${{ matrix.shard }}
+          path: fidelity/out/layout/report-*.json
+
+  layout-summary:
+    needs: layout
+    if: always()
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: layout-*
+          path: fidelity/out/layout
+          merge-multiple: true
+      - name: Summary
+        run: |
+          node fidelity/scripts/layout-summary.mjs --json=fidelity/out/layout/report.json | tee layout.txt
+          { echo '## Layout audit'; echo; echo '```'; cat layout.txt; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: layout-report
+          path: |
+            fidelity/out/layout/report.json
+            layout.txt
+
+  summary:
+    needs: measure
+    if: always()
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: report-*
+          path: fidelity/out/fidelity
+          merge-multiple: true
+      - name: Summary
+        run: |
+          node fidelity/scripts/fidelity-summary.mjs --json=fidelity/out/fidelity/report.json | tee summary.txt
+          { echo '## Theme fidelity'; echo; echo '```'; cat summary.txt; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: fidelity-report
+          path: |
+            fidelity/out/fidelity/report.json
+            summary.txt

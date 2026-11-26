@@ -50,4 +50,6 @@ dv.span(result);
 
 <div class="quartz-icon-selector" style="--quartz-icon-color:var(--icon-color);">icon colors</div>
 
+The footnotes follow this paragraph.
+
 [^1]: footnote text

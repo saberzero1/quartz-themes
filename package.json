@@ -1,166 +1,30 @@
 {
   "name": "quartz-themes",
-  "version": "1.0.0",
-  "description": "Quartz-compatible Obsidian themes",
-  "main": "plugin/dist/index.js",
-  "types": "plugin/dist/index.d.ts",
+  "version": "3.0.0",
+  "private": true,
   "type": "module",
-  "scripts": {
-    "build": "npm --prefix ./plugin install && npm --prefix ./plugin run build",
-    "web:build": "just build",
-    "web:run": "just extract",
-    "web:compile": "just compile",
-    "web:misc": "just convert",
-    "web:full": "just extract-full",
-    "db:ingest": "just ingest",
-    "db:prep": "just prepare",
-    "db:drop": "just drop",
-    "db:full": "just rebuild",
-    "quartz:theme": "cp -f ./runner/results/abyssal/_index.scss ./runner/quartz/quartz/styles/themes/_index.scss",
-    "quartz:install": "cd ./runner/quartz && npm i -D",
-    "quartz:update": "just update-quartz",
-    "quartz:serve": "just update-quartz && cd ./runner/quartz && npx quartz build -d ../vault --serve",
-    "quartz:full": "npm run web:full && npm run quartz:install && npm run quartz:serve",
-    "everything": "npm run web:run && just lint && npm run db:prep && just lint && npm run db:drop && npm run db:ingest && npm run web:compile && npm run web:misc && just lint && git status"
-  },
+  "description": "Fidelity testing for @quartz-themes/core: Obsidian community themes in Quartz, measured against real Obsidian.",
+  "author": "saberzero1",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/saberzero1/quartz-themes.git"
   },
-  "keywords": [
-    "quartz",
-    "obsidian",
-    "themes",
-    "publish",
-    "obsidian-publish"
-  ],
-  "author": "saberzero1",
-  "license": "MIT",
+  "homepage": "https://github.com/saberzero1/quartz-themes#readme",
   "bugs": {
     "url": "https://github.com/saberzero1/quartz-themes/issues"
   },
-  "homepage": "https://github.com/saberzero1/quartz-themes#readme",
-  "exports": {
-    ".": {
-      "types": "./plugin/dist/index.d.ts",
-      "import": "./plugin/dist/index.js"
-    },
-    "./types": {
-      "types": "./plugin/dist/types.d.ts",
-      "import": "./plugin/dist/types.js"
-    },
-    "./package.json": "./package.json"
-  },
-  "quartz": {
-    "name": "quartz-themes",
-    "displayName": "Quartz Themes",
-    "category": "transformer",
-    "version": "1.0.0",
-    "quartzVersion": ">=5.0.0",
-    "dependencies": [],
-    "defaultOrder": 10,
-    "defaultEnabled": true,
-    "defaultOptions": {
-      "theme": "tokyo-night",
-      "mode": "both"
-    },
-    "optionSchema": {
-      "theme": {
-        "type": "string"
-      },
-      "mode": {
-        "type": "enum",
-        "values": [
-          "dark",
-          "light",
-          "both"
-        ]
-      },
-      "variation": {
-        "type": "string"
-      },
-      "styleSettings": {
-        "type": "object"
-      },
-      "calloutStyle": {
-        "type": "string"
-      },
-      "fonts": {
-        "type": "object"
-      },
-      "aspects": {
-        "type": "object"
-      },
-      "include": {
-        "type": "array"
-      }
-    }
+  "scripts": {
+    "fidelity": "node fidelity/scripts/fidelity.mjs",
+    "fidelity:summary": "node fidelity/scripts/fidelity-summary.mjs",
+    "convert-all": "node fidelity/scripts/convert-all.mjs",
+    "format": "prettier . --write --cache",
+    "check": "prettier . --check --cache"
   },
   "devDependencies": {
-    "@types/mocha": "^10.0.10",
-    "@wdio/cli": "^9.18.4",
-    "baseline-browser-mapping": "^2.9.15",
-    "css": "^3.0.0",
-    "esbuild": "^0.25.8",
-    "mocha": "^11.7.1",
-    "obsidian": "^1.8.7",
-    "piscina": "^5.1.4",
-    "pixelmatch": "^7.2.0",
+    "lightningcss": "^1.33.0",
+    "obsidian-launcher": "^2.2.0",
     "playwright": "^1.58.2",
-    "pngjs": "^7.0.0",
-    "postcss-merge-longhand": "^7.0.5",
-    "prettier": "^3.8.3",
-    "sass": "^1.89.2",
-    "typescript": "^5.9.2",
-    "wawoff2": "^2.0.1",
-    "wdio-obsidian-reporter": "^2.2.0",
-    "wdio-obsidian-service": "^2.2.0",
-    "webdriverio": "^9.18.4"
-  },
-  "dependencies": {
-    "@csstools/postcss-color-mix-function": "^3.0.10",
-    "@csstools/postcss-relative-color-syntax": "^3.0.10",
-    "@lucide/icons": "^1.7.0",
-    "@prettier/sync": "github:prettier/sync",
-    "css-tree": "^3.1.0",
-    "js-yaml": "^4.1.0",
-    "just-install": "^2.0.2",
-    "lightningcss": "^1.30.1",
-    "obsidian-style-settings": "github:saberzero1/obsidian-style-settings",
-    "postcss": "^8.5.6",
-    "postcss-calc": "^10.1.1",
-    "postcss-color-converter": "^1.2.1",
-    "postcss-color-hsl": "^2.0.0",
-    "postcss-color-hwb": "^3.0.0",
-    "postcss-color-rgb": "^2.0.0",
-    "postcss-combine-duplicated-selectors": "^10.0.3",
-    "postcss-combine-media-query": "^2.0.0",
-    "postcss-css-variables": "^0.19.0",
-    "postcss-custom-properties": "^14.0.6",
-    "postcss-discard-comments": "^7.0.4",
-    "postcss-nesting": "^13.0.2",
-    "postcss-prune-var": "^1.1.2",
-    "postcss-pseudo-is": "^0.3.0",
-    "postcss-rgba-hex": "^0.3.7",
-    "postcss-scss": "^4.0.9",
-    "postcss-selector-not": "^8.0.1",
-    "ts-node": "^10.9.2"
-  },
-  "@parcel/transformer-css": {
-    "cssModules": true,
-    "drafts": {
-      "nesting": true,
-      "customMedia": true,
-      "customProperties": true,
-      "colorFunction": true,
-      "colorMixFunction": true,
-      "relativeColorSyntax": true
-    }
-  },
-  "browserslist": [
-    "> 0.5%",
-    "last 2 versions",
-    "Firefox ESR",
-    "not dead"
-  ]
+    "prettier": "^3.8.3"
+  }
 }

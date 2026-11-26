@@ -1,0 +1,15 @@
+{
+  "minimal-style@@base@@dark": "#2a2438",
+  "minimal-style@@base@@light": "#f5efe6",
+  "minimal-style@@h1-color@@dark": "#ff6b6b",
+  "minimal-style@@h1-color@@light": "#c0392b",
+  "minimal-style@@link-color@@dark": "#4ecdc4",
+  "minimal-style@@link-color@@light": "#1a7f78",
+  "minimal-style@@h1-weight": 900,
+  "minimal-style@@blockquote-font-style": "italic",
+  "minimal-style@@callouts-style": "callouts-outlined",
+  "anuppuccin-theme-settings@@anuppuccin-theme-dark": "ctp-frappe",
+  "anuppuccin-theme-settings@@anuppuccin-theme-accents": "ctp-accent-green",
+  "anuppuccin-theme-settings@@anuppuccin-light-theme-accents": "ctp-accent-light-green",
+  "anuppuccin-theme-settings@@callout-radius": 12
+}
