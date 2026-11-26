@@ -8,12 +8,27 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-const repo = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
+const repo = path.resolve(
+  path.dirname(fileURLToPath(import.meta.url)),
+  "../..",
+);
 const { core } = await import(`${repo}/fidelity/harness/core.mjs`);
-const sourceOpts = { cacheDir: `${repo}/fidelity/out/theme-cache`, cacheTtl: 30 * 864e5 };
+const sourceOpts = {
+  cacheDir: `${repo}/fidelity/out/theme-cache`,
+  cacheTtl: 30 * 864e5,
+};
 const [depsDir, outDir, list] = process.argv.slice(2);
 const themes = list.split(",").map((s) => s.trim());
-const PALETTE = ["#d7263d", "#1b998b", "#f46036", "#2e86ab", "#c5d86d", "#8e44ad", "#e4b363", "#3d5a80"];
+const PALETTE = [
+  "#d7263d",
+  "#1b998b",
+  "#f46036",
+  "#2e86ab",
+  "#c5d86d",
+  "#8e44ad",
+  "#e4b363",
+  "#3d5a80",
+];
 const optVal = (o) => (typeof o === "string" ? o : o?.value);
 
 const runs = []; // index → {fixture, themes}
@@ -22,7 +37,9 @@ for (const t of themes) {
   if (!fs.existsSync(f)) continue;
   const { configs } = JSON.parse(fs.readFileSync(f, "utf8"));
   const sets = configs.length ? configs : [[]];
-  const { sections } = core.parseStyleSettings((await core.resolveTheme(t, sourceOpts)).css);
+  const { sections } = core.parseStyleSettings(
+    (await core.resolveTheme(t, sourceOpts)).css,
+  );
   sets.forEach((on, i) => {
     const active = new Set(on);
     runs[i] ??= { fixture: {}, themes: [] };
@@ -45,7 +62,9 @@ for (const t of themes) {
             break;
           }
           case "variable-select": {
-            const vals = (st.options ?? []).map(optVal).filter((v) => v != null);
+            const vals = (st.options ?? [])
+              .map(optVal)
+              .filter((v) => v != null);
             const other = vals.filter((v) => v !== st.default);
             if (other.length) exp[k] = other[i % other.length];
             break;
@@ -74,7 +93,13 @@ for (const t of themes) {
 }
 fs.mkdirSync(outDir, { recursive: true });
 runs.forEach((r, i) => {
-  fs.writeFileSync(`${outDir}/ss-config-${String(i).padStart(2, "0")}.json`, JSON.stringify(r.fixture, null, 1));
-  fs.writeFileSync(`${outDir}/ss-config-${String(i).padStart(2, "0")}.themes`, r.themes.join(","));
+  fs.writeFileSync(
+    `${outDir}/ss-config-${String(i).padStart(2, "0")}.json`,
+    JSON.stringify(r.fixture, null, 1),
+  );
+  fs.writeFileSync(
+    `${outDir}/ss-config-${String(i).padStart(2, "0")}.themes`,
+    r.themes.join(","),
+  );
 });
 console.log(runs.map((r, i) => `${i}: ${r.themes.length} themes`).join("\n"));

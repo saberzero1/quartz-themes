@@ -9,17 +9,28 @@ import fs from "node:fs";
 import path from "node:path";
 import { createRequire } from "node:module";
 import { fileURLToPath } from "node:url";
-const repo = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
+const repo = path.resolve(
+  path.dirname(fileURLToPath(import.meta.url)),
+  "../..",
+);
 const { core, coreEntry } = await import(`${repo}/fidelity/harness/core.mjs`);
 // The converter's own parsers.
-const require = createRequire(path.isAbsolute(coreEntry) ? coreEntry : import.meta.url);
+const require = createRequire(
+  path.isAbsolute(coreEntry) ? coreEntry : import.meta.url,
+);
 const postcss = require("postcss");
 const safe = require("postcss-safe-parser");
 const sp = require("postcss-selector-parser");
-const sourceOpts = { cacheDir: `${repo}/fidelity/out/theme-cache`, cacheTtl: 30 * 864e5 };
-const arg = (k) => process.argv.find((a) => a.startsWith(`--${k}=`))?.slice(k.length + 3);
+const sourceOpts = {
+  cacheDir: `${repo}/fidelity/out/theme-cache`,
+  cacheTtl: 30 * 864e5,
+};
+const arg = (k) =>
+  process.argv.find((a) => a.startsWith(`--${k}=`))?.slice(k.length + 3);
 const themes = process.argv[2].split(",").map((s) => s.trim());
-const fixture = arg("fixture") ? JSON.parse(fs.readFileSync(arg("fixture"), "utf8")) : null;
+const fixture = arg("fixture")
+  ? JSON.parse(fs.readFileSync(arg("fixture"), "utf8"))
+  : null;
 const optVal = (o) => (typeof o === "string" ? o : o?.value);
 const VAR_TYPES = /^variable-/;
 const APP_ONLY =
@@ -63,7 +74,8 @@ export function analyse(css) {
     return null;
   }
   root.walkRules((rule) => {
-    if (rule.parent?.type === "atrule" && /keyframes/i.test(rule.parent.name)) return;
+    if (rule.parent?.type === "atrule" && /keyframes/i.test(rule.parent.name))
+      return;
     let sels = [];
     try {
       sp((s) => {
@@ -93,15 +105,30 @@ export function analyse(css) {
     }
     rule.each((d) => {
       if (d.type !== "decl") return;
-      const refs = [...d.value.matchAll(/var\(\s*(--[\w-]+)/g)].map((m) => m[1].slice(2));
+      const refs = [...d.value.matchAll(/var\(\s*(--[\w-]+)/g)].map((m) =>
+        m[1].slice(2),
+      );
       for (const s of sels) {
         if (d.prop.startsWith("--")) {
           const name = d.prop.slice(2);
           if (!defs.has(name)) defs.set(name, []);
           defs.get(name).push({ refs, pos: s.pos, neg: s.neg });
         } else {
-          if (refs.length) uses.push({ refs, pos: s.pos, neg: s.neg, prop: d.prop, target: s.target });
-          if (s.pos.size) classRules.push({ pos: s.pos, neg: s.neg, prop: d.prop, target: s.target });
+          if (refs.length)
+            uses.push({
+              refs,
+              pos: s.pos,
+              neg: s.neg,
+              prop: d.prop,
+              target: s.target,
+            });
+          if (s.pos.size)
+            classRules.push({
+              pos: s.pos,
+              neg: s.neg,
+              prop: d.prop,
+              target: s.target,
+            });
         }
       }
     });
@@ -111,7 +138,8 @@ export function analyse(css) {
   /** var name → [{pos, neg}] */
   const reach = new Map();
   const union = (a, b) => new Set([...a, ...b]);
-  const gk = (g) => `${[...g.pos].sort().join(".")}|${[...g.neg].sort().join(".")}`;
+  const gk = (g) =>
+    `${[...g.pos].sort().join(".")}|${[...g.neg].sort().join(".")}`;
   // Reverse indexes: variable → uses, variable → custom properties defined from it.
   const usesOf = new Map();
   for (const u of uses)
@@ -143,25 +171,45 @@ export function analyse(css) {
       }
       // Keep minimal gates only.
       for (const h of out.values())
-        if ([...h.pos].every((c) => g.pos.has(c)) && [...h.neg].every((c) => g.neg.has(c))) return;
+        if (
+          [...h.pos].every((c) => g.pos.has(c)) &&
+          [...h.neg].every((c) => g.neg.has(c))
+        )
+          return;
       for (const [k, h] of out)
-        if ([...g.pos].every((c) => h.pos.has(c)) && [...g.neg].every((c) => h.neg.has(c))) out.delete(k);
+        if (
+          [...g.pos].every((c) => h.pos.has(c)) &&
+          [...g.neg].every((c) => h.neg.has(c))
+        )
+          out.delete(k);
       if (out.size < 256) out.set(gk(g), g);
     };
     for (const u of usesOf.get(name) ?? []) add({ pos: u.pos, neg: u.neg });
     for (const d of defsFrom.get(name) ?? [])
-      for (const r of reachOf(d.def)) add({ pos: union(d.pos, r.pos), neg: union(d.neg, r.neg) });
+      for (const r of reachOf(d.def))
+        add({ pos: union(d.pos, r.pos), neg: union(d.neg, r.neg) });
     inProgress.delete(name);
     const list = [...out.values()];
     reach.set(name, list);
     return list;
   };
 
-  const report = { settings: settings.size, gated: [], dead: [], conflicts: [], targets: [] };
-  const allNames = [...new Set([...defs.keys(), ...usesOf.keys(), ...defsFrom.keys()])];
+  const report = {
+    settings: settings.size,
+    gated: [],
+    dead: [],
+    conflicts: [],
+    targets: [],
+  };
+  const allNames = [
+    ...new Set([...defs.keys(), ...usesOf.keys(), ...defsFrom.keys()]),
+  ];
   for (const [name, key] of vars) {
     // The setting's own variable and its format variants.
-    const names = [name, ...allNames.filter((n) => n !== name && varKey(n) === key)];
+    const names = [
+      name,
+      ...allNames.filter((n) => n !== name && varKey(n) === key),
+    ];
     const r = [...new Set(names)].flatMap((n) => reachOf(n));
     if (!r.length) {
       report.dead.push(key);
@@ -191,8 +239,14 @@ export function analyse(css) {
       continue;
     }
     const gates = [];
-    for (const r of rules) if (!gates.some((h) => [...h.pos].join() === [...r.pos].join())) gates.push({ pos: r.pos, neg: r.neg });
-    report.targets.push({ key: info.select ? `${info.key}=${c}` : info.key, gates, cls: c });
+    for (const r of rules)
+      if (!gates.some((h) => [...h.pos].join() === [...r.pos].join()))
+        gates.push({ pos: r.pos, neg: r.neg });
+    report.targets.push({
+      key: info.select ? `${info.key}=${c}` : info.key,
+      gates,
+      cls: c,
+    });
   }
   // Conflicts: two class settings (not options of one select) styling the same
   // property of the same element — together, one hides the other.
@@ -232,10 +286,16 @@ function activeClasses(fx, rep) {
   }
   // Toggles default-on when absent from the export.
   for (const [c, info] of rep.classes)
-    if (!info.select && !(info.key in fx) && rep.settingsMap.get(info.key)?.default === true) on.add(c);
+    if (
+      !info.select &&
+      !(info.key in fx) &&
+      rep.settingsMap.get(info.key)?.default === true
+    )
+      on.add(c);
   return on;
 }
-const satisfied = (g, on) => [...g.pos].every((c) => on.has(c)) && ![...g.neg].some((c) => on.has(c));
+const satisfied = (g, on) =>
+  [...g.pos].every((c) => on.has(c)) && ![...g.neg].some((c) => on.has(c));
 
 /**
  * Greedy covering: configurations (sets of classes) such that every target has
@@ -247,7 +307,9 @@ function cover(rep) {
   const clash = (a, b) => conflict.has([a, b].sort().join(" ⟷ "));
   const sel = (c) => rep.classes.get(c)?.select;
   const configs = [];
-  let todo = rep.targets.filter((t) => t.gates.some((g) => g.pos.size || t.cls));
+  let todo = rep.targets.filter((t) =>
+    t.gates.some((g) => g.pos.size || t.cls),
+  );
   // Ungated variables are covered by any configuration.
   while (todo.length) {
     const on = new Set();
@@ -256,7 +318,9 @@ function cover(rep) {
       const want = [...g.pos, ...(extra ? [extra] : [])];
       for (const c of want) {
         if (off.has(c)) return false;
-        for (const o of on) if (o !== c && ((sel(o) && sel(o) === sel(c)) || clash(o, c))) return false;
+        for (const o of on)
+          if (o !== c && ((sel(o) && sel(o) === sel(c)) || clash(o, c)))
+            return false;
       }
       return ![...g.neg].some((c) => on.has(c) || want.includes(c));
     };
@@ -292,16 +356,30 @@ for (const t of themes) {
   let uncovered = null;
   if (fixture) {
     const on = activeClasses(fixture, rep);
-    uncovered = rep.targets.filter((x) => !x.gates.some((g) => satisfied(g, on))).map((x) => x.key);
+    uncovered = rep.targets
+      .filter((x) => !x.gates.some((g) => satisfied(g, on)))
+      .map((x) => x.key);
   }
-  rows.push({ t, settings: rep.settings, gated: rep.gated.length, dead: rep.dead.length, conflicts: rep.conflicts.length, configs: configs.length, unsat: unsatisfiable.length, uncovered });
+  rows.push({
+    t,
+    settings: rep.settings,
+    gated: rep.gated.length,
+    dead: rep.dead.length,
+    conflicts: rep.conflicts.length,
+    configs: configs.length,
+    unsat: unsatisfiable.length,
+    uncovered,
+  });
   if (emit) {
     fs.mkdirSync(emit, { recursive: true });
     fs.writeFileSync(
       `${emit}/${t.replace(/[^\w.-]+/g, "_")}.json`,
       JSON.stringify(
         {
-          gated: rep.gated.map((g) => ({ key: g.key, gates: g.gates.map((x) => ({ on: [...x.pos], off: [...x.neg] })) })),
+          gated: rep.gated.map((g) => ({
+            key: g.key,
+            gates: g.gates.map((x) => ({ on: [...x.pos], off: [...x.neg] })),
+          })),
           conflicts: rep.conflicts,
           dead: rep.dead,
           configs: configs.map((c) => [...c]),
@@ -313,7 +391,11 @@ for (const t of themes) {
     );
   }
 }
-console.log("theme".padEnd(22), "settings gated dead conflicts configs unsat", fixture ? "uncovered-by-fixture" : "");
+console.log(
+  "theme".padEnd(22),
+  "settings gated dead conflicts configs unsat",
+  fixture ? "uncovered-by-fixture" : "",
+);
 for (const r of rows)
   console.log(
     r.t.padEnd(22),
@@ -323,5 +405,7 @@ for (const r of rows)
     String(r.conflicts).padStart(9),
     String(r.configs).padStart(7),
     String(r.unsat).padStart(5),
-    fixture ? `${r.uncovered.length}  ${r.uncovered.slice(0, 4).join(", ")}` : "",
+    fixture
+      ? `${r.uncovered.length}  ${r.uncovered.slice(0, 4).join(", ")}`
+      : "",
   );

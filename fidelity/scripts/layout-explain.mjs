@@ -44,7 +44,9 @@ const css =
             : (await core.resolveTheme(theme, sourceOpts)).css,
         // --style-settings=export.json, as fidelity.mjs takes it.
         styleSettings: arg("style-settings", "")
-          ? JSON.parse(fs.readFileSync(path.resolve(arg("style-settings")), "utf8"))
+          ? JSON.parse(
+              fs.readFileSync(path.resolve(arg("style-settings")), "utf8"),
+            )
           : {},
       });
 const quartz = await startQuartz({
